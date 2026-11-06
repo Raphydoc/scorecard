@@ -176,7 +176,7 @@ select{font-family:var(--f-body)}
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li>Total de −20 à +20 : ±3 et plus = haussier/baissier, ±8 et plus = très haussier/très baissier.</li>
     </ul>
-    <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. Ta tendance 4H/Daily et ta saisonnalité (bouton « Ma tendance ») sont gardées dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
+    <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité est remplie automatiquement au début de chaque mois selon la performance du mois précédent; tu peux la changer avec « Ma tendance » (ton choix tient jusqu'à la fin du mois). Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
 </div>
 
@@ -301,7 +301,7 @@ select{font-family:var(--f-body)}
     h += `<tr><td class="name">Tendance 4H / Daily</td><td class="sig">${chip(r.trend)}</td>
       <td class="desc" colspan="4">${E?triSelect('in-trend',A.trend):'Ta lecture de la tendance sur le 4H et le Daily (±2)'}</td></tr>`;
     h += `<tr><td class="name">Saisonnalité</td><td class="sig">${chip(r.season)}</td>
-      <td class="desc" colspan="4">${E?triSelect('in-season',A.season):'Comportement habituel de l’actif à ce moment de l’année (±1)'}</td></tr>`;
+      <td class="desc" colspan="4">${E?triSelect('in-season',A.season):'Performance du mois précédent, remplie chaque mois; modifiable (±1)'}</td></tr>`;
 
     h += head('Activité institutionnelle', catChip(C.cats.inst,2), ['Long %','Short %','Changement %','']);
     const cl = num(A.cotLong);
@@ -439,7 +439,7 @@ select{font-family:var(--f-body)}
   function todayISO(){ const d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
   const TKEY='scorecard-tendance-v1';
   function saveTech(){
-    try{ localStorage.setItem(TKEY, JSON.stringify({xauusd:{trend:state.assets.xauusd.trend, season:state.assets.xauusd.season},
+    try{ localStorage.setItem(TKEY, JSON.stringify({month:(()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');})(), xauusd:{trend:state.assets.xauusd.trend, season:state.assets.xauusd.season},
       nasdaq:{trend:state.assets.nasdaq.trend, season:state.assets.nasdaq.season},
       spx500:{trend:state.assets.spx500.trend, season:state.assets.spx500.season},
       us30:{trend:state.assets.us30.trend, season:state.assets.us30.season}})); note(''); }
@@ -462,12 +462,13 @@ select{font-family:var(--f-body)}
   drawGaugeStatic();
   renderAll();
 
+  function curMonth(){ const d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'); }
   function localTech(){ try{ return JSON.parse(localStorage.getItem(TKEY)||'null')||{}; }catch(e){ return {}; } }
   function apply(d){
     const t = localTech();
     state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(d.econ||{}).yield10y||null, updatedAt:d.updatedAt||null};
     ['xauusd','nasdaq','spx500','us30'].forEach(k=>{
-      state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), trend:((t[k]||{}).trend)||'neutral', ...((t[k]||{}).season?{season:t[k].season}:{})};
+      state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), trend:((t[k]||{}).trend)||'neutral', ...((t[k]||{}).season && t.month===curMonth()?{season:t[k].season}:{})};
     });
     state.history = Array.isArray(d.history) ? d.history.slice(-60) : [];
   }

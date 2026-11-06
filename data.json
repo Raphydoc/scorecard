@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T22:58:00.000Z",
+  "updatedAt": "2026-11-06T23:02:00.000Z",
   "econ": {
     "values": {
       "gdp": {
@@ -75,19 +75,19 @@
       "cotLong": 84.33,
       "cotChange": -1.39,
       "crowdLong": 68,
-      "season": "bull"
+      "season": "bear"
     },
     "nasdaq": {
       "cotLong": 65.89,
       "cotChange": -4.41,
       "crowdLong": 62,
-      "season": "bull"
+      "season": "bear"
     },
     "spx500": {
       "cotLong": 39.0,
       "cotChange": 0.87,
       "crowdLong": 66,
-      "season": "bull"
+      "season": "bear"
     },
     "us30": {
       "cotLong": 71.45,
