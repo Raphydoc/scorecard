@@ -1,0 +1,484 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Scorecard macro XAUUSD</title>
+<meta name="robots" content="noindex">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: terminal à deux colonnes — verdict + jauge à gauche, grille d'indicateurs à droite; une seule colonne sur téléphone */
+:root{
+  --bg:#F3F4F7; --panel:#FFFFFF; --panel-2:#ECEEF3; --line:#D8DCE4;
+  --fg:#151922; --muted:#5C6371; --gold:#9A700C;
+  --bull:#2E4CD6; --bear:#D3363C; --neutral:#7B818D; --chip-fg:#FFFFFF;
+  --focus:#9A700C;
+  --f-display:"Barlow Condensed","Arial Narrow",system-ui,sans-serif;
+  --f-body:"IBM Plex Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-mono:"IBM Plex Mono",ui-monospace,"SFMono-Regular",Menlo,monospace;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0D1016; --panel:#151922; --panel-2:#1C212B; --line:#2A303C;
+    --fg:#E6E8EE; --muted:#949BA8; --gold:#D8AC45;
+    --bull:#4D69F0; --bear:#E1494F; --neutral:#5A616E; --chip-fg:#FFFFFF;
+    --focus:#D8AC45; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0D1016; --panel:#151922; --panel-2:#1C212B; --line:#2A303C;
+  --fg:#E6E8EE; --muted:#949BA8; --gold:#D8AC45;
+  --bull:#4D69F0; --bear:#E1494F; --neutral:#5A616E; --chip-fg:#FFFFFF;
+  --focus:#D8AC45; color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:14px;line-height:1.45}
+.wrap{max-width:1240px;margin:0 auto;padding-block:20px 40px;
+  padding-left:max(16px, env(safe-area-inset-left, 0px));
+  padding-right:max(16px, env(safe-area-inset-right, 0px));
+  display:grid;gap:16px}
+.top{display:flex;flex-wrap:wrap;gap:14px;align-items:center;justify-content:space-between}
+.brand{display:flex;gap:12px;align-items:center;min-width:0}
+.mark{width:44px;height:44px;flex:none;display:grid;place-items:center;border:2px solid var(--gold);color:var(--gold);
+  font-family:var(--f-display);font-weight:700;font-size:20px;letter-spacing:.02em}
+.mark sup{font-size:10px;margin-left:1px}
+h1{margin:0;font-family:var(--f-display);font-weight:600;font-size:26px;letter-spacing:.01em;line-height:1.1;text-wrap:balance}
+.sub{margin:2px 0 0;color:var(--muted);font-size:13px}
+.controls{display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.seg{display:inline-flex;border:1px solid var(--line);background:var(--panel)}
+.seg button{border:0;background:transparent;color:var(--muted);font:600 15px/1 var(--f-display);letter-spacing:.04em;
+  text-transform:uppercase;padding:10px 14px;cursor:pointer}
+.seg button[aria-selected="true"]{background:var(--fg);color:var(--bg)}
+.btn{border:1px solid var(--gold);background:transparent;color:var(--gold);font:600 15px/1 var(--f-display);
+  letter-spacing:.04em;text-transform:uppercase;padding:10px 14px;cursor:pointer}
+.btn.ghost{border-color:var(--line);color:var(--muted)}
+.btn.on{background:var(--gold);color:var(--bg)}
+button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+.note{border-left:3px solid var(--gold);background:var(--panel);padding:10px 12px;color:var(--fg);font-size:13px}
+.grid{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}}
+.panel{background:var(--panel);border:1px solid var(--line)}
+.left{display:grid;gap:0}
+.symbol{display:flex;justify-content:space-between;align-items:baseline;padding:12px 14px;background:var(--panel-2);border-bottom:1px solid var(--line)}
+.symbol b{font-family:var(--f-display);font-size:20px;font-weight:600;letter-spacing:.03em}
+.symbol span{color:var(--muted);font-size:12px}
+.verdict{padding:12px 14px;text-align:center;font-family:var(--f-display);font-weight:600;font-size:24px;letter-spacing:.03em;color:var(--chip-fg)}
+.gauge{padding:14px 14px 0}
+.gauge svg{display:block;width:100%;max-width:280px;margin:0 auto;height:auto}
+.updated{text-align:center;color:var(--muted);font-size:12px;padding:0 14px 10px}
+.scores{display:grid;gap:6px;padding:12px 14px 16px;border-top:1px solid var(--line)}
+.score-row{display:grid;grid-template-columns:1fr 64px;gap:10px;align-items:center}
+.score-row span{font-size:15px}
+.score-row b{font-family:var(--f-mono);font-weight:500;font-size:16px;text-align:center;padding:5px 0;color:var(--chip-fg)}
+.score-row.total span{font-weight:600}
+.hist{border-top:1px solid var(--line);padding:12px 14px 14px}
+.hist h2,.how h2{margin:0 0 8px;font-family:var(--f-display);font-weight:600;font-size:17px;letter-spacing:.03em;text-transform:uppercase;color:var(--muted)}
+.hist svg{display:block;width:100%;height:auto}
+.empty-hist{color:var(--muted);font-size:13px}
+.tablewrap{overflow-x:auto;min-width:0}
+table{width:100%;border-collapse:collapse;min-width:640px;font-variant-numeric:tabular-nums}
+th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
+tr.cat th{background:var(--panel-2);font-family:var(--f-display);font-weight:600;font-size:17px;letter-spacing:.02em;padding-block:9px}
+tr.cat th.colh{font-family:var(--f-body);font-weight:500;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:right}
+td.name{font-size:14px}
+td.name small{display:block;color:var(--muted);font-size:11.5px}
+td.num{font-family:var(--f-mono);font-size:13.5px;text-align:right}
+td.desc{color:var(--muted);font-size:12.5px;white-space:normal}
+td.sig,th.sig{width:122px;text-align:center}
+.chip{display:inline-block;min-width:104px;text-align:center;padding:5px 8px;font-family:var(--f-display);font-weight:600;font-size:15px;letter-spacing:.03em;color:var(--chip-fg)}
+.chip.txt{background:transparent!important;padding:0}
+.chip.txt.bull{color:var(--bull)} .chip.txt.bear{color:var(--bear)} .chip.txt.neu{color:var(--muted)}
+.bull{background:var(--bull)} .bear{background:var(--bear)} .neu{background:var(--neutral)} .vbull{background:var(--bull)} .vbear{background:var(--bear)}
+.pos{color:var(--bull)} .neg{color:var(--bear)}
+input[type=number],input[type=date],select{font:inherit;font-family:var(--f-mono);font-size:13px;color:var(--fg);background:var(--bg);
+  border:1px solid var(--line);padding:5px 6px;border-radius:0}
+input[type=number]{width:88px;text-align:right}
+input[type=date]{width:140px}
+select{font-family:var(--f-body)}
+.how{padding:14px 16px}
+.how p,.how li{color:var(--muted);font-size:13px;max-width:72ch}
+.how ul{margin:0;padding-left:18px;display:grid;gap:4px}
+.how strong{color:var(--fg)}
+.foot{color:var(--muted);font-size:12px}
+@media (prefers-reduced-motion:no-preference){ #needle{transition:transform .5s ease} }
+</style>
+
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div class="brand">
+      <div class="mark" aria-hidden="true">Au<sup>79</sup></div>
+      <div>
+        <h1>Scorecard macro</h1>
+        <p class="sub">Données US mises à jour automatiquement chaque matin de semaine.</p>
+      </div>
+    </div>
+    <div class="controls">
+      <div class="seg" role="tablist" aria-label="Actif">
+        <button id="tab-xauusd" role="tab" aria-selected="true" data-asset="xauusd">XAUUSD</button>
+        <button id="tab-nasdaq" role="tab" aria-selected="false" data-asset="nasdaq">Nasdaq · TQQQ / SOXL</button>
+      </div>
+      <button id="editBtn" class="btn" type="button">Ma tendance</button>
+    </div>
+  </header>
+
+  <div id="note" class="note" hidden></div>
+
+  <main class="grid">
+    <section class="panel left" aria-label="Résumé">
+      <div class="symbol"><b id="symName">XAUUSD · Or</b><span id="symHint">Données fortes = baissier</span></div>
+      <div id="verdict" class="verdict neu">Neutre</div>
+      <div class="gauge">
+        <svg viewBox="0 0 240 140" role="img" aria-label="Jauge du score total">
+          <path id="arcBear" fill="none" stroke-width="16"/>
+          <path id="arcNeu" fill="none" stroke-width="16"/>
+          <path id="arcBull" fill="none" stroke-width="16"/>
+          <g id="ticks"></g>
+          <g id="needle">
+            <line x1="120" y1="122" x2="40" y2="122" stroke="var(--fg)" stroke-width="3" stroke-linecap="round"/>
+            <circle cx="120" cy="122" r="7" fill="var(--panel)" stroke="var(--fg)" stroke-width="3"/>
+          </g>
+          <text x="22" y="139" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace" text-anchor="middle">−20</text>
+          <text x="218" y="139" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace" text-anchor="middle">+20</text>
+        </svg>
+      </div>
+      <div id="updated" class="updated">Chargement…</div>
+      <div class="scores">
+        <div class="score-row total"><span>Score total</span><b id="sTotal" class="neu">0</b></div>
+        <div class="score-row"><span>Technique</span><b id="sTech" class="neu">0</b></div>
+        <div class="score-row"><span>Sentiment</span><b id="sSent" class="neu">0</b></div>
+        <div class="score-row"><span>Macroéconomie</span><b id="sMacro" class="neu">0</b></div>
+      </div>
+      <div class="hist">
+        <h2>Historique macro + sentiment</h2>
+        <div id="histBox"><p class="empty-hist">L'historique se remplit chaque jour où de nouvelles données sortent.</p></div>
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Indicateurs">
+      <div class="tablewrap"><table id="tbl"></table></div>
+    </section>
+  </main>
+
+  <section class="panel how">
+    <h2>Comment le score se calcule</h2>
+    <ul>
+      <li><strong>Surprise = Réel − Prévision.</strong> Une donnée plus forte que prévu renforce le dollar et pousse la Fed à garder les taux hauts.</li>
+      <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
+      <li><strong>Nasdaq :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
+      <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1. <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
+      <li>Total de −20 à +20 : ±3 et plus = haussier/baissier, ±8 et plus = très haussier/très baissier.</li>
+    </ul>
+    <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. Ta tendance 4H/Daily et ta saisonnalité (bouton « Ma tendance ») sont gardées dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
+  </section>
+</div>
+
+<script>
+(function(){
+  const INDICATORS = [
+    {id:'gdp',     cat:'growth', name:'PIB QoQ annualisé', unit:'%', dir:1},
+    {id:'pmi_mfg', cat:'growth', name:'PMI manufacturier (ISM)', unit:'', dir:1},
+    {id:'pmi_srv', cat:'growth', name:'PMI services (ISM)', unit:'', dir:1},
+    {id:'retail',  cat:'growth', name:'Ventes au détail MoM', unit:'%', dir:1},
+    {id:'conf',    cat:'growth', name:'Confiance des consommateurs', unit:'', dir:1},
+    {id:'cpi',     cat:'infl',   name:'CPI YoY', unit:'%', dir:1},
+    {id:'ppi',     cat:'infl',   name:'PPI YoY', unit:'%', dir:1},
+    {id:'pce',     cat:'infl',   name:'PCE YoY', unit:'%', dir:1},
+    {id:'nfp',     cat:'jobs',   name:'NFP (emplois non agricoles)', unit:'k', dir:1},
+    {id:'unemp',   cat:'jobs',   name:'Taux de chômage', unit:'%', dir:-1, hint:'plus haut = dollar faible'},
+    {id:'claims',  cat:'jobs',   name:'Demandes de chômage hebdo', unit:'k', dir:-1, hint:'plus haut = dollar faible'},
+    {id:'adp',     cat:'jobs',   name:'ADP emploi', unit:'k', dir:1},
+    {id:'jolts',   cat:'jobs',   name:'JOLTS offres d’emploi', unit:'M', dir:1},
+  ];
+  const ASSETS = {
+    xauusd:{name:'XAUUSD · Or', hint:'Données fortes = baissier pour l’or'},
+    nasdaq:{name:'Nasdaq · TQQQ / SOXL', hint:'Croissance forte = haussier, inflation chaude = baissier'}
+  };
+  const blankAsset = () => ({trend:'neutral', season:'neutral', cotLong:null, cotChange:null, crowdLong:null});
+  const state = {
+    asset:'xauusd', edit:false, canWrite:null, db:null,
+    econ:{values:{}, yield2y:'flat', updatedAt:null},
+    assets:{xauusd:blankAsset(), nasdaq:blankAsset()},
+    history:[], loaded:false
+  };
+  try{ const a = localStorage.getItem('sc-asset'); if(a && ASSETS[a]) state.asset = a; }catch(e){}
+
+  const $ = id => document.getElementById(id);
+  const num = v => (v===null || v===undefined || v==='' || isNaN(+v)) ? null : +v;
+  const sgn = x => x>0?1:(x<0?-1:0);
+
+  // ---------- scoring ----------
+  function impact(asset, cat, usd){
+    if(asset==='xauusd') return -usd || 0;
+    return (cat==='infl' ? -usd : usd) || 0;
+  }
+  function econSignal(ind, asset){
+    const v = state.econ.values[ind.id];
+    if(!v) return null;
+    const a = num(v.a), f = num(v.f);
+    if(a===null || f===null) return null;
+    const usd = sgn(Math.round((a-f)*10000)) * ind.dir;
+    return impact(asset, ind.cat, usd);
+  }
+  function compute(asset){
+    const A = state.assets[asset] || blankAsset();
+    const r = {};
+    r.trend = A.trend==='bull'?2:A.trend==='bear'?-2:0;
+    r.season = A.season==='bull'?1:A.season==='bear'?-1:0;
+    const cl = num(A.cotLong), cc = num(A.cotChange), cr = num(A.crowdLong);
+    r.cotNet = cl===null?0:sgn(cl-50);
+    r.cotChg = cc===null?0:sgn(cc);
+    r.crowd = cr===null?0:(cr>=60?-1:cr<=40?1:0);
+    r.yield = state.econ.yield2y==='falling'?1:state.econ.yield2y==='rising'?-1:0;
+    const cats = {growth:0, infl:r.yield, jobs:0};
+    INDICATORS.forEach(ind=>{ const s = econSignal(ind, asset); r[ind.id]=s; if(s) cats[ind.cat]+=s; });
+    const tech = r.trend + r.season;
+    const inst = r.cotNet + r.cotChg;
+    const sent = inst + r.crowd;
+    const macro = cats.growth + cats.infl + cats.jobs;
+    return {rows:r, cats:{tech, inst, crowd:r.crowd, ...cats}, tech, sent, macro, total: tech+sent+macro};
+  }
+  function label(s, strongAt){
+    if(s>=strongAt) return ['Très haussier','bull'];
+    if(s<=-strongAt) return ['Très baissier','bear'];
+    if(s>0) return ['Haussier','bull'];
+    if(s<0) return ['Baissier','bear'];
+    return ['Neutre','neu'];
+  }
+  function verdict(total){
+    if(total>=8) return ['Très haussier','bull'];
+    if(total>=3) return ['Haussier','bull'];
+    if(total<=-8) return ['Très baissier','bear'];
+    if(total<=-3) return ['Baissier','bear'];
+    return ['Neutre','neu'];
+  }
+  const cls = s => s>0?'bull':s<0?'bear':'neu';
+  const chip = s => s===null||s===undefined ? '<span class="chip txt neu">—</span>'
+    : `<span class="chip ${cls(s)}">${s>0?'Haussier':s<0?'Baissier':'Neutre'}</span>`;
+  const catChip = (s, strong) => { const [t,c]=label(s,strong); return `<span class="chip txt ${c}">${t}</span>`; };
+
+  // ---------- formatting ----------
+  function fmt(v, unit, signed){
+    v = num(v); if(v===null) return '—';
+    let s = Math.abs(v)>=100 ? (+v.toFixed(1)).toString() : (+v.toFixed(2)).toString();
+    if(signed && v>0) s = '+'+s;
+    s = s.replace('-', '−');
+    return s + (unit||'');
+  }
+  function fmtDate(iso){
+    if(!iso) return '—';
+    const d = new Date(iso+'T12:00:00');
+    if(isNaN(d)) return '—';
+    return d.toLocaleDateString('fr-CA',{day:'numeric',month:'short'});
+  }
+  const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+
+  // ---------- table ----------
+  const opt = (val, cur, txt) => `<option value="${val}"${val===cur?' selected':''}>${txt}</option>`;
+  function triSelect(id, cur){
+    return `<select id="${id}" data-field="${id}">${opt('bull',cur,'Haussière')}${opt('neutral',cur,'Neutre')}${opt('bear',cur,'Baissière')}</select>`;
+  }
+  function numInput(id, val, extra){ return `<input type="number" step="any" id="${id}" value="${num(val)===null?'':num(val)}" ${extra||''}>`; }
+
+  function renderTable(){
+    const asset = state.asset, C = compute(asset), r = C.rows, A = state.assets[asset], E = state.edit;
+    const head = (title, sigHtml, cols) =>
+      `<tr class="cat"><th>${title}</th><th class="sig">${sigHtml}</th>${cols.map(c=>`<th class="colh">${c}</th>`).join('')}</tr>`;
+    let h = '';
+
+    h += head('Technique', catChip(C.cats.tech,3), ['','','','']);
+    h += `<tr><td class="name">Tendance 4H / Daily</td><td class="sig">${chip(r.trend)}</td>
+      <td class="desc" colspan="4">${E?triSelect('in-trend',A.trend):'Ta lecture de la tendance sur le 4H et le Daily (±2)'}</td></tr>`;
+    h += `<tr><td class="name">Saisonnalité</td><td class="sig">${chip(r.season)}</td>
+      <td class="desc" colspan="4">${E?triSelect('in-season',A.season):'Comportement habituel de l’actif à ce moment de l’année (±1)'}</td></tr>`;
+
+    h += head('Activité institutionnelle', catChip(C.cats.inst,2), ['Long %','Short %','Changement %','']);
+    const cl = num(A.cotLong);
+    h += `<tr><td class="name">COT · positionnement net<small>non-commerciaux</small></td><td class="sig">${cl===null?chip(null):chip(r.cotNet)}</td>
+      <td class="num">${false?numInput('in-cotLong',A.cotLong,'min="0" max="100"'):fmt(cl,'%')}</td>
+      <td class="num">${cl===null?'—':fmt(100-cl,'%')}</td><td class="num"></td><td></td></tr>`;
+    const cc = num(A.cotChange);
+    h += `<tr><td class="name">COT · dernier changement</td><td class="sig">${cc===null?chip(null):chip(r.cotChg)}</td>
+      <td class="num"></td><td class="num"></td>
+      <td class="num ${cc>0?'pos':cc<0?'neg':''}">${false?numInput('in-cotChange',A.cotChange):fmt(cc,'%',true)}</td><td></td></tr>`;
+
+    h += head('Sentiment de la foule', catChip(C.cats.crowd,2), ['Retail long %','Retail short %','','']);
+    const cr = num(A.crowdLong);
+    h += `<tr><td class="name">Positionnement retail<small>contrarien : foule très longue = baissier</small></td><td class="sig">${cr===null?chip(null):chip(r.crowd)}</td>
+      <td class="num">${false?numInput('in-crowdLong',A.crowdLong,'min="0" max="100"'):fmt(cr,'%')}</td>
+      <td class="num">${cr===null?'—':fmt(100-cr,'%')}</td><td></td><td></td></tr>`;
+
+    const groups = [['growth','Croissance économique'],['infl','Inflation'],['jobs','Marché de l’emploi']];
+    groups.forEach(([cat,title])=>{
+      h += head(title, catChip(C.cats[cat],3), ['Réel','Prévision','Surprise','Date']);
+      INDICATORS.filter(i=>i.cat===cat).forEach(ind=>{
+        const v = state.econ.values[ind.id] || {};
+        const a = num(v.a), f = num(v.f), s = (a!==null && f!==null) ? Math.round((a-f)*10000)/10000 : null;
+        const sig = r[ind.id];
+        const sc = sig>0?'pos':sig<0?'neg':'';
+        h += `<tr><td class="name">${esc(ind.name)}${ind.hint?`<small>${ind.hint}</small>`:''}</td><td class="sig">${chip(sig)}</td>
+          <td class="num">${false?numInput('a-'+ind.id,v.a):fmt(a,ind.unit)}</td>
+          <td class="num">${false?numInput('f-'+ind.id,v.f):fmt(f,ind.unit)}</td>
+          <td class="num ${sc}">${false?'':fmt(s,ind.unit,true)}</td>
+          <td class="num">${false?`<input type="date" id="d-${ind.id}" value="${esc(v.d||'')}">`:fmtDate(v.d)}</td></tr>`;
+      });
+      if(cat==='infl'){
+        const y = state.econ.yield2y;
+        h += `<tr><td class="name">Rendement 2 ans (tendance)</td><td class="sig">${chip(r.yield)}</td>
+          <td class="desc" colspan="4">${false?`<select id="in-yield">${opt('falling',y,'En baisse (dovish)')}${opt('flat',y,'Stable')}${opt('rising',y,'En hausse (hawkish)')}</select>`
+          : (y==='falling'?'Le 2 ans baisse : marché qui anticipe des baisses de taux':y==='rising'?'Le 2 ans monte : marché qui anticipe des taux plus hauts':'Le 2 ans est stable')}</td></tr>`;
+      }
+    });
+    $('tbl').innerHTML = h;
+  }
+
+  // ---------- summary ----------
+  function setScore(el, v){ el.textContent = (v>0?'+':'')+String(v).replace('-','−'); el.className = cls(v); }
+  function polar(score, rad){
+    const t = Math.PI*(1-(Math.max(-20,Math.min(20,score))+20)/40);
+    return [120+rad*Math.cos(t), 122-rad*Math.sin(t)];
+  }
+  function arc(from, to, rad){
+    const [x1,y1]=polar(from,rad), [x2,y2]=polar(to,rad);
+    return `M${x1.toFixed(1)} ${y1.toFixed(1)} A${rad} ${rad} 0 0 1 ${x2.toFixed(1)} ${y2.toFixed(1)}`;
+  }
+  function drawGaugeStatic(){
+    $('arcBear').setAttribute('d', arc(-20,-3.2,92)); $('arcBear').setAttribute('stroke','var(--bear)');
+    $('arcNeu').setAttribute('d', arc(-2.8,2.8,92)); $('arcNeu').setAttribute('stroke','var(--neutral)');
+    $('arcBull').setAttribute('d', arc(3.2,20,92)); $('arcBull').setAttribute('stroke','var(--bull)');
+    let t='';
+    for(let s=-20;s<=20;s+=5){ const [x1,y1]=polar(s,102),[x2,y2]=polar(s,108);
+      t+=`<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="var(--muted)" stroke-width="1.5"/>`; }
+    $('ticks').innerHTML = t;
+  }
+  function renderSummary(){
+    const C = compute(state.asset);
+    const [vt,vc] = verdict(C.total);
+    $('verdict').textContent = vt; $('verdict').className = 'verdict '+vc;
+    setScore($('sTotal'),C.total); setScore($('sTech'),C.tech); setScore($('sSent'),C.sent); setScore($('sMacro'),C.macro);
+    const deg = 180*((Math.max(-20,Math.min(20,C.total))+20)/40);
+    $('needle').style.transformOrigin = '120px 122px';
+    $('needle').style.transform = `rotate(${deg}deg)`;
+    $('symName').textContent = ASSETS[state.asset].name;
+    $('symHint').textContent = ASSETS[state.asset].hint;
+    const u = state.econ.updatedAt;
+    $('updated').textContent = !state.loaded ? 'Chargement…' : u
+      ? 'Mis à jour le '+new Date(u).toLocaleString('fr-CA',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})
+      : 'Aucune donnée encore : la première mise à jour arrive bientôt.';
+    document.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-selected', String(b.dataset.asset===state.asset)));
+  }
+  function renderHistory(){
+    const pts = state.history.filter(h=>h[state.asset]).map(h=>({date:h.date, v:(h[state.asset].sent||0)+(h[state.asset].macro||0)}));
+    const box = $('histBox');
+    if(!pts.length){ box.innerHTML = '<p class="empty-hist">L’historique se remplit chaque jour où tu modifies les données.</p>'; return; }
+    const W=300,H=130,pad=18, mid=(H-pad)/2, scale=(mid-6)/20;
+    const bw = Math.min(18, (W-8)/pts.length - 2);
+    let g = `<line x1="0" x2="${W}" y1="${mid}" y2="${mid}" stroke="var(--line)"/>`;
+    g += `<text x="0" y="10" font-size="9" fill="var(--muted)" font-family="IBM Plex Mono, monospace">+20</text>`;
+    g += `<text x="0" y="${H-pad-2}" font-size="9" fill="var(--muted)" font-family="IBM Plex Mono, monospace">−20</text>`;
+    const step = (W-24)/pts.length;
+    pts.forEach((p,i)=>{
+      const x = 24 + i*step + (step-bw)/2, hgt = Math.max(1.5, Math.abs(p.v)*scale);
+      const y = p.v>=0 ? mid-hgt : mid;
+      g += `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${hgt.toFixed(1)}" fill="${p.v>0?'var(--bull)':p.v<0?'var(--bear)':'var(--neutral)'}"><title>${fmtDate(p.date)} : ${p.v}</title></rect>`;
+    });
+    const first = pts[0], last = pts[pts.length-1];
+    g += `<text x="24" y="${H-3}" font-size="10" fill="var(--muted)" font-family="IBM Plex Mono, monospace">${fmtDate(first.date)}</text>`;
+    if(pts.length>1) g += `<text x="${W}" y="${H-3}" font-size="10" fill="var(--muted)" text-anchor="end" font-family="IBM Plex Mono, monospace">${fmtDate(last.date)}</text>`;
+    box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Historique du score total">${g}</svg>`;
+  }
+  function renderAll(){ renderSummary(); renderTable(); renderHistory(); }
+
+  // ---------- editing ----------
+  let dirty = {econ:false, xauusd:false, nasdaq:false}, saveTimer = null, chain = Promise.resolve();
+  function note(msg){ const n=$('note'); if(msg){ n.textContent=msg; n.hidden=false; } else n.hidden=true; }
+
+  $('tbl').addEventListener('input', onEdit);
+  $('tbl').addEventListener('change', onEdit);
+  function onEdit(e){
+    const t = e.target, id = t.id; if(!id) return;
+    const A = state.assets[state.asset];
+    if(id==='in-trend'){ A.trend=t.value; dirty[state.asset]=true; }
+    else if(id==='in-season'){ A.season=t.value; dirty[state.asset]=true; }
+    else if(id==='in-cotLong'){ A.cotLong=num(t.value); dirty[state.asset]=true; }
+    else if(id==='in-cotChange'){ A.cotChange=num(t.value); dirty[state.asset]=true; }
+    else if(id==='in-crowdLong'){ A.crowdLong=num(t.value); dirty[state.asset]=true; }
+    else if(id==='in-yield'){ state.econ.yield2y=t.value; dirty.econ=true; }
+    else {
+      const m = id.match(/^([afd])-(.+)$/); if(!m) return;
+      const v = state.econ.values[m[2]] || (state.econ.values[m[2]]={});
+      v[m[1]] = m[1]==='d' ? (t.value||null) : num(t.value);
+      dirty.econ = true;
+    }
+    if(e.type==='change' || t.tagName==='SELECT') refreshSignals();
+    else { clearTimeout(refreshSignals._t); refreshSignals._t = setTimeout(refreshSignals, 250); }
+    scheduleSave();
+  }
+  // update chips without rebuilding inputs
+  function refreshSignals(){
+    const focusId = document.activeElement && document.activeElement.id;
+    const sel = focusId ? [document.activeElement.selectionStart] : null;
+    renderTable(); renderSummary();
+    if(focusId){ const el=$(focusId); if(el){ el.focus(); } }
+  }
+  function scheduleSave(){
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(flush, 900);
+  }
+  function todayISO(){ const d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
+  const TKEY='scorecard-tendance-v1';
+  function saveTech(){
+    try{ localStorage.setItem(TKEY, JSON.stringify({xauusd:{trend:state.assets.xauusd.trend, season:state.assets.xauusd.season},
+      nasdaq:{trend:state.assets.nasdaq.trend, season:state.assets.nasdaq.season}})); note(''); }
+    catch(e){ note('Ton navigateur bloque la sauvegarde de ta tendance (navigation privée?).'); }
+  }
+  function flush(){ clearTimeout(saveTimer); if(dirty.xauusd||dirty.nasdaq){ dirty={econ:false,xauusd:false,nasdaq:false}; saveTech(); } }
+  function setEdit(on){
+    state.edit = on;
+    $('editBtn').classList.toggle('on', on);
+    $('editBtn').textContent = on ? 'Terminé' : 'Ma tendance';
+    renderAll();
+  }
+  $('editBtn').addEventListener('click', ()=>{ if(state.edit){ flush(); setEdit(false); } else setEdit(true); });
+  document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click', ()=>{
+    state.asset = b.dataset.asset; try{ localStorage.setItem('sc-asset', state.asset); }catch(e){}
+    renderAll();
+  }));
+
+  // ---------- data ----------
+  drawGaugeStatic();
+  renderAll();
+
+  function localTech(){ try{ return JSON.parse(localStorage.getItem(TKEY)||'null')||{}; }catch(e){ return {}; } }
+  function apply(d){
+    const t = localTech();
+    state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', updatedAt:d.updatedAt||null};
+    ['xauusd','nasdaq'].forEach(k=>{
+      state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), ...(t[k]||{})};
+    });
+    state.history = Array.isArray(d.history) ? d.history.slice(-60) : [];
+  }
+  async function refresh(){
+    try{
+      const r = await fetch('data.json?t='+Date.now(), {cache:'no-store'});
+      if(!r.ok) throw new Error(r.status);
+      const d = await r.json();
+      if(state.edit) return;
+      apply(d); state.loaded = true; note(''); renderAll();
+    }catch(e){
+      state.loaded = true; renderSummary();
+      note('Impossible de charger les données pour l’instant. Réessaie dans un moment.');
+    }
+  }
+  refresh();
+  setInterval(refresh, 30*60*1000);
+  document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='visible') refresh(); });
+})();
+</script>
+
+</body>
+</html>
