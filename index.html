@@ -171,7 +171,8 @@ select{font-family:var(--f-body)}
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
       <li><strong>Nasdaq :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1. <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
-      <li>Total de −20 à +20 : ±3 et plus = haussier/baissier, ±8 et plus = très haussier/très baissier.</li>
+      <li>Rendements 2 ans et 10 ans : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
+      <li>Total de −21 à +21 : ±3 et plus = haussier/baissier, ±8 et plus = très haussier/très baissier.</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. Ta tendance 4H/Daily et ta saisonnalité (bouton « Ma tendance ») sont gardées dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
@@ -234,7 +235,9 @@ select{font-family:var(--f-body)}
     r.cotChg = cc===null?0:sgn(cc);
     r.crowd = cr===null?0:(cr>=60?-1:cr<=40?1:0);
     r.yield = state.econ.yield2y==='falling'?1:state.econ.yield2y==='rising'?-1:0;
-    const cats = {growth:0, infl:r.yield, jobs:0};
+    const y10 = state.econ.yield10y;
+    r.yield10 = y10==='falling'?1:y10==='rising'?-1:(y10==='flat'?0:null);
+    const cats = {growth:0, infl:r.yield+(r.yield10||0), jobs:0};
     INDICATORS.forEach(ind=>{ const s = econSignal(ind, asset); r[ind.id]=s; if(s) cats[ind.cat]+=s; });
     const tech = r.trend + r.season;
     const inst = r.cotNet + r.cotChg;
@@ -277,6 +280,7 @@ select{font-family:var(--f-body)}
   }
   const esc = s => String(s).replace(/[&<>"]/g, c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 
+  const EDIT10 = false;
   // ---------- table ----------
   const opt = (val, cur, txt) => `<option value="${val}"${val===cur?' selected':''}>${txt}</option>`;
   function triSelect(id, cur){
@@ -331,6 +335,10 @@ select{font-family:var(--f-body)}
         h += `<tr><td class="name">Rendement 2 ans (tendance)</td><td class="sig">${chip(r.yield)}</td>
           <td class="desc" colspan="4">${false?`<select id="in-yield">${opt('falling',y,'En baisse (dovish)')}${opt('flat',y,'Stable')}${opt('rising',y,'En hausse (hawkish)')}</select>`
           : (y==='falling'?'Le 2 ans baisse : marché qui anticipe des baisses de taux':y==='rising'?'Le 2 ans monte : marché qui anticipe des taux plus hauts':'Le 2 ans est stable')}</td></tr>`;
+        const y10 = state.econ.yield10y;
+        h += `<tr><td class="name">Rendement 10 ans (tendance)</td><td class="sig">${chip(r.yield10)}</td>
+          <td class="desc" colspan="4">${E&&EDIT10?`<select id="in-yield10">${opt('falling',y10,'En baisse')}${opt('flat',y10,'Stable')}${opt('rising',y10,'En hausse')}</select>`
+          : (y10==='falling'?'Le 10 ans baisse : taux réels et dollar sous pression':y10==='rising'?'Le 10 ans monte : coût d’opportunité plus élevé pour l’or':y10==='flat'?'Le 10 ans est stable':'Pas encore de donnée')}</td></tr>`;
       }
     });
     $('tbl').innerHTML = h;
@@ -408,6 +416,7 @@ select{font-family:var(--f-body)}
     else if(id==='in-cotChange'){ A.cotChange=num(t.value); dirty[state.asset]=true; }
     else if(id==='in-crowdLong'){ A.crowdLong=num(t.value); dirty[state.asset]=true; }
     else if(id==='in-yield'){ state.econ.yield2y=t.value; dirty.econ=true; }
+    else if(id==='in-yield10'){ state.econ.yield10y=t.value; dirty.econ=true; }
     else {
       const m = id.match(/^([afd])-(.+)$/); if(!m) return;
       const v = state.econ.values[m[2]] || (state.econ.values[m[2]]={});
@@ -456,7 +465,7 @@ select{font-family:var(--f-body)}
   function localTech(){ try{ return JSON.parse(localStorage.getItem(TKEY)||'null')||{}; }catch(e){ return {}; } }
   function apply(d){
     const t = localTech();
-    state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', updatedAt:d.updatedAt||null};
+    state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(d.econ||{}).yield10y||null, updatedAt:d.updatedAt||null};
     ['xauusd','nasdaq'].forEach(k=>{
       state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), ...(t[k]||{})};
     });
