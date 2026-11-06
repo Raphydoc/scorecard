@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T21:35:00.000Z",
+  "updatedAt": "2026-11-06T22:33:00.000Z",
   "econ": {
     "yield2y": "falling",
     "values": {
@@ -68,7 +68,8 @@
         "f": 7.15,
         "d": "2026-11-03"
       }
-    }
+    },
+    "yield10y": "falling"
   },
   "assets": {
     "xauusd": {
@@ -87,11 +88,11 @@
       "date": "2026-11-06",
       "xauusd": {
         "sent": -1,
-        "macro": -9
+        "macro": -8
       },
       "nasdaq": {
         "sent": 0,
-        "macro": 7
+        "macro": 8
       }
     }
   ]
