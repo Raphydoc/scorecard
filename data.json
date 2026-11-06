@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-06T22:45:00.000Z",
+  "updatedAt": "2026-11-06T22:58:00.000Z",
   "econ": {
     "values": {
       "gdp": {
@@ -74,22 +74,26 @@
     "xauusd": {
       "cotLong": 84.33,
       "cotChange": -1.39,
-      "crowdLong": 68
+      "crowdLong": 68,
+      "season": "bull"
     },
     "nasdaq": {
       "cotLong": 65.89,
       "cotChange": -4.41,
-      "crowdLong": 62
+      "crowdLong": 62,
+      "season": "bull"
     },
     "spx500": {
       "cotLong": 39.0,
       "cotChange": 0.87,
-      "crowdLong": 66
+      "crowdLong": 66,
+      "season": "bull"
     },
     "us30": {
       "cotLong": 71.45,
       "cotChange": 6.01,
-      "crowdLong": 85
+      "crowdLong": 85,
+      "season": "bull"
     }
   },
   "history": [
