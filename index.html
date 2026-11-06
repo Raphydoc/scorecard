@@ -172,7 +172,7 @@ select{font-family:var(--f-body)}
       <li><strong>Surprise = Réel − Prévision.</strong> Une donnée plus forte que prévu renforce le dollar et pousse la Fed à garder les taux hauts.</li>
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
       <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
-      <li><strong>Données propres à l'actif</strong> (Nasdaq, S&amp;P 500, Dow Jones) : mieux que prévu = +1, moins bien = −1. Elles comptent seulement pour leur actif.</li>
+      <li><strong>Croissance des bénéfices des géants tech</strong> (Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.</li>
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1. <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li>Total de −20 à +20 : ±3 et plus = haussier/baissier, ±8 et plus = très haussier/très baissier.</li>
@@ -198,9 +198,6 @@ select{font-family:var(--f-body)}
     {id:'adp',     cat:'jobs',   name:'ADP emploi', unit:'k', dir:1},
     {id:'jolts',   cat:'jobs',   name:'JOLTS offres d’emploi', unit:'M', dir:1},
     {id:'mega_eps', cat:'spec', only:'nasdaq', name:'Croissance des bénéfices des géants tech', unit:'%', dir:1, hint:'Mag 7, trimestre en cours : réel vs prévu'},
-    {id:'sp_beat',  cat:'spec', only:'spx500', name:'% du S&P 500 qui bat les prévisions', unit:'%', dir:1, hint:'prévision = moyenne 5 ans (FactSet)'},
-    {id:'durable',  cat:'spec', only:'us30',   name:'Commandes de biens durables MoM', unit:'%', dir:1},
-    {id:'indprod',  cat:'spec', only:'us30',   name:'Production industrielle MoM', unit:'%', dir:1},
   ];
   const ASSETS = {
     xauusd:{name:'XAUUSD · Or', hint:'Données fortes = baissier pour l’or'},
