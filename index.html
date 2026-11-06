@@ -172,6 +172,7 @@ select{font-family:var(--f-body)}
       <li><strong>Surprise = Réel − Prévision.</strong> Une donnée plus forte que prévu renforce le dollar et pousse la Fed à garder les taux hauts.</li>
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
       <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
+      <li><strong>Données propres à l'actif</strong> (Nasdaq, S&amp;P 500, Dow Jones) : mieux que prévu = +1, moins bien = −1. Elles comptent seulement pour leur actif.</li>
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1. <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li>Total de −20 à +20 : ±3 et plus = haussier/baissier, ±8 et plus = très haussier/très baissier.</li>
@@ -196,6 +197,10 @@ select{font-family:var(--f-body)}
     {id:'claims',  cat:'jobs',   name:'Demandes de chômage hebdo', unit:'k', dir:-1, hint:'plus haut = dollar faible'},
     {id:'adp',     cat:'jobs',   name:'ADP emploi', unit:'k', dir:1},
     {id:'jolts',   cat:'jobs',   name:'JOLTS offres d’emploi', unit:'M', dir:1},
+    {id:'mega_eps', cat:'spec', only:'nasdaq', name:'Croissance des bénéfices des géants tech', unit:'%', dir:1, hint:'Mag 7, trimestre en cours : réel vs prévu'},
+    {id:'sp_beat',  cat:'spec', only:'spx500', name:'% du S&P 500 qui bat les prévisions', unit:'%', dir:1, hint:'prévision = moyenne 5 ans (FactSet)'},
+    {id:'durable',  cat:'spec', only:'us30',   name:'Commandes de biens durables MoM', unit:'%', dir:1},
+    {id:'indprod',  cat:'spec', only:'us30',   name:'Production industrielle MoM', unit:'%', dir:1},
   ];
   const ASSETS = {
     xauusd:{name:'XAUUSD · Or', hint:'Données fortes = baissier pour l’or'},
@@ -218,6 +223,7 @@ select{font-family:var(--f-body)}
 
   // ---------- scoring ----------
   function impact(asset, cat, usd){
+    if(cat==='spec') return usd || 0;
     if(asset==='xauusd') return -usd || 0;
     return (cat==='infl' ? -usd : usd) || 0;
   }
@@ -240,12 +246,12 @@ select{font-family:var(--f-body)}
     r.crowd = cr===null?0:(cr>=60?-1:cr<=40?1:0);
     const y10 = state.econ.yield10y;
     r.yield10 = y10==='falling'?1:y10==='rising'?-1:(y10==='flat'?0:null);
-    const cats = {growth:0, infl:(r.yield10||0), jobs:0};
-    INDICATORS.forEach(ind=>{ const s = econSignal(ind, asset); r[ind.id]=s; if(s) cats[ind.cat]+=s; });
+    const cats = {growth:0, infl:(r.yield10||0), jobs:0, spec:0};
+    INDICATORS.forEach(ind=>{ if(ind.only && ind.only!==asset){ r[ind.id]=null; return; } const s = econSignal(ind, asset); r[ind.id]=s; if(s) cats[ind.cat]+=s; });
     const tech = r.trend + r.season;
     const inst = r.cotNet + r.cotChg;
     const sent = inst + r.crowd;
-    const macro = cats.growth + cats.infl + cats.jobs;
+    const macro = cats.growth + cats.infl + cats.jobs + cats.spec;
     return {rows:r, cats:{tech, inst, crowd:r.crowd, ...cats}, tech, sent, macro, total: tech+sent+macro};
   }
   function label(s, strongAt){
@@ -319,10 +325,11 @@ select{font-family:var(--f-body)}
       <td class="num">${false?numInput('in-crowdLong',A.crowdLong,'min="0" max="100"'):fmt(cr,'%')}</td>
       <td class="num">${cr===null?'—':fmt(100-cr,'%')}</td><td></td><td></td></tr>`;
 
-    const groups = [['growth','Croissance économique'],['infl','Inflation'],['jobs','Marché de l’emploi']];
+    const groups = [['growth','Croissance économique'],['infl','Inflation'],['jobs','Marché de l’emploi'],['spec','Données propres à l’actif']];
     groups.forEach(([cat,title])=>{
+      if(!INDICATORS.some(i=>i.cat===cat && (!i.only||i.only===asset))) return;
       h += head(title, catChip(C.cats[cat],3), ['Réel','Prévision','Surprise','Date']);
-      INDICATORS.filter(i=>i.cat===cat).forEach(ind=>{
+      INDICATORS.filter(i=>i.cat===cat && (!i.only||i.only===asset)).forEach(ind=>{
         const v = state.econ.values[ind.id] || {};
         const a = num(v.a), f = num(v.f), s = (a!==null && f!==null) ? Math.round((a-f)*10000)/10000 : null;
         const sig = r[ind.id];
