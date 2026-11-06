@@ -85,6 +85,11 @@
       "cotLong": 39.0,
       "cotChange": 0.87,
       "crowdLong": 66
+    },
+    "us30": {
+      "cotLong": 71.45,
+      "cotChange": 6.01,
+      "crowdLong": 85
     }
   },
   "history": [
@@ -100,6 +105,10 @@
       },
       "spx500": {
         "sent": -1,
+        "macro": 7
+      },
+      "us30": {
+        "sent": 1,
         "macro": 7
       }
     }

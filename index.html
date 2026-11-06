@@ -122,6 +122,7 @@ select{font-family:var(--f-body)}
         <button id="tab-xauusd" role="tab" aria-selected="true" data-asset="xauusd">XAUUSD</button>
         <button id="tab-nasdaq" role="tab" aria-selected="false" data-asset="nasdaq">Nasdaq</button>
         <button id="tab-spx500" role="tab" aria-selected="false" data-asset="spx500">S&amp;P 500</button>
+        <button id="tab-us30" role="tab" aria-selected="false" data-asset="us30">Dow Jones</button>
       </div>
       <button id="editBtn" class="btn" type="button">Ma tendance</button>
     </div>
@@ -170,7 +171,7 @@ select{font-family:var(--f-body)}
     <ul>
       <li><strong>Surprise = Réel − Prévision.</strong> Une donnée plus forte que prévu renforce le dollar et pousse la Fed à garder les taux hauts.</li>
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
-      <li><strong>Nasdaq et S&amp;P 500 :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
+      <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1. <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li>Total de −20 à +20 : ±3 et plus = haussier/baissier, ±8 et plus = très haussier/très baissier.</li>
@@ -199,13 +200,14 @@ select{font-family:var(--f-body)}
   const ASSETS = {
     xauusd:{name:'XAUUSD · Or', hint:'Données fortes = baissier pour l’or'},
     nasdaq:{name:'Nasdaq', hint:'Croissance forte = haussier, inflation chaude = baissier'},
-    spx500:{name:'S&P 500', hint:'Croissance forte = haussier, inflation chaude = baissier'}
+    spx500:{name:'S&P 500', hint:'Croissance forte = haussier, inflation chaude = baissier'},
+    us30:{name:'Dow Jones', hint:'Croissance forte = haussier, inflation chaude = baissier'}
   };
   const blankAsset = () => ({trend:'neutral', season:'neutral', cotLong:null, cotChange:null, crowdLong:null});
   const state = {
     asset:'xauusd', edit:false, canWrite:null, db:null,
     econ:{values:{}, yield2y:'flat', updatedAt:null},
-    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset()},
+    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset(), us30:blankAsset()},
     history:[], loaded:false
   };
   try{ const a = localStorage.getItem('sc-asset'); if(a && ASSETS[a]) state.asset = a; }catch(e){}
@@ -399,7 +401,7 @@ select{font-family:var(--f-body)}
   function renderAll(){ renderSummary(); renderTable(); renderHistory(); }
 
   // ---------- editing ----------
-  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false}, saveTimer = null, chain = Promise.resolve();
+  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false}, saveTimer = null, chain = Promise.resolve();
   function note(msg){ const n=$('note'); if(msg){ n.textContent=msg; n.hidden=false; } else n.hidden=true; }
 
   $('tbl').addEventListener('input', onEdit);
@@ -439,10 +441,11 @@ select{font-family:var(--f-body)}
   function saveTech(){
     try{ localStorage.setItem(TKEY, JSON.stringify({xauusd:{trend:state.assets.xauusd.trend, season:state.assets.xauusd.season},
       nasdaq:{trend:state.assets.nasdaq.trend, season:state.assets.nasdaq.season},
-      spx500:{trend:state.assets.spx500.trend, season:state.assets.spx500.season}})); note(''); }
+      spx500:{trend:state.assets.spx500.trend, season:state.assets.spx500.season},
+      us30:{trend:state.assets.us30.trend, season:state.assets.us30.season}})); note(''); }
     catch(e){ note('Ton navigateur bloque la sauvegarde de ta tendance (navigation privée?).'); }
   }
-  function flush(){ clearTimeout(saveTimer); if(dirty.xauusd||dirty.nasdaq||dirty.spx500){ dirty={econ:false,xauusd:false,nasdaq:false,spx500:false}; saveTech(); } }
+  function flush(){ clearTimeout(saveTimer); if(dirty.xauusd||dirty.nasdaq||dirty.spx500||dirty.us30){ dirty={econ:false,xauusd:false,nasdaq:false,spx500:false,us30:false}; saveTech(); } }
   function setEdit(on){
     state.edit = on;
     $('editBtn').classList.toggle('on', on);
@@ -463,7 +466,7 @@ select{font-family:var(--f-body)}
   function apply(d){
     const t = localTech();
     state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(d.econ||{}).yield10y||null, updatedAt:d.updatedAt||null};
-    ['xauusd','nasdaq','spx500'].forEach(k=>{
+    ['xauusd','nasdaq','spx500','us30'].forEach(k=>{
       state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), ...(t[k]||{})};
     });
     state.history = Array.isArray(d.history) ? d.history.slice(-60) : [];
