@@ -80,6 +80,11 @@
       "cotLong": 65.89,
       "cotChange": -4.41,
       "crowdLong": 62
+    },
+    "spx500": {
+      "cotLong": 39.0,
+      "cotChange": 0.87,
+      "crowdLong": 66
     }
   },
   "history": [
@@ -90,6 +95,10 @@
         "macro": -9
       },
       "nasdaq": {
+        "sent": -1,
+        "macro": 7
+      },
+      "spx500": {
         "sent": -1,
         "macro": 7
       }
