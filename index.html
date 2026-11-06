@@ -120,7 +120,7 @@ select{font-family:var(--f-body)}
     <div class="controls">
       <div class="seg" role="tablist" aria-label="Actif">
         <button id="tab-xauusd" role="tab" aria-selected="true" data-asset="xauusd">XAUUSD</button>
-        <button id="tab-nasdaq" role="tab" aria-selected="false" data-asset="nasdaq">Nasdaq · TQQQ / SOXL</button>
+        <button id="tab-nasdaq" role="tab" aria-selected="false" data-asset="nasdaq">Nasdaq</button>
       </div>
       <button id="editBtn" class="btn" type="button">Ma tendance</button>
     </div>
@@ -197,7 +197,7 @@ select{font-family:var(--f-body)}
   ];
   const ASSETS = {
     xauusd:{name:'XAUUSD · Or', hint:'Données fortes = baissier pour l’or'},
-    nasdaq:{name:'Nasdaq · TQQQ / SOXL', hint:'Croissance forte = haussier, inflation chaude = baissier'}
+    nasdaq:{name:'Nasdaq', hint:'Croissance forte = haussier, inflation chaude = baissier'}
   };
   const blankAsset = () => ({trend:'neutral', season:'neutral', cotLong:null, cotChange:null, crowdLong:null});
   const state = {
