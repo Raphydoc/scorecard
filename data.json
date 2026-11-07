@@ -127,10 +127,11 @@
    "date": "2026-11-10",
    "time": "08:30",
    "id": "cpi",
-   "name": "CPI YoY (octobre)",
-   "prev": 3.7,
-   "f": null,
-   "a": null
+   "name": "CPI MoM (octobre)",
+   "prev": 0.6,
+   "f": 0.3,
+   "a": null,
+   "note": "Pas de CPI YoY ce mois-ci : prix d’octobre 2025 jamais collectés (shutdown)"
   },
   {
    "date": "2026-11-12",
@@ -138,7 +139,7 @@
    "id": "claims",
    "name": "Demandes de chômage hebdo",
    "prev": 189,
-   "f": null,
+   "f": 195,
    "a": null
   },
   {
@@ -147,7 +148,7 @@
    "id": "ppi",
    "name": "PPI YoY (octobre)",
    "prev": 6.3,
-   "f": null,
+   "f": 6.6,
    "a": null
   },
   {
