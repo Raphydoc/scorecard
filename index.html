@@ -453,7 +453,7 @@ table.cal td.name{min-width:130px}
         const a = num(v.a), f = num(v.f), s = (a!==null && f!==null) ? Math.round((a-f)*10000)/10000 : null;
         const sig = r[ind.id];
         const sc = sig>0?'pos':sig<0?'neg':'';
-        h += `<tr${wOf(asset,ind.id)===0?' class="muted"':''}><td class="name">${esc(ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${wOf(asset,ind.id)===0?` <span class="info">info seulement</span>`:''}${ind.hint?`<small>${ind.hint}</small>`:''}</td><td class="sig">${chip(sig)}</td>
+        h += `<tr${wOf(asset,ind.id)===0?' class="muted"':''}><td class="name">${esc(((state.econ.values||{})[ind.id]||{}).label||ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${wOf(asset,ind.id)===0?` <span class="info">info seulement</span>`:''}${(((state.econ.values||{})[ind.id]||{}).note)?`<small>${esc(state.econ.values[ind.id].note)}</small>`:(ind.hint?`<small>${ind.hint}</small>`:'')}</td><td class="sig">${chip(sig)}</td>
           <td class="num">${false?numInput('a-'+ind.id,v.a):fmt(a,ind.unit)}</td>
           <td class="num">${false?numInput('f-'+ind.id,v.f):fmt(f,ind.unit)}</td>
           <td class="num ${sc}">${false?'':fmt(s,ind.unit,true)}</td>
