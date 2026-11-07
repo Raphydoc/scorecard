@@ -361,7 +361,7 @@ select{font-family:var(--f-body)}
 
     h += head('Sentiment de la foule', catChip(C.cats.crowd,2), ['Retail long %','Retail short %','','']);
     const cr = num(A.crowdLong);
-    h += `<tr><td class="name">Positionnement retail<small>contrarien : foule très longue = baissier</small></td><td class="sig">${cr===null?chip(null):chip(r.crowd)}</td>
+    h += `<tr><td class="name">Positionnement retail<small>clients d\u2019IG · contrarien : foule très longue = baissier</small></td><td class="sig">${cr===null?chip(null):chip(r.crowd)}</td>
       <td class="num">${false?numInput('in-crowdLong',A.crowdLong,'min="0" max="100"'):fmt(cr,'%')}</td>
       <td class="num">${cr===null?'—':fmt(100-cr,'%')}</td><td></td><td></td></tr>`;
 

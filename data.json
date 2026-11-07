@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T03:35:00.000Z",
+  "updatedAt": "2026-11-07T03:40:00.000Z",
   "econ": {
     "values": {
       "gdp": {
@@ -74,25 +74,25 @@
     "xauusd": {
       "cotLong": 84.33,
       "cotChange": -1.39,
-      "crowdLong": 56,
+      "crowdLong": 79,
       "season": "bear"
     },
     "nasdaq": {
       "cotLong": 65.89,
       "cotChange": -4.41,
-      "crowdLong": 62,
+      "crowdLong": 71,
       "season": "bear"
     },
     "spx500": {
       "cotLong": 39.0,
       "cotChange": 0.87,
-      "crowdLong": 66,
+      "crowdLong": 58,
       "season": "bear"
     },
     "us30": {
       "cotLong": 67.43,
       "cotChange": 5.3,
-      "crowdLong": 85,
+      "crowdLong": 55,
       "season": "bull"
     }
   },
@@ -100,7 +100,7 @@
     {
       "date": "2026-11-06",
       "xauusd": {
-        "sent": 0,
+        "sent": -1,
         "macro": -11
       },
       "nasdaq": {
@@ -108,11 +108,11 @@
         "macro": 4
       },
       "spx500": {
-        "sent": -1,
+        "sent": 0,
         "macro": 8
       },
       "us30": {
-        "sent": 1,
+        "sent": 2,
         "macro": 10
       }
     }
