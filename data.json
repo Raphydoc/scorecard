@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T03:38:58Z",
+ "updatedAt": "2026-11-07T03:49:07Z",
  "econ": {
   "values": {
    "gdp": {
@@ -114,11 +114,11 @@
    },
    "spx500": {
     "sent": 0,
-    "macro": 9
+    "macro": 10
    },
    "us30": {
     "sent": 2,
-    "macro": 11
+    "macro": 10
    }
   }
  ]

@@ -259,8 +259,8 @@ select{font-family:var(--f-body)}
   const WEIGHTS = {
     xauusd:{cpi:3,nfp:3,yield10:3,pce:2,unemp:2},
     nasdaq:{cpi:3,yield10:3,mega_eps:3,nfp:2,pce:2},
-    spx500:{cpi:3,nfp:3,yield10:2,pce:2,unemp:2,retail:2,pmi_srv:2},
-    us30:{pmi_mfg:3,cpi:2,nfp:2,retail:2,gdp:2}
+    spx500:{cpi:3,nfp:3,yield10:3,pce:2,unemp:2,retail:2,pmi_srv:2},
+    us30:{pmi_mfg:2,cpi:2,nfp:2,retail:2,gdp:2}
   };
   const wOf = (asset,id) => { const w = (WEIGHTS[asset]||{})[id]; return w===undefined ? 1 : w; };
   function impact(asset, cat, usd){
