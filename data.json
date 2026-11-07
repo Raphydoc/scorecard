@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T03:49:07Z",
+ "updatedAt": "2026-11-07T15:05:53Z",
  "econ": {
   "values": {
    "gdp": {
@@ -121,5 +121,117 @@
     "macro": 10
    }
   }
- ]
+ ],
+ "calendar": [
+  {
+   "date": "2026-11-10",
+   "time": "08:30",
+   "id": "cpi",
+   "name": "CPI YoY (octobre)",
+   "prev": 3.7,
+   "f": null,
+   "a": null
+  },
+  {
+   "date": "2026-11-12",
+   "time": "08:30",
+   "id": "claims",
+   "name": "Demandes de chômage hebdo",
+   "prev": 189,
+   "f": null,
+   "a": null
+  },
+  {
+   "date": "2026-11-13",
+   "time": "08:30",
+   "id": "ppi",
+   "name": "PPI YoY (octobre)",
+   "prev": 6.3,
+   "f": null,
+   "a": null
+  },
+  {
+   "date": "2026-11-17",
+   "time": "08:30",
+   "id": "retail",
+   "name": "Ventes au détail MoM (octobre)",
+   "prev": 0.8,
+   "f": null,
+   "a": null
+  },
+  {
+   "date": "2026-11-18",
+   "time": "14:00",
+   "id": null,
+   "kind": "fed",
+   "name": "Minutes de la Fed",
+   "note": "Compte rendu de la réunion du 28 octobre"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "08:30",
+   "id": "claims",
+   "name": "Demandes de chômage hebdo",
+   "prev": null,
+   "f": null,
+   "a": null
+  },
+  {
+   "date": "2026-11-25",
+   "time": "08:30",
+   "id": "gdp",
+   "name": "PIB QoQ annualisé (T3, 2e estimation)",
+   "prev": 3.4,
+   "f": null,
+   "a": null
+  },
+  {
+   "date": "2026-11-25",
+   "time": "08:30",
+   "id": "pce",
+   "name": "PCE YoY (octobre)",
+   "prev": 3.1,
+   "f": null,
+   "a": null
+  },
+  {
+   "date": "2026-12-09",
+   "time": "14:00",
+   "id": null,
+   "kind": "fed",
+   "name": "Décision de taux de la Fed (FOMC)",
+   "note": "Voir la page Fed pour les probabilités"
+  }
+ ],
+ "fed": {
+  "rate": "3,75 % – 4,00 %",
+  "last": {
+   "date": "2026-10-28",
+   "text": "Statu quo, vote 10-2 (2 membres voulaient une hausse)"
+  },
+  "next": "2026-12-09",
+  "step": "25 pb",
+  "probs": {
+   "hike": 80,
+   "hold": 20,
+   "cut": 0
+  },
+  "prevProbs": {
+   "hike": 67,
+   "hold": 33,
+   "cut": 0
+  },
+  "prevDate": "2026-11-05",
+  "asOf": "2026-11-06",
+  "events": [
+   {
+    "date": "2026-11-18",
+    "name": "Minutes de la réunion d’octobre"
+   },
+   {
+    "date": "2026-12-09",
+    "name": "Décision + conférence de presse"
+   }
+  ]
+ }
 }

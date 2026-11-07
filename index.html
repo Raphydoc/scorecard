@@ -140,6 +140,45 @@ select{font-family:var(--f-body)}
   td.num{padding-left:1px;padding-right:3px}
   .panel{border-left:0;border-right:0}
 }
+
+[hidden]{display:none!important}
+.pages{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line)}
+.pages button{border:0;background:transparent;color:var(--muted);font:600 17px/1 var(--f-display);letter-spacing:.04em;text-transform:uppercase;
+  padding:10px 16px 12px;cursor:pointer;border-bottom:3px solid transparent;margin-bottom:-1px}
+.pages button[aria-current="page"]{color:var(--fg);border-bottom-color:var(--gold)}
+.pghead{padding:12px 14px;background:var(--panel-2);border-bottom:1px solid var(--line);display:flex;flex-wrap:wrap;gap:10px;justify-content:space-between;align-items:center}
+.pghead h2{margin:0;font-family:var(--f-display);font-weight:600;font-size:20px;letter-spacing:.03em}
+.pghead p{margin:2px 0 0;color:var(--muted);font-size:12px}
+.calseg{display:inline-flex;flex-wrap:wrap;border:1px solid var(--line);background:var(--panel)}
+.calseg button{border:0;background:transparent;color:var(--muted);font:600 14px/1 var(--f-display);letter-spacing:.04em;text-transform:uppercase;padding:8px 11px;cursor:pointer}
+.calseg button[aria-pressed="true"]{background:var(--fg);color:var(--bg)}
+table.cal thead th{font-family:var(--f-body);font-weight:500;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+table.cal th.r{text-align:right} table.cal th.c,table.cal td.c{text-align:center}
+table.cal tr.cat th{text-transform:none;letter-spacing:.02em;color:var(--fg);font-family:var(--f-display);font-size:17px;font-weight:600}
+table.cal tr.cat th em{font-style:normal;color:var(--gold)}
+table.cal td.t{text-align:left;color:var(--muted)}
+table.cal tr.past td{opacity:.55}
+table.cal td.name{min-width:130px}
+.stars{color:var(--gold);letter-spacing:1px;font-size:13px}.stars .dim{color:var(--line)}
+.pgfoot{color:var(--muted);font-size:12px;margin:10px 2px 0;max-width:80ch}
+.fedgrid{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:16px;align-items:start}
+@media (max-width:900px){.fedgrid{grid-template-columns:minmax(0,1fr)}}
+.big{padding:18px 14px;text-align:center;border-bottom:1px solid var(--line)}
+.big b{display:block;font-family:var(--f-display);font-size:46px;font-weight:600;line-height:1}
+.big span{display:block;color:var(--muted);font-size:13px;margin-top:4px}
+.kv div{display:flex;justify-content:space-between;gap:12px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.kv div:last-child{border-bottom:0}
+.kv span{color:var(--muted)} .kv b{font-weight:500;text-align:right}
+.pbars{padding:16px 14px;display:grid;gap:16px}
+.plab{display:flex;align-items:baseline;gap:8px;margin-bottom:6px}
+.plab span{flex:1;font-size:15px}
+.plab b{font-family:var(--f-mono);font-weight:500;font-size:20px}
+.plab em{font-style:normal;font-family:var(--f-mono);font-size:12px;color:var(--muted);min-width:42px;text-align:right}
+.ptrack{height:14px;background:var(--panel-2)}
+.pfill{height:100%}
+.fedtxt{border-top:1px solid var(--line);padding:12px 14px 14px;color:var(--muted);font-size:13px}
+.fedtxt p{margin:0 0 6px;max-width:72ch} .fedtxt strong{color:var(--fg)}
+@media (max-width:440px){ table.cal tr > :nth-child(3){display:none} table.cal td.name{min-width:90px} .pages button{padding:10px 11px 12px;font-size:16px} }
 </style>
 
 </head>
@@ -153,7 +192,7 @@ select{font-family:var(--f-body)}
         <p class="sub">Données US mises à jour automatiquement chaque matin de semaine.</p>
       </div>
     </div>
-    <div class="controls">
+    <div class="controls" data-pg="score">
       <div class="seg" role="tablist" aria-label="Actif">
         <button id="tab-xauusd" role="tab" aria-selected="true" data-asset="xauusd">XAUUSD</button>
         <button id="tab-nasdaq" role="tab" aria-selected="false" data-asset="nasdaq">Nasdaq</button>
@@ -164,9 +203,15 @@ select{font-family:var(--f-body)}
     </div>
   </header>
 
+  <nav class="pages" aria-label="Pages">
+    <button type="button" data-page="score" aria-current="page">Scorecard</button>
+    <button type="button" data-page="cal">Calendrier</button>
+    <button type="button" data-page="fed">Fed</button>
+  </nav>
+
   <div id="note" class="note" hidden></div>
 
-  <main class="grid">
+  <main class="grid" data-pg="score">
     <section class="panel left" aria-label="Résumé">
       <div class="symbol"><b id="symName">XAUUSD · Or</b><span id="symHint">Données fortes = baissier</span></div>
       <div id="verdict" class="verdict neu">Neutre</div>
@@ -202,7 +247,7 @@ select{font-family:var(--f-body)}
     </section>
   </main>
 
-  <section class="panel how">
+  <section class="panel how" data-pg="score">
     <h2>Comment le score se calcule</h2>
     <ul>
       <li><strong>Surprise = Réel − Prévision.</strong> Une donnée plus forte que prévu renforce le dollar et pousse la Fed à garder les taux hauts.</li>
@@ -216,6 +261,32 @@ select{font-family:var(--f-body)}
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La performance du mois passé est remplie automatiquement au début de chaque mois; tu peux la changer avec « Ma tendance » (ton choix tient jusqu'à la fin du mois). Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
+
+  <section data-pg="cal" hidden aria-label="Calendrier économique">
+    <div class="panel">
+      <div class="pghead">
+        <div><h2>Calendrier économique</h2><p>Publications américaines à venir · heure de l’Est (Québec)</p></div>
+        <div class="calseg" role="group" aria-label="Importance selon l’actif">
+          <button type="button" data-ca="all" aria-pressed="true">Tous</button>
+          <button type="button" data-ca="xauusd" aria-pressed="false">Or</button>
+          <button type="button" data-ca="nasdaq" aria-pressed="false">Nasdaq</button>
+          <button type="button" data-ca="spx500" aria-pressed="false">S&amp;P</button>
+          <button type="button" data-ca="us30" aria-pressed="false">Dow</button>
+        </div>
+      </div>
+      <div class="tablewrap" id="calBox"></div>
+    </div>
+    <p class="pgfoot">Importance : ★★★ = la donnée compte ×3 dans le scorecard pour l’actif choisi, ★★ = ×2, ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Le calendrier se met à jour tout seul avec le scorecard.</p>
+  </section>
+
+  <section data-pg="fed" hidden aria-label="Réserve fédérale">
+    <div class="fedgrid">
+      <div class="panel"><div class="pghead"><h2>Prochaine réunion de la Fed</h2></div><div id="fedLeft"></div></div>
+      <div class="panel"><div class="pghead"><div><h2>Probabilités du marché</h2><p id="fedAsof">CME FedWatch</p></div></div><div id="fedRight"></div></div>
+    </div>
+    <p class="pgfoot">Information seulement : les probabilités de la Fed ne comptent pas dans le score. Mises à jour automatiquement avec le scorecard.</p>
+  </section>
+
 </div>
 
 <script>
@@ -454,7 +525,7 @@ select{font-family:var(--f-body)}
     if(pts.length>1) g += `<text x="${W}" y="${H-3}" font-size="10" fill="var(--muted)" text-anchor="end" font-family="IBM Plex Mono, monospace">${fmtDate(last.date)}</text>`;
     box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Historique du score total">${g}</svg>`;
   }
-  function renderAll(){ renderSummary(); renderTable(); renderHistory(); }
+  function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); }
 
   // ---------- editing ----------
   let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false}, saveTimer = null, chain = Promise.resolve();
@@ -514,6 +585,96 @@ select{font-family:var(--f-body)}
     renderAll();
   }));
 
+
+  // ---------- pages : calendrier et Fed ----------
+  state.calendar = []; state.fed = null; state.calAsset = 'all'; state.page = 'score';
+  const CAL_ASSETS = ['xauusd','nasdaq','spx500','us30'];
+  function impOf(item, asset){
+    if(item.kind==='fed') return 3;
+    if(!item.id) return 0;
+    const ind = INDICATORS.find(i=>i.id===item.id); if(!ind) return 0;
+    const list = asset==='all' ? CAL_ASSETS : [asset];
+    return Math.max(...list.map(a => (ind.only && ind.only!==a) ? 0 : wOf(a,item.id)));
+  }
+  function stars(n){ return n ? `<span class="stars" title="Poids ×${n}">${'★'.repeat(n)}<span class="dim">${'★'.repeat(3-n)}</span></span>` : '<span class="info">info</span>'; }
+  function torontoToday(){ try{ return new Date().toLocaleDateString('en-CA',{timeZone:'America/Toronto'}); }catch(e){ return new Date().toISOString().slice(0,10); } }
+  function renderCalendar(){
+    const box = $('calBox'); if(!box) return;
+    const items = (state.calendar||[]).slice().sort((a,b)=>((a.date||'')+(a.time||'')).localeCompare((b.date||'')+(b.time||'')));
+    if(!items.length){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Le calendrier se remplit à la prochaine mise à jour.</p>'; return; }
+    const today = torontoToday();
+    let h = '', day = '', shown = 0;
+    items.forEach(it=>{
+      const imp = impOf(it, state.calAsset);
+      if(state.calAsset!=='all' && it.id && imp===0) return;
+      shown++;
+      if(it.date!==day){
+        day = it.date; const d = new Date(day+'T12:00:00');
+        const lbl = isNaN(d) ? day : d.toLocaleDateString('fr-CA',{weekday:'long', day:'numeric', month:'long'});
+        h += `<tr class="cat"><th colspan="6">${esc(lbl.charAt(0).toUpperCase()+lbl.slice(1))}${day===today?' <em>· aujourd’hui</em>':''}</th></tr>`;
+      }
+      const ind = INDICATORS.find(i=>i.id===it.id);
+      const u = it.unit!==undefined ? it.unit : (ind ? ind.unit : '');
+      const past = (it.date||'') < today || it.a!=null;
+      h += `<tr class="${past?'past':''}"><td class="num t">${esc(it.time||'')}</td>`
+        + `<td class="name">${esc(it.name||'')}${it.note?`<small>${esc(it.note)}</small>`:''}</td>`
+        + `<td class="num">${it.prev!=null?fmt(it.prev,u):'—'}</td>`
+        + `<td class="num">${it.f!=null?fmt(it.f,u):'—'}</td>`
+        + `<td class="num">${it.a!=null?`<b>${fmt(it.a,u)}</b>`:'—'}</td>`
+        + `<td class="c">${stars(imp)}</td></tr>`;
+    });
+    if(!shown){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Aucune donnée importante pour cet actif dans les prochains jours.</p>'; return; }
+    box.innerHTML = `<table class="cal"><thead><tr><th>Heure</th><th>Donnée</th><th class="r">Préc.</th><th class="r">Prévu</th><th class="r">Réel</th><th class="c">Import.</th></tr></thead><tbody>${h}</tbody></table>`;
+  }
+  function renderFed(){
+    const L = $('fedLeft'), R = $('fedRight'); if(!L||!R) return;
+    const F = state.fed;
+    if(!F){ L.innerHTML = R.innerHTML = '<p class="empty-hist" style="padding:14px">Les données de la Fed arrivent à la prochaine mise à jour.</p>'; return; }
+    const today = torontoToday();
+    let days = null;
+    if(F.next){ days = Math.round((new Date(F.next+'T12:00:00') - new Date(today+'T12:00:00'))/86400000); }
+    const nextLbl = F.next ? new Date(F.next+'T12:00:00').toLocaleDateString('fr-CA',{weekday:'long', day:'numeric', month:'long'}) : '—';
+    const big = days===null ? '—' : days>1 ? `${days} jours` : days===1 ? 'Demain' : days===0 ? 'Aujourd’hui' : 'Passée';
+    let ev = (F.events||[]).filter(e=>(e.date||'')>=today).slice(0,4).map(e=>`<div><span>${esc(fmtDate(e.date))}</span><b>${esc(e.name||'')}</b></div>`).join('');
+    L.innerHTML = `<div class="big"><b>${esc(big)}</b><span>Décision le ${esc(nextLbl)}, 14 h</span></div>
+      <div class="kv">
+        <div><span>Taux actuel</span><b>${esc(F.rate||'—')}</b></div>
+        <div><span>Dernière décision</span><b>${F.last?esc(fmtDate(F.last.date)+' : '+(F.last.text||'')):'—'}</b></div>
+        ${ev}
+      </div>`;
+    const p = F.probs||{}, pp = F.prevProbs||null, step = F.step ? ' de '+F.step : '';
+    const rows = [['hike','Hausse'+step,'bear'],['hold','Statu quo','neu'],['cut','Baisse'+step,'bull']];
+    const bars = rows.map(([k,l,c])=>{
+      const v = +p[k]||0; const d = pp && pp[k]!=null ? v-(+pp[k]) : null;
+      const dtxt = d===null ? '' : Math.abs(d)<0.5 ? '=' : (d>0?'+':'−')+Math.abs(d).toFixed(0);
+      return `<div><div class="plab"><span>${esc(l)}</span><b>${v.toFixed(0)} %</b><em title="Changement depuis ${esc(F.prevDate?fmtDate(F.prevDate):'la dernière fois')}">${dtxt}</em></div>
+        <div class="ptrack"><div class="pfill ${c}" style="width:${Math.max(0,Math.min(100,v))}%"></div></div></div>`;
+    }).join('');
+    const lead = (+p.hike||0) >= Math.max(+p.hold||0, +p.cut||0) ? 'hike' : (+p.cut||0) > (+p.hold||0) ? 'cut' : 'hold';
+    const leadTxt = {hike:'Le marché s’attend surtout à une <strong>hausse des taux</strong>.', hold:'Le marché s’attend surtout à un <strong>statu quo</strong>.', cut:'Le marché s’attend surtout à une <strong>baisse des taux</strong>.'}[lead];
+    $('fedAsof').textContent = 'CME FedWatch' + (F.asOf ? ' · au '+fmtDate(F.asOf) : '') + (pp&&F.prevDate ? ' · écart depuis le '+fmtDate(F.prevDate) : '');
+    R.innerHTML = `<div class="pbars">${bars}</div>
+      <div class="fedtxt">
+        <p>${leadTxt}</p>
+        <p><strong>Hausse des taux</strong> = dollar plus fort : en général baissier pour l’or et les indices, surtout le Nasdaq. <strong>Baisse</strong> = l’inverse.</p>
+        <p>Ce qui fait bouger les marchés, c’est surtout quand ces probabilités changent vite (après un CPI ou un NFP, par exemple).</p>
+      </div>`;
+  }
+  function showPage(pg){
+    state.page = pg;
+    document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
+    document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
+    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed();
+  }
+  document.querySelectorAll('.pages button').forEach(b=>b.addEventListener('click', ()=>showPage(b.dataset.page)));
+  document.querySelectorAll('.calseg button').forEach(b=>b.addEventListener('click', ()=>{
+    state.calAsset = b.dataset.ca;
+    document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
+    renderCalendar();
+  }));
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); }catch(e){}
+
   // ---------- data ----------
   drawGaugeStatic();
   renderAll();
@@ -527,6 +688,8 @@ select{font-family:var(--f-body)}
       state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), trend:((t[k]||{}).trend)||'neutral', ...((t[k]||{}).season && t.month===curMonth()?{season:t[k].season}:{})};
     });
     state.history = Array.isArray(d.history) ? d.history.slice(-60) : [];
+    state.calendar = Array.isArray(d.calendar) ? d.calendar : [];
+    state.fed = d.fed || null;
   }
   async function refresh(){
     try{
