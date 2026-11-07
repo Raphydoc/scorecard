@@ -160,6 +160,13 @@ table.cal td.t{text-align:left;color:var(--muted)}
 table.cal tr.past td{opacity:.55}
 table.cal td.name{min-width:130px}
 .stars{color:var(--gold);letter-spacing:1px;font-size:13px}.stars .dim{color:var(--line)}
+.weeknav{display:flex;align-items:center;gap:10px;padding:10px 14px;border-bottom:1px solid var(--line)}
+.wlbl{flex:1;text-align:center;display:grid;gap:2px}
+.wlbl b{font-family:var(--f-display);font-weight:600;font-size:19px;letter-spacing:.03em;text-transform:uppercase}
+.wlbl span{color:var(--muted);font-size:13px}
+.wbtn{width:40px;height:40px;border:1px solid var(--line);background:var(--panel);color:var(--fg);font:500 24px/1 var(--f-body);cursor:pointer}
+.wbtn:disabled{opacity:.3;cursor:default}
+.wsum{margin:0;padding:8px 14px;color:var(--muted);font-size:12.5px;border-bottom:1px solid var(--line)}
 .pgfoot{color:var(--muted);font-size:12px;margin:10px 2px 0;max-width:80ch}
 .fedgrid{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:16px;align-items:start}
 @media (max-width:900px){.fedgrid{grid-template-columns:minmax(0,1fr)}}
@@ -598,24 +605,42 @@ table.cal td.name{min-width:130px}
   }
   function stars(n){ return n ? `<span class="stars" title="Poids ×${n}">${'★'.repeat(n)}<span class="dim">${'★'.repeat(3-n)}</span></span>` : '<span class="info">info</span>'; }
   function torontoToday(){ try{ return new Date().toLocaleDateString('en-CA',{timeZone:'America/Toronto'}); }catch(e){ return new Date().toISOString().slice(0,10); } }
+  function mondayOf(iso){ const d = new Date(iso+'T12:00:00'); const wd = (d.getDay()+6)%7; d.setDate(d.getDate()-wd); return d.toISOString().slice(0,10); }
+  function addDays(iso,n){ const d = new Date(iso+'T12:00:00'); d.setDate(d.getDate()+n); return d.toISOString().slice(0,10); }
+  function weekLabel(mon){
+    const fri = addDays(mon,4), a = new Date(mon+'T12:00:00'), b = new Date(fri+'T12:00:00');
+    const ma = a.toLocaleDateString('fr-CA',{month:'long'}), mb = b.toLocaleDateString('fr-CA',{month:'long'});
+    return ma===mb ? `Semaine du ${a.getDate()} au ${b.getDate()} ${mb}` : `Semaine du ${a.getDate()} ${ma} au ${b.getDate()} ${mb}`;
+  }
+  state.calWeek = null;
   function renderCalendar(){
     const box = $('calBox'); if(!box) return;
-    const items = (state.calendar||[]).slice().sort((a,b)=>((a.date||'')+(a.time||'')).localeCompare((b.date||'')+(b.time||'')));
-    if(!items.length){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Le calendrier se remplit à la prochaine mise à jour.</p>'; return; }
     const today = torontoToday();
-    let h = '', day = '', shown = 0;
-    items.forEach(it=>{
+    const all = (state.calendar||[]).filter(it=>it.date).slice().sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
+    const items = all.filter(it=> state.calAsset==='all' || !it.id || impOf(it, state.calAsset)>0);
+    if(!all.length){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Le calendrier se remplit à la prochaine mise à jour.</p>'; return; }
+    const weeks = [...new Set(all.map(it=>mondayOf(it.date)))].sort();
+    if(!state.calWeek || !weeks.includes(state.calWeek)){
+      const cur = mondayOf(today);
+      state.calWeek = weeks.find(w=>w>=cur && all.some(it=>mondayOf(it.date)===w && (it.date>=today || w===cur))) || weeks.find(w=>w>=cur) || weeks[weeks.length-1];
+    }
+    const wi = weeks.indexOf(state.calWeek), cur = mondayOf(today);
+    const rel = state.calWeek===cur ? 'Cette semaine' : state.calWeek===addDays(cur,7) ? 'Semaine prochaine' : state.calWeek<cur ? 'Semaine passée' : 'Dans '+Math.round((new Date(state.calWeek)-new Date(cur))/604800000)+' semaines';
+    let nav = `<div class="weeknav"><button type="button" class="wbtn" data-w="-1" ${wi<=0?'disabled':''} aria-label="Semaine précédente">‹</button>
+      <div class="wlbl"><b>${esc(rel)}</b><span>${esc(weekLabel(state.calWeek))}</span></div>
+      <button type="button" class="wbtn" data-w="1" ${wi>=weeks.length-1?'disabled':''} aria-label="Semaine suivante">›</button></div>`;
+    const wk = items.filter(it=>mondayOf(it.date)===state.calWeek);
+    let h = '', day = '';
+    wk.forEach(it=>{
       const imp = impOf(it, state.calAsset);
-      if(state.calAsset!=='all' && it.id && imp===0) return;
-      shown++;
       if(it.date!==day){
         day = it.date; const d = new Date(day+'T12:00:00');
-        const lbl = isNaN(d) ? day : d.toLocaleDateString('fr-CA',{weekday:'long', day:'numeric', month:'long'});
+        const lbl = d.toLocaleDateString('fr-CA',{weekday:'long', day:'numeric', month:'long'});
         h += `<tr class="cat"><th colspan="6">${esc(lbl.charAt(0).toUpperCase()+lbl.slice(1))}${day===today?' <em>· aujourd’hui</em>':''}</th></tr>`;
       }
       const ind = INDICATORS.find(i=>i.id===it.id);
       const u = it.unit!==undefined ? it.unit : (ind ? ind.unit : '');
-      const past = (it.date||'') < today || it.a!=null;
+      const past = it.date < today || it.a!=null;
       h += `<tr class="${past?'past':''}"><td class="num t">${esc(it.time||'')}</td>`
         + `<td class="name">${esc(it.name||'')}${it.note?`<small>${esc(it.note)}</small>`:''}</td>`
         + `<td class="num">${it.prev!=null?fmt(it.prev,u):'—'}</td>`
@@ -623,8 +648,11 @@ table.cal td.name{min-width:130px}
         + `<td class="num">${it.a!=null?`<b>${fmt(it.a,u)}</b>`:'—'}</td>`
         + `<td class="c">${stars(imp)}</td></tr>`;
     });
-    if(!shown){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Aucune donnée importante pour cet actif dans les prochains jours.</p>'; return; }
-    box.innerHTML = `<table class="cal"><thead><tr><th>Heure</th><th>Donnée</th><th class="r">Préc.</th><th class="r">Prévu</th><th class="r">Réel</th><th class="c">Import.</th></tr></thead><tbody>${h}</tbody></table>`;
+    const n = wk.length, n3 = wk.filter(it=>impOf(it,state.calAsset)===3).length;
+    const sum = n ? `<p class="wsum">${n} publication${n>1?'s':''}${n3?` · ${n3} très importante${n3>1?'s':''} (★★★)`:''}</p>` : '';
+    box.innerHTML = nav + sum + (n ? `<table class="cal"><thead><tr><th>Heure</th><th>Donnée</th><th class="r">Préc.</th><th class="r">Prévu</th><th class="r">Réel</th><th class="c">Import.</th></tr></thead><tbody>${h}</tbody></table>`
+      : '<p class="empty-hist" style="padding:14px">Aucune publication importante pour cet actif cette semaine.</p>');
+    box.querySelectorAll('.wbtn').forEach(b=>b.addEventListener('click', ()=>{ const j = wi + (+b.dataset.w); if(weeks[j]){ state.calWeek = weeks[j]; renderCalendar(); } }));
   }
   function renderFed(){
     const L = $('fedLeft'), R = $('fedRight'); if(!L||!R) return;
