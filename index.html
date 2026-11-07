@@ -93,6 +93,8 @@ td.sig,th.sig{width:122px;text-align:center}
 .chip.txt.bull{color:var(--bull)} .chip.txt.bear{color:var(--bear)} .chip.txt.neu{color:var(--muted)}
 .bull{background:var(--bull)} .bear{background:var(--bear)} .neu{background:var(--neutral)} .vbull{background:var(--bull)} .vbear{background:var(--bear)}
 .wt{font-family:var(--f-mono);font-size:11px;color:var(--gold);border:1px solid var(--gold);padding:0 4px;margin-left:4px;vertical-align:1px}
+.info{font-size:10.5px;color:var(--muted);border:1px solid var(--line);padding:0 4px;margin-left:4px;vertical-align:1px;white-space:nowrap}
+tr.muted td{opacity:.5}
 .pos{color:var(--bull)} .neg{color:var(--bear)}
 input[type=number],input[type=date],select{font:inherit;font-family:var(--f-mono);font-size:13px;color:var(--fg);background:var(--bg);
   border:1px solid var(--line);padding:5px 6px;border-radius:0}
@@ -209,7 +211,7 @@ select{font-family:var(--f-body)}
       <li><strong>Croissance des bénéfices des géants tech</strong> (Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.</li>
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1. <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
-      <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2 ou ×3, indiqué à côté du nom). Exemple : le CPI vaut ×3 pour l'or, le Nasdaq et le S&amp;P 500, et l'ISM manufacturier vaut ×3 pour le Dow Jones.</li>
+      <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2 ou ×3, indiqué à côté du nom). Exemple : le CPI vaut ×3 pour l'or, le Nasdaq et le S&amp;P 500, et l'ISM manufacturier vaut ×3 pour le Dow Jones. Les lignes grises marquées « info seulement » (ADP, JOLTS, et l'ISM manufacturier pour l'or et le Nasdaq) sont affichées mais ne comptent pas.</li>
       <li>Total d'environ −30 à +30 : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité est remplie automatiquement au début de chaque mois selon la performance du mois précédent; tu peux la changer avec « Ma tendance » (ton choix tient jusqu'à la fin du mois). Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
@@ -255,12 +257,12 @@ select{font-family:var(--f-body)}
 
   // ---------- scoring ----------
   const WEIGHTS = {
-    xauusd:{cpi:3,nfp:3,yield10:3,pce:2,unemp:2},
-    nasdaq:{cpi:3,yield10:3,mega_eps:3,nfp:2,pce:2},
-    spx500:{cpi:3,nfp:3,yield10:2,pce:2,unemp:2,retail:2,pmi_srv:2},
-    us30:{pmi_mfg:3,cpi:2,nfp:2,retail:2,gdp:2}
+    xauusd:{cpi:3,nfp:3,yield10:3,pce:2,unemp:2,adp:0,jolts:0,pmi_mfg:0},
+    nasdaq:{cpi:3,yield10:3,mega_eps:3,nfp:2,pce:2,adp:0,jolts:0,pmi_mfg:0},
+    spx500:{cpi:3,nfp:3,yield10:2,pce:2,unemp:2,retail:2,pmi_srv:2,adp:0,jolts:0},
+    us30:{pmi_mfg:3,cpi:2,nfp:2,retail:2,gdp:2,adp:0,jolts:0}
   };
-  const wOf = (asset,id) => (WEIGHTS[asset]||{})[id] || 1;
+  const wOf = (asset,id) => { const w = (WEIGHTS[asset]||{})[id]; return w===undefined ? 1 : w; };
   function impact(asset, cat, usd){
     if(cat==='spec') return usd || 0;
     if(asset==='xauusd') return -usd || 0;
@@ -373,7 +375,7 @@ select{font-family:var(--f-body)}
         const a = num(v.a), f = num(v.f), s = (a!==null && f!==null) ? Math.round((a-f)*10000)/10000 : null;
         const sig = r[ind.id];
         const sc = sig>0?'pos':sig<0?'neg':'';
-        h += `<tr><td class="name">${esc(ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${ind.hint?`<small>${ind.hint}</small>`:''}</td><td class="sig">${chip(sig)}</td>
+        h += `<tr${wOf(asset,ind.id)===0?' class="muted"':''}><td class="name">${esc(ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${wOf(asset,ind.id)===0?` <span class="info">info seulement</span>`:''}${ind.hint?`<small>${ind.hint}</small>`:''}</td><td class="sig">${chip(sig)}</td>
           <td class="num">${false?numInput('a-'+ind.id,v.a):fmt(a,ind.unit)}</td>
           <td class="num">${false?numInput('f-'+ind.id,v.f):fmt(f,ind.unit)}</td>
           <td class="num ${sc}">${false?'':fmt(s,ind.unit,true)}</td>
