@@ -180,8 +180,8 @@ select{font-family:var(--f-body)}
             <line x1="120" y1="122" x2="40" y2="122" stroke="var(--fg)" stroke-width="3" stroke-linecap="round"/>
             <circle cx="120" cy="122" r="7" fill="var(--panel)" stroke="var(--fg)" stroke-width="3"/>
           </g>
-          <text x="22" y="139" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace" text-anchor="middle">−30</text>
-          <text x="218" y="139" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace" text-anchor="middle">+30</text>
+          <text x="22" y="139" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace" text-anchor="middle" id="gMin">−30</text>
+          <text x="218" y="139" font-size="11" fill="var(--muted)" font-family="IBM Plex Mono, monospace" text-anchor="middle" id="gMax">+30</text>
         </svg>
       </div>
       <div id="updated" class="updated">Chargement…</div>
@@ -212,7 +212,7 @@ select{font-family:var(--f-body)}
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, performance du mois passé ±1 (plus de +0,5 % = +1, moins de −0,5 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2 ou ×3, indiqué à côté du nom). Exemple : le CPI vaut ×3 pour l'or, le Nasdaq et le S&amp;P 500, et l'ISM manufacturier vaut ×3 pour le Dow Jones.</li>
-      <li>Total d'environ −30 à +30 : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
+      <li>Total de −max à +max (le max dépend de l'actif : or ±28, Nasdaq ±29, S&amp;P ±30, Dow ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La performance du mois passé est remplie automatiquement au début de chaque mois; tu peux la changer avec « Ma tendance » (ton choix tient jusqu'à la fin du mois). Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
@@ -393,8 +393,14 @@ select{font-family:var(--f-body)}
 
   // ---------- summary ----------
   function setScore(el, v){ el.textContent = (v>0?'+':'')+String(v).replace('-','−'); el.className = cls(v); }
+  let GR = 30;
+  function maxScore(asset){
+    let m = wOf(asset,'yield10') + 3 + 3;
+    INDICATORS.forEach(ind=>{ if(!ind.only || ind.only===asset) m += wOf(asset,ind.id); });
+    return m;
+  }
   function polar(score, rad){
-    const t = Math.PI*(1-(Math.max(-30,Math.min(30,score))+30)/60);
+    const t = Math.PI*(1-(Math.max(-GR,Math.min(GR,score))+GR)/(2*GR));
     return [120+rad*Math.cos(t), 122-rad*Math.sin(t)];
   }
   function arc(from, to, rad){
@@ -402,20 +408,22 @@ select{font-family:var(--f-body)}
     return `M${x1.toFixed(1)} ${y1.toFixed(1)} A${rad} ${rad} 0 0 1 ${x2.toFixed(1)} ${y2.toFixed(1)}`;
   }
   function drawGaugeStatic(){
-    $('arcBear').setAttribute('d', arc(-30,-3.2,92)); $('arcBear').setAttribute('stroke','var(--bear)');
+    $('arcBear').setAttribute('d', arc(-GR,-3.2,92)); $('arcBear').setAttribute('stroke','var(--bear)');
     $('arcNeu').setAttribute('d', arc(-2.8,2.8,92)); $('arcNeu').setAttribute('stroke','var(--neutral)');
-    $('arcBull').setAttribute('d', arc(3.2,30,92)); $('arcBull').setAttribute('stroke','var(--bull)');
+    $('arcBull').setAttribute('d', arc(3.2,GR,92)); $('arcBull').setAttribute('stroke','var(--bull)');
     let t='';
-    for(let s=-30;s<=30;s+=10){ const [x1,y1]=polar(s,102),[x2,y2]=polar(s,108);
+    for(const s of [-GR,-GR/2,0,GR/2,GR]){ const [x1,y1]=polar(s,102),[x2,y2]=polar(s,108);
       t+=`<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="var(--muted)" stroke-width="1.5"/>`; }
     $('ticks').innerHTML = t;
+    $('gMin').textContent = '−'+GR; $('gMax').textContent = '+'+GR;
   }
   function renderSummary(){
     const C = compute(state.asset);
+    GR = maxScore(state.asset); drawGaugeStatic();
     const [vt,vc] = verdict(C.total);
     $('verdict').textContent = vt; $('verdict').className = 'verdict '+vc;
     setScore($('sTotal'),C.total); setScore($('sTech'),C.tech); setScore($('sSent'),C.sent); setScore($('sMacro'),C.macro);
-    const deg = 180*((Math.max(-30,Math.min(30,C.total))+30)/60);
+    const deg = 180*((Math.max(-GR,Math.min(GR,C.total))+GR)/(2*GR));
     $('needle').style.transformOrigin = '120px 122px';
     $('needle').style.transform = `rotate(${deg}deg)`;
     $('symName').textContent = ASSETS[state.asset].name;
