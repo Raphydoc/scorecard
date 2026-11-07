@@ -36,7 +36,7 @@
 *{box-sizing:border-box}
 html,body{margin:0}
 body{background:var(--bg);color:var(--fg);font-family:var(--f-body);font-size:14px;line-height:1.45}
-.wrap{max-width:1240px;margin:0 auto;padding-block:20px 40px;
+.wrap{max-width:1480px;margin:0 auto;padding-block:20px 40px;
   padding-left:max(16px, env(safe-area-inset-left, 0px));
   padding-right:max(16px, env(safe-area-inset-right, 0px));
   display:grid;gap:16px}
@@ -58,7 +58,7 @@ h1{margin:0;font-family:var(--f-display);font-weight:600;font-size:26px;letter-s
 .btn.on{background:var(--gold);color:var(--bg)}
 button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
 .note{border-left:3px solid var(--gold);background:var(--panel);padding:10px 12px;color:var(--fg);font-size:13px}
-.grid{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:16px;align-items:start}
+.grid{display:grid;grid-template-columns:minmax(0,320px) minmax(0,1fr);gap:16px;align-items:start}
 @media (max-width:900px){.grid{grid-template-columns:minmax(0,1fr)}}
 .panel{background:var(--panel);border:1px solid var(--line)}
 .left{display:grid;gap:0}
@@ -79,11 +79,11 @@ button:focus-visible,select:focus-visible,input:focus-visible{outline:2px solid 
 .hist svg{display:block;width:100%;height:auto}
 .empty-hist{color:var(--muted);font-size:13px}
 .tablewrap{overflow-x:auto;min-width:0}
-table{width:100%;border-collapse:collapse;min-width:640px;font-variant-numeric:tabular-nums}
+table{width:100%;border-collapse:collapse;min-width:0;font-variant-numeric:tabular-nums}
 th,td{padding:7px 10px;border-bottom:1px solid var(--line);text-align:left;white-space:nowrap}
 tr.cat th{background:var(--panel-2);font-family:var(--f-display);font-weight:600;font-size:17px;letter-spacing:.02em;padding-block:9px}
 tr.cat th.colh{font-family:var(--f-body);font-weight:500;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);text-align:right}
-td.name{font-size:14px}
+td.name{font-size:14px;white-space:normal;min-width:150px}
 td.name small{display:block;color:var(--muted);font-size:11.5px}
 td.num{font-family:var(--f-mono);font-size:13.5px;text-align:right}
 td.desc{color:var(--muted);font-size:12.5px;white-space:normal}
@@ -105,6 +105,39 @@ select{font-family:var(--f-body)}
 .how strong{color:var(--fg)}
 .foot{color:var(--muted);font-size:12px}
 @media (prefers-reduced-motion:no-preference){ #needle{transition:transform .5s ease} }
+@media (max-width:1100px){
+  th,td{padding:6px 5px}
+  tr.cat th{white-space:normal;line-height:1.15}
+  tr.cat th.colh{white-space:normal}
+  td.name{font-size:12.5px;min-width:110px}
+  td.name small{font-size:10.5px}
+  td.num{font-size:12px}
+  td.sig,th.sig{width:84px}
+  .chip{min-width:78px;font-size:13px;padding:4px 4px}
+  tr.cat th{font-size:15px}
+  tr.cat th.colh{font-size:9.5px;letter-spacing:.03em}
+  td.desc{font-size:11.5px}
+}
+@media (max-width:560px){
+  #tbl tr > :nth-child(6){display:none}
+  td.name{min-width:96px}
+  td.sig,th.sig{width:74px}
+  .chip{min-width:68px;font-size:12px}
+  .chip.txt{min-width:0}
+  td.num{font-size:11.5px}
+}
+@media (max-width:440px){
+  th,td{padding:5px 3px}
+  td.name{min-width:70px;font-size:12px}
+  td.sig,th.sig{width:62px}
+  .chip{min-width:58px;font-size:11.5px;padding:3px 2px;letter-spacing:.01em}
+  td.num{font-size:11px}
+  tr.cat th{font-size:14px}
+  tr.cat th.colh{font-size:8.5px;letter-spacing:0}
+  tr.cat th.colh{overflow-wrap:anywhere}
+  td.num{padding-left:1px;padding-right:3px}
+  .panel{border-left:0;border-right:0}
+}
 </style>
 
 </head>
