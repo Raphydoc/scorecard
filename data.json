@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-07T00:15:00.000Z",
+  "updatedAt": "2026-11-07T00:20:00.000Z",
   "econ": {
     "values": {
       "gdp": {
@@ -106,19 +106,19 @@
       "date": "2026-11-06",
       "xauusd": {
         "sent": -1,
-        "macro": -9
+        "macro": -11
       },
       "nasdaq": {
         "sent": -1,
-        "macro": 2
+        "macro": 4
       },
       "spx500": {
         "sent": -1,
-        "macro": 7
+        "macro": 8
       },
       "us30": {
         "sent": 1,
-        "macro": 9
+        "macro": 10
       }
     }
   ]
