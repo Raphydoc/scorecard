@@ -211,7 +211,7 @@ select{font-family:var(--f-body)}
       <li><strong>Croissance des bénéfices des géants tech</strong> (Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.</li>
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1. <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
-      <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2 ou ×3, indiqué à côté du nom). Exemple : le CPI vaut ×3 pour l'or, le Nasdaq et le S&amp;P 500, et l'ISM manufacturier vaut ×3 pour le Dow Jones. Le JOLTS, en gris et marqué « info seulement », est affiché mais ne compte pas : ses données ont deux mois de retard.</li>
+      <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2 ou ×3, indiqué à côté du nom). Exemple : le CPI vaut ×3 pour l'or, le Nasdaq et le S&amp;P 500, et l'ISM manufacturier vaut ×3 pour le Dow Jones.</li>
       <li>Total d'environ −30 à +30 : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité est remplie automatiquement au début de chaque mois selon la performance du mois précédent; tu peux la changer avec « Ma tendance » (ton choix tient jusqu'à la fin du mois). Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
@@ -233,7 +233,6 @@ select{font-family:var(--f-body)}
     {id:'unemp',   cat:'jobs',   name:'Taux de chômage', unit:'%', dir:-1, hint:'plus haut = dollar faible'},
     {id:'claims',  cat:'jobs',   name:'Demandes de chômage hebdo', unit:'k', dir:-1, hint:'plus haut = dollar faible'},
     {id:'adp',     cat:'jobs',   name:'ADP emploi', unit:'k', dir:1},
-    {id:'jolts',   cat:'jobs',   name:'JOLTS offres d’emploi', unit:'M', dir:1},
     {id:'mega_eps', cat:'spec', only:'nasdaq', name:'Croissance des bénéfices des géants tech', unit:'%', dir:1, hint:'Mag 7, trimestre en cours : réel vs prévu'},
   ];
   const ASSETS = {
@@ -257,10 +256,10 @@ select{font-family:var(--f-body)}
 
   // ---------- scoring ----------
   const WEIGHTS = {
-    xauusd:{cpi:3,nfp:3,yield10:3,pce:2,unemp:2,jolts:0},
-    nasdaq:{cpi:3,yield10:3,mega_eps:3,nfp:2,pce:2,jolts:0},
-    spx500:{cpi:3,nfp:3,yield10:2,pce:2,unemp:2,retail:2,pmi_srv:2,jolts:0},
-    us30:{pmi_mfg:3,cpi:2,nfp:2,retail:2,gdp:2,jolts:0}
+    xauusd:{cpi:3,nfp:3,yield10:3,pce:2,unemp:2},
+    nasdaq:{cpi:3,yield10:3,mega_eps:3,nfp:2,pce:2},
+    spx500:{cpi:3,nfp:3,yield10:2,pce:2,unemp:2,retail:2,pmi_srv:2},
+    us30:{pmi_mfg:3,cpi:2,nfp:2,retail:2,gdp:2}
   };
   const wOf = (asset,id) => { const w = (WEIGHTS[asset]||{})[id]; return w===undefined ? 1 : w; };
   function impact(asset, cat, usd){
