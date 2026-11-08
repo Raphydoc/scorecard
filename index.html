@@ -410,12 +410,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   <section data-pg="earn" hidden aria-label="Résultats d’entreprises">
     <div class="panel">
       <div class="pghead">
-        <div><h2>Résultats d’entreprises IA</h2><p>Bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est</p></div>
-        <div class="calseg" role="group" aria-label="Filtre des résultats">
-          <button type="button" data-ef="all" aria-pressed="true">Tous</button>
-          <button type="button" data-ef="next" aria-pressed="false">À venir</button>
-          <button type="button" data-ef="done" aria-pressed="false">Publiés</button>
-        </div>
+        <div><h2>Résultats d’entreprises IA</h2><p>Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est</p></div>
       </div>
       <div class="tablewrap" id="earnBox"></div>
     </div>
@@ -838,6 +833,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   function stars(n){ return n ? `<span class="stars" title="Poids ×${n}">${'★'.repeat(n)}<span class="dim">${'★'.repeat(Math.max(0,2-n))}</span></span>` : '<span class="info">info</span>'; }
   function torontoToday(){ try{ return new Date().toLocaleDateString('en-CA',{timeZone:'America/Toronto'}); }catch(e){ return new Date().toISOString().slice(0,10); } }
   function mondayOf(iso){ const d = new Date(iso+'T12:00:00'); const wd = (d.getDay()+6)%7; d.setDate(d.getDate()-wd); return d.toISOString().slice(0,10); }
+  function curMon(t){ const d = new Date(t+'T12:00:00').getDay(); return (d===0||d===6) ? addDays(mondayOf(t),7) : mondayOf(t); }
   function addDays(iso,n){ const d = new Date(iso+'T12:00:00'); d.setDate(d.getDate()+n); return d.toISOString().slice(0,10); }
   function weekLabel(mon){
     const fri = addDays(mon,4), a = new Date(mon+'T12:00:00'), b = new Date(fri+'T12:00:00');
@@ -853,10 +849,10 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     if(!all.length){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Le calendrier se remplit à la prochaine mise à jour.</p>'; return; }
     const weeks = [...new Set(all.map(it=>mondayOf(it.date)))].sort();
     if(!state.calWeek || !weeks.includes(state.calWeek)){
-      const cur = mondayOf(today);
+      const cur = curMon(today);
       state.calWeek = weeks.find(w=>w>=cur && all.some(it=>mondayOf(it.date)===w && (it.date>=today || w===cur))) || weeks.find(w=>w>=cur) || weeks[weeks.length-1];
     }
-    const wi = weeks.indexOf(state.calWeek), cur = mondayOf(today);
+    const wi = weeks.indexOf(state.calWeek), cur = curMon(today);
     const rel = state.calWeek===cur ? 'Cette semaine' : state.calWeek===addDays(cur,7) ? 'Semaine prochaine' : state.calWeek<cur ? 'Semaine passée' : 'Dans '+Math.round((new Date(state.calWeek)-new Date(cur))/604800000)+' semaines';
     let nav = `<div class="weeknav"><button type="button" class="wbtn" data-w="-1" ${wi<=0?'disabled':''} aria-label="Semaine précédente">‹</button>
       <div class="wlbl"><b>${esc(rel)}</b><span>${esc(weekLabel(state.calWeek))}</span></div>
@@ -945,53 +941,51 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     if(v.every(x=>x<0)) return ['Raté','bear'];
     return ['Mitigé','mix'];
   }
+  state.earnWeek = null;
   function renderEarn(){
     const box = $('earnBox'); if(!box) return;
     const today = torontoToday();
-    const all = (state.calendar||[]).filter(it=>it.kind==='earn' && it.date);
-    const isDone = it => num(it.epsA)!==null || num(it.revA)!==null;
-    let list = all.filter(it => state.earnFilter==='all' || (state.earnFilter==='done' ? isDone(it) : !isDone(it)));
-    const up = list.filter(it=>!isDone(it)).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
-    const dn = list.filter(isDone).sort((a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||'')));
+    const all = (state.calendar||[]).filter(it=>it.kind==='earn' && it.date).slice().sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
     if(!all.length){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Les résultats se remplissent à la prochaine mise à jour.</p>'; return; }
-    const row = it => {
-      const d = new Date(it.date+'T12:00:00');
-      const dl = d.toLocaleDateString('fr-CA',{day:'numeric', month:'short'});
-      const [vt,vc] = earnVerdict(it);
-      const nm = String(it.name||'').replace(/^Résultats\s+/,'');
-      const mv = num(it.move);
-      return `<tr><td class="num t">${esc(dl)}<small>${esc(it.time||'')}</small></td>`
+    const isDone = it => num(it.epsA)!==null || num(it.revA)!==null;
+    const weeks = [...new Set(all.map(it=>mondayOf(it.date)))].sort();
+    const cur = curMon(today);
+    if(!state.earnWeek || !weeks.includes(state.earnWeek)) state.earnWeek = weeks.find(w=>w>=cur) || weeks[weeks.length-1];
+    const wi = weeks.indexOf(state.earnWeek);
+    const rel = state.earnWeek===cur ? 'Cette semaine' : state.earnWeek===addDays(cur,7) ? 'Semaine prochaine' : state.earnWeek<cur ? 'Semaine passée' : 'Dans '+Math.round((new Date(state.earnWeek)-new Date(cur))/604800000)+' semaines';
+    const nav = `<div class="weeknav"><button type="button" class="wbtn" data-w="-1" ${wi<=0?'disabled':''} aria-label="Semaine précédente">‹</button>
+      <div class="wlbl"><b>${esc(rel)}</b><span>${esc(weekLabel(state.earnWeek))}</span></div>
+      <button type="button" class="wbtn" data-w="1" ${wi>=weeks.length-1?'disabled':''} aria-label="Semaine suivante">›</button></div>`;
+    const wk = all.filter(it=>mondayOf(it.date)===state.earnWeek);
+    const nd = wk.filter(isDone).length, nb = wk.filter(it=>earnVerdict(it)[1]==='bull').length;
+    const sum = `<p class="wsum">${wk.length} résultat${wk.length>1?'s':''}${nd?` · ${nd} publié${nd>1?'s':''}, ${nb} battu${nb>1?'s':''}`:''}</p>`;
+    const dayLbl = iso => { const l = new Date(iso+'T12:00:00').toLocaleDateString('fr-CA',{weekday:'long', day:'numeric', month:'long'}); return l.charAt(0).toUpperCase()+l.slice(1); };
+    const mvTxt = mv => mv!==null?(mv>0?'+':mv<0?'−':'')+Math.abs(mv).toFixed(1)+'%':'—';
+    let h = '', c = '', day = '';
+    wk.forEach(it=>{
+      const [vt,vc] = earnVerdict(it), nm = String(it.name||'').replace(/^Résultats\s+/,''), mv = num(it.move);
+      if(it.date!==day){
+        day = it.date; const t = dayLbl(day)+(day===today?' <em>· aujourd’hui</em>':'');
+        h += `<tr class="cat"><th colspan="8">${t}</th></tr>`; c += `<div class="ecat">${t}</div>`;
+      }
+      h += `<tr><td class="num t">${esc(it.time||'')}</td>`
         + `<td class="co"><b>${esc(nm)}</b>${it.note?`<small>${esc(it.note)}</small>`:''}</td>`
         + `<td class="num">${money(it.epsF)}</td>`
         + `<td class="num">${num(it.epsA)!==null?`<b>${money(it.epsA)}</b>${surp(it.epsA,it.epsF)}`:'—'}</td>`
         + `<td class="num">${money(it.revF,true)}</td>`
         + `<td class="num">${num(it.revA)!==null?`<b>${money(it.revA,true)}</b>${surp(it.revA,it.revF)}`:'—'}</td>`
-        + `<td class="num mv ${mv>0?'up':mv<0?'dn':''}">${mv!==null?(mv>0?'+':mv<0?'−':'')+Math.abs(mv).toFixed(1)+'%':'—'}</td>`
+        + `<td class="num mv ${mv>0?'up':mv<0?'dn':''}">${mvTxt(mv)}</td>`
         + `<td class="c"><span class="vtag ${vc}">${esc(vt)}</span></td></tr>`;
-    };
-    const head = `<thead><tr><th>Date</th><th>Entreprise</th><th class="r">BPA prévu</th><th class="r">BPA réel</th><th class="r">Revenus prévus</th><th class="r">Revenus réels</th><th class="r">Réaction</th><th class="c">Verdict</th></tr></thead>`;
-    let h = '';
-    if(up.length) h += `<tr class="cat"><th colspan="8">À venir</th></tr>` + up.map(row).join('');
-    if(dn.length) h += `<tr class="cat"><th colspan="8">Publiés</th></tr>` + dn.map(row).join('');
-    const card = it => {
-      const d = new Date(it.date+'T12:00:00'), dl = d.toLocaleDateString('fr-CA',{day:'numeric', month:'short'});
-      const [vt,vc] = earnVerdict(it), nm = String(it.name||'').replace(/^Résultats\s+/,''), mv = num(it.move);
       const pair = (f,a,big) => `<b>${num(a)!==null?money(a,big):money(f,big)}</b>${num(a)!==null?surp(a,f):''}`;
-      return `<div class="ecard"><div class="eh"><div><b>${esc(nm)}</b><small><span>${esc(dl)}</span> · ${esc(it.time||'')}${it.note?` · <span>${esc(it.note)}</span>`:''}</small></div><span class="vtag ${vc}">${esc(vt)}</span></div>
+      c += `<div class="ecard"><div class="eh"><div><b>${esc(nm)}</b><small>${esc(it.time||'')}${it.note?` · <span>${esc(it.note)}</span>`:''}</small></div><span class="vtag ${vc}">${esc(vt)}</span></div>
         <div class="eg"><div><span>${num(it.epsA)!==null?'BPA réel':'BPA prévu'}</span>${pair(it.epsF,it.epsA)}</div>
         <div><span>${num(it.revA)!==null?'Revenus réels':'Revenus prévus'}</span>${pair(it.revF,it.revA,true)}</div>
-        <div><span>Réaction</span><b class="${mv>0?'up':mv<0?'dn':''}">${mv!==null?(mv>0?'+':mv<0?'−':'')+Math.abs(mv).toFixed(1)+'%':'—'}</b></div></div></div>`;
-    };
-    let c = '';
-    if(up.length) c += `<div class="ecat">À venir</div>` + up.map(card).join('');
-    if(dn.length) c += `<div class="ecat">Publiés</div>` + dn.map(card).join('');
-    box.innerHTML = h ? `<table class="cal ern">${head}<tbody>${h}</tbody></table><div class="ecards">${c}</div>` : '<p class="empty-hist" style="padding:14px">Aucun résultat pour ce filtre.</p>';
+        <div><span>Réaction</span><b class="${mv>0?'up':mv<0?'dn':''}">${mvTxt(mv)}</b></div></div></div>`;
+    });
+    const head = `<thead><tr><th>Heure</th><th>Entreprise</th><th class="r">BPA prévu</th><th class="r">BPA réel</th><th class="r">Revenus prévus</th><th class="r">Revenus réels</th><th class="r">Réaction</th><th class="c">Verdict</th></tr></thead>`;
+    box.innerHTML = nav + sum + (wk.length ? `<table class="cal ern">${head}<tbody>${h}</tbody></table><div class="ecards">${c}</div>` : '<p class="empty-hist" style="padding:14px">Aucun résultat cette semaine.</p>');
+    box.querySelectorAll('.wbtn').forEach(b=>b.addEventListener('click', ()=>{ const j = wi + (+b.dataset.w); if(weeks[j]){ state.earnWeek = weeks[j]; renderEarn(); } }));
   }
-  document.querySelectorAll('[data-ef]').forEach(b=>b.addEventListener('click', ()=>{
-    state.earnFilter = b.dataset.ef;
-    document.querySelectorAll('[data-ef]').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
-    renderEarn();
-  }));
   function showPage(pg){
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
@@ -1050,7 +1044,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed',
-    'Résultats':'Earnings','Résultats d’entreprises IA':'AI company earnings','Bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'Earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time',
+    'Résultats':'Earnings','Résultats d’entreprises IA':'AI company earnings','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
     'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
     'Battu = BPA et revenus au-dessus des prévisions; Raté = les deux en dessous; Mitigé = un des deux. Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.':'Beat = EPS and revenue above forecasts; Miss = both below; Mixed = one of the two. The % under the actual = gap vs forecast. Reaction = stock move after the report. Earnings are not part of the score. Updated automatically with the scorecard.',
@@ -1208,6 +1202,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     [new RegExp('^(.+) \\('+Mre+'\\)$'), (x,a,m)=>(D[a]||a)+' ('+MOIS[m]+')'],
     [/^(.+) \(T(\d), (\d)e estimation\)$/, (x,a,q,n)=>(D[a]||a)+' (Q'+q+', estimate '+n+')'],
     [/^Résultats : (.+)$/, (x,c)=>'Earnings: '+c],
+    [/^(\d+) résultats?( · (\d+) publiés?, (\d+) battus?)?$/, (x,n,y,d,b)=>n+' report'+(n>1?'s':'')+(y?' · '+d+' reported, '+b+' beat':'')],
     [/^Tendance$/, ()=>'Trend']
   ];
   function tr(s){
