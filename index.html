@@ -317,7 +317,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.</li>
-      <li>Total de −max à +max (le max dépend de l'actif : or ±25, Nasdaq ±24, S&amp;P ±27, Dow ±25, dollar ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
+      <li>Total de −max à +max (le max dépend de l'actif : or ±25, Nasdaq ±24, S&amp;P ±27, Dow ±25, dollar ±25) : 4 à 6 = haussier/baissier, 7 et plus = très haussier/très baissier, de −3 à +3 = neutre (comme EdgeFinder).</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
@@ -459,10 +459,10 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     return ['Neutre','neu'];
   }
   function verdict(total){
-    if(total>=12) return ['Très haussier','bull'];
-    if(total>=3) return ['Haussier','bull'];
-    if(total<=-12) return ['Très baissier','bear'];
-    if(total<=-3) return ['Baissier','bear'];
+    if(total>=7) return ['Très haussier','bull'];
+    if(total>=4) return ['Haussier','bull'];
+    if(total<=-7) return ['Très baissier','bear'];
+    if(total<=-4) return ['Baissier','bear'];
     return ['Neutre','neu'];
   }
   const cls = s => s>0?'bull':s<0?'bear':'neu';
@@ -564,9 +564,9 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     return `M${x1.toFixed(1)} ${y1.toFixed(1)} A${rad} ${rad} 0 0 1 ${x2.toFixed(1)} ${y2.toFixed(1)}`;
   }
   function drawGaugeStatic(){
-    $('arcBear').setAttribute('d', arc(-GR,-3.2,92)); $('arcBear').setAttribute('stroke','var(--bear)');
-    $('arcNeu').setAttribute('d', arc(-2.8,2.8,92)); $('arcNeu').setAttribute('stroke','var(--neutral)');
-    $('arcBull').setAttribute('d', arc(3.2,GR,92)); $('arcBull').setAttribute('stroke','var(--bull)');
+    $('arcBear').setAttribute('d', arc(-GR,-3.7,92)); $('arcBear').setAttribute('stroke','var(--bear)');
+    $('arcNeu').setAttribute('d', arc(-3.3,3.3,92)); $('arcNeu').setAttribute('stroke','var(--neutral)');
+    $('arcBull').setAttribute('d', arc(3.7,GR,92)); $('arcBull').setAttribute('stroke','var(--bull)');
     let t='';
     for(const s of [-GR,-GR/2,0,GR/2,GR]){ const [x1,y1]=polar(s,102),[x2,y2]=polar(s,108);
       t+=`<line x1="${x1.toFixed(1)}" y1="${y1.toFixed(1)}" x2="${x2.toFixed(1)}" y2="${y2.toFixed(1)}" stroke="var(--muted)" stroke-width="1.5"/>`; }
@@ -745,11 +745,11 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     if(q && !(TOP_NAMES[a].toLowerCase().includes(q) || TOP_LABEL[a].includes(q))) return false;
     const cat = g('fCat'); if(cat && TOP_CAT[a]!==cat) return false;
     const b = g('fBias'), t = C.total;
-    if(b==='vbull' && !(t>=12)) return false;
-    if(b==='bull' && !(t>=3)) return false;
-    if(b==='neu' && !(t>-3 && t<3)) return false;
-    if(b==='bear' && !(t<=-3)) return false;
-    if(b==='vbear' && !(t<=-12)) return false;
+    if(b==='vbull' && !(t>=7)) return false;
+    if(b==='bull' && !(t>=4)) return false;
+    if(b==='neu' && !(t>=-3 && t<=3)) return false;
+    if(b==='bear' && !(t<=-4)) return false;
+    if(b==='vbear' && !(t<=-7)) return false;
     const sg = (v, f) => !f || (f==='pos' && v>0) || (f==='neg' && v<0) || (f==='zero' && v===0);
     return sg(C.tech, g('fTech')) && sg(C.sent, g('fSent')) && sg(C.macro, g('fMacro'));
   }
@@ -967,7 +967,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (trend over about a month): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
     'Poids :':'Weights:',
     'les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.':'the most important data for each asset count more (×2, shown next to the name); the rest count ×1, so each item is worth at most ±2. Example: CPI is ×2 for every asset, Big Tech earnings ×2 for the Nasdaq.',
-    'Total de −max à +max (le max dépend de l\'actif : or ±25, Nasdaq ±24, S&P ±27, Dow ±25, dollar ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.':'Total from −max to +max (depends on the asset: gold ±25, Nasdaq ±24, S&P ±27, Dow ±25, dollar ±25): ±3 or more = bullish/bearish, ±12 or more = very bullish/very bearish.',
+    'Total de −max à +max (le max dépend de l\'actif : or ±25, Nasdaq ±24, S&P ±27, Dow ±25, dollar ±25) : 4 à 6 = haussier/baissier, 7 et plus = très haussier/très baissier, de −3 à +3 = neutre (comme EdgeFinder).':'Total from −max to +max (depends on the asset: gold ±25, Nasdaq ±24, S&P ±27, Dow ±25, dollar ±25): 4 to 6 = bullish/bearish, 7 or more = very bullish/very bearish, −3 to +3 = neutral (like EdgeFinder).',
     'Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Economic data, COT and retail sentiment update automatically. Seasonality (last 3 months) updates itself at the start of each month. Your 4H/Daily trend is saved in this browser. Information only: this is not a buy or sell signal.',
     'Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Information only: this is not a buy or sell signal.',
     // Top Setups
