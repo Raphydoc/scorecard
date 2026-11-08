@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-07T15:05:53Z",
+ "updatedAt": "2026-11-08T18:41:13Z",
  "econ": {
   "values": {
    "gdp": {
@@ -73,32 +73,49 @@
     "d": "2026-11-03"
    }
   },
-  "yield10y": "falling"
+  "yield10y": "falling",
+  "seasonMonth": "2026-11"
  },
  "assets": {
   "xauusd": {
    "cotLong": 84.33,
    "cotChange": -1.39,
    "crowdLong": 79,
-   "season": "bear"
+   "season": "bear",
+   "seasonPct": -4.3,
+   "seasonPeriod": "août à octobre"
   },
   "nasdaq": {
    "cotLong": 65.89,
    "cotChange": -4.41,
    "crowdLong": 71,
-   "season": "bear"
+   "season": "neutral",
+   "seasonPct": 0.4,
+   "seasonPeriod": "août à octobre"
   },
   "spx500": {
    "cotLong": 39.0,
    "cotChange": 0.87,
    "crowdLong": 58,
-   "season": "bear"
+   "season": "bull",
+   "seasonPct": 1.5,
+   "seasonPeriod": "août à octobre"
   },
   "us30": {
    "cotLong": 67.43,
    "cotChange": 5.3,
    "crowdLong": 55,
-   "season": "bull"
+   "season": "neutral",
+   "seasonPct": -1.0,
+   "seasonPeriod": "août à octobre"
+  },
+  "usd": {
+   "season": "bull",
+   "seasonPct": 2.0,
+   "seasonPeriod": "août à octobre",
+   "cotLong": 63.67,
+   "cotChange": -0.92,
+   "crowdLong": 31
   }
  },
  "history": [
@@ -119,6 +136,10 @@
    "us30": {
     "sent": 2,
     "macro": 10
+   },
+   "usd": {
+    "sent": 1,
+    "macro": 11
    }
   }
  ],
