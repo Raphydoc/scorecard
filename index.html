@@ -142,6 +142,30 @@ select{font-family:var(--f-body)}
 }
 
 [hidden]{display:none!important}
+/* page Résultats */
+table.ern td.co{min-width:150px}
+table.ern td.co b{display:block;font-family:var(--f-display);font-size:16px;font-weight:600}
+table.ern td.co small{display:block;color:var(--muted);font-size:11.5px}
+table.ern td.num small{display:block;font-size:11px;color:var(--muted)}
+table.ern td.num small.up{color:var(--bull)} table.ern td.num small.dn{color:var(--bear)}
+table.ern td.mv.up{color:var(--bull)} table.ern td.mv.dn{color:var(--bear)}
+.vtag{display:inline-block;font:600 12px/1 var(--f-display);letter-spacing:.05em;text-transform:uppercase;padding:5px 7px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.vtag.bull{background:var(--bull);border-color:var(--bull);color:#fff}
+.vtag.bear{background:var(--bear);border-color:var(--bear);color:#fff}
+.vtag.mix{border-color:var(--gold);color:var(--gold)}
+.ecards{display:none}
+.ecard{border-top:1px solid var(--line);padding:12px 14px;display:grid;gap:8px}
+.ecard .eh{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+.ecard .eh b{display:block;font-family:var(--f-display);font-size:17px;font-weight:600}
+.ecard .eh small{display:block;color:var(--muted);font-size:12px}
+.ecard .eg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}
+.ecard .eg div{background:var(--panel-2);padding:6px 8px;min-width:0}
+.ecard .eg span{display:block;font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.ecard .eg b{font-family:var(--f-mono, 'IBM Plex Mono', monospace);font-size:13.5px;font-weight:500}
+.ecard .eg small{font-size:11px;margin-left:4px} .ecard small.up,.ecard b.up{color:var(--bull)} .ecard small.dn,.ecard b.dn{color:var(--bear)}
+.ecat{padding:10px 14px;font-family:var(--f-display);font-weight:600;font-size:17px;background:var(--panel-2);border-top:1px solid var(--line)}
+@media (max-width:700px){ #earnBox table.ern{display:none} .ecards{display:block} }
+
 .assetpick{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
 .assetpick select{font:600 16px/1.2 var(--f-display);letter-spacing:.03em;text-transform:uppercase;color:var(--fg);background:var(--panel);border:1px solid var(--line);padding:9px 10px;border-radius:0;min-width:230px;max-width:100%}
 @media (max-width:440px){ .assetpick{width:100%} .assetpick select{flex:1;min-width:0} }
@@ -247,6 +271,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   <button type="button" data-page="score" aria-current="page">Scorecard</button>
   <button type="button" data-page="top">Top Setups</button>
   <button type="button" data-page="cal">Calendrier</button>
+  <button type="button" data-page="earn">Résultats</button>
   <button type="button" data-page="fed">Fed</button>
 </nav>
 </aside>
@@ -380,6 +405,21 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       <div class="tablewrap" id="calBox"></div>
     </div>
     <p class="pgfoot">Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). Pour les résultats d’entreprises, les étoiles montrent quels actifs ils peuvent faire bouger. « info » = ne compte pas dans le score. Résultats d’entreprises : ★★ = très gros impact sur l’indice (ex. Nvidia pour le Nasdaq), ★ = impact moyen; ils ne comptent pas dans le score. Le calendrier se met à jour tout seul avec le scorecard.</p>
+  </section>
+
+  <section data-pg="earn" hidden aria-label="Résultats d’entreprises">
+    <div class="panel">
+      <div class="pghead">
+        <div><h2>Résultats d’entreprises IA</h2><p>Bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est</p></div>
+        <div class="calseg" role="group" aria-label="Filtre des résultats">
+          <button type="button" data-ef="all" aria-pressed="true">Tous</button>
+          <button type="button" data-ef="next" aria-pressed="false">À venir</button>
+          <button type="button" data-ef="done" aria-pressed="false">Publiés</button>
+        </div>
+      </div>
+      <div class="tablewrap" id="earnBox"></div>
+    </div>
+    <p class="pgfoot">Battu = BPA et revenus au-dessus des prévisions; Raté = les deux en dessous; Mitigé = un des deux. Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.</p>
   </section>
 
   <section data-pg="fed" hidden aria-label="Réserve fédérale">
@@ -642,7 +682,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     if(pts.length>1) g += `<text x="${W}" y="${H-3}" font-size="10" fill="var(--muted)" text-anchor="end" font-family="IBM Plex Mono, monospace">${fmtDate(last.date)}</text>`;
     box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Historique du score total">${g}</svg>`;
   }
-  function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); }
+  function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); }
 
   // ---------- editing ----------
   let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false}, saveTimer = null, chain = Promise.resolve();
@@ -880,12 +920,84 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
         <p>Ce qui fait bouger les marchés, c’est surtout quand ces probabilités changent vite (après un CPI ou un NFP, par exemple).</p>
       </div>`;
   }
+
+  // ---------- page Résultats ----------
+  state.earnFilter = 'all';
+  function money(v, big){
+    v = num(v); if(v===null) return '—';
+    const neg = v<0, a = Math.abs(v);
+    let s;
+    if(big){ s = a>=1 ? '$'+a.toFixed(a>=100?0:a>=10?1:2)+'B' : '$'+Math.round(a*1000)+'M'; }
+    else s = '$'+a.toFixed(2);
+    return (neg?'−':'')+s;
+  }
+  function surp(a, f){
+    a = num(a); f = num(f); if(a===null || f===null || f===0) return '';
+    const p = (a-f)/Math.abs(f)*100, s = (p>0?'+':p<0?'−':'')+Math.abs(p).toFixed(Math.abs(p)>=10?0:1)+'%';
+    return `<small class="${p>0?'up':p<0?'dn':''}">${s}</small>`;
+  }
+  function earnVerdict(it){
+    const e = (num(it.epsA)!==null && num(it.epsF)!==null) ? Math.sign(it.epsA-it.epsF) : null;
+    const r = (num(it.revA)!==null && num(it.revF)!==null) ? Math.sign(it.revA-it.revF) : null;
+    if(e===null && r===null) return ['À venir',''];
+    const v = [e,r].filter(x=>x!==null);
+    if(v.every(x=>x>0)) return ['Battu','bull'];
+    if(v.every(x=>x<0)) return ['Raté','bear'];
+    return ['Mitigé','mix'];
+  }
+  function renderEarn(){
+    const box = $('earnBox'); if(!box) return;
+    const today = torontoToday();
+    const all = (state.calendar||[]).filter(it=>it.kind==='earn' && it.date);
+    const isDone = it => num(it.epsA)!==null || num(it.revA)!==null;
+    let list = all.filter(it => state.earnFilter==='all' || (state.earnFilter==='done' ? isDone(it) : !isDone(it)));
+    const up = list.filter(it=>!isDone(it)).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
+    const dn = list.filter(isDone).sort((a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||'')));
+    if(!all.length){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Les résultats se remplissent à la prochaine mise à jour.</p>'; return; }
+    const row = it => {
+      const d = new Date(it.date+'T12:00:00');
+      const dl = d.toLocaleDateString('fr-CA',{day:'numeric', month:'short'});
+      const [vt,vc] = earnVerdict(it);
+      const nm = String(it.name||'').replace(/^Résultats\s+/,'');
+      const mv = num(it.move);
+      return `<tr><td class="num t">${esc(dl)}<small>${esc(it.time||'')}</small></td>`
+        + `<td class="co"><b>${esc(nm)}</b>${it.note?`<small>${esc(it.note)}</small>`:''}</td>`
+        + `<td class="num">${money(it.epsF)}</td>`
+        + `<td class="num">${num(it.epsA)!==null?`<b>${money(it.epsA)}</b>${surp(it.epsA,it.epsF)}`:'—'}</td>`
+        + `<td class="num">${money(it.revF,true)}</td>`
+        + `<td class="num">${num(it.revA)!==null?`<b>${money(it.revA,true)}</b>${surp(it.revA,it.revF)}`:'—'}</td>`
+        + `<td class="num mv ${mv>0?'up':mv<0?'dn':''}">${mv!==null?(mv>0?'+':mv<0?'−':'')+Math.abs(mv).toFixed(1)+'%':'—'}</td>`
+        + `<td class="c"><span class="vtag ${vc}">${esc(vt)}</span></td></tr>`;
+    };
+    const head = `<thead><tr><th>Date</th><th>Entreprise</th><th class="r">BPA prévu</th><th class="r">BPA réel</th><th class="r">Revenus prévus</th><th class="r">Revenus réels</th><th class="r">Réaction</th><th class="c">Verdict</th></tr></thead>`;
+    let h = '';
+    if(up.length) h += `<tr class="cat"><th colspan="8">À venir</th></tr>` + up.map(row).join('');
+    if(dn.length) h += `<tr class="cat"><th colspan="8">Publiés</th></tr>` + dn.map(row).join('');
+    const card = it => {
+      const d = new Date(it.date+'T12:00:00'), dl = d.toLocaleDateString('fr-CA',{day:'numeric', month:'short'});
+      const [vt,vc] = earnVerdict(it), nm = String(it.name||'').replace(/^Résultats\s+/,''), mv = num(it.move);
+      const pair = (f,a,big) => `<b>${num(a)!==null?money(a,big):money(f,big)}</b>${num(a)!==null?surp(a,f):''}`;
+      return `<div class="ecard"><div class="eh"><div><b>${esc(nm)}</b><small><span>${esc(dl)}</span> · ${esc(it.time||'')}${it.note?` · <span>${esc(it.note)}</span>`:''}</small></div><span class="vtag ${vc}">${esc(vt)}</span></div>
+        <div class="eg"><div><span>${num(it.epsA)!==null?'BPA réel':'BPA prévu'}</span>${pair(it.epsF,it.epsA)}</div>
+        <div><span>${num(it.revA)!==null?'Revenus réels':'Revenus prévus'}</span>${pair(it.revF,it.revA,true)}</div>
+        <div><span>Réaction</span><b class="${mv>0?'up':mv<0?'dn':''}">${mv!==null?(mv>0?'+':mv<0?'−':'')+Math.abs(mv).toFixed(1)+'%':'—'}</b></div></div></div>`;
+    };
+    let c = '';
+    if(up.length) c += `<div class="ecat">À venir</div>` + up.map(card).join('');
+    if(dn.length) c += `<div class="ecat">Publiés</div>` + dn.map(card).join('');
+    box.innerHTML = h ? `<table class="cal ern">${head}<tbody>${h}</tbody></table><div class="ecards">${c}</div>` : '<p class="empty-hist" style="padding:14px">Aucun résultat pour ce filtre.</p>';
+  }
+  document.querySelectorAll('[data-ef]').forEach(b=>b.addEventListener('click', ()=>{
+    state.earnFilter = b.dataset.ef;
+    document.querySelectorAll('[data-ef]').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
+    renderEarn();
+  }));
   function showPage(pg){
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
-    if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop();
+    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
   }
   document.querySelectorAll('.pages button').forEach(b=>b.addEventListener('click', ()=>showPage(b.dataset.page)));
   document.querySelectorAll('.calseg button').forEach(b=>b.addEventListener('click', ()=>{
@@ -893,7 +1005,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
@@ -938,6 +1050,12 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed',
+    'Résultats':'Earnings','Résultats d’entreprises IA':'AI company earnings','Bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'Earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time',
+    'À venir':'Upcoming','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
+    'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
+    'Battu = BPA et revenus au-dessus des prévisions; Raté = les deux en dessous; Mitigé = un des deux. Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.':'Beat = EPS and revenue above forecasts; Miss = both below; Mixed = one of the two. The % under the actual = gap vs forecast. Reaction = stock move after the report. Earnings are not part of the score. Updated automatically with the scorecard.',
+    'Filtre des résultats':'Earnings filter','Résultats d’entreprises':'Company earnings',
+
     'Ma tendance':'My trend','Terminé':'Done','Modifier les données':'Edit data',
     'US Dollar':'US Dollar','Dow Jones':'Dow Jones','Nasdaq':'Nasdaq','S&P 500':'S&P 500','XAUUSD':'XAUUSD',
     'XAUUSD · Or':'XAUUSD · Gold','DXY · Dollar US':'DXY · US Dollar',

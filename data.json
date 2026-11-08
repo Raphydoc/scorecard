@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T20:09:35Z",
+ "updatedAt": "2026-11-08T20:14:18Z",
  "econ": {
   "values": {
    "gdp": {
@@ -206,7 +206,12 @@
    "note": "Après la clôture",
    "assets": {
     "nasdaq": 1
-   }
+   },
+   "epsF": -1.45,
+   "revF": 3.5,
+   "epsA": null,
+   "revA": null,
+   "move": null
   },
   {
    "date": "2026-11-12",
@@ -217,7 +222,12 @@
    "note": "Avant l’ouverture",
    "assets": {
     "nasdaq": 1
-   }
+   },
+   "epsF": -0.61,
+   "revF": 0.907,
+   "epsA": null,
+   "revA": null,
+   "move": null
   },
   {
    "date": "2026-11-12",
@@ -239,7 +249,12 @@
     "nasdaq": 1,
     "spx500": 1,
     "us30": 1
-   }
+   },
+   "epsF": 1.15,
+   "revF": 18.1,
+   "epsA": null,
+   "revA": null,
+   "move": null
   },
   {
    "date": "2026-11-12",
@@ -251,7 +266,12 @@
    "assets": {
     "nasdaq": 1,
     "spx500": 1
-   }
+   },
+   "epsF": 4.06,
+   "revF": 10.3,
+   "epsA": null,
+   "revA": null,
+   "move": null
   },
   {
    "date": "2026-11-12",
@@ -262,7 +282,12 @@
    "note": "Après la clôture",
    "assets": {
     "nasdaq": 1
-   }
+   },
+   "epsF": -0.13,
+   "revF": 0.2147,
+   "epsA": null,
+   "revA": null,
+   "move": null
   },
   {
    "date": "2026-11-13",
@@ -294,7 +319,12 @@
     "spx500": 2,
     "us30": 1,
     "btcusd": 1
-   }
+   },
+   "epsF": 2.49,
+   "revF": 109.0,
+   "epsA": null,
+   "revA": null,
+   "move": null
   },
   {
    "date": "2026-11-18",
