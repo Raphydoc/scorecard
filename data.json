@@ -363,8 +363,8 @@
   "next": "2026-12-09",
   "step": "25 pb",
   "probs": {
-   "hike": 80,
-   "hold": 20,
+   "hike": 77,
+   "hold": 23,
    "cut": 0
   },
   "prevProbs": {
