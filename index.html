@@ -286,12 +286,12 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
       <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
       <li><strong>Croissance des bénéfices des géants tech</strong> (Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.</li>
-      <li><strong>Technique :</strong> tendance 4H/Daily ±2, performance du mois passé ±1 (plus de +0,5 % = +1, moins de −0,5 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
+      <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1 (moyenne du mois en cours sur les 10 dernières années : +0,5 % ou plus et en hausse au moins 1 fois sur 2 = +1; −0,5 % ou moins et en hausse au plus 1 fois sur 2 = −1; sinon 0). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour les quatre actifs, les bénéfices des géants tech ×2 pour le Nasdaq.</li>
       <li>Total de −max à +max (le max dépend de l'actif : or ±25, Nasdaq ±26, S&amp;P ±27, Dow ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
     </ul>
-    <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La performance du mois passé est remplie automatiquement au début de chaque mois; tu peux la changer avec « Ma tendance » (ton choix tient jusqu'à la fin du mois). Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
+    <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité change toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
 
 
@@ -354,6 +354,11 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     spx500:{name:'S&P 500', hint:'Croissance forte = haussier, inflation chaude = baissier'},
     us30:{name:'Dow Jones', hint:'Croissance forte = haussier, inflation chaude = baissier'}
   };
+  // Saisonnalité : moyenne des 10 dernières fois que ce mois est revenu (source : ChartRow, 2016-2026)
+  const SEASON = {"xauusd":{"1":{"avg":3.46,"up":7,"n":10,"sig":1},"2":{"avg":0.53,"up":5,"n":10,"sig":1},"3":{"avg":1.35,"up":5,"n":10,"sig":1},"4":{"avg":1.66,"up":6,"n":10,"sig":1},"5":{"avg":0.62,"up":4,"n":10,"sig":0},"6":{"avg":-1.7,"up":3,"n":10,"sig":-1},"7":{"avg":1.83,"up":6,"n":10,"sig":1},"8":{"avg":2.24,"up":5,"n":10,"sig":1},"9":{"avg":-1.25,"up":2,"n":10,"sig":-1},"10":{"avg":1.19,"up":6,"n":10,"sig":1},"11":{"avg":0.52,"up":5,"n":9,"sig":1},"12":{"avg":2.41,"up":8,"n":10,"sig":1}},"spx500":{"1":{"avg":2.12,"up":7,"n":10,"sig":1},"2":{"avg":-0.41,"up":4,"n":10,"sig":0},"3":{"avg":-0.85,"up":6,"n":10,"sig":0},"4":{"avg":2.2,"up":7,"n":10,"sig":1},"5":{"avg":2.03,"up":9,"n":10,"sig":1},"6":{"avg":1.81,"up":8,"n":10,"sig":1},"7":{"avg":3.17,"up":10,"n":10,"sig":1},"8":{"avg":1.32,"up":7,"n":10,"sig":1},"9":{"avg":-1.24,"up":5,"n":10,"sig":-1},"10":{"avg":0.87,"up":5,"n":10,"sig":1},"11":{"avg":4.4,"up":8,"n":9,"sig":1},"12":{"avg":0.21,"up":7,"n":10,"sig":0}},"nasdaq":{"1":{"avg":3.33,"up":9,"n":10,"sig":1},"2":{"avg":-0.47,"up":3,"n":10,"sig":0},"3":{"avg":-0.07,"up":6,"n":10,"sig":0},"4":{"avg":2.92,"up":8,"n":10,"sig":1},"5":{"avg":3.91,"up":7,"n":10,"sig":1},"6":{"avg":2.91,"up":7,"n":10,"sig":1},"7":{"avg":3.01,"up":8,"n":10,"sig":1},"8":{"avg":2.08,"up":7,"n":10,"sig":1},"9":{"avg":-1.53,"up":4,"n":10,"sig":-1},"10":{"avg":0.44,"up":5,"n":10,"sig":0},"11":{"avg":4.34,"up":7,"n":9,"sig":1},"12":{"avg":-0.06,"up":7,"n":10,"sig":0}},"us30":{"1":{"avg":1.82,"up":7,"n":10,"sig":1},"2":{"avg":-0.72,"up":5,"n":10,"sig":-1},"3":{"avg":-1.29,"up":5,"n":10,"sig":-1},"4":{"avg":1.47,"up":7,"n":10,"sig":1},"5":{"avg":0.95,"up":8,"n":10,"sig":1},"6":{"avg":1.66,"up":7,"n":10,"sig":1},"7":{"avg":2.8,"up":10,"n":10,"sig":1},"8":{"avg":1.2,"up":7,"n":10,"sig":1},"9":{"avg":-1.22,"up":5,"n":10,"sig":-1},"10":{"avg":1.73,"up":6,"n":10,"sig":1},"11":{"avg":4.7,"up":8,"n":9,"sig":1},"12":{"avg":0.41,"up":7,"n":10,"sig":0}}};
+  const MOIS = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
+  function curMonthNum(){ try{ return +new Date().toLocaleDateString('en-CA',{timeZone:'America/Toronto', month:'numeric'}); }catch(e){ return new Date().getMonth()+1; } }
+  function seasonOf(asset){ return ((SEASON[asset]||{})[String(curMonthNum())])||null; }
   const blankAsset = () => ({trend:'neutral', season:'neutral', cotLong:null, cotChange:null, crowdLong:null});
   const state = {
     asset:'xauusd', edit:false, canWrite:null, db:null,
@@ -392,7 +397,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     const A = state.assets[asset] || blankAsset();
     const r = {};
     r.trend = A.trend==='bull'?2:A.trend==='bear'?-2:0;
-    r.season = A.season==='bull'?1:A.season==='bear'?-1:0;
+    const SS = seasonOf(asset); r.season = SS ? SS.sig : 0;
     const cl = num(A.cotLong), cc = num(A.cotChange), cr = num(A.crowdLong);
     r.cotNet = cl===null?0:sgn(cl-50);
     r.cotChg = cc===null?0:sgn(cc);
@@ -459,8 +464,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     h += head('Technique', catChip(C.cats.tech,3), ['','','','']);
     h += `<tr><td class="name">Tendance 4H / Daily</td><td class="sig">${chip(r.trend)}</td>
       <td class="desc" colspan="4">${E?triSelect('in-trend',A.trend):'Ta lecture de la tendance sur le 4H et le Daily (±2)'}</td></tr>`;
-    h += `<tr><td class="name">Performance du mois passé</td><td class="sig">${chip(r.season)}</td>
-      <td class="desc" colspan="4">${E?triSelect('in-season',A.season):'Hausse ou baisse de l\u2019actif le mois dernier, remplie chaque mois; modifiable (±1)'}</td></tr>`;
+    h += `<tr><td class="name">Saisonnalité (${MOIS[curMonthNum()-1]})</td><td class="sig">${chip(r.season)}</td>
+      <td class="desc" colspan="4">${(()=>{const s=seasonOf(asset); if(!s) return '—'; return 'Moyenne des '+s.n+' derniers mois de '+MOIS[curMonthNum()-1]+' : '+(s.avg>0?'+':'')+String(s.avg).replace('.',',').replace('-','−')+' % (en hausse '+s.up+' fois sur '+s.n+'). Automatique (±1).';})()}</td></tr>`;
 
     h += head('Activité institutionnelle', catChip(C.cats.inst,2), ['Long %','Short %','Changement %','']);
     const cl = num(A.cotLong);
@@ -631,7 +636,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   // ---------- page Top Setups ----------
   const TOP_COLS = [
     {k:'trend',  h:'Tendance', g:2, v:(C)=>C.rows.trend},
-    {k:'season', h:'Mois passé', g:2, v:(C)=>C.rows.season},
+    {k:'season', h:'Saison­nalité', g:2, v:(C)=>C.rows.season},
     {k:'cot',    h:'COT', g:2, v:(C)=>C.rows.cotNet + C.rows.cotChg},
     {k:'crowd',  h:'Foule', g:2, v:(C)=>C.rows.crowd},
     {k:'gdp', h:'PIB', g:3}, {k:'pmi_mfg', h:'ISM manuf.', g:3}, {k:'pmi_srv', h:'ISM serv.', g:3},
