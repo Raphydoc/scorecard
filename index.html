@@ -288,8 +288,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       <li><strong>Croissance des bénéfices des géants tech</strong> (Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.</li>
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, performance du mois passé ±1 (plus de +0,5 % = +1, moins de −0,5 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
-      <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2 ou ×3, indiqué à côté du nom). Exemple : le CPI vaut ×3 pour l'or, le Nasdaq et le S&amp;P 500, et l'ISM manufacturier vaut ×3 pour le Dow Jones.</li>
-      <li>Total de −max à +max (le max dépend de l'actif : or ±28, Nasdaq ±29, S&amp;P ±30, Dow ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
+      <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour les quatre actifs, les bénéfices des géants tech ×2 pour le Nasdaq.</li>
+      <li>Total de −max à +max (le max dépend de l'actif : or ±25, Nasdaq ±26, S&amp;P ±27, Dow ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La performance du mois passé est remplie automatiquement au début de chaque mois; tu peux la changer avec « Ma tendance » (ton choix tient jusqu'à la fin du mois). Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
@@ -317,7 +317,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       </div>
       <div class="tablewrap" id="calBox"></div>
     </div>
-    <p class="pgfoot">Importance : ★★★ = la donnée compte ×3 dans le scorecard pour l’actif choisi, ★★ = ×2, ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Le calendrier se met à jour tout seul avec le scorecard.</p>
+    <p class="pgfoot">Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Le calendrier se met à jour tout seul avec le scorecard.</p>
   </section>
 
   <section data-pg="fed" hidden aria-label="Réserve fédérale">
@@ -369,9 +369,9 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
 
   // ---------- scoring ----------
   const WEIGHTS = {
-    xauusd:{cpi:3,nfp:3,yield10:3,pce:2,unemp:2},
-    nasdaq:{cpi:3,yield10:3,mega_eps:3,nfp:2,pce:2},
-    spx500:{cpi:3,nfp:3,yield10:3,pce:2,unemp:2,retail:2,pmi_srv:2},
+    xauusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
+    nasdaq:{cpi:2,yield10:2,mega_eps:2,nfp:2,pce:2},
+    spx500:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2,retail:2,pmi_srv:2},
     us30:{pmi_mfg:2,cpi:2,nfp:2,retail:2,gdp:2}
   };
   const wOf = (asset,id) => { const w = (WEIGHTS[asset]||{})[id]; return w===undefined ? 1 : w; };
@@ -693,13 +693,13 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   state.calendar = []; state.fed = null; state.calAsset = 'all'; state.page = 'score';
   const CAL_ASSETS = ['xauusd','nasdaq','spx500','us30'];
   function impOf(item, asset){
-    if(item.kind==='fed') return 3;
+    if(item.kind==='fed') return 2;
     if(!item.id) return 0;
     const ind = INDICATORS.find(i=>i.id===item.id); if(!ind) return 0;
     const list = asset==='all' ? CAL_ASSETS : [asset];
     return Math.max(...list.map(a => (ind.only && ind.only!==a) ? 0 : wOf(a,item.id)));
   }
-  function stars(n){ return n ? `<span class="stars" title="Poids ×${n}">${'★'.repeat(n)}<span class="dim">${'★'.repeat(3-n)}</span></span>` : '<span class="info">info</span>'; }
+  function stars(n){ return n ? `<span class="stars" title="Poids ×${n}">${'★'.repeat(n)}<span class="dim">${'★'.repeat(Math.max(0,2-n))}</span></span>` : '<span class="info">info</span>'; }
   function torontoToday(){ try{ return new Date().toLocaleDateString('en-CA',{timeZone:'America/Toronto'}); }catch(e){ return new Date().toISOString().slice(0,10); } }
   function mondayOf(iso){ const d = new Date(iso+'T12:00:00'); const wd = (d.getDay()+6)%7; d.setDate(d.getDate()-wd); return d.toISOString().slice(0,10); }
   function addDays(iso,n){ const d = new Date(iso+'T12:00:00'); d.setDate(d.getDate()+n); return d.toISOString().slice(0,10); }
@@ -744,8 +744,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
         + `<td class="num">${it.a!=null?`<b>${fmt(it.a,u)}</b>`:'—'}</td>`
         + `<td class="c">${stars(imp)}</td></tr>`;
     });
-    const n = wk.length, n3 = wk.filter(it=>impOf(it,state.calAsset)===3).length;
-    const sum = n ? `<p class="wsum">${n} publication${n>1?'s':''}${n3?` · ${n3} très importante${n3>1?'s':''} (★★★)`:''}</p>` : '';
+    const n = wk.length, n3 = wk.filter(it=>impOf(it,state.calAsset)>=2).length;
+    const sum = n ? `<p class="wsum">${n} publication${n>1?'s':''}${n3?` · ${n3} très importante${n3>1?'s':''} (★★)`:''}</p>` : '';
     box.innerHTML = nav + sum + (n ? `<table class="cal"><thead><tr><th>Heure</th><th>Donnée</th><th class="r">Préc.</th><th class="r">Prévu</th><th class="r">Réel</th><th class="c">Import.</th></tr></thead><tbody>${h}</tbody></table>`
       : '<p class="empty-hist" style="padding:14px">Aucune publication importante pour cet actif cette semaine.</p>');
     box.querySelectorAll('.wbtn').forEach(b=>b.addEventListener('click', ()=>{ const j = wi + (+b.dataset.w); if(weeks[j]){ state.calWeek = weeks[j]; renderCalendar(); } }));

@@ -106,15 +106,15 @@
    "date": "2026-11-06",
    "xauusd": {
     "sent": -1,
-    "macro": -12
+    "macro": -11
    },
    "nasdaq": {
     "sent": -1,
-    "macro": 5
+    "macro": 6
    },
    "spx500": {
     "sent": 0,
-    "macro": 10
+    "macro": 9
    },
    "us30": {
     "sent": 2,
