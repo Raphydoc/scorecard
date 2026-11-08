@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T20:14:18Z",
+ "updatedAt": "2026-11-08T20:34:45Z",
  "econ": {
   "values": {
    "gdp": {
@@ -211,7 +211,8 @@
    "revF": 3.5,
    "epsA": null,
    "revA": null,
-   "move": null
+   "move": null,
+   "ai": true
   },
   {
    "date": "2026-11-12",
@@ -227,7 +228,8 @@
    "revF": 0.907,
    "epsA": null,
    "revA": null,
-   "move": null
+   "move": null,
+   "ai": true
   },
   {
    "date": "2026-11-12",
@@ -254,7 +256,8 @@
    "revF": 18.1,
    "epsA": null,
    "revA": null,
-   "move": null
+   "move": null,
+   "ai": true
   },
   {
    "date": "2026-11-12",
@@ -271,7 +274,8 @@
    "revF": 10.3,
    "epsA": null,
    "revA": null,
-   "move": null
+   "move": null,
+   "ai": true
   },
   {
    "date": "2026-11-12",
@@ -287,7 +291,8 @@
    "revF": 0.2147,
    "epsA": null,
    "revA": null,
-   "move": null
+   "move": null,
+   "ai": true
   },
   {
    "date": "2026-11-13",
@@ -297,6 +302,42 @@
    "prev": 6.3,
    "f": 6.6,
    "a": null
+  },
+  {
+   "date": "2026-11-17",
+   "time": "07:00",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Home Depot (HD)",
+   "note": "Avant l’ouverture",
+   "assets": {
+    "us30": 2,
+    "spx500": 1
+   },
+   "ai": false,
+   "epsF": 3.86,
+   "revF": 42.8,
+   "epsA": null,
+   "revA": null,
+   "move": null
+  },
+  {
+   "date": "2026-11-17",
+   "time": "07:00",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Disney (DIS)",
+   "note": "Avant l’ouverture",
+   "assets": {
+    "us30": 1,
+    "spx500": 1
+   },
+   "ai": false,
+   "epsF": 1.67,
+   "revF": 25.2,
+   "epsA": null,
+   "revA": null,
+   "move": null
   },
   {
    "date": "2026-11-17",
@@ -324,6 +365,41 @@
    "revF": 109.0,
    "epsA": null,
    "revA": null,
+   "move": null,
+   "ai": true
+  },
+  {
+   "date": "2026-11-18",
+   "time": "07:00",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Target (TGT)",
+   "note": "Avant l’ouverture",
+   "assets": {
+    "spx500": 1
+   },
+   "ai": false,
+   "epsF": 2.04,
+   "revF": 26.5,
+   "epsA": null,
+   "revA": null,
+   "move": null
+  },
+  {
+   "date": "2026-11-18",
+   "time": "07:00",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats TJX (TJX)",
+   "note": "Avant l’ouverture",
+   "assets": {
+    "spx500": 1
+   },
+   "ai": false,
+   "epsF": 1.33,
+   "revF": 15.9,
+   "epsA": null,
+   "revA": null,
    "move": null
   },
   {
@@ -333,6 +409,43 @@
    "kind": "fed",
    "name": "Minutes de la Fed",
    "note": "Compte rendu de la réunion du 28 octobre"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "16:05",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Palo Alto Networks (PANW)",
+   "note": "Après la clôture",
+   "assets": {
+    "nasdaq": 1,
+    "spx500": 1
+   },
+   "ai": false,
+   "epsF": 0.52,
+   "revF": 3.3,
+   "epsA": null,
+   "revA": null,
+   "move": null
+  },
+  {
+   "date": "2026-11-19",
+   "time": "07:00",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Walmart (WMT)",
+   "note": "Avant l’ouverture",
+   "assets": {
+    "us30": 1,
+    "spx500": 1,
+    "nasdaq": 1
+   },
+   "ai": false,
+   "epsF": 0.64,
+   "revF": 187.2,
+   "epsA": null,
+   "revA": null,
+   "move": null
   },
   {
    "date": "2026-11-19",
