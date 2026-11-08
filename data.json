@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-08T18:41:13Z",
+ "updatedAt": "2026-11-08T19:41:41Z",
  "econ": {
   "values": {
    "gdp": {
@@ -363,8 +363,8 @@
   "next": "2026-12-09",
   "step": "25 pb",
   "probs": {
-   "hike": 77,
-   "hold": 23,
+   "hike": 78,
+   "hold": 22,
    "cut": 0
   },
   "prevProbs": {
@@ -383,6 +383,7 @@
     "date": "2026-12-09",
     "name": "Décision + conférence de presse"
    }
-  ]
+  ],
+  "source": "CME FedWatch"
  }
 }
