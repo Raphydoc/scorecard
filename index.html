@@ -186,6 +186,30 @@ table.cal td.name{min-width:130px}
 .fedtxt{border-top:1px solid var(--line);padding:12px 14px 14px;color:var(--muted);font-size:13px}
 .fedtxt p{margin:0 0 6px;max-width:72ch} .fedtxt strong{color:var(--fg)}
 @media (max-width:440px){ table.cal tr > :nth-child(3){display:none} table.cal td.name{min-width:90px} .pages button{padding:10px 11px 12px;font-size:16px} }
+
+[data-pg]{min-width:0;max-width:100%}
+.topwrap{overflow-x:auto;min-width:0;max-width:100%}
+table.topset{border-collapse:separate;border-spacing:2px;width:100%;font-variant-numeric:tabular-nums}
+table.topset th,table.topset td{border:0;padding:0;white-space:nowrap}
+table.topset thead th{font-family:var(--f-body);font-weight:500;font-size:10.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--muted);
+  padding:6px 4px;text-align:center;white-space:normal;line-height:1.15;min-width:44px;vertical-align:bottom}
+table.topset thead tr.grp th{font-family:var(--f-display);font-size:15px;font-weight:600;letter-spacing:.03em;text-transform:none;color:var(--chip-fg);padding:7px 6px}
+table.topset thead tr.grp th.g1{background:var(--panel-2);color:var(--muted)}
+table.topset thead tr.grp th.g2{background:var(--bear)}
+table.topset thead tr.grp th.g3{background:var(--bull)}
+table.topset td{text-align:center;font-family:var(--f-mono);font-size:13px;height:34px;min-width:44px;color:var(--chip-fg)}
+table.topset td.z{background:var(--panel-2);color:var(--muted)}
+table.topset td.na{background:transparent;color:var(--muted)}
+table.topset td.sym{position:sticky;left:0;z-index:1;background:var(--panel);text-align:left;padding:0 10px;min-width:96px}
+table.topset td.sym button{border:0;background:none;padding:0;color:var(--fg);font:600 17px/1 var(--f-display);letter-spacing:.03em;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+table.topset th.symh{position:sticky;left:0;z-index:2;background:var(--panel);text-align:left;padding-left:10px}
+table.topset td.bias{font-family:var(--f-display);font-size:15px;font-weight:600;letter-spacing:.02em;padding:0 10px;min-width:104px}
+table.topset td.score{font-size:16px;font-weight:500;min-width:52px}
+table.topset td.chg{background:transparent;color:var(--muted);min-width:40px}
+table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bear)}
+.toplegend{display:flex;flex-wrap:wrap;gap:6px 16px;padding:10px 14px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
+.toplegend i{display:inline-block;width:12px;height:12px;vertical-align:-2px;margin-right:5px}
+@media (max-width:560px){ table.topset td{font-size:12px;height:32px;min-width:38px} table.topset thead th{min-width:38px;font-size:9.5px} table.topset td.bias{min-width:92px;font-size:14px} table.topset td.sym{min-width:84px} }
 </style>
 
 </head>
@@ -212,6 +236,7 @@ table.cal td.name{min-width:130px}
 
   <nav class="pages" aria-label="Pages">
     <button type="button" data-page="score" aria-current="page">Scorecard</button>
+    <button type="button" data-page="top">Top Setups</button>
     <button type="button" data-page="cal">Calendrier</button>
     <button type="button" data-page="fed">Fed</button>
   </nav>
@@ -267,6 +292,15 @@ table.cal td.name{min-width:130px}
       <li>Total de −max à +max (le max dépend de l'actif : or ±28, Nasdaq ±29, S&amp;P ±30, Dow ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La performance du mois passé est remplie automatiquement au début de chaque mois; tu peux la changer avec « Ma tendance » (ton choix tient jusqu'à la fin du mois). Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
+  </section>
+
+
+  <section data-pg="top" hidden aria-label="Top Setups">
+    <div class="panel">
+      <div class="pghead"><div><h2>Top Setups</h2><p>Tes actifs classés du score le plus haut au plus bas · chaque case = points ajoutés au score (poids inclus)</p></div></div>
+      <div class="topwrap" id="topBox"></div>
+      <div class="toplegend"><span><i style="background:var(--bull)"></i>Haussier</span><span><i style="background:var(--bear)"></i>Baissier</span><span><i style="background:var(--panel-2);border:1px solid var(--line)"></i>Neutre</span><span>« — » = ne s’applique pas à cet actif</span><span>Clique sur un actif pour voir le détail</span></div>
+    </div>
   </section>
 
   <section data-pg="cal" hidden aria-label="Calendrier économique">
@@ -532,7 +566,7 @@ table.cal td.name{min-width:130px}
     if(pts.length>1) g += `<text x="${W}" y="${H-3}" font-size="10" fill="var(--muted)" text-anchor="end" font-family="IBM Plex Mono, monospace">${fmtDate(last.date)}</text>`;
     box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Historique du score total">${g}</svg>`;
   }
-  function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); }
+  function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); }
 
   // ---------- editing ----------
   let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false}, saveTimer = null, chain = Promise.resolve();
@@ -592,6 +626,68 @@ table.cal td.name{min-width:130px}
     renderAll();
   }));
 
+
+
+  // ---------- page Top Setups ----------
+  const TOP_COLS = [
+    {k:'trend',  h:'Tendance', g:2, v:(C)=>C.rows.trend},
+    {k:'season', h:'Mois passé', g:2, v:(C)=>C.rows.season},
+    {k:'cot',    h:'COT', g:2, v:(C)=>C.rows.cotNet + C.rows.cotChg},
+    {k:'crowd',  h:'Foule', g:2, v:(C)=>C.rows.crowd},
+    {k:'gdp', h:'PIB', g:3}, {k:'pmi_mfg', h:'ISM manuf.', g:3}, {k:'pmi_srv', h:'ISM serv.', g:3},
+    {k:'retail', h:'Ventes détail', g:3}, {k:'conf', h:'Confiance', g:3},
+    {k:'cpi', h:'CPI', g:3}, {k:'ppi', h:'PPI', g:3}, {k:'pce', h:'PCE', g:3},
+    {k:'yield10', h:'10 ans', g:3},
+    {k:'nfp', h:'NFP', g:3}, {k:'unemp', h:'Chômage', g:3}, {k:'claims', h:'Demandes chômage', g:3},
+    {k:'adp', h:'ADP', g:3}, {k:'jolts', h:'JOLTS', g:3}, {k:'mega_eps', h:'Bénéf. Mag 7', g:3}
+  ];
+  const TOP_NAMES = {xauusd:'XAUUSD', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW'};
+  function topCell(asset, C, col){
+    if(col.v) return col.v(C);
+    const s = C.rows[col.k];
+    if(s===null || s===undefined){
+      const ind = INDICATORS.find(i=>i.id===col.k);
+      if(ind && ind.only && ind.only!==asset) return null;
+      return 0;
+    }
+    return s * wOf(asset, col.k);
+  }
+  function prevTotal(asset, C){
+    const today = torontoToday();
+    const h = (state.history||[]).filter(e=>e && e.date && e.date<today && e[asset]).sort((a,b)=>a.date.localeCompare(b.date));
+    if(!h.length) return null;
+    const e = h[h.length-1][asset];
+    return (typeof e.total==='number') ? e.total : (e.sent||0)+(e.macro||0)+C.tech;
+  }
+  function renderTop(){
+    const box = $('topBox'); if(!box) return;
+    const list = Object.keys(TOP_NAMES).map(a=>({a, C:compute(a)})).sort((x,y)=>y.C.total-x.C.total);
+    const nT = TOP_COLS.filter(c=>c.g===2).length, nM = TOP_COLS.filter(c=>c.g===3).length;
+    let h = `<table class="topset"><thead><tr class="grp"><th class="g1 symh" colspan="1"></th><th class="g1" colspan="3"></th><th class="g2" colspan="${nT}">Tendance et sentiment</th><th class="g3" colspan="${nM}">Données économiques (macro)</th></tr>`;
+    h += `<tr><th class="symh">Actif</th><th>Var. 1 jour</th><th>Biais</th><th>Score</th>${TOP_COLS.map(c=>`<th>${esc(c.h)}</th>`).join('')}</tr></thead><tbody>`;
+    list.forEach(({a,C})=>{
+      const [vt,vc] = verdict(C.total);
+      const pt = prevTotal(a, C), d = pt===null ? null : C.total - pt;
+      const dtxt = d===null ? '—' : (d>0?'+':d<0?'−':'+')+Math.abs(d);
+      const cc = C.total>0?'bull':C.total<0?'bear':'z';
+      h += `<tr><td class="sym"><button type="button" data-goto="${a}">${TOP_NAMES[a]}</button></td>`
+        + `<td class="chg ${d>0?'up':d<0?'dn':''}">${dtxt}</td>`
+        + `<td class="bias ${vc==='neu'?'z':vc}">${esc(vt)}</td>`
+        + `<td class="score ${cc}">${C.total>0?'+':''}${String(C.total).replace('-','−')}</td>`;
+      TOP_COLS.forEach(col=>{
+        const v = topCell(a, C, col);
+        if(v===null){ h += `<td class="na">—</td>`; return; }
+        h += `<td class="${v>0?'bull':v<0?'bear':'z'}">${v>0?'+':v<0?'−':'+'}${Math.abs(v)}</td>`;
+      });
+      h += `</tr>`;
+    });
+    h += `</tbody></table>`;
+    box.innerHTML = h;
+    box.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click', ()=>{
+      state.asset = b.dataset.goto; try{ localStorage.setItem('sc-asset', state.asset); }catch(e){}
+      showPage('score'); renderAll();
+    }));
+  }
 
   // ---------- pages : calendrier et Fed ----------
   state.calendar = []; state.fed = null; state.calAsset = 'all'; state.page = 'score';
@@ -692,8 +788,8 @@ table.cal td.name{min-width:130px}
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
-    if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed();
+    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop();
   }
   document.querySelectorAll('.pages button').forEach(b=>b.addEventListener('click', ()=>showPage(b.dataset.page)));
   document.querySelectorAll('.calseg button').forEach(b=>b.addEventListener('click', ()=>{
@@ -701,7 +797,7 @@ table.cal td.name{min-width:130px}
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
