@@ -142,6 +142,7 @@ select{font-family:var(--f-body)}
 }
 
 [hidden]{display:none!important}
+.langbtn{margin-left:auto;padding:8px 12px}
 .seg{flex-wrap:wrap;max-width:100%}
 .controls{min-width:0;max-width:100%}
 .pages{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line)}
@@ -225,6 +226,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
         <p class="sub">Données US mises à jour automatiquement chaque matin de semaine.</p>
       </div>
     </div>
+    <button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button>
     <div class="controls" data-pg="score">
       <div class="seg" role="tablist" aria-label="Actif">
         <button id="tab-xauusd" role="tab" aria-selected="true" data-asset="xauusd">XAUUSD</button>
@@ -845,5 +847,202 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
 })();
 </script>
 
+<script>
+/* Traduction FR / EN : traduit le texte affiché (le calcul ne change pas) */
+(function(){
+  const D = {
+    // en-tête et navigation
+    'Scorecard macro':'Macro Scorecard',
+    'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
+    'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
+    'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed',
+    'Ma tendance':'My trend','Terminé':'Done','Modifier les données':'Edit data',
+    'US Dollar':'US Dollar','Dow Jones':'Dow Jones','Nasdaq':'Nasdaq','S&P 500':'S&P 500','XAUUSD':'XAUUSD',
+    'XAUUSD · Or':'XAUUSD · Gold','DXY · Dollar US':'DXY · US Dollar',
+    'Données fortes = baissier pour l’or':'Strong data = bearish for gold',
+    'Données fortes = haussier pour le dollar':'Strong data = bullish for the dollar',
+    'Croissance forte = haussier, inflation chaude = baissier':'Strong growth = bullish, hot inflation = bearish',
+    'Chargement…':'Loading…',
+    'Aucune donnée encore : la première mise à jour arrive bientôt.':'No data yet: the first update is coming soon.',
+    'Aucune donnée encore : appuie sur « Modifier les données ».':'No data yet.',
+    // verdicts
+    'Très haussier':'Very bullish','Haussier':'Bullish','Neutre':'Neutral','Baissier':'Bearish','Très baissier':'Very bearish',
+    'Haussière':'Bullish','Baissière':'Bearish',
+    // résumé
+    'Score total':'Total score','Technique':'Technical','Sentiment':'Sentiment','Macroéconomie':'Macro',
+    'Historique du score':'Score history','Historique macro + sentiment':'Macro + sentiment history',
+    'L’historique se remplit chaque jour où tu modifies les données.':'The history fills in every day the data changes.',
+    // tableau
+    'Activité institutionnelle':'Institutional activity','Sentiment de la foule':'Crowd sentiment',
+    'Croissance économique':'Economic growth','Inflation':'Inflation','Marché de l’emploi':'Labor market',
+    'Données propres à l’actif':'Asset-specific data',
+    'Tendance 4H / Daily':'4H / Daily trend','Ta lecture de la tendance sur le 4H et le Daily (±2)':'Your read of the 4H and Daily trend (±2)',
+    'Saisonnalité (3 derniers mois)':'Seasonality (last 3 months)',
+    'Variation des 3 derniers mois complets, mise à jour chaque mois (±1).':'Change over the last 3 full months, updated monthly (±1).',
+    'COT · positionnement net':'COT · net positioning','non-commerciaux':'non-commercial','COT · dernier changement':'COT · latest change',
+    'Positionnement retail':'Retail positioning','clients d’IG · contrarien : foule très longue = baissier':'IG clients · contrarian: very long crowd = bearish',
+    'Long %':'Long %','Short %':'Short %','Changement %':'Change %','Retail long %':'Retail long %','Retail short %':'Retail short %',
+    'Réel':'Actual','Prévision':'Forecast','Surprise':'Surprise','Date':'Date',
+    'PIB QoQ annualisé':'GDP QoQ annualized','PMI manufacturier (ISM)':'ISM Manufacturing PMI','PMI services (ISM)':'ISM Services PMI',
+    'Ventes au détail MoM':'Retail Sales MoM','Confiance des consommateurs':'Consumer Confidence',
+    'CPI YoY':'CPI YoY','PPI YoY':'PPI YoY','PCE YoY':'PCE YoY','CPI MoM (octobre)':'CPI MoM (October)',
+    'NFP (emplois non agricoles)':'NFP (non-farm payrolls)','Taux de chômage':'Unemployment rate','Demandes de chômage hebdo':'Weekly jobless claims',
+    'ADP emploi':'ADP employment','JOLTS (postes à pourvoir)':'JOLTS (job openings)',
+    'Croissance des bénéfices des géants tech':'Big Tech earnings growth','Mag 7, trimestre en cours : réel vs prévu':'Mag 7, current quarter: actual vs expected',
+    'plus haut = dollar faible':'higher = weaker dollar',
+    'Rendement 10 ans (tendance)':'10-year yield (trend)','En baisse':'Falling','Stable':'Flat','En hausse':'Rising',
+    'Le 10 ans baisse : taux réels et dollar sous pression':'The 10-year is falling: real yields and the dollar under pressure',
+    'Le 10 ans monte : coût d’opportunité plus élevé pour l’or':'The 10-year is rising: higher opportunity cost for gold',
+    'Le 10 ans est stable':'The 10-year is flat',
+    'Pas encore de donnée':'No data yet','info seulement':'info only','info':'info',
+    'Pas de YoY ce mois-ci (shutdown de 2025)':'No YoY this month (2025 shutdown)',
+    // comment le score se calcule
+    'Comment le score se calcule':'How the score is calculated',
+    'Surprise = Réel − Prévision.':'Surprise = Actual − Forecast.',
+    'Une donnée plus forte que prévu renforce le dollar et pousse la Fed à garder les taux hauts.':'Stronger-than-expected data boosts the dollar and pushes the Fed to keep rates high.',
+    'Or :':'Gold:',
+    'une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c\'est l\'inverse : plus haut que prévu = +1.':'a strong surprise (growth, inflation or jobs) counts −1, a weak surprise counts +1. For unemployment and jobless claims it is the opposite: higher than expected = +1.',
+    'Nasdaq, S&P 500 et Dow Jones :':'Nasdaq, S&P 500 and Dow Jones:',
+    'croissance et emploi forts = +1; inflation plus chaude que prévu = −1.':'strong growth and jobs = +1; hotter-than-expected inflation = −1.',
+    'Dollar US (DXY) :':'US Dollar (DXY):',
+    'toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.':'any stronger-than-expected data (growth, jobs or inflation) = +1, because it pushes the Fed to keep rates high; rising 10-year = +1. Crowd sentiment: inverse of IG clients on EUR/USD.',
+    '(Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.':'(Nasdaq only): better than expected = +1, worse = −1.',
+    'Technique :':'Technical:',
+    'tendance 4H/Daily ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1).':'4H/Daily trend ±2, seasonality ±1 (change over the last 3 full months: above +1% = +1, below −1% = −1).',
+    'Sentiment :':'Sentiment:',
+    'COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.':'COT net long above 50% = +1, rising COT = +1, retail crowd 60% long or more = −1 (contrarian), 40% or less = +1.',
+    'Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (trend over about a month): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
+    'Poids :':'Weights:',
+    'les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour les quatre actifs, les bénéfices des géants tech ×2 pour le Nasdaq.':'the most important data for each asset count more (×2, shown next to the name); the rest count ×1, so each item is worth at most ±2. Example: CPI is ×2 for every asset, Big Tech earnings ×2 for the Nasdaq.',
+    'Total de −max à +max (le max dépend de l\'actif : or ±25, Nasdaq ±26, S&P ±27, Dow ±25, dollar ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.':'Total from −max to +max (depends on the asset: gold ±25, Nasdaq ±26, S&P ±27, Dow ±25, dollar ±25): ±3 or more = bullish/bearish, ±12 or more = very bullish/very bearish.',
+    'Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Economic data, COT and retail sentiment update automatically. Seasonality (last 3 months) updates itself at the start of each month. Your 4H/Daily trend is saved in this browser. Information only: this is not a buy or sell signal.',
+    'Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Information only: this is not a buy or sell signal.',
+    // Top Setups
+    'Tes actifs classés du score le plus haut au plus bas · chaque case = points ajoutés au score (poids inclus)':'Your assets ranked from highest to lowest score · each cell = points added to the score (weights included)',
+    'Tendance et sentiment':'Trend & sentiment','Données économiques (macro)':'Economic data (macro)',
+    'Actif':'Asset','Var. 1 jour':'1-day change','Biais':'Bias','Score':'Score','Tendance':'Trend','Saison­nalité':'Season­ality','Saisonnalité':'Seasonality',
+    'COT':'COT','Foule':'Crowd','PIB':'GDP','ISM manuf.':'ISM mfg.','ISM serv.':'ISM serv.','Ventes détail':'Retail sales','Confiance':'Confidence',
+    '10 ans':'10-year','Chômage':'Unemployment','Demandes chômage':'Jobless claims','Bénéf. Mag 7':'Mag 7 EPS',
+    '« — » = ne s’applique pas à cet actif':'"—" = does not apply to this asset','Clique sur un actif pour voir le détail':'Click an asset to see the details',
+    // Calendrier
+    'Calendrier économique':'Economic calendar','Publications américaines à venir · heure de l’Est (Québec)':'Upcoming US releases · Eastern Time',
+    'Tous':'All','Or':'Gold','Dow':'Dow','S&P':'S&P','USD':'USD',
+    'Heure':'Time','Donnée':'Release','Préc.':'Prev.','Prévu':'Forecast','Import.':'Impact',
+    'Cette semaine':'This week','Semaine prochaine':'Next week','Semaine passée':'Last week',
+    '· aujourd’hui':'· today',
+    'Le calendrier se remplit à la prochaine mise à jour.':'The calendar fills in at the next update.',
+    'Aucune publication importante pour cet actif cette semaine.':'No important release for this asset this week.',
+    'Aucune donnée importante pour cet actif dans les prochains jours.':'No important data for this asset in the coming days.',
+    'Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. The calendar updates itself with the scorecard.',
+    'Minutes de la Fed':'Fed minutes',
+    'Décision de taux de la Fed (FOMC)':'Fed rate decision (FOMC)','Voir la page Fed pour les probabilités':'See the Fed page for the odds',
+    'Compte rendu de la réunion du 28 octobre':'Record of the October 28 meeting',
+    'Pas de CPI YoY ce mois-ci : prix d’octobre 2025 jamais collectés (shutdown)':'No CPI YoY this month: October 2025 prices were never collected (shutdown)',
+    // Fed
+    'Prochaine réunion de la Fed':'Next Fed meeting','Probabilités du marché':'Market odds','CME FedWatch':'CME FedWatch',
+    'Taux actuel':'Current rate','Dernière décision':'Last decision',
+    'Aujourd’hui':'Today','Demain':'Tomorrow','Passée':'Past',
+    'Hausse de 25 pb':'25 bp hike','Baisse de 25 pb':'25 bp cut','Statu quo':'Hold','Hausse':'Hike',
+    'Le marché s’attend surtout à une':'The market mostly expects a','Le marché s’attend surtout à un':'The market mostly expects a',
+    'hausse des taux':'rate hike','baisse des taux':'rate cut','statu quo':'hold',
+    'Hausse des taux':'A rate hike','Baisse':'A cut',
+    '= dollar plus fort : en général baissier pour l’or et les indices, surtout le Nasdaq.':'= stronger dollar: usually bearish for gold and the indices, especially the Nasdaq.',
+    '= l’inverse.':'= the opposite.',
+    'Ce qui fait bouger les marchés, c’est surtout quand ces probabilités changent vite (après un CPI ou un NFP, par exemple).':'What moves markets most is when these odds change quickly (after a CPI or NFP, for example).',
+    'Information seulement : les probabilités de la Fed ne comptent pas dans le score. Mises à jour automatiquement avec le scorecard.':'Information only: the Fed odds are not part of the score. Updated automatically with the scorecard.',
+    'Les données de la Fed arrivent à la prochaine mise à jour.':'Fed data arrives at the next update.',
+    'Minutes de la réunion d’octobre':'Minutes of the October meeting','Décision + conférence de presse':'Decision + press conference',
+    'Statu quo, vote 10-2 (2 membres voulaient une hausse)':'Hold, 10-2 vote (2 members wanted a hike)',
+    // messages
+    'Ton navigateur bloque la sauvegarde de ta tendance (navigation privée?).':'Your browser blocks saving your trend (private browsing?).',
+    'Impossible de charger les données pour l’instant. Réessaie dans un moment.':'Unable to load the data right now. Try again in a moment.',
+    'Impossible de lire les données sauvegardées.':'Unable to read the saved data.',
+    'La sauvegarde n’a pas fonctionné. Réessaie dans un moment.':'Saving failed. Try again in a moment.',
+    'La sauvegarde n’est pas disponible dans cette vue : tes changements ne seront pas gardés.':'Saving is not available in this view: your changes will not be kept.',
+    'Les données ne sont pas joignables pour l’instant. Elles s’afficheront dès que la connexion revient.':'The data cannot be reached right now. It will show as soon as the connection is back.',
+    'Tu peux consulter ce tableau, mais pas le modifier.':'You can view this dashboard but not edit it.',
+    // attributs
+    'Pages':'Pages','Résumé':'Summary','Indicateurs':'Indicators','Jauge du score total':'Total score gauge',
+    'Historique du score total':'Total score history','Importance selon l’actif':'Impact by asset','Réserve fédérale':'Federal Reserve',
+    'Semaine précédente':'Previous week','Semaine suivante':'Next week'
+  };
+  const MOIS = {janvier:'January',février:'February',mars:'March',avril:'April',mai:'May',juin:'June',juillet:'July',août:'August',septembre:'September',octobre:'October',novembre:'November',décembre:'December'};
+  const MC = {'janv.':'Jan','févr.':'Feb','mars':'Mar','avr.':'Apr','mai':'May','juin':'Jun','juil.':'Jul','août':'Aug','sept.':'Sep','oct.':'Oct','nov.':'Nov','déc.':'Dec'};
+  const JOURS = {lundi:'Monday',mardi:'Tuesday',mercredi:'Wednesday',jeudi:'Thursday',vendredi:'Friday',samedi:'Saturday',dimanche:'Sunday'};
+  const MCre = '(janv\\.|févr\\.|mars|avr\\.|mai|juin|juil\\.|août|sept\\.|oct\\.|nov\\.|déc\\.)';
+  const Mre = '(janvier|février|mars|avril|mai|juin|juillet|août|septembre|octobre|novembre|décembre)';
+  const Jre = '(lundi|mardi|mercredi|jeudi|vendredi|samedi|dimanche)';
+  const cap = s => s.charAt(0).toUpperCase()+s.slice(1);
+  const num = s => s.replace(/(\d),(\d)/g,'$1.$2').replace(/ %/g,'%');
+  const sd = (d,m) => MC[m]+' '+d;
+  const R = [
+    [new RegExp('^'+Jre+' (\\d{1,2}) '+Mre+'$','i'), (x,j,d,m)=>JOURS[j.toLowerCase()]+', '+MOIS[m]+' '+d],
+    [new RegExp('^(\\d{1,2}) '+MCre+'$'), (x,d,m)=>sd(d,m)],
+    [new RegExp('^(\\d{1,2}) '+MCre+' : (.*)$'), (x,d,m,r)=>sd(d,m)+': '+(D[r]||r)],
+    [new RegExp('^Semaine du (\\d{1,2}) au (\\d{1,2}) '+Mre+'$'), (x,a,b,m)=>'Week of '+MOIS[m]+' '+a+'–'+b],
+    [new RegExp('^Semaine du (\\d{1,2}) '+Mre+' au (\\d{1,2}) '+Mre+'$'), (x,a,m1,b,m2)=>'Week of '+MOIS[m1]+' '+a+' – '+MOIS[m2]+' '+b],
+    [/^Dans (\d+) semaines$/, (x,n)=>'In '+n+' weeks'],
+    [/^(\d+) jours$/, (x,n)=>n+' days'],
+    [new RegExp('^Décision le '+Jre+' (\\d{1,2}) '+Mre+', 14 h$'), (x,j,d,m)=>'Decision on '+JOURS[j]+', '+MOIS[m]+' '+d+', 2 p.m. ET'],
+    [new RegExp('^Mis à jour le (\\d{1,2}) '+MCre+', (\\d{1,2}) h (\\d{2})$'), (x,d,m,h,mi)=>'Updated '+sd(d,m)+', '+h+':'+mi],
+    [/^(\d+) publications?( · (\d+) très importantes? \(★★\))?$/, (x,n,y,k)=>n+' release'+(n>1?'s':'')+(y?' · '+k+' very important (★★)':'')],
+    [new RegExp('^CME FedWatch · au (\\d{1,2}) '+MCre+'( · écart depuis le (\\d{1,2}) '+MCre+')?$'), (x,d,m,y,d2,m2)=>'CME FedWatch · as of '+sd(d,m)+(y?' · change since '+sd(d2,m2):'')],
+    [new RegExp('^Changement depuis (\\d{1,2}) '+MCre+'$'), (x,d,m)=>'Change since '+sd(d,m)],
+    [new RegExp('^Variation (?:de |d’)'+Mre+' à '+Mre+' : (.+?) \\(plus de \\+1 % = \\+1, moins de −1 % = −1\\)\\. Mise à jour chaque mois\\.$'), (x,a,b,v)=>'Change from '+MOIS[a]+' to '+MOIS[b]+': '+num(v)+' (above +1% = +1, below −1% = −1). Updated monthly.'],
+    [/^(\d+),(\d+) % – (\d+),(\d+) %$/, (x,a,b,c,d)=>a+'.'+b+'% – '+c+'.'+d+'%'],
+    [/^Poids ×(\d)$/, (x,n)=>'Weight ×'+n],
+    [/^\((T)(\d), (\d)e estimation\)$/, (x,t,q,n)=>'(Q'+q+', estimate '+n+')'],
+    [new RegExp('^(.+) \\('+Mre+'\\)$'), (x,a,m)=>(D[a]||a)+' ('+MOIS[m]+')'],
+    [/^(.+) \(T(\d), (\d)e estimation\)$/, (x,a,q,n)=>(D[a]||a)+' (Q'+q+', estimate '+n+')'],
+    [/^Tendance$/, ()=>'Trend']
+  ];
+  function tr(s){
+    const k = s.trim(); if(!k) return null;
+    let out = D[k];
+    if(out===undefined){ for(const [re,f] of R){ const m = k.match(re); if(m){ out = k.replace(re, f); break; } } }
+    if(out===undefined) return null;
+    return s.replace(k, out);
+  }
+  let lang = 'fr';
+  try{ lang = localStorage.getItem('sc-lang')==='en' ? 'en' : 'fr'; }catch(e){}
+  const orig = new WeakMap();
+  let busy = false;
+  function apply(){
+    if(busy) return; busy = true;
+    try{
+      const w = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let n;
+      while((n = w.nextNode())){
+        const p = n.parentElement; if(!p || p.tagName==='SCRIPT' || p.tagName==='STYLE' || p.closest('[data-noi18n]')) continue;
+        if(lang==='en'){
+          let fr = orig.get(n);
+          if(fr===undefined || (n.nodeValue!==fr && n.nodeValue!==tr(fr))){ fr = n.nodeValue; }
+          const en = tr(fr);
+          if(en!==null){ orig.set(n, fr); if(n.nodeValue!==en) n.nodeValue = en; }
+        } else {
+          const fr = orig.get(n);
+          if(fr!==undefined && n.nodeValue!==fr){ n.nodeValue = fr; }
+        }
+      }
+      document.querySelectorAll('[aria-label],[title]').forEach(e=>{
+        ['aria-label','title'].forEach(a=>{
+          const v = e.getAttribute(a); if(!v) return;
+          const key = 'data-fr-'+a;
+          if(lang==='en'){ const fr = e.getAttribute(key) || v; const en = tr(fr); if(en!==null){ e.setAttribute(key, fr); if(v!==en) e.setAttribute(a, en); } }
+          else { const fr = e.getAttribute(key); if(fr && v!==fr) e.setAttribute(a, fr); }
+        });
+      });
+      document.documentElement.lang = lang;
+      const b = document.getElementById('langBtn'); if(b){ b.textContent = lang==='en' ? 'FR' : 'EN'; b.setAttribute('aria-label', lang==='en' ? 'Passer en français' : 'Switch to English'); }
+    } finally { busy = false; }
+  }
+  let sched = false;
+  const mo = new MutationObserver(()=>{ if(busy || sched) return; sched = true; requestAnimationFrame(()=>{ sched = false; apply(); }); });
+  mo.observe(document.body, {childList:true, subtree:true, characterData:true});
+  const btn = document.getElementById('langBtn');
+  if(btn) btn.addEventListener('click', ()=>{ lang = lang==='en' ? 'fr' : 'en'; try{ localStorage.setItem('sc-lang', lang); }catch(e){} apply(); });
+  apply();
+})();
+</script>
 </body>
 </html>
