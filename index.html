@@ -142,6 +142,27 @@ select{font-family:var(--f-body)}
 }
 
 [hidden]{display:none!important}
+/* menu des pages à gauche (ordinateur) */
+.shell{display:block}
+@media (min-width:900px){
+  .shell{display:grid;grid-template-columns:190px minmax(0,1fr);align-items:start}
+  .shell > .side{position:sticky;top:0;height:100vh;overflow:auto;background:var(--panel);border-right:1px solid var(--line);padding:20px 0}
+  .shell > .side .pages{flex-direction:column;border-bottom:0}
+  .shell > .side .pages button{text-align:left;border-bottom:0;border-left:3px solid transparent;margin:0;padding:12px 18px}
+  .shell > .side .pages button[aria-current="page"]{border-left-color:var(--gold);background:var(--panel-2)}
+  .side .sidebrand{display:block;padding:0 18px 14px;font-family:var(--f-display);font-weight:600;font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+}
+@media (max-width:899px){
+  .shell > .side{padding:12px max(16px, env(safe-area-inset-left, 0px)) 0}
+  .side .sidebrand{display:none}
+}
+/* filtres Top Setups */
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;padding:12px 14px;border-bottom:1px solid var(--line)}
+.filters label{display:grid;gap:3px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.filters select,.filters input{font:inherit;font-size:14px;text-transform:none;letter-spacing:0;color:var(--fg);background:var(--bg);border:1px solid var(--line);padding:7px 8px;border-radius:0;width:100%}
+.filters .freset{align-self:end;border:1px solid var(--line);background:transparent;color:var(--muted);font:600 14px/1 var(--f-display);letter-spacing:.04em;text-transform:uppercase;padding:9px 10px;cursor:pointer}
+.topempty{padding:14px;color:var(--muted);font-size:13px}
+
 .langbtn{margin-left:auto;padding:8px 12px}
 .seg{flex-wrap:wrap;max-width:100%}
 .controls{min-width:0;max-width:100%}
@@ -217,6 +238,14 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
 
 </head>
 <body>
+<div class="shell">
+<aside class="side"><span class="sidebrand">Pages</span>  <nav class="pages" aria-label="Pages">
+  <button type="button" data-page="score" aria-current="page">Scorecard</button>
+  <button type="button" data-page="top">Top Setups</button>
+  <button type="button" data-page="cal">Calendrier</button>
+  <button type="button" data-page="fed">Fed</button>
+</nav>
+</aside>
 <div class="wrap">
   <header class="top">
     <div class="brand">
@@ -239,12 +268,6 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     </div>
   </header>
 
-  <nav class="pages" aria-label="Pages">
-    <button type="button" data-page="score" aria-current="page">Scorecard</button>
-    <button type="button" data-page="top">Top Setups</button>
-    <button type="button" data-page="cal">Calendrier</button>
-    <button type="button" data-page="fed">Fed</button>
-  </nav>
 
   <div id="note" class="note" hidden></div>
 
@@ -291,11 +314,10 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
       <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
       <li><strong>Dollar US (DXY) :</strong> toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.</li>
-      <li><strong>Croissance des bénéfices des géants tech</strong> (Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.</li>
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
-      <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour les quatre actifs, les bénéfices des géants tech ×2 pour le Nasdaq.</li>
-      <li>Total de −max à +max (le max dépend de l'actif : or ±25, Nasdaq ±26, S&amp;P ±27, Dow ±25, dollar ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
+      <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.</li>
+      <li>Total de −max à +max (le max dépend de l'actif : or ±25, Nasdaq ±24, S&amp;P ±27, Dow ±25, dollar ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
@@ -304,6 +326,15 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   <section data-pg="top" hidden aria-label="Top Setups">
     <div class="panel">
       <div class="pghead"><div><h2>Top Setups</h2><p>Tes actifs classés du score le plus haut au plus bas · chaque case = points ajoutés au score (poids inclus)</p></div></div>
+      <div class="filters" id="topFilters">
+        <label>Recherche<input type="search" id="fSym" placeholder="Nom de l’actif…" autocomplete="off"></label>
+        <label>Catégorie<select id="fCat"><option value="">Toutes</option><option value="ind">Indices</option><option value="met">Métaux</option><option value="fx">Devises</option></select></label>
+        <label>Biais<select id="fBias"><option value="">Tous</option><option value="vbull">Très haussier</option><option value="bull">Haussier (et plus)</option><option value="neu">Neutre</option><option value="bear">Baissier (et plus)</option><option value="vbear">Très baissier</option></select></label>
+        <label>Score technique<select id="fTech"><option value="">Tous</option><option value="pos">Positif</option><option value="zero">Neutre</option><option value="neg">Négatif</option></select></label>
+        <label>Sentiment + COT<select id="fSent"><option value="">Tous</option><option value="pos">Positif</option><option value="zero">Neutre</option><option value="neg">Négatif</option></select></label>
+        <label>Score macro<select id="fMacro"><option value="">Tous</option><option value="pos">Positif</option><option value="zero">Neutre</option><option value="neg">Négatif</option></select></label>
+        <button type="button" class="freset" id="fReset">Réinitialiser</button>
+      </div>
       <div class="topwrap" id="topBox"></div>
       <div class="toplegend"><span><i style="background:var(--bull)"></i>Haussier</span><span><i style="background:var(--bear)"></i>Baissier</span><span><i style="background:var(--panel-2);border:1px solid var(--line)"></i>Neutre</span><span>« — » = ne s’applique pas à cet actif</span><span>Clique sur un actif pour voir le détail</span></div>
     </div>
@@ -336,6 +367,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   </section>
 
 </div>
+</div>
 
 <script>
 (function(){
@@ -353,7 +385,6 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     {id:'claims',  cat:'jobs',   name:'Demandes de chômage hebdo', unit:'k', dir:-1, hint:'plus haut = dollar faible'},
     {id:'adp',     cat:'jobs',   name:'ADP emploi', unit:'k', dir:1},
     {id:'jolts',   cat:'jobs',   name:'JOLTS (postes à pourvoir)', unit:'M', dir:1},
-    {id:'mega_eps', cat:'spec', only:'nasdaq', name:'Croissance des bénéfices des géants tech', unit:'%', dir:1, hint:'Mag 7, trimestre en cours : réel vs prévu'},
   ];
   const ASSETS = {
     xauusd:{name:'XAUUSD · Or', hint:'Données fortes = baissier pour l’or'},
@@ -380,7 +411,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   // ---------- scoring ----------
   const WEIGHTS = {
     xauusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
-    nasdaq:{cpi:2,yield10:2,mega_eps:2,nfp:2,pce:2},
+    nasdaq:{cpi:2,yield10:2,nfp:2,pce:2},
     spx500:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2,retail:2,pmi_srv:2},
     us30:{pmi_mfg:2,cpi:2,nfp:2,retail:2,gdp:2},
     usd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2}
@@ -491,7 +522,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       <td class="num">${false?numInput('in-crowdLong',A.crowdLong,'min="0" max="100"'):fmt(cr,'%')}</td>
       <td class="num">${cr===null?'—':fmt(100-cr,'%')}</td><td></td><td></td></tr>`;
 
-    const groups = [['growth','Croissance économique'],['infl','Inflation'],['jobs','Marché de l’emploi'],['spec','Données propres à l’actif']];
+    const groups = [['growth','Croissance économique'],['infl','Inflation'],['jobs','Marché de l’emploi']];
     groups.forEach(([cat,title])=>{
       if(!INDICATORS.some(i=>i.cat===cat && (!i.only||i.only===asset))) return;
       h += head(title, catChip(C.cats[cat],3), ['Réel','Prévision','Surprise','Date']);
@@ -653,7 +684,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     {k:'cpi', h:'CPI', g:3}, {k:'ppi', h:'PPI', g:3}, {k:'pce', h:'PCE', g:3},
     {k:'yield10', h:'10 ans', g:3},
     {k:'nfp', h:'NFP', g:3}, {k:'unemp', h:'Chômage', g:3}, {k:'claims', h:'Demandes chômage', g:3},
-    {k:'adp', h:'ADP', g:3}, {k:'jolts', h:'JOLTS', g:3}, {k:'mega_eps', h:'Bénéf. Mag 7', g:3}
+    {k:'adp', h:'ADP', g:3}, {k:'jolts', h:'JOLTS', g:3}
   ];
   const TOP_NAMES = {xauusd:'XAUUSD', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW', usd:'US-DOLLAR'};
   function topCell(asset, C, col){
@@ -675,7 +706,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   }
   function renderTop(){
     const box = $('topBox'); if(!box) return;
-    const list = Object.keys(TOP_NAMES).map(a=>({a, C:compute(a)})).sort((x,y)=>y.C.total-x.C.total);
+    const list = Object.keys(TOP_NAMES).map(a=>({a, C:compute(a)})).filter(x=>topPass(x.a, x.C)).sort((x,y)=>y.C.total-x.C.total);
     const nT = TOP_COLS.filter(c=>c.g===2).length, nM = TOP_COLS.filter(c=>c.g===3).length;
     let h = `<table class="topset"><thead><tr class="grp"><th class="g1 symh" colspan="1"></th><th class="g1" colspan="3"></th><th class="g2" colspan="${nT}">Tendance et sentiment</th><th class="g3" colspan="${nM}">Données économiques (macro)</th></tr>`;
     h += `<tr><th class="symh">Actif</th><th>Var. 1 jour</th><th>Biais</th><th>Score</th>${TOP_COLS.map(c=>`<th>${esc(c.h)}</th>`).join('')}</tr></thead><tbody>`;
@@ -696,12 +727,34 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       h += `</tr>`;
     });
     h += `</tbody></table>`;
+    if(!list.length) h = '<p class="topempty">Aucun actif ne correspond à ces filtres.</p>';
     box.innerHTML = h;
     box.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click', ()=>{
       state.asset = b.dataset.goto; try{ localStorage.setItem('sc-asset', state.asset); }catch(e){}
       showPage('score'); renderAll();
     }));
   }
+
+
+  // filtres de la page Top Setups
+  const TOP_CAT = {xauusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', usd:'fx'};
+  const TOP_LABEL = {xauusd:'xauusd or gold', nasdaq:'nasdaq', spx500:'spx500 s&p 500', us30:'dow jones us30', usd:'us-dollar dollar dxy usd'};
+  function topPass(a, C){
+    const g = id => { const el = $(id); return el ? el.value : ''; };
+    const q = (g('fSym')||'').trim().toLowerCase();
+    if(q && !(TOP_NAMES[a].toLowerCase().includes(q) || TOP_LABEL[a].includes(q))) return false;
+    const cat = g('fCat'); if(cat && TOP_CAT[a]!==cat) return false;
+    const b = g('fBias'), t = C.total;
+    if(b==='vbull' && !(t>=12)) return false;
+    if(b==='bull' && !(t>=3)) return false;
+    if(b==='neu' && !(t>-3 && t<3)) return false;
+    if(b==='bear' && !(t<=-3)) return false;
+    if(b==='vbear' && !(t<=-12)) return false;
+    const sg = (v, f) => !f || (f==='pos' && v>0) || (f==='neg' && v<0) || (f==='zero' && v===0);
+    return sg(C.tech, g('fTech')) && sg(C.sent, g('fSent')) && sg(C.macro, g('fMacro'));
+  }
+  ['fSym','fCat','fBias','fTech','fSent','fMacro'].forEach(id=>{ const el=$(id); if(el){ el.addEventListener('input', renderTop); el.addEventListener('change', renderTop); } });
+  (function(){ const r=$('fReset'); if(r) r.addEventListener('click', ()=>{ ['fSym','fCat','fBias','fTech','fSent','fMacro'].forEach(id=>{ const el=$(id); if(el) el.value=''; }); renderTop(); }); })();
 
   // ---------- pages : calendrier et Fed ----------
   state.calendar = []; state.fed = null; state.calAsset = 'all'; state.page = 'score';
@@ -913,8 +966,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.':'COT net long above 50% = +1, rising COT = +1, retail crowd 60% long or more = −1 (contrarian), 40% or less = +1.',
     'Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (trend over about a month): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
     'Poids :':'Weights:',
-    'les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour les quatre actifs, les bénéfices des géants tech ×2 pour le Nasdaq.':'the most important data for each asset count more (×2, shown next to the name); the rest count ×1, so each item is worth at most ±2. Example: CPI is ×2 for every asset, Big Tech earnings ×2 for the Nasdaq.',
-    'Total de −max à +max (le max dépend de l\'actif : or ±25, Nasdaq ±26, S&P ±27, Dow ±25, dollar ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.':'Total from −max to +max (depends on the asset: gold ±25, Nasdaq ±26, S&P ±27, Dow ±25, dollar ±25): ±3 or more = bullish/bearish, ±12 or more = very bullish/very bearish.',
+    'les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.':'the most important data for each asset count more (×2, shown next to the name); the rest count ×1, so each item is worth at most ±2. Example: CPI is ×2 for every asset, Big Tech earnings ×2 for the Nasdaq.',
+    'Total de −max à +max (le max dépend de l\'actif : or ±25, Nasdaq ±24, S&P ±27, Dow ±25, dollar ±25) : ±3 et plus = haussier/baissier, ±12 et plus = très haussier/très baissier.':'Total from −max to +max (depends on the asset: gold ±25, Nasdaq ±24, S&P ±27, Dow ±25, dollar ±25): ±3 or more = bullish/bearish, ±12 or more = very bullish/very bearish.',
     'Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Economic data, COT and retail sentiment update automatically. Seasonality (last 3 months) updates itself at the start of each month. Your 4H/Daily trend is saved in this browser. Information only: this is not a buy or sell signal.',
     'Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Information only: this is not a buy or sell signal.',
     // Top Setups
@@ -1024,8 +1077,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
           if(fr!==undefined && n.nodeValue!==fr){ n.nodeValue = fr; }
         }
       }
-      document.querySelectorAll('[aria-label],[title]').forEach(e=>{
-        ['aria-label','title'].forEach(a=>{
+      document.querySelectorAll('[aria-label],[title],[placeholder]').forEach(e=>{
+        ['aria-label','title','placeholder'].forEach(a=>{
           const v = e.getAttribute(a); if(!v) return;
           const key = 'data-fr-'+a;
           if(lang==='en'){ const fr = e.getAttribute(key) || v; const en = tr(fr); if(en!==null){ e.setAttribute(key, fr); if(v!==en) e.setAttribute(a, en); } }
