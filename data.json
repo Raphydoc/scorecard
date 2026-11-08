@@ -266,6 +266,92 @@
    "kind": "fed",
    "name": "Décision de taux de la Fed (FOMC)",
    "note": "Voir la page Fed pour les probabilités"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "16:05",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Cisco (CSCO)",
+   "note": "Après la clôture",
+   "assets": {
+    "nasdaq": 1,
+    "spx500": 1,
+    "us30": 1
+   }
+  },
+  {
+   "date": "2026-11-12",
+   "time": "16:05",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Applied Materials (AMAT)",
+   "note": "Après la clôture",
+   "assets": {
+    "nasdaq": 1,
+    "spx500": 1
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "time": "07:00",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Home Depot (HD)",
+   "note": "Avant l’ouverture",
+   "assets": {
+    "us30": 2,
+    "spx500": 1
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "time": "07:00",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Disney (DIS)",
+   "note": "Avant l’ouverture",
+   "assets": {
+    "us30": 1,
+    "spx500": 1
+   }
+  },
+  {
+   "date": "2026-11-17",
+   "time": "16:20",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Nvidia (NVDA)",
+   "note": "Après la clôture",
+   "assets": {
+    "nasdaq": 2,
+    "spx500": 2,
+    "us30": 1,
+    "btcusd": 1
+   }
+  },
+  {
+   "date": "2026-11-18",
+   "time": "16:05",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Palo Alto Networks (PANW)",
+   "note": "Après la clôture",
+   "assets": {
+    "nasdaq": 1
+   }
+  },
+  {
+   "date": "2026-11-19",
+   "time": "07:00",
+   "id": null,
+   "kind": "earn",
+   "name": "Résultats Walmart (WMT)",
+   "note": "Avant l’ouverture · Date à confirmer",
+   "assets": {
+    "us30": 1,
+    "spx500": 1
+   }
   }
  ],
  "fed": {

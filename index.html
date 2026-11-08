@@ -363,7 +363,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   <section data-pg="cal" hidden aria-label="Calendrier économique">
     <div class="panel">
       <div class="pghead">
-        <div><h2>Calendrier économique</h2><p>Publications américaines à venir · heure de l’Est (Québec)</p></div>
+        <div><h2>Calendrier économique</h2><p>Publications américaines et résultats d’entreprises · heure de l’Est (Québec)</p></div>
         <div class="calseg" role="group" aria-label="Importance selon l’actif">
           <button type="button" data-ca="all" aria-pressed="true">Tous</button>
           <button type="button" data-ca="xauusd" aria-pressed="false">Or</button>
@@ -379,7 +379,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       </div>
       <div class="tablewrap" id="calBox"></div>
     </div>
-    <p class="pgfoot">Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Le calendrier se met à jour tout seul avec le scorecard.</p>
+    <p class="pgfoot">Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). Pour les résultats d’entreprises, les étoiles montrent quels actifs ils peuvent faire bouger. « info » = ne compte pas dans le score. Résultats d’entreprises : ★★ = très gros impact sur l’indice (ex. Nvidia pour le Nasdaq), ★ = impact moyen; ils ne comptent pas dans le score. Le calendrier se met à jour tout seul avec le scorecard.</p>
   </section>
 
   <section data-pg="fed" hidden aria-label="Réserve fédérale">
@@ -789,6 +789,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   const CAL_ASSETS = Object.keys(ASSETS);
   function impOf(item, asset){
     if(item.kind==='fed') return 2;
+    if(item.assets){ const ks = asset==='all' ? Object.keys(item.assets) : [asset]; return Math.max(0, ...ks.map(a=>+item.assets[a]||0)); }
     if(!item.id) return 0;
     const ind = INDICATORS.find(i=>i.id===item.id); if(!ind) return 0;
     const list = asset==='all' ? CAL_ASSETS : [asset];
@@ -808,7 +809,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     const box = $('calBox'); if(!box) return;
     const today = torontoToday();
     const all = (state.calendar||[]).filter(it=>it.date).slice().sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
-    const items = all.filter(it=> state.calAsset==='all' || !it.id || impOf(it, state.calAsset)>0);
+    const items = all.filter(it=> state.calAsset==='all' || !(it.id || it.assets) || impOf(it, state.calAsset)>0);
     if(!all.length){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Le calendrier se remplit à la prochaine mise à jour.</p>'; return; }
     const weeks = [...new Set(all.map(it=>mondayOf(it.date)))].sort();
     if(!state.calWeek || !weeks.includes(state.calWeek)){
@@ -1014,7 +1015,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'Le calendrier se remplit à la prochaine mise à jour.':'The calendar fills in at the next update.',
     'Aucune publication importante pour cet actif cette semaine.':'No important release for this asset this week.',
     'Aucune donnée importante pour cet actif dans les prochains jours.':'No important data for this asset in the coming days.',
-    'Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. The calendar updates itself with the scorecard.',
+    'Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). Pour les résultats d’entreprises, les étoiles montrent quels actifs ils peuvent faire bouger. « info » = ne compte pas dans le score. Résultats d’entreprises : ★★ = très gros impact sur l’indice (ex. Nvidia pour le Nasdaq), ★ = impact moyen; ils ne comptent pas dans le score. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). For company earnings, the stars show which assets they can move. "info" = not part of the score. Company earnings: ★★ = very big impact on the index (e.g. Nvidia for the Nasdaq), ★ = medium impact; they are not part of the score. The calendar updates itself with the scorecard.',
     'Minutes de la Fed':'Fed minutes',
     'Décision de taux de la Fed (FOMC)':'Fed rate decision (FOMC)','Voir la page Fed pour les probabilités':'See the Fed page for the odds',
     'Compte rendu de la réunion du 28 octobre':'Record of the October 28 meeting',
@@ -1042,6 +1043,9 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'La sauvegarde n’est pas disponible dans cette vue : tes changements ne seront pas gardés.':'Saving is not available in this view: your changes will not be kept.',
     'Les données ne sont pas joignables pour l’instant. Elles s’afficheront dès que la connexion revient.':'The data cannot be reached right now. It will show as soon as the connection is back.',
     'Tu peux consulter ce tableau, mais pas le modifier.':'You can view this dashboard but not edit it.',
+    // résultats d'entreprises
+    'Publications américaines et résultats d’entreprises · heure de l’Est (Québec)':'US releases and company earnings · Eastern Time',
+    'Après la clôture':'After the close','Avant l’ouverture':'Before the open','Après la clôture · date estimée':'After the close · estimated date','Avant l’ouverture · date estimée':'Before the open · estimated date',
     // filtres et nouveaux actifs
     'Recherche':'Search','Nom de l’actif…':'Asset name…','Catégorie':'Category','Toutes':'All','Indices':'Indices','Métaux':'Metals','Devises':'Currencies',
     'Haussier (et plus)':'Bullish (or more)','Baissier (et plus)':'Bearish (or more)','Score technique':'Technical score','Sentiment + COT':'Sentiment + COT','Score macro':'Macro score',
@@ -1065,6 +1069,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   const num = s => s.replace(/(\d),(\d)/g,'$1.$2').replace(/ %/g,'%');
   const sd = (d,m) => MC[m]+' '+d;
   const R = [
+    [/^Résultats (.+)$/, (x,c)=>'Earnings: '+c],
+    [/^(Avant l’ouverture|Après la clôture)( · Date à confirmer)?$/, (x,a,b)=>(a==='Avant l’ouverture'?'Before the open':'After the close')+(b?' · Date to be confirmed':'')],
     [new RegExp('^'+Jre+' (\\d{1,2}) '+Mre+'$','i'), (x,j,d,m)=>JOURS[j.toLowerCase()]+', '+MOIS[m]+' '+d],
     [new RegExp('^(\\d{1,2}) '+MCre+'$'), (x,d,m)=>sd(d,m)],
     [new RegExp('^(\\d{1,2}) '+MCre+' : (.*)$'), (x,d,m,r)=>sd(d,m)+': '+(D[r]||r)],
@@ -1083,6 +1089,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     [/^\((T)(\d), (\d)e estimation\)$/, (x,t,q,n)=>'(Q'+q+', estimate '+n+')'],
     [new RegExp('^(.+) \\('+Mre+'\\)$'), (x,a,m)=>(D[a]||a)+' ('+MOIS[m]+')'],
     [/^(.+) \(T(\d), (\d)e estimation\)$/, (x,a,q,n)=>(D[a]||a)+' (Q'+q+', estimate '+n+')'],
+    [/^Résultats : (.+)$/, (x,c)=>'Earnings: '+c],
     [/^Tendance$/, ()=>'Trend']
   ];
   function tr(s){
