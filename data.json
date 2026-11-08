@@ -111,6 +111,38 @@
    "cotLong": 63.67,
    "cotChange": -0.92,
    "crowdLong": 31
+  },
+  "xagusd": {
+   "season": "bear",
+   "seasonPct": -14.8,
+   "cotLong": 70.14,
+   "cotChange": 1.04,
+   "crowdLong": 91,
+   "seasonPeriod": "août à octobre"
+  },
+  "btcusd": {
+   "season": "bull",
+   "seasonPct": 23.3,
+   "cotLong": 53.84,
+   "cotChange": -0.52,
+   "crowdLong": 84,
+   "seasonPeriod": "août à octobre"
+  },
+  "usoil": {
+   "season": "bull",
+   "seasonPct": 30.6,
+   "cotLong": 53.98,
+   "cotChange": -1.51,
+   "crowdLong": 48,
+   "seasonPeriod": "août à octobre"
+  },
+  "rut": {
+   "season": "bear",
+   "seasonPct": -3.8,
+   "cotLong": 45.13,
+   "cotChange": 2.05,
+   "crowdLong": 72,
+   "seasonPeriod": "août à octobre"
   }
  },
  "history": [
@@ -135,6 +167,22 @@
    "usd": {
     "sent": 1,
     "macro": 11
+   },
+   "xagusd": {
+    "sent": 1,
+    "macro": -11
+   },
+   "btcusd": {
+    "sent": -1,
+    "macro": 8
+   },
+   "usoil": {
+    "sent": 0,
+    "macro": 11
+   },
+   "rut": {
+    "sent": -1,
+    "macro": 9
    }
   }
  ],

@@ -142,6 +142,10 @@ select{font-family:var(--f-body)}
 }
 
 [hidden]{display:none!important}
+.assetpick{display:flex;align-items:center;gap:8px;font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.assetpick select{font:600 16px/1.2 var(--f-display);letter-spacing:.03em;text-transform:uppercase;color:var(--fg);background:var(--panel);border:1px solid var(--line);padding:9px 10px;border-radius:0;min-width:230px;max-width:100%}
+@media (max-width:440px){ .assetpick{width:100%} .assetpick select{flex:1;min-width:0} }
+
 /* menu des pages à gauche (ordinateur) */
 .shell{display:block}
 @media (min-width:900px){
@@ -257,13 +261,29 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     </div>
     <button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button>
     <div class="controls" data-pg="score">
-      <div class="seg" role="tablist" aria-label="Actif">
-        <button id="tab-xauusd" role="tab" aria-selected="true" data-asset="xauusd">XAUUSD</button>
-        <button id="tab-nasdaq" role="tab" aria-selected="false" data-asset="nasdaq">Nasdaq</button>
-        <button id="tab-spx500" role="tab" aria-selected="false" data-asset="spx500">S&amp;P 500</button>
-        <button id="tab-us30" role="tab" aria-selected="false" data-asset="us30">Dow Jones</button>
-        <button id="tab-usd" role="tab" aria-selected="false" data-asset="usd">US Dollar</button>
-      </div>
+      <label class="assetpick"><span>Actif</span>
+        <select id="assetSel" aria-label="Actif">
+          <optgroup label="Indices">
+            <option value="nasdaq">NASDAQ</option>
+            <option value="spx500">SPX500 · S&amp;P 500</option>
+            <option value="us30">DOW · Dow Jones</option>
+            <option value="rut">RUSSELL · Russell 2000</option>
+          </optgroup>
+          <optgroup label="Métaux">
+            <option value="xauusd">XAUUSD · Or</option>
+            <option value="xagusd">XAGUSD · Argent</option>
+          </optgroup>
+          <optgroup label="Devises">
+            <option value="usd">US-DOLLAR · DXY</option>
+          </optgroup>
+          <optgroup label="Énergie">
+            <option value="usoil">USOIL · Pétrole WTI</option>
+          </optgroup>
+          <optgroup label="Crypto">
+            <option value="btcusd">BITCOIN · BTCUSD</option>
+          </optgroup>
+        </select>
+      </label>
       <button id="editBtn" class="btn" type="button">Ma tendance</button>
     </div>
   </header>
@@ -317,7 +337,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.</li>
-      <li>Total de −max à +max (le max dépend de l'actif : or ±25, Nasdaq ±24, S&amp;P ±27, Dow ±25, dollar ±25) : 4 à 6 = haussier/baissier, 7 et plus = très haussier/très baissier, de −3 à +3 = neutre (comme EdgeFinder).</li>
+      <li>Total de −max à +max (le max dépend de l'actif, environ ±24 à ±27) : 4 à 9 = haussier/baissier, 10 et plus = très haussier/très baissier, de −3 à +3 = neutre.</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
@@ -328,7 +348,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       <div class="pghead"><div><h2>Top Setups</h2><p>Tes actifs classés du score le plus haut au plus bas · chaque case = points ajoutés au score (poids inclus)</p></div></div>
       <div class="filters" id="topFilters">
         <label>Recherche<input type="search" id="fSym" placeholder="Nom de l’actif…" autocomplete="off"></label>
-        <label>Catégorie<select id="fCat"><option value="">Toutes</option><option value="ind">Indices</option><option value="met">Métaux</option><option value="fx">Devises</option></select></label>
+        <label>Catégorie<select id="fCat"><option value="">Toutes</option><option value="ind">Indices</option><option value="met">Métaux</option><option value="fx">Devises</option><option value="nrg">Énergie</option><option value="cry">Crypto</option></select></label>
         <label>Biais<select id="fBias"><option value="">Tous</option><option value="vbull">Très haussier</option><option value="bull">Haussier (et plus)</option><option value="neu">Neutre</option><option value="bear">Baissier (et plus)</option><option value="vbear">Très baissier</option></select></label>
         <label>Score technique<select id="fTech"><option value="">Tous</option><option value="pos">Positif</option><option value="zero">Neutre</option><option value="neg">Négatif</option></select></label>
         <label>Sentiment + COT<select id="fSent"><option value="">Tous</option><option value="pos">Positif</option><option value="zero">Neutre</option><option value="neg">Négatif</option></select></label>
@@ -351,6 +371,10 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
           <button type="button" data-ca="spx500" aria-pressed="false">S&amp;P</button>
           <button type="button" data-ca="us30" aria-pressed="false">Dow</button>
           <button type="button" data-ca="usd" aria-pressed="false">USD</button>
+          <button type="button" data-ca="xagusd" aria-pressed="false">Argent</button>
+          <button type="button" data-ca="rut" aria-pressed="false">Russell</button>
+          <button type="button" data-ca="usoil" aria-pressed="false">Pétrole</button>
+          <button type="button" data-ca="btcusd" aria-pressed="false">Bitcoin</button>
         </div>
       </div>
       <div class="tablewrap" id="calBox"></div>
@@ -391,7 +415,11 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     nasdaq:{name:'Nasdaq', hint:'Croissance forte = haussier, inflation chaude = baissier'},
     spx500:{name:'S&P 500', hint:'Croissance forte = haussier, inflation chaude = baissier'},
     us30:{name:'Dow Jones', hint:'Croissance forte = haussier, inflation chaude = baissier'},
-    usd:{name:'DXY · Dollar US', hint:'Données fortes = haussier pour le dollar'}
+    usd:{name:'DXY · Dollar US', hint:'Données fortes = haussier pour le dollar'},
+    xagusd:{name:'XAGUSD · Argent', hint:'Données fortes = baissier pour l’argent'},
+    btcusd:{name:'BTCUSD · Bitcoin', hint:'Actif risqué : croissance forte = haussier, inflation chaude = baissier'},
+    usoil:{name:'USOIL · Pétrole WTI', hint:'Croissance forte = haussier, inflation chaude = baissier'},
+    rut:{name:'Russell 2000', hint:'Croissance forte = haussier, inflation chaude = baissier'}
   };
   const MOIS = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
   function curMonthNum(){ try{ return +new Date().toLocaleDateString('en-CA',{timeZone:'America/Toronto', month:'numeric'}); }catch(e){ return new Date().getMonth()+1; } }
@@ -399,7 +427,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   const state = {
     asset:'xauusd', edit:false, canWrite:null, db:null,
     econ:{values:{}, yield2y:'flat', updatedAt:null},
-    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset(), us30:blankAsset(), usd:blankAsset()},
+    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset(), us30:blankAsset(), usd:blankAsset(), xagusd:blankAsset(), btcusd:blankAsset(), usoil:blankAsset(), rut:blankAsset()},
     history:[], loaded:false
   };
   try{ const a = localStorage.getItem('sc-asset'); if(a && ASSETS[a]) state.asset = a; }catch(e){}
@@ -414,13 +442,17 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     nasdaq:{cpi:2,yield10:2,nfp:2,pce:2},
     spx500:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2,retail:2,pmi_srv:2},
     us30:{pmi_mfg:2,cpi:2,nfp:2,retail:2,gdp:2},
-    usd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2}
+    usd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
+    xagusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
+    btcusd:{cpi:2,yield10:2,nfp:2,pce:2},
+    usoil:{pmi_mfg:2,gdp:2,retail:2,nfp:2},
+    rut:{cpi:2,nfp:2,yield10:2,pce:2,retail:2}
   };
   const wOf = (asset,id) => { const w = (WEIGHTS[asset]||{})[id]; return w===undefined ? 1 : w; };
   function impact(asset, cat, usd){
     if(cat==='spec') return usd || 0;
     if(asset==='usd') return usd || 0;
-    if(asset==='xauusd') return -usd || 0;
+    if(asset==='xauusd' || asset==='xagusd') return -usd || 0;
     return (cat==='infl' ? -usd : usd) || 0;
   }
   function econSignal(ind, asset){
@@ -459,9 +491,9 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     return ['Neutre','neu'];
   }
   function verdict(total){
-    if(total>=7) return ['Très haussier','bull'];
+    if(total>=10) return ['Très haussier','bull'];
     if(total>=4) return ['Haussier','bull'];
-    if(total<=-7) return ['Très baissier','bear'];
+    if(total<=-10) return ['Très baissier','bear'];
     if(total<=-4) return ['Baissier','bear'];
     return ['Neutre','neu'];
   }
@@ -588,7 +620,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     $('updated').textContent = !state.loaded ? 'Chargement…' : u
       ? 'Mis à jour le '+new Date(u).toLocaleString('fr-CA',{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})
       : 'Aucune donnée encore : la première mise à jour arrive bientôt.';
-    document.querySelectorAll('.seg button').forEach(b=>b.setAttribute('aria-selected', String(b.dataset.asset===state.asset)));
+    { const sel = $('assetSel'); if(sel && sel.value!==state.asset) sel.value = state.asset; }
   }
   function renderHistory(){
     const pts = state.history.filter(h=>h[state.asset]).map(h=>({date:h.date, v:(h[state.asset].sent||0)+(h[state.asset].macro||0)}));
@@ -613,7 +645,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); }
 
   // ---------- editing ----------
-  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false}, saveTimer = null, chain = Promise.resolve();
+  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false}, saveTimer = null, chain = Promise.resolve();
   function note(msg){ const n=$('note'); if(msg){ n.textContent=msg; n.hidden=false; } else n.hidden=true; }
 
   $('tbl').addEventListener('input', onEdit);
@@ -651,14 +683,10 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   function todayISO(){ const d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0'); }
   const TKEY='scorecard-tendance-v1';
   function saveTech(){
-    try{ localStorage.setItem(TKEY, JSON.stringify({month:(()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');})(), xauusd:{trend:state.assets.xauusd.trend, season:state.assets.xauusd.season},
-      nasdaq:{trend:state.assets.nasdaq.trend, season:state.assets.nasdaq.season},
-      spx500:{trend:state.assets.spx500.trend, season:state.assets.spx500.season},
-      us30:{trend:state.assets.us30.trend, season:state.assets.us30.season},
-      usd:{trend:state.assets.usd.trend, season:state.assets.usd.season}})); note(''); }
+    try{ const o = {month:(()=>{const d=new Date();return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0');})()}; Object.keys(ASSETS).forEach(k=>{ o[k] = {trend:state.assets[k].trend, season:state.assets[k].season}; }); localStorage.setItem(TKEY, JSON.stringify(o)); note(''); }
     catch(e){ note('Ton navigateur bloque la sauvegarde de ta tendance (navigation privée?).'); }
   }
-  function flush(){ clearTimeout(saveTimer); if(dirty.xauusd||dirty.nasdaq||dirty.spx500||dirty.us30||dirty.usd){ dirty={econ:false,xauusd:false,nasdaq:false,spx500:false,us30:false,usd:false}; saveTech(); } }
+  function flush(){ clearTimeout(saveTimer); if(Object.keys(ASSETS).some(k=>dirty[k])){ dirty={econ:false}; Object.keys(ASSETS).forEach(k=>dirty[k]=false); saveTech(); } }
   function setEdit(on){
     state.edit = on;
     $('editBtn').classList.toggle('on', on);
@@ -666,10 +694,10 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     renderAll();
   }
   $('editBtn').addEventListener('click', ()=>{ if(state.edit){ flush(); setEdit(false); } else setEdit(true); });
-  document.querySelectorAll('.seg button').forEach(b=>b.addEventListener('click', ()=>{
-    state.asset = b.dataset.asset; try{ localStorage.setItem('sc-asset', state.asset); }catch(e){}
+  $('assetSel').addEventListener('change', e=>{
+    state.asset = e.target.value; try{ localStorage.setItem('sc-asset', state.asset); }catch(err){}
     renderAll();
-  }));
+  });
 
 
 
@@ -686,7 +714,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     {k:'nfp', h:'NFP', g:3}, {k:'unemp', h:'Chômage', g:3}, {k:'claims', h:'Demandes chômage', g:3},
     {k:'adp', h:'ADP', g:3}, {k:'jolts', h:'JOLTS', g:3}
   ];
-  const TOP_NAMES = {xauusd:'XAUUSD', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW', usd:'US-DOLLAR'};
+  const TOP_NAMES = {xauusd:'XAUUSD', xagusd:'SILVER', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW', rut:'RUSSELL', usd:'US-DOLLAR', usoil:'USOIL', btcusd:'BITCOIN'};
   function topCell(asset, C, col){
     if(col.v) return col.v(C);
     const s = C.rows[col.k];
@@ -737,19 +765,19 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
 
 
   // filtres de la page Top Setups
-  const TOP_CAT = {xauusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', usd:'fx'};
-  const TOP_LABEL = {xauusd:'xauusd or gold', nasdaq:'nasdaq', spx500:'spx500 s&p 500', us30:'dow jones us30', usd:'us-dollar dollar dxy usd'};
+  const TOP_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', usoil:'nrg', btcusd:'cry'};
+  const TOP_LABEL = {xauusd:'xauusd or gold', xagusd:'xagusd silver argent', nasdaq:'nasdaq', spx500:'spx500 s&p 500', us30:'dow jones us30', rut:'russell 2000 rut', usd:'us-dollar dollar dxy usd', usoil:'usoil oil pétrole petrole wti crude', btcusd:'bitcoin btc btcusd crypto'};
   function topPass(a, C){
     const g = id => { const el = $(id); return el ? el.value : ''; };
     const q = (g('fSym')||'').trim().toLowerCase();
     if(q && !(TOP_NAMES[a].toLowerCase().includes(q) || TOP_LABEL[a].includes(q))) return false;
     const cat = g('fCat'); if(cat && TOP_CAT[a]!==cat) return false;
     const b = g('fBias'), t = C.total;
-    if(b==='vbull' && !(t>=7)) return false;
+    if(b==='vbull' && !(t>=10)) return false;
     if(b==='bull' && !(t>=4)) return false;
     if(b==='neu' && !(t>=-3 && t<=3)) return false;
     if(b==='bear' && !(t<=-4)) return false;
-    if(b==='vbear' && !(t<=-7)) return false;
+    if(b==='vbear' && !(t<=-10)) return false;
     const sg = (v, f) => !f || (f==='pos' && v>0) || (f==='neg' && v<0) || (f==='zero' && v===0);
     return sg(C.tech, g('fTech')) && sg(C.sent, g('fSent')) && sg(C.macro, g('fMacro'));
   }
@@ -758,7 +786,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
 
   // ---------- pages : calendrier et Fed ----------
   state.calendar = []; state.fed = null; state.calAsset = 'all'; state.page = 'score';
-  const CAL_ASSETS = ['xauusd','nasdaq','spx500','us30','usd'];
+  const CAL_ASSETS = Object.keys(ASSETS);
   function impOf(item, asset){
     if(item.kind==='fed') return 2;
     if(!item.id) return 0;
@@ -875,7 +903,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   function apply(d){
     const t = localTech();
     state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(d.econ||{}).yield10y||null, updatedAt:d.updatedAt||null};
-    ['xauusd','nasdaq','spx500','us30','usd'].forEach(k=>{
+    Object.keys(ASSETS).forEach(k=>{
       state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), trend:((t[k]||{}).trend)||'neutral'};
     });
     state.history = Array.isArray(d.history) ? d.history.slice(-60) : [];
@@ -967,7 +995,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (trend over about a month): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
     'Poids :':'Weights:',
     'les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.':'the most important data for each asset count more (×2, shown next to the name); the rest count ×1, so each item is worth at most ±2. Example: CPI is ×2 for every asset, Big Tech earnings ×2 for the Nasdaq.',
-    'Total de −max à +max (le max dépend de l\'actif : or ±25, Nasdaq ±24, S&P ±27, Dow ±25, dollar ±25) : 4 à 6 = haussier/baissier, 7 et plus = très haussier/très baissier, de −3 à +3 = neutre (comme EdgeFinder).':'Total from −max to +max (depends on the asset: gold ±25, Nasdaq ±24, S&P ±27, Dow ±25, dollar ±25): 4 to 6 = bullish/bearish, 7 or more = very bullish/very bearish, −3 to +3 = neutral (like EdgeFinder).',
+    'Total de −max à +max (le max dépend de l\'actif, environ ±24 à ±27) : 4 à 9 = haussier/baissier, 10 et plus = très haussier/très baissier, de −3 à +3 = neutre.':'Total from −max to +max (depends on the asset, about ±24 to ±27): 4 to 9 = bullish/bearish, 10 or more = very bullish/very bearish, −3 to +3 = neutral.',
     'Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Economic data, COT and retail sentiment update automatically. Seasonality (last 3 months) updates itself at the start of each month. Your 4H/Daily trend is saved in this browser. Information only: this is not a buy or sell signal.',
     'Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Information only: this is not a buy or sell signal.',
     // Top Setups
@@ -1014,6 +1042,14 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'La sauvegarde n’est pas disponible dans cette vue : tes changements ne seront pas gardés.':'Saving is not available in this view: your changes will not be kept.',
     'Les données ne sont pas joignables pour l’instant. Elles s’afficheront dès que la connexion revient.':'The data cannot be reached right now. It will show as soon as the connection is back.',
     'Tu peux consulter ce tableau, mais pas le modifier.':'You can view this dashboard but not edit it.',
+    // filtres et nouveaux actifs
+    'Recherche':'Search','Nom de l’actif…':'Asset name…','Catégorie':'Category','Toutes':'All','Indices':'Indices','Métaux':'Metals','Devises':'Currencies',
+    'Haussier (et plus)':'Bullish (or more)','Baissier (et plus)':'Bearish (or more)','Score technique':'Technical score','Sentiment + COT':'Sentiment + COT','Score macro':'Macro score',
+    'Positif':'Positive','Négatif':'Negative','Réinitialiser':'Reset','Aucun actif ne correspond à ces filtres.':'No asset matches these filters.',
+    'XAGUSD · Argent':'XAGUSD · Silver','BTCUSD · Bitcoin':'BTCUSD · Bitcoin','USOIL · Pétrole WTI':'USOIL · WTI Oil','Russell 2000':'Russell 2000',
+    'Données fortes = baissier pour l’argent':'Strong data = bearish for silver','Actif risqué : croissance forte = haussier, inflation chaude = baissier':'Risk asset: strong growth = bullish, hot inflation = bearish',
+    'Argent':'Silver','Pétrole':'Oil','Énergie':'Energy','Crypto':'Crypto',
+    'le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.':'CPI is ×2 for every asset. All assets use the same data.',
     // attributs
     'Pages':'Pages','Résumé':'Summary','Indicateurs':'Indicators','Jauge du score total':'Total score gauge',
     'Historique du score total':'Total score history','Importance selon l’actif':'Impact by asset','Réserve fédérale':'Federal Reserve',
@@ -1077,8 +1113,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
           if(fr!==undefined && n.nodeValue!==fr){ n.nodeValue = fr; }
         }
       }
-      document.querySelectorAll('[aria-label],[title],[placeholder]').forEach(e=>{
-        ['aria-label','title','placeholder'].forEach(a=>{
+      document.querySelectorAll('[aria-label],[title],[placeholder],optgroup[label]').forEach(e=>{
+        ['aria-label','title','placeholder','label'].forEach(a=>{
           const v = e.getAttribute(a); if(!v) return;
           const key = 'data-fr-'+a;
           if(lang==='en'){ const fr = e.getAttribute(key) || v; const en = tr(fr); if(en!==null){ e.setAttribute(key, fr); if(v!==en) e.setAttribute(a, en); } }
