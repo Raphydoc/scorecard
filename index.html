@@ -1026,8 +1026,9 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     const rows = [['hike','Hausse'+step,'bear'],['hold','Statu quo','neu'],['cut','Baisse'+step,'bull']];
     const bars = rows.map(([k,l,c])=>{
       const v = +p[k]||0; const d = pp && pp[k]!=null ? v-(+pp[k]) : null;
-      const dtxt = d===null ? '' : Math.abs(d)<0.5 ? '=' : (d>0?'+':'−')+Math.abs(d).toFixed(0);
-      return `<div><div class="plab"><span>${esc(l)}</span><b>${v.toFixed(0)} %</b><em title="Changement depuis ${esc(F.prevDate?fmtDate(F.prevDate):'la dernière fois')}">${dtxt}</em></div>
+      const pd = x => Number.isInteger(+x) ? String(+x) : (+x).toFixed(1).replace('.', document.documentElement.lang==='en'?'.':',');
+      const dtxt = d===null ? '' : Math.abs(d)<0.05 ? '=' : (d>0?'+':'−')+pd(Math.abs(d));
+      return `<div><div class="plab"><span>${esc(l)}</span><b>${pd(v)} %</b><em title="Changement depuis ${esc(F.prevDate?fmtDate(F.prevDate):'la dernière fois')}">${dtxt}</em></div>
         <div class="ptrack"><div class="pfill ${c}" style="width:${Math.max(0,Math.min(100,v))}%"></div></div></div>`;
     }).join('');
     const lead = (+p.hike||0) >= Math.max(+p.hold||0, +p.cut||0) ? 'hike' : (+p.cut||0) > (+p.hold||0) ? 'cut' : 'hold';
@@ -1302,7 +1303,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     let k = '';
     k += `<button class="kpi" data-goa="${best.a}"><span class="k">${L('Meilleur setup','Top setup')}</span><span class="v ${vC(best.C.total)}">${esc(TOP_NAMES[best.a])} ${best.C.total>0?'+':''}${best.C.total}</span><span class="s">${esc(L(verdict(best.C.total)[0], ''))}${isEN()?verdictEN(best.C.total):''}</span></button>`;
     k += `<button class="kpi" data-goa="${worst.a}"><span class="k">${L('Plus faible','Weakest')}</span><span class="v ${vC(worst.C.total)}">${esc(TOP_NAMES[worst.a])} ${worst.C.total>0?'+':''}${worst.C.total}</span><span class="s">${esc(L(verdict(worst.C.total)[0], ''))}${isEN()?verdictEN(worst.C.total):''}</span></button>`;
-    k += `<button class="kpi" data-gop="fed"><span class="k">${L('Fed · prochaine réunion','Fed · next meeting')}</span><span class="v">${p.hike!=null? nf(p.hike,0)+' %':'—'}</span><span class="s">${L('chances de hausse (CME FedWatch)','odds of a hike (CME FedWatch)')}</span></button>`;
+    k += `<button class="kpi" data-gop="fed"><span class="k">${L('Fed · prochaine réunion','Fed · next meeting')}</span><span class="v">${p.hike!=null? nf(p.hike, Number.isInteger(+p.hike)?0:1)+' %':'—'}</span><span class="s">${L('chances de hausse (CME FedWatch)','odds of a hike (CME FedWatch)')}</span></button>`;
     k += `<button class="kpi" data-gop="fed"><span class="k">${L('Taux 10 ans US','US 10-year yield')}</span><span class="v">${y10? nf(y10[1],2)+' %':'—'}</span><span class="s">${y10&&y10m? sg2(y10[1]-y10m[1],2)+L(' pt sur 1 mois',' pt over 1 month') : L('Fed H.15','Fed H.15')}</span></button>`;
     k += `<button class="kpi" data-gop="eco"><span class="k">${L('Inflation (CPI 1 an)','Inflation (CPI YoY)')}</span><span class="v">${cpiL? nf(cpiL[1],1)+' %':'—'}</span><span class="s">${cpiL? perLbl(cpiL[0])+' · BLS' : 'BLS'}</span></button>`;
     k += `<button class="kpi" data-gop="eco"><span class="k">${L('Chômage','Unemployment')}</span><span class="v">${un? nf(un[1],1)+' %':'—'}</span><span class="s">${un? perLbl(un[0])+(unp? ' · '+sg2(un[1]-unp[1],1)+' pt':'') : 'BLS'}</span></button>`;
