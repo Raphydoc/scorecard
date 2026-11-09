@@ -1312,9 +1312,9 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       return `<button class="biasrow" data-goa="${x.a}"><span class="bn">${esc(TOP_NAMES[x.a])}</span><span class="bt"><i style="${t>=0?'left:50%':'right:50%'};width:${w}%;background:${col}"></i></span><span class="bv ${vC(t)}">${t>0?'+':''}${t}</span></button>`; }).join('');
     // événements de la semaine
     const today = torontoToday(), mon = curMon(today), fri = addDays(mon,6);
-    const evs = (state.calendar||[]).filter(it=>it.date>=today && it.date<=fri && (it.kind==='fed' || (it.kind==='earn' && it.assets && Math.max(...Object.values(it.assets))>=2) || (it.id && impOf(it,'all')>=2))).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||''))).slice(0,7);
+    const evs = (state.calendar||[]).filter(it=>it.date>=today && it.date<=fri && (it.kind==='fed' || (it.kind==='earn' && it.assets && Math.max(...Object.values(it.assets))>=2) || (it.id && impOf(it,'all')>=1))).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||''))).slice(0,14);
     const ev = evs.length ? evs.map(it=>{ const d = new Date(it.date+'T12:00:00').toLocaleDateString(LOC(),{weekday:'short', day:'numeric'});
-      const tg = it.kind==='earn' ? `<span class="tag">${L('Résultats','Earnings')}</span>` : it.kind==='fed' ? `<span class="tag hi">Fed</span>` : `<span class="tag hi">★★</span>`;
+      const tg = it.kind==='earn' ? `<span class="tag">${L('Résultats','Earnings')}</span>` : it.kind==='fed' ? `<span class="tag hi">Fed</span>` : impOf(it,'all')>=2 ? `<span class="tag hi">★★</span>` : `<span class="tag">★</span>`;
       return `<div class="ev"><span class="d">${esc(d)} · ${esc(it.time||'')}</span><span>${esc(it.name||'')}</span>${tg}</div>`; }).join('')
       : `<p class="empty-hist" style="padding:6px 0">${L('Rien de majeur d’ici la fin de la semaine.','Nothing major left this week.')}</p>`;
     // nouvelles
@@ -1324,7 +1324,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       <div class="kpis">${k}</div>
       <div class="g2">
         <div class="panel"><div class="ph"><div><h3>${L('Biais de tes actifs','Your assets’ bias')}</h3><p>${L('Score total du scorecard · clique pour voir le détail','Total scorecard score · click for details')}</p></div></div><div class="pb">${b}</div></div>
-        <div class="panel"><div class="ph"><div><h3>${L('À surveiller cette semaine','To watch this week')}</h3><p>${L('Données ★★, Fed et gros résultats','★★ data, Fed and big earnings')}</p></div><button class="chip" data-gop="cal">${L('Calendrier','Calendar')}</button></div><div class="pb evl">${ev}</div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('À surveiller cette semaine','To watch this week')}</h3><p>${L('Données ★★ et ★, Fed et gros résultats','★★ and ★ data, Fed and big earnings')}</p></div><button class="chip" data-gop="cal">${L('Calendrier','Calendar')}</button></div><div class="pb evl">${ev}</div></div>
       </div>
       <div class="g2">
         <div class="panel"><div class="ph"><div><h3>${L('Dernières nouvelles','Latest news')}</h3><p>${L('Sources reconnues · résumé en français','Trusted sources · summarized')}</p></div><button class="chip" data-gop="news">${L('Toutes','All')}</button></div><div class="news">${nw}</div></div>
