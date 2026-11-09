@@ -142,6 +142,103 @@ select{font-family:var(--f-body)}
 }
 
 [hidden]{display:none!important}
+/* ===== nouvelles pages (vue d'ensemble, graphiques, économie, taux, COT, sentiment, nouvelles) ===== */
+html[lang="en"] .l-fr{display:none} html:not([lang="en"]) .l-en{display:none}
+.navgrp{display:none}
+@media (min-width:900px){
+  .side .navgrp{display:block;padding:14px 18px 4px;font:600 10.5px/1 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted);opacity:.75}
+}
+@media (max-width:899px){
+  .shell > .side .pages{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;-webkit-overflow-scrolling:touch}
+  .shell > .side .pages::-webkit-scrollbar{display:none}
+  .shell > .side .pages button{white-space:nowrap;flex:0 0 auto}
+}
+.p2{display:grid;gap:14px;min-width:0}
+.p2 .panel{min-width:0}
+.p2 h3{margin:0;font-family:var(--f-display);font-size:16px;font-weight:600;letter-spacing:.04em;text-transform:uppercase;color:var(--fg)}
+.p2 .ph{display:flex;align-items:flex-end;justify-content:space-between;gap:10px;flex-wrap:wrap;padding:12px 14px;border-bottom:1px solid var(--line)}
+.p2 .ph p{margin:3px 0 0;color:var(--muted);font-size:12.5px}
+.p2 .pb{padding:12px 14px;min-width:0}
+.p2 .src{color:var(--muted);font-size:11.5px;padding:8px 14px 12px}
+.p2 .src a{color:inherit}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.kpi{background:var(--panel);border:1px solid var(--line);padding:12px 14px;min-width:0;display:grid;gap:4px;text-align:left;color:var(--fg);font:inherit}
+button.kpi{cursor:pointer} button.kpi:hover{border-color:var(--gold)}
+.kpi .k{font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.kpi .v{font-family:var(--f-display);font-size:26px;font-weight:600;line-height:1.05}
+.kpi .s{font-size:12px;color:var(--muted)}
+.up{color:var(--bull)} .dn{color:var(--bear)}
+.g2{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(0,1fr);gap:14px}
+.g2e{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+@media (max-width:980px){ .g2,.g2e{grid-template-columns:minmax(0,1fr)} }
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip{border:1px solid var(--line);background:var(--panel);color:var(--muted);font:600 13px/1 var(--f-display);letter-spacing:.04em;text-transform:uppercase;padding:7px 10px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.cbox{position:relative;height:300px;min-width:0}
+.cbox.sm{height:220px} .cbox.lg{height:380px}
+.biasrow{display:grid;grid-template-columns:92px minmax(0,1fr) 44px;gap:8px;align-items:center;padding:5px 0;cursor:pointer;border:0;background:none;width:100%;color:var(--fg);font:inherit;text-align:left}
+.biasrow:hover .bn{color:var(--gold)}
+.biasrow .bn{font-family:var(--f-display);font-weight:600;font-size:14px;letter-spacing:.03em}
+.biasrow .bt{position:relative;height:14px;background:var(--panel-2)}
+.biasrow .bt i{position:absolute;top:0;bottom:0}
+.biasrow .bt::after{content:"";position:absolute;left:50%;top:-3px;bottom:-3px;width:1px;background:var(--muted);opacity:.5}
+.biasrow .bv{font-family:var(--f-mono,'IBM Plex Mono',monospace);font-size:13px;text-align:right}
+.evl{display:grid;gap:0}
+.evl .ev{display:grid;grid-template-columns:86px minmax(0,1fr) auto;gap:8px;padding:8px 0;border-top:1px solid var(--line);align-items:center;font-size:13.5px}
+.evl .ev:first-child{border-top:0}
+.evl .ev .d{color:var(--muted);font-size:12px}
+.tag{display:inline-block;font:600 10.5px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;padding:3px 5px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.tag.hi{border-color:var(--gold);color:var(--gold)}
+.tag.b{border-color:var(--bull);color:var(--bull)} .tag.r{border-color:var(--bear);color:var(--bear)}
+.news{display:grid;gap:0}
+.nitem{display:grid;gap:6px;padding:12px 14px;border-top:1px solid var(--line)}
+.nitem:first-child{border-top:0}
+.nitem .nm{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font-size:12px;color:var(--muted)}
+.nitem .nt{font-family:var(--f-display);font-size:17px;font-weight:600;line-height:1.25;color:var(--fg);text-decoration:none}
+.nitem a.nt:hover{text-decoration:underline}
+.nitem .ns{font-size:13.5px;line-height:1.45;color:var(--fg);opacity:.9;margin:0}
+.nitem .src1{font-weight:600;color:var(--fg)}
+.icards{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:10px}
+.icard{background:var(--panel);border:1px solid var(--line);padding:12px;display:grid;gap:6px;cursor:pointer;text-align:left;color:var(--fg);font:inherit;min-width:0}
+.icard:hover{border-color:var(--muted)} .icard[aria-pressed="true"]{border-color:var(--gold);box-shadow:inset 3px 0 0 var(--gold)}
+.icard .in{font-size:12px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.icard .iv{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap}
+.icard .iv b{font-family:var(--f-display);font-size:24px;font-weight:600}
+.icard .iv span{font-size:12.5px}
+.icard svg{width:100%;height:38px;display:block}
+.icard .ist{font-size:11.5px;color:var(--muted)}
+.icard .itx{font-size:12.5px;line-height:1.35}
+.dethead{display:flex;justify-content:space-between;align-items:flex-start;gap:10px;flex-wrap:wrap}
+.dethead .dv{font-family:var(--f-display);font-size:34px;font-weight:600;line-height:1}
+.statg{display:grid;grid-template-columns:repeat(auto-fit,minmax(110px,1fr));gap:8px;margin-top:10px}
+.statg div{background:var(--panel-2);padding:8px 10px;min-width:0}
+.statg span{display:block;font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.statg b{font-family:var(--f-mono,'IBM Plex Mono',monospace);font-size:14px;font-weight:500}
+.explain{background:var(--panel-2);border-left:3px solid var(--gold);padding:10px 12px;font-size:13px;line-height:1.5}
+.explain p{margin:0 0 6px} .explain p:last-child{margin:0}
+.livebox{padding:16px 14px;color:var(--muted);font-size:13.5px;line-height:1.5}
+.livebox a{color:var(--gold)}
+.tvbox{min-height:120px;min-width:0}
+.tvbox .tradingview-widget-container{width:100%}
+.tvfb{padding:16px 14px;color:var(--muted);font-size:13px}
+.tvfb a{color:var(--gold)}
+.ctbl{width:100%;border-collapse:collapse;font-size:13px}
+.ctbl th{font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500;text-align:right;padding:6px 8px;border-bottom:1px solid var(--line)}
+.ctbl th:first-child,.ctbl td:first-child{text-align:left}
+.ctbl td{padding:8px;border-bottom:1px solid var(--line);text-align:right;font-family:var(--f-mono,'IBM Plex Mono',monospace)}
+.ctbl td:first-child{font-family:var(--f-body)}
+.sentg{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
+.scard{background:var(--panel);border:1px solid var(--line);padding:12px;display:grid;gap:8px;min-width:0}
+.scard .sh{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.scard .sh b{font-family:var(--f-display);font-size:17px;font-weight:600}
+.sbar{display:grid;gap:3px}
+.sbar .sl{display:flex;justify-content:space-between;font-size:11.5px;color:var(--muted)}
+.sbar .st{height:10px;background:var(--bear);position:relative;overflow:hidden}
+.sbar .st i{position:absolute;left:0;top:0;bottom:0;background:var(--bull)}
+.scard .sx{font-size:12.5px;line-height:1.4}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:5px;vertical-align:0}
+@media (max-width:560px){ .kpi .v{font-size:22px} .cbox{height:250px} .cbox.lg{height:300px} .evl .ev{grid-template-columns:70px minmax(0,1fr)} .evl .ev > :last-child{grid-column:2} }
+
 /* page Résultats */
 table.ern td.co{min-width:150px}
 table.ern td.co b{display:block;font-family:var(--f-display);font-size:16px;font-weight:600}
@@ -269,11 +366,22 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
 <body>
 <div class="shell">
 <aside class="side"><span class="sidebrand">Pages</span>  <nav class="pages" aria-label="Pages">
+  <span class="navgrp">Global</span>
+  <button type="button" data-page="home">Vue d’ensemble</button>
+  <button type="button" data-page="charts">Graphiques</button>
+  <span class="navgrp">Analyse</span>
   <button type="button" data-page="score" aria-current="page">Scorecard</button>
   <button type="button" data-page="top">Top Setups</button>
+  <span class="navgrp">Macro</span>
+  <button type="button" data-page="eco">Économie US</button>
+  <button type="button" data-page="fed">Taux &amp; Fed</button>
   <button type="button" data-page="cal">Calendrier économique</button>
   <button type="button" data-page="earn">Résultats</button>
-  <button type="button" data-page="fed">Fed</button>
+  <span class="navgrp">Positionnement</span>
+  <button type="button" data-page="cot">COT</button>
+  <button type="button" data-page="sent">Sentiment</button>
+  <span class="navgrp">Nouvelles</span>
+  <button type="button" data-page="news">Nouvelles</button>
 </nav>
 </aside>
 <div class="wrap">
@@ -423,12 +531,20 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     <p class="pgfoot">Battu = BPA et revenus au-dessus des prévisions; Raté = les deux en dessous; Mitigé = un des deux. Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.</p>
   </section>
 
+  <section data-pg="home" hidden aria-label="Vue d’ensemble"><div class="p2" id="p2home"></div></section>
+  <section data-pg="charts" hidden aria-label="Graphiques"><div class="p2" id="p2charts"></div></section>
+  <section data-pg="eco" hidden aria-label="Économie US"><div class="p2" id="p2eco"></div></section>
+  <section data-pg="cot" hidden aria-label="COT"><div class="p2" id="p2cot"></div></section>
+  <section data-pg="sent" hidden aria-label="Sentiment"><div class="p2" id="p2sent"></div></section>
+  <section data-pg="news" hidden aria-label="Nouvelles"><div class="p2" id="p2news"></div></section>
+
   <section data-pg="fed" hidden aria-label="Réserve fédérale">
     <div class="fedgrid">
       <div class="panel"><div class="pghead"><h2>Prochaine réunion de la Fed</h2></div><div id="fedLeft"></div></div>
       <div class="panel"><div class="pghead"><div><h2>Probabilités du marché</h2><p id="fedAsof">CME FedWatch</p></div></div><div id="fedRight"></div></div>
     </div>
     <p class="pgfoot">Information seulement : les probabilités de la Fed ne comptent pas dans le score. Mises à jour automatiquement avec le scorecard.</p>
+    <div class="p2" id="p2rates" style="margin-top:14px"></div>
   </section>
 
 </div>
@@ -683,7 +799,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     if(pts.length>1) g += `<text x="${W}" y="${H-3}" font-size="10" fill="var(--muted)" text-anchor="end" font-family="IBM Plex Mono, monospace">${fmtDate(last.date)}</text>`;
     box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Historique du score total">${g}</svg>`;
   }
-  function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); }
+  function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); if(typeof renderP2==='function') renderP2(); }
 
   // ---------- editing ----------
   let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false}, saveTimer = null, chain = Promise.resolve();
@@ -993,12 +1109,544 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     if(!box.dataset.segBound){ box.dataset.segBound='1'; document.querySelectorAll('[data-ef]').forEach(b=>b.addEventListener('click', ()=>{ state.earnCat = b.dataset.ef; document.querySelectorAll('[data-ef]').forEach(x=>x.setAttribute('aria-pressed', String(x===b))); renderEarn(); })); }
     box.querySelectorAll('.wbtn').forEach(b=>b.addEventListener('click', ()=>{ const j = wi + (+b.dataset.w); if(weeks[j]){ state.earnWeek = weeks[j]; renderEarn(); } }));
   }
+  // ---------- données officielles en direct (BLS, BEA, Fed, CFTC) ----------
+  const LIVE_SRC = {
+    bls: {cpi:'CUUR0000SA0', core:'CUUR0000SA0L1E', ppi:'WPUFD4', unemp:'LNS14000000', nfp:'CES0000000001', jolts:'JTS000000000000000JOL', ahe:'CES0500000003'},
+    dbn: {gdp:'BEA/NIPA-T10101/A191RL-Q', pce:'BEA/NIPA-T20804/DPCERG-M', corepce:'BEA/NIPA-T20804/DPCCRG-M', y10:'FED/H15/RIFLGFCY10_N.B', y2:'FED/H15/RIFLGFCY02_N.B', ff:'FED/H15/RIFSPFF_N.B'},
+    cot: {xauusd:['l','088691'], xagusd:['l','084691'], nasdaq:['l','209742'], spx500:['l','13874A'], us30:['l','124603'], rut:['l','239742'], usd:['l','098662'], btcusd:['l','133741'], usoil:['d','067651']}
+  };
+  async function fetchLive(){
+    const out = {asOf: new Date().toISOString(), macro:{}, rates:{}, cot:{}};
+    const y = new Date().getFullYear();
+    const jobs = [];
+    for(const [k,id] of Object.entries(LIVE_SRC.bls)){
+      jobs.push(fetch(`https://api.bls.gov/publicAPI/v2/timeseries/data/${id}?startyear=${y-6}&endyear=${y}`).then(r=>r.json()).then(j=>{
+        const d = (((j.Results||{}).series||[])[0]||{}).data||[];
+        out.macro[k] = d.filter(o=>/^M(0[1-9]|1[0-2])$/.test(o.period) && o.value!=='-').map(o=>[o.year+'-'+o.period.slice(1), +o.value]).sort((a,b)=>a[0].localeCompare(b[0]));
+      }).catch(()=>{}));
+    }
+    jobs.push(fetch('https://api.db.nomics.world/v22/series?series_ids='+encodeURIComponent(Object.values(LIVE_SRC.dbn).join(','))+'&observations=1&format=json').then(r=>r.json()).then(j=>{
+      const docs = ((j.series||{}).docs)||[];
+      for(const [k,id] of Object.entries(LIVE_SRC.dbn)){
+        const d = docs.find(x=>x.provider_code+'/'+x.dataset_code+'/'+x.series_code===id); if(!d) continue;
+        let pts = d.period.map((p,i)=>[p, d.value[i]]).filter(p=>typeof p[1]==='number');
+        if(k==='y10'||k==='y2'||k==='ff'){ pts = pts.slice(-560); out.rates[k] = pts; }
+        else out.macro[k] = pts.slice(-90);
+      }
+    }).catch(()=>{}));
+    for(const [a,[t,code]] of Object.entries(LIVE_SRC.cot)){
+      const sel = t==='l'
+        ? 'report_date_as_yyyy_mm_dd,open_interest_all,noncomm_positions_long_all,noncomm_positions_short_all,comm_positions_long_all,comm_positions_short_all,nonrept_positions_long_all,nonrept_positions_short_all'
+        : 'report_date_as_yyyy_mm_dd,open_interest_all,m_money_positions_long_all,m_money_positions_short_all,prod_merc_positions_long,prod_merc_positions_short,swap_positions_long_all,swap__positions_short_all,nonrept_positions_long_all,nonrept_positions_short_all';
+      const ds = t==='l' ? '6dca-aqww' : '72hh-3qpy';
+      jobs.push(fetch(`https://publicreporting.cftc.gov/resource/${ds}.json?$select=${sel}&$where=cftc_contract_market_code='${code}'&$order=report_date_as_yyyy_mm_dd%20DESC&$limit=104`).then(r=>r.json()).then(j=>{
+        if(!Array.isArray(j)) return;
+        out.cot[a] = j.map(o=>t==='l'
+          ? [o.report_date_as_yyyy_mm_dd.slice(0,10), +o.noncomm_positions_long_all, +o.noncomm_positions_short_all, +o.comm_positions_long_all, +o.comm_positions_short_all, +o.nonrept_positions_long_all, +o.nonrept_positions_short_all, +o.open_interest_all]
+          : [o.report_date_as_yyyy_mm_dd.slice(0,10), +o.m_money_positions_long_all, +o.m_money_positions_short_all, (+o.prod_merc_positions_long)+(+o.swap_positions_long_all), (+o.prod_merc_positions_short)+(+o.swap__positions_short_all), +o.nonrept_positions_long_all, +o.nonrept_positions_short_all, +o.open_interest_all]
+        ).reverse();
+      }).catch(()=>{}));
+    }
+    await Promise.all(jobs);
+    return out;
+  }
+
+  // ======================================================================
+  // NOUVELLES PAGES : Vue d'ensemble, Graphiques, Économie US, Taux & Fed,
+  // COT, Sentiment, Nouvelles
+  // ======================================================================
+  state.news = state.news || [];
+  state.live = null; state.liveTried = false; state.snap = null;
+  function mergeLive(base, over){ if(!base) return over; if(!over) return base; const o = Object.assign({}, base, {asOf:over.asOf||base.asOf, liveAt:over.asOf}); ['macro','rates','cot'].forEach(k=>{ o[k] = Object.assign({}, base[k]||{}, over[k]||{}); }); return o; }
+  function setSnap(v){ if(!v || !v.macro) return; state.snap = v; state.live = state.live && state.live.liveAt ? mergeLive(v, state.live) : v; }
+  function agoPt(s, days){ if(!s || !s.length) return null; const lim = new Date(new Date(s[s.length-1][0].length===7 ? s[s.length-1][0]+'-01' : s[s.length-1][0]).getTime() - days*864e5).toISOString().slice(0,10); for(let i=s.length-1;i>=0;i--){ if(s[i][0] <= lim) return s[i]; } return null; }
+  function srcNote(){ const lv = state.live||{}; return lv.liveAt ? L('données lues en direct aux sources officielles','data loaded live from official sources') : lv.asOf ? L('copie des sources officielles du ','official data snapshot of ')+perLbl(String(lv.asOf).slice(0,10)) : ''; }
+  const isEN = () => document.documentElement.lang === 'en';
+  const L = (fr, en) => isEN() ? en : fr;
+  const LOC = () => isEN() ? 'en-US' : 'fr-CA';
+  const nf = (v, d=1) => (v===null || v===undefined || isNaN(v)) ? '—' : Number(v).toLocaleString(LOC(), {minimumFractionDigits:d, maximumFractionDigits:d}).replace('-', '−');
+  const sg2 = (v, d=1) => (v===null || isNaN(v)) ? '—' : (v>0?'+':v<0?'−':'') + Math.abs(v).toLocaleString(LOC(), {minimumFractionDigits:d, maximumFractionDigits:d});
+  const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888';
+  const GH_URL = 'https://raphydoc.github.io/scorecard/';
+  const ASSET_LBL = {xauusd:['Or','Gold'], xagusd:['Argent','Silver'], nasdaq:['Nasdaq 100','Nasdaq 100'], spx500:['S&P 500','S&P 500'], us30:['Dow Jones','Dow Jones'], rut:['Russell 2000','Russell 2000'], usd:['Dollar US (DXY)','US Dollar (DXY)'], usoil:['Pétrole WTI','WTI Crude'], btcusd:['Bitcoin','Bitcoin']};
+  const aName = a => (ASSET_LBL[a]||[a,a])[isEN()?1:0];
+  const TV_SYM = {xauusd:'OANDA:XAUUSD', xagusd:'OANDA:XAGUSD', nasdaq:'OANDA:NAS100USD', spx500:'OANDA:SPX500USD', us30:'OANDA:US30USD', rut:'OANDA:US2000USD', usd:'TVC:DXY', usoil:'TVC:USOIL', btcusd:'BITSTAMP:BTCUSD', us10y:'TVC:US10Y', vix:'TVC:VIX'};
+  const MON_FR = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
+  const MON_EN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function perLbl(p){ // '2026-09' → 'sept. 2026' ; '2026-Q3' → 'T3 2026' ; '2026-11-05' → '5 nov. 2026'
+    if(/^\d{4}-Q\d$/.test(p)) return (isEN()?'Q':'T')+p.slice(6)+' '+p.slice(0,4);
+    const m = p.match(/^(\d{4})-(\d{2})(?:-(\d{2}))?$/); if(!m) return p;
+    const mo = (isEN()?MON_EN:MON_FR)[+m[2]-1];
+    return m[3] ? (isEN()? mo+' '+(+m[3])+', '+m[1] : (+m[3])+' '+mo+' '+m[1]) : mo+' '+m[1];
+  }
+  const charts = {};
+  function mkChart(id, cfg){
+    const el = $(id); if(!el || typeof Chart==='undefined') return null;
+    if(charts[id]){ charts[id].destroy(); delete charts[id]; }
+    const fg = css('--fg'), mu = css('--muted'), li = css('--line');
+    Chart.defaults.color = mu; Chart.defaults.borderColor = li;
+    Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
+    cfg.options = Object.assign({responsive:true, maintainAspectRatio:false, animation:{duration:350}, interaction:{mode:'index', intersect:false},
+      plugins:{legend:{labels:{color:fg, boxWidth:12, boxHeight:12}}, tooltip:{backgroundColor:css('--panel'), titleColor:fg, bodyColor:fg, borderColor:li, borderWidth:1}}}, cfg.options||{});
+    charts[id] = new Chart(el, cfg); return charts[id];
+  }
+  let chartLibP = null;
+  function needChart(){
+    if(typeof Chart!=='undefined') return Promise.resolve(true);
+    if(chartLibP) return chartLibP;
+    chartLibP = new Promise(res=>{ const s=document.createElement('script'); s.src='https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js'; s.onload=()=>res(true); s.onerror=()=>res(false); document.head.appendChild(s); });
+    return chartLibP;
+  }
+  function spark(vals, color){
+    const v = vals.filter(x=>x!==null && !isNaN(x)); if(v.length<2) return '';
+    const mn = Math.min(...v), mx = Math.max(...v), W=200, H=38, r = (mx-mn)||1;
+    const pts = v.map((x,i)=>`${(i/(v.length-1)*W).toFixed(1)},${(H-3-(x-mn)/r*(H-6)).toFixed(1)}`).join(' ');
+    return `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="${color}" stroke-width="2" vector-effect="non-scaling-stroke"/></svg>`;
+  }
+  function liveMissing(what){
+    return `<div class="livebox">${L(`Les ${what} se chargent en direct depuis les sources officielles. Cette vue ne peut pas les joindre : ouvre <a href="${GH_URL}" target="_blank" rel="noopener">ta page GitHub</a> pour les voir.`, `The ${what} load live from official sources. This view can't reach them: open <a href="${GH_URL}" target="_blank" rel="noopener">your GitHub page</a> to see them.`)}</div>`;
+  }
+
+  // ---------- TradingView ----------
+  function tvTheme(){ const b = getComputedStyle(document.body).backgroundColor.match(/\d+/g)||[255,255,255]; return (+b[0]+ +b[1]+ +b[2])/3 < 110 ? 'dark' : 'light'; }
+  function tv(boxId, name, cfg, height){
+    const box = $(boxId); if(!box) return;
+    const key = name+JSON.stringify(cfg)+tvTheme()+(isEN()?'en':'fr');
+    if(box.dataset.tvk===key) return; box.dataset.tvk = key;
+    box.innerHTML = '';
+    const wrap = document.createElement('div'); wrap.className = 'tradingview-widget-container'; if(height) wrap.style.height = height+'px';
+    const inner = document.createElement('div'); inner.className = 'tradingview-widget-container__widget'; if(height) inner.style.height = height+'px';
+    wrap.appendChild(inner);
+    const s = document.createElement('script'); s.type = 'text/javascript'; s.async = true;
+    s.src = `https://s3.tradingview.com/external-embedding/embed-widget-${name}.js`;
+    s.text = JSON.stringify(Object.assign({colorTheme:tvTheme(), isTransparent:true, locale:isEN()?'en':'fr'}, cfg));
+    const fb = () => { if(!box.querySelector('iframe')) box.innerHTML = `<div class="tvfb">${L(`Les graphiques TradingView s’affichent sur <a href="${GH_URL}" target="_blank" rel="noopener">ta page GitHub</a> (bloqués dans cette vue).`, `TradingView charts show on <a href="${GH_URL}" target="_blank" rel="noopener">your GitHub page</a> (blocked in this view).`)}</div>`; };
+    s.onerror = fb; wrap.appendChild(s); box.appendChild(wrap);
+    setTimeout(fb, 8000);
+  }
+
+  // ---------- données en direct (cache 6 h) ----------
+  const LKEY = 'sc-live-v1';
+  async function loadLive(force){
+    if(state.liveTried && !force) return state.live;
+    state.liveTried = true;
+    try{ const c = JSON.parse(localStorage.getItem(LKEY)||'null'); if(c && c.d){ state.live = mergeLive(state.snap, c.d); if(!force && Date.now()-c.t < 6*3600e3) return state.live; } }catch(e){}
+    try{
+      const d = await fetchLive();
+      const ok = Object.keys(d.macro).length || Object.keys(d.cot).length || Object.keys(d.rates).length;
+      if(ok){
+        state.live = mergeLive(state.live || state.snap, d); try{ localStorage.setItem(LKEY, JSON.stringify({t:Date.now(), d})); }catch(e){}
+      }
+    }catch(e){}
+    return state.live;
+  }
+  // séries dérivées
+  function addMonths(p, n){ const y=+p.slice(0,4), m=+p.slice(5,7)-1+n; const yy = y+Math.floor(m/12), mm = ((m%12)+12)%12+1; return yy+'-'+String(mm).padStart(2,'0'); }
+  function yoy(s){ if(!s) return []; const m = new Map(s); return s.map(([p,v])=>{ const b = m.get(addMonths(p,-12)); return b ? [p, (v/b-1)*100] : null; }).filter(Boolean); }
+  function diff(s){ if(!s) return []; const out=[]; for(let i=1;i<s.length;i++){ if(addMonths(s[i-1][0],1)===s[i][0]) out.push([s[i][0], s[i][1]-s[i-1][1]]); } return out; }
+  function scale(s, k){ return (s||[]).map(([p,v])=>[p, v*k]); }
+  function mom(s){ if(!s) return []; const out=[]; for(let i=1;i<s.length;i++){ if(addMonths(s[i-1][0],1)===s[i][0]) out.push([s[i][0], (s[i][1]/s[i-1][1]-1)*100]); } return out; }
+  const ECON = [
+    {k:'cpi', g:'inf', n:['CPI global (1 an)','Headline CPI (YoY)'], u:'%', d:1, src:'BLS', f:m=>yoy(m.cpi), ty:'line', tgt:2, usd:1},
+    {k:'core', g:'inf', n:['CPI de base (1 an)','Core CPI (YoY)'], u:'%', d:1, src:'BLS', f:m=>yoy(m.core), ty:'line', tgt:2, usd:1},
+    {k:'pce', g:'inf', n:['PCE global (1 an)','Headline PCE (YoY)'], u:'%', d:1, src:'BEA', f:m=>yoy(m.pce), ty:'line', tgt:2, usd:1},
+    {k:'corepce', g:'inf', n:['PCE de base (1 an)','Core PCE (YoY)'], u:'%', d:1, src:'BEA', f:m=>yoy(m.corepce), ty:'line', tgt:2, usd:1},
+    {k:'ppi', g:'inf', n:['PPI demande finale (1 an)','PPI final demand (YoY)'], u:'%', d:1, src:'BLS', f:m=>yoy(m.ppi), ty:'line', usd:1},
+    {k:'nfp', g:'job', n:['Emplois créés (NFP)','Payrolls added (NFP)'], u:'k', d:0, src:'BLS', f:m=>diff(m.nfp), ty:'bar', usd:1},
+    {k:'unemp', g:'job', n:['Taux de chômage','Unemployment rate'], u:'%', d:1, src:'BLS', f:m=>m.unemp||[], ty:'line', usd:-1},
+    {k:'jolts', g:'job', n:['Postes à pourvoir (JOLTS)','Job openings (JOLTS)'], u:' M', d:2, src:'BLS', f:m=>scale(m.jolts, 0.001), ty:'line', usd:1},
+    {k:'ahe', g:'job', n:['Salaire horaire (1 an)','Hourly earnings (YoY)'], u:'%', d:1, src:'BLS', f:m=>yoy(m.ahe), ty:'line', usd:1},
+    {k:'claims', g:'job', n:['Demandes de chômage (hebdo)','Jobless claims (weekly)'], u:'k', d:0, src:'DOL', f:m=>m.claims||[], ty:'line', usd:-1},
+    {k:'gdp', g:'gro', n:['PIB réel (trimestre annualisé)','Real GDP (q/q annualized)'], u:'%', d:1, src:'BEA', f:m=>m.gdp||[], ty:'bar', usd:1},
+    {k:'retail', g:'gro', n:['Ventes au détail (mois)','Retail sales (m/m)'], u:'%', d:1, src:'Census', f:m=>mom(m.retail), ty:'bar', usd:1},
+    {k:'umich', g:'gro', n:['Confiance des consommateurs (U. Michigan)','Consumer sentiment (U. Michigan)'], u:'', d:1, src:'UMich', f:m=>m.umich||[], ty:'line', usd:1}
+  ];
+  const SRC_FULL = {BLS:'U.S. Bureau of Labor Statistics', BEA:'U.S. Bureau of Economic Analysis', Census:'U.S. Census Bureau', UMich:'University of Michigan', DOL:'U.S. Department of Labor'};
+  function econNote(e, v){
+    if(v===null || v===undefined) return '';
+    if(e.g==='inf' && e.tgt) return v>3 ? L('Bien au-dessus de la cible de 2 % de la Fed : pression pour garder les taux hauts.','Well above the Fed’s 2% target: pressure to keep rates high.') : v>2.2 ? L('Au-dessus de la cible de 2 % de la Fed.','Above the Fed’s 2% target.') : v>=1.8 ? L('Proche de la cible de 2 % de la Fed.','Close to the Fed’s 2% target.') : L('Sous la cible de 2 % : laisse de la place pour baisser les taux.','Below the 2% target: room to cut rates.');
+    if(e.k==='ppi') return v>3 ? L('Les coûts des producteurs montent vite : risque d’inflation plus tard.','Producer costs rising fast: inflation risk ahead.') : L('Coûts des producteurs sous contrôle.','Producer costs under control.');
+    if(e.k==='nfp') return v>150 ? L('Embauches solides : économie forte.','Solid hiring: strong economy.') : v>50 ? L('Embauches modérées.','Moderate hiring.') : L('Embauches faibles : le marché du travail ralentit.','Weak hiring: the job market is slowing.');
+    if(e.k==='unemp') return v<4.2 ? L('Chômage bas : marché du travail serré.','Low unemployment: tight job market.') : v<4.8 ? L('Chômage modéré.','Moderate unemployment.') : L('Chômage élevé : l’économie ralentit.','High unemployment: the economy is slowing.');
+    if(e.k==='jolts') return v>7.5 ? L('Beaucoup de postes ouverts : demande de travail forte.','Many open jobs: strong labour demand.') : v>6.5 ? L('Demande de travail normale.','Normal labour demand.') : L('Peu de postes ouverts : demande de travail faible.','Few open jobs: weak labour demand.');
+    if(e.k==='ahe') return v>3.8 ? L('Salaires qui montent vite : peut nourrir l’inflation.','Wages rising fast: can feed inflation.') : L('Hausse des salaires modérée.','Moderate wage growth.');
+    if(e.k==='claims') return v<220 ? L('Peu de mises à pied : marché du travail solide.','Few layoffs: solid job market.') : v<260 ? L('Mises à pied normales.','Normal layoffs.') : L('Mises à pied en hausse : le marché du travail s’affaiblit.','Layoffs rising: the job market is weakening.');
+    if(e.k==='retail') return v>0.5 ? L('Consommateurs qui dépensent beaucoup : économie forte.','Strong consumer spending: solid economy.') : v>=0 ? L('Dépenses en légère hausse.','Spending edging up.') : L('Les consommateurs dépensent moins.','Consumers are spending less.');
+    if(e.k==='umich') return v>75 ? L('Consommateurs optimistes.','Upbeat consumers.') : v>60 ? L('Moral des consommateurs moyen.','Middling consumer mood.') : L('Consommateurs pessimistes : risque de baisse des dépenses.','Gloomy consumers: spending may slow.');
+    if(e.k==='gdp') return v>2.5 ? L('Croissance forte.','Strong growth.') : v>1 ? L('Croissance modérée.','Moderate growth.') : v>0 ? L('Croissance faible.','Weak growth.') : L('Contraction de l’économie.','The economy is shrinking.');
+    return '';
+  }
+  function stats(s, n){
+    const t = s.slice(-n).map(x=>x[1]); if(!t.length) return null;
+    return {min:Math.min(...t), max:Math.max(...t), avg:t.reduce((a,b)=>a+b,0)/t.length};
+  }
+  function trend3(s){
+    if(s.length<4) return 0; const a = s[s.length-1][1], b = s[s.length-4][1], r = Math.abs(b)||1;
+    const ch = a-b; return Math.abs(ch)/r < 0.03 && Math.abs(ch) < 0.15 ? 0 : Math.sign(ch);
+  }
+
+  // ---------- Vue d'ensemble ----------
+  function renderHome(){
+    const box = $('p2home'); if(!box) return;
+    const list = Object.keys(ASSETS).map(a=>({a, C:compute(a)})).sort((x,y)=>y.C.total-x.C.total);
+    const best = list[0], worst = list[list.length-1];
+    const F = state.fed||{}, p = F.probs||{};
+    const lv = state.live||{}, m = lv.macro||{}, r = lv.rates||{};
+    const y10 = r.y10 && r.y10.length ? r.y10[r.y10.length-1] : null;
+    const y10m = agoPt(r.y10, 28);
+    const cpiY = yoy(m.cpi), cpiL = cpiY.length ? cpiY[cpiY.length-1] : null;
+    const un = m.unemp && m.unemp.length ? m.unemp[m.unemp.length-1] : null, unp = m.unemp && m.unemp.length>1 ? m.unemp[m.unemp.length-2] : null;
+    const vC = t => t>=4?'up':t<=-4?'dn':'';
+    let k = '';
+    k += `<button class="kpi" data-goa="${best.a}"><span class="k">${L('Meilleur setup','Top setup')}</span><span class="v ${vC(best.C.total)}">${esc(TOP_NAMES[best.a])} ${best.C.total>0?'+':''}${best.C.total}</span><span class="s">${esc(L(verdict(best.C.total)[0], ''))}${isEN()?verdictEN(best.C.total):''}</span></button>`;
+    k += `<button class="kpi" data-goa="${worst.a}"><span class="k">${L('Plus faible','Weakest')}</span><span class="v ${vC(worst.C.total)}">${esc(TOP_NAMES[worst.a])} ${worst.C.total>0?'+':''}${worst.C.total}</span><span class="s">${esc(L(verdict(worst.C.total)[0], ''))}${isEN()?verdictEN(worst.C.total):''}</span></button>`;
+    k += `<button class="kpi" data-gop="fed"><span class="k">${L('Fed · prochaine réunion','Fed · next meeting')}</span><span class="v">${p.hike!=null? nf(p.hike,0)+' %':'—'}</span><span class="s">${L('chances de hausse (CME FedWatch)','odds of a hike (CME FedWatch)')}</span></button>`;
+    k += `<button class="kpi" data-gop="fed"><span class="k">${L('Taux 10 ans US','US 10-year yield')}</span><span class="v">${y10? nf(y10[1],2)+' %':'—'}</span><span class="s">${y10&&y10m? sg2(y10[1]-y10m[1],2)+L(' pt sur 1 mois',' pt over 1 month') : L('Fed H.15','Fed H.15')}</span></button>`;
+    k += `<button class="kpi" data-gop="eco"><span class="k">${L('Inflation (CPI 1 an)','Inflation (CPI YoY)')}</span><span class="v">${cpiL? nf(cpiL[1],1)+' %':'—'}</span><span class="s">${cpiL? perLbl(cpiL[0])+' · BLS' : 'BLS'}</span></button>`;
+    k += `<button class="kpi" data-gop="eco"><span class="k">${L('Chômage','Unemployment')}</span><span class="v">${un? nf(un[1],1)+' %':'—'}</span><span class="s">${un? perLbl(un[0])+(unp? ' · '+sg2(un[1]-unp[1],1)+' pt':'') : 'BLS'}</span></button>`;
+    // biais
+    const mx = Math.max(10, ...list.map(x=>Math.abs(x.C.total)));
+    let b = list.map(x=>{ const t=x.C.total, w = Math.abs(t)/mx*50; const col = t>=4?css('--bull'):t<=-4?css('--bear'):css('--muted');
+      return `<button class="biasrow" data-goa="${x.a}"><span class="bn">${esc(TOP_NAMES[x.a])}</span><span class="bt"><i style="${t>=0?'left:50%':'right:50%'};width:${w}%;background:${col}"></i></span><span class="bv ${vC(t)}">${t>0?'+':''}${t}</span></button>`; }).join('');
+    // événements de la semaine
+    const today = torontoToday(), mon = curMon(today), fri = addDays(mon,6);
+    const evs = (state.calendar||[]).filter(it=>it.date>=today && it.date<=fri && (it.kind==='fed' || (it.kind==='earn' && it.assets && Math.max(...Object.values(it.assets))>=2) || (it.id && impOf(it,'all')>=2))).sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||''))).slice(0,7);
+    const ev = evs.length ? evs.map(it=>{ const d = new Date(it.date+'T12:00:00').toLocaleDateString(LOC(),{weekday:'short', day:'numeric'});
+      const tg = it.kind==='earn' ? `<span class="tag">${L('Résultats','Earnings')}</span>` : it.kind==='fed' ? `<span class="tag hi">Fed</span>` : `<span class="tag hi">★★</span>`;
+      return `<div class="ev"><span class="d">${esc(d)} · ${esc(it.time||'')}</span><span>${esc(it.name||'')}</span>${tg}</div>`; }).join('')
+      : `<p class="empty-hist" style="padding:6px 0">${L('Rien de majeur d’ici la fin de la semaine.','Nothing major left this week.')}</p>`;
+    // nouvelles
+    const nw = (state.news||[]).slice().sort((a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||''))).slice(0,4).map(newsItem).join('') || `<p class="livebox">${L('Les nouvelles arrivent à la prochaine mise à jour.','News arrives at the next update.')}</p>`;
+    box.innerHTML = `
+      <div class="tvbox" id="tvTape"></div>
+      <div class="kpis">${k}</div>
+      <div class="g2">
+        <div class="panel"><div class="ph"><div><h3>${L('Biais de tes actifs','Your assets’ bias')}</h3><p>${L('Score total du scorecard · clique pour voir le détail','Total scorecard score · click for details')}</p></div></div><div class="pb">${b}</div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('À surveiller cette semaine','To watch this week')}</h3><p>${L('Données ★★, Fed et gros résultats','★★ data, Fed and big earnings')}</p></div><button class="chip" data-gop="cal">${L('Calendrier','Calendar')}</button></div><div class="pb evl">${ev}</div></div>
+      </div>
+      <div class="g2">
+        <div class="panel"><div class="ph"><div><h3>${L('Dernières nouvelles','Latest news')}</h3><p>${L('Sources reconnues · résumé en français','Trusted sources · summarized')}</p></div><button class="chip" data-gop="news">${L('Toutes','All')}</button></div><div class="news">${nw}</div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('Marchés','Markets')}</h3><p>${L('Cours en direct (TradingView)','Live quotes (TradingView)')}</p></div></div><div class="tvbox" id="tvQuotes"></div></div>
+      </div>`;
+    bindGo(box);
+    tv('tvTape','ticker-tape',{symbols:Object.keys(ASSETS).map(a=>({proName:TV_SYM[a], title:TOP_NAMES[a]})).concat([{proName:'TVC:US10Y', title:'US10Y'},{proName:'TVC:VIX', title:'VIX'}]), showSymbolLogo:true, displayMode:'adaptive'});
+    tv('tvQuotes','market-quotes',{width:'100%', height:420, symbolsGroups:[
+      {name:L('Indices','Indices'), symbols:['nasdaq','spx500','us30','rut'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]}))},
+      {name:L('Matières premières','Commodities'), symbols:['xauusd','xagusd','usoil'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]}))},
+      {name:L('Devises et crypto','FX & crypto'), symbols:['usd','btcusd'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]})).concat([{name:'TVC:US10Y', displayName:'US10Y'}])}
+    ], showSymbolLogo:true}, 420);
+  }
+  function verdictEN(t){ return t>=10?'Very bullish':t>=4?'Bullish':t<=-10?'Very bearish':t<=-4?'Bearish':'Neutral'; }
+  function bindGo(root){
+    root.querySelectorAll('[data-goa]').forEach(b=>b.addEventListener('click', ()=>{ state.asset = b.dataset.goa; showPage('score'); renderAll(); window.scrollTo(0,0); }));
+    root.querySelectorAll('[data-gop]').forEach(b=>b.addEventListener('click', ()=>{ showPage(b.dataset.gop); window.scrollTo(0,0); }));
+  }
+
+  // ---------- Graphiques ----------
+  state.tvSym = state.tvSym || 'xauusd';
+  function renderCharts(){
+    const box = $('p2charts'); if(!box) return;
+    const syms = Object.keys(ASSETS).concat(['us10y','vix']);
+    const nm = s => s==='us10y'?'US10Y':s==='vix'?'VIX':TOP_NAMES[s];
+    if(!box.dataset.built){
+      box.dataset.built = '1';
+      box.innerHTML = `<div class="panel"><div class="ph"><div><h3>${L('Graphique interactif','Interactive chart')}</h3><p>${L('Change d’actif, d’unité de temps et ajoute tes indicateurs directement dans le graphique','Switch asset, timeframe and add indicators right in the chart')}</p></div><div class="chips" id="tvChips">${syms.map(s=>`<button class="chip" data-s="${s}" aria-pressed="${s===state.tvSym}">${esc(nm(s))}</button>`).join('')}</div></div>
+        <div class="tvbox" id="tvAdv"></div></div>
+        <div class="g2e">
+          <div class="panel"><div class="ph"><div><h3>${L('Analyse technique','Technical analysis')}</h3><p>${L('Résumé des moyennes mobiles et oscillateurs (TradingView)','Moving averages and oscillators summary (TradingView)')}</p></div></div><div class="tvbox" id="tvTA"></div></div>
+          <div class="panel"><div class="ph"><div><h3>${L('Fiche de l’actif','Asset profile')}</h3><p>${L('Variation, plage du jour et sur 52 semaines','Change, day range and 52-week range')}</p></div></div><div class="tvbox" id="tvInfo"></div></div>
+        </div>`;
+      box.querySelectorAll('#tvChips .chip').forEach(b=>b.addEventListener('click', ()=>{ state.tvSym = b.dataset.s; box.querySelectorAll('#tvChips .chip').forEach(x=>x.setAttribute('aria-pressed', String(x===b))); drawTV(); }));
+    }
+    drawTV();
+  }
+  function drawTV(){
+    const s = TV_SYM[state.tvSym];
+    tv('tvAdv','advanced-chart',{symbol:s, interval:'D', timezone:'America/Toronto', style:'1', allow_symbol_change:true, hide_side_toolbar:false, withdateranges:true, calendar:false, support_host:'https://www.tradingview.com', autosize:true, height:560}, 560);
+    tv('tvTA','technical-analysis',{symbol:s, interval:'1D', width:'100%', height:420, showIntervalTabs:true, displayMode:'single'}, 420);
+    tv('tvInfo','symbol-info',{symbol:s, width:'100%'});
+  }
+
+  // ---------- Économie US ----------
+  state.ecoG = state.ecoG || 'inf'; state.ecoSel = state.ecoSel || 'cpi'; state.ecoRange = state.ecoRange || 36;
+  function renderEco(){
+    const box = $('p2eco'); if(!box) return;
+    const m = (state.live||{}).macro || {};
+    const has = Object.keys(m).length>0;
+    const grp = [['inf',L('Inflation','Inflation')],['job',L('Emploi','Jobs')],['gro',L('Croissance','Growth')]];
+    let cards = '';
+    ECON.filter(e=>e.g===state.ecoG).forEach(e=>{
+      const s = e.f(m); if(!s.length) return; const last = s[s.length-1], prev = s[s.length-2];
+      const st = stats(s, 12), tr = trend3(s);
+      const ch = last && prev ? last[1]-prev[1] : null;
+      const usdDir = ch===null||Math.abs(ch)<1e-9 ? 0 : Math.sign(ch)*e.usd;
+      cards += `<button class="icard" data-k="${e.k}" aria-pressed="${e.k===state.ecoSel}">
+        <span class="in">${esc(e.n[isEN()?1:0])}</span>
+        <span class="iv"><b>${last? nf(last[1],e.d)+e.u : '—'}</b><span>${ch!==null? (ch>0?'▲ ':ch<0?'▼ ':'= ')+sg2(ch,e.d)+(e.u==='%'?' pt':'') : ''}</span></span>
+        ${spark(s.slice(-24).map(x=>x[1]), css('--gold'))}
+        <span class="ist">${last? perLbl(last[0])+' · '+e.src : e.src}${st? ' · '+L('12 mois','12 mo')+' : '+nf(st.min,e.d)+' à '.replace(' à ', isEN()?' to ':' à ')+nf(st.max,e.d) : ''}</span>
+        <span class="itx">${esc(econNote(e, last&&last[1]))}</span>
+        ${usdDir? `<span><span class="tag ${usdDir>0?'b':'r'}">${L('Dollar','Dollar')} ${usdDir>0?'▲':'▼'}</span> <span class="tag">${tr>0?L('Tendance ↑ 3 mois','3-mo trend ↑'):tr<0?L('Tendance ↓ 3 mois','3-mo trend ↓'):L('Stable 3 mois','Flat 3 mo')}</span></span>`:''}
+      </button>`;
+    });
+    if(state.ecoG==='gro'){
+      // données du scorecard sans historique officiel gratuit
+      const extra = [['pmi_mfg','ISM manufacturier','ISM manufacturing'],['pmi_srv','ISM services','ISM services'],['conf','Confiance (Conference Board)','Confidence (Conference Board)']];
+      extra.forEach(([id,fr,en])=>{ const v = (state.econ.values||{})[id]; if(!v || v.a==null) return; const ind = INDICATORS.find(i=>i.id===id)||{unit:''};
+        const sur = v.f!=null ? v.a - v.f : null;
+        cards += `<div class="icard" style="cursor:default"><span class="in">${esc(L(fr,en))}</span><span class="iv"><b>${fmt(v.a, ind.unit)}</b><span>${L('prévu','exp.')} ${v.f!=null?fmt(v.f, ind.unit):'—'}</span></span><span class="ist">${v.d? esc(fmtDate(v.d)):''} · ${L('dernière publication (scorecard)','latest release (scorecard)')}</span><span class="itx">${sur===null?'':sur>0?L('Plus fort que prévu.','Stronger than expected.'):sur<0?L('Plus faible que prévu.','Weaker than expected.'):L('Comme prévu.','As expected.')}</span></div>`; });
+    }
+    const e = ECON.find(x=>x.k===state.ecoSel) || ECON[0];
+    const s = e.f(m), last = s[s.length-1], st12 = stats(s,12), st36 = stats(s,36);
+    box.innerHTML = `
+      <div class="panel"><div class="ph"><div><h3>${L('Économie américaine','US economy')}</h3><p>${L('Données officielles (BLS, BEA, Census, Département du Travail) · clique sur une carte pour l’afficher en grand','Official data (BLS, BEA, Census, Labor Dept.) · click a card to enlarge it')} · ${srcNote()}</p></div><div class="chips" id="ecoG">${grp.map(([g,l])=>`<button class="chip" data-g="${g}" aria-pressed="${g===state.ecoG}">${esc(l)}</button>`).join('')}</div></div>
+        ${has ? `<div class="pb"><div class="icards">${cards}</div></div>` : liveMissing(L('données économiques','economic data'))}
+      </div>
+      ${has && ECON.some(x=>x.k===state.ecoSel && x.g===state.ecoG) ? `<div class="panel"><div class="ph"><div class="dethead" style="width:100%"><div><h3>${esc(e.n[isEN()?1:0])}</h3><p>${L('Source','Source')} : ${SRC_FULL[e.src]||e.src}${(state.live||{}).liveAt?'':' (via FRED)'}${last?' · '+L('dernière donnée','latest')+' : '+perLbl(last[0]):''}</p></div>
+        <div class="chips" id="ecoR">${[[12,'1A','1Y'],[24,'2A','2Y'],[36,'3A','3Y']].map(([n,f,en])=>`<button class="chip" data-r="${n}" aria-pressed="${n===state.ecoRange}">${L(f,en)}</button>`).join('')}</div></div></div>
+        <div class="pb"><div class="cbox lg"><canvas id="ecoChart"></canvas></div>
+        <div class="statg">
+          <div><span>${L('Dernière','Latest')}</span><b>${last? nf(last[1],e.d)+e.u:'—'}</b></div>
+          <div><span>${L('Moyenne 12 mois','12-mo average')}</span><b>${st12? nf(st12.avg,e.d)+e.u:'—'}</b></div>
+          <div><span>${L('Min / max 12 mois','12-mo min / max')}</span><b>${st12? nf(st12.min,e.d)+' / '+nf(st12.max,e.d):'—'}</b></div>
+          <div><span>${L('Min / max 3 ans','3-yr min / max')}</span><b>${st36? nf(st36.min,e.d)+' / '+nf(st36.max,e.d):'—'}</b></div>
+        </div>
+        <div class="explain" style="margin-top:12px"><p><b>${L('Ce que ça veut dire','What it means')}</b> : ${esc(econNote(e, last&&last[1]))}</p><p>${e.g==='inf' ? L('Inflation plus forte que prévu → la Fed garde les taux hauts → dollar ▲, or et Nasdaq ▼ en général.','Hotter-than-expected inflation → Fed keeps rates high → dollar ▲, gold and Nasdaq ▼ in general.') : (e.k==='unemp'||e.k==='claims') ? L('Chômage plus haut que prévu → économie plus faible → dollar ▼, or ▲ en général.','Higher-than-expected unemployment → weaker economy → dollar ▼, gold ▲ in general.') : L('Donnée plus forte que prévu → dollar ▲ et indices ▲, or ▼ en général.','Stronger-than-expected data → dollar ▲ and indices ▲, gold ▼ in general.')}</p></div></div></div>` : ''}
+      <div class="panel"><div class="ph"><div><h3>${L('Dernières surprises','Latest surprises')}</h3><p>${L('Réel vs prévu des données qui comptent dans ton scorecard','Actual vs forecast for the data in your scorecard')}</p></div></div><div class="tablewrap">${surpriseTable()}</div></div>`;
+    box.querySelectorAll('#ecoG .chip').forEach(b=>b.addEventListener('click', ()=>{ state.ecoG = b.dataset.g; const f = ECON.find(x=>x.g===state.ecoG); if(f && !ECON.some(x=>x.k===state.ecoSel && x.g===state.ecoG)) state.ecoSel = f.k; renderEco(); }));
+    box.querySelectorAll('.icard[data-k]').forEach(b=>b.addEventListener('click', ()=>{ state.ecoSel = b.dataset.k; renderEco(); }));
+    box.querySelectorAll('#ecoR .chip').forEach(b=>b.addEventListener('click', ()=>{ state.ecoRange = +b.dataset.r; renderEco(); }));
+    if(has && $('ecoChart')) needChart().then(ok=>{ if(!ok) return;
+      const n = e.k==='gdp' ? Math.round(state.ecoRange/3) : e.k==='claims' ? Math.round(state.ecoRange*4.33) : state.ecoRange;
+      const ss = s.slice(-n), gold = css('--gold');
+      const ds = [{label:e.n[isEN()?1:0], data:ss.map(x=>+x[1].toFixed(e.d+1)), type:e.ty, borderColor:gold, backgroundColor:e.ty==='bar'? ss.map(x=>x[1]>=0?css('--bull'):css('--bear')) : gold+'33', fill:e.ty!=='bar', tension:.25, pointRadius:2}];
+      if(e.tgt) ds.push({label:L('Cible de la Fed (2 %)','Fed target (2%)'), data:ss.map(()=>e.tgt), type:'line', borderColor:css('--muted'), borderDash:[5,5], pointRadius:0, fill:false});
+      mkChart('ecoChart', {type:e.ty, data:{labels:ss.map(x=>perLbl(x[0])), datasets:ds}, options:{scales:{y:{ticks:{callback:v=>nf(v,e.d)+e.u}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,e.d)+e.u}}}}});
+    });
+  }
+  function surpriseTable(){
+    const vals = state.econ.values||{};
+    const rows = INDICATORS.map(i=>({i, v:vals[i.id]})).filter(x=>x.v && x.v.a!=null && x.v.f!=null).sort((a,b)=>(b.v.d||'').localeCompare(a.v.d||''));
+    if(!rows.length) return `<p class="livebox">${L('Aucune donnée encore.','No data yet.')}</p>`;
+    return `<table class="ctbl"><thead><tr><th>${L('Donnée','Release')}</th><th>${L('Date','Date')}</th><th>${L('Réel','Actual')}</th><th>${L('Prévu','Forecast')}</th><th>${L('Surprise','Surprise')}</th><th>${L('Effet dollar','Dollar effect')}</th></tr></thead><tbody>${rows.map(({i,v})=>{
+      const s = v.a - v.f, u = Math.sign(s)*(i.dir||1);
+      return `<tr><td>${esc(v.label||i.name)}</td><td>${v.d?esc(fmtDate(v.d)):'—'}</td><td>${fmt(v.a,i.unit)}</td><td>${fmt(v.f,i.unit)}</td><td class="${s>0?'up':s<0?'dn':''}">${fmt(s,i.unit,true)}</td><td>${u>0?'<span class="tag b">▲</span>':u<0?'<span class="tag r">▼</span>':'<span class="tag">=</span>'}</td></tr>`; }).join('')}</tbody></table>`;
+  }
+
+  // ---------- Taux (dans la page Fed) ----------
+  function renderRates(){
+    const box = $('p2rates'); if(!box) return;
+    const r = (state.live||{}).rates || {};
+    if(!r.y10 || !r.y10.length){ box.innerHTML = `<div class="panel"><div class="ph"><div><h3>${L('Courbe des taux','Yield curve')}</h3></div></div>${liveMissing(L('taux de la Fed (H.15)','Fed rates (H.15)'))}</div>`; return; }
+    const m2 = new Map(r.y2||[]), mf = new Map(r.ff||[]);
+    const wkly = r.y10.length>1 && (new Date(r.y10[1][0]) - new Date(r.y10[0][0])) > 3*864e5;
+    const step = wkly ? 1 : 5; const pts = r.y10.filter((p,i)=>(r.y10.length-1-i)%step===0);
+    const valAt = (s, d) => { if(!s) return null; let v = null; for(const q of s){ if(q[0] <= d) v = q[1]; else break; } return v; };
+    const lab = pts.map(p=>perLbl(p[0])), y10 = pts.map(p=>p[1]), y2 = pts.map(p=>m2.get(p[0]) ?? valAt(r.y2, p[0])), ff = pts.map(p=>mf.get(p[0]) ?? valAt(r.ff, p[0]));
+    const sp = pts.map((p,i)=> y2[i]!=null ? +(p[1]-y2[i]).toFixed(2) : null);
+    const L10 = r.y10[r.y10.length-1], L2 = (r.y2||[]).slice(-1)[0], LF = (r.ff||[]).slice(-1)[0];
+    const M10 = agoPt(r.y10, 28);
+    const curve = r.y3m && r.y30 ? ['y3m','y2','y5','y10','y30'] : null;
+    const cAt = (k, d) => { const p = d ? agoPt(r[k], d) : (r[k]||[]).slice(-1)[0]; return p ? p[1] : null; };
+    const LM = (r.mort||[]).slice(-1)[0], LB = (r.be5||[]).slice(-1)[0];
+    const spread = L2 ? L10[1]-L2[1] : null;
+    box.innerHTML = `
+      <div class="kpis">
+        <div class="kpi"><span class="k">${L('10 ans','10-year')}</span><span class="v">${nf(L10[1],2)} %</span><span class="s">${M10? sg2(L10[1]-M10[1],2)+L(' pt sur 1 mois',' pt over 1 month'):''}</span></div>
+        <div class="kpi"><span class="k">${L('2 ans','2-year')}</span><span class="v">${L2? nf(L2[1],2)+' %':'—'}</span><span class="s">${L('suit les attentes de la Fed','tracks Fed expectations')}</span></div>
+        <div class="kpi"><span class="k">${L('Écart 10 ans − 2 ans','10y − 2y spread')}</span><span class="v ${spread<0?'dn':''}">${spread!==null? sg2(spread,2)+' pt':'—'}</span><span class="s">${spread===null?'':spread<0?L('courbe inversée','inverted curve'):L('courbe normale (positive)','normal (positive) curve')}</span></div>
+        <div class="kpi"><span class="k">${L('Taux directeur de la Fed','Fed policy rate')}</span><span class="v">${LF? nf(LF[1],2)+' %':'—'}</span><span class="s">${L('au','as of')} ${perLbl(L10[0])}</span></div>
+        ${LB? `<div class="kpi"><span class="k">${L('Inflation attendue (5 ans)','Expected inflation (5y)')}</span><span class="v">${nf(LB[1],2)} %</span><span class="s">${L('point mort des obligations indexées','TIPS breakeven')}</span></div>`:''}
+        ${LM? `<div class="kpi"><span class="k">${L('Hypothèque 30 ans (É.-U.)','30-yr mortgage (US)')}</span><span class="v">${nf(LM[1],2)} %</span><span class="s">Freddie Mac · ${perLbl(LM[0])}</span></div>`:''}
+      </div>
+      ${curve? `<div class="panel"><div class="ph"><div><h3>${L('Courbe des taux américains','US Treasury yield curve')}</h3><p>${L('Aujourd’hui comparé à il y a 3 mois et 1 an · 3 mois à 30 ans','Today vs 3 months and 1 year ago · 3-month to 30-year')}</p></div></div><div class="pb"><div class="cbox"><canvas id="curveChart"></canvas></div></div></div>`:''}
+      <div class="g2">
+        <div class="panel"><div class="ph"><div><h3>${L('Taux américains sur 2 ans','US rates over 2 years')}</h3><p>${L('10 ans, 2 ans et taux directeur · Réserve fédérale (H.15)','10-year, 2-year and fed funds · Federal Reserve (H.15)')}</p></div></div><div class="pb"><div class="cbox"><canvas id="ratesChart"></canvas></div></div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('Écart 10 ans − 2 ans','10y − 2y spread')}</h3><p>${L('Sous zéro = courbe inversée','Below zero = inverted curve')}</p></div></div><div class="pb"><div class="cbox"><canvas id="spreadChart"></canvas></div></div></div>
+      </div>
+      <div class="explain"><p><b>${L('Comment lire','How to read')}</b> : ${L('quand le 10 ans monte, l’or et le Nasdaq ont tendance à baisser et le dollar à monter (c’est pourquoi le 10 ans compte dans ton scorecard). Le 2 ans réagit surtout aux attentes de hausse ou de baisse de la Fed.','when the 10-year rises, gold and the Nasdaq tend to fall and the dollar to rise (that’s why the 10-year is in your scorecard). The 2-year mostly reacts to expected Fed hikes or cuts.')}</p><p>${L('Une courbe inversée (2 ans plus haut que 10 ans) a souvent précédé les ralentissements économiques.','An inverted curve (2-year above 10-year) has often preceded economic slowdowns.')}</p></div>
+      <p class="src">${L('Sources','Sources')} : Federal Reserve Board (H.15), U.S. Treasury, Freddie Mac${(state.live||{}).liveAt?' (via DBnomics)':' (via FRED)'} · ${srcNote()}</p>`;
+    needChart().then(ok=>{ if(!ok) return;
+      if(curve) mkChart('curveChart', {type:'line', data:{labels:['3M',L('2 ans','2Y'),L('5 ans','5Y'),L('10 ans','10Y'),L('30 ans','30Y')], datasets:[
+        {label:L('Aujourd’hui','Today'), data:curve.map(k=>cAt(k)), borderColor:css('--gold'), backgroundColor:css('--gold'), pointRadius:4, tension:.25},
+        {label:L('Il y a 3 mois','3 months ago'), data:curve.map(k=>cAt(k,91)), borderColor:css('--bull'), backgroundColor:css('--bull'), pointRadius:3, tension:.25},
+        {label:L('Il y a 1 an','1 year ago'), data:curve.map(k=>cAt(k,365)), borderColor:css('--muted'), backgroundColor:css('--muted'), borderDash:[5,4], pointRadius:3, tension:.25}]},
+        options:{scales:{y:{ticks:{callback:v=>nf(v,1)+' %'}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,2)+' %'}}}}});
+      mkChart('ratesChart', {type:'line', data:{labels:lab, datasets:[
+        {label:L('10 ans','10-year'), data:y10, borderColor:css('--gold'), pointRadius:0, tension:.2},
+        {label:L('2 ans','2-year'), data:y2, borderColor:css('--bull'), pointRadius:0, tension:.2},
+        {label:L('Taux directeur','Policy rate'), data:ff, borderColor:css('--muted'), borderDash:[4,4], pointRadius:0, stepped:true}]},
+        options:{scales:{y:{ticks:{callback:v=>nf(v,1)+' %'}}, x:{ticks:{maxTicksLimit:8}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,2)+' %'}}}}});
+      mkChart('spreadChart', {type:'bar', data:{labels:lab, datasets:[{label:L('Écart (pt)','Spread (pt)'), data:sp, backgroundColor:sp.map(v=>v<0?css('--bear'):css('--bull'))}]},
+        options:{plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>sg2(c.parsed.y,2)+' pt'}}}, scales:{x:{ticks:{maxTicksLimit:8}}, y:{ticks:{callback:v=>sg2(v,1)}}}}});
+    });
+  }
+
+  // ---------- COT ----------
+  state.cotA = state.cotA || 'xauusd'; state.cotN = state.cotN || 52;
+  function cotRows(a){ const c = ((state.live||{}).cot||{})[a]; return Array.isArray(c) ? c : null; }
+  function cotIndex(rows, n){ const t = rows.slice(-n).map(r=>r[1]-r[2]); const mn = Math.min(...t), mx = Math.max(...t), v = t[t.length-1]; return mx===mn ? 50 : (v-mn)/(mx-mn)*100; }
+  function renderCOT(){
+    const box = $('p2cot'); if(!box) return;
+    const a = state.cotA, rows = cotRows(a);
+    const chips = Object.keys(ASSETS).map(x=>`<button class="chip" data-a="${x}" aria-pressed="${x===a}">${esc(TOP_NAMES[x])}</button>`).join('');
+    const oil = a==='usoil';
+    const catN = oil ? [L('Gestionnaires de fonds','Managed money'), L('Producteurs et swap dealers','Producers & swap dealers'), L('Petits traders','Small traders')] : [L('Gros spéculateurs','Large speculators'), L('Commerciaux (couverture)','Commercials (hedgers)'), L('Petits traders','Small traders')];
+    let head = `<div class="panel"><div class="ph"><div><h3>${L('Positionnement COT','COT positioning')}</h3><p>${L('Rapport hebdomadaire officiel de la CFTC (contrats à terme) · positions du mardi, publié le vendredi','Official weekly CFTC report (futures) · Tuesday positions, released Friday')}</p></div><div class="chips" id="cotChips">${chips}</div></div>`;
+    if(!rows || rows.length<3){
+      const A = state.assets[a]||{};
+      box.innerHTML = head + `<div class="pb"><div class="kpis"><div class="kpi"><span class="k">${L('% long des spéculateurs','Speculators % long')}</span><span class="v">${A.cotLong!=null? nf(A.cotLong,1)+' %':'—'}</span><span class="s">${A.cotChange!=null? sg2(A.cotChange,2)+L(' pt sur 1 semaine',' pt over 1 week'):''}</span></div></div></div>${liveMissing(L('historiques COT','COT histories'))}</div>`;
+      bindCotChips(box); return;
+    }
+    const n = Math.min(state.cotN, rows.length), rr = rows.slice(-n);
+    const last = rows[rows.length-1], prev = rows[rows.length-2];
+    const pct = r => r[1]/(r[1]+r[2])*100;
+    const net = r => r[1]-r[2], netC = r => r[3]-r[4];
+    const idx = cotIndex(rows, Math.min(52, rows.length)), idx2 = rows.length>=104 ? cotIndex(rows,104) : null;
+    const idxTxt = idx>=80 ? L('Extrême haussier : les spéculateurs sont très chargés à l’achat (risque de retournement si ça se vide).','Extreme bullish: speculators are heavily long (reversal risk if they unwind).') : idx<=20 ? L('Extrême baissier : les spéculateurs sont très peu acheteurs (souvent proche d’un creux).','Extreme bearish: speculators are barely long (often near a bottom).') : L('Zone normale par rapport à la dernière année.','Normal zone versus the past year.');
+    const cat = (L_,S_,pL,pS) => { const t=L_+S_; return `<td>${L_.toLocaleString(LOC())}</td><td class="${L_-pL>0?'up':L_-pL<0?'dn':''}">${sg2(L_-pL,0)}</td><td>${S_.toLocaleString(LOC())}</td><td class="${S_-pS>0?'dn':S_-pS<0?'up':''}">${sg2(S_-pS,0)}</td><td>${t? nf(L_/t*100,1)+' %':'—'}</td><td>${sg2(L_-S_,0)}</td>`; };
+    const cmp = Object.keys(ASSETS).map(x=>{ const c = cotRows(x); return c && c.length>3 ? {x, i:cotIndex(c, Math.min(52,c.length)), p:pct(c[c.length-1])} : null; }).filter(Boolean).sort((p,q)=>q.i-p.i);
+    box.innerHTML = head + `<div class="pb">
+      <div class="kpis">
+        <div class="kpi"><span class="k">${catN[0]} · % long</span><span class="v ${pct(last)>50?'up':'dn'}">${nf(pct(last),1)} %</span><span class="s">${sg2(pct(last)-pct(prev),2)+L(' pt sur 1 semaine',' pt over 1 week')}</span></div>
+        <div class="kpi"><span class="k">${L('Position nette','Net position')}</span><span class="v">${sg2(net(last),0)}</span><span class="s">${L('contrats','contracts')} · ${sg2(net(last)-net(prev),0)} ${L('sur 1 sem.','w/w')}</span></div>
+        <div class="kpi"><span class="k">${L('Indice COT (52 sem.)','COT index (52 wk)')}</span><span class="v ${idx>=80?'up':idx<=20?'dn':''}">${nf(idx,0)}</span><span class="s">0 = ${L('plus bas','lowest')} · 100 = ${L('plus haut','highest')}${idx2!==null?' · 2 '+L('ans','yrs')+' : '+nf(idx2,0):''}</span></div>
+        <div class="kpi"><span class="k">${L('Intérêt ouvert','Open interest')}</span><span class="v">${last[7].toLocaleString(LOC())}</span><span class="s">${sg2((last[7]/prev[7]-1)*100,1)} % ${L('sur 1 sem.','w/w')} · ${L('au','as of')} ${perLbl(last[0])}</span></div>
+      </div>
+      <div class="explain" style="margin-top:12px"><p>${esc(idxTxt)}</p></div>
+    </div></div>
+    <div class="g2">
+      <div class="panel"><div class="ph"><div><h3>${L('Long / short chaque semaine','Long / short each week')}</h3><p>${catN[0]} · ${L('survole pour le détail','hover for details')}</p></div><div class="chips" id="cotN">${[[26,'6M','6M'],[52,'1A','1Y'],[104,'2A','2Y']].map(([k,f,e])=>`<button class="chip" data-n="${k}" aria-pressed="${k===state.cotN}">${L(f,e)}</button>`).join('')}</div></div><div class="pb"><div class="cbox"><canvas id="cotBars"></canvas></div></div></div>
+      <div class="panel"><div class="ph"><div><h3>${L('Cette semaine','This week')}</h3><p>${(last[1]).toLocaleString(LOC())} long · ${(last[2]).toLocaleString(LOC())} short</p></div></div><div class="pb"><div class="cbox"><canvas id="cotDonut"></canvas></div></div></div>
+    </div>
+    <div class="g2">
+      <div class="panel"><div class="ph"><div><h3>${L('Position nette par groupe','Net position by group')}</h3><p>${L('Les commerciaux font souvent l’inverse des spéculateurs (ils se couvrent)','Commercials often do the opposite of speculators (they hedge)')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cotNet"></canvas></div></div></div>
+      <div class="panel"><div class="ph"><div><h3>${L('Indice COT des 9 actifs','COT index, all 9 assets')}</h3><p>${L('Où se situe la position nette dans sa plage de 52 semaines','Where net position sits in its 52-week range')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cotCmp"></canvas></div></div></div>
+    </div>
+    <div class="panel"><div class="ph"><div><h3>${L('Détail par groupe','Detail by group')}</h3><p>${L('Rapport du','Report of')} ${perLbl(last[0])} · ${L('variation sur 1 semaine','1-week change')}</p></div></div><div class="tablewrap"><table class="ctbl"><thead><tr><th>${L('Groupe','Group')}</th><th>Long</th><th>Δ</th><th>Short</th><th>Δ</th><th>% long</th><th>${L('Net','Net')}</th></tr></thead><tbody>
+      <tr><td>${catN[0]}</td>${cat(last[1],last[2],prev[1],prev[2])}</tr>
+      <tr><td>${catN[1]}</td>${cat(last[3],last[4],prev[3],prev[4])}</tr>
+      <tr><td>${catN[2]}</td>${cat(last[5],last[6],prev[5],prev[6])}</tr>
+    </tbody></table></div>
+    <p class="src">${L('Source','Source')} : U.S. Commodity Futures Trading Commission (CFTC), ${oil?L('rapport désagrégé','disaggregated report'):L('rapport Legacy','Legacy report')}, futures only · publicreporting.cftc.gov · ${srcNote()}</p></div>`;
+    bindCotChips(box);
+    box.querySelectorAll('#cotN .chip').forEach(b=>b.addEventListener('click', ()=>{ state.cotN = +b.dataset.n; renderCOT(); }));
+    needChart().then(ok=>{ if(!ok) return;
+      const lab = rr.map(r=>perLbl(r[0]));
+      mkChart('cotBars', {type:'bar', data:{labels:lab, datasets:[
+        {label:'Long %', data:rr.map(r=>+pct(r).toFixed(1)), backgroundColor:css('--bull'), stack:'s'},
+        {label:'Short %', data:rr.map(r=>+(100-pct(r)).toFixed(1)), backgroundColor:css('--bear'), stack:'s'}]},
+        options:{scales:{x:{stacked:true, ticks:{maxTicksLimit:8}}, y:{stacked:true, max:100, ticks:{callback:v=>v+' %'}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label.replace(' %','')+' : '+nf(c.parsed.y,1)+' %'}}}}});
+      mkChart('cotDonut', {type:'doughnut', data:{labels:['Long','Short'], datasets:[{data:[last[1],last[2]], backgroundColor:[css('--bull'),css('--bear')], borderWidth:0}]}, options:{cutout:'62%', interaction:{mode:'nearest'}, plugins:{tooltip:{callbacks:{label:c=>c.label+' : '+c.parsed.toLocaleString(LOC())+' ('+nf(c.parsed/(last[1]+last[2])*100,1)+' %)'}}}}});
+      mkChart('cotNet', {type:'line', data:{labels:lab, datasets:[
+        {label:catN[0], data:rr.map(net), borderColor:css('--gold'), pointRadius:0, tension:.2},
+        {label:catN[1], data:rr.map(netC), borderColor:css('--muted'), pointRadius:0, tension:.2},
+        {label:catN[2], data:rr.map(r=>r[5]-r[6]), borderColor:css('--bull'), pointRadius:0, tension:.2, borderDash:[4,3]}]},
+        options:{scales:{x:{ticks:{maxTicksLimit:8}}, y:{ticks:{callback:v=>(v/1000).toLocaleString(LOC())+'k'}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+sg2(c.parsed.y,0)}}}}});
+      mkChart('cotCmp', {type:'bar', data:{labels:cmp.map(c=>TOP_NAMES[c.x]), datasets:[{label:L('Indice COT','COT index'), data:cmp.map(c=>+c.i.toFixed(0)), backgroundColor:cmp.map(c=>c.x===a?css('--gold'):c.i>=80?css('--bull'):c.i<=20?css('--bear'):css('--muted'))}]},
+        options:{indexAxis:'y', scales:{x:{min:0, max:100}}, plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>L('Indice','Index')+' '+c.parsed.x+' · '+nf(cmp[c.dataIndex].p,1)+' % long'}}}, onClick:(ev,els)=>{ if(els[0]){ state.cotA = cmp[els[0].index].x; renderCOT(); } }}});
+    });
+  }
+  function bindCotChips(box){ box.querySelectorAll('#cotChips .chip').forEach(b=>b.addEventListener('click', ()=>{ state.cotA = b.dataset.a; renderCOT(); })); }
+
+  // ---------- Sentiment ----------
+  function renderSent(){
+    const box = $('p2sent'); if(!box) return;
+    const ks = Object.keys(ASSETS);
+    const row = a => { const A = state.assets[a]||{}; return {a, crowd:A.crowdLong, cot:A.cotLong}; };
+    const rows = ks.map(row);
+    const sig = r => { const c = r.crowd==null?0 : r.crowd>=60?-1 : r.crowd<=40?1 : 0; const s = r.cot==null?0 : r.cot>50?1 : r.cot<50?-1 : 0; return {c, s}; };
+    let cards = rows.map(r=>{ const {c,s} = sig(r);
+      const agree = c && s ? (c===s ? 1 : -1) : 0;
+      const txt = agree>0 ? L(`La foule et les gros spéculateurs pointent dans le même sens (${s>0?'haussier':'baissier'}) : signal plus fort.`, `The crowd and large speculators point the same way (${s>0?'bullish':'bearish'}): stronger signal.`)
+        : agree<0 ? L('Signaux opposés : prudence, attends une confirmation du prix.','Opposite signals: be careful, wait for price confirmation.')
+        : c ? L(`Foule à ${nf(r.crowd,0)} % long : ${c<0?'trop acheteuse (signal contrarien baissier)':'trop vendeuse (signal contrarien haussier)'}.`, `Crowd ${nf(r.crowd,0)}% long: ${c<0?'too long (contrarian bearish)':'too short (contrarian bullish)'}.`)
+        : L('Foule partagée : pas de signal contrarien.','Crowd split: no contrarian signal.');
+      return `<div class="scard"><div class="sh"><b>${esc(TOP_NAMES[r.a])}</b>${agree>0?`<span class="tag ${s>0?'b':'r'}">${s>0?L('Accord haussier','Bullish agreement'):L('Accord baissier','Bearish agreement')}</span>`:agree<0?`<span class="tag hi">${L('Désaccord','Divergence')}</span>`:''}</div>
+        <div class="sbar"><div class="sl"><span>${L('Foule (IG) · long','Crowd (IG) · long')}</span><span>${r.crowd!=null? nf(r.crowd,0)+' %':'—'}</span></div><div class="st"><i style="width:${r.crowd??50}%"></i></div></div>
+        <div class="sbar"><div class="sl"><span>${L('Gros spéculateurs (COT) · long','Large specs (COT) · long')}</span><span>${r.cot!=null? nf(r.cot,1)+' %':'—'}</span></div><div class="st"><i style="width:${r.cot??50}%"></i></div></div>
+        <div class="sx">${esc(txt)}</div></div>`; }).join('');
+    const rr = (state.live||{}).rates||{}, vx = rr.vix||[], hy = rr.hy||[];
+    const lv = vx.slice(-1)[0], lh = hy.slice(-1)[0], pv = agoPt(vx,7), ph = agoPt(hy,7);
+    const v52 = vx.length ? stats(vx, 52) : null, h52 = hy.length ? stats(hy, 52) : null;
+    const regime = !lv ? null : (lv[1]>=25 || (lh && lh[1]>=4)) ? ['r', L('Aversion au risque','Risk-off')] : (lv[1]<16 && (!lh || lh[1]<3)) ? ['b', L('Appétit pour le risque','Risk-on')] : ['', L('Neutre / prudent','Neutral / cautious')];
+    const risk = lv ? `<div class="panel"><div class="ph"><div><h3>${L('Climat de risque','Risk climate')}</h3><p>${L('Peur des marchés (VIX) et stress du crédit (écart des obligations à haut rendement)','Market fear (VIX) and credit stress (high-yield bond spread)')}</p></div>${regime?`<span class="tag ${regime[0]}" style="font-size:13px;padding:6px 10px">${esc(regime[1])}</span>`:''}</div>
+      <div class="pb"><div class="kpis">
+        <div class="kpi"><span class="k">VIX</span><span class="v ${lv[1]>=25?'dn':lv[1]<16?'up':''}">${nf(lv[1],1)}</span><span class="s">${pv? sg2(lv[1]-pv[1],1)+L(' sur 1 sem.',' w/w'):''} · ${perLbl(lv[0])}</span></div>
+        <div class="kpi"><span class="k">${L('VIX · plage 1 an','VIX · 1-yr range')}</span><span class="v">${v52? nf(v52.min,1)+' – '+nf(v52.max,1):'—'}</span><span class="s">${L('moyenne','average')} ${v52? nf(v52.avg,1):'—'}</span></div>
+        ${lh? `<div class="kpi"><span class="k">${L('Écart high yield','High-yield spread')}</span><span class="v ${lh[1]>=4?'dn':lh[1]<3?'up':''}">${nf(lh[1],2)} pt</span><span class="s">${ph? sg2(lh[1]-ph[1],2)+L(' sur 1 sem.',' w/w'):''}</span></div>`:''}
+        ${h52? `<div class="kpi"><span class="k">${L('Écart HY · plage 1 an','HY spread · 1-yr range')}</span><span class="v">${nf(h52.min,2)} – ${nf(h52.max,2)}</span><span class="s">${L('moyenne','average')} ${nf(h52.avg,2)}</span></div>`:''}
+      </div></div></div>
+      <div class="g2"><div class="panel"><div class="ph"><div><h3>${L('VIX sur 2 ans','VIX over 2 years')}</h3><p>${L('Au-dessus de 25 = stress · sous 15 = calme','Above 25 = stress · below 15 = calm')}</p></div></div><div class="pb"><div class="cbox"><canvas id="vixChart"></canvas></div></div></div>
+      <div class="panel"><div class="ph"><div><h3>${L('Écart des obligations à haut rendement','High-yield bond spread')}</h3><p>${L('Il monte quand les investisseurs craignent les faillites','It rises when investors fear defaults')}</p></div></div><div class="pb"><div class="cbox"><canvas id="hyChart"></canvas></div></div></div></div>` : '';
+    box.innerHTML = risk + `
+      <div class="panel"><div class="ph"><div><h3>${L('Foule vs argent intelligent','Crowd vs smart money')}</h3><p>${L('% de comptes clients IG acheteurs comparé au % long des gros spéculateurs (COT)','% of IG client accounts long vs large speculators % long (COT)')}</p></div></div><div class="pb"><div class="cbox lg"><canvas id="sentChart"></canvas></div></div></div>
+      <div class="sentg">${cards}</div>
+      <div class="explain"><p><b>${L('Pourquoi ça compte','Why it matters')}</b> : ${L('les petits traders (la foule) ont souvent tort aux extrêmes. Quand 60 % ou plus sont acheteurs, le marché a tendance à aller contre eux : c’est un signal contrarien (−1 dans ton score). À 40 % ou moins, c’est l’inverse (+1).','small traders (the crowd) are often wrong at extremes. When 60% or more are long, the market tends to move against them: a contrarian signal (−1 in your score). At 40% or less, the opposite (+1).')}</p><p>${L('Les gros spéculateurs du COT (fonds) suivent plutôt la tendance : plus de 50 % long = +1. Le signal est plus fort quand les deux concordent (foule vendeuse et fonds acheteurs, par exemple).','COT large speculators (funds) tend to follow the trend: above 50% long = +1. The signal is stronger when both line up (crowd short and funds long, for example).')}</p></div>
+      ${lv? `<div class="explain"><p><b>${L('Climat de risque','Risk climate')}</b> : ${L('quand le VIX et l’écart high yield montent ensemble, les investisseurs fuient le risque : les indices (surtout le Nasdaq et le Russell) et le Bitcoin baissent souvent, l’or et le dollar servent de refuge. Quand ils baissent, c’est l’inverse.','when the VIX and the high-yield spread rise together, investors flee risk: indices (especially the Nasdaq and Russell) and Bitcoin often fall, while gold and the dollar act as safe havens. When they fall, the opposite.')}</p></div>`:''}
+      <p class="src">${L('Sources','Sources')} : IG Client Sentiment · CFTC Commitments of Traders${lv?' · Cboe (VIX), ICE BofA US High Yield Index (via FRED)':''} · ${L('mis à jour avec le scorecard','updated with the scorecard')}</p>`;
+    needChart().then(ok=>{ if(!ok) return;
+      if(lv){ const lab = vx.map(p=>perLbl(p[0]));
+        mkChart('vixChart', {type:'line', data:{labels:lab, datasets:[{label:'VIX', data:vx.map(p=>p[1]), borderColor:css('--gold'), pointRadius:0, tension:.2}, {label:L('Seuil de stress (25)','Stress level (25)'), data:vx.map(()=>25), borderColor:css('--bear'), borderDash:[5,5], pointRadius:0}]}, options:{scales:{x:{ticks:{maxTicksLimit:8}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,1)}}}}});
+        if(hy.length) mkChart('hyChart', {type:'line', data:{labels:hy.map(p=>perLbl(p[0])), datasets:[{label:L('Écart (pt)','Spread (pt)'), data:hy.map(p=>p[1]), borderColor:css('--bull'), backgroundColor:css('--bull')+'22', fill:true, pointRadius:0, tension:.2}]}, options:{scales:{x:{ticks:{maxTicksLimit:8}}, y:{ticks:{callback:v=>nf(v,1)}}}, plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>nf(c.parsed.y,2)+' pt'}}}}}); }
+      mkChart('sentChart', {type:'bar', data:{labels:rows.map(r=>TOP_NAMES[r.a]), datasets:[
+        {label:L('Foule (IG) % long','Crowd (IG) % long'), data:rows.map(r=>r.crowd??null), backgroundColor:css('--muted')},
+        {label:L('Gros spéculateurs (COT) % long','Large specs (COT) % long'), data:rows.map(r=>r.cot??null), backgroundColor:css('--gold')}]},
+        options:{scales:{y:{min:0, max:100, ticks:{callback:v=>v+' %'}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,1)+' %'}}}}});
+    });
+  }
+
+  // ---------- Nouvelles ----------
+  state.newsA = state.newsA || 'all';
+  function newsItem(n){
+    const t = isEN() && n.title_en ? n.title_en : n.title, s = isEN() && n.summary_en ? n.summary_en : n.summary;
+    const d = n.date ? new Date(n.date+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric', month:'short'}) : '';
+    const tags = (n.assets||[]).filter(a=>TOP_NAMES[a]).map(a=>`<span class="tag">${esc(TOP_NAMES[a])}</span>`).join(' ');
+    return `<article class="nitem"><div class="nm"><span class="src1">${esc(n.source||'')}</span><span>${esc(d)}${n.time?' · '+esc(n.time):''}</span>${n.impact==='high'?`<span class="tag hi">${L('Impact élevé','High impact')}</span>`:''}${tags}</div>
+      ${n.url?`<a class="nt" href="${esc(n.url)}" target="_blank" rel="noopener">${esc(t||'')}</a>`:`<span class="nt">${esc(t||'')}</span>`}
+      ${s?`<p class="ns">${esc(s)}</p>`:''}</article>`;
+  }
+  function renderNews(){
+    const box = $('p2news'); if(!box) return;
+    const all = (state.news||[]).slice().sort((a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||'')));
+    const list = all.filter(n=>state.newsA==='all' || (state.newsA==='high' ? n.impact==='high' : (n.assets||[]).includes(state.newsA)));
+    const chips = [['all',L('Toutes','All')],['high',L('Impact élevé','High impact')]].concat(Object.keys(ASSETS).map(a=>[a,TOP_NAMES[a]]));
+    if(!box.dataset.built){
+      box.dataset.built = '1';
+      box.innerHTML = `<div class="g2"><div class="panel"><div class="ph"><div><h3>${L('Nouvelles des marchés','Market news')}</h3><p>${L('Sélection des nouvelles qui font bouger tes actifs · sources reconnues','Curated news moving your assets · trusted sources')}</p></div></div><div class="pb"><div class="chips" id="newsChips"></div></div><div class="news" id="newsList"></div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('Fil en direct','Live feed')}</h3><p>${L('Manchettes en temps réel (TradingView)','Real-time headlines (TradingView)')}</p></div></div><div class="tvbox" id="tvNews"></div></div></div>
+        <p class="src">${L('Les manchettes sont choisies et résumées automatiquement à partir de sources reconnues (CNBC, Yahoo Finance, Reuters, Kitco, CoinDesk…). Clique sur une manchette pour lire l’article original.','Headlines are picked and summarized automatically from trusted sources (CNBC, Yahoo Finance, Reuters, Kitco, CoinDesk…). Click a headline to read the original article.')}</p>`;
+    }
+    $('newsChips').innerHTML = chips.map(([k,l])=>`<button class="chip" data-n="${k}" aria-pressed="${k===state.newsA}">${esc(l)}</button>`).join('');
+    $('newsChips').querySelectorAll('.chip').forEach(b=>b.addEventListener('click', ()=>{ state.newsA = b.dataset.n; renderNews(); }));
+    $('newsList').innerHTML = list.length ? list.map(newsItem).join('') : `<p class="livebox">${L('Aucune nouvelle pour ce filtre.','No news for this filter.')}</p>`;
+    tv('tvNews','timeline',{feedMode:'market', market:'stock', displayMode:'regular', width:'100%', height:640}, 640);
+  }
+
+  // ---------- branchement ----------
+  function renderP2(){
+    const pg = state.page;
+    if(pg==='home') renderHome();
+    else if(pg==='charts') renderCharts();
+    else if(pg==='eco') renderEco();
+    else if(pg==='fed') renderRates();
+    else if(pg==='cot') renderCOT();
+    else if(pg==='sent') renderSent();
+    else if(pg==='news') renderNews();
+  }
+  function p2Page(pg){
+    if(['home','eco','fed','cot','sent'].includes(pg)) loadLive().then(()=>{ if(state.page===pg) renderP2(); });
+    renderP2();
+  }
+  (function(){ const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(()=>{ const nb = $('p2news'); if(nb) nb.dataset.built=''; const cb = $('p2charts'); if(cb) cb.dataset.built=''; renderP2(); if(state.page==='fed') renderFed(); }, 30)); })();
+
   function showPage(pg){
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', charts:'graphiques', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
+    p2Page(pg);
   }
   document.querySelectorAll('.pages button').forEach(b=>b.addEventListener('click', ()=>showPage(b.dataset.page)));
   document.querySelectorAll('.calseg button').forEach(b=>b.addEventListener('click', ()=>{
@@ -1006,7 +1654,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
@@ -1023,6 +1671,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     state.history = Array.isArray(d.history) ? d.history.slice(-60) : [];
     state.calendar = Array.isArray(d.calendar) ? d.calendar : [];
     state.fed = d.fed || null;
+    state.news = Array.isArray(d.news) ? d.news : [];
+    if(d.live) setSnap(d.live);
   }
   async function refresh(){
     try{
@@ -1051,6 +1701,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed',
+    'Vue d’ensemble':'Overview','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
     'Résultats':'Earnings','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
     'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
