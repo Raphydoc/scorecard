@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T16:43:15Z",
+ "updatedAt": "2026-11-09T20:43:41Z",
  "econ": {
   "values": {
    "gdp": {
@@ -602,20 +602,36 @@
  "news": [
   {
    "date": "2026-11-09",
-   "time": "10:22",
+   "time": "13:55",
    "source": "Yahoo Finance",
    "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
     "us30",
-    "rut"
+    "rut",
+    "usoil"
    ],
-   "title": "Wall Street rebondit fort : le Nasdaq gagne 2,4 % malgré la chute de Nvidia; AMD bondit de 9 %",
-   "title_en": "Wall Street rebounds sharply: Nasdaq up 2.4% despite Nvidia slide; AMD jumps 9%",
-   "summary": "En matinée, le Nasdaq grimpait de 2,42 % (25 173), le S&P 500 de 1,91 % (7 518), le Dow de 1,60 % (52 106) et le Russell 2000 de 2,05 % (2 810). Nvidia reculait encore de plus de 4 %, après des pertes allant jusqu’à 8 % en début de séance, à cause des allégations visant son PDG Jensen Huang; AMD bondissait d’environ 9 % après un relèvement à « achat » par Oppenheimer. La baisse du pétrole (WTI vers 87 $) soutient le rebond de la tech.",
-   "summary_en": "In morning trading the Nasdaq rose 2.42% (25,173), the S&P 500 1.91% (7,518), the Dow 1.60% (52,106) and the Russell 2000 2.05% (2,810). Nvidia was still down more than 4% after losing as much as 8% early, on allegations involving CEO Jensen Huang; AMD jumped about 9% after an Oppenheimer upgrade to Buy. Falling oil (WTI near $87) is supporting the tech rebound.",
-   "url": "https://finance.yahoo.com/markets/article/tech-stocks-rally-as-nvidia-stock-and-oil-prices-fall-alphacheck-152208023.html"
+   "title": "Wall Street accentue son rebond : Nasdaq +2,6 %, Russell 2000 +3 %, malgré Nvidia en baisse de 5 %",
+   "title_en": "Wall Street extends rebound: Nasdaq +2.6%, Russell 2000 +3%, despite Nvidia down 5%",
+   "summary": "En après-midi, le Nasdaq gagnait 2,62 % (25 224), le S&P 500 2,38 % (7 553), le Dow 2,22 % (52 426) et le Russell 2000 3,05 % (2 838), tandis que le VIX chutait de près de 21 % à 20,27. Nvidia reculait de 5,19 % (176,96 $) en raison de l’enquête de son conseil sur le PDG, mais le reste des semi-conducteurs montait. Le pétrole WTI perdait 3,42 % à 87,72 $ et le taux à 10 ans était à 4,874 %; il ne s’agit pas encore des cours de clôture.",
+   "summary_en": "In the afternoon the Nasdaq was up 2.62% (25,224), the S&P 500 2.38% (7,553), the Dow 2.22% (52,426) and the Russell 2000 3.05% (2,838), while the VIX fell nearly 21% to 20.27. Nvidia was down 5.19% ($176.96) on its board's probe of the CEO, but other chipmakers rose. WTI crude fell 3.42% to $87.72 and the 10-year yield stood at 4.874%; these are not yet closing levels.",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+  },
+  {
+   "date": "2026-11-09",
+   "time": "11:22",
+   "source": "Yahoo Finance",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia chute d’environ 5 % : le conseil enquête sur la relation de Jensen Huang avec une présumée espionne chinoise",
+   "title_en": "Nvidia sinks about 5% as board investigates Jensen Huang's relationship with alleged Chinese spy",
+   "summary": "Le conseil de Nvidia ouvre un examen indépendant sur la relation du PDG Jensen Huang avec une femme que le renseignement américain soupçonne d’espionnage pour la Chine; Huang a reconnu une liaison dans une note aux employés dimanche et promis sa pleine collaboration. L’action perdait environ 5 % et les analystes parlent d’un « risque de personne clé ». Les autres puces montaient : AMD +11 % après un relèvement à « achat », Broadcom +8 %, ASML +6 %.",
+   "summary_en": "Nvidia's board launched an independent review of CEO Jensen Huang's relationship with a woman U.S. intelligence believes could be a Chinese spy; Huang disclosed an affair in a Sunday memo to staff and pledged full cooperation. The stock fell about 5%, with analysts flagging \"key-person risk.\" Other chipmakers rose: AMD +11% after an upgrade to Buy, Broadcom +8%, ASML +6%.",
+   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html"
   },
   {
    "date": "2026-11-09",
@@ -660,6 +676,22 @@
    "summary": "Le Brent perdait 0,75 % à 97,57 $ le baril et le WTI 0,4 % à 90,45 $ lundi matin. Trump a dit dimanche qu’il était très peu probable qu’il ordonne de nouvelles attaques contre l’Iran tant que les pourparlers se poursuivent, même si des navires ont été touchés près du détroit d’Ormuz. Selon Saxo Bank, la baisse repose sur l’espoir d’un accord plutôt que sur des progrès concrets.",
    "summary_en": "Brent fell 0.75% to $97.57 a barrel and WTI 0.4% to $90.45 on Monday morning. Trump said Sunday he was highly unlikely to order new attacks on Iran while talks continue, even as ships were hit near the Strait of Hormuz. Saxo Bank said the decline rests on hopes of a deal rather than concrete progress.",
    "url": "https://finance.yahoo.com/news/oil-falls-open-trump-says-235002807.html"
+  },
+  {
+   "date": "2026-11-09",
+   "time": "",
+   "source": "Federal Reserve Bank of New York",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500",
+    "xauusd"
+   ],
+   "title": "Fed de New York : les attentes d’inflation restent stables, les craintes de chômage au plus haut depuis avril 2020",
+   "title_en": "New York Fed: inflation expectations steady, unemployment fears highest since April 2020",
+   "summary": "Selon l’enquête d’octobre de la Fed de New York, les attentes médianes d’inflation sont inchangées à 3,9 % sur un an, 3,3 % sur trois ans et 3,0 % sur cinq ans. La probabilité moyenne d’une hausse du chômage dans un an grimpe de 1,4 point à 45,3 %, un sommet depuis avril 2020. Des attentes d’inflation stables mais élevées alimentent le débat sur une hausse de taux en décembre, avant le CPI de mardi.",
+   "summary_en": "The New York Fed's October survey shows median inflation expectations unchanged at 3.9% one year ahead, 3.3% three years ahead and 3.0% five years ahead. The mean probability that unemployment will be higher in a year rose 1.4 points to 45.3%, the highest since April 2020. Steady but elevated inflation expectations feed the debate over a December rate hike ahead of Tuesday's CPI.",
+   "url": "https://www.newyorkfed.org/newsevents/news/research/2026/20261109"
   },
   {
    "date": "2026-11-08",
