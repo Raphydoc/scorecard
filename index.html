@@ -411,6 +411,9 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
           </optgroup>
           <optgroup label="Devises">
             <option value="usd">US-DOLLAR · DXY</option>
+            <option value="eurusd">EURUSD · Euro / dollar US</option>
+            <option value="usdjpy">USDJPY · Dollar US / yen</option>
+            <option value="usdcad">USDCAD · Dollar US / canadien</option>
           </optgroup>
           <optgroup label="Énergie">
             <option value="usoil">USOIL · Pétrole WTI</option>
@@ -511,6 +514,9 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
           <button type="button" data-ca="rut" aria-pressed="false">Russell</button>
           <button type="button" data-ca="usoil" aria-pressed="false">Pétrole</button>
           <button type="button" data-ca="btcusd" aria-pressed="false">Bitcoin</button>
+          <button type="button" data-ca="eurusd" aria-pressed="false">EUR/USD</button>
+          <button type="button" data-ca="usdjpy" aria-pressed="false">USD/JPY</button>
+          <button type="button" data-ca="usdcad" aria-pressed="false">USD/CAD</button>
         </div>
       </div>
       <div class="tablewrap" id="calBox"></div>
@@ -573,7 +579,10 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     xagusd:{name:'XAGUSD · Argent', hint:'Données fortes = baissier pour l’argent'},
     btcusd:{name:'BTCUSD · Bitcoin', hint:'Actif risqué : croissance forte = haussier, inflation chaude = baissier'},
     usoil:{name:'USOIL · Pétrole WTI', hint:'Croissance forte = haussier, inflation chaude = baissier'},
-    rut:{name:'Russell 2000', hint:'Croissance forte = haussier, inflation chaude = baissier'}
+    rut:{name:'Russell 2000', hint:'Croissance forte = haussier, inflation chaude = baissier'},
+    eurusd:{name:'EURUSD · Euro / dollar US', hint:'Données américaines fortes = baissier pour EUR/USD'},
+    usdjpy:{name:'USDJPY · Dollar US / yen', hint:'Données américaines fortes = haussier pour USD/JPY'},
+    usdcad:{name:'USDCAD · Dollar US / canadien', hint:'Données américaines fortes = haussier pour USD/CAD'}
   };
   const MOIS = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
   function curMonthNum(){ try{ return +new Date().toLocaleDateString('en-CA',{timeZone:'America/Toronto', month:'numeric'}); }catch(e){ return new Date().getMonth()+1; } }
@@ -581,7 +590,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   const state = {
     asset:'xauusd', edit:false, canWrite:null, db:null,
     econ:{values:{}, yield2y:'flat', updatedAt:null},
-    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset(), us30:blankAsset(), usd:blankAsset(), xagusd:blankAsset(), btcusd:blankAsset(), usoil:blankAsset(), rut:blankAsset()},
+    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset(), us30:blankAsset(), usd:blankAsset(), xagusd:blankAsset(), btcusd:blankAsset(), usoil:blankAsset(), rut:blankAsset(), eurusd:blankAsset(), usdjpy:blankAsset(), usdcad:blankAsset()},
     history:[], loaded:false
   };
   try{ const a = localStorage.getItem('sc-asset'); if(a && ASSETS[a]) state.asset = a; }catch(e){}
@@ -600,13 +609,16 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     xagusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
     btcusd:{cpi:2,yield10:2,nfp:2,pce:2},
     usoil:{pmi_mfg:2,gdp:2,retail:2,nfp:2},
-    rut:{cpi:2,nfp:2,yield10:2,pce:2,retail:2}
+    rut:{cpi:2,nfp:2,yield10:2,pce:2,retail:2},
+    eurusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
+    usdjpy:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
+    usdcad:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2}
   };
   const wOf = (asset,id) => { const w = (WEIGHTS[asset]||{})[id]; return w===undefined ? 1 : w; };
   function impact(asset, cat, usd){
     if(cat==='spec') return usd || 0;
-    if(asset==='usd') return usd || 0;
-    if(asset==='xauusd' || asset==='xagusd') return -usd || 0;
+    if(asset==='usd' || asset==='usdjpy' || asset==='usdcad') return usd || 0;
+    if(asset==='xauusd' || asset==='xagusd' || asset==='eurusd') return -usd || 0;
     return (cat==='infl' ? -usd : usd) || 0;
   }
   function econSignal(ind, asset){
@@ -628,7 +640,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     r.crowd = cr===null?0:(cr>=60?-1:cr<=40?1:0);
     const y10 = state.econ.yield10y;
     r.yield10 = y10==='falling'?1:y10==='rising'?-1:(y10==='flat'?0:null);
-    if(asset==='usd' && r.yield10) r.yield10 = -r.yield10;
+    if((asset==='usd' || asset==='usdjpy' || asset==='usdcad') && r.yield10) r.yield10 = -r.yield10;
     const cats = {growth:0, infl:(r.yield10||0)*wOf(asset,'yield10'), jobs:0, spec:0};
     INDICATORS.forEach(ind=>{ if(ind.only && ind.only!==asset){ r[ind.id]=null; return; } const s = econSignal(ind, asset); r[ind.id]=s; if(s) cats[ind.cat]+=s*wOf(asset,ind.id); });
     const tech = r.trend + r.season;
@@ -799,7 +811,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); if(typeof renderP2==='function') renderP2(); }
 
   // ---------- editing ----------
-  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false}, saveTimer = null, chain = Promise.resolve();
+  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false, eurusd:false, usdjpy:false, usdcad:false}, saveTimer = null, chain = Promise.resolve();
   function note(msg){ const n=$('note'); if(msg){ n.textContent=msg; n.hidden=false; } else n.hidden=true; }
 
   $('tbl').addEventListener('input', onEdit);
@@ -868,7 +880,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     {k:'nfp', h:'NFP', g:3}, {k:'unemp', h:'Chômage', g:3}, {k:'claims', h:'Demandes chômage', g:3},
     {k:'adp', h:'ADP', g:3}, {k:'jolts', h:'JOLTS', g:3}
   ];
-  const TOP_NAMES = {xauusd:'XAUUSD', xagusd:'SILVER', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW', rut:'RUSSELL', usd:'US-DOLLAR', usoil:'USOIL', btcusd:'BITCOIN'};
+  const TOP_NAMES = {xauusd:'XAUUSD', xagusd:'SILVER', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW', rut:'RUSSELL', usd:'US-DOLLAR', usoil:'USOIL', btcusd:'BITCOIN', eurusd:'EURUSD', usdjpy:'USDJPY', usdcad:'USDCAD'};
   function topCell(asset, C, col){
     if(col.v) return col.v(C);
     const s = C.rows[col.k];
@@ -919,8 +931,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
 
 
   // filtres de la page Top Setups
-  const TOP_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', usoil:'nrg', btcusd:'cry'};
-  const TOP_LABEL = {xauusd:'xauusd or gold', xagusd:'xagusd silver argent', nasdaq:'nasdaq', spx500:'spx500 s&p 500', us30:'dow jones us30', rut:'russell 2000 rut', usd:'us-dollar dollar dxy usd', usoil:'usoil oil pétrole petrole wti crude', btcusd:'bitcoin btc btcusd crypto'};
+  const TOP_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', usoil:'nrg', btcusd:'cry', eurusd:'fx', usdjpy:'fx', usdcad:'fx'};
+  const TOP_LABEL = {xauusd:'xauusd or gold', xagusd:'xagusd silver argent', nasdaq:'nasdaq', spx500:'spx500 s&p 500', us30:'dow jones us30', rut:'russell 2000 rut', usd:'us-dollar dollar dxy usd', usoil:'usoil oil pétrole petrole wti crude', btcusd:'bitcoin btc btcusd crypto', eurusd:'eurusd eur/usd euro fiber', usdjpy:'usdjpy usd/jpy yen japon', usdcad:'usdcad usd/cad loonie huard canadien canada'};
   function topPass(a, C){
     const g = id => { const el = $(id); return el ? el.value : ''; };
     const q = (g('fSym')||'').trim().toLowerCase();
@@ -1111,7 +1123,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   const LIVE_SRC = {
     bls: {cpi:'CUUR0000SA0', core:'CUUR0000SA0L1E', ppi:'WPUFD4', unemp:'LNS14000000', nfp:'CES0000000001', jolts:'JTS000000000000000JOL', ahe:'CES0500000003'},
     dbn: {gdp:'BEA/NIPA-T10101/A191RL-Q', pce:'BEA/NIPA-T20804/DPCERG-M', corepce:'BEA/NIPA-T20804/DPCCRG-M', y10:'FED/H15/RIFLGFCY10_N.B', y2:'FED/H15/RIFLGFCY02_N.B', ff:'FED/H15/RIFSPFF_N.B'},
-    cot: {xauusd:['l','088691'], xagusd:['l','084691'], nasdaq:['l','209742'], spx500:['l','13874A'], us30:['l','124603'], rut:['l','239742'], usd:['l','098662'], btcusd:['l','133741'], usoil:['d','067651']}
+    cot: {eurusd:['l','099741'], usdjpy:['li','097741'], usdcad:['li','090741'], xauusd:['l','088691'], xagusd:['l','084691'], nasdaq:['l','209742'], spx500:['l','13874A'], us30:['l','124603'], rut:['l','239742'], usd:['l','098662'], btcusd:['l','133741'], usoil:['d','067651']}
   };
   async function fetchLive(){
     const out = {asOf: new Date().toISOString(), macro:{}, rates:{}, cot:{}};
@@ -1133,13 +1145,15 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       }
     }).catch(()=>{}));
     for(const [a,[t,code]] of Object.entries(LIVE_SRC.cot)){
-      const sel = t==='l'
+      const sel = t!=='d'
         ? 'report_date_as_yyyy_mm_dd,open_interest_all,noncomm_positions_long_all,noncomm_positions_short_all,comm_positions_long_all,comm_positions_short_all,nonrept_positions_long_all,nonrept_positions_short_all'
         : 'report_date_as_yyyy_mm_dd,open_interest_all,m_money_positions_long_all,m_money_positions_short_all,prod_merc_positions_long,prod_merc_positions_short,swap_positions_long_all,swap__positions_short_all,nonrept_positions_long_all,nonrept_positions_short_all';
-      const ds = t==='l' ? '6dca-aqww' : '72hh-3qpy';
+      const ds = t!=='d' ? '6dca-aqww' : '72hh-3qpy';
       jobs.push(fetch(`https://publicreporting.cftc.gov/resource/${ds}.json?$select=${sel}&$where=cftc_contract_market_code='${code}'&$order=report_date_as_yyyy_mm_dd%20DESC&$limit=104`).then(r=>r.json()).then(j=>{
         if(!Array.isArray(j)) return;
-        out.cot[a] = j.map(o=>t==='l'
+        out.cot[a] = j.map(o=>t==='li'
+          ? [o.report_date_as_yyyy_mm_dd.slice(0,10), +o.noncomm_positions_short_all, +o.noncomm_positions_long_all, +o.comm_positions_short_all, +o.comm_positions_long_all, +o.nonrept_positions_short_all, +o.nonrept_positions_long_all, +o.open_interest_all]
+          : t==='l'
           ? [o.report_date_as_yyyy_mm_dd.slice(0,10), +o.noncomm_positions_long_all, +o.noncomm_positions_short_all, +o.comm_positions_long_all, +o.comm_positions_short_all, +o.nonrept_positions_long_all, +o.nonrept_positions_short_all, +o.open_interest_all]
           : [o.report_date_as_yyyy_mm_dd.slice(0,10), +o.m_money_positions_long_all, +o.m_money_positions_short_all, (+o.prod_merc_positions_long)+(+o.swap_positions_long_all), (+o.prod_merc_positions_short)+(+o.swap__positions_short_all), +o.nonrept_positions_long_all, +o.nonrept_positions_short_all, +o.open_interest_all]
         ).reverse();
@@ -1166,9 +1180,9 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   const sg2 = (v, d=1) => (v===null || isNaN(v)) ? '—' : (v>0?'+':v<0?'−':'') + Math.abs(v).toLocaleString(LOC(), {minimumFractionDigits:d, maximumFractionDigits:d});
   const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888';
   const GH_URL = 'https://raphydoc.github.io/scorecard/';
-  const ASSET_LBL = {xauusd:['Or','Gold'], xagusd:['Argent','Silver'], nasdaq:['Nasdaq 100','Nasdaq 100'], spx500:['S&P 500','S&P 500'], us30:['Dow Jones','Dow Jones'], rut:['Russell 2000','Russell 2000'], usd:['Dollar US (DXY)','US Dollar (DXY)'], usoil:['Pétrole WTI','WTI Crude'], btcusd:['Bitcoin','Bitcoin']};
+  const ASSET_LBL = {xauusd:['Or','Gold'], xagusd:['Argent','Silver'], nasdaq:['Nasdaq 100','Nasdaq 100'], spx500:['S&P 500','S&P 500'], us30:['Dow Jones','Dow Jones'], rut:['Russell 2000','Russell 2000'], usd:['Dollar US (DXY)','US Dollar (DXY)'], usoil:['Pétrole WTI','WTI Crude'], btcusd:['Bitcoin','Bitcoin'], eurusd:['Euro / dollar US','Euro / US dollar'], usdjpy:['Dollar US / yen','US dollar / yen'], usdcad:['Dollar US / canadien','US dollar / Canadian dollar']};
   const aName = a => (ASSET_LBL[a]||[a,a])[isEN()?1:0];
-  const TV_SYM = {xauusd:'OANDA:XAUUSD', xagusd:'OANDA:XAGUSD', nasdaq:'OANDA:NAS100USD', spx500:'OANDA:SPX500USD', us30:'OANDA:US30USD', rut:'OANDA:US2000USD', usd:'TVC:DXY', usoil:'TVC:USOIL', btcusd:'BITSTAMP:BTCUSD', us10y:'TVC:US10Y', vix:'TVC:VIX'};
+  const TV_SYM = {xauusd:'OANDA:XAUUSD', xagusd:'OANDA:XAGUSD', nasdaq:'OANDA:NAS100USD', spx500:'OANDA:SPX500USD', us30:'OANDA:US30USD', rut:'OANDA:US2000USD', usd:'TVC:DXY', usoil:'TVC:USOIL', btcusd:'BITSTAMP:BTCUSD', eurusd:'FX:EURUSD', usdjpy:'FX:USDJPY', usdcad:'FX:USDCAD', us10y:'TVC:US10Y', vix:'TVC:VIX'};
   const MON_FR = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
   const MON_EN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   function perLbl(p){ // '2026-09' → 'sept. 2026' ; '2026-Q3' → 'T3 2026' ; '2026-11-05' → '5 nov. 2026'
@@ -1332,7 +1346,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     tv('tvQuotes','market-quotes',{width:'100%', height:420, symbolsGroups:[
       {name:L('Indices','Indices'), symbols:['nasdaq','spx500','us30','rut'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]}))},
       {name:L('Matières premières','Commodities'), symbols:['xauusd','xagusd','usoil'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]}))},
-      {name:L('Devises et crypto','FX & crypto'), symbols:['usd','btcusd'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]})).concat([{name:'TVC:US10Y', displayName:'US10Y'}])}
+      {name:L('Devises et crypto','FX & crypto'), symbols:['usd','eurusd','usdjpy','usdcad','btcusd'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]})).concat([{name:'TVC:US10Y', displayName:'US10Y'}])}
     ], showSymbolLogo:true}, 420);
   }
   function verdictEN(t){ return t>=10?'Very bullish':t>=4?'Bullish':t<=-10?'Very bearish':t<=-4?'Bearish':'Neutral'; }
@@ -1520,14 +1534,14 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     </div>
     <div class="g2">
       <div class="panel"><div class="ph"><div><h3>${L('Position nette par groupe','Net position by group')}</h3><p>${L('Les commerciaux font souvent l’inverse des spéculateurs (ils se couvrent)','Commercials often do the opposite of speculators (they hedge)')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cotNet"></canvas></div></div></div>
-      <div class="panel"><div class="ph"><div><h3>${L('Indice COT des 9 actifs','COT index, all 9 assets')}</h3><p>${L('Où se situe la position nette dans sa plage de 52 semaines','Where net position sits in its 52-week range')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cotCmp"></canvas></div></div></div>
+      <div class="panel"><div class="ph"><div><h3>${L('Indice COT de tes actifs','COT index, all your assets')}</h3><p>${L('Où se situe la position nette dans sa plage de 52 semaines','Where net position sits in its 52-week range')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cotCmp"></canvas></div></div></div>
     </div>
     <div class="panel"><div class="ph"><div><h3>${L('Détail par groupe','Detail by group')}</h3><p>${L('Rapport du','Report of')} ${perLbl(last[0])} · ${L('variation sur 1 semaine','1-week change')}</p></div></div><div class="tablewrap"><table class="ctbl"><thead><tr><th>${L('Groupe','Group')}</th><th>Long</th><th>Δ</th><th>Short</th><th>Δ</th><th>% long</th><th>${L('Net','Net')}</th></tr></thead><tbody>
       <tr><td>${catN[0]}</td>${cat(last[1],last[2],prev[1],prev[2])}</tr>
       <tr><td>${catN[1]}</td>${cat(last[3],last[4],prev[3],prev[4])}</tr>
       <tr><td>${catN[2]}</td>${cat(last[5],last[6],prev[5],prev[6])}</tr>
     </tbody></table></div>
-    <p class="src">${L('Source','Source')} : U.S. Commodity Futures Trading Commission (CFTC), ${oil?L('rapport désagrégé','disaggregated report'):L('rapport Legacy','Legacy report')}, futures only · publicreporting.cftc.gov · ${srcNote()}</p></div>`;
+    <p class="src">${L('Source','Source')} : U.S. Commodity Futures Trading Commission (CFTC), ${oil?L('rapport désagrégé','disaggregated report'):L('rapport Legacy','Legacy report')}, futures only · publicreporting.cftc.gov${a==='usdjpy'||a==='usdcad' ? ' · '+L(`contrat ${a==='usdjpy'?'du yen':'du dollar canadien'} inversé : « long » = acheteur de ${TOP_NAMES[a]}`, `${a==='usdjpy'?'yen':'Canadian dollar'} contract inverted: "long" = long ${TOP_NAMES[a]}`) : ''} · ${srcNote()}</p></div>`;
     bindCotChips(box);
     box.querySelectorAll('#cotN .chip').forEach(b=>b.addEventListener('click', ()=>{ state.cotN = +b.dataset.n; renderCOT(); }));
     needChart().then(ok=>{ if(!ok) return;
@@ -1729,7 +1743,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
 
     'Ma tendance':'My trend','Terminé':'Done','Modifier les données':'Edit data',
     'US Dollar':'US Dollar','Dow Jones':'Dow Jones','Nasdaq':'Nasdaq','S&P 500':'S&P 500','XAUUSD':'XAUUSD',
-    'XAUUSD · Or':'XAUUSD · Gold','DXY · Dollar US':'DXY · US Dollar',
+    'XAUUSD · Or':'XAUUSD · Gold','DXY · Dollar US':'DXY · US Dollar','EURUSD · Euro / dollar US':'EURUSD · Euro / US dollar','USDJPY · Dollar US / yen':'USDJPY · US dollar / yen','USDCAD · Dollar US / canadien':'USDCAD · US dollar / Canadian dollar',
+    'Données américaines fortes = baissier pour EUR/USD':'Strong US data = bearish for EUR/USD','Données américaines fortes = haussier pour USD/JPY':'Strong US data = bullish for USD/JPY','Données américaines fortes = haussier pour USD/CAD':'Strong US data = bullish for USD/CAD',
     'Données fortes = baissier pour l’or':'Strong data = bearish for gold',
     'Données fortes = haussier pour le dollar':'Strong data = bullish for the dollar',
     'Croissance forte = haussier, inflation chaude = baissier':'Strong growth = bullish, hot inflation = bearish',

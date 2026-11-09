@@ -5,7 +5,7 @@ f = json.load(open(sys.argv[1])) if len(sys.argv) > 1 and sys.argv[1] != '-' els
 c = json.load(open(sys.argv[2])) if len(sys.argv) > 2 and sys.argv[2] != '-' else {}
 live = {'asOf': datetime.date.today().isoformat(), 'snap': True, 'src': 'FRED (Federal Reserve Bank of St. Louis), CFTC',
         'macro': {**old.get('macro', {}), **f.get('macro', {})}, 'rates': {**old.get('rates', {}), **f.get('rates', {})}, 'cot': {**old.get('cot', {}), **c.get('cot', {})}}
-assert live['macro'].get('cpi') and live['rates'].get('y10') and len(live['cot']) == 9, 'données incomplètes'
+assert live['macro'].get('cpi') and live['rates'].get('y10') and len(live['cot']) >= 12, 'données incomplètes'
 d['live'] = live; d['updatedAt'] = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 json.dump(d, open('data.json', 'w'), ensure_ascii=False, indent=1)
 json.dump(live, open('live.json', 'w'), separators=(',', ':'))
