@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T15:50:00Z",
+ "updatedAt": "2026-11-09T16:43:15Z",
  "econ": {
   "values": {
    "gdp": {
@@ -602,6 +602,39 @@
  "news": [
   {
    "date": "2026-11-09",
+   "time": "10:22",
+   "source": "Yahoo Finance",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "rut"
+   ],
+   "title": "Wall Street rebondit fort : le Nasdaq gagne 2,4 % malgré la chute de Nvidia; AMD bondit de 9 %",
+   "title_en": "Wall Street rebounds sharply: Nasdaq up 2.4% despite Nvidia slide; AMD jumps 9%",
+   "summary": "En matinée, le Nasdaq grimpait de 2,42 % (25 173), le S&P 500 de 1,91 % (7 518), le Dow de 1,60 % (52 106) et le Russell 2000 de 2,05 % (2 810). Nvidia reculait encore de plus de 4 %, après des pertes allant jusqu’à 8 % en début de séance, à cause des allégations visant son PDG Jensen Huang; AMD bondissait d’environ 9 % après un relèvement à « achat » par Oppenheimer. La baisse du pétrole (WTI vers 87 $) soutient le rebond de la tech.",
+   "summary_en": "In morning trading the Nasdaq rose 2.42% (25,173), the S&P 500 1.91% (7,518), the Dow 1.60% (52,106) and the Russell 2000 2.05% (2,810). Nvidia was still down more than 4% after losing as much as 8% early, on allegations involving CEO Jensen Huang; AMD jumped about 9% after an Oppenheimer upgrade to Buy. Falling oil (WTI near $87) is supporting the tech rebound.",
+   "url": "https://finance.yahoo.com/markets/article/tech-stocks-rally-as-nvidia-stock-and-oil-prices-fall-alphacheck-152208023.html"
+  },
+  {
+   "date": "2026-11-09",
+   "time": "08:35",
+   "source": "Kitco",
+   "impact": "med",
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd"
+   ],
+   "title": "L’or et l’argent montent : la diplomatie avec l’Iran fait reculer le brut et le dollar s’affaiblit",
+   "title_en": "Gold, silver rise as Iran diplomacy pressures crude, dollar weakens",
+   "summary": "L’or au comptant gagnait 1,33 % à 4 124,74 $ l’once et l’argent 1,57 % à 52,759 $, aidés par un dollar légèrement plus faible et un Brent vers 94,76 $. Les métaux rebondissent après la vente de vendredi provoquée par le rapport sur l’emploi (165 000 postes en octobre), qui avait renforcé les paris d’une hausse de taux en décembre; le taux à 10 ans est près de 4,87 %. Le CPI d’octobre, mardi, pourrait changer ces attentes.",
+   "summary_en": "Spot gold rose 1.33% to $4,124.74 an ounce and silver 1.57% to $52.759, helped by a modestly weaker dollar and Brent near $94.76. Metals are rebounding from Friday's selloff after the jobs report (165,000 October payrolls) lifted bets on a December rate hike; the 10-year yield is near 4.87%. Tuesday's October CPI could shift those expectations.",
+   "url": "https://www.kitco.com/news/article/2026-11-09/gold-silver-rise-iran-diplomacy-pressures-crude-dollar-weakens-kitco-am"
+  },
+  {
+   "date": "2026-11-09",
    "time": "07:31",
    "source": "CoinDesk",
    "impact": "med",
@@ -613,23 +646,6 @@
    "summary": "Le bitcoin est tombé vers 73 761 $ tard dimanche, puis est remonté au-dessus de 75 000 $; plus de 1 milliard $ de positions à effet de levier ont été liquidées en 24 heures, dont 913 M$ de positions acheteuses. Le scandale chez Nvidia et l’enlisement des pourparlers avec l’Iran pèsent sur les actifs risqués; le BTC oscille entre sa moyenne de 200 jours (~73 150 $) et celle de 100 jours (~77 430 $).",
    "summary_en": "Bitcoin fell to about $73,761 late Sunday, then recovered above $75,000; more than $1 billion of leveraged positions were liquidated in 24 hours, including $913M of longs. The Nvidia scandal and stalled Iran talks are weighing on risk assets; BTC is stuck between its 200-day average (~$73,150) and 100-day average (~$77,430).",
    "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
-  },
-  {
-   "date": "2026-11-09",
-   "time": "05:39",
-   "source": "Reuters (via Yahoo Finance)",
-   "impact": "high",
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30",
-    "rut"
-   ],
-   "title": "Les contrats à terme montent après une dure semaine, mais Nvidia chute de 4,5 % avant l’ouverture",
-   "title_en": "Wall St futures rise after rough week, but Nvidia unsettles investors",
-   "summary": "À 5 h 10 (HE), les contrats E-mini du Dow gagnaient 0,73 %, ceux du S&P 500 0,40 % et ceux du Nasdaq 100 0,21 %. Nvidia reculait de 4,5 % avant l’ouverture après qu’une enquête interne eut examiné si son PDG Jensen Huang avait été ciblé par un service de renseignement étranger, ce qui soulève des questions sur son avenir. L’indice des semi-conducteurs de Philadelphie sort de sa pire semaine depuis mars 2025.",
-   "summary_en": "At 5:10 a.m. ET, Dow E-minis were up 0.73%, S&P 500 E-minis 0.40% and Nasdaq 100 E-minis 0.21%. Nvidia fell 4.5% premarket after an internal investigation examined whether CEO Jensen Huang was targeted by a foreign intelligence effort, raising questions about his future. The Philadelphia Semiconductor Index is coming off its worst week since March 2025.",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-rough-103539344.html"
   },
   {
    "date": "2026-11-09",
