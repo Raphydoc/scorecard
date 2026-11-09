@@ -376,7 +376,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   <button type="button" data-page="top">Top Setups</button>
   <span class="navgrp">Macro</span>
   <button type="button" data-page="eco">Économie US</button>
-  <button type="button" data-page="fed">Taux &amp; Fed</button>
+  <button type="button" data-page="fed">Taux</button>
   <button type="button" data-page="cal">Calendrier économique</button>
   <button type="button" data-page="earn">Résultats</button>
   <span class="navgrp">Positionnement</span>
@@ -540,13 +540,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   <section data-pg="sent" hidden aria-label="Sentiment"><div class="p2" id="p2sent"></div></section>
   <section data-pg="news" hidden aria-label="Nouvelles"><div class="p2" id="p2news"></div></section>
 
-  <section data-pg="fed" hidden aria-label="Réserve fédérale">
-    <div class="fedgrid">
-      <div class="panel"><div class="pghead"><h2>Prochaine réunion de la Fed</h2></div><div id="fedLeft"></div></div>
-      <div class="panel"><div class="pghead"><div><h2>Probabilités du marché</h2><p id="fedAsof">CME FedWatch</p></div></div><div id="fedRight"></div></div>
-    </div>
-    <p class="pgfoot">Information seulement : les probabilités de la Fed ne comptent pas dans le score. Mises à jour automatiquement avec le scorecard.</p>
-    <div class="p2" id="p2rates" style="margin-top:14px"></div>
+  <section data-pg="fed" hidden aria-label="Taux">
+    <div class="p2" id="p2rates"></div>
   </section>
 
 </div>
@@ -1303,7 +1298,8 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     let k = '';
     k += `<button class="kpi" data-goa="${best.a}"><span class="k">${L('Meilleur setup','Top setup')}</span><span class="v ${vC(best.C.total)}">${esc(TOP_NAMES[best.a])} ${best.C.total>0?'+':''}${best.C.total}</span><span class="s">${esc(L(verdict(best.C.total)[0], ''))}${isEN()?verdictEN(best.C.total):''}</span></button>`;
     k += `<button class="kpi" data-goa="${worst.a}"><span class="k">${L('Plus faible','Weakest')}</span><span class="v ${vC(worst.C.total)}">${esc(TOP_NAMES[worst.a])} ${worst.C.total>0?'+':''}${worst.C.total}</span><span class="s">${esc(L(verdict(worst.C.total)[0], ''))}${isEN()?verdictEN(worst.C.total):''}</span></button>`;
-    k += `<button class="kpi" data-gop="fed"><span class="k">${L('Fed · prochaine réunion','Fed · next meeting')}</span><span class="v">${p.hike!=null? nf(p.hike, Number.isInteger(+p.hike)?0:1)+' %':'—'}</span><span class="s">${L('chances de hausse (CME FedWatch)','odds of a hike (CME FedWatch)')}</span></button>`;
+    const vxS = r.vix||[], vxL = vxS.slice(-1)[0], vxP = agoPt(vxS,7);
+    k += `<button class="kpi" data-gop="sent"><span class="k">${L('Peur des marchés (VIX)','Market fear (VIX)')}</span><span class="v ${vxL&&vxL[1]>=25?'dn':vxL&&vxL[1]<16?'up':''}">${vxL? nf(vxL[1],1):'—'}</span><span class="s">${vxL? (vxL[1]>=25?L('stress élevé','high stress'):vxL[1]<16?L('marché calme','calm market'):L('nervosité modérée','moderate nerves'))+(vxP?' · '+sg2(vxL[1]-vxP[1],1)+L(' sur 1 sem.',' w/w'):''):'Cboe'}</span></button>`;
     k += `<button class="kpi" data-gop="fed"><span class="k">${L('Taux 10 ans US','US 10-year yield')}</span><span class="v">${y10? nf(y10[1],2)+' %':'—'}</span><span class="s">${y10&&y10m? sg2(y10[1]-y10m[1],2)+L(' pt sur 1 mois',' pt over 1 month') : L('Fed H.15','Fed H.15')}</span></button>`;
     k += `<button class="kpi" data-gop="eco"><span class="k">${L('Inflation (CPI 1 an)','Inflation (CPI YoY)')}</span><span class="v">${cpiL? nf(cpiL[1],1)+' %':'—'}</span><span class="s">${cpiL? perLbl(cpiL[0])+' · BLS' : 'BLS'}</span></button>`;
     k += `<button class="kpi" data-gop="eco"><span class="k">${L('Chômage','Unemployment')}</span><span class="v">${un? nf(un[1],1)+' %':'—'}</span><span class="s">${un? perLbl(un[0])+(unp? ' · '+sg2(un[1]-unp[1],1)+' pt':'') : 'BLS'}</span></button>`;
@@ -1723,7 +1719,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'Scorecard macro':'Macro Scorecard',
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
-    'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed',
+    'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
     'Vue d’ensemble':'Overview','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
     'Résultats':'Earnings','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
