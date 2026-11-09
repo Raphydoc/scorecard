@@ -289,7 +289,9 @@ table.ern td.mv.up{color:var(--bull)} table.ern td.mv.dn{color:var(--bear)}
 .filters .freset{align-self:end;border:1px solid var(--line);background:transparent;color:var(--muted);font:600 14px/1 var(--f-display);letter-spacing:.04em;text-transform:uppercase;padding:9px 10px;cursor:pointer}
 .topempty{padding:14px;color:var(--muted);font-size:13px}
 
-.langbtn{margin-left:auto;padding:8px 12px}
+.langbtn{padding:8px 12px}
+.topbtns{margin-left:auto;display:flex;gap:8px}
+#themeBtn{padding:8px 12px;font-size:16px;line-height:1;min-width:42px}
 .seg{flex-wrap:wrap;max-width:100%}
 .controls{min-width:0;max-width:100%}
 .pages{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--line)}
@@ -393,7 +395,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
         <p class="sub">Données US mises à jour automatiquement chaque matin de semaine.</p>
       </div>
     </div>
-    <button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button>
+    <div class="topbtns"><button id="themeBtn" class="btn ghost" type="button" aria-label="Mode sombre" title="Mode sombre">☾</button><button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button></div>
     <div class="controls" data-pg="score">
       <label class="assetpick"><span>Actif</span>
         <select id="assetSel" aria-label="Actif">
@@ -1638,6 +1640,26 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     if(['home','eco','fed','cot','sent'].includes(pg)) loadLive().then(()=>{ if(state.page===pg) renderP2(); });
     renderP2();
   }
+  // ---------- mode sombre / clair ----------
+  (function(){
+    const btn = $('themeBtn'); if(!btn) return;
+    const sysDark = () => window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches;
+    const cur = () => document.documentElement.dataset.theme || (sysDark() ? 'dark' : 'light');
+    const label = () => { const d = cur()==='dark'; const en = document.documentElement.lang==='en';
+      btn.textContent = d ? '☀' : '☾';
+      const l = d ? (en?'Light mode':'Mode clair') : (en?'Dark mode':'Mode sombre');
+      btn.setAttribute('aria-label', l); btn.title = l; };
+    try{ const s = localStorage.getItem('sc-theme'); if(s==='dark'||s==='light') document.documentElement.dataset.theme = s; }catch(e){}
+    label();
+    btn.addEventListener('click', ()=>{
+      const n = cur()==='dark' ? 'light' : 'dark';
+      document.documentElement.dataset.theme = n;
+      try{ localStorage.setItem('sc-theme', n); }catch(e){}
+      label();
+      setTimeout(()=>{ const nb = $('p2news'); if(nb) nb.dataset.built=''; const cb = $('p2charts'); if(cb) cb.dataset.built=''; renderAll(); if(typeof renderP2==='function') renderP2(); }, 30);
+    });
+    const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(label, 60));
+  })();
   (function(){ const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(()=>{ const nb = $('p2news'); if(nb) nb.dataset.built=''; const cb = $('p2charts'); if(cb) cb.dataset.built=''; renderP2(); if(state.page==='fed') renderFed(); }, 30)); })();
 
   function showPage(pg){
