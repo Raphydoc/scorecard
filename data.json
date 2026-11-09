@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T02:54:30Z",
+ "updatedAt": "2026-11-09T12:46:56Z",
  "econ": {
   "values": {
    "gdp": {
@@ -517,6 +517,51 @@
  },
  "news": [
   {
+   "date": "2026-11-09",
+   "time": "07:31",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd"
+   ],
+   "title": "Le bitcoin glisse à 73 761 $, son plus bas depuis août, avant de rebondir au-dessus de 75 000 $",
+   "title_en": "Bitcoin slides to $73,761, lowest since August, before bouncing above $75,000",
+   "summary": "Le bitcoin est tombé vers 73 761 $ tard dimanche, puis est remonté au-dessus de 75 000 $; plus de 1 milliard $ de positions à effet de levier ont été liquidées en 24 heures, dont 913 M$ de positions acheteuses. Le scandale chez Nvidia et l’enlisement des pourparlers avec l’Iran pèsent sur les actifs risqués; le BTC oscille entre sa moyenne de 200 jours (~73 150 $) et celle de 100 jours (~77 430 $).",
+   "summary_en": "Bitcoin fell to about $73,761 late Sunday, then recovered above $75,000; more than $1 billion of leveraged positions were liquidated in 24 hours, including $913M of longs. The Nvidia scandal and stalled Iran talks are weighing on risk assets; BTC is stuck between its 200-day average (~$73,150) and 100-day average (~$77,430).",
+   "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
+  },
+  {
+   "date": "2026-11-09",
+   "time": "05:39",
+   "source": "Reuters (via Yahoo Finance)",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "rut"
+   ],
+   "title": "Les contrats à terme montent après une dure semaine, mais Nvidia chute de 4,5 % avant l’ouverture",
+   "title_en": "Wall St futures rise after rough week, but Nvidia unsettles investors",
+   "summary": "À 5 h 10 (HE), les contrats E-mini du Dow gagnaient 0,73 %, ceux du S&P 500 0,40 % et ceux du Nasdaq 100 0,21 %. Nvidia reculait de 4,5 % avant l’ouverture après qu’une enquête interne eut examiné si son PDG Jensen Huang avait été ciblé par un service de renseignement étranger, ce qui soulève des questions sur son avenir. L’indice des semi-conducteurs de Philadelphie sort de sa pire semaine depuis mars 2025.",
+   "summary_en": "At 5:10 a.m. ET, Dow E-minis were up 0.73%, S&P 500 E-minis 0.40% and Nasdaq 100 E-minis 0.21%. Nvidia fell 4.5% premarket after an internal investigation examined whether CEO Jensen Huang was targeted by a foreign intelligence effort, raising questions about his future. The Philadelphia Semiconductor Index is coming off its worst week since March 2025.",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/wall-st-futures-rise-rough-103539344.html"
+  },
+  {
+   "date": "2026-11-09",
+   "time": "05:22",
+   "source": "Reuters (via Yahoo Finance)",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Le pétrole recule : Trump juge « peu probables » de nouvelles frappes contre l’Iran",
+   "title_en": "Oil falls as Trump signals restraint on Iran despite fresh shipping attacks",
+   "summary": "Le Brent perdait 0,75 % à 97,57 $ le baril et le WTI 0,4 % à 90,45 $ lundi matin. Trump a dit dimanche qu’il était très peu probable qu’il ordonne de nouvelles attaques contre l’Iran tant que les pourparlers se poursuivent, même si des navires ont été touchés près du détroit d’Ormuz. Selon Saxo Bank, la baisse repose sur l’espoir d’un accord plutôt que sur des progrès concrets.",
+   "summary_en": "Brent fell 0.75% to $97.57 a barrel and WTI 0.4% to $90.45 on Monday morning. Trump said Sunday he was highly unlikely to order new attacks on Iran while talks continue, even as ships were hit near the Strait of Hormuz. Saxo Bank said the decline rests on hopes of a deal rather than concrete progress.",
+   "url": "https://finance.yahoo.com/news/oil-falls-open-trump-says-235002807.html"
+  },
+  {
    "date": "2026-11-08",
    "time": "08:59",
    "source": "Reuters (via Investing.com)",
@@ -550,6 +595,20 @@
   },
   {
    "date": "2026-11-06",
+   "time": "15:00",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd"
+   ],
+   "title": "Le bitcoin stagne sous 76 000 $, à son plus bas depuis la hausse de taux de septembre",
+   "title_en": "Bitcoin flatlines under $76,000, weakest since the September rate hike",
+   "summary": "Le bitcoin s’échangeait autour de 75 750 $ dans un corridor très étroit; le rebond des actions n’a pas profité à la crypto. Une cassure sous 75 000 $ pourrait le ramener aux niveaux de la mi-août.",
+   "summary_en": "Bitcoin traded around $75,750 in a very tight range; the stock rebound did not lift crypto. A break below $75,000 could send it back to mid-August levels.",
+   "url": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
+  },
+  {
+   "date": "2026-11-06",
    "time": "09:30",
    "source": "Kitco",
    "impact": "high",
@@ -579,20 +638,6 @@
    "summary": "Le taux à 2 ans a gagné 6 points de base à 4,52 % et le 10 ans 3 points à 4,87 % après le rapport. Les paris sur une hausse de taux de la Fed le mois prochain sont passés de 70 % à 78 %.",
    "summary_en": "The 2-year yield rose 6 basis points to 4.52% and the 10-year 3 points to 4.87% after the report. Bets on a Fed hike next month rose from 70% to 78%.",
    "url": "https://finance.yahoo.com/economy/policy/articles/strong-october-jobs-report-sends-134858909.html"
-  },
-  {
-   "date": "2026-11-06",
-   "time": "15:00",
-   "source": "CoinDesk",
-   "impact": "med",
-   "assets": [
-    "btcusd"
-   ],
-   "title": "Le bitcoin stagne sous 76 000 $, à son plus bas depuis la hausse de taux de septembre",
-   "title_en": "Bitcoin flatlines under $76,000, weakest since the September rate hike",
-   "summary": "Le bitcoin s’échangeait autour de 75 750 $ dans un corridor très étroit; le rebond des actions n’a pas profité à la crypto. Une cassure sous 75 000 $ pourrait le ramener aux niveaux de la mi-août.",
-   "summary_en": "Bitcoin traded around $75,750 in a very tight range; the stock rebound did not lift crypto. A break below $75,000 could send it back to mid-August levels.",
-   "url": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
   },
   {
    "date": "2026-11-06",
