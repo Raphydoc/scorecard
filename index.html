@@ -382,6 +382,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   <span class="navgrp">Positionnement</span>
   <button type="button" data-page="cot">COT</button>
   <button type="button" data-page="sent">Sentiment</button>
+  <button type="button" data-page="cbg">Or · banques centrales</button>
   <span class="navgrp">Nouvelles</span>
   <button type="button" data-page="news">Nouvelles</button>
 </nav>
@@ -544,6 +545,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   <section data-pg="eco" hidden aria-label="Économie US"><div class="p2" id="p2eco"></div></section>
   <section data-pg="cot" hidden aria-label="COT"><div class="p2" id="p2cot"></div></section>
   <section data-pg="sent" hidden aria-label="Sentiment"><div class="p2" id="p2sent"></div></section>
+  <section data-pg="cbg" hidden aria-label="Or · banques centrales"><div class="p2" id="p2cbg"></div></section>
   <section data-pg="news" hidden aria-label="Nouvelles"><div class="p2" id="p2news"></div></section>
 
   <section data-pg="fed" hidden aria-label="Taux">
@@ -1609,6 +1611,81 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     });
   }
 
+  // ---------- Or : banques centrales ----------
+  const CBG_C = {US:['États-Unis','United States'], DE:['Allemagne','Germany'], IT:['Italie','Italy'], FR:['France','France'], CN:['Chine','China'], RU:['Russie','Russia'], CH:['Suisse','Switzerland'], IN:['Inde','India'], JP:['Japon','Japan'], PL:['Pologne','Poland'], NL:['Pays-Bas','Netherlands'], UZ:['Ouzbékistan','Uzbekistan'], KZ:['Kazakhstan','Kazakhstan'], CZ:['Tchéquie','Czech Republic'], JO:['Jordanie','Jordan'], BO:['Bolivie','Bolivia'], TR:['Turquie','Turkey'], BR:['Brésil','Brazil'], AZ:['Azerbaïdjan (SOFAZ)','Azerbaijan (SOFAZ)'], SG:['Singapour','Singapore']};
+  const CBG_DEFAULT = {
+    asOf:'2026-09-30', pub:'2026-11-05',
+    annual:[['2010-21',473],['2022',1136],['2023',1037],['2024',1092.4],['2025',863.3],['2026*',675]],
+    quarterly:[['2025-Q2',177.9],['2025-Q3',226.3],['2025-Q4',230],['2026-Q1',57],['2026-Q2',288.9],['2026-Q3',321.2]],
+    q:{label:'2026-Q3', total:321.2, reported:120, unreported:201, yoy:42, avg5:227},
+    monthly:[['2026-02',19],['2026-04',19],['2026-05',41],['2026-07',23],['2026-08',39],['2026-09',61]],
+    month:{label:'2026-09', total:61, rows:[['PL',25],['CN',23],['UZ',7],['KZ',5],['JO',4],['CZ',2],['BO',1]]},
+    buyersQ:[['CN',63],['PL',40],['KZ',14],['UZ',14],['CZ',5],['RU',-19]],
+    ytd:[['PL',123],['CN',80],['UZ',57],['KZ',44],['CZ',16],['RU',-72]],
+    holders:[['US',8133.5],['DE',3350],['IT',2451.8],['FR',2437],['CN',2410],['RU',2265],['CH',1040],['IN',880],['JP',846],['PL',673],['NL',612.5],['UZ',446],['KZ',382]],
+    survey:{year:2025, globalUp:95, ownUp:43, ownDown:0},
+    src:[['World Gold Council · Gold Demand Trends T3 2026','https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q3-2026/central-banks'],['World Gold Council · statistiques mensuelles','https://www.gold.org/goldhub/data/gold-reserves-by-country'],['FMI · International Financial Statistics','https://data.imf.org/']]
+  };
+  state.cbgold = state.cbgold || null;
+  const cbN = c => { const n = CBG_C[c]; return n ? (isEN()?n[1]:n[0]) : c; };
+  const cbQ = q => { const [y,n] = q.split('-Q'); return isEN() ? 'Q'+n+' '+y : 'T'+n+' '+y; };
+  const cbM = m => new Date(m+'-15T12:00:00').toLocaleDateString(LOC(),{month:'short', year:'numeric'});
+  function renderCB(){
+    const box = $('p2cbg'); if(!box) return;
+    const C = state.cbgold && state.cbgold.quarterly ? state.cbgold : CBG_DEFAULT;
+    const q = C.q, qs = C.quarterly, prevQ = qs.length>1 ? qs[qs.length-2] : null;
+    const ann = C.annual, yr = ann[ann.length-1];
+    const cotG = (((state.live||{}).cot)||{}).xauusd || [];
+    const tons = (v,d=0) => nf(v,d)+' t';
+    const mo = C.month;
+    const rowsBar = (arr, id) => `<div class="cbox" style="height:${Math.max(200, arr.length*34+40)}px"><canvas id="${id}"></canvas></div>`;
+    const usd = C.holders.reduce((s,h)=>s+h[1],0);
+    box.innerHTML = `
+      <div class="panel"><div class="ph"><div><h3>${L('Les banques centrales achètent de l’or','Central banks are buying gold')}</h3><p>${L(`Achats nets de toutes les banques centrales du monde · ${cbQ(q.label)} · données au ${new Date(C.asOf+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric',month:'long',year:'numeric'})}`, `Net purchases by all the world’s central banks · ${cbQ(q.label)} · data to ${new Date(C.asOf+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric',month:'long',year:'numeric'})}`)}</p></div><span class="tag b" style="font-size:13px;padding:6px 10px">${q.total>=q.avg5 ? L('Achats au-dessus de la moyenne','Buying above average') : L('Achats sous la moyenne','Buying below average')}</span></div>
+      <div class="pb"><div class="kpis">
+        <div class="kpi"><span class="k">${L('Achats nets','Net purchases')} · ${cbQ(q.label)}</span><span class="v up">${tons(q.total,1)}</span><span class="s">${sg2(q.yoy,0)} % ${L('sur 1 an','y/y')}${prevQ? ' · '+cbQ(prevQ[0])+' : '+tons(prevQ[1]):''}</span></div>
+        <div class="kpi"><span class="k">${L('Depuis le début de l’année','Year to date')}</span><span class="v">${tons(yr[1])}</span><span class="s">${L('moyenne 2010-2021 : ','2010-2021 average: ')}${tons(ann[0][1])} ${L('par an','a year')}</span></div>
+        <div class="kpi"><span class="k">${L('Déclarés vs cachés','Reported vs hidden')}</span><span class="v">${Math.round(q.unreported/q.total*100)} %</span><span class="s">${L(`non déclarés (${tons(q.unreported)}) · ${tons(q.reported)} déclarés au FMI`, `unreported (${tons(q.unreported)}) · ${tons(q.reported)} reported to the IMF`)}</span></div>
+        <div class="kpi"><span class="k">${L('Dernier mois','Latest month')} · ${cbM(mo.label)}</span><span class="v up">${sg2(mo.total,0)} t</span><span class="s">${L('meilleur acheteur : ','top buyer: ')}${cbN(mo.rows[0][0])} (${sg2(mo.rows[0][1],0)} t)</span></div>
+      </div></div></div>
+      <div class="g2">
+        <div class="panel"><div class="ph"><div><h3>${L('Achats par trimestre','Purchases by quarter')}</h3><p>${L('Tonnes nettes, incluant les achats non déclarés estimés par le World Gold Council','Net tonnes, including unreported buying estimated by the World Gold Council')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cbgQ"></canvas></div></div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('Par année','By year')}</h3><p>${L('Depuis 2022, plus de 1 000 t par an : le double de la moyenne d’avant','Since 2022, over 1,000 t a year: double the earlier average')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cbgA"></canvas></div></div></div>
+      </div>
+      <div class="g2">
+        <div class="panel"><div class="ph"><div><h3>${L('Qui achète, qui vend','Who buys, who sells')} · ${state.cbView==='y' ? L('depuis janvier','since January') : state.cbView==='m' ? cbM(mo.label) : cbQ(q.label)}</h3><p>${L('Achats déclarés par pays (tonnes) · en rouge = ventes','Reported purchases by country (tonnes) · red = sales')}</p></div><div class="chips" id="cbgSeg"><button type="button" class="chip" data-v="q" aria-pressed="${(state.cbView||'q')==='q'}">${L('Trimestre','Quarter')}</button><button type="button" class="chip" data-v="y" aria-pressed="${state.cbView==='y'}">${L('Année','Year')}</button><button type="button" class="chip" data-v="m" aria-pressed="${state.cbView==='m'}">${cbM(mo.label)}</button></div></div><div class="pb">${rowsBar(C.ytd.length>C.buyersQ.length?C.ytd:C.buyersQ,'cbgB')}</div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('Achats mois par mois','Month by month')}</h3><p>${L('Achats nets déclarés (tonnes) · mois disponibles','Reported net purchases (tonnes) · months available')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cbgM"></canvas></div></div></div>
+      </div>
+      <div class="g2">
+        <div class="panel"><div class="ph"><div><h3>${L('Les plus grosses réserves d’or','Largest gold reserves')}</h3><p>${L('Réserves officielles en tonnes · clique une barre pour voir sa part','Official reserves in tonnes · click a bar to see its share')}</p></div></div><div class="pb">${rowsBar(C.holders,'cbgH')}<p class="src" id="cbgHx" style="padding:6px 0 0">${L(`Ces ${C.holders.length} pays détiennent environ ${nf(usd,0)} t.`, `These ${C.holders.length} countries hold about ${nf(usd,0)} t.`)}</p></div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('Ce que prévoient les banques centrales','What central banks plan')}</h3><p>${L(`Sondage annuel du World Gold Council (${C.survey.year})`, `World Gold Council annual survey (${C.survey.year})`)}</p></div></div><div class="pb">
+          <div class="sbar"><div class="sl"><span>${L('Pensent que les réserves mondiales d’or vont monter (12 mois)','Expect global gold reserves to rise (12 months)')}</span><span>${C.survey.globalUp} %</span></div><div class="st" style="background:var(--line)"><i style="background:var(--gold);width:${C.survey.globalUp}%"></i></div></div>
+          <div class="sbar"><div class="sl"><span>${L('Prévoient d’acheter plus d’or eux-mêmes','Plan to add gold themselves')}</span><span>${C.survey.ownUp} %</span></div><div class="st" style="background:var(--line)"><i style="background:var(--gold);width:${C.survey.ownUp}%"></i></div></div>
+          <div class="sbar"><div class="sl"><span>${L('Prévoient d’en vendre','Plan to sell')}</span><span>${C.survey.ownDown} %</span></div><div class="st" style="background:var(--line)"><i style="background:var(--gold);width:${C.survey.ownDown}%"></i></div></div>
+        </div></div>
+      </div>
+      ${cotG.length? `<div class="panel"><div class="ph"><div><h3>${L('Les banques sur le marché à terme (COT)','Banks in the futures market (COT)')}</h3><p>${L('Or COMEX · position nette (contrats) des commerciaux (banques et producteurs) vs les fonds spéculatifs','COMEX gold · net position (contracts) of commercials (banks and producers) vs speculative funds')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cbgCot"></canvas></div></div></div>`:''}
+      <div class="panel"><div class="ph"><div><h3>${L('Cours de l’or','Gold price')}</h3><p>${L('En direct (TradingView)','Live (TradingView)')}</p></div></div><div class="tvbox" id="tvCbg"></div></div>
+      <div class="explain"><p><b>${L('Pourquoi ça compte pour l’or','Why it matters for gold')}</b> : ${L('les banques centrales achètent de l’or pour dépendre moins du dollar américain et se protéger des sanctions et de l’inflation. Elles achètent sans regarder le prix et gardent longtemps : c’est un plancher solide sous le cours de l’or. Quand leurs achats ralentissent, l’or perd un de ses gros soutiens.','central banks buy gold to rely less on the US dollar and to protect themselves from sanctions and inflation. They buy regardless of price and hold for a long time: a solid floor under the gold price. When their buying slows, gold loses one of its big supports.')}</p><p>${L('La majorité des achats ne sont pas déclarés au FMI (on pense à la Chine et à des pays du Golfe) : le World Gold Council les estime à partir de l’offre et de la demande mondiales. La Chine déclare officiellement environ 2 400 t, mais plusieurs analystes pensent qu’elle en a beaucoup plus. Ces achats ne comptent pas dans ton score : c’est un contexte de long terme.','Most purchases are not reported to the IMF (China and Gulf countries are suspected): the World Gold Council estimates them from global supply and demand. China officially reports about 2,400 t, but several analysts think it holds far more. These purchases are not part of your score: they are long-term context.')}</p>${cotG.length? `<p>${L('Les commerciaux (banques de lingots et producteurs) sont presque toujours vendeurs nets : ils se couvrent. Quand leur position vendeuse rétrécit pendant une baisse, c’est souvent signe que le prix est bas.','Commercials (bullion banks and producers) are almost always net short: they hedge. When their short position shrinks during a selloff, the price is often low.')}</p>`:''}</div>
+      <p class="src">${L('Sources','Sources')} : ${C.src.map(s=>`<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>`).join(' · ')}${cotG.length?' · CFTC':''} · ${L(`publié le ${new Date(C.pub+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric',month:'long',year:'numeric'})} · * 2026 = janvier à septembre · réserves arrondies, chiffres officiels les plus récents`, `published ${new Date(C.pub+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric',month:'long',year:'numeric'})} · * 2026 = January to September · reserves rounded, latest official figures`)}</p>`;
+    box.querySelectorAll('#cbgSeg .chip').forEach(b=>b.addEventListener('click', ()=>{ state.cbView = b.dataset.v; renderCB(); }));
+    tv('tvCbg','symbol-overview',{symbols:[['OANDA:XAUUSD|12M']], chartOnly:false, width:'100%', height:360, chartType:'area', dateRanges:['1m|30','3m|60','12m|1D','60m|1W','all|1M']}, 360);
+    needChart().then(ok=>{ if(!ok) return;
+      const gold = css('--gold'), bull = css('--bull'), bear = css('--bear'), mu = css('--muted');
+      mkChart('cbgQ', {type:'bar', data:{labels:qs.map(x=>cbQ(x[0])), datasets:[{label:L('Tonnes','Tonnes'), data:qs.map(x=>x[1]), backgroundColor:qs.map((x,i)=>i===qs.length-1?gold:gold+'88')}, {type:'line', label:L('Moyenne 5 ans','5-yr average'), data:qs.map(()=>q.avg5), borderColor:mu, borderDash:[5,5], pointRadius:0}]}, options:{plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,1)+' t'}}}, scales:{y:{beginAtZero:true, ticks:{callback:v=>v+' t'}}}}});
+      mkChart('cbgA', {type:'bar', data:{labels:ann.map(x=>x[0]==='2010-21'?L('Moy. 2010-21','2010-21 avg.'):x[0]), datasets:[{label:L('Tonnes','Tonnes'), data:ann.map(x=>x[1]), backgroundColor:ann.map(x=>x[0]==='2010-21'?mu:gold)}]}, options:{plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>nf(c.parsed.y,0)+' t'}}}, scales:{y:{beginAtZero:true, ticks:{callback:v=>v+' t'}}}}});
+      const v = state.cbView||'q', arr = v==='y' ? C.ytd : v==='m' ? mo.rows : C.buyersQ;
+      mkChart('cbgB', {type:'bar', data:{labels:arr.map(x=>cbN(x[0])), datasets:[{label:v==='y'?L('Depuis janvier','Since January'):v==='m'?cbM(mo.label):cbQ(q.label), data:arr.map(x=>x[1]), backgroundColor:arr.map(x=>x[1]<0?bear:bull)}]}, options:{indexAxis:'y', plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>sg2(c.parsed.x,0)+' t'}}}, scales:{x:{ticks:{callback:x=>x+' t'}}}}});
+      const ms = C.monthly;
+      mkChart('cbgM', {type:'bar', data:{labels:ms.map(x=>cbM(x[0])), datasets:[{label:L('Tonnes','Tonnes'), data:ms.map(x=>x[1]), backgroundColor:ms.map(x=>x[1]<0?bear:gold)}]}, options:{plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>sg2(c.parsed.y,0)+' t'}}}, scales:{y:{beginAtZero:true, ticks:{callback:x=>x+' t'}}}}});
+      const H = C.holders;
+      mkChart('cbgH', {type:'bar', data:{labels:H.map(x=>cbN(x[0])), datasets:[{label:L('Tonnes','Tonnes'), data:H.map(x=>x[1]), backgroundColor:H.map(x=>['CN','PL','UZ','KZ'].includes(x[0])?gold:mu)}]}, options:{indexAxis:'y', plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>nf(c.parsed.x,0)+' t · '+nf(c.parsed.x/usd*100,1)+L(' % de ces pays',' % of these countries')}}}, scales:{x:{ticks:{callback:x=>nf(x,0)}}}, onClick:(ev,els)=>{ if(els[0]){ const h = H[els[0].index]; $('cbgHx').textContent = L(`${cbN(h[0])} : ${nf(h[1],0)} t, soit ${nf(h[1]/usd*100,1)} % de l’or de ces ${H.length} pays. En doré : les pays qui achètent le plus en ce moment.`, `${cbN(h[0])}: ${nf(h[1],0)} t, or ${nf(h[1]/usd*100,1)}% of these ${H.length} countries’ gold. Gold bars: the biggest buyers right now.`); } }}});
+      if(cotG.length){ const g = cotG.slice(-52);
+        mkChart('cbgCot', {type:'line', data:{labels:g.map(r=>perLbl(r[0])), datasets:[{label:L('Commerciaux (banques, producteurs)','Commercials (banks, producers)'), data:g.map(r=>r[3]-r[4]), borderColor:bear, pointRadius:0, tension:.2}, {label:L('Fonds spéculatifs','Speculative funds'), data:g.map(r=>r[1]-r[2]), borderColor:bull, pointRadius:0, tension:.2}]}, options:{scales:{x:{ticks:{maxTicksLimit:8}}, y:{ticks:{callback:x=>nf(x/1000,0)+' k'}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,0)}}}}});
+      }
+    });
+  }
+
   // ---------- Nouvelles ----------
   state.newsA = state.newsA || 'all';
   function newsItem(n){
@@ -1645,10 +1722,11 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     else if(pg==='fed') renderRates();
     else if(pg==='cot') renderCOT();
     else if(pg==='sent') renderSent();
+    else if(pg==='cbg') renderCB();
     else if(pg==='news') renderNews();
   }
   function p2Page(pg){
-    if(['home','eco','fed','cot','sent'].includes(pg)) loadLive().then(()=>{ if(state.page===pg) renderP2(); });
+    if(['home','eco','fed','cot','sent','cbg'].includes(pg)) loadLive().then(()=>{ if(state.page===pg) renderP2(); });
     renderP2();
   }
   // ---------- mode sombre / clair ----------
@@ -1677,7 +1755,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', charts:'graphiques', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', charts:'graphiques', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
     p2Page(pg);
   }
@@ -1687,7 +1765,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
@@ -1705,6 +1783,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     state.calendar = Array.isArray(d.calendar) ? d.calendar : [];
     state.fed = d.fed || null;
     state.news = Array.isArray(d.news) ? d.news : [];
+    if(d.cbgold) state.cbgold = d.cbgold;
     if(d.live) setSnap(d.live);
   }
   async function refresh(){
@@ -1735,7 +1814,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
     'Vue d’ensemble':'Overview','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
-    'Résultats':'Earnings','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
+    'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
     'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
     'Battu = BPA et revenus au-dessus des prévisions; Raté = les deux en dessous; Mitigé = un des deux. Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.':'Beat = EPS and revenue above forecasts; Miss = both below; Mixed = one of the two. The % under the actual = gap vs forecast. Reaction = stock move after the report. Earnings are not part of the score. Updated automatically with the scorecard.',

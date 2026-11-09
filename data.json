@@ -89,7 +89,7 @@
    "seasonPeriod": "août à octobre"
   },
   "spx500": {
-   "cotLong": 39.0,
+   "cotLong": 39,
    "cotChange": 0.87,
    "crowdLong": 55,
    "season": "bull",
@@ -101,12 +101,12 @@
    "cotChange": 5.3,
    "crowdLong": 61,
    "season": "neutral",
-   "seasonPct": -1.0,
+   "seasonPct": -1,
    "seasonPeriod": "août à octobre"
   },
   "usd": {
    "season": "bull",
-   "seasonPct": 2.0,
+   "seasonPct": 2,
    "seasonPeriod": "août à octobre",
    "cotLong": 63.67,
    "cotChange": -0.92,
@@ -14902,5 +14902,255 @@
     ]
    ]
   }
+ },
+ "cbgold": {
+  "asOf": "2026-09-30",
+  "pub": "2026-11-05",
+  "annual": [
+   [
+    "2010-21",
+    473
+   ],
+   [
+    "2022",
+    1136
+   ],
+   [
+    "2023",
+    1037
+   ],
+   [
+    "2024",
+    1092.4
+   ],
+   [
+    "2025",
+    863.3
+   ],
+   [
+    "2026*",
+    675
+   ]
+  ],
+  "quarterly": [
+   [
+    "2025-Q2",
+    177.9
+   ],
+   [
+    "2025-Q3",
+    226.3
+   ],
+   [
+    "2025-Q4",
+    230
+   ],
+   [
+    "2026-Q1",
+    57
+   ],
+   [
+    "2026-Q2",
+    288.9
+   ],
+   [
+    "2026-Q3",
+    321.2
+   ]
+  ],
+  "q": {
+   "label": "2026-Q3",
+   "total": 321.2,
+   "reported": 120,
+   "unreported": 201,
+   "yoy": 42,
+   "avg5": 227
+  },
+  "monthly": [
+   [
+    "2026-02",
+    19
+   ],
+   [
+    "2026-04",
+    19
+   ],
+   [
+    "2026-05",
+    41
+   ],
+   [
+    "2026-07",
+    23
+   ],
+   [
+    "2026-08",
+    39
+   ],
+   [
+    "2026-09",
+    61
+   ]
+  ],
+  "month": {
+   "label": "2026-09",
+   "total": 61,
+   "rows": [
+    [
+     "PL",
+     25
+    ],
+    [
+     "CN",
+     23
+    ],
+    [
+     "UZ",
+     7
+    ],
+    [
+     "KZ",
+     5
+    ],
+    [
+     "JO",
+     4
+    ],
+    [
+     "CZ",
+     2
+    ],
+    [
+     "BO",
+     1
+    ]
+   ]
+  },
+  "buyersQ": [
+   [
+    "CN",
+    63
+   ],
+   [
+    "PL",
+    40
+   ],
+   [
+    "KZ",
+    14
+   ],
+   [
+    "UZ",
+    14
+   ],
+   [
+    "CZ",
+    5
+   ],
+   [
+    "RU",
+    -19
+   ]
+  ],
+  "ytd": [
+   [
+    "PL",
+    123
+   ],
+   [
+    "CN",
+    80
+   ],
+   [
+    "UZ",
+    57
+   ],
+   [
+    "KZ",
+    44
+   ],
+   [
+    "CZ",
+    16
+   ],
+   [
+    "RU",
+    -72
+   ]
+  ],
+  "holders": [
+   [
+    "US",
+    8133.5
+   ],
+   [
+    "DE",
+    3350
+   ],
+   [
+    "IT",
+    2451.8
+   ],
+   [
+    "FR",
+    2437
+   ],
+   [
+    "CN",
+    2410
+   ],
+   [
+    "RU",
+    2265
+   ],
+   [
+    "CH",
+    1040
+   ],
+   [
+    "IN",
+    880
+   ],
+   [
+    "JP",
+    846
+   ],
+   [
+    "PL",
+    673
+   ],
+   [
+    "NL",
+    612.5
+   ],
+   [
+    "UZ",
+    446
+   ],
+   [
+    "KZ",
+    382
+   ]
+  ],
+  "survey": {
+   "year": 2025,
+   "globalUp": 95,
+   "ownUp": 43,
+   "ownDown": 0
+  },
+  "src": [
+   [
+    "World Gold Council · Gold Demand Trends T3 2026",
+    "https://www.gold.org/goldhub/research/gold-demand-trends/gold-demand-trends-q3-2026/central-banks"
+   ],
+   [
+    "World Gold Council · statistiques mensuelles",
+    "https://www.gold.org/goldhub/data/gold-reserves-by-country"
+   ],
+   [
+    "FMI · International Financial Statistics",
+    "https://data.imf.org/"
+   ]
+  ]
  }
 }
