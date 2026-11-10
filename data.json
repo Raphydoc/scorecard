@@ -295,17 +295,6 @@
    "a": null
   },
   {
-   "date": "2026-11-10",
-   "time": "08:30",
-   "id": null,
-   "unit": "%",
-   "name": "CPI de base YoY (octobre)",
-   "note": "Non publié par le BLS : pas de données d’octobre 2025 (shutdown)",
-   "prev": 2.6,
-   "f": null,
-   "a": null
-  },
-  {
    "ai": true,
    "assets": {
     "nasdaq": 1
@@ -403,15 +392,6 @@
    "time": "16:05"
   },
   {
-   "a": null,
-   "date": "2026-11-13",
-   "f": 6.6,
-   "id": "ppi",
-   "name": "PPI YoY (octobre)",
-   "prev": 6.3,
-   "time": "08:30"
-  },
-  {
    "date": "2026-11-13",
    "time": "08:30",
    "id": null,
@@ -429,17 +409,6 @@
    "name": "PPI de base MoM (octobre)",
    "note": "Sans énergie ni nourriture",
    "prev": 0.7,
-   "f": null,
-   "a": null
-  },
-  {
-   "date": "2026-11-13",
-   "time": "08:30",
-   "id": null,
-   "unit": "%",
-   "name": "PPI de base YoY (octobre)",
-   "note": "Sans énergie ni nourriture",
-   "prev": 5.0,
    "f": null,
    "a": null
   },
@@ -615,43 +584,13 @@
    "time": "08:30"
   },
   {
-   "a": null,
-   "date": "2026-11-25",
-   "f": null,
-   "id": "pce",
-   "name": "PCE YoY (octobre)",
-   "prev": 3.6,
-   "time": "08:30"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "08:30",
-   "id": null,
-   "unit": "%",
-   "name": "PCE MoM (octobre)",
-   "prev": 0.5,
-   "f": null,
-   "a": null
-  },
-  {
    "date": "2026-11-25",
    "time": "08:30",
    "id": null,
    "unit": "%",
    "name": "PCE de base MoM (octobre)",
-   "note": "Sans énergie ni nourriture",
-   "prev": 0.3,
-   "f": null,
-   "a": null
-  },
-  {
-   "date": "2026-11-25",
-   "time": "08:30",
-   "id": null,
-   "unit": "%",
-   "name": "PCE de base YoY (octobre)",
    "note": "Sans énergie ni nourriture · la mesure préférée de la Fed",
-   "prev": 3.1,
+   "prev": 0.3,
    "f": null,
    "a": null
   },
