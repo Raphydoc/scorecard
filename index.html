@@ -629,6 +629,59 @@ td.hs b{font:700 15px/1 var(--f-mono)}
   a{transition:color .2s} a:hover{color:var(--gold)}
   .tablewrap::-webkit-scrollbar-thumb:hover{background:var(--gold)}
 }
+/* ===== Cases cliquables et panneau de détails ===== */
+[data-dd]{cursor:pointer}
+td[data-dd]:hover,.dcell[data-dd]:hover,.fcard[data-dd]:hover{outline:1px solid var(--gold);outline-offset:-1px;filter:brightness(1.15)}
+table.topset td.tw{min-width:84px;padding:3px 4px;height:38px;line-height:1.1}
+table.topset td.tw b{display:block;font:800 9px/1.15 var(--f-body);letter-spacing:.06em;white-space:nowrap}
+table.topset td.tw small{display:block;font:600 10px/1.2 var(--f-mono);opacity:.85;margin-top:1px}
+td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{transform:scale(1.06);box-shadow:0 0 0 2px var(--gold)}
+.dd{position:fixed;inset:0;z-index:1000}
+.ddbg{position:absolute;inset:0;background:rgba(0,0,0,.55);backdrop-filter:blur(2px);opacity:0;transition:opacity .28s}
+.ddp{position:absolute;top:0;right:0;bottom:0;width:min(480px,100vw);background:var(--panel);border-left:1px solid var(--gold);box-shadow:-20px 0 60px rgba(0,0,0,.5);overflow-y:auto;padding:18px 18px 28px;transform:translateX(100%);transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+.dd.open .ddbg{opacity:1} .dd.open .ddp{transform:none}
+.ddx{position:sticky;top:0;float:right;width:34px;height:34px;border:1px solid var(--line);border-radius:4px;background:var(--panel-2);color:var(--fg);font-size:15px;cursor:pointer;z-index:2;transition:transform .2s,border-color .2s}
+.ddx:hover{transform:rotate(90deg);border-color:var(--gold);color:var(--gold)}
+.ddh{display:grid;gap:8px;padding-bottom:14px;border-bottom:1px solid var(--line);margin-bottom:12px}
+.ddh .vk{font:700 10px/1 var(--f-mono);letter-spacing:.16em;color:var(--gold);text-transform:uppercase}
+.ddh h3{margin:0;font:800 20px/1.2 var(--f-body);letter-spacing:-.01em;padding-right:40px}
+.ddbadge{justify-self:start;font:700 10.5px/1 var(--f-mono);letter-spacing:.1em;padding:5px 8px;border-radius:3px;border:1px solid var(--line);color:var(--muted)}
+.ddbadge.b{color:var(--bull);border-color:var(--bull);background:var(--tint-b)} .ddbadge.r{color:var(--bear);border-color:var(--bear);background:var(--tint-r)}
+.ddword{font:800 26px/1.1 var(--f-body);letter-spacing:.04em;color:var(--muted)}
+.ddword.b{color:var(--bull)} .ddword.r{color:var(--bear)} .ddword.g{color:var(--gold)} .ddword.l{color:#A891F5}
+.ddgrid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.ddr{border:1px solid var(--line);border-radius:5px;background:var(--panel-2);padding:8px 10px;display:grid;gap:3px}
+.ddr span{font:600 9.5px/1.2 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)} .ddr b{font:600 15px/1.2 var(--f-mono)}
+.ddr b.pos{color:var(--bull)} .ddr b.neg{color:var(--bear)}
+.ddsec{margin-top:14px} .ddsec h4{margin:0 0 8px;font:700 10.5px/1.2 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--fg);display:flex;gap:6px;align-items:center}
+.ddsec h4::before{content:"";width:6px;height:6px;background:var(--gold);flex:none}
+.ddsec p{margin:0 0 6px;font-size:13.5px;line-height:1.55;color:var(--fg)} .ddnote{color:var(--muted)!important;font-size:12.5px!important}
+.ddsrc{font-size:11px;color:var(--muted);margin:4px 0 0}
+.ddnext{border:1px solid var(--gold);border-radius:6px;padding:10px;background:var(--tint-g);display:grid;gap:3px}
+.ddnext .vk{font:700 9.5px/1 var(--f-mono);letter-spacing:.16em;color:var(--gold)} .ddnext small{color:var(--muted)}
+.ddall{display:flex;flex-wrap:wrap;gap:6px}
+.ddchip{border:1px solid var(--line);border-radius:4px;background:var(--panel-2);color:var(--muted);font:700 10.5px/1 var(--f-body);letter-spacing:.06em;padding:6px 8px;display:inline-flex;gap:6px;align-items:center;cursor:pointer;transition:transform .15s,border-color .15s}
+.ddchip em{font:600 10.5px/1 var(--f-mono);font-style:normal}
+.ddchip:hover{transform:translateY(-2px);border-color:var(--gold)}
+.ddchip.b{color:var(--bull);background:var(--tint-b);border-color:color-mix(in srgb,var(--bull) 45%,transparent)} .ddchip.r{color:var(--bear);background:var(--tint-r);border-color:color-mix(in srgb,var(--bear) 45%,transparent)}
+.ddchip.g{color:var(--gold);background:var(--tint-g)} .ddchip.l{color:#A891F5;background:var(--tint-l)}
+.dditems{display:grid;gap:6px}
+.dditem{display:grid;grid-template-columns:minmax(0,1fr) auto auto;grid-template-rows:auto auto;gap:2px 10px;align-items:center;text-align:left;border:1px solid var(--line);border-left-width:3px;border-radius:4px;background:var(--panel-2);color:var(--fg);padding:8px 10px;cursor:pointer;font:inherit;transition:transform .15s,border-color .15s}
+.dditem:hover{transform:translateX(3px);border-color:var(--gold)}
+.dditem span{font-size:13px} .dditem em{font:800 10px/1 var(--f-body);letter-spacing:.06em;font-style:normal} .dditem b{font:700 14px/1 var(--f-mono);grid-row:1/3;grid-column:3}
+.dditem small{grid-column:1/3;font:500 11px/1.2 var(--f-mono);color:var(--muted)}
+.dditem.b{border-left-color:var(--bull)} .dditem.b em,.dditem.b b{color:var(--bull)} .dditem.r{border-left-color:var(--bear)} .dditem.r em,.dditem.r b{color:var(--bear)}
+.ddlinks{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.rsibar{position:relative;grid-column:1/-1;height:10px;border-radius:5px;background:linear-gradient(90deg,var(--bull) 0 30%,var(--panel-2) 30% 70%,var(--bear) 70% 100%);margin:6px 0}
+.rsibar i{position:absolute;top:-4px;width:4px;height:18px;margin-left:-2px;background:var(--gold);border-radius:2px;box-shadow:0 0 8px var(--gold)}
+.rsibar span{position:absolute;top:0;bottom:0;width:1px;background:var(--fg);opacity:.4}
+@media (prefers-reduced-motion:no-preference){
+  .dd.open .ddh,.dd.open .ddgrid,.dd.open .ddsec,.dd.open .ddlinks{animation:fadeUp .45s cubic-bezier(.2,.7,.2,1) both}
+  .dd.open .ddgrid{animation-delay:.06s} .dd.open .ddsec{animation-delay:.12s} .dd.open .ddlinks{animation-delay:.2s}
+  .dd.open .ddr,.dd.open .ddchip,.dd.open .dditem{animation:popIn .4s cubic-bezier(.2,.7,.2,1) both}
+  .dd.open .ddword{animation:popIn .5s cubic-bezier(.2,.7,.2,1) both .1s}
+}
+@media (max-width:560px){ .ddp{width:100vw;border-left:0} .ddgrid{grid-template-columns:1fr 1fr} .ddword{font-size:22px} }
 </style>
 
 </head>
@@ -975,24 +1028,24 @@ td.hs b{font:700 15px/1 var(--f-mono)}
     let h = '';
 
     h += head('Technique', catChip(C.cats.tech,3), ['','','','']);
-    h += `<tr><td class="name">Tendance 4H / Daily</td><td class="sig">${chip(r.trend)}</td>
+    h += `<tr><td class="name">Tendance 4H / Daily</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
       <td class="desc" colspan="4">${E?triSelect('in-trend',A.trend):'Ta lecture de la tendance sur le 4H et le Daily (±2)'}</td></tr>`;
-    h += `<tr><td class="name">Saisonnalité (3 derniers mois)</td><td class="sig">${chip(r.season)}</td>
+    h += `<tr><td class="name">Saisonnalité (3 derniers mois)</td><td class="sig" data-dd="top|${asset}|season">${chip(r.season)}</td>
       <td class="desc" colspan="4">${A.seasonPct!=null&&A.seasonPct!==undefined ? 'Variation '+(A.seasonPeriod?'de '+esc(A.seasonPeriod):'des 3 derniers mois')+' : '+(A.seasonPct>0?'+':'')+String(A.seasonPct).replace('.',',').replace('-','−')+' % (plus de +1 % = +1, moins de −1 % = −1). Mise à jour chaque mois.' : 'Variation des 3 derniers mois complets, mise à jour chaque mois (±1).'}</td></tr>`;
 
     h += head('Activité institutionnelle', catChip(C.cats.inst,2), ['Long %','Short %','Changement %','']);
     const cl = num(A.cotLong);
-    h += `<tr><td class="name">COT · positionnement net<small>non-commerciaux</small></td><td class="sig">${cl===null?chip(null):chip(r.cotNet)}</td>
+    h += `<tr><td class="name">COT · positionnement net<small>non-commerciaux</small></td><td class="sig" data-dd="top|${asset}|cot">${cl===null?chip(null):chip(r.cotNet)}</td>
       <td class="num">${false?numInput('in-cotLong',A.cotLong,'min="0" max="100"'):fmt(cl,'%')}</td>
       <td class="num">${cl===null?'—':fmt(100-cl,'%')}</td><td class="num"></td><td></td></tr>`;
     const cc = num(A.cotChange);
-    h += `<tr><td class="name">COT · dernier changement</td><td class="sig">${cc===null?chip(null):chip(r.cotChg)}</td>
+    h += `<tr><td class="name">COT · dernier changement</td><td class="sig" data-dd="top|${asset}|cot">${cc===null?chip(null):chip(r.cotChg)}</td>
       <td class="num"></td><td class="num"></td>
       <td class="num ${cc>0?'pos':cc<0?'neg':''}">${false?numInput('in-cotChange',A.cotChange):fmt(cc,'%',true)}</td><td></td></tr>`;
 
     h += head('Sentiment de la foule', catChip(C.cats.crowd,2), ['Retail long %','Retail short %','','']);
     const cr = num(A.crowdLong);
-    h += `<tr><td class="name">Positionnement retail<small>clients d\u2019IG · contrarien : foule très longue = baissier</small></td><td class="sig">${cr===null?chip(null):chip(r.crowd)}</td>
+    h += `<tr><td class="name">Positionnement retail<small>clients d\u2019IG · contrarien : foule très longue = baissier</small></td><td class="sig" data-dd="top|${asset}|crowd">${cr===null?chip(null):chip(r.crowd)}</td>
       <td class="num">${false?numInput('in-crowdLong',A.crowdLong,'min="0" max="100"'):fmt(cr,'%')}</td>
       <td class="num">${cr===null?'—':fmt(100-cr,'%')}</td><td></td><td></td></tr>`;
 
@@ -1005,7 +1058,7 @@ td.hs b{font:700 15px/1 var(--f-mono)}
         const a = num(v.a), f = num(v.f), s = (a!==null && f!==null) ? Math.round((a-f)*10000)/10000 : null;
         const sig = r[ind.id];
         const sc = sig>0?'pos':sig<0?'neg':'';
-        h += `<tr${wOf(asset,ind.id)===0?' class="muted"':''}><td class="name">${esc(((state.econ.values||{})[ind.id]||{}).label||ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${wOf(asset,ind.id)===0?` <span class="info">info seulement</span>`:''}${(((state.econ.values||{})[ind.id]||{}).note)?`<small>${esc(state.econ.values[ind.id].note)}</small>`:(ind.hint?`<small>${ind.hint}</small>`:'')}</td><td class="sig">${chip(sig)}</td>
+        h += `<tr${wOf(asset,ind.id)===0?' class="muted"':''}><td class="name">${esc(((state.econ.values||{})[ind.id]||{}).label||ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${wOf(asset,ind.id)===0?` <span class="info">info seulement</span>`:''}${(((state.econ.values||{})[ind.id]||{}).note)?`<small>${esc(state.econ.values[ind.id].note)}</small>`:(ind.hint?`<small>${ind.hint}</small>`:'')}</td><td class="sig" data-dd="top|${asset}|${ind.id}">${chip(sig)}</td>
           <td class="num">${false?numInput('a-'+ind.id,v.a):fmt(a,ind.unit)}</td>
           <td class="num">${false?numInput('f-'+ind.id,v.f):fmt(f,ind.unit)}</td>
           <td class="num ${sc}">${false?'':fmt(s,ind.unit,true)}</td>
@@ -1013,7 +1066,7 @@ td.hs b{font:700 15px/1 var(--f-mono)}
       });
       if(cat==='infl'){
         const y10 = state.econ.yield10y;
-        h += `<tr><td class="name">Rendement 10 ans (tendance)${wOf(asset,'yield10')>1?` <span class="wt">×${wOf(asset,'yield10')}</span>`:''}</td><td class="sig">${chip(r.yield10)}</td>
+        h += `<tr><td class="name">Rendement 10 ans (tendance)${wOf(asset,'yield10')>1?` <span class="wt">×${wOf(asset,'yield10')}</span>`:''}</td><td class="sig" data-dd="top|${asset}|yield10">${chip(r.yield10)}</td>
           <td class="desc" colspan="4">${E&&EDIT10?`<select id="in-yield10">${opt('falling',y10,'En baisse')}${opt('flat',y10,'Stable')}${opt('rising',y10,'En hausse')}</select>`
           : (y10==='falling'?'Le 10 ans baisse : taux réels et dollar sous pression':y10==='rising'?'Le 10 ans monte : coût d’opportunité plus élevé pour l’or':y10==='flat'?'Le 10 ans est stable':'Pas encore de donnée')}</td></tr>`;
       }
@@ -1192,7 +1245,7 @@ td.hs b{font:700 15px/1 var(--f-mono)}
       TOP_COLS.forEach(col=>{
         const v = topCell(a, C, col);
         if(v===null){ h += `<td class="na">—</td>`; return; }
-        h += `<td class="${v>0?'bull':v<0?'bear':'z'}${Math.abs(v)===1?' w':''}">${v>0?'+':v<0?'−':'+'}${Math.abs(v)}</td>`;
+        h += topWordCell(a, C, col, v);
       });
       h += `</tr>`;
     });
@@ -2030,9 +2083,9 @@ td.hs b{font:700 15px/1 var(--f-mono)}
     const n = f => all.filter(k=>f(T[k])).length;
     const nb = n(t=>t.trend==='bull'), nr = n(t=>t.trend==='bear'), ob = n(t=>t.mom==='overbought'), os = n(t=>t.mom==='oversold'), hv = n(t=>t.vol==='high');
     const bp = Math.round(nb/Math.max(1,nb+nr)*100);
-    const cell = (g,k,sub,i) => { const w = tw(g,k); return `<td class="hc ${w.c}" style="--d:${i*35}ms"><b>${esc(w.t)}</b><small>${sub}</small></td>`; };
+    let curA = ''; const cell = (g,k,sub,i) => { const w = tw(g,k); return `<td class="hc ${w.c}" data-dd="tech|${curA}|${g}" style="--d:${i*35}ms"><b>${esc(w.t)}</b><small>${sub}</small></td>`; };
     let rows = '';
-    list.forEach((k,i)=>{ const t = T[k], c = t.chg1d||0, liqUp = t.liq && t.liq.side==='above';
+    list.forEach((k,i)=>{ curA = k; const t = T[k], c = t.chg1d||0, liqUp = t.liq && t.liq.side==='above';
       rows += `<tr class="${k===state.techSel?'sel':''}" data-k="${k}">
         <td class="hn"><span class="nm">${esc(TOP_NAMES[k])}</span><span class="px">${pxFmt(t.px)} <em class="${c>0?'up':c<0?'dn':''}">${sg2(c,2)} %</em></span>${sparkSvg(t.spark.slice(-40), (t.chg1m||0)>=0)}</td>
         ${cell('trend',t.trend, `MM200 ${sg2(t.d200,1)} %`, i)}
@@ -2040,9 +2093,9 @@ td.hs b{font:700 15px/1 var(--f-mono)}
         ${cell('macd',t.macd, L('MACD 12/26','MACD 12/26'), i+2)}
         ${cell('vol',t.vol, `${nf(t.volAnn,1)} % ${L('ann.','ann.')}`, i+3)}
         ${cell('struct',t.struct, L('sommets / creux 20 j','20-day highs / lows'), i+4)}
-        <td class="hc liq" style="--d:${(i+5)*35}ms"><b>${liqUp?L('POOL AU-DESSUS','POOL ABOVE'):L('POOL EN DESSOUS','POOL BELOW')}</b><small>${liqUp?'↑':'↓'} ${sg2(t.liq.d,2)} % · ${pxFmt(t.liq.lvl)}</small></td>
+        <td class="hc liq" data-dd="tech|${k}|liq" style="--d:${(i+5)*35}ms"><b>${liqUp?L('POOL AU-DESSUS','POOL ABOVE'):L('POOL EN DESSOUS','POOL BELOW')}</b><small>${liqUp?'↑':'↓'} ${sg2(t.liq.d,2)} % · ${pxFmt(t.liq.lvl)}</small></td>
         ${cell('weekly',t.weekly, L('MM 20 sem.','20-wk MA'), i+6)}
-        <td class="hs" style="--d:${(i+7)*35}ms"><div class="sbarh"><i class="${t.score>0?'b':t.score<0?'r':''}" style="--w:${Math.abs(t.score)*10}%;${t.score<0?'right:50%':'left:50%'}"></i></div><b class="${t.score>0?'up':t.score<0?'dn':''}">${sg2(t.score,0)}</b></td>
+        <td class="hs" data-dd="tech|${k}|all" style="--d:${(i+7)*35}ms"><div class="sbarh"><i class="${t.score>0?'b':t.score<0?'r':''}" style="--w:${Math.abs(t.score)*10}%;${t.score<0?'right:50%':'left:50%'}"></i></div><b class="${t.score>0?'up':t.score<0?'dn':''}">${sg2(t.score,0)}</b></td>
       </tr>`; });
     const S = T[state.techSel];
     box.innerHTML = `
@@ -2095,12 +2148,12 @@ td.hs b{font:700 15px/1 var(--f-mono)}
     const ff = R.ff||[], ffL = ff.length ? ff[ff.length-1][1] : null, ffP = ff.length>13 ? ff[ff.length-14][1] : null;
     const cells = [];
     if(ffL!=null) cells.push({h:L('Politique de la Fed','Fed policy'), w: ffP==null||ffL===ffP ? L('EN PAUSE','ON HOLD') : ffL<ffP ? L('BAISSE DE TAUX','CUTTING') : L('HAUSSE DE TAUX','HIKING'), v:`${nf(ffL,2)} %`, s:ffP!=null&&ffL!==ffP? `${sg2(ffL-ffP,2)} pt ${L('en 3 mois','in 3 months')}`:L('taux directeur (borne haute)','policy rate (upper bound)'), c: ffP!=null&&ffL<ffP?'b':ffP!=null&&ffL>ffP?'r':'n'});
-    if(cpi.a!=null){ const yoy = !((cpi.label||'').match(/MoM/)); cells.push({h:L('Inflation','Inflation'), w: yoy ? (cpi.a>3?L('BIEN AU-DESSUS DE LA CIBLE','WELL ABOVE TARGET'):cpi.a>2.2?L('AU-DESSUS DE LA CIBLE','ABOVE TARGET'):L('PRÈS DE LA CIBLE','NEAR TARGET')) : (cpi.a>0.3?L('ACCÉLÈRE','ACCELERATING'):cpi.a<0.2?L('RALENTIT','COOLING'):L('STABLE','STEADY')), v:`${nf(cpi.a,1)} %`, s:`${esc(cpi.label||'CPI YoY')} · ${L('prévu','exp.')} ${nf(cpi.f,1)} %`, c: cpi.a>cpi.f?'g':cpi.a<cpi.f?'b':'n'}); }
-    if(gdp.a!=null) cells.push({h:L('Croissance','Growth'), w: gdp.a>=2.5?L('EN EXPANSION','EXPANDING'):gdp.a>=1?L('MODÉRÉE','MODERATE'):gdp.a>=0?L('FAIBLE','WEAK'):L('CONTRACTION','CONTRACTION'), v:`${nf(gdp.a,1)} %`, s:`${L('PIB annualisé','GDP annualized')} · ${L('prévu','exp.')} ${nf(gdp.f,1)} %`, c: gdp.a>=gdp.f?'b':'r'});
-    if(unemp.a!=null) cells.push({h:L('Emploi','Labour'), w: (nfp.a!=null&&nfp.a>=150&&unemp.a<4.3)?L('SOLIDE','STRONG'):unemp.a>=4.5||(nfp.a!=null&&nfp.a<50)?L('S’AFFAIBLIT','SOFTENING'):L('STABLE','STABLE'), v:`${nf(unemp.a,1)} %`, s:`${L('chômage','unemployment')}${nfp.a!=null?` · NFP ${sg2(nfp.a,0)}k`:''}`, c: unemp.a<=unemp.f?'b':'r'});
-    if(mfg.a!=null){ const avg = srv.a!=null ? (mfg.a+srv.a)/2 : mfg.a; cells.push({h:L('Activité (ISM)','Activity (ISM)'), w: avg>=52?L('EXPANSION','EXPANSION'):avg>=50?L('LÉGÈRE EXPANSION','MILD EXPANSION'):L('CONTRACTION','CONTRACTION'), v:nf(mfg.a,1), s:`${L('manuf.','mfg')} ${nf(mfg.a,1)} · ${L('services','services')} ${nf(srv.a,1)}`, c: avg>=50?'b':'r'}); }
-    if(conf.a!=null) cells.push({h:L('Consommateur','Consumer'), w: conf.a>=conf.f?L('EN AMÉLIORATION','IMPROVING'):L('EN BAISSE','WEAKENING'), v:nf(conf.a,1), s:`${L('confiance','confidence')}${retail.a!=null?` · ${L('ventes','retail')} ${sg2(retail.a,1)} %`:''}`, c: conf.a>=conf.f?'b':'r'});
-    const y = state.econ.yield10y, y10 = R.y10||[]; if(y) cells.push({h:L('Taux 10 ans','10Y yield'), w: y==='rising'?L('EN HAUSSE','RISING'):y==='falling'?L('EN BAISSE','FALLING'):L('STABLE','FLAT'), v: y10.length?`${nf(y10[y10.length-1][1],2)} %`:'—', s:L('tendance sur 1 mois','1-month trend'), c: y==='rising'?'r':y==='falling'?'b':'n'});
+    if(cpi.a!=null){ const yoy = !((cpi.label||'').match(/MoM/)); cells.push({id:'cpi', h:L('Inflation','Inflation'), w: yoy ? (cpi.a>3?L('BIEN AU-DESSUS DE LA CIBLE','WELL ABOVE TARGET'):cpi.a>2.2?L('AU-DESSUS DE LA CIBLE','ABOVE TARGET'):L('PRÈS DE LA CIBLE','NEAR TARGET')) : (cpi.a>0.3?L('ACCÉLÈRE','ACCELERATING'):cpi.a<0.2?L('RALENTIT','COOLING'):L('STABLE','STEADY')), v:`${nf(cpi.a,1)} %`, s:`${esc(cpi.label||'CPI YoY')} · ${L('prévu','exp.')} ${nf(cpi.f,1)} %`, c: cpi.a>cpi.f?'g':cpi.a<cpi.f?'b':'n'}); }
+    if(gdp.a!=null) cells.push({id:'gdp', h:L('Croissance','Growth'), w: gdp.a>=2.5?L('EN EXPANSION','EXPANDING'):gdp.a>=1?L('MODÉRÉE','MODERATE'):gdp.a>=0?L('FAIBLE','WEAK'):L('CONTRACTION','CONTRACTION'), v:`${nf(gdp.a,1)} %`, s:`${L('PIB annualisé','GDP annualized')} · ${L('prévu','exp.')} ${nf(gdp.f,1)} %`, c: gdp.a>=gdp.f?'b':'r'});
+    if(unemp.a!=null) cells.push({id:'unemp', h:L('Emploi','Labour'), w: (nfp.a!=null&&nfp.a>=150&&unemp.a<4.3)?L('SOLIDE','STRONG'):unemp.a>=4.5||(nfp.a!=null&&nfp.a<50)?L('S’AFFAIBLIT','SOFTENING'):L('STABLE','STABLE'), v:`${nf(unemp.a,1)} %`, s:`${L('chômage','unemployment')}${nfp.a!=null?` · NFP ${sg2(nfp.a,0)}k`:''}`, c: unemp.a<=unemp.f?'b':'r'});
+    if(mfg.a!=null){ const avg = srv.a!=null ? (mfg.a+srv.a)/2 : mfg.a; cells.push({id:'pmi_mfg', h:L('Activité (ISM)','Activity (ISM)'), w: avg>=52?L('EXPANSION','EXPANSION'):avg>=50?L('LÉGÈRE EXPANSION','MILD EXPANSION'):L('CONTRACTION','CONTRACTION'), v:nf(mfg.a,1), s:`${L('manuf.','mfg')} ${nf(mfg.a,1)} · ${L('services','services')} ${nf(srv.a,1)}`, c: avg>=50?'b':'r'}); }
+    if(conf.a!=null) cells.push({id:'conf', h:L('Consommateur','Consumer'), w: conf.a>=conf.f?L('EN AMÉLIORATION','IMPROVING'):L('EN BAISSE','WEAKENING'), v:nf(conf.a,1), s:`${L('confiance','confidence')}${retail.a!=null?` · ${L('ventes','retail')} ${sg2(retail.a,1)} %`:''}`, c: conf.a>=conf.f?'b':'r'});
+    const y = state.econ.yield10y, y10 = R.y10||[]; if(y) cells.push({id:'yield10', h:L('Taux 10 ans','10Y yield'), w: y==='rising'?L('EN HAUSSE','RISING'):y==='falling'?L('EN BAISSE','FALLING'):L('STABLE','FLAT'), v: y10.length?`${nf(y10[y10.length-1][1],2)} %`:'—', s:L('tendance sur 1 mois','1-month trend'), c: y==='rising'?'r':y==='falling'?'b':'n'});
     return cells;
   }
   function renderFundHM(){
@@ -2109,14 +2162,14 @@ td.hs b{font:700 15px/1 var(--f-mono)}
     const order = ks.slice().sort((a,b)=>Cs[b].total-Cs[a].total);
     const T = (state.tech||{}).assets||{};
     const cards = order.map((a,i)=>{ const t = Cs[a].total, [vt] = verdict(t), c = t>=4?'b':t<=-4?'r':'n';
-      return `<div class="fcard ${c}" style="--d:${i*45}ms"><div class="fh"><b>${esc(TOP_NAMES[a])}</b><span>${cu(t,0,'',true)}</span></div><div class="fb ${c}">${esc(vt)}</div></div>`; }).join('');
-    const dos = macroDossier().map((c,i)=>`<div class="dcell ${c.c}" style="--d:${i*60}ms"><span class="dh">${esc(c.h)}</span><b>${esc(c.w)}</b><span class="dv">${esc(c.v)}</span><small>${c.s}</small></div>`).join('');
+      return `<div class="fcard ${c}" data-dd="asset|${a}" style="--d:${i*45}ms"><div class="fh"><b>${esc(TOP_NAMES[a])}</b><span>${cu(t,0,'',true)}</span></div><div class="fb ${c}">${esc(vt)}</div></div>`; }).join('');
+    const dos = macroDossier().map((c,i)=>`<div class="dcell ${c.c}"${c.id?` data-dd="dos|${c.id}"`:''} style="--d:${i*60}ms"><span class="dh">${esc(c.h)}</span><b>${esc(c.w)}</b><span class="dv">${esc(c.v)}</span><small>${c.s}</small></div>`).join('');
     const cw = v => v>=2?[L('HAUSSIER','BULLISH'),'b2']:v>0?[L('HAUSSIER','BULLISH'),'b1']:v<=-2?[L('BAISSIER','BEARISH'),'r2']:v<0?[L('BAISSIER','BEARISH'),'r1']:[L('NEUTRE','NEUTRAL'),'n'];
     let rows = '';
     order.forEach((a,i)=>{ const C = Cs[a];
-      rows += `<tr><td class="hn"><button type="button" data-goto="${a}" class="nm">${esc(TOP_NAMES[a])}</button></td>` + FCATS.map((c,j)=>{ const v = fcat(a,C,c), [w,k] = cw(v); return `<td class="hc ${k}" style="--d:${(i+j)*30}ms"><b>${esc(w)}</b><small>${sg2(v,0)}</small></td>`; }).join('')
-        + (()=>{ const t = T[a]; if(!t) return '<td class="hc n"><b>—</b><small></small></td>'; const [w,k] = cw(t.score>=2?2:t.score<=-2?-2:t.score); return `<td class="hc ${k} tcol" style="--d:${(i+8)*30}ms"><b>${esc(w)}</b><small>${L('tech.','tech.')} ${sg2(t.score,0)}</small></td>`; })()
-        + (()=>{ const t = C.total, [vt] = verdict(t); return `<td class="hc bias ${t>=4?'b2':t<=-4?'r2':'n'}" style="--d:${(i+9)*30}ms"><b>${esc(vt)}</b><small>${sg2(t,0)}</small></td>`; })() + `</tr>`; });
+      rows += `<tr><td class="hn"><button type="button" data-goto="${a}" class="nm">${esc(TOP_NAMES[a])}</button></td>` + FCATS.map((c,j)=>{ const v = fcat(a,C,c), [w,k] = cw(v); return `<td class="hc ${k}" data-dd="fcat|${a}|${c.k}" style="--d:${(i+j)*30}ms"><b>${esc(w)}</b><small>${sg2(v,0)}</small></td>`; }).join('')
+        + (()=>{ const t = T[a]; if(!t) return '<td class="hc n"><b>—</b><small></small></td>'; const [w,k] = cw(t.score>=2?2:t.score<=-2?-2:t.score); return `<td class="hc ${k} tcol" data-dd="tech|${a}|all" style="--d:${(i+8)*30}ms"><b>${esc(w)}</b><small>${L('tech.','tech.')} ${sg2(t.score,0)}</small></td>`; })()
+        + (()=>{ const t = C.total, [vt] = verdict(t); return `<td class="hc bias ${t>=4?'b2':t<=-4?'r2':'n'}" data-dd="asset|${a}" style="--d:${(i+9)*30}ms"><b>${esc(vt)}</b><small>${sg2(t,0)}</small></td>`; })() + `</tr>`; });
     const best = order[0], worst = order[order.length-1];
     box.innerHTML = `
       <div class="hmhead"><div class="ttl"><span class="blink"></span>${L('FONDAMENTAUX · DOSSIER MACRO PAR ACTIF','FUNDAMENTALS · MACRO FILE BY ASSET')}</div><div class="badge">${ks.length} ${L('ACTIFS · DERNIÈRES PUBLICATIONS','ASSETS · LATEST RELEASES')}</div></div>
@@ -2236,6 +2289,207 @@ td.hs b{font:700 15px/1 var(--f-mono)}
   })();
   // graphiques : animations plus longues et plus douces
   (function(){ const _mk = mkChart; mkChart = function(id, cfg){ if(!RM()){ cfg.options = cfg.options||{}; if(!cfg.options.animation) cfg.options.animation = {duration:1100, easing:'easeOutQuart', delay:c=>c.type==='data' && c.mode==='default' ? Math.min(c.dataIndex,40)*18 : 0}; } return _mk(id, cfg); }; })();
+
+  // ================= Panneau de détails (clic sur une case) =================
+  const GRP = a => ['usd','usdjpy','usdcad'].includes(a) ? 'usd' : ['xauusd','xagusd','eurusd'].includes(a) ? 'anti' : 'risk';
+  const AN = a => TOP_NAMES[a] || a;
+  const IND_ECON = {cpi:'cpi', ppi:'ppi', pce:'pce', nfp:'nfp', unemp:'unemp', claims:'claims', jolts:'jolts', retail:'retail', gdp:'gdp'};
+  const CAT_N = {growth:['Croissance','Growth'], infl:['Inflation','Inflation'], jobs:['Emploi','Labour']};
+  // mot court pour une case (indépendant de l'actif); la couleur dit l'effet sur l'actif
+  function cellWord(a, C, k){
+    const A = state.assets[a] || {}, V = state.econ.values || {};
+    if(k==='trend') return A.trend==='bull'?L('TENDANCE ↑','TREND ↑'):A.trend==='bear'?L('TENDANCE ↓','TREND ↓'):L('NEUTRE','NEUTRAL');
+    if(k==='season') return A.season==='bull'?L('SAISON ↑','SEASON ↑'):A.season==='bear'?L('SAISON ↓','SEASON ↓'):L('SAISON PLATE','FLAT SEASON');
+    if(k==='cot'){ const c = num(A.cotLong); return c===null?'—':c>50?L('FONDS ACHETEURS','FUNDS LONG'):L('FONDS VENDEURS','FUNDS SHORT'); }
+    if(k==='crowd'){ const c = num(A.crowdLong); return c===null?'—':c>=60?L('FOULE TROP LONGUE','CROWD TOO LONG'):c<=40?L('FOULE TROP COURTE','CROWD TOO SHORT'):L('FOULE PARTAGÉE','CROWD SPLIT'); }
+    if(k==='yield10'){ const y = state.econ.yield10y; return y==='rising'?L('TAUX ↑','YIELDS ↑'):y==='falling'?L('TAUX ↓','YIELDS ↓'):L('TAUX STABLES','YIELDS FLAT'); }
+    const ind = INDICATORS.find(i=>i.id===k); if(!ind) return '';
+    const v = V[k]||{}, x = num(v.a), f = num(v.f); if(x===null || f===null) return L('EN ATTENTE','PENDING');
+    const s = Math.sign(Math.round((x-f)*1e6)); if(!s) return L('CONFORME','IN LINE');
+    if(ind.cat==='infl') return s>0?L('PLUS CHAUD','HOTTER'):L('PLUS FROID','COOLER');
+    if(ind.dir<0) return s<0?L('MEILLEUR','BETTER'):L('PIRE','WORSE');
+    return s>0?L('PLUS FORT','STRONGER'):L('PLUS FAIBLE','WEAKER');
+  }
+  function topWordCell(a, C, col, v){
+    if(v===null) return `<td class="na">—</td>`;
+    return `<td class="${v>0?'bull':v<0?'bear':'z'}${Math.abs(v)===1?' w':''} tw" data-dd="top|${a}|${col.k}"><b>${esc(cellWord(a,C,col.k))}</b><small>${v>0?'+':v<0?'−':'±'}${Math.abs(v)}</small></td>`;
+  }
+  // explication en mots de l'effet d'une donnée sur un actif
+  function explainEffect(a, kind, up){
+    const n = AN(a), g = GRP(a), metal = a==='xauusd'||a==='xagusd', pair = a==='usdjpy'?L('le yen','the yen'):a==='usdcad'?L('le huard','the loonie'):a==='eurusd'?L('l’euro','the euro'):'';
+    if(kind==='eco'){ // économie plus forte (up) ou plus faible
+      if(g==='usd') return up ? L(`Une économie américaine plus forte que prévu attire l’argent vers les États-Unis et rend une baisse de taux de la Fed moins probable : le dollar se renforce${pair?` face à ${pair}`:''}, donc ${n} monte.`, `A stronger-than-expected US economy draws money into the US and makes a Fed cut less likely: the dollar strengthens${pair?` against ${pair}`:''}, so ${n} rises.`)
+        : L(`Une économie américaine plus faible que prévu rend une baisse de taux de la Fed plus probable : le dollar s’affaiblit${pair?` face à ${pair}`:''}, donc ${n} baisse.`, `A weaker-than-expected US economy makes a Fed cut more likely: the dollar weakens${pair?` against ${pair}`:''}, so ${n} falls.`);
+      if(g==='anti') return up ? L(`Une économie américaine plus forte que prévu renforce le dollar et garde les taux hauts. ${metal?`L’or et l’argent sont cotés en dollars et ne rapportent pas d’intérêts : un dollar fort et des taux hauts les font baisser.`:`EUR/USD est l’euro contre le dollar : quand le dollar monte, la paire baisse.`}`, `A stronger-than-expected US economy lifts the dollar and keeps rates high. ${metal?`Gold and silver are priced in dollars and pay no interest: a strong dollar and high rates push them down.`:`EUR/USD is the euro against the dollar: when the dollar rises, the pair falls.`}`)
+        : L(`Une économie américaine plus faible que prévu affaiblit le dollar et rapproche une baisse de taux. ${metal?`C’est bon pour l’or et l’argent (dollar plus faible, taux plus bas, recherche de valeur refuge).`:`Un dollar plus faible fait monter EUR/USD.`}`, `A weaker-than-expected US economy weakens the dollar and brings a rate cut closer. ${metal?`Good for gold and silver (weaker dollar, lower rates, safe-haven demand).`:`A weaker dollar lifts EUR/USD.`}`);
+      const why = a==='usoil' ? L('plus d’activité veut dire plus de demande de pétrole','more activity means more oil demand') : a==='btcusd' ? L('les investisseurs prennent plus de risque','investors take more risk') : L('plus de ventes et de profits pour les entreprises','more sales and profits for companies');
+      return up ? L(`Une économie plus forte que prévu est bonne pour ${n} : ${why}.`, `A stronger-than-expected economy is good for ${n}: ${why}.`)
+        : L(`Une économie plus faible que prévu pèse sur ${n} : l’inverse, ${why.replace('plus','moins')}.`, `A weaker-than-expected economy weighs on ${n}: the reverse of ${why}.`);
+    }
+    if(kind==='infl'){ // inflation plus chaude (up) ou plus froide
+      if(g==='usd') return up ? L(`Une inflation plus chaude que prévu oblige la Fed à garder ses taux hauts plus longtemps (ou à les monter) : les rendements américains montent et le dollar se renforce, donc ${n} monte.`, `Hotter-than-expected inflation forces the Fed to keep rates high for longer (or hike): US yields rise and the dollar strengthens, so ${n} rises.`)
+        : L(`Une inflation plus froide que prévu ouvre la porte à des baisses de taux : les rendements baissent et le dollar s’affaiblit, donc ${n} baisse.`, `Cooler-than-expected inflation opens the door to rate cuts: yields fall and the dollar weakens, so ${n} falls.`);
+      if(g==='anti') return up ? L(`Inflation plus chaude = taux plus hauts plus longtemps et dollar plus fort : deux vents contraires pour ${n}.`, `Hotter inflation = higher rates for longer and a stronger dollar: two headwinds for ${n}.`)
+        : L(`Inflation plus froide = baisses de taux plus proches et dollar plus faible : bon pour ${n}.`, `Cooler inflation = rate cuts closer and a weaker dollar: good for ${n}.`);
+      return up ? L(`Inflation plus chaude = la Fed garde l’argent cher. Les taux hauts rendent les profits futurs moins intéressants et freinent l’économie : mauvais pour ${n}.`, `Hotter inflation = the Fed keeps money expensive. High rates make future profits less attractive and slow the economy: bad for ${n}.`)
+        : L(`Inflation plus froide = des baisses de taux deviennent possibles : l’argent moins cher est bon pour ${n}.`, `Cooler inflation = rate cuts become possible: cheaper money is good for ${n}.`);
+    }
+    if(kind==='y10'){ // taux 10 ans en hausse (up) ou en baisse
+      if(g==='usd') return up ? L(`Des taux américains à 10 ans en hausse rendent les placements en dollars plus payants : le dollar attire l’argent, donc ${n} monte.`, `Rising US 10-year yields make dollar assets pay more: the dollar draws money in, so ${n} rises.`) : L(`Des taux à 10 ans en baisse rendent le dollar moins payant : ${n} a tendance à baisser.`, `Falling 10-year yields make the dollar pay less: ${n} tends to fall.`);
+      return up ? L(`Des taux à 10 ans en hausse rendent l’argent plus cher et les obligations plus attrayantes : ça pèse sur ${n}.`, `Rising 10-year yields make money more expensive and bonds more attractive: that weighs on ${n}.`) : L(`Des taux à 10 ans en baisse rendent l’argent moins cher : c’est un vent favorable pour ${n}.`, `Falling 10-year yields make money cheaper: a tailwind for ${n}.`);
+    }
+    return '';
+  }
+  function ddRow(k, v, cls){ return `<div class="ddr"><span>${k}</span><b class="${cls||''}">${v}</b></div>`; }
+  function ddBadge(pts){ const c = pts>0?'b':pts<0?'r':'n'; return `<span class="ddbadge ${c}">${pts>0?L('HAUSSIER','BULLISH'):pts<0?L('BAISSIER','BEARISH'):L('NEUTRE','NEUTRAL')} · ${pts>0?'+':pts<0?'−':'±'}${Math.abs(pts)}</span>`; }
+  function ddAllAssets(fn){ // effet d'un même élément sur les 12 actifs
+    const rows = Object.keys(ASSETS).map(x=>({x, v:fn(x)})).filter(r=>r.v!==null).sort((p,q)=>q.v-p.v);
+    return `<div class="ddsec"><h4>${L('Effet sur tes 12 actifs','Effect on your 12 assets')}</h4><div class="ddall">${rows.map(r=>`<button type="button" class="ddchip ${r.v>0?'b':r.v<0?'r':'n'}" data-dd="${esc(ddAllKey(r.x))}">${esc(AN(r.x))}<em>${r.v>0?'+':r.v<0?'−':'±'}${Math.abs(r.v)}</em></button>`).join('')}</div></div>`;
+  }
+  let ddAllKey = x => 'asset|'+x;
+  function ddHist(id, label){
+    const e = ECON.find(z=>z.k===(label && /MoM/.test(label) && id==='cpi' ? 'cpimom' : IND_ECON[id]));
+    const m = (state.live||{}).macro; if(!e || !m) return '';
+    const s = (e.f(m)||[]).slice(-24); if(s.length<3) return '';
+    ddChart = {type:e.ty==='bar'?'bar':'line', labels:s.map(p=>perLbl(p[0])), data:s.map(p=>p[1]), unit:e.u, d:e.d, tgt:e.tgt};
+    return `<div class="ddsec"><h4>${L('Historique (24 dernières publications)','History (last 24 releases)')} · ${esc(isEN()?e.n[1]:e.n[0])}</h4><div class="cbox" style="height:180px"><canvas id="ddChart"></canvas></div><p class="ddsrc">${L('Source','Source')} : ${esc(SRC_FULL[e.src]||e.src)}</p></div>`;
+  }
+  let ddChart = null;
+  function ddNext(id){
+    const t = torontoToday(), it = (state.calendar||[]).filter(x=>x.id===id && x.date>=t && x.a==null).sort((p,q)=>(p.date+p.time).localeCompare(q.date+q.time))[0];
+    if(!it) return '';
+    const d = new Date(it.date+'T12:00:00').toLocaleDateString(LOC(),{weekday:'long', day:'numeric', month:'long'});
+    return `<div class="ddsec ddnext"><span class="vk">${L('PROCHAINE PUBLICATION','NEXT RELEASE')}</span><b>${esc(d)} · ${esc(it.time||'')}</b><small>${esc(it.name||'')}${it.f!=null?` · ${L('prévu','exp.')} ${fmt(it.f, (INDICATORS.find(i=>i.id===id)||{}).unit)}`:''}</small><span class="cd" data-t="${etEpoch(it.date,it.time)}"></span></div>`;
+  }
+  function ddIndicator(a, id){
+    const ind = INDICATORS.find(i=>i.id===id), C = compute(a), V = (state.econ.values||{})[id]||{};
+    const x = num(V.a), f = num(V.f), w = wOf(a,id), sig = C.rows[id], pts = (sig||0)*w, s = (x!==null&&f!==null) ? Math.sign(Math.round((x-f)*1e6)) : 0;
+    const nm = V.label || ind.name, word = cellWord(a, C, id);
+    const kind = ind.cat==='infl' ? 'infl' : 'eco', up = ind.cat==='infl' ? s>0 : s*ind.dir>0;
+    const txt = !s ? L(`Le résultat est conforme aux prévisions : pas de surprise, donc pas d’effet sur le score de ${AN(a)}.`, `The result matched forecasts: no surprise, so no effect on ${AN(a)}’s score.`) : explainEffect(a, kind, up);
+    ddAllKey = x2 => `top|${x2}|${id}`;
+    return `<div class="ddh"><span class="vk">${esc(AN(a))} · ${esc(isEN()?CAT_N[ind.cat][1]:CAT_N[ind.cat][0])}</span><h3>${esc(nm)}</h3>${ddBadge(pts)}<div class="ddword ${pts>0?'b':pts<0?'r':'n'}">${esc(word)}</div></div>
+      <div class="ddgrid">${ddRow(L('Réel','Actual'), fmt(x,ind.unit))}${ddRow(L('Prévu','Forecast'), fmt(f,ind.unit))}${ddRow(L('Surprise','Surprise'), x!==null&&f!==null?fmt(Math.round((x-f)*1e4)/1e4,ind.unit,true):'—')}${ddRow(L('Publié le','Released'), fmtDate(V.d))}${ddRow(L('Poids pour ','Weight for ')+esc(AN(a)), '×'+w)}${ddRow(L('Points au score','Score points'), (pts>0?'+':pts<0?'−':'±')+Math.abs(pts), pts>0?'pos':pts<0?'neg':'')}</div>
+      <div class="ddsec"><h4>${L('Pourquoi c’est ','Why it is ')}${pts>0?L('haussier','bullish'):pts<0?L('baissier','bearish'):L('neutre','neutral')}</h4><p>${esc(txt)}</p>${V.note?`<p class="ddnote">${esc(V.note)}</p>`:''}${w>1?`<p class="ddnote">${L(`Cette donnée compte double pour ${AN(a)} : c’est une des plus importantes pour cet actif.`, `This release counts double for ${AN(a)}: one of the most important for this asset.`)}</p>`:''}</div>
+      ${ddNext(id)}${ddHist(id, V.label)}${ddAllAssets(x2=>{ const c = compute(x2).rows[id]; return c===null?null:(c||0)*wOf(x2,id); })}
+      <div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="eco">${L('Économie US','US economy')}</button><button type="button" class="btn ghost" data-ddgo="cal">${L('Calendrier','Calendar')}</button><button type="button" class="btn ghost" data-ddgo="score" data-dda="${a}">${L('Scorecard de ','Scorecard of ')}${esc(AN(a))}</button></div>`;
+  }
+  function ddOther(a, k){
+    const C = compute(a), A = state.assets[a]||{}, r = C.rows;
+    const pts = k==='cot' ? r.cotNet + r.cotChg : k==='yield10' ? (r.yield10||0)*wOf(a,'yield10') : (r[k]||0);
+    let title = '', rows = '', txt = '', extra = '';
+    if(k==='trend'){ title = L('Tendance (ta lecture)','Trend (your read)'); rows = ddRow(L('Ta tendance','Your trend'), A.trend==='bull'?L('Haussière','Bullish'):A.trend==='bear'?L('Baissière','Bearish'):L('Neutre','Neutral'));
+      const t = ((state.tech||{}).assets||{})[a]; if(t) rows += ddRow(L('Tendance calculée (prix)','Computed trend (price)'), tw('trend',t.trend).t) + ddRow('MM200', `${pxFmt(t.sma200)} (${sg2(t.d200,1)} %)`);
+      txt = L('C’est la case que tu remplis toi-même avec « Ma tendance » (graphiques 4H et Daily). Elle vaut ±2 dans le score. La heatmap technique te donne une lecture calculée pour comparer.', 'This is the box you fill yourself with “My trend” (4H and Daily charts). It is worth ±2 in the score. The technical heatmap gives you a computed read to compare.');
+      extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="tech">${L('Heatmap technique','Technical heatmap')}</button><button type="button" class="btn ghost" data-ddgo="score" data-dda="${a}">${L('Remplir ma tendance','Set my trend')}</button></div>`; }
+    if(k==='season'){ title = L('Saisonnalité (3 derniers mois)','Seasonality (last 3 months)'); rows = ddRow(L('Période','Period'), esc(A.seasonPeriod||'—')) + ddRow(L('Variation','Change'), A.seasonPct!=null?sg2(A.seasonPct,1)+' %':'—', A.seasonPct>0?'pos':A.seasonPct<0?'neg':'');
+      txt = L(`Si ${AN(a)} a monté de plus de 1 % sur les 3 derniers mois, c’est +1 (la tendance récente est ton amie); s’il a baissé de plus de 1 %, c’est −1.`, `If ${AN(a)} rose more than 1% over the last 3 months it is +1 (the recent trend is your friend); if it fell more than 1%, −1.`);
+      const s = ((state.tech||{}).seas||{})[a], mo = new Date().getMonth(); if(s) rows += ddRow(L('Ce mois-ci (historique)','This month (history)'), `${sg2(s.month[mo],2)} % · ${s.monthWin[mo]} % ${L('positif','positive')}`, s.month[mo]>=0?'pos':'neg');
+      extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="seas">${L('Labo de saisonnalité','Seasonality lab')}</button></div>`; }
+    if(k==='cot'){ title = L('Positionnement COT','COT positioning'); const cl = num(A.cotLong), cc = num(A.cotChange);
+      rows = ddRow(L('Gros spéculateurs long','Large specs long'), cl!==null?nf(cl,1)+' %':'—') + ddRow(L('Short','Short'), cl!==null?nf(100-cl,1)+' %':'—') + ddRow(L('Changement sur 1 semaine','1-week change'), cc!==null?sg2(cc,2)+' pt':'—', cc>0?'pos':cc<0?'neg':'') + ddRow(L('Points','Points'), `${L('position','position')} ${sg2(r.cotNet,0)} · ${L('changement','change')} ${sg2(r.cotChg,0)}`);
+      txt = L('Les gros spéculateurs (fonds) suivent la tendance. Plus de 50 % long = +1. S’ils ont ajouté des achats cette semaine = +1 de plus (sinon −1).', 'Large speculators (funds) follow the trend. Over 50% long = +1. If they added longs this week = +1 more (otherwise −1).');
+      extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="cot" data-ddcot="${a}">${L('Page COT','COT page')}</button></div>`; }
+    if(k==='crowd'){ title = L('Sentiment de la foule (IG)','Crowd sentiment (IG)'); const c = num(A.crowdLong);
+      rows = ddRow(L('Clients IG acheteurs','IG clients long'), c!==null?nf(c,0)+' %':'—') + ddRow(L('Vendeurs','Short'), c!==null?nf(100-c,0)+' %':'—');
+      txt = L('Signal contrarien : les petits traders ont souvent tort aux extrêmes. 60 % ou plus acheteurs = −1 (le marché a tendance à aller contre eux). 40 % ou moins = +1. Entre les deux = 0.', 'Contrarian signal: small traders are often wrong at extremes. 60% or more long = −1 (the market tends to go against them). 40% or less = +1. In between = 0.');
+      extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="sent">${L('Page Sentiment','Sentiment page')}</button></div>`; }
+    if(k==='yield10'){ title = L('Taux américain à 10 ans','US 10-year yield'); const y = state.econ.yield10y, y10 = ((state.live||{}).rates||{}).y10||[];
+      rows = ddRow(L('Tendance sur 1 mois','1-month trend'), y==='rising'?L('En hausse','Rising'):y==='falling'?L('En baisse','Falling'):L('Stable','Flat')) + (y10.length?ddRow(L('Dernier niveau','Latest level'), nf(y10[y10.length-1][1],2)+' %'):'') + ddRow(L('Poids','Weight'), '×'+wOf(a,'yield10'));
+      txt = y==='flat'||!y ? L('Le 10 ans est stable : pas d’effet sur le score.','The 10-year is flat: no effect on the score.') : explainEffect(a, 'y10', y==='rising');
+      extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="fed">${L('Page Taux','Rates page')}</button></div>`; }
+    ddAllKey = x2 => `top|${x2}|${k}`;
+    return `<div class="ddh"><span class="vk">${esc(AN(a))}</span><h3>${esc(title)}</h3>${ddBadge(pts)}<div class="ddword ${pts>0?'b':pts<0?'r':'n'}">${esc(cellWord(a,C,k))}</div></div>
+      <div class="ddgrid">${rows}</div><div class="ddsec"><h4>${L('Comment ça marche','How it works')}</h4><p>${esc(txt)}</p></div>
+      ${ddAllAssets(x2=>{ const c2 = compute(x2), rr = c2.rows; return k==='cot' ? rr.cotNet+rr.cotChg : k==='yield10' ? (rr.yield10||0)*wOf(x2,'yield10') : (rr[k]||0); })}${extra}`;
+  }
+  function ddFcat(a, ck){
+    const c = FCATS.find(z=>z.k===ck); if(!c) return '';
+    if(!c.ids) return ddOther(a, ck==='y10'?'yield10':ck==='seas'?'season':ck);
+    const C = compute(a), tot = fcat(a, C, c);
+    const items = c.ids.map(id=>{ const ind = INDICATORS.find(i=>i.id===id), V = (state.econ.values||{})[id]||{}, v = topCell(a, C, {k:id}) || 0;
+      return `<button type="button" class="dditem ${v>0?'b':v<0?'r':'n'}" data-dd="top|${a}|${id}"><span>${esc(V.label||ind.name)}</span><em>${esc(cellWord(a,C,id))}</em><small>${fmt(num(V.a),ind.unit)} ${L('vs','vs')} ${fmt(num(V.f),ind.unit)}</small><b>${v>0?'+':v<0?'−':'±'}${Math.abs(v)}</b></button>`; }).join('');
+    ddAllKey = x2 => `fcat|${x2}|${ck}`;
+    return `<div class="ddh"><span class="vk">${esc(AN(a))}</span><h3>${esc(isEN()?c.n[1]:c.n[0])}</h3>${ddBadge(tot)}</div>
+      <div class="ddsec"><h4>${L('Les données de cette catégorie','The releases in this category')}</h4><div class="dditems">${items}</div><p class="ddnote">${L('Clique une donnée pour son détail.','Click a release for details.')}</p></div>
+      ${ddAllAssets(x2=>fcat(x2, compute(x2), c))}`;
+  }
+  function ddTech(a, g){
+    const t = ((state.tech||{}).assets||{})[a]; if(!t) return '';
+    const map = {
+      trend:[L('Tendance','Trend'), tw('trend',t.trend), ddRow(L('Prix','Price'), pxFmt(t.px)) + ddRow('MM50', `${pxFmt(t.sma50)} (${sg2(t.d50,1)} %)`) + ddRow('MM200', `${pxFmt(t.sma200)} (${sg2(t.d200,1)} %)`) + ddRow(L('Points de tendance','Trend points'), sg2(t.trendScore,0)+' / 3'),
+        L('On compte 3 choses : le prix au-dessus (+1) ou en dessous (−1) de la MM50, pareil pour la MM200, et la MM50 qui monte (+1) ou descend (−1). 2 ou plus = tendance haussière, −2 ou moins = baissière.','We count 3 things: price above (+1) or below (−1) the 50-day MA, same for the 200-day, and the 50-day rising (+1) or falling (−1). 2 or more = bullish trend, −2 or less = bearish.')],
+      mom:[L('Momentum (RSI 14)','Momentum (RSI 14)'), tw('mom',t.mom), ddRow('RSI', nf(t.rsi,1)) + `<div class="rsibar"><i style="left:${Math.max(0,Math.min(100,t.rsi))}%"></i><span style="left:30%"></span><span style="left:70%"></span></div>`,
+        L('Le RSI mesure la force des derniers mouvements de 0 à 100. Au-dessus de 70 = suracheté (le prix a beaucoup monté, risque de pause ou de recul). Sous 30 = survendu (rebond possible). Entre 55 et 70 = élan haussier, entre 30 et 45 = élan baissier.','RSI measures the strength of recent moves from 0 to 100. Above 70 = overbought (big rise, risk of a pause or pullback). Below 30 = oversold (bounce possible). 55–70 = bullish momentum, 30–45 = bearish momentum.')],
+      macd:[L('MACD','MACD'), tw('macd',t.macd), ddRow(L('Histogramme','Histogram'), nf(t.macdHist, Math.abs(t.macdHist)<1?4:2)),
+        L('Le MACD compare deux moyennes (12 et 26 jours). Histogramme positif = l’élan est haussier; négatif = baissier. La flèche ↑ ou ↓ veut dire qu’il accélère dans ce sens.','MACD compares two averages (12 and 26 days). Positive histogram = bullish momentum; negative = bearish. The ↑ or ↓ arrow means it is accelerating that way.')],
+      vol:[L('Volatilité','Volatility'), tw('vol',t.vol), ddRow(L('Volatilité 20 jours (annualisée)','20-day volatility (annualized)'), nf(t.volAnn,1)+' %') + ddRow(L('Rang sur 1 an','1-year rank'), t.volPct+' %') + `<div class="rsibar"><i style="left:${t.volPct}%"></i><span style="left:20%"></span><span style="left:80%"></span></div>`,
+        L('On compare la volatilité des 20 derniers jours à celle de la dernière année. Haute (rang ≥ 80 %) = gros mouvements : réduis la taille de tes positions et élargis tes stops. Basse (≤ 20 %) = marché calme, souvent avant un gros mouvement.','We compare the last 20 days’ volatility with the past year. High (rank ≥ 80%) = big moves: size down and widen stops. Low (≤ 20%) = calm market, often before a big move.')],
+      struct:[L('Structure','Structure'), tw('struct',t.struct), ddRow(L('Sommet 20 jours','20-day high'), pxFmt(t.hi20)) + ddRow(L('Creux 20 jours','20-day low'), pxFmt(t.lo20)),
+        L('On compare les 20 derniers jours aux 20 jours d’avant. Sommet ET creux plus hauts = structure haussière. Plus bas tous les deux = baissière. Sinon, le marché est en range (sans direction).','We compare the last 20 days with the 20 before. Higher high AND higher low = bullish structure. Both lower = bearish. Otherwise the market is ranging.')],
+      liq:[L('Liquidité','Liquidity'), {t:t.liq.side==='above'?L('POOL AU-DESSUS','POOL ABOVE'):L('POOL EN DESSOUS','POOL BELOW'), c:'l'}, ddRow(L('Niveau','Level'), pxFmt(t.liq.lvl)) + ddRow(L('Distance','Distance'), sg2(t.liq.d,2)+' %'),
+        L('Les stops des traders s’accumulent juste au-dessus des sommets et sous les creux récents. Le niveau le plus proche agit souvent comme un aimant : le prix va « chercher » cette liquidité avant de repartir.','Traders’ stops pile up just above recent highs and below recent lows. The nearest level often acts as a magnet: price goes to “grab” that liquidity before moving on.')],
+      weekly:[L('Tendance hebdomadaire','Weekly trend'), tw('weekly',t.weekly), ddRow(L('MM 20 semaines','20-week MA'), L('prix au-dessus = haussière','price above = bullish')),
+        L('Vue de plus haut : le prix au-dessus de sa moyenne de 20 semaines (environ 100 jours) = tendance de fond haussière.','Bigger picture: price above its 20-week average (about 100 days) = bullish long-term trend.')],
+      all:[L('Score technique','Technical score'), {t:sg2(t.score,0)+' / 5', c:t.score>0?'b':t.score<0?'r':'n'}, ddRow(L('Tendance','Trend'), tw('trend',t.trend).t)+ddRow('Momentum', tw('mom',t.mom).t+` (RSI ${nf(t.rsi,0)})`)+ddRow('MACD', tw('macd',t.macd).t)+ddRow('Structure', tw('struct',t.struct).t)+ddRow(L('Hebdo','Weekly'), tw('weekly',t.weekly).t),
+        L('Le score additionne : tendance (±2), tendance hebdo (±1), MACD (±1), structure (±1), et −1 si suracheté / +1 si survendu. Il va de −5 à +5. Il ne change pas ton score du Scorecard.','The score adds: trend (±2), weekly trend (±1), MACD (±1), structure (±1), and −1 if overbought / +1 if oversold. Range −5 to +5. It does not change your Scorecard score.')]
+    };
+    const m = map[g] || map.all, word = m[1];
+    ddChart = {type:'line', labels:t.spark.map((_,i)=>i), data:t.spark, unit:'', d: t.px<10?4:2, price:true};
+    ddAllKey = x2 => `tech|${x2}|${g}`;
+    return `<div class="ddh"><span class="vk">${esc(AN(a))} · ${L('TECHNIQUE','TECHNICAL')}</span><h3>${esc(m[0])}</h3><div class="ddword ${word.c==='g'?'g':word.c==='l'?'l':word.c}">${esc(word.t)}</div></div>
+      <div class="ddgrid">${m[2]}</div><div class="ddsec"><h4>${L('Ce que ça veut dire','What it means')}</h4><p>${esc(m[3])}</p></div>
+      <div class="ddsec"><h4>${L('Prix des 90 derniers jours','Last 90 days of price')} · ${pxFmt(t.px)} <span class="${(t.chg1d||0)>=0?'up':'dn'}">${sg2(t.chg1d,2)} %</span></h4><div class="cbox" style="height:170px"><canvas id="ddChart"></canvas></div></div>
+      <div class="ddsec"><h4>${L('Même signal sur tes autres actifs','Same signal on your other assets')}</h4><div class="ddall">${Object.keys(ASSETS).filter(x=>((state.tech||{}).assets||{})[x]).map(x=>{ const tx = state.tech.assets[x]; const w2 = g==='liq'?{t:tx.liq.side==='above'?'↑':'↓',c:'l'}:g==='all'?{t:sg2(tx.score,0),c:tx.score>0?'b':tx.score<0?'r':'n'}:tw(g==='mom'?'mom':g, tx[g==='weekly'?'weekly':g]); return `<button type="button" class="ddchip ${w2.c==='g'?'g':w2.c}" data-dd="tech|${x}|${g}">${esc(AN(x))}<em>${esc(w2.t)}</em></button>`; }).join('')}</div></div>
+      <div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="tech">${L('Heatmap technique','Technical heatmap')}</button></div>`;
+  }
+  function ddAsset(a){
+    const C = compute(a), [vt] = verdict(C.total);
+    const parts = [];
+    TOP_COLS.forEach(col=>{ const v = topCell(a, C, col); if(v) parts.push({k:col.k, h:col.h, v}); });
+    parts.sort((p,q)=>Math.abs(q.v)-Math.abs(p.v));
+    const item = p => `<button type="button" class="dditem ${p.v>0?'b':'r'}" data-dd="top|${a}|${p.k}"><span>${esc(p.h.replace('­',''))}</span><em>${esc(cellWord(a,C,p.k))}</em><b>${p.v>0?'+':'−'}${Math.abs(p.v)}</b></button>`;
+    ddAllKey = x2 => 'asset|'+x2;
+    return `<div class="ddh"><span class="vk">${L('ACTIF','ASSET')}</span><h3>${esc(ASSETS[a].name)}</h3>${ddBadge(C.total)}<div class="ddword ${C.total>=4?'b':C.total<=-4?'r':'n'}">${esc(vt)}</div></div>
+      <div class="ddgrid">${ddRow(L('Technique','Technical'), sg2(C.tech,0))}${ddRow(L('Sentiment + COT','Sentiment + COT'), sg2(C.sent,0))}${ddRow(L('Macroéconomie','Macro'), sg2(C.macro,0))}${ddRow(L('Total','Total'), sg2(C.total,0), C.total>0?'pos':C.total<0?'neg':'')}</div>
+      <div class="ddsec"><h4>${L('Ce qui pousse le score (du plus fort au plus faible)','What drives the score (strongest first)')}</h4><div class="dditems">${parts.map(item).join('')}</div></div>
+      <div class="ddsec"><p>${esc(ASSETS[a].hint||'')}</p></div>
+      <div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="score" data-dda="${a}">${L('Ouvrir le Scorecard','Open Scorecard')}</button></div>`;
+  }
+  // ouverture / fermeture
+  function ddEnsure(){
+    let el = $('dd'); if(el) return el;
+    el = document.createElement('div'); el.id = 'dd'; el.className = 'dd'; el.hidden = true;
+    el.innerHTML = `<div class="ddbg" data-ddclose></div><aside class="ddp" role="dialog" aria-modal="true" aria-label="${L('Détails','Details')}"><button type="button" class="ddx" data-ddclose aria-label="${L('Fermer','Close')}">✕</button><div id="ddc"></div></aside>`;
+    document.body.appendChild(el);
+    el.addEventListener('click', e=>{ if(e.target.closest('[data-ddclose]')) ddClose(); });
+    return el;
+  }
+  function ddClose(){ const el = $('dd'); if(!el || el.hidden) return; el.classList.remove('open'); setTimeout(()=>{ el.hidden = true; }, RM()?0:280); }
+  function ddOpen(key){
+    const [t, a, k] = key.split('|'); ddChart = null; let html = '';
+    try{
+      if(t==='top') html = INDICATORS.some(i=>i.id===k) ? ddIndicator(a, k) : ddOther(a, k);
+      else if(t==='fcat') html = ddFcat(a, k);
+      else if(t==='tech') html = ddTech(a, k);
+      else if(t==='asset') html = ddAsset(a);
+      else if(t==='dos') html = INDICATORS.some(i=>i.id===a) ? ddIndicator(state.asset||'xauusd', a) : ddOther(state.asset||'xauusd', a);
+    }catch(e){ console.error(e); }
+    if(!html) return;
+    const el = ddEnsure(), c = $('ddc'); c.innerHTML = html; c.scrollTop = 0; el.querySelector('.ddp').scrollTop = 0;
+    el.hidden = false; requestAnimationFrame(()=>el.classList.add('open'));
+    if(typeof countUp==='function') countUp(c);
+    if(ddChart) needChart().then(ok=>{ if(!ok || !ddChart) return; const D = ddChart, col = css('--gold');
+      mkChart('ddChart', {type:D.type, data:{labels:D.labels, datasets:[{label:'', data:D.data, borderColor:col, backgroundColor:D.type==='bar'?D.data.map(v=>v>=0?css('--bull'):css('--bear')):col+'22', fill:D.type!=='bar', pointRadius:0, tension:.25, borderWidth:2}]},
+        options:{plugins:{legend:{display:false}, tooltip:{callbacks:{label:c2=>nf(c2.parsed.y, D.d)+(D.unit||'')}}}, scales:{x:{display:!D.price, ticks:{maxTicksLimit:6}}, y:{ticks:{maxTicksLimit:5, callback:v=>nf(v, D.price?(D.d>2?3:0):1)}}}}}); });
+  }
+  document.addEventListener('click', e=>{
+    const go = e.target.closest('[data-ddgo]');
+    if(go){ ddClose(); const pg = go.dataset.ddgo; if(go.dataset.dda){ state.asset = go.dataset.dda; try{ localStorage.setItem('sc-asset', state.asset); }catch(_){} } if(go.dataset.ddcot) state.cotA = go.dataset.ddcot; showPage(pg); renderAll(); return; }
+    const d = e.target.closest('[data-dd]'); if(!d) return;
+    e.preventDefault(); e.stopPropagation(); ddOpen(d.dataset.dd);
+  }, true);
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') ddClose(); });
 
   // ---------- Nouvelles ----------
   state.newsA = state.newsA || 'all';
