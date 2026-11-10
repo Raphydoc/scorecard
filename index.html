@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="fr">
+<html lang="fr" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
@@ -7,7 +7,8 @@
 <meta name="robots" content="noindex">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<script>try{var s=localStorage.getItem("sc-theme2");document.documentElement.dataset.theme=(s==="light"||s==="dark")?s:"dark";}catch(e){document.documentElement.dataset.theme="dark";}</script>
 <style>
 /* Layout: terminal à deux colonnes — verdict + jauge à gauche, grille d'indicateurs à droite; une seule colonne sur téléphone */
 :root{
@@ -362,6 +363,80 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
 .toplegend{display:flex;flex-wrap:wrap;gap:6px 16px;padding:10px 14px;color:var(--muted);font-size:12px;border-top:1px solid var(--line)}
 .toplegend i{display:inline-block;width:12px;height:12px;vertical-align:-2px;margin-right:5px}
 @media (max-width:560px){ table.topset td{font-size:12px;height:32px;min-width:38px} table.topset thead th{min-width:38px;font-size:9.5px} table.topset td.bias{min-width:92px;font-size:14px} table.topset td.sym{min-width:84px} }
+/* ===== Style « terminal » : noir, accents dorés, étiquettes en petites majuscules ===== */
+:root{ --f-display:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --f-body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif; --f-mono:"JetBrains Mono","IBM Plex Mono",ui-monospace,Menlo,monospace; }
+:root[data-theme="dark"]{
+  --bg:#060708; --panel:#0D0E10; --panel-2:#15161A; --line:#22242A;
+  --fg:#ECEDEF; --muted:#8A8F98; --gold:#F2B43A;
+  --bull:#14A3AE; --bear:#E0383E; --neutral:#2E3138; --chip-fg:#FFFFFF;
+  --focus:#F2B43A; color-scheme:dark;
+}
+:root[data-theme="light"]{ --gold:#A9740A; --bull:#0E8C96; --focus:#A9740A; }
+body{font-size:13.5px;letter-spacing:.005em}
+:root[data-theme="dark"] body{background:radial-gradient(1200px 600px at 50% -200px, rgba(242,180,58,.07), transparent 60%) var(--bg) fixed}
+/* en-tête */
+h1{font-family:var(--f-display);font-weight:700;font-size:22px;letter-spacing:-.01em}
+.mark{border-width:1px;border-radius:6px;background:linear-gradient(160deg, rgba(242,180,58,.18), transparent);font-weight:800;font-size:17px}
+.sub{font-size:12px}
+.clocks{display:flex;gap:14px;align-items:center;font:500 11px/1 var(--f-mono);color:var(--muted);letter-spacing:.04em}
+.clocks b{color:var(--gold);font-weight:500;margin-left:5px}
+.clocks .mk{display:inline-flex;align-items:center;gap:5px}
+.clocks .dot{width:6px;height:6px;border-radius:50%;background:var(--neutral)}
+.clocks .dot.open{background:#2BD47D;box-shadow:0 0 6px #2BD47D}
+@media (max-width:760px){ .clocks{display:none} }
+/* boutons et étiquettes */
+.btn,.seg button,button.chip,.pages button{font-family:var(--f-body);font-weight:600;letter-spacing:.08em}
+.btn{font-size:12px;border-radius:4px}
+.btn.ghost{background:var(--panel)}
+button.chip{font-size:11px;border-radius:4px;padding:6px 10px}
+button.chip[aria-pressed="true"]{background:rgba(242,180,58,.14);color:var(--gold);border-color:var(--gold)}
+.seg{border-radius:4px;overflow:hidden}
+.seg button{font-size:12px}
+.seg button[aria-selected="true"]{background:rgba(242,180,58,.16);color:var(--gold)}
+.panel,.kpi{border-radius:6px}
+.panel{background:var(--panel)}
+.kpi{background:linear-gradient(180deg,var(--panel-2),var(--panel))}
+.kpi .k{font-size:9.5px;letter-spacing:.14em;font-weight:600}
+.kpi .v{font-family:var(--f-display);font-weight:700;letter-spacing:-.02em}
+button.kpi:hover,button.kpi[aria-pressed="true"]{border-color:var(--gold);box-shadow:inset 0 0 0 1px rgba(242,180,58,.25)}
+/* titres de sections : petit carré doré + majuscules espacées */
+.p2 h3,.hist h2,.how h2{font-family:var(--f-body);font-size:11.5px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;color:var(--fg);display:flex;align-items:center;gap:8px}
+.p2 h3::before,.hist h2::before,.how h2::before{content:"";width:7px;height:7px;background:var(--gold);flex:none;border-radius:1px}
+.p2 .ph{background:linear-gradient(180deg, rgba(255,255,255,.015), transparent)}
+.p2 .ph p{font-size:11.5px}
+tr.cat th{font-family:var(--f-body);font-size:12px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--gold)}
+th{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600}
+.chip{font-family:var(--f-body);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;border-radius:3px}
+.verdict{font-family:var(--f-body);font-weight:800;font-size:18px;letter-spacing:.14em;text-transform:uppercase}
+.symbol b{font-family:var(--f-body);font-weight:800;letter-spacing:.04em}
+.tag{border-radius:3px}
+.explain{border-radius:0 6px 6px 0}
+/* menu de gauche */
+.side .navgrp{font-size:9.5px!important;letter-spacing:.18em!important;color:var(--gold)!important;opacity:.85!important}
+.pages button{font-size:13px;letter-spacing:.02em;text-transform:none}
+@media (min-width:1101px){
+  .shell > .side{background:var(--panel)}
+  .shell > .side .pages button{padding:9px 18px!important;font-size:13px;font-weight:500;color:var(--muted)}
+  .shell > .side .pages button:hover{color:var(--fg);background:var(--panel-2)}
+  .shell > .side .pages button[aria-current="page"]{color:var(--gold);background:rgba(242,180,58,.10)!important;border-left-color:var(--gold)}
+  .side .sidebrand{font-family:var(--f-body)!important;font-size:11px!important;letter-spacing:.2em!important;color:var(--gold)!important}
+}
+.pages button[aria-current="page"]{color:var(--gold)}
+/* tableaux : lignes fines */
+td{border-bottom-color:var(--line)}
+tbody tr:hover td{background:rgba(255,255,255,.02)}
+::-webkit-scrollbar{width:9px;height:9px} ::-webkit-scrollbar-thumb{background:var(--line);border-radius:5px} ::-webkit-scrollbar-track{background:transparent}
+/* Top Setups en heatmap : +1/−1 plus pâle, ±2 plein */
+table.topset td.w.bull{background:color-mix(in srgb,var(--bull) 52%,var(--panel))}
+table.topset td.w.bear{background:color-mix(in srgb,var(--bear) 52%,var(--panel))}
+table.topset thead tr.grp th{font-family:var(--f-body);font-size:10.5px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;white-space:normal;line-height:1.25;background:var(--panel-2)!important;color:var(--gold)!important;border-bottom:2px solid var(--gold)}
+table.topset td.sym button{font-family:var(--f-body);font-weight:800;font-size:13px;letter-spacing:.06em;text-decoration:none}
+table.topset td.sym button:hover{color:var(--gold)}
+table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.calseg{border-radius:4px;overflow:hidden}
+.calseg button{font-family:var(--f-body)!important;font-size:11.5px!important;font-weight:600!important;letter-spacing:.08em!important}
+.calseg button[aria-pressed="true"],.seg button[aria-pressed="true"]{background:rgba(242,180,58,.16)!important;color:var(--gold)!important}
+.wrap{grid-template-columns:minmax(0,1fr)} .wrap > *{min-width:0}
 </style>
 
 </head>
@@ -396,7 +471,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
         <p class="sub">Données US mises à jour automatiquement chaque matin de semaine.</p>
       </div>
     </div>
-    <div class="topbtns"><button id="themeBtn" class="btn ghost" type="button" aria-label="Mode sombre" title="Mode sombre">☾</button><button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button></div>
+    <div class="topbtns"><div class="clocks" id="clocks" aria-label="Heures des marchés"></div><button id="themeBtn" class="btn ghost" type="button" aria-label="Mode sombre" title="Mode sombre">☾</button><button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button></div>
     <div class="controls" data-pg="score">
       <label class="assetpick"><span>Actif</span>
         <select id="assetSel" aria-label="Actif">
@@ -918,7 +993,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       TOP_COLS.forEach(col=>{
         const v = topCell(a, C, col);
         if(v===null){ h += `<td class="na">—</td>`; return; }
-        h += `<td class="${v>0?'bull':v<0?'bear':'z'}">${v>0?'+':v<0?'−':'+'}${Math.abs(v)}</td>`;
+        h += `<td class="${v>0?'bull':v<0?'bear':'z'}${Math.abs(v)===1?' w':''}">${v>0?'+':v<0?'−':'+'}${Math.abs(v)}</td>`;
       });
       h += `</tr>`;
     });
@@ -1734,6 +1809,17 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     if(['home','eco','fed','cot','sent','cbg'].includes(pg)) loadLive().then(()=>{ if(state.page===pg) renderP2(); });
     renderP2();
   }
+
+  // ---------- horloges des marchés ----------
+  (function(){
+    const box = document.getElementById('clocks'); if(!box) return;
+    const M = [['NY','America/New_York',[9.5,16]],['LDN','Europe/London',[8,16.5]],['TKY','Asia/Tokyo',[9,15]]];
+    const tick = () => { const now = new Date();
+      box.innerHTML = M.map(([n,tz,[o,c]])=>{ const p = Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit',weekday:'short',hour12:false}).formatToParts(now).map(x=>[x.type,x.value]));
+        const h = (+p.hour%24) + (+p.minute)/60, wk = !['Sat','Sun'].includes(p.weekday), open = wk && h>=o && h<c;
+        return `<span class="mk" title="${open?'Ouvert':'Fermé'}"><i class="dot${open?' open':''}"></i>${n}<b>${p.hour}:${p.minute}</b></span>`; }).join(''); };
+    tick(); setInterval(tick, 30000);
+  })();
   // ---------- mode sombre / clair ----------
   (function(){
     const btn = $('themeBtn'); if(!btn) return;
@@ -1743,12 +1829,12 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
       btn.textContent = d ? '☀' : '☾';
       const l = d ? (en?'Light mode':'Mode clair') : (en?'Dark mode':'Mode sombre');
       btn.setAttribute('aria-label', l); btn.title = l; };
-    try{ const s = localStorage.getItem('sc-theme'); if(s==='dark'||s==='light') document.documentElement.dataset.theme = s; }catch(e){}
+    try{ const s = localStorage.getItem('sc-theme2'); if(s==='dark'||s==='light') document.documentElement.dataset.theme = s; }catch(e){}
     label();
     btn.addEventListener('click', ()=>{
       const n = cur()==='dark' ? 'light' : 'dark';
       document.documentElement.dataset.theme = n;
-      try{ localStorage.setItem('sc-theme', n); }catch(e){}
+      try{ localStorage.setItem('sc-theme2', n); }catch(e){}
       label();
       setTimeout(()=>{ const nb = $('p2news'); if(nb) nb.dataset.built=''; const cb = $('p2charts'); if(cb) cb.dataset.built=''; renderAll(); if(typeof renderP2==='function') renderP2(); }, 30);
     });
