@@ -1262,6 +1262,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   function mom(s){ if(!s) return []; const out=[]; for(let i=1;i<s.length;i++){ if(addMonths(s[i-1][0],1)===s[i][0]) out.push([s[i][0], (s[i][1]/s[i-1][1]-1)*100]); } return out; }
   const ECON = [
     {k:'cpi', g:'inf', n:['CPI global (1 an)','Headline CPI (YoY)'], u:'%', d:1, src:'BLS', f:m=>yoy(m.cpi), ty:'line', tgt:2, usd:1},
+    {k:'cpimom', g:'inf', n:['CPI global (1 mois)','Headline CPI (m/m)'], u:'%', d:1, src:'BLS', f:m=>mom(m.cpi), ty:'bar', usd:1},
     {k:'core', g:'inf', n:['CPI de base (1 an)','Core CPI (YoY)'], u:'%', d:1, src:'BLS', f:m=>yoy(m.core), ty:'line', tgt:2, usd:1},
     {k:'pce', g:'inf', n:['PCE global (1 an)','Headline PCE (YoY)'], u:'%', d:1, src:'BEA', f:m=>yoy(m.pce), ty:'line', tgt:2, usd:1},
     {k:'corepce', g:'inf', n:['PCE de base (1 an)','Core PCE (YoY)'], u:'%', d:1, src:'BEA', f:m=>yoy(m.corepce), ty:'line', tgt:2, usd:1},

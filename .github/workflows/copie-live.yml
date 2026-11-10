@@ -1,7 +1,7 @@
 name: Copie des données des graphiques
 on:
   schedule:
-    - cron: '17 14 * * 6'   # samedi vers 9 h 17 (heure de Toronto)
+    - cron: '47 14 * * 1-6'   # lundi au samedi vers 9 h 47 (heure de Toronto), après les données de 8 h 30
   workflow_dispatch:
 permissions:
   contents: write
