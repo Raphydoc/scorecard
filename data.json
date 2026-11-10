@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-09T20:43:41Z",
+ "updatedAt": "2026-11-10T00:42:32Z",
  "econ": {
   "values": {
    "gdp": {
@@ -602,21 +602,20 @@
  "news": [
   {
    "date": "2026-11-09",
-   "time": "13:55",
+   "time": "17:23",
    "source": "Yahoo Finance",
    "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
     "us30",
-    "rut",
-    "usoil"
+    "rut"
    ],
-   "title": "Wall Street accentue son rebond : Nasdaq +2,6 %, Russell 2000 +3 %, malgré Nvidia en baisse de 5 %",
-   "title_en": "Wall Street extends rebound: Nasdaq +2.6%, Russell 2000 +3%, despite Nvidia down 5%",
-   "summary": "En après-midi, le Nasdaq gagnait 2,62 % (25 224), le S&P 500 2,38 % (7 553), le Dow 2,22 % (52 426) et le Russell 2000 3,05 % (2 838), tandis que le VIX chutait de près de 21 % à 20,27. Nvidia reculait de 5,19 % (176,96 $) en raison de l’enquête de son conseil sur le PDG, mais le reste des semi-conducteurs montait. Le pétrole WTI perdait 3,42 % à 87,72 $ et le taux à 10 ans était à 4,874 %; il ne s’agit pas encore des cours de clôture.",
-   "summary_en": "In the afternoon the Nasdaq was up 2.62% (25,224), the S&P 500 2.38% (7,553), the Dow 2.22% (52,426) and the Russell 2000 3.05% (2,838), while the VIX fell nearly 21% to 20.27. Nvidia was down 5.19% ($176.96) on its board's probe of the CEO, but other chipmakers rose. WTI crude fell 3.42% to $87.72 and the 10-year yield stood at 4.874%; these are not yet closing levels.",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-9-dow-sp-500-nasdaq-nvidia-090535419.html"
+   "title": "Clôture : Wall Street rebondit fortement — Nasdaq +2,74 %, Russell 2000 +3,15 %, malgré Nvidia",
+   "title_en": "Close: Wall Street rebounds sharply — Nasdaq +2.74%, Russell 2000 +3.15%, despite Nvidia",
+   "summary": "À la clôture lundi, le Nasdaq a gagné 2,74 % (25 253,14), le S&P 500 2,35 % (7 549,94), le Dow 2,15 % (52 389,75) et le Russell 2000 3,15 % (2 840,81), tous les secteurs finissant en hausse. Les semi-conducteurs, les achats à bon compte et le recul du pétrole ont porté le rebond, malgré Nvidia en baisse de plus de 4 % à cause de l’enquête interne visant son PDG; Constellation Energy a bondi de plus de 10 % après ses résultats. Le S&P 500 se remet ainsi de sa pire semaine depuis avril 2025, à la veille de l’indice des prix (CPI).",
+   "summary_en": "At Monday's close the Nasdaq gained 2.74% (25,253.14), the S&P 500 2.35% (7,549.94), the Dow 2.15% (52,389.75) and the Russell 2000 3.15% (2,840.81), with every sector finishing higher. Chipmakers, dip buying and lower oil drove the rebound, despite Nvidia falling more than 4% on the internal probe of its CEO; Constellation Energy jumped over 10% after its earnings. The S&P 500 is recovering from its worst week since April 2025, on the eve of the CPI report.",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-9-222339218.html"
   },
   {
    "date": "2026-11-09",
