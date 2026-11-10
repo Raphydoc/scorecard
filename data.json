@@ -268,7 +268,7 @@
    "f": 0.3,
    "id": "cpi",
    "name": "CPI MoM (octobre)",
-   "note": "Compte dans ton score (le CPI sur 1 an n’est pas publié ce mois-ci)",
+   "note": "Compte dans ton score",
    "prev": 0.6,
    "time": "08:30"
   },
@@ -281,17 +281,6 @@
    "note": "Sans énergie ni nourriture",
    "prev": 0.3,
    "f": 0.2,
-   "a": null
-  },
-  {
-   "date": "2026-11-10",
-   "time": "08:30",
-   "id": null,
-   "unit": "%",
-   "name": "CPI YoY (octobre)",
-   "note": "Non publié par le BLS : pas de données d’octobre 2025 (shutdown)",
-   "prev": 3.7,
-   "f": null,
    "a": null
   },
   {
