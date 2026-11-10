@@ -958,10 +958,13 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
   function impOf(item, asset){
     if(item.kind==='fed') return 2;
     if(item.assets){ const ks = asset==='all' ? Object.keys(item.assets) : [asset]; return Math.max(0, ...ks.map(a=>+item.assets[a]||0)); }
-    if(!item.id) return 0;
-    const ind = INDICATORS.find(i=>i.id===item.id); if(!ind) return 0;
+    // versions de l’inflation (CPI de base, PPI MoM…) : même importance que leur famille
+    const fam = !item.id && item.unit ? ((item.name||'').match(/^(CPI|PPI|PCE)\b/)||[])[1] : null;
+    const iid = item.id || (fam ? fam.toLowerCase() : null);
+    if(!iid) return 0;
+    const ind = INDICATORS.find(i=>i.id===iid); if(!ind) return 0;
     const list = asset==='all' ? CAL_ASSETS : [asset];
-    return Math.max(...list.map(a => (ind.only && ind.only!==a) ? 0 : wOf(a,item.id)));
+    return Math.max(...list.map(a => (ind.only && ind.only!==a) ? 0 : wOf(a,iid)));
   }
   function stars(n){ return n ? `<span class="stars" title="Poids ×${n}">${'★'.repeat(n)}<span class="dim">${'★'.repeat(Math.max(0,2-n))}</span></span>` : '<span class="info">info</span>'; }
   function torontoToday(){ try{ return new Date().toLocaleDateString('en-CA',{timeZone:'America/Toronto'}); }catch(e){ return new Date().toISOString().slice(0,10); } }
