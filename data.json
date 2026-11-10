@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T12:44:21Z",
+ "updatedAt": "2026-11-10T13:50:00Z",
  "econ": {
   "values": {
    "gdp": {
@@ -28,9 +28,11 @@
     "d": "2026-10-27"
    },
    "cpi": {
-    "a": 3.7,
-    "f": 3.6,
-    "d": "2026-10-14"
+    "a": 0.4,
+    "f": 0.3,
+    "d": "2026-11-10",
+    "label": "CPI MoM (octobre)",
+    "note": "Pas de YoY ce mois-ci (shutdown de 2025)"
    },
    "ppi": {
     "a": 6.3,
@@ -75,7 +77,7 @@
   "xauusd": {
    "cotLong": 84.33,
    "cotChange": -1.39,
-   "crowdLong": 83,
+   "crowdLong": 81,
    "season": "bear",
    "seasonPct": -4.3,
    "seasonPeriod": "août à octobre"
@@ -83,7 +85,7 @@
   "nasdaq": {
    "cotLong": 65.89,
    "cotChange": -4.41,
-   "crowdLong": 71,
+   "crowdLong": 69,
    "season": "neutral",
    "seasonPct": 0.4,
    "seasonPeriod": "août à octobre"
@@ -91,7 +93,7 @@
   "spx500": {
    "cotLong": 39,
    "cotChange": 0.87,
-   "crowdLong": 55,
+   "crowdLong": 54,
    "season": "bull",
    "seasonPct": 1.5,
    "seasonPeriod": "août à octobre"
@@ -99,7 +101,7 @@
   "us30": {
    "cotLong": 67.43,
    "cotChange": 5.3,
-   "crowdLong": 57,
+   "crowdLong": 56,
    "season": "neutral",
    "seasonPct": -1,
    "seasonPeriod": "août à octobre"
@@ -110,7 +112,7 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 63.67,
    "cotChange": -0.92,
-   "crowdLong": 31
+   "crowdLong": 35
   },
   "xagusd": {
    "season": "bear",
@@ -133,7 +135,7 @@
    "seasonPct": 30.6,
    "cotLong": 53.98,
    "cotChange": -1.51,
-   "crowdLong": 49,
+   "crowdLong": 51,
    "seasonPeriod": "août à octobre"
   },
   "rut": {
@@ -141,7 +143,7 @@
    "seasonPct": -3.8,
    "cotLong": 45.13,
    "cotChange": 2.05,
-   "crowdLong": 70,
+   "crowdLong": 68,
    "seasonPeriod": "août à octobre"
   },
   "eurusd": {
@@ -150,7 +152,7 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 37.2,
    "cotChange": -0.91,
-   "crowdLong": 69
+   "crowdLong": 65
   },
   "usdjpy": {
    "season": "bear",
@@ -158,7 +160,7 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 35.47,
    "cotChange": 0.01,
-   "crowdLong": 34
+   "crowdLong": 36
   },
   "usdcad": {
    "season": "neutral",
@@ -263,7 +265,7 @@
  ],
  "calendar": [
   {
-   "a": null,
+   "a": 0.4,
    "date": "2026-11-10",
    "f": 0.3,
    "id": "cpi",
@@ -273,15 +275,15 @@
    "time": "08:30"
   },
   {
+   "a": 0.3,
    "date": "2026-11-10",
-   "time": "08:30",
+   "f": 0.2,
    "id": null,
-   "unit": "%",
    "name": "CPI de base MoM (octobre)",
    "note": "Sans énergie ni nourriture",
    "prev": 0.3,
-   "f": 0.2,
-   "a": null
+   "time": "08:30",
+   "unit": "%"
   },
   {
    "ai": true,
@@ -381,25 +383,25 @@
    "time": "16:05"
   },
   {
+   "a": null,
    "date": "2026-11-13",
-   "time": "08:30",
+   "f": 0.4,
    "id": null,
-   "unit": "%",
    "name": "PPI MoM (octobre)",
    "prev": 1.3,
-   "f": 0.4,
-   "a": null
+   "time": "08:30",
+   "unit": "%"
   },
   {
+   "a": null,
    "date": "2026-11-13",
-   "time": "08:30",
+   "f": 0.3,
    "id": null,
-   "unit": "%",
    "name": "PPI de base MoM (octobre)",
    "note": "Sans énergie ni nourriture",
    "prev": 0.7,
-   "f": 0.3,
-   "a": null
+   "time": "08:30",
+   "unit": "%"
   },
   {
    "ai": false,
@@ -573,15 +575,15 @@
    "time": "08:30"
   },
   {
+   "a": null,
    "date": "2026-11-25",
-   "time": "08:30",
+   "f": null,
    "id": null,
-   "unit": "%",
    "name": "PCE de base MoM (octobre)",
    "note": "Sans énergie ni nourriture · la mesure préférée de la Fed",
    "prev": 0.3,
-   "f": null,
-   "a": null
+   "time": "08:30",
+   "unit": "%"
   },
   {
    "date": "2026-12-09",
