@@ -437,6 +437,126 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
 .calseg button{font-family:var(--f-body)!important;font-size:11.5px!important;font-weight:600!important;letter-spacing:.08em!important}
 .calseg button[aria-pressed="true"],.seg button[aria-pressed="true"]{background:rgba(242,180,58,.16)!important;color:var(--gold)!important}
 .wrap{grid-template-columns:minmax(0,1fr)} .wrap > *{min-width:0}
+/* ===== Pages visuelles et animations ===== */
+:root{ --liq:#7B5CE0; --tint-b:rgba(20,163,174,.16); --tint-r:rgba(224,56,62,.16); --tint-g:rgba(242,180,58,.16); --tint-l:rgba(123,92,224,.16); }
+:root[data-theme="light"]{ --tint-b:rgba(14,140,150,.12); --tint-r:rgba(211,54,60,.12); --tint-g:rgba(169,116,10,.13); --tint-l:rgba(123,92,224,.12); }
+@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+@keyframes cellIn{from{opacity:0;transform:scale(.92)}to{opacity:1;transform:none}}
+@keyframes blink{0%,100%{opacity:1}50%{opacity:.25}}
+@keyframes pulseRing{0%{box-shadow:0 0 0 0 rgba(242,180,58,.55)}100%{box-shadow:0 0 0 8px rgba(242,180,58,0)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes draw{from{stroke-dashoffset:1}to{stroke-dashoffset:0}}
+@keyframes sweep{from{transform:translateX(-100%)}to{transform:translateX(100%)}}
+@keyframes growW{from{width:0}}
+@media (prefers-reduced-motion:no-preference){
+  .fxin .panel,.fxin .kpi,.fxin .ctr,.fxin .fcard,.fxin .hmhead{animation:fadeUp .5s cubic-bezier(.2,.7,.2,1) both}
+  .fxin .panel:nth-child(2){animation-delay:.06s} .fxin .panel:nth-child(3){animation-delay:.12s} .fxin .panel:nth-child(4){animation-delay:.18s}
+  .hc,.hs,.dcell,.fcard{animation:cellIn .45s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0ms)}
+  .spk polyline{stroke-dasharray:1;animation:draw 1.2s ease-out both}
+  .blink,.tlive i{animation:blink 1.4s infinite}
+  .leanbar i,.sbarh i{animation:growW .9s cubic-bezier(.2,.7,.2,1) both}
+  .hmhead::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,transparent,rgba(242,180,58,.08),transparent);animation:sweep 3.5s linear infinite;pointer-events:none}
+  .cd.soon{animation:blink 1s infinite}
+}
+/* bandeau de prix */
+.tape{display:flex;align-items:center;gap:12px;border:1px solid var(--line);border-radius:6px;background:var(--panel);height:36px;overflow:hidden;min-width:0}
+.tlive{flex:none;display:flex;align-items:center;gap:6px;padding:0 10px;height:100%;background:var(--tint-g);color:var(--gold);font:700 10px/1 var(--f-mono);letter-spacing:.1em;border-right:1px solid var(--line)}
+.tlive i{width:6px;height:6px;border-radius:50%;background:var(--gold)}
+.tmask{flex:1;overflow:hidden;min-width:0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.tin{display:inline-flex;white-space:nowrap;animation:marquee 55s linear infinite}
+.tape:hover .tin{animation-play-state:paused}
+@media (prefers-reduced-motion:reduce){ .tin{animation:none} .tmask{overflow-x:auto} }
+.ti{display:inline-flex;gap:7px;align-items:baseline;padding:0 16px;font:500 12px/1 var(--f-mono);border-right:1px solid var(--line)}
+.ti b{font-family:var(--f-body);font-weight:800;font-size:11px;letter-spacing:.06em}
+.ti .tp{color:var(--fg)}
+.up{color:var(--bull)} .dn{color:var(--bear)}
+/* en-têtes des pages heatmap */
+.hmhead{position:relative;overflow:hidden;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;padding:8px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+.hmhead .ttl{display:flex;align-items:center;gap:8px;font:600 11px/1.2 var(--f-mono);letter-spacing:.14em;color:var(--muted)}
+.blink{width:8px;height:8px;background:var(--gold);border-radius:1px;flex:none}
+.hmhead .badge{font:600 10px/1 var(--f-mono);letter-spacing:.1em;color:var(--gold);border:1px solid var(--gold);padding:5px 8px;border-radius:3px;background:var(--tint-g)}
+/* compteurs */
+.ctrs{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:10px}
+.ctr{border:1px solid var(--line);border-radius:6px;padding:10px 12px;background:var(--panel);display:grid;gap:4px;border-top:2px solid var(--neutral)}
+.ctr > span{font:600 9.5px/1.2 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.ctr b{font:700 30px/1 var(--f-mono);letter-spacing:-.02em}
+.ctr.b{border-top-color:var(--bull)} .ctr.b b{color:var(--bull)}
+.ctr.r{border-top-color:var(--bear)} .ctr.r b{color:var(--bear)}
+.ctr.g{border-top-color:var(--gold)} .ctr.g b{color:var(--gold)}
+.ctr.lean{border-top-color:var(--gold)}
+.leanbar{height:8px;border-radius:4px;background:var(--bear);overflow:hidden;margin-top:6px}
+.leanbar i{display:block;height:100%;width:var(--w);background:var(--bull)}
+.ctr small{display:flex;justify-content:space-between;font:600 10px/1 var(--f-mono);margin-top:2px} .ctr small em{font-style:normal}
+/* grille heatmap */
+.hmwrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px;align-items:start}
+@media (max-width:1560px){ .hmwrap{grid-template-columns:minmax(0,1fr)} .hmside .pb{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px;align-items:start} }
+@media (max-width:700px){ .hmside .pb{grid-template-columns:minmax(0,1fr)} }
+.cnum{opacity:.6;font-size:10px;margin-left:3px}
+table.hm{border-collapse:separate;border-spacing:3px;width:100%;min-width:860px}
+table.hm.fund{min-width:820px}
+table.hm th{font:600 9.5px/1.2 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted);text-align:center;padding:6px 4px;border:0;white-space:nowrap}
+table.hm th:first-child{text-align:left;padding-left:8px}
+table.hm td{border:0;padding:0}
+table.hm tbody tr{cursor:pointer}
+table.hm tbody tr:hover td.hn{background:var(--panel-2)}
+table.hm tr.sel td.hn{box-shadow:inset 3px 0 0 var(--gold);background:var(--tint-g)}
+td.hn{padding:6px 64px 6px 8px!important;min-width:150px;border-radius:4px;vertical-align:middle;position:relative}
+td.hn .nm{display:block;font:800 12.5px/1.2 var(--f-body);letter-spacing:.04em;color:var(--fg);background:none;border:0;padding:0;cursor:pointer;text-align:left}
+td.hn .nm:hover{color:var(--gold)}
+td.hn .px{display:block;font:500 11px/1.3 var(--f-mono);color:var(--muted)} td.hn .px em{font-style:normal}
+td.hn .spk{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:52px;height:22px;opacity:.9}
+td.hc{text-align:center;border-radius:4px;padding:7px 5px!important;min-width:84px;border:1px solid var(--line);background:var(--panel-2);transition:transform .15s,box-shadow .15s}
+td.hc:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.35)}
+td.hc b{display:block;font:800 10.5px/1.15 var(--f-body);letter-spacing:.08em}
+td.hc small{display:block;margin-top:3px;font:500 10px/1.2 var(--f-mono);opacity:.75}
+td.hc.b,td.hc.b1{background:var(--tint-b);border-color:color-mix(in srgb,var(--bull) 55%,transparent);color:var(--bull)}
+td.hc.b2{background:var(--bull);border-color:var(--bull);color:#fff}
+td.hc.r,td.hc.r1{background:var(--tint-r);border-color:color-mix(in srgb,var(--bear) 55%,transparent);color:var(--bear)}
+td.hc.r2{background:var(--bear);border-color:var(--bear);color:#fff}
+td.hc.g{background:var(--tint-g);border-color:color-mix(in srgb,var(--gold) 60%,transparent);color:var(--gold)}
+td.hc.n{color:var(--muted)}
+td.hc.liq{background:var(--tint-l);border-color:color-mix(in srgb,var(--liq) 55%,transparent);color:#A891F5}
+:root[data-theme="light"] td.hc.liq{color:#5B3FC4}
+td.hc.tcol{opacity:.85;border-style:dashed}
+td.hc.bias{min-width:110px}
+td.hs{min-width:84px;text-align:center;padding:4px 6px!important}
+td.hs b{font:700 15px/1 var(--f-mono)}
+.sbarh{position:relative;height:5px;background:var(--panel-2);border-radius:3px;margin:0 0 5px;overflow:hidden}
+.sbarh::after{content:"";position:absolute;left:50%;top:-2px;bottom:-2px;width:1px;background:var(--muted)}
+.sbarh i{position:absolute;top:0;bottom:0;width:var(--w);background:var(--muted)} .sbarh i.b{background:var(--bull)} .sbarh i.r{background:var(--bear)}
+/* panneau latéral technique */
+.hmside .tsc{display:flex;justify-content:space-between;align-items:baseline;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:10px 0;margin:8px 0}
+.hmside .tsc > span{font:600 10px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.hmside .tsc b{font:700 30px/1 var(--f-mono)} .hmside .tsc small{font-size:12px;color:var(--muted);margin-left:2px}
+.lv{display:grid;grid-template-columns:1fr 1fr;gap:8px 12px;margin-top:6px}
+.lv div{display:grid;gap:2px} .lv span{font:600 9px/1.2 var(--f-body);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)} .lv b{font:500 13px/1.2 var(--f-mono)}
+/* heatmap fondamentale */
+.fcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.fcard{border:1px solid var(--line);border-radius:6px;background:var(--panel);padding:8px 10px;display:grid;gap:7px}
+.fcard.b{border-color:color-mix(in srgb,var(--bull) 60%,var(--line));box-shadow:inset 0 0 18px var(--tint-b)} .fcard.r{border-color:color-mix(in srgb,var(--bear) 60%,var(--line));box-shadow:inset 0 0 18px var(--tint-r)}
+.fcard .fh{display:flex;justify-content:space-between;align-items:baseline;gap:6px} .fcard .fh b{font:800 11.5px/1 var(--f-body);letter-spacing:.05em} .fcard .fh span{font:700 13px/1 var(--f-mono)}
+.fcard.b .fh span{color:var(--bull)} .fcard.r .fh span{color:var(--bear)}
+.fb{text-align:center;font:800 9.5px/1 var(--f-body);letter-spacing:.12em;padding:6px 4px;border-radius:3px;background:var(--panel-2);color:var(--muted);text-transform:uppercase}
+.fb.b{background:var(--tint-b);color:var(--bull);border:1px solid color-mix(in srgb,var(--bull) 50%,transparent)} .fb.r{background:var(--tint-r);color:var(--bear);border:1px solid color-mix(in srgb,var(--bear) 50%,transparent)}
+.dgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:8px}
+.dcell{border:1px solid var(--line);border-radius:6px;padding:10px;background:var(--panel-2);display:grid;gap:3px;text-align:center}
+.dcell .dh{font:600 9.5px/1.2 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.dcell b{font:800 12px/1.2 var(--f-body);letter-spacing:.08em}
+.dcell .dv{font:700 20px/1.1 var(--f-mono);color:var(--fg)} .dcell small{font-size:10.5px;color:var(--muted)}
+.dcell.b{background:var(--tint-b);border-color:color-mix(in srgb,var(--bull) 50%,transparent)} .dcell.b b{color:var(--bull)}
+.dcell.r{background:var(--tint-r);border-color:color-mix(in srgb,var(--bear) 50%,transparent)} .dcell.r b{color:var(--bear)}
+.dcell.g{background:var(--tint-g);border-color:color-mix(in srgb,var(--gold) 55%,transparent)} .dcell.g b{color:var(--gold)}
+.verdictbox{border:1px solid var(--gold);border-radius:6px;background:var(--tint-g);padding:12px 14px;display:grid;gap:4px;animation:pulseRing 2.4s infinite}
+@media (prefers-reduced-motion:reduce){ .verdictbox{animation:none} }
+.verdictbox .vk,.nowm .vk{font:700 9.5px/1 var(--f-mono);letter-spacing:.16em;color:var(--gold)} .verdictbox b{font-size:14px}
+/* saisonnalité */
+.pielbl{position:absolute;inset:0;display:grid;place-content:center;text-align:center;pointer-events:none}
+.pielbl b{font:700 28px/1 var(--f-mono)} .pielbl > span{font:600 9.5px/1.4 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.nowm{margin-top:12px;border:1px solid var(--gold);border-radius:6px;padding:10px;display:grid;gap:4px;background:var(--tint-g)} .nowm b{font:700 16px/1.2 var(--f-mono)} .nowm small{color:var(--muted)}
+/* compte à rebours */
+.cd{font:600 11.5px/1 var(--f-mono);color:var(--bear);white-space:nowrap}
+.cd.due{color:var(--gold)}
+@media (max-width:560px){ .ctr b{font-size:24px} td.hn{min-width:120px} .dcell .dv{font-size:17px} }
 </style>
 
 </head>
@@ -449,6 +569,9 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
   <span class="navgrp">Analyse</span>
   <button type="button" data-page="score" aria-current="page">Scorecard</button>
   <button type="button" data-page="top">Top Setups</button>
+  <button type="button" data-page="fund">Heatmap fondamentale</button>
+  <button type="button" data-page="tech">Heatmap technique</button>
+  <button type="button" data-page="seas">Saisonnalité</button>
   <span class="navgrp">Macro</span>
   <button type="button" data-page="eco">Économie US</button>
   <button type="button" data-page="fed">Taux</button>
@@ -502,6 +625,7 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
       <button id="editBtn" class="btn" type="button">Ma tendance</button>
     </div>
   </header>
+  <div class="tape" id="tape" hidden></div>
 
 
   <div id="note" class="note" hidden></div>
@@ -620,6 +744,9 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
   <section data-pg="eco" hidden aria-label="Économie US"><div class="p2" id="p2eco"></div></section>
   <section data-pg="cot" hidden aria-label="COT"><div class="p2" id="p2cot"></div></section>
   <section data-pg="sent" hidden aria-label="Sentiment"><div class="p2" id="p2sent"></div></section>
+  <section data-pg="fund" hidden aria-label="Heatmap fondamentale"><div class="p2" id="p2fund"></div></section>
+  <section data-pg="tech" hidden aria-label="Heatmap technique"><div class="p2" id="p2tech"></div></section>
+  <section data-pg="seas" hidden aria-label="Saisonnalité"><div class="p2" id="p2seas"></div></section>
   <section data-pg="cbg" hidden aria-label="Or · banques centrales"><div class="p2" id="p2cbg"></div></section>
   <section data-pg="news" hidden aria-label="Nouvelles"><div class="p2" id="p2news"></div></section>
 
@@ -885,7 +1012,7 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
     if(pts.length>1) g += `<text x="${W}" y="${H-3}" font-size="10" fill="var(--muted)" text-anchor="end" font-family="IBM Plex Mono, monospace">${fmtDate(last.date)}</text>`;
     box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Historique du score total">${g}</svg>`;
   }
-  function renderAll(){ renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); if(typeof renderP2==='function') renderP2(); }
+  function renderAll(){ if(typeof renderTape==='function') renderTape(); renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); if(typeof renderP2==='function') renderP2(); }
 
   // ---------- editing ----------
   let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false, eurusd:false, usdjpy:false, usdcad:false}, saveTimer = null, chain = Promise.resolve();
@@ -1084,7 +1211,7 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
         + `<td class="name">${esc(it.name||'')}${it.note?`<small>${esc(it.note)}</small>`:''}</td>`
         + `<td class="num">${it.prev!=null?fmt(it.prev,u):'—'}</td>`
         + `<td class="num">${it.f!=null?fmt(it.f,u):'—'}</td>`
-        + `<td class="num">${it.a!=null?`<b>${fmt(it.a,u)}</b>`:'—'}</td>`
+        + `<td class="num">${it.a!=null?`<b>${fmt(it.a,u)}</b>`:(!past && it.time ? `<span class="cd" data-t="${etEpoch(it.date,it.time)}"></span>` : '—')}</td>`
         + `<td class="c">${stars(imp)}</td></tr>`;
     });
     const n = wk.length, n3 = wk.filter(it=>impOf(it,state.calAsset)>=2).length;
@@ -1766,6 +1893,242 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
     });
   }
 
+  // ================= Pages visuelles : heatmaps, saisonnalité, bandeau, animations =================
+  state.tech = state.tech || null; state.techSel = state.techSel || 'xauusd'; state.techCat = state.techCat || 'all';
+  state.seasA = state.seasA || 'xauusd';
+  const RM = () => window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const T_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', eurusd:'fx', usdjpy:'fx', usdcad:'fx', usoil:'nrg', btcusd:'cry'};
+  const T_CATS = [['all',['Tous','All']],['ind',['Indices','Indices']],['met',['Métaux','Metals']],['fx',['Devises','FX']],['nrg',['Énergie','Energy']],['cry',['Crypto','Crypto']]];
+  const pxFmt = v => v==null ? '—' : nf(v, v<10 ? 4 : v<1000 ? 2 : 0);
+  // chiffres qui défilent
+  function countUp(root){
+    if(RM()) return;
+    (root||document).querySelectorAll('[data-cu]').forEach(el=>{
+      if(el.dataset.cuDone) return; el.dataset.cuDone = '1';
+      const end = +el.dataset.cu, d = +(el.dataset.cud||0), pre = el.dataset.cup||'', suf = el.dataset.cus||'', t0 = performance.now(), dur = 900;
+      const step = t => { const k = Math.min(1,(t-t0)/dur), e = 1-Math.pow(1-k,3), v = end*e;
+        el.textContent = pre + (end>0&&el.dataset.cusg?'+':'') + nf(v, d) + suf; if(k<1) requestAnimationFrame(step); };
+      requestAnimationFrame(step);
+    });
+  }
+  const cu = (v, d=0, suf='', sg=false) => `<span data-cu="${v}" data-cud="${d}" data-cus="${esc(suf)}"${sg?' data-cusg="1"':''}>${sg&&v>0?'+':''}${nf(v,d)}${esc(suf)}</span>`;
+  function sparkSvg(vals, up){
+    const v = (vals||[]).filter(x=>x!=null); if(v.length<2) return '';
+    const mn = Math.min(...v), mx = Math.max(...v), W=120, H=30, r=(mx-mn)||1;
+    const pts = v.map((x,i)=>`${(i/(v.length-1)*W).toFixed(1)},${(H-2-(x-mn)/r*(H-4)).toFixed(1)}`).join(' ');
+    const c = up ? 'var(--bull)' : 'var(--bear)';
+    return `<svg class="spk" viewBox="0 0 ${W} ${H}" preserveAspectRatio="none" aria-hidden="true"><polyline points="${pts}" fill="none" stroke="${c}" stroke-width="1.6" vector-effect="non-scaling-stroke" pathLength="1"/></svg>`;
+  }
+  function noTech(what){
+    return `<div class="panel"><div class="pb"><p class="livebox">${L(`Les ${what} arrivent avec la prochaine collecte automatique des prix (chaque soir de semaine vers 17 h 15).`, `The ${what} arrive with the next automatic price update (every weekday evening around 5:15 p.m.).`)}</p></div></div>`;
+  }
+
+  // ---------- bandeau de prix ----------
+  function renderTape(){
+    const box = $('tape'); if(!box) return;
+    const T = state.tech && state.tech.assets; if(!T){ box.hidden = true; return; }
+    const ks = Object.keys(ASSETS).filter(k=>T[k]);
+    const item = k => { const t = T[k], c = t.chg1d||0; return `<span class="ti"><b>${esc(TOP_NAMES[k])}</b><span class="tp">${pxFmt(t.px)}</span><span class="${c>0?'up':c<0?'dn':''}">${c>0?'▲':c<0?'▼':'■'} ${sg2(c,2)} %</span></span>`; };
+    const row = ks.map(item).join('');
+    box.hidden = false;
+    box.innerHTML = `<span class="tlive"><i></i>${L('CLÔTURE','CLOSE')} ${esc(perLbl(T[ks[0]].date))}</span><div class="tmask"><div class="tin">${row}${row}</div></div>`;
+  }
+
+  // ---------- heatmap technique ----------
+  const TW = {
+    trend:{bull:['HAUSSIÈRE','BULLISH','b'], bear:['BAISSIÈRE','BEARISH','r'], neutral:['NEUTRE','NEUTRAL','n']},
+    mom:{overbought:['SURACHETÉ','OVERBOUGHT','r'], oversold:['SURVENDU','OVERSOLD','b'], bull:['HAUSSIER','BULLISH','b'], bear:['BAISSIER','BEARISH','r'], neutral:['NEUTRE','NEUTRAL','n']},
+    macd:{'bull+':['HAUSSIER ↑','BULLISH ↑','b'], bull:['HAUSSIER','BULLISH','b'], 'bear+':['BAISSIER ↓','BEARISH ↓','r'], bear:['BAISSIER','BEARISH','r']},
+    vol:{high:['HAUTE','HIGH','g'], normal:['NORMALE','NORMAL','n'], low:['BASSE','LOW','n']},
+    struct:{bull:['HAUSSIÈRE','BULLISH','b'], bear:['BAISSIÈRE','BEARISH','r'], range:['RANGE','RANGING','n']},
+    weekly:{bull:['HAUSSIÈRE','BULLISH','b'], bear:['BAISSIÈRE','BEARISH','r'], neutral:['NEUTRE','NEUTRAL','n']}
+  };
+  const tw = (g,k) => { const w = (TW[g]||{})[k] || ['—','—','n']; return {t:isEN()?w[1]:w[0], c:w[2]}; };
+  function techAxes(t){ // 0 à 100 pour le radar
+    const m = {bull:85, neutral:50, bear:15, range:50, 'bull+':95, 'bear+':5, overbought:80, oversold:20, high:85, normal:50, low:20};
+    return [m[t.trend], Math.max(0,Math.min(100,t.rsi)), m[t.macd], m[t.struct], m[t.weekly], m[t.vol]];
+  }
+  function renderTechHM(){
+    const box = $('p2tech'); if(!box) return;
+    const T = state.tech && state.tech.assets;
+    if(!T){ box.innerHTML = noTech(L('indicateurs techniques','technical indicators')); return; }
+    const all = Object.keys(ASSETS).filter(k=>T[k]);
+    const list = all.filter(k=>state.techCat==='all' || T_CAT[k]===state.techCat).sort((a,b)=>T[b].score-T[a].score);
+    if(!T[state.techSel]) state.techSel = list[0] || all[0];
+    const n = f => all.filter(k=>f(T[k])).length;
+    const nb = n(t=>t.trend==='bull'), nr = n(t=>t.trend==='bear'), ob = n(t=>t.mom==='overbought'), os = n(t=>t.mom==='oversold'), hv = n(t=>t.vol==='high');
+    const bp = Math.round(nb/Math.max(1,nb+nr)*100);
+    const cell = (g,k,sub,i) => { const w = tw(g,k); return `<td class="hc ${w.c}" style="--d:${i*35}ms"><b>${esc(w.t)}</b><small>${sub}</small></td>`; };
+    let rows = '';
+    list.forEach((k,i)=>{ const t = T[k], c = t.chg1d||0, liqUp = t.liq && t.liq.side==='above';
+      rows += `<tr class="${k===state.techSel?'sel':''}" data-k="${k}">
+        <td class="hn"><span class="nm">${esc(TOP_NAMES[k])}</span><span class="px">${pxFmt(t.px)} <em class="${c>0?'up':c<0?'dn':''}">${sg2(c,2)} %</em></span>${sparkSvg(t.spark.slice(-40), (t.chg1m||0)>=0)}</td>
+        ${cell('trend',t.trend, `MM200 ${sg2(t.d200,1)} %`, i)}
+        ${cell('mom',t.mom, `RSI ${nf(t.rsi,0)}`, i+1)}
+        ${cell('macd',t.macd, L('MACD 12/26','MACD 12/26'), i+2)}
+        ${cell('vol',t.vol, `${nf(t.volAnn,1)} % ${L('ann.','ann.')}`, i+3)}
+        ${cell('struct',t.struct, L('sommets / creux 20 j','20-day highs / lows'), i+4)}
+        <td class="hc liq" style="--d:${(i+5)*35}ms"><b>${liqUp?L('POOL AU-DESSUS','POOL ABOVE'):L('POOL EN DESSOUS','POOL BELOW')}</b><small>${liqUp?'↑':'↓'} ${sg2(t.liq.d,2)} % · ${pxFmt(t.liq.lvl)}</small></td>
+        ${cell('weekly',t.weekly, L('MM 20 sem.','20-wk MA'), i+6)}
+        <td class="hs" style="--d:${(i+7)*35}ms"><div class="sbarh"><i class="${t.score>0?'b':t.score<0?'r':''}" style="--w:${Math.abs(t.score)*10}%;${t.score<0?'right:50%':'left:50%'}"></i></div><b class="${t.score>0?'up':t.score<0?'dn':''}">${sg2(t.score,0)}</b></td>
+      </tr>`; });
+    const S = T[state.techSel];
+    box.innerHTML = `
+      <div class="hmhead"><div class="ttl"><span class="blink"></span>${L('SURVEILLANCE TECHNIQUE · BALAYAGE MULTI-SIGNAUX','TECHNICAL SURVEILLANCE · MULTI-SIGNAL SCAN')}</div><div class="badge">${all.length} ${L('ACTIFS · CLÔTURES QUOTIDIENNES · CALCULÉ','ASSETS · DAILY CLOSES · COMPUTED')}</div></div>
+      <div class="ctrs">
+        <div class="ctr b"><span>${L('Tendance haussière','Bullish trend')}</span><b>${cu(nb)}</b></div>
+        <div class="ctr r"><span>${L('Tendance baissière','Bearish trend')}</span><b>${cu(nr)}</b></div>
+        <div class="ctr r"><span>${L('Suracheté (RSI ≥ 70)','Overbought (RSI ≥ 70)')}</span><b>${cu(ob)}</b></div>
+        <div class="ctr b"><span>${L('Survendu (RSI ≤ 30)','Oversold (RSI ≤ 30)')}</span><b>${cu(os)}</b></div>
+        <div class="ctr g"><span>${L('Volatilité haute','High volatility')}</span><b>${cu(hv)}</b></div>
+        <div class="ctr lean"><span>${L('Penchant du marché','Market lean')}</span><div class="leanbar"><i style="--w:${bp}%"></i></div><small><em class="up">${bp} % ${L('haussier','bull')}</em><em class="dn">${100-bp} % ${L('baissier','bear')}</em></small></div>
+      </div>
+      <div class="hmwrap">
+        <div class="panel hmmain"><div class="ph"><div class="chips" id="techCats">${T_CATS.map(([k,l])=>`<button type="button" class="chip" data-c="${k}" aria-pressed="${state.techCat===k}">${esc(isEN()?l[1]:l[0])} <span class="cnum">${k==='all'?all.length:all.filter(x=>T_CAT[x]===k).length}</span></button>`).join('')}</div><p>${L('Trié par score technique · clique une ligne','Sorted by technical score · click a row')}</p></div>
+          <div class="tablewrap"><table class="hm"><thead><tr><th>${L('Instrument','Instrument')}</th><th>${L('Tendance','Trend')}</th><th>Momentum</th><th>MACD</th><th>${L('Volatilité','Volatility')}</th><th>Structure</th><th>${L('Liquidité','Liquidity')}</th><th>${L('Hebdo','Weekly')}</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table></div></div>
+        <div class="panel hmside"><div class="ph"><div><h3>${esc(TOP_NAMES[state.techSel])}</h3><p>${pxFmt(S.px)} · ${sg2(S.chg1d,2)} % ${L('aujourd’hui','today')} · ${sg2(S.chg1m,1)} % ${L('sur 1 mois','1 month')}</p></div></div>
+          <div class="pb"><div class="cbox" style="height:270px"><canvas id="techRadar"></canvas></div>
+          <div class="tside"><div class="tsc"><span>${L('Score technique','Technical score')}</span><b class="${S.score>0?'up':S.score<0?'dn':''}">${cu(S.score,0,'',true)}<small>/5</small></b></div>
+          <div class="lv"><div><span>MM20</span><b>${pxFmt(S.sma20)}</b></div><div><span>MM50</span><b>${pxFmt(S.sma50)}</b></div><div><span>MM200</span><b>${pxFmt(S.sma200)}</b></div><div><span>${L('Sommet 20 j','20-d high')}</span><b>${pxFmt(S.hi20)}</b></div><div><span>${L('Creux 20 j','20-d low')}</span><b>${pxFmt(S.lo20)}</b></div><div><span>${L('Depuis janvier','YTD')}</span><b class="${(S.chgYtd||0)>=0?'up':'dn'}">${sg2(S.chgYtd,1)} %</b></div></div></div></div></div>
+      </div>
+      <div class="explain"><p><b>${L('Comment lire','How to read')}</b> : ${L('Tendance = prix contre les moyennes mobiles de 50 et 200 jours et la pente de la MM50. Momentum = RSI 14 jours (≥ 70 suracheté, ≤ 30 survendu). MACD : ↑ ou ↓ quand l’histogramme accélère. Volatilité = volatilité sur 20 jours comparée à la dernière année. Structure = sommets et creux plus hauts (haussière) ou plus bas (baissière). Liquidité = le niveau le plus proche où se trouvent les stops (sommet ou creux des 20 derniers jours). Le score va de −5 à +5.','Trend = price vs the 50- and 200-day moving averages and the slope of the 50-day. Momentum = 14-day RSI (≥ 70 overbought, ≤ 30 oversold). MACD: ↑ or ↓ when the histogram accelerates. Volatility = 20-day volatility vs the past year. Structure = higher (bullish) or lower (bearish) highs and lows. Liquidity = the nearest level where stops sit (20-day high or low). Score ranges from −5 to +5.')}</p><p>${L('Cette heatmap ne change pas ton score du Scorecard : ta case « Tendance » reste la tienne.','This heatmap does not change your Scorecard score: your “Trend” box stays yours.')}</p></div>
+      <p class="src">${L('Source','Source')} : ${esc(state.tech.src||'')} · ${L('calculé le','computed')} ${new Date(state.tech.asOf).toLocaleString(LOC(),{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</p>`;
+    box.querySelectorAll('#techCats .chip').forEach(b=>b.addEventListener('click', ()=>{ state.techCat = b.dataset.c; renderTechHM(); }));
+    box.querySelectorAll('table.hm tbody tr').forEach(r=>r.addEventListener('click', ()=>{ state.techSel = r.dataset.k; renderTechHM(); }));
+    countUp(box);
+    needChart().then(ok=>{ if(!ok) return; const g = css('--gold');
+      mkChart('techRadar', {type:'radar', data:{labels:[L('Tendance','Trend'),'Momentum','MACD','Structure',L('Hebdo','Weekly'),L('Volatilité','Volatility')], datasets:[{label:TOP_NAMES[state.techSel], data:techAxes(S), borderColor:g, backgroundColor:g+'33', pointBackgroundColor:g, borderWidth:2}]},
+        options:{animation:{duration:RM()?0:1100, easing:'easeOutBack'}, interaction:{mode:'nearest'}, scales:{r:{min:0, max:100, ticks:{display:false, stepSize:25}, grid:{color:css('--line')}, angleLines:{color:css('--line')}, pointLabels:{color:css('--fg'), font:{size:11, weight:'600'}}}}, plugins:{legend:{display:false}, tooltip:{enabled:false}}}});
+    });
+  }
+
+  // ---------- heatmap fondamentale ----------
+  const FCATS = [
+    {k:'gro', n:['Croissance','Growth'], ids:['gdp','pmi_mfg','pmi_srv','retail','conf']},
+    {k:'inf', n:['Inflation','Inflation'], ids:['cpi','ppi','pce']},
+    {k:'job', n:['Emploi','Labour'], ids:['nfp','unemp','claims','adp','jolts']},
+    {k:'y10', n:['Taux 10 ans','10Y yield'], cols:['yield10']},
+    {k:'cot', n:['COT','COT'], f:C=>C.rows.cotNet + C.rows.cotChg},
+    {k:'crowd', n:['Foule','Crowd'], f:C=>C.rows.crowd},
+    {k:'seas', n:['Saisonnalité','Seasonality'], f:C=>C.rows.season}
+  ];
+  function fcat(a, C, c){
+    if(c.f) return c.f(C) || 0;
+    return (c.ids||c.cols).reduce((s,id)=>{ const v = topCell(a, C, {k:id}); return s + (v||0); }, 0);
+  }
+  function macroDossier(){
+    const V = state.econ.values||{}, g = id => V[id]||{}, live = state.live||{}, R = live.rates||{};
+    const word = (cond, yes, no) => cond ? yes : no;
+    const cpi = g('cpi'), core = (live.macro||{}).core, unemp = g('unemp'), nfp = g('nfp'), gdp = g('gdp'), mfg = g('pmi_mfg'), srv = g('pmi_srv'), conf = g('conf'), retail = g('retail');
+    const ff = R.ff||[], ffL = ff.length ? ff[ff.length-1][1] : null, ffP = ff.length>13 ? ff[ff.length-14][1] : null;
+    const cells = [];
+    if(ffL!=null) cells.push({h:L('Politique de la Fed','Fed policy'), w: ffP==null||ffL===ffP ? L('EN PAUSE','ON HOLD') : ffL<ffP ? L('BAISSE DE TAUX','CUTTING') : L('HAUSSE DE TAUX','HIKING'), v:`${nf(ffL,2)} %`, s:ffP!=null&&ffL!==ffP? `${sg2(ffL-ffP,2)} pt ${L('en 3 mois','in 3 months')}`:L('taux directeur (borne haute)','policy rate (upper bound)'), c: ffP!=null&&ffL<ffP?'b':ffP!=null&&ffL>ffP?'r':'n'});
+    if(cpi.a!=null){ const yoy = !((cpi.label||'').match(/MoM/)); cells.push({h:L('Inflation','Inflation'), w: yoy ? (cpi.a>3?L('BIEN AU-DESSUS DE LA CIBLE','WELL ABOVE TARGET'):cpi.a>2.2?L('AU-DESSUS DE LA CIBLE','ABOVE TARGET'):L('PRÈS DE LA CIBLE','NEAR TARGET')) : (cpi.a>0.3?L('ACCÉLÈRE','ACCELERATING'):cpi.a<0.2?L('RALENTIT','COOLING'):L('STABLE','STEADY')), v:`${nf(cpi.a,1)} %`, s:`${esc(cpi.label||'CPI YoY')} · ${L('prévu','exp.')} ${nf(cpi.f,1)} %`, c: cpi.a>cpi.f?'g':cpi.a<cpi.f?'b':'n'}); }
+    if(gdp.a!=null) cells.push({h:L('Croissance','Growth'), w: gdp.a>=2.5?L('EN EXPANSION','EXPANDING'):gdp.a>=1?L('MODÉRÉE','MODERATE'):gdp.a>=0?L('FAIBLE','WEAK'):L('CONTRACTION','CONTRACTION'), v:`${nf(gdp.a,1)} %`, s:`${L('PIB annualisé','GDP annualized')} · ${L('prévu','exp.')} ${nf(gdp.f,1)} %`, c: gdp.a>=gdp.f?'b':'r'});
+    if(unemp.a!=null) cells.push({h:L('Emploi','Labour'), w: (nfp.a!=null&&nfp.a>=150&&unemp.a<4.3)?L('SOLIDE','STRONG'):unemp.a>=4.5||(nfp.a!=null&&nfp.a<50)?L('S’AFFAIBLIT','SOFTENING'):L('STABLE','STABLE'), v:`${nf(unemp.a,1)} %`, s:`${L('chômage','unemployment')}${nfp.a!=null?` · NFP ${sg2(nfp.a,0)}k`:''}`, c: unemp.a<=unemp.f?'b':'r'});
+    if(mfg.a!=null){ const avg = srv.a!=null ? (mfg.a+srv.a)/2 : mfg.a; cells.push({h:L('Activité (ISM)','Activity (ISM)'), w: avg>=52?L('EXPANSION','EXPANSION'):avg>=50?L('LÉGÈRE EXPANSION','MILD EXPANSION'):L('CONTRACTION','CONTRACTION'), v:nf(mfg.a,1), s:`${L('manuf.','mfg')} ${nf(mfg.a,1)} · ${L('services','services')} ${nf(srv.a,1)}`, c: avg>=50?'b':'r'}); }
+    if(conf.a!=null) cells.push({h:L('Consommateur','Consumer'), w: conf.a>=conf.f?L('EN AMÉLIORATION','IMPROVING'):L('EN BAISSE','WEAKENING'), v:nf(conf.a,1), s:`${L('confiance','confidence')}${retail.a!=null?` · ${L('ventes','retail')} ${sg2(retail.a,1)} %`:''}`, c: conf.a>=conf.f?'b':'r'});
+    const y = state.econ.yield10y, y10 = R.y10||[]; if(y) cells.push({h:L('Taux 10 ans','10Y yield'), w: y==='rising'?L('EN HAUSSE','RISING'):y==='falling'?L('EN BAISSE','FALLING'):L('STABLE','FLAT'), v: y10.length?`${nf(y10[y10.length-1][1],2)} %`:'—', s:L('tendance sur 1 mois','1-month trend'), c: y==='rising'?'r':y==='falling'?'b':'n'});
+    return cells;
+  }
+  function renderFundHM(){
+    const box = $('p2fund'); if(!box) return;
+    const ks = Object.keys(ASSETS), Cs = {}; ks.forEach(a=>Cs[a]=compute(a));
+    const order = ks.slice().sort((a,b)=>Cs[b].total-Cs[a].total);
+    const T = (state.tech||{}).assets||{};
+    const cards = order.map((a,i)=>{ const t = Cs[a].total, [vt] = verdict(t), c = t>=4?'b':t<=-4?'r':'n';
+      return `<div class="fcard ${c}" style="--d:${i*45}ms"><div class="fh"><b>${esc(TOP_NAMES[a])}</b><span>${cu(t,0,'',true)}</span></div><div class="fb ${c}">${esc(vt)}</div></div>`; }).join('');
+    const dos = macroDossier().map((c,i)=>`<div class="dcell ${c.c}" style="--d:${i*60}ms"><span class="dh">${esc(c.h)}</span><b>${esc(c.w)}</b><span class="dv">${esc(c.v)}</span><small>${c.s}</small></div>`).join('');
+    const cw = v => v>=2?[L('HAUSSIER','BULLISH'),'b2']:v>0?[L('HAUSSIER','BULLISH'),'b1']:v<=-2?[L('BAISSIER','BEARISH'),'r2']:v<0?[L('BAISSIER','BEARISH'),'r1']:[L('NEUTRE','NEUTRAL'),'n'];
+    let rows = '';
+    order.forEach((a,i)=>{ const C = Cs[a];
+      rows += `<tr><td class="hn"><button type="button" data-goto="${a}" class="nm">${esc(TOP_NAMES[a])}</button></td>` + FCATS.map((c,j)=>{ const v = fcat(a,C,c), [w,k] = cw(v); return `<td class="hc ${k}" style="--d:${(i+j)*30}ms"><b>${esc(w)}</b><small>${sg2(v,0)}</small></td>`; }).join('')
+        + (()=>{ const t = T[a]; if(!t) return '<td class="hc n"><b>—</b><small></small></td>'; const [w,k] = cw(t.score>=2?2:t.score<=-2?-2:t.score); return `<td class="hc ${k} tcol" style="--d:${(i+8)*30}ms"><b>${esc(w)}</b><small>${L('tech.','tech.')} ${sg2(t.score,0)}</small></td>`; })()
+        + (()=>{ const t = C.total, [vt] = verdict(t); return `<td class="hc bias ${t>=4?'b2':t<=-4?'r2':'n'}" style="--d:${(i+9)*30}ms"><b>${esc(vt)}</b><small>${sg2(t,0)}</small></td>`; })() + `</tr>`; });
+    const best = order[0], worst = order[order.length-1];
+    box.innerHTML = `
+      <div class="hmhead"><div class="ttl"><span class="blink"></span>${L('FONDAMENTAUX · DOSSIER MACRO PAR ACTIF','FUNDAMENTALS · MACRO FILE BY ASSET')}</div><div class="badge">${ks.length} ${L('ACTIFS · DERNIÈRES PUBLICATIONS','ASSETS · LATEST RELEASES')}</div></div>
+      <div class="fcards">${cards}</div>
+      <div class="panel"><div class="ph"><div><h3>${L('Dossier macro · États-Unis','Macro file · United States')}</h3><p>${L('Ce que disent les dernières données américaines, en un mot','What the latest US data says, in a word')}</p></div></div><div class="pb"><div class="dgrid">${dos}</div></div></div>
+      <div class="panel"><div class="ph"><div><h3>${L('Heatmap fondamentale','Fundamental heatmap')}</h3><p>${L('Points ajoutés au score de chaque actif, par catégorie (poids inclus) · plus la case est foncée, plus le signal est fort','Points added to each asset’s score, by category (weights included) · darker = stronger')}</p></div></div>
+        <div class="tablewrap"><table class="hm fund"><thead><tr><th>${L('Actif','Asset')}</th>${FCATS.map(c=>`<th>${esc(isEN()?c.n[1]:c.n[0])}</th>`).join('')}<th>${L('Technique','Technical')}</th><th>${L('Biais','Bias')}</th></tr></thead><tbody>${rows}</tbody></table></div></div>
+      <div class="verdictbox"><span class="vk">${L('VERDICT FONDAMENTAL','FUNDAMENTAL VERDICT')}</span><b>${L(`Les fondamentaux favorisent ${TOP_NAMES[best]} (${sg2(Cs[best].total,0)}) et pèsent sur ${TOP_NAMES[worst]} (${sg2(Cs[worst].total,0)}).`, `Fundamentals favour ${TOP_NAMES[best]} (${sg2(Cs[best].total,0)}) and weigh on ${TOP_NAMES[worst]} (${sg2(Cs[worst].total,0)}).`)}</b></div>
+      <p class="src">${L('Même calcul que ton Scorecard · la colonne Technique vient de la heatmap technique et ne compte pas dans le biais · clique un actif pour son détail','Same math as your Scorecard · the Technical column comes from the technical heatmap and is not part of the bias · click an asset for details')}</p>`;
+    box.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click', ()=>{ state.asset = b.dataset.goto; try{ localStorage.setItem('sc-asset', state.asset); }catch(e){} showPage('score'); renderAll(); }));
+    countUp(box);
+  }
+
+  // ---------- labo de saisonnalité ----------
+  const MOIS_C = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'], MON_C = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function renderSeas(){
+    const box = $('p2seas'); if(!box) return;
+    const SS = state.tech && state.tech.seas;
+    if(!SS){ box.innerHTML = noTech(L('statistiques saisonnières','seasonal statistics')); return; }
+    if(!SS[state.seasA]) state.seasA = Object.keys(SS)[0];
+    const s = SS[state.seasA], a = state.seasA, mo = new Date().getMonth();
+    const mons = isEN()?MON_C:MOIS_C;
+    const bi = s.month.indexOf(Math.max(...s.month)), wi = s.month.indexOf(Math.min(...s.month));
+    const winPct = Math.round(s.yearPos/Math.max(1,s.years)*100);
+    box.innerHTML = `
+      <div class="hmhead"><div class="ttl"><span class="blink"></span>${L('LABO DE SAISONNALITÉ · HISTORIQUE MULTI-ANNÉES','SEASONALITY LAB · MULTI-YEAR HISTORY')}</div><div class="badge">${s.from}–${s.to} · ${s.years} ${L('ANS','YEARS')}</div></div>
+      <div class="panel"><div class="pb"><div class="chips" id="seasChips">${Object.keys(ASSETS).filter(k=>SS[k]).map(k=>`<button type="button" class="chip" data-a="${k}" aria-pressed="${k===a}">${esc(TOP_NAMES[k])}</button>`).join('')}</div></div></div>
+      <div class="g2">
+        <div class="panel"><div class="ph"><div><h3>${L(`Tendance saisonnière de ${TOP_NAMES[a]} sur ${s.years} ans`, `Seasonal trend of ${TOP_NAMES[a]} over ${s.years} years`)}</h3><p>${L('Rendement cumulé moyen depuis le 1er janvier · la ligne dorée = aujourd’hui','Average cumulative return since Jan 1 · gold line = today')}</p></div></div><div class="pb"><div class="cbox lg"><canvas id="seasCurve"></canvas></div></div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('Taux de réussite','Win rate')}</h3><p>${L('Années terminées en hausse','Years that ended up')}</p></div></div><div class="pb"><div class="cbox" style="height:220px"><canvas id="seasPie"></canvas><div class="pielbl"><b>${cu(winPct,0,' %')}</b><span>${L('positives','positive')}</span></div></div>
+          <div class="lv"><div><span>${L('Rendement annuel moyen','Avg annual return')}</span><b class="${s.yearAvg>=0?'up':'dn'}">${sg2(s.yearAvg,1)} %</b></div><div><span>${L('Meilleur mois','Best month')}</span><b class="up">${mons[bi]} ${sg2(s.month[bi],2)} %</b></div><div><span>${L('Pire mois','Worst month')}</span><b class="dn">${mons[wi]} ${sg2(s.month[wi],2)} %</b></div><div><span>${L('Meilleure année','Best year')}</span><b class="up">${sg2(s.best,1)} %</b></div><div><span>${L('Pire année','Worst year')}</span><b class="dn">${sg2(s.worst,1)} %</b></div></div>
+          <div class="nowm"><span class="vk">${L('CE MOIS-CI','THIS MONTH')} · ${esc(mons[mo]).toUpperCase()}</span><b class="${s.month[mo]>=0?'up':'dn'}">${sg2(s.month[mo],2)} % ${L('en moyenne','on average')}</b><small>${L('positif','positive')} ${s.monthWin[mo]} % ${L('des années','of years')}</small></div></div></div>
+      </div>
+      <div class="g2">
+        <div class="panel"><div class="ph"><div><h3>${L('Rendement moyen par mois','Average return by month')}</h3><p>${L('En doré : le mois en cours','Gold: current month')}</p></div></div><div class="pb"><div class="cbox"><canvas id="seasMon"></canvas></div></div></div>
+        <div class="panel"><div class="ph"><div><h3>${L('Rendement moyen par jour','Average return by weekday')}</h3><p>${L('Du lundi au vendredi','Monday to Friday')}</p></div></div><div class="pb"><div class="cbox"><canvas id="seasWd"></canvas></div></div></div>
+      </div>
+      <p class="src">${L('Source','Source')} : ${esc(state.tech.src||'')} · ${L('calcul sur les clôtures quotidiennes','computed on daily closes')} · ${L('le passé ne garantit pas l’avenir','past performance does not guarantee the future')}</p>`;
+    box.querySelectorAll('#seasChips .chip').forEach(b=>b.addEventListener('click', ()=>{ state.seasA = b.dataset.a; renderSeas(); }));
+    countUp(box);
+    needChart().then(ok=>{ if(!ok) return;
+      const bull = css('--bull'), bear = css('--bear'), gold = css('--gold');
+      const wk = Math.min(52, Math.floor((new Date() - new Date(new Date().getFullYear(),0,1))/6048e5));
+      const lab = s.curve.map((_,i)=>{ const d = new Date(2001,0,1+i*7); return d.toLocaleDateString(LOC(),{month:'short'}); });
+      const todayLine = {id:'today', afterDatasetsDraw(c){ const x = c.scales.x.getPixelForValue(wk), {top,bottom} = c.chartArea, g2 = c.ctx; g2.save(); g2.strokeStyle = gold; g2.setLineDash([4,4]); g2.beginPath(); g2.moveTo(x,top); g2.lineTo(x,bottom); g2.stroke(); g2.fillStyle = gold; g2.font = '600 10px sans-serif'; g2.fillText(L('AUJOURD’HUI','TODAY'), x+4, top+10); g2.restore(); }};
+      mkChart('seasCurve', {type:'line', data:{labels:lab, datasets:[{label:L('Rendement cumulé moyen','Avg cumulative return'), data:s.curve, borderColor:bull, pointRadius:0, borderWidth:2, tension:.35, fill:'origin',
+        backgroundColor:c=>{ const {ctx:x, chartArea:ar} = c.chart; if(!ar) return bull+'22'; const gr = x.createLinearGradient(0,ar.top,0,ar.bottom); gr.addColorStop(0,bull+'66'); gr.addColorStop(1,bull+'00'); return gr; }}]},
+        options:{animation:{duration:RM()?0:1400}, scales:{x:{ticks:{autoSkip:false, callback:(v,i)=>i%4.4<1?lab[i]:''}}, y:{ticks:{callback:v=>nf(v,1)+' %'}}}, plugins:{legend:{display:false}, tooltip:{callbacks:{title:c=>L('Semaine ','Week ')+(c[0].dataIndex+1), label:c=>sg2(c.parsed.y,2)+' %'}}}}, plugins:[todayLine]});
+      mkChart('seasPie', {type:'doughnut', data:{labels:[L('Années positives','Positive years'),L('Années négatives','Negative years')], datasets:[{data:[s.yearPos, s.years-s.yearPos], backgroundColor:[bull, bear], borderWidth:0, hoverOffset:8}]},
+        options:{cutout:'70%', animation:{animateRotate:true, duration:RM()?0:1300}, plugins:{legend:{display:false}}}});
+      mkChart('seasMon', {type:'bar', data:{labels:mons, datasets:[{label:L('Rendement moyen','Avg return'), data:s.month, backgroundColor:s.month.map((v,i)=>i===mo?gold:v>=0?bull:bear), borderRadius:3}]},
+        options:{animation:{duration:RM()?0:1000, delay:c=>c.dataIndex*60}, scales:{y:{ticks:{callback:v=>nf(v,1)+' %'}}}, plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>sg2(c.parsed.y,2)+' % · '+L('positif ','positive ')+s.monthWin[c.dataIndex]+' %'}}}}});
+      const wdl = isEN()?['Mon','Tue','Wed','Thu','Fri']:['lun.','mar.','mer.','jeu.','ven.'];
+      mkChart('seasWd', {type:'bar', data:{labels:wdl, datasets:[{label:L('Rendement moyen','Avg return'), data:s.weekday, backgroundColor:s.weekday.map(v=>v>=0?bull:bear), borderRadius:3}]},
+        options:{animation:{duration:RM()?0:1000, delay:c=>c.dataIndex*90}, scales:{y:{ticks:{callback:v=>nf(v,2)+' %'}}}, plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>sg2(c.parsed.y,3)+' %'}}}}});
+    });
+  }
+
+  // ---------- compte à rebours du calendrier ----------
+  function etEpoch(date, time){
+    const [y,m,d] = date.split('-').map(Number), [hh,mm] = (time||'00:00').split(':').map(Number);
+    const guess = Date.UTC(y,m-1,d,hh,mm);
+    const p = Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:'America/Toronto',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hour12:false}).formatToParts(new Date(guess)).map(x=>[x.type,x.value]));
+    const asTz = Date.UTC(+p.year, +p.month-1, +p.day, (+p.hour)%24, +p.minute);
+    return guess + (guess - asTz);
+  }
+  function tickCountdowns(){
+    const now = Date.now();
+    document.querySelectorAll('.cd[data-t]').forEach(el=>{ const ms = +el.dataset.t - now;
+      if(ms<=0){ el.textContent = L('publié · en attente','out · pending'); el.classList.add('due'); return; }
+      const s = Math.floor(ms/1000), dd = Math.floor(s/86400), h = Math.floor(s%86400/3600), mi = Math.floor(s%3600/60), se = s%60, p2 = x=>String(x).padStart(2,'0');
+      el.textContent = (isEN()?'in ':'dans ') + (dd? dd+(isEN()?'d ':' j ') : '') + p2(h)+':'+p2(mi)+':'+p2(se);
+      el.classList.toggle('soon', ms<3600e3); });
+  }
+  setInterval(tickCountdowns, 1000);
+
+  // ---------- animation générale à l'ouverture d'une page ----------
+  function pageFx(pg){
+    if(RM()) return;
+    const sec = document.querySelector(`[data-pg="${pg}"]`); if(!sec) return;
+    sec.classList.remove('fxin'); void sec.offsetWidth; sec.classList.add('fxin');
+    countUp(sec);
+  }
+
   // ---------- Nouvelles ----------
   state.newsA = state.newsA || 'all';
   function newsItem(n){
@@ -1803,10 +2166,13 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
     else if(pg==='cot') renderCOT();
     else if(pg==='sent') renderSent();
     else if(pg==='cbg') renderCB();
+    else if(pg==='fund') renderFundHM();
+    else if(pg==='tech') renderTechHM();
+    else if(pg==='seas') renderSeas();
     else if(pg==='news') renderNews();
   }
   function p2Page(pg){
-    if(['home','eco','fed','cot','sent','cbg'].includes(pg)) loadLive().then(()=>{ if(state.page===pg) renderP2(); });
+    if(['home','eco','fed','cot','sent','cbg','fund'].includes(pg)) loadLive().then(()=>{ if(state.page===pg) renderP2(); });
     renderP2();
   }
 
@@ -1846,9 +2212,9 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', charts:'graphiques', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', charts:'graphiques', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
-    p2Page(pg);
+    p2Page(pg); pageFx(pg);
   }
   document.querySelectorAll('.pages button').forEach(b=>b.addEventListener('click', ()=>showPage(b.dataset.page)));
   document.querySelectorAll('.calseg button').forEach(b=>b.addEventListener('click', ()=>{
@@ -1856,7 +2222,7 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
@@ -1875,6 +2241,7 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
     state.fed = d.fed || null;
     state.news = Array.isArray(d.news) ? d.news : [];
     if(d.cbgold) state.cbgold = d.cbgold;
+    if(d.tech) state.tech = d.tech;
     if(d.live) setSnap(d.live);
   }
   async function refresh(){
@@ -1905,7 +2272,7 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
     'Vue d’ensemble':'Overview','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
-    'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
+    'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Heatmap fondamentale':'Fundamental heatmap','Heatmap technique':'Technical heatmap','Saisonnalité':'Seasonality','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
     'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
     'Battu = BPA et revenus au-dessus des prévisions; Raté = les deux en dessous; Mitigé = un des deux. Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.':'Beat = EPS and revenue above forecasts; Miss = both below; Mixed = one of the two. The % under the actual = gap vs forecast. Reaction = stock move after the report. Earnings are not part of the score. Updated automatically with the scorecard.',
