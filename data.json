@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T03:00:32Z",
+ "updatedAt": "2026-11-10T12:44:21Z",
  "econ": {
   "values": {
    "gdp": {
@@ -626,201 +626,240 @@
  },
  "news": [
   {
-   "date": "2026-11-09",
-   "time": "17:23",
+   "date": "2026-11-10",
+   "time": "06:50",
    "source": "Yahoo Finance",
+   "impact": "med",
+   "assets": [
+    "us30",
+    "spx500",
+    "nasdaq",
+    "rut",
+    "usoil"
+   ],
+   "title": "Contrats à terme partagés avant l’IPC; le Nasdaq glisse après son rallye de lundi",
+   "title_en": "Futures mixed ahead of CPI; Nasdaq slips after Monday's rally",
+   "summary": "Les contrats à terme sur le Dow gagnaient environ 0,5 % et ceux du S&P 500 0,2 %, alors que ceux du Nasdaq passaient sous zéro après le bond de lundi (S&P 500 +2,3 %, Nasdaq 100 +3,4 %). Nvidia rebondissait légèrement après sa chute de plus de 4 % liée à l’enquête du conseil sur Jensen Huang. CoreWeave, D-Wave et Rigetti publient leurs résultats après la clôture.",
+   "summary_en": "Dow futures rose about 0.5% and S&P 500 futures 0.2%, while Nasdaq futures dipped below flat after Monday's surge (S&P 500 +2.3%, Nasdaq 100 +3.4%). Nvidia edged higher after falling more than 4% on the board probe into Jensen Huang. CoreWeave, D-Wave and Rigetti report after the close.",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "05:41",
+   "source": "CoinDesk",
    "impact": "high",
+   "assets": [
+    "usd",
+    "xauusd",
+    "xagusd",
+    "btcusd",
+    "nasdaq",
+    "spx500",
+    "eurusd",
+    "usdjpy"
+   ],
+   "title": "Waller ouvre la porte à une hausse de 50 pb; une hausse de taux en décembre est entièrement intégrée",
+   "title_en": "Waller opens door to 50 bp hike; December rate increase fully priced in",
+   "summary": "Le gouverneur de la Fed Christopher Waller appuie une hausse en décembre même si l’inflation a ralenti en octobre, et juge qu’un IPC plus chaud que prévu pourrait justifier 50 points de base. Les marchés intègrent une hausse de 25 pb le 9 décembre (fourchette de 4,00 % à 4,25 %), ce qui fait reculer l’or d’un peu plus de 1 % sous 4 100 $ et le bitcoin d’environ 1 % près de 74 000 $, tandis que le DXY reste ferme sous 102. L’IPC d’octobre est attendu ce matin à +0,3 % sur un mois (+0,2 % pour l’indice de base).",
+   "summary_en": "Fed Governor Christopher Waller backs a December hike even if inflation cooled in October, and said a hotter-than-expected CPI could justify 50 basis points. Markets price a 25 bp hike on Dec. 9 (to a 4.00%-4.25% range), pushing gold down just over 1% below $4,100 and bitcoin about 1% lower near $74,000, while the DXY stays firm below 102. October CPI is due this morning, expected at +0.3% month over month (+0.2% core).",
+   "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "05:41",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Le Brent passe sous 90 $, le WTI près de 84 $ : Trump signale une pause dans les frappes contre l’Iran",
+   "title_en": "Brent slips below $90, WTI near $84 as Trump signals pause in Iran strikes",
+   "summary": "Le pétrole a reculé d’environ 2 % en 24 heures, le WTI se rapprochant de 84 $ et le Brent de 90 $, après que Trump eut signalé une pause dans de nouvelles frappes contre l’Iran. La baisse prolonge le recul de lundi, alors que les marchés misent sur une désescalade au Moyen-Orient.",
+   "summary_en": "Oil fell about 2% over 24 hours, with WTI near $84 and Brent near $90, after President Trump signaled a pause in further Iran strikes. The drop extends Monday's slide as markets bet on Middle East de-escalation.",
+   "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-slips-before-u-s-inflation-report-as-traders-price-in-fed-rate-increase"
+  },
+  {
    "assets": [
     "nasdaq",
     "spx500",
     "us30",
     "rut"
    ],
-   "title": "Clôture : Wall Street rebondit fortement — Nasdaq +2,74 %, Russell 2000 +3,15 %, malgré Nvidia",
-   "title_en": "Close: Wall Street rebounds sharply — Nasdaq +2.74%, Russell 2000 +3.15%, despite Nvidia",
+   "date": "2026-11-09",
+   "impact": "high",
+   "source": "Yahoo Finance",
    "summary": "À la clôture lundi, le Nasdaq a gagné 2,74 % (25 253,14), le S&P 500 2,35 % (7 549,94), le Dow 2,15 % (52 389,75) et le Russell 2000 3,15 % (2 840,81), tous les secteurs finissant en hausse. Les semi-conducteurs, les achats à bon compte et le recul du pétrole ont porté le rebond, malgré Nvidia en baisse de plus de 4 % à cause de l’enquête interne visant son PDG; Constellation Energy a bondi de plus de 10 % après ses résultats. Le S&P 500 se remet ainsi de sa pire semaine depuis avril 2025, à la veille de l’indice des prix (CPI).",
    "summary_en": "At Monday's close the Nasdaq gained 2.74% (25,253.14), the S&P 500 2.35% (7,549.94), the Dow 2.15% (52,389.75) and the Russell 2000 3.15% (2,840.81), with every sector finishing higher. Chipmakers, dip buying and lower oil drove the rebound, despite Nvidia falling more than 4% on the internal probe of its CEO; Constellation Energy jumped over 10% after its earnings. The S&P 500 is recovering from its worst week since April 2025, on the eve of the CPI report.",
+   "time": "17:23",
+   "title": "Clôture : Wall Street rebondit fortement — Nasdaq +2,74 %, Russell 2000 +3,15 %, malgré Nvidia",
+   "title_en": "Close: Wall Street rebounds sharply — Nasdaq +2.74%, Russell 2000 +3.15%, despite Nvidia",
    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-9-222339218.html"
   },
   {
-   "date": "2026-11-09",
-   "time": "11:22",
-   "source": "Yahoo Finance",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Nvidia chute d’environ 5 % : le conseil enquête sur la relation de Jensen Huang avec une présumée espionne chinoise",
-   "title_en": "Nvidia sinks about 5% as board investigates Jensen Huang's relationship with alleged Chinese spy",
+   "date": "2026-11-09",
+   "impact": "high",
+   "source": "Yahoo Finance",
    "summary": "Le conseil de Nvidia ouvre un examen indépendant sur la relation du PDG Jensen Huang avec une femme que le renseignement américain soupçonne d’espionnage pour la Chine; Huang a reconnu une liaison dans une note aux employés dimanche et promis sa pleine collaboration. L’action perdait environ 5 % et les analystes parlent d’un « risque de personne clé ». Les autres puces montaient : AMD +11 % après un relèvement à « achat », Broadcom +8 %, ASML +6 %.",
    "summary_en": "Nvidia's board launched an independent review of CEO Jensen Huang's relationship with a woman U.S. intelligence believes could be a Chinese spy; Huang disclosed an affair in a Sunday memo to staff and pledged full cooperation. The stock fell about 5%, with analysts flagging \"key-person risk.\" Other chipmakers rose: AMD +11% after an upgrade to Buy, Broadcom +8%, ASML +6%.",
+   "time": "11:22",
+   "title": "Nvidia chute d’environ 5 % : le conseil enquête sur la relation de Jensen Huang avec une présumée espionne chinoise",
+   "title_en": "Nvidia sinks about 5% as board investigates Jensen Huang's relationship with alleged Chinese spy",
    "url": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html"
   },
   {
-   "date": "2026-11-09",
-   "time": "08:35",
-   "source": "Kitco",
-   "impact": "med",
    "assets": [
     "xauusd",
     "xagusd",
     "usd"
    ],
-   "title": "L’or et l’argent montent : la diplomatie avec l’Iran fait reculer le brut et le dollar s’affaiblit",
-   "title_en": "Gold, silver rise as Iran diplomacy pressures crude, dollar weakens",
+   "date": "2026-11-09",
+   "impact": "med",
+   "source": "Kitco",
    "summary": "L’or au comptant gagnait 1,33 % à 4 124,74 $ l’once et l’argent 1,57 % à 52,759 $, aidés par un dollar légèrement plus faible et un Brent vers 94,76 $. Les métaux rebondissent après la vente de vendredi provoquée par le rapport sur l’emploi (165 000 postes en octobre), qui avait renforcé les paris d’une hausse de taux en décembre; le taux à 10 ans est près de 4,87 %. Le CPI d’octobre, mardi, pourrait changer ces attentes.",
    "summary_en": "Spot gold rose 1.33% to $4,124.74 an ounce and silver 1.57% to $52.759, helped by a modestly weaker dollar and Brent near $94.76. Metals are rebounding from Friday's selloff after the jobs report (165,000 October payrolls) lifted bets on a December rate hike; the 10-year yield is near 4.87%. Tuesday's October CPI could shift those expectations.",
+   "time": "08:35",
+   "title": "L’or et l’argent montent : la diplomatie avec l’Iran fait reculer le brut et le dollar s’affaiblit",
+   "title_en": "Gold, silver rise as Iran diplomacy pressures crude, dollar weakens",
    "url": "https://www.kitco.com/news/article/2026-11-09/gold-silver-rise-iran-diplomacy-pressures-crude-dollar-weakens-kitco-am"
   },
   {
-   "date": "2026-11-09",
-   "time": "07:31",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Le bitcoin glisse à 73 761 $, son plus bas depuis août, avant de rebondir au-dessus de 75 000 $",
-   "title_en": "Bitcoin slides to $73,761, lowest since August, before bouncing above $75,000",
+   "date": "2026-11-09",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin est tombé vers 73 761 $ tard dimanche, puis est remonté au-dessus de 75 000 $; plus de 1 milliard $ de positions à effet de levier ont été liquidées en 24 heures, dont 913 M$ de positions acheteuses. Le scandale chez Nvidia et l’enlisement des pourparlers avec l’Iran pèsent sur les actifs risqués; le BTC oscille entre sa moyenne de 200 jours (~73 150 $) et celle de 100 jours (~77 430 $).",
    "summary_en": "Bitcoin fell to about $73,761 late Sunday, then recovered above $75,000; more than $1 billion of leveraged positions were liquidated in 24 hours, including $913M of longs. The Nvidia scandal and stalled Iran talks are weighing on risk assets; BTC is stuck between its 200-day average (~$73,150) and 100-day average (~$77,430).",
+   "time": "07:31",
+   "title": "Le bitcoin glisse à 73 761 $, son plus bas depuis août, avant de rebondir au-dessus de 75 000 $",
+   "title_en": "Bitcoin slides to $73,761, lowest since August, before bouncing above $75,000",
    "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
   },
   {
-   "date": "2026-11-09",
-   "time": "05:22",
-   "source": "Reuters (via Yahoo Finance)",
-   "impact": "med",
-   "assets": [
-    "usoil"
-   ],
-   "title": "Le pétrole recule : Trump juge « peu probables » de nouvelles frappes contre l’Iran",
-   "title_en": "Oil falls as Trump signals restraint on Iran despite fresh shipping attacks",
-   "summary": "Le Brent perdait 0,75 % à 97,57 $ le baril et le WTI 0,4 % à 90,45 $ lundi matin. Trump a dit dimanche qu’il était très peu probable qu’il ordonne de nouvelles attaques contre l’Iran tant que les pourparlers se poursuivent, même si des navires ont été touchés près du détroit d’Ormuz. Selon Saxo Bank, la baisse repose sur l’espoir d’un accord plutôt que sur des progrès concrets.",
-   "summary_en": "Brent fell 0.75% to $97.57 a barrel and WTI 0.4% to $90.45 on Monday morning. Trump said Sunday he was highly unlikely to order new attacks on Iran while talks continue, even as ships were hit near the Strait of Hormuz. Saxo Bank said the decline rests on hopes of a deal rather than concrete progress.",
-   "url": "https://finance.yahoo.com/news/oil-falls-open-trump-says-235002807.html"
-  },
-  {
-   "date": "2026-11-09",
-   "time": "",
-   "source": "Federal Reserve Bank of New York",
-   "impact": "med",
    "assets": [
     "usd",
     "spx500",
     "xauusd"
    ],
-   "title": "Fed de New York : les attentes d’inflation restent stables, les craintes de chômage au plus haut depuis avril 2020",
-   "title_en": "New York Fed: inflation expectations steady, unemployment fears highest since April 2020",
+   "date": "2026-11-09",
+   "impact": "med",
+   "source": "Federal Reserve Bank of New York",
    "summary": "Selon l’enquête d’octobre de la Fed de New York, les attentes médianes d’inflation sont inchangées à 3,9 % sur un an, 3,3 % sur trois ans et 3,0 % sur cinq ans. La probabilité moyenne d’une hausse du chômage dans un an grimpe de 1,4 point à 45,3 %, un sommet depuis avril 2020. Des attentes d’inflation stables mais élevées alimentent le débat sur une hausse de taux en décembre, avant le CPI de mardi.",
    "summary_en": "The New York Fed's October survey shows median inflation expectations unchanged at 3.9% one year ahead, 3.3% three years ahead and 3.0% five years ahead. The mean probability that unemployment will be higher in a year rose 1.4 points to 45.3%, the highest since April 2020. Steady but elevated inflation expectations feed the debate over a December rate hike ahead of Tuesday's CPI.",
+   "time": "",
+   "title": "Fed de New York : les attentes d’inflation restent stables, les craintes de chômage au plus haut depuis avril 2020",
+   "title_en": "New York Fed: inflation expectations steady, unemployment fears highest since April 2020",
    "url": "https://www.newyorkfed.org/newsevents/news/research/2026/20261109"
   },
   {
-   "date": "2026-11-08",
-   "time": "08:59",
-   "source": "Reuters (via Investing.com)",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
     "usd"
    ],
-   "title": "La chute de la tech secoue Wall Street; l’inflation américaine arrive mardi",
-   "title_en": "Tech swoon roils Wall Street; US inflation data due Tuesday",
+   "date": "2026-11-08",
+   "impact": "high",
+   "source": "Reuters (via Investing.com)",
    "summary": "Le Nasdaq a terminé la semaine près de 12 % sous son record du 6 octobre, après une journée où le secteur tech du S&P 500 a chuté de 7,3 %. Les investisseurs craignent que les victoires démocrates aux élections de mi-mandat ralentissent la construction de centres de données IA. Le CPI d’octobre, mardi, sera décisif pour une hausse de taux en décembre.",
    "summary_en": "The Nasdaq ended the week nearly 12% below its Oct. 6 record after a day in which the S&P 500 tech sector fell 7.3%. Investors fear Democratic midterm wins could slow AI data-center construction. Tuesday’s October CPI will be key for a December rate hike.",
+   "time": "08:59",
+   "title": "La chute de la tech secoue Wall Street; l’inflation américaine arrive mardi",
+   "title_en": "Tech swoon roils Wall Street; US inflation data due Tuesday",
    "url": "https://www.investing.com/news/stock-market-news/as-tech-swoon-roils-market-us-inflation-data-on-tap-5010231"
   },
   {
-   "date": "2026-11-06",
-   "time": "16:00",
-   "source": "Yahoo Finance",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
     "us30"
    ],
-   "title": "Le Nasdaq et le S&P 500 rebondissent, le Dow recule après une semaine difficile pour l’IA",
-   "title_en": "Nasdaq and S&P 500 rebound, Dow slips after a bruising week for AI stocks",
+   "date": "2026-11-06",
+   "impact": "high",
+   "source": "Yahoo Finance",
    "summary": "Vendredi, le Nasdaq a gagné 1,09 % (24 579), le S&P 500 0,31 % (7 377) et le Dow a perdu 0,46 % (51 286). Sur la semaine, le S&P 500 a connu sa pire performance depuis juin : le secteur technologique a reculé de 7 % et l’énergie de 11 %.",
    "summary_en": "On Friday the Nasdaq rose 1.09% (24,579), the S&P 500 0.31% (7,377) and the Dow fell 0.46% (51,286). For the week, the S&P 500 had its worst performance since June: tech fell 7% and energy 11%.",
+   "time": "16:00",
+   "title": "Le Nasdaq et le S&P 500 rebondissent, le Dow recule après une semaine difficile pour l’IA",
+   "title_en": "Nasdaq and S&P 500 rebound, Dow slips after a bruising week for AI stocks",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
   },
   {
-   "date": "2026-11-06",
-   "time": "15:00",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Le bitcoin stagne sous 76 000 $, à son plus bas depuis la hausse de taux de septembre",
-   "title_en": "Bitcoin flatlines under $76,000, weakest since the September rate hike",
+   "date": "2026-11-06",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin s’échangeait autour de 75 750 $ dans un corridor très étroit; le rebond des actions n’a pas profité à la crypto. Une cassure sous 75 000 $ pourrait le ramener aux niveaux de la mi-août.",
    "summary_en": "Bitcoin traded around $75,750 in a very tight range; the stock rebound did not lift crypto. A break below $75,000 could send it back to mid-August levels.",
+   "time": "15:00",
+   "title": "Le bitcoin stagne sous 76 000 $, à son plus bas depuis la hausse de taux de septembre",
+   "title_en": "Bitcoin flatlines under $76,000, weakest since the September rate hike",
    "url": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
   },
   {
-   "date": "2026-11-06",
-   "time": "09:30",
-   "source": "Kitco",
-   "impact": "high",
    "assets": [
     "xauusd",
     "xagusd",
     "usd"
    ],
-   "title": "L’or recule après un rapport sur l’emploi beaucoup plus fort que prévu",
-   "title_en": "Gold falls after a much stronger-than-expected jobs report",
+   "date": "2026-11-06",
+   "impact": "high",
+   "source": "Kitco",
    "summary": "L’once d’or a perdu 34 $ (−0,89 %) à environ 4 051 $. Les États-Unis ont créé 165 000 emplois en octobre contre environ 65 000 attendus, et le chômage est descendu à 4,1 %, ce qui renforce le scénario d’une hausse de taux de la Fed en décembre et fait monter le dollar et les taux.",
    "summary_en": "Gold lost $34 (−0.89%) to about $4,051 an ounce. The US added 165,000 jobs in October versus about 65,000 expected and unemployment fell to 4.1%, strengthening the case for a December Fed hike and lifting the dollar and yields.",
+   "time": "09:30",
+   "title": "L’or recule après un rapport sur l’emploi beaucoup plus fort que prévu",
+   "title_en": "Gold falls after a much stronger-than-expected jobs report",
    "url": "https://www.kitco.com/news/article/2026-11-06/gold-falls-us-payrolls-surge-165000-strengthening-december-fed-hike-case"
   },
   {
-   "date": "2026-11-06",
-   "time": "09:00",
-   "source": "Yahoo Finance",
-   "impact": "high",
    "assets": [
     "usd",
     "xauusd",
     "nasdaq"
    ],
-   "title": "Le rapport sur l’emploi fait grimper les taux; les paris d’une hausse en décembre passent à 78 %",
-   "title_en": "Jobs report sends yields higher; December hike bets rise to 78%",
+   "date": "2026-11-06",
+   "impact": "high",
+   "source": "Yahoo Finance",
    "summary": "Le taux à 2 ans a gagné 6 points de base à 4,52 % et le 10 ans 3 points à 4,87 % après le rapport. Les paris sur une hausse de taux de la Fed le mois prochain sont passés de 70 % à 78 %.",
    "summary_en": "The 2-year yield rose 6 basis points to 4.52% and the 10-year 3 points to 4.87% after the report. Bets on a Fed hike next month rose from 70% to 78%.",
+   "time": "09:00",
+   "title": "Le rapport sur l’emploi fait grimper les taux; les paris d’une hausse en décembre passent à 78 %",
+   "title_en": "Jobs report sends yields higher; December hike bets rise to 78%",
    "url": "https://finance.yahoo.com/economy/policy/articles/strong-october-jobs-report-sends-134858909.html"
   },
   {
-   "date": "2026-11-06",
-   "time": "07:15",
-   "source": "Yahoo Finance",
-   "impact": "med",
    "assets": [
     "usoil"
    ],
-   "title": "Le Brent au-dessus de 102 $, le WTI près de 91 $",
-   "title_en": "Brent above $102, WTI near $91",
+   "date": "2026-11-06",
+   "impact": "med",
+   "source": "Yahoo Finance",
    "summary": "Vendredi matin, le Brent valait 102,05 $ le baril (+2,5 % sur la veille), environ 38 $ de plus qu’il y a un an, et le contrat WTI de décembre 90,83 $. Le marché surveille le risque géopolitique autour de l’Iran après les élections de mi-mandat.",
    "summary_en": "On Friday morning Brent was $102.05 a barrel (+2.5% from the prior day), about $38 higher than a year ago, and December WTI was $90.83. The market is watching geopolitical risk around Iran after the midterms.",
+   "time": "07:15",
+   "title": "Le Brent au-dessus de 102 $, le WTI près de 91 $",
+   "title_en": "Brent above $102, WTI near $91",
    "url": "https://finance.yahoo.com/energy/articles/current-price-oil-november-6-124500137.html"
   },
   {
-   "date": "2026-11-04",
-   "time": "12:00",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Le bitcoin remonte vers 78 000 $ quand l’incertitude des élections se dissipe",
-   "title_en": "Bitcoin climbs back toward $78,000 as midterm uncertainty fades",
+   "date": "2026-11-04",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin est remonté d’un creux sous 76 000 $ à environ 78 300 $ (+1 %) quand les résultats des élections de mi-mandat se sont clarifiés. Les FNB bitcoin au comptant ont toutefois subi 515 M$ de sorties le mois dernier.",
    "summary_en": "Bitcoin rebounded from a dip below $76,000 to about $78,300 (+1%) as midterm results became clearer. Spot bitcoin ETFs, however, saw $515M of outflows last month.",
+   "time": "12:00",
+   "title": "Le bitcoin remonte vers 78 000 $ quand l’incertitude des élections se dissipe",
+   "title_en": "Bitcoin climbs back toward $78,000 as midterm uncertainty fades",
    "url": "https://www.coindesk.com/markets/2026/11/04/bitcoin-knocks-on-usd78-000-in-v-shaped-comeback-as-midterm-uncertainty-fades"
   }
  ],
