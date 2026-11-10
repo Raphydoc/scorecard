@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T20:45:55Z",
+ "updatedAt": "2026-11-10T22:07:49Z",
  "econ": {
   "values": {
    "gdp": {
@@ -342,15 +342,15 @@
     "nasdaq": 1
    },
    "date": "2026-11-10",
-   "epsA": null,
-   "epsF": -1.45,
+   "epsA": -1.27,
+   "epsF": -1.55,
    "id": null,
    "kind": "earn",
    "move": null,
    "name": "Résultats CoreWeave (CRWV)",
    "note": "Après la clôture",
-   "revA": null,
-   "revF": 3.5,
+   "revA": 3.661,
+   "revF": 3.54,
    "time": "16:05"
   },
   {
