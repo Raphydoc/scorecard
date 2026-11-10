@@ -1,0 +1,35 @@
+name: Prix et indicateurs techniques
+on:
+  schedule:
+    - cron: '17 22 * * 1-5'   # du lundi au vendredi vers 17 h 17 (heure de Toronto), après la clôture
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: prix
+jobs:
+  prix:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Prix (Yahoo Finance, repli Stooq)
+        run: node tools/snap_prices.mjs prices_out.json
+      - name: Mise à jour de data.json
+        run: |
+          git config user.name "scorecard-bot"
+          git config user.email "scorecard-bot@users.noreply.github.com"
+          for i in 1 2 3; do
+            git pull --rebase -q origin main
+            python3 -c "import json; d=json.load(open('data.json')); d['tech']=json.load(open('prices_out.json')); json.dump(d, open('data.json','w'), ensure_ascii=False, indent=1)"
+            python3 -m json.tool data.json > /dev/null
+            git add data.json
+            git diff --cached --quiet && { echo "Rien de nouveau"; exit 0; }
+            git commit -q -m "Prix et indicateurs techniques du $(date -u +%F)"
+            git push -q origin main && exit 0
+            git reset -q --hard origin/main
+            sleep 10
+          done
+          exit 1
