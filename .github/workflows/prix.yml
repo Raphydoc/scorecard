@@ -1,7 +1,8 @@
 name: Prix et indicateurs techniques
 on:
   schedule:
-    - cron: '17 22 * * 1-5'   # du lundi au vendredi vers 17 h 17 (heure de Toronto), après la clôture
+    - cron: '41 13-21 * * 1-5'   # toutes les heures pendant la bourse (vers 9 h 41 à 16 h 41, heure de Toronto)
+    - cron: '17 22 * * 1-5'      # vers 17 h 17, après la clôture
   workflow_dispatch:
 permissions:
   contents: write
