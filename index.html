@@ -1264,6 +1264,7 @@ table.topset td.chg.up{color:var(--bull)} table.topset td.chg.dn{color:var(--bea
     {k:'cpi', g:'inf', n:['CPI global (1 an)','Headline CPI (YoY)'], u:'%', d:1, src:'BLS', f:m=>yoy(m.cpi), ty:'line', tgt:2, usd:1},
     {k:'cpimom', g:'inf', n:['CPI global (1 mois)','Headline CPI (m/m)'], u:'%', d:1, src:'BLS', f:m=>mom(m.cpi), ty:'bar', usd:1},
     {k:'core', g:'inf', n:['CPI de base (1 an)','Core CPI (YoY)'], u:'%', d:1, src:'BLS', f:m=>yoy(m.core), ty:'line', tgt:2, usd:1},
+    {k:'coremom', g:'inf', n:['CPI de base (1 mois)','Core CPI (m/m)'], u:'%', d:1, src:'BLS', f:m=>mom(m.core), ty:'bar', usd:1},
     {k:'pce', g:'inf', n:['PCE global (1 an)','Headline PCE (YoY)'], u:'%', d:1, src:'BEA', f:m=>yoy(m.pce), ty:'line', tgt:2, usd:1},
     {k:'corepce', g:'inf', n:['PCE de base (1 an)','Core PCE (YoY)'], u:'%', d:1, src:'BEA', f:m=>yoy(m.corepce), ty:'line', tgt:2, usd:1},
     {k:'ppi', g:'inf', n:['PPI demande finale (1 an)','PPI final demand (YoY)'], u:'%', d:1, src:'BLS', f:m=>yoy(m.ppi), ty:'line', usd:1},
