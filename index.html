@@ -682,6 +682,85 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   .dd.open .ddword{animation:popIn .5s cubic-bezier(.2,.7,.2,1) both .1s}
 }
 @media (max-width:560px){ .ddp{width:100vw;border-left:0} .ddgrid{grid-template-columns:1fr 1fr} .ddword{font-size:22px} }
+/* ===== Cellulaire et tablette : barre du bas, menu plein écran, en-tête compact ===== */
+.mbar,.msheet,.mpg,.ftoggle{display:none}
+@media (max-width:899px){
+  html{-webkit-text-size-adjust:100%}
+  body{padding-bottom:calc(66px + env(safe-area-inset-bottom,0px))}
+  .shell > .side{display:none}
+  /* en-tête compact et collé en haut */
+  header.top{position:sticky;top:0;z-index:50;margin:0 calc(-1 * max(16px, env(safe-area-inset-left,0px)));padding:8px max(16px, env(safe-area-inset-left,0px));background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border-bottom:1px solid var(--line);flex-wrap:nowrap;gap:10px}
+  .wrap{padding-top:0!important}
+  .brand{gap:9px;min-width:0;flex:1}
+  header.top{flex-wrap:wrap;row-gap:8px}
+  header.top .controls{order:3;width:100%;display:flex;flex-wrap:nowrap;gap:8px;align-items:center}
+  header.top .controls .assetpick{flex:1;min-width:0} header.top .controls .assetpick > span{display:none} header.top .controls .assetpick select{width:100%;min-width:0;font-size:15px!important;padding:8px 10px}
+  header.top .controls .btn{flex:none;height:44px;padding:0 10px;font-size:11px}
+  .mark{width:34px;height:34px;font-size:14px}
+  .mark sup{font-size:8px}
+  h1{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sub{display:none}
+  .mpg{display:block;font:700 10px/1.2 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .topbtns{gap:6px;flex:none}
+  .topbtns .btn{min-width:40px;height:40px;padding:0 10px;display:grid;place-items:center}
+  .clocks{display:none}
+  /* barre d'onglets du bas */
+  .mbar{display:grid;grid-template-columns:repeat(5,1fr);position:fixed;left:0;right:0;bottom:0;z-index:60;background:color-mix(in srgb,var(--panel) 94%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-top:1px solid var(--line);padding:4px 4px calc(4px + env(safe-area-inset-bottom,0px))}
+  .mbar button{display:grid;justify-items:center;gap:3px;border:0;background:none;color:var(--muted);font:600 10px/1.1 var(--f-body);letter-spacing:.02em;padding:7px 2px;min-height:54px;border-radius:8px;cursor:pointer;position:relative;-webkit-tap-highlight-color:transparent}
+  .mbar button svg{width:22px;height:22px}
+  .mbar button[aria-current="page"]{color:var(--gold)}
+  .mbar button[aria-current="page"]::before{content:"";position:absolute;top:0;left:30%;right:30%;height:2px;border-radius:2px;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+  .mbar button:active{background:var(--panel-2)}
+  /* menu plein écran */
+  .msheet{display:block;position:fixed;inset:0;z-index:70;pointer-events:none}
+  .msheet .msbg{position:absolute;inset:0;background:rgba(0,0,0,.55);opacity:0;transition:opacity .25s}
+  .msheet .mspanel{position:absolute;left:0;right:0;bottom:0;max-height:86vh;overflow-y:auto;background:var(--panel);border-top:1px solid var(--gold);border-radius:16px 16px 0 0;padding:10px 16px calc(84px + env(safe-area-inset-bottom,0px));transform:translateY(100%);transition:transform .32s cubic-bezier(.2,.8,.2,1)}
+  .msheet.open{pointer-events:auto} .msheet.open .msbg{opacity:1} .msheet.open .mspanel{transform:none}
+  .mspanel .grab{width:42px;height:4px;border-radius:2px;background:var(--line);margin:2px auto 12px}
+  .mspanel .msh{font:700 11px/1 var(--f-mono);letter-spacing:.16em;color:var(--muted);margin:0 0 6px}
+  .mspanel .pages{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;border:0}
+  .mspanel .pages .navgrp{display:block!important;grid-column:1/-1;font:700 10px/1 var(--f-body);letter-spacing:.18em;text-transform:uppercase;color:var(--gold);padding:12px 2px 2px}
+  .mspanel .pages button{display:flex;align-items:center;min-height:48px;margin:0;padding:10px 12px!important;border:1px solid var(--line)!important;border-radius:8px;background:var(--panel-2);color:var(--fg);font:600 13.5px/1.2 var(--f-body);letter-spacing:0;text-transform:none;text-align:left}
+  .mspanel .pages button[aria-current="page"]{border-color:var(--gold)!important;color:var(--gold);background:var(--tint-g)}
+  .mspanel .pages button::after{display:none}
+  /* doigt : cibles plus grandes, pas de zoom sur les champs */
+  input,select,textarea{font-size:16px!important}
+  button.chip,.calseg button,.seg button{min-height:38px}
+  .wbtn{min-width:44px;min-height:44px}
+  .assetpick select{min-height:44px}
+  /* filtres Top Setups repliables */
+  .ftoggle{display:flex;align-items:center;justify-content:space-between;width:calc(100% - 28px);margin:10px 14px;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel-2);color:var(--fg);font:700 12px/1 var(--f-body);letter-spacing:.1em;text-transform:uppercase;cursor:pointer}
+  .ftoggle b{color:var(--gold);font-family:var(--f-mono)}
+  .filters.fclosed{display:none}
+  /* tableaux larges : 1re colonne collée à gauche */
+  table.hm td.hn,table.hm th:first-child{position:sticky;left:0;z-index:2;background:var(--panel)}
+  table.hm td.hn{padding-right:10px!important;min-width:112px} table.hm td.hn .spk{display:none}
+  table.topset td.sym{box-shadow:6px 0 10px -6px rgba(0,0,0,.5)}
+  /* panneau de détails : feuille qui monte du bas */
+  .ddp{top:auto;left:0;width:100vw;max-height:90vh;border-left:0;border-top:1px solid var(--gold);border-radius:16px 16px 0 0;transform:translateY(100%);padding-bottom:calc(28px + env(safe-area-inset-bottom,0px))}
+  .dd.open .ddp{transform:none}
+  .ddx{position:sticky;top:0}
+  /* divers */
+  .p2 .ph{padding:12px}
+  .p2 .pb{padding:12px}
+  .kpis{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .kpi{padding:10px 11px}
+  .kpi .v{font-size:21px}
+  .g2{grid-template-columns:minmax(0,1fr)!important}
+  .tape{height:32px}
+  .tlive{padding:0 8px;font-size:9px}
+  .tlive{max-width:44%;overflow:hidden;white-space:nowrap}
+  .hmhead .badge{display:none}
+}
+@media (max-width:899px) and (prefers-reduced-motion:no-preference){
+  .mbar button svg{transition:transform .2s} .mbar button[aria-current="page"] svg{transform:translateY(-2px) scale(1.08)}
+  .msheet.open .pages > *{animation:fadeUp .4s cubic-bezier(.2,.7,.2,1) both}
+}
+/* calendrier sur petit écran : la donnée prend la place, le compte à rebours passe dessous */
+@media (max-width:560px){
+  table.cal td.num .cd{display:block;font-size:10px;white-space:normal}
+  table.cal td.name{min-width:0}
+}
 </style>
 
 </head>
@@ -2491,6 +2570,50 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   }, true);
   document.addEventListener('keydown', e=>{ if(e.key==='Escape') ddClose(); });
 
+  // ---------- navigation sur cellulaire : barre du bas + menu plein écran ----------
+  const MBAR = [
+    ['home', ['Accueil','Home'], '<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/>'],
+    ['score', ['Scorecard','Scorecard'], '<path d="M4 18a8 8 0 1 1 16 0"/><path d="m12 18 4.5-5.5"/><circle cx="12" cy="18" r="1.4"/>'],
+    ['top', ['Top','Top'], '<rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"/>'],
+    ['cal', ['Calendrier','Calendar'], '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/>'],
+    ['menu', ['Menu','Menu'], '<path d="M4 7h16M4 12h16M4 17h16"/>']
+  ];
+  function buildMobileNav(){
+    if($('mbar')) return;
+    const bar = document.createElement('nav'); bar.id = 'mbar'; bar.className = 'mbar'; bar.setAttribute('aria-label', L('Navigation','Navigation'));
+    document.body.appendChild(bar);
+    const sh = document.createElement('div'); sh.id = 'msheet'; sh.className = 'msheet';
+    sh.innerHTML = `<div class="msbg"></div><div class="mspanel" role="dialog" aria-modal="true" aria-label="${L('Toutes les pages','All pages')}"><div class="grab"></div><p class="msh">${L('TOUTES LES PAGES','ALL PAGES')}</p><nav class="pages" id="mpages"></nav></div>`;
+    document.body.appendChild(sh);
+    const src = document.querySelector('.side .pages'), dst = $('mpages');
+    [...src.children].forEach(n=>{ const c = n.cloneNode(true); c.removeAttribute('style'); dst.appendChild(c); if(c.tagName==='BUTTON') c.addEventListener('click', ()=>{ closeSheet(); showPage(c.dataset.page); }); });
+    sh.querySelector('.msbg').addEventListener('click', closeSheet);
+    // titre de la page dans l'en-tête
+    const brand = document.querySelector('.brand > div:last-child'); if(brand && !$('mpg')){ const s = document.createElement('span'); s.id = 'mpg'; s.className = 'mpg'; brand.insertBefore(s, brand.firstChild); }
+    renderMbar();
+  }
+  function renderMbar(){
+    const bar = $('mbar'); if(!bar) return;
+    const cur = state.page || 'score', inBar = MBAR.some(m=>m[0]===cur);
+    bar.innerHTML = MBAR.map(([k,l,ic])=>`<button type="button" data-m="${k}" ${(k===cur || (k==='menu' && !inBar)) ? 'aria-current="page"' : ''}><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${ic}</svg><span>${esc(isEN()?l[1]:l[0])}</span></button>`).join('');
+    bar.querySelectorAll('button').forEach(b=>b.addEventListener('click', ()=>{ if(b.dataset.m==='menu') openSheet(); else { closeSheet(); showPage(b.dataset.m); window.scrollTo({top:0, behavior:'smooth'}); } }));
+    const btn = document.querySelector(`.side .pages button[data-page="${cur}"]`), mp = $('mpg');
+    if(mp && btn) mp.textContent = btn.textContent.trim();
+  }
+  function openSheet(){ const s = $('msheet'); if(!s) return; s.classList.add('open'); }
+  function closeSheet(){ const s = $('msheet'); if(s) s.classList.remove('open'); }
+  document.addEventListener('keydown', e=>{ if(e.key==='Escape') closeSheet(); });
+  // filtres de Top Setups repliables sur cellulaire
+  (function(){
+    const f = $('topFilters'); if(!f) return;
+    const t = document.createElement('button'); t.type = 'button'; t.className = 'ftoggle'; t.id = 'ftoggle';
+    const lbl = () => { const n = [...f.querySelectorAll('select,input')].filter(x=>x.value).length; t.innerHTML = `<span>${L('Filtres','Filters')}</span><b>${n?n+' '+L('actif'+(n>1?'s':''),'active'):(f.classList.contains('fclosed')?'＋':'－')}</b>`; };
+    f.parentNode.insertBefore(t, f); f.classList.add('fclosed'); lbl();
+    t.addEventListener('click', ()=>{ f.classList.toggle('fclosed'); lbl(); });
+    f.addEventListener('input', lbl); f.addEventListener('change', lbl);
+  })();
+  buildMobileNav();
+
   // ---------- Nouvelles ----------
   state.newsA = state.newsA || 'all';
   function newsItem(n){
@@ -2568,7 +2691,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     });
     const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(label, 60));
   })();
-  (function(){ const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(()=>{ const nb = $('p2news'); if(nb) nb.dataset.built=''; const cb = $('p2charts'); if(cb) cb.dataset.built=''; renderP2(); if(state.page==='fed') renderFed(); }, 30)); })();
+  (function(){ const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(()=>{ if(typeof renderMbar==='function') renderMbar(); const nb = $('p2news'); if(nb) nb.dataset.built=''; const cb = $('p2charts'); if(cb) cb.dataset.built=''; renderP2(); if(state.page==='fed') renderFed(); }, 30)); })();
 
   function showPage(pg){
     state.page = pg;
@@ -2576,7 +2699,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
     try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', charts:'graphiques', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
-    p2Page(pg); pageFx(pg);
+    p2Page(pg); pageFx(pg); if(typeof renderMbar==='function') renderMbar();
   }
   document.querySelectorAll('.pages button').forEach(b=>b.addEventListener('click', ()=>showPage(b.dataset.page)));
   document.querySelectorAll('.calseg button').forEach(b=>b.addEventListener('click', ()=>{
