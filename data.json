@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T19:45:00Z",
+ "updatedAt": "2026-11-10T20:45:55Z",
  "econ": {
   "values": {
    "gdp": {
@@ -680,20 +680,53 @@
  "news": [
   {
    "date": "2026-11-10",
-   "time": "11:06",
-   "source": "Yahoo Finance",
+   "time": "13:31",
+   "source": "Reuters (via Kitco)",
+   "impact": "high",
+   "assets": [
+    "usd",
+    "eurusd",
+    "usdjpy",
+    "spx500",
+    "nasdaq",
+    "us30",
+    "xauusd",
+    "usoil"
+   ],
+   "title": "Les taux s’envolent après l’IPC : 2 ans +19 pb, 10 ans près de 5 %; Logan réclame au moins deux autres hausses",
+   "title_en": "Yields jump after CPI: 2-year up 19 bp, 10-year near 5%; Logan calls for at least two more hikes",
+   "summary": "Vers 13 h 30, le taux à 2 ans gagnait 19,28 pb à 4,74 % et le 10 ans 12,76 pb à 4,988 %, les chances d’une hausse de 50 pb de la Fed les 8 et 9 décembre ayant bondi après l’IPC. L’indice du dollar montait de 0,6 % à 102,29, l’euro reculait de 0,56 % à 1,1156 $ et le dollar-yen gagnait 0,5 % à 158,68, tandis que le Dow (−0,57 %), le S&P 500 (−0,71 %) et le Nasdaq (−0,90 %) reculaient, l’or perdait 2,3 % à 4 043,73 $ et le brut américain 1,39 % à 85,67 $. Lorie Logan, de la Fed, estime que la banque centrale doit livrer au moins deux autres hausses d’un quart de point.",
+   "summary_en": "Around 1:30 p.m. the 2-year yield was up 19.28 bp at 4.74% and the 10-year 12.76 bp at 4.988%, as odds of a 50 bp Fed hike at the Dec. 8-9 meeting jumped after CPI. The dollar index rose 0.6% to 102.29, the euro fell 0.56% to $1.1156 and dollar/yen rose 0.5% to 158.68, while the Dow (−0.57%), S&P 500 (−0.71%) and Nasdaq (−0.90%) fell, gold lost 2.3% to $4,043.73 and U.S. crude 1.39% to $85.67. The Fed's Lorie Logan said the central bank needs to deliver at least two more quarter-point hikes.",
+   "url": "https://www.kitco.com/news/off-the-wire/2026-11-10/us-yields-rise-stocks-fall-inflation-data-boosts-odds-larger-december"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "11:46",
+   "source": "CoinDesk",
    "impact": "med",
    "assets": [
-    "nasdaq",
-    "spx500",
-    "us30",
-    "rut"
+    "btcusd"
    ],
-   "title": "Wall Street recule après l’IPC : Nasdaq −0,87 %, Russell 2000 −1,42 %",
-   "title_en": "Wall Street slips after CPI: Nasdaq −0.87%, Russell 2000 −1.42%",
-   "summary": "Vers 11 h 06, le S&P 500 cédait 0,71 % (7 496,17), le Dow 0,65 % (52 047,57), le Nasdaq 0,87 % (25 034,07) et le Russell 2000 1,42 % (2 800,38), l’IPC plus chaud que prévu poussant le taux à 10 ans vers 4,93 %. Nvidia perdait plus de 3 % de plus après sa baisse de 4 % lundi. CoreWeave, D-Wave et Rigetti publient leurs résultats après la clôture.",
-   "summary_en": "Around 11:06 a.m. the S&P 500 was down 0.71% (7,496.17), the Dow 0.65% (52,047.57), the Nasdaq 0.87% (25,034.07) and the Russell 2000 1.42% (2,800.38), as a hotter-than-expected CPI pushed the 10-year yield toward 4.93%. Nvidia fell more than 3% further after Monday's 4% drop. CoreWeave, D-Wave and Rigetti report after the close.",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+   "title": "Le bitcoin repasse sous 73 000 $, une première depuis août",
+   "title_en": "Bitcoin falls back below $73,000 for the first time since August",
+   "summary": "Le bitcoin est retombé sous 73 000 $ pour la première fois depuis août, en baisse d’environ 3 % sur 24 heures, tandis que l’ether, le XRP et le SOL perdaient près de 6 %. La hausse des taux après l’IPC et la chute de la tech pèsent sur la crypto; selon Yahoo Finance, le bitcoin a glissé sous sa moyenne mobile de 200 jours (73 200 $) et Coinbase et Strategy perdaient 4 %.",
+   "summary_en": "Bitcoin fell back below $73,000 for the first time since August, down about 3% over 24 hours, while ether, XRP and SOL lost nearly 6%. Rising yields after CPI and the tech sell-off are weighing on crypto; per Yahoo Finance, bitcoin slipped below its 200-day moving average ($73,200) and Coinbase and Strategy fell 4%.",
+   "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "11:13",
+   "source": "CoinDesk",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia chute encore d’environ 5 % sous 170 $ : le FBI se penche sur Jensen Huang",
+   "title_en": "Nvidia drops about 5% more, below $170, as FBI looks into Jensen Huang",
+   "summary": "Nvidia reculait d’environ 5 % à 168 $ mardi, après 4 % lundi, portant ses pertes depuis son sommet de début octobre à plus de 30 %, sur fond de rapports voulant que le FBI enquête sur le PDG Jensen Huang (Trump a dit que le FBI « se penche » sur l’affaire). Selon The Information, cité par Yahoo Finance, des sociétés chinoises auraient acquis pour 7,5 G$ de puces Nvidia, dont environ 240 000 après les interdictions d’exportation; ce sont des allégations. Le titre pèse lourd sur le Nasdaq et le S&P 500.",
+   "summary_en": "Nvidia fell about 5% to $168 on Tuesday after a 4% drop Monday, taking its losses from its early-October high past 30%, amid reports that the FBI is investigating CEO Jensen Huang (Trump said the FBI is \"looking into\" it). According to The Information, cited by Yahoo Finance, Chinese companies acquired $7.5 billion of Nvidia chips, including about 240,000 after U.S. export bans; these are allegations. The stock weighs heavily on the Nasdaq and S&P 500.",
+   "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
   },
   {
    "date": "2026-11-10",
@@ -797,21 +830,6 @@
    "title": "Clôture : Wall Street rebondit fortement — Nasdaq +2,74 %, Russell 2000 +3,15 %, malgré Nvidia",
    "title_en": "Close: Wall Street rebounds sharply — Nasdaq +2.74%, Russell 2000 +3.15%, despite Nvidia",
    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-9-222339218.html"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-09",
-   "impact": "high",
-   "source": "Yahoo Finance",
-   "summary": "Le conseil de Nvidia ouvre un examen indépendant sur la relation du PDG Jensen Huang avec une femme que le renseignement américain soupçonne d’espionnage pour la Chine; Huang a reconnu une liaison dans une note aux employés dimanche et promis sa pleine collaboration. L’action perdait environ 5 % et les analystes parlent d’un « risque de personne clé ». Les autres puces montaient : AMD +11 % après un relèvement à « achat », Broadcom +8 %, ASML +6 %.",
-   "summary_en": "Nvidia's board launched an independent review of CEO Jensen Huang's relationship with a woman U.S. intelligence believes could be a Chinese spy; Huang disclosed an affair in a Sunday memo to staff and pledged full cooperation. The stock fell about 5%, with analysts flagging \"key-person risk.\" Other chipmakers rose: AMD +11% after an upgrade to Buy, Broadcom +8%, ASML +6%.",
-   "time": "11:22",
-   "title": "Nvidia chute d’environ 5 % : le conseil enquête sur la relation de Jensen Huang avec une présumée espionne chinoise",
-   "title_en": "Nvidia sinks about 5% as board investigates Jensen Huang's relationship with alleged Chinese spy",
-   "url": "https://finance.yahoo.com/markets/article/nvidia-stock-sinks-as-chipmaker-investigates-ceo-jensen-huangs-relationship-with-alleged-chinese-spy-130346548.html"
   },
   {
    "assets": [
