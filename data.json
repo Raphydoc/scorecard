@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T15:18:39Z",
+ "updatedAt": "2026-11-10T16:43:42Z",
  "econ": {
   "values": {
    "gdp": {
@@ -629,21 +629,56 @@
  "news": [
   {
    "date": "2026-11-10",
-   "time": "06:50",
+   "time": "11:06",
    "source": "Yahoo Finance",
    "impact": "med",
    "assets": [
-    "us30",
-    "spx500",
     "nasdaq",
-    "rut",
-    "usoil"
+    "spx500",
+    "us30",
+    "rut"
    ],
-   "title": "Contrats à terme partagés avant l’IPC; le Nasdaq glisse après son rallye de lundi",
-   "title_en": "Futures mixed ahead of CPI; Nasdaq slips after Monday's rally",
-   "summary": "Les contrats à terme sur le Dow gagnaient environ 0,5 % et ceux du S&P 500 0,2 %, alors que ceux du Nasdaq passaient sous zéro après le bond de lundi (S&P 500 +2,3 %, Nasdaq 100 +3,4 %). Nvidia rebondissait légèrement après sa chute de plus de 4 % liée à l’enquête du conseil sur Jensen Huang. CoreWeave, D-Wave et Rigetti publient leurs résultats après la clôture.",
-   "summary_en": "Dow futures rose about 0.5% and S&P 500 futures 0.2%, while Nasdaq futures dipped below flat after Monday's surge (S&P 500 +2.3%, Nasdaq 100 +3.4%). Nvidia edged higher after falling more than 4% on the board probe into Jensen Huang. CoreWeave, D-Wave and Rigetti report after the close.",
+   "title": "Wall Street recule après l’IPC : Nasdaq −0,87 %, Russell 2000 −1,42 %",
+   "title_en": "Wall Street slips after CPI: Nasdaq −0.87%, Russell 2000 −1.42%",
+   "summary": "Vers 11 h 06, le S&P 500 cédait 0,71 % (7 496,17), le Dow 0,65 % (52 047,57), le Nasdaq 0,87 % (25 034,07) et le Russell 2000 1,42 % (2 800,38), l’IPC plus chaud que prévu poussant le taux à 10 ans vers 4,93 %. Nvidia perdait plus de 3 % de plus après sa baisse de 4 % lundi. CoreWeave, D-Wave et Rigetti publient leurs résultats après la clôture.",
+   "summary_en": "Around 11:06 a.m. the S&P 500 was down 0.71% (7,496.17), the Dow 0.65% (52,047.57), the Nasdaq 0.87% (25,034.07) and the Russell 2000 1.42% (2,800.38), as a hotter-than-expected CPI pushed the 10-year yield toward 4.93%. Nvidia fell more than 3% further after Monday's 4% drop. CoreWeave, D-Wave and Rigetti report after the close.",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "09:20",
+   "source": "Kitco",
+   "impact": "med",
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd"
+   ],
+   "title": "L’or chute d’environ 2 % vers 4 055 $ et l’argent de 3 % après l’IPC",
+   "title_en": "Gold drops about 2% to near $4,055, silver 3% after CPI",
+   "summary": "L’or reculait de 84,10 $ (−2,03 %) à environ 4 055,30 $ l’once et l’argent de 3,01 % à environ 51,70 $, alors que le dollar se raffermissait et que le taux à 2 ans montait vers 4,69 %. Une hausse de 25 pb à la réunion de la Fed des 8 et 9 décembre est presque entièrement intégrée, contre environ 84 % avant l’IPC. Prochain test : l’indice des prix à la production (IPP) vendredi à 8 h 30.",
+   "summary_en": "Gold fell $84.10 (−2.03%) to about $4,055.30 an ounce and silver 3.01% to about $51.70 as the dollar firmed and the 2-year yield rose toward 4.69%. A 25 bp hike at the Fed's Dec. 8-9 meeting is now almost fully priced, versus about 84% before CPI. Next catalyst: October PPI on Friday at 8:30 a.m.",
+   "url": "https://www.kitco.com/news/article/2026-11-10/gold-silver-retreat-high-core-cpi-lifts-december-fed-hike-odds-kitco-am"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "08:58",
+   "source": "Reuters (via Investing.com)",
+   "impact": "high",
+   "assets": [
+    "usd",
+    "eurusd",
+    "usdjpy",
+    "nasdaq",
+    "spx500",
+    "xauusd",
+    "btcusd"
+   ],
+   "title": "IPC d’octobre plus chaud que prévu (+0,4 %, base +0,3 %) : taux et dollar en hausse",
+   "title_en": "Hotter-than-expected October CPI (+0.4%, core +0.3%) lifts yields and dollar",
+   "summary": "L’IPC a augmenté de 0,4 % en octobre (prévision 0,3 %) et l’IPC de base de 0,3 % (prévision 0,2 %); aucun taux annuel n’est publié à cause de la fermeture du gouvernement de 2025 (3,7 % en septembre). Le taux à 2 ans a bondi de 13 pb à 4,68 %, le 10 ans de 7,6 pb à 4,94 %, l’indice du dollar a gagné 0,3 % à 102,05 et l’or a perdu 2 % à 4 057 $; les contrats sur le Nasdaq cédaient 1,4 %. La Fed semble en voie de relever ses taux en décembre, et le débat sur une hausse de 50 pb s’intensifie.",
+   "summary_en": "CPI rose 0.4% in October (forecast 0.3%) and core CPI 0.3% (forecast 0.2%); no annual rate was published because of the 2025 government shutdown (3.7% in September). The 2-year yield jumped 13 bp to 4.68%, the 10-year 7.6 bp to 4.94%, the dollar index rose 0.3% to 102.05 and gold fell 2% to $4,057; Nasdaq futures were down 1.4%. The Fed looks on course to hike in December, with debate growing over a half-point move.",
+   "url": "https://za.investing.com/news/economic-indicators/hot-october-inflation-report-rattles-markets-4565282"
   },
   {
    "date": "2026-11-10",
@@ -679,6 +714,21 @@
    "summary": "Le pétrole a reculé d’environ 2 % en 24 heures, le WTI se rapprochant de 84 $ et le Brent de 90 $, après que Trump eut signalé une pause dans de nouvelles frappes contre l’Iran. La baisse prolonge le recul de lundi, alors que les marchés misent sur une désescalade au Moyen-Orient.",
    "summary_en": "Oil fell about 2% over 24 hours, with WTI near $84 and Brent near $90, after President Trump signaled a pause in further Iran strikes. The drop extends Monday's slide as markets bet on Middle East de-escalation.",
    "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-slips-before-u-s-inflation-report-as-traders-price-in-fed-rate-increase"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "",
+   "source": "Yahoo Finance",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Anthropic fixe la fourchette de son IPO à 70–78 $ : jusqu’à 64,4 G$ et plus de 1 000 G$ de valeur",
+   "title_en": "Anthropic sets IPO range at $70–$78: up to $64.4B raised, valuation above $1 trillion",
+   "summary": "Anthropic a fixé une fourchette de 70 $ à 78 $ par action pour 825 millions d’actions, une offre qui pourrait lever jusqu’à 64,4 milliards $. Au haut de la fourchette, l’entreprise serait évaluée à plus de 1 000 milliards $, un test majeur de l’appétit pour l’IA alors que le Nasdaq est l’indice le plus faible de la séance.",
+   "summary_en": "Anthropic set a price range of $70 to $78 per share for 825 million shares, an offering that could raise up to $64.4 billion. At the top of the range the company would be valued at more than $1 trillion, a major test of AI appetite as the Nasdaq is the session's weakest index.",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
   },
   {
    "assets": [
