@@ -719,7 +719,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
         <p class="sub">Données US mises à jour automatiquement chaque matin de semaine.</p>
       </div>
     </div>
-    <div class="topbtns"><div class="clocks" id="clocks" aria-label="Heures des marchés"></div><button id="themeBtn" class="btn ghost" type="button" aria-label="Mode sombre" title="Mode sombre">☾</button><button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button></div>
+    <div class="topbtns"><div class="clocks" id="clocks" aria-label="Heures des marchés / Market hours"></div><button id="themeBtn" class="btn ghost" type="button" aria-label="Mode sombre" title="Mode sombre">☾</button><button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button></div>
     <div class="controls" data-pg="score">
       <label class="assetpick"><span>Actif</span>
         <select id="assetSel" aria-label="Actif">
@@ -798,7 +798,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
       <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
       <li><strong>Dollar US (DXY) :</strong> toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.</li>
-      <li><strong>Technique :</strong> tendance 4H/Daily ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
+      <li><strong>Technique :</strong> tendance 4H/journalier ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.</li>
       <li>Total de −max à +max (le max dépend de l'actif, environ ±24 à ±27) : 4 à 9 = haussier/baissier, 10 et plus = très haussier/très baissier, de −3 à +3 = neutre.</li>
@@ -846,7 +846,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
       </div>
       <div class="tablewrap" id="calBox"></div>
     </div>
-    <p class="pgfoot">Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.</p>
+    <p class="pgfoot">Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). Clique une donnée pour son détail. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.</p>
   </section>
 
   <section data-pg="earn" hidden aria-label="Résultats d’entreprises">
@@ -1028,8 +1028,8 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     let h = '';
 
     h += head('Technique', catChip(C.cats.tech,3), ['','','','']);
-    h += `<tr><td class="name">Tendance 4H / Daily</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
-      <td class="desc" colspan="4">${E?triSelect('in-trend',A.trend):'Ta lecture de la tendance sur le 4H et le Daily (±2)'}</td></tr>`;
+    h += `<tr><td class="name">Tendance 4H / journalier</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
+      <td class="desc" colspan="4">${E?triSelect('in-trend',A.trend):'Ta lecture de la tendance sur le 4H et le journalier (±2)'}</td></tr>`;
     h += `<tr><td class="name">Saisonnalité (3 derniers mois)</td><td class="sig" data-dd="top|${asset}|season">${chip(r.season)}</td>
       <td class="desc" colspan="4">${A.seasonPct!=null&&A.seasonPct!==undefined ? 'Variation '+(A.seasonPeriod?'de '+esc(A.seasonPeriod):'des 3 derniers mois')+' : '+(A.seasonPct>0?'+':'')+String(A.seasonPct).replace('.',',').replace('-','−')+' % (plus de +1 % = +1, moins de −1 % = −1). Mise à jour chaque mois.' : 'Variation des 3 derniers mois complets, mise à jour chaque mois (±1).'}</td></tr>`;
 
@@ -1644,7 +1644,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     const un = m.unemp && m.unemp.length ? m.unemp[m.unemp.length-1] : null, unp = m.unemp && m.unemp.length>1 ? m.unemp[m.unemp.length-2] : null;
     const vC = t => t>=4?'up':t<=-4?'dn':'';
     let k = '';
-    k += `<button class="kpi" data-goa="${best.a}"><span class="k">${L('Meilleur setup','Top setup')}</span><span class="v ${vC(best.C.total)}">${esc(TOP_NAMES[best.a])} ${best.C.total>0?'+':''}${best.C.total}</span><span class="s">${esc(L(verdict(best.C.total)[0], ''))}${isEN()?verdictEN(best.C.total):''}</span></button>`;
+    k += `<button class="kpi" data-goa="${best.a}"><span class="k">${L('Meilleure occasion','Top setup')}</span><span class="v ${vC(best.C.total)}">${esc(TOP_NAMES[best.a])} ${best.C.total>0?'+':''}${best.C.total}</span><span class="s">${esc(L(verdict(best.C.total)[0], ''))}${isEN()?verdictEN(best.C.total):''}</span></button>`;
     k += `<button class="kpi" data-goa="${worst.a}"><span class="k">${L('Plus faible','Weakest')}</span><span class="v ${vC(worst.C.total)}">${esc(TOP_NAMES[worst.a])} ${worst.C.total>0?'+':''}${worst.C.total}</span><span class="s">${esc(L(verdict(worst.C.total)[0], ''))}${isEN()?verdictEN(worst.C.total):''}</span></button>`;
     const vxS = r.vix||[], vxL = vxS.slice(-1)[0], vxP = agoPt(vxS,7);
     k += `<button class="kpi" data-gop="sent"><span class="k">${L('Peur des marchés (VIX)','Market fear (VIX)')}</span><span class="v ${vxL&&vxL[1]>=25?'dn':vxL&&vxL[1]<16?'up':''}">${vxL? nf(vxL[1],1):'—'}</span><span class="s">${vxL? (vxL[1]>=25?L('stress élevé','high stress'):vxL[1]<16?L('marché calme','calm market'):L('nervosité modérée','moderate nerves'))+(vxP?' · '+sg2(vxL[1]-vxP[1],1)+L(' sur 1 sem.',' w/w'):''):'Cboe'}</span></button>`;
@@ -1749,7 +1749,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
       <div class="panel"><div class="ph"><div><h3>${L('Économie américaine','US economy')}</h3><p>${L('Données officielles (BLS, BEA, Census, Département du Travail) · clique sur une carte pour l’afficher en grand','Official data (BLS, BEA, Census, Labor Dept.) · click a card to enlarge it')} · ${srcNote()}</p></div><div class="chips" id="ecoG">${grp.map(([g,l])=>`<button class="chip" data-g="${g}" aria-pressed="${g===state.ecoG}">${esc(l)}</button>`).join('')}</div></div>
         ${has ? `<div class="pb"><div class="icards">${cards}</div></div>` : liveMissing(L('données économiques','economic data'))}
       </div>
-      ${has && ECON.some(x=>x.k===state.ecoSel && x.g===state.ecoG) ? `<div class="panel"><div class="ph"><div class="dethead" style="width:100%"><div><h3>${esc(e.n[isEN()?1:0])}</h3><p>${L('Source','Source')} : ${SRC_FULL[e.src]||e.src}${(state.live||{}).liveAt?'':' (via FRED)'}${last?' · '+L('dernière donnée','latest')+' : '+perLbl(last[0]):''}</p></div>
+      ${has && ECON.some(x=>x.k===state.ecoSel && x.g===state.ecoG) ? `<div class="panel"><div class="ph"><div class="dethead" style="width:100%"><div><h3>${esc(e.n[isEN()?1:0])}</h3><p>${L('Source : ','Source: ')}${SRC_FULL[e.src]||e.src}${(state.live||{}).liveAt?'':' (via FRED)'}${last?' · '+L('dernière donnée : ','latest: ')+perLbl(last[0]):''}</p></div>
         <div class="chips" id="ecoR">${[[12,'1A','1Y'],[24,'2A','2Y'],[36,'3A','3Y']].map(([n,f,en])=>`<button class="chip" data-r="${n}" aria-pressed="${n===state.ecoRange}">${L(f,en)}</button>`).join('')}</div></div></div>
         <div class="pb"><div class="cbox lg"><canvas id="ecoChart"></canvas></div>
         <div class="statg">
@@ -1812,7 +1812,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
         <div class="panel"><div class="ph"><div><h3>${L('Écart 10 ans − 2 ans','10y − 2y spread')}</h3><p>${L('Sous zéro = courbe inversée','Below zero = inverted curve')}</p></div></div><div class="pb"><div class="cbox"><canvas id="spreadChart"></canvas></div></div></div>
       </div>
       <div class="explain"><p><b>${L('Comment lire','How to read')}</b> : ${L('quand le 10 ans monte, l’or et le Nasdaq ont tendance à baisser et le dollar à monter (c’est pourquoi le 10 ans compte dans ton scorecard). Le 2 ans réagit surtout aux attentes de hausse ou de baisse de la Fed.','when the 10-year rises, gold and the Nasdaq tend to fall and the dollar to rise (that’s why the 10-year is in your scorecard). The 2-year mostly reacts to expected Fed hikes or cuts.')}</p><p>${L('Une courbe inversée (2 ans plus haut que 10 ans) a souvent précédé les ralentissements économiques.','An inverted curve (2-year above 10-year) has often preceded economic slowdowns.')}</p></div>
-      <p class="src">${L('Sources','Sources')} : Federal Reserve Board (H.15), U.S. Treasury, Freddie Mac${(state.live||{}).liveAt?' (via DBnomics)':' (via FRED)'} · ${srcNote()}</p>`;
+      <p class="src">${L('Sources : ','Sources: ')}Federal Reserve Board (H.15), U.S. Treasury, Freddie Mac${(state.live||{}).liveAt?' (via DBnomics)':' (via FRED)'} · ${srcNote()}</p>`;
     needChart().then(ok=>{ if(!ok) return;
       if(curve) mkChart('curveChart', {type:'line', data:{labels:['3M',L('2 ans','2Y'),L('5 ans','5Y'),L('10 ans','10Y'),L('30 ans','30Y')], datasets:[
         {label:L('Aujourd’hui','Today'), data:curve.map(k=>cAt(k)), borderColor:css('--gold'), backgroundColor:css('--gold'), pointRadius:4, tension:.25},
@@ -1875,7 +1875,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
       <tr><td>${catN[1]}</td>${cat(last[3],last[4],prev[3],prev[4])}</tr>
       <tr><td>${catN[2]}</td>${cat(last[5],last[6],prev[5],prev[6])}</tr>
     </tbody></table></div>
-    <p class="src">${L('Source','Source')} : U.S. Commodity Futures Trading Commission (CFTC), ${oil?L('rapport désagrégé','disaggregated report'):L('rapport Legacy','Legacy report')}, futures only · publicreporting.cftc.gov${a==='usdjpy'||a==='usdcad' ? ' · '+L(`contrat ${a==='usdjpy'?'du yen':'du dollar canadien'} inversé : « long » = acheteur de ${TOP_NAMES[a]}`, `${a==='usdjpy'?'yen':'Canadian dollar'} contract inverted: "long" = long ${TOP_NAMES[a]}`) : ''} · ${srcNote()}</p></div>`;
+    <p class="src">${L('Source : ','Source: ')}U.S. Commodity Futures Trading Commission (CFTC), ${oil?L('rapport désagrégé','disaggregated report'):L('rapport Legacy','Legacy report')}, ${L('contrats à terme seulement','futures only')} · publicreporting.cftc.gov${a==='usdjpy'||a==='usdcad' ? ' · '+L(`contrat ${a==='usdjpy'?'du yen':'du dollar canadien'} inversé : « long » = acheteur de ${TOP_NAMES[a]}`, `${a==='usdjpy'?'yen':'Canadian dollar'} contract inverted: "long" = long ${TOP_NAMES[a]}`) : ''} · ${srcNote()}</p></div>`;
     bindCotChips(box);
     box.querySelectorAll('#cotN .chip').forEach(b=>b.addEventListener('click', ()=>{ state.cotN = +b.dataset.n; renderCOT(); }));
     needChart().then(ok=>{ if(!ok) return;
@@ -1921,8 +1921,8 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
       <div class="pb"><div class="kpis">
         <div class="kpi"><span class="k">VIX</span><span class="v ${lv[1]>=25?'dn':lv[1]<16?'up':''}">${nf(lv[1],1)}</span><span class="s">${pv? sg2(lv[1]-pv[1],1)+L(' sur 1 sem.',' w/w'):''} · ${perLbl(lv[0])}</span></div>
         <div class="kpi"><span class="k">${L('VIX · plage 1 an','VIX · 1-yr range')}</span><span class="v">${v52? nf(v52.min,1)+' – '+nf(v52.max,1):'—'}</span><span class="s">${L('moyenne','average')} ${v52? nf(v52.avg,1):'—'}</span></div>
-        ${lh? `<div class="kpi"><span class="k">${L('Écart high yield','High-yield spread')}</span><span class="v ${lh[1]>=4?'dn':lh[1]<3?'up':''}">${nf(lh[1],2)} pt</span><span class="s">${ph? sg2(lh[1]-ph[1],2)+L(' sur 1 sem.',' w/w'):''}</span></div>`:''}
-        ${h52? `<div class="kpi"><span class="k">${L('Écart HY · plage 1 an','HY spread · 1-yr range')}</span><span class="v">${nf(h52.min,2)} – ${nf(h52.max,2)}</span><span class="s">${L('moyenne','average')} ${nf(h52.avg,2)}</span></div>`:''}
+        ${lh? `<div class="kpi"><span class="k">${L('Écart haut rendement','High-yield spread')}</span><span class="v ${lh[1]>=4?'dn':lh[1]<3?'up':''}">${nf(lh[1],2)} pt</span><span class="s">${ph? sg2(lh[1]-ph[1],2)+L(' sur 1 sem.',' w/w'):''}</span></div>`:''}
+        ${h52? `<div class="kpi"><span class="k">${L('Écart haut rendement · plage 1 an','HY spread · 1-yr range')}</span><span class="v">${nf(h52.min,2)} – ${nf(h52.max,2)}</span><span class="s">${L('moyenne','average')} ${nf(h52.avg,2)}</span></div>`:''}
       </div></div></div>
       <div class="g2"><div class="panel"><div class="ph"><div><h3>${L('VIX sur 2 ans','VIX over 2 years')}</h3><p>${L('Au-dessus de 25 = stress · sous 15 = calme','Above 25 = stress · below 15 = calm')}</p></div></div><div class="pb"><div class="cbox"><canvas id="vixChart"></canvas></div></div></div>
       <div class="panel"><div class="ph"><div><h3>${L('Écart des obligations à haut rendement','High-yield bond spread')}</h3><p>${L('Il monte quand les investisseurs craignent les faillites','It rises when investors fear defaults')}</p></div></div><div class="pb"><div class="cbox"><canvas id="hyChart"></canvas></div></div></div></div>` : '';
@@ -1930,8 +1930,8 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
       <div class="panel"><div class="ph"><div><h3>${L('Foule vs argent intelligent','Crowd vs smart money')}</h3><p>${L('% de comptes clients IG acheteurs comparé au % long des gros spéculateurs (COT)','% of IG client accounts long vs large speculators % long (COT)')}</p></div></div><div class="pb"><div class="cbox lg"><canvas id="sentChart"></canvas></div></div></div>
       <div class="sentg">${cards}</div>
       <div class="explain"><p><b>${L('Pourquoi ça compte','Why it matters')}</b> : ${L('les petits traders (la foule) ont souvent tort aux extrêmes. Quand 60 % ou plus sont acheteurs, le marché a tendance à aller contre eux : c’est un signal contrarien (−1 dans ton score). À 40 % ou moins, c’est l’inverse (+1).','small traders (the crowd) are often wrong at extremes. When 60% or more are long, the market tends to move against them: a contrarian signal (−1 in your score). At 40% or less, the opposite (+1).')}</p><p>${L('Les gros spéculateurs du COT (fonds) suivent plutôt la tendance : plus de 50 % long = +1. Le signal est plus fort quand les deux concordent (foule vendeuse et fonds acheteurs, par exemple).','COT large speculators (funds) tend to follow the trend: above 50% long = +1. The signal is stronger when both line up (crowd short and funds long, for example).')}</p></div>
-      ${lv? `<div class="explain"><p><b>${L('Climat de risque','Risk climate')}</b> : ${L('quand le VIX et l’écart high yield montent ensemble, les investisseurs fuient le risque : les indices (surtout le Nasdaq et le Russell) et le Bitcoin baissent souvent, l’or et le dollar servent de refuge. Quand ils baissent, c’est l’inverse.','when the VIX and the high-yield spread rise together, investors flee risk: indices (especially the Nasdaq and Russell) and Bitcoin often fall, while gold and the dollar act as safe havens. When they fall, the opposite.')}</p></div>`:''}
-      <p class="src">${L('Sources','Sources')} : IG Client Sentiment · CFTC Commitments of Traders${lv?' · Cboe (VIX), ICE BofA US High Yield Index (via FRED)':''} · ${L('mis à jour avec le scorecard','updated with the scorecard')}</p>`;
+      ${lv? `<div class="explain"><p><b>${L('Climat de risque','Risk climate')}</b> : ${L('quand le VIX et l’écart haut rendement montent ensemble, les investisseurs fuient le risque : les indices (surtout le Nasdaq et le Russell) et le Bitcoin baissent souvent, l’or et le dollar servent de refuge. Quand ils baissent, c’est l’inverse.','when the VIX and the high-yield spread rise together, investors flee risk: indices (especially the Nasdaq and Russell) and Bitcoin often fall, while gold and the dollar act as safe havens. When they fall, the opposite.')}</p></div>`:''}
+      <p class="src">${L('Sources : ','Sources: ')}IG Client Sentiment · CFTC Commitments of Traders${lv?' · Cboe (VIX), ICE BofA US High Yield Index (via FRED)':''} · ${L('mis à jour avec le scorecard','updated with the scorecard')}</p>`;
     needChart().then(ok=>{ if(!ok) return;
       if(lv){ const lab = vx.map(p=>perLbl(p[0]));
         mkChart('vixChart', {type:'line', data:{labels:lab, datasets:[{label:'VIX', data:vx.map(p=>p[1]), borderColor:css('--gold'), pointRadius:0, tension:.2}, {label:L('Seuil de stress (25)','Stress level (25)'), data:vx.map(()=>25), borderColor:css('--bear'), borderDash:[5,5], pointRadius:0}]}, options:{scales:{x:{ticks:{maxTicksLimit:8}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,1)}}}}});
@@ -1999,7 +1999,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
       ${cotG.length? `<div class="panel"><div class="ph"><div><h3>${L('Les banques sur le marché à terme (COT)','Banks in the futures market (COT)')}</h3><p>${L('Or COMEX · position nette (contrats) des commerciaux (banques et producteurs) vs les fonds spéculatifs','COMEX gold · net position (contracts) of commercials (banks and producers) vs speculative funds')}</p></div></div><div class="pb"><div class="cbox"><canvas id="cbgCot"></canvas></div></div></div>`:''}
       <div class="panel"><div class="ph"><div><h3>${L('Cours de l’or','Gold price')}</h3><p>${L('En direct (TradingView)','Live (TradingView)')}</p></div></div><div class="tvbox" id="tvCbg"></div></div>
       <div class="explain"><p><b>${L('Pourquoi ça compte pour l’or','Why it matters for gold')}</b> : ${L('les banques centrales achètent de l’or pour dépendre moins du dollar américain et se protéger des sanctions et de l’inflation. Elles achètent sans regarder le prix et gardent longtemps : c’est un plancher solide sous le cours de l’or. Quand leurs achats ralentissent, l’or perd un de ses gros soutiens.','central banks buy gold to rely less on the US dollar and to protect themselves from sanctions and inflation. They buy regardless of price and hold for a long time: a solid floor under the gold price. When their buying slows, gold loses one of its big supports.')}</p><p>${L('La majorité des achats ne sont pas déclarés au FMI (on pense à la Chine et à des pays du Golfe) : le World Gold Council les estime à partir de l’offre et de la demande mondiales. La Chine déclare officiellement environ 2 400 t, mais plusieurs analystes pensent qu’elle en a beaucoup plus. Ces achats ne comptent pas dans ton score : c’est un contexte de long terme.','Most purchases are not reported to the IMF (China and Gulf countries are suspected): the World Gold Council estimates them from global supply and demand. China officially reports about 2,400 t, but several analysts think it holds far more. These purchases are not part of your score: they are long-term context.')}</p>${cotG.length? `<p>${L('Les commerciaux (banques de lingots et producteurs) sont presque toujours vendeurs nets : ils se couvrent. Quand leur position vendeuse rétrécit pendant une baisse, c’est souvent signe que le prix est bas.','Commercials (bullion banks and producers) are almost always net short: they hedge. When their short position shrinks during a selloff, the price is often low.')}</p>`:''}</div>
-      <p class="src">${L('Sources','Sources')} : ${C.src.map(s=>`<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>`).join(' · ')}${cotG.length?' · CFTC':''} · ${L(`publié le ${new Date(C.pub+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric',month:'long',year:'numeric'})} · * 2026 = janvier à septembre · réserves arrondies, chiffres officiels les plus récents`, `published ${new Date(C.pub+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric',month:'long',year:'numeric'})} · * 2026 = January to September · reserves rounded, latest official figures`)}</p>`;
+      <p class="src">${L('Sources : ','Sources: ')}${C.src.map(s=>`<a href="${esc(s[1])}" target="_blank" rel="noopener">${esc(s[0])}</a>`).join(' · ')}${cotG.length?' · CFTC':''} · ${L(`publié le ${new Date(C.pub+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric',month:'long',year:'numeric'})} · * 2026 = janvier à septembre · réserves arrondies, chiffres officiels les plus récents`, `published ${new Date(C.pub+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric',month:'long',year:'numeric'})} · * 2026 = January to September · reserves rounded, latest official figures`)}</p>`;
     box.querySelectorAll('#cbgSeg .chip').forEach(b=>b.addEventListener('click', ()=>{ state.cbView = b.dataset.v; renderCB(); }));
     tv('tvCbg','symbol-overview',{symbols:[['OANDA:XAUUSD|12M']], chartOnly:false, width:'100%', height:360, chartType:'area', dateRanges:['1m|30','3m|60','12m|1D','60m|1W','all|1M']}, 360);
     needChart().then(ok=>{ if(!ok) return;
@@ -2065,7 +2065,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     mom:{overbought:['SURACHETÉ','OVERBOUGHT','r'], oversold:['SURVENDU','OVERSOLD','b'], bull:['HAUSSIER','BULLISH','b'], bear:['BAISSIER','BEARISH','r'], neutral:['NEUTRE','NEUTRAL','n']},
     macd:{'bull+':['HAUSSIER ↑','BULLISH ↑','b'], bull:['HAUSSIER','BULLISH','b'], 'bear+':['BAISSIER ↓','BEARISH ↓','r'], bear:['BAISSIER','BEARISH','r']},
     vol:{high:['HAUTE','HIGH','g'], normal:['NORMALE','NORMAL','n'], low:['BASSE','LOW','n']},
-    struct:{bull:['HAUSSIÈRE','BULLISH','b'], bear:['BAISSIÈRE','BEARISH','r'], range:['RANGE','RANGING','n']},
+    struct:{bull:['HAUSSIÈRE','BULLISH','b'], bear:['BAISSIÈRE','BEARISH','r'], range:['LATÉRALE','RANGING','n']},
     weekly:{bull:['HAUSSIÈRE','BULLISH','b'], bear:['BAISSIÈRE','BEARISH','r'], neutral:['NEUTRE','NEUTRAL','n']}
   };
   const tw = (g,k) => { const w = (TW[g]||{})[k] || ['—','—','n']; return {t:isEN()?w[1]:w[0], c:w[2]}; };
@@ -2093,7 +2093,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
         ${cell('macd',t.macd, L('MACD 12/26','MACD 12/26'), i+2)}
         ${cell('vol',t.vol, `${nf(t.volAnn,1)} % ${L('ann.','ann.')}`, i+3)}
         ${cell('struct',t.struct, L('sommets / creux 20 j','20-day highs / lows'), i+4)}
-        <td class="hc liq" data-dd="tech|${k}|liq" style="--d:${(i+5)*35}ms"><b>${liqUp?L('POOL AU-DESSUS','POOL ABOVE'):L('POOL EN DESSOUS','POOL BELOW')}</b><small>${liqUp?'↑':'↓'} ${sg2(t.liq.d,2)} % · ${pxFmt(t.liq.lvl)}</small></td>
+        <td class="hc liq" data-dd="tech|${k}|liq" style="--d:${(i+5)*35}ms"><b>${liqUp?L('LIQUIDITÉ AU-DESSUS','POOL ABOVE'):L('LIQUIDITÉ EN DESSOUS','POOL BELOW')}</b><small>${liqUp?'↑':'↓'} ${sg2(t.liq.d,2)} % · ${pxFmt(t.liq.lvl)}</small></td>
         ${cell('weekly',t.weekly, L('MM 20 sem.','20-wk MA'), i+6)}
         <td class="hs" data-dd="tech|${k}|all" style="--d:${(i+7)*35}ms"><div class="sbarh"><i class="${t.score>0?'b':t.score<0?'r':''}" style="--w:${Math.abs(t.score)*10}%;${t.score<0?'right:50%':'left:50%'}"></i></div><b class="${t.score>0?'up':t.score<0?'dn':''}">${sg2(t.score,0)}</b></td>
       </tr>`; });
@@ -2110,19 +2110,19 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
       </div>
       <div class="hmwrap">
         <div class="panel hmmain"><div class="ph"><div class="chips" id="techCats">${T_CATS.map(([k,l])=>`<button type="button" class="chip" data-c="${k}" aria-pressed="${state.techCat===k}">${esc(isEN()?l[1]:l[0])} <span class="cnum">${k==='all'?all.length:all.filter(x=>T_CAT[x]===k).length}</span></button>`).join('')}</div><p>${L('Trié par score technique · clique une ligne','Sorted by technical score · click a row')}</p></div>
-          <div class="tablewrap"><table class="hm"><thead><tr><th>${L('Instrument','Instrument')}</th><th>${L('Tendance','Trend')}</th><th>Momentum</th><th>MACD</th><th>${L('Volatilité','Volatility')}</th><th>Structure</th><th>${L('Liquidité','Liquidity')}</th><th>${L('Hebdo','Weekly')}</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table></div></div>
+          <div class="tablewrap"><table class="hm"><thead><tr><th>${L('Instrument','Instrument')}</th><th>${L('Tendance','Trend')}</th><th>${L('Élan (RSI)','Momentum')}</th><th>MACD</th><th>${L('Volatilité','Volatility')}</th><th>Structure</th><th>${L('Liquidité','Liquidity')}</th><th>${L('Hebdo','Weekly')}</th><th>Score</th></tr></thead><tbody>${rows}</tbody></table></div></div>
         <div class="panel hmside"><div class="ph"><div><h3>${esc(TOP_NAMES[state.techSel])}</h3><p>${pxFmt(S.px)} · ${sg2(S.chg1d,2)} % ${L('aujourd’hui','today')} · ${sg2(S.chg1m,1)} % ${L('sur 1 mois','1 month')}</p></div></div>
           <div class="pb"><div class="cbox" style="height:270px"><canvas id="techRadar"></canvas></div>
           <div class="tside"><div class="tsc"><span>${L('Score technique','Technical score')}</span><b class="${S.score>0?'up':S.score<0?'dn':''}">${cu(S.score,0,'',true)}<small>/5</small></b></div>
           <div class="lv"><div><span>MM20</span><b>${pxFmt(S.sma20)}</b></div><div><span>MM50</span><b>${pxFmt(S.sma50)}</b></div><div><span>MM200</span><b>${pxFmt(S.sma200)}</b></div><div><span>${L('Sommet 20 j','20-d high')}</span><b>${pxFmt(S.hi20)}</b></div><div><span>${L('Creux 20 j','20-d low')}</span><b>${pxFmt(S.lo20)}</b></div><div><span>${L('Depuis janvier','YTD')}</span><b class="${(S.chgYtd||0)>=0?'up':'dn'}">${sg2(S.chgYtd,1)} %</b></div></div></div></div></div>
       </div>
-      <div class="explain"><p><b>${L('Comment lire','How to read')}</b> : ${L('Tendance = prix contre les moyennes mobiles de 50 et 200 jours et la pente de la MM50. Momentum = RSI 14 jours (≥ 70 suracheté, ≤ 30 survendu). MACD : ↑ ou ↓ quand l’histogramme accélère. Volatilité = volatilité sur 20 jours comparée à la dernière année. Structure = sommets et creux plus hauts (haussière) ou plus bas (baissière). Liquidité = le niveau le plus proche où se trouvent les stops (sommet ou creux des 20 derniers jours). Le score va de −5 à +5.','Trend = price vs the 50- and 200-day moving averages and the slope of the 50-day. Momentum = 14-day RSI (≥ 70 overbought, ≤ 30 oversold). MACD: ↑ or ↓ when the histogram accelerates. Volatility = 20-day volatility vs the past year. Structure = higher (bullish) or lower (bearish) highs and lows. Liquidity = the nearest level where stops sit (20-day high or low). Score ranges from −5 to +5.')}</p><p>${L('Cette heatmap ne change pas ton score du Scorecard : ta case « Tendance » reste la tienne.','This heatmap does not change your Scorecard score: your “Trend” box stays yours.')}</p></div>
-      <p class="src">${L('Source','Source')} : ${esc(state.tech.src||'')} · ${L('calculé le','computed')} ${new Date(state.tech.asOf).toLocaleString(LOC(),{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</p>`;
+      <div class="explain"><p><b>${L('Comment lire','How to read')}</b> : ${L('Tendance = prix contre les moyennes mobiles de 50 et 200 jours et la pente de la MM50. Élan = RSI 14 jours (≥ 70 suracheté, ≤ 30 survendu). MACD : ↑ ou ↓ quand l’histogramme accélère. Volatilité = volatilité sur 20 jours comparée à la dernière année. Structure = sommets et creux plus hauts (haussière) ou plus bas (baissière); sinon latérale. Liquidité = le niveau le plus proche où se trouvent les stops (sommet ou creux des 20 derniers jours). Le score va de −5 à +5.','Trend = price vs the 50- and 200-day moving averages and the slope of the 50-day. Momentum = 14-day RSI (≥ 70 overbought, ≤ 30 oversold). MACD: ↑ or ↓ when the histogram accelerates. Volatility = 20-day volatility vs the past year. Structure = higher (bullish) or lower (bearish) highs and lows. Liquidity = the nearest level where stops sit (20-day high or low). Score ranges from −5 to +5.')}</p><p>${L('Cette heatmap ne change pas ton score du Scorecard : ta case « Tendance » reste la tienne.','This heatmap does not change your Scorecard score: your “Trend” box stays yours.')}</p></div>
+      <p class="src">${L('Source : ','Source: ')}${L('Yahoo Finance (repli : Stooq) · clôtures quotidiennes','Yahoo Finance (backup: Stooq) · daily closes')} · ${L('calculé le','computed')} ${new Date(state.tech.asOf).toLocaleString(LOC(),{day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</p>`;
     box.querySelectorAll('#techCats .chip').forEach(b=>b.addEventListener('click', ()=>{ state.techCat = b.dataset.c; renderTechHM(); }));
     box.querySelectorAll('table.hm tbody tr').forEach(r=>r.addEventListener('click', ()=>{ state.techSel = r.dataset.k; renderTechHM(); }));
     countUp(box);
     needChart().then(ok=>{ if(!ok) return; const g = css('--gold');
-      mkChart('techRadar', {type:'radar', data:{labels:[L('Tendance','Trend'),'Momentum','MACD','Structure',L('Hebdo','Weekly'),L('Volatilité','Volatility')], datasets:[{label:TOP_NAMES[state.techSel], data:techAxes(S), borderColor:g, backgroundColor:g+'33', pointBackgroundColor:g, borderWidth:2}]},
+      mkChart('techRadar', {type:'radar', data:{labels:[L('Tendance','Trend'),L('Élan','Momentum'),'MACD','Structure',L('Hebdo','Weekly'),L('Volatilité','Volatility')], datasets:[{label:TOP_NAMES[state.techSel], data:techAxes(S), borderColor:g, backgroundColor:g+'33', pointBackgroundColor:g, borderWidth:2}]},
         options:{animation:{duration:RM()?0:1100, easing:'easeOutBack'}, interaction:{mode:'nearest'}, scales:{r:{min:0, max:100, ticks:{display:false, stepSize:25}, grid:{color:css('--line')}, angleLines:{color:css('--line')}, pointLabels:{color:css('--fg'), font:{size:11, weight:'600'}}}}, plugins:{legend:{display:false}, tooltip:{enabled:false}}}});
     });
   }
@@ -2207,7 +2207,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
         <div class="panel"><div class="ph"><div><h3>${L('Rendement moyen par mois','Average return by month')}</h3><p>${L('En doré : le mois en cours','Gold: current month')}</p></div></div><div class="pb"><div class="cbox"><canvas id="seasMon"></canvas></div></div></div>
         <div class="panel"><div class="ph"><div><h3>${L('Rendement moyen par jour','Average return by weekday')}</h3><p>${L('Du lundi au vendredi','Monday to Friday')}</p></div></div><div class="pb"><div class="cbox"><canvas id="seasWd"></canvas></div></div></div>
       </div>
-      <p class="src">${L('Source','Source')} : ${esc(state.tech.src||'')} · ${L('calcul sur les clôtures quotidiennes','computed on daily closes')} · ${L('le passé ne garantit pas l’avenir','past performance does not guarantee the future')}</p>`;
+      <p class="src">${L('Source : ','Source: ')}${L('Yahoo Finance (repli : Stooq) · clôtures quotidiennes','Yahoo Finance (backup: Stooq) · daily closes')} · ${L('calcul sur les clôtures quotidiennes','computed on daily closes')} · ${L('le passé ne garantit pas l’avenir','past performance does not guarantee the future')}</p>`;
     box.querySelectorAll('#seasChips .chip').forEach(b=>b.addEventListener('click', ()=>{ state.seasA = b.dataset.a; renderSeas(); }));
     countUp(box);
     needChart().then(ok=>{ if(!ok) return;
@@ -2352,7 +2352,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     const m = (state.live||{}).macro; if(!e || !m) return '';
     const s = (e.f(m)||[]).slice(-24); if(s.length<3) return '';
     ddChart = {type:e.ty==='bar'?'bar':'line', labels:s.map(p=>perLbl(p[0])), data:s.map(p=>p[1]), unit:e.u, d:e.d, tgt:e.tgt};
-    return `<div class="ddsec"><h4>${L('Historique (24 dernières publications)','History (last 24 releases)')} · ${esc(isEN()?e.n[1]:e.n[0])}</h4><div class="cbox" style="height:180px"><canvas id="ddChart"></canvas></div><p class="ddsrc">${L('Source','Source')} : ${esc(SRC_FULL[e.src]||e.src)}</p></div>`;
+    return `<div class="ddsec"><h4>${L('Historique (24 dernières publications)','History (last 24 releases)')} · ${esc(isEN()?e.n[1]:e.n[0])}</h4><div class="cbox" style="height:180px"><canvas id="ddChart"></canvas></div><p class="ddsrc">${L('Source : ','Source: ')}${esc(SRC_FULL[e.src]||e.src)}</p></div>`;
   }
   let ddChart = null;
   function ddNext(id){
@@ -2419,7 +2419,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     const map = {
       trend:[L('Tendance','Trend'), tw('trend',t.trend), ddRow(L('Prix','Price'), pxFmt(t.px)) + ddRow('MM50', `${pxFmt(t.sma50)} (${sg2(t.d50,1)} %)`) + ddRow('MM200', `${pxFmt(t.sma200)} (${sg2(t.d200,1)} %)`) + ddRow(L('Points de tendance','Trend points'), sg2(t.trendScore,0)+' / 3'),
         L('On compte 3 choses : le prix au-dessus (+1) ou en dessous (−1) de la MM50, pareil pour la MM200, et la MM50 qui monte (+1) ou descend (−1). 2 ou plus = tendance haussière, −2 ou moins = baissière.','We count 3 things: price above (+1) or below (−1) the 50-day MA, same for the 200-day, and the 50-day rising (+1) or falling (−1). 2 or more = bullish trend, −2 or less = bearish.')],
-      mom:[L('Momentum (RSI 14)','Momentum (RSI 14)'), tw('mom',t.mom), ddRow('RSI', nf(t.rsi,1)) + `<div class="rsibar"><i style="left:${Math.max(0,Math.min(100,t.rsi))}%"></i><span style="left:30%"></span><span style="left:70%"></span></div>`,
+      mom:[L('Élan (RSI 14)','Momentum (RSI 14)'), tw('mom',t.mom), ddRow('RSI', nf(t.rsi,1)) + `<div class="rsibar"><i style="left:${Math.max(0,Math.min(100,t.rsi))}%"></i><span style="left:30%"></span><span style="left:70%"></span></div>`,
         L('Le RSI mesure la force des derniers mouvements de 0 à 100. Au-dessus de 70 = suracheté (le prix a beaucoup monté, risque de pause ou de recul). Sous 30 = survendu (rebond possible). Entre 55 et 70 = élan haussier, entre 30 et 45 = élan baissier.','RSI measures the strength of recent moves from 0 to 100. Above 70 = overbought (big rise, risk of a pause or pullback). Below 30 = oversold (bounce possible). 55–70 = bullish momentum, 30–45 = bearish momentum.')],
       macd:[L('MACD','MACD'), tw('macd',t.macd), ddRow(L('Histogramme','Histogram'), nf(t.macdHist, Math.abs(t.macdHist)<1?4:2)),
         L('Le MACD compare deux moyennes (12 et 26 jours). Histogramme positif = l’élan est haussier; négatif = baissier. La flèche ↑ ou ↓ veut dire qu’il accélère dans ce sens.','MACD compares two averages (12 and 26 days). Positive histogram = bullish momentum; negative = bearish. The ↑ or ↓ arrow means it is accelerating that way.')],
@@ -2427,11 +2427,11 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
         L('On compare la volatilité des 20 derniers jours à celle de la dernière année. Haute (rang ≥ 80 %) = gros mouvements : réduis la taille de tes positions et élargis tes stops. Basse (≤ 20 %) = marché calme, souvent avant un gros mouvement.','We compare the last 20 days’ volatility with the past year. High (rank ≥ 80%) = big moves: size down and widen stops. Low (≤ 20%) = calm market, often before a big move.')],
       struct:[L('Structure','Structure'), tw('struct',t.struct), ddRow(L('Sommet 20 jours','20-day high'), pxFmt(t.hi20)) + ddRow(L('Creux 20 jours','20-day low'), pxFmt(t.lo20)),
         L('On compare les 20 derniers jours aux 20 jours d’avant. Sommet ET creux plus hauts = structure haussière. Plus bas tous les deux = baissière. Sinon, le marché est en range (sans direction).','We compare the last 20 days with the 20 before. Higher high AND higher low = bullish structure. Both lower = bearish. Otherwise the market is ranging.')],
-      liq:[L('Liquidité','Liquidity'), {t:t.liq.side==='above'?L('POOL AU-DESSUS','POOL ABOVE'):L('POOL EN DESSOUS','POOL BELOW'), c:'l'}, ddRow(L('Niveau','Level'), pxFmt(t.liq.lvl)) + ddRow(L('Distance','Distance'), sg2(t.liq.d,2)+' %'),
+      liq:[L('Liquidité','Liquidity'), {t:t.liq.side==='above'?L('LIQUIDITÉ AU-DESSUS','POOL ABOVE'):L('LIQUIDITÉ EN DESSOUS','POOL BELOW'), c:'l'}, ddRow(L('Niveau','Level'), pxFmt(t.liq.lvl)) + ddRow(L('Distance','Distance'), sg2(t.liq.d,2)+' %'),
         L('Les stops des traders s’accumulent juste au-dessus des sommets et sous les creux récents. Le niveau le plus proche agit souvent comme un aimant : le prix va « chercher » cette liquidité avant de repartir.','Traders’ stops pile up just above recent highs and below recent lows. The nearest level often acts as a magnet: price goes to “grab” that liquidity before moving on.')],
       weekly:[L('Tendance hebdomadaire','Weekly trend'), tw('weekly',t.weekly), ddRow(L('MM 20 semaines','20-week MA'), L('prix au-dessus = haussière','price above = bullish')),
         L('Vue de plus haut : le prix au-dessus de sa moyenne de 20 semaines (environ 100 jours) = tendance de fond haussière.','Bigger picture: price above its 20-week average (about 100 days) = bullish long-term trend.')],
-      all:[L('Score technique','Technical score'), {t:sg2(t.score,0)+' / 5', c:t.score>0?'b':t.score<0?'r':'n'}, ddRow(L('Tendance','Trend'), tw('trend',t.trend).t)+ddRow('Momentum', tw('mom',t.mom).t+` (RSI ${nf(t.rsi,0)})`)+ddRow('MACD', tw('macd',t.macd).t)+ddRow('Structure', tw('struct',t.struct).t)+ddRow(L('Hebdo','Weekly'), tw('weekly',t.weekly).t),
+      all:[L('Score technique','Technical score'), {t:sg2(t.score,0)+' / 5', c:t.score>0?'b':t.score<0?'r':'n'}, ddRow(L('Tendance','Trend'), tw('trend',t.trend).t)+ddRow(L('Élan','Momentum'), tw('mom',t.mom).t+` (RSI ${nf(t.rsi,0)})`)+ddRow('MACD', tw('macd',t.macd).t)+ddRow('Structure', tw('struct',t.struct).t)+ddRow(L('Hebdo','Weekly'), tw('weekly',t.weekly).t),
         L('Le score additionne : tendance (±2), tendance hebdo (±1), MACD (±1), structure (±1), et −1 si suracheté / +1 si survendu. Il va de −5 à +5. Il ne change pas ton score du Scorecard.','The score adds: trend (±2), weekly trend (±1), MACD (±1), structure (±1), and −1 if overbought / +1 if oversold. Range −5 to +5. It does not change your Scorecard score.')]
     };
     const m = map[g] || map.all, word = m[1];
@@ -2545,7 +2545,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     const tick = () => { const now = new Date();
       box.innerHTML = M.map(([n,tz,[o,c]])=>{ const p = Object.fromEntries(new Intl.DateTimeFormat('en-GB',{timeZone:tz,hour:'2-digit',minute:'2-digit',weekday:'short',hour12:false}).formatToParts(now).map(x=>[x.type,x.value]));
         const h = (+p.hour%24) + (+p.minute)/60, wk = !['Sat','Sun'].includes(p.weekday), open = wk && h>=o && h<c;
-        return `<span class="mk" title="${open?'Ouvert':'Fermé'}"><i class="dot${open?' open':''}"></i>${n}<b>${p.hour}:${p.minute}</b></span>`; }).join(''); };
+        return `<span class="mk" title="${open?L('Ouvert','Open'):L('Fermé','Closed')}"><i class="dot${open?' open':''}"></i>${n}<b>${p.hour}:${p.minute}</b></span>`; }).join(''); };
     tick(); setInterval(tick, 30000);
   })();
   // ---------- mode sombre / clair ----------
@@ -2628,6 +2628,8 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 /* Traduction FR / EN : traduit le texte affiché (le calcul ne change pas) */
 (function(){
   const D = {
+    'Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). Clique une donnée pour son détail. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 (“All” shows the highest weight). Click a release for details. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.',
+    'Tendance 4H / journalier':'4H / daily trend','Ta lecture de la tendance sur le 4H et le journalier (±2)':'Your read of the 4H and daily trend (±2)',
     // en-tête et navigation
     'Scorecard macro':'Macro Scorecard',
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
@@ -2693,7 +2695,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     'toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.':'any stronger-than-expected data (growth, jobs or inflation) = +1, because it pushes the Fed to keep rates high; rising 10-year = +1. Crowd sentiment: inverse of IG clients on EUR/USD.',
     '(Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.':'(Nasdaq only): better than expected = +1, worse = −1.',
     'Technique :':'Technical:',
-    'tendance 4H/Daily ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1).':'4H/Daily trend ±2, seasonality ±1 (change over the last 3 full months: above +1% = +1, below −1% = −1).',
+    'tendance 4H/journalier ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1).':'4H/Daily trend ±2, seasonality ±1 (change over the last 3 full months: above +1% = +1, below −1% = −1).',
     'Sentiment :':'Sentiment:',
     'COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.':'COT net long above 50% = +1, rising COT = +1, retail crowd 60% long or more = −1 (contrarian), 40% or less = +1.',
     'Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (trend over about a month): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
