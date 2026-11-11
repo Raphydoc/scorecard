@@ -3978,7 +3978,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   // ---------- Session Recap ----------
   const SESW = {tok:{n:['Tokyo','Tokyo'], cc:'JP', f:-5, t:1.5}, lon:{n:['Londres','London'], cc:'GB', f:3, t:11.5}, ny:{n:['New York','New York'], cc:'US', f:9.5, t:16}}; // heures de Toronto (f<0 = la veille)
-  const RGRP = [['INDICES',['nasdaq','spx500','us30','rut']],[L('MÉTAUX','METALS'),['xauusd','xagusd']],['FOREX',['usd','eurusd','usdjpy','usdcad']],['CRYPTO',['btcusd']],[L('ÉNERGIE','ENERGY'),['usoil']]];
+  const RGRP = [['INDICES',['nasdaq','spx500','us30','rut'],'indices'],['MÉTAUX',['xauusd','xagusd'],'metals'],['FOREX',['usd','eurusd','usdjpy','usdcad'],'forex'],['CRYPTO',['btcusd'],'crypto'],['ÉNERGIE',['usoil'],'energy']];
   function recapSessions(O){
     const tz = 'America/Toronto', ref = (O.h1||{}).eurusd || (O.h1||{}).xauusd || []; if(!ref.length) return [];
     const days = [...new Set(ref.map(r=>{ const p = tzParts(tz, new Date(r[0]*1000)); return `${p.y}-${String(p.mo).padStart(2,'0')}-${String(p.d).padStart(2,'0')}`; }))];
@@ -4016,7 +4016,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
           <p class="rcmeta">${dLbl(sel.d)} · ${hm2(sel.st)}–${hm2(sel.en)} · ${L('Étendue','Breadth')} <b class="pos">${up}</b>/<b class="neg">${dn}</b> · ${rel.length} ${L('publications','releases')} · ${heads.length} ${L('manchettes','headlines')} ${sel.live?`<span class="rclive">${L('EN COURS','LIVE')}</span>`:`<span class="rcclosed">${L('FERMÉE','CLOSED')}</span>`}</p>
           <div class="rcnews"><p class="tscap">✦ ${L('LES NOUVELLES D’ALFRED','ALFRED’S NEWS')}<span>${rec?L('ÉCRIT À LA CLÔTURE · À PARTIR DES DONNÉES','WRITTEN AT THE CLOSE · FROM THE DATA DESK'):L('CHIFFRES DE LA SESSION','SESSION NUMBERS')}</span></p>
             ${rec ? `<p class="rch3">${esc(isEN()&&rec.title_en?rec.title_en:rec.title)}</p><p>${esc(isEN()&&rec.body_en?rec.body_en:rec.body)}</p>` : `<p class="rch3">${L('Résumé écrit après la clôture de la session','Written recap comes after the session close')}</p><p class="ddnote">${sel.live?L('La session est en cours : voici les mouvements jusqu’à maintenant.','The session is live: here are the moves so far.'):L('Le résumé d’Alfred pour cette session n’est pas encore disponible. Voici les mouvements mesurés sur les chandelles d’une heure.','Alfred’s recap for this session is not available yet. Here are the moves measured on hourly candles.')}</p>`}
-            ${RGRP.filter(([g,as])=>as.some(a=>sel.mv[a])).map(([g,as])=>{ const sec = rec && rec.sections && rec.sections[g.toLowerCase()]; return `<div class="rcsec"><div class="rcsh"><b>${g}</b>${as.map(mvLine).join('')}</div><p>${sec?esc(isEN()&&sec.en?sec.en:sec.fr||sec):''}</p></div>`; }).join('')}
+            ${RGRP.filter(([g,as])=>as.some(a=>sel.mv[a])).map(([g,as,key])=>{ const sec = rec && rec.sections && rec.sections[key]; g = isEN() ? {'MÉTAUX':'METALS','ÉNERGIE':'ENERGY'}[g]||g : g; return `<div class="rcsec"><div class="rcsh"><b>${g}</b>${as.map(mvLine).join('')}</div><p>${sec?esc(isEN()&&sec.en?sec.en:sec.fr||sec):''}</p></div>`; }).join('')}
           </div>
           <div class="rctl">${L('FENÊTRE','WINDOW')} : ${Object.entries(sel.mv).map(([a,m])=>`<span>${esc(TOP_NAMES[a])} <b class="${pcCls(m.p)}">${pcTxt(m.p)}</b></span>`).join('')}</div>
         </div>
