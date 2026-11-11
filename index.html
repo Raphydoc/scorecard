@@ -2183,14 +2183,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- Taux (dans la page Fed) ----------
-  // probabilités de la Fed (CME FedWatch) en haut de la page Taux
-  function fedPanel(){
-    const box = $('p2rates'); if(!box) return;
-    if(!$('fedLeft')){ const d = document.createElement('div'); d.className = 'panel fedpanel';
-      d.innerHTML = `<div class="ph"><div><h3>${L('Probabilités de la Fed · prochaine réunion','Fed odds · next meeting')}</h3><p id="fedAsof"></p></div></div><div class="fedgrid"><div id="fedLeft"></div><div id="fedRight"></div></div>`;
-      box.insertBefore(d, box.firstChild); }
-    renderFed();
-  }
   function renderRates(){
     const box = $('p2rates'); if(!box) return;
     const r = (state.live||{}).rates || {};
@@ -3930,7 +3922,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     if(pg==='home') renderHome();
     else if(pg==='hours') renderHours();
     else if(pg==='eco') renderEco();
-    else if(pg==='fed'){ renderRates(); fedPanel(); }
+    else if(pg==='fed') renderRates();
     else if(pg==='cot') renderCOT();
     else if(pg==='sent') renderSent();
     else if(pg==='cbg') renderCB();
