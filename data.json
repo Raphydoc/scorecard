@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T14:53:21Z",
+ "updatedAt": "2026-11-11T15:42:25Z",
  "econ": {
   "values": {
    "gdp": {
@@ -127,7 +127,7 @@
    "seasonPct": 23.3,
    "cotLong": 53.84,
    "cotChange": -0.52,
-   "crowdLong": 81,
+   "crowdLong": 82,
    "seasonPeriod": "août à octobre"
   },
   "usoil": {
@@ -135,7 +135,7 @@
    "seasonPct": 30.6,
    "cotLong": 53.98,
    "cotChange": -1.51,
-   "crowdLong": 51,
+   "crowdLong": 54,
    "seasonPeriod": "août à octobre"
   },
   "rut": {
@@ -160,7 +160,7 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 35.47,
    "cotChange": 0.01,
-   "crowdLong": 39
+   "crowdLong": 36
   },
   "usdcad": {
    "season": "neutral",
