@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T20:41:55Z",
+ "updatedAt": "2026-11-11T20:43:07Z",
  "econ": {
   "values": {
    "gdp": {
@@ -731,19 +731,22 @@
  "news": [
   {
    "date": "2026-11-11",
-   "time": "13:11",
+   "time": "15:24",
    "source": "Yahoo Finance",
    "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "us30",
-    "rut"
+    "rut",
+    "xauusd",
+    "usoil",
+    "btcusd"
    ],
-   "title": "Mi-séance : le Nasdaq grimpe de 2,1 %, Nvidia reprend 4,7 % et CoreWeave bondit de 26 %",
-   "title_en": "Midday: Nasdaq climbs 2.1% as Nvidia regains 4.7% and CoreWeave jumps 26%",
-   "summary": "Vers 13 h 10, le Nasdaq Composite gagne 2,14 % à 25 601,99, le S&P 500 1,52 % à 7 635,60, le Russell 2000 1,08 % et le Dow 0,37 % à 52 422,73; le VIX recule de près de 10 % à 17,54. Nvidia remonte de 4,66 % à 176,66 $ après deux jours de baisse, malgré une dégradation à « neutre » par Baird, et CoreWeave s’envole de 26 % grâce à ses perspectives relevées et à environ 9 G$ de prépaiements attendus. Le marché obligataire est fermé pour le Veterans Day.",
-   "summary_en": "Around 1:10 p.m., the Nasdaq Composite was up 2.14% at 25,601.99, the S&P 500 up 1.52% at 7,635.60, the Russell 2000 up 1.08% and the Dow up 0.37% at 52,422.73; the VIX fell nearly 10% to 17.54. Nvidia rose 4.66% to $176.66 after two days of losses despite a Baird downgrade to Neutral, and CoreWeave soared 26% on a raised outlook and about $9 billion in expected prepayments. The bond market is closed for Veterans Day.",
+   "title": "Fin de séance : le Nasdaq gagne 1,7 % et le S&P 500 1,4 % avec Nvidia et CoreWeave; l’or repasse sous 4 000 $",
+   "title_en": "Late session: Nasdaq up 1.7%, S&P 500 up 1.4% on Nvidia and CoreWeave; gold slips below $4,000",
+   "summary": "Vers 15 h 24, le Nasdaq gagne 1,69 % à 25 490,11, le S&P 500 1,35 % à 7 622,65, le Russell 2000 0,86 % et le Dow 0,47 % à 52 478,25; le VIX recule de 10,3 % à 17,45. Nvidia remonte de 3,47 % à 174,66 $ malgré l’enquête de son conseil sur les liens présumés de Jensen Huang avec une espionne chinoise, et CoreWeave bondit de 22,5 % grâce à ses perspectives relevées. L’or recule de 0,91 % à 3 993,60 $, le pétrole gagne 0,34 % à 86,33 $ et le bitcoin 1 % à environ 74 425 $; le marché obligataire est fermé pour le Veterans Day.",
+   "summary_en": "Around 3:24 p.m., the Nasdaq was up 1.69% at 25,490.11, the S&P 500 up 1.35% at 7,622.65, the Russell 2000 up 0.86% and the Dow up 0.47% at 52,478.25; the VIX fell 10.3% to 17.45. Nvidia rose 3.47% to $174.66 despite its board's probe into Jensen Huang's alleged ties to a Chinese spy, and CoreWeave jumped 22.5% on a raised outlook. Gold fell 0.91% to $3,993.60, oil rose 0.34% to $86.33 and bitcoin gained 1% to about $74,425; the bond market is closed for Veterans Day.",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
   },
   {
