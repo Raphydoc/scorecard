@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T02:42:35Z",
+ "updatedAt": "2026-11-11T12:44:26Z",
  "econ": {
   "values": {
    "gdp": {
@@ -679,35 +679,47 @@
  },
  "news": [
   {
-   "date": "2026-11-10",
-   "time": "20:12",
-   "source": "Yahoo Finance (Investing.com)",
-   "impact": "med",
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "title": "Les contrats à terme remontent légèrement après le recul de Wall Street sur l’IPC chaud",
-   "title_en": "U.S. stock futures tick higher after Wall St slips on hot CPI, Nvidia losses",
-   "summary": "En soirée, les contrats à terme du S&P 500 et du Dow gagnaient 0,2 % et ceux du Nasdaq 100 0,4 %, après une séance en baisse (Nasdaq −0,7 %, Nvidia −5,5 %). Selon le FedWatch du CME, la probabilité d’une hausse de 25 pb en décembre est passée à 91 % (84 % lundi) et celle d’une hausse de 50 pb à 10 %. CoreWeave gagnait plus de 5 % hors séance.",
-   "summary_en": "In the evening, S&P 500 and Dow futures rose 0.2% and Nasdaq 100 futures 0.4%, after a down session (Nasdaq -0.7%, Nvidia -5.5%). CME FedWatch put the odds of a 25 bp December hike at 91% (84% on Monday) and a 50 bp hike at 10%. CoreWeave rose more than 5% in extended trading.",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-tick-higher-011241932.html"
-  },
-  {
-   "date": "2026-11-10",
-   "time": "16:15",
-   "source": "Yahoo Finance",
+   "date": "2026-11-11",
+   "time": "07:21",
+   "source": "CoinDesk",
    "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "CoreWeave bondit d’environ 5 % après la clôture : revenus du T3 au-dessus des attentes et prévisions relevées",
-   "title_en": "CoreWeave jumps about 5% after hours as Q3 revenue beats and outlook is raised",
-   "summary": "CoreWeave a déclaré des revenus de 3,66 G$ au T3 (consensus : 3,56 G$) et une perte de 1,27 $ par action, moins lourde que les 1,46 $ attendus; elle relève sa prévision annuelle à 13–13,3 G$. L’action gagnait 5,03 % à 51,18 $ hors séance, après une chute de plus de 40 % en un mois sur les craintes liées au financement de l’IA. Un test pour le sentiment envers les titres de l’IA, qui pèsent sur le Nasdaq.",
-   "summary_en": "CoreWeave reported Q3 revenue of $3.66 billion (consensus $3.56 billion) and a loss of $1.27 per share, narrower than the $1.46 expected, and raised its full-year outlook to $13–13.3 billion. Shares rose 5.03% to $51.18 after hours, following a drop of more than 40% over the past month on AI-financing worries. A test of sentiment toward the AI names that weigh on the Nasdaq.",
-   "url": "https://finance.yahoo.com/markets/stocks/article/coreweave-stock-pops-as-q3-revenue-beats-estimates-company-raises-full-year-outlook-211533280.html"
+   "title": "Les contrats à terme du Nasdaq grimpent de 2 % : CoreWeave bondit de 14 % et Nvidia rebondit",
+   "title_en": "Nasdaq futures jump 2% as CoreWeave soars 14% and Nvidia rebounds",
+   "summary": "Les contrats à terme du Nasdaq 100 gagnent 2 % avant l’ouverture, portés par CoreWeave (+14 %), dont les revenus du T3 atteignent 3,66 G$ (+168 % sur un an) et qui relève sa prévision annuelle à 13–13,3 G$, malgré une perte nette de 709 M$. Nvidia reprend 4 % et le FNB de semi-conducteurs SMH plus de 4 %. Les banquiers d’Anthropic envisagent maintenant une valorisation d’au moins 1 500 G$ pour l’IPO, un rebond qui soutient la tech après le recul lié à l’IPC.",
+   "summary_en": "Nasdaq 100 futures are up 2% premarket, led by CoreWeave (+14%), whose Q3 revenue hit $3.66 billion (+168% year over year) and which raised its full-year guidance to $13–13.3 billion despite a $709 million net loss. Nvidia regained 4% and the SMH semiconductor ETF rose more than 4%. Anthropic’s bankers are now weighing an IPO valuation of $1.5 trillion or more, a rebound that supports tech after the CPI-driven pullback.",
+   "url": "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "07:19",
+   "source": "Reuters (via Investing.com)",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Le pétrole remonte de son creux de deux mois : les attaques dans le détroit d’Ormuz freinent l’espoir d’une trêve avec l’Iran",
+   "title_en": "Oil rises from two-month low as Hormuz shipping attacks offset Iran truce hopes",
+   "summary": "Vers 11 h 58 GMT, le Brent gagne 1,26 $ (+1,4 %) à 92,75 $ et le WTI 57 cents (+0,7 %) à 86,61 $, après une chute de plus de 3 $ en séance mardi. Les attaques de navires se poursuivent (37 en octobre, un record depuis le début de la guerre) et Téhéran affirme qu’aucune matière nucléaire enrichie ne quittera le pays et qu’aucune négociation n’a lieu avec Washington. Le Brent et le WTI restent en baisse d’environ 21 % et 17 % depuis le début du mois.",
+   "summary_en": "Around 1158 GMT, Brent rose $1.26 (1.4%) to $92.75 and WTI gained 57 cents (0.7%) to $86.61, after falling more than $3 intraday on Tuesday. Ship attacks continue (37 in October, the most since the war began), and Tehran says no enriched nuclear material will leave the country and no talks are under way with Washington. Brent and WTI are still down about 21% and 17% since the start of the month.",
+   "url": "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "06:37",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd"
+   ],
+   "title": "Le bitcoin reste près de 74 000 $ et rate le rebond des actions; 4e jour de sorties des FNB",
+   "title_en": "Bitcoin sits near $74,000, missing the stock rebound as ETF outflows hit a fourth day",
+   "summary": "Le bitcoin se maintient autour de 74 000 $ (−0,7 % sur 24 h) après un creux de 72 700 $ mardi, tandis que les FNB américains au comptant ont perdu 95 M$ mardi, une 4e séance de sorties (dont 78 M$ pour IBIT). Après l’IPC chaud, la probabilité d’une hausse de la Fed les 8–9 décembre atteint 90 % selon CME FedWatch, et l’indice Peur et Avidité est à 26 (peur).",
+   "summary_en": "Bitcoin is holding around $74,000 (-0.7% over 24 hours) after dipping to $72,700 on Tuesday, while U.S. spot ETFs lost $95 million Tuesday, a fourth straight day of outflows ($78 million from IBIT). After the hot CPI, the odds of a Fed hike at the Dec. 8-9 meeting rose to 90% per CME FedWatch, and the Fear and Greed Index sits at 26 (fear).",
+   "url": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
   },
   {
    "date": "2026-11-10",
@@ -832,20 +844,6 @@
    "summary": "Le gouverneur de la Fed Christopher Waller appuie une hausse en décembre même si l’inflation a ralenti en octobre, et juge qu’un IPC plus chaud que prévu pourrait justifier 50 points de base. Les marchés intègrent une hausse de 25 pb le 9 décembre (fourchette de 4,00 % à 4,25 %), ce qui fait reculer l’or d’un peu plus de 1 % sous 4 100 $ et le bitcoin d’environ 1 % près de 74 000 $, tandis que le DXY reste ferme sous 102. L’IPC d’octobre est attendu ce matin à +0,3 % sur un mois (+0,2 % pour l’indice de base).",
    "summary_en": "Fed Governor Christopher Waller backs a December hike even if inflation cooled in October, and said a hotter-than-expected CPI could justify 50 basis points. Markets price a 25 bp hike on Dec. 9 (to a 4.00%-4.25% range), pushing gold down just over 1% below $4,100 and bitcoin about 1% lower near $74,000, while the DXY stays firm below 102. October CPI is due this morning, expected at +0.3% month over month (+0.2% core).",
    "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
-  },
-  {
-   "date": "2026-11-10",
-   "time": "05:41",
-   "source": "CoinDesk",
-   "impact": "med",
-   "assets": [
-    "usoil"
-   ],
-   "title": "Le Brent passe sous 90 $, le WTI près de 84 $ : Trump signale une pause dans les frappes contre l’Iran",
-   "title_en": "Brent slips below $90, WTI near $84 as Trump signals pause in Iran strikes",
-   "summary": "Le pétrole a reculé d’environ 2 % en 24 heures, le WTI se rapprochant de 84 $ et le Brent de 90 $, après que Trump eut signalé une pause dans de nouvelles frappes contre l’Iran. La baisse prolonge le recul de lundi, alors que les marchés misent sur une désescalade au Moyen-Orient.",
-   "summary_en": "Oil fell about 2% over 24 hours, with WTI near $84 and Brent near $90, after President Trump signaled a pause in further Iran strikes. The drop extends Monday's slide as markets bet on Middle East de-escalation.",
-   "url": "https://www.coindesk.com/markets/2026/11/10/bitcoin-slips-before-u-s-inflation-report-as-traders-price-in-fed-rate-increase"
   },
   {
    "date": "2026-11-10",
