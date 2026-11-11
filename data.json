@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T12:44:26Z",
+ "updatedAt": "2026-11-11T13:43:52Z",
  "econ": {
   "values": {
    "gdp": {
@@ -101,7 +101,7 @@
   "us30": {
    "cotLong": 67.43,
    "cotChange": 5.3,
-   "crowdLong": 61,
+   "crowdLong": 56,
    "season": "neutral",
    "seasonPct": -1,
    "seasonPeriod": "août à octobre"
@@ -112,14 +112,14 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 63.67,
    "cotChange": -0.92,
-   "crowdLong": 35
+   "crowdLong": 36
   },
   "xagusd": {
    "season": "bear",
    "seasonPct": -14.8,
    "cotLong": 70.14,
    "cotChange": 1.04,
-   "crowdLong": 91,
+   "crowdLong": 89,
    "seasonPeriod": "août à octobre"
   },
   "btcusd": {
@@ -127,7 +127,7 @@
    "seasonPct": 23.3,
    "cotLong": 53.84,
    "cotChange": -0.52,
-   "crowdLong": 82,
+   "crowdLong": 81,
    "seasonPeriod": "août à octobre"
   },
   "usoil": {
@@ -152,7 +152,7 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 37.2,
    "cotChange": -0.91,
-   "crowdLong": 65
+   "crowdLong": 64
   },
   "usdjpy": {
    "season": "bear",
@@ -160,7 +160,7 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 35.47,
    "cotChange": 0.01,
-   "crowdLong": 36
+   "crowdLong": 39
   },
   "usdcad": {
    "season": "neutral",
@@ -282,6 +282,57 @@
    },
    "us30": {
     "sent": 1,
+    "macro": 10
+   },
+   "rut": {
+    "sent": -1,
+    "macro": 9
+   },
+   "usd": {
+    "sent": 1,
+    "macro": 11
+   },
+   "usoil": {
+    "sent": 0,
+    "macro": 11
+   },
+   "btcusd": {
+    "sent": -1,
+    "macro": 8
+   },
+   "eurusd": {
+    "sent": -3,
+    "macro": -11
+   },
+   "usdjpy": {
+    "sent": 1,
+    "macro": 11
+   },
+   "usdcad": {
+    "sent": 0,
+    "macro": 11
+   }
+  },
+  {
+   "date": "2026-11-11",
+   "xauusd": {
+    "sent": -1,
+    "macro": -11
+   },
+   "xagusd": {
+    "sent": 1,
+    "macro": -11
+   },
+   "nasdaq": {
+    "sent": -1,
+    "macro": 8
+   },
+   "spx500": {
+    "sent": 0,
+    "macro": 9
+   },
+   "us30": {
+    "sent": 2,
     "macro": 10
    },
    "rut": {
