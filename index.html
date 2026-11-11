@@ -824,7 +824,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 .chtag{font:700 9.5px/1 var(--f-mono);letter-spacing:.1em;color:var(--gold);border:1px solid var(--gold);padding:4px 7px;border-radius:3px}
 .chbar .seg{margin-left:auto} .chbar .chv{margin-left:0}
 .chgrid1{display:grid;grid-template-columns:minmax(0,1fr) 190px;gap:12px}
-.chcanvas{position:relative;height:460px} .chgrid1.mini .chcanvas{height:240px}
+.chcanvas{position:relative;height:max(560px,calc(100vh - 300px))} .chgrid1.mini .chcanvas{height:240px}
 .chleg{display:grid;align-content:start;gap:4px}
 .chleg div{display:grid;grid-template-columns:auto 12px 1fr auto;gap:6px;align-items:center;font:600 11px/1.2 var(--f-mono)}
 .chgrid1.mini .chleg div{grid-template-columns:12px 1fr auto}
@@ -832,8 +832,15 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 .chgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:10px}
 .chcell{border:1px solid var(--line);border-radius:5px;padding:8px;background:var(--panel-2)}
 .chch{display:flex;align-items:center;gap:6px;font:700 11.5px/1 var(--f-mono)} .chch i{width:8px;height:8px;border-radius:50%;background:var(--c)} .chch b{margin-left:auto}
-.chcv{position:relative;height:140px}
-@media (max-width:1000px){ .chwrap{grid-template-columns:minmax(0,1fr)} .chlist{max-height:none;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))} .chgrid1{grid-template-columns:minmax(0,1fr)} .chleg{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))} .chcanvas{height:320px} }
+.chcv{position:relative;height:280px}
+.chgrid{grid-template-columns:repeat(auto-fill,minmax(380px,1fr))!important}
+.chx{margin-left:auto;display:grid;place-items:center;width:32px;height:32px;border:1px solid var(--line);border-radius:4px;background:var(--panel-2);color:var(--fg);font-size:16px;cursor:pointer;transition:border-color .2s,color .2s,transform .2s}
+.chx:hover{border-color:var(--gold);color:var(--gold);transform:scale(1.08)} .chx.sm{width:26px;height:26px;font-size:13px;margin-left:8px}
+.chbar .chx + .seg{margin-left:0}
+.chfs{position:fixed!important;inset:0;z-index:950;margin:0!important;border-radius:0!important;background:var(--bg)!important;padding:16px 20px!important;overflow:auto;animation:fadeUp .25s ease both}
+.chfs .chcanvas{height:calc(100vh - 170px)} .chfs .chcv{height:calc(100vh - 90px)} .chfs .chgrid1{grid-template-columns:minmax(0,1fr) 220px}
+body.chfs-open{overflow:hidden}
+@media (max-width:1000px){ .chwrap{grid-template-columns:minmax(0,1fr)} .chlist{max-height:none;grid-template-columns:repeat(auto-fill,minmax(160px,1fr))} .chgrid1,.chfs .chgrid1{grid-template-columns:minmax(0,1fr)} .chleg{grid-template-columns:repeat(auto-fill,minmax(140px,1fr))} .chcanvas{height:420px} .chgrid{grid-template-columns:minmax(0,1fr)!important} .chfs .chcanvas{height:calc(100vh - 300px)} }
 /* Markets Watch */
 .mwtop{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:6px 0 12px} .mwtop .tscap{flex-basis:100%;margin:0}
 .mwtop h2{margin:0;font:800 34px/1 var(--f-mono);letter-spacing:.04em} .mwsub{font:600 10.5px/1.3 var(--f-mono);letter-spacing:.12em;color:var(--muted)}
@@ -3449,15 +3456,24 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         <div class="chmain panel">
           <div class="chbar"><h3>${esc((isEN()?CHP[p].n[1]:CHP[p].n[0]).toUpperCase())}</h3><span class="chtag">${D?D.ser.length:0} ${p==='fx'?L('DEVISES · NON PONDÉRÉ','CURRENCIES · UNWEIGHTED'):L('SÉRIES','SERIES')} · ${state.chView==='ov'?L('VUE D’ENSEMBLE','OVERVIEW'):L('GRILLE','GRID')}</span>
             <div class="seg chtf">${CHP[p].tf.map(t=>`<button type="button" data-tf="${t}" aria-pressed="${D&&D.tf===t}">${TFN[t]}</button>`).join('')}</div>
-            <div class="seg chv"><button type="button" data-v="ov" aria-pressed="${state.chView==='ov'}">${L('VUE','OVERVIEW')}</button><button type="button" data-v="grid" aria-pressed="${state.chView==='grid'}">${L('GRILLE','GRID')}</button></div></div>
+            ${state.chView==='ov'?`<button type="button" class="chx" data-fs="main" title="${L('Agrandir','Expand')}" aria-label="${L('Agrandir le graphique','Expand chart')}">⤢</button>`:''}<div class="seg chv"><button type="button" data-v="ov" aria-pressed="${state.chView==='ov'}">${L('VUE','OVERVIEW')}</button><button type="button" data-v="grid" aria-pressed="${state.chView==='grid'}">${L('GRILLE','GRID')}</button></div></div>
           <p class="tscap2">% ${L('VARIATION DEPUIS','CHANGE SINCE')} <b>${L('LA PREMIÈRE BARRE À L’ÉCRAN','THE FIRST BAR ON SCREEN')}</b></p>
           ${state.chView==='ov' ? `<div class="chgrid1"><div class="chcanvas"><canvas id="chMain"></canvas></div><div class="chleg">${D?D.ser.map((s,i)=>`<div style="--c:${s.col}"><span>${i+1}</span><i></i>${esc(nmT(s.k))}${p==='fx'?' Index':''}<b class="${pcCls(s.last)}">${pcTxt(s.last)}</b></div>`).join(''):''}</div></div>`
-            : `<div class="chgrid">${D?D.ser.map((s,i)=>`<div class="chcell"><div class="chch" style="--c:${s.col}"><i></i>${esc(nmT(s.k))}<b class="${pcCls(s.last)}">${pcTxt(s.last)}</b></div><div class="chcv"><canvas id="chG${i}"></canvas></div></div>`).join(''):''}</div>`}
+            : `<div class="chgrid">${D?D.ser.map((s,i)=>`<div class="chcell"><div class="chch" style="--c:${s.col}"><i></i>${esc(nmT(s.k))}<b class="${pcCls(s.last)}">${pcTxt(s.last)}</b><button type="button" class="chx sm" data-fs="cell" title="${L('Agrandir','Expand')}" aria-label="${L('Agrandir le graphique','Expand chart')}">⤢</button></div><div class="chcv"><canvas id="chG${i}"></canvas></div></div>`).join(''):''}</div>`}
           <p class="src">${p==='fx'?L('Indice de chaque devise = sa valeur face à la moyenne géométrique des 8 devises majeures (non pondéré). ','Each currency index = its value against the geometric mean of the 8 majors (unweighted). '):''}${L('Source : Yahoo Finance · mis à jour ','Source: Yahoo Finance · updated ')}${tsTime(M.asOf)}</p>
         </div>
       </div>`;
     box.querySelectorAll('.chpre').forEach(b=>b.addEventListener('click', ()=>{ state.chP = b.dataset.p; if(!CHP[state.chP].tf.includes(state.chTF)) state.chTF = 'h1'; renderChartsTS(); }));
     box.querySelectorAll('.chtf button').forEach(b=>b.addEventListener('click', ()=>{ state.chTF = b.dataset.tf; renderChartsTS(); }));
+    box.querySelectorAll('[data-fs]').forEach(b=>b.addEventListener('click', ()=>{
+      const el = b.closest(b.dataset.fs==='main' ? '.chmain' : '.chcell'), on = !el.classList.contains('chfs');
+      // on sort le graphique de la page pendant qu'il est agrandi (sinon un parent animé le garde petit)
+      document.querySelectorAll('.chfs').forEach(x=>{ x.classList.remove('chfs'); const ph = document.getElementById('chfsPh'); if(ph){ ph.replaceWith(x); } const y = x.querySelector('[data-fs]'); if(y){ y.textContent = '⤢'; y.title = L('Agrandir','Expand'); } });
+      document.body.classList.toggle('chfs-open', on);
+      if(on){ const ph = document.createElement('div'); ph.id = 'chfsPh'; el.replaceWith(ph); document.body.appendChild(el); el.classList.add('chfs'); b.textContent = '✕'; b.title = L('Réduire','Close'); }
+      setTimeout(()=>Object.values(charts).forEach(c=>{ try{ c.resize(); }catch(e){} }), 60);
+    }));
+    if(!state.chEsc){ state.chEsc = 1; document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ const x = document.querySelector('.chfs [data-fs]'); if(x) x.click(); } }); }
     box.querySelectorAll('.chv button').forEach(b=>b.addEventListener('click', ()=>{ state.chView = b.dataset.v; renderChartsTS(); }));
     if(!D) return;
     if(!(await needChart()) || state.page!=='charts') return;
@@ -3990,6 +4006,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
     try{ if(typeof globeObj!=='undefined' && globeObj){ if(pg==='globe') globeObj.resumeAnimation(); else globeObj.pauseAnimation(); } }catch(e){}
     if(pg!=='ind' && pg!=='liq' && typeof lwFree==='function') lwFree();
+    { const fx = document.querySelector('.chfs [data-fs]'); if(fx && pg!=='charts') fx.click(); }
     // les widgets TradingView des pages cachées sont libérés (ils se rechargent au retour)
     // graphiques des pages cachées libérés aussi (redessinés à l'ouverture de la page)
     try{ Object.keys(charts).forEach(id=>{ const c = charts[id], cv = c && c.canvas; if(cv && cv.closest('[data-pg][hidden] .p2')){ c.destroy(); delete charts[id]; } }); }catch(e){}
