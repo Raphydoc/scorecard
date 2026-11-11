@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T13:43:52Z",
+ "updatedAt": "2026-11-11T14:43:29Z",
  "econ": {
   "values": {
    "gdp": {
@@ -729,6 +729,25 @@
   "source": "CME FedWatch"
  },
  "news": [
+  {
+   "date": "2026-11-11",
+   "time": "08:02",
+   "source": "Associated Press",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500",
+    "nasdaq",
+    "xauusd",
+    "usdjpy",
+    "eurusd"
+   ],
+   "title": "L’inflation s’étend, la Fed envisage des hausses plus rapides : les paris d’une hausse en janvier dépassent 64 %",
+   "title_en": "As inflation broadens, Fed officials weigh faster hikes; January hike odds top 64%",
+   "summary": "Après l’IPC d’octobre (4 % sur un an contre 3,7 % en septembre, base +0,3 % sur un mois), Michelle Bowman juge que les pressions sur les prix « s’étendent » et que « du travail reste à faire », tandis que Lorie Logan évoque des hausses plus rapides cet hiver. Selon le CME FedWatch, la probabilité d’une hausse les 8-9 décembre est d’environ 90 % et celle d’une deuxième en janvier dépasse 64 %, environ trois fois plus qu’en début de semaine. Des hausses plus rapides soutiennent le dollar et les taux, au détriment des actions et de l’or.",
+   "summary_en": "After October CPI (4% year over year vs. 3.7% in September, core +0.3% month over month), Michelle Bowman said price pressures are broadening and there is still work to do, while Lorie Logan raised the prospect of faster hikes this winter. CME FedWatch puts odds of a Dec. 8-9 hike near 90% and of a second hike in January above 64%, roughly triple earlier in the week. Faster hikes support the dollar and yields, weighing on stocks and gold.",
+   "url": "https://www.news4jax.com/business/2026/11/11/as-higher-prices-seep-into-broader-economy-fed-officials-consider-faster-hikes/"
+  },
   {
    "date": "2026-11-11",
    "time": "07:21",
