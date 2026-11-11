@@ -1897,23 +1897,14 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     // nouvelles
     const nw = (state.news||[]).slice().sort((a,b)=>(b.date+(b.time||'')).localeCompare(a.date+(a.time||''))).slice(0,4).map(newsItem).join('') || `<p class="livebox">${L('Les nouvelles arrivent à la prochaine mise à jour.','News arrives at the next update.')}</p>`;
     box.innerHTML = `
-      <div class="tvbox" id="tvTape"></div>
       <div class="kpis">${k}</div>
       <div class="g2">
         <div class="panel"><div class="ph"><div><h3>${L('Biais de tes actifs','Your assets’ bias')}</h3><p>${L('Score total du scorecard · clique pour voir le détail','Total scorecard score · click for details')}</p></div></div><div class="pb">${b}</div></div>
         <div class="panel"><div class="ph"><div><h3>${L('À surveiller cette semaine','To watch this week')}</h3><p>${L('Données ★★ et ★, Fed et gros résultats','★★ and ★ data, Fed and big earnings')}</p></div><button class="chip" data-gop="cal">${L('Calendrier','Calendar')}</button></div><div class="pb evl">${ev}</div></div>
       </div>
-      <div class="g2">
         <div class="panel"><div class="ph"><div><h3>${L('Dernières nouvelles','Latest news')}</h3><p>${L('Sources reconnues · résumé en français','Trusted sources · summarized')}</p></div><button class="chip" data-gop="news">${L('Toutes','All')}</button></div><div class="news">${nw}</div></div>
-        <div class="panel"><div class="ph"><div><h3>${L('Marchés','Markets')}</h3><p>${L('Cours en direct (TradingView)','Live quotes (TradingView)')}</p></div></div><div class="tvbox" id="tvQuotes"></div></div>
-      </div>`;
+      `;
     bindGo(box);
-    tv('tvTape','ticker-tape',{symbols:Object.keys(ASSETS).map(a=>({proName:TV_SYM[a], title:TOP_NAMES[a]})).concat([{proName:'TVC:US10Y', title:'US10Y'},{proName:'TVC:VIX', title:'VIX'}]), showSymbolLogo:true, displayMode:'adaptive'});
-    tv('tvQuotes','market-quotes',{width:'100%', height:420, symbolsGroups:[
-      {name:L('Indices','Indices'), symbols:['nasdaq','spx500','us30','rut'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]}))},
-      {name:L('Matières premières','Commodities'), symbols:['xauusd','xagusd','usoil'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]}))},
-      {name:L('Devises et crypto','FX & crypto'), symbols:['usd','eurusd','usdjpy','usdcad','btcusd'].map(a=>({name:TV_SYM[a], displayName:TOP_NAMES[a]})).concat([{name:'TVC:US10Y', displayName:'US10Y'}])}
-    ], showSymbolLogo:true}, 420);
   }
   function verdictEN(t){ return t>=10?'Very bullish':t>=4?'Bullish':t<=-10?'Very bearish':t<=-4?'Bearish':'Neutral'; }
   function bindGo(root){
