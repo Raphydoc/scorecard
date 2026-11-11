@@ -465,9 +465,10 @@ table.topset td.bias{font-family:var(--f-body);font-size:11px;font-weight:700;le
 .tmask{flex:1;overflow:hidden;min-width:0;-webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
 .tin{display:inline-flex;white-space:nowrap;animation:marquee 55s linear infinite;will-change:transform}
 .tape:hover .tin{animation-play-state:paused}
-.tape.tv{height:auto;min-height:36px}
-.tvtape{flex:1;min-width:0;overflow:hidden;align-self:stretch;display:flex;align-items:center}
-.tvtape > div,.tvtape iframe{width:100%!important}
+#tape.tape.tv{height:44px}
+.tvtape{flex:1;min-width:0;height:44px;overflow:hidden;display:flex;align-items:center;color-scheme:normal}
+.tvtape > div,.tvtape iframe{width:100%!important;color-scheme:normal}
+.tvtape iframe{margin:-7px 0}
 @media (prefers-reduced-motion:reduce){ .tin{animation:none} .tmask{overflow-x:auto} }
 .ti{display:inline-flex;gap:7px;align-items:baseline;padding:0 16px;font:500 12px/1 var(--f-mono);border-right:1px solid var(--line)}
 .ti b{font-family:var(--f-body);font-weight:800;font-size:11px;letter-spacing:.06em}
@@ -1749,7 +1750,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const GH_URL = 'https://raphydoc.github.io/scorecard/';
   const ASSET_LBL = {xauusd:['Or','Gold'], xagusd:['Argent','Silver'], nasdaq:['Nasdaq 100','Nasdaq 100'], spx500:['S&P 500','S&P 500'], us30:['Dow Jones','Dow Jones'], rut:['Russell 2000','Russell 2000'], usd:['Dollar US (DXY)','US Dollar (DXY)'], usoil:['Pétrole WTI','WTI Crude'], btcusd:['Bitcoin','Bitcoin'], eurusd:['Euro / dollar US','Euro / US dollar'], usdjpy:['Dollar US / yen','US dollar / yen'], usdcad:['Dollar US / canadien','US dollar / Canadian dollar']};
   const aName = a => (ASSET_LBL[a]||[a,a])[isEN()?1:0];
-  const TV_SYM = {xauusd:'OANDA:XAUUSD', xagusd:'OANDA:XAGUSD', nasdaq:'OANDA:NAS100USD', spx500:'OANDA:SPX500USD', us30:'OANDA:US30USD', rut:'OANDA:US2000USD', usd:'TVC:DXY', usoil:'TVC:USOIL', btcusd:'BITSTAMP:BTCUSD', eurusd:'FX:EURUSD', usdjpy:'FX:USDJPY', usdcad:'FX:USDCAD', us10y:'TVC:US10Y', vix:'TVC:VIX'};
+  const TV_SYM = {xauusd:'OANDA:XAUUSD', xagusd:'OANDA:XAGUSD', nasdaq:'OANDA:NAS100USD', spx500:'OANDA:SPX500USD', us30:'OANDA:US30USD', rut:'OANDA:US2000USD', usd:'CAPITALCOM:DXY', usoil:'TVC:USOIL', btcusd:'BITSTAMP:BTCUSD', eurusd:'FX:EURUSD', usdjpy:'FX:USDJPY', usdcad:'FX:USDCAD', us10y:'TVC:US10Y', vix:'TVC:VIX'};
   const MON_FR = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
   const MON_EN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   function perLbl(p){ // '2026-09' → 'sept. 2026' ; '2026-Q3' → 'T3 2026' ; '2026-11-05' → '5 nov. 2026'
@@ -2260,7 +2261,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       box.dataset.tvk = key; box.hidden = false; box.classList.add('tv');
       box.innerHTML = `<span class="tlive"><i></i>${L('EN DIRECT','LIVE')}</span><div class="tvtape tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>`;
       const s = document.createElement('script'); s.async = true; s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
-      s.text = JSON.stringify({symbols:Object.keys(ASSETS).map(a=>({proName:TV_SYM[a], title:TOP_NAMES[a]})), showSymbolLogo:true, isTransparent:true, displayMode:'compact', colorTheme:tvTheme(), locale:isEN()?'en':'fr'});
+      s.text = JSON.stringify({symbols:Object.keys(ASSETS).map(a=>({proName:TV_SYM[a], title:TOP_NAMES[a]})), showSymbolLogo:true, isTransparent:true, displayMode:'adaptive', colorTheme:tvTheme(), locale:isEN()?'en':'fr'});
       const fail = () => { if(box.querySelector('.tvtape iframe')) return; state.tvTapeFail = true; delete box.dataset.tvk; box.classList.remove('tv'); renderTape(); };
       s.onerror = fail; box.querySelector('.tvtape').appendChild(s); setTimeout(fail, 8000);
       return;
