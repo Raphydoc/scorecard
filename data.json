@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T00:43:09Z",
+ "updatedAt": "2026-11-11T02:42:35Z",
  "econ": {
   "values": {
    "gdp": {
@@ -678,6 +678,22 @@
   "source": "CME FedWatch"
  },
  "news": [
+  {
+   "date": "2026-11-10",
+   "time": "20:12",
+   "source": "Yahoo Finance (Investing.com)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "Les contrats à terme remontent légèrement après le recul de Wall Street sur l’IPC chaud",
+   "title_en": "U.S. stock futures tick higher after Wall St slips on hot CPI, Nvidia losses",
+   "summary": "En soirée, les contrats à terme du S&P 500 et du Dow gagnaient 0,2 % et ceux du Nasdaq 100 0,4 %, après une séance en baisse (Nasdaq −0,7 %, Nvidia −5,5 %). Selon le FedWatch du CME, la probabilité d’une hausse de 25 pb en décembre est passée à 91 % (84 % lundi) et celle d’une hausse de 50 pb à 10 %. CoreWeave gagnait plus de 5 % hors séance.",
+   "summary_en": "In the evening, S&P 500 and Dow futures rose 0.2% and Nasdaq 100 futures 0.4%, after a down session (Nasdaq -0.7%, Nvidia -5.5%). CME FedWatch put the odds of a 25 bp December hike at 91% (84% on Monday) and a 50 bp hike at 10%. CoreWeave rose more than 5% in extended trading.",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-tick-higher-011241932.html"
+  },
   {
    "date": "2026-11-10",
    "time": "16:15",
