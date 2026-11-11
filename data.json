@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T23:19:12Z",
+ "updatedAt": "2026-11-11T23:29:23Z",
  "econ": {
   "values": {
    "gdp": {
@@ -30046,7 +30046,7 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-11T23:19:02Z",
+  "asOf": "2026-11-11T23:29:10Z",
   "recaps": [
    {
     "date": "2026-11-11",
@@ -30247,15 +30247,147 @@
     "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-find-solid-support-4000-standard-chartered-sees-rally-4650-year"
    },
    {
-    "bank": "Bank of America",
+    "bank": "UBS",
+    "cat": "idx",
+    "market": "S&P 500",
+    "dir": "long",
+    "target": "8 900 d’ici fin 2027 (9 600 fin 2028)",
+    "horizon": "fin 2027",
+    "date": "2026-11-10",
+    "src": "Investing.com",
+    "url": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267"
+   },
+   {
+    "bank": "Scotiabank",
+    "cat": "fx",
+    "market": "USD/CAD",
+    "dir": "short",
+    "target": "1,34 d’ici le T4 2027 (1,39 au T4 2026)",
+    "horizon": "T4 2027",
+    "date": "2026-11-05",
+    "src": "Scotiabank Economics",
+    "url": "https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.foreign-exchange.foreign-exchange-outlook--november-5--2026-.html"
+   },
+   {
+    "bank": "Goldman Sachs",
     "cat": "cmd",
     "market": "XAU/USD",
+    "dir": "long",
+    "target": "4 150 $ d’ici fin 2026 (4 800 $ fin 2027)",
+    "horizon": "fin 2026",
+    "date": "2026-11-05",
+    "src": "Reuters",
+    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46M1RO:0-goldman-sachs-trims-gold-forecasts-as-fed-stays-hawkish/"
+   },
+   {
+    "bank": "ING",
+    "cat": "rates",
+    "market": "US 10 ans",
     "dir": "short",
-    "target": "3 750 $ en moyenne au T4 2026",
-    "horizon": "T4 2026",
-    "date": "2026-10-01",
-    "src": "Kitco",
-    "url": "https://www.kitco.com/news/article/2026-10-01/risks-rising-gold-prices-fall-below-4000-q4-bank-america"
+    "target": "4,50 à 4,75 % d’ici fin 2027 (pointe possible vers 5,25 % au T1 2027)",
+    "horizon": "fin 2027",
+    "date": "2026-11-04",
+    "src": "ING THINK (reprise)",
+    "url": "https://angelinvestorsnetwork.com/market-analysis/us-rates-and-a-triple-whammy-of-obstacles-to-overcome"
+   },
+   {
+    "bank": "Citi",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "dir": "long",
+    "target": "4 500 $ d’ici 3 mois (5 000 $ dans 6 à 12 mois)",
+    "horizon": "3 mois",
+    "date": "2026-11-04",
+    "src": "investingLive",
+    "url": "https://investinglive.com/commodities/citi-targets-5-000-gold-as-a-hormuz-reopening-could-flip-the-fed-from-hikes-to-cuts/"
+   },
+   {
+    "bank": "MUFG",
+    "cat": "fx",
+    "market": "EUR/USD",
+    "dir": "long",
+    "target": "1,18 d’ici le T3 2027 (1,12 au T4 2026)",
+    "horizon": "T3 2027",
+    "date": "2026-11-02",
+    "src": "MUFG Research",
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
+   },
+   {
+    "bank": "MUFG",
+    "cat": "fx",
+    "market": "USD/JPY",
+    "dir": "short",
+    "target": "149 d’ici le T3 2027 (155 au T4 2026)",
+    "horizon": "T3 2027",
+    "date": "2026-11-02",
+    "src": "MUFG Research",
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
+   },
+   {
+    "bank": "MUFG",
+    "cat": "fx",
+    "market": "USD/CAD",
+    "dir": "short",
+    "target": "1,36 d’ici le T3 2027 (1,42 au T4 2026)",
+    "horizon": "T3 2027",
+    "date": "2026-11-02",
+    "src": "MUFG Research",
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
+   },
+   {
+    "bank": "MUFG",
+    "cat": "fx",
+    "market": "GBP/USD",
+    "dir": "long",
+    "target": "1,356 d’ici le T3 2027 (1,333 au T4 2026)",
+    "horizon": "T3 2027",
+    "date": "2026-11-02",
+    "src": "MUFG Research",
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
+   },
+   {
+    "bank": "MUFG",
+    "cat": "fx",
+    "market": "DXY",
+    "dir": "short",
+    "target": "97,03 d’ici le T3 2027 (101,98 au T4 2026)",
+    "horizon": "T3 2027",
+    "date": "2026-11-02",
+    "src": "MUFG Research",
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
+   },
+   {
+    "bank": "MUFG",
+    "cat": "asia",
+    "market": "USD/CNY",
+    "dir": "short",
+    "target": "6,50 d’ici le T3 2027 (6,65 au T4 2026)",
+    "horizon": "T3 2027",
+    "date": "2026-11-02",
+    "src": "MUFG Research",
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
+   },
+   {
+    "bank": "MUFG",
+    "cat": "asia",
+    "market": "USD/KRW",
+    "dir": "short",
+    "target": "1 280 d’ici le T3 2027 (1 320 au T4 2026)",
+    "horizon": "T3 2027",
+    "date": "2026-11-02",
+    "src": "MUFG Research",
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
+   },
+   {
+    "bank": "MUFG",
+    "cat": "asia",
+    "market": "USD/INR",
+    "dir": "long",
+    "target": "97,5 d’ici le T3 2027 (96 au T4 2026)",
+    "horizon": "T3 2027",
+    "date": "2026-11-02",
+    "src": "MUFG Research",
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
    },
    {
     "bank": "Goldman Sachs",
@@ -30280,26 +30412,455 @@
     "url": "https://boereport.com/2026/11/01/goldman-sachs-raises-oil-price-forecasts-sees-brent-upside-at-140-a-barrel/"
    },
    {
-    "bank": "UBS",
-    "cat": "idx",
-    "market": "S&P 500",
+    "bank": "Nomura",
+    "cat": "fx",
+    "market": "EUR/USD",
     "dir": "long",
-    "target": "8 900 d’ici fin 2027 (9 600 fin 2028)",
-    "horizon": "fin 2027",
-    "date": "2026-11-10",
-    "src": "Investing.com",
-    "url": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267"
+    "target": "1,25 dans 12 mois",
+    "horizon": "12 mois",
+    "date": "2026-10-28",
+    "src": "Pound Sterling Live",
+    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer"
+   },
+   {
+    "bank": "Danske Bank",
+    "cat": "fx",
+    "market": "EUR/USD",
+    "dir": "range",
+    "target": "1,10 dans 6 à 12 mois (prévision abaissée)",
+    "horizon": "12 mois",
+    "date": "2026-10-28",
+    "src": "Pound Sterling Live",
+    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer"
+   },
+   {
+    "bank": "Crédit Agricole",
+    "cat": "fx",
+    "market": "EUR/USD",
+    "dir": "long",
+    "target": "1,17 dans 12 mois (1,13 dans 3 mois)",
+    "horizon": "12 mois",
+    "date": "2026-10-28",
+    "src": "Pound Sterling Live",
+    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer"
+   },
+   {
+    "bank": "Nordea",
+    "cat": "fx",
+    "market": "EUR/USD",
+    "dir": "range",
+    "target": "1,10 d’ici fin 2026 (abaissé de 1,14)",
+    "horizon": "fin 2026",
+    "date": "2026-10-28",
+    "src": "Pound Sterling Live",
+    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer"
+   },
+   {
+    "bank": "UBS",
+    "cat": "cmd",
+    "market": "Brent",
+    "dir": "long",
+    "target": "110 $ fin 2026 (95 $ en mars 2027, 85 $ en sept. 2027)",
+    "horizon": "fin 2026",
+    "date": "2026-10-27",
+    "src": "investingLive",
+    "url": "https://investinglive.com/commodities/ubs-sees-brent-near-110-by-year-end-lifts-2027-forecasts-on-freight-and-supply-risks/"
    },
    {
     "bank": "Goldman Sachs",
     "cat": "cmd",
+    "market": "Cuivre",
+    "dir": "long",
+    "target": "15 400 $/t en moyenne en 2027 (14 700 $/t fin 2026)",
+    "horizon": "2027",
+    "date": "2026-10-22",
+    "src": "Canadian Mining Report",
+    "url": "https://www.canadianminingreport.com/blog/goldman-sachs-raises-its-copper-price-forecast-to-15-400-for-2027-five-copper-stocks-to-watch-now"
+   },
+   {
+    "bank": "JPMorgan",
+    "cat": "rates",
+    "market": "US 10 ans",
+    "dir": "long",
+    "target": "5,25 % d’ici la mi-2027 (fourchette de 5,00 à 5,50 %)",
+    "horizon": "mi-2027",
+    "date": "2026-10-21",
+    "src": "J.P. Morgan",
+    "url": "https://www.chase.com/personal/investments/learning-and-insights/article/could-10-year-treasury-yield-reach-5-75-in-2027-what-jpmorgan-strategists-think"
+   },
+   {
+    "bank": "Morgan Stanley",
+    "cat": "idx",
+    "market": "S&P 500",
+    "dir": "long",
+    "target": "8 300 d’ici la mi-2027",
+    "horizon": "mi-2027",
+    "date": "2026-10-20",
+    "src": "Benzinga",
+    "url": "https://www.webull.com/news/15781581357556736"
+   },
+   {
+    "bank": "CIBC",
+    "cat": "cmd",
     "market": "XAU/USD",
     "dir": "long",
-    "target": "4 150 $ d’ici fin 2026 (4 800 $ fin 2027)",
+    "target": "5 200 $ en moyenne en 2027 (4 500 $ au T4 2026)",
+    "horizon": "2027",
+    "date": "2026-10-20",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-10-20/cibc-slashes-gold-price-forecasts-sees-recovery-5200-2027-central-bank"
+   },
+   {
+    "bank": "UBS",
+    "cat": "fx",
+    "market": "EUR/USD",
+    "dir": "long",
+    "target": "1,16 d’ici fin 2026, 1,20 en juin 2027",
     "horizon": "fin 2026",
-    "date": "2026-11-05",
+    "date": "2026-10-19",
+    "src": "investingLive",
+    "url": "https://investinglive.com/forex/ubs-sees-euro-recovering-to-1-16-by-year-end-says-slide-to-1-11-overshoots-fundamentals/"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "cat": "idx",
+    "market": "S&P 500",
+    "dir": "long",
+    "target": "8 700 d’ici fin 2027 (8 000 fin 2026)",
+    "horizon": "fin 2027",
+    "date": "2026-10-19",
+    "src": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/article/goldman-sachs-is-still-betting-on-a-nice-year-end-rally-for-the-sp-500-134755098.html"
+   },
+   {
+    "bank": "CIBC",
+    "cat": "cmd",
+    "market": "XAG/USD",
+    "dir": "long",
+    "target": "85 $ en 2027 (abaissé de 120 $)",
+    "horizon": "2027",
+    "date": "2026-10-19",
+    "src": "investingLive",
+    "url": "https://investinglive.com/commodities/cibc-cuts-gold-forecasts-but-still-sees-5-500-in-2028/"
+   },
+   {
+    "bank": "CIBC",
+    "cat": "cmd",
+    "market": "Cuivre",
+    "dir": "long",
+    "target": "6,50 $/lb au T4 2026 (relevé)",
+    "horizon": "T4 2026",
+    "date": "2026-10-19",
+    "src": "investingLive",
+    "url": "https://investinglive.com/commodities/cibc-cuts-gold-forecasts-but-still-sees-5-500-in-2028/"
+   },
+   {
+    "bank": "Citi",
+    "cat": "idx",
+    "market": "S&P 500",
+    "dir": "long",
+    "target": "8 100 d’ici fin 2026",
+    "horizon": "fin 2026",
+    "date": "2026-10-14",
+    "src": "24/7 Wall St.",
+    "url": "https://247wallst.com/investing/2026/10/14/citi-says-the-sp-500-hits-8100-half-the-market-has-to-cooperate-first/"
+   },
+   {
+    "bank": "Morgan Stanley",
+    "cat": "rates",
+    "market": "US 10 ans",
+    "dir": "short",
+    "target": "4,7 % d’ici 12 à 15 mois",
+    "horizon": "12–15 mois",
+    "date": "2026-10-14",
+    "src": "Morgan Stanley",
+    "url": "https://www.morganstanley.com/insights/articles/rising-bond-yields-investment-opportunities"
+   },
+   {
+    "bank": "ING",
+    "cat": "fx",
+    "market": "EUR/USD",
+    "dir": "long",
+    "target": "1,13 au T4 2026 et au T1 2027 (prévision abaissée)",
+    "horizon": "T1 2027",
+    "date": "2026-10-13",
+    "src": "FXStreet (via TMGM)",
+    "url": "https://www.tmgm.com/de/analysis/market-news/article/euro-lower-year-end-target-at-113-against-us-dollar-ing-202610131304"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "cat": "asia",
+    "market": "USD/CNY",
+    "dir": "short",
+    "target": "6,40 dans 12 mois",
+    "horizon": "12 mois",
+    "date": "2026-10-13",
+    "src": "The Edge Malaysia",
+    "url": "https://theedgemalaysia.com/node/821580"
+   },
+   {
+    "bank": "Bank of America",
+    "cat": "cmd",
+    "market": "Cuivre",
+    "dir": "long",
+    "target": "15 250 $/t en moyenne en 2027",
+    "horizon": "2027",
+    "date": "2026-10-12",
+    "src": "TokenPost",
+    "url": "https://www.tokenpost.com/news/investing/30585"
+   },
+   {
+    "bank": "TD Cowen",
+    "cat": "crypto",
+    "market": "BTC/USD",
+    "dir": "long",
+    "target": "109 000 $ fin 2026 (relevé de 97 500 $)",
+    "horizon": "fin 2026",
+    "date": "2026-10-08",
+    "src": "investingLive",
+    "url": "https://investinglive.com/cryptocurrency/td-cowen-lifts-2026-bitcoin-projection-to-about-109-000-reversing-september-cut/"
+   },
+   {
+    "bank": "CBA",
+    "cat": "asia",
+    "market": "AUD/USD",
+    "dir": "range",
+    "target": "0,69 d’ici fin 2027 (0,68 fin 2026)",
+    "horizon": "fin 2027",
+    "date": "2026-10-07",
+    "src": "Pound Sterling Live",
+    "url": "https://www.poundsterlinglive.com/aud/23723-australian-dollar-forecasts-raised-at-cba-pound-to-aud-upside-limited"
+   },
+   {
+    "bank": "Morgan Stanley",
+    "cat": "fx",
+    "market": "DXY",
+    "dir": "range",
+    "target": "102 d’ici fin 2026 (dollar en hausse jusqu’à la mi-2027)",
+    "horizon": "fin 2026",
+    "date": "2026-10-06",
+    "src": "investingLive",
+    "url": "https://investinglive.com/forex/morgan-stanley-turns-neutral-on-dollar-with-bullish-skew-stays-bearish-on-yen/"
+   },
+   {
+    "bank": "Bank of America",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "dir": "short",
+    "target": "3 750 $ en moyenne au T4 2026",
+    "horizon": "T4 2026",
+    "date": "2026-10-01",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-10-01/risks-rising-gold-prices-fall-below-4000-q4-bank-america"
+   },
+   {
+    "bank": "Wells Fargo",
+    "cat": "cmd",
+    "market": "WTI",
+    "dir": "short",
+    "target": "75 à 85 $ fin 2027 (relevé de 70 à 80 $)",
+    "horizon": "fin 2027",
+    "date": "2026-09-30",
+    "src": "Hellenic Shipping News",
+    "url": "https://hellenicshippingnews.com/wells-fargo-raises-oil-price-targets-citing-ongoing-supply-risks"
+   },
+   {
+    "bank": "Morgan Stanley",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "dir": "long",
+    "target": "plus de 5 000 $ au S2 2027 (plancher vers 4 000 $)",
+    "horizon": "S2 2027",
+    "date": "2026-09-30",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-09-30/gold-price-will-break-5000oz-h2-2027-and-silvers-run-120-was-driven-more"
+   },
+   {
+    "bank": "BMO",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "dir": "long",
+    "target": "4 650 $ en moyenne au T4 2026 (5 000 $ au T2 2027)",
+    "horizon": "T4 2026",
+    "date": "2026-09-28",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-09-28/gold-and-silver-prices-are-struggling-now-much-higher-long-term-base"
+   },
+   {
+    "bank": "BMO",
+    "cat": "cmd",
+    "market": "XAG/USD",
+    "dir": "long",
+    "target": "67,40 $ en moyenne au T4 2026 (69,30 $ au T1 2027)",
+    "horizon": "T4 2026",
+    "date": "2026-09-28",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-09-28/gold-and-silver-prices-are-struggling-now-much-higher-long-term-base"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "cat": "fx",
+    "market": "USD/JPY",
+    "dir": "short",
+    "target": "150 dans 12 mois (158 dans 3 mois, 155 dans 6 mois)",
+    "horizon": "12 mois",
+    "date": "2026-09-25",
+    "src": "investingLive",
+    "url": "https://investinglive.com/forex/goldman-cuts-usd-jpy-forecasts-sees-150-in-a-year-as-boj-tightening-boosts-yen-case/"
+   },
+   {
+    "bank": "Bank of America",
+    "cat": "rates",
+    "market": "US 10 ans",
+    "dir": "range",
+    "target": "5,0 % d’ici fin 2026 (relevé de 4,5 %)",
+    "horizon": "fin 2026",
+    "date": "2026-09-24",
+    "src": "Investing.com",
+    "url": "https://in.investing.com/news/stock-market-news/bank-of-america-raises-us-10year-yield-forecast-on-fiscal-concerns-93CH-5604669"
+   },
+   {
+    "bank": "HSBC",
+    "cat": "idx",
+    "market": "Stoxx 600",
+    "dir": "long",
+    "target": "760 d’ici fin 2027 (680 fin 2026)",
+    "horizon": "fin 2027",
+    "date": "2026-09-23",
     "src": "Reuters",
-    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46M1RO:0-goldman-sachs-trims-gold-forecasts-as-fed-stays-hawkish/"
+    "url": "https://live.euronext.com/en/financial-news/hsbc-lifts-stoxx-600-year-end-target-stronger-earnings-outlook"
+   },
+   {
+    "bank": "Wells Fargo",
+    "cat": "idx",
+    "market": "S&P 500",
+    "dir": "long",
+    "target": "7 700 d’ici fin 2026 (abaissé de 7 950)",
+    "horizon": "fin 2026",
+    "date": "2026-09-15",
+    "src": "Reuters",
+    "url": "https://www.kitco.com/news/off-the-wire/2026-09-15/wells-fargo-trims-sp-500-indexs-year-end-target-7700"
+   },
+   {
+    "bank": "Commerzbank",
+    "cat": "cmd",
+    "market": "Brent",
+    "dir": "short",
+    "target": "85 $ fin 2026 (relevé de 75 $)",
+    "horizon": "fin 2026",
+    "date": "2026-09-11",
+    "src": "Reuters",
+    "url": "https://boereport.com/2026/09/11/banks-hike-oil-price-forecasts-on-prolonged-gulf-disruptions/"
+   },
+   {
+    "bank": "Bank of America",
+    "cat": "cmd",
+    "market": "Brent",
+    "dir": "short",
+    "target": "75 $ en moyenne en 2027 (83 $ au S2 2026)",
+    "horizon": "2027",
+    "date": "2026-09-11",
+    "src": "Reuters",
+    "url": "https://boereport.com/2026/09/11/banks-hike-oil-price-forecasts-on-prolonged-gulf-disruptions/"
+   },
+   {
+    "bank": "Axis Bank",
+    "cat": "asia",
+    "market": "USD/INR",
+    "dir": "long",
+    "target": "100 d’ici juin 2027 (97 en décembre 2026)",
+    "horizon": "juin 2027",
+    "date": "2026-09-09",
+    "src": "Business Today",
+    "url": "https://www.businesstoday.in/latest/economy/story/rupee-at-rs97-in-dec-rs100-in-june-why-axis-bank-sees-another-leg-of-inr-weakness-554187-2026-09-09"
+   },
+   {
+    "bank": "Barclays",
+    "cat": "idx",
+    "market": "S&P 500",
+    "dir": "long",
+    "target": "7 950 d’ici fin 2026 (relevé de 7 800)",
+    "horizon": "fin 2026",
+    "date": "2026-09-09",
+    "src": "Stocktwits",
+    "url": "https://stocktwits.com/news-articles/markets/equity/sp-500-targets-rise-barclays-hsbc-tom-lee-ai-earnings-bullish-chorus/cZt7GKzRJzc"
+   },
+   {
+    "bank": "HSBC",
+    "cat": "cmd",
+    "market": "Brent",
+    "dir": "short",
+    "target": "85 $ en moyenne en 2027 (relevé de 65 $)",
+    "horizon": "2027",
+    "date": "2026-09-09",
+    "src": "investingLive",
+    "url": "https://investinglive.com/commodities/hsbc-warns-oil-market-is-now-tighter-for-longer-raises-brent-forecast-even-higher/"
+   },
+   {
+    "bank": "HSBC",
+    "cat": "idx",
+    "market": "S&P 500",
+    "dir": "long",
+    "target": "8 100 d’ici fin 2026 (relevé de 7 650)",
+    "horizon": "fin 2026",
+    "date": "2026-09-08",
+    "src": "Reuters",
+    "url": "https://www.kitco.com/news/off-the-wire/2026-09-08/hsbc-lifts-sp-500s-year-end-target-8100-earnings-strength"
+   },
+   {
+    "bank": "Citi",
+    "cat": "cmd",
+    "market": "Brent",
+    "dir": "short",
+    "target": "70 $ au T4 2026 (65 $ en 2027)",
+    "horizon": "T4 2026",
+    "date": "2026-09-03",
+    "src": "investingLive",
+    "url": "https://investinglive.com/commodities/citi-lifts-3q26-brent-forecast-to-86-but-sees-prices-sliding-to-65-by-2027/"
+   },
+   {
+    "bank": "RBC",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "dir": "long",
+    "target": "5 296 $ en 2027 (4 929 $ fin 2026)",
+    "horizon": "2027",
+    "date": "2026-09-02",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-09-02/gold-price-will-approach-5000oz-2026-5300oz-2027-uncertainty-de"
+   },
+   {
+    "bank": "Westpac",
+    "cat": "fx",
+    "market": "GBP/USD",
+    "dir": "long",
+    "target": "1,35 en décembre 2026",
+    "horizon": "fin 2026",
+    "date": "2026-08-24",
+    "src": "Pound Sterling Live",
+    "url": "https://www.poundsterlinglive.com/usd/23587-pound-to-dollar-week-ahead-forecast-young-uptrend-backs-a-break-of-the-yearly-ceiling"
+   },
+   {
+    "bank": "Standard Chartered",
+    "cat": "crypto",
+    "market": "BTC/USD",
+    "dir": "long",
+    "target": "100 000 $ fin 2026",
+    "horizon": "fin 2026",
+    "date": "2026-08-19",
+    "src": "Cointelegraph",
+    "url": "https://cointelegraph.com/markets/bitcoin-price-100k-standard-chartered-treasury-buybacks"
+   },
+   {
+    "bank": "UBS",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "dir": "long",
+    "target": "5 000 $ au S1 2027",
+    "horizon": "S1 2027",
+    "date": "2026-08-13",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-08-13/ubs-sees-gold-price-challenging-5000oz-h1-2027-lower-real-rates-softer-usd"
    }
   ],
   "cbanks": [
