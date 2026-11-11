@@ -1788,7 +1788,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- TradingView ----------
-  function tvTheme(){ const b = getComputedStyle(document.body).backgroundColor.match(/\d+/g)||[255,255,255]; return (+b[0]+ +b[1]+ +b[2])/3 < 110 ? 'dark' : 'light'; }
+  function tvTheme(){ const t = document.documentElement.dataset.theme; if(t==='dark' || t==='light') return t; return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
   function tv(boxId, name, cfg, height){
     const box = $(boxId); if(!box) return;
     const key = name+JSON.stringify(cfg)+tvTheme()+(isEN()?'en':'fr');
@@ -3230,7 +3230,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     });
     const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(label, 60));
   })();
-  (function(){ const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(()=>{ if(typeof renderMbar==='function') renderMbar(); const nb = $('p2news'); if(nb) nb.dataset.built=''; renderP2(); if(state.page==='fed') renderFed(); }, 30)); })();
+  (function(){ const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(()=>{ if(typeof renderMbar==='function') renderMbar(); if(typeof renderTape==='function') renderTape(); const nb = $('p2news'); if(nb) nb.dataset.built=''; renderP2(); if(state.page==='fed') renderFed(); }, 30)); })();
 
   function showPage(pg){
     state.page = pg;
