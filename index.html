@@ -322,6 +322,7 @@ table.cal td.name{min-width:130px}
 .wsum{margin:0;padding:8px 14px;color:var(--muted);font-size:12.5px;border-bottom:1px solid var(--line)}
 .pgfoot{color:var(--muted);font-size:12px;margin:10px 2px 0;max-width:80ch}
 .fedgrid{display:grid;grid-template-columns:minmax(0,340px) minmax(0,1fr);gap:16px;align-items:start}
+.fedpanel{margin-bottom:14px}
 @media (max-width:900px){.fedgrid{grid-template-columns:minmax(0,1fr)}}
 .big{padding:18px 14px;text-align:center;border-bottom:1px solid var(--line)}
 .big b{display:block;font-family:var(--f-display);font-size:46px;font-weight:600;line-height:1}
@@ -2182,6 +2183,14 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- Taux (dans la page Fed) ----------
+  // probabilités de la Fed (CME FedWatch) en haut de la page Taux
+  function fedPanel(){
+    const box = $('p2rates'); if(!box) return;
+    if(!$('fedLeft')){ const d = document.createElement('div'); d.className = 'panel fedpanel';
+      d.innerHTML = `<div class="ph"><div><h3>${L('Probabilités de la Fed · prochaine réunion','Fed odds · next meeting')}</h3><p id="fedAsof"></p></div></div><div class="fedgrid"><div id="fedLeft"></div><div id="fedRight"></div></div>`;
+      box.insertBefore(d, box.firstChild); }
+    renderFed();
+  }
   function renderRates(){
     const box = $('p2rates'); if(!box) return;
     const r = (state.live||{}).rates || {};
@@ -3921,7 +3930,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     if(pg==='home') renderHome();
     else if(pg==='hours') renderHours();
     else if(pg==='eco') renderEco();
-    else if(pg==='fed') renderRates();
+    else if(pg==='fed'){ renderRates(); fedPanel(); }
     else if(pg==='cot') renderCOT();
     else if(pg==='sent') renderSent();
     else if(pg==='cbg') renderCB();
