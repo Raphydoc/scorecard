@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T23:29:23Z",
+ "updatedAt": "2026-11-11T23:41:56Z",
  "econ": {
   "values": {
    "gdp": {
@@ -705,17 +705,17 @@
   "next": "2026-12-09",
   "step": "25 pb",
   "probs": {
+   "hike": 100,
+   "hold": 0,
+   "cut": 0
+  },
+  "prevProbs": {
    "hike": 80.5,
    "hold": 19.5,
    "cut": 0
   },
-  "prevProbs": {
-   "hike": 78,
-   "hold": 22,
-   "cut": 0
-  },
-  "prevDate": "2026-11-06",
-  "asOf": "2026-11-08",
+  "prevDate": "2026-11-08",
+  "asOf": "2026-11-10",
   "events": [
    {
     "date": "2026-11-18",
