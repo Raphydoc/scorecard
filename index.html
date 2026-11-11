@@ -786,7 +786,92 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 .gwords .ddchip{cursor:default}
 @media (max-width:899px){ .gstage{height:440px} .gsearch input{width:100%} .gmain .ph{display:grid;gap:8px} .glegend i{width:110px} .ghint{bottom:50px;font-size:9.5px} }
 @media (prefers-reduced-motion:no-preference){ .gstage::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(transparent 0,rgba(242,180,58,.04) 50%,transparent 100%);background-size:100% 6px;opacity:.5} }
-/* ===== Market Hours ===== */
+/* ===== Market Hours (style Trade Sider) ===== */
+.mhtop{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;padding:10px 2px 14px;border-bottom:1px solid var(--line);margin-bottom:14px}
+.mhtop .ttl{font:700 11px/1.2 var(--f-mono);letter-spacing:.18em;color:var(--muted);display:flex;align-items:center;gap:8px}
+.mhlive{display:inline-flex;align-items:center;gap:7px;font:700 10.5px/1 var(--f-mono);letter-spacing:.14em;color:var(--gold);border:1px solid var(--gold);background:var(--tint-g);padding:7px 10px;border-radius:3px}
+.mhlive i{width:7px;height:7px;border-radius:50%;background:var(--gold);box-shadow:0 0 8px var(--gold)}
+.mhlive.none{color:var(--muted);border-color:var(--line);background:none} .mhlive.none i{background:var(--muted);box-shadow:none}
+.mhhero{display:grid;grid-template-columns:minmax(300px,.8fr) minmax(0,1.6fr);gap:14px}
+.mhp{position:relative;border:1px solid var(--line);border-radius:4px;background:linear-gradient(180deg,rgba(242,180,58,.035),transparent 40%),var(--panel);padding:14px 16px;min-width:0}
+.mhp::before,.mhp::after{content:"";position:absolute;width:12px;height:12px;border-color:var(--gold);border-style:solid;opacity:.7}
+.mhp::before{top:-1px;left:-1px;border-width:1px 0 0 1px} .mhp::after{bottom:-1px;right:-1px;border-width:0 1px 1px 0}
+.mhcap{display:block;font:600 10px/1.3 var(--f-mono);letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
+.mhclock{display:grid;justify-items:center;gap:6px;text-align:center}
+.mhdial{width:min(100%,340px);aspect-ratio:1;margin-top:4px}
+.mhsvg{width:100%;height:100%;display:block;overflow:visible}
+.mhsvg .od{fill:rgba(242,180,58,.35)}
+.mhsvg .sring{fill:none;stroke:rgba(255,255,255,.04);stroke-width:5}
+.mhsvg .sarc{fill:none;stroke:var(--c);stroke-width:5;stroke-linecap:round;opacity:.28;transition:opacity .4s,filter .4s}
+.mhsvg .sarc.on{opacity:1;filter:drop-shadow(0 0 5px var(--c))}
+.mhsvg .n24{fill:var(--gold);filter:drop-shadow(0 0 6px var(--gold))}
+.mhsvg .face{filter:drop-shadow(0 0 22px rgba(242,180,58,.22))}
+.mhsvg .rim{fill:none;stroke:var(--gold);stroke-width:1.5}
+.mhsvg .tk{stroke:rgba(242,180,58,.45);stroke-width:1} .mhsvg .tk.b{stroke:var(--gold);stroke-width:2.4}
+.mhsvg .num{fill:#f3e6c4;font:500 19px var(--f-mono);text-anchor:middle}
+.mhsvg .hand{stroke-linecap:round} .mhsvg .hand.h{stroke:#fff;stroke-width:4.5} .mhsvg .hand.m{stroke:#fff;stroke-width:3} .mhsvg .hand.s{stroke:var(--gold);stroke-width:1.5}
+.mhsvg .pin{fill:#0b0a05;stroke:var(--gold);stroke-width:2.5}
+.mhdig{font:700 54px/1 var(--f-mono);letter-spacing:.02em;color:var(--fg);margin-top:4px}
+.mhdig span{color:var(--gold);font-size:30px}
+.mhdate{font:600 10.5px/1.3 var(--f-mono);letter-spacing:.14em;color:var(--muted)}
+.mhov{font:700 10.5px/1.4 var(--f-mono);letter-spacing:.12em;color:var(--muted);padding:6px 10px;border:1px dashed var(--line);border-radius:3px}
+.mhov.pk{color:var(--gold);border-color:var(--gold);background:var(--tint-g)}
+.mhkey{display:flex;flex-wrap:wrap;justify-content:center;gap:6px 12px;font:600 10px/1 var(--f-mono);color:var(--muted);letter-spacing:.06em;margin-top:2px}
+.mhkey span{display:inline-flex;align-items:center;gap:5px} .mhkey i{width:12px;height:4px;border-radius:2px;background:var(--c)} .mhkey .k24{flex-basis:100%;justify-content:center;opacity:.75}
+.mhtl{display:flex;flex-direction:column}
+.mhtlbody{position:relative;flex:1;display:flex;flex-direction:column;justify-content:center;padding:20px 0 30px}
+.mhticks{position:relative;height:16px;margin-left:120px;margin-bottom:6px}
+.mhticks span{position:absolute;transform:translateX(-50%);font:600 10px/1 var(--f-mono);color:var(--muted)}
+.mhrows{position:relative;display:grid;gap:30px}
+.mhrow{display:grid;grid-template-columns:110px minmax(0,1fr);gap:10px;align-items:center}
+.mhn{display:flex;align-items:center;gap:8px;font:700 12px/1 var(--f-mono);letter-spacing:.12em;color:var(--muted);transition:color .3s}
+.mhn i{font-style:normal;font-size:15px}
+.mhrow.on .mhn{color:var(--c);text-shadow:0 0 10px color-mix(in srgb,var(--c) 60%,transparent)}
+.mhtrack{position:relative;height:30px;background:repeating-linear-gradient(90deg,rgba(255,255,255,.035) 0 calc(12.5% - 1px),rgba(255,255,255,.08) calc(12.5% - 1px) 12.5%);border-radius:2px}
+.mhbar{position:absolute;top:0;bottom:0;border-radius:2px;background:color-mix(in srgb,var(--c) 45%,#000);border:1px solid color-mix(in srgb,var(--c) 70%,transparent);overflow:hidden;display:flex;align-items:center}
+.mhbar em{font:700 10px/1 var(--f-mono);font-style:normal;color:#fff;padding:0 6px;white-space:nowrap;opacity:.85}
+.mhbar.on{background:var(--c);box-shadow:0 0 16px -2px var(--c)} .mhbar.on em{color:#05070a;opacity:1}
+.mhnowl{position:absolute;top:-10px;bottom:-4px;left:120px;right:0;pointer-events:none}
+.mhnowl i{position:absolute;top:0;bottom:0;width:2px;margin-left:-1px;background:var(--gold);box-shadow:0 0 12px var(--gold)}
+.mhnowl em{position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);font:700 10px/1 var(--f-mono);font-style:normal;color:#000;background:var(--gold);padding:2px 5px;border-radius:2px}
+.mhnote{margin:14px 0 0;font-size:12px;color:var(--muted);line-height:1.5;border-top:1px solid var(--line);padding-top:10px}
+.mhcards{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px;margin-top:14px}
+.mhcard{position:relative;border:1px solid var(--line);border-top:2px solid color-mix(in srgb,var(--c) 45%,transparent);border-radius:4px;background:var(--panel);padding:14px 16px;display:grid;gap:5px;transition:border-color .4s,box-shadow .4s,background .4s}
+.mhcard.on{border-color:var(--c);background:linear-gradient(180deg,color-mix(in srgb,var(--c) 14%,transparent),transparent 70%),var(--panel);box-shadow:0 0 0 1px var(--c),0 0 30px -10px var(--c)}
+.mhch{display:flex;align-items:center;gap:10px;margin-bottom:4px}
+.mhflag{font-size:22px;line-height:1}
+.mhch h4{margin:0;font:800 24px/1 var(--f-mono);letter-spacing:.02em}
+.mhbadge{margin-left:auto;display:inline-flex;align-items:center;gap:5px;font:700 9.5px/1 var(--f-mono);letter-spacing:.14em;color:var(--muted);border:1px solid var(--line);padding:5px 7px;border-radius:3px}
+.mhbadge i{width:6px;height:6px;border-radius:50%;background:var(--muted)}
+.mhbadge.on{color:var(--c);border-color:var(--c);background:color-mix(in srgb,var(--c) 12%,transparent)} .mhbadge.on i{background:var(--c);box-shadow:0 0 8px var(--c)}
+.mhlab{font:600 9.5px/1.2 var(--f-mono);letter-spacing:.16em;color:var(--muted);margin-top:4px}
+.mhtime{font:700 34px/1 var(--f-mono);letter-spacing:.01em} .mhtime span{font-size:18px;color:var(--muted)}
+.mhcard.on .mhtime span{color:var(--c)}
+.mhcd{font:700 17px/1.1 var(--f-mono);color:var(--fg)} .mhcard.on .mhcd{color:var(--c)}
+.mhprog{height:4px;border-radius:2px;background:rgba(255,255,255,.06);overflow:hidden;margin:6px 0 4px}
+.mhprog i{display:block;height:100%;width:0;background:color-mix(in srgb,var(--c) 55%,#555);transition:width 1s linear} .mhcard.on .mhprog i{background:var(--c);box-shadow:0 0 10px var(--c)}
+.mhfoot{display:flex;justify-content:space-between;gap:8px;flex-wrap:wrap;font:600 10px/1.3 var(--f-mono);color:var(--muted)}
+.mhfoot span:last-child{color:var(--fg)}
+.mhfn{font-size:11.5px;color:var(--muted);line-height:1.5;margin:12px 2px 16px}
+#p2hours .ctrs{margin-bottom:14px}
+@media (max-width:1180px){ .mhhero{grid-template-columns:minmax(0,1fr)} .mhcards{grid-template-columns:repeat(2,minmax(0,1fr))} }
+@media (max-width:600px){
+  .mhcards{grid-template-columns:minmax(0,1fr)} .mhdig{font-size:44px} .mhdig span{font-size:24px} .mhdial{width:min(100%,290px)}
+  .mhticks{margin-left:62px} .mhticks span:nth-child(even){display:none} .mhnowl{left:62px} .mhrow{grid-template-columns:52px minmax(0,1fr);gap:10px} .mhn{font-size:0;gap:0} .mhn i{font-size:18px}
+  .mhbar em{font-size:8.5px;padding:0 3px} .mhrows{gap:14px} .mhtime{font-size:30px}
+}
+@media (prefers-reduced-motion:no-preference){
+  .mhp,.mhcard{animation:fadeUp .5s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0ms)}
+  .mhrow{animation:fadeUp .45s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0ms)}
+  .mhbar{animation:growW .9s cubic-bezier(.2,.7,.2,1) both;transform-origin:left}
+  .mhsvg .sarc{stroke-dasharray:900;stroke-dashoffset:900;animation:mhDraw 1.4s cubic-bezier(.2,.7,.2,1) forwards}
+  .mhsvg .hand{transition:transform .25s cubic-bezier(.3,1.6,.6,1)}
+  .mhlive i,.mhbadge.on i{animation:dotPulse 1.6s infinite}
+  .mhcard.on{animation:fadeUp .5s cubic-bezier(.2,.7,.2,1) both,mhGlow 3s ease-in-out infinite;animation-delay:var(--d,0ms),0s}
+}
+@keyframes mhDraw{to{stroke-dashoffset:0}}
+@keyframes mhGlow{0%,100%{box-shadow:0 0 0 1px var(--c),0 0 26px -12px var(--c)}50%{box-shadow:0 0 0 1px var(--c),0 0 36px -6px var(--c)}}
+/* ===== Market Hours (bourses) ===== */
 .hclks{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
 .hclk{border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:10px 12px;display:grid;gap:4px;border-top:2px solid var(--neutral)}
 .hclk.on{border-top-color:#2BD47D;box-shadow:inset 0 10px 24px -18px rgba(43,212,125,.6)}
@@ -828,6 +913,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   <button type="button" data-page="home">Vue d’ensemble</button>
   <button type="button" data-page="charts">Graphiques</button>
   <button type="button" data-page="hours">Market Hours</button>
+  <button type="button" data-page="globe">Carte du monde</button>
   <span class="navgrp">Analyse</span>
   <button type="button" data-page="score" aria-current="page">Scorecard</button>
   <button type="button" data-page="top">Top Setups</button>
@@ -1001,7 +1087,8 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     <p class="pgfoot">Battu = BPA et revenus au-dessus des prévisions; Raté = les deux en dessous; Mitigé = un des deux. Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.</p>
   </section>
 
-  <section data-pg="home" hidden aria-label="Vue d’ensemble"><div class="p2" id="p2globe"></div><div class="p2 p2gap" id="p2home"></div></section>
+  <section data-pg="home" hidden aria-label="Vue d’ensemble"><div class="p2" id="p2home"></div></section>
+  <section data-pg="globe" hidden aria-label="Carte du monde"><div class="p2" id="p2globe"></div></section>
   <section data-pg="charts" hidden aria-label="Graphiques"><div class="p2" id="p2charts"></div></section>
   <section data-pg="eco" hidden aria-label="Économie US"><div class="p2" id="p2eco"></div></section>
   <section data-pg="cot" hidden aria-label="COT"><div class="p2" id="p2cot"></div></section>
@@ -2792,7 +2879,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
       const mat = globeObj.globeMaterial(); if(mat && mat.color) mat.color.set('#0A0C10'); if(mat && mat.emissive) mat.emissive.set('#05070a');
       const ctr = globeObj.controls(); ctr.autoRotate = !RM(); ctr.autoRotateSpeed = 0.55; ctr.enableDamping = true;
       globeObj.pointOfView({lat:30, lng:-60, altitude:2.3}, 0);
-      const ro = new ResizeObserver(()=>{ if(globeObj) globeObj.width(el.clientWidth).height(el.clientHeight); }); ro.observe(el);
+      const ro = new ResizeObserver(()=>{ if(globeObj && state.page==='globe' && el.clientWidth > 0) globeObj.width(el.clientWidth).height(el.clientHeight); }); ro.observe(el);
       el.addEventListener('pointerdown', ()=>{ const h = $('gHint'); if(h) h.classList.add('off'); });
     }
     globeObj.width(wpx).height(hpx).polygonCapColor(f=> f===gSel ? gold : gColor(m, gVal(f.properties.a3, m))).polygonLabel(lab).polygonAltitude(d=> d===gSel ? 0.09 : 0.008);
@@ -2858,7 +2945,9 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     return p.join(' ') || L('Peu de données disponibles pour ce pays.','Little data available for this country.');
   }
   // reprendre la rotation quand le panneau se ferme
-  (function(){ const _c = ddClose; ddClose = function(){ _c(); if(globeObj && state.page==='home' && !RM()){ setTimeout(()=>{ if(globeObj){ globeObj.controls().autoRotate = true; gSel = null; globeObj.polygonCapColor(d=>gColor(state.gMetric, gVal(d.properties.a3, state.gMetric))).polygonAltitude(0.008); } }, 300); } }; })();
+  (function(){ const _c = ddClose; ddClose = function(){ _c(); if(globeObj && state.page==='globe' && !RM()){ setTimeout(()=>{ if(globeObj){ globeObj.controls().autoRotate = true; gSel = null; globeObj.polygonCapColor(d=>gColor(state.gMetric, gVal(d.properties.a3, state.gMetric))).polygonAltitude(0.008); } }, 300); } }; })();
+
+  document.addEventListener('visibilitychange', ()=>{ try{ if(!globeObj) return; if(document.hidden || state.page!=='globe') globeObj.pauseAnimation(); else globeObj.resumeAnimation(); }catch(e){} });
 
   // ================= Fuseaux horaires (Market Hours et globe) =================
   function tzParts(tz, d){
@@ -2913,43 +3002,110 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     return open;
   }
 
-  // ================= Page Market Hours =================
+  // ================= Page Market Hours (style Trade Sider) =================
   state.hoursTimer = null;
+  const USER_TZ = (()=>{ try{ return Intl.DateTimeFormat().resolvedOptions().timeZone || 'America/Toronto'; }catch(e){ return 'America/Toronto'; } })();
+  const SES = [
+    {k:'syd', n:['Sydney','Sydney'], city:['HEURE DE SYDNEY','SYDNEY TIME'], tz:'Australia/Sydney', o:7, c:16, col:'#8B6CF0', flag:'🇦🇺'},
+    {k:'tok', n:['Tokyo','Tokyo'], city:['HEURE DE TOKYO','TOKYO TIME'], tz:'Asia/Tokyo', o:9, c:18, col:'#E0383E', flag:'🇯🇵'},
+    {k:'lon', n:['Londres','London'], city:['HEURE DE LONDRES','LONDON TIME'], tz:'Europe/London', o:8, c:17, col:'#22CFE0', flag:'🇬🇧'},
+    {k:'ny', n:['New York','New York'], city:['HEURE DE NEW YORK','NEW YORK TIME'], tz:'America/New_York', o:8, c:17, col:'#F2B43A', flag:'🇺🇸'}
+  ];
+  const p2d = n => String(n).padStart(2,'0');
+  const hm = (t, tz) => { const p = tzParts(tz, new Date(t)); return p2d(p.h)+':'+p2d(p.mi); };
+  const hrsTxt = h => p2d(Math.floor(h))+':'+p2d(Math.round(h%1*60));
+  function utcOff(tz){ try{ const v = new Intl.DateTimeFormat('en-US',{timeZone:tz, timeZoneName:'shortOffset'}).formatToParts(new Date()).find(x=>x.type==='timeZoneName').value; return v==='GMT' ? 'UTC' : v.replace('GMT','UTC'); }catch(e){ return ''; } }
+  const cdTxt = ms => { const t = Math.max(0, Math.floor(ms/1000)), d = Math.floor(t/86400), h = Math.floor(t%86400/3600), m = Math.floor(t%3600/60), x = t%60; return (d? d+(isEN()?'d ':'j '):'') + h+'h '+p2d(m)+'m '+p2d(x)+'s'; };
+  function sesState(m, now){ // ouverte ? début/fin courants ou prochains, et fin de la précédente
+    const ss = sessionsOf(m, now - 4*864e5, now + 8*864e5);
+    const cur = ss.find(x=>x[0]<=now && now<x[1]);
+    if(cur) return {live:true, s:cur[0], e:cur[1]};
+    const nx = ss.find(x=>x[0]>now), pv = ss.filter(x=>x[1]<=now).pop();
+    return {live:false, s:nx?nx[0]:null, e:nx?nx[1]:null, prevEnd:pv?pv[1]:null};
+  }
+  function arcPath(cx, cy, r, a0, a1){ // angles en heures (0-24, 0 = en haut)
+    const P = h => { const a = (h/24)*2*Math.PI - Math.PI/2; return [cx + r*Math.cos(a), cy + r*Math.sin(a)]; };
+    if(a1 - a0 >= 23.99) a1 = a0 + 23.99;
+    const [x0,y0] = P(a0), [x1,y1] = P(a1), big = (a1-a0) > 12 ? 1 : 0;
+    return `M${x0.toFixed(2)} ${y0.toFixed(2)} A${r} ${r} 0 ${big} 1 ${x1.toFixed(2)} ${y1.toFixed(2)}`;
+  }
+  function mhClockSVG(now, dayStart){
+    const C = 160, ticks = [];
+    for(let i=0;i<60;i++){ const a = i/60*2*Math.PI, big = i%5===0, r0 = big?93:97, r1 = 102;
+      ticks.push(`<line x1="${(C+r0*Math.sin(a)).toFixed(1)}" y1="${(C-r0*Math.cos(a)).toFixed(1)}" x2="${(C+r1*Math.sin(a)).toFixed(1)}" y2="${(C-r1*Math.cos(a)).toFixed(1)}" class="${big?'tk b':'tk'}"/>`); }
+    const outer = []; for(let i=0;i<96;i++){ const a = i/96*2*Math.PI; outer.push(`<circle cx="${(C+150*Math.sin(a)).toFixed(1)}" cy="${(C-150*Math.cos(a)).toFixed(1)}" r="${i%4===0?1.4:.7}" class="od"/>`); }
+    const nums = [12,3,6,9].map((n,i)=>{ const a = i*Math.PI/2, r = 78; return `<text x="${(C+r*Math.sin(a)).toFixed(1)}" y="${(C-r*Math.cos(a)+6).toFixed(1)}" class="num">${n}</text>`; }).join('');
+    // anneaux des sessions sur 24 h (minuit en haut)
+    const rings = SES.map((m,i)=>{ const r = 112 + i*9; const ss = sessionsOf(m, dayStart, dayStart+864e5);
+      const arcs = ss.map(([a,b])=>{ const h0 = Math.max(0,(a-dayStart)/36e5), h1 = Math.min(24,(b-dayStart)/36e5); return h1>h0 ? `<path d="${arcPath(C,C,r,h0,h1)}" class="sarc" data-ses="${m.k}" style="--c:${m.col}"/>` : ''; }).join('');
+      return `<circle cx="${C}" cy="${C}" r="${r}" class="sring"/>${arcs}`; }).join('');
+    const nowH = (now-dayStart)/36e5, na = nowH/24*2*Math.PI;
+    return `<svg viewBox="0 0 320 320" class="mhsvg" aria-hidden="true">
+      <defs><radialGradient id="mhFace" cx="50%" cy="42%" r="60%"><stop offset="0" stop-color="#5a4a12"/><stop offset=".55" stop-color="#241d07"/><stop offset="1" stop-color="#0b0a05"/></radialGradient></defs>
+      ${outer.join('')}${rings}
+      <g id="mh24" style="transform:rotate(${(nowH/24*360).toFixed(2)}deg);transform-origin:160px 160px"><circle cx="160" cy="${C-148}" r="4" class="n24"/></g>
+      <circle cx="${C}" cy="${C}" r="104" fill="url(#mhFace)" class="face"/>
+      <circle cx="${C}" cy="${C}" r="104" class="rim"/>
+      ${ticks.join('')}${nums}
+      <line id="mhH" x1="160" y1="168" x2="160" y2="104" class="hand h"/>
+      <line id="mhM" x1="160" y1="172" x2="160" y2="76" class="hand m"/>
+      <line id="mhS" x1="160" y1="178" x2="160" y2="66" class="hand s"/>
+      <circle cx="160" cy="160" r="5" class="pin"/>
+    </svg>`;
+  }
   function renderHours(){
     const box = $('p2hours'); if(!box) return;
-    const now = Date.now(), tp = tzParts('America/Toronto'), dayStart = tzEpoch(tp.y, tp.mo, tp.d, 0, 'America/Toronto'), dayEnd = dayStart + 864e5;
+    const tz = USER_TZ, now = Date.now(), tp = tzParts(tz), dayStart = tzEpoch(tp.y, tp.mo, tp.d, 0, tz), dayEnd = dayStart + 864e5;
     const pct = t => Math.max(0, Math.min(100, (t-dayStart)/864e5*100));
-    const clk = [['Toronto','America/Toronto'],['New York','America/New_York'],[L('Londres','London'),'Europe/London'],[L('Francfort','Frankfurt'),'Europe/Berlin'],['Tokyo','Asia/Tokyo'],['Hong Kong','Asia/Hong_Kong'],['Sydney','Australia/Sydney']];
-    const clocks = clk.map(([n,tz],i)=>{ const m = MKT.find(x=>x.tz===tz) || MKT.find(x=>n==='Hong Kong'&&x.k==='hkex'); const st = m ? mktStatus(m, now) : null; const p = tzParts(tz);
-      return `<div class="hclk ${st&&st.open?'on':''}" style="--d:${i*50}ms"><span class="hn2">${esc(n)}</span><b data-tz="${tz}">${String(p.h).padStart(2,'0')}:${String(p.mi).padStart(2,'0')}<small>:${String(p.s).padStart(2,'0')}</small></b><span class="hs2"><i></i>${st? (st.open?L('BOURSE OUVERTE','MARKET OPEN'):L('BOURSE FERMÉE','MARKET CLOSED')) : ''}</span></div>`; }).join('');
-    const row = (m, i, fx) => {
-      const ss = sessionsOf(m, dayStart, dayEnd), st = mktStatus(m, now);
-      const bars = ss.map(([s,e])=>`<i class="hbar ${fx?'fx':''}" style="left:${pct(s)}%;width:${pct(e)-pct(s)}%"></i>`).join('');
-      const local = tzParts(m.tz), lt = `${String(local.h).padStart(2,'0')}:${String(local.mi).padStart(2,'0')}`;
-      const stTxt = st.open ? `<span class="hst on">${L('OUVERT','OPEN')}</span><small>${L('ferme dans','closes in')} <b data-cdt="${st.next}"></b></small>` : st.lunch ? `<span class="hst lu">${L('PAUSE DU MIDI','LUNCH BREAK')}</span><small>${L('reprend dans','resumes in')} <b data-cdt="${st.next}"></b></small>` : `<span class="hst">${L('FERMÉ','CLOSED')}</span><small>${st.next?L('ouvre dans','opens in')+` <b data-cdt="${st.next}"></b>`:''}</small>`;
-      const loc = `${String(Math.floor(m.o)).padStart(2,'0')}:${String(Math.round(m.o%1*60)).padStart(2,'0')}–${String(Math.floor(m.c)).padStart(2,'0')}:${String(Math.round(m.c%1*60)).padStart(2,'0')}`;
-      return `<div class="hrow" style="--d:${i*40}ms"><div class="hlab"><b>${esc(isEN()?m.n[1]:m.n[0])}</b><small>${L('local','local')} ${loc} · ${L('il est','now')} ${lt}</small></div><div class="htrack">${bars}</div><div class="hstat">${stTxt}</div></div>`;
-    };
-    const ticks = Array.from({length:25},(_,h)=>`<span style="left:${h/24*100}%">${h%3===0?String(h).padStart(2,'0')+(isEN()?'':' h'):''}</span>`).join('');
-    // chevauchement Londres–New York (forex)
-    const lon = sessionsOf(FXS[2], dayStart, dayEnd), ny = sessionsOf(FXS[3], dayStart, dayEnd);
-    const ov = []; lon.forEach(a=>ny.forEach(b=>{ const s = Math.max(a[0],b[0]), e = Math.min(a[1],b[1]); if(e>s) ov.push([s,e]); }));
-    const ovHtml = ov.map(([s,e])=>`<i class="hov" style="left:${pct(s)}%;width:${pct(e)-pct(s)}%"></i>`).join('');
-    const fmtT = t => new Date(t).toLocaleTimeString(LOC(),{hour:'2-digit',minute:'2-digit', timeZone:'America/Toronto'});
-    const fxOpen = fxStatus(now);
+    const st = SES.map(m=>sesState(m, now)), nLive = st.filter(x=>x.live).length, off = utcOff(tz);
+    const lonS = sessionsOf(FXS[2], dayStart, dayEnd), nyS = sessionsOf(FXS[3], dayStart, dayEnd), ov = []; lonS.forEach(x=>nyS.forEach(y=>{ const a1 = Math.max(x[0],y[0]), b1 = Math.min(x[1],y[1]); if(b1>a1) ov.push([a1,b1]); }));
+    const fmtT = t => hm(t, tz), fxOpen = fxStatus(now);
+    const tlTicks = Array.from({length:9},(_,i)=>`<span style="left:${i*12.5}%">${p2d(i*3)}:00</span>`).join('');
+    const tlRows = SES.map((m,i)=>{
+      const bars = sessionsOf(m, dayStart, dayEnd).map(([a,b])=>`<i class="mhbar" data-ses="${m.k}" style="left:${pct(a)}%;width:${pct(b)-pct(a)}%;--c:${m.col}"><em>${hm(a,tz)}–${hm(b,tz)}</em></i>`).join('');
+      return `<div class="mhrow" data-ses="${m.k}" style="--c:${m.col};--d:${i*70}ms"><span class="mhn"><i>${m.flag}</i>${esc((isEN()?m.n[1]:m.n[0]).toUpperCase())}</span><div class="mhtrack">${bars}</div></div>`; }).join('');
+    const cards = SES.map((m,i)=>{
+      const o = tzEpoch(tp.y, tp.mo, tp.d, m.o, m.tz), c = tzEpoch(tp.y, tp.mo, tp.d, m.c, m.tz);
+      return `<div class="mhcard" data-ses="${m.k}" style="--c:${m.col};--d:${i*80}ms">
+        <div class="mhch"><span class="mhflag">${m.flag}</span><h4>${esc((isEN()?m.n[1]:m.n[0]).toUpperCase())}</h4><span class="mhbadge" data-bdg="${m.k}"></span></div>
+        <span class="mhlab">${esc(isEN()?m.city[1]:m.city[0])}</span>
+        <b class="mhtime" data-mtz="${m.tz}"></b>
+        <span class="mhlab" data-cdl="${m.k}"></span>
+        <b class="mhcd" data-cd="${m.k}"></b>
+        <div class="mhprog"><i data-pr="${m.k}"></i></div>
+        <div class="mhfoot"><span>${hrsTxt(m.o)}–${hrsTxt(m.c)} ${L('local','local')}</span><span>${hm(o,tz)}–${hm(c,tz)} ${L('ton heure','your time')}</span></div>
+      </div>`; }).join('');
     box.innerHTML = `
-      <div class="hmhead"><div class="ttl"><span class="blink"></span>${L('HEURES DES MARCHÉS · SESSIONS MONDIALES','MARKET HOURS · GLOBAL SESSIONS')}</div><div class="badge">${L('HEURE DE TORONTO','TORONTO TIME')} · ${new Date().toLocaleDateString(LOC(),{weekday:'long', day:'numeric', month:'long'})}</div></div>
-      <div class="hclks">${clocks}</div>
+      <div class="mhtop"><div class="ttl"><span class="blink"></span>${L('MARKET HOURS — LES QUATRE SESSIONS DU FOREX','MARKET HOURS — THE FOUR FX SESSIONS')}</div><div class="mhlive" id="mhLive"><i></i><span>${nLive}/4 ${L('SESSIONS EN DIRECT','SESSIONS LIVE')}</span> · ${L('TON HEURE','YOUR CLOCK')} ${esc(off)}</div></div>
+      <div class="mhhero">
+        <div class="mhp mhclock"><span class="mhcap">${L('TON HEURE','YOUR CLOCK')} — ${esc(tz.toUpperCase())}</span>
+          <div class="mhdial">${mhClockSVG(now, dayStart)}</div>
+          <div class="mhdig" id="mhDig"></div>
+          <div class="mhdate" id="mhDate"></div>
+          <div class="mhov" id="mhOv"></div>
+          <div class="mhkey">${SES.map(m=>`<span style="--c:${m.col}"><i></i>${esc(isEN()?m.n[1]:m.n[0])}</span>`).join('')}<span class="k24">${L('anneaux = 24 h, minuit en haut','rings = 24 h, midnight at top')}</span></div>
+        </div>
+        <div class="mhp mhtl"><span class="mhcap">${L('LIGNE DU TEMPS 24 H — TON HEURE','24-HOUR TIMELINE — YOUR TIME')} (${esc(off)})</span>
+          <div class="mhtlbody"><div class="mhticks">${tlTicks}<span style="left:100%">24:00</span></div>
+            <div class="mhrows">${tlRows}<div class="mhnowl"><i id="mhNow" style="left:${pct(now)}%"><em></em></i></div></div></div>
+          <p class="mhnote">${L('Le chevauchement Londres + New York est la période la plus liquide de la journée : c’est là que l’or, le dollar et l’EUR/USD bougent le plus.','The London + New York overlap is the most liquid period of the day: that is when gold, the dollar and EUR/USD move the most.')}</p>
+        </div>
+      </div>
+      <div class="mhcards">${cards}</div>
+      <p class="mhfn">${L('Les sessions du forex sont les heures de bureau habituelles de chaque grande place (heure locale, heure avancée gérée automatiquement), affichées sur ton horloge. Le forex lui-même est ouvert du dimanche 17 h au vendredi 17 h (New York).','FX sessions are the conventional business hours of each major centre (local time, daylight saving handled automatically), shown on your own clock. Forex itself trades from Sunday 5 p.m. to Friday 5 p.m. (New York).')}</p>
       <div class="ctrs">
         <div class="ctr ${fxOpen?'b':'r'}"><span>Forex</span><b>${fxOpen?L('OUVERT','OPEN'):L('FERMÉ','CLOSED')}</b><small>${L('dimanche 17 h → vendredi 17 h (New York)','Sunday 5 p.m. → Friday 5 p.m. (New York)')}</small></div>
         <div class="ctr b"><span>${L('Crypto (Bitcoin)','Crypto (Bitcoin)')}</span><b>24/7</b><small>${L('ne ferme jamais','never closes')}</small></div>
         <div class="ctr g"><span>${L('Futures CME (or, pétrole, indices)','CME futures (gold, oil, indices)')}</span><b>${(()=>{ const p = tzParts('America/New_York'), hh = p.h+p.mi/60; const o = !(p.wd===6 || (p.wd===5&&hh>=17) || (p.wd===0&&hh<18) || (hh>=17&&hh<18)); return o?L('OUVERT','OPEN'):L('FERMÉ','CLOSED'); })()}</b><small>${L('dim. 18 h → ven. 17 h, pause 17 h–18 h','Sun 6 p.m. → Fri 5 p.m., break 5–6 p.m.')}</small></div>
         <div class="ctr g"><span>${L('Chevauchement Londres–New York','London–New York overlap')}</span><b>${ov.length? fmtT(ov[0][0])+'–'+fmtT(ov[0][1]) : '—'}</b><small>${L('le plus de volume de la journée','the busiest hours of the day')}</small></div>
       </div>
-      <div class="panel"><div class="ph"><div><h3>${L('Bourses · aujourd’hui en heure de Toronto','Stock exchanges · today in Toronto time')}</h3><p>${L('Les barres = heures d’ouverture · la ligne dorée = maintenant · pause du midi en Asie','Bars = trading hours · gold line = now · lunch breaks in Asia')}</p></div></div>
-        <div class="pb"><div class="htl"><div class="hticks">${ticks}</div>${MKT.map((m,i)=>row(m,i,false)).join('')}<div class="hnowl"><i class="hnow" id="hnow" style="left:${pct(now)}%"><em>${fmtT(now)}</em></i></div></div></div></div>
-      <div class="panel"><div class="ph"><div><h3>${L('Sessions du forex','Forex sessions')}</h3><p>${L('La zone dorée = chevauchement Londres–New York, quand l’or, le dollar et l’EUR/USD bougent le plus','Gold zone = London–New York overlap, when gold, the dollar and EUR/USD move the most')}</p></div></div>
-        <div class="pb"><div class="htl fx"><div class="hticks">${ticks}</div><div class="hovl">${ovHtml}</div>${FXS.map((m,i)=>row(m,i,true)).join('')}<div class="hnowl"><i class="hnow" style="left:${pct(now)}%"></i></div></div></div></div>
+      <div class="panel"><div class="ph"><div><h3>${L('Bourses · aujourd’hui à ton heure','Stock exchanges · today on your clock')}</h3><p>${L('Les barres = heures d’ouverture · la ligne dorée = maintenant · pause du midi en Asie','Bars = trading hours · gold line = now · lunch breaks in Asia')}</p></div></div>
+        <div class="pb"><div class="htl"><div class="hticks">${Array.from({length:25},(_,h)=>`<span style="left:${h/24*100}%">${h%3===0?p2d(h)+(isEN()?'':' h'):''}</span>`).join('')}</div>${MKT.map((m,i)=>{
+          const ss = sessionsOf(m, dayStart, dayEnd), s2 = mktStatus(m, now);
+          const bars = ss.map(([a,b])=>`<i class="hbar" style="left:${pct(a)}%;width:${pct(b)-pct(a)}%"></i>`).join('');
+          const lt = hm(now, m.tz);
+          const stTxt = s2.open ? `<span class="hst on">${L('OUVERT','OPEN')}</span><small>${L('ferme dans','closes in')} <b data-cdt="${s2.next}"></b></small>` : s2.lunch ? `<span class="hst lu">${L('PAUSE DU MIDI','LUNCH BREAK')}</span><small>${L('reprend dans','resumes in')} <b data-cdt="${s2.next}"></b></small>` : `<span class="hst">${L('FERMÉ','CLOSED')}</span><small>${s2.next?L('ouvre dans','opens in')+` <b data-cdt="${s2.next}"></b>`:''}</small>`;
+          return `<div class="hrow" style="--d:${i*40}ms"><div class="hlab"><b>${esc(isEN()?m.n[1]:m.n[0])}</b><small>${L('local','local')} ${hrsTxt(m.o)}–${hrsTxt(m.c)} · ${L('il est','now')} ${lt}</small></div><div class="htrack">${bars}</div><div class="hstat">${stTxt}</div></div>`; }).join('')}<div class="hnowl"><i class="hnow" style="left:${pct(now)}%"></i></div></div></div></div>
       <div class="panel"><div class="ph"><div><h3>${L('Meilleures heures pour tes actifs','Best hours for your assets')}</h3><p>${L('Heure de Toronto · quand il y a le plus de mouvement et de liquidité','Toronto time · when there is the most movement and liquidity')}</p></div></div>
         <div class="pb"><div class="dgrid">${[
           ['XAUUSD · XAGUSD', L('8 h – 11 h 30','8 a.m. – 11:30 a.m.'), L('chevauchement Londres–New York et données de 8 h 30','London–NY overlap and 8:30 data')],
@@ -2960,17 +3116,45 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
           ['USOIL', L('9 h – 14 h 30','9 a.m. – 2:30 p.m.'), L('séance principale du NYMEX · stocks EIA le mercredi 10 h 30','main NYMEX session · EIA stocks Wednesday 10:30')],
           ['BITCOIN', '24/7', L('plus actif pendant les heures de Wall Street','most active during Wall Street hours')]
         ].map((x,i)=>`<div class="dcell n" style="--d:${i*50}ms"><span class="dh">${esc(x[0])}</span><b>${esc(x[1])}</b><small>${esc(x[2])}</small></div>`).join('')}</div></div></div>
-      <p class="src">${L('Heures officielles des bourses (heures locales, heure avancée gérée automatiquement). Les jours fériés ne sont pas pris en compte : vérifie le calendrier de la bourse avant un congé.','Official exchange hours (local time, daylight saving handled automatically). Holidays are not included: check the exchange calendar before a holiday.')}</p>`;
+      <p class="src">${L('Heures officielles des bourses (heures locales). Les jours fériés ne sont pas pris en compte : vérifie le calendrier de la bourse avant un congé.','Official exchange hours (local time). Holidays are not included: check the exchange calendar before a holiday.')}</p>`;
+    state.mhDay = tp.d;
     tickHours();
-    if(!state.hoursTimer) state.hoursTimer = setInterval(()=>{ if(state.page==='hours') tickHours(); }, 1000);
+    if(!state.hoursTimer) state.hoursTimer = setInterval(()=>{ if(state.page==='hours' && !document.hidden) tickHours(); }, 1000);
   }
   function tickHours(){
-    const now = Date.now();
-    document.querySelectorAll('#p2hours [data-tz]').forEach(el=>{ const p = tzParts(el.dataset.tz); el.innerHTML = `${String(p.h).padStart(2,'0')}:${String(p.mi).padStart(2,'0')}<small>:${String(p.s).padStart(2,'0')}</small>`; });
-    document.querySelectorAll('#p2hours [data-cdt]').forEach(el=>{ const ms = +el.dataset.cdt - now; if(ms<=0){ if(!tickHours._r){ tickHours._r = 1; setTimeout(()=>{ tickHours._r = 0; renderHours(); }, 1500); } return; } el.textContent = durTxt(ms); });
-    const tp = tzParts('America/Toronto'), ds = tzEpoch(tp.y,tp.mo,tp.d,0,'America/Toronto'), pc = Math.max(0,Math.min(100,(now-ds)/864e5*100));
-    document.querySelectorAll('#p2hours .hnow').forEach(el=>el.style.left = pc+'%');
-    const em = document.querySelector('#hnow em'); if(em) em.textContent = new Date(now).toLocaleTimeString(LOC(),{hour:'2-digit',minute:'2-digit'});
+    const box = $('p2hours'); if(!box || !$('mhDig')) return;
+    const tz = USER_TZ, now = Date.now(), p = tzParts(tz);
+    if(p.d !== state.mhDay){ renderHours(); return; }
+    const dayStart = tzEpoch(p.y, p.mo, p.d, 0, tz);
+    $('mhDig').innerHTML = `${p2d(p.h)}:${p2d(p.mi)}<span>:${p2d(p.s)}</span>`;
+    $('mhDate').textContent = `${new Date(now).toLocaleDateString(LOC(),{weekday:'long', day:'numeric', month:'long', year:'numeric', timeZone:tz})} · ${utcOff(tz)}`.toUpperCase();
+    const sd = p.s*6, md = p.mi*6 + p.s*.1, hd = (p.h%12)*30 + p.mi*.5;
+    [['mhS',sd],['mhM',md],['mhH',hd]].forEach(([id,d])=>{ const el = $(id); if(el) el.setAttribute('transform', `rotate(${d.toFixed(2)} 160 160)`); });
+    const g24 = $('mh24'); if(g24) g24.style.transform = `rotate(${((now-dayStart)/864e5*360).toFixed(2)}deg)`;
+    const nl = $('mhNow'); if(nl){ nl.style.left = Math.max(0,Math.min(100,(now-dayStart)/864e5*100))+'%'; nl.querySelector('em').textContent = `${p2d(p.h)}:${p2d(p.mi)}`; }
+    const live = [];
+    SES.forEach(m=>{
+      const s = sesState(m, now); if(s.live) live.push(m);
+      box.querySelectorAll(`[data-ses="${m.k}"]`).forEach(el=>el.classList.toggle('on', s.live));
+      const b = box.querySelector(`[data-bdg="${m.k}"]`); if(b){ b.className = 'mhbadge'+(s.live?' on':''); b.innerHTML = `<i></i>${s.live?L('EN DIRECT','LIVE'):L('FERMÉE','CLOSED')}`; }
+      const l = box.querySelector(`[data-cdl="${m.k}"]`); if(l) l.textContent = s.live ? L('FERME DANS','CLOSES IN') : L('OUVRE DANS','OPENS IN');
+      const c = box.querySelector(`[data-cd="${m.k}"]`); if(c) c.textContent = s.live ? cdTxt(s.e-now) : (s.s ? cdTxt(s.s-now) : '—');
+      const pr = box.querySelector(`[data-pr="${m.k}"]`);
+      if(pr){ let f = 0; if(s.live) f = (now-s.s)/(s.e-s.s); else if(s.s && s.prevEnd) f = (now-s.prevEnd)/(s.s-s.prevEnd); pr.style.width = (Math.max(0,Math.min(1,f))*100).toFixed(2)+'%'; }
+    });
+    box.querySelectorAll('[data-mtz]').forEach(el=>{ const q = tzParts(el.dataset.mtz); el.innerHTML = `${p2d(q.h)}:${p2d(q.mi)}<span>:${p2d(q.s)}</span>`; });
+    const lv = $('mhLive'); if(lv){ lv.querySelector('span').textContent = `${live.length}/4 ${L('SESSIONS EN DIRECT','SESSIONS LIVE')}`; lv.classList.toggle('none', !live.length); }
+    const ov = $('mhOv');
+    if(ov){ const nm = m => (isEN()?m.n[1]:m.n[0]).toUpperCase();
+      let t;
+      if(!fxStatus(now)) t = L('FOREX FERMÉ — LE MARCHÉ ROUVRE DIMANCHE 17 H (NEW YORK)','FOREX CLOSED — MARKET REOPENS SUNDAY 5 P.M. (NEW YORK)');
+      else if(live.length>=2){ const k = live.map(m=>m.k).join(','); t = `${L('CHEVAUCHEMENT','OVERLAP')} · ${live.map(nm).join(' + ')} — ${k.includes('lon') && k.includes('ny') ? L('LIQUIDITÉ MAXIMALE','PEAK LIQUIDITY') : L('LIQUIDITÉ EN HAUSSE','RISING LIQUIDITY')}`; }
+      else if(live.length===1) t = `${L('SESSION ACTIVE','ACTIVE SESSION')} · ${nm(live[0])}`;
+      else t = L('ENTRE DEUX SESSIONS — MARCHÉ PLUS CALME','BETWEEN SESSIONS — QUIETER MARKET');
+      ov.textContent = t; ov.classList.toggle('pk', live.length>=2); }
+    box.querySelectorAll('[data-cdt]').forEach(el=>{ const ms = +el.dataset.cdt - now; if(ms<=0){ if(!tickHours._r){ tickHours._r = 1; setTimeout(()=>{ tickHours._r = 0; renderHours(); }, 1500); } return; } el.textContent = durTxt(ms); });
+    const pc = Math.max(0,Math.min(100,(now-dayStart)/864e5*100));
+    box.querySelectorAll('.hnow').forEach(el=>el.style.left = pc+'%');
   }
 
   // ---------- Nouvelles ----------
@@ -3003,7 +3187,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   // ---------- branchement ----------
   function renderP2(){
     const pg = state.page;
-    if(pg==='home'){ renderHome(); renderGlobe(); }
+    if(pg==='home') renderHome();
     else if(pg==='hours') renderHours();
     else if(pg==='charts') renderCharts();
     else if(pg==='eco') renderEco();
@@ -3060,6 +3244,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
     try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', charts:'graphiques', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
+    try{ if(typeof globeObj!=='undefined' && globeObj){ if(pg==='globe') globeObj.resumeAnimation(); else globeObj.pauseAnimation(); } }catch(e){}
     p2Page(pg); pageFx(pg); if(typeof renderMbar==='function') renderMbar();
   }
   document.querySelectorAll('.pages button').forEach(b=>b.addEventListener('click', ()=>showPage(b.dataset.page)));
@@ -3068,7 +3253,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas','#monde':'home','#heures-marches':'hours','#market-hours':'hours'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas','#monde':'globe','#carte-du-monde':'globe','#world-map':'globe','#heures-marches':'hours','#market-hours':'hours'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
