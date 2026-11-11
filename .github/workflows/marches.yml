@@ -1,0 +1,36 @@
+name: Marchés, force des devises et risque
+on:
+  schedule:
+    - cron: '23 * * * 1-5'      # toutes les heures en semaine
+    - cron: '23 */6 * * 0,6'    # aux 6 heures la fin de semaine (crypto)
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency: marches
+jobs:
+  marches:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+      - name: Données (Yahoo Finance)
+        run: node tools/snap_markets.mjs markets_new.json ohlc_new.json
+      - name: Mise à jour de markets.json et ohlc.json
+        run: |
+          git config user.name "scorecard-bot"
+          git config user.email "scorecard-bot@users.noreply.github.com"
+          for i in 1 2 3; do
+            git pull --rebase -q origin main
+            cp markets_new.json markets.json; cp ohlc_new.json ohlc.json
+            python3 -m json.tool markets.json > /dev/null && python3 -m json.tool ohlc.json > /dev/null
+            git add markets.json ohlc.json
+            git diff --cached --quiet && { echo "Rien de nouveau"; exit 0; }
+            git commit -q -m "Marchés du $(date -u +'%F %H:%M') UTC"
+            git push -q origin main && exit 0
+            git reset -q --hard origin/main
+            sleep 10
+          done
+          exit 1
