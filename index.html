@@ -3848,6 +3848,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   // ---------- Track Record : journal de trading ----------
   state.jTab = state.jTab || 'dash';
   function jLoad(){ if(state.jr) return state.jr; state.jr = LS('journal') || {start:10000, trades:[]}; return state.jr; }
+  (async()=>{ try{ const c = window.claude; state.dlNs = c && c.use ? await c.use('downloads') : null; }catch(e){ state.dlNs = null; } })();
   async function jSave(){ LS('journal', state.jr); if(state.jdb){ try{ await state.jdb.set({items:state.jr.trades, start:state.jr.start}); }catch(e){} } }
   async function jConnect(){ // version Claude : journal privé dans la base (data/users/<id>)
     if(state.jdbTried) return; state.jdbTried = true;
@@ -3910,7 +3911,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       jSave(); renderJournal(); });
     box.querySelectorAll('.jdel').forEach(b=>b.addEventListener('click', ()=>{ J.trades = J.trades.filter(x=>x.id!==b.dataset.id); jSave(); renderJournal(); }));
     $('jExp').addEventListener('click', ()=>{ const rows = [['date','asset','side','entry','exit','pnl','note']].concat(J.trades.map(x=>[x.date,x.asset,x.side,x.entry,x.exit,x.pnl,(x.note||'').replace(/[",\n]/g,' ')]));
-      const blob = new Blob([rows.map(r=>r.join(',')).join('\n')], {type:'text/csv'}); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'journal-trading.csv'; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href), 2000); });
+      const csv = rows.map(r=>r.join(',')).join('\n'); const dl = (state.dlNs !== undefined) ? state.dlNs : null;
+      if(dl){ dl.save({filename:'journal-trading.csv', data:csv}).catch(()=>{}); return; }
+      const blob = new Blob([csv], {type:'text/csv'}); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'journal-trading.csv'; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href), 2000); });
     $('jFile').addEventListener('change', e=>{ const f = e.target.files[0]; if(!f) return; f.text().then(txt=>{
       const lines = txt.trim().split(/\r?\n/), head = lines[0].toLowerCase().split(/[,;]/).map(x=>x.trim()), ix = n => head.findIndex(h=>h===n || h.includes(n));
       const iD = ix('date'), iA = ix('asset')>=0?ix('asset'):ix('symbol'), iS = ix('side')>=0?ix('side'):ix('type'), iE = ix('entry')>=0?ix('entry'):ix('open'), iX = ix('exit')>=0?ix('exit'):ix('close'), iP = ix('pnl')>=0?ix('pnl'):ix('profit'), iN = ix('note');
