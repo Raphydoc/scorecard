@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T20:43:07Z",
+ "updatedAt": "2026-11-11T22:48:09Z",
  "econ": {
   "values": {
    "gdp": {
@@ -731,7 +731,22 @@
  "news": [
   {
    "date": "2026-11-11",
-   "time": "15:24",
+   "time": "17:07",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia recule après la clôture : nouvelles allégations d’une relation de Jensen Huang avec une dirigeante",
+   "title_en": "Nvidia slides after hours on fresh allegations of a Jensen Huang relationship with an executive",
+   "summary": "Nvidia perd environ 3 % à 4,5 % après la clôture (vers 165,87 $ à 17 h 26, contre 173,73 $ à la clôture) après un nouveau rapport, attribué au New York Times, alléguant une relation entre Jensen Huang et Kimberly Powell, vice-présidente de la santé chez Nvidia qui relève de lui. Nvidia refuse de commenter; l’enquête indépendante du conseil sur l’affaire Alice Huang se poursuit. Ça ajoute au risque de gouvernance qui pèse sur le Nasdaq et le S&P 500 avant les résultats de Nvidia le 17 novembre.",
+   "summary_en": "Nvidia fell roughly 3% to 4.5% after hours (around $165.87 at 5:26 p.m. versus a $173.73 close) after a new report, attributed to the New York Times, alleged a relationship between Jensen Huang and Kimberly Powell, Nvidia's VP of healthcare who reports to him. Nvidia declined to comment; the board's independent probe into the Alice Huang matter is ongoing. It adds to the governance risk weighing on the Nasdaq and S&P 500 ahead of Nvidia's Nov. 17 earnings.",
+   "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-slip-in-afterhours-trading-on-fresh-allegations-of-ceo-relationship-5019943"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "16:00",
    "source": "Yahoo Finance",
    "impact": "med",
    "assets": [
@@ -743,10 +758,10 @@
     "usoil",
     "btcusd"
    ],
-   "title": "Fin de séance : le Nasdaq gagne 1,7 % et le S&P 500 1,4 % avec Nvidia et CoreWeave; l’or repasse sous 4 000 $",
-   "title_en": "Late session: Nasdaq up 1.7%, S&P 500 up 1.4% on Nvidia and CoreWeave; gold slips below $4,000",
-   "summary": "Vers 15 h 24, le Nasdaq gagne 1,69 % à 25 490,11, le S&P 500 1,35 % à 7 622,65, le Russell 2000 0,86 % et le Dow 0,47 % à 52 478,25; le VIX recule de 10,3 % à 17,45. Nvidia remonte de 3,47 % à 174,66 $ malgré l’enquête de son conseil sur les liens présumés de Jensen Huang avec une espionne chinoise, et CoreWeave bondit de 22,5 % grâce à ses perspectives relevées. L’or recule de 0,91 % à 3 993,60 $, le pétrole gagne 0,34 % à 86,33 $ et le bitcoin 1 % à environ 74 425 $; le marché obligataire est fermé pour le Veterans Day.",
-   "summary_en": "Around 3:24 p.m., the Nasdaq was up 1.69% at 25,490.11, the S&P 500 up 1.35% at 7,622.65, the Russell 2000 up 0.86% and the Dow up 0.47% at 52,478.25; the VIX fell 10.3% to 17.45. Nvidia rose 3.47% to $174.66 despite its board's probe into Jensen Huang's alleged ties to a Chinese spy, and CoreWeave jumped 22.5% on a raised outlook. Gold fell 0.91% to $3,993.60, oil rose 0.34% to $86.33 and bitcoin gained 1% to about $74,425; the bond market is closed for Veterans Day.",
+   "title": "Clôture : le Nasdaq gagne 1,60 % et le S&P 500 1,31 % avec Nvidia et CoreWeave; l’or sous 4 000 $",
+   "title_en": "Close: Nasdaq up 1.60%, S&P 500 up 1.31% on Nvidia and CoreWeave; gold below $4,000",
+   "summary": "Le Nasdaq clôture en hausse de 1,60 % à 25 466,19, le S&P 500 de 1,31 % à 7 619,38, le Russell 2000 de 0,88 % à 2 846,26 et le Dow de 0,49 % à 52 486,49. Nvidia termine en hausse de 2,92 % à 173,73 $ malgré une décote de Baird à « neutre », et CoreWeave s’envole d’environ 24 % après avoir relevé ses prévisions de revenus. L’or recule de 0,89 % à 3 994,30 $ et le bitcoin gagne environ 1 % vers 74 300 $; le marché obligataire était fermé pour le Veterans Day.",
+   "summary_en": "The Nasdaq closed up 1.60% at 25,466.19, the S&P 500 up 1.31% at 7,619.38, the Russell 2000 up 0.88% at 2,846.26 and the Dow up 0.49% at 52,486.49. Nvidia ended 2.92% higher at $173.73 despite a Baird downgrade to Neutral, and CoreWeave surged about 24% after raising its revenue outlook. Gold fell 0.89% to $3,994.30 and bitcoin gained about 1% to around $74,300; the bond market was closed for Veterans Day.",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
   },
   {
@@ -1121,20 +1136,6 @@
    "title": "Le Brent au-dessus de 102 $, le WTI près de 91 $",
    "title_en": "Brent above $102, WTI near $91",
    "url": "https://finance.yahoo.com/energy/articles/current-price-oil-november-6-124500137.html"
-  },
-  {
-   "assets": [
-    "btcusd"
-   ],
-   "date": "2026-11-04",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Le bitcoin est remonté d’un creux sous 76 000 $ à environ 78 300 $ (+1 %) quand les résultats des élections de mi-mandat se sont clarifiés. Les FNB bitcoin au comptant ont toutefois subi 515 M$ de sorties le mois dernier.",
-   "summary_en": "Bitcoin rebounded from a dip below $76,000 to about $78,300 (+1%) as midterm results became clearer. Spot bitcoin ETFs, however, saw $515M of outflows last month.",
-   "time": "12:00",
-   "title": "Le bitcoin remonte vers 78 000 $ quand l’incertitude des élections se dissipe",
-   "title_en": "Bitcoin climbs back toward $78,000 as midterm uncertainty fades",
-   "url": "https://www.coindesk.com/markets/2026/11/04/bitcoin-knocks-on-usd78-000-in-v-shaped-comeback-as-midterm-uncertainty-fades"
   }
  ],
  "live": {
