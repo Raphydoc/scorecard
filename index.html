@@ -2261,7 +2261,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       box.dataset.tvk = key; box.hidden = false; box.classList.add('tv');
       box.innerHTML = `<span class="tlive"><i></i>${L('EN DIRECT','LIVE')}</span><div class="tvtape tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>`;
       const s = document.createElement('script'); s.async = true; s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
-      s.text = JSON.stringify({symbols:Object.keys(ASSETS).map(a=>({proName:TV_SYM[a], title:TOP_NAMES[a]})), showSymbolLogo:true, isTransparent:true, displayMode:'adaptive', colorTheme:tvTheme(), locale:isEN()?'en':'fr'});
+      s.text = JSON.stringify({symbols:Object.keys(ASSETS).map(a=>({proName:TV_SYM[a], title:TOP_NAMES[a]})), showSymbolLogo:true, isTransparent:true, displayMode:'regular', colorTheme:tvTheme(), locale:isEN()?'en':'fr'});
       const fail = () => { if(box.querySelector('.tvtape iframe')) return; state.tvTapeFail = true; delete box.dataset.tvk; box.classList.remove('tv'); renderTape(); };
       s.onerror = fail; box.querySelector('.tvtape').appendChild(s); setTimeout(fail, 8000);
       return;
