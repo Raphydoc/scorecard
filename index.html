@@ -1788,7 +1788,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- TradingView ----------
-  function tvTheme(){ const t = document.documentElement.dataset.theme; if(t==='dark' || t==='light') return t; return window.matchMedia && matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'; }
+  function tvTheme(){ return 'dark'; } // TradingView toujours en noir
   function tv(boxId, name, cfg, height){
     const box = $(boxId); if(!box) return;
     const key = name+JSON.stringify(cfg)+tvTheme()+(isEN()?'en':'fr');
