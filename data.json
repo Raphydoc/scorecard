@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-10T22:36:46Z",
+ "updatedAt": "2026-11-11T00:43:09Z",
  "econ": {
   "values": {
    "gdp": {
@@ -678,6 +678,38 @@
   "source": "CME FedWatch"
  },
  "news": [
+  {
+   "date": "2026-11-10",
+   "time": "16:15",
+   "source": "Yahoo Finance",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "CoreWeave bondit d’environ 5 % après la clôture : revenus du T3 au-dessus des attentes et prévisions relevées",
+   "title_en": "CoreWeave jumps about 5% after hours as Q3 revenue beats and outlook is raised",
+   "summary": "CoreWeave a déclaré des revenus de 3,66 G$ au T3 (consensus : 3,56 G$) et une perte de 1,27 $ par action, moins lourde que les 1,46 $ attendus; elle relève sa prévision annuelle à 13–13,3 G$. L’action gagnait 5,03 % à 51,18 $ hors séance, après une chute de plus de 40 % en un mois sur les craintes liées au financement de l’IA. Un test pour le sentiment envers les titres de l’IA, qui pèsent sur le Nasdaq.",
+   "summary_en": "CoreWeave reported Q3 revenue of $3.66 billion (consensus $3.56 billion) and a loss of $1.27 per share, narrower than the $1.46 expected, and raised its full-year outlook to $13–13.3 billion. Shares rose 5.03% to $51.18 after hours, following a drop of more than 40% over the past month on AI-financing worries. A test of sentiment toward the AI names that weigh on the Nasdaq.",
+   "url": "https://finance.yahoo.com/markets/stocks/article/coreweave-stock-pops-as-q3-revenue-beats-estimates-company-raises-full-year-outlook-211533280.html"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "16:00",
+   "source": "Yahoo Finance",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "rut"
+   ],
+   "title": "Clôture : Wall Street recule après l’IPC chaud — Nasdaq −0,74 %, S&P 500 −0,38 %, Nvidia −5,5 %",
+   "title_en": "Close: Wall Street falls after hot CPI — Nasdaq −0.74%, S&P 500 −0.38%, Nvidia −5.5%",
+   "summary": "Le S&P 500 a terminé à 7 520,93 (−0,38 %), le Dow à 52 231,89 (−0,30 %), le Nasdaq à 25 065,88 (−0,74 %) et le Russell 2000 à 2 821,38 (−0,68 %). Nvidia a clôturé à 168,89 $ (−5,47 %). L’IPC plus chaud que prévu et les propos de Waller ont renforcé les paris d’une hausse de taux de la Fed en décembre, ce qui pèse sur les actions.",
+   "summary_en": "The S&P 500 closed at 7,520.93 (−0.38%), the Dow at 52,231.89 (−0.30%), the Nasdaq at 25,065.88 (−0.74%) and the Russell 2000 at 2,821.38 (−0.68%). Nvidia closed at $168.89 (−5.47%). The hotter-than-expected CPI and Waller’s comments reinforced bets on a Fed rate hike in December, weighing on stocks.",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
+  },
   {
    "date": "2026-11-10",
    "time": "13:31",
