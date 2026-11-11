@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T22:48:09Z",
+ "updatedAt": "2026-11-11T22:49:34Z",
  "econ": {
   "values": {
    "gdp": {
@@ -30045,5 +30045,184 @@
    "rates": "BIS · Central bank policy rates (WS_CBPOL)",
    "mkts": "Yahoo Finance · clôtures quotidiennes"
   }
+ },
+ "ts": {
+  "asOf": "2026-11-11T22:49:20Z",
+  "recaps": [
+   {
+    "date": "2026-11-11",
+    "session": "ny",
+    "title": "CoreWeave rallume l’IA : le Nasdaq gagne 1,6 %, l’or glisse sous 4 000 $",
+    "title_en": "CoreWeave revives the AI trade: Nasdaq up 1.6%, gold slips below $4,000",
+    "body": "Wall Street a rebondi après deux séances de recul liées à l’IPC chaud : le Nasdaq a clôturé en hausse de 1,60 % à 25 466,19, le S&P 500 de 1,31 % à 7 619,38 et le Dow de 0,49 % à 52 486,49, CoreWeave bondissant de 24,7 % après ses résultats et l’indice des semi-conducteurs de 5,7 %. Le marché obligataire au comptant était fermé pour le Veterans Day, mais les paris d’une hausse de taux de la Fed en décembre restent solidement ancrés, Goldman Sachs ajoutant même une hausse en mars à sa prévision. Ce contexte a gardé le dollar ferme et pesé sur les métaux : l’or a reculé de 1,32 % pendant la séance pour finir près de 3 992 $. Le bitcoin a progressé d’environ 1,1 % tandis que le WTI a cédé 0,72 % vers 86,33 $.",
+    "body_en": "Wall Street rebounded after two sessions of losses tied to the hot CPI: the Nasdaq closed up 1.60% at 25,466.19, the S&P 500 up 1.31% at 7,619.38 and the Dow up 0.49% at 52,486.49, as CoreWeave jumped 24.7% after earnings and the semiconductor index rose 5.7%. The cash bond market was closed for Veterans Day, but bets on a December Fed rate hike remain firmly in place, with Goldman Sachs even adding a March hike to its forecast. That backdrop kept the dollar firm and weighed on metals: gold fell 1.32% during the session to end near $3,992. Bitcoin gained about 1.1% while WTI slipped 0.72% to around $86.33.",
+    "sections": {
+     "indices": {
+      "fr": "Clôture : Nasdaq +1,60 %, S&P 500 +1,31 %, Dow +0,49 %; mesuré de l’ouverture de 9 h 30 à la clôture, le Nasdaq 100 gagne 0,45 %, le S&P 500 0,41 %, le Dow 0,54 % et le Russell 2000 0,13 %, l’essentiel de la hausse ayant été acquis à l’ouverture.",
+      "en": "Close: Nasdaq +1.60%, S&P 500 +1.31%, Dow +0.49%; measured from the 9:30 a.m. open to the close, the Nasdaq 100 gained 0.45%, the S&P 500 0.41%, the Dow 0.54% and the Russell 2000 0.13%, with most of the gain made at the open."
+     },
+     "metals": {
+      "fr": "L’or a perdu 1,32 % durant la séance (4 045,60 $ à 3 992,10 $) et l’argent 1,93 % (52,75 $ à 51,73 $), freinés par le dollar ferme et la perspective de hausses de taux de la Fed.",
+      "en": "Gold lost 1.32% during the session ($4,045.60 to $3,992.10) and silver 1.93% ($52.75 to $51.73), held back by a firm dollar and the prospect of Fed rate hikes."
+     },
+     "forex": {
+      "fr": "L’indice du dollar a gagné 0,14 %; l’EUR/USD a reculé de 0,12 % à 1,1091, l’USD/JPY a monté de 0,19 % à 159,85, près du seuil de 160 surveillé par Tokyo, et l’USD/CAD de 0,08 % à 1,4251.",
+      "en": "The dollar index rose 0.14%; EUR/USD fell 0.12% to 1.1091, USD/JPY rose 0.19% to 159.85, near the 160 level Tokyo watches, and USD/CAD gained 0.08% to 1.4251."
+     },
+     "crypto": {
+      "fr": "Le bitcoin a gagné 1,13 % pendant la séance, de 73 734 $ à 74 568 $, profitant modestement du regain d’appétit pour le risque.",
+      "en": "Bitcoin gained 1.13% during the session, from $73,734 to $74,568, modestly benefiting from the renewed risk appetite."
+     },
+     "energy": {
+      "fr": "Le WTI a reculé de 0,72 % pendant la séance, de 86,96 $ à 86,33 $, effaçant une partie des gains du matin liés aux attaques de navires dans le détroit d’Ormuz.",
+      "en": "WTI fell 0.72% during the session, from $86.96 to $86.33, giving back part of the morning gains tied to ship attacks in the Strait of Hormuz."
+     }
+    },
+    "sources": [
+     "https://www.marketscreener.com/news/stocks-end-higher-as-coreweave-results-ease-ai-spending-worries-ce785edbd18cf726",
+     "https://www.investing.com/news/economy-news/goldman-expects-additional-fed-rate-hike-in-march-5017688",
+     "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-november-11-2026-gold-prices-fall-back-as-inflation-concerns-broaden-121148323.html",
+     "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347"
+    ]
+   }
+  ],
+  "research": [
+   {
+    "bank": "Goldman Sachs",
+    "date": "2026-11-10",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "title": "Goldman ajoute une hausse de taux de la Fed en mars",
+    "title_en": "Goldman adds a March Fed rate hike",
+    "summary": "Après l’IPC chaud d’octobre, Goldman Sachs prévoit maintenant une hausse de 25 pb en mars, en plus de décembre, plutôt qu’une fin du cycle en décembre. La banque repousse le début des baisses de taux à décembre 2027.",
+    "summary_en": "After October's hot CPI, Goldman Sachs now expects a 25 bp hike in March on top of December, instead of the cycle ending in December. The bank pushes the start of rate cuts back to December 2027.",
+    "url": "https://www.investing.com/news/economy-news/goldman-expects-additional-fed-rate-hike-in-march-5017688"
+   },
+   {
+    "bank": "Deutsche Bank",
+    "date": "2026-11-10",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "title": "Deutsche Bank s’attend à trois hausses de la Fed : décembre, janvier et mars",
+    "title_en": "Deutsche Bank expects three Fed hikes: December, January and March",
+    "summary": "Matt Luzzetti, économiste en chef, prévoit des hausses de 25 pb aux réunions de décembre, janvier et mars; une hausse de 50 pb est possible, mais ce n’est pas son scénario de base.",
+    "summary_en": "Chief economist Matt Luzzetti expects 25 bp hikes at the December, January and March meetings; a 50 bp move is possible but not his baseline.",
+    "url": "https://finance.yahoo.com/economy/policy/article/hot-inflation-report-has-wall-street-eyeing-whether-the-fed-could-make-a-jumbo-rate-hike-next-month-164942156.html"
+   },
+   {
+    "bank": "Natixis",
+    "date": "2026-11-10",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "title": "Natixis juge une hausse de 50 pb de la Fed en décembre bien possible",
+    "title_en": "Natixis sees a 50 bp December Fed hike as a live possibility",
+    "summary": "Chris Hodge, économiste en chef, cite l’inflation tenace et les propos de Waller et estime que la Fed « risque de prendre du retard » si elle n’agit pas de façon décisive.",
+    "summary_en": "Chief economist Chris Hodge cites sticky inflation and Waller's remarks, saying the Fed \"risks getting behind the curve by not acting decisively.\"",
+    "url": "https://finance.yahoo.com/economy/policy/article/hot-inflation-report-has-wall-street-eyeing-whether-the-fed-could-make-a-jumbo-rate-hike-next-month-164942156.html"
+   }
+  ],
+  "bankcalls": [
+   {
+    "bank": "Goldman Sachs",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "dir": "long",
+    "target": "4 150 $ d’ici fin 2026 (4 800 $ fin 2027)",
+    "horizon": "fin 2026",
+    "date": "2026-11-05",
+    "src": "Reuters",
+    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46M1RO:0-goldman-sachs-trims-gold-forecasts-as-fed-stays-hawkish/"
+   }
+  ],
+  "cbanks": [
+   {
+    "cb": "Fed",
+    "ccy": "USD",
+    "cc": "US",
+    "rate": "3,75 – 4,00",
+    "next": "2026-12-09",
+    "cut": 0,
+    "hold": 19.5,
+    "hike": 80.5,
+    "src": "CME FedWatch"
+   },
+   {
+    "cb": "BCE",
+    "ccy": "EUR",
+    "cc": "EU",
+    "rate": "2,50",
+    "next": "2026-12-17",
+    "cut": null,
+    "hold": null,
+    "hike": null,
+    "src": "BCE"
+   },
+   {
+    "cb": "BoE",
+    "ccy": "GBP",
+    "cc": "GB",
+    "rate": "4,00",
+    "next": "2026-12-17",
+    "cut": null,
+    "hold": null,
+    "hike": null,
+    "src": "Banque d’Angleterre"
+   },
+   {
+    "cb": "BoJ",
+    "ccy": "JPY",
+    "cc": "JP",
+    "rate": "1,25",
+    "next": "2026-12-18",
+    "cut": null,
+    "hold": null,
+    "hike": null,
+    "src": "Banque du Japon"
+   },
+   {
+    "cb": "BNS",
+    "ccy": "CHF",
+    "cc": "CH",
+    "rate": "0,00",
+    "next": "2026-12-10",
+    "cut": null,
+    "hold": null,
+    "hike": null,
+    "src": "BNS"
+   },
+   {
+    "cb": "BoC",
+    "ccy": "CAD",
+    "cc": "CA",
+    "rate": "2,50",
+    "next": "2026-12-09",
+    "cut": null,
+    "hold": null,
+    "hike": null,
+    "src": "Banque du Canada"
+   },
+   {
+    "cb": "RBA",
+    "ccy": "AUD",
+    "cc": "AU",
+    "rate": "4,85",
+    "next": "2026-12-08",
+    "cut": null,
+    "hold": null,
+    "hike": null,
+    "src": "RBA"
+   },
+   {
+    "cb": "RBNZ",
+    "ccy": "NZD",
+    "cc": "NZ",
+    "rate": "2,75",
+    "next": "2026-12-09",
+    "cut": null,
+    "hold": null,
+    "hike": null,
+    "src": "RBNZ"
+   }
+  ]
  }
 }
