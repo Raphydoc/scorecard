@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T22:49:34Z",
+ "updatedAt": "2026-11-11T22:52:57Z",
  "econ": {
   "values": {
    "gdp": {
@@ -30047,7 +30047,7 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-11T22:49:20Z",
+  "asOf": "2026-11-11T22:52:34Z",
   "recaps": [
    {
     "date": "2026-11-11",
@@ -30084,9 +30084,90 @@
      "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-november-11-2026-gold-prices-fall-back-as-inflation-concerns-broaden-121148323.html",
      "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347"
     ]
+   },
+   {
+    "date": "2026-11-11",
+    "session": "lon",
+    "title": "L’Europe touche un record grâce à l’IA; le dollar s’envole et l’or recule de 1,5 %",
+    "title_en": "Europe hits a record on AI; the dollar climbs and gold drops 1.5%",
+    "body": "Le STOXX 600 a signé un record de clôture, porté par Siemens Energy (+8,3 % après des perspectives relevées) et par les résultats de CoreWeave, qui ont ravivé l’optimisme pour l’IA et fait grimper les contrats à terme du Nasdaq d’environ 2 % avant l’ouverture à New York. Le dollar a profité des paris d’une hausse de taux de la Fed : l’indice a gagné 0,54 %, l’EUR/USD a perdu 0,54 % et l’USD/JPY a monté de 0,62 % près de 159,86. L’or a reculé de 1,45 % et l’argent de 1,87 %. Le pétrole a bondi de 1,84 % avec la poursuite des attaques de navires dans le détroit d’Ormuz.",
+    "body_en": "The STOXX 600 posted a record close, driven by Siemens Energy (+8.3% after raising its outlook) and CoreWeave's results, which revived AI optimism and lifted Nasdaq futures about 2% before the New York open. The dollar benefited from bets on a Fed rate hike: the index gained 0.54%, EUR/USD lost 0.54% and USD/JPY rose 0.62% to near 159.86. Gold fell 1.45% and silver 1.87%. Oil jumped 1.84% as ship attacks continued in the Strait of Hormuz.",
+    "sections": {
+     "indices": {
+      "fr": "Le STOXX 600 a clôturé à un record, la tech européenne gagnant environ 2 %; à New York, les contrats à terme du Nasdaq 100 grimpaient d’environ 2 % avant l’ouverture.",
+      "en": "The STOXX 600 closed at a record, with European tech up about 2%; in New York, Nasdaq 100 futures were up about 2% before the open."
+     },
+     "metals": {
+      "fr": "L’or a perdu 1,45 % pendant la séance (4 066,90 $ à 4 008,10 $) et l’argent 1,87 % (53,06 $ à 52,07 $), sous la pression du dollar.",
+      "en": "Gold lost 1.45% during the session ($4,066.90 to $4,008.10) and silver 1.87% ($53.06 to $52.07), pressured by the dollar."
+     },
+     "forex": {
+      "fr": "L’indice du dollar a gagné 0,54 %; l’EUR/USD a chuté de 0,54 % à 1,1096, l’USD/JPY a monté de 0,62 % à 159,86 et l’USD/CAD de 0,21 % à 1,4244.",
+      "en": "The dollar index rose 0.54%; EUR/USD fell 0.54% to 1.1096, USD/JPY rose 0.62% to 159.86 and USD/CAD 0.21% to 1.4244."
+     },
+     "crypto": {
+      "fr": "Le bitcoin a gagné 0,29 % à 74 213 $, malgré une quatrième journée de sorties des FNB américains au comptant mardi.",
+      "en": "Bitcoin gained 0.29% to $74,213, despite a fourth day of outflows from U.S. spot ETFs on Tuesday."
+     },
+     "energy": {
+      "fr": "Le WTI a bondi de 1,84 % à 87,83 $ : les attaques de navires à Ormuz et le refus de Téhéran de négocier avec Washington freinent l’espoir d’une trêve.",
+      "en": "WTI jumped 1.84% to $87.83: ship attacks in Hormuz and Tehran's refusal to negotiate with Washington dampen truce hopes."
+     }
+    },
+    "sources": [
+     "https://finance.yahoo.com/markets/stocks/articles/european-stocks-near-record-high-102945417.html",
+     "https://www.marketscreener.com/news/europe-s-stoxx-600-near-record-high-as-siemens-energy-coreweave-outlooks-lift-sentiment-ce785edbda88f720",
+     "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347",
+     "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks",
+     "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+    ]
+   },
+   {
+    "date": "2026-11-11",
+    "session": "tok",
+    "title": "Les puces d’IA portent Tokyo et Séoul; l’argent rebondit de 2,8 %",
+    "title_en": "AI chips lift Tokyo and Seoul; silver rebounds 2.8%",
+    "body": "Malgré le recul de Wall Street après l’IPC chaud, les places asiatiques ont surtout monté grâce à la demande de puces d’IA : le Nikkei a gagné 0,8 % à 60 942,48 et le Kospi 1,6 % à 5 321,10, tandis que le Hang Seng a cédé 0,7 %. À Taïwan, TSMC a bondi de 3,1 % après des revenus d’octobre près de six fois supérieurs à ceux d’il y a un an. Les métaux ont repris une partie de leurs pertes de mardi, l’argent gagnant 2,79 % et l’or 0,53 %. Le dollar est resté ferme et les marchés continuent de miser sur une hausse de taux de la Fed en décembre.",
+    "body_en": "Despite Wall Street's pullback after the hot CPI, Asian markets mostly rose on AI chip demand: the Nikkei gained 0.8% to 60,942.48 and the Kospi 1.6% to 5,321.10, while the Hang Seng fell 0.7%. In Taiwan, TSMC jumped 3.1% after October revenue nearly six times its year-earlier level. Metals recovered part of Tuesday's losses, with silver up 2.79% and gold up 0.53%. The dollar stayed firm as markets keep betting on a December Fed rate hike.",
+    "sections": {
+     "indices": {
+      "fr": "Nikkei +0,8 %, Kospi +1,6 % (Samsung +2,3 %, SK Hynix +3,4 %), Taiex +2,1 %; Hang Seng −0,7 %, Shanghai −0,3 % et ASX 200 +0,1 %.",
+      "en": "Nikkei +0.8%, Kospi +1.6% (Samsung +2.3%, SK Hynix +3.4%), Taiex +2.1%; Hang Seng −0.7%, Shanghai −0.3% and ASX 200 +0.1%."
+     },
+     "metals": {
+      "fr": "L’or a gagné 0,53 % pendant la séance (4 046,50 $ à 4 067,90 $) et l’argent 2,79 % (51,58 $ à 53,02 $), des achats à bon compte après la chute de mardi.",
+      "en": "Gold gained 0.53% during the session ($4,046.50 to $4,067.90) and silver 2.79% ($51.58 to $53.02), on bargain buying after Tuesday's drop."
+     },
+     "forex": {
+      "fr": "L’indice du dollar a monté de 0,10 %; l’USD/JPY a peu bougé (+0,07 % à 158,82), l’EUR/USD a reculé de 0,10 % à 1,1160 et l’USD/CAD a gagné 0,15 % à 1,4207.",
+      "en": "The dollar index rose 0.10%; USD/JPY barely moved (+0.07% to 158.82), EUR/USD fell 0.10% to 1.1160 and USD/CAD gained 0.15% to 1.4207."
+     },
+     "crypto": {
+      "fr": "Le bitcoin a glissé de 0,25 % à 73 525 $, sans profiter du rebond des actions.",
+      "en": "Bitcoin slipped 0.25% to $73,525, missing out on the equity rebound."
+     },
+     "energy": {
+      "fr": "Le WTI a gagné 0,24 % à 86,39 $ et le Brent remontait vers 92,42 $ (+1 %) après sa baisse de mardi.",
+      "en": "WTI gained 0.24% to $86.39 and Brent climbed toward $92.42 (+1%) after Tuesday's drop."
+     }
+    },
+    "sources": [
+     "https://www.wsls.com/business/2026/11/11/asian-shares-mostly-rise-on-ai-chip-demand-despite-wall-streets-retreat-on-inflation-data/"
+    ]
    }
   ],
   "research": [
+   {
+    "bank": "UBS",
+    "date": "2026-11-10",
+    "topic": "ACTIONS",
+    "topic_en": "EQUITIES",
+    "title": "UBS maintient sa cible de 8 900 pour le S&P 500 à la fin de 2027",
+    "title_en": "UBS keeps its 8,900 S&P 500 target for end-2027",
+    "summary": "UBS garde sa cible de fin 2027 à 8 900 et fixe 9 600 pour la fin de 2028, jugeant que la baisse des multiples prépare de bons rendements; la banque prévoit un BPA de 430 $ en 2027 et de 490 $ en 2028.",
+    "summary_en": "UBS keeps its end-2027 target at 8,900 and sets 9,600 for end-2028, arguing the derating sets up strong returns; it sees EPS of $430 in 2027 and $490 in 2028.",
+    "url": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267"
+   },
    {
     "bank": "Goldman Sachs",
     "date": "2026-11-10",
@@ -30122,6 +30203,50 @@
    }
   ],
   "bankcalls": [
+   {
+    "bank": "Bank of America",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "dir": "short",
+    "target": "3 750 $ en moyenne au T4 2026",
+    "horizon": "T4 2026",
+    "date": "2026-10-01",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-10-01/risks-rising-gold-prices-fall-below-4000-q4-bank-america"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "cat": "cmd",
+    "market": "Brent",
+    "dir": "long",
+    "target": "105 $ en décembre 2026 (moyenne 2027 : 88 $)",
+    "horizon": "déc. 2026",
+    "date": "2026-11-01",
+    "src": "Reuters",
+    "url": "https://boereport.com/2026/11/01/goldman-sachs-raises-oil-price-forecasts-sees-brent-upside-at-140-a-barrel/"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "cat": "cmd",
+    "market": "WTI",
+    "dir": "long",
+    "target": "94 $ en décembre 2026 (moyenne 2027 : 78 $)",
+    "horizon": "déc. 2026",
+    "date": "2026-11-01",
+    "src": "Reuters",
+    "url": "https://boereport.com/2026/11/01/goldman-sachs-raises-oil-price-forecasts-sees-brent-upside-at-140-a-barrel/"
+   },
+   {
+    "bank": "UBS",
+    "cat": "idx",
+    "market": "S&P 500",
+    "dir": "long",
+    "target": "8 900 d’ici fin 2027 (9 600 fin 2028)",
+    "horizon": "fin 2027",
+    "date": "2026-11-10",
+    "src": "Investing.com",
+    "url": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267"
+   },
    {
     "bank": "Goldman Sachs",
     "cat": "cmd",
