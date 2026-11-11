@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T22:52:57Z",
+ "updatedAt": "2026-11-11T23:19:12Z",
  "econ": {
   "values": {
    "gdp": {
@@ -30046,7 +30046,7 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-11T22:52:34Z",
+  "asOf": "2026-11-11T23:19:02Z",
   "recaps": [
    {
     "date": "2026-11-11",
@@ -30157,6 +30157,39 @@
   ],
   "research": [
    {
+    "bank": "Standard Chartered",
+    "date": "2026-11-10",
+    "topic": "OR",
+    "topic_en": "GOLD",
+    "title": "Standard Chartered maintient 4 650 $ pour l’or au T4 malgré le recul",
+    "title_en": "Standard Chartered keeps $4,650 Q4 gold call despite the pullback",
+    "summary": "Suki Cooper réitère une moyenne de 4 650 $ l’once au T4 2026 et de 4 850 $ au T1 2027, jugeant que les entrées dans les FNB et les achats des banques centrales (321 t au T3) forment un plancher solide. La banque prévoit une hausse de 25 pb de la Fed en décembre, puis un statu quo en 2027.",
+    "summary_en": "Suki Cooper reiterates a $4,650/oz Q4 2026 average and $4,850 for Q1 2027, arguing ETF inflows and central bank buying (321 t in Q3) form a solid floor. The bank expects a 25 bp Fed hike in December, then a hold through 2027.",
+    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-find-solid-support-4000-standard-chartered-sees-rally-4650-year"
+   },
+   {
+    "bank": "ING",
+    "date": "2026-11-11",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "title": "ING : le 10 ans américain revient à 5 %, mais pas d’autres hausses de la Fed en 2027",
+    "title_en": "ING: US 10-year back at 5%, but no further Fed hikes into 2027",
+    "summary": "Après l’IPC chaud, ING juge la hausse de 25 pb en décembre conforme à sa prévision, mais n’en voit pas d’autres en 2027 vu le ralentissement des secteurs sensibles aux taux et de l’énergie. Les taux en euro et en livre ne devraient pas suivre aveuglément l’inflation américaine.",
+    "summary_en": "After the hot CPI, ING says a 25 bp December hike matches its forecast but sees no further hikes into 2027 given cooling rate-sensitive sectors and energy. EUR and GBP rates should not blindly follow US inflation prints.",
+    "url": "https://seekingalpha.com/article/4966354-rates-spark-back-to-5-percent-10y-ust-inflation-fears"
+   },
+   {
+    "bank": "Citi",
+    "date": "2026-11-10",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "title": "Citi s’en tient à 25 pb en décembre, mais le risque de 50 pb augmente",
+    "title_en": "Citi sticks with 25 bp in December, but sees a rising risk of 50 bp",
+    "summary": "Citi prévoit toujours une hausse de 25 pb de la Fed en décembre, tout en voyant un risque accru d’un geste de 50 pb après l’IPC d’octobre. BofA et Standard Chartered jugent aussi que la porte à 50 pb est ouverte, sans que les données le justifient encore.",
+    "summary_en": "Citi still expects a 25 bp Fed hike in December while seeing an increased risk of a 50 bp move after October's CPI. BofA and Standard Chartered also say the door to 50 bp is open, though the data do not yet firmly support it.",
+    "url": "https://www.thestandard.com.hk/finance/article/348218/Goldman-adds-another-rate-hike-to-Fed-outlook-after-hot-inflation-data"
+   },
+   {
     "bank": "UBS",
     "date": "2026-11-10",
     "topic": "ACTIONS",
@@ -30202,6 +30235,17 @@
    }
   ],
   "bankcalls": [
+   {
+    "bank": "Standard Chartered",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "dir": "long",
+    "target": "4 650 $ en moyenne au T4 2026 (4 850 $ au T1 2027)",
+    "horizon": "T4 2026",
+    "date": "2026-11-10",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-find-solid-support-4000-standard-chartered-sees-rally-4650-year"
+   },
    {
     "bank": "Bank of America",
     "cat": "cmd",
