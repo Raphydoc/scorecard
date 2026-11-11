@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T15:42:25Z",
+ "updatedAt": "2026-11-11T16:43:27Z",
  "econ": {
   "values": {
    "gdp": {
@@ -729,6 +729,40 @@
   "source": "CME FedWatch"
  },
  "news": [
+  {
+   "date": "2026-11-11",
+   "time": "10:55",
+   "source": "Yahoo Finance",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "rut"
+   ],
+   "title": "En séance : le Nasdaq gagne 1,8 %, Nvidia reprend 4 % et CoreWeave s’envole de 19 %",
+   "title_en": "Midmorning: Nasdaq up 1.8% as Nvidia regains 4% and CoreWeave soars 19%",
+   "summary": "Vers 10 h 55, le Nasdaq Composite gagne 1,78 % à 25 512,72 et le Dow recule de 0,18 % à 52 137,76; le S&P 500 avait ouvert en hausse de 0,9 %. Nvidia remonte de 4 % à 175,54 $ après deux jours de baisse (−14 % en novembre), malgré une dégradation à « neutre » par Baird, et CoreWeave bondit de 19 % grâce à ses perspectives de revenus. Le marché obligataire est fermé pour le Veterans Day.",
+   "summary_en": "Around 10:55 a.m., the Nasdaq Composite was up 1.78% at 25,512.72 and the Dow down 0.18% at 52,137.76; the S&P 500 had opened 0.9% higher. Nvidia rose 4% to $175.54 after two days of losses (down 14% in November), despite a Baird downgrade to Neutral, and CoreWeave jumped 19% on its revenue outlook. The bond market is closed for Veterans Day.",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-123445799.html"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "08:33",
+   "source": "Kitco",
+   "impact": "med",
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd",
+    "usoil"
+   ],
+   "title": "L’or et l’argent rebondissent après la chute liée à l’IPC; Ormuz fait monter le brut",
+   "title_en": "Gold, silver rebound after CPI-driven selloff; Hormuz tensions lift crude",
+   "summary": "L’or remonte de 0,27 % vers 4 042,50 $ l’once et l’argent de 2,47 % vers 52,69 $, soutenus par des achats à bon compte après les pertes de mardi. Le dollar ferme (indice près de 102,30) et le 10 ans près de 4,98 % limitent la hausse, les contrats à terme donnant environ 88 % de chances à une hausse de 25 pb en décembre. Le WTI gagne environ 0,9 % vers 86,80 $ sur l’incertitude entourant la diplomatie États-Unis–Iran et le transport dans le Golfe.",
+   "summary_en": "Gold rose 0.27% to about $4,042.50/oz and silver 2.47% to about $52.69, helped by bargain hunting after Tuesday’s losses. A firm dollar (index near 102.30) and a 10-year yield near 4.98% capped gains, with futures pricing about an 88% chance of a 25 bp hike in December. WTI rose about 0.9% to around $86.80 on uncertainty over U.S.-Iran diplomacy and Gulf shipping.",
+   "url": "https://www.kitco.com/news/article/2026-11-11/gold-silver-rebound-after-cpi-driven-selloff-hormuz-tensions-lift-crude-oil"
+  },
   {
    "date": "2026-11-11",
    "time": "08:02",
