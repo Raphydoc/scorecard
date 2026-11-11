@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-11T18:42:51Z",
+ "updatedAt": "2026-11-11T19:42:27Z",
  "econ": {
   "values": {
    "gdp": {
@@ -77,7 +77,7 @@
   "xauusd": {
    "cotLong": 84.33,
    "cotChange": -1.39,
-   "crowdLong": 81,
+   "crowdLong": 80,
    "season": "bear",
    "seasonPct": -4.3,
    "seasonPeriod": "août à octobre"
@@ -127,7 +127,7 @@
    "seasonPct": 23.3,
    "cotLong": 53.84,
    "cotChange": -0.52,
-   "crowdLong": 82,
+   "crowdLong": 83,
    "seasonPeriod": "août à octobre"
   },
   "usoil": {
@@ -143,7 +143,7 @@
    "seasonPct": -3.8,
    "cotLong": 45.13,
    "cotChange": 2.05,
-   "crowdLong": 68,
+   "crowdLong": 69,
    "seasonPeriod": "août à octobre"
   },
   "eurusd": {
