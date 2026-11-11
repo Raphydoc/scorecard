@@ -3985,7 +3985,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const out = [], now = Date.now()/1000;
     days.forEach(d=>{ const [y,mo,dd] = d.split('-').map(Number), wd = new Date(Date.UTC(y,mo-1,dd)).getUTCDay(); if(wd===0||wd===6) return;
       ['tok','lon','ny'].forEach(k=>{ const w = SESW[k]; const st = tzEpoch(y,mo,dd,0,tz)/1000 + w.f*3600, en = tzEpoch(y,mo,dd,0,tz)/1000 + w.t*3600; if(st > now) return;
-        const mv = {}; Object.keys(ASSETS).forEach(a=>{ const r = (O.h1||{})[a]; if(!r) return; const b = r.filter(x=>x[0]>st-3600 && x[0]<en); // la chandelle qui contient l'ouverture compte if(b.length<1) return; mv[a] = {o:b[0][1], c:b[b.length-1][4], hi:Math.max(...b.map(x=>x[2])), lo:Math.min(...b.map(x=>x[3]))}; mv[a].p = (mv[a].c/mv[a].o-1)*100; });
+        const mv = {}; Object.keys(ASSETS).forEach(a=>{ const r = (O.h1||{})[a]; if(!r) return; const b = r.filter(x=>x[0]>st-3600 && x[0]<en); if(b.length<1) return; mv[a] = {o:b[0][1], c:b[b.length-1][4], hi:Math.max(...b.map(x=>x[2])), lo:Math.min(...b.map(x=>x[3]))}; mv[a].p = (mv[a].c/mv[a].o-1)*100; });
         if(Object.keys(mv).length) out.push({id:d+'-'+k, d, k, st, en, live: now < en, mv}); }); });
     return out.reverse();
   }
