@@ -716,6 +716,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   .msheet .msbg{position:absolute;inset:0;background:rgba(0,0,0,.55);opacity:0;transition:opacity .25s}
   .msheet .mspanel{position:absolute;left:0;right:0;bottom:0;max-height:86vh;overflow-y:auto;background:var(--panel);border-top:1px solid var(--gold);border-radius:16px 16px 0 0;padding:10px 16px calc(84px + env(safe-area-inset-bottom,0px));transform:translateY(100%);transition:transform .32s cubic-bezier(.2,.8,.2,1)}
   .msheet.open{pointer-events:auto} .msheet.open .msbg{opacity:1} .msheet.open .mspanel{transform:none}
+  .msheet .mspanel{visibility:hidden;transition:transform .32s cubic-bezier(.2,.8,.2,1),visibility 0s linear .32s} .msheet.open .mspanel{visibility:visible;transition:transform .32s cubic-bezier(.2,.8,.2,1)}
   .mspanel .grab{width:42px;height:4px;border-radius:2px;background:var(--line);margin:2px auto 12px}
   .mspanel .msh{font:700 11px/1 var(--f-mono);letter-spacing:.16em;color:var(--muted);margin:0 0 6px}
   .mspanel .pages{display:grid!important;grid-template-columns:1fr 1fr;gap:8px;border:0}
@@ -761,6 +762,62 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   table.cal td.num .cd{display:block;font-size:10px;white-space:normal}
   table.cal td.name{min-width:0}
 }
+/* ===== Carte du monde (globe 3D) ===== */
+.gwrap{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:14px;align-items:start}
+@media (max-width:1100px){ .gwrap{grid-template-columns:minmax(0,1fr)} }
+.gmain .ph{align-items:center}
+.gsearch input{font:inherit;font-size:13px;color:var(--fg);background:var(--bg);border:1px solid var(--line);border-radius:4px;padding:7px 10px;width:220px;max-width:100%}
+.gstage{position:relative;height:620px;background:radial-gradient(circle at 50% 45%,rgba(242,180,58,.08),transparent 60%)}
+#globeEl{position:absolute;inset:0;cursor:grab}
+#globeEl:active{cursor:grabbing}
+.ghint{position:absolute;left:50%;bottom:54px;transform:translateX(-50%);font:600 10.5px/1 var(--f-mono);letter-spacing:.1em;color:var(--muted);background:var(--panel);border:1px solid var(--line);border-radius:20px;padding:7px 12px;white-space:nowrap;pointer-events:none;transition:opacity .5s}
+.ghint.off{opacity:0}
+#gLegend{position:absolute;left:14px;right:14px;bottom:14px;display:flex;justify-content:center;pointer-events:none}
+.glegend{display:flex;align-items:center;gap:8px;font:600 10px/1 var(--f-mono);color:var(--muted);background:color-mix(in srgb,var(--panel) 85%,transparent);border:1px solid var(--line);border-radius:4px;padding:6px 10px}
+.glegend i{display:block;width:180px;height:8px;border-radius:4px}
+.gtip{background:var(--panel);border:1px solid var(--gold);border-radius:5px;padding:7px 10px;font-family:var(--f-body);color:var(--fg);display:grid;gap:3px;box-shadow:0 8px 24px rgba(0,0,0,.5)}
+.gtip b{font-size:13px} .gtip span{font:500 11px/1.2 var(--f-mono);color:var(--gold)}
+.granks{display:grid;gap:14px}
+.granks h4{margin:0 0 6px;font:700 10px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.grow{display:flex;justify-content:space-between;gap:8px;width:100%;border:0;border-bottom:1px solid var(--line);background:none;color:var(--fg);font:inherit;font-size:13px;padding:7px 2px;cursor:pointer;text-align:left;transition:padding .2s,color .2s}
+.grow:hover{color:var(--gold);padding-left:6px}
+.grow b{font:600 12px/1.2 var(--f-mono)}
+.gwords{display:flex;flex-wrap:wrap;gap:6px}
+.gwords .ddchip{cursor:default}
+@media (max-width:899px){ .gstage{height:440px} .gsearch input{width:100%} .gmain .ph{display:grid;gap:8px} .glegend i{width:110px} .ghint{bottom:50px;font-size:9.5px} }
+@media (prefers-reduced-motion:no-preference){ .gstage::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(transparent 0,rgba(242,180,58,.04) 50%,transparent 100%);background-size:100% 6px;opacity:.5} }
+/* ===== Market Hours ===== */
+.hclks{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:8px}
+.hclk{border:1px solid var(--line);border-radius:8px;background:var(--panel);padding:10px 12px;display:grid;gap:4px;border-top:2px solid var(--neutral)}
+.hclk.on{border-top-color:#2BD47D;box-shadow:inset 0 10px 24px -18px rgba(43,212,125,.6)}
+.hclk .hn2{font:600 10px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.hclk b{font:700 26px/1 var(--f-mono);letter-spacing:-.02em} .hclk b small{font-size:13px;color:var(--muted)}
+.hclk .hs2{display:flex;align-items:center;gap:5px;font:700 9px/1 var(--f-mono);letter-spacing:.1em;color:var(--muted)}
+.hclk .hs2 i{width:6px;height:6px;border-radius:50%;background:var(--neutral)} .hclk.on .hs2{color:#2BD47D} .hclk.on .hs2 i{background:#2BD47D;animation:dotPulse 1.6s infinite}
+.ctr small{display:block;font:500 10.5px/1.3 var(--f-body);color:var(--muted);margin-top:4px}
+.htl{position:relative;display:grid;gap:6px;padding-top:22px;min-width:0}
+.hticks{position:absolute;top:0;left:calc(var(--lab,180px) + 10px);right:calc(var(--st,190px) + 10px);height:16px}
+.hticks span{position:absolute;transform:translateX(-50%);font:600 9.5px/1 var(--f-mono);color:var(--muted)}
+.hrow{display:grid;grid-template-columns:var(--lab,180px) minmax(0,1fr) var(--st,190px);gap:10px;align-items:center}
+.hlab b{display:block;font:700 12.5px/1.2 var(--f-body)} .hlab small{font:500 10.5px/1.3 var(--f-mono);color:var(--muted)}
+.htrack{position:relative;height:26px;border-radius:5px;background:repeating-linear-gradient(90deg,var(--panel-2) 0 calc(100%/24 - 1px),var(--line) calc(100%/24 - 1px) calc(100%/24));overflow:hidden}
+.hbar{position:absolute;top:3px;bottom:3px;border-radius:4px;background:linear-gradient(90deg,var(--bull),color-mix(in srgb,var(--bull) 70%,#fff));box-shadow:0 0 12px -2px var(--bull)}
+.hbar.fx{background:linear-gradient(90deg,#7B5CE0,#A891F5);box-shadow:0 0 12px -2px #7B5CE0}
+.hovl{position:absolute;top:22px;bottom:0;left:calc(var(--lab,180px) + 10px);right:calc(var(--st,190px) + 10px);pointer-events:none}
+.hov{position:absolute;top:0;bottom:0;background:var(--tint-g);border-left:1px dashed var(--gold);border-right:1px dashed var(--gold)}
+.hnowl{position:absolute;top:16px;bottom:0;left:calc(var(--lab,180px) + 10px);right:calc(var(--st,190px) + 10px);pointer-events:none;z-index:2}
+.hnow{position:absolute;top:0;bottom:-4px;width:2px;margin-left:-1px;background:var(--gold);box-shadow:0 0 10px var(--gold)}
+.hnow em{position:absolute;top:-16px;left:50%;transform:translateX(-50%);font:700 9.5px/1 var(--f-mono);font-style:normal;color:#000;background:var(--gold);padding:2px 4px;border-radius:3px;white-space:nowrap}
+.hstat{display:grid;gap:3px;justify-items:start} .hstat small{font:500 11px/1.2 var(--f-mono);color:var(--muted)} .hstat small b{color:var(--fg)}
+.hst{font:800 9.5px/1 var(--f-mono);letter-spacing:.12em;padding:4px 7px;border-radius:3px;border:1px solid var(--line);color:var(--muted)}
+.hst.on{color:#2BD47D;border-color:#2BD47D;background:rgba(43,212,125,.1)} .hst.lu{color:var(--gold);border-color:var(--gold);background:var(--tint-g)}
+@media (max-width:760px){
+  .htl{--lab:96px;--st:0px} .hrow{grid-template-columns:96px minmax(0,1fr);gap:8px} .hstat{grid-column:1/-1;display:flex;gap:8px;align-items:center;margin:-2px 0 4px}
+  .hlab small{display:none} .hclk b{font-size:21px}
+  .hticks,.hovl,.hnowl{left:104px!important;right:0!important}
+}
+@media (prefers-reduced-motion:no-preference){ .hrow,.hclk{animation:fadeUp .45s cubic-bezier(.2,.7,.2,1) both;animation-delay:var(--d,0ms)} .hbar{animation:growW .8s cubic-bezier(.2,.7,.2,1) both;transform-origin:left} }
+.p2gap{margin-top:14px}
 </style>
 
 </head>
@@ -770,6 +827,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   <span class="navgrp">Global</span>
   <button type="button" data-page="home">Vue d’ensemble</button>
   <button type="button" data-page="charts">Graphiques</button>
+  <button type="button" data-page="hours">Market Hours</button>
   <span class="navgrp">Analyse</span>
   <button type="button" data-page="score" aria-current="page">Scorecard</button>
   <button type="button" data-page="top">Top Setups</button>
@@ -943,11 +1001,12 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     <p class="pgfoot">Battu = BPA et revenus au-dessus des prévisions; Raté = les deux en dessous; Mitigé = un des deux. Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.</p>
   </section>
 
-  <section data-pg="home" hidden aria-label="Vue d’ensemble"><div class="p2" id="p2home"></div></section>
+  <section data-pg="home" hidden aria-label="Vue d’ensemble"><div class="p2" id="p2globe"></div><div class="p2 p2gap" id="p2home"></div></section>
   <section data-pg="charts" hidden aria-label="Graphiques"><div class="p2" id="p2charts"></div></section>
   <section data-pg="eco" hidden aria-label="Économie US"><div class="p2" id="p2eco"></div></section>
   <section data-pg="cot" hidden aria-label="COT"><div class="p2" id="p2cot"></div></section>
   <section data-pg="sent" hidden aria-label="Sentiment"><div class="p2" id="p2sent"></div></section>
+  <section data-pg="hours" hidden aria-label="Market Hours"><div class="p2" id="p2hours"></div></section>
   <section data-pg="fund" hidden aria-label="Heatmap fondamentale"><div class="p2" id="p2fund"></div></section>
   <section data-pg="tech" hidden aria-label="Heatmap technique"><div class="p2" id="p2tech"></div></section>
   <section data-pg="seas" hidden aria-label="Saisonnalité"><div class="p2" id="p2seas"></div></section>
@@ -2614,6 +2673,306 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   })();
   buildMobileNav();
 
+  // ================= Carte du monde : globe 3D cliquable =================
+  state.world = state.world || null; state.gMetric = state.gMetric || 'infl';
+  const EA = ['DEU','FRA','ITA','ESP','NLD','BEL','AUT','IRL','PRT','FIN','GRC','SVK','SVN','LTU','LVA','EST','LUX','CYP','MLT','HRV'];
+  // banque centrale, monnaie et liens avec tes actifs (pays principaux)
+  const CMETA = {
+    USA:['Réserve fédérale (Fed)','Federal Reserve (Fed)','dollar américain','US dollar','USD',['usd','spx500','nasdaq','us30','rut']],
+    CAN:['Banque du Canada','Bank of Canada','dollar canadien','Canadian dollar','CAD',['usdcad','usoil']],
+    MEX:['Banque du Mexique','Bank of Mexico','peso mexicain','Mexican peso','MXN',[]], BRA:['Banque centrale du Brésil','Central Bank of Brazil','réal brésilien','Brazilian real','BRL',[]],
+    ARG:['Banque centrale d’Argentine','Central Bank of Argentina','peso argentin','Argentine peso','ARS',[]],
+    GBR:['Banque d’Angleterre','Bank of England','livre sterling','British pound','GBP',[]], CHE:['Banque nationale suisse','Swiss National Bank','franc suisse','Swiss franc','CHF',['xauusd']],
+    SWE:['Riksbank','Riksbank','couronne suédoise','Swedish krona','SEK',[]], NOR:['Norges Bank','Norges Bank','couronne norvégienne','Norwegian krone','NOK',['usoil']],
+    POL:['Banque nationale de Pologne','National Bank of Poland','zloty','zloty','PLN',['xauusd']], TUR:['Banque centrale de Turquie','Central Bank of Turkey','livre turque','Turkish lira','TRY',['xauusd']],
+    RUS:['Banque de Russie','Bank of Russia','rouble','ruble','RUB',['usoil','xauusd']], ZAF:['Banque de réserve d’Afrique du Sud','South African Reserve Bank','rand','rand','ZAR',['xauusd']],
+    SAU:['Banque centrale saoudienne','Saudi Central Bank','riyal (arrimé au dollar)','riyal (pegged to USD)','SAR',['usoil']], ISR:['Banque d’Israël','Bank of Israel','shekel','shekel','ILS',[]],
+    JPN:['Banque du Japon','Bank of Japan','yen','yen','JPY',['usdjpy']], CHN:['Banque populaire de Chine','People’s Bank of China','yuan','yuan','CNY',['xauusd','xagusd','usoil']],
+    KOR:['Banque de Corée','Bank of Korea','won','won','KRW',['nasdaq']], IND:['Banque de réserve de l’Inde','Reserve Bank of India','roupie indienne','Indian rupee','INR',['xauusd']],
+    IDN:['Banque d’Indonésie','Bank Indonesia','roupie indonésienne','rupiah','IDR',[]], TWN:['Banque centrale de Taïwan','Central Bank of Taiwan','dollar taïwanais','Taiwan dollar','TWD',['nasdaq']],
+    AUS:['Banque de réserve d’Australie','Reserve Bank of Australia','dollar australien','Australian dollar','AUD',['xauusd']], NZL:['Banque de réserve de N.-Z.','Reserve Bank of New Zealand','dollar néo-zélandais','NZ dollar','NZD',[]],
+    SGP:['Autorité monétaire de Singapour','Monetary Authority of Singapore','dollar de Singapour','Singapore dollar','SGD',[]], EGY:['Banque centrale d’Égypte','Central Bank of Egypt','livre égyptienne','Egyptian pound','EGP',[]],
+    NGA:['Banque centrale du Nigeria','Central Bank of Nigeria','naira','naira','NGN',['usoil']], UZB:['Banque centrale d’Ouzbékistan','Central Bank of Uzbekistan','sum','som','UZS',['xauusd']],
+    KAZ:['Banque nationale du Kazakhstan','National Bank of Kazakhstan','tenge','tenge','KZT',['xauusd','usoil']], CZE:['Banque nationale tchèque','Czech National Bank','couronne tchèque','Czech koruna','CZK',['xauusd']],
+    ARE:['Banque centrale des É.A.U.','Central Bank of the UAE','dirham (arrimé au dollar)','dirham (pegged to USD)','AED',['usoil']], IRN:['Banque centrale d’Iran','Central Bank of Iran','rial','rial','IRR',['usoil']],
+    VEN:['Banque centrale du Venezuela','Central Bank of Venezuela','bolivar','bolivar','VES',['usoil']]
+  };
+  EA.forEach(c=>{ CMETA[c] = ['Banque centrale européenne (BCE)','European Central Bank (ECB)','euro','euro','EUR',['eurusd']]; });
+  const GM = {
+    infl:{n:['Inflation','Inflation'], u:'%', k:'infl', good:v=>-Math.abs(v-2), dom:[0,12]},
+    gdp:{n:['Croissance','Growth'], u:'%', k:'gdp', good:v=>v, dom:[-3,7]},
+    rate:{n:['Taux directeur','Policy rate'], u:'%', dom:[0,15]},
+    unemp:{n:['Chômage','Unemployment'], u:'%', k:'unemp', good:v=>-v, dom:[2,15]},
+    debt:{n:['Dette publique','Public debt'], u:'% PIB', k:'debt', good:v=>-v, dom:[20,150]},
+    idx:{n:['Bourse (depuis janvier)','Stocks (YTD)'], u:'%', dom:[-20,30]}
+  };
+  const a2of = {};
+  function gVal(iso, m){
+    const W = state.world || {}, I = W.imf || {};
+    if(m==='rate'){ const r = gRate(iso); return r ? r.v : null; }
+    if(m==='idx'){ const k = (W.mkts||{})[iso]; return k && k.idx ? k.idx.chgYtd : null; }
+    const s = (I[GM[m].k]||{})[iso]; return s ? (s[1]!=null ? s[1] : s[0]) : null;
+  }
+  function gRate(iso){ const R = (state.world||{}).rates || {}; if(EA.includes(iso)) return R.XM || null; return R[a2of[iso]] || null; }
+  function gColor(m, v){
+    if(v==null) return 'rgba(60,64,72,.55)';
+    const bull = [20,163,174], bear = [224,56,62], mid = [242,180,58];
+    let t; // 0 = bon (turquoise), 1 = mauvais (rouge)
+    if(m==='infl') t = Math.min(1, Math.abs(v-2)/6);
+    else if(m==='gdp') t = 1 - Math.max(0, Math.min(1, (v+1)/6));
+    else if(m==='unemp') t = Math.max(0, Math.min(1, (v-3)/10));
+    else if(m==='debt') t = Math.max(0, Math.min(1, (v-30)/110));
+    else if(m==='idx') t = 1 - Math.max(0, Math.min(1, (v+15)/40));
+    else if(m==='rate'){ const k = Math.max(0, Math.min(1, v/15)); return `rgba(${Math.round(20+(242-20)*k)},${Math.round(163+(180-163)*k)},${Math.round(174+(58-174)*k)},.85)`; }
+    const c = t<.5 ? bull.map((x,i)=>x+(mid[i]-x)*t*2) : mid.map((x,i)=>x+(bear[i]-x)*(t-.5)*2);
+    return `rgba(${c.map(Math.round).join(',')},.85)`;
+  }
+  let globeObj = null, globeLibP = null, gFeats = null, gHover = null, gSel = null;
+  function needGlobe(){
+    if(window.Globe && window.topojson) return Promise.resolve(true);
+    if(globeLibP) return globeLibP;
+    const load = src => new Promise((res,rej)=>{ const s = document.createElement('script'); s.src = src; s.onload = res; s.onerror = rej; document.head.appendChild(s); });
+    globeLibP = Promise.all([load('https://cdn.jsdelivr.net/npm/topojson-client@3.1.0/dist/topojson-client.min.js'), load('https://cdn.jsdelivr.net/npm/globe.gl@2.46.2/dist/globe.gl.min.js')]).then(()=>true).catch(()=>false);
+    return globeLibP;
+  }
+  const cName = f => isEN() ? f.properties.en : f.properties.fr;
+  function gLegend(m){
+    const G = GM[m], [a,b] = G.dom;
+    const stops = [0,.25,.5,.75,1].map(k=>gColor(m, a+(b-a)*k)).join(',');
+    return `<div class="glegend"><span>${nf(a,0)} ${esc(G.u)}</span><i style="background:linear-gradient(90deg,${stops})"></i><span>${nf(b,0)} ${esc(G.u)}</span></div>`;
+  }
+  function gRank(m){
+    if(!gFeats) return '';
+    const rows = gFeats.map(f=>({f, v:gVal(f.properties.a3, m)})).filter(r=>r.v!=null && r.f.properties.a3);
+    rows.sort((p,q)=>q.v-p.v);
+    const li = r => `<button type="button" class="grow" data-iso="${r.f.properties.a3}"><span>${esc(cName(r.f))}</span><b>${nf(r.v,1)} ${esc(GM[m].u)}</b></button>`;
+    return `<div class="granks"><div><h4>${L('Les plus hauts','Highest')}</h4>${rows.slice(0,6).map(li).join('')}</div><div><h4>${L('Les plus bas','Lowest')}</h4>${rows.slice(-6).reverse().map(li).join('')}</div></div>`;
+  }
+  async function renderGlobe(){
+    const box = $('p2globe'); if(!box) return;
+    if(!box.dataset.built){
+      box.dataset.built = '1';
+      box.innerHTML = `
+        <div class="hmhead"><div class="ttl"><span class="blink"></span>${L('CARTE DU MONDE · ÉCONOMIES PAR PAYS','WORLD MAP · ECONOMIES BY COUNTRY')}</div><div class="badge" id="gBadge">${L('CHARGEMENT…','LOADING…')}</div></div>
+        <div class="gwrap">
+          <div class="panel gmain"><div class="ph"><div class="chips" id="gChips"></div><label class="gsearch"><input type="search" id="gFind" list="gList" placeholder="${L('Chercher un pays…','Find a country…')}" autocomplete="off"><datalist id="gList"></datalist></label></div>
+            <div class="gstage"><div id="globeEl"></div><div class="ghint" id="gHint">${L('Fais tourner la Terre avec ta souris ou ton doigt · clique un pays','Spin the Earth with your mouse or finger · click a country')}</div><div id="gLegend"></div></div></div>
+          <div class="panel gside"><div class="ph"><div><h3 id="gRankT"></h3><p>${L('Clique un pays pour ses infos','Click a country for its details')}</p></div></div><div class="pb" id="gRank"></div></div>
+        </div>
+        <p class="src" id="gSrc"></p>`;
+    }
+    const W = state.world || {};
+    $('gChips').innerHTML = Object.entries(GM).map(([k,g])=>`<button type="button" class="chip" data-m="${k}" aria-pressed="${state.gMetric===k}">${esc(isEN()?g.n[1]:g.n[0])}</button>`).join('');
+    $('gChips').querySelectorAll('.chip').forEach(b=>b.addEventListener('click', ()=>{ state.gMetric = b.dataset.m; renderGlobe(); }));
+    $('gLegend').innerHTML = gLegend(state.gMetric);
+    $('gRankT').textContent = isEN() ? GM[state.gMetric].n[1] : GM[state.gMetric].n[0];
+    $('gSrc').innerHTML = `${L('Sources : ','Sources: ')}${esc((W.src||{}).imf || L('FMI','IMF'))} · ${esc((W.src||{}).rates || 'BIS')} · ${esc((W.src||{}).mkts || 'Yahoo Finance')}${W.asOf?' · '+L('mis à jour le ','updated ')+new Date(W.asOf).toLocaleDateString(LOC(),{day:'numeric',month:'long'}):''}`;
+    if(!W.imf){ $('gBadge').textContent = L('DONNÉES BIENTÔT','DATA COMING SOON'); }
+    const ok = await needGlobe();
+    if(!ok){ $('globeEl').innerHTML = `<div class="tvfb">${L('Le globe 3D n’a pas pu se charger dans cette vue.','The 3D globe could not load in this view.')}</div>`; return; }
+    if(!gFeats){
+      try{ const topo = await (await fetch('countries.json')).json(); gFeats = topojson.feature(topo, topo.objects.countries).features.filter(f=>f.properties.a3!=='ATA'); gFeats.forEach(f=>{ a2of[f.properties.a3] = f.properties.a2; }); }
+      catch(e){ $('globeEl').innerHTML = `<div class="tvfb">${L('La carte des pays n’a pas pu se charger.','The country map could not load.')}</div>`; return; }
+      $('gList').innerHTML = gFeats.slice().sort((p,q)=>cName(p).localeCompare(cName(q))).map(f=>`<option value="${esc(cName(f))}">`).join('');
+      $('gFind').addEventListener('change', e=>{ const v = e.target.value.trim().toLowerCase(); const f = gFeats.find(x=>cName(x).toLowerCase()===v || x.properties.en.toLowerCase()===v); if(f){ gFocus(f); e.target.value=''; } });
+    }
+    $('gBadge').textContent = `${gFeats.length} ${L('PAYS · DONNÉES FMI, BIS, MARCHÉS','COUNTRIES · IMF, BIS, MARKET DATA')}`;
+    $('gRank').innerHTML = gRank(state.gMetric);
+    $('gRank').querySelectorAll('.grow').forEach(b=>b.addEventListener('click', ()=>{ const f = gFeats.find(x=>x.properties.a3===b.dataset.iso); if(f) gFocus(f); }));
+    const el = $('globeEl'), wpx = el.clientWidth || 600, hpx = el.clientHeight || 520;
+    const m = state.gMetric, gold = '#F2B43A';
+    const lab = f => { const v = gVal(f.properties.a3, m); return `<div class="gtip"><b>${esc(cName(f))}</b><span>${esc(isEN()?GM[m].n[1]:GM[m].n[0])} : ${v==null?'—':nf(v,1)+' '+esc(GM[m].u)}</span></div>`; };
+    if(!globeObj){
+      globeObj = Globe({animateIn:!RM()})(el)
+        .backgroundColor('rgba(0,0,0,0)').showAtmosphere(true).atmosphereColor(gold).atmosphereAltitude(0.2).showGraticules(true)
+        .polygonsData(gFeats).polygonSideColor(()=> 'rgba(242,180,58,.12)').polygonStrokeColor(()=> 'rgba(242,180,58,.55)')
+        .polygonsTransitionDuration(RM()?0:350)
+        .onPolygonHover(f=>{ gHover = f; globeObj.polygonAltitude(d=> d===gSel ? 0.09 : d===gHover ? 0.05 : 0.008); el.style.cursor = f ? 'pointer' : 'grab'; })
+        .onPolygonClick(f=>gFocus(f));
+      const mat = globeObj.globeMaterial(); if(mat && mat.color) mat.color.set('#0A0C10'); if(mat && mat.emissive) mat.emissive.set('#05070a');
+      const ctr = globeObj.controls(); ctr.autoRotate = !RM(); ctr.autoRotateSpeed = 0.55; ctr.enableDamping = true;
+      globeObj.pointOfView({lat:30, lng:-60, altitude:2.3}, 0);
+      const ro = new ResizeObserver(()=>{ if(globeObj) globeObj.width(el.clientWidth).height(el.clientHeight); }); ro.observe(el);
+      el.addEventListener('pointerdown', ()=>{ const h = $('gHint'); if(h) h.classList.add('off'); });
+    }
+    globeObj.width(wpx).height(hpx).polygonCapColor(f=> f===gSel ? gold : gColor(m, gVal(f.properties.a3, m))).polygonLabel(lab).polygonAltitude(d=> d===gSel ? 0.09 : 0.008);
+  }
+  function gFocus(f){
+    gSel = f;
+    if(globeObj){ const c = d3centroid(f); globeObj.controls().autoRotate = false; globeObj.pointOfView({lat:c[1], lng:c[0], altitude:1.6}, RM()?0:1200);
+      globeObj.polygonCapColor(d=> d===gSel ? '#F2B43A' : gColor(state.gMetric, gVal(d.properties.a3, state.gMetric))).polygonAltitude(d=> d===gSel ? 0.09 : 0.008); }
+    ddShowCountry(f);
+  }
+  function d3centroid(f){ // centre approximatif : moyenne des points du plus grand polygone
+    const g = f.geometry, polys = g.type==='Polygon' ? [g.coordinates] : g.coordinates;
+    let best = polys[0], bl = 0; polys.forEach(p=>{ if(p[0].length>bl){ bl = p[0].length; best = p; } });
+    let x = 0, y = 0; best[0].forEach(([lo,la])=>{ x += lo; y += la; }); return [x/best[0].length, y/best[0].length];
+  }
+  function ddShowCountry(f){
+    const iso = f.properties.a3, W = state.world || {}, I = W.imf || {}, meta = CMETA[iso], R = gRate(iso), M = (W.mkts||{})[iso] || {};
+    const iv = k => (I[k]||{})[iso] || null, Y = new Date().getFullYear();
+    const infl = iv('infl'), gdp = iv('gdp'), un = iv('unemp'), debt = iv('debt'), ca = iv('ca'), size = iv('size');
+    const cur = a => a ? (a[1]!=null ? a[1] : a[0]) : null;
+    const ci = cur(infl), cg = cur(gdp), cr = R ? R.v : null;
+    const w = [];
+    if(ci!=null) w.push(ci>4?[L('INFLATION ÉLEVÉE','HIGH INFLATION'),'r']:ci>2.5?[L('INFLATION AU-DESSUS DE 2 %','INFLATION ABOVE 2%'),'g']:ci<0?[L('DÉFLATION','DEFLATION'),'r']:[L('INFLATION SOUS CONTRÔLE','INFLATION CONTAINED'),'b']);
+    if(cg!=null) w.push(cg<0?[L('RÉCESSION','RECESSION'),'r']:cg<1?[L('CROISSANCE FAIBLE','WEAK GROWTH'),'g']:cg>=3?[L('FORTE CROISSANCE','STRONG GROWTH'),'b']:[L('CROISSANCE MODÉRÉE','MODERATE GROWTH'),'n']);
+    let stance = null; if(R && R.prev!=null){ stance = R.v<R.prev ? [L('BAISSE DES TAUX','CUTTING RATES'),'b'] : R.v>R.prev ? [L('HAUSSE DES TAUX','HIKING RATES'),'r'] : null; }
+    if(stance) w.push(stance);
+    const real = cr!=null && ci!=null ? cr - ci : null;
+    const yr = a => a ? `${a[0]!=null?nf(a[0],1):'—'} → ${a[1]!=null?nf(a[1],1):'—'}` : '—';
+    const mk = (q, lbl, isFx) => q ? `<div class="ddsec"><h4>${esc(lbl)} · <span class="${q.chg1d>=0?'up':'dn'}">${sg2(q.chg1d,2)} %</span></h4><div class="ddgrid">${ddRow(isFx?L('Cours','Rate'):L('Niveau','Level'), pxFmt(q.px))}${ddRow(L('Depuis janvier','YTD'), q.chgYtd!=null?sg2(q.chgYtd,1)+' %':'—', q.chgYtd>0?'pos':q.chgYtd<0?'neg':'')}</div><div class="cbox" style="height:120px"><canvas id="gc_${isFx?'fx':'ix'}"></canvas></div></div>` : '';
+    const holders = ((state.cbgold && state.cbgold.holders) || (typeof CBG_DEFAULT!=='undefined' ? CBG_DEFAULT.holders : [])).find(h=>h[0]===f.properties.a2);
+    const assets = meta ? meta[5] : [];
+    const html = `<div class="ddh"><span class="vk">${L('PAYS','COUNTRY')} · ${esc(iso)}</span><h3>${esc(cName(f))}</h3>${meta?`<span class="ddbadge">${esc(isEN()?meta[1]:meta[0])}</span>`:''}${w.length?`<div class="gwords">${w.map(([t,c])=>`<span class="ddchip ${c}">${esc(t)}</span>`).join('')}</div>`:''}</div>
+      <div class="ddgrid">
+        ${ddRow(L('Taux directeur','Policy rate'), cr!=null?nf(cr,2)+' %':'—')}
+        ${ddRow(L('Inflation ','Inflation ')+Y, ci!=null?nf(ci,1)+' %':'—', ci>3?'neg':'')}
+        ${ddRow(L('Croissance ','Growth ')+Y, cg!=null?sg2(cg,1)+' %':'—', cg>0?'pos':cg<0?'neg':'')}
+        ${ddRow(L('Chômage ','Unemployment ')+Y, cur(un)!=null?nf(cur(un),1)+' %':'—')}
+        ${ddRow(L('Dette publique','Public debt'), cur(debt)!=null?nf(cur(debt),0)+' % '+L('du PIB','of GDP'):'—')}
+        ${ddRow(L('Compte courant','Current account'), cur(ca)!=null?sg2(cur(ca),1)+' % '+L('du PIB','of GDP'):'—')}
+        ${ddRow(L('Taille de l’économie','Economy size'), cur(size)!=null?nf(cur(size)/1000,2)+' '+L('billion $','trillion $'):'—')}
+        ${ddRow(L('Taux réel (taux − inflation)','Real rate (rate − inflation)'), real!=null?sg2(real,1)+' pt':'—', real>0?'pos':real<0?'neg':'')}
+      </div>
+      <div class="ddsec"><h4>${L('En résumé','In short')}</h4><p>${esc(gSummary(cName(f), ci, cg, cr, real, R))}</p>
+        ${iso==='USA'?`<p class="ddnote">${L('Pour les États-Unis, c’est le milieu de la fourchette de la Fed.','For the US, this is the midpoint of the Fed’s target range.')}</p>`:''}${R?`<p class="ddnote">${L('Taux en vigueur depuis','Rate in place since')} ${esc(R.since)}${R.prev!=null?` · ${L('avant','before')} : ${nf(R.prev,2)} %`:''}</p>`:''}
+        <p class="ddnote">${L(`Inflation, croissance et chômage : estimations du FMI pour ${Y-1} et ${Y} (${yr(infl)} % pour l’inflation).`, `Inflation, growth and unemployment: IMF estimates for ${Y-1} and ${Y} (${yr(infl)}% for inflation).`)}</p></div>
+      ${mk(M.idx, L('Bourse principale','Main stock index')+' ('+(M.idx?M.idx.sym:'')+')', false)}
+      ${mk(M.fx, (meta?(isEN()?meta[3]:meta[2]):L('Monnaie','Currency'))+' ('+(M.fx?M.fx.sym:'')+')', true)}
+      ${holders?`<div class="ddsec ddnext"><span class="vk">${L('RÉSERVES D’OR DE LA BANQUE CENTRALE','CENTRAL BANK GOLD RESERVES')}</span><b>${nf(holders[1],0)} ${L('tonnes','tonnes')}</b><small><button type="button" class="btn ghost" data-ddgo="cbg">${L('Voir Or · banques centrales','See Gold · central banks')}</button></small></div>`:''}
+      ${assets.length?`<div class="ddsec"><h4>${L('Tes actifs liés à ce pays','Your assets linked to this country')}</h4><div class="ddall">${assets.map(a=>`<button type="button" class="ddchip" data-dd="asset|${a}">${esc(AN(a))}</button>`).join('')}</div></div>`:''}
+      ${iso==='USA'?`<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="eco">${L('Économie US','US economy')}</button><button type="button" class="btn ghost" data-ddgo="fed">${L('Taux','Rates')}</button></div>`:''}
+      <p class="ddsrc">${L('Sources : FMI (Perspectives de l’économie mondiale), BIS (taux directeurs), Yahoo Finance (marchés).','Sources: IMF (World Economic Outlook), BIS (policy rates), Yahoo Finance (markets).')}</p>`;
+    ddChart = null;
+    const el = ddEnsure(), c = $('ddc'); c.innerHTML = html; el.querySelector('.ddp').scrollTop = 0; el.hidden = false; requestAnimationFrame(()=>el.classList.add('open'));
+    needChart().then(ok=>{ if(!ok) return; [['gc_ix',M.idx],['gc_fx',M.fx]].forEach(([id,q])=>{ if(!q || !$(id)) return; const up = (q.chgYtd||0)>=0, col = up?css('--bull'):css('--bear');
+      mkChart(id, {type:'line', data:{labels:q.spark.map((_,i)=>i), datasets:[{data:q.spark, borderColor:col, backgroundColor:col+'22', fill:true, pointRadius:0, borderWidth:2, tension:.25}]}, options:{plugins:{legend:{display:false}, tooltip:{enabled:false}}, scales:{x:{display:false}, y:{ticks:{maxTicksLimit:3}}}}}); }); });
+  }
+  function gSummary(n, ci, cg, cr, real, R){
+    const p = [];
+    if(cg!=null) p.push(cg<0 ? L(`${n} est en récession selon le FMI (${sg2(cg,1)} %).`, `${n} is in recession according to the IMF (${sg2(cg,1)}%).`) : L(`L’économie de ${n} devrait croître de ${nf(cg,1)} % cette année selon le FMI.`, `${n}’s economy should grow ${nf(cg,1)}% this year according to the IMF.`));
+    if(ci!=null) p.push(ci>2.5 ? L(`L’inflation (${nf(ci,1)} %) reste au-dessus de la cible habituelle de 2 %.`, `Inflation (${nf(ci,1)}%) is still above the usual 2% target.`) : L(`L’inflation (${nf(ci,1)} %) est proche ou sous la cible habituelle de 2 %.`, `Inflation (${nf(ci,1)}%) is near or below the usual 2% target.`));
+    if(real!=null) p.push(real>1 ? L(`Avec un taux directeur de ${nf(cr,2)} %, la politique monétaire est restrictive (taux réel positif) : elle freine l’économie pour calmer l’inflation.`, `With a ${nf(cr,2)}% policy rate, monetary policy is tight (positive real rate): it is slowing the economy to cool inflation.`) : real<-1 ? L(`Le taux directeur (${nf(cr,2)} %) est sous l’inflation : la politique monétaire est accommodante (taux réel négatif).`, `The policy rate (${nf(cr,2)}%) is below inflation: monetary policy is loose (negative real rate).`) : L(`Le taux directeur (${nf(cr,2)} %) est proche de l’inflation : politique plutôt neutre.`, `The policy rate (${nf(cr,2)}%) is close to inflation: fairly neutral policy.`));
+    if(R && R.prev!=null && R.v!==R.prev) p.push(R.v<R.prev ? L('La banque centrale a récemment baissé ses taux.','The central bank recently cut rates.') : L('La banque centrale a récemment monté ses taux.','The central bank recently raised rates.'));
+    return p.join(' ') || L('Peu de données disponibles pour ce pays.','Little data available for this country.');
+  }
+  // reprendre la rotation quand le panneau se ferme
+  (function(){ const _c = ddClose; ddClose = function(){ _c(); if(globeObj && state.page==='home' && !RM()){ setTimeout(()=>{ if(globeObj){ globeObj.controls().autoRotate = true; gSel = null; globeObj.polygonCapColor(d=>gColor(state.gMetric, gVal(d.properties.a3, state.gMetric))).polygonAltitude(0.008); } }, 300); } }; })();
+
+  // ================= Fuseaux horaires (Market Hours et globe) =================
+  function tzParts(tz, d){
+    const p = Object.fromEntries(new Intl.DateTimeFormat('en-US',{timeZone:tz, year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', minute:'2-digit', second:'2-digit', weekday:'short', hour12:false}).formatToParts(d||new Date()).map(x=>[x.type,x.value]));
+    return {y:+p.year, mo:+p.month, d:+p.day, h:(+p.hour)%24, mi:+p.minute, s:+p.second, wd:{Sun:0,Mon:1,Tue:2,Wed:3,Thu:4,Fri:5,Sat:6}[p.weekday]};
+  }
+  function tzEpoch(y, mo, d, hrs, tz){ // heure locale décimale d'une place -> epoch
+    const hh = Math.floor(hrs), mm = Math.round((hrs-hh)*60), guess = Date.UTC(y, mo-1, d, hh, mm);
+    const p = tzParts(tz, new Date(guess)), asTz = Date.UTC(p.y, p.mo-1, p.d, p.h, p.mi);
+    return guess + (guess - asTz);
+  }
+  // sessions (heures locales; br = pause du midi; days = jours ouvrables locaux)
+  const MKT = [
+    {k:'asx', n:['Sydney (ASX)','Sydney (ASX)'], tz:'Australia/Sydney', o:10, c:16, cc:'AU'},
+    {k:'tse', n:['Tokyo (TSE)','Tokyo (TSE)'], tz:'Asia/Tokyo', o:9, c:15.5, br:[11.5,12.5], cc:'JP'},
+    {k:'sse', n:['Shanghai (SSE)','Shanghai (SSE)'], tz:'Asia/Shanghai', o:9.5, c:15, br:[11.5,13], cc:'CN'},
+    {k:'hkex', n:['Hong Kong (HKEX)','Hong Kong (HKEX)'], tz:'Asia/Hong_Kong', o:9.5, c:16, br:[12,13]},
+    {k:'nse', n:['Mumbai (NSE)','Mumbai (NSE)'], tz:'Asia/Kolkata', o:9.25, c:15.5, cc:'IN'},
+    {k:'xetra', n:['Francfort (Xetra)','Frankfurt (Xetra)'], tz:'Europe/Berlin', o:9, c:17.5, cc:'DE'},
+    {k:'lse', n:['Londres (LSE)','London (LSE)'], tz:'Europe/London', o:8, c:16.5, cc:'GB'},
+    {k:'nyse', n:['New York (NYSE · Nasdaq)','New York (NYSE · Nasdaq)'], tz:'America/New_York', o:9.5, c:16, cc:'US'},
+    {k:'tsx', n:['Toronto (TSX)','Toronto (TSX)'], tz:'America/Toronto', o:9.5, c:16, cc:'CA'}
+  ];
+  const FXS = [
+    {k:'fxsyd', n:['Session de Sydney','Sydney session'], tz:'Australia/Sydney', o:7, c:16},
+    {k:'fxtok', n:['Session de Tokyo','Tokyo session'], tz:'Asia/Tokyo', o:9, c:18},
+    {k:'fxlon', n:['Session de Londres','London session'], tz:'Europe/London', o:8, c:17},
+    {k:'fxny', n:['Session de New York','New York session'], tz:'America/New_York', o:8, c:17}
+  ];
+  function sessionsOf(m, from, to){ // intervalles [début, fin] (epoch) entre from et to
+    const out = [];
+    for(let k=-2; k<=8; k++){
+      const p = tzParts(m.tz, new Date(from + k*864e5)); if(p.wd===0 || p.wd===6) continue;
+      const segs = m.br ? [[m.o, m.br[0]], [m.br[1], m.c]] : [[m.o, m.c]];
+      segs.forEach(([a,b])=>{ const s = tzEpoch(p.y,p.mo,p.d,a,m.tz), e = tzEpoch(p.y,p.mo,p.d,b,m.tz); if(e>from && s<to && !out.some(x=>x[0]===s)) out.push([s,e]); });
+    }
+    return out.sort((x,y)=>x[0]-y[0]);
+  }
+  function mktStatus(m, now){
+    now = now || Date.now();
+    const ss = sessionsOf(m, now - 864e5, now + 8*864e5);
+    const cur = ss.find(s=>s[0]<=now && now<s[1]);
+    if(cur) return {open:true, next:cur[1]};
+    const nx = ss.find(s=>s[0]>now);
+    const lunch = m.br && ss.some(s=>s[1]<=now && now-s[1] < 2*36e5 && nx && nx[0]-now < 2*36e5);
+    return {open:false, lunch, next:nx ? nx[0] : null};
+  }
+  const durTxt = ms => { const m = Math.max(0, Math.round(ms/6e4)), d = Math.floor(m/1440), h = Math.floor(m%1440/60), mi = m%60; return (d? d+(isEN()?'d ':' j '):'') + (h? h+' h ':'') + String(mi).padStart(d||h?2:1,'0')+' min'; };
+  function fxStatus(now){ // forex : dimanche 17 h → vendredi 17 h (New York)
+    const p = tzParts('America/New_York', new Date(now)), hh = p.h + p.mi/60;
+    const open = !(p.wd===6 || (p.wd===5 && hh>=17) || (p.wd===0 && hh<17));
+    return open;
+  }
+
+  // ================= Page Market Hours =================
+  state.hoursTimer = null;
+  function renderHours(){
+    const box = $('p2hours'); if(!box) return;
+    const now = Date.now(), tp = tzParts('America/Toronto'), dayStart = tzEpoch(tp.y, tp.mo, tp.d, 0, 'America/Toronto'), dayEnd = dayStart + 864e5;
+    const pct = t => Math.max(0, Math.min(100, (t-dayStart)/864e5*100));
+    const clk = [['Toronto','America/Toronto'],['New York','America/New_York'],[L('Londres','London'),'Europe/London'],[L('Francfort','Frankfurt'),'Europe/Berlin'],['Tokyo','Asia/Tokyo'],['Hong Kong','Asia/Hong_Kong'],['Sydney','Australia/Sydney']];
+    const clocks = clk.map(([n,tz],i)=>{ const m = MKT.find(x=>x.tz===tz) || MKT.find(x=>n==='Hong Kong'&&x.k==='hkex'); const st = m ? mktStatus(m, now) : null; const p = tzParts(tz);
+      return `<div class="hclk ${st&&st.open?'on':''}" style="--d:${i*50}ms"><span class="hn2">${esc(n)}</span><b data-tz="${tz}">${String(p.h).padStart(2,'0')}:${String(p.mi).padStart(2,'0')}<small>:${String(p.s).padStart(2,'0')}</small></b><span class="hs2"><i></i>${st? (st.open?L('BOURSE OUVERTE','MARKET OPEN'):L('BOURSE FERMÉE','MARKET CLOSED')) : ''}</span></div>`; }).join('');
+    const row = (m, i, fx) => {
+      const ss = sessionsOf(m, dayStart, dayEnd), st = mktStatus(m, now);
+      const bars = ss.map(([s,e])=>`<i class="hbar ${fx?'fx':''}" style="left:${pct(s)}%;width:${pct(e)-pct(s)}%"></i>`).join('');
+      const local = tzParts(m.tz), lt = `${String(local.h).padStart(2,'0')}:${String(local.mi).padStart(2,'0')}`;
+      const stTxt = st.open ? `<span class="hst on">${L('OUVERT','OPEN')}</span><small>${L('ferme dans','closes in')} <b data-cdt="${st.next}"></b></small>` : st.lunch ? `<span class="hst lu">${L('PAUSE DU MIDI','LUNCH BREAK')}</span><small>${L('reprend dans','resumes in')} <b data-cdt="${st.next}"></b></small>` : `<span class="hst">${L('FERMÉ','CLOSED')}</span><small>${st.next?L('ouvre dans','opens in')+` <b data-cdt="${st.next}"></b>`:''}</small>`;
+      const loc = `${String(Math.floor(m.o)).padStart(2,'0')}:${String(Math.round(m.o%1*60)).padStart(2,'0')}–${String(Math.floor(m.c)).padStart(2,'0')}:${String(Math.round(m.c%1*60)).padStart(2,'0')}`;
+      return `<div class="hrow" style="--d:${i*40}ms"><div class="hlab"><b>${esc(isEN()?m.n[1]:m.n[0])}</b><small>${L('local','local')} ${loc} · ${L('il est','now')} ${lt}</small></div><div class="htrack">${bars}</div><div class="hstat">${stTxt}</div></div>`;
+    };
+    const ticks = Array.from({length:25},(_,h)=>`<span style="left:${h/24*100}%">${h%3===0?String(h).padStart(2,'0')+(isEN()?'':' h'):''}</span>`).join('');
+    // chevauchement Londres–New York (forex)
+    const lon = sessionsOf(FXS[2], dayStart, dayEnd), ny = sessionsOf(FXS[3], dayStart, dayEnd);
+    const ov = []; lon.forEach(a=>ny.forEach(b=>{ const s = Math.max(a[0],b[0]), e = Math.min(a[1],b[1]); if(e>s) ov.push([s,e]); }));
+    const ovHtml = ov.map(([s,e])=>`<i class="hov" style="left:${pct(s)}%;width:${pct(e)-pct(s)}%"></i>`).join('');
+    const fmtT = t => new Date(t).toLocaleTimeString(LOC(),{hour:'2-digit',minute:'2-digit', timeZone:'America/Toronto'});
+    const fxOpen = fxStatus(now);
+    box.innerHTML = `
+      <div class="hmhead"><div class="ttl"><span class="blink"></span>${L('HEURES DES MARCHÉS · SESSIONS MONDIALES','MARKET HOURS · GLOBAL SESSIONS')}</div><div class="badge">${L('HEURE DE TORONTO','TORONTO TIME')} · ${new Date().toLocaleDateString(LOC(),{weekday:'long', day:'numeric', month:'long'})}</div></div>
+      <div class="hclks">${clocks}</div>
+      <div class="ctrs">
+        <div class="ctr ${fxOpen?'b':'r'}"><span>Forex</span><b>${fxOpen?L('OUVERT','OPEN'):L('FERMÉ','CLOSED')}</b><small>${L('dimanche 17 h → vendredi 17 h (New York)','Sunday 5 p.m. → Friday 5 p.m. (New York)')}</small></div>
+        <div class="ctr b"><span>${L('Crypto (Bitcoin)','Crypto (Bitcoin)')}</span><b>24/7</b><small>${L('ne ferme jamais','never closes')}</small></div>
+        <div class="ctr g"><span>${L('Futures CME (or, pétrole, indices)','CME futures (gold, oil, indices)')}</span><b>${(()=>{ const p = tzParts('America/New_York'), hh = p.h+p.mi/60; const o = !(p.wd===6 || (p.wd===5&&hh>=17) || (p.wd===0&&hh<18) || (hh>=17&&hh<18)); return o?L('OUVERT','OPEN'):L('FERMÉ','CLOSED'); })()}</b><small>${L('dim. 18 h → ven. 17 h, pause 17 h–18 h','Sun 6 p.m. → Fri 5 p.m., break 5–6 p.m.')}</small></div>
+        <div class="ctr g"><span>${L('Chevauchement Londres–New York','London–New York overlap')}</span><b>${ov.length? fmtT(ov[0][0])+'–'+fmtT(ov[0][1]) : '—'}</b><small>${L('le plus de volume de la journée','the busiest hours of the day')}</small></div>
+      </div>
+      <div class="panel"><div class="ph"><div><h3>${L('Bourses · aujourd’hui en heure de Toronto','Stock exchanges · today in Toronto time')}</h3><p>${L('Les barres = heures d’ouverture · la ligne dorée = maintenant · pause du midi en Asie','Bars = trading hours · gold line = now · lunch breaks in Asia')}</p></div></div>
+        <div class="pb"><div class="htl"><div class="hticks">${ticks}</div>${MKT.map((m,i)=>row(m,i,false)).join('')}<div class="hnowl"><i class="hnow" id="hnow" style="left:${pct(now)}%"><em>${fmtT(now)}</em></i></div></div></div></div>
+      <div class="panel"><div class="ph"><div><h3>${L('Sessions du forex','Forex sessions')}</h3><p>${L('La zone dorée = chevauchement Londres–New York, quand l’or, le dollar et l’EUR/USD bougent le plus','Gold zone = London–New York overlap, when gold, the dollar and EUR/USD move the most')}</p></div></div>
+        <div class="pb"><div class="htl fx"><div class="hticks">${ticks}</div><div class="hovl">${ovHtml}</div>${FXS.map((m,i)=>row(m,i,true)).join('')}<div class="hnowl"><i class="hnow" style="left:${pct(now)}%"></i></div></div></div></div>
+      <div class="panel"><div class="ph"><div><h3>${L('Meilleures heures pour tes actifs','Best hours for your assets')}</h3><p>${L('Heure de Toronto · quand il y a le plus de mouvement et de liquidité','Toronto time · when there is the most movement and liquidity')}</p></div></div>
+        <div class="pb"><div class="dgrid">${[
+          ['XAUUSD · XAGUSD', L('8 h – 11 h 30','8 a.m. – 11:30 a.m.'), L('chevauchement Londres–New York et données de 8 h 30','London–NY overlap and 8:30 data')],
+          ['NASDAQ · S&P · DOW · RUSSELL', L('9 h 30 – 11 h 30 et 15 h – 16 h','9:30–11:30 a.m. and 3–4 p.m.'), L('ouverture et dernière heure de Wall Street','Wall Street open and last hour')],
+          ['EURUSD · DXY', L('3 h – 11 h 30','3 a.m. – 11:30 a.m.'), L('Londres, puis le chevauchement avec New York','London, then the overlap with New York')],
+          ['USDJPY', L('19 h – 23 h et 8 h – 11 h','7–11 p.m. and 8–11 a.m.'), L('Tokyo et le chevauchement Londres–New York','Tokyo and the London–NY overlap')],
+          ['USDCAD', L('8 h 30 – 11 h 30','8:30–11:30 a.m.'), L('données canadiennes et américaines de 8 h 30, pétrole','Canadian and US 8:30 data, oil')],
+          ['USOIL', L('9 h – 14 h 30','9 a.m. – 2:30 p.m.'), L('séance principale du NYMEX · stocks EIA le mercredi 10 h 30','main NYMEX session · EIA stocks Wednesday 10:30')],
+          ['BITCOIN', '24/7', L('plus actif pendant les heures de Wall Street','most active during Wall Street hours')]
+        ].map((x,i)=>`<div class="dcell n" style="--d:${i*50}ms"><span class="dh">${esc(x[0])}</span><b>${esc(x[1])}</b><small>${esc(x[2])}</small></div>`).join('')}</div></div></div>
+      <p class="src">${L('Heures officielles des bourses (heures locales, heure avancée gérée automatiquement). Les jours fériés ne sont pas pris en compte : vérifie le calendrier de la bourse avant un congé.','Official exchange hours (local time, daylight saving handled automatically). Holidays are not included: check the exchange calendar before a holiday.')}</p>`;
+    tickHours();
+    if(!state.hoursTimer) state.hoursTimer = setInterval(()=>{ if(state.page==='hours') tickHours(); }, 1000);
+  }
+  function tickHours(){
+    const now = Date.now();
+    document.querySelectorAll('#p2hours [data-tz]').forEach(el=>{ const p = tzParts(el.dataset.tz); el.innerHTML = `${String(p.h).padStart(2,'0')}:${String(p.mi).padStart(2,'0')}<small>:${String(p.s).padStart(2,'0')}</small>`; });
+    document.querySelectorAll('#p2hours [data-cdt]').forEach(el=>{ const ms = +el.dataset.cdt - now; if(ms<=0){ if(!tickHours._r){ tickHours._r = 1; setTimeout(()=>{ tickHours._r = 0; renderHours(); }, 1500); } return; } el.textContent = durTxt(ms); });
+    const tp = tzParts('America/Toronto'), ds = tzEpoch(tp.y,tp.mo,tp.d,0,'America/Toronto'), pc = Math.max(0,Math.min(100,(now-ds)/864e5*100));
+    document.querySelectorAll('#p2hours .hnow').forEach(el=>el.style.left = pc+'%');
+    const em = document.querySelector('#hnow em'); if(em) em.textContent = new Date(now).toLocaleTimeString(LOC(),{hour:'2-digit',minute:'2-digit'});
+  }
+
   // ---------- Nouvelles ----------
   state.newsA = state.newsA || 'all';
   function newsItem(n){
@@ -2644,7 +3003,8 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   // ---------- branchement ----------
   function renderP2(){
     const pg = state.page;
-    if(pg==='home') renderHome();
+    if(pg==='home'){ renderHome(); renderGlobe(); }
+    else if(pg==='hours') renderHours();
     else if(pg==='charts') renderCharts();
     else if(pg==='eco') renderEco();
     else if(pg==='fed') renderRates();
@@ -2654,6 +3014,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     else if(pg==='fund') renderFundHM();
     else if(pg==='tech') renderTechHM();
     else if(pg==='seas') renderSeas();
+    else if(pg==='globe') renderGlobe();
     else if(pg==='news') renderNews();
   }
   function p2Page(pg){
@@ -2697,7 +3058,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', charts:'graphiques', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', charts:'graphiques', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
     p2Page(pg); pageFx(pg); if(typeof renderMbar==='function') renderMbar();
   }
@@ -2707,7 +3068,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas','#monde':'home','#heures-marches':'hours','#market-hours':'hours'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
@@ -2727,6 +3088,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
     state.news = Array.isArray(d.news) ? d.news : [];
     if(d.cbgold) state.cbgold = d.cbgold;
     if(d.tech) state.tech = d.tech;
+    if(d.world) state.world = d.world;
     if(d.live) setSnap(d.live);
   }
   async function refresh(){
