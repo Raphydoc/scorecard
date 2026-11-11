@@ -2999,10 +2999,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   state.hoursTimer = null;
   const USER_TZ = (()=>{ try{ return Intl.DateTimeFormat().resolvedOptions().timeZone || 'America/Toronto'; }catch(e){ return 'America/Toronto'; } })();
   const SES = [
-    {k:'syd', n:['Sydney','Sydney'], city:['HEURE DE SYDNEY','SYDNEY TIME'], tz:'Australia/Sydney', o:7, c:16, col:'#8B6CF0', flag:'🇦🇺'},
-    {k:'tok', n:['Tokyo','Tokyo'], city:['HEURE DE TOKYO','TOKYO TIME'], tz:'Asia/Tokyo', o:9, c:18, col:'#E0383E', flag:'🇯🇵'},
-    {k:'lon', n:['Londres','London'], city:['HEURE DE LONDRES','LONDON TIME'], tz:'Europe/London', o:8, c:17, col:'#22CFE0', flag:'🇬🇧'},
-    {k:'ny', n:['New York','New York'], city:['HEURE DE NEW YORK','NEW YORK TIME'], tz:'America/New_York', o:8, c:17, col:'#F2B43A', flag:'🇺🇸'}
+    {k:'syd', n:['Sydney','Sydney'], city:['HEURE DE SYDNEY','SYDNEY TIME'], tz:'Australia/Sydney', o:10, c:16, col:'#8B6CF0', ex:'ASX', flag:'🇦🇺'},
+    {k:'tok', n:['Tokyo','Tokyo'], city:['HEURE DE TOKYO','TOKYO TIME'], tz:'Asia/Tokyo', o:9, c:15.5, br:[11.5,12.5], col:'#E0383E', ex:'TSE', flag:'🇯🇵'},
+    {k:'lon', n:['Londres','London'], city:['HEURE DE LONDRES','LONDON TIME'], tz:'Europe/London', o:8, c:16.5, col:'#22CFE0', ex:'LSE', flag:'🇬🇧'},
+    {k:'ny', n:['New York','New York'], city:['HEURE DE NEW YORK','NEW YORK TIME'], tz:'America/New_York', o:9.5, c:16, col:'#F2B43A', ex:'NYSE', flag:'🇺🇸'}
   ];
   const p2d = n => String(n).padStart(2,'0');
   const hm = (t, tz) => { const p = tzParts(tz, new Date(t)); return p2d(p.h)+':'+p2d(p.mi); };
@@ -3066,10 +3066,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         <span class="mhlab" data-cdl="${m.k}"></span>
         <b class="mhcd" data-cd="${m.k}"></b>
         <div class="mhprog"><i data-pr="${m.k}"></i></div>
-        <div class="mhfoot"><span>${hrsTxt(m.o)}–${hrsTxt(m.c)} ${L('local','local')}</span><span>${hm(o,tz)}–${hm(c,tz)} ${L('ton heure','your time')}</span></div>
+        <div class="mhfoot"><span>${m.ex} · ${hrsTxt(m.o)}–${hrsTxt(m.c)} ${L('local','local')}${m.br?` (${L('pause','break')} ${hrsTxt(m.br[0])}–${hrsTxt(m.br[1])})`:''}</span><span>${hm(o,tz)}–${hm(c,tz)} ${L('ton heure','your time')}</span></div>
       </div>`; }).join('');
     box.innerHTML = `
-      <div class="mhtop"><div class="ttl"><span class="blink"></span>${L('MARKET HOURS — LES QUATRE SESSIONS DU FOREX','MARKET HOURS — THE FOUR FX SESSIONS')}</div><div class="mhlive" id="mhLive"><i></i><span>${nLive}/4 ${L('SESSIONS EN DIRECT','SESSIONS LIVE')}</span> · ${L('TON HEURE','YOUR CLOCK')} ${esc(off)}</div></div>
+      <div class="mhtop"><div class="ttl"><span class="blink"></span>${L('MARKET HOURS — LES 4 GRANDES BOURSES · HEURES OFFICIELLES','MARKET HOURS — THE 4 MAJOR EXCHANGES · OFFICIAL HOURS')}</div><div class="mhlive" id="mhLive"><i></i><span>${nLive}/4 ${L('BOURSES OUVERTES','EXCHANGES OPEN')}</span> · ${L('TON HEURE','YOUR CLOCK')} ${esc(off)}</div></div>
       <div class="mhhero">
         <div class="mhp mhclock"><span class="mhcap">${L('TON HEURE','YOUR CLOCK')} — ${esc(tz.toUpperCase())}</span>
           <div class="mhdial">${mhClockSVG(now, dayStart)}</div>
@@ -3081,11 +3081,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         <div class="mhp mhtl"><span class="mhcap">${L('LIGNE DU TEMPS 24 H — TON HEURE','24-HOUR TIMELINE — YOUR TIME')} (${esc(off)})</span>
           <div class="mhtlbody"><div class="mhticks">${tlTicks}<span style="left:100%">24:00</span></div>
             <div class="mhrows">${tlRows}<div class="mhnowl"><i id="mhNow" style="left:${pct(now)}%"><em></em></i></div></div></div>
-          <p class="mhnote">${L('Le chevauchement Londres + New York est la période la plus liquide de la journée : c’est là que l’or, le dollar et l’EUR/USD bougent le plus.','The London + New York overlap is the most liquid period of the day: that is when gold, the dollar and EUR/USD move the most.')}</p>
+          <p class="mhnote">${L('Heures officielles d’ouverture et de fermeture de la séance régulière : Sydney (ASX), Tokyo (TSE, avec pause du midi), Londres (LSE) et New York (NYSE · Nasdaq). Quand Londres et New York sont ouvertes en même temps, c’est la période la plus liquide pour l’or, le dollar et les indices.','Official open and close of the regular session: Sydney (ASX), Tokyo (TSE, with lunch break), London (LSE) and New York (NYSE · Nasdaq). When London and New York are open at the same time, it is the most liquid period for gold, the dollar and indices.')}</p>
         </div>
       </div>
       <div class="mhcards">${cards}</div>
-      <p class="mhfn">${L('Les sessions du forex sont les heures de bureau habituelles de chaque grande place (heure locale, heure avancée gérée automatiquement), affichées sur ton horloge. Le forex lui-même est ouvert du dimanche 17 h au vendredi 17 h (New York).','FX sessions are the conventional business hours of each major centre (local time, daylight saving handled automatically), shown on your own clock. Forex itself trades from Sunday 5 p.m. to Friday 5 p.m. (New York).')}</p>
+      <p class="mhfn">${L('Heures officielles des bourses (séance régulière, heure locale, heure avancée gérée automatiquement), affichées sur ton horloge. Les jours fériés ne sont pas pris en compte. Le forex, lui, n’a pas d’heures officielles : il est ouvert du dimanche 17 h au vendredi 17 h (New York).','Official exchange hours (regular session, local time, daylight saving handled automatically), shown on your own clock. Holidays are not included. Forex has no official hours: it trades from Sunday 5 p.m. to Friday 5 p.m. (New York).')}</p>
       <div class="ctrs">
         <div class="ctr ${fxOpen?'b':'r'}"><span>Forex</span><b>${fxOpen?L('OUVERT','OPEN'):L('FERMÉ','CLOSED')}</b><small>${L('dimanche 17 h → vendredi 17 h (New York)','Sunday 5 p.m. → Friday 5 p.m. (New York)')}</small></div>
         <div class="ctr b"><span>${L('Crypto (Bitcoin)','Crypto (Bitcoin)')}</span><b>24/7</b><small>${L('ne ferme jamais','never closes')}</small></div>
@@ -3128,24 +3128,26 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     if(tickHours._mk !== mk){ tickHours._mk = mk; tickHours._st = {}; SES.forEach(m=>{ tickHours._st[m.k] = sesState(m, now); }); tickHours._date = `${new Date(now).toLocaleDateString(LOC(),{weekday:'long', day:'numeric', month:'long', year:'numeric', timeZone:tz})} · ${utcOff(tz)}`.toUpperCase(); }
     SES.forEach(m=>{
       const s = tickHours._st[m.k]; if(s.live) live.push(m);
-      if(box.dataset['l'+m.k] !== (s.live?'1':'0')){ box.dataset['l'+m.k] = s.live?'1':'0';
+      const lunch = !s.live && m.br && s.prevEnd && s.s && (s.s - s.prevEnd) < 3*36e5;
+      const stk = s.live ? '1' : lunch ? 'l' : '0';
+      if(box.dataset['l'+m.k] !== stk){ box.dataset['l'+m.k] = stk;
       box.querySelectorAll(`[data-ses="${m.k}"]`).forEach(el=>el.classList.toggle('on', s.live));
-      const b = box.querySelector(`[data-bdg="${m.k}"]`); if(b){ b.className = 'mhbadge'+(s.live?' on':''); b.innerHTML = `<i></i>${s.live?L('EN DIRECT','LIVE'):L('FERMÉE','CLOSED')}`; }
-      const l = box.querySelector(`[data-cdl="${m.k}"]`); if(l) l.textContent = s.live ? L('FERME DANS','CLOSES IN') : L('OUVRE DANS','OPENS IN'); }
+      const b = box.querySelector(`[data-bdg="${m.k}"]`); if(b){ b.className = 'mhbadge'+(s.live?' on':''); b.innerHTML = `<i></i>${s.live?L('OUVERTE','OPEN'):lunch?L('PAUSE DU MIDI','LUNCH BREAK'):L('FERMÉE','CLOSED')}`; }
+      const l = box.querySelector(`[data-cdl="${m.k}"]`); if(l) l.textContent = s.live ? L('FERME DANS','CLOSES IN') : lunch ? L('REPREND DANS','RESUMES IN') : L('OUVRE DANS','OPENS IN'); }
       const c = box.querySelector(`[data-cd="${m.k}"]`); if(c) c.textContent = s.live ? cdTxt(s.e-now) : (s.s ? cdTxt(s.s-now) : '—');
       const pr = box.querySelector(`[data-pr="${m.k}"]`);
       if(pr){ let f = 0; if(s.live) f = (now-s.s)/(s.e-s.s); else if(s.s && s.prevEnd) f = (now-s.prevEnd)/(s.s-s.prevEnd); pr.style.transform = `scaleX(${Math.max(0,Math.min(1,f)).toFixed(4)})`; }
     });
     box.querySelectorAll('[data-mtz]').forEach(el=>{ const q = tzParts(el.dataset.mtz); el.innerHTML = `${p2d(q.h)}:${p2d(q.mi)}<span>:${p2d(q.s)}</span>`; });
     const dt = $('mhDate'); if(dt && dt.textContent !== tickHours._date) dt.textContent = tickHours._date;
-    const lv = $('mhLive'); if(lv){ lv.querySelector('span').textContent = `${live.length}/4 ${L('SESSIONS EN DIRECT','SESSIONS LIVE')}`; lv.classList.toggle('none', !live.length); }
+    const lv = $('mhLive'); if(lv){ lv.querySelector('span').textContent = `${live.length}/4 ${L('BOURSES OUVERTES','EXCHANGES OPEN')}`; lv.classList.toggle('none', !live.length); }
     const ov = $('mhOv');
     if(ov){ const nm = m => (isEN()?m.n[1]:m.n[0]).toUpperCase();
       let t;
       if(!fxStatus(now)) t = L('FOREX FERMÉ — LE MARCHÉ ROUVRE DIMANCHE 17 H (NEW YORK)','FOREX CLOSED — MARKET REOPENS SUNDAY 5 P.M. (NEW YORK)');
       else if(live.length>=2){ const k = live.map(m=>m.k).join(','); t = `${L('CHEVAUCHEMENT','OVERLAP')} · ${live.map(nm).join(' + ')} — ${k.includes('lon') && k.includes('ny') ? L('LIQUIDITÉ MAXIMALE','PEAK LIQUIDITY') : L('LIQUIDITÉ EN HAUSSE','RISING LIQUIDITY')}`; }
-      else if(live.length===1) t = `${L('SESSION ACTIVE','ACTIVE SESSION')} · ${nm(live[0])}`;
-      else t = L('ENTRE DEUX SESSIONS — MARCHÉ PLUS CALME','BETWEEN SESSIONS — QUIETER MARKET');
+      else if(live.length===1) t = `${L('BOURSE OUVERTE','EXCHANGE OPEN')} · ${nm(live[0])}`;
+      else t = L('AUCUNE DES 4 BOURSES N’EST OUVERTE','NONE OF THE 4 EXCHANGES IS OPEN');
       if(ov.textContent !== t) ov.textContent = t; ov.classList.toggle('pk', live.length>=2); }
     box.querySelectorAll('[data-cdt]').forEach(el=>{ const ms = +el.dataset.cdt - now; if(ms<=0){ if(!tickHours._r){ tickHours._r = 1; setTimeout(()=>{ tickHours._r = 0; renderHours(); }, 1500); } return; } el.textContent = durTxt(ms); });
     const pc = Math.max(0,Math.min(100,(now-dayStart)/864e5*100));
