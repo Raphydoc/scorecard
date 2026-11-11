@@ -802,9 +802,9 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 .tscap2{margin:0 0 6px;font:600 10px/1.3 var(--f-mono);letter-spacing:.12em;color:var(--muted)} .tscap2 b{color:var(--gold)}
 .tsnone{color:var(--muted);font-size:12.5px;padding:10px 4px;margin:0}
 .tssel{background:var(--panel-2);color:var(--fg);border:1px solid var(--line);border-radius:4px;padding:6px 8px;font:600 12px/1 var(--f-mono)}
-:is(#p2charts,#p2watch,#p2risk,#p2ind,#p2liq,#p2calc,#p2journal,#p2alfred,#p2recap,#p2squawk,#p2research,#p2bankpos,#homeTS) .panel{padding:12px 14px}
-:is(#p2charts,#p2watch,#p2risk,#p2ind,#p2liq,#p2calc,#p2journal,#p2alfred,#p2recap,#p2squawk,#p2research,#p2bankpos,#homeTS) .panel > .ph{margin:-12px -14px 10px}
-:is(#p2charts,#p2watch,#p2risk,#p2ind,#p2liq,#p2calc,#p2journal,#p2alfred,#p2recap,#p2squawk,#p2research,#p2bankpos,#homeTS) .pos{color:var(--bull)} :is(#p2charts,#p2watch,#p2risk,#p2ind,#p2liq,#p2calc,#p2journal,#p2alfred,#p2recap,#p2squawk,#p2research,#p2bankpos,#homeTS) .neg{color:var(--bear)} .ddr b.pos,.ddgrid .pos{color:var(--bull)}
+:is(#p2charts,#p2watch,#p2risk,#p2ind,#p2liq,#p2recap,#p2squawk,#p2research,#p2bankpos,#homeTS) .panel{padding:12px 14px}
+:is(#p2charts,#p2watch,#p2risk,#p2ind,#p2liq,#p2recap,#p2squawk,#p2research,#p2bankpos,#homeTS) .panel > .ph{margin:-12px -14px 10px}
+:is(#p2charts,#p2watch,#p2risk,#p2ind,#p2liq,#p2recap,#p2squawk,#p2research,#p2bankpos,#homeTS) .pos{color:var(--bull)} :is(#p2charts,#p2watch,#p2risk,#p2ind,#p2liq,#p2recap,#p2squawk,#p2research,#p2bankpos,#homeTS) .neg{color:var(--bear)} .ddr b.pos,.ddgrid .pos{color:var(--bull)}
 .spk2{width:100%;height:100%;display:block}
 /* Charts */
 .chwrap{display:grid;grid-template-columns:240px minmax(0,1fr);gap:12px}
@@ -899,54 +899,6 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 .lqs{font:800 10px/1 var(--f-mono);letter-spacing:.08em} .lqs.bsl{color:var(--bear)} .lqs.ssl{color:var(--bull)} .lqs.ses{color:var(--gold)}
 .lqd{color:var(--gold);letter-spacing:.1em} .lqd small{color:var(--muted);letter-spacing:0} .lqr em{font-style:normal;font-size:11px;color:var(--muted)} .lqr em.pos{color:var(--bull)} .lqr em.neg{color:var(--bear)}
 @media (max-width:700px){ .liqk{grid-template-columns:minmax(0,1fr)} .liqc{height:320px} .lqr{grid-template-columns:80px 1fr auto} .lqd{display:none} }
-/* Risk Calculator */
-.rcgrid{display:grid;grid-template-columns:300px minmax(0,1fr);gap:12px}
-.rcin{display:grid;align-content:start;gap:12px} .rcin label{display:grid;gap:5px;font:700 9.5px/1 var(--f-mono);letter-spacing:.14em;color:var(--muted)}
-.rcin input,.rcin select{width:100%;box-sizing:border-box;text-align:left;background:var(--panel-2);border:1px solid var(--line);border-radius:4px;color:var(--fg);padding:10px;font:600 14px/1 var(--f-mono)}
-.rcin input:focus,.rcin select:focus{border-color:var(--gold);outline:none}
-.rcout{display:grid;gap:12px;align-content:start} .rcempty{color:var(--muted);padding:30px!important;text-align:center}
-.rch{display:flex;justify-content:space-between;align-items:center} .rcdir{font:800 10px/1 var(--f-mono);letter-spacing:.12em;padding:5px 8px;border:1px solid;border-radius:3px} .rcdir.b{color:var(--bull)} .rcdir.r{color:var(--bear)}
-.rc3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px} .rc3 > div{display:grid;gap:4px} .rc3 span{font:700 9.5px/1 var(--f-mono);letter-spacing:.14em;color:var(--muted)}
-.rc3 b{font:800 30px/1 var(--f-mono)} .rc3 b.gold{color:var(--gold);font-size:40px} .rc3 small{color:var(--muted);font-size:11px} .rc3.sm b{font-size:16px}
-.rc2{display:grid;grid-template-columns:1fr 1fr;gap:12px} .rcbox{display:grid;gap:4px} .rcbox span{font:700 9.5px/1 var(--f-mono);letter-spacing:.14em;color:var(--muted)} .rcbox b{font:800 32px/1 var(--f-mono)} .rcbox.r b{color:var(--bear)} .rcbox.b b{color:#22CFE0} .rcbox small{color:var(--muted);font-size:11px}
-.rcbar{position:relative;height:56px;margin:22px 10px 8px} .rcbar > i{position:absolute;top:22px;height:8px;border-radius:4px} .rcbar i.rk{background:var(--bear);opacity:.7} .rcbar i.rw{background:#22CFE0;opacity:.75}
-.rcbar .mk{position:absolute;top:0;transform:translateX(-50%);display:grid;justify-items:center;font:700 9.5px/1.4 var(--f-mono)} .rcbar .mk::after{content:"";position:absolute;top:14px;width:2px;height:24px;background:currentColor}
-.rcbar .mk em{font-style:normal;letter-spacing:.12em} .rcbar .mk b{margin-top:30px;color:var(--fg)} .rcbar .mk.r{color:var(--bear)} .rcbar .mk.w{color:var(--fg)} .rcbar .mk.b{color:#22CFE0}
-.rcrr{display:grid;justify-items:center;gap:8px;padding:24px 14px!important;text-align:center} .rcrr > b{font:800 56px/1 var(--f-mono);color:var(--gold)} .rcrr > b.b{color:var(--bull)} .rcrr > b.r{color:var(--bear)}
-.rcq{font:800 10px/1 var(--f-mono);letter-spacing:.14em;color:var(--gold)} .rcq.b{color:var(--bull)} .rcq.r{color:var(--bear)}
-.rcsc{width:min(100%,320px);height:5px;border-radius:3px;background:rgba(255,255,255,.08)} .rcsc i{display:block;height:100%;border-radius:3px;background:var(--gold)}
-@media (max-width:900px){ .rcgrid{grid-template-columns:minmax(0,1fr)} .rc3 b{font-size:22px} .rc3 b.gold{font-size:30px} .rcrr > b{font-size:40px} }
-/* Track record */
-.jbar{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:10px} .jstart{display:flex;gap:6px;align-items:center;margin-left:auto;font:600 11px/1 var(--f-mono);color:var(--muted)} .jstart input{width:110px;background:var(--panel-2);border:1px solid var(--line);border-radius:4px;color:var(--fg);padding:7px;font:600 12px/1 var(--f-mono)}
-.btn.gold{background:var(--gold);color:#000;border-color:var(--gold)} .jimp{cursor:pointer}
-.jform{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-bottom:10px;align-items:end} .jform label{display:grid;gap:4px;font:700 9.5px/1 var(--f-mono);letter-spacing:.12em;color:var(--muted)} .jform label.wide{grid-column:span 2}
-.jform input,.jform select{background:var(--panel-2);border:1px solid var(--line);border-radius:4px;color:var(--fg);padding:8px;font:600 13px/1 var(--f-mono)}
-.jkpis{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;margin-bottom:10px} .jk .v.pos{color:#22CFE0} .jk small{font:600 11px/1 var(--f-mono);color:var(--muted)} .jk small i{font-style:normal}
-.jgrid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2fr);gap:10px} .jgrid > div:nth-child(n+3){grid-column:auto} .jgrid{grid-template-areas:"sc cum" "m q"} .jgrid > div:nth-child(5){grid-column:1/-1}
-.jsc{display:grid;justify-items:center;border-color:var(--gold)!important} .jsc > b{font:800 26px/1 var(--f-mono);color:var(--gold)}
-.jscore{position:relative;width:80%;height:4px;border-radius:2px;background:linear-gradient(90deg,var(--bear),var(--gold),var(--bull));margin:8px 0} .jscore i{position:absolute;top:-4px;width:3px;height:12px;background:#fff;margin-left:-1px}
-.jcv{position:relative;height:260px;width:100%} .jcv.r{height:230px} .jcv.s{height:200px}
-.jtbl td,.jtbl th{padding:7px 8px} .jdel{border:0;background:none;color:var(--muted);cursor:pointer} .jdel:hover{color:var(--bear)}
-@media (max-width:1000px){ .jkpis{grid-template-columns:repeat(2,minmax(0,1fr))} .jgrid{grid-template-columns:minmax(0,1fr);grid-template-areas:none} .jgrid > div{grid-column:auto!important} .jstart{margin-left:0} }
-/* Alfred */
-.alfhead{display:flex;flex-wrap:wrap;align-items:center;gap:10px;padding:6px 2px 12px;border-bottom:1px solid var(--line)} .alfhead b{font:800 20px/1 var(--f-mono);letter-spacing:.16em;color:var(--gold)} .alfhead span{font:600 10px/1 var(--f-mono);letter-spacing:.14em;color:var(--muted)}
-.alfhead em{margin-left:auto;font:700 10px/1 var(--f-mono);letter-spacing:.12em;font-style:normal;color:var(--muted);display:flex;gap:6px;align-items:center} .alfhead em i{width:7px;height:7px;border-radius:50%;background:var(--muted)} .alfhead em.on{color:#2BD47D} .alfhead em.on i{background:#2BD47D;box-shadow:0 0 8px #2BD47D}
-.alforb{display:grid;place-items:center;padding:26px 0} .alforb > div{width:150px;height:150px;border-radius:50%;display:grid;place-items:center;align-content:center;text-align:center;background:radial-gradient(circle at 40% 35%,#7a4a10,#3a1f05 55%,#120802);box-shadow:0 0 0 2px rgba(242,180,58,.35),0 0 50px 8px rgba(242,140,30,.35),inset 0 0 40px rgba(0,0,0,.6)}
-.alforb b{font:800 20px/1 var(--f-mono);letter-spacing:.16em;color:#F8E7C0} .alforb small{font:600 9px/1.6 var(--f-mono);letter-spacing:.14em;color:rgba(248,231,192,.6)}
-.alftape{max-width:100%;overflow:hidden;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:8px 0;margin-bottom:12px} .alftape > div{display:inline-flex;white-space:nowrap;gap:34px;font:600 10px/1 var(--f-mono);letter-spacing:.12em;color:var(--muted);animation:marquee 40s linear infinite;will-change:transform}
-.alfgrid{display:grid;grid-template-columns:240px minmax(0,1fr);gap:12px}
-.alfside{display:grid;align-content:start;gap:6px} .alfq{text-align:left;padding:10px;border:1px solid var(--line);border-radius:4px;background:var(--panel);color:var(--fg);font:500 12.5px/1.35 var(--f-body);cursor:pointer} .alfq:hover:not(:disabled){border-color:var(--gold)} .alfq:disabled{opacity:.5;cursor:default}
-.alfst{display:flex;justify-content:space-between;padding:6px 2px;border-bottom:1px solid var(--line);font:600 11px/1 var(--f-mono)} .alfst span{color:var(--muted);letter-spacing:.1em}
-.alfchat{display:grid;grid-template-rows:minmax(300px,1fr) auto auto;min-height:440px}
-.alfmsgs{overflow:auto;max-height:60vh;display:grid;align-content:start;gap:12px;padding:4px}
-.alfm span{font:700 9.5px/1 var(--f-mono);letter-spacing:.14em;color:var(--muted)} .alfm div{margin-top:5px;padding:10px 12px;border:1px solid var(--line);border-radius:6px;background:var(--panel-2);font-size:13.5px;line-height:1.55}
-.alfm.user div{border-color:var(--gold);background:var(--tint-g)} .alfm.assistant span{color:var(--gold)}
-.alfidle{display:grid;place-items:center;align-content:center;gap:8px;text-align:center;min-height:280px;padding:0 20px} .alfidle b{font:700 15px/1.3 var(--f-mono)} .alfidle span{color:var(--muted);font-size:12.5px;max-width:520px;line-height:1.5}
-.alfin{display:flex;gap:8px;margin-top:10px} .alfin input{flex:1;min-width:0;background:var(--panel-2);border:1px solid var(--line);border-radius:4px;color:var(--fg);padding:12px;font:500 14px/1 var(--f-body)} .alfin input:focus{border-color:var(--gold);outline:none}
-.alfnote{margin:8px 0 0;text-align:center;font-size:10.5px;color:var(--muted)}
-@media (max-width:900px){ .alfgrid{grid-template-columns:minmax(0,1fr)} .alforb > div{width:110px;height:110px} }
-@media (prefers-reduced-motion:no-preference){ .alforb > div{animation:alfPulse 4s ease-in-out infinite} .alforb.busy > div{animation-duration:1.2s} }
-@keyframes alfPulse{0%,100%{box-shadow:0 0 0 2px rgba(242,180,58,.35),0 0 40px 6px rgba(242,140,30,.3),inset 0 0 40px rgba(0,0,0,.6)}50%{box-shadow:0 0 0 2px rgba(242,180,58,.5),0 0 70px 14px rgba(242,140,30,.45),inset 0 0 40px rgba(0,0,0,.6)}}
 /* Session recap */
 .rcpgrid{display:grid;grid-template-columns:230px minmax(0,1fr) 300px;gap:12px;align-items:start}
 .rclist{display:grid;gap:3px;max-height:760px;overflow:auto} .rcday{margin:8px 0 2px;font:700 9.5px/1 var(--f-mono);letter-spacing:.14em;color:var(--gold)}
@@ -1153,7 +1105,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <button type="button" data-page="charts">Charts</button>
   <button type="button" data-page="recap">Session Recap</button>
   <button type="button" data-page="hours">Market Hours</button>
-  <button type="button" data-page="alfred">Alfred</button>
   <button type="button" data-page="globe">Carte du monde</button>
   <span class="navgrp">Nouvelles</span>
   <button type="button" data-page="cal">Calendrier économique</button>
@@ -1180,9 +1131,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <button type="button" data-page="tech">Heatmap technique</button>
   <button type="button" data-page="ind">Indicators</button>
   <button type="button" data-page="liq">Liquidity</button>
-  <span class="navgrp">Outils</span>
-  <button type="button" data-page="journal">Track Record</button>
-  <button type="button" data-page="calc">Risk Calculator</button>
 </nav>
 </aside>
 <div class="wrap">
@@ -1343,7 +1291,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="globe" hidden aria-label="Carte du monde"><div class="p2" id="p2globe"></div></section>
   <section data-pg="charts" hidden aria-label="Charts"><div class="p2" id="p2charts"></div></section>
   <section data-pg="recap" hidden aria-label="Session Recap"><div class="p2" id="p2recap"></div></section>
-  <section data-pg="alfred" hidden aria-label="Alfred"><div class="p2" id="p2alfred"></div></section>
   <section data-pg="research" hidden aria-label="Bank Research"><div class="p2" id="p2research"></div></section>
   <section data-pg="squawk" hidden aria-label="Squawk"><div class="p2" id="p2squawk"></div></section>
   <section data-pg="bankpos" hidden aria-label="Bank Positioning"><div class="p2" id="p2bankpos"></div></section>
@@ -1351,8 +1298,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="watch" hidden aria-label="Markets Watch"><div class="p2" id="p2watch"></div></section>
   <section data-pg="ind" hidden aria-label="Indicators"><div class="p2" id="p2ind"></div></section>
   <section data-pg="liq" hidden aria-label="Liquidity"><div class="p2" id="p2liq"></div></section>
-  <section data-pg="journal" hidden aria-label="Track Record"><div class="p2" id="p2journal"></div></section>
-  <section data-pg="calc" hidden aria-label="Risk Calculator"><div class="p2" id="p2calc"></div></section>
   <section data-pg="eco" hidden aria-label="Économie US"><div class="p2" id="p2eco"></div></section>
   <section data-pg="cot" hidden aria-label="COT"><div class="p2" id="p2cot"></div></section>
   <section data-pg="sent" hidden aria-label="Sentiment"><div class="p2" id="p2sent"></div></section>
@@ -3788,194 +3733,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     ch.timeScale().setVisibleLogicalRange({from:Math.max(0,b.length-240), to:b.length+3});
   }
 
-  // ---------- Risk Calculator ----------
-  // unité d'un lot (conventions CFD courantes) et devise de cotation
-  const LOT = {eurusd:[100000,'USD'], usdjpy:[100000,'JPY'], usdcad:[100000,'CAD'], xauusd:[100,'USD'], xagusd:[5000,'USD'], usoil:[1000,'USD'],
-    nasdaq:[1,'USD'], spx500:[1,'USD'], us30:[1,'USD'], rut:[1,'USD'], usd:[1000,'USD'], btcusd:[1,'USD']};
-  const LS = (k, v) => { try{ if(v===undefined) return JSON.parse(localStorage.getItem('sc-'+k)||'null'); localStorage.setItem('sc-'+k, JSON.stringify(v)); }catch(e){ return null; } };
-  function renderCalc(){
-    const box = $('p2calc'); if(!box) return;
-    const s = state.rc = state.rc || LS('rc') || {a:'xauusd', bal:10000, risk:1, entry:'', stop:'', tp:''};
-    if(s.entry===''){ const t = ((state.tech||{}).assets||{})[s.a]; if(t && t.px){ s.entry = t.px; s.stop = +(t.px*0.99).toFixed(t.px<2?5:2); s.tp = +(t.px*1.02).toFixed(t.px<2?5:2); } }
-    if(!box.dataset.built){
-      box.dataset.built = '1';
-      box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('CALCULATEUR DE RISQUE · TAILLE DE POSITION','RISK CALCULATOR · POSITION SIZING DESK')}</div><div class="badge" id="rcBadge"></div></div>
-        <div class="rcgrid">
-          <form class="panel rcin" id="rcForm" onsubmit="return false">
-            <p class="tscap">${L('PARAMÈTRES DU TRADE','TRADE PARAMETERS')}</p>
-            <label>${L('INSTRUMENT','INSTRUMENT')}${assetSel('rcA', s.a)}</label>
-            <label>${L('SOLDE DU COMPTE (USD)','ACCOUNT BALANCE (USD)')}<input id="rcBal" type="number" inputmode="decimal" min="0" step="any" value="${esc(s.bal)}"></label>
-            <label>${L('RISQUE PAR TRADE (%)','RISK PER TRADE (%)')}<input id="rcRisk" type="number" inputmode="decimal" min="0" step="0.1" value="${esc(s.risk)}"></label>
-            <label>${L('PRIX D’ENTRÉE','ENTRY PRICE')}<input id="rcEntry" type="number" inputmode="decimal" step="any" value="${esc(s.entry)}"></label>
-            <label>${L('STOP LOSS','STOP LOSS')}<input id="rcStop" type="number" inputmode="decimal" step="any" value="${esc(s.stop)}"></label>
-            <label>${L('PRISE DE PROFIT (FACULTATIF)','TAKE PROFIT (OPTIONAL)')}<input id="rcTp" type="number" inputmode="decimal" step="any" value="${esc(s.tp)}"></label>
-            <button type="button" class="btn ghost" id="rcPx">${L('Utiliser le dernier prix','Use last price')}</button>
-          </form>
-          <div class="rcout" id="rcOut"></div>
-        </div>
-        <p class="src">${L('Taille d’un lot : forex 100 000 unités, or 100 oz, argent 5 000 oz, pétrole 1 000 barils, indices et bitcoin 1 unité (1 $ par point), dollar index 1 000 unités. Ce sont des conventions courantes : vérifie la taille du contrat chez ton courtier. Les paires cotées en JPY ou en CAD sont converties en USD au prix d’entrée.','Lot size: forex 100,000 units, gold 100 oz, silver 5,000 oz, oil 1,000 barrels, indices and bitcoin 1 unit ($1 per point), dollar index 1,000 units. These are common conventions: check your broker’s contract size. JPY- or CAD-quoted pairs are converted to USD at the entry price.')}</p>`;
-      const upd = () => { s.a = $('rcA').value; s.bal = $('rcBal').value; s.risk = $('rcRisk').value; s.entry = $('rcEntry').value; s.stop = $('rcStop').value; s.tp = $('rcTp').value; LS('rc', s); calcOut(); };
-      box.querySelectorAll('#rcForm input, #rcForm select').forEach(x=>x.addEventListener('input', upd));
-      $('rcPx').addEventListener('click', ()=>{ const t = ((state.tech||{}).assets||{})[$('rcA').value]; if(t && t.px){ $('rcEntry').value = t.px; upd(); } });
-    }
-    calcOut();
-  }
-  function calcOut(){
-    const s = state.rc, o = $('rcOut'); if(!o) return;
-    const bal = +s.bal, rk = +s.risk, e = +s.entry, st = +s.stop, tp = s.tp==='' ? null : +s.tp, [lot, qc] = LOT[s.a] || [1,'USD'];
-    $('rcBadge').textContent = `${TOP_NAMES[s.a]} · ${L('CALCUL DÉTERMINISTE','DETERMINISTIC MATH')}`;
-    if(!(bal>0 && rk>0 && e>0 && st>0 && e!==st)){ o.innerHTML = `<div class="panel rcempty">${L('Entre le solde, le risque, le prix d’entrée et le stop pour voir la taille de position.','Enter balance, risk, entry and stop to see the position size.')}</div>`; return; }
-    const long = st < e, dist = Math.abs(e-st), riskUsd = bal*rk/100;
-    const toUsd = qc==='USD' ? 1 : 1/e; // P&L en JPY ou CAD -> USD
-    const units = riskUsd / (dist*toUsd), lots = units/lot;
-    const tpOk = tp!=null && (long ? tp>e : tp<e), reward = tpOk ? Math.abs(tp-e)*units*toUsd : null, rr = reward!=null ? reward/riskUsd : null;
-    const be = rr ? 1/(1+rr)*100 : null, q = rr==null ? ['—',''] : rr>=2 ? [L('BON','GOOD'),'b'] : rr>=1.5 ? [L('ACCEPTABLE','ACCEPTABLE'),'g'] : [L('FAIBLE','POOR'),'r'];
-    const lo = Math.min(st, tp??e, e), hi = Math.max(st, tp??e, e), pos = v => ((v-lo)/(hi-lo||1)*100).toFixed(2);
-    const dp = Math.max(2, (String(s.entry).split('.')[1]||'').length);
-    o.innerHTML = `<div class="panel rcpos"><div class="rch"><p class="tscap">POSITION</p><span class="rcdir ${long?'b':'r'}">● ${long?'LONG':'SHORT'}</span></div>
-        <div class="rc3"><div><span>${L('TAILLE EN LOTS','LOT SIZE')}</span><b class="gold">${nf(lots, lots<10?2:1)}</b><small>${L('lots · 1 lot = ','lots · 1 lot = ')}${nf(lot,0)} ${L('unités','units')}</small></div>
-        <div><span>${L('TAILLE DE POSITION','POSITION SIZE')}</span><b>${nf(units, units<100?2:0)}</b><small>${L('unités','units')}</small></div>
-        <div><span>${L('DISTANCE DU STOP','STOP DISTANCE')}</span><b>${nf(dist, dp)}</b><small>${nf(dist/e*100,2)} %</small></div></div></div>
-      <div class="rc2"><div class="panel rcbox r"><span>${L('RISQUE','RISK')}</span><b>${nf(riskUsd,2)} $</b><small>${nf(rk,2)} % ${L('du solde','of balance')}</small></div>
-        <div class="panel rcbox b"><span>${L('GAIN VISÉ','REWARD')}</span><b>${reward==null?'—':nf(reward,2)+' $'}</b><small>${reward==null?(tp==null?L('ajoute une prise de profit','add a take profit'):L('cible du mauvais côté','target on the wrong side')):L('à la prise de profit','at take profit')}</small></div></div>
-      <div class="panel rcmap"><p class="tscap">${L('CARTE DU TRADE','TRADE MAP')}</p><div class="rcbar"><i class="rk" style="left:${Math.min(pos(st),pos(e))}%;width:${Math.abs(pos(e)-pos(st))}%"></i>${tpOk?`<i class="rw" style="left:${Math.min(pos(tp),pos(e))}%;width:${Math.abs(pos(tp)-pos(e))}%"></i>`:''}
-        <span class="mk r" style="left:${pos(st)}%"><em>STOP</em><b>${nf(st,dp)}</b></span><span class="mk w" style="left:${pos(e)}%"><em>${L('ENTRÉE','ENTRY')}</em><b>${nf(e,dp)}</b></span>${tpOk?`<span class="mk b" style="left:${pos(tp)}%"><em>${L('CIBLE','TARGET')}</em><b>${nf(tp,dp)}</b></span>`:''}</div></div>
-      <div class="panel rcrr"><p class="tscap">${L('RATIO RISQUE / RENDEMENT','RISK / REWARD RATIO')}</p><b class="${q[1]}">1 : ${rr==null?'—':nf(rr,2)}</b><span class="rcq ${q[1]}">${q[0]}</span>
-        <div class="rcsc"><i style="width:${rr==null?0:Math.min(100,rr/4*100)}%"></i></div>
-        <div class="rc3 sm"><div><span>${L('TAUX DE RÉUSSITE MINIMUM','BREAKEVEN WIN RATE')}</span><b>${be==null?'—':nf(be,0)+' %'}</b></div><div><span>${L('RISQUE','RISK')}</span><b class="neg">${nf(riskUsd,0)}</b></div><div><span>${L('GAIN','REWARD')}</span><b class="pos">${reward==null?'—':nf(reward,0)}</b></div></div></div>`;
-  }
-
-  // ---------- Track Record : journal de trading ----------
-  state.jTab = state.jTab || 'dash';
-  function jLoad(){ if(state.jr) return state.jr; state.jr = LS('journal') || {start:10000, trades:[]}; return state.jr; }
-  (async()=>{ try{ const c = window.claude; state.dlNs = c && c.use ? await c.use('downloads') : null; }catch(e){ state.dlNs = null; } })();
-  async function jSave(){ LS('journal', state.jr); if(state.jdb){ try{ await state.jdb.set({items:state.jr.trades, start:state.jr.start}); }catch(e){} } }
-  async function jConnect(){ // version Claude : journal privé dans la base (data/users/<id>)
-    if(state.jdbTried) return; state.jdbTried = true;
-    try{ const c = window.claude; if(!c || !c.use) return; const db = await c.use('db'), user = await c.use('user'); if(!db || !user) return;
-      const id = await user.id(); if(!id) return; const doc = db.collection('data/users/'+id).doc('journal'); state.jdb = doc;
-      doc.onSnapshot(snap=>{ const v = snap && snap.data && snap.data(); if(v && Array.isArray(v.items)){ state.jr = {start:v.start||10000, trades:v.items}; LS('journal', state.jr); if(state.page==='journal') renderJournal(); } }, ()=>{});
-    }catch(e){}
-  }
-  function jStats(T, start){
-    const t = T.slice().sort((a,b)=>(a.date||'').localeCompare(b.date||'')), pl = t.map(x=>+x.pnl||0);
-    const wins = pl.filter(x=>x>0), loss = pl.filter(x=>x<0), net = pl.reduce((s,x)=>s+x,0);
-    const gw = wins.reduce((s,x)=>s+x,0), gl = -loss.reduce((s,x)=>s+x,0);
-    let eq = start, peak = start, mdd = 0, mddP = 0; const curve = [];
-    t.forEach((x,i)=>{ eq += pl[i]; peak = Math.max(peak, eq); const dd = eq-peak; if(dd < mdd){ mdd = dd; mddP = dd/peak*100; } curve.push([x.date, eq-start]); });
-    const by = f => { const m = {}; t.forEach((x,i)=>{ const k = f(x.date||''); m[k] = (m[k]||0)+pl[i]; }); return Object.entries(m); };
-    const avgW = wins.length ? gw/wins.length : 0, avgL = loss.length ? gl/loss.length : 0;
-    const wr = t.length ? wins.length/t.length*100 : 0, pf = gl ? gw/gl : (gw ? Infinity : 0), ratio = avgL ? avgW/avgL : 0;
-    // consistance : part des mois gagnants; récupération : net / |drawdown|
-    const months = by(d=>d.slice(0,7)), cons = months.length ? months.filter(m=>m[1]>0).length/months.length*100 : 0, rec = mdd ? net/Math.abs(mdd) : (net>0?3:0);
-    const sc = k => Math.max(0, Math.min(100, k));
-    const radar = [sc(wr), sc(pf===Infinity?100:pf/3*100), sc(ratio/3*100), sc(rec/3*100), sc(100+mddP*5), sc(cons)];
-    const score = radar.reduce((s,x)=>s+x,0)/radar.length;
-    return {t, pl, net, wr, pf, mdd, mddP, avgW, avgL, ratio, curve, months, quarters:by(d=>d.slice(0,4)+'-T'+(Math.floor((+d.slice(5,7)-1)/3)+1)), radar, score, n:t.length, nw:wins.length, nl:loss.length};
-  }
-  function renderJournal(){
-    const box = $('p2journal'); if(!box) return;
-    jConnect(); const J = jLoad(), S = jStats(J.trades, +J.start||10000), tab = state.jTab;
-    const kp = (l, v, c, sub) => `<div class="kpi jk"><span class="l">${l}</span><span class="v ${c||''}">${v}</span>${sub?`<small>${sub}</small>`:''}</div>`;
-    box.innerHTML = `<div class="jbar"><div class="chips">${[['dash',L('TABLEAU DE BORD','DASHBOARD')],['log',L('JOURNAL DES TRADES','TRADE LOG')]].map(([k,t])=>`<button type="button" class="chip" data-t="${k}" aria-pressed="${tab===k}">${t}</button>`).join('')}</div>
-        <label class="jstart">${L('Capital de départ','Starting balance')} <input id="jStart" type="number" min="0" step="any" value="${esc(J.start)}"></label>
-        <button type="button" class="btn" id="jAddBtn">＋ ${L('AJOUTER UN TRADE','LOG TRADE')}</button><label class="btn gold jimp">⇪ ${L('IMPORTER (CSV)','IMPORT TRADES (CSV)')}<input type="file" id="jFile" accept=".csv,text/csv" hidden></label><button type="button" class="btn ghost" id="jExp">${L('Exporter','Export')}</button></div>
-      <form class="panel jform" id="jForm" hidden onsubmit="return false">
-        <label>${L('Date','Date')}<input type="date" id="jD" value="${new Date().toISOString().slice(0,10)}"></label>
-        <label>${L('Actif','Asset')}<input id="jA" list="jAl" placeholder="XAUUSD"><datalist id="jAl">${Object.keys(ASSETS).map(a=>`<option value="${esc(TOP_NAMES[a])}">`).join('')}</datalist></label>
-        <label>${L('Sens','Side')}<select id="jS"><option value="long">LONG</option><option value="short">SHORT</option></select></label>
-        <label>${L('Entrée','Entry')}<input id="jE" type="number" step="any"></label><label>${L('Sortie','Exit')}<input id="jX" type="number" step="any"></label>
-        <label>${L('Résultat ($)','P&L ($)')}<input id="jP" type="number" step="any" required></label>
-        <label class="wide">${L('Note','Note')}<input id="jN" maxlength="200"></label>
-        <button type="button" class="btn gold" id="jSave">${L('Enregistrer','Save')}</button></form>
-      ${tab==='dash' && !S.n ? `<div class="panel tswait">${L('Ton journal est vide. Clique sur « Ajouter un trade » ou importe un fichier CSV pour voir tes statistiques (réussite, facteur de profit, baisse maximale, courbe de résultats).','Your journal is empty. Click “Log trade” or import a CSV file to see your stats (win rate, profit factor, max drawdown, P&L curve).')}</div>` : tab==='dash' ? `
-      <div class="jkpis">${kp(L('RÉSULTAT NET','NET P&L'), (S.net>=0?'':'−')+nf(Math.abs(S.net),2)+' $', S.net>=0?'pos':'neg', S.n+' '+L('trades fermés','closed trades'))}
-        ${kp(L('TAUX DE RÉUSSITE','TRADE WIN %'), nf(S.wr,2)+' %', '', `<i class="pos">${S.nw}</i> · <i class="neg">${S.nl}</i>`)}
-        ${kp(L('FACTEUR DE PROFIT','PROFIT FACTOR'), S.pf===Infinity?'∞':nf(S.pf,2), S.pf>=1?'pos':'neg')}
-        ${kp(L('BAISSE MAXIMALE','MAX DRAWDOWN'), (S.mdd<0?'−':'')+nf(Math.abs(S.mdd),0)+' $', 'neg', nf(S.mddP,2)+' %')}
-        ${kp(L('GAIN MOYEN / PERTE MOYENNE','AVG WIN / LOSS'), nf(S.ratio,2), '', `<i class="pos">${nf(S.avgW,0)} $</i> · <i class="neg">−${nf(S.avgL,0)} $</i>`)}</div>
-      <div class="jgrid">
-        <div class="panel jsc"><p class="tscap">● ${L('SCORE DE PERFORMANCE','PERFORMANCE SCORE')}</p><div class="jcv r"><canvas id="jRadar"></canvas></div><div class="jscore"><i style="left:${S.score}%"></i></div><b>${S.n?nf(S.score,1):'—'}</b></div>
-        <div class="panel jcum"><p class="tscap">${L('RÉSULTAT NET CUMULÉ','TRADE NET CUMULATIVE P&L')}</p><div class="jcv"><canvas id="jCum"></canvas></div></div>
-        <div class="panel"><p class="tscap">${L('RÉSULTAT PAR MOIS','MONTH P&L')}</p><div class="jcv s"><canvas id="jMon"></canvas></div></div>
-        <div class="panel"><p class="tscap">${L('RÉSULTAT PAR TRIMESTRE','QUARTER P&L')}</p><div class="jcv s"><canvas id="jQ"></canvas></div></div>
-        <div class="panel"><p class="tscap">${L('DERNIERS TRADES','LAST TRADES P&L')}</p><div class="jcv s"><canvas id="jLast"></canvas></div></div>
-      </div>` : `
-      <div class="panel jlog">${S.t.length ? `<table class="tbl jtbl"><thead><tr><th>Date</th><th>${L('Actif','Asset')}</th><th>${L('Sens','Side')}</th><th>${L('Entrée','Entry')}</th><th>${L('Sortie','Exit')}</th><th>P&L</th><th>${L('Note','Note')}</th><th></th></tr></thead><tbody>${S.t.slice().reverse().map(x=>`<tr><td>${esc(x.date||'')}</td><td>${esc(x.asset||'')}</td><td>${esc((x.side||'').toUpperCase())}</td><td class="num">${x.entry!==''&&x.entry!=null?esc(x.entry):'—'}</td><td class="num">${x.exit!==''&&x.exit!=null?esc(x.exit):'—'}</td><td class="num ${pcCls(+x.pnl)}">${sg2(+x.pnl,2)}</td><td>${esc(x.note||'')}</td><td><button type="button" class="jdel" data-id="${esc(x.id)}" aria-label="${L('Supprimer','Delete')}">✕</button></td></tr>`).join('')}</tbody></table>` : `<p class="tsnone">${L('Aucun trade pour l’instant. Ajoute ton premier trade ou importe un fichier CSV (colonnes : date, asset, side, entry, exit, pnl, note).','No trades yet. Log your first trade or import a CSV file (columns: date, asset, side, entry, exit, pnl, note).')}</p>`}</div>`}
-      <p class="src">${state.jdb?L('Ton journal est sauvegardé dans ton compte (privé, toi seul le vois).','Your journal is saved to your account (private, only you can see it).'):L('Ton journal est sauvegardé dans ce navigateur seulement. Exporte-le en CSV pour le garder ailleurs.','Your journal is saved in this browser only. Export it to CSV to keep it elsewhere.')}</p>`;
-    box.querySelectorAll('.jbar .chip').forEach(b=>b.addEventListener('click', ()=>{ state.jTab = b.dataset.t; renderJournal(); }));
-    $('jAddBtn').addEventListener('click', ()=>{ const f = $('jForm'); f.hidden = !f.hidden; if(!f.hidden) $('jA').focus(); });
-    $('jStart').addEventListener('change', e=>{ J.start = +e.target.value||0; jSave(); renderJournal(); });
-    $('jSave').addEventListener('click', ()=>{ const p = $('jP').value; if(p===''){ $('jP').focus(); return; }
-      J.trades.push({id:Date.now().toString(36)+Math.random().toString(36).slice(2,6), date:$('jD').value, asset:$('jA').value.trim().toUpperCase(), side:$('jS').value, entry:$('jE').value, exit:$('jX').value, pnl:+p, note:$('jN').value.trim()});
-      jSave(); renderJournal(); });
-    box.querySelectorAll('.jdel').forEach(b=>b.addEventListener('click', ()=>{ J.trades = J.trades.filter(x=>x.id!==b.dataset.id); jSave(); renderJournal(); }));
-    $('jExp').addEventListener('click', ()=>{ const rows = [['date','asset','side','entry','exit','pnl','note']].concat(J.trades.map(x=>[x.date,x.asset,x.side,x.entry,x.exit,x.pnl,(x.note||'').replace(/[",\n]/g,' ')]));
-      const csv = rows.map(r=>r.join(',')).join('\n'); const dl = (state.dlNs !== undefined) ? state.dlNs : null;
-      if(dl){ dl.save({filename:'journal-trading.csv', data:csv}).catch(()=>{}); return; }
-      const blob = new Blob([csv], {type:'text/csv'}); const a = document.createElement('a'); a.href = URL.createObjectURL(blob); a.download = 'journal-trading.csv'; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href), 2000); });
-    $('jFile').addEventListener('change', e=>{ const f = e.target.files[0]; if(!f) return; f.text().then(txt=>{
-      const lines = txt.trim().split(/\r?\n/), head = lines[0].toLowerCase().split(/[,;]/).map(x=>x.trim()), ix = n => head.findIndex(h=>h===n || h.includes(n));
-      const iD = ix('date'), iA = ix('asset')>=0?ix('asset'):ix('symbol'), iS = ix('side')>=0?ix('side'):ix('type'), iE = ix('entry')>=0?ix('entry'):ix('open'), iX = ix('exit')>=0?ix('exit'):ix('close'), iP = ix('pnl')>=0?ix('pnl'):ix('profit'), iN = ix('note');
-      if(iP<0){ alertBox(L('Le fichier doit avoir une colonne « pnl » ou « profit ».','The file needs a "pnl" or "profit" column.')); return; }
-      let n = 0; lines.slice(1).forEach(l=>{ const c = l.split(/[,;]/); const p = parseFloat((c[iP]||'').replace(/[^0-9.\-]/g,'')); if(!isFinite(p)) return; n++;
-        J.trades.push({id:Date.now().toString(36)+n, date:(c[iD]||'').slice(0,10), asset:(c[iA]||'').trim().toUpperCase(), side:/sell|short/i.test(c[iS]||'')?'short':'long', entry:c[iE]||'', exit:c[iX]||'', pnl:p, note:(c[iN]||'').trim()}); });
-      jSave(); state.jTab = 'log'; renderJournal(); }); });
-    if(tab!=='dash' || !S.n) return;
-    needChart().then(ok=>{ if(!ok || state.page!=='journal') return;
-      const gold = css('--gold'), bull = css('--bull'), bear = css('--bear'), lbl = d => d ? new Date(d+'T12:00:00').toLocaleDateString(LOC(),{month:'2-digit', day:'2-digit'}) : '';
-      mkChart('jRadar', {type:'radar', data:{labels:[L('Réussite %','Win %'), L('Facteur de profit','Profit factor'), L('Gain/perte moyen','Avg win/loss'), L('Récupération','Recovery factor'), L('Baisse max','Max drawdown'), L('Constance','Consistency')], datasets:[{data:S.radar, borderColor:gold, backgroundColor:'rgba(242,180,58,.25)', pointRadius:2}]},
-        options:{plugins:{legend:{display:false}}, scales:{r:{min:0, max:100, ticks:{display:false}, grid:{color:'rgba(255,255,255,.08)'}, angleLines:{color:'rgba(255,255,255,.08)'}, pointLabels:{font:{size:10}}}}}});
-      mkChart('jCum', {type:'line', data:{labels:S.curve.map(x=>lbl(x[0])), datasets:[{data:S.curve.map(x=>x[1]), borderColor:'#22CFE0', backgroundColor:'rgba(34,207,224,.12)', fill:true, pointRadius:0, tension:.25, borderWidth:2}]}, options:{plugins:{legend:{display:false}}, scales:{x:{ticks:{maxTicksLimit:10}, grid:{display:false}}}}});
-      const bars = (id, arr, f) => mkChart(id, {type:'bar', data:{labels:arr.map(x=>f(x[0])), datasets:[{data:arr.map(x=>x[1]), backgroundColor:arr.map(x=>x[1]>=0?'#22CFE0':bear), borderRadius:2}]}, options:{plugins:{legend:{display:false}}, scales:{x:{grid:{display:false}}}}});
-      bars('jMon', S.months.slice(-12), k=>new Date(k+'-15T12:00:00').toLocaleDateString(LOC(),{month:'short', year:'2-digit'}));
-      bars('jQ', S.quarters.slice(-8), k=>k.replace('-T',' T'));
-      bars('jLast', S.t.slice(-60).map((x,i)=>[x.date, +x.pnl]), d=>lbl(d)); });
-  }
-  function alertBox(t){ ddHtml(`<div class="ddh"><span class="vk">${L('JOURNAL','JOURNAL')}</span><h3>${esc(t)}</h3></div>`); }
-
-  // ---------- Alfred : assistant IA ----------
-  state.alf = state.alf || [];
-  function alfContext(){
-    const lines = Object.keys(ASSETS).map(a=>{ const C = compute(a), t = ((state.tech||{}).assets||{})[a]||{};
-      return `${TOP_NAMES[a]}: score ${C.total} (${verdictEN(C.total)}), prix ${t.px??'?'}, 1j ${t.chg1d??'?'}%, tendance ${t.trend||'?'}, RSI ${t.rsi!=null?Math.round(t.rsi):'?'}`; });
-    const cal = (state.calendar||[]).filter(x=>x.date>=new Date().toISOString().slice(0,10)).slice(0,8).map(x=>`${x.date} ${x.time||''} ${x.name||x.title||''} prévu ${x.f??''}`);
-    const news = (state.news||[]).slice(0,6).map(n=>`${n.date} ${n.title}`);
-    const fed = state.fed && state.fed.probs ? JSON.stringify(state.fed.probs).slice(0,300) : '';
-    const rk = state.mk && state.mk.risk ? `Sentiment de risque ${state.mk.risk.score}/100` : '';
-    return `Date: ${new Date().toISOString().slice(0,16)}\nScorecard (score de -25 à +25):\n${lines.join('\n')}\n${rk}\nFed (CME FedWatch): ${fed}\nCalendrier à venir:\n${cal.join('\n')}\nNouvelles récentes:\n${news.join('\n')}`;
-  }
-  async function renderAlfred(){
-    const box = $('p2alfred'); if(!box) return;
-    if(!state.alfS){ state.alfS = 'wait'; try{ const c = window.claude; state.alfSample = c && c.use ? await c.use('sample') : null; }catch(e){ state.alfSample = null; } state.alfS = 'ok'; }
-    const S = state.alfSample, msgs = state.alf, busy = state.alfBusy;
-    const QP = [L('Analyse le setup actuel sur XAUUSD','Analyze the current XAUUSD setup'), L('Explique-moi le RSI et son utilité','Explain the RSI and what it is for'), L('Comment dimensionner ma position avec un stop à 1,5 % ?','How do I size my position with a 1.5% stop?'), L('Quels sont les risques d’un short squeeze ?','What are the risks of a short squeeze?'), L('Que surveiller dans le calendrier cette semaine ?','What should I watch on the calendar this week?')];
-    box.innerHTML = `<div class="alfhead"><b>ALFRED</b><span>// ${L('INTELLIGENCE DE TRADING','TRADING INTELLIGENCE')}</span><em class="${S?'on':''}"><i></i>${S?L('SYSTÈME EN LIGNE','SYSTEM ONLINE'):L('HORS LIGNE ICI','OFFLINE HERE')}</em></div>
-      <div class="alforb ${busy?'busy':''}"><div><b>ALFRED</b><small>SCORECARD 1.0</small></div></div>
-      <div class="alftape"><div>${['CONTEXT SYNC: OK','RISK ENGINE: NOMINAL','VOLATILITY MONITOR: ONLINE','SIGNAL LOCK: STABLE','NEURAL LINK: ACTIVE','DATA FEED: SCORECARD'].concat(['CONTEXT SYNC: OK','RISK ENGINE: NOMINAL','VOLATILITY MONITOR: ONLINE','SIGNAL LOCK: STABLE','NEURAL LINK: ACTIVE','DATA FEED: SCORECARD']).map(x=>`<span>${x}</span>`).join('')}</div></div>
-      <div class="alfgrid">
-        <aside class="alfside"><p class="tscap">${L('QUESTIONS RAPIDES','QUICK PROMPTS')}</p>${QP.map(q=>`<button type="button" class="alfq" ${S&&!busy?'':'disabled'}>${esc(q)}</button>`).join('')}
-          <p class="tscap">SESSION</p><div class="alfst"><span>STATUS</span><b>${busy?L('Réfléchit…','Thinking…'):L('En attente','Idle')}</b></div><div class="alfst"><span>MESSAGES</span><b>${msgs.length}</b></div>
-          ${msgs.length?`<button type="button" class="btn ghost" id="alfClr">${L('Effacer la conversation','Clear conversation')}</button>`:''}</aside>
-        <div class="alfchat panel"><div class="alfmsgs" id="alfMsgs">${msgs.length ? msgs.map(m=>`<div class="alfm ${m.role}"><span>${m.role==='user'?L('TOI','YOU'):'ALFRED'}</span><div>${esc(m.content).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\n/g,'<br>')}</div></div>`).join('') :
-          `<div class="alfidle"><b>${L('Assistant de trading en attente.','Trading assistant standing by.')}</b><span>${S?L('Pose une question ou choisis une question rapide pour démarrer.','Ask a question or pick a quick prompt to start.'):L('Alfred fonctionne dans la version Claude de ton site (claude.ai), parce qu’il a besoin de Claude pour répondre. Ouvre ton artifact « Scorecard macro » pour lui parler : il a accès à ton scorecard, au calendrier, à la Fed et aux nouvelles.','Alfred works in the Claude version of your site (claude.ai), because it needs Claude to answer. Open your "Scorecard macro" artifact to talk to it: it can read your scorecard, calendar, Fed data and news.')}</span></div>`}</div>
-          <form class="alfin" id="alfForm"><input id="alfIn" placeholder="${L('Écris à Alfred…','Write to Alfred…')}" ${S&&!busy?'':'disabled'} autocomplete="off"><button type="submit" class="btn gold" ${S&&!busy?'':'disabled'}>${L('ENVOYER','SEND')}</button></form>
-          <p class="alfnote">${L('Alfred fournit des analyses éducatives, pas des conseils financiers personnalisés. Gère toujours ton risque.','Alfred provides educational analysis, not personalized financial advice. Always manage your risk.')}</p></div>
-      </div>`;
-    const m = $('alfMsgs'); if(m) m.scrollTop = m.scrollHeight;
-    const ask = async q => { if(!S || state.alfBusy || !q.trim()) return; state.alf.push({role:'user', content:q.trim()}); state.alf.push({role:'assistant', content:'…'}); state.alfBusy = true; renderAlfred();
-      const sys = `Tu es Alfred, l'assistant de trading du site « Scorecard macro » de Raphaël (Québec). Réponds en ${isEN()?'anglais':'français québécois'}, clairement et brièvement (8 phrases max, listes courtes si utile). Tu donnes de l'éducation et de l'analyse à partir des données ci-dessous, jamais un conseil personnalisé ni un ordre d'achat ou de vente; rappelle la gestion du risque quand c'est pertinent. N'invente aucun chiffre : si une donnée manque, dis-le.\n\nDONNÉES DU SITE :\n${alfContext()}`;
-      const hist = state.alf.slice(0,-1).slice(-10).map(x=>({role:x.role, content:x.content}));
-      hist[0] = {role:'user', content: sys + '\n\nQUESTION : ' + hist[0].content}; if(hist.length>1 && hist[0].role!=='user') hist.shift();
-      try{ const r = await S(hist, {cache:false, onText:({text})=>{ state.alf[state.alf.length-1].content = text; const el = document.querySelector('#alfMsgs .alfm.assistant:last-child div'); if(el){ el.innerHTML = esc(text).replace(/\*\*(.+?)\*\*/g,'<b>$1</b>').replace(/\n/g,'<br>'); const mm = $('alfMsgs'); mm.scrollTop = mm.scrollHeight; } }});
-        state.alf[state.alf.length-1].content = r.text || '…'; }
-      catch(e){ state.alf[state.alf.length-1].content = e && e.code==='not_granted' ? L('Tu n’as pas autorisé Alfred à utiliser Claude dans cette page.','You did not allow Alfred to use Claude on this page.') : e && e.code==='rate_limited' ? L('Trop de questions d’un coup : réessaie dans un moment.','Too many questions at once: try again in a moment.') : L('Alfred n’a pas pu répondre. Réessaie.','Alfred could not answer. Try again.'); }
-      state.alfBusy = false; if(state.page==='alfred') renderAlfred(); };
-    box.querySelectorAll('.alfq').forEach(b=>b.addEventListener('click', ()=>ask(b.textContent)));
-    const f = $('alfForm'); f.addEventListener('submit', e=>{ e.preventDefault(); const v = $('alfIn').value; ask(v); });
-    const clr = $('alfClr'); if(clr) clr.addEventListener('click', ()=>{ state.alf = []; renderAlfred(); });
-  }
-
   // ---------- Session Recap ----------
   const SESW = {tok:{n:['Tokyo','Tokyo'], cc:'JP', f:-5, t:1.5}, lon:{n:['Londres','London'], cc:'GB', f:3, t:11.5}, ny:{n:['New York','New York'], cc:'US', f:9.5, t:16}}; // heures de Toronto (f<0 = la veille)
   const RGRP = [['INDICES',['nasdaq','spx500','us30','rut'],'indices'],['MÉTAUX',['xauusd','xagusd'],'metals'],['FOREX',['usd','eurusd','usdjpy','usdcad'],'forex'],['CRYPTO',['btcusd'],'crypto'],['ÉNERGIE',['usoil'],'energy']];
@@ -4178,9 +3935,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     else if(pg==='risk') renderRisk();
     else if(pg==='ind') renderInd();
     else if(pg==='liq') renderLiq();
-    else if(pg==='calc') renderCalc();
-    else if(pg==='journal') renderJournal();
-    else if(pg==='alfred') renderAlfred();
     else if(pg==='recap') renderRecap();
     else if(pg==='squawk') renderSquawk();
     else if(pg==='research') renderResearch();
@@ -4227,7 +3981,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches', charts:'charts', recap:'session-recap', alfred:'alfred', research:'bank-research', squawk:'squawk', bankpos:'bank-positioning', risk:'risk-sentiment', watch:'markets-watch', ind:'indicators', liq:'liquidity', journal:'track-record', calc:'risk-calculator'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    try{ const hsh = pg==='score' ? '' : '#'+({cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches', charts:'charts', recap:'session-recap', research:'bank-research', squawk:'squawk', bankpos:'bank-positioning', risk:'risk-sentiment', watch:'markets-watch', ind:'indicators', liq:'liquidity'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
     try{ if(typeof globeObj!=='undefined' && globeObj){ if(pg==='globe') globeObj.resumeAnimation(); else globeObj.pauseAnimation(); } }catch(e){}
     if(pg!=='ind' && pg!=='liq' && typeof lwFree==='function') lwFree();
@@ -4243,7 +3997,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas','#monde':'globe','#carte-du-monde':'globe','#world-map':'globe','#heures-marches':'hours','#market-hours':'hours','#charts':'charts','#session-recap':'recap','#alfred':'alfred','#bank-research':'research','#squawk':'squawk','#bank-positioning':'bankpos','#risk-sentiment':'risk','#markets-watch':'watch','#indicators':'ind','#liquidity':'liq','#track-record':'journal','#risk-calculator':'calc'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas','#monde':'globe','#carte-du-monde':'globe','#world-map':'globe','#heures-marches':'hours','#market-hours':'hours','#charts':'charts','#session-recap':'recap','#bank-research':'research','#squawk':'squawk','#bank-positioning':'bankpos','#risk-sentiment':'risk','#markets-watch':'watch','#indicators':'ind','#liquidity':'liq'}; if(mp[hh]) showPage(mp[hh]); } }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
