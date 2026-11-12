@@ -3415,7 +3415,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     return state['_p'+key].then(v=> v || state[key] || null);
   }
   // cours et manchettes « en direct » : écrits environ chaque minute par .github/workflows/direct.yml (branche direct)
-  const LIVE_URL = 'https://raw.githubusercontent.com/Raphydoc/scorecard/direct/live.json';
+  // un fichier par minute (m/AAAAMMJJHHMM.json, heure UTC) parce que raw.githubusercontent.com garde un même chemin en cache 5 minutes
+  const LIVE_BASE = 'https://raw.githubusercontent.com/Raphydoc/scorecard/direct/m/';
   function liveOverlay(M){
     const L2 = state.live2; if(!M || !M.watch || !L2 || !L2.q || M._lv === L2.asOf) return M;
     M._lv = L2.asOf;
@@ -3426,8 +3427,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   async function pullLive(){
     if(document.hidden || !['watch','squawk','home'].includes(state.page)) return;
     try{
-      const r = await fetch(LIVE_URL+'?t='+Date.now(), {cache:'no-store'}); if(!r.ok) return;
-      const j = await r.json(); if(!j || !j.asOf || (state.live2 && state.live2.asOf===j.asOf)) return;
+      let j = null; const base = Math.floor((Date.now()-70e3)/6e4);
+      for(let k=0; k<5 && !j; k++){ const key = new Date((base-k)*6e4).toISOString().slice(0,16).replace(/[-:T]/g,'');
+        if(state.live2 && state.live2._key >= key) return;
+        try{ const r = await fetch(LIVE_BASE+key+'.json'); if(r.ok){ j = await r.json(); j._key = key; } }catch(e){} }
+      if(!j || !j.asOf || (state.live2 && state.live2.asOf===j.asOf)) return;
       state.live2 = j;
       const ae = document.activeElement;
       if((state.page==='watch' || state.page==='squawk') && !(ae && ae.id==='mwQ') && !document.querySelector('.dd.open, .chfs')){ state.noAnim = true; renderP2(); }

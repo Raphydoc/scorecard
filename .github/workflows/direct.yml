@@ -29,6 +29,7 @@ jobs:
           git config user.email "actions@users.noreply.github.com"
           git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git fetch -q --depth 1 origin direct && git checkout -q origin/direct -- live.json || true
+          mkdir -p m
           cd ..
           end=$((SECONDS + 20700)); i=0
           while [ $SECONDS -lt $end ]; do
@@ -37,7 +38,10 @@ jobs:
             node tools/snap_live.mjs pub/live.json $news || true
             if [ -f pub/live.json ]; then
               cd pub
-              git add live.json
+              # un fichier par minute (m/AAAAMMJJHHMM.json) : le cache de raw.githubusercontent.com garde un même chemin 5 minutes
+              key=$(date -u +%Y%m%d%H%M); cp live.json "m/$key.json"
+              ls m/*.json | sort | head -n -8 | xargs -r rm -f
+              git add -A live.json m
               if [ $i -eq 0 ]; then git commit -q -m "Cours et manchettes en direct" || true; else git commit -q --amend -m "Cours et manchettes en direct" || true; fi
               git push -q -f origin HEAD:direct || echo "push refusé"
               cd ..
