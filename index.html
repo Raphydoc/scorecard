@@ -3893,11 +3893,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const TVCH = [['bloomberg','Bloomberg Television','UCIALMKvObZNtJ6AmdCLP7Lg'],['yahoo','Yahoo Finance','UCEAZeUIeJs0IjQiqTCdVSIg'],['cnbc','CNBC Television','UCrp_UI8XtuYfpiqluWLD7Lw']];
   function squawkItems(M){
     const it = [], today = new Date().toISOString().slice(0,10);
-    (state.news||[]).forEach(n=>it.push({k:'news', t:etEpoch(n.date, n.time||'12:00'), txt:isEN()&&n.title_en?n.title_en:n.title, src:n.source, url:n.url, hi:n.impact==='high'}));
+    (state.news||[]).forEach(n=>it.push({k:'news', t:Math.min(Date.now(), etEpoch(n.date, n.time||'00:00')), txt:isEN()&&n.title_en?n.title_en:n.title, src:n.source, url:n.url, hi:n.impact==='high'}));
     (state.calendar||[]).forEach(x=>{ if(!x.date) return; const t = etEpoch(x.date, x.time||'12:00');
       if(x.a!=null) it.push({k:'data', t, nm:x.name, txt:` : ${x.a}${x.unit||''}${x.f!=null?` (${L('prévu','fcst')} ${x.f}${x.unit||''}${x.prev!=null?`, ${L('préc.','prev')} ${x.prev}${x.unit||''}`:''})`:''}`, hi:+x.a!==+x.f && x.f!=null});
       else if(t > Date.now()) it.push({k:'rel', t, nm:x.name, txt:`${x.f!=null?` · ${L('prévu','fcst')} ${x.f}${x.unit||''}`:''}`, up:true}); });
-    if(M && M.watch) Object.values(M.watch).flat().filter(x=>x.d1!=null && Math.abs(x.d1)>=2).forEach(x=>it.push({k:'mov', t:new Date(M.liveAsOf||M.asOf).getTime(), txt:`${nmT(x.n)} ${x.d1>0?L('bondit','jumps'):L('chute','drops')} ${pcTxt(x.d1)} — ${L('maintenant','now')} ${pxAuto(x.last)}`, hi:Math.abs(x.d1)>=5}));
+    if(M && M.watch) Object.values(M.watch).flat().filter(x=>x.d1!=null && Math.abs(x.d1)>=2).forEach(x=>it.push({k:'mov', t:new Date(M.liveAsOf||M.asOf).getTime(), txt:`${nmT(x.n)} ${x.d1>0?L('bondit','jumps'):L('chute','drops')} ${pcTxt(x.d1)} — ${L('maintenant','now')} ${pxAuto(x.last)}`, hi:Math.abs(x.d1)>=5, mag:Math.abs(x.d1)}));
     const seenU = new Set((state.news||[]).map(n=>n.url));
     ((state.live2 && state.live2.news) || []).forEach(n=>{ if(!n.url || seenU.has(n.url)) return; seenU.add(n.url); it.push({k:'news', t:n.t, txt:isEN() ? n.title : (n.fr||n.title), src:n.src, url:n.url, hi:/\b(fed|powell|fomc|cpi|payrolls?|inflation|tariffs?|rate cut|rate hike)\b/i.test(n.title)}); });
     return it.sort((a,b)=> a.up&&b.up ? a.t-b.t : b.t-a.t);
@@ -3907,7 +3907,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     box.classList.toggle('noanim', !!state.noAnim); state.noAnim = false;
     const M = await mkData(); if(state.page!=='squawk') return;
     const all = squawkItems(M), tab = state.sqTab, cnt = k => all.filter(x=>x.k===k).length;
-    const list = tab==='all' ? all.filter(x=>x.k!=='rel') : all.filter(x=>x.k===tab);
+    const topMov = new Set(all.filter(x=>x.k==='mov').sort((a,b)=>b.mag-a.mag).slice(0,5));
+    const list = tab==='all' ? all.filter(x=>x.k!=='rel' && (x.k!=='mov' || topMov.has(x))) : all.filter(x=>x.k===tab);
     const movers = M && M.watch ? Object.values(M.watch).flat().filter(x=>x.d1!=null).sort((a,b)=>Math.abs(b.d1)-Math.abs(a.d1)).slice(0,14) : [];
     const ago = t => { const m = Math.round((Date.now()-t)/6e4); return m<1?L('à l’instant','just now'):m<60?m+' min':m<1440?Math.round(m/60)+' h':Math.round(m/1440)+L(' j',' d'); };
     const tm = t => new Date(t).toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit'});
