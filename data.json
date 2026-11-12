@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T15:43:29Z",
+ "updatedAt": "2026-11-12T16:42:18Z",
  "econ": {
   "values": {
    "gdp": {
@@ -781,6 +781,24 @@
   "checkedAt": "2026-11-12T13:50:00Z"
  },
  "news": [
+  {
+   "date": "2026-11-12",
+   "time": "11:05",
+   "source": "Associated Press",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "usoil",
+    "usd"
+   ],
+   "title": "Wall Street réduit ses pertes : Nvidia remonte à −6,1 % après −14 %; le pétrole grimpe après que Trump rejette un accord avec l'Iran",
+   "title_en": "Wall Street pares losses as Nvidia recovers to −6.1% from −14%; oil jumps after Trump rejects an Iran deal",
+   "summary": "Nvidia a plongé jusqu'à 14 % à l'ouverture après la démission de Jensen Huang, avant de récupérer environ la moitié de sa perte (−6,1 %); vers 10 h 15, le S&P 500 cédait 0,4 %, le Nasdaq 0,6 % (après −1,6 %) et le Dow 0,1 %. Le Brent est passé d'environ 92 $ à plus de 94 $ après que Trump a dit ne plus vouloir d'accord avec l'Iran pour mettre fin à la guerre (93,79 $, +1,1 %). Le rendement du 10 ans a grimpé à 5,07 % contre 4,98 % mardi, la hausse du pétrole ravivant les craintes d'inflation.",
+   "summary_en": "Nvidia plunged as much as 14% at the open after Jensen Huang resigned, then recovered about half the loss (−6.1%); around 10:15 a.m. the S&P 500 was down 0.4%, the Nasdaq 0.6% (after −1.6%) and the Dow 0.1%. Brent jumped from about $92 to over $94 after Trump said he was no longer interested in a deal with Iran to end their war ($93.79, +1.1%). The 10-year Treasury yield rose to 5.07% from 4.98% Tuesday as higher oil feeds inflation worries.",
+   "url": "https://www.pbs.org/newshour/economy/sharp-swings-for-nvidia-and-oil-prices-weigh-on-wall-street"
+  },
   {
    "date": "2026-11-12",
    "time": "08:59",
