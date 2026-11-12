@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T09:43:05Z",
+ "updatedAt": "2026-11-12T10:42:20Z",
  "econ": {
   "values": {
    "gdp": {
@@ -731,20 +731,19 @@
  "news": [
   {
    "date": "2026-11-12",
-   "time": "04:04",
-   "source": "Investing.com",
-   "impact": "med",
+   "time": "04:39",
+   "source": "Reuters (via Investing.com)",
+   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
-    "us30",
-    "usoil"
+    "us30"
    ],
-   "title": "Les contrats à terme du Nasdaq 100 perdent 0,9 % en attendant la décision sur Huang; Alibaba chute à Hong Kong",
-   "title_en": "Nasdaq 100 futures fall 0.9% as Nvidia awaits decision on Huang; Alibaba slumps in Hong Kong",
-   "summary": "À 3 h 09 (HE), les contrats à terme du Nasdaq 100 reculaient de 240 points (0,9 %) et ceux du S&P 500 de 32 points (0,4 %), alors que le Dow restait à peu près inchangé; aucune décision finale du conseil de Nvidia sur l’éviction de Jensen Huang n’était encore rapportée. Selon Yorkville Ives, Nvidia pourrait perdre le quart de sa valeur si Huang part. Le pétrole oscille près de l’équilibre, Alibaba perd plus de 6 % à Hong Kong, et Cisco et Applied Materials publient après la clôture.",
-   "summary_en": "At 3:09 a.m. ET, Nasdaq 100 futures were down 240 points (0.9%) and S&P 500 futures 32 points (0.4%), while Dow futures were mostly unchanged; no final decision by Nvidia's board on ousting Jensen Huang had been reported. Analysts at Yorkville Ives said Nvidia could lose a quarter of its valuation if Huang departs. Oil was choppy near flat, Alibaba fell more than 6% in Hong Kong, and Cisco and Applied Materials report after the close.",
-   "url": "https://www.investing.com/news/economy-news/nvidia-said-to-preparing-huang-ouster-alibaba-slumps--whats-moving-markets-5020685"
+   "title": "Les contrats à terme du Nasdaq reculent alors que la tourmente chez Nvidia secoue les titres de l’IA",
+   "title_en": "Nasdaq futures fall as Nvidia turmoil rattles AI stocks",
+   "summary": "À 4 h 11 (HE), les contrats à terme du Nasdaq 100 perdaient 226,25 points (0,79 %) et ceux du S&P 500 29,25 points (0,38 %), tandis que ceux du Dow gagnaient 20 points (0,04 %). Nvidia reculait d’environ 7 % avant l’ouverture, son conseil étant toujours en réflexion sur l’éviction de Jensen Huang; Intel, Marvell et Micron perdaient de 2,6 % à 3,4 %, CoreWeave 7,2 %. La pression sur les semi-conducteurs pèse surtout sur le Nasdaq, alors que le Dow résiste.",
+   "summary_en": "At 4:11 a.m. ET, Nasdaq 100 E-minis were down 226.25 points (0.79%) and S&P 500 E-minis 29.25 points (0.38%), while Dow E-minis were up 20 points (0.04%). Nvidia fell about 7% premarket as its board still weighs ousting CEO Jensen Huang; Intel, Marvell and Micron fell 2.6% to 3.4% and CoreWeave 7.2%. Chip-sector pressure weighs mainly on the Nasdaq while the Dow holds up.",
+   "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-fall-as-nvidia-turmoil-rattles-ai-stocks-5020761"
   },
   {
    "date": "2026-11-12",
