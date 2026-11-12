@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T19:43:24Z",
+ "updatedAt": "2026-11-12T20:42:36Z",
  "econ": {
   "values": {
    "gdp": {
@@ -75,100 +75,100 @@
  },
  "assets": {
   "xauusd": {
-   "cotLong": 84.33,
    "cotChange": -1.39,
+   "cotLong": 84.33,
    "crowdLong": 80,
    "season": "bear",
    "seasonPct": -4.3,
    "seasonPeriod": "août à octobre"
   },
   "nasdaq": {
-   "cotLong": 65.89,
    "cotChange": -4.41,
+   "cotLong": 65.89,
    "crowdLong": 65,
    "season": "neutral",
    "seasonPct": 0.4,
    "seasonPeriod": "août à octobre"
   },
   "spx500": {
-   "cotLong": 39,
    "cotChange": 0.87,
+   "cotLong": 39,
    "crowdLong": 53,
    "season": "bull",
    "seasonPct": 1.5,
    "seasonPeriod": "août à octobre"
   },
   "us30": {
-   "cotLong": 67.43,
    "cotChange": 5.3,
+   "cotLong": 67.43,
    "crowdLong": 57,
    "season": "neutral",
    "seasonPct": -1,
    "seasonPeriod": "août à octobre"
   },
   "usd": {
+   "cotChange": -0.92,
+   "cotLong": 63.67,
+   "crowdLong": 36,
    "season": "bull",
    "seasonPct": 2,
-   "seasonPeriod": "août à octobre",
-   "cotLong": 63.67,
-   "cotChange": -0.92,
-   "crowdLong": 36
+   "seasonPeriod": "août à octobre"
   },
   "xagusd": {
+   "cotChange": 1.04,
+   "cotLong": 70.14,
+   "crowdLong": 88,
    "season": "bear",
    "seasonPct": -14.8,
-   "cotLong": 70.14,
-   "cotChange": 1.04,
-   "crowdLong": 88,
    "seasonPeriod": "août à octobre"
   },
   "btcusd": {
+   "cotChange": -0.52,
+   "cotLong": 53.84,
+   "crowdLong": 81,
    "season": "bull",
    "seasonPct": 23.3,
-   "cotLong": 53.84,
-   "cotChange": -0.52,
-   "crowdLong": 82,
    "seasonPeriod": "août à octobre"
   },
   "usoil": {
+   "cotChange": -1.51,
+   "cotLong": 53.98,
+   "crowdLong": 54,
    "season": "bull",
    "seasonPct": 30.6,
-   "cotLong": 53.98,
-   "cotChange": -1.51,
-   "crowdLong": 54,
    "seasonPeriod": "août à octobre"
   },
   "rut": {
+   "cotChange": 2.05,
+   "cotLong": 45.13,
+   "crowdLong": 69,
    "season": "bear",
    "seasonPct": -3.8,
-   "cotLong": 45.13,
-   "cotChange": 2.05,
-   "crowdLong": 69,
    "seasonPeriod": "août à octobre"
   },
   "eurusd": {
+   "cotChange": -0.91,
+   "cotLong": 37.2,
+   "crowdLong": 64,
    "season": "bear",
    "seasonPct": -3.1,
-   "seasonPeriod": "août à octobre",
-   "cotLong": 37.2,
-   "cotChange": -0.91,
-   "crowdLong": 64
+   "seasonPeriod": "août à octobre"
   },
   "usdjpy": {
+   "cotChange": 0.01,
+   "cotLong": 35.47,
+   "crowdLong": 39,
    "season": "bear",
    "seasonPct": -1.1,
-   "seasonPeriod": "août à octobre",
-   "cotLong": 35.47,
-   "cotChange": 0.01,
-   "crowdLong": 36
+   "seasonPeriod": "août à octobre"
   },
   "usdcad": {
+   "cotChange": -4.79,
+   "cotLong": 58.69,
+   "crowdLong": 49,
    "season": "neutral",
    "seasonPct": -0.5,
-   "seasonPeriod": "août à octobre",
-   "cotLong": 58.69,
-   "cotChange": -4.79,
-   "crowdLong": 51
+   "seasonPeriod": "août à octobre"
   }
  },
  "history": [
