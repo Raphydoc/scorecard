@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T01:42:34Z",
+  "updatedAt": "2026-11-12T03:47:41Z",
   "econ": {
     "values": {
       "gdp": {
@@ -731,6 +731,21 @@
   "news": [
     {
       "date": "2026-11-11",
+      "time": "22:24",
+      "source": "Reuters (via Investing.com)",
+      "impact": "high",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Le conseil de Nvidia se réunit pour décider du sort de Jensen Huang; l’action perd plus de 8 % après la clôture",
+      "title_en": "Nvidia board meets to decide CEO Jensen Huang's future; shares drop more than 8% after hours",
+      "summary": "Le conseil de Nvidia (11 administrateurs, dont 10 indépendants) se réunissait mercredi soir pour décider s’il évince Jensen Huang, selon une source de Reuters, après un article du WSJ disant que l’entreprise se prépare à le congédier; Bloomberg rapporte qu’une firme externe cherche des remplaçants. L’action recule de plus de 8 % après la clôture et les contrats à terme du Nasdaq de 1 %; si la baisse tient, Nvidia aura perdu environ 600 G$ de valeur depuis l’annonce de l’enquête. Poids lourd du Nasdaq et du S&P 500, Nvidia publie ses résultats le 17 novembre.",
+      "summary_en": "Nvidia's board (11 directors, 10 of them independent) was meeting late Wednesday to decide whether to oust Jensen Huang, a source told Reuters, after the WSJ reported the company was preparing to fire him; Bloomberg reported an outside firm is identifying possible replacements. Shares fell more than 8% after hours and Nasdaq futures 1%; if losses hold, Nvidia will have shed about $600 billion in value since the probe was announced. A Nasdaq and S&P 500 heavyweight, Nvidia reports results on Nov. 17.",
+      "url": "https://www.investing.com/news/stock-market-news/nvidia-is-preparing-to-oust-ceo-jensen-huang-wsj-reports-5019991"
+    },
+    {
+      "date": "2026-11-11",
       "time": "19:25",
       "source": "Yahoo Finance",
       "impact": "med",
@@ -744,21 +759,6 @@
       "summary": "Vers 19 h 25 (HE), les contrats à terme du Nasdaq 100 cèdent 1 % à 28 205,75 points et ceux du S&P 500 0,4 % à 7 608,75, tandis que ceux du Dow sont stables à 52 577. Nvidia chute de plus de 8 % hors séance après un rapport du WSJ voulant que le conseil se prépare à évincer Jensen Huang. Ce recul efface une partie de la remontée de la séance (S&P 500 +1,3 %, Nasdaq +1,6 %).",
       "summary_en": "Around 7:25 p.m. ET, Nasdaq 100 futures fell 1% to 28,205.75 and S&P 500 futures slipped 0.4% to 7,608.75, while Dow futures were flat at 52,577. Nvidia sank more than 8% after hours on a WSJ report that its board is preparing to oust Jensen Huang. The move erases part of the session's gains (S&P 500 +1.3%, Nasdaq +1.6%).",
       "url": "https://sg.finance.yahoo.com/news/wall-st-futures-fall-nvidia-011540333.html"
-    },
-    {
-      "date": "2026-11-11",
-      "time": "19:17",
-      "source": "Yahoo Finance",
-      "impact": "high",
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "title": "Nvidia plonge d’environ 8 % après la clôture : le conseil se prépare à évincer Jensen Huang, selon le WSJ",
-      "title_en": "Nvidia sinks about 8% after hours as board prepares to oust Jensen Huang, WSJ reports",
-      "summary": "Selon le Wall Street Journal, le conseil de Nvidia se prépare à écarter Jensen Huang, après un nouveau rapport du New York Times alléguant une deuxième relation, avec la dirigeante Kimberly Powell; Bloomberg rapporte que Nvidia travaille avec une firme externe pour lui trouver un remplaçant. L’action recule de plus de 8 % après la clôture, vers 159,51 $ (clôture : 173,73 $), et a perdu plus de 450 G$ de valeur depuis l’annonce de l’enquête le 8 novembre. Poids lourd du Nasdaq et du S&P 500, Nvidia fait peser un risque sur ces indices à l’ouverture.",
-      "summary_en": "Nvidia's board is preparing to remove Jensen Huang, the Wall Street Journal reported, after a New York Times report alleged a second affair, with executive Kimberly Powell; Bloomberg reported Nvidia is working with an outside firm to explore replacements. Shares fell more than 8% after hours to about $159.51 (close: $173.73) and have lost over $450 billion in market value since the probe was announced Nov. 8. As a Nasdaq and S&P 500 heavyweight, Nvidia weighs on both indexes heading into the open.",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/nvidias-stock-dives-board-weighs-234215054.html"
     },
     {
       "date": "2026-11-11",
