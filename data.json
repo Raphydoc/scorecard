@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T15:42:44Z",
+ "updatedAt": "2026-11-12T15:43:29Z",
  "econ": {
   "values": {
    "gdp": {
@@ -783,40 +783,69 @@
  "news": [
   {
    "date": "2026-11-12",
-   "time": "08:15",
-   "source": "Reuters (via Investing.com)",
+   "time": "08:59",
+   "source": "Yahoo Finance",
    "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "rut",
+    "us30"
+   ],
+   "title": "Jensen Huang démissionne de Nvidia; Colette Kress nommée PDG par intérim, l'action chute à l'ouverture",
+   "title_en": "Jensen Huang resigns from Nvidia; Colette Kress named interim CEO, stock slides at the open",
+   "summary": "Nvidia annonce que Jensen Huang a démissionné de ses postes de président, de PDG et de membre du conseil, avec effet immédiat; la chef des finances Colette Kress devient PDG par intérim. L'action a perdu 14 % à l'ouverture avant de réduire sa baisse à environ 6 % (163,27 $), en recul d'environ 30 % sur un mois. Vers 10 h 18, le Nasdaq cédait 0,63 %, le S&P 500 0,41 %, le Russell 2000 1,21 % et le Dow 0,10 %.",
+   "summary_en": "Nvidia said Jensen Huang resigned as President, CEO and board member, effective immediately; CFO Colette Kress becomes interim CEO. The stock fell 14% at the open before trimming losses to about 6% ($163.27), down about 30% over the past month. Around 10:18 a.m., the Nasdaq was down 0.63%, the S&P 500 0.41%, the Russell 2000 1.21% and the Dow 0.10%.",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "08:39",
+   "source": "Reuters (via Investing.com)",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500",
+    "xauusd"
+   ],
+   "title": "Inscriptions au chômage : 200 000, un peu plus que prévu, mais le marché du travail reste solide",
+   "title_en": "Jobless claims rise to 200,000, slightly above forecasts, but labor market firming",
+   "summary": "Les nouvelles demandes d'assurance-chômage ont augmenté de 9 000 à 200 000 pour la semaine terminée le 7 novembre, contre 195 000 attendues; les demandes continues ont reculé de 20 000 à 1,697 million. Le chômage a baissé à 4,1 % en octobre, ce qui garde la pression sur une Fed dont le taux directeur est de 3,75 %–4,00 %.",
+   "summary_en": "Initial jobless claims rose 9,000 to 200,000 for the week ended Nov. 7, versus 195,000 expected; continuing claims fell 20,000 to 1.697 million. Unemployment fell to 4.1% in October, keeping pressure on a Fed whose policy rate stands at 3.75%-4.00%.",
+   "url": "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-increase-but-labor-market-firming-5021926"
+  },
+  {
    "assets": [
     "nasdaq",
     "spx500",
     "us30"
    ],
-   "title": "Les titres de l’IA chutent partout alors que la crise chez Nvidia s’aggrave",
-   "title_en": "Global AI stocks sink as Nvidia crisis deepens sector selloff",
+   "date": "2026-11-12",
+   "impact": "high",
+   "source": "Reuters (via Investing.com)",
    "summary": "Nvidia reculait de 7,8 % avant l’ouverture et a perdu environ 300 G$ de valeur boursière depuis l’annonce de l’enquête de son conseil dimanche; elle se négocie à environ 12 fois ses bénéfices prévus sur 12 mois, un creux depuis novembre 2012. CoreWeave cédait 6 %, Nebius 10,7 %, Micron 3,4 % et Western Digital 3,2 %, tandis que le Japon et la Corée du Sud ont clôturé en baisse de près de 0,7 %. La pression sur les semi-conducteurs pèse d’abord sur le Nasdaq et le S&P 500.",
    "summary_en": "Nvidia fell 7.8% premarket and has lost about $300 billion in market value since its board announced an investigation on Sunday; it trades at about 12 times 12-month forward earnings, its lowest since November 2012. CoreWeave fell 6%, Nebius 10.7%, Micron 3.4% and Western Digital 3.2%, while Japan and South Korea closed nearly 0.7% lower. Chip-sector pressure weighs first on the Nasdaq and the S&P 500.",
+   "time": "08:15",
+   "title": "Les titres de l’IA chutent partout alors que la crise chez Nvidia s’aggrave",
+   "title_en": "Global AI stocks sink as Nvidia crisis deepens sector selloff",
    "url": "https://www.investing.com/news/stock-market-news/global-ai-stocks-sink-as-nvidia-crisis-deepens-sector-selloff-5021776"
   },
   {
-   "date": "2026-11-12",
-   "time": "07:19",
-   "source": "Yahoo Finance",
-   "impact": "med",
    "assets": [
     "xauusd",
     "usd"
    ],
-   "title": "L’or repasse sous 4 000 $ : le dollar profite des paris d’une hausse de la Fed en décembre",
-   "title_en": "Gold drops back below $4,000 as the dollar gains on December Fed hike bets",
+   "date": "2026-11-12",
+   "impact": "med",
+   "source": "Yahoo Finance",
    "summary": "Le contrat de décembre a ouvert à 3 994 $ l’once (−1,2 %), sous 4 000 $ pour la première fois depuis la semaine dernière, puis a glissé vers 3 943 $ (−1,4 %). Le dollar se raffermit : l’outil FedWatch de la CME donne environ 90 % de chances d’une hausse de 25 pb aux 8 et 9 décembre, ce qui pèse sur les métaux précieux.",
    "summary_en": "December gold futures opened at $3,994 an ounce (−1.2%), below $4,000 for the first time since last week, then slid toward $3,943 (−1.4%). The dollar is firming as CME FedWatch shows roughly a 90% chance of a 25 bp hike at the Dec. 8–9 meeting, weighing on precious metals.",
+   "time": "07:19",
+   "title": "L’or repasse sous 4 000 $ : le dollar profite des paris d’une hausse de la Fed en décembre",
+   "title_en": "Gold drops back below $4,000 as the dollar gains on December Fed hike bets",
    "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-november-12-2026-prices-open-back-under-4000-as-rate-hikes-crystallize-121913089.html"
   },
   {
-   "date": "2026-11-12",
-   "time": "01:51",
-   "source": "Reuters (via Investing.com)",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
@@ -824,63 +853,63 @@
     "usoil",
     "btcusd"
    ],
-   "title": "Asie : les Bourses chutent avec Nvidia (−8,8 % hors séance) pendant que le conseil décide du sort de Huang",
-   "title_en": "Asian stocks tumble as Nvidia (-8.8% after hours) stings while board decides CEO's fate",
+   "date": "2026-11-12",
+   "impact": "med",
+   "source": "Reuters (via Investing.com)",
    "summary": "L’indice MSCI Asie-Pacifique hors Japon recule de 1,2 %, Taïwan de 2,6 %, le Kospi et le Nikkei de 0,9 %, après la chute de 8,8 % de Nvidia hors séance sur des informations voulant que son conseil pourrait évincer Jensen Huang. Les contrats à terme du S&P 500 perdent 0,5 %, l’indice dollar gagne 0,1 % à 102,98 et le 10 ans américain monte à 4,992 %. Le Brent cède 1,0 % à 91,87 $ et le bitcoin 1 % à 73 579 $.",
    "summary_en": "MSCI's Asia-Pacific index outside Japan fell 1.2%, Taiwan 2.6%, and the Kospi and Nikkei 0.9%, after Nvidia slid 8.8% in extended trading on reports its board may oust CEO Jensen Huang. S&P 500 e-mini futures fell 0.5%, the dollar index rose 0.1% to 102.98 and the U.S. 10-year yield edged up to 4.992%. Brent fell 1.0% to $91.87 and bitcoin 1% to $73,579.",
+   "time": "01:51",
+   "title": "Asie : les Bourses chutent avec Nvidia (−8,8 % hors séance) pendant que le conseil décide du sort de Huang",
+   "title_en": "Asian stocks tumble as Nvidia (-8.8% after hours) stings while board decides CEO's fate",
    "url": "https://ca.investing.com/news/economy-news/asian-stocks-tumble-nvidia-stings-as-board-to-decide-ceos-fate-4951581"
   },
   {
-   "date": "2026-11-12",
-   "time": "",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd",
     "nasdaq"
    ],
-   "title": "Le bitcoin glisse vers 73 400 $ avec la tech; 5e jour de sorties des FNB",
-   "title_en": "Bitcoin slips toward $73,400 with tech stocks; spot ETF outflows hit a fifth day",
+   "date": "2026-11-12",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin recule d’environ 0,7 % vers 73 400 $ pendant que Nvidia perd environ 7 % avant l’ouverture, son conseil s’apprêtant selon le WSJ à écarter Jensen Huang. Les FNB bitcoin au comptant américains ont perdu 299,9 M$ mercredi, une 5e séance de sorties (environ 1,44 G$ depuis le 5 novembre); la CME donne environ 90 % de chances d’une hausse de la Fed en décembre.",
    "summary_en": "Bitcoin fell about 0.7% to roughly $73,400 as Nvidia dropped about 7% premarket, with the WSJ reporting its board is preparing to remove Jensen Huang. U.S. spot bitcoin ETFs lost $299.9 million Wednesday, a fifth straight day of outflows (about $1.44 billion since Nov. 5); CME pricing shows about a 90% chance of a December Fed hike.",
+   "time": "",
+   "title": "Le bitcoin glisse vers 73 400 $ avec la tech; 5e jour de sorties des FNB",
+   "title_en": "Bitcoin slips toward $73,400 with tech stocks; spot ETF outflows hit a fifth day",
    "url": "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five"
   },
   {
-   "date": "2026-11-11",
-   "time": "22:24",
-   "source": "Reuters (via Investing.com)",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Le conseil de Nvidia se réunit pour décider du sort de Jensen Huang; l’action perd plus de 8 % après la clôture",
-   "title_en": "Nvidia board meets to decide CEO Jensen Huang's future; shares drop more than 8% after hours",
+   "date": "2026-11-11",
+   "impact": "high",
+   "source": "Reuters (via Investing.com)",
    "summary": "Le conseil de Nvidia (11 administrateurs, dont 10 indépendants) se réunissait mercredi soir pour décider s’il évince Jensen Huang, selon une source de Reuters, après un article du WSJ disant que l’entreprise se prépare à le congédier; Bloomberg rapporte qu’une firme externe cherche des remplaçants. L’action recule de plus de 8 % après la clôture et les contrats à terme du Nasdaq de 1 %; si la baisse tient, Nvidia aura perdu environ 600 G$ de valeur depuis l’annonce de l’enquête. Poids lourd du Nasdaq et du S&P 500, Nvidia publie ses résultats le 17 novembre.",
    "summary_en": "Nvidia's board (11 directors, 10 of them independent) was meeting late Wednesday to decide whether to oust Jensen Huang, a source told Reuters, after the WSJ reported the company was preparing to fire him; Bloomberg reported an outside firm is identifying possible replacements. Shares fell more than 8% after hours and Nasdaq futures 1%; if losses hold, Nvidia will have shed about $600 billion in value since the probe was announced. A Nasdaq and S&P 500 heavyweight, Nvidia reports results on Nov. 17.",
+   "time": "22:24",
+   "title": "Le conseil de Nvidia se réunit pour décider du sort de Jensen Huang; l’action perd plus de 8 % après la clôture",
+   "title_en": "Nvidia board meets to decide CEO Jensen Huang's future; shares drop more than 8% after hours",
    "url": "https://www.investing.com/news/stock-market-news/nvidia-is-preparing-to-oust-ceo-jensen-huang-wsj-reports-5019991"
   },
   {
-   "date": "2026-11-11",
-   "time": "19:25",
-   "source": "Yahoo Finance",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "us30"
    ],
-   "title": "Les contrats à terme du Nasdaq 100 reculent de 1 % : Nvidia perd plus de 8 % après la clôture",
-   "title_en": "Nasdaq 100 futures drop 1% as Nvidia sinks more than 8% after hours",
+   "date": "2026-11-11",
+   "impact": "med",
+   "source": "Yahoo Finance",
    "summary": "Vers 19 h 25 (HE), les contrats à terme du Nasdaq 100 cèdent 1 % à 28 205,75 points et ceux du S&P 500 0,4 % à 7 608,75, tandis que ceux du Dow sont stables à 52 577. Nvidia chute de plus de 8 % hors séance après un rapport du WSJ voulant que le conseil se prépare à évincer Jensen Huang. Ce recul efface une partie de la remontée de la séance (S&P 500 +1,3 %, Nasdaq +1,6 %).",
    "summary_en": "Around 7:25 p.m. ET, Nasdaq 100 futures fell 1% to 28,205.75 and S&P 500 futures slipped 0.4% to 7,608.75, while Dow futures were flat at 52,577. Nvidia sank more than 8% after hours on a WSJ report that its board is preparing to oust Jensen Huang. The move erases part of the session's gains (S&P 500 +1.3%, Nasdaq +1.6%).",
+   "time": "19:25",
+   "title": "Les contrats à terme du Nasdaq 100 reculent de 1 % : Nvidia perd plus de 8 % après la clôture",
+   "title_en": "Nasdaq 100 futures drop 1% as Nvidia sinks more than 8% after hours",
    "url": "https://sg.finance.yahoo.com/news/wall-st-futures-fall-nvidia-011540333.html"
   },
   {
-   "date": "2026-11-11",
-   "time": "16:00",
-   "source": "Yahoo Finance",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
@@ -890,34 +919,34 @@
     "usoil",
     "btcusd"
    ],
-   "title": "Clôture : le Nasdaq gagne 1,60 % et le S&P 500 1,31 % avec Nvidia et CoreWeave; l’or sous 4 000 $",
-   "title_en": "Close: Nasdaq up 1.60%, S&P 500 up 1.31% on Nvidia and CoreWeave; gold below $4,000",
+   "date": "2026-11-11",
+   "impact": "med",
+   "source": "Yahoo Finance",
    "summary": "Le Nasdaq clôture en hausse de 1,60 % à 25 466,19, le S&P 500 de 1,31 % à 7 619,38, le Russell 2000 de 0,88 % à 2 846,26 et le Dow de 0,49 % à 52 486,49. Nvidia termine en hausse de 2,92 % à 173,73 $ malgré une décote de Baird à « neutre », et CoreWeave s’envole d’environ 24 % après avoir relevé ses prévisions de revenus. L’or recule de 0,89 % à 3 994,30 $ et le bitcoin gagne environ 1 % vers 74 300 $; le marché obligataire était fermé pour le Veterans Day.",
    "summary_en": "The Nasdaq closed up 1.60% at 25,466.19, the S&P 500 up 1.31% at 7,619.38, the Russell 2000 up 0.88% at 2,846.26 and the Dow up 0.49% at 52,486.49. Nvidia ended 2.92% higher at $173.73 despite a Baird downgrade to Neutral, and CoreWeave surged about 24% after raising its revenue outlook. Gold fell 0.89% to $3,994.30 and bitcoin gained about 1% to around $74,300; the bond market was closed for Veterans Day.",
+   "time": "16:00",
+   "title": "Clôture : le Nasdaq gagne 1,60 % et le S&P 500 1,31 % avec Nvidia et CoreWeave; l’or sous 4 000 $",
+   "title_en": "Close: Nasdaq up 1.60%, S&P 500 up 1.31% on Nvidia and CoreWeave; gold below $4,000",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
   },
   {
-   "date": "2026-11-11",
-   "time": "08:33",
-   "source": "Kitco",
-   "impact": "med",
    "assets": [
     "xauusd",
     "xagusd",
     "usd",
     "usoil"
    ],
-   "title": "L’or et l’argent rebondissent après la chute liée à l’IPC; Ormuz fait monter le brut",
-   "title_en": "Gold, silver rebound after CPI-driven selloff; Hormuz tensions lift crude",
+   "date": "2026-11-11",
+   "impact": "med",
+   "source": "Kitco",
    "summary": "L’or remonte de 0,27 % vers 4 042,50 $ l’once et l’argent de 2,47 % vers 52,69 $, soutenus par des achats à bon compte après les pertes de mardi. Le dollar ferme (indice près de 102,30) et le 10 ans près de 4,98 % limitent la hausse, les contrats à terme donnant environ 88 % de chances à une hausse de 25 pb en décembre. Le WTI gagne environ 0,9 % vers 86,80 $ sur l’incertitude entourant la diplomatie États-Unis–Iran et le transport dans le Golfe.",
    "summary_en": "Gold rose 0.27% to about $4,042.50/oz and silver 2.47% to about $52.69, helped by bargain hunting after Tuesday’s losses. A firm dollar (index near 102.30) and a 10-year yield near 4.98% capped gains, with futures pricing about an 88% chance of a 25 bp hike in December. WTI rose about 0.9% to around $86.80 on uncertainty over U.S.-Iran diplomacy and Gulf shipping.",
+   "time": "08:33",
+   "title": "L’or et l’argent rebondissent après la chute liée à l’IPC; Ormuz fait monter le brut",
+   "title_en": "Gold, silver rebound after CPI-driven selloff; Hormuz tensions lift crude",
    "url": "https://www.kitco.com/news/article/2026-11-11/gold-silver-rebound-after-cpi-driven-selloff-hormuz-tensions-lift-crude-oil"
   },
   {
-   "date": "2026-11-11",
-   "time": "08:02",
-   "source": "Associated Press",
-   "impact": "med",
    "assets": [
     "usd",
     "spx500",
@@ -926,77 +955,77 @@
     "usdjpy",
     "eurusd"
    ],
-   "title": "L’inflation s’étend, la Fed envisage des hausses plus rapides : les paris d’une hausse en janvier dépassent 64 %",
-   "title_en": "As inflation broadens, Fed officials weigh faster hikes; January hike odds top 64%",
+   "date": "2026-11-11",
+   "impact": "med",
+   "source": "Associated Press",
    "summary": "Après l’IPC d’octobre (4 % sur un an contre 3,7 % en septembre, base +0,3 % sur un mois), Michelle Bowman juge que les pressions sur les prix « s’étendent » et que « du travail reste à faire », tandis que Lorie Logan évoque des hausses plus rapides cet hiver. Selon le CME FedWatch, la probabilité d’une hausse les 8-9 décembre est d’environ 90 % et celle d’une deuxième en janvier dépasse 64 %, environ trois fois plus qu’en début de semaine. Des hausses plus rapides soutiennent le dollar et les taux, au détriment des actions et de l’or.",
    "summary_en": "After October CPI (4% year over year vs. 3.7% in September, core +0.3% month over month), Michelle Bowman said price pressures are broadening and there is still work to do, while Lorie Logan raised the prospect of faster hikes this winter. CME FedWatch puts odds of a Dec. 8-9 hike near 90% and of a second hike in January above 64%, roughly triple earlier in the week. Faster hikes support the dollar and yields, weighing on stocks and gold.",
+   "time": "08:02",
+   "title": "L’inflation s’étend, la Fed envisage des hausses plus rapides : les paris d’une hausse en janvier dépassent 64 %",
+   "title_en": "As inflation broadens, Fed officials weigh faster hikes; January hike odds top 64%",
    "url": "https://www.news4jax.com/business/2026/11/11/as-higher-prices-seep-into-broader-economy-fed-officials-consider-faster-hikes/"
   },
   {
-   "date": "2026-11-11",
-   "time": "07:21",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Les contrats à terme du Nasdaq grimpent de 2 % : CoreWeave bondit de 14 % et Nvidia rebondit",
-   "title_en": "Nasdaq futures jump 2% as CoreWeave soars 14% and Nvidia rebounds",
+   "date": "2026-11-11",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Les contrats à terme du Nasdaq 100 gagnent 2 % avant l’ouverture, portés par CoreWeave (+14 %), dont les revenus du T3 atteignent 3,66 G$ (+168 % sur un an) et qui relève sa prévision annuelle à 13–13,3 G$, malgré une perte nette de 709 M$. Nvidia reprend 4 % et le FNB de semi-conducteurs SMH plus de 4 %. Les banquiers d’Anthropic envisagent maintenant une valorisation d’au moins 1 500 G$ pour l’IPO, un rebond qui soutient la tech après le recul lié à l’IPC.",
    "summary_en": "Nasdaq 100 futures are up 2% premarket, led by CoreWeave (+14%), whose Q3 revenue hit $3.66 billion (+168% year over year) and which raised its full-year guidance to $13–13.3 billion despite a $709 million net loss. Nvidia regained 4% and the SMH semiconductor ETF rose more than 4%. Anthropic’s bankers are now weighing an IPO valuation of $1.5 trillion or more, a rebound that supports tech after the CPI-driven pullback.",
+   "time": "07:21",
+   "title": "Les contrats à terme du Nasdaq grimpent de 2 % : CoreWeave bondit de 14 % et Nvidia rebondit",
+   "title_en": "Nasdaq futures jump 2% as CoreWeave soars 14% and Nvidia rebounds",
    "url": "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks"
   },
   {
-   "date": "2026-11-11",
-   "time": "07:19",
-   "source": "Reuters (via Investing.com)",
-   "impact": "med",
    "assets": [
     "usoil"
    ],
-   "title": "Le pétrole remonte de son creux de deux mois : les attaques dans le détroit d’Ormuz freinent l’espoir d’une trêve avec l’Iran",
-   "title_en": "Oil rises from two-month low as Hormuz shipping attacks offset Iran truce hopes",
+   "date": "2026-11-11",
+   "impact": "med",
+   "source": "Reuters (via Investing.com)",
    "summary": "Vers 11 h 58 GMT, le Brent gagne 1,26 $ (+1,4 %) à 92,75 $ et le WTI 57 cents (+0,7 %) à 86,61 $, après une chute de plus de 3 $ en séance mardi. Les attaques de navires se poursuivent (37 en octobre, un record depuis le début de la guerre) et Téhéran affirme qu’aucune matière nucléaire enrichie ne quittera le pays et qu’aucune négociation n’a lieu avec Washington. Le Brent et le WTI restent en baisse d’environ 21 % et 17 % depuis le début du mois.",
    "summary_en": "Around 1158 GMT, Brent rose $1.26 (1.4%) to $92.75 and WTI gained 57 cents (0.7%) to $86.61, after falling more than $3 intraday on Tuesday. Ship attacks continue (37 in October, the most since the war began), and Tehran says no enriched nuclear material will leave the country and no talks are under way with Washington. Brent and WTI are still down about 21% and 17% since the start of the month.",
+   "time": "07:19",
+   "title": "Le pétrole remonte de son creux de deux mois : les attaques dans le détroit d’Ormuz freinent l’espoir d’une trêve avec l’Iran",
+   "title_en": "Oil rises from two-month low as Hormuz shipping attacks offset Iran truce hopes",
    "url": "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347"
   },
   {
-   "date": "2026-11-11",
-   "time": "06:37",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Le bitcoin reste près de 74 000 $ et rate le rebond des actions; 4e jour de sorties des FNB",
-   "title_en": "Bitcoin sits near $74,000, missing the stock rebound as ETF outflows hit a fourth day",
+   "date": "2026-11-11",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin se maintient autour de 74 000 $ (−0,7 % sur 24 h) après un creux de 72 700 $ mardi, tandis que les FNB américains au comptant ont perdu 95 M$ mardi, une 4e séance de sorties (dont 78 M$ pour IBIT). Après l’IPC chaud, la probabilité d’une hausse de la Fed les 8–9 décembre atteint 90 % selon CME FedWatch, et l’indice Peur et Avidité est à 26 (peur).",
    "summary_en": "Bitcoin is holding around $74,000 (-0.7% over 24 hours) after dipping to $72,700 on Tuesday, while U.S. spot ETFs lost $95 million Tuesday, a fourth straight day of outflows ($78 million from IBIT). After the hot CPI, the odds of a Fed hike at the Dec. 8-9 meeting rose to 90% per CME FedWatch, and the Fear and Greed Index sits at 26 (fear).",
+   "time": "06:37",
+   "title": "Le bitcoin reste près de 74 000 $ et rate le rebond des actions; 4e jour de sorties des FNB",
+   "title_en": "Bitcoin sits near $74,000, missing the stock rebound as ETF outflows hit a fourth day",
    "url": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
   },
   {
-   "date": "2026-11-10",
-   "time": "16:00",
-   "source": "Yahoo Finance",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "us30",
     "rut"
    ],
-   "title": "Clôture : Wall Street recule après l’IPC chaud — Nasdaq −0,74 %, S&P 500 −0,38 %, Nvidia −5,5 %",
-   "title_en": "Close: Wall Street falls after hot CPI — Nasdaq −0.74%, S&P 500 −0.38%, Nvidia −5.5%",
+   "date": "2026-11-10",
+   "impact": "med",
+   "source": "Yahoo Finance",
    "summary": "Le S&P 500 a terminé à 7 520,93 (−0,38 %), le Dow à 52 231,89 (−0,30 %), le Nasdaq à 25 065,88 (−0,74 %) et le Russell 2000 à 2 821,38 (−0,68 %). Nvidia a clôturé à 168,89 $ (−5,47 %). L’IPC plus chaud que prévu et les propos de Waller ont renforcé les paris d’une hausse de taux de la Fed en décembre, ce qui pèse sur les actions.",
    "summary_en": "The S&P 500 closed at 7,520.93 (−0.38%), the Dow at 52,231.89 (−0.30%), the Nasdaq at 25,065.88 (−0.74%) and the Russell 2000 at 2,821.38 (−0.68%). Nvidia closed at $168.89 (−5.47%). The hotter-than-expected CPI and Waller’s comments reinforced bets on a Fed rate hike in December, weighing on stocks.",
+   "time": "16:00",
+   "title": "Clôture : Wall Street recule après l’IPC chaud — Nasdaq −0,74 %, S&P 500 −0,38 %, Nvidia −5,5 %",
+   "title_en": "Close: Wall Street falls after hot CPI — Nasdaq −0.74%, S&P 500 −0.38%, Nvidia −5.5%",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
   },
   {
-   "date": "2026-11-10",
-   "time": "13:31",
-   "source": "Reuters (via Kitco)",
-   "impact": "high",
    "assets": [
     "usd",
     "eurusd",
@@ -1007,62 +1036,62 @@
     "xauusd",
     "usoil"
    ],
-   "title": "Les taux s’envolent après l’IPC : 2 ans +19 pb, 10 ans près de 5 %; Logan réclame au moins deux autres hausses",
-   "title_en": "Yields jump after CPI: 2-year up 19 bp, 10-year near 5%; Logan calls for at least two more hikes",
+   "date": "2026-11-10",
+   "impact": "high",
+   "source": "Reuters (via Kitco)",
    "summary": "Vers 13 h 30, le taux à 2 ans gagnait 19,28 pb à 4,74 % et le 10 ans 12,76 pb à 4,988 %, les chances d’une hausse de 50 pb de la Fed les 8 et 9 décembre ayant bondi après l’IPC. L’indice du dollar montait de 0,6 % à 102,29, l’euro reculait de 0,56 % à 1,1156 $ et le dollar-yen gagnait 0,5 % à 158,68, tandis que le Dow (−0,57 %), le S&P 500 (−0,71 %) et le Nasdaq (−0,90 %) reculaient, l’or perdait 2,3 % à 4 043,73 $ et le brut américain 1,39 % à 85,67 $. Lorie Logan, de la Fed, estime que la banque centrale doit livrer au moins deux autres hausses d’un quart de point.",
    "summary_en": "Around 1:30 p.m. the 2-year yield was up 19.28 bp at 4.74% and the 10-year 12.76 bp at 4.988%, as odds of a 50 bp Fed hike at the Dec. 8-9 meeting jumped after CPI. The dollar index rose 0.6% to 102.29, the euro fell 0.56% to $1.1156 and dollar/yen rose 0.5% to 158.68, while the Dow (−0.57%), S&P 500 (−0.71%) and Nasdaq (−0.90%) fell, gold lost 2.3% to $4,043.73 and U.S. crude 1.39% to $85.67. The Fed's Lorie Logan said the central bank needs to deliver at least two more quarter-point hikes.",
+   "time": "13:31",
+   "title": "Les taux s’envolent après l’IPC : 2 ans +19 pb, 10 ans près de 5 %; Logan réclame au moins deux autres hausses",
+   "title_en": "Yields jump after CPI: 2-year up 19 bp, 10-year near 5%; Logan calls for at least two more hikes",
    "url": "https://www.kitco.com/news/off-the-wire/2026-11-10/us-yields-rise-stocks-fall-inflation-data-boosts-odds-larger-december"
   },
   {
-   "date": "2026-11-10",
-   "time": "11:46",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Le bitcoin repasse sous 73 000 $, une première depuis août",
-   "title_en": "Bitcoin falls back below $73,000 for the first time since August",
+   "date": "2026-11-10",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin est retombé sous 73 000 $ pour la première fois depuis août, en baisse d’environ 3 % sur 24 heures, tandis que l’ether, le XRP et le SOL perdaient près de 6 %. La hausse des taux après l’IPC et la chute de la tech pèsent sur la crypto; selon Yahoo Finance, le bitcoin a glissé sous sa moyenne mobile de 200 jours (73 200 $) et Coinbase et Strategy perdaient 4 %.",
    "summary_en": "Bitcoin fell back below $73,000 for the first time since August, down about 3% over 24 hours, while ether, XRP and SOL lost nearly 6%. Rising yields after CPI and the tech sell-off are weighing on crypto; per Yahoo Finance, bitcoin slipped below its 200-day moving average ($73,200) and Coinbase and Strategy fell 4%.",
+   "time": "11:46",
+   "title": "Le bitcoin repasse sous 73 000 $, une première depuis août",
+   "title_en": "Bitcoin falls back below $73,000 for the first time since August",
    "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
   },
   {
-   "date": "2026-11-10",
-   "time": "11:13",
-   "source": "CoinDesk",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Nvidia chute encore d’environ 5 % sous 170 $ : le FBI se penche sur Jensen Huang",
-   "title_en": "Nvidia drops about 5% more, below $170, as FBI looks into Jensen Huang",
+   "date": "2026-11-10",
+   "impact": "high",
+   "source": "CoinDesk",
    "summary": "Nvidia reculait d’environ 5 % à 168 $ mardi, après 4 % lundi, portant ses pertes depuis son sommet de début octobre à plus de 30 %, sur fond de rapports voulant que le FBI enquête sur le PDG Jensen Huang (Trump a dit que le FBI « se penche » sur l’affaire). Selon The Information, cité par Yahoo Finance, des sociétés chinoises auraient acquis pour 7,5 G$ de puces Nvidia, dont environ 240 000 après les interdictions d’exportation; ce sont des allégations. Le titre pèse lourd sur le Nasdaq et le S&P 500.",
    "summary_en": "Nvidia fell about 5% to $168 on Tuesday after a 4% drop Monday, taking its losses from its early-October high past 30%, amid reports that the FBI is investigating CEO Jensen Huang (Trump said the FBI is \"looking into\" it). According to The Information, cited by Yahoo Finance, Chinese companies acquired $7.5 billion of Nvidia chips, including about 240,000 after U.S. export bans; these are allegations. The stock weighs heavily on the Nasdaq and S&P 500.",
+   "time": "11:13",
+   "title": "Nvidia chute encore d’environ 5 % sous 170 $ : le FBI se penche sur Jensen Huang",
+   "title_en": "Nvidia drops about 5% more, below $170, as FBI looks into Jensen Huang",
    "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
   },
   {
-   "date": "2026-11-10",
-   "time": "09:20",
-   "source": "Kitco",
-   "impact": "med",
    "assets": [
     "xauusd",
     "xagusd",
     "usd"
    ],
-   "title": "L’or chute d’environ 2 % vers 4 055 $ et l’argent de 3 % après l’IPC",
-   "title_en": "Gold drops about 2% to near $4,055, silver 3% after CPI",
+   "date": "2026-11-10",
+   "impact": "med",
+   "source": "Kitco",
    "summary": "L’or reculait de 84,10 $ (−2,03 %) à environ 4 055,30 $ l’once et l’argent de 3,01 % à environ 51,70 $, alors que le dollar se raffermissait et que le taux à 2 ans montait vers 4,69 %. Une hausse de 25 pb à la réunion de la Fed des 8 et 9 décembre est presque entièrement intégrée, contre environ 84 % avant l’IPC. Prochain test : l’indice des prix à la production (IPP) vendredi à 8 h 30.",
    "summary_en": "Gold fell $84.10 (−2.03%) to about $4,055.30 an ounce and silver 3.01% to about $51.70 as the dollar firmed and the 2-year yield rose toward 4.69%. A 25 bp hike at the Fed's Dec. 8-9 meeting is now almost fully priced, versus about 84% before CPI. Next catalyst: October PPI on Friday at 8:30 a.m.",
+   "time": "09:20",
+   "title": "L’or chute d’environ 2 % vers 4 055 $ et l’argent de 3 % après l’IPC",
+   "title_en": "Gold drops about 2% to near $4,055, silver 3% after CPI",
    "url": "https://www.kitco.com/news/article/2026-11-10/gold-silver-retreat-high-core-cpi-lifts-december-fed-hike-odds-kitco-am"
   },
   {
-   "date": "2026-11-10",
-   "time": "08:58",
-   "source": "Reuters (via Investing.com)",
-   "impact": "high",
    "assets": [
     "usd",
     "eurusd",
@@ -1072,17 +1101,17 @@
     "xauusd",
     "btcusd"
    ],
-   "title": "IPC d’octobre plus chaud que prévu (+0,4 %, base +0,3 %) : taux et dollar en hausse",
-   "title_en": "Hotter-than-expected October CPI (+0.4%, core +0.3%) lifts yields and dollar",
+   "date": "2026-11-10",
+   "impact": "high",
+   "source": "Reuters (via Investing.com)",
    "summary": "L’IPC a augmenté de 0,4 % en octobre (prévision 0,3 %) et l’IPC de base de 0,3 % (prévision 0,2 %); aucun taux annuel n’est publié à cause de la fermeture du gouvernement de 2025 (3,7 % en septembre). Le taux à 2 ans a bondi de 13 pb à 4,68 %, le 10 ans de 7,6 pb à 4,94 %, l’indice du dollar a gagné 0,3 % à 102,05 et l’or a perdu 2 % à 4 057 $; les contrats sur le Nasdaq cédaient 1,4 %. La Fed semble en voie de relever ses taux en décembre, et le débat sur une hausse de 50 pb s’intensifie.",
    "summary_en": "CPI rose 0.4% in October (forecast 0.3%) and core CPI 0.3% (forecast 0.2%); no annual rate was published because of the 2025 government shutdown (3.7% in September). The 2-year yield jumped 13 bp to 4.68%, the 10-year 7.6 bp to 4.94%, the dollar index rose 0.3% to 102.05 and gold fell 2% to $4,057; Nasdaq futures were down 1.4%. The Fed looks on course to hike in December, with debate growing over a half-point move.",
+   "time": "08:58",
+   "title": "IPC d’octobre plus chaud que prévu (+0,4 %, base +0,3 %) : taux et dollar en hausse",
+   "title_en": "Hotter-than-expected October CPI (+0.4%, core +0.3%) lifts yields and dollar",
    "url": "https://za.investing.com/news/economic-indicators/hot-october-inflation-report-rattles-markets-4565282"
   },
   {
-   "date": "2026-11-10",
-   "time": "05:41",
-   "source": "CoinDesk",
-   "impact": "high",
    "assets": [
     "usd",
     "xauusd",
@@ -1093,25 +1122,29 @@
     "eurusd",
     "usdjpy"
    ],
-   "title": "Waller ouvre la porte à une hausse de 50 pb; une hausse de taux en décembre est entièrement intégrée",
-   "title_en": "Waller opens door to 50 bp hike; December rate increase fully priced in",
+   "date": "2026-11-10",
+   "impact": "high",
+   "source": "CoinDesk",
    "summary": "Le gouverneur de la Fed Christopher Waller appuie une hausse en décembre même si l’inflation a ralenti en octobre, et juge qu’un IPC plus chaud que prévu pourrait justifier 50 points de base. Les marchés intègrent une hausse de 25 pb le 9 décembre (fourchette de 4,00 % à 4,25 %), ce qui fait reculer l’or d’un peu plus de 1 % sous 4 100 $ et le bitcoin d’environ 1 % près de 74 000 $, tandis que le DXY reste ferme sous 102. L’IPC d’octobre est attendu ce matin à +0,3 % sur un mois (+0,2 % pour l’indice de base).",
    "summary_en": "Fed Governor Christopher Waller backs a December hike even if inflation cooled in October, and said a hotter-than-expected CPI could justify 50 basis points. Markets price a 25 bp hike on Dec. 9 (to a 4.00%-4.25% range), pushing gold down just over 1% below $4,100 and bitcoin about 1% lower near $74,000, while the DXY stays firm below 102. October CPI is due this morning, expected at +0.3% month over month (+0.2% core).",
+   "time": "05:41",
+   "title": "Waller ouvre la porte à une hausse de 50 pb; une hausse de taux en décembre est entièrement intégrée",
+   "title_en": "Waller opens door to 50 bp hike; December rate increase fully priced in",
    "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
   },
   {
-   "date": "2026-11-10",
-   "time": "",
-   "source": "Yahoo Finance",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Anthropic fixe la fourchette de son IPO à 70–78 $ : jusqu’à 64,4 G$ et plus de 1 000 G$ de valeur",
-   "title_en": "Anthropic sets IPO range at $70–$78: up to $64.4B raised, valuation above $1 trillion",
+   "date": "2026-11-10",
+   "impact": "med",
+   "source": "Yahoo Finance",
    "summary": "Anthropic a fixé une fourchette de 70 $ à 78 $ par action pour 825 millions d’actions, une offre qui pourrait lever jusqu’à 64,4 milliards $. Au haut de la fourchette, l’entreprise serait évaluée à plus de 1 000 milliards $, un test majeur de l’appétit pour l’IA alors que le Nasdaq est l’indice le plus faible de la séance.",
    "summary_en": "Anthropic set a price range of $70 to $78 per share for 825 million shares, an offering that could raise up to $64.4 billion. At the top of the range the company would be valued at more than $1 trillion, a major test of AI appetite as the Nasdaq is the session's weakest index.",
+   "time": "",
+   "title": "Anthropic fixe la fourchette de son IPO à 70–78 $ : jusqu’à 64,4 G$ et plus de 1 000 G$ de valeur",
+   "title_en": "Anthropic sets IPO range at $70–$78: up to $64.4B raised, valuation above $1 trillion",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
   },
   {
