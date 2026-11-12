@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T13:45:03Z",
+ "updatedAt": "2026-11-12T14:42:24Z",
  "econ": {
   "values": {
    "gdp": {
@@ -783,6 +783,22 @@
  "news": [
   {
    "date": "2026-11-12",
+   "time": "08:15",
+   "source": "Reuters (via Investing.com)",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "Les titres de l’IA chutent partout alors que la crise chez Nvidia s’aggrave",
+   "title_en": "Global AI stocks sink as Nvidia crisis deepens sector selloff",
+   "summary": "Nvidia reculait de 7,8 % avant l’ouverture et a perdu environ 300 G$ de valeur boursière depuis l’annonce de l’enquête de son conseil dimanche; elle se négocie à environ 12 fois ses bénéfices prévus sur 12 mois, un creux depuis novembre 2012. CoreWeave cédait 6 %, Nebius 10,7 %, Micron 3,4 % et Western Digital 3,2 %, tandis que le Japon et la Corée du Sud ont clôturé en baisse de près de 0,7 %. La pression sur les semi-conducteurs pèse d’abord sur le Nasdaq et le S&P 500.",
+   "summary_en": "Nvidia fell 7.8% premarket and has lost about $300 billion in market value since its board announced an investigation on Sunday; it trades at about 12 times 12-month forward earnings, its lowest since November 2012. CoreWeave fell 6%, Nebius 10.7%, Micron 3.4% and Western Digital 3.2%, while Japan and South Korea closed nearly 0.7% lower. Chip-sector pressure weighs first on the Nasdaq and the S&P 500.",
+   "url": "https://www.investing.com/news/stock-market-news/global-ai-stocks-sink-as-nvidia-crisis-deepens-sector-selloff-5021776"
+  },
+  {
+   "date": "2026-11-12",
    "time": "07:19",
    "source": "Yahoo Finance",
    "impact": "med",
@@ -795,22 +811,6 @@
    "summary": "Le contrat de décembre a ouvert à 3 994 $ l’once (−1,2 %), sous 4 000 $ pour la première fois depuis la semaine dernière, puis a glissé vers 3 943 $ (−1,4 %). Le dollar se raffermit : l’outil FedWatch de la CME donne environ 90 % de chances d’une hausse de 25 pb aux 8 et 9 décembre, ce qui pèse sur les métaux précieux.",
    "summary_en": "December gold futures opened at $3,994 an ounce (−1.2%), below $4,000 for the first time since last week, then slid toward $3,943 (−1.4%). The dollar is firming as CME FedWatch shows roughly a 90% chance of a 25 bp hike at the Dec. 8–9 meeting, weighing on precious metals.",
    "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-november-12-2026-prices-open-back-under-4000-as-rate-hikes-crystallize-121913089.html"
-  },
-  {
-   "date": "2026-11-12",
-   "time": "04:39",
-   "source": "Reuters (via Investing.com)",
-   "impact": "high",
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "title": "Les contrats à terme du Nasdaq reculent alors que la tourmente chez Nvidia secoue les titres de l’IA",
-   "title_en": "Nasdaq futures fall as Nvidia turmoil rattles AI stocks",
-   "summary": "À 4 h 11 (HE), les contrats à terme du Nasdaq 100 perdaient 226,25 points (0,79 %) et ceux du S&P 500 29,25 points (0,38 %), tandis que ceux du Dow gagnaient 20 points (0,04 %). Nvidia reculait d’environ 7 % avant l’ouverture, son conseil étant toujours en réflexion sur l’éviction de Jensen Huang; Intel, Marvell et Micron perdaient de 2,6 % à 3,4 %, CoreWeave 7,2 %. La pression sur les semi-conducteurs pèse surtout sur le Nasdaq, alors que le Dow résiste.",
-   "summary_en": "At 4:11 a.m. ET, Nasdaq 100 E-minis were down 226.25 points (0.79%) and S&P 500 E-minis 29.25 points (0.38%), while Dow E-minis were up 20 points (0.04%). Nvidia fell about 7% premarket as its board still weighs ousting CEO Jensen Huang; Intel, Marvell and Micron fell 2.6% to 3.4% and CoreWeave 7.2%. Chip-sector pressure weighs mainly on the Nasdaq while the Dow holds up.",
-   "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-fall-as-nvidia-turmoil-rattles-ai-stocks-5020761"
   },
   {
    "date": "2026-11-12",
