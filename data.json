@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T21:42:31Z",
+ "updatedAt": "2026-11-12T22:19:48Z",
  "econ": {
   "values": {
    "gdp": {
@@ -30280,37 +30280,72 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-12T17:16:49Z",
+  "asOf": "2026-11-12T22:19:34Z",
   "recaps": [
    {
     "date": "2026-11-12",
-    "session": "lon",
-    "title": "Jensen Huang quitte Nvidia, l’or chute de 2,3 % et le dollar grimpe avec les paris d’une hausse de la Fed",
-    "title_en": "Jensen Huang exits Nvidia, gold drops 2.3% and the dollar climbs on Fed hike bets",
-    "body": "La séance de Londres a été secouée par la démission de Jensen Huang à la tête de Nvidia, dont l’action a chuté d’environ 14 % à l’ouverture de Wall Street avant que les indices américains n’effacent leurs pertes initiales : depuis 9 h 30, le S&P 500 a remonté de 1,30 % et le Nasdaq 100 de 2,02 %. En Europe, le STOXX 600 a atteint un sommet record, une première depuis août, et le DAX gagnait environ 1 % en début de séance. Les paris d’une hausse de taux de la Fed les 8 et 9 décembre (environ 90 % selon CME FedWatch) ont gardé le rendement américain à 10 ans près de 5 % et porté l’indice du dollar à 103,16 (+0,22 %), ce qui a fait plonger l’or de 2,32 % vers 3 878 $ et l’argent de 2,57 %. Les demandes de chômage hebdomadaires sont sorties à 200 000, un peu au-dessus des 195 000 attendues, le bitcoin a reculé de 2,38 % et le pétrole a oscillé après que Donald Trump a dit ne plus vouloir d’entente avec l’Iran.",
-    "body_en": "The London session was rocked by Jensen Huang’s resignation as head of Nvidia, whose stock fell about 14% at Wall Street’s open before U.S. indexes erased their early losses: since 9:30 a.m., the S&P 500 climbed 1.30% and the Nasdaq 100 2.02%. In Europe, the STOXX 600 hit a record high, its first since August, and the DAX gained about 1% in early trading. Bets on a Fed rate hike on December 8–9 (about 90% per CME FedWatch) kept the U.S. 10-year yield near 5% and lifted the dollar index to 103.16 (+0.22%), sending gold down 2.32% to about $3,878 and silver down 2.57%. Weekly jobless claims came in at 200,000, slightly above the 195,000 expected, bitcoin fell 2.38% and oil swung after Donald Trump said he no longer wants a deal with Iran.",
+    "session": "ny",
+    "title": "Nvidia limite les dégâts, le pétrole bondit de 3 % et le dollar touche un sommet de 19 mois",
+    "title_en": "Nvidia trims its losses, oil jumps 3% and the dollar hits a 19-month high",
+    "body": "Wall Street a fini en baisse d’environ 0,4 % (S&P 500 à 7 592, Dow à 52 297, Nasdaq composé à 25 366) au lendemain de la démission de Jensen Huang, mais les indices ont repris du terrain après une ouverture en repli : entre 9 h 30 et 16 h, le S&P 500 a gagné 0,54 % et le Nasdaq 100 1,15 %, Nvidia limitant sa perte à 4,3 % après avoir cédé près de 14 %. Le pétrole a bondi après que Donald Trump a écrit que les États-Unis n’ont plus besoin d’entente avec l’Iran, le Brent gagnant 3,3 % à 95,82 $. Les paris d’une hausse de la Fed en décembre (91 % selon CME FedWatch, d’après Reuters) ont porté le 10 ans à 5,07 % et l’indice du dollar à 103,16, un sommet depuis avril 2025, ce qui a pesé sur l’or (−0,39 % durant la séance) et le bitcoin (−1,48 %). Les ventes de maisons existantes ont chuté de 5,5 % en octobre, à leur plus bas depuis août 2010.",
+    "body_en": "Wall Street ended down about 0.4% (S&P 500 at 7,592, Dow at 52,297, Nasdaq Composite at 25,366) after Jensen Huang’s resignation, but indexes clawed back ground after a weak open: between 9:30 a.m. and 4 p.m., the S&P 500 gained 0.54% and the Nasdaq 100 1.15%, with Nvidia trimming its loss to 4.3% after shedding nearly 14%. Oil jumped after Donald Trump wrote that the U.S. no longer needs a deal with Iran, with Brent up 3.3% at $95.82. Bets on a December Fed hike (91% per CME FedWatch, according to Reuters) lifted the 10-year yield to 5.07% and the dollar index to 103.16, its highest since April 2025, weighing on gold (−0.39% during the session) and bitcoin (−1.48%). Existing home sales fell 5.5% in October to their lowest level since August 2010.",
     "sections": {
      "indices": {
-      "fr": "Nvidia a perdu environ 14 % à l’ouverture après la démission de Jensen Huang (Colette Kress devient PDG par intérim), mais Wall Street s’est vite repris : de 9 h 30 à la fin de la séance, S&P 500 +1,30 % (7 648,6), Nasdaq 100 +2,02 %, Dow +0,58 % et Russell 2000 −0,12 %; en Europe, le STOXX 600 a touché un record, avec le DAX vers +1 %, le CAC 40 +0,7 % et le FTSE 100 +0,3 % en matinée.",
-      "en": "Nvidia lost about 14% at the open after Jensen Huang resigned (Colette Kress becomes interim CEO), but Wall Street quickly recovered: from 9:30 a.m. to the end of the session, S&P 500 +1.30% (7,648.6), Nasdaq 100 +2.02%, Dow +0.58% and Russell 2000 −0.12%; in Europe, the STOXX 600 hit a record, with the DAX about +1%, the CAC 40 +0.7% and the FTSE 100 +0.3% in the morning."
+      "fr": "Nvidia a clôturé en baisse de 4,3 % après avoir perdu près de 14 % en séance (Colette Kress devient PDG par intérim), tandis qu’AMD (+5,9 %) et Broadcom (+5,5 %) ont progressé; de 9 h 30 à 16 h, S&P 500 +0,54 %, Nasdaq 100 +1,15 %, Dow −0,26 % et Russell 2000 −0,99 %, mais les trois grands indices finissent la journée en recul d’environ 0,4 %.",
+      "en": "Nvidia closed down 4.3% after losing nearly 14% intraday (Colette Kress becomes interim CEO), while AMD (+5.9%) and Broadcom (+5.5%) rose; from 9:30 a.m. to 4 p.m., S&P 500 +0.54%, Nasdaq 100 +1.15%, Dow −0.26% and Russell 2000 −0.99%, but the three major indexes ended the day down about 0.4%."
      },
      "metals": {
-      "fr": "L’or a chuté de 2,32 % vers 3 878 $, son plus bas en plus d’une semaine, et l’argent de 2,57 % vers 50,13 $, pénalisés par la vigueur du dollar, un rendement à 10 ans près de 5 % (2 ans vers 4,76 %) et des paris de hausse de la Fed en décembre.",
-      "en": "Gold fell 2.32% to about $3,878, its lowest in more than a week, and silver 2.57% to about $50.13, weighed by the strong dollar, a 10-year yield near 5% (2-year near 4.76%) and bets on a Fed hike in December."
+      "fr": "L’or a glissé de 0,39 % durant la séance vers 3 880 $ et l’argent de 0,48 % sous 50 $, freinés par un 10 ans à 5,07 % et un 2 ans à 4,84 %, après les demandes de chômage à 200 000 (195 000 attendues).",
+      "en": "Gold slipped 0.39% during the session to about $3,880 and silver 0.48% below $50, held back by a 10-year yield at 5.07% and a 2-year at 4.84%, after jobless claims came in at 200,000 (195,000 expected)."
      },
      "forex": {
-      "fr": "L’indice du dollar a gagné 0,22 % à 103,16, près de son plus haut en 19 mois; l’EUR/USD a cédé 0,23 % à 1,1064, l’USD/JPY a pris 0,15 % à 159,94 et l’USD/CAD est resté stable à 1,4256.",
-      "en": "The dollar index gained 0.22% to 103.16, near a 19-month high; EUR/USD lost 0.23% to 1.1064, USD/JPY rose 0.15% to 159.94 and USD/CAD held flat at 1.4256."
+      "fr": "L’indice du dollar a gagné 0,25 % durant la séance à environ 103,2, son sommet depuis avril 2025; l’EUR/USD a reculé de 0,30 % vers 1,106 (plus bas depuis avril 2025), l’USD/JPY a frôlé 160 (+0,11 %) et l’USD/CAD a monté de 0,16 % vers 1,4256.",
+      "en": "The dollar index rose 0.25% during the session to about 103.2, its highest since April 2025; EUR/USD fell 0.30% to around 1.106 (lowest since April 2025), USD/JPY brushed 160 (+0.11%) and USD/CAD rose 0.16% to about 1.4256."
      },
      "crypto": {
-      "fr": "Le bitcoin a reculé de 2,38 % vers 71 800 $, entraîné par la tourmente chez Nvidia et un cinquième jour de sorties de fonds des FNB au comptant.",
-      "en": "Bitcoin fell 2.38% to about $71,800, dragged by the Nvidia turmoil and a fifth straight day of spot ETF outflows."
+      "fr": "Le bitcoin a perdu 1,48 % durant la séance vers 71 350 $, sous sa moyenne mobile de 50 semaines (75 153 $), pénalisé par les sorties des FNB au comptant et la vigueur du dollar.",
+      "en": "Bitcoin lost 1.48% during the session to about $71,350, below its 50-week moving average ($75,153), hurt by spot ETF outflows and dollar strength."
      },
      "energy": {
-      "fr": "Le pétrole a fait le yo-yo après que Donald Trump a dit ne plus être intéressé par une entente avec l’Iran : le WTI touchait 87,26 $ (+0,8 %) peu après l’ouverture de New York et le Brent 93,53 $, mais le WTI termine la séance à peine en baisse (−0,10 %, vers 86,89 $).",
-      "en": "Oil swung after Donald Trump said he is no longer interested in a deal with Iran: WTI reached $87.26 (+0.8%) shortly after New York’s open and Brent $93.53, but WTI ends the session barely lower (−0.10%, near $86.89)."
+      "fr": "Le Brent a gagné 3,3 % à 95,82 $ et le WTI 2,6 % à 88,74 $ après le message de Trump (« We don’t need a deal with Iran ») et des explosions ayant immobilisé deux superpétroliers dans le détroit d’Ormuz, malgré une hausse de 4,7 millions de barils des stocks américains (EIA).",
+      "en": "Brent rose 3.3% to $95.82 and WTI 2.6% to $88.74 after Trump’s post (“We don’t need a deal with Iran”) and explosions that halted two supertankers in the Strait of Hormuz, despite a 4.7-million-barrel build in U.S. crude stocks (EIA)."
      }
     },
+    "sources": [
+     "https://www.kiplinger.com/investing/stocks/stocks-slip-as-wall-street-weighs-nvidias-ceo-crisis-stock-market-today",
+     "https://live.euronext.com/en/financial-news/dollar-reaches-19-month-high-rate-expectations-dominate",
+     "https://www.rigzone.com/news/oil_rises_as_trump_dims_iran_deal_hopes-12-nov-2026-185073-article",
+     "https://www.kitco.com/news/article/2026-11-12/gold-price-tests-3900oz-after-us-weekly-jobless-claims-rise-200k",
+     "https://www.coindesk.com/daybook-us/2026/11/12/bitcoin-weakness-erases-september-s-bullish-signal"
+    ]
+   },
+   {
+    "body": "La séance de Londres a été secouée par la démission de Jensen Huang à la tête de Nvidia, dont l’action a chuté d’environ 14 % à l’ouverture de Wall Street avant que les indices américains n’effacent leurs pertes initiales : depuis 9 h 30, le S&P 500 a remonté de 1,30 % et le Nasdaq 100 de 2,02 %. En Europe, le STOXX 600 a atteint un sommet record, une première depuis août, et le DAX gagnait environ 1 % en début de séance. Les paris d’une hausse de taux de la Fed les 8 et 9 décembre (environ 90 % selon CME FedWatch) ont gardé le rendement américain à 10 ans près de 5 % et porté l’indice du dollar à 103,16 (+0,22 %), ce qui a fait plonger l’or de 2,32 % vers 3 878 $ et l’argent de 2,57 %. Les demandes de chômage hebdomadaires sont sorties à 200 000, un peu au-dessus des 195 000 attendues, le bitcoin a reculé de 2,38 % et le pétrole a oscillé après que Donald Trump a dit ne plus vouloir d’entente avec l’Iran.",
+    "body_en": "The London session was rocked by Jensen Huang’s resignation as head of Nvidia, whose stock fell about 14% at Wall Street’s open before U.S. indexes erased their early losses: since 9:30 a.m., the S&P 500 climbed 1.30% and the Nasdaq 100 2.02%. In Europe, the STOXX 600 hit a record high, its first since August, and the DAX gained about 1% in early trading. Bets on a Fed rate hike on December 8–9 (about 90% per CME FedWatch) kept the U.S. 10-year yield near 5% and lifted the dollar index to 103.16 (+0.22%), sending gold down 2.32% to about $3,878 and silver down 2.57%. Weekly jobless claims came in at 200,000, slightly above the 195,000 expected, bitcoin fell 2.38% and oil swung after Donald Trump said he no longer wants a deal with Iran.",
+    "date": "2026-11-12",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin fell 2.38% to about $71,800, dragged by the Nvidia turmoil and a fifth straight day of spot ETF outflows.",
+      "fr": "Le bitcoin a reculé de 2,38 % vers 71 800 $, entraîné par la tourmente chez Nvidia et un cinquième jour de sorties de fonds des FNB au comptant."
+     },
+     "energy": {
+      "en": "Oil swung after Donald Trump said he is no longer interested in a deal with Iran: WTI reached $87.26 (+0.8%) shortly after New York’s open and Brent $93.53, but WTI ends the session barely lower (−0.10%, near $86.89).",
+      "fr": "Le pétrole a fait le yo-yo après que Donald Trump a dit ne plus être intéressé par une entente avec l’Iran : le WTI touchait 87,26 $ (+0,8 %) peu après l’ouverture de New York et le Brent 93,53 $, mais le WTI termine la séance à peine en baisse (−0,10 %, vers 86,89 $)."
+     },
+     "forex": {
+      "en": "The dollar index gained 0.22% to 103.16, near a 19-month high; EUR/USD lost 0.23% to 1.1064, USD/JPY rose 0.15% to 159.94 and USD/CAD held flat at 1.4256.",
+      "fr": "L’indice du dollar a gagné 0,22 % à 103,16, près de son plus haut en 19 mois; l’EUR/USD a cédé 0,23 % à 1,1064, l’USD/JPY a pris 0,15 % à 159,94 et l’USD/CAD est resté stable à 1,4256."
+     },
+     "indices": {
+      "en": "Nvidia lost about 14% at the open after Jensen Huang resigned (Colette Kress becomes interim CEO), but Wall Street quickly recovered: from 9:30 a.m. to the end of the session, S&P 500 +1.30% (7,648.6), Nasdaq 100 +2.02%, Dow +0.58% and Russell 2000 −0.12%; in Europe, the STOXX 600 hit a record, with the DAX about +1%, the CAC 40 +0.7% and the FTSE 100 +0.3% in the morning.",
+      "fr": "Nvidia a perdu environ 14 % à l’ouverture après la démission de Jensen Huang (Colette Kress devient PDG par intérim), mais Wall Street s’est vite repris : de 9 h 30 à la fin de la séance, S&P 500 +1,30 % (7 648,6), Nasdaq 100 +2,02 %, Dow +0,58 % et Russell 2000 −0,12 %; en Europe, le STOXX 600 a touché un record, avec le DAX vers +1 %, le CAC 40 +0,7 % et le FTSE 100 +0,3 % en matinée."
+     },
+     "metals": {
+      "en": "Gold fell 2.32% to about $3,878, its lowest in more than a week, and silver 2.57% to about $50.13, weighed by the strong dollar, a 10-year yield near 5% (2-year near 4.76%) and bets on a Fed hike in December.",
+      "fr": "L’or a chuté de 2,32 % vers 3 878 $, son plus bas en plus d’une semaine, et l’argent de 2,57 % vers 50,13 $, pénalisés par la vigueur du dollar, un rendement à 10 ans près de 5 % (2 ans vers 4,76 %) et des paris de hausse de la Fed en décembre."
+     }
+    },
+    "session": "lon",
     "sources": [
      "https://www.bnnbloomberg.ca/markets/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/",
      "https://www.kitco.com/news/off-the-wire/2026-11-12/wall-street-set-dip-nvidia-storm-continues-treasury-yields-bob-5",
@@ -30318,1115 +30353,1153 @@
      "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html",
      "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-increase-but-labor-market-firming-5021926",
      "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five"
-    ]
+    ],
+    "title": "Jensen Huang quitte Nvidia, l’or chute de 2,3 % et le dollar grimpe avec les paris d’une hausse de la Fed",
+    "title_en": "Jensen Huang exits Nvidia, gold drops 2.3% and the dollar climbs on Fed hike bets"
    },
    {
-    "date": "2026-11-12",
-    "session": "tok",
-    "title": "Nvidia chute après la cloche, l’Asie hésite et le dollar touche un sommet de 19 mois",
-    "title_en": "Nvidia slides after the bell, Asia wavers and the dollar hits a 19-month high",
     "body": "La séance asiatique a été dominée par la chute de plus de 8 % de Nvidia après la clôture de Wall Street, son conseil d’administration s’étant réuni au sujet de la situation entourant le PDG Jensen Huang, ce qui a effacé une partie de l’élan donné la veille par CoreWeave. Les contrats à terme sur le S&P 500 ont reculé d’environ 0,4 %, et les places asiatiques ont fini en ordre dispersé : le Nikkei a cédé 0,1 % à 61 224,87, le Hang Seng 0,9 % et le Taiex 1,2 %, tandis que Shanghai gagnait 0,2 %. L’indice du dollar a atteint 102,87, son plus haut depuis avril de l’an dernier, porté par des marchés qui voient une hausse de taux de la Fed le 9 décembre comme quasi acquise. L’or est resté stable près de 3 984 $, le bitcoin a glissé de 0,46 % et le pétrole a peu bougé.",
     "body_en": "The Asian session was dominated by Nvidia’s drop of more than 8% after Wall Street’s close, as its board met over the situation surrounding CEO Jensen Huang, erasing part of the momentum CoreWeave had provided the day before. S&P 500 futures fell about 0.4%, and Asian markets ended mixed: the Nikkei slipped 0.1% to 61,224.87, the Hang Seng lost 0.9% and the Taiex 1.2%, while Shanghai gained 0.2%. The dollar index reached 102.87, its highest since April last year, as markets see a Fed rate hike on December 9 as all but certain. Gold held steady near $3,984, bitcoin slipped 0.46% and oil barely moved.",
+    "date": "2026-11-12",
     "sections": {
-     "indices": {
-      "fr": "Nikkei −0,1 % (61 224,87), Kospi quasi inchangé (5 375,63), Hang Seng −0,9 %, Taiex −1,2 %, ASX 200 −0,4 % et Shanghai +0,2 %; les contrats à terme sur le S&P 500 reculaient d’environ 0,4 % dans la foulée de Nvidia.",
-      "en": "Nikkei −0.1% (61,224.87), Kospi nearly unchanged (5,375.63), Hang Seng −0.9%, Taiex −1.2%, ASX 200 −0.4% and Shanghai +0.2%; S&P 500 futures fell about 0.4% in Nvidia’s wake."
-     },
-     "metals": {
-      "fr": "L’or a terminé la séance pratiquement inchangé (−0,01 %, vers 3 984 $) après sa baisse de la veille, tandis que l’argent a progressé de 0,43 % vers 51,46 $.",
-      "en": "Gold ended the session virtually unchanged (−0.01%, near $3,984) after the previous day’s drop, while silver rose 0.43% to about $51.46."
-     },
-     "forex": {
-      "fr": "Le dollar a encore gagné du terrain (indice +0,13 % à 102,99, plus haut depuis avril 2025 selon Reuters) : l’EUR/USD a cédé 0,12 % vers 1,1082, l’USD/JPY est resté collé à 159,78, tout près du seuil de 160, et l’USD/CAD a avancé de 0,06 % vers 1,4258.",
-      "en": "The dollar gained further ground (index +0.13% to 102.99, its highest since April 2025 according to Reuters): EUR/USD slipped 0.12% to about 1.1082, USD/JPY stuck at 159.78, just shy of the 160 threshold, and USD/CAD rose 0.06% to about 1.4258."
-     },
      "crypto": {
-      "fr": "Le bitcoin a reculé de 0,46 % pendant la séance vers 73 580 $, l’ether perdant environ 0,9 % vers 2 050 $, dans un climat de prudence face aux valeurs technologiques.",
-      "en": "Bitcoin fell 0.46% during the session to around $73,580, with ether down about 0.9% near $2,050, amid caution toward tech stocks."
+      "en": "Bitcoin fell 0.46% during the session to around $73,580, with ether down about 0.9% near $2,050, amid caution toward tech stocks.",
+      "fr": "Le bitcoin a reculé de 0,46 % pendant la séance vers 73 580 $, l’ether perdant environ 0,9 % vers 2 050 $, dans un climat de prudence face aux valeurs technologiques."
      },
      "energy": {
-      "fr": "Le WTI est resté stable pendant la séance (−0,01 %, vers 86,23 $), sans nouvelle donnée majeure pour le marché pétrolier.",
-      "en": "WTI held steady during the session (−0.01%, near $86.23), with no major new catalyst for the oil market."
+      "en": "WTI held steady during the session (−0.01%, near $86.23), with no major new catalyst for the oil market.",
+      "fr": "Le WTI est resté stable pendant la séance (−0,01 %, vers 86,23 $), sans nouvelle donnée majeure pour le marché pétrolier."
+     },
+     "forex": {
+      "en": "The dollar gained further ground (index +0.13% to 102.99, its highest since April 2025 according to Reuters): EUR/USD slipped 0.12% to about 1.1082, USD/JPY stuck at 159.78, just shy of the 160 threshold, and USD/CAD rose 0.06% to about 1.4258.",
+      "fr": "Le dollar a encore gagné du terrain (indice +0,13 % à 102,99, plus haut depuis avril 2025 selon Reuters) : l’EUR/USD a cédé 0,12 % vers 1,1082, l’USD/JPY est resté collé à 159,78, tout près du seuil de 160, et l’USD/CAD a avancé de 0,06 % vers 1,4258."
+     },
+     "indices": {
+      "en": "Nikkei −0.1% (61,224.87), Kospi nearly unchanged (5,375.63), Hang Seng −0.9%, Taiex −1.2%, ASX 200 −0.4% and Shanghai +0.2%; S&P 500 futures fell about 0.4% in Nvidia’s wake.",
+      "fr": "Nikkei −0,1 % (61 224,87), Kospi quasi inchangé (5 375,63), Hang Seng −0,9 %, Taiex −1,2 %, ASX 200 −0,4 % et Shanghai +0,2 %; les contrats à terme sur le S&P 500 reculaient d’environ 0,4 % dans la foulée de Nvidia."
+     },
+     "metals": {
+      "en": "Gold ended the session virtually unchanged (−0.01%, near $3,984) after the previous day’s drop, while silver rose 0.43% to about $51.46.",
+      "fr": "L’or a terminé la séance pratiquement inchangé (−0,01 %, vers 3 984 $) après sa baisse de la veille, tandis que l’argent a progressé de 0,43 % vers 51,46 $."
      }
     },
+    "session": "tok",
     "sources": [
      "https://www.wsls.com/business/2026/11/12/asian-shares-mostly-slip-as-nvidias-troubles-weigh-on-ai-stocks-despite-a-rally-on-wall-st/",
      "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-fragile-nvidia-plummets-015524144.html"
-    ]
+    ],
+    "title": "Nvidia chute après la cloche, l’Asie hésite et le dollar touche un sommet de 19 mois",
+    "title_en": "Nvidia slides after the bell, Asia wavers and the dollar hits a 19-month high"
    },
    {
-    "date": "2026-11-11",
-    "session": "ny",
-    "title": "CoreWeave rallume l’IA : le Nasdaq gagne 1,6 %, l’or glisse sous 4 000 $",
-    "title_en": "CoreWeave revives the AI trade: Nasdaq up 1.6%, gold slips below $4,000",
     "body": "Wall Street a rebondi après deux séances de recul liées à l’IPC chaud : le Nasdaq a clôturé en hausse de 1,60 % à 25 466,19, le S&P 500 de 1,31 % à 7 619,38 et le Dow de 0,49 % à 52 486,49, CoreWeave bondissant de 24,7 % après ses résultats et l’indice des semi-conducteurs de 5,7 %. Le marché obligataire au comptant était fermé pour le Veterans Day, mais les paris d’une hausse de taux de la Fed en décembre restent solidement ancrés, Goldman Sachs ajoutant même une hausse en mars à sa prévision. Ce contexte a gardé le dollar ferme et pesé sur les métaux : l’or a reculé de 1,32 % pendant la séance pour finir près de 3 992 $. Le bitcoin a progressé d’environ 1,1 % tandis que le WTI a cédé 0,72 % vers 86,33 $.",
     "body_en": "Wall Street rebounded after two sessions of losses tied to the hot CPI: the Nasdaq closed up 1.60% at 25,466.19, the S&P 500 up 1.31% at 7,619.38 and the Dow up 0.49% at 52,486.49, as CoreWeave jumped 24.7% after earnings and the semiconductor index rose 5.7%. The cash bond market was closed for Veterans Day, but bets on a December Fed rate hike remain firmly in place, with Goldman Sachs even adding a March hike to its forecast. That backdrop kept the dollar firm and weighed on metals: gold fell 1.32% during the session to end near $3,992. Bitcoin gained about 1.1% while WTI slipped 0.72% to around $86.33.",
+    "date": "2026-11-11",
     "sections": {
-     "indices": {
-      "fr": "Clôture : Nasdaq +1,60 %, S&P 500 +1,31 %, Dow +0,49 %; mesuré de l’ouverture de 9 h 30 à la clôture, le Nasdaq 100 gagne 0,45 %, le S&P 500 0,41 %, le Dow 0,54 % et le Russell 2000 0,13 %, l’essentiel de la hausse ayant été acquis à l’ouverture.",
-      "en": "Close: Nasdaq +1.60%, S&P 500 +1.31%, Dow +0.49%; measured from the 9:30 a.m. open to the close, the Nasdaq 100 gained 0.45%, the S&P 500 0.41%, the Dow 0.54% and the Russell 2000 0.13%, with most of the gain made at the open."
-     },
-     "metals": {
-      "fr": "L’or a perdu 1,32 % durant la séance (4 045,60 $ à 3 992,10 $) et l’argent 1,93 % (52,75 $ à 51,73 $), freinés par le dollar ferme et la perspective de hausses de taux de la Fed.",
-      "en": "Gold lost 1.32% during the session ($4,045.60 to $3,992.10) and silver 1.93% ($52.75 to $51.73), held back by a firm dollar and the prospect of Fed rate hikes."
-     },
-     "forex": {
-      "fr": "L’indice du dollar a gagné 0,14 %; l’EUR/USD a reculé de 0,12 % à 1,1091, l’USD/JPY a monté de 0,19 % à 159,85, près du seuil de 160 surveillé par Tokyo, et l’USD/CAD de 0,08 % à 1,4251.",
-      "en": "The dollar index rose 0.14%; EUR/USD fell 0.12% to 1.1091, USD/JPY rose 0.19% to 159.85, near the 160 level Tokyo watches, and USD/CAD gained 0.08% to 1.4251."
-     },
      "crypto": {
-      "fr": "Le bitcoin a gagné 1,13 % pendant la séance, de 73 734 $ à 74 568 $, profitant modestement du regain d’appétit pour le risque.",
-      "en": "Bitcoin gained 1.13% during the session, from $73,734 to $74,568, modestly benefiting from the renewed risk appetite."
+      "en": "Bitcoin gained 1.13% during the session, from $73,734 to $74,568, modestly benefiting from the renewed risk appetite.",
+      "fr": "Le bitcoin a gagné 1,13 % pendant la séance, de 73 734 $ à 74 568 $, profitant modestement du regain d’appétit pour le risque."
      },
      "energy": {
-      "fr": "Le WTI a reculé de 0,72 % pendant la séance, de 86,96 $ à 86,33 $, effaçant une partie des gains du matin liés aux attaques de navires dans le détroit d’Ormuz.",
-      "en": "WTI fell 0.72% during the session, from $86.96 to $86.33, giving back part of the morning gains tied to ship attacks in the Strait of Hormuz."
+      "en": "WTI fell 0.72% during the session, from $86.96 to $86.33, giving back part of the morning gains tied to ship attacks in the Strait of Hormuz.",
+      "fr": "Le WTI a reculé de 0,72 % pendant la séance, de 86,96 $ à 86,33 $, effaçant une partie des gains du matin liés aux attaques de navires dans le détroit d’Ormuz."
+     },
+     "forex": {
+      "en": "The dollar index rose 0.14%; EUR/USD fell 0.12% to 1.1091, USD/JPY rose 0.19% to 159.85, near the 160 level Tokyo watches, and USD/CAD gained 0.08% to 1.4251.",
+      "fr": "L’indice du dollar a gagné 0,14 %; l’EUR/USD a reculé de 0,12 % à 1,1091, l’USD/JPY a monté de 0,19 % à 159,85, près du seuil de 160 surveillé par Tokyo, et l’USD/CAD de 0,08 % à 1,4251."
+     },
+     "indices": {
+      "en": "Close: Nasdaq +1.60%, S&P 500 +1.31%, Dow +0.49%; measured from the 9:30 a.m. open to the close, the Nasdaq 100 gained 0.45%, the S&P 500 0.41%, the Dow 0.54% and the Russell 2000 0.13%, with most of the gain made at the open.",
+      "fr": "Clôture : Nasdaq +1,60 %, S&P 500 +1,31 %, Dow +0,49 %; mesuré de l’ouverture de 9 h 30 à la clôture, le Nasdaq 100 gagne 0,45 %, le S&P 500 0,41 %, le Dow 0,54 % et le Russell 2000 0,13 %, l’essentiel de la hausse ayant été acquis à l’ouverture."
+     },
+     "metals": {
+      "en": "Gold lost 1.32% during the session ($4,045.60 to $3,992.10) and silver 1.93% ($52.75 to $51.73), held back by a firm dollar and the prospect of Fed rate hikes.",
+      "fr": "L’or a perdu 1,32 % durant la séance (4 045,60 $ à 3 992,10 $) et l’argent 1,93 % (52,75 $ à 51,73 $), freinés par le dollar ferme et la perspective de hausses de taux de la Fed."
      }
     },
+    "session": "ny",
     "sources": [
      "https://www.marketscreener.com/news/stocks-end-higher-as-coreweave-results-ease-ai-spending-worries-ce785edbd18cf726",
      "https://www.investing.com/news/economy-news/goldman-expects-additional-fed-rate-hike-in-march-5017688",
      "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-november-11-2026-gold-prices-fall-back-as-inflation-concerns-broaden-121148323.html",
      "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347"
-    ]
+    ],
+    "title": "CoreWeave rallume l’IA : le Nasdaq gagne 1,6 %, l’or glisse sous 4 000 $",
+    "title_en": "CoreWeave revives the AI trade: Nasdaq up 1.6%, gold slips below $4,000"
    },
    {
-    "date": "2026-11-11",
-    "session": "lon",
-    "title": "L’Europe touche un record grâce à l’IA; le dollar s’envole et l’or recule de 1,5 %",
-    "title_en": "Europe hits a record on AI; the dollar climbs and gold drops 1.5%",
     "body": "Le STOXX 600 a signé un record de clôture, porté par Siemens Energy (+8,3 % après des perspectives relevées) et par les résultats de CoreWeave, qui ont ravivé l’optimisme pour l’IA et fait grimper les contrats à terme du Nasdaq d’environ 2 % avant l’ouverture à New York. Le dollar a profité des paris d’une hausse de taux de la Fed : l’indice a gagné 0,54 %, l’EUR/USD a perdu 0,54 % et l’USD/JPY a monté de 0,62 % près de 159,86. L’or a reculé de 1,45 % et l’argent de 1,87 %. Le pétrole a bondi de 1,84 % avec la poursuite des attaques de navires dans le détroit d’Ormuz.",
     "body_en": "The STOXX 600 posted a record close, driven by Siemens Energy (+8.3% after raising its outlook) and CoreWeave's results, which revived AI optimism and lifted Nasdaq futures about 2% before the New York open. The dollar benefited from bets on a Fed rate hike: the index gained 0.54%, EUR/USD lost 0.54% and USD/JPY rose 0.62% to near 159.86. Gold fell 1.45% and silver 1.87%. Oil jumped 1.84% as ship attacks continued in the Strait of Hormuz.",
+    "date": "2026-11-11",
     "sections": {
-     "indices": {
-      "fr": "Le STOXX 600 a clôturé à un record, la tech européenne gagnant environ 2 %; à New York, les contrats à terme du Nasdaq 100 grimpaient d’environ 2 % avant l’ouverture.",
-      "en": "The STOXX 600 closed at a record, with European tech up about 2%; in New York, Nasdaq 100 futures were up about 2% before the open."
-     },
-     "metals": {
-      "fr": "L’or a perdu 1,45 % pendant la séance (4 066,90 $ à 4 008,10 $) et l’argent 1,87 % (53,06 $ à 52,07 $), sous la pression du dollar.",
-      "en": "Gold lost 1.45% during the session ($4,066.90 to $4,008.10) and silver 1.87% ($53.06 to $52.07), pressured by the dollar."
-     },
-     "forex": {
-      "fr": "L’indice du dollar a gagné 0,54 %; l’EUR/USD a chuté de 0,54 % à 1,1096, l’USD/JPY a monté de 0,62 % à 159,86 et l’USD/CAD de 0,21 % à 1,4244.",
-      "en": "The dollar index rose 0.54%; EUR/USD fell 0.54% to 1.1096, USD/JPY rose 0.62% to 159.86 and USD/CAD 0.21% to 1.4244."
-     },
      "crypto": {
-      "fr": "Le bitcoin a gagné 0,29 % à 74 213 $, malgré une quatrième journée de sorties des FNB américains au comptant mardi.",
-      "en": "Bitcoin gained 0.29% to $74,213, despite a fourth day of outflows from U.S. spot ETFs on Tuesday."
+      "en": "Bitcoin gained 0.29% to $74,213, despite a fourth day of outflows from U.S. spot ETFs on Tuesday.",
+      "fr": "Le bitcoin a gagné 0,29 % à 74 213 $, malgré une quatrième journée de sorties des FNB américains au comptant mardi."
      },
      "energy": {
-      "fr": "Le WTI a bondi de 1,84 % à 87,83 $ : les attaques de navires à Ormuz et le refus de Téhéran de négocier avec Washington freinent l’espoir d’une trêve.",
-      "en": "WTI jumped 1.84% to $87.83: ship attacks in Hormuz and Tehran's refusal to negotiate with Washington dampen truce hopes."
+      "en": "WTI jumped 1.84% to $87.83: ship attacks in Hormuz and Tehran's refusal to negotiate with Washington dampen truce hopes.",
+      "fr": "Le WTI a bondi de 1,84 % à 87,83 $ : les attaques de navires à Ormuz et le refus de Téhéran de négocier avec Washington freinent l’espoir d’une trêve."
+     },
+     "forex": {
+      "en": "The dollar index rose 0.54%; EUR/USD fell 0.54% to 1.1096, USD/JPY rose 0.62% to 159.86 and USD/CAD 0.21% to 1.4244.",
+      "fr": "L’indice du dollar a gagné 0,54 %; l’EUR/USD a chuté de 0,54 % à 1,1096, l’USD/JPY a monté de 0,62 % à 159,86 et l’USD/CAD de 0,21 % à 1,4244."
+     },
+     "indices": {
+      "en": "The STOXX 600 closed at a record, with European tech up about 2%; in New York, Nasdaq 100 futures were up about 2% before the open.",
+      "fr": "Le STOXX 600 a clôturé à un record, la tech européenne gagnant environ 2 %; à New York, les contrats à terme du Nasdaq 100 grimpaient d’environ 2 % avant l’ouverture."
+     },
+     "metals": {
+      "en": "Gold lost 1.45% during the session ($4,066.90 to $4,008.10) and silver 1.87% ($53.06 to $52.07), pressured by the dollar.",
+      "fr": "L’or a perdu 1,45 % pendant la séance (4 066,90 $ à 4 008,10 $) et l’argent 1,87 % (53,06 $ à 52,07 $), sous la pression du dollar."
      }
     },
+    "session": "lon",
     "sources": [
      "https://finance.yahoo.com/markets/stocks/articles/european-stocks-near-record-high-102945417.html",
      "https://www.marketscreener.com/news/europe-s-stoxx-600-near-record-high-as-siemens-energy-coreweave-outlooks-lift-sentiment-ce785edbda88f720",
      "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347",
      "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks",
      "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
-    ]
+    ],
+    "title": "L’Europe touche un record grâce à l’IA; le dollar s’envole et l’or recule de 1,5 %",
+    "title_en": "Europe hits a record on AI; the dollar climbs and gold drops 1.5%"
    },
    {
-    "date": "2026-11-11",
-    "session": "tok",
-    "title": "Les puces d’IA portent Tokyo et Séoul; l’argent rebondit de 2,8 %",
-    "title_en": "AI chips lift Tokyo and Seoul; silver rebounds 2.8%",
     "body": "Malgré le recul de Wall Street après l’IPC chaud, les places asiatiques ont surtout monté grâce à la demande de puces d’IA : le Nikkei a gagné 0,8 % à 60 942,48 et le Kospi 1,6 % à 5 321,10, tandis que le Hang Seng a cédé 0,7 %. À Taïwan, TSMC a bondi de 3,1 % après des revenus d’octobre près de six fois supérieurs à ceux d’il y a un an. Les métaux ont repris une partie de leurs pertes de mardi, l’argent gagnant 2,79 % et l’or 0,53 %. Le dollar est resté ferme et les marchés continuent de miser sur une hausse de taux de la Fed en décembre.",
     "body_en": "Despite Wall Street's pullback after the hot CPI, Asian markets mostly rose on AI chip demand: the Nikkei gained 0.8% to 60,942.48 and the Kospi 1.6% to 5,321.10, while the Hang Seng fell 0.7%. In Taiwan, TSMC jumped 3.1% after October revenue nearly six times its year-earlier level. Metals recovered part of Tuesday's losses, with silver up 2.79% and gold up 0.53%. The dollar stayed firm as markets keep betting on a December Fed rate hike.",
+    "date": "2026-11-11",
     "sections": {
-     "indices": {
-      "fr": "Nikkei +0,8 %, Kospi +1,6 % (Samsung +2,3 %, SK Hynix +3,4 %), Taiex +2,1 %; Hang Seng −0,7 %, Shanghai −0,3 % et ASX 200 +0,1 %.",
-      "en": "Nikkei +0.8%, Kospi +1.6% (Samsung +2.3%, SK Hynix +3.4%), Taiex +2.1%; Hang Seng −0.7%, Shanghai −0.3% and ASX 200 +0.1%."
-     },
-     "metals": {
-      "fr": "L’or a gagné 0,53 % pendant la séance (4 046,50 $ à 4 067,90 $) et l’argent 2,79 % (51,58 $ à 53,02 $), des achats à bon compte après la chute de mardi.",
-      "en": "Gold gained 0.53% during the session ($4,046.50 to $4,067.90) and silver 2.79% ($51.58 to $53.02), on bargain buying after Tuesday's drop."
-     },
-     "forex": {
-      "fr": "L’indice du dollar a monté de 0,10 %; l’USD/JPY a peu bougé (+0,07 % à 158,82), l’EUR/USD a reculé de 0,10 % à 1,1160 et l’USD/CAD a gagné 0,15 % à 1,4207.",
-      "en": "The dollar index rose 0.10%; USD/JPY barely moved (+0.07% to 158.82), EUR/USD fell 0.10% to 1.1160 and USD/CAD gained 0.15% to 1.4207."
-     },
      "crypto": {
-      "fr": "Le bitcoin a glissé de 0,25 % à 73 525 $, sans profiter du rebond des actions.",
-      "en": "Bitcoin slipped 0.25% to $73,525, missing out on the equity rebound."
+      "en": "Bitcoin slipped 0.25% to $73,525, missing out on the equity rebound.",
+      "fr": "Le bitcoin a glissé de 0,25 % à 73 525 $, sans profiter du rebond des actions."
      },
      "energy": {
-      "fr": "Le WTI a gagné 0,24 % à 86,39 $ et le Brent remontait vers 92,42 $ (+1 %) après sa baisse de mardi.",
-      "en": "WTI gained 0.24% to $86.39 and Brent climbed toward $92.42 (+1%) after Tuesday's drop."
+      "en": "WTI gained 0.24% to $86.39 and Brent climbed toward $92.42 (+1%) after Tuesday's drop.",
+      "fr": "Le WTI a gagné 0,24 % à 86,39 $ et le Brent remontait vers 92,42 $ (+1 %) après sa baisse de mardi."
+     },
+     "forex": {
+      "en": "The dollar index rose 0.10%; USD/JPY barely moved (+0.07% to 158.82), EUR/USD fell 0.10% to 1.1160 and USD/CAD gained 0.15% to 1.4207.",
+      "fr": "L’indice du dollar a monté de 0,10 %; l’USD/JPY a peu bougé (+0,07 % à 158,82), l’EUR/USD a reculé de 0,10 % à 1,1160 et l’USD/CAD a gagné 0,15 % à 1,4207."
+     },
+     "indices": {
+      "en": "Nikkei +0.8%, Kospi +1.6% (Samsung +2.3%, SK Hynix +3.4%), Taiex +2.1%; Hang Seng −0.7%, Shanghai −0.3% and ASX 200 +0.1%.",
+      "fr": "Nikkei +0,8 %, Kospi +1,6 % (Samsung +2,3 %, SK Hynix +3,4 %), Taiex +2,1 %; Hang Seng −0,7 %, Shanghai −0,3 % et ASX 200 +0,1 %."
+     },
+     "metals": {
+      "en": "Gold gained 0.53% during the session ($4,046.50 to $4,067.90) and silver 2.79% ($51.58 to $53.02), on bargain buying after Tuesday's drop.",
+      "fr": "L’or a gagné 0,53 % pendant la séance (4 046,50 $ à 4 067,90 $) et l’argent 2,79 % (51,58 $ à 53,02 $), des achats à bon compte après la chute de mardi."
      }
     },
+    "session": "tok",
     "sources": [
      "https://www.wsls.com/business/2026/11/11/asian-shares-mostly-rise-on-ai-chip-demand-despite-wall-streets-retreat-on-inflation-data/"
-    ]
+    ],
+    "title": "Les puces d’IA portent Tokyo et Séoul; l’argent rebondit de 2,8 %",
+    "title_en": "AI chips lift Tokyo and Seoul; silver rebounds 2.8%"
    }
   ],
   "research": [
    {
-    "bank": "Standard Chartered",
+    "bank": "Bank of America",
+    "date": "2026-11-11",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "title": "BofA : l’IPC d’octobre ouvre la porte à une hausse de 50 pb en décembre",
+    "title_en": "BofA: October CPI opens the door to a 50 bp December hike",
+    "summary": "Après un IPC de +0,4 % sur un mois (sous-jacent +0,3 %), BofA s’attend toujours à une hausse de 25 pb en décembre, mais juge qu’un pas de 50 pb est désormais possible. La banque voit aussi un risque croissant que la hausse suivante arrive en janvier plutôt qu’en mars.",
+    "summary_en": "After a 0.4% monthly CPI print (core +0.3%), BofA still expects a 25 bp December hike but says a 50 bp move is now possible. The bank also sees a rising risk that the next hike comes in January rather than March.",
+    "url": "https://finance.yahoo.com/economy/policy/articles/bofa-says-october-cpi-report-123105635.html"
+   },
+   {
+    "bank": "TD Securities",
     "date": "2026-11-10",
     "topic": "OR",
     "topic_en": "GOLD",
-    "title": "Standard Chartered maintient 4 650 $ pour l’or au T4 malgré le recul",
-    "title_en": "Standard Chartered keeps $4,650 Q4 gold call despite the pullback",
+    "title": "TD Securities voit l’or retester le soutien des 3 900 $",
+    "title_en": "TD Securities sees gold retesting $3,900 support",
+    "summary": "Bart Melek s’attend à ce que l’or reteste les 3 900 $ l’once, la hausse des taux et la vigueur du dollar freinant la demande d’investissement, et à ce qu’il reste dans le bas de sa fourchette de 3 900 à 4 200 $. Les achats des banques centrales (675 t depuis janvier) pourraient ne pas suffire à compenser.",
+    "summary_en": "Bart Melek expects gold to retest $3,900/oz as higher rates and a stronger dollar weigh on investment demand, keeping prices near the bottom of the $3,900–$4,200 range. Central bank buying (675 t year-to-date) may not be enough to offset it.",
+    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-fall-below-4000-analysts-warn-further-losses-toward-3900"
+   },
+   {
+    "bank": "Standard Chartered",
+    "date": "2026-11-10",
     "summary": "Suki Cooper réitère une moyenne de 4 650 $ l’once au T4 2026 et de 4 850 $ au T1 2027, jugeant que les entrées dans les FNB et les achats des banques centrales (321 t au T3) forment un plancher solide. La banque prévoit une hausse de 25 pb de la Fed en décembre, puis un statu quo en 2027.",
     "summary_en": "Suki Cooper reiterates a $4,650/oz Q4 2026 average and $4,850 for Q1 2027, arguing ETF inflows and central bank buying (321 t in Q3) form a solid floor. The bank expects a 25 bp Fed hike in December, then a hold through 2027.",
+    "title": "Standard Chartered maintient 4 650 $ pour l’or au T4 malgré le recul",
+    "title_en": "Standard Chartered keeps $4,650 Q4 gold call despite the pullback",
+    "topic": "OR",
+    "topic_en": "GOLD",
     "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-find-solid-support-4000-standard-chartered-sees-rally-4650-year"
    },
    {
     "bank": "ING",
     "date": "2026-11-11",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "title": "ING : le 10 ans américain revient à 5 %, mais pas d’autres hausses de la Fed en 2027",
-    "title_en": "ING: US 10-year back at 5%, but no further Fed hikes into 2027",
     "summary": "Après l’IPC chaud, ING juge la hausse de 25 pb en décembre conforme à sa prévision, mais n’en voit pas d’autres en 2027 vu le ralentissement des secteurs sensibles aux taux et de l’énergie. Les taux en euro et en livre ne devraient pas suivre aveuglément l’inflation américaine.",
     "summary_en": "After the hot CPI, ING says a 25 bp December hike matches its forecast but sees no further hikes into 2027 given cooling rate-sensitive sectors and energy. EUR and GBP rates should not blindly follow US inflation prints.",
+    "title": "ING : le 10 ans américain revient à 5 %, mais pas d’autres hausses de la Fed en 2027",
+    "title_en": "ING: US 10-year back at 5%, but no further Fed hikes into 2027",
+    "topic": "TAUX",
+    "topic_en": "RATES",
     "url": "https://seekingalpha.com/article/4966354-rates-spark-back-to-5-percent-10y-ust-inflation-fears"
    },
    {
     "bank": "Citi",
     "date": "2026-11-10",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "title": "Citi s’en tient à 25 pb en décembre, mais le risque de 50 pb augmente",
-    "title_en": "Citi sticks with 25 bp in December, but sees a rising risk of 50 bp",
     "summary": "Citi prévoit toujours une hausse de 25 pb de la Fed en décembre, tout en voyant un risque accru d’un geste de 50 pb après l’IPC d’octobre. BofA et Standard Chartered jugent aussi que la porte à 50 pb est ouverte, sans que les données le justifient encore.",
     "summary_en": "Citi still expects a 25 bp Fed hike in December while seeing an increased risk of a 50 bp move after October's CPI. BofA and Standard Chartered also say the door to 50 bp is open, though the data do not yet firmly support it.",
+    "title": "Citi s’en tient à 25 pb en décembre, mais le risque de 50 pb augmente",
+    "title_en": "Citi sticks with 25 bp in December, but sees a rising risk of 50 bp",
+    "topic": "TAUX",
+    "topic_en": "RATES",
     "url": "https://www.thestandard.com.hk/finance/article/348218/Goldman-adds-another-rate-hike-to-Fed-outlook-after-hot-inflation-data"
    },
    {
     "bank": "UBS",
     "date": "2026-11-10",
-    "topic": "ACTIONS",
-    "topic_en": "EQUITIES",
-    "title": "UBS maintient sa cible de 8 900 pour le S&P 500 à la fin de 2027",
-    "title_en": "UBS keeps its 8,900 S&P 500 target for end-2027",
     "summary": "UBS garde sa cible de fin 2027 à 8 900 et fixe 9 600 pour la fin de 2028, jugeant que la baisse des multiples prépare de bons rendements; la banque prévoit un BPA de 430 $ en 2027 et de 490 $ en 2028.",
     "summary_en": "UBS keeps its end-2027 target at 8,900 and sets 9,600 for end-2028, arguing the derating sets up strong returns; it sees EPS of $430 in 2027 and $490 in 2028.",
+    "title": "UBS maintient sa cible de 8 900 pour le S&P 500 à la fin de 2027",
+    "title_en": "UBS keeps its 8,900 S&P 500 target for end-2027",
+    "topic": "ACTIONS",
+    "topic_en": "EQUITIES",
     "url": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267"
    },
    {
     "bank": "Goldman Sachs",
     "date": "2026-11-10",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "title": "Goldman ajoute une hausse de taux de la Fed en mars",
-    "title_en": "Goldman adds a March Fed rate hike",
     "summary": "Après l’IPC chaud d’octobre, Goldman Sachs prévoit maintenant une hausse de 25 pb en mars, en plus de décembre, plutôt qu’une fin du cycle en décembre. La banque repousse le début des baisses de taux à décembre 2027.",
     "summary_en": "After October's hot CPI, Goldman Sachs now expects a 25 bp hike in March on top of December, instead of the cycle ending in December. The bank pushes the start of rate cuts back to December 2027.",
+    "title": "Goldman ajoute une hausse de taux de la Fed en mars",
+    "title_en": "Goldman adds a March Fed rate hike",
+    "topic": "TAUX",
+    "topic_en": "RATES",
     "url": "https://www.investing.com/news/economy-news/goldman-expects-additional-fed-rate-hike-in-march-5017688"
    },
    {
     "bank": "Deutsche Bank",
     "date": "2026-11-10",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "title": "Deutsche Bank s’attend à trois hausses de la Fed : décembre, janvier et mars",
-    "title_en": "Deutsche Bank expects three Fed hikes: December, January and March",
     "summary": "Matt Luzzetti, économiste en chef, prévoit des hausses de 25 pb aux réunions de décembre, janvier et mars; une hausse de 50 pb est possible, mais ce n’est pas son scénario de base.",
     "summary_en": "Chief economist Matt Luzzetti expects 25 bp hikes at the December, January and March meetings; a 50 bp move is possible but not his baseline.",
+    "title": "Deutsche Bank s’attend à trois hausses de la Fed : décembre, janvier et mars",
+    "title_en": "Deutsche Bank expects three Fed hikes: December, January and March",
+    "topic": "TAUX",
+    "topic_en": "RATES",
     "url": "https://finance.yahoo.com/economy/policy/article/hot-inflation-report-has-wall-street-eyeing-whether-the-fed-could-make-a-jumbo-rate-hike-next-month-164942156.html"
    },
    {
     "bank": "Natixis",
     "date": "2026-11-10",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "title": "Natixis juge une hausse de 50 pb de la Fed en décembre bien possible",
-    "title_en": "Natixis sees a 50 bp December Fed hike as a live possibility",
     "summary": "Chris Hodge, économiste en chef, cite l’inflation tenace et les propos de Waller et estime que la Fed « risque de prendre du retard » si elle n’agit pas de façon décisive.",
     "summary_en": "Chief economist Chris Hodge cites sticky inflation and Waller's remarks, saying the Fed \"risks getting behind the curve by not acting decisively.\"",
+    "title": "Natixis juge une hausse de 50 pb de la Fed en décembre bien possible",
+    "title_en": "Natixis sees a 50 bp December Fed hike as a live possibility",
+    "topic": "TAUX",
+    "topic_en": "RATES",
     "url": "https://finance.yahoo.com/economy/policy/article/hot-inflation-report-has-wall-street-eyeing-whether-the-fed-could-make-a-jumbo-rate-hike-next-month-164942156.html"
    }
   ],
   "bankcalls": [
    {
-    "bank": "Standard Chartered",
+    "bank": "TD Securities",
     "cat": "cmd",
     "market": "XAU/USD",
-    "dir": "long",
-    "target": "4 650 $ en moyenne au T4 2026 (4 850 $ au T1 2027)",
-    "horizon": "T4 2026",
+    "market_en": "XAU/USD",
+    "dir": "range",
+    "target": "Bas de la fourchette 3 900 – 4 200 $ (retest des 3 900 $)",
+    "target_en": "Bottom of the $3,900–$4,200 range (retest of $3,900)",
+    "horizon": "court terme",
+    "horizon_en": "near term",
     "date": "2026-11-10",
     "src": "Kitco",
-    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-find-solid-support-4000-standard-chartered-sees-rally-4650-year",
+    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-fall-below-4000-analysts-warn-further-losses-toward-3900"
+   },
+   {
+    "bank": "Standard Chartered",
+    "cat": "cmd",
+    "date": "2026-11-10",
+    "dir": "long",
+    "horizon": "T4 2026",
+    "horizon_en": "Q4 2026",
+    "market": "XAU/USD",
     "market_en": "XAU/USD",
+    "src": "Kitco",
+    "target": "4 650 $ en moyenne au T4 2026 (4 850 $ au T1 2027)",
     "target_en": "$4,650 average in Q4 2026 ($4,850 in Q1 2027)",
-    "horizon_en": "Q4 2026"
+    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-find-solid-support-4000-standard-chartered-sees-rally-4650-year"
    },
    {
     "bank": "UBS",
     "cat": "idx",
-    "market": "S&P 500",
-    "dir": "long",
-    "target": "8 900 d’ici fin 2027 (9 600 fin 2028)",
-    "horizon": "fin 2027",
     "date": "2026-11-10",
-    "src": "Investing.com",
-    "url": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267",
+    "dir": "long",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "market": "S&P 500",
     "market_en": "S&P 500",
+    "src": "Investing.com",
+    "target": "8 900 d’ici fin 2027 (9 600 fin 2028)",
     "target_en": "8,900 by end-2027 (9,600 end-2028)",
-    "horizon_en": "end-2027"
+    "url": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267"
    },
    {
     "bank": "Scotiabank",
     "cat": "fx",
-    "market": "USD/CAD",
-    "dir": "short",
-    "target": "1,34 d’ici le T4 2027 (1,39 au T4 2026)",
-    "horizon": "T4 2027",
     "date": "2026-11-05",
-    "src": "Scotiabank Economics",
-    "url": "https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.foreign-exchange.foreign-exchange-outlook--november-5--2026-.html",
+    "dir": "short",
+    "horizon": "T4 2027",
+    "horizon_en": "Q4 2027",
+    "market": "USD/CAD",
     "market_en": "USD/CAD",
+    "src": "Scotiabank Economics",
+    "target": "1,34 d’ici le T4 2027 (1,39 au T4 2026)",
     "target_en": "1.34 by Q4 2027 (1.39 in Q4 2026)",
-    "horizon_en": "Q4 2027"
+    "url": "https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.foreign-exchange.foreign-exchange-outlook--november-5--2026-.html"
    },
    {
     "bank": "Goldman Sachs",
     "cat": "cmd",
-    "market": "XAU/USD",
-    "dir": "long",
-    "target": "4 150 $ d’ici fin 2026 (4 800 $ fin 2027)",
-    "horizon": "fin 2026",
     "date": "2026-11-05",
-    "src": "Reuters",
-    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46M1RO:0-goldman-sachs-trims-gold-forecasts-as-fed-stays-hawkish/",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "XAU/USD",
     "market_en": "XAU/USD",
+    "src": "Reuters",
+    "target": "4 150 $ d’ici fin 2026 (4 800 $ fin 2027)",
     "target_en": "$4,150 by end-2026 ($4,800 end-2027)",
-    "horizon_en": "end-2026"
+    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46M1RO:0-goldman-sachs-trims-gold-forecasts-as-fed-stays-hawkish/"
    },
    {
     "bank": "ING",
     "cat": "rates",
-    "market": "US 10 ans",
-    "dir": "short",
-    "target": "4,50 à 4,75 % d’ici fin 2027 (pointe possible vers 5,25 % au T1 2027)",
-    "horizon": "fin 2027",
     "date": "2026-11-04",
-    "src": "ING THINK (reprise)",
-    "url": "https://angelinvestorsnetwork.com/market-analysis/us-rates-and-a-triple-whammy-of-obstacles-to-overcome",
+    "dir": "short",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "market": "US 10 ans",
     "market_en": "US 10-year",
+    "src": "ING THINK (reprise)",
+    "target": "4,50 à 4,75 % d’ici fin 2027 (pointe possible vers 5,25 % au T1 2027)",
     "target_en": "4.50% to 4.75% by end-2027 (possible spike toward 5.25% in Q1 2027)",
-    "horizon_en": "end-2027"
+    "url": "https://angelinvestorsnetwork.com/market-analysis/us-rates-and-a-triple-whammy-of-obstacles-to-overcome"
    },
    {
     "bank": "Citi",
     "cat": "cmd",
-    "market": "XAU/USD",
-    "dir": "long",
-    "target": "4 500 $ d’ici 3 mois (5 000 $ dans 6 à 12 mois)",
-    "horizon": "3 mois",
     "date": "2026-11-04",
-    "src": "investingLive",
-    "url": "https://investinglive.com/commodities/citi-targets-5-000-gold-as-a-hormuz-reopening-could-flip-the-fed-from-hikes-to-cuts/",
+    "dir": "long",
+    "horizon": "3 mois",
+    "horizon_en": "3 months",
+    "market": "XAU/USD",
     "market_en": "XAU/USD",
+    "src": "investingLive",
+    "target": "4 500 $ d’ici 3 mois (5 000 $ dans 6 à 12 mois)",
     "target_en": "$4,500 within 3 months ($5,000 in 6 to 12 months)",
-    "horizon_en": "3 months"
+    "url": "https://investinglive.com/commodities/citi-targets-5-000-gold-as-a-hormuz-reopening-could-flip-the-fed-from-hikes-to-cuts/"
    },
    {
     "bank": "MUFG",
     "cat": "fx",
+    "date": "2026-11-02",
+    "dir": "long",
+    "horizon": "T3 2027",
+    "horizon_en": "Q3 2027",
     "market": "EUR/USD",
-    "dir": "long",
-    "target": "1,18 d’ici le T3 2027 (1,12 au T4 2026)",
-    "horizon": "T3 2027",
-    "date": "2026-11-02",
-    "src": "MUFG Research",
-    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/",
     "market_en": "EUR/USD",
+    "src": "MUFG Research",
+    "target": "1,18 d’ici le T3 2027 (1,12 au T4 2026)",
     "target_en": "1.18 by Q3 2027 (1.12 in Q4 2026)",
-    "horizon_en": "Q3 2027"
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
    },
    {
     "bank": "MUFG",
     "cat": "fx",
+    "date": "2026-11-02",
+    "dir": "short",
+    "horizon": "T3 2027",
+    "horizon_en": "Q3 2027",
     "market": "USD/JPY",
-    "dir": "short",
-    "target": "149 d’ici le T3 2027 (155 au T4 2026)",
-    "horizon": "T3 2027",
-    "date": "2026-11-02",
-    "src": "MUFG Research",
-    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/",
     "market_en": "USD/JPY",
+    "src": "MUFG Research",
+    "target": "149 d’ici le T3 2027 (155 au T4 2026)",
     "target_en": "149 by Q3 2027 (155 in Q4 2026)",
-    "horizon_en": "Q3 2027"
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
    },
    {
     "bank": "MUFG",
     "cat": "fx",
+    "date": "2026-11-02",
+    "dir": "short",
+    "horizon": "T3 2027",
+    "horizon_en": "Q3 2027",
     "market": "USD/CAD",
-    "dir": "short",
-    "target": "1,36 d’ici le T3 2027 (1,42 au T4 2026)",
-    "horizon": "T3 2027",
-    "date": "2026-11-02",
-    "src": "MUFG Research",
-    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/",
     "market_en": "USD/CAD",
+    "src": "MUFG Research",
+    "target": "1,36 d’ici le T3 2027 (1,42 au T4 2026)",
     "target_en": "1.36 by Q3 2027 (1.42 in Q4 2026)",
-    "horizon_en": "Q3 2027"
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
    },
    {
     "bank": "MUFG",
     "cat": "fx",
+    "date": "2026-11-02",
+    "dir": "long",
+    "horizon": "T3 2027",
+    "horizon_en": "Q3 2027",
     "market": "GBP/USD",
-    "dir": "long",
-    "target": "1,356 d’ici le T3 2027 (1,333 au T4 2026)",
-    "horizon": "T3 2027",
-    "date": "2026-11-02",
-    "src": "MUFG Research",
-    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/",
     "market_en": "GBP/USD",
+    "src": "MUFG Research",
+    "target": "1,356 d’ici le T3 2027 (1,333 au T4 2026)",
     "target_en": "1.356 by Q3 2027 (1.333 in Q4 2026)",
-    "horizon_en": "Q3 2027"
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
    },
    {
     "bank": "MUFG",
     "cat": "fx",
+    "date": "2026-11-02",
+    "dir": "short",
+    "horizon": "T3 2027",
+    "horizon_en": "Q3 2027",
     "market": "DXY",
-    "dir": "short",
-    "target": "97,03 d’ici le T3 2027 (101,98 au T4 2026)",
-    "horizon": "T3 2027",
-    "date": "2026-11-02",
-    "src": "MUFG Research",
-    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/",
     "market_en": "DXY",
+    "src": "MUFG Research",
+    "target": "97,03 d’ici le T3 2027 (101,98 au T4 2026)",
     "target_en": "97.03 by Q3 2027 (101.98 in Q4 2026)",
-    "horizon_en": "Q3 2027"
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
    },
    {
     "bank": "MUFG",
     "cat": "asia",
+    "date": "2026-11-02",
+    "dir": "short",
+    "horizon": "T3 2027",
+    "horizon_en": "Q3 2027",
     "market": "USD/CNY",
-    "dir": "short",
-    "target": "6,50 d’ici le T3 2027 (6,65 au T4 2026)",
-    "horizon": "T3 2027",
-    "date": "2026-11-02",
-    "src": "MUFG Research",
-    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/",
     "market_en": "USD/CNY",
+    "src": "MUFG Research",
+    "target": "6,50 d’ici le T3 2027 (6,65 au T4 2026)",
     "target_en": "6.50 by Q3 2027 (6.65 in Q4 2026)",
-    "horizon_en": "Q3 2027"
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
    },
    {
     "bank": "MUFG",
     "cat": "asia",
-    "market": "USD/KRW",
+    "date": "2026-11-02",
     "dir": "short",
-    "target": "1 280 d’ici le T3 2027 (1 320 au T4 2026)",
     "horizon": "T3 2027",
-    "date": "2026-11-02",
-    "src": "MUFG Research",
-    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/",
+    "horizon_en": "Q3 2027",
+    "market": "USD/KRW",
     "market_en": "USD/KRW",
+    "src": "MUFG Research",
+    "target": "1 280 d’ici le T3 2027 (1 320 au T4 2026)",
     "target_en": "1,280 by Q3 2027 (1,320 in Q4 2026)",
-    "horizon_en": "Q3 2027"
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
    },
    {
     "bank": "MUFG",
     "cat": "asia",
-    "market": "USD/INR",
-    "dir": "long",
-    "target": "97,5 d’ici le T3 2027 (96 au T4 2026)",
-    "horizon": "T3 2027",
     "date": "2026-11-02",
-    "src": "MUFG Research",
-    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/",
+    "dir": "long",
+    "horizon": "T3 2027",
+    "horizon_en": "Q3 2027",
+    "market": "USD/INR",
     "market_en": "USD/INR",
+    "src": "MUFG Research",
+    "target": "97,5 d’ici le T3 2027 (96 au T4 2026)",
     "target_en": "97.5 by Q3 2027 (96 in Q4 2026)",
-    "horizon_en": "Q3 2027"
+    "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
    },
    {
     "bank": "Goldman Sachs",
     "cat": "cmd",
+    "date": "2026-11-01",
+    "dir": "long",
+    "horizon": "déc. 2026",
+    "horizon_en": "Dec. 2026",
     "market": "Brent",
-    "dir": "long",
-    "target": "105 $ en décembre 2026 (moyenne 2027 : 88 $)",
-    "horizon": "déc. 2026",
-    "date": "2026-11-01",
-    "src": "Reuters",
-    "url": "https://boereport.com/2026/11/01/goldman-sachs-raises-oil-price-forecasts-sees-brent-upside-at-140-a-barrel/",
     "market_en": "Brent",
+    "src": "Reuters",
+    "target": "105 $ en décembre 2026 (moyenne 2027 : 88 $)",
     "target_en": "$105 in December 2026 (2027 average: $88)",
-    "horizon_en": "Dec. 2026"
+    "url": "https://boereport.com/2026/11/01/goldman-sachs-raises-oil-price-forecasts-sees-brent-upside-at-140-a-barrel/"
    },
    {
     "bank": "Goldman Sachs",
     "cat": "cmd",
-    "market": "WTI",
-    "dir": "long",
-    "target": "94 $ en décembre 2026 (moyenne 2027 : 78 $)",
-    "horizon": "déc. 2026",
     "date": "2026-11-01",
-    "src": "Reuters",
-    "url": "https://boereport.com/2026/11/01/goldman-sachs-raises-oil-price-forecasts-sees-brent-upside-at-140-a-barrel/",
+    "dir": "long",
+    "horizon": "déc. 2026",
+    "horizon_en": "Dec. 2026",
+    "market": "WTI",
     "market_en": "WTI",
+    "src": "Reuters",
+    "target": "94 $ en décembre 2026 (moyenne 2027 : 78 $)",
     "target_en": "$94 in December 2026 (2027 average: $78)",
-    "horizon_en": "Dec. 2026"
+    "url": "https://boereport.com/2026/11/01/goldman-sachs-raises-oil-price-forecasts-sees-brent-upside-at-140-a-barrel/"
    },
    {
     "bank": "Nomura",
     "cat": "fx",
-    "market": "EUR/USD",
-    "dir": "long",
-    "target": "1,25 dans 12 mois",
-    "horizon": "12 mois",
     "date": "2026-10-28",
-    "src": "Pound Sterling Live",
-    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer",
+    "dir": "long",
+    "horizon": "12 mois",
+    "horizon_en": "12 months",
+    "market": "EUR/USD",
     "market_en": "EUR/USD",
+    "src": "Pound Sterling Live",
+    "target": "1,25 dans 12 mois",
     "target_en": "1.25 in 12 months",
-    "horizon_en": "12 months"
+    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer"
    },
    {
     "bank": "Danske Bank",
     "cat": "fx",
-    "market": "EUR/USD",
-    "dir": "range",
-    "target": "1,10 dans 6 à 12 mois (prévision abaissée)",
-    "horizon": "12 mois",
     "date": "2026-10-28",
-    "src": "Pound Sterling Live",
-    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer",
+    "dir": "range",
+    "horizon": "12 mois",
+    "horizon_en": "12 months",
+    "market": "EUR/USD",
     "market_en": "EUR/USD",
+    "src": "Pound Sterling Live",
+    "target": "1,10 dans 6 à 12 mois (prévision abaissée)",
     "target_en": "1.10 in 6 to 12 months (forecast lowered)",
-    "horizon_en": "12 months"
+    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer"
    },
    {
     "bank": "Crédit Agricole",
     "cat": "fx",
-    "market": "EUR/USD",
-    "dir": "long",
-    "target": "1,17 dans 12 mois (1,13 dans 3 mois)",
-    "horizon": "12 mois",
     "date": "2026-10-28",
-    "src": "Pound Sterling Live",
-    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer",
+    "dir": "long",
+    "horizon": "12 mois",
+    "horizon_en": "12 months",
+    "market": "EUR/USD",
     "market_en": "EUR/USD",
+    "src": "Pound Sterling Live",
+    "target": "1,17 dans 12 mois (1,13 dans 3 mois)",
     "target_en": "1.17 in 12 months (1.13 in 3 months)",
-    "horizon_en": "12 months"
+    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer"
    },
    {
     "bank": "Nordea",
     "cat": "fx",
-    "market": "EUR/USD",
-    "dir": "range",
-    "target": "1,10 d’ici fin 2026 (abaissé de 1,14)",
-    "horizon": "fin 2026",
     "date": "2026-10-28",
-    "src": "Pound Sterling Live",
-    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer",
+    "dir": "range",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "EUR/USD",
     "market_en": "EUR/USD",
+    "src": "Pound Sterling Live",
+    "target": "1,10 d’ici fin 2026 (abaissé de 1,14)",
     "target_en": "1.10 by end-2026 (lowered from 1.14)",
-    "horizon_en": "end-2026"
+    "url": "https://www.poundsterlinglive.com/eurusd/23806-euro-to-dollar-forecast-ambitious-julius-baer"
    },
    {
     "bank": "UBS",
     "cat": "cmd",
-    "market": "Brent",
-    "dir": "long",
-    "target": "110 $ fin 2026 (95 $ en mars 2027, 85 $ en sept. 2027)",
-    "horizon": "fin 2026",
     "date": "2026-10-27",
-    "src": "investingLive",
-    "url": "https://investinglive.com/commodities/ubs-sees-brent-near-110-by-year-end-lifts-2027-forecasts-on-freight-and-supply-risks/",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "Brent",
     "market_en": "Brent",
+    "src": "investingLive",
+    "target": "110 $ fin 2026 (95 $ en mars 2027, 85 $ en sept. 2027)",
     "target_en": "$110 end-2026 ($95 in March 2027, $85 in Sept. 2027)",
-    "horizon_en": "end-2026"
+    "url": "https://investinglive.com/commodities/ubs-sees-brent-near-110-by-year-end-lifts-2027-forecasts-on-freight-and-supply-risks/"
    },
    {
     "bank": "Goldman Sachs",
     "cat": "cmd",
-    "market": "Cuivre",
-    "dir": "long",
-    "target": "15 400 $/t en moyenne en 2027 (14 700 $/t fin 2026)",
-    "horizon": "2027",
     "date": "2026-10-22",
-    "src": "Canadian Mining Report",
-    "url": "https://www.canadianminingreport.com/blog/goldman-sachs-raises-its-copper-price-forecast-to-15-400-for-2027-five-copper-stocks-to-watch-now",
+    "dir": "long",
+    "horizon": "2027",
+    "horizon_en": "2027",
+    "market": "Cuivre",
     "market_en": "Copper",
+    "src": "Canadian Mining Report",
+    "target": "15 400 $/t en moyenne en 2027 (14 700 $/t fin 2026)",
     "target_en": "$15,400/t average in 2027 ($14,700/t end-2026)",
-    "horizon_en": "2027"
+    "url": "https://www.canadianminingreport.com/blog/goldman-sachs-raises-its-copper-price-forecast-to-15-400-for-2027-five-copper-stocks-to-watch-now"
    },
    {
     "bank": "JPMorgan",
     "cat": "rates",
-    "market": "US 10 ans",
-    "dir": "long",
-    "target": "5,25 % d’ici la mi-2027 (fourchette de 5,00 à 5,50 %)",
-    "horizon": "mi-2027",
     "date": "2026-10-21",
-    "src": "J.P. Morgan",
-    "url": "https://www.chase.com/personal/investments/learning-and-insights/article/could-10-year-treasury-yield-reach-5-75-in-2027-what-jpmorgan-strategists-think",
+    "dir": "long",
+    "horizon": "mi-2027",
+    "horizon_en": "mid-2027",
+    "market": "US 10 ans",
     "market_en": "US 10-year",
+    "src": "J.P. Morgan",
+    "target": "5,25 % d’ici la mi-2027 (fourchette de 5,00 à 5,50 %)",
     "target_en": "5.25% by mid-2027 (5.00% to 5.50% range)",
-    "horizon_en": "mid-2027"
+    "url": "https://www.chase.com/personal/investments/learning-and-insights/article/could-10-year-treasury-yield-reach-5-75-in-2027-what-jpmorgan-strategists-think"
    },
    {
     "bank": "Morgan Stanley",
     "cat": "idx",
-    "market": "S&P 500",
-    "dir": "long",
-    "target": "8 300 d’ici la mi-2027",
-    "horizon": "mi-2027",
     "date": "2026-10-20",
-    "src": "Benzinga",
-    "url": "https://www.webull.com/news/15781581357556736",
+    "dir": "long",
+    "horizon": "mi-2027",
+    "horizon_en": "mid-2027",
+    "market": "S&P 500",
     "market_en": "S&P 500",
+    "src": "Benzinga",
+    "target": "8 300 d’ici la mi-2027",
     "target_en": "8,300 by mid-2027",
-    "horizon_en": "mid-2027"
+    "url": "https://www.webull.com/news/15781581357556736"
    },
    {
     "bank": "CIBC",
     "cat": "cmd",
-    "market": "XAU/USD",
-    "dir": "long",
-    "target": "5 200 $ en moyenne en 2027 (4 500 $ au T4 2026)",
-    "horizon": "2027",
     "date": "2026-10-20",
-    "src": "Kitco",
-    "url": "https://www.kitco.com/news/article/2026-10-20/cibc-slashes-gold-price-forecasts-sees-recovery-5200-2027-central-bank",
+    "dir": "long",
+    "horizon": "2027",
+    "horizon_en": "2027",
+    "market": "XAU/USD",
     "market_en": "XAU/USD",
+    "src": "Kitco",
+    "target": "5 200 $ en moyenne en 2027 (4 500 $ au T4 2026)",
     "target_en": "$5,200 average in 2027 ($4,500 in Q4 2026)",
-    "horizon_en": "2027"
+    "url": "https://www.kitco.com/news/article/2026-10-20/cibc-slashes-gold-price-forecasts-sees-recovery-5200-2027-central-bank"
    },
    {
     "bank": "UBS",
     "cat": "fx",
-    "market": "EUR/USD",
-    "dir": "long",
-    "target": "1,16 d’ici fin 2026, 1,20 en juin 2027",
-    "horizon": "fin 2026",
     "date": "2026-10-19",
-    "src": "investingLive",
-    "url": "https://investinglive.com/forex/ubs-sees-euro-recovering-to-1-16-by-year-end-says-slide-to-1-11-overshoots-fundamentals/",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "EUR/USD",
     "market_en": "EUR/USD",
+    "src": "investingLive",
+    "target": "1,16 d’ici fin 2026, 1,20 en juin 2027",
     "target_en": "1.16 by end-2026, 1.20 in June 2027",
-    "horizon_en": "end-2026"
+    "url": "https://investinglive.com/forex/ubs-sees-euro-recovering-to-1-16-by-year-end-says-slide-to-1-11-overshoots-fundamentals/"
    },
    {
     "bank": "Goldman Sachs",
     "cat": "idx",
-    "market": "S&P 500",
+    "date": "2026-10-19",
     "dir": "long",
-    "target": "8 700 d’ici fin 2027 (8 000 fin 2026)",
     "horizon": "fin 2027",
-    "date": "2026-10-19",
-    "src": "Yahoo Finance",
-    "url": "https://finance.yahoo.com/markets/article/goldman-sachs-is-still-betting-on-a-nice-year-end-rally-for-the-sp-500-134755098.html",
+    "horizon_en": "end-2027",
+    "market": "S&P 500",
     "market_en": "S&P 500",
+    "src": "Yahoo Finance",
+    "target": "8 700 d’ici fin 2027 (8 000 fin 2026)",
     "target_en": "8,700 by end-2027 (8,000 end-2026)",
-    "horizon_en": "end-2027"
+    "url": "https://finance.yahoo.com/markets/article/goldman-sachs-is-still-betting-on-a-nice-year-end-rally-for-the-sp-500-134755098.html"
    },
    {
     "bank": "CIBC",
     "cat": "cmd",
-    "market": "XAG/USD",
+    "date": "2026-10-19",
     "dir": "long",
-    "target": "85 $ en 2027 (abaissé de 120 $)",
     "horizon": "2027",
-    "date": "2026-10-19",
-    "src": "investingLive",
-    "url": "https://investinglive.com/commodities/cibc-cuts-gold-forecasts-but-still-sees-5-500-in-2028/",
+    "horizon_en": "2027",
+    "market": "XAG/USD",
     "market_en": "XAG/USD",
+    "src": "investingLive",
+    "target": "85 $ en 2027 (abaissé de 120 $)",
     "target_en": "$85 in 2027 (lowered from $120)",
-    "horizon_en": "2027"
+    "url": "https://investinglive.com/commodities/cibc-cuts-gold-forecasts-but-still-sees-5-500-in-2028/"
    },
    {
     "bank": "CIBC",
     "cat": "cmd",
-    "market": "Cuivre",
-    "dir": "long",
-    "target": "6,50 $/lb au T4 2026 (relevé)",
-    "horizon": "T4 2026",
     "date": "2026-10-19",
-    "src": "investingLive",
-    "url": "https://investinglive.com/commodities/cibc-cuts-gold-forecasts-but-still-sees-5-500-in-2028/",
+    "dir": "long",
+    "horizon": "T4 2026",
+    "horizon_en": "Q4 2026",
+    "market": "Cuivre",
     "market_en": "Copper",
+    "src": "investingLive",
+    "target": "6,50 $/lb au T4 2026 (relevé)",
     "target_en": "$6.50/lb in Q4 2026 (raised)",
-    "horizon_en": "Q4 2026"
+    "url": "https://investinglive.com/commodities/cibc-cuts-gold-forecasts-but-still-sees-5-500-in-2028/"
    },
    {
     "bank": "Citi",
     "cat": "idx",
-    "market": "S&P 500",
-    "dir": "long",
-    "target": "8 100 d’ici fin 2026",
-    "horizon": "fin 2026",
     "date": "2026-10-14",
-    "src": "24/7 Wall St.",
-    "url": "https://247wallst.com/investing/2026/10/14/citi-says-the-sp-500-hits-8100-half-the-market-has-to-cooperate-first/",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "S&P 500",
     "market_en": "S&P 500",
+    "src": "24/7 Wall St.",
+    "target": "8 100 d’ici fin 2026",
     "target_en": "8,100 by end-2026",
-    "horizon_en": "end-2026"
+    "url": "https://247wallst.com/investing/2026/10/14/citi-says-the-sp-500-hits-8100-half-the-market-has-to-cooperate-first/"
    },
    {
     "bank": "Morgan Stanley",
     "cat": "rates",
-    "market": "US 10 ans",
-    "dir": "short",
-    "target": "4,7 % d’ici 12 à 15 mois",
-    "horizon": "12–15 mois",
     "date": "2026-10-14",
-    "src": "Morgan Stanley",
-    "url": "https://www.morganstanley.com/insights/articles/rising-bond-yields-investment-opportunities",
+    "dir": "short",
+    "horizon": "12–15 mois",
+    "horizon_en": "12–15 months",
+    "market": "US 10 ans",
     "market_en": "US 10-year",
+    "src": "Morgan Stanley",
+    "target": "4,7 % d’ici 12 à 15 mois",
     "target_en": "4.7% in 12 to 15 months",
-    "horizon_en": "12–15 months"
+    "url": "https://www.morganstanley.com/insights/articles/rising-bond-yields-investment-opportunities"
    },
    {
     "bank": "ING",
     "cat": "fx",
-    "market": "EUR/USD",
-    "dir": "long",
-    "target": "1,13 au T4 2026 et au T1 2027 (prévision abaissée)",
-    "horizon": "T1 2027",
     "date": "2026-10-13",
-    "src": "FXStreet (via TMGM)",
-    "url": "https://www.tmgm.com/de/analysis/market-news/article/euro-lower-year-end-target-at-113-against-us-dollar-ing-202610131304",
+    "dir": "long",
+    "horizon": "T1 2027",
+    "horizon_en": "Q1 2027",
+    "market": "EUR/USD",
     "market_en": "EUR/USD",
+    "src": "FXStreet (via TMGM)",
+    "target": "1,13 au T4 2026 et au T1 2027 (prévision abaissée)",
     "target_en": "1.13 in Q4 2026 and Q1 2027 (forecast lowered)",
-    "horizon_en": "Q1 2027"
+    "url": "https://www.tmgm.com/de/analysis/market-news/article/euro-lower-year-end-target-at-113-against-us-dollar-ing-202610131304"
    },
    {
     "bank": "Goldman Sachs",
     "cat": "asia",
-    "market": "USD/CNY",
-    "dir": "short",
-    "target": "6,40 dans 12 mois",
-    "horizon": "12 mois",
     "date": "2026-10-13",
-    "src": "The Edge Malaysia",
-    "url": "https://theedgemalaysia.com/node/821580",
+    "dir": "short",
+    "horizon": "12 mois",
+    "horizon_en": "12 months",
+    "market": "USD/CNY",
     "market_en": "USD/CNY",
+    "src": "The Edge Malaysia",
+    "target": "6,40 dans 12 mois",
     "target_en": "6.40 in 12 months",
-    "horizon_en": "12 months"
+    "url": "https://theedgemalaysia.com/node/821580"
    },
    {
     "bank": "Bank of America",
     "cat": "cmd",
-    "market": "Cuivre",
-    "dir": "long",
-    "target": "15 250 $/t en moyenne en 2027",
-    "horizon": "2027",
     "date": "2026-10-12",
-    "src": "TokenPost",
-    "url": "https://www.tokenpost.com/news/investing/30585",
+    "dir": "long",
+    "horizon": "2027",
+    "horizon_en": "2027",
+    "market": "Cuivre",
     "market_en": "Copper",
+    "src": "TokenPost",
+    "target": "15 250 $/t en moyenne en 2027",
     "target_en": "$15,250/t average in 2027",
-    "horizon_en": "2027"
+    "url": "https://www.tokenpost.com/news/investing/30585"
    },
    {
     "bank": "TD Cowen",
     "cat": "crypto",
-    "market": "BTC/USD",
-    "dir": "long",
-    "target": "109 000 $ fin 2026 (relevé de 97 500 $)",
-    "horizon": "fin 2026",
     "date": "2026-10-08",
-    "src": "investingLive",
-    "url": "https://investinglive.com/cryptocurrency/td-cowen-lifts-2026-bitcoin-projection-to-about-109-000-reversing-september-cut/",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "BTC/USD",
     "market_en": "BTC/USD",
+    "src": "investingLive",
+    "target": "109 000 $ fin 2026 (relevé de 97 500 $)",
     "target_en": "$109,000 end-2026 (raised from $97,500)",
-    "horizon_en": "end-2026"
+    "url": "https://investinglive.com/cryptocurrency/td-cowen-lifts-2026-bitcoin-projection-to-about-109-000-reversing-september-cut/"
    },
    {
     "bank": "CBA",
     "cat": "asia",
-    "market": "AUD/USD",
-    "dir": "range",
-    "target": "0,69 d’ici fin 2027 (0,68 fin 2026)",
-    "horizon": "fin 2027",
     "date": "2026-10-07",
-    "src": "Pound Sterling Live",
-    "url": "https://www.poundsterlinglive.com/aud/23723-australian-dollar-forecasts-raised-at-cba-pound-to-aud-upside-limited",
+    "dir": "range",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "market": "AUD/USD",
     "market_en": "AUD/USD",
+    "src": "Pound Sterling Live",
+    "target": "0,69 d’ici fin 2027 (0,68 fin 2026)",
     "target_en": "0.69 by end-2027 (0.68 end-2026)",
-    "horizon_en": "end-2027"
+    "url": "https://www.poundsterlinglive.com/aud/23723-australian-dollar-forecasts-raised-at-cba-pound-to-aud-upside-limited"
    },
    {
     "bank": "Morgan Stanley",
     "cat": "fx",
-    "market": "DXY",
-    "dir": "range",
-    "target": "102 d’ici fin 2026 (dollar en hausse jusqu’à la mi-2027)",
-    "horizon": "fin 2026",
     "date": "2026-10-06",
-    "src": "investingLive",
-    "url": "https://investinglive.com/forex/morgan-stanley-turns-neutral-on-dollar-with-bullish-skew-stays-bearish-on-yen/",
+    "dir": "range",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "DXY",
     "market_en": "DXY",
+    "src": "investingLive",
+    "target": "102 d’ici fin 2026 (dollar en hausse jusqu’à la mi-2027)",
     "target_en": "102 by end-2026 (dollar higher until mid-2027)",
-    "horizon_en": "end-2026"
+    "url": "https://investinglive.com/forex/morgan-stanley-turns-neutral-on-dollar-with-bullish-skew-stays-bearish-on-yen/"
    },
    {
     "bank": "Bank of America",
     "cat": "cmd",
-    "market": "XAU/USD",
-    "dir": "short",
-    "target": "3 750 $ en moyenne au T4 2026",
-    "horizon": "T4 2026",
     "date": "2026-10-01",
-    "src": "Kitco",
-    "url": "https://www.kitco.com/news/article/2026-10-01/risks-rising-gold-prices-fall-below-4000-q4-bank-america",
+    "dir": "short",
+    "horizon": "T4 2026",
+    "horizon_en": "Q4 2026",
+    "market": "XAU/USD",
     "market_en": "XAU/USD",
+    "src": "Kitco",
+    "target": "3 750 $ en moyenne au T4 2026",
     "target_en": "$3,750 average in Q4 2026",
-    "horizon_en": "Q4 2026"
+    "url": "https://www.kitco.com/news/article/2026-10-01/risks-rising-gold-prices-fall-below-4000-q4-bank-america"
    },
    {
     "bank": "Wells Fargo",
     "cat": "cmd",
-    "market": "WTI",
-    "dir": "short",
-    "target": "75 à 85 $ fin 2027 (relevé de 70 à 80 $)",
-    "horizon": "fin 2027",
     "date": "2026-09-30",
-    "src": "Hellenic Shipping News",
-    "url": "https://hellenicshippingnews.com/wells-fargo-raises-oil-price-targets-citing-ongoing-supply-risks",
+    "dir": "short",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "market": "WTI",
     "market_en": "WTI",
+    "src": "Hellenic Shipping News",
+    "target": "75 à 85 $ fin 2027 (relevé de 70 à 80 $)",
     "target_en": "$75 to $85 end-2027 (raised from $70 to $80)",
-    "horizon_en": "end-2027"
+    "url": "https://hellenicshippingnews.com/wells-fargo-raises-oil-price-targets-citing-ongoing-supply-risks"
    },
    {
     "bank": "Morgan Stanley",
     "cat": "cmd",
-    "market": "XAU/USD",
-    "dir": "long",
-    "target": "plus de 5 000 $ au S2 2027 (plancher vers 4 000 $)",
-    "horizon": "S2 2027",
     "date": "2026-09-30",
-    "src": "Kitco",
-    "url": "https://www.kitco.com/news/article/2026-09-30/gold-price-will-break-5000oz-h2-2027-and-silvers-run-120-was-driven-more",
-    "market_en": "XAU/USD",
-    "target_en": "above $5,000 in H2 2027 (floor near $4,000)",
-    "horizon_en": "H2 2027"
-   },
-   {
-    "bank": "BMO",
-    "cat": "cmd",
+    "dir": "long",
+    "horizon": "S2 2027",
+    "horizon_en": "H2 2027",
     "market": "XAU/USD",
-    "dir": "long",
-    "target": "4 650 $ en moyenne au T4 2026 (5 000 $ au T2 2027)",
-    "horizon": "T4 2026",
-    "date": "2026-09-28",
-    "src": "Kitco",
-    "url": "https://www.kitco.com/news/article/2026-09-28/gold-and-silver-prices-are-struggling-now-much-higher-long-term-base",
     "market_en": "XAU/USD",
-    "target_en": "$4,650 average in Q4 2026 ($5,000 in Q2 2027)",
-    "horizon_en": "Q4 2026"
+    "src": "Kitco",
+    "target": "plus de 5 000 $ au S2 2027 (plancher vers 4 000 $)",
+    "target_en": "above $5,000 in H2 2027 (floor near $4,000)",
+    "url": "https://www.kitco.com/news/article/2026-09-30/gold-price-will-break-5000oz-h2-2027-and-silvers-run-120-was-driven-more"
    },
    {
     "bank": "BMO",
     "cat": "cmd",
-    "market": "XAG/USD",
-    "dir": "long",
-    "target": "67,40 $ en moyenne au T4 2026 (69,30 $ au T1 2027)",
-    "horizon": "T4 2026",
     "date": "2026-09-28",
+    "dir": "long",
+    "horizon": "T4 2026",
+    "horizon_en": "Q4 2026",
+    "market": "XAU/USD",
+    "market_en": "XAU/USD",
     "src": "Kitco",
-    "url": "https://www.kitco.com/news/article/2026-09-28/gold-and-silver-prices-are-struggling-now-much-higher-long-term-base",
+    "target": "4 650 $ en moyenne au T4 2026 (5 000 $ au T2 2027)",
+    "target_en": "$4,650 average in Q4 2026 ($5,000 in Q2 2027)",
+    "url": "https://www.kitco.com/news/article/2026-09-28/gold-and-silver-prices-are-struggling-now-much-higher-long-term-base"
+   },
+   {
+    "bank": "BMO",
+    "cat": "cmd",
+    "date": "2026-09-28",
+    "dir": "long",
+    "horizon": "T4 2026",
+    "horizon_en": "Q4 2026",
+    "market": "XAG/USD",
     "market_en": "XAG/USD",
+    "src": "Kitco",
+    "target": "67,40 $ en moyenne au T4 2026 (69,30 $ au T1 2027)",
     "target_en": "$67.40 average in Q4 2026 ($69.30 in Q1 2027)",
-    "horizon_en": "Q4 2026"
+    "url": "https://www.kitco.com/news/article/2026-09-28/gold-and-silver-prices-are-struggling-now-much-higher-long-term-base"
    },
    {
     "bank": "Goldman Sachs",
     "cat": "fx",
-    "market": "USD/JPY",
-    "dir": "short",
-    "target": "150 dans 12 mois (158 dans 3 mois, 155 dans 6 mois)",
-    "horizon": "12 mois",
     "date": "2026-09-25",
-    "src": "investingLive",
-    "url": "https://investinglive.com/forex/goldman-cuts-usd-jpy-forecasts-sees-150-in-a-year-as-boj-tightening-boosts-yen-case/",
+    "dir": "short",
+    "horizon": "12 mois",
+    "horizon_en": "12 months",
+    "market": "USD/JPY",
     "market_en": "USD/JPY",
+    "src": "investingLive",
+    "target": "150 dans 12 mois (158 dans 3 mois, 155 dans 6 mois)",
     "target_en": "150 in 12 months (158 in 3 months, 155 in 6 months)",
-    "horizon_en": "12 months"
+    "url": "https://investinglive.com/forex/goldman-cuts-usd-jpy-forecasts-sees-150-in-a-year-as-boj-tightening-boosts-yen-case/"
    },
    {
     "bank": "Bank of America",
     "cat": "rates",
-    "market": "US 10 ans",
-    "dir": "range",
-    "target": "5,0 % d’ici fin 2026 (relevé de 4,5 %)",
-    "horizon": "fin 2026",
     "date": "2026-09-24",
-    "src": "Investing.com",
-    "url": "https://in.investing.com/news/stock-market-news/bank-of-america-raises-us-10year-yield-forecast-on-fiscal-concerns-93CH-5604669",
+    "dir": "range",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "US 10 ans",
     "market_en": "US 10-year",
+    "src": "Investing.com",
+    "target": "5,0 % d’ici fin 2026 (relevé de 4,5 %)",
     "target_en": "5.0% by end-2026 (raised from 4.5%)",
-    "horizon_en": "end-2026"
+    "url": "https://in.investing.com/news/stock-market-news/bank-of-america-raises-us-10year-yield-forecast-on-fiscal-concerns-93CH-5604669"
    },
    {
     "bank": "HSBC",
     "cat": "idx",
-    "market": "Stoxx 600",
-    "dir": "long",
-    "target": "760 d’ici fin 2027 (680 fin 2026)",
-    "horizon": "fin 2027",
     "date": "2026-09-23",
-    "src": "Reuters",
-    "url": "https://live.euronext.com/en/financial-news/hsbc-lifts-stoxx-600-year-end-target-stronger-earnings-outlook",
+    "dir": "long",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "market": "Stoxx 600",
     "market_en": "Stoxx 600",
+    "src": "Reuters",
+    "target": "760 d’ici fin 2027 (680 fin 2026)",
     "target_en": "760 by end-2027 (680 end-2026)",
-    "horizon_en": "end-2027"
+    "url": "https://live.euronext.com/en/financial-news/hsbc-lifts-stoxx-600-year-end-target-stronger-earnings-outlook"
    },
    {
     "bank": "Wells Fargo",
     "cat": "idx",
-    "market": "S&P 500",
-    "dir": "long",
-    "target": "7 700 d’ici fin 2026 (abaissé de 7 950)",
-    "horizon": "fin 2026",
     "date": "2026-09-15",
-    "src": "Reuters",
-    "url": "https://www.kitco.com/news/off-the-wire/2026-09-15/wells-fargo-trims-sp-500-indexs-year-end-target-7700",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "S&P 500",
     "market_en": "S&P 500",
+    "src": "Reuters",
+    "target": "7 700 d’ici fin 2026 (abaissé de 7 950)",
     "target_en": "7,700 by end-2026 (lowered from 7,950)",
-    "horizon_en": "end-2026"
+    "url": "https://www.kitco.com/news/off-the-wire/2026-09-15/wells-fargo-trims-sp-500-indexs-year-end-target-7700"
    },
    {
     "bank": "Commerzbank",
     "cat": "cmd",
-    "market": "Brent",
-    "dir": "short",
-    "target": "85 $ fin 2026 (relevé de 75 $)",
-    "horizon": "fin 2026",
     "date": "2026-09-11",
-    "src": "Reuters",
-    "url": "https://boereport.com/2026/09/11/banks-hike-oil-price-forecasts-on-prolonged-gulf-disruptions/",
+    "dir": "short",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "Brent",
     "market_en": "Brent",
+    "src": "Reuters",
+    "target": "85 $ fin 2026 (relevé de 75 $)",
     "target_en": "$85 end-2026 (raised from $75)",
-    "horizon_en": "end-2026"
+    "url": "https://boereport.com/2026/09/11/banks-hike-oil-price-forecasts-on-prolonged-gulf-disruptions/"
    },
    {
     "bank": "Bank of America",
     "cat": "cmd",
-    "market": "Brent",
-    "dir": "short",
-    "target": "75 $ en moyenne en 2027 (83 $ au S2 2026)",
-    "horizon": "2027",
     "date": "2026-09-11",
-    "src": "Reuters",
-    "url": "https://boereport.com/2026/09/11/banks-hike-oil-price-forecasts-on-prolonged-gulf-disruptions/",
+    "dir": "short",
+    "horizon": "2027",
+    "horizon_en": "2027",
+    "market": "Brent",
     "market_en": "Brent",
+    "src": "Reuters",
+    "target": "75 $ en moyenne en 2027 (83 $ au S2 2026)",
     "target_en": "$75 average in 2027 ($83 in H2 2026)",
-    "horizon_en": "2027"
+    "url": "https://boereport.com/2026/09/11/banks-hike-oil-price-forecasts-on-prolonged-gulf-disruptions/"
    },
    {
     "bank": "Axis Bank",
     "cat": "asia",
-    "market": "USD/INR",
-    "dir": "long",
-    "target": "100 d’ici juin 2027 (97 en décembre 2026)",
-    "horizon": "juin 2027",
     "date": "2026-09-09",
-    "src": "Business Today",
-    "url": "https://www.businesstoday.in/latest/economy/story/rupee-at-rs97-in-dec-rs100-in-june-why-axis-bank-sees-another-leg-of-inr-weakness-554187-2026-09-09",
+    "dir": "long",
+    "horizon": "juin 2027",
+    "horizon_en": "June 2027",
+    "market": "USD/INR",
     "market_en": "USD/INR",
+    "src": "Business Today",
+    "target": "100 d’ici juin 2027 (97 en décembre 2026)",
     "target_en": "100 by June 2027 (97 in December 2026)",
-    "horizon_en": "June 2027"
+    "url": "https://www.businesstoday.in/latest/economy/story/rupee-at-rs97-in-dec-rs100-in-june-why-axis-bank-sees-another-leg-of-inr-weakness-554187-2026-09-09"
    },
    {
     "bank": "Barclays",
     "cat": "idx",
-    "market": "S&P 500",
-    "dir": "long",
-    "target": "7 950 d’ici fin 2026 (relevé de 7 800)",
-    "horizon": "fin 2026",
     "date": "2026-09-09",
-    "src": "Stocktwits",
-    "url": "https://stocktwits.com/news-articles/markets/equity/sp-500-targets-rise-barclays-hsbc-tom-lee-ai-earnings-bullish-chorus/cZt7GKzRJzc",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "S&P 500",
     "market_en": "S&P 500",
+    "src": "Stocktwits",
+    "target": "7 950 d’ici fin 2026 (relevé de 7 800)",
     "target_en": "7,950 by end-2026 (raised from 7,800)",
-    "horizon_en": "end-2026"
+    "url": "https://stocktwits.com/news-articles/markets/equity/sp-500-targets-rise-barclays-hsbc-tom-lee-ai-earnings-bullish-chorus/cZt7GKzRJzc"
    },
    {
     "bank": "HSBC",
     "cat": "cmd",
-    "market": "Brent",
-    "dir": "short",
-    "target": "85 $ en moyenne en 2027 (relevé de 65 $)",
-    "horizon": "2027",
     "date": "2026-09-09",
-    "src": "investingLive",
-    "url": "https://investinglive.com/commodities/hsbc-warns-oil-market-is-now-tighter-for-longer-raises-brent-forecast-even-higher/",
+    "dir": "short",
+    "horizon": "2027",
+    "horizon_en": "2027",
+    "market": "Brent",
     "market_en": "Brent",
+    "src": "investingLive",
+    "target": "85 $ en moyenne en 2027 (relevé de 65 $)",
     "target_en": "$85 average in 2027 (raised from $65)",
-    "horizon_en": "2027"
+    "url": "https://investinglive.com/commodities/hsbc-warns-oil-market-is-now-tighter-for-longer-raises-brent-forecast-even-higher/"
    },
    {
     "bank": "HSBC",
     "cat": "idx",
-    "market": "S&P 500",
-    "dir": "long",
-    "target": "8 100 d’ici fin 2026 (relevé de 7 650)",
-    "horizon": "fin 2026",
     "date": "2026-09-08",
-    "src": "Reuters",
-    "url": "https://www.kitco.com/news/off-the-wire/2026-09-08/hsbc-lifts-sp-500s-year-end-target-8100-earnings-strength",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "S&P 500",
     "market_en": "S&P 500",
+    "src": "Reuters",
+    "target": "8 100 d’ici fin 2026 (relevé de 7 650)",
     "target_en": "8,100 by end-2026 (raised from 7,650)",
-    "horizon_en": "end-2026"
+    "url": "https://www.kitco.com/news/off-the-wire/2026-09-08/hsbc-lifts-sp-500s-year-end-target-8100-earnings-strength"
    },
    {
     "bank": "Citi",
     "cat": "cmd",
-    "market": "Brent",
-    "dir": "short",
-    "target": "70 $ au T4 2026 (65 $ en 2027)",
-    "horizon": "T4 2026",
     "date": "2026-09-03",
-    "src": "investingLive",
-    "url": "https://investinglive.com/commodities/citi-lifts-3q26-brent-forecast-to-86-but-sees-prices-sliding-to-65-by-2027/",
+    "dir": "short",
+    "horizon": "T4 2026",
+    "horizon_en": "Q4 2026",
+    "market": "Brent",
     "market_en": "Brent",
+    "src": "investingLive",
+    "target": "70 $ au T4 2026 (65 $ en 2027)",
     "target_en": "$70 in Q4 2026 ($65 in 2027)",
-    "horizon_en": "Q4 2026"
+    "url": "https://investinglive.com/commodities/citi-lifts-3q26-brent-forecast-to-86-but-sees-prices-sliding-to-65-by-2027/"
    },
    {
     "bank": "RBC",
     "cat": "cmd",
-    "market": "XAU/USD",
-    "dir": "long",
-    "target": "5 296 $ en 2027 (4 929 $ fin 2026)",
-    "horizon": "2027",
     "date": "2026-09-02",
-    "src": "Kitco",
-    "url": "https://www.kitco.com/news/article/2026-09-02/gold-price-will-approach-5000oz-2026-5300oz-2027-uncertainty-de",
+    "dir": "long",
+    "horizon": "2027",
+    "horizon_en": "2027",
+    "market": "XAU/USD",
     "market_en": "XAU/USD",
+    "src": "Kitco",
+    "target": "5 296 $ en 2027 (4 929 $ fin 2026)",
     "target_en": "$5,296 in 2027 ($4,929 end-2026)",
-    "horizon_en": "2027"
+    "url": "https://www.kitco.com/news/article/2026-09-02/gold-price-will-approach-5000oz-2026-5300oz-2027-uncertainty-de"
    },
    {
     "bank": "Westpac",
     "cat": "fx",
-    "market": "GBP/USD",
-    "dir": "long",
-    "target": "1,35 en décembre 2026",
-    "horizon": "fin 2026",
     "date": "2026-08-24",
-    "src": "Pound Sterling Live",
-    "url": "https://www.poundsterlinglive.com/usd/23587-pound-to-dollar-week-ahead-forecast-young-uptrend-backs-a-break-of-the-yearly-ceiling",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "GBP/USD",
     "market_en": "GBP/USD",
+    "src": "Pound Sterling Live",
+    "target": "1,35 en décembre 2026",
     "target_en": "1.35 in December 2026",
-    "horizon_en": "end-2026"
+    "url": "https://www.poundsterlinglive.com/usd/23587-pound-to-dollar-week-ahead-forecast-young-uptrend-backs-a-break-of-the-yearly-ceiling"
    },
    {
     "bank": "Standard Chartered",
     "cat": "crypto",
-    "market": "BTC/USD",
-    "dir": "long",
-    "target": "100 000 $ fin 2026",
-    "horizon": "fin 2026",
     "date": "2026-08-19",
-    "src": "Cointelegraph",
-    "url": "https://cointelegraph.com/markets/bitcoin-price-100k-standard-chartered-treasury-buybacks",
+    "dir": "long",
+    "horizon": "fin 2026",
+    "horizon_en": "end-2026",
+    "market": "BTC/USD",
     "market_en": "BTC/USD",
+    "src": "Cointelegraph",
+    "target": "100 000 $ fin 2026",
     "target_en": "$100,000 end-2026",
-    "horizon_en": "end-2026"
+    "url": "https://cointelegraph.com/markets/bitcoin-price-100k-standard-chartered-treasury-buybacks"
    },
    {
     "bank": "UBS",
     "cat": "cmd",
-    "market": "XAU/USD",
-    "dir": "long",
-    "target": "5 000 $ au S1 2027",
-    "horizon": "S1 2027",
     "date": "2026-08-13",
-    "src": "Kitco",
-    "url": "https://www.kitco.com/news/article/2026-08-13/ubs-sees-gold-price-challenging-5000oz-h1-2027-lower-real-rates-softer-usd",
+    "dir": "long",
+    "horizon": "S1 2027",
+    "horizon_en": "H1 2027",
+    "market": "XAU/USD",
     "market_en": "XAU/USD",
+    "src": "Kitco",
+    "target": "5 000 $ au S1 2027",
     "target_en": "$5,000 in H1 2027",
-    "horizon_en": "H1 2027"
+    "url": "https://www.kitco.com/news/article/2026-08-13/ubs-sees-gold-price-challenging-5000oz-h1-2027-lower-real-rates-softer-usd"
    }
   ],
   "cbanks": [
    {
     "cb": "Fed",
-    "ccy": "USD",
     "cc": "US",
-    "rate": "3,75 – 4,00",
-    "next": "2026-12-09",
+    "ccy": "USD",
     "cut": 0,
-    "hold": 19.5,
-    "hike": 80.5,
+    "hike": 100,
+    "hold": 0,
+    "next": "2026-12-09",
+    "rate": "3,75 – 4,00",
     "src": "CME FedWatch"
    },
    {
     "cb": "BCE",
-    "ccy": "EUR",
     "cc": "EU",
-    "rate": "2,50",
-    "next": "2026-12-17",
+    "ccy": "EUR",
     "cut": null,
-    "hold": null,
     "hike": null,
+    "hold": null,
+    "next": "2026-12-17",
+    "rate": "2,50",
     "src": "BCE"
    },
    {
     "cb": "BoE",
-    "ccy": "GBP",
     "cc": "GB",
-    "rate": "4,00",
-    "next": "2026-12-17",
+    "ccy": "GBP",
     "cut": null,
-    "hold": null,
     "hike": null,
+    "hold": null,
+    "next": "2026-12-17",
+    "rate": "4,00",
     "src": "Banque d’Angleterre"
    },
    {
     "cb": "BoJ",
-    "ccy": "JPY",
     "cc": "JP",
-    "rate": "1,25",
-    "next": "2026-12-18",
+    "ccy": "JPY",
     "cut": null,
-    "hold": null,
     "hike": null,
+    "hold": null,
+    "next": "2026-12-18",
+    "rate": "1,25",
     "src": "Banque du Japon"
    },
    {
     "cb": "BNS",
-    "ccy": "CHF",
     "cc": "CH",
-    "rate": "0,00",
-    "next": "2026-12-10",
+    "ccy": "CHF",
     "cut": null,
-    "hold": null,
     "hike": null,
+    "hold": null,
+    "next": "2026-12-10",
+    "rate": "0,00",
     "src": "BNS"
    },
    {
     "cb": "BoC",
-    "ccy": "CAD",
     "cc": "CA",
-    "rate": "2,50",
-    "next": "2026-12-09",
+    "ccy": "CAD",
     "cut": null,
-    "hold": null,
     "hike": null,
+    "hold": null,
+    "next": "2026-12-09",
+    "rate": "2,50",
     "src": "Banque du Canada"
    },
    {
     "cb": "RBA",
-    "ccy": "AUD",
     "cc": "AU",
-    "rate": "4,85",
-    "next": "2026-12-08",
+    "ccy": "AUD",
     "cut": null,
-    "hold": null,
     "hike": null,
+    "hold": null,
+    "next": "2026-12-08",
+    "rate": "4,85",
     "src": "RBA"
    },
    {
     "cb": "RBNZ",
-    "ccy": "NZD",
     "cc": "NZ",
-    "rate": "2,75",
-    "next": "2026-12-09",
+    "ccy": "NZD",
     "cut": null,
-    "hold": null,
     "hike": null,
+    "hold": null,
+    "next": "2026-12-09",
+    "rate": "2,75",
     "src": "RBNZ"
    }
   ]
