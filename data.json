@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T13:50:00Z",
+ "updatedAt": "2026-11-12T13:45:03Z",
  "econ": {
   "values": {
    "gdp": {
@@ -783,6 +783,21 @@
  "news": [
   {
    "date": "2026-11-12",
+   "time": "07:19",
+   "source": "Yahoo Finance",
+   "impact": "med",
+   "assets": [
+    "xauusd",
+    "usd"
+   ],
+   "title": "L’or repasse sous 4 000 $ : le dollar profite des paris d’une hausse de la Fed en décembre",
+   "title_en": "Gold drops back below $4,000 as the dollar gains on December Fed hike bets",
+   "summary": "Le contrat de décembre a ouvert à 3 994 $ l’once (−1,2 %), sous 4 000 $ pour la première fois depuis la semaine dernière, puis a glissé vers 3 943 $ (−1,4 %). Le dollar se raffermit : l’outil FedWatch de la CME donne environ 90 % de chances d’une hausse de 25 pb aux 8 et 9 décembre, ce qui pèse sur les métaux précieux.",
+   "summary_en": "December gold futures opened at $3,994 an ounce (−1.2%), below $4,000 for the first time since last week, then slid toward $3,943 (−1.4%). The dollar is firming as CME FedWatch shows roughly a 90% chance of a 25 bp hike at the Dec. 8–9 meeting, weighing on precious metals.",
+   "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-november-12-2026-prices-open-back-under-4000-as-rate-hikes-crystallize-121913089.html"
+  },
+  {
+   "date": "2026-11-12",
    "time": "04:39",
    "source": "Reuters (via Investing.com)",
    "impact": "high",
@@ -814,6 +829,21 @@
    "summary": "L’indice MSCI Asie-Pacifique hors Japon recule de 1,2 %, Taïwan de 2,6 %, le Kospi et le Nikkei de 0,9 %, après la chute de 8,8 % de Nvidia hors séance sur des informations voulant que son conseil pourrait évincer Jensen Huang. Les contrats à terme du S&P 500 perdent 0,5 %, l’indice dollar gagne 0,1 % à 102,98 et le 10 ans américain monte à 4,992 %. Le Brent cède 1,0 % à 91,87 $ et le bitcoin 1 % à 73 579 $.",
    "summary_en": "MSCI's Asia-Pacific index outside Japan fell 1.2%, Taiwan 2.6%, and the Kospi and Nikkei 0.9%, after Nvidia slid 8.8% in extended trading on reports its board may oust CEO Jensen Huang. S&P 500 e-mini futures fell 0.5%, the dollar index rose 0.1% to 102.98 and the U.S. 10-year yield edged up to 4.992%. Brent fell 1.0% to $91.87 and bitcoin 1% to $73,579.",
    "url": "https://ca.investing.com/news/economy-news/asian-stocks-tumble-nvidia-stings-as-board-to-decide-ceos-fate-4951581"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd",
+    "nasdaq"
+   ],
+   "title": "Le bitcoin glisse vers 73 400 $ avec la tech; 5e jour de sorties des FNB",
+   "title_en": "Bitcoin slips toward $73,400 with tech stocks; spot ETF outflows hit a fifth day",
+   "summary": "Le bitcoin recule d’environ 0,7 % vers 73 400 $ pendant que Nvidia perd environ 7 % avant l’ouverture, son conseil s’apprêtant selon le WSJ à écarter Jensen Huang. Les FNB bitcoin au comptant américains ont perdu 299,9 M$ mercredi, une 5e séance de sorties (environ 1,44 G$ depuis le 5 novembre); la CME donne environ 90 % de chances d’une hausse de la Fed en décembre.",
+   "summary_en": "Bitcoin fell about 0.7% to roughly $73,400 as Nvidia dropped about 7% premarket, with the WSJ reporting its board is preparing to remove Jensen Huang. U.S. spot bitcoin ETFs lost $299.9 million Wednesday, a fifth straight day of outflows (about $1.44 billion since Nov. 5); CME pricing shows about a 90% chance of a December Fed hike.",
+   "url": "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five"
   },
   {
    "date": "2026-11-11",
