@@ -857,6 +857,7 @@ body.chfs-open{overflow:hidden}
 /* Markets Watch */
 .mwtop{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin:6px 0 12px} .mwtop .tscap{flex-basis:100%;margin:0}
 .mwtop h2{margin:0;font:800 34px/1 var(--f-mono);letter-spacing:.04em} .mwsub{font:600 10.5px/1.3 var(--f-mono);letter-spacing:.12em;color:var(--muted)}
+.mwmode{margin-right:auto} .mwmode button[data-m=live]{color:var(--bull)} .mwmode button[aria-pressed=true][data-m=live]{color:inherit}
 .mwsearch{display:flex;align-items:center;gap:8px;border:1px solid var(--line);border-radius:6px;background:var(--panel);padding:0 12px;margin-bottom:10px}
 .mwsearch span{color:var(--gold);font-size:16px} .mwsearch input{flex:1;background:none;border:0;color:var(--fg);padding:12px 0;font:500 14px/1 var(--f-body);outline:none}
 .mwtabs{margin-bottom:10px}
@@ -2482,7 +2483,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       box.innerHTML = `<span class="tlive"><i></i>${L('EN DIRECT','LIVE')}</span><div class="tvtape tradingview-widget-container"><div class="tradingview-widget-container__widget"></div></div>`;
       const s = document.createElement('script'); s.async = true; s.src = 'https://s3.tradingview.com/external-embedding/embed-widget-ticker-tape.js';
       s.text = JSON.stringify({symbols:Object.keys(ASSETS).map(a=>({proName:TV_SYM[a], title:TOP_NAMES[a]})), showSymbolLogo:true, isTransparent:true, displayMode:'regular', colorTheme:tvTheme(), locale:isEN()?'en':'fr'});
-      const fail = () => { if(box.querySelector('.tvtape iframe')) return; state.tvTapeFail = true; delete box.dataset.tvk; box.classList.remove('tv'); renderTape(); };
+      const fail = () => { if(box.querySelector('.tvtape iframe')) return; state.tvTapeFail = true; delete box.dataset.tvk; box.classList.remove('tv'); renderTape(); if(['watch','squawk'].includes(state.page)) renderP2(); };
       s.onerror = fail; box.querySelector('.tvtape').appendChild(s); setTimeout(fail, 8000);
       return;
     }
@@ -3541,9 +3542,36 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   // ---------- Markets Watch ----------
   state.mwTab = state.mwTab || 'all'; state.mwCh = state.mwCh || 'd1'; state.mwSort = state.mwSort || 'def'; state.mwQ = state.mwQ || '';
   const MWG = {fx:['Forex','Forex'], idx:['Indices','Indices'], cmd:['Matières premières','Commodities'], stk:['Actions','Stocks'], cry:['Crypto','Crypto']};
+  const MW_TV = {
+    fx:[['OANDA:EURUSD','EUR/USD'],['OANDA:GBPUSD','GBP/USD'],['OANDA:USDJPY','USD/JPY'],['OANDA:USDCHF','USD/CHF'],['OANDA:USDCAD','USD/CAD'],['OANDA:AUDUSD','AUD/USD'],['OANDA:NZDUSD','NZD/USD'],['OANDA:EURGBP','EUR/GBP'],['OANDA:EURJPY','EUR/JPY'],['OANDA:EURCHF','EUR/CHF'],['OANDA:EURAUD','EUR/AUD'],['OANDA:EURCAD','EUR/CAD'],['OANDA:EURNZD','EUR/NZD'],['OANDA:GBPJPY','GBP/JPY'],['OANDA:GBPCHF','GBP/CHF'],['OANDA:GBPAUD','GBP/AUD'],['OANDA:AUDJPY','AUD/JPY'],['OANDA:CADJPY','CAD/JPY'],['OANDA:CHFJPY','CHF/JPY'],['OANDA:NZDJPY','NZD/JPY'],['OANDA:USDMXN','USD/MXN'],['FX_IDC:USDCNY','USD/CNY']],
+    idx:[['CAPITALCOM:US500','S&P 500'],['CAPITALCOM:US100','Nasdaq 100'],['CAPITALCOM:US30','Dow Jones'],['CAPITALCOM:RTY','Russell 2000'],['CAPITALCOM:VIX','VIX'],['CAPITALCOM:DXY','US Dollar Index'],['TSX:TSX','S&P/TSX'],['CAPITALCOM:DE40','DAX'],['CAPITALCOM:UK100','FTSE 100'],['CAPITALCOM:FR40','CAC 40'],['CAPITALCOM:EU50','Euro Stoxx 50'],['CAPITALCOM:J225','Nikkei 225'],['CAPITALCOM:HK50','Hang Seng'],['SSE:000001','Shanghai Comp.'],['CAPITALCOM:AU200','ASX 200'],['KRX:KOSPI','KOSPI'],['BSE:SENSEX','Sensex'],['BMFBOVESPA:IBOV','Bovespa']],
+    cmd:[['CAPITALCOM:GOLD','Or|Gold'],['CAPITALCOM:SILVER','Argent|Silver'],['CAPITALCOM:PLATINUM','Platine|Platinum'],['CAPITALCOM:PALLADIUM','Palladium|Palladium'],['CAPITALCOM:COPPER','Cuivre|Copper'],['CAPITALCOM:OIL_CRUDE','Pétrole WTI|WTI crude'],['CAPITALCOM:OIL_BRENT','Pétrole Brent|Brent crude'],['CAPITALCOM:NATURALGAS','Gaz naturel|Natural gas'],['CAPITALCOM:CORN','Maïs|Corn'],['CAPITALCOM:WHEAT','Blé|Wheat'],['CAPITALCOM:SOYBEAN','Soja|Soybeans'],['CAPITALCOM:COFFEEARABICA','Café|Coffee'],['CAPITALCOM:COCOA','Cacao|Cocoa'],['CAPITALCOM:SUGAR','Sucre|Sugar']],
+    stk:[['NASDAQ:AAPL','Apple'],['NASDAQ:MSFT','Microsoft'],['NASDAQ:NVDA','Nvidia'],['NASDAQ:GOOGL','Alphabet'],['NASDAQ:AMZN','Amazon'],['NASDAQ:META','Meta'],['NASDAQ:TSLA','Tesla'],['NASDAQ:AVGO','Broadcom'],['NYSE:BRK.B','Berkshire Hathaway'],['NYSE:JPM','JPMorgan'],['NYSE:V','Visa'],['NYSE:MA','Mastercard'],['NYSE:LLY','Eli Lilly'],['NYSE:UNH','UnitedHealth'],['NYSE:XOM','Exxon Mobil'],['NASDAQ:WMT','Walmart'],['NYSE:ORCL','Oracle'],['NASDAQ:AMD','AMD'],['NASDAQ:NFLX','Netflix'],['NASDAQ:COST','Costco']],
+    cry:[['COINBASE:BTCUSD','BTC/USD'],['COINBASE:ETHUSD','ETH/USD'],['COINBASE:SOLUSD','SOL/USD'],['COINBASE:XRPUSD','XRP/USD'],['BINANCE:BNBUSDT','BNB/USDT'],['COINBASE:ADAUSD','ADA/USD'],['COINBASE:DOGEUSD','DOGE/USD'],['COINBASE:DOTUSD','DOT/USD'],['COINBASE:LINKUSD','LINK/USD'],['COINBASE:AVAXUSD','AVAX/USD'],['COINBASE:LTCUSD','LTC/USD']]};
+  state.mwMode = state.mwMode || 'live';
+  function mwModeSeg(){ return `<div class="seg mwmode" id="mwMode">${[['live','● '+L('EN DIRECT','LIVE')],['perf',L('PERFORMANCES 1D · 1W · 1M','PERFORMANCE 1D · 1W · 1M')]].map(([k,t])=>`<button type="button" data-m="${k}" aria-pressed="${state.mwMode===k}">${t}</button>`).join('')}</div>`; }
+  function renderWatchLive(box){
+    const groups = state.mwTab==='all' ? Object.keys(MW_TV) : [state.mwTab];
+    const n = Object.values(MW_TV).reduce((a,l)=>a+l.length,0), nm = t => t.includes('|') ? t.split('|')[isEN()?1:0] : t;
+    const H = Math.max(520, Math.min(1400, groups.reduce((a,g)=>a+MW_TV[g].length,0)*44 + groups.length*48 + 40));
+    const key = groups.join(',')+(isEN()?'en':'fr');
+    if(box.dataset.mwlive === key && box.querySelector('#tvMW')) return;
+    box.dataset.mwlive = key;
+    box.innerHTML = `
+      <div class="mwtop"><span class="tscap">${L('SURVEILLANCE DES MARCHÉS','MARKET WATCH')}</span><h2>${L('MARCHÉS','MARKETS')}</h2><span class="mwsub"><span class="blink"></span> ${n} ${L('MARCHÉS · COURS EN DIRECT','MARKETS · LIVE QUOTES')}</span></div>
+      <div class="mwctl">${mwModeSeg()}</div>
+      <div class="chips mwtabs"><button type="button" class="chip" data-t="all" aria-pressed="${state.mwTab==='all'}">${L('TOUS','ALL')} ${n}</button>${Object.entries(MWG).map(([k,v])=>`<button type="button" class="chip" data-t="${k}" aria-pressed="${state.mwTab===k}">${esc((isEN()?v[1]:v[0]).toUpperCase())} ${MW_TV[k].length}</button>`).join('')}</div>
+      <div class="panel"><div class="tvbox" id="tvMW"></div></div>
+      <p class="src">${L('Cours en direct de TradingView (Capital.com, OANDA, Coinbase, bourses officielles). Les actions et certains indices peuvent avoir un court délai selon la bourse. Clique sur « PERFORMANCES » pour le tableau 1D · 1W · 1M, le meneur et le traînard (Yahoo Finance, mis à jour toutes les heures).','Live quotes from TradingView (Capital.com, OANDA, Coinbase, official exchanges). Stocks and some indices may be slightly delayed depending on the exchange. Click “PERFORMANCE” for the 1D · 1W · 1M table, leader and laggard (Yahoo Finance, refreshed hourly).')}</p>`;
+    tv('tvMW','market-quotes',{width:'100%', height:H, showSymbolLogo:true, symbolsGroups:groups.map(g=>({name:isEN()?MWG[g][1]:MWG[g][0], symbols:MW_TV[g].map(([s,t])=>({name:s, displayName:nm(t)}))}))}, H);
+    box.querySelectorAll('.mwtabs .chip').forEach(b=>b.addEventListener('click', ()=>{ state.mwTab = b.dataset.t; renderWatch(); }));
+    box.querySelectorAll('#mwMode button').forEach(b=>b.addEventListener('click', ()=>{ state.mwMode = b.dataset.m; renderWatch(); }));
+  }
   const CMDI = {gold:'🥇', silver:'🥈', plat:'⚪', pall:'⚪', copper:'🟠', oil:'🛢️', gas:'🔥', grain:'🌾', soft:'☕'};
   async function renderWatch(){
     const box = $('p2watch'); if(!box) return;
+    if(state.mwMode==='live' && !state.tvTapeFail){ renderWatchLive(box); return; }
+    delete box.dataset.mwlive;
     const M = await mkData(); if(state.page!=='watch') return;
     if(!M || !M.watch){ tsWait(box, L('Les cours arrivent à la prochaine mise à jour (toutes les heures).','Quotes arrive with the next hourly update.')); return; }
     const W = M.watch, all = Object.entries(W).flatMap(([g,l])=>l.map(x=>Object.assign({g}, x)));
@@ -3570,7 +3598,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         <div class="mwk"><span>${L('MENEUR','LEADER')}</span><b class="big">${lead?esc(nmT(lead.n)):'—'} <em class="pos">${lead?pcTxt(ch(lead)):''}</em></b><small>${lead?esc(isEN()?MWG[lead.g][1]:MWG[lead.g][0]):''}</small></div>
         <div class="mwk"><span>${L('TRAÎNARD','LAGGARD')}</span><b class="big">${lag?esc(nmT(lag.n)):'—'} <em class="neg">${lag?pcTxt(ch(lag)):''}</em></b><small>${lag?esc(isEN()?MWG[lag.g][1]:MWG[lag.g][0]):''}</small></div>
       </div>
-      <div class="mwctl"><span>${L('VARIATION SUR','CHANGE OVER')}</span><div class="seg" id="mwCh">${[['d1','1D'],['w1','1W'],['m1','1M']].map(([k,t])=>`<button type="button" data-c="${k}" aria-pressed="${state.mwCh===k}">${t}</button>`).join('')}</div>
+      <div class="mwctl">${state.tvTapeFail?'':mwModeSeg()}<span>${L('VARIATION SUR','CHANGE OVER')}</span><div class="seg" id="mwCh">${[['d1','1D'],['w1','1W'],['m1','1M']].map(([k,t])=>`<button type="button" data-c="${k}" aria-pressed="${state.mwCh===k}">${t}</button>`).join('')}</div>
         <span>${L('ORDRE','ORDER')}</span><div class="seg" id="mwSort">${[['def',L('DÉFAUT','DEFAULT')],['perf','PERFORMANCE'],['az','A-Z']].map(([k,t])=>`<button type="button" data-o="${k}" aria-pressed="${state.mwSort===k}">${t}</button>`).join('')}</div></div>
       <div class="mwcols n${groups.length}">${groups.map(col).join('')}</div>
       <p class="src">${L('Source : Yahoo Finance (cours différés, mis à jour toutes les heures en semaine). Pour des prix à la seconde, regarde la bande « EN DIRECT » en haut.','Source: Yahoo Finance (delayed quotes, refreshed hourly on weekdays). For live prices, see the LIVE strip at the top.')}</p>`;
@@ -3578,6 +3606,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     box.querySelectorAll('.mwtabs .chip').forEach(b=>b.addEventListener('click', ()=>{ state.mwTab = b.dataset.t; renderWatch(); }));
     box.querySelectorAll('#mwCh button').forEach(b=>b.addEventListener('click', ()=>{ state.mwCh = b.dataset.c; renderWatch(); }));
     box.querySelectorAll('#mwSort button').forEach(b=>b.addEventListener('click', ()=>{ state.mwSort = b.dataset.o; renderWatch(); }));
+    box.querySelectorAll('#mwMode button').forEach(b=>b.addEventListener('click', ()=>{ state.mwMode = b.dataset.m; renderWatch(); }));
     box.querySelectorAll('.mwrow[data-s]').forEach(b=>b.addEventListener('click', ()=>{ const x = all.find(y=>y.s===b.dataset.s); if(!x) return;
       ddHtml(`<div class="ddh"><span class="vk">${esc((isEN()?MWG[x.g][1]:MWG[x.g][0]).toUpperCase())} · ${esc(x.s)}</span><h3>${icon(x)} ${esc(nmT(x.n))}</h3><span class="ddword ${ch(x)>0?'b':ch(x)<0?'r':''}">${pxAuto(x.last)}</span></div>
         <div class="ddgrid">${[['1D',x.d1],['1W',x.w1],['1M',x.m1]].map(([k,v])=>`<div class="ddr"><span>${k}</span><b class="${pcCls(v)}">${pcTxt(v)}</b></div>`).join('')}<div class="ddr"><span>${L('Devise','Currency')}</span><b>${esc(x.ccy||'—')}</b></div></div>
@@ -3860,7 +3889,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- Squawk ----------
-  state.sqTab = state.sqTab || 'all'; state.sqTV = state.sqTV || null;
+  state.sqTab = state.sqTab || 'live'; state.sqTV = state.sqTV || null;
   const TVCH = [['bloomberg','Bloomberg Television','UCIALMKvObZNtJ6AmdCLP7Lg'],['yahoo','Yahoo Finance','UCEAZeUIeJs0IjQiqTCdVSIg'],['cnbc','CNBC Television','UCrp_UI8XtuYfpiqluWLD7Lw']];
   function squawkItems(M){
     const it = [], today = new Date().toISOString().slice(0,10);
@@ -3874,6 +3903,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   async function renderSquawk(){
     const box = $('p2squawk'); if(!box) return;
     const M = await mkData(); if(state.page!=='squawk') return;
+    if(state.tvTapeFail && state.sqTab==='live') state.sqTab = 'all';
     const all = squawkItems(M), tab = state.sqTab, cnt = k => all.filter(x=>x.k===k).length;
     const list = tab==='all' ? all.filter(x=>x.k!=='rel') : all.filter(x=>x.k===tab);
     const movers = M && M.watch ? Object.values(M.watch).flat().filter(x=>x.d1!=null).sort((a,b)=>Math.abs(b.d1)-Math.abs(a.d1)).slice(0,14) : [];
@@ -3883,14 +3913,15 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     box.innerHTML = `<div class="sqgrid">
       <div class="panel sqfeed"><div class="sqh"><b>✦ SQUAWK</b><span class="sqlive">LIVE</span><small>${L('manchettes et données · mouvements · publications à venir','headlines & data · movers · upcoming releases')}</small><em>${all.length} ${L('ÉLÉMENTS','ITEMS')}</em></div>
         <div class="sqtape"><div>${movers.concat(movers).map(x=>`<span>${esc(nmT(x.n))} <b class="${pcCls(x.d1)}">${pcTxt(x.d1)}</b> · ${pxAuto(x.last)}</span>`).join('')}</div></div>
-        <div class="chips sqtabs">${[['all',L('TOUT','ALL'),all.length-cnt('rel')],['data',L('DONNÉES','DATA'),cnt('data')],['mov',L('MOUVEMENTS','MOVERS'),cnt('mov')],['rel',L('À VENIR','RELEASES'),cnt('rel')],['news',L('NOUVELLES','NEWS'),cnt('news')]].map(([k,t,n])=>`<button type="button" class="chip" data-t="${k}" aria-pressed="${tab===k}">${t} <b>${n}</b></button>`).join('')}</div>
-        <div class="sqlist">${list.slice(0,80).map((x,i)=>`<div class="sqi ${x.k} ${x.hi?'hi':''}" style="--d:${Math.min(i,25)*25}ms"><span class="sqt">${x.up?esc(new Date(x.t).toLocaleDateString(LOC(),{weekday:'short'}))+' '+tm(x.t):tm(x.t)}</span><span class="sqa">${x.up?L('dans ','in ')+durTxt(x.t-Date.now()):ago(x.t)}</span><i></i><span class="sqx">${x.nm?`<span>${esc(x.nm)}</span>`:''}${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.txt)}</a>`:esc(x.txt)}${x.src?` <small>${esc(x.src)}</small>`:''}</span></div>`).join('') || `<p class="tsnone">${L('Rien pour ce filtre.','Nothing for this filter.')}</p>`}</div></div>
+        <div class="chips sqtabs">${(state.tvTapeFail?[]:[['live','● '+L('EN DIRECT','LIVE'),'']]).concat([['all',L('TOUT','ALL'),all.length-cnt('rel')],['data',L('DONNÉES','DATA'),cnt('data')],['mov',L('MOUVEMENTS','MOVERS'),cnt('mov')],['rel',L('À VENIR','RELEASES'),cnt('rel')],['news',L('NOUVELLES','NEWS'),cnt('news')]]).map(([k,t,n])=>`<button type="button" class="chip" data-t="${k}" aria-pressed="${tab===k}">${t} <b>${n}</b></button>`).join('')}</div>
+        ${tab==='live'?`<div class="tvbox sqlivetv" id="tvSq"></div><p class="ddsrc">${L('Manchettes en temps réel de TradingView (Reuters, Dow Jones, MarketWatch, Benzinga…), mises à jour à la seconde. Les onglets suivants montrent les données publiées, les gros mouvements et nos nouvelles résumées.','Real-time headlines from TradingView (Reuters, Dow Jones, MarketWatch, Benzinga…), updated by the second. The other tabs show released data, big movers and our summarized news.')}</p>`:''}<div class="sqlist"${tab==='live'?' hidden':''}>${list.slice(0,80).map((x,i)=>`<div class="sqi ${x.k} ${x.hi?'hi':''}" style="--d:${Math.min(i,25)*25}ms"><span class="sqt">${x.up?esc(new Date(x.t).toLocaleDateString(LOC(),{weekday:'short'}))+' '+tm(x.t):tm(x.t)}</span><span class="sqa">${x.up?L('dans ','in ')+durTxt(x.t-Date.now()):ago(x.t)}</span><i></i><span class="sqx">${x.nm?`<span>${esc(x.nm)}</span>`:''}${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.txt)}</a>`:esc(x.txt)}${x.src?` <small>${esc(x.src)}</small>`:''}</span></div>`).join('') || `<p class="tsnone">${L('Rien pour ce filtre.','Nothing for this filter.')}</p>`}</div></div>
       <div class="sqright"><div class="panel sqtv"><div class="sqh"><b>${L('TÉLÉ DU TERMINAL','TERMINAL TV')}</b>${TVCH.map(([k,n])=>`<button type="button" class="chip" data-tv="${k}" aria-pressed="${state.sqTV===k}">${esc(n)}</button>`).join('')}</div>
           <div class="sqvid">${state.sqTV ? `<iframe src="https://www.youtube-nocookie.com/embed/live_stream?channel=${TVCH.find(x=>x[0]===state.sqTV)[2]}&autoplay=1&mute=1" title="${esc(TVCH.find(x=>x[0]===state.sqTV)[1])}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>` : `<button type="button" class="sqplay" data-tv="bloomberg">▶ ${L('Lancer la télé financière en direct','Start live financial TV')}<small>${L('Bloomberg, Yahoo Finance ou CNBC (YouTube) · le son est coupé au départ','Bloomberg, Yahoo Finance or CNBC (YouTube) · starts muted')}</small></button>`}</div>
           ${state.sqTV?`<p class="ddsrc">${L('Si la vidéo ne joue pas, la chaîne n’est peut-être pas en direct en ce moment, ou YouTube est bloqué dans cette vue.','If the video does not play, the channel may not be live right now, or YouTube is blocked in this view.')} <a href="https://www.youtube.com/channel/${TVCH.find(x=>x[0]===state.sqTV)[2]}/live" target="_blank" rel="noopener">${L('Ouvrir sur YouTube','Open on YouTube')} ↗</a></p>`:''}</div>
         <div class="panel"><p class="tscap">${L('PROCHAINES PUBLICATIONS','NEXT RELEASES')}</p>${up.length?up.map(x=>`<div class="rcrel"><span>${esc(new Date(x.t).toLocaleDateString(LOC(),{weekday:'short'}))} ${tm(x.t)}</span><div><b>${x.nm?`<span>${esc(x.nm)}</span>`:''}${esc(x.txt)}</b><small class="cd" data-t="${x.t}"></small></div></div>`).join(''):`<p class="tsnone">${L('Rien de prévu au calendrier','Nothing scheduled')}</p>`}</div></div>
     </div>`;
     box.querySelectorAll('.sqtabs .chip').forEach(b=>b.addEventListener('click', ()=>{ state.sqTab = b.dataset.t; renderSquawk(); }));
+    if(tab==='live') tv('tvSq','timeline',{feedMode:'all_symbols', displayMode:'regular', width:'100%', height:700}, 700);
     box.querySelectorAll('[data-tv]').forEach(b=>b.addEventListener('click', ()=>{ state.sqTV = state.sqTV===b.dataset.tv && b.classList.contains('chip') ? null : b.dataset.tv; renderSquawk(); }));
     if(typeof tickCountdowns==='function') tickCountdowns();
   }
