@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T20:42:36Z",
+ "updatedAt": "2026-11-12T21:37:49Z",
  "econ": {
   "values": {
    "gdp": {
@@ -489,14 +489,14 @@
     "us30": 1
    },
    "date": "2026-11-12",
-   "epsA": null,
-   "epsF": 1.15,
+   "epsA": 1.4,
+   "epsF": 1.33,
    "id": null,
    "kind": "earn",
    "move": null,
    "name": "Résultats Cisco (CSCO)",
    "note": "Après la clôture",
-   "revA": null,
+   "revA": 18.5,
    "revF": 18.1,
    "time": "16:05"
   },
@@ -507,14 +507,14 @@
     "spx500": 1
    },
    "date": "2026-11-12",
-   "epsA": null,
+   "epsA": 4.16,
    "epsF": 4.06,
    "id": null,
    "kind": "earn",
    "move": null,
    "name": "Résultats Applied Materials (AMAT)",
    "note": "Après la clôture",
-   "revA": null,
+   "revA": 10.41,
    "revF": 10.3,
    "time": "16:05"
   },
@@ -524,14 +524,14 @@
     "nasdaq": 1
    },
    "date": "2026-11-12",
-   "epsA": null,
+   "epsA": -0.67,
    "epsF": -0.13,
    "id": null,
    "kind": "earn",
-   "move": null,
+   "move": 13.0,
    "name": "Résultats Cerebras (CBRS)",
    "note": "Après la clôture",
-   "revA": null,
+   "revA": 0.2108,
    "revF": 0.2147,
    "time": "16:05"
   },
