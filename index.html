@@ -1475,6 +1475,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const EDIT10 = false;
   // ---------- table ----------
   const opt = (val, cur, txt) => `<option value="${val}"${val===cur?' selected':''}>${txt}</option>`;
+  function autoTrendTxt(a){
+    const T = state.mk && state.mk.trend && state.mk.trend[a]; if(!T) return L('Automatique (4H et journalier) · calcul en cours','Automatic (4H and daily) · loading');
+    const w = t => t==='bull'?L('haussier','bullish'):t==='bear'?L('baissier','bearish'):L('neutre','neutral');
+    return `${L('Automatique','Automatic')} · ${L('journalier','daily')} ${w(T.d1.t)} · 4H ${w(T.h4.t)} · ${L('MME 20/50, chaque heure','EMA 20/50, hourly')}`;
+  }
   function triSelect(id, cur){
     return `<select id="${id}" data-field="${id}">${opt('bull',cur,'Haussière')}${opt('neutral',cur,'Neutre')}${opt('bear',cur,'Baissière')}</select>`;
   }
@@ -1488,7 +1493,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
     h += head('Technique', catChip(C.cats.tech,3), ['','','','']);
     h += `<tr><td class="name">Tendance 4H / journalier</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
-      <td class="desc" colspan="4">${E?triSelect('in-trend',A.trend):'Ta lecture de la tendance sur le 4H et le journalier (±2)'}</td></tr>`;
+      <td class="desc" colspan="4">${autoTrendTxt(asset)}</td></tr>`;
     h += `<tr><td class="name">Saisonnalité (3 derniers mois)</td><td class="sig" data-dd="top|${asset}|season">${chip(r.season)}</td>
       <td class="desc" colspan="4">${A.seasonPct!=null&&A.seasonPct!==undefined ? 'Variation '+(A.seasonPeriod?'de '+esc(A.seasonPeriod):'des 3 derniers mois')+' : '+(A.seasonPct>0?'+':'')+String(A.seasonPct).replace('.',',').replace('-','−')+' % (plus de +1 % = +1, moins de −1 % = −1). Mise à jour chaque mois.' : 'Variation des 3 derniers mois complets, mise à jour chaque mois (±1).'}</td></tr>`;
 
@@ -2819,10 +2824,12 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const C = compute(a), A = state.assets[a]||{}, r = C.rows;
     const pts = k==='cot' ? r.cotNet + r.cotChg : k==='yield10' ? (r.yield10||0)*wOf(a,'yield10') : (r[k]||0);
     let title = '', rows = '', txt = '', extra = '';
-    if(k==='trend'){ title = L('Tendance (ta lecture)','Trend (your read)'); rows = ddRow(L('Ta tendance','Your trend'), A.trend==='bull'?L('Haussière','Bullish'):A.trend==='bear'?L('Baissière','Bearish'):L('Neutre','Neutral'));
+    if(k==='trend'){ title = L('Tendance 4H / journalier (automatique)','4H / daily trend (automatic)'); rows = ddRow(L('Tendance','Trend'), A.trend==='bull'?L('Haussière','Bullish'):A.trend==='bear'?L('Baissière','Bearish'):L('Neutre','Neutral'));
+      const AT = state.mk && state.mk.trend && state.mk.trend[a], tw2 = t => t==='bull'?L('Haussière','Bullish'):t==='bear'?L('Baissière','Bearish'):L('Neutre','Neutral');
+      if(AT) rows += ddRow(L('Journalier','Daily'), `${tw2(AT.d1.t)} · ${pxFmt(AT.d1.px)} / MME20 ${pxFmt(AT.d1.e20)} / MME50 ${pxFmt(AT.d1.e50)}`) + ddRow('4H', `${tw2(AT.h4.t)} · ${pxFmt(AT.h4.px)} / MME20 ${pxFmt(AT.h4.e20)} / MME50 ${pxFmt(AT.h4.e50)}`);
       const t = ((state.tech||{}).assets||{})[a]; if(t) rows += ddRow(L('Tendance calculée (prix)','Computed trend (price)'), tw('trend',t.trend).t) + ddRow('MM200', `${pxFmt(t.sma200)} (${sg2(t.d200,1)} %)`);
-      txt = L('C’est la case que tu remplis toi-même avec « Ma tendance » (graphiques 4H et Daily). Elle vaut ±2 dans le score. La heatmap technique te donne une lecture calculée pour comparer.', 'This is the box you fill yourself with “My trend” (4H and Daily charts). It is worth ±2 in the score. The technical heatmap gives you a computed read to compare.');
-      extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="tech">${L('Heatmap technique','Technical heatmap')}</button><button type="button" class="btn ghost" data-ddgo="score" data-dda="${a}">${L('Remplir ma tendance','Set my trend')}</button></div>`; }
+      txt = L('Calculée automatiquement chaque heure. Pour chaque unité de temps (journalier et 4H) : haussière si le prix est au-dessus de sa moyenne mobile exponentielle 20, elle-même au-dessus de la MME 50; baissière si c’est l’inverse; sinon neutre. Si le journalier et le 4H sont d’accord, la tendance prend cette direction (±2 dans le score); sinon elle est neutre (0).', 'Computed automatically every hour. For each timeframe (daily and 4H): bullish when price is above its 20 exponential moving average, itself above the 50 EMA; bearish when the opposite; otherwise neutral. When daily and 4H agree, the trend takes that direction (±2 in the score); otherwise it is neutral (0).');
+      extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="tech">${L('Heatmap technique','Technical heatmap')}</button></div>`; }
     if(k==='season'){ title = L('Saisonnalité (3 derniers mois)','Seasonality (last 3 months)'); rows = ddRow(L('Période','Period'), esc(A.seasonPeriod||'—')) + ddRow(L('Variation','Change'), A.seasonPct!=null?sg2(A.seasonPct,1)+' %':'—', A.seasonPct>0?'pos':A.seasonPct<0?'neg':'');
       txt = L(`Si ${AN(a)} a monté de plus de 1 % sur les 3 derniers mois, c’est +1 (la tendance récente est ton amie); s’il a baissé de plus de 1 %, c’est −1.`, `If ${AN(a)} rose more than 1% over the last 3 months it is +1 (the recent trend is your friend); if it fell more than 1%, −1.`);
       const s = ((state.tech||{}).seas||{})[a], mo = new Date().getMonth(); if(s) rows += ddRow(L('Ce mois-ci (historique)','This month (history)'), `${sg2(s.month[mo],2)} % · ${s.monthWin[mo]} % ${L('positif','positive')}`, s.month[mo]>=0?'pos':'neg');
@@ -3423,7 +3430,14 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     Object.values(M.watch).flat().forEach(x=>{ const v = L2.q[x.s]; if(!v || v[0]==null) return; x._chg = x.last!=null && v[0]!==x.last ? Math.sign(v[0]-x.last) : 0; x.last = v[0]; if(v[1]!=null) x.d1 = v[1]; });
     M.liveAsOf = L2.asOf; return M;
   }
-  const mkData = async () => liveOverlay(await getJSON('markets.json', 'mk'));
+  // tendance automatique (4H + journalier, MME 20/50) calculée chaque heure par tools/snap_markets.mjs
+  function applyAutoTrend(){
+    const T = state.mk && state.mk.trend; if(!T) return false; let ch = false;
+    Object.keys(ASSETS).forEach(k=>{ const v = T[k] && T[k].t; if(v && state.assets[k] && state.assets[k].trend!==v){ state.assets[k].trend = v; ch = true; } });
+    return ch;
+  }
+  const mkData = async () => { const M = liveOverlay(await getJSON('markets.json', 'mk')); if(applyAutoTrend()) setTimeout(renderAll, 0); return M; };
+  setTimeout(()=>{ mkData(); }, 400);
   async function pullLive(){
     if(document.hidden || !['watch','squawk','home'].includes(state.page)) return;
     try{
