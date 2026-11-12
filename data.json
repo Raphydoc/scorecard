@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T18:43:26Z",
+ "updatedAt": "2026-11-12T19:42:32Z",
  "econ": {
   "values": {
    "gdp": {
@@ -127,7 +127,7 @@
    "seasonPct": 23.3,
    "cotLong": 53.84,
    "cotChange": -0.52,
-   "crowdLong": 83,
+   "crowdLong": 82,
    "seasonPeriod": "août à octobre"
   },
   "usoil": {
