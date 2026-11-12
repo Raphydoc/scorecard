@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T07:42:52Z",
+ "updatedAt": "2026-11-12T09:43:05Z",
  "econ": {
   "values": {
    "gdp": {
@@ -729,6 +729,23 @@
   "source": "CME FedWatch"
  },
  "news": [
+  {
+   "date": "2026-11-12",
+   "time": "04:04",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "usoil"
+   ],
+   "title": "Les contrats à terme du Nasdaq 100 perdent 0,9 % en attendant la décision sur Huang; Alibaba chute à Hong Kong",
+   "title_en": "Nasdaq 100 futures fall 0.9% as Nvidia awaits decision on Huang; Alibaba slumps in Hong Kong",
+   "summary": "À 3 h 09 (HE), les contrats à terme du Nasdaq 100 reculaient de 240 points (0,9 %) et ceux du S&P 500 de 32 points (0,4 %), alors que le Dow restait à peu près inchangé; aucune décision finale du conseil de Nvidia sur l’éviction de Jensen Huang n’était encore rapportée. Selon Yorkville Ives, Nvidia pourrait perdre le quart de sa valeur si Huang part. Le pétrole oscille près de l’équilibre, Alibaba perd plus de 6 % à Hong Kong, et Cisco et Applied Materials publient après la clôture.",
+   "summary_en": "At 3:09 a.m. ET, Nasdaq 100 futures were down 240 points (0.9%) and S&P 500 futures 32 points (0.4%), while Dow futures were mostly unchanged; no final decision by Nvidia's board on ousting Jensen Huang had been reported. Analysts at Yorkville Ives said Nvidia could lose a quarter of its valuation if Huang departs. Oil was choppy near flat, Alibaba fell more than 6% in Hong Kong, and Cisco and Applied Materials report after the close.",
+   "url": "https://www.investing.com/news/economy-news/nvidia-said-to-preparing-huang-ouster-alibaba-slumps--whats-moving-markets-5020685"
+  },
   {
    "date": "2026-11-12",
    "time": "01:51",
