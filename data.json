@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T10:42:20Z",
+ "updatedAt": "2026-11-12T12:36:54Z",
  "econ": {
   "values": {
    "gdp": {
@@ -410,14 +410,14 @@
     "nasdaq": 1
    },
    "date": "2026-11-12",
-   "epsA": null,
+   "epsA": -0.13,
    "epsF": -0.61,
    "id": null,
    "kind": "earn",
    "move": null,
    "name": "Résultats Nebius (NBIS)",
    "note": "Avant l’ouverture",
-   "revA": null,
+   "revA": 0.9808,
    "revF": 0.907,
    "time": "07:00"
   },
