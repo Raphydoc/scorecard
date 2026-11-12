@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T21:37:49Z",
+ "updatedAt": "2026-11-12T21:42:31Z",
  "econ": {
   "values": {
    "gdp": {
@@ -782,6 +782,43 @@
  },
  "news": [
   {
+   "date": "2026-11-12",
+   "time": "16:00",
+   "source": "Yahoo Finance",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "nasdaq",
+    "us30",
+    "rut"
+   ],
+   "title": "Clôture : Wall Street recule, le Russell 2000 perd 1,66 % et Nvidia 4,34 % après le départ de Jensen Huang",
+   "title_en": "Close: Wall Street slips, Russell 2000 drops 1.66% and Nvidia 4.34% after Jensen Huang's exit",
+   "summary": "Le Dow a terminé à 52 297,09 (−0,36 %), le S&P 500 à 7 592,40 (−0,35 %), le Nasdaq à 25 366,09 (−0,39 %) et le Russell 2000 à 2 799,06 (−1,66 %). Nvidia a clôturé à 166,19 $ (−4,34 %) au lendemain de la démission de son PDG, et le 10 ans a fini vers 5,10 %, ce qui pèse surtout sur les petites capitalisations.",
+   "summary_en": "The Dow closed at 52,297.09 (−0.36%), the S&P 500 at 7,592.40 (−0.35%), the Nasdaq at 25,366.09 (−0.39%) and the Russell 2000 at 2,799.06 (−1.66%). Nvidia ended at $166.19 (−4.34%) after its CEO resigned, and the 10-year yield finished near 5.10%, weighing most on small caps.",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
+  },
+  {
+   "assets": [
+    "spx500",
+    "nasdaq",
+    "us30",
+    "rut",
+    "usd",
+    "usdjpy",
+    "xauusd"
+   ],
+   "date": "2026-11-12",
+   "impact": "high",
+   "source": "Yahoo Finance",
+   "summary": "Les bons du Trésor ont été vendus après que Trump a laissé entendre qu’il n’y aurait pas de fin rapide à la guerre avec l’Iran : le rendement à 10 ans a bondi de 12 points de base à 5,12 % et le 30 ans de 9 points à 5,44 %, et les Bourses ont effacé leurs gains de midi. Mary Daly (Fed de San Francisco) a dit que « d’autres resserrements seront nécessaires » et Austan Goolsbee (Chicago) parle d’un « moment précaire » après l’IPC d’octobre plus chaud que prévu. Nvidia reculait d’environ 5 % en après-midi.",
+   "summary_en": "Treasuries sold off after Trump signaled no immediate end to the Iran war: the 10-year yield rose 12 bps to 5.12% and the 30-year 9 bps to 5.44%, and stocks gave up midday gains. San Francisco Fed's Mary Daly said 'further tightening will be needed' and Chicago's Austan Goolsbee called it 'a precarious moment' after the hotter-than-expected October CPI. Nvidia was down about 5% in afternoon trading.",
+   "time": "14:21",
+   "title": "Les obligations décrochent : le 10 ans grimpe à 5,12 % après Trump sur l’Iran; Daly (Fed) penche vers d’autres hausses",
+   "title_en": "Treasuries sell off: 10-year yield jumps to 5.12% after Trump on Iran; Fed's Daly leans toward more tightening",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-slides-jensen-huang-resigns-invest-165632931.html"
+  },
+  {
    "assets": [
     "xauusd",
     "usd"
@@ -797,83 +834,83 @@
    "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-midday-nov-12-180502157.html"
   },
   {
-   "date": "2026-11-12",
-   "time": "12:48",
-   "source": "Reuters (via Investing.com)",
-   "impact": "med",
    "assets": [
     "usoil",
     "usd"
    ],
-   "title": "Le pétrole gagne plus de 1 $ : Trump dit ne plus avoir besoin d’un accord avec l’Iran, Ormuz toujours perturbé",
-   "title_en": "Oil gains over $1 as Trump says no Iran deal needed; Hormuz shipping still disrupted",
+   "date": "2026-11-12",
+   "impact": "med",
+   "source": "Reuters (via Investing.com)",
    "summary": "Vers 12 h 08 (HE), le Brent gagnait 1,20 $ (1,3 %) à 93,96 $ et le WTI 53 cents (0,6 %) à 87,06 $, après un message de Trump affirmant que les États-Unis n’ont plus besoin d’accord avec l’Iran et « contrôlent leur détroit ». Les attaques contre les navires dans le détroit d’Ormuz et une frappe de drones ukrainiens sur le port russe d’Ust-Luga soutiennent les prix, même si les deux références restent en voie de recul hebdomadaire et que les stocks américains ont augmenté.",
    "summary_en": "Around 12:08 p.m. ET, Brent rose $1.20 (1.3%) to $93.96 and WTI rose 53 cents (0.6%) to $87.06 after Trump posted that the US no longer needs a deal with Iran and has \"their Strait.\" Attacks on shipping in the Strait of Hormuz and a Ukrainian drone strike on Russia's Ust-Luga port support prices, though both benchmarks are still headed for a weekly decline and US inventories rose.",
+   "time": "12:48",
+   "title": "Le pétrole gagne plus de 1 $ : Trump dit ne plus avoir besoin d’un accord avec l’Iran, Ormuz toujours perturbé",
+   "title_en": "Oil gains over $1 as Trump says no Iran deal needed; Hormuz shipping still disrupted",
    "url": "https://www.investing.com/news/commodities-news/oil-prices-drop-more-than-1-as-hopes-for-iran-ukraine-peace-talks-pressure-markets-5020171"
   },
   {
-   "date": "2026-11-12",
-   "time": "11:47",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd",
     "nasdaq"
    ],
-   "title": "Le bitcoin glisse sous 72 000 $ : MSCI retire Strategy de ses indices et les taux bondissent",
-   "title_en": "Bitcoin slips below $72,000 as MSCI drops Strategy from its indexes and yields surge",
+   "date": "2026-11-12",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin perd 3,4 % sur 24 heures et se négocie juste au-dessus de 71 000 $. MSCI a confirmé que Strategy (MSTR) sera retirée de ses indices mondiaux après la clôture du 30 novembre, et le rendement du 10 ans américain dépasse 5 %. Les FNB bitcoin au comptant ont perdu environ 300 M$ mercredi (465 M$ pour l'ensemble des FNB crypto).",
    "summary_en": "Bitcoin is down 3.4% over 24 hours, trading just above $71,000. MSCI confirmed Strategy (MSTR) will be removed from its global equity indexes after the close on Nov. 30, and the U.S. 10-year yield is above 5%. Spot bitcoin ETFs lost about $300 million Wednesday (about $465 million across U.S. spot crypto ETFs).",
+   "time": "11:47",
+   "title": "Le bitcoin glisse sous 72 000 $ : MSCI retire Strategy de ses indices et les taux bondissent",
+   "title_en": "Bitcoin slips below $72,000 as MSCI drops Strategy from its indexes and yields surge",
    "url": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
   },
   {
-   "date": "2026-11-12",
-   "time": "11:42",
-   "source": "Yahoo Finance",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
     "us30",
     "usd"
    ],
-   "title": "Wall Street efface ses pertes : le Dow monte, Nvidia limite sa chute à environ −5 %; le 10 ans dépasse 5 %",
-   "title_en": "Wall Street erases its losses: Dow rises, Nvidia trims its drop to about −5%; 10-year yield tops 5%",
+   "date": "2026-11-12",
+   "impact": "high",
+   "source": "Yahoo Finance",
    "summary": "Après une ouverture en baisse liée à la démission de Jensen Huang, les indices se sont redressés : vers 11 h 43, le Dow gagnait 0,18 % (52 579), tandis que le S&P 500 et le Nasdaq oscillaient autour de zéro. Nvidia réduisait sa perte à 5,42 % (164,32 $) après avoir chuté de plus de 10 %. Le rendement du 10 ans grimpait de 8 points de base à 5,08 %, la hausse du pétrole ravivant les craintes d'inflation, ce qui soutient le dollar.",
    "summary_en": "After a lower open on Jensen Huang's resignation, indexes recovered: around 11:43 a.m. the Dow was up 0.18% (52,579), while the S&P 500 and Nasdaq hovered near flat. Nvidia trimmed its loss to 5.42% ($164.32) after falling more than 10%. The 10-year Treasury yield rose 8 basis points to 5.08% as higher oil revived inflation worries, supporting the dollar.",
+   "time": "11:42",
+   "title": "Wall Street efface ses pertes : le Dow monte, Nvidia limite sa chute à environ −5 %; le 10 ans dépasse 5 %",
+   "title_en": "Wall Street erases its losses: Dow rises, Nvidia trims its drop to about −5%; 10-year yield tops 5%",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
   },
   {
-   "date": "2026-11-12",
-   "time": "08:59",
-   "source": "Yahoo Finance",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
     "rut",
     "us30"
    ],
-   "title": "Jensen Huang démissionne de Nvidia; Colette Kress nommée PDG par intérim, l'action chute à l'ouverture",
-   "title_en": "Jensen Huang resigns from Nvidia; Colette Kress named interim CEO, stock slides at the open",
+   "date": "2026-11-12",
+   "impact": "high",
+   "source": "Yahoo Finance",
    "summary": "Nvidia annonce que Jensen Huang a démissionné de ses postes de président, de PDG et de membre du conseil, avec effet immédiat; la chef des finances Colette Kress devient PDG par intérim. L'action a perdu 14 % à l'ouverture avant de réduire sa baisse à environ 6 % (163,27 $), en recul d'environ 30 % sur un mois. Vers 10 h 18, le Nasdaq cédait 0,63 %, le S&P 500 0,41 %, le Russell 2000 1,21 % et le Dow 0,10 %.",
    "summary_en": "Nvidia said Jensen Huang resigned as President, CEO and board member, effective immediately; CFO Colette Kress becomes interim CEO. The stock fell 14% at the open before trimming losses to about 6% ($163.27), down about 30% over the past month. Around 10:18 a.m., the Nasdaq was down 0.63%, the S&P 500 0.41%, the Russell 2000 1.21% and the Dow 0.10%.",
+   "time": "08:59",
+   "title": "Jensen Huang démissionne de Nvidia; Colette Kress nommée PDG par intérim, l'action chute à l'ouverture",
+   "title_en": "Jensen Huang resigns from Nvidia; Colette Kress named interim CEO, stock slides at the open",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
   },
   {
-   "date": "2026-11-12",
-   "time": "08:39",
-   "source": "Reuters (via Investing.com)",
-   "impact": "med",
    "assets": [
     "usd",
     "spx500",
     "xauusd"
    ],
-   "title": "Inscriptions au chômage : 200 000, un peu plus que prévu, mais le marché du travail reste solide",
-   "title_en": "Jobless claims rise to 200,000, slightly above forecasts, but labor market firming",
+   "date": "2026-11-12",
+   "impact": "med",
+   "source": "Reuters (via Investing.com)",
    "summary": "Les nouvelles demandes d'assurance-chômage ont augmenté de 9 000 à 200 000 pour la semaine terminée le 7 novembre, contre 195 000 attendues; les demandes continues ont reculé de 20 000 à 1,697 million. Le chômage a baissé à 4,1 % en octobre, ce qui garde la pression sur une Fed dont le taux directeur est de 3,75 %–4,00 %.",
    "summary_en": "Initial jobless claims rose 9,000 to 200,000 for the week ended Nov. 7, versus 195,000 expected; continuing claims fell 20,000 to 1.697 million. Unemployment fell to 4.1% in October, keeping pressure on a Fed whose policy rate stands at 3.75%-4.00%.",
+   "time": "08:39",
+   "title": "Inscriptions au chômage : 200 000, un peu plus que prévu, mais le marché du travail reste solide",
+   "title_en": "Jobless claims rise to 200,000, slightly above forecasts, but labor market firming",
    "url": "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-increase-but-labor-market-firming-5021926"
   },
   {
