@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T17:17:05Z",
+ "updatedAt": "2026-11-12T17:43:55Z",
  "econ": {
   "values": {
    "gdp": {
@@ -783,21 +783,35 @@
  "news": [
   {
    "date": "2026-11-12",
-   "time": "11:05",
-   "source": "Associated Press",
+   "time": "11:47",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd",
+    "nasdaq"
+   ],
+   "title": "Le bitcoin glisse sous 72 000 $ : MSCI retire Strategy de ses indices et les taux bondissent",
+   "title_en": "Bitcoin slips below $72,000 as MSCI drops Strategy from its indexes and yields surge",
+   "summary": "Le bitcoin perd 3,4 % sur 24 heures et se négocie juste au-dessus de 71 000 $. MSCI a confirmé que Strategy (MSTR) sera retirée de ses indices mondiaux après la clôture du 30 novembre, et le rendement du 10 ans américain dépasse 5 %. Les FNB bitcoin au comptant ont perdu environ 300 M$ mercredi (465 M$ pour l'ensemble des FNB crypto).",
+   "summary_en": "Bitcoin is down 3.4% over 24 hours, trading just above $71,000. MSCI confirmed Strategy (MSTR) will be removed from its global equity indexes after the close on Nov. 30, and the U.S. 10-year yield is above 5%. Spot bitcoin ETFs lost about $300 million Wednesday (about $465 million across U.S. spot crypto ETFs).",
+   "url": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "11:42",
+   "source": "Yahoo Finance",
    "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
     "us30",
-    "usoil",
     "usd"
    ],
-   "title": "Wall Street réduit ses pertes : Nvidia remonte à −6,1 % après −14 %; le pétrole grimpe après que Trump rejette un accord avec l'Iran",
-   "title_en": "Wall Street pares losses as Nvidia recovers to −6.1% from −14%; oil jumps after Trump rejects an Iran deal",
-   "summary": "Nvidia a plongé jusqu'à 14 % à l'ouverture après la démission de Jensen Huang, avant de récupérer environ la moitié de sa perte (−6,1 %); vers 10 h 15, le S&P 500 cédait 0,4 %, le Nasdaq 0,6 % (après −1,6 %) et le Dow 0,1 %. Le Brent est passé d'environ 92 $ à plus de 94 $ après que Trump a dit ne plus vouloir d'accord avec l'Iran pour mettre fin à la guerre (93,79 $, +1,1 %). Le rendement du 10 ans a grimpé à 5,07 % contre 4,98 % mardi, la hausse du pétrole ravivant les craintes d'inflation.",
-   "summary_en": "Nvidia plunged as much as 14% at the open after Jensen Huang resigned, then recovered about half the loss (−6.1%); around 10:15 a.m. the S&P 500 was down 0.4%, the Nasdaq 0.6% (after −1.6%) and the Dow 0.1%. Brent jumped from about $92 to over $94 after Trump said he was no longer interested in a deal with Iran to end their war ($93.79, +1.1%). The 10-year Treasury yield rose to 5.07% from 4.98% Tuesday as higher oil feeds inflation worries.",
-   "url": "https://www.pbs.org/newshour/economy/sharp-swings-for-nvidia-and-oil-prices-weigh-on-wall-street"
+   "title": "Wall Street efface ses pertes : le Dow monte, Nvidia limite sa chute à environ −5 %; le 10 ans dépasse 5 %",
+   "title_en": "Wall Street erases its losses: Dow rises, Nvidia trims its drop to about −5%; 10-year yield tops 5%",
+   "summary": "Après une ouverture en baisse liée à la démission de Jensen Huang, les indices se sont redressés : vers 11 h 43, le Dow gagnait 0,18 % (52 579), tandis que le S&P 500 et le Nasdaq oscillaient autour de zéro. Nvidia réduisait sa perte à 5,42 % (164,32 $) après avoir chuté de plus de 10 %. Le rendement du 10 ans grimpait de 8 points de base à 5,08 %, la hausse du pétrole ravivant les craintes d'inflation, ce qui soutient le dollar.",
+   "summary_en": "After a lower open on Jensen Huang's resignation, indexes recovered: around 11:43 a.m. the Dow was up 0.18% (52,579), while the S&P 500 and Nasdaq hovered near flat. Nvidia trimmed its loss to 5.42% ($164.32) after falling more than 10%. The 10-year Treasury yield rose 8 basis points to 5.08% as higher oil revived inflation worries, supporting the dollar.",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
   },
   {
    "date": "2026-11-12",
@@ -880,21 +894,6 @@
    "title": "Asie : les Bourses chutent avec Nvidia (−8,8 % hors séance) pendant que le conseil décide du sort de Huang",
    "title_en": "Asian stocks tumble as Nvidia (-8.8% after hours) stings while board decides CEO's fate",
    "url": "https://ca.investing.com/news/economy-news/asian-stocks-tumble-nvidia-stings-as-board-to-decide-ceos-fate-4951581"
-  },
-  {
-   "assets": [
-    "btcusd",
-    "nasdaq"
-   ],
-   "date": "2026-11-12",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Le bitcoin recule d’environ 0,7 % vers 73 400 $ pendant que Nvidia perd environ 7 % avant l’ouverture, son conseil s’apprêtant selon le WSJ à écarter Jensen Huang. Les FNB bitcoin au comptant américains ont perdu 299,9 M$ mercredi, une 5e séance de sorties (environ 1,44 G$ depuis le 5 novembre); la CME donne environ 90 % de chances d’une hausse de la Fed en décembre.",
-   "summary_en": "Bitcoin fell about 0.7% to roughly $73,400 as Nvidia dropped about 7% premarket, with the WSJ reporting its board is preparing to remove Jensen Huang. U.S. spot bitcoin ETFs lost $299.9 million Wednesday, a fifth straight day of outflows (about $1.44 billion since Nov. 5); CME pricing shows about a 90% chance of a December Fed hike.",
-   "time": "",
-   "title": "Le bitcoin glisse vers 73 400 $ avec la tech; 5e jour de sorties des FNB",
-   "title_en": "Bitcoin slips toward $73,400 with tech stocks; spot ETF outflows hit a fifth day",
-   "url": "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five"
   },
   {
    "assets": [
