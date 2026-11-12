@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-12T03:47:41Z",
+  "updatedAt": "2026-11-12T04:42:44Z",
   "econ": {
     "values": {
       "gdp": {
@@ -743,6 +743,25 @@
       "summary": "Le conseil de Nvidia (11 administrateurs, dont 10 indépendants) se réunissait mercredi soir pour décider s’il évince Jensen Huang, selon une source de Reuters, après un article du WSJ disant que l’entreprise se prépare à le congédier; Bloomberg rapporte qu’une firme externe cherche des remplaçants. L’action recule de plus de 8 % après la clôture et les contrats à terme du Nasdaq de 1 %; si la baisse tient, Nvidia aura perdu environ 600 G$ de valeur depuis l’annonce de l’enquête. Poids lourd du Nasdaq et du S&P 500, Nvidia publie ses résultats le 17 novembre.",
       "summary_en": "Nvidia's board (11 directors, 10 of them independent) was meeting late Wednesday to decide whether to oust Jensen Huang, a source told Reuters, after the WSJ reported the company was preparing to fire him; Bloomberg reported an outside firm is identifying possible replacements. Shares fell more than 8% after hours and Nasdaq futures 1%; if losses hold, Nvidia will have shed about $600 billion in value since the probe was announced. A Nasdaq and S&P 500 heavyweight, Nvidia reports results on Nov. 17.",
       "url": "https://www.investing.com/news/stock-market-news/nvidia-is-preparing-to-oust-ceo-jensen-huang-wsj-reports-5019991"
+    },
+    {
+      "date": "2026-11-11",
+      "time": "20:55",
+      "source": "Reuters (via Yahoo Finance)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "usd",
+        "usoil",
+        "xauusd",
+        "btcusd"
+      ],
+      "title": "Asie : Nvidia plombe les contrats à terme du Nasdaq (−0,64 %); le dollar au plus haut depuis avril 2025",
+      "title_en": "Asia: Nvidia drags Nasdaq futures (-0.64%); dollar at highest since April 2025",
+      "summary": "Pendant que le conseil de Nvidia délibère sur l’avenir de Jensen Huang, les contrats à terme du Nasdaq reculent de 0,64 % et ceux du S&P 500 de 0,33 %, alors que le Nikkei gagne 0,5 %. L’indice dollar atteint 102,87, son plus haut depuis le 9 avril 2025, et le 10 ans américain frôle 5 % (4,998 %). Les marchés évaluent à 87,3 % la probabilité d’une hausse de 25 pb de la Fed le 9 décembre; le brut recule d’environ 1 % à 85,60 $, l’or à 3 989 $ et le bitcoin vers 73 600 $.",
+      "summary_en": "As Nvidia's board deliberates on Jensen Huang's future, Nasdaq futures are down 0.64% and S&P 500 futures 0.33%, while the Nikkei gains 0.5%. The dollar index hits 102.87, its highest since April 9, 2025, and the U.S. 10-year yield nears 5% (4.998%). Markets price an 87.3% chance of a 25 bp Fed hike on December 9; crude slips about 1% to $85.60, gold to $3,989 and bitcoin to around $73,600.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-fragile-nvidia-plummets-015524144.html"
     },
     {
       "date": "2026-11-11",
