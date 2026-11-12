@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T12:36:54Z",
+ "updatedAt": "2026-11-12T13:50:00Z",
  "econ": {
   "values": {
    "gdp": {
@@ -55,9 +55,9 @@
     "d": "2026-11-06"
    },
    "claims": {
-    "a": 189,
-    "f": 196,
-    "d": "2026-11-05"
+    "a": 200,
+    "f": 195,
+    "d": "2026-11-12"
    },
    "adp": {
     "a": 86,
@@ -93,7 +93,7 @@
   "spx500": {
    "cotLong": 39,
    "cotChange": 0.87,
-   "crowdLong": 54,
+   "crowdLong": 53,
    "season": "bull",
    "seasonPct": 1.5,
    "seasonPeriod": "août à octobre"
@@ -101,7 +101,7 @@
   "us30": {
    "cotLong": 67.43,
    "cotChange": 5.3,
-   "crowdLong": 56,
+   "crowdLong": 57,
    "season": "neutral",
    "seasonPct": -1,
    "seasonPeriod": "août à octobre"
@@ -119,7 +119,7 @@
    "seasonPct": -14.8,
    "cotLong": 70.14,
    "cotChange": 1.04,
-   "crowdLong": 89,
+   "crowdLong": 88,
    "seasonPeriod": "août à octobre"
   },
   "btcusd": {
@@ -127,7 +127,7 @@
    "seasonPct": 23.3,
    "cotLong": 53.84,
    "cotChange": -0.52,
-   "crowdLong": 83,
+   "crowdLong": 82,
    "seasonPeriod": "août à octobre"
   },
   "usoil": {
@@ -160,7 +160,7 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 35.47,
    "cotChange": 0.01,
-   "crowdLong": 36
+   "crowdLong": 39
   },
   "usdcad": {
    "season": "neutral",
@@ -363,6 +363,57 @@
     "sent": 0,
     "macro": 11
    }
+  },
+  {
+   "date": "2026-11-12",
+   "xauusd": {
+    "sent": -1,
+    "macro": -9
+   },
+   "xagusd": {
+    "sent": 1,
+    "macro": -9
+   },
+   "nasdaq": {
+    "sent": -1,
+    "macro": 6
+   },
+   "spx500": {
+    "sent": 0,
+    "macro": 7
+   },
+   "us30": {
+    "sent": 2,
+    "macro": 8
+   },
+   "rut": {
+    "sent": -1,
+    "macro": 7
+   },
+   "usd": {
+    "sent": 1,
+    "macro": 9
+   },
+   "usoil": {
+    "sent": 0,
+    "macro": 9
+   },
+   "btcusd": {
+    "sent": -1,
+    "macro": 6
+   },
+   "eurusd": {
+    "sent": -3,
+    "macro": -9
+   },
+   "usdjpy": {
+    "sent": 1,
+    "macro": 9
+   },
+   "usdcad": {
+    "sent": 0,
+    "macro": 9
+   }
   }
  ],
  "calendar": [
@@ -422,7 +473,7 @@
    "time": "07:00"
   },
   {
-   "a": null,
+   "a": 200,
    "date": "2026-11-12",
    "f": 195,
    "id": "claims",
@@ -655,7 +706,7 @@
    "f": null,
    "id": "claims",
    "name": "Demandes de chômage hebdo",
-   "prev": null,
+   "prev": 200,
    "time": "08:30"
   },
   {
@@ -715,7 +766,7 @@
    "cut": 0
   },
   "prevDate": "2026-11-08",
-  "asOf": "2026-11-10",
+  "asOf": "2026-11-12",
   "events": [
    {
     "date": "2026-11-18",
@@ -726,7 +777,8 @@
     "name": "Décision + conférence de presse"
    }
   ],
-  "source": "CME FedWatch"
+  "source": "CME FedWatch",
+  "checkedAt": "2026-11-12T13:50:00Z"
  },
  "news": [
   {
