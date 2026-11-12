@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T14:53:19Z",
+ "updatedAt": "2026-11-12T15:42:44Z",
  "econ": {
   "values": {
    "gdp": {
@@ -85,7 +85,7 @@
   "nasdaq": {
    "cotLong": 65.89,
    "cotChange": -4.41,
-   "crowdLong": 67,
+   "crowdLong": 65,
    "season": "neutral",
    "seasonPct": 0.4,
    "seasonPeriod": "août à octobre"
@@ -127,7 +127,7 @@
    "seasonPct": 23.3,
    "cotLong": 53.84,
    "cotChange": -0.52,
-   "crowdLong": 82,
+   "crowdLong": 83,
    "seasonPeriod": "août à octobre"
   },
   "usoil": {
@@ -160,7 +160,7 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 35.47,
    "cotChange": 0.01,
-   "crowdLong": 39
+   "crowdLong": 36
   },
   "usdcad": {
    "season": "neutral",
