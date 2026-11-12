@@ -1010,6 +1010,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 .mhcap{display:block;font:600 10px/1.3 var(--f-mono);letter-spacing:.16em;color:var(--muted);text-transform:uppercase}
 .mhclock{display:grid;justify-items:center;gap:6px;text-align:center}
 .mhdial{width:min(100%,340px);aspect-ratio:1;margin-top:4px}
+.chfs.mhclock{align-content:center;gap:10px} .chfs.mhclock .mhdial{width:min(calc(100vh - 330px),92vw,900px)} .chfs.mhclock .mhdig{font-size:clamp(56px,8vw,110px)} .chfs.mhclock .mhdig span{font-size:.55em} .chfs.mhclock .mhcap,.chfs.mhclock .mhdate,.chfs.mhclock .mhov{font-size:clamp(12px,1.3vw,17px)}
 .mhsvg{width:100%;height:100%;display:block;overflow:visible}
 .mhsvg .od{fill:rgba(242,180,58,.35)}
 .mhsvg .sring{fill:none;stroke:rgba(255,255,255,.04);stroke-width:5}
@@ -3267,6 +3268,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
   function renderHours(){
     const box = $('p2hours'); if(!box) return;
+    const mhFs = !!document.querySelector('.chfs.mhclock'); if(mhFs) xpClose();
     const tz = USER_TZ, now = Date.now(), tp = tzParts(tz), dayStart = tzEpoch(tp.y, tp.mo, tp.d, 0, tz), dayEnd = dayStart + 864e5;
     const pct = t => Math.max(0, Math.min(100, (t-dayStart)/864e5*100));
     const st = SES.map(m=>sesState(m, now)), nLive = st.filter(x=>x.live).length, off = utcOff(tz);
@@ -3329,6 +3331,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
           ['BITCOIN', '24/7', L('plus actif pendant les heures de Wall Street','most active during Wall Street hours')]
         ].map((x,i)=>`<div class="dcell n" style="--d:${i*50}ms"><span class="dh">${esc(x[0])}</span><b>${esc(x[1])}</b><small>${esc(x[2])}</small></div>`).join('')}</div></div></div>
       <p class="src">${L('Heures officielles des bourses (heures locales). Les jours fériés ne sont pas pris en compte : vérifie le calendrier de la bourse avant un congé.','Official exchange hours (local time). Holidays are not included: check the exchange calendar before a holiday.')}</p>`;
+    if(mhFs) setTimeout(()=>{ xpScan(); const c = box.querySelector('.mhclock'); if(c) xpOpen(c); }, 0);
     state.mhDay = tp.d; tickHours._mk = null; SES.forEach(m=>{ delete box.dataset['l'+m.k]; });
     tickHours();
     if(!state.hoursTimer) state.hoursTimer = setInterval(()=>{ if(state.page==='hours' && !document.hidden) tickHours(); }, 1000);
@@ -3520,9 +3523,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
   function xpScan(){
     const sec = document.querySelector('section[data-pg]:not([hidden])'); if(!sec) return;
-    sec.querySelectorAll(XHOST).forEach(h=>{
-      if(h.closest('.chcell, .dd, .chmain')) return;
-      const panel = h.closest('.panel, .indp, .scard') || h.parentElement; if(!panel || panel.dataset.xp) return;
+    const pans = [];
+    sec.querySelectorAll(XHOST).forEach(h=>{ if(h.closest('.chcell, .dd, .chmain')) return; pans.push(h.closest('.panel, .indp, .scard') || h.parentElement); });
+    sec.querySelectorAll('.mhclock').forEach(p=>pans.push(p));
+    pans.forEach(panel=>{
+      if(!panel || panel.dataset.xp) return;
       panel.dataset.xp = '1';
       const b = document.createElement('button'); b.type = 'button'; b.className = 'xbtn'; b.textContent = '⤢'; b.title = L('Agrandir','Expand'); b.setAttribute('aria-label', L('Agrandir le graphique','Expand chart'));
       b.addEventListener('click', e=>{ e.stopPropagation(); if(panel.classList.contains('chfs')) xpClose(); else xpOpen(panel); });
