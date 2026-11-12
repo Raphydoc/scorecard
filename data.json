@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T17:43:55Z",
+ "updatedAt": "2026-11-12T18:43:26Z",
  "econ": {
   "values": {
    "gdp": {
@@ -781,6 +781,21 @@
   "checkedAt": "2026-11-12T13:50:00Z"
  },
  "news": [
+  {
+   "date": "2026-11-12",
+   "time": "12:48",
+   "source": "Reuters (via Investing.com)",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "usd"
+   ],
+   "title": "Le pétrole gagne plus de 1 $ : Trump dit ne plus avoir besoin d’un accord avec l’Iran, Ormuz toujours perturbé",
+   "title_en": "Oil gains over $1 as Trump says no Iran deal needed; Hormuz shipping still disrupted",
+   "summary": "Vers 12 h 08 (HE), le Brent gagnait 1,20 $ (1,3 %) à 93,96 $ et le WTI 53 cents (0,6 %) à 87,06 $, après un message de Trump affirmant que les États-Unis n’ont plus besoin d’accord avec l’Iran et « contrôlent leur détroit ». Les attaques contre les navires dans le détroit d’Ormuz et une frappe de drones ukrainiens sur le port russe d’Ust-Luga soutiennent les prix, même si les deux références restent en voie de recul hebdomadaire et que les stocks américains ont augmenté.",
+   "summary_en": "Around 12:08 p.m. ET, Brent rose $1.20 (1.3%) to $93.96 and WTI rose 53 cents (0.6%) to $87.06 after Trump posted that the US no longer needs a deal with Iran and has \"their Strait.\" Attacks on shipping in the Strait of Hormuz and a Ukrainian drone strike on Russia's Ust-Luga port support prices, though both benchmarks are still headed for a weekly decline and US inventories rose.",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-drop-more-than-1-as-hopes-for-iran-ukraine-peace-talks-pressure-markets-5020171"
+  },
   {
    "date": "2026-11-12",
    "time": "11:47",
