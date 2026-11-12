@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-12T19:42:32Z",
+ "updatedAt": "2026-11-12T19:43:24Z",
  "econ": {
   "values": {
    "gdp": {
@@ -782,6 +782,21 @@
  },
  "news": [
   {
+   "assets": [
+    "xauusd",
+    "usd"
+   ],
+   "date": "2026-11-12",
+   "impact": "med",
+   "source": "Yahoo Finance",
+   "summary": "Le contrat de décembre, ouvert à 3 994 $ l’once sous la barre des 4 000 $, reculait de 3,05 % à 3 878,30 $ à la mi-séance. Le rendement du 10 ans américain grimpe vers 5 % et l’outil FedWatch de la CME donnait plus tôt environ 90 % de chances d’une hausse de 25 pb les 8 et 9 décembre, ce qui renforce le dollar et pèse sur les métaux précieux.",
+   "summary_en": "December gold futures, which opened at $3,994 an ounce below the $4,000 mark, were down 3.05% at $3,878.30 at midday. The U.S. 10-year yield climbed toward 5%, and CME FedWatch earlier showed roughly a 90% chance of a 25 bp hike on Dec. 8–9, lifting the dollar and weighing on precious metals.",
+   "time": "13:05",
+   "title": "L’or chute de 3 % à 3 878 $ : la remontée des taux et les paris d’une hausse de la Fed pèsent",
+   "title_en": "Gold slides 3% to $3,878 as rising yields and Fed hike bets weigh",
+   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-midday-nov-12-180502157.html"
+  },
+  {
    "date": "2026-11-12",
    "time": "12:48",
    "source": "Reuters (via Investing.com)",
@@ -876,21 +891,6 @@
    "title": "Les titres de l’IA chutent partout alors que la crise chez Nvidia s’aggrave",
    "title_en": "Global AI stocks sink as Nvidia crisis deepens sector selloff",
    "url": "https://www.investing.com/news/stock-market-news/global-ai-stocks-sink-as-nvidia-crisis-deepens-sector-selloff-5021776"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "usd"
-   ],
-   "date": "2026-11-12",
-   "impact": "med",
-   "source": "Yahoo Finance",
-   "summary": "Le contrat de décembre a ouvert à 3 994 $ l’once (−1,2 %), sous 4 000 $ pour la première fois depuis la semaine dernière, puis a glissé vers 3 943 $ (−1,4 %). Le dollar se raffermit : l’outil FedWatch de la CME donne environ 90 % de chances d’une hausse de 25 pb aux 8 et 9 décembre, ce qui pèse sur les métaux précieux.",
-   "summary_en": "December gold futures opened at $3,994 an ounce (−1.2%), below $4,000 for the first time since last week, then slid toward $3,943 (−1.4%). The dollar is firming as CME FedWatch shows roughly a 90% chance of a 25 bp hike at the Dec. 8–9 meeting, weighing on precious metals.",
-   "time": "07:19",
-   "title": "L’or repasse sous 4 000 $ : le dollar profite des paris d’une hausse de la Fed en décembre",
-   "title_en": "Gold drops back below $4,000 as the dollar gains on December Fed hike bets",
-   "url": "https://finance.yahoo.com/personal-finance/investing/article/gold-prices-today-thursday-november-12-2026-prices-open-back-under-4000-as-rate-hikes-crystallize-121913089.html"
   },
   {
    "assets": [
