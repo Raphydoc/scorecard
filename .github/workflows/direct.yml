@@ -1,0 +1,47 @@
+name: Cours et manchettes en direct
+on:
+  schedule:
+    - cron: '11 */3 * * *'   # relance aux 3 heures; chaque passage tourne près de 6 heures (le nouveau remplace l'ancien)
+  workflow_dispatch:
+concurrency:
+  group: direct
+  cancel-in-progress: true
+permissions:
+  contents: write
+jobs:
+  direct:
+    runs-on: ubuntu-latest
+    timeout-minutes: 358
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Boucle (cours chaque minute, manchettes aux 2 minutes) → branche direct
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          mkdir pub && cd pub
+          git init -q -b direct
+          git config user.name "scorecard-direct"
+          git config user.email "actions@users.noreply.github.com"
+          git remote add origin "https://x-access-token:${GH_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          git fetch -q --depth 1 origin direct && git checkout -q origin/direct -- live.json || true
+          cd ..
+          end=$((SECONDS + 20700)); i=0
+          while [ $SECONDS -lt $end ]; do
+            start=$SECONDS
+            news=$(( i % 2 == 0 ? 1 : 0 ))
+            node tools/snap_live.mjs pub/live.json $news || true
+            if [ -f pub/live.json ]; then
+              cd pub
+              git add live.json
+              if [ $i -eq 0 ]; then git commit -q -m "Cours et manchettes en direct" || true; else git commit -q --amend -m "Cours et manchettes en direct" || true; fi
+              git push -q -f origin HEAD:direct || echo "push refusé"
+              cd ..
+            fi
+            i=$((i + 1))
+            wait=$((60 - (SECONDS - start))); [ $wait -gt 0 ] && sleep $wait
+          done
