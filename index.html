@@ -711,7 +711,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
   .mark{width:34px;height:34px;font-size:14px}
   .mark sup{font-size:8px}
   h1{font-size:15px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-  .sub{display:none} #siteUpd{display:block;font-size:11px;margin-top:1px} #siteUpd .supd{font-size:11px}
+  .sub{display:none}
   .mpg{display:block;font:700 10px/1.2 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .topbtns{gap:6px;flex:none}
   .topbtns .btn{min-width:40px;height:40px;padding:0 10px;display:grid;place-items:center}
@@ -851,6 +851,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 .supd{border:0;background:none;padding:0;color:var(--muted);font:500 12.5px/1.4 var(--f-body);text-align:left;cursor:pointer} .supd .supdk{color:var(--gold);font:700 10px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase} .supd b{color:var(--fg);font-weight:600} .supd u{color:var(--gold);text-underline-offset:2px;margin-left:4px} .supd:hover .supdt{color:var(--fg)}
 .chgi{display:grid;grid-template-columns:150px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--line)} .chgi span{font:600 11px/1.4 var(--f-mono);color:var(--gold)} .chgi p{margin:0!important;font-size:13px!important}
 @media (max-width:640px){ .supd .supdt{display:none} .chgi{grid-template-columns:1fr;gap:2px} }
+td.name small.updtag,small.updtag{display:block;font:600 9.5px/1.4 var(--f-mono);letter-spacing:.04em;color:var(--gold);opacity:.75;margin-top:2px;white-space:nowrap}
 .xbtn.inl{position:static;margin-left:8px;flex:none;align-self:center}
 .chfs .xbtn{opacity:1}
 .chfs .tradingview-widget-container,.chfs .tradingview-widget-container__widget{height:100%!important}
@@ -1172,7 +1173,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <div class="mark" aria-hidden="true">Au<sup>79</sup></div>
       <div>
         <h1>Scorecard macro</h1>
-        <p class="sub" id="siteUpd">Données US mises à jour automatiquement chaque matin de semaine.</p>
+        <p class="sub">Données US mises à jour automatiquement chaque matin de semaine.</p>
       </div>
     </div>
     <div class="topbtns"><div class="clocks" id="clocks" aria-label="Heures des marchés / Market hours"></div><button id="themeBtn" class="btn ghost" type="button" aria-label="Mode sombre" title="Mode sombre">☾</button><button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button></div>
@@ -1503,6 +1504,25 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const sg = v => (v>0?'+':'')+String(v).replace('.', isEN()?'.':',')+' %';
     return `${L('Aujourd’hui','Today')} : ${sg(T.chg)} ${L('depuis la clôture d’hier','since yesterday’s close')}, ${sg(T.vsO)} ${L('depuis l’ouverture','since the open')}`;
   }
+  // petite heure de mise à jour à côté de chaque donnée (u = moment où la donnée a changé sur le site)
+  const REL_T = {gdp:'08:30', pmi_mfg:'10:00', pmi_srv:'10:00', retail:'08:30', conf:'10:00', cpi:'08:30', ppi:'08:30', pce:'08:30', nfp:'08:30', unemp:'08:30', claims:'08:30', adp:'08:15', jolts:'10:00'};
+  function updTag(v, pre){
+    if(!v) return '';
+    let t = typeof v==='number' ? v : (/^\d{4}-\d{2}-\d{2}$/.test(v) ? null : Date.parse(v));
+    const txt = t ? new Date(t).toLocaleString(LOC(), {day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}) : new Date(v+'T12:00:00').toLocaleDateString(LOC(), {day:'numeric', month:'short'});
+    return `<small class="updtag">${esc(pre || L('MAJ','Upd.'))} ${esc(txt)}</small>`;
+  }
+  function indUpd(id, v){
+    if(v.u) return updTag(v.u);
+    if(v.d && REL_T[id] && typeof etEpoch==='function') return updTag(etEpoch(v.d, REL_T[id]), L('Publié','Released'));
+    return v.d ? updTag(v.d, L('Publié','Released')) : '';
+  }
+  function cotUpd(a){
+    const A = state.assets[a]||{}; if(A.uCot) return updTag(A.uCot);
+    const rows = ((state.live||{}).cot||{})[a]; const d = rows && rows.length && rows[rows.length-1][0];
+    if(!d) return ''; const fri = new Date(d+'T12:00:00'); fri.setDate(fri.getDate()+3);
+    return updTag(typeof etEpoch==='function' ? etEpoch(fri.toISOString().slice(0,10), '15:30') : fri.toISOString().slice(0,10), L('Publié','Released'));
+  }
   function triSelect(id, cur){
     return `<select id="${id}" data-field="${id}">${opt('bull',cur,'Haussière')}${opt('neutral',cur,'Neutre')}${opt('bear',cur,'Baissière')}</select>`;
   }
@@ -1515,14 +1535,15 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     let h = '';
 
     h += head('Technique', catChip(C.cats.tech,3), ['','','','']);
-    h += `<tr><td class="name">Tendance de la journée</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
+    const AS0 = autoSrc(), atT = state.live2 && state.live2.tr && AS0.tr===state.live2.tr ? state.live2.asOf : (state.mk||{}).asOf;
+    h += `<tr><td class="name">Tendance de la journée${updTag(atT)}</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
       <td class="desc" colspan="4">${autoTrendTxt(asset)}</td></tr>`;
-    h += `<tr><td class="name">Saisonnalité (3 derniers mois)</td><td class="sig" data-dd="top|${asset}|season">${chip(r.season)}</td>
+    h += `<tr><td class="name">Saisonnalité (3 derniers mois)${A.uSeason?updTag(A.uSeason):state.econ.seasonMonth?updTag(state.econ.seasonMonth+'-01'):''}</td><td class="sig" data-dd="top|${asset}|season">${chip(r.season)}</td>
       <td class="desc" colspan="4">${A.seasonPct!=null&&A.seasonPct!==undefined ? 'Variation '+(A.seasonPeriod?'de '+esc(A.seasonPeriod):'des 3 derniers mois')+' : '+(A.seasonPct>0?'+':'')+String(A.seasonPct).replace('.',',').replace('-','−')+' % (plus de +1 % = +1, moins de −1 % = −1). Mise à jour chaque mois.' : 'Variation des 3 derniers mois complets, mise à jour chaque mois (±1).'}</td></tr>`;
 
     h += head('Activité institutionnelle', catChip(C.cats.inst,2), ['Long %','Short %','Changement %','']);
     const cl = num(A.cotLong);
-    h += `<tr><td class="name">COT · positionnement net<small>non-commerciaux</small></td><td class="sig" data-dd="top|${asset}|cot">${cl===null?chip(null):chip(r.cotNet)}</td>
+    h += `<tr><td class="name">COT · positionnement net<small>non-commerciaux</small>${cotUpd(asset)}</td><td class="sig" data-dd="top|${asset}|cot">${cl===null?chip(null):chip(r.cotNet)}</td>
       <td class="num">${false?numInput('in-cotLong',A.cotLong,'min="0" max="100"'):fmt(cl,'%')}</td>
       <td class="num">${cl===null?'—':fmt(100-cl,'%')}</td><td class="num"></td><td></td></tr>`;
     const cc = num(A.cotChange);
@@ -1532,7 +1553,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
     h += head('Sentiment de la foule', catChip(C.cats.crowd,2), ['Retail long %','Retail short %','','']);
     const cr = num(A.crowdLong);
-    h += `<tr><td class="name">Positionnement retail<small>clients d\u2019IG · contrarien : foule très longue = baissier</small></td><td class="sig" data-dd="top|${asset}|crowd">${cr===null?chip(null):chip(r.crowd)}</td>
+    h += `<tr><td class="name">Positionnement retail<small>clients d\u2019IG · contrarien : foule très longue = baissier</small>${updTag(A.uCrowd || state.econ.updatedAt)}</td><td class="sig" data-dd="top|${asset}|crowd">${cr===null?chip(null):chip(r.crowd)}</td>
       <td class="num">${false?numInput('in-crowdLong',A.crowdLong,'min="0" max="100"'):fmt(cr,'%')}</td>
       <td class="num">${cr===null?'—':fmt(100-cr,'%')}</td><td></td><td></td></tr>`;
 
@@ -1545,7 +1566,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         const a = num(v.a), f = num(v.f), s = (a!==null && f!==null) ? Math.round((a-f)*10000)/10000 : null;
         const sig = r[ind.id];
         const sc = sig>0?'pos':sig<0?'neg':'';
-        h += `<tr${wOf(asset,ind.id)===0?' class="muted"':''}><td class="name">${esc(((state.econ.values||{})[ind.id]||{}).label||ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${wOf(asset,ind.id)===0?` <span class="info">info seulement</span>`:''}${(((state.econ.values||{})[ind.id]||{}).note)?`<small>${esc(state.econ.values[ind.id].note)}</small>`:(ind.hint?`<small>${ind.hint}</small>`:'')}</td><td class="sig" data-dd="top|${asset}|${ind.id}">${chip(sig)}</td>
+        h += `<tr${wOf(asset,ind.id)===0?' class="muted"':''}><td class="name">${esc(((state.econ.values||{})[ind.id]||{}).label||ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${wOf(asset,ind.id)===0?` <span class="info">info seulement</span>`:''}${(((state.econ.values||{})[ind.id]||{}).note)?`<small>${esc(state.econ.values[ind.id].note)}</small>`:(ind.hint?`<small>${ind.hint}</small>`:'')}${indUpd(ind.id, v)}</td><td class="sig" data-dd="top|${asset}|${ind.id}">${chip(sig)}</td>
           <td class="num">${false?numInput('a-'+ind.id,v.a):fmt(a,ind.unit)}</td>
           <td class="num">${false?numInput('f-'+ind.id,v.f):fmt(f,ind.unit)}</td>
           <td class="num ${sc}">${false?'':fmt(s,ind.unit,true)}</td>
@@ -1553,7 +1574,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       });
       if(cat==='infl'){
         const y10 = state.econ.yield10y;
-        h += `<tr><td class="name">Rendement 10 ans (aujourd’hui)${wOf(asset,'yield10')>1?` <span class="wt">×${wOf(asset,'yield10')}</span>`:''}</td><td class="sig" data-dd="top|${asset}|yield10">${chip(r.yield10)}</td>
+        const ytT = state.live2 && state.live2.y10 && autoSrc().y10===state.live2.y10 ? state.live2.asOf : (state.mk && state.mk.y10 ? state.mk.asOf : state.econ.updatedAt);
+        h += `<tr><td class="name">Rendement 10 ans (aujourd’hui)${wOf(asset,'yield10')>1?` <span class="wt">×${wOf(asset,'yield10')}</span>`:''}${updTag(ytT)}</td><td class="sig" data-dd="top|${asset}|yield10">${chip(r.yield10)}</td>
           <td class="desc" colspan="4">${E&&EDIT10?`<select id="in-yield10">${opt('falling',y10,'En baisse')}${opt('flat',y10,'Stable')}${opt('rising',y10,'En hausse')}</select>`
           : (y10==='falling'?'Le 10 ans baisse : taux réels et dollar sous pression':y10==='rising'?'Le 10 ans monte : coût d’opportunité plus élevé pour l’or':y10==='flat'?'Le 10 ans est stable':'Pas encore de donnée')}</td></tr>`;
       }
@@ -3610,35 +3632,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       const ph = panel.querySelector(':scope > .ph'); if(ph){ b.classList.add('inl'); ph.appendChild(b); } else panel.appendChild(b);
     });
   }
-  // ---------- Dernière mise à jour du site (journal des changements, le plus récent en premier) ----------
-  const CHANGES = [
-    ['2026-11-13T10:50', 'Nouvelle info en haut du site : la dernière mise à jour du site et ce qui a changé (clique pour voir l’historique)', 'New info at the top of the site: the last site update and what changed (click for the history)'],
-    ['2026-11-13T10:37', 'Fil en direct : la télé du terminal joue avec le son et n’est plus rechargée pendant les mises à jour', 'Live feed: terminal TV plays with sound and no longer reloads during updates'],
-    ['2026-11-13T10:27', 'Résultats : le verdict se base sur la surprise des revenus; colonne Surprise à la place de Réaction', 'Earnings: the verdict uses the revenue surprise; Surprise column replaces Reaction'],
-    ['2026-11-12T20:52', 'Tendance et taux 10 ans de la journée (au-dessus de l’ouverture et de la clôture d’hier), environ chaque minute', 'Today’s trend and 10-year yield (vs the open and yesterday’s close), about every minute'],
-    ['2026-11-12T19:36', 'Ajout de GBP/USD, AUD/USD, USD/CHF et NZD/USD au scorecard', 'Added GBP/USD, AUD/USD, USD/CHF and NZD/USD to the scorecard'],
-    ['2026-11-12T17:32', 'Tendance automatique : plus besoin de la remplir toi-même', 'Automatic trend: no need to fill it in yourself'],
-    ['2026-11-12T09:36', 'Surveillance des marchés et Fil en direct : mises à jour environ chaque minute', 'Market watch and live feed: updates about every minute'],
-    ['2026-11-11T19:41', 'Heures des marchés : bouton pour mettre l’horloge en grand', 'Market hours: button to show the clock full screen'],
-    ['2026-11-11T19:03', 'Graphiques plus grands et bouton ⤢ pour agrandir tous les graphiques du site', 'Bigger charts and a ⤢ button to expand every chart on the site'],
-    ['2026-11-11T18:51', 'Menu et pages traduits en français (anglais avec le bouton EN)', 'Menu and pages translated to French (English with the EN button)'],
-    ['2026-11-11T18:28', 'Retrait d’Alfred, Track Record et Risk Calculator', 'Removed Alfred, Track Record and Risk Calculator'],
-    ['2026-11-11T17:14', 'Nouvelles pages façon Trade Sider : Graphiques, Récap des sessions, Recherche bancaire, Fil en direct, Positions des banques, Sentiment de risque, Surveillance des marchés, Indicateurs, Liquidité', 'New Trade Sider–style pages: Charts, Session recap, Bank research, Live feed, Bank positioning, Risk sentiment, Market watch, Indicators, Liquidity'],
-    ['2026-11-11T16:23', 'Heures des marchés : heures officielles des 4 grandes bourses', 'Market hours: official hours of the 4 major exchanges'],
-    ['2026-11-11T15:14', 'Bande de prix en direct en haut du site (TradingView, thème noir)', 'Live price strip at the top of the site (TradingView, dark theme)'],
-    ['2026-11-11T11:00', 'Site plus rapide et plus léger, sans rien enlever', 'Faster and lighter site, nothing removed']
-  ];
-  function chgWhen(iso){ return new Date(iso).toLocaleString(LOC(), {weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'}); }
-  function renderSiteUpd(){
-    const el = $('siteUpd'); if(!el || !CHANGES.length) return;
-    const c = CHANGES[0];
-    el.innerHTML = `<button type="button" class="supd" id="supdBtn"><span class="supdk">${L('Dernière mise à jour du site','Last site update')}</span> <b>${esc(chgWhen(c[0]))}</b> · <span class="supdt">${esc(isEN()?c[2]:c[1])}</span> <u>${L('historique','history')}</u></button>`;
-    $('supdBtn').addEventListener('click', ()=>ddHtml(`<div class="ddh"><span class="vk">${L('JOURNAL DES CHANGEMENTS','CHANGELOG')}</span><h3>${L('Mises à jour du site','Site updates')}</h3></div>
-      <div class="ddsec">${CHANGES.map(x=>`<div class="chgi"><span>${esc(chgWhen(x[0]))}</span><p>${esc(isEN()?x[2]:x[1])}</p></div>`).join('')}</div>
-      <p class="ddsrc">${L('Les données (prix, nouvelles, scores) se mettent à jour toutes seules; ce journal montre les changements faits au site lui-même.','Data (prices, news, scores) update on their own; this log shows changes made to the site itself.')}</p>`));
-  }
-  setTimeout(renderSiteUpd, 0);
-  (function(){ const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(renderSiteUpd, 80)); })();
   // ---------- « Mis à jour » sur chaque graphique : moment de la dernière mise à jour des données ----------
   function updSrc(pg){
     const mk = state.mk||{}, lv = state.live||{};
@@ -3655,6 +3648,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const d = new Date(v); if(isNaN(d)) return '';
     return d.toLocaleString(LOC(), {weekday:'short', day:'numeric', month:'short', hour:'2-digit', minute:'2-digit'});
   }
+  setInterval(()=>updScan(), 30000);
   function updScan(){
     const sec = document.querySelector('section[data-pg]:not([hidden])'); if(!sec) return;
     const pg = sec.dataset.pg, base = updFmt(updSrc(pg));
@@ -3663,15 +3657,15 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     document.querySelectorAll('.chfs').forEach(pn=>pans.add(pn));
     pans.forEach(pn=>{
       const tv = pn.querySelector('.tvbox') && !pn.querySelector('canvas, svg.gauge, .lwc, .liqc, .indc');
-      const txt = tv ? L('En direct · TradingView','Live · TradingView') : base ? L('Mis à jour : ','Updated: ')+base : '';
+      const txt = tv ? L('En direct · TradingView','Live · TradingView') : base ? L('Graphique mis à jour : ','Chart updated: ')+base : '';
       let el = pn.querySelector(':scope > .updt, :scope > .ph .updt');
       if(!txt){ if(el) el.remove(); return; }
       if(!el){ el = document.createElement('span'); el.className = 'updt'; const ph = pn.querySelector(':scope > .ph'); if(ph){ const xb = ph.querySelector('.xbtn'); xb ? ph.insertBefore(el, xb) : ph.appendChild(el); } else pn.appendChild(el); }
       if(el.textContent!==txt) el.textContent = txt;
     });
   }
-  (function(){ let t = null; const mo = new MutationObserver(recs=>{ if(!recs.some(r=>[...r.addedNodes].some(n=>n.nodeType===1))) return; clearTimeout(t); t = setTimeout(xpScan, 250); });
-    const w = document.querySelector('.wrap'); if(w) mo.observe(w, {childList:true, subtree:true}); setTimeout(xpScan, 800); })();
+  (function(){ let t = null; const mo = new MutationObserver(recs=>{ if(!recs.some(r=>[...r.addedNodes].some(n=>n.nodeType===1))) return; clearTimeout(t); t = setTimeout(()=>{ xpScan(); updScan(); }, 250); });
+    const w = document.querySelector('.wrap'); if(w) mo.observe(w, {childList:true, subtree:true}); setTimeout(()=>{ xpScan(); updScan(); }, 800); })();
   document.addEventListener('keydown', e=>{ if(e.key==='Escape' && document.querySelector('.chfs')) xpClose(); });
 
   // ---------- Markets Watch ----------
@@ -4235,7 +4229,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function localTech(){ try{ return JSON.parse(localStorage.getItem(TKEY)||'null')||{}; }catch(e){ return {}; } }
   function apply(d){
     const t = localTech();
-    state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(state.mk&&state.mk.y10&&state.mk.y10.dir)||(d.econ||{}).yield10y||null, updatedAt:d.updatedAt||null};
+    state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(state.mk&&state.mk.y10&&state.mk.y10.dir)||(d.econ||{}).yield10y||null, seasonMonth:(d.econ||{}).seasonMonth||null, updatedAt:d.updatedAt||null};
     Object.keys(ASSETS).forEach(k=>{
       state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), trend:(state.mk && state.mk.trend && state.mk.trend[k] && state.mk.trend[k].t) || ((t[k]||{}).trend) || 'neutral'};
     });
