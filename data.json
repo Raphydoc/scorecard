@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T18:43:04Z",
+ "updatedAt": "2026-11-13T19:47:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -80,7 +80,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 84.33,
    "cotChange": -1.39,
-   "crowdLong": 80
+   "crowdLong": 79,
+   "uCrowd": "2026-11-13T19:47:00Z"
   },
   "nasdaq": {
    "season": "neutral",
