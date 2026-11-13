@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T00:42:51Z",
+  "updatedAt": "2026-11-13T01:42:11Z",
   "econ": {
     "values": {
       "gdp": {
@@ -813,6 +813,23 @@
     "checkedAt": "2026-11-12T13:50:00Z"
   },
   "news": [
+    {
+      "date": "2026-11-12",
+      "time": "19:39",
+      "source": "Yahoo Finance (Investing.com)",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30",
+        "rut"
+      ],
+      "title": "Les contrats à terme américains remontent après la séance plombée par Nvidia; Cerebras bondit de 17 % hors séance",
+      "title_en": "U.S. stock futures rise after Nvidia CEO exit spooks Wall Street; Cerebras jumps 17% after hours",
+      "summary": "Jeudi soir, les contrats à terme du S&P 500 gagnaient 0,2 % (7 630), ceux du Nasdaq 100 0,3 % et ceux du Dow 0,08 %. Nvidia, qui avait perdu plus de 4 % en séance après le départ de Jensen Huang, reprenait 0,8 % hors séance, et Cerebras s'envolait de 17 % grâce à des revenus et des prévisions supérieurs aux attentes et à une entente avec Microsoft. Le S&P 500 et le Nasdaq restent en voie d'un gain hebdomadaire d'environ 3 %, malgré les attentes d'une hausse de taux de la Fed en décembre.",
+      "summary_en": "On Thursday evening, S&P 500 futures rose 0.2% (7,630), Nasdaq 100 futures 0.3% and Dow futures 0.08%. Nvidia, which fell more than 4% in the session after Jensen Huang's exit, gained 0.8% after hours, while Cerebras jumped 17% on better-than-expected revenue and guidance plus a new Microsoft deal. The S&P 500 and Nasdaq remain on track for weekly gains of about 3%, despite expectations of a Fed rate hike in December.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-rise-nvidia-003952316.html"
+    },
     {
       "date": "2026-11-12",
       "time": "16:43",
