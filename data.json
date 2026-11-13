@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T15:27:41Z",
+ "updatedAt": "2026-11-13T15:37:30Z",
  "econ": {
   "values": {
    "adp": {
@@ -911,25 +911,57 @@
  },
  "news": [
   {
+   "assets": [
+    "spx500",
+    "nasdaq",
+    "us30",
+    "rut",
+    "btcusd"
+   ],
    "date": "2026-11-13",
-   "time": "06:15",
-   "source": "CoinDesk",
    "impact": "med",
+   "source": "Yahoo Finance",
+   "summary": "Après une ouverture en hausse de 0,4 % pour le Dow et le S&P 500, le S&P 500 glisse de 0,12 % et le Nasdaq de 0,39 %, tandis que le Dow gagne 0,23 % et que le Russell 2000 perd 1,66 %. Nvidia, qui avait d'abord monté d'environ 2 %, recule de 1,5 % et les puces poursuivent leur repli; le 10 ans est à 5,16 % et le bitcoin tourne autour de 68 800 $.",
+   "summary_en": "After the Dow and S&P 500 opened up 0.4%, the S&P 500 slipped 0.12% and the Nasdaq 0.39%, while the Dow gained 0.23% and the Russell 2000 lost 1.66%. Nvidia, initially up about 2%, fell 1.5% as chipmakers extended losses; the 10-year yield stood at 5.16% and bitcoin hovered near $68,800.",
+   "time": "10:30",
+   "title": "Le S&P 500 et le Nasdaq virent au rouge malgré un IPP plus doux que prévu; Nvidia recule",
+   "title_en": "S&P 500, Nasdaq turn lower as wholesale inflation rises; Nvidia falls",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+  },
+  {
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd",
+    "spx500",
+    "nasdaq"
+   ],
+   "date": "2026-11-13",
+   "impact": "high",
+   "source": "Kitco",
+   "summary": "Les prix à la production américains ont monté de 0,3 % en octobre, sous les 0,4 % attendus, après un septembre révisé à 1,4 %; la hausse annuelle atteint 6,5 %, du jamais vu depuis novembre 2022, et l'indice de base progresse de 0,5 %. Avant le chiffre, les contrats à terme donnaient environ 89 % de chances d'une hausse de 25 points de base par la Fed les 8 et 9 décembre. L'or rebondit de 0,39 % à environ 3 891 $ après un creux de plus d'un an, l'argent est stable près de 49,96 $ et le DXY reste au-dessus de 103.",
+   "summary_en": "US producer prices rose 0.3% in October, below the 0.4% expected, after September was revised to 1.4%; the annual rate hit 6.5%, the highest since November 2022, and core rose 0.5%. Before the release, futures implied about an 89% chance of a 25-basis-point Fed hike on Dec. 8-9. Gold rebounded 0.39% to about $3,891 after a more-than-one-year low, silver was flat near $49.96 and the dollar index stayed above 103.",
+   "time": "08:57",
+   "title": "IPP d'octobre : +0,3 % sur un mois (0,4 % attendu), mais 6,5 % sur un an, un sommet depuis 2022; l'or rebondit",
+   "title_en": "October PPI: +0.3% m/m (0.4% expected) but 6.5% y/y, highest since 2022; gold rebounds",
+   "url": "https://www.kitco.com/news/article/2026-11-13/gold-rebounds-13-month-low-ppi-complicates-fed-outlook-kitco-am-report"
+  },
+  {
    "assets": [
     "btcusd",
     "usd"
    ],
-   "title": "Le bitcoin tombe jusqu'à 67 652 $, sous sa moyenne mobile de 200 semaines; le DXY dépasse 103",
-   "title_en": "Bitcoin drops as low as $67,652, below its 200-week moving average; DXY tops 103",
+   "date": "2026-11-13",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin a glissé jusqu'à 67 652 $, en baisse de plus de 3,5 % en 24 h, passant sous sa moyenne mobile de 200 semaines (environ 68 000 $); il recule de 16 % sur un mois. Le taux de financement moyen des contrats perpétuels est devenu négatif pour la première fois en un mois, selon Glassnode. La vigueur du dollar (DXY au-dessus de 103) et le 10 ans américain à 5,125 % pèsent sur les actifs risqués.",
    "summary_en": "Bitcoin slid as low as $67,652, down more than 3.5% in 24 hours, falling below its 200-week moving average (around $68,000); it is down 16% over the past month. Average perpetual funding rates turned negative for the first time in a month, per Glassnode. Dollar strength (DXY above 103) and the U.S. 10-year yield at 5.125% are weighing on risk assets.",
+   "time": "06:15",
+   "title": "Le bitcoin tombe jusqu'à 67 652 $, sous sa moyenne mobile de 200 semaines; le DXY dépasse 103",
+   "title_en": "Bitcoin drops as low as $67,652, below its 200-week moving average; DXY tops 103",
    "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets"
   },
   {
-   "date": "2026-11-13",
-   "time": "06:01",
-   "source": "Yahoo Finance",
-   "impact": "med",
    "assets": [
     "spx500",
     "nasdaq",
@@ -937,25 +969,29 @@
     "rut",
     "usd"
    ],
-   "title": "Contrats à terme stables avant l'IPP d'octobre; le 10 ans reste à 5,10 %",
-   "title_en": "Futures steady ahead of October PPI; 10-year yield holds at 5.10%",
+   "date": "2026-11-13",
+   "impact": "med",
+   "source": "Yahoo Finance",
    "summary": "Vendredi matin, les contrats à terme du Dow gagnaient 0,2 % et ceux du S&P 500 0,1 %, tandis que le Nasdaq 100 était presque inchangé. L'indice des prix à la production d'octobre est attendu à +0,4 % (base +0,3 %), après +1,3 % (base +0,7 %) le mois précédent. Le 10 ans américain se maintient à 5,10 %, son plus haut depuis octobre, alors que les courtiers misent sur une possible hausse de taux de la Fed en décembre.",
    "summary_en": "On Friday morning, Dow futures rose 0.2% and S&P 500 futures 0.1%, while Nasdaq 100 futures were near flat. October producer prices are expected to rise 0.4% (core +0.3%) after +1.3% (core +0.7%) the prior month. The U.S. 10-year yield holds at 5.10%, its highest since October, as traders price in a possible Fed rate hike in December.",
+   "time": "06:01",
+   "title": "Contrats à terme stables avant l'IPP d'octobre; le 10 ans reste à 5,10 %",
+   "title_en": "Futures steady ahead of October PPI; 10-year yield holds at 5.10%",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-110151154.html"
   },
   {
-   "date": "2026-11-13",
-   "time": "04:35",
-   "source": "Yahoo Finance (Investing.com)",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Applied Materials vise environ 11,10 G$ de revenus au 1er trimestre, au-dessus des attentes",
-   "title_en": "Applied Materials guides fiscal Q1 revenue to about $11.10B, above estimates",
+   "date": "2026-11-13",
+   "impact": "med",
+   "source": "Yahoo Finance (Investing.com)",
    "summary": "Applied Materials prévoit des revenus d'environ 11,10 G$ (±500 M$) pour son 1er trimestre fiscal, contre 10,89 G$ attendus; le bénéfice ajusté du 4e trimestre atteint 4,16 $ par action et les revenus des systèmes de semi-conducteurs bondissent de 64 % à 8 G$. L'action reculait légèrement hors séance, mais gagne plus de 41 % cette année. Les contrats à terme du Nasdaq 100 perdaient 0,3 % vers 3 h, toujours pénalisés par l'éviction de Jensen Huang chez Nvidia.",
    "summary_en": "Applied Materials expects fiscal Q1 revenue of about $11.10 billion (±$500 million) versus $10.89 billion expected; Q4 adjusted profit was $4.16 per share and semiconductor systems revenue rose 64% to $8 billion. Shares were slightly lower after hours but are up more than 41% this year. Nasdaq 100 futures were down 0.3% around 3 a.m. ET, still weighed by Jensen Huang's ouster at Nvidia.",
+   "time": "04:35",
+   "title": "Applied Materials vise environ 11,10 G$ de revenus au 1er trimestre, au-dessus des attentes",
+   "title_en": "Applied Materials guides fiscal Q1 revenue to about $11.10B, above estimates",
    "url": "https://finance.yahoo.com/markets/stocks/articles/huang-ouster-fallout-cisco-applied-093548568.html"
   },
   {
@@ -1539,38 +1575,6 @@
    "title": "Fed de New York : les attentes d’inflation restent stables, les craintes de chômage au plus haut depuis avril 2020",
    "title_en": "New York Fed: inflation expectations steady, unemployment fears highest since April 2020",
    "url": "https://www.newyorkfed.org/newsevents/news/research/2026/20261109"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "usd"
-   ],
-   "date": "2026-11-08",
-   "impact": "high",
-   "source": "Reuters (via Investing.com)",
-   "summary": "Le Nasdaq a terminé la semaine près de 12 % sous son record du 6 octobre, après une journée où le secteur tech du S&P 500 a chuté de 7,3 %. Les investisseurs craignent que les victoires démocrates aux élections de mi-mandat ralentissent la construction de centres de données IA. Le CPI d’octobre, mardi, sera décisif pour une hausse de taux en décembre.",
-   "summary_en": "The Nasdaq ended the week nearly 12% below its Oct. 6 record after a day in which the S&P 500 tech sector fell 7.3%. Investors fear Democratic midterm wins could slow AI data-center construction. Tuesday’s October CPI will be key for a December rate hike.",
-   "time": "08:59",
-   "title": "La chute de la tech secoue Wall Street; l’inflation américaine arrive mardi",
-   "title_en": "Tech swoon roils Wall Street; US inflation data due Tuesday",
-   "url": "https://www.investing.com/news/stock-market-news/as-tech-swoon-roils-market-us-inflation-data-on-tap-5010231"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "date": "2026-11-06",
-   "impact": "high",
-   "source": "Yahoo Finance",
-   "summary": "Vendredi, le Nasdaq a gagné 1,09 % (24 579), le S&P 500 0,31 % (7 377) et le Dow a perdu 0,46 % (51 286). Sur la semaine, le S&P 500 a connu sa pire performance depuis juin : le secteur technologique a reculé de 7 % et l’énergie de 11 %.",
-   "summary_en": "On Friday the Nasdaq rose 1.09% (24,579), the S&P 500 0.31% (7,377) and the Dow fell 0.46% (51,286). For the week, the S&P 500 had its worst performance since June: tech fell 7% and energy 11%.",
-   "time": "16:00",
-   "title": "Le Nasdaq et le S&P 500 rebondissent, le Dow recule après une semaine difficile pour l’IA",
-   "title_en": "Nasdaq and S&P 500 rebound, Dow slips after a bruising week for AI stocks",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
   }
  ],
  "live": {
