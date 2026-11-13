@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T15:19:03.232448Z",
+ "updatedAt": "2026-11-13T15:23:40.014029Z",
  "econ": {
   "values": {
    "adp": {
@@ -621,12 +621,12 @@
    "move": 13,
    "name": "Résultats Cerebras (CBRS)",
    "note": "Après la clôture",
-   "revA": 0.2108,
+   "revA": 0.2309,
    "revF": 0.2147,
    "time": "16:05",
-   "guide": null,
-   "guideTxt": "T4 : 310–330 M$ (consensus non trouvé)",
-   "guideTxt_en": "Q4: $310–330M (consensus not found)"
+   "guide": "above",
+   "guideTxt": "T4 : 310–330 M$ vs 271 M$ attendu (revenus « core »)",
+   "guideTxt_en": "Q4: $310–330M vs $271M expected (core revenue)"
   },
   {
    "a": 0.3,
