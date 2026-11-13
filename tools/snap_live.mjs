@@ -39,6 +39,16 @@ function dayStats(rows) {
   return {o: cur[0][1], px: cur[cur.length - 1][4], pc: before[before.length - 1][4]};
 }
 
+// Semaine de bourse : du dimanche 17 h au vendredi 17 h (heure de New York). Ouverture = 1re barre de la semaine, clôture de la semaine passée = dernière barre avant.
+function weekStats(rows) {
+  if (!rows || rows.length < 2) return null;
+  const wk = t => { const d = new Date(NYD.format(new Date((t + 7 * 3600) * 1000)) + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7)); return d.toISOString().slice(0, 10); };
+  const last = wk(rows[rows.length - 1][0]);
+  const cur = rows.filter(r => wk(r[0]) === last), before = rows.filter(r => wk(r[0]) < last);
+  if (!cur.length || !before.length) return null;
+  return {o: cur[0][1], px: cur[cur.length - 1][4], pc: before[before.length - 1][4], wk: last};
+}
+
 // ---------- cours ----------
 const q = Object.assign({}, prev.q || {});
 async function quoteChart(sym) {
@@ -57,10 +67,10 @@ syms.forEach((s, i) => { const m = metas[i]; if (!m) return; ok++;
   const p = m.regularMarketPrice, pc = m.chartPreviousClose ?? m.previousClose ?? lastClose[s];
   q[s] = [+p.toFixed(dp(p)), pc ? +((p / pc - 1) * 100).toFixed(2) : null, (m.regularMarketTime || 0) * 1000]; });
 console.error('cours', ok, '/', syms.length);
-// tendance de la journée : haussière si le prix est au-dessus de l'ouverture du jour ET de la clôture d'hier, baissière s'il est en dessous des deux
+// tendance de la SEMAINE (Top Setups, scorecard) : haussière si le prix est au-dessus de l'ouverture de la semaine ET de la clôture de la semaine passée, baissière s'il est en dessous des deux; le taux 10 ans reste sur la journée
 async function bars5(sym) {
   for (const host of ['query1', 'query2']) {
-    const j = await getJSON(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=5d&interval=5m&includePrePost=false`);
+    const j = await getJSON(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=${sym === '^TNX' ? '5d&interval=5m' : '1mo&interval=60m'}&includePrePost=false`);
     const r = j && j.chart && j.chart.result && j.chart.result[0]; if (!r || !r.timestamp) continue;
     const qq = r.indicators.quote[0], out = []; r.timestamp.forEach((t, i) => { if (qq.close[i] != null && qq.open[i] != null) out.push([t, qq.open[i], 0, 0, qq.close[i]]); });
     if (out.length) return out;
@@ -70,7 +80,7 @@ async function bars5(sym) {
 const trSyms = Object.entries(AS).concat([['__y10', '^TNX']]);
 const trBars = await pool(trSyms, ([, s]) => bars5(s), 6);
 const tr = Object.assign({}, prev.tr || {}); let y10 = prev.y10 || null;
-trSyms.forEach(([k], i) => { const D = dayStats(trBars[i]); if (!D) return;
+trSyms.forEach(([k], i) => { const D = k === '__y10' ? dayStats(trBars[i]) : weekStats(trBars[i]); if (!D) return;
   const {o, px, pc} = D;
   if (k === '__y10') { const ch = Math.round((px - pc) * 1000) / 1000; y10 = {px: +px.toFixed(3), pc: +pc.toFixed(3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; return; }
   tr[k] = {t: px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral', px: +px.toFixed(dp(px)), o: +o.toFixed(dp(px)), pc: +pc.toFixed(dp(px)), chg: +((px / pc - 1) * 100).toFixed(2), vsO: +((px / o - 1) * 100).toFixed(2)}; });

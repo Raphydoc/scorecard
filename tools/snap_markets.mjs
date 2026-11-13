@@ -27,6 +27,15 @@ function dayStats(rows) {
   if (!cur.length || !before.length) return null;
   return {o: cur[0][1], px: cur[cur.length - 1][4], pc: before[before.length - 1][4]};
 }
+// Semaine de bourse : du dimanche 17 h au vendredi 17 h (heure de New York). Ouverture = 1re barre de la semaine, clôture de la semaine passée = dernière barre avant.
+function weekStats(rows) {
+  if (!rows || rows.length < 2) return null;
+  const wk = t => { const d = new Date(NYD.format(new Date((t + 7 * 3600) * 1000)) + 'T12:00:00Z'); d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7)); return d.toISOString().slice(0, 10); };
+  const last = wk(rows[rows.length - 1][0]);
+  const cur = rows.filter(r => wk(r[0]) === last), before = rows.filter(r => wk(r[0]) < last);
+  if (!cur.length || !before.length) return null;
+  return {o: cur[0][1], px: cur[cur.length - 1][4], pc: before[before.length - 1][4], wk: last};
+}
 // rows: [epochSec, o, h, l, c]
 async function chart(sym, range, interval) {
   for (const host of ['query1', 'query2']) {
@@ -186,11 +195,12 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
   });
   console.error('ohlc', Object.keys(O.d1).length, Object.keys(O.h1).length);
 
-  // ---------- Tendance automatique de la JOURNÉE (case « Tendance » du scorecard, ±2) ----------
-  // Haussière si le prix est au-dessus de l'ouverture du jour ET de la clôture d'hier; baissière s'il est en dessous des deux; sinon neutre.
+  // ---------- Tendance automatique de la SEMAINE (case « Tendance » du scorecard, ±2) ----------
+  // Haussière si le prix est au-dessus de l'ouverture de la semaine ET de la clôture de la semaine passée; baissière s'il est en dessous des deux; sinon neutre.
   M.trend = {};
   const b5 = await pool(Object.entries(A).concat([['__y10', '^TNX']]), async ([k, s]) => [k, await chart(s, '5d', '5m')]);
-  b5.forEach(([k, c]) => { const D = dayStats(c && c.rows); if (!D) return; const {o, px, pc} = D;
+  const hMap = Object.fromEntries(ores.map(([k, , h]) => [k, h]));
+  b5.forEach(([k, c]) => { const D = k === '__y10' ? dayStats(c && c.rows) : weekStats((hMap[k] || {}).rows); if (!D) return; const {o, px, pc} = D;
     if (k === '__y10') { const ch = Math.round((px - pc) * 1000) / 1000; M.y10 = {px: r2(px, 3), pc: r2(pc, 3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; return; }
     M.trend[k] = {t: px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral', px: r2(px, dp(px)), o: r2(o, dp(px)), pc: r2(pc, dp(px)), chg: r2((px / pc - 1) * 100, 2), vsO: r2((px / o - 1) * 100, 2)}; });
   console.error('tendances', Object.entries(M.trend).map(([k, v]) => k + ':' + v.t).join(' '), '10 ans', M.y10 && M.y10.dir);
