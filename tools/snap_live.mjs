@@ -8,7 +8,9 @@ const UA = {'User-Agent': 'Mozilla/5.0 (scorecard-macro; GitHub Actions)', 'Acce
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 let prev = {}; try { prev = JSON.parse(fs.readFileSync(OUT, 'utf8')); } catch (e) {}
 let M = {}; try { M = JSON.parse(fs.readFileSync('markets.json', 'utf8')); } catch (e) {}
-const syms = [...new Set(Object.values(M.watch || {}).flat().map(x => x.s))];
+// les 16 actifs du scorecard (tendance de la journée) et le taux 10 ans
+const AS = {xauusd: 'GC=F', xagusd: 'SI=F', nasdaq: '^NDX', spx500: '^GSPC', us30: '^DJI', rut: '^RUT', usd: 'DX-Y.NYB', usoil: 'CL=F', btcusd: 'BTC-USD', eurusd: 'EURUSD=X', usdjpy: 'JPY=X', usdcad: 'CAD=X', gbpusd: 'GBPUSD=X', audusd: 'AUDUSD=X', usdchf: 'CHF=X', nzdusd: 'NZDUSD=X'};
+const syms = [...new Set(Object.values(M.watch || {}).flat().map(x => x.s).concat(Object.values(AS), ['^TNX']))];
 
 async function getJSON(url) {
   try { const r = await fetch(url, {headers: UA, signal: AbortSignal.timeout(8000)}); if (r.ok) return r.json(); console.error('HTTP', r.status, url.slice(0, 90)); } catch (e) { console.error('err', e.message, url.slice(0, 90)); }
@@ -30,8 +32,8 @@ const q = Object.assign({}, prev.q || {});
 async function quoteChart(sym) {
   for (const host of ['query1', 'query2']) {
     const j = await getJSON(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=1d&interval=5m&includePrePost=false`);
-    const m = j && j.chart && j.chart.result && j.chart.result[0] && j.chart.result[0].meta;
-    if (m && m.regularMarketPrice != null) return m;
+    const res = j && j.chart && j.chart.result && j.chart.result[0], m = res && res.meta;
+    if (m && m.regularMarketPrice != null) { const op = ((res.indicators || {}).quote || [{}])[0].open || []; m._open = op.find(x => x != null); return m; }
   }
   return null;
 }
@@ -43,6 +45,12 @@ syms.forEach((s, i) => { const m = metas[i]; if (!m) return; ok++;
   const p = m.regularMarketPrice, pc = m.chartPreviousClose ?? m.previousClose ?? lastClose[s];
   q[s] = [+p.toFixed(dp(p)), pc ? +((p / pc - 1) * 100).toFixed(2) : null, (m.regularMarketTime || 0) * 1000]; });
 console.error('cours', ok, '/', syms.length);
+// tendance de la journée : haussière si le prix est au-dessus de l'ouverture du jour ET de la clôture d'hier, baissière s'il est en dessous des deux
+const tr = Object.assign({}, prev.tr || {});
+Object.entries(AS).forEach(([k, s]) => { const m = metas[syms.indexOf(s)]; if (!m) return;
+  const px = m.regularMarketPrice, o = m._open, pc = m.chartPreviousClose ?? m.previousClose; if (o == null || pc == null) return;
+  tr[k] = {t: px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral', px: +px.toFixed(dp(px)), o: +o.toFixed(dp(px)), pc: +pc.toFixed(dp(px)), chg: +((px / pc - 1) * 100).toFixed(2), vsO: +((px / o - 1) * 100).toFixed(2)}; });
+let y10 = prev.y10 || null; { const m = metas[syms.indexOf('^TNX')]; if (m) { const px = m.regularMarketPrice, pc = m.chartPreviousClose ?? m.previousClose; if (pc != null) { const ch = Math.round((px - pc) * 1000) / 1000; y10 = {px: +px.toFixed(3), pc: +pc.toFixed(3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; } } }
 
 // ---------- manchettes ----------
 let news = (prev.news || []).slice();
@@ -87,5 +95,5 @@ if (NEWS === '1') {
   console.error('manchettes', news.length);
 }
 
-const out = {asOf: new Date().toISOString(), q, news};
+const out = {asOf: new Date().toISOString(), q, news, tr, y10};
 if (ok || news.length) fs.writeFileSync(OUT, JSON.stringify(out));

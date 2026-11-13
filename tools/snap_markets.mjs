@@ -175,25 +175,21 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
   });
   console.error('ohlc', Object.keys(O.d1).length, Object.keys(O.h1).length);
 
-  // ---------- Tendance automatique (case « Tendance 4H / journalier » du scorecard, ±2) ----------
-  // Pour chaque unité de temps : haussière si clôture > MME 20 > MME 50, baissière si clôture < MME 20 < MME 50, sinon neutre.
-  // Tendance de l'actif : haussière si le journalier ET le 4H sont haussiers, baissière si les deux sont baissiers, sinon neutre.
-  const ema = (c, n) => { const k = 2 / (n + 1); let e = c[0]; return c.map(x => (e = x * k + e * (1 - k))); };
-  const tf = rows => {
-    if (!rows || rows.length < 60) return null;
-    const c = rows.map(r => r[4]), e20 = ema(c, 20), e50 = ema(c, 50), i = c.length - 1;
-    const t = c[i] > e20[i] && e20[i] > e50[i] ? 'bull' : c[i] < e20[i] && e20[i] < e50[i] ? 'bear' : 'neutral';
-    return {t, px: r2(c[i], dp(c[i])), e20: r2(e20[i], dp(c[i])), e50: r2(e50[i], dp(c[i]))};
+  // ---------- Tendance automatique de la JOURNÉE (case « Tendance » du scorecard, ±2) ----------
+  // Haussière si le prix est au-dessus de l'ouverture du jour ET de la clôture d'hier; baissière s'il est en dessous des deux; sinon neutre.
+  const dayTrend = rows => {
+    if (!rows || rows.length < 2) return null;
+    const t = rows[rows.length - 1], px = t[4], o = t[1], pc = rows[rows.length - 2][4];
+    const tr = px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral';
+    return {t: tr, px: r2(px, dp(px)), o: r2(o, dp(px)), pc: r2(pc, dp(px)), chg: r2((px / pc - 1) * 100, 2), vsO: r2((px / o - 1) * 100, 2)};
   };
-  const to4h = rows => { const g = new Map(); (rows || []).forEach(r => { const b = Math.floor(r[0] / 14400) * 14400, x = g.get(b);
-    if (!x) g.set(b, [b, r[1], r[2], r[3], r[4]]); else { x[2] = Math.max(x[2], r[2]); x[3] = Math.min(x[3], r[3]); x[4] = r[4]; } }); return [...g.values()]; };
   M.trend = {};
-  const h3 = Object.fromEntries(await pool(Object.entries(A), async ([k, s]) => [k, await chart(s, '3mo', '60m')]));  // 3 mois d'heures : assez de barres 4H pour la MME 50, même pour les indices
-  ores.forEach(([k, d, h]) => {
-    const D = tf(d && d.rows), H = tf(to4h((h3[k] || h || {}).rows)); if (!D || !H) return;
-    M.trend[k] = {t: D.t === H.t ? D.t : 'neutral', d1: D, h4: H};
-  });
-  console.error('tendances', Object.entries(M.trend).map(([k, v]) => k + ':' + v.t).join(' '));
+  ores.forEach(([k, d]) => { const D = dayTrend(d && d.rows); if (D) M.trend[k] = D; });
+  // Taux 10 ans du JOUR : en hausse si au moins +0,01 point depuis la clôture d'hier, en baisse si au moins −0,01, sinon stable.
+  const tnx = await chart('^TNX', '5d', '1d');
+  if (tnx && tnx.rows.length >= 2) { const r = tnx.rows, px = r[r.length - 1][4], pc = r[r.length - 2][4], ch = Math.round((px - pc) * 1000) / 1000;
+    M.y10 = {px: r2(px, 3), pc: r2(pc, 3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; }
+  console.error('tendances', Object.entries(M.trend).map(([k, v]) => k + ':' + v.t).join(' '), '10 ans', M.y10 && M.y10.dir);
 
   fs.writeFileSync(OUT_M, JSON.stringify(M));
   fs.writeFileSync(OUT_O, JSON.stringify(O));

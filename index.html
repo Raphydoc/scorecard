@@ -1251,12 +1251,12 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
       <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
       <li><strong>Dollar US (DXY) :</strong> toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.</li>
-      <li><strong>Technique :</strong> tendance 4H/journalier ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
-      <li>Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
+      <li><strong>Technique :</strong> tendance de la journée ±2 (au-dessus de l’ouverture et de la clôture d’hier = +2, en dessous des deux = −2), saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
+      <li>Rendement 10 ans (direction de la journée, depuis la clôture d'hier) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.</li>
       <li>Total de −max à +max (le max dépend de l'actif, environ ±24 à ±27) : 4 à 9 = haussier/baissier, 10 et plus = très haussier/très baissier, de −3 à +3 = neutre.</li>
     </ul>
-    <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
+    <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. La tendance de la journée et le taux 10 ans se calculent tout seuls (environ chaque minute). Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
 
 
@@ -1492,9 +1492,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   // ---------- table ----------
   const opt = (val, cur, txt) => `<option value="${val}"${val===cur?' selected':''}>${txt}</option>`;
   function autoTrendTxt(a){
-    const T = state.mk && state.mk.trend && state.mk.trend[a]; if(!T) return L('Automatique (4H et journalier) · calcul en cours','Automatic (4H and daily) · loading');
-    const w = t => t==='bull'?L('haussier','bullish'):t==='bear'?L('baissier','bearish'):L('neutre','neutral');
-    return `${L('Automatique','Automatic')} · ${L('journalier','daily')} ${w(T.d1.t)} · 4H ${w(T.h4.t)} · ${L('MME 20/50, chaque heure','EMA 20/50, hourly')}`;
+    const A = autoSrc(), T = A.tr && A.tr[a]; if(!T || T.chg==null) return L('Automatique (journée) · calcul en cours','Automatic (today) · loading');
+    const sg = v => (v>0?'+':'')+String(v).replace('.', isEN()?'.':',')+' %';
+    return `${L('Aujourd’hui','Today')} : ${sg(T.chg)} ${L('depuis la clôture d’hier','since yesterday’s close')}, ${sg(T.vsO)} ${L('depuis l’ouverture','since the open')}`;
   }
   function triSelect(id, cur){
     return `<select id="${id}" data-field="${id}">${opt('bull',cur,'Haussière')}${opt('neutral',cur,'Neutre')}${opt('bear',cur,'Baissière')}</select>`;
@@ -1508,7 +1508,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     let h = '';
 
     h += head('Technique', catChip(C.cats.tech,3), ['','','','']);
-    h += `<tr><td class="name">Tendance 4H / journalier</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
+    h += `<tr><td class="name">Tendance de la journée</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
       <td class="desc" colspan="4">${autoTrendTxt(asset)}</td></tr>`;
     h += `<tr><td class="name">Saisonnalité (3 derniers mois)</td><td class="sig" data-dd="top|${asset}|season">${chip(r.season)}</td>
       <td class="desc" colspan="4">${A.seasonPct!=null&&A.seasonPct!==undefined ? 'Variation '+(A.seasonPeriod?'de '+esc(A.seasonPeriod):'des 3 derniers mois')+' : '+(A.seasonPct>0?'+':'')+String(A.seasonPct).replace('.',',').replace('-','−')+' % (plus de +1 % = +1, moins de −1 % = −1). Mise à jour chaque mois.' : 'Variation des 3 derniers mois complets, mise à jour chaque mois (±1).'}</td></tr>`;
@@ -1546,7 +1546,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       });
       if(cat==='infl'){
         const y10 = state.econ.yield10y;
-        h += `<tr><td class="name">Rendement 10 ans (tendance)${wOf(asset,'yield10')>1?` <span class="wt">×${wOf(asset,'yield10')}</span>`:''}</td><td class="sig" data-dd="top|${asset}|yield10">${chip(r.yield10)}</td>
+        h += `<tr><td class="name">Rendement 10 ans (aujourd’hui)${wOf(asset,'yield10')>1?` <span class="wt">×${wOf(asset,'yield10')}</span>`:''}</td><td class="sig" data-dd="top|${asset}|yield10">${chip(r.yield10)}</td>
           <td class="desc" colspan="4">${E&&EDIT10?`<select id="in-yield10">${opt('falling',y10,'En baisse')}${opt('flat',y10,'Stable')}${opt('rising',y10,'En hausse')}</select>`
           : (y10==='falling'?'Le 10 ans baisse : taux réels et dollar sous pression':y10==='rising'?'Le 10 ans monte : coût d’opportunité plus élevé pour l’or':y10==='flat'?'Le 10 ans est stable':'Pas encore de donnée')}</td></tr>`;
       }
@@ -2840,11 +2840,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const C = compute(a), A = state.assets[a]||{}, r = C.rows;
     const pts = k==='cot' ? r.cotNet + r.cotChg : k==='yield10' ? (r.yield10||0)*wOf(a,'yield10') : (r[k]||0);
     let title = '', rows = '', txt = '', extra = '';
-    if(k==='trend'){ title = L('Tendance 4H / journalier (automatique)','4H / daily trend (automatic)'); rows = ddRow(L('Tendance','Trend'), A.trend==='bull'?L('Haussière','Bullish'):A.trend==='bear'?L('Baissière','Bearish'):L('Neutre','Neutral'));
-      const AT = state.mk && state.mk.trend && state.mk.trend[a], tw2 = t => t==='bull'?L('Haussière','Bullish'):t==='bear'?L('Baissière','Bearish'):L('Neutre','Neutral');
-      if(AT) rows += ddRow(L('Journalier','Daily'), `${tw2(AT.d1.t)} · ${pxFmt(AT.d1.px)} / MME20 ${pxFmt(AT.d1.e20)} / MME50 ${pxFmt(AT.d1.e50)}`) + ddRow('4H', `${tw2(AT.h4.t)} · ${pxFmt(AT.h4.px)} / MME20 ${pxFmt(AT.h4.e20)} / MME50 ${pxFmt(AT.h4.e50)}`);
+    if(k==='trend'){ title = L('Tendance de la journée (automatique)','Today’s trend (automatic)'); rows = ddRow(L('Tendance','Trend'), A.trend==='bull'?L('Haussière','Bullish'):A.trend==='bear'?L('Baissière','Bearish'):L('Neutre','Neutral'));
+      const AS2 = autoSrc(), AT = AS2.tr && AS2.tr[a];
+      if(AT && AT.chg!=null) rows += ddRow(L('Prix','Price'), pxFmt(AT.px)) + ddRow(L('Clôture d’hier','Yesterday’s close'), `${pxFmt(AT.pc)} (${sg2(AT.chg,2)} %)`, AT.chg>0?'pos':AT.chg<0?'neg':'') + ddRow(L('Ouverture du jour','Today’s open'), `${pxFmt(AT.o)} (${sg2(AT.vsO,2)} %)`, AT.vsO>0?'pos':AT.vsO<0?'neg':'');
       const t = ((state.tech||{}).assets||{})[a]; if(t) rows += ddRow(L('Tendance calculée (prix)','Computed trend (price)'), tw('trend',t.trend).t) + ddRow('MM200', `${pxFmt(t.sma200)} (${sg2(t.d200,1)} %)`);
-      txt = L('Calculée automatiquement chaque heure. Pour chaque unité de temps (journalier et 4H) : haussière si le prix est au-dessus de sa moyenne mobile exponentielle 20, elle-même au-dessus de la MME 50; baissière si c’est l’inverse; sinon neutre. Si le journalier et le 4H sont d’accord, la tendance prend cette direction (±2 dans le score); sinon elle est neutre (0).', 'Computed automatically every hour. For each timeframe (daily and 4H): bullish when price is above its 20 exponential moving average, itself above the 50 EMA; bearish when the opposite; otherwise neutral. When daily and 4H agree, the trend takes that direction (±2 in the score); otherwise it is neutral (0).');
+      txt = L('Calculée automatiquement environ chaque minute sur ta page GitHub (chaque heure dans la version Claude), pour la journée seulement : haussière (+2) si le prix est au-dessus de l’ouverture du jour ET de la clôture d’hier, baissière (−2) s’il est en dessous des deux, sinon neutre (0).', 'Computed automatically about every minute on your GitHub page (hourly in the Claude version), for today only: bullish (+2) when price is above today’s open AND yesterday’s close, bearish (−2) when below both, otherwise neutral (0).');
       extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="tech">${L('Heatmap technique','Technical heatmap')}</button></div>`; }
     if(k==='season'){ title = L('Saisonnalité (3 derniers mois)','Seasonality (last 3 months)'); rows = ddRow(L('Période','Period'), esc(A.seasonPeriod||'—')) + ddRow(L('Variation','Change'), A.seasonPct!=null?sg2(A.seasonPct,1)+' %':'—', A.seasonPct>0?'pos':A.seasonPct<0?'neg':'');
       txt = L(`Si ${AN(a)} a monté de plus de 1 % sur les 3 derniers mois, c’est +1 (la tendance récente est ton amie); s’il a baissé de plus de 1 %, c’est −1.`, `If ${AN(a)} rose more than 1% over the last 3 months it is +1 (the recent trend is your friend); if it fell more than 1%, −1.`);
@@ -2859,7 +2859,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       txt = L('Signal contrarien : les petits traders ont souvent tort aux extrêmes. 60 % ou plus acheteurs = −1 (le marché a tendance à aller contre eux). 40 % ou moins = +1. Entre les deux = 0.', 'Contrarian signal: small traders are often wrong at extremes. 60% or more long = −1 (the market tends to go against them). 40% or less = +1. In between = 0.');
       extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="sent">${L('Page Sentiment','Sentiment page')}</button></div>`; }
     if(k==='yield10'){ title = L('Taux américain à 10 ans','US 10-year yield'); const y = state.econ.yield10y, y10 = ((state.live||{}).rates||{}).y10||[];
-      rows = ddRow(L('Tendance sur 1 mois','1-month trend'), y==='rising'?L('En hausse','Rising'):y==='falling'?L('En baisse','Falling'):L('Stable','Flat')) + (y10.length?ddRow(L('Dernier niveau','Latest level'), nf(y10[y10.length-1][1],2)+' %'):'') + ddRow(L('Poids','Weight'), '×'+wOf(a,'yield10'));
+      const YD = autoSrc().y10;
+      rows = ddRow(L('Aujourd’hui','Today'), y==='rising'?L('En hausse','Rising'):y==='falling'?L('En baisse','Falling'):L('Stable','Flat')) + (YD ? ddRow(L('Niveau','Level'), nf(YD.px,3)+' %') + ddRow(L('Clôture d’hier','Yesterday’s close'), `${nf(YD.pc,3)} % (${YD.chg>0?'+':''}${nf(YD.chg,3)} pt)`) : (y10.length?ddRow(L('Dernier niveau','Latest level'), nf(y10[y10.length-1][1],2)+' %'):'')) + ddRow(L('Poids','Weight'), '×'+wOf(a,'yield10')) + ddRow(L('Règle','Rule'), L('±0,01 point depuis la clôture d’hier','±0.01 pt since yesterday’s close'));
       txt = y==='flat'||!y ? L('Le 10 ans est stable : pas d’effet sur le score.','The 10-year is flat: no effect on the score.') : explainEffect(a, 'y10', y==='rising');
       extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="fed">${L('Page Taux','Rates page')}</button></div>`; }
     ddAllKey = x2 => `top|${x2}|${k}`;
@@ -3447,15 +3448,22 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     M.liveAsOf = L2.asOf; return M;
   }
   // tendance automatique (4H + journalier, MME 20/50) calculée chaque heure par tools/snap_markets.mjs
+  // tendance et taux 10 ans de la JOURNÉE : la donnée la plus récente entre markets.json (chaque heure) et live.json (chaque minute)
+  function autoSrc(){
+    const L2 = state.live2, M = state.mk;
+    const lt = L2 && L2.tr && Date.parse(L2.asOf), mt = M && M.trend && Date.parse(M.asOf);
+    return {tr: (lt && (!mt || lt >= mt)) ? L2.tr : (M && M.trend) || null, y10: (L2 && L2.y10 && (!mt || lt >= mt)) ? L2.y10 : (M && M.y10) || null};
+  }
   function applyAutoTrend(){
-    const T = state.mk && state.mk.trend; if(!T) return false; let ch = false;
-    Object.keys(ASSETS).forEach(k=>{ const v = T[k] && T[k].t; if(v && state.assets[k] && state.assets[k].trend!==v){ state.assets[k].trend = v; ch = true; } });
+    const A = autoSrc(); let ch = false;
+    if(A.tr) Object.keys(ASSETS).forEach(k=>{ const v = A.tr[k] && A.tr[k].t; if(v && state.assets[k] && state.assets[k].trend!==v){ state.assets[k].trend = v; ch = true; } });
+    if(A.y10 && A.y10.dir && state.econ && state.econ.yield10y!==A.y10.dir){ state.econ.yield10y = A.y10.dir; ch = true; }
     return ch;
   }
   const mkData = async () => { const M = liveOverlay(await getJSON('markets.json', 'mk')); if(applyAutoTrend()) setTimeout(renderAll, 0); return M; };
   setTimeout(()=>{ mkData(); }, 400);
   async function pullLive(){
-    if(document.hidden || !['watch','squawk','home'].includes(state.page)) return;
+    if(document.hidden || !['watch','squawk','home','score','top','fund'].includes(state.page)) return;
     try{
       let j = null; const base = Math.floor((Date.now()-70e3)/6e4);
       for(let k=0; k<5 && !j; k++){ const key = new Date((base-k)*6e4).toISOString().slice(0,16).replace(/[-:T]/g,'');
@@ -3463,11 +3471,12 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         try{ const r = await fetch(LIVE_BASE+key+'.json'); if(r.ok){ j = await r.json(); j._key = key; } }catch(e){} }
       if(!j || !j.asOf || (state.live2 && state.live2.asOf===j.asOf)) return;
       state.live2 = j;
+      if(applyAutoTrend() && ['score','top','fund','home'].includes(state.page) && !state.edit && !document.querySelector('.dd.open, .chfs')){ renderAll(); return; }
       const ae = document.activeElement;
       if((state.page==='watch' || state.page==='squawk') && !(ae && ae.id==='mwQ') && !document.querySelector('.dd.open, .chfs')){ state.noAnim = true; renderP2(); }
     }catch(e){}
   }
-  setInterval(pullLive, 15000); document.addEventListener('visibilitychange', pullLive);
+  setInterval(pullLive, 15000); document.addEventListener('visibilitychange', pullLive); setTimeout(pullLive, 1200);
   const ohlcData = () => getJSON('ohlc.json', 'ohlc');
   setInterval(()=>{ if(document.hidden) return; delete state._pmk; delete state._pohlc; if(location.protocol.startsWith('http') && !state.fromDb){ state.mk = null; state.ohlc = null; } }, 30*60e3);
   const FLAG = cc => cc && cc.length===2 && cc!=='EU' ? String.fromCodePoint(...[...cc.toUpperCase()].map(c=>0x1F1A5+c.charCodeAt(0))) : cc==='EU' ? '🇪🇺' : '';
@@ -4146,7 +4155,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function localTech(){ try{ return JSON.parse(localStorage.getItem(TKEY)||'null')||{}; }catch(e){ return {}; } }
   function apply(d){
     const t = localTech();
-    state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(d.econ||{}).yield10y||null, updatedAt:d.updatedAt||null};
+    state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(state.mk&&state.mk.y10&&state.mk.y10.dir)||(d.econ||{}).yield10y||null, updatedAt:d.updatedAt||null};
     Object.keys(ASSETS).forEach(k=>{
       state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), trend:(state.mk && state.mk.trend && state.mk.trend[k] && state.mk.trend[k].t) || ((t[k]||{}).trend) || 'neutral'};
     });
@@ -4183,7 +4192,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 (function(){
   const D = {
     'Importance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). Clique une donnée pour son détail. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 (“All” shows the highest weight). Click a release for details. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.',
-    'Tendance 4H / journalier':'4H / daily trend','Ta lecture de la tendance sur le 4H et le journalier (±2)':'Your read of the 4H and daily trend (±2)',
+    'Tendance 4H / journalier':'4H / daily trend','Tendance de la journée':'Today’s trend','Ta lecture de la tendance sur le 4H et le journalier (±2)':'Your read of the 4H and daily trend (±2)',
     // en-tête et navigation
     'Scorecard macro':'Macro Scorecard',
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
@@ -4231,7 +4240,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'ADP emploi':'ADP employment','JOLTS (postes à pourvoir)':'JOLTS (job openings)',
     'Croissance des bénéfices des géants tech':'Big Tech earnings growth','Mag 7, trimestre en cours : réel vs prévu':'Mag 7, current quarter: actual vs expected',
     'plus haut = dollar faible':'higher = weaker dollar',
-    'Rendement 10 ans (tendance)':'10-year yield (trend)','En baisse':'Falling','Stable':'Flat','En hausse':'Rising',
+    'Rendement 10 ans (tendance)':'10-year yield (trend)','Rendement 10 ans (aujourd’hui)':'10-year yield (today)','En baisse':'Falling','Stable':'Flat','En hausse':'Rising',
     'Le 10 ans baisse : taux réels et dollar sous pression':'The 10-year is falling: real yields and the dollar under pressure',
     'Le 10 ans monte : coût d’opportunité plus élevé pour l’or':'The 10-year is rising: higher opportunity cost for gold',
     'Le 10 ans est stable':'The 10-year is flat',
@@ -4249,14 +4258,14 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.':'any stronger-than-expected data (growth, jobs or inflation) = +1, because it pushes the Fed to keep rates high; rising 10-year = +1. Crowd sentiment: inverse of IG clients on EUR/USD.',
     '(Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.':'(Nasdaq only): better than expected = +1, worse = −1.',
     'Technique :':'Technical:',
-    'tendance 4H/journalier ±2, saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1).':'4H/Daily trend ±2, seasonality ±1 (change over the last 3 full months: above +1% = +1, below −1% = −1).',
+    'tendance de la journée ±2 (au-dessus de l’ouverture et de la clôture d’hier = +2, en dessous des deux = −2), saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1).':'today’s trend ±2 (above the open and yesterday’s close = +2, below both = −2), seasonality ±1 (change over the last 3 full months: above +1% = +1, below −1% = −1).',
     'Sentiment :':'Sentiment:',
     'COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.':'COT net long above 50% = +1, rising COT = +1, retail crowd 60% long or more = −1 (contrarian), 40% or less = +1.',
-    'Rendement 10 ans (tendance sur environ un mois) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (trend over about a month): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
+    'Rendement 10 ans (direction de la journée, depuis la clôture d\'hier) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (today’s direction, since yesterday’s close): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
     'Poids :':'Weights:',
     'les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.':'the most important data for each asset count more (×2, shown next to the name); the rest count ×1, so each item is worth at most ±2. Example: CPI is ×2 for every asset, Big Tech earnings ×2 for the Nasdaq.',
     'Total de −max à +max (le max dépend de l\'actif, environ ±24 à ±27) : 4 à 9 = haussier/baissier, 10 et plus = très haussier/très baissier, de −3 à +3 = neutre.':'Total from −max to +max (depends on the asset, about ±24 to ±27): 4 to 9 = bullish/bearish, 10 or more = very bullish/very bearish, −3 to +3 = neutral.',
-    'Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. Ta tendance 4H/Daily est gardée dans ce navigateur. Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Economic data, COT and retail sentiment update automatically. Seasonality (last 3 months) updates itself at the start of each month. Your 4H/Daily trend is saved in this browser. Information only: this is not a buy or sell signal.',
+    'Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. La tendance de la journée et le taux 10 ans se calculent tout seuls (environ chaque minute). Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Economic data, COT and retail sentiment update automatically. Seasonality (last 3 months) updates itself at the start of each month. Today’s trend and the 10-year yield are computed automatically (about every minute). Information only: this is not a buy or sell signal.',
     'Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Information only: this is not a buy or sell signal.',
     // Top Setups
     'Tes actifs classés du score le plus haut au plus bas · chaque case = points ajoutés au score (poids inclus)':'Your assets ranked from highest to lowest score · each cell = points added to the score (weights included)',
