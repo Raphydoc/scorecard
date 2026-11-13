@@ -27,13 +27,25 @@ async function pool(items, fn, n = 6) {
 }
 const dp = v => Math.abs(v) < 2 ? 5 : Math.abs(v) < 20 ? 4 : Math.abs(v) < 1000 ? 2 : 1;
 
+// Journée de bourse : la journée se termine à 17 h (heure de New York), comme le forex et les contrats à terme.
+// Les barres de 5 minutes sont regroupées par journée; ouverture = 1re barre de la journée en cours, clôture d'hier = dernière barre de la journée précédente.
+const NYD = new Intl.DateTimeFormat('en-CA', {timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit'});
+function dayStats(rows) {
+  if (!rows || rows.length < 2) return null;
+  const key = t => NYD.format(new Date((t + 7 * 3600) * 1000));
+  const last = key(rows[rows.length - 1][0]);
+  const cur = rows.filter(r => key(r[0]) === last), before = rows.filter(r => key(r[0]) < last);
+  if (!cur.length || !before.length) return null;
+  return {o: cur[0][1], px: cur[cur.length - 1][4], pc: before[before.length - 1][4]};
+}
+
 // ---------- cours ----------
 const q = Object.assign({}, prev.q || {});
 async function quoteChart(sym) {
   for (const host of ['query1', 'query2']) {
     const j = await getJSON(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=1d&interval=5m&includePrePost=false`);
     const res = j && j.chart && j.chart.result && j.chart.result[0], m = res && res.meta;
-    if (m && m.regularMarketPrice != null) { const op = ((res.indicators || {}).quote || [{}])[0].open || []; m._open = op.find(x => x != null); return m; }
+    if (m && m.regularMarketPrice != null) return m;
   }
   return null;
 }
@@ -46,11 +58,23 @@ syms.forEach((s, i) => { const m = metas[i]; if (!m) return; ok++;
   q[s] = [+p.toFixed(dp(p)), pc ? +((p / pc - 1) * 100).toFixed(2) : null, (m.regularMarketTime || 0) * 1000]; });
 console.error('cours', ok, '/', syms.length);
 // tendance de la journée : haussière si le prix est au-dessus de l'ouverture du jour ET de la clôture d'hier, baissière s'il est en dessous des deux
-const tr = Object.assign({}, prev.tr || {});
-Object.entries(AS).forEach(([k, s]) => { const m = metas[syms.indexOf(s)]; if (!m) return;
-  const px = m.regularMarketPrice, o = m._open, pc = m.chartPreviousClose ?? m.previousClose; if (o == null || pc == null) return;
+async function bars5(sym) {
+  for (const host of ['query1', 'query2']) {
+    const j = await getJSON(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=5d&interval=5m&includePrePost=false`);
+    const r = j && j.chart && j.chart.result && j.chart.result[0]; if (!r || !r.timestamp) continue;
+    const qq = r.indicators.quote[0], out = []; r.timestamp.forEach((t, i) => { if (qq.close[i] != null && qq.open[i] != null) out.push([t, qq.open[i], 0, 0, qq.close[i]]); });
+    if (out.length) return out;
+  }
+  return null;
+}
+const trSyms = Object.entries(AS).concat([['__y10', '^TNX']]);
+const trBars = await pool(trSyms, ([, s]) => bars5(s), 6);
+const tr = Object.assign({}, prev.tr || {}); let y10 = prev.y10 || null;
+trSyms.forEach(([k], i) => { const D = dayStats(trBars[i]); if (!D) return;
+  const {o, px, pc} = D;
+  if (k === '__y10') { const ch = Math.round((px - pc) * 1000) / 1000; y10 = {px: +px.toFixed(3), pc: +pc.toFixed(3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; return; }
   tr[k] = {t: px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral', px: +px.toFixed(dp(px)), o: +o.toFixed(dp(px)), pc: +pc.toFixed(dp(px)), chg: +((px / pc - 1) * 100).toFixed(2), vsO: +((px / o - 1) * 100).toFixed(2)}; });
-let y10 = prev.y10 || null; { const m = metas[syms.indexOf('^TNX')]; if (m) { const px = m.regularMarketPrice, pc = m.chartPreviousClose ?? m.previousClose; if (pc != null) { const ch = Math.round((px - pc) * 1000) / 1000; y10 = {px: +px.toFixed(3), pc: +pc.toFixed(3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; } } }
+console.error('tendances', Object.keys(tr).length, '10 ans', y10 && y10.dir);
 
 // ---------- manchettes ----------
 let news = (prev.news || []).slice();

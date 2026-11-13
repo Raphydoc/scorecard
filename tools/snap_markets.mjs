@@ -16,6 +16,17 @@ async function get(url) {
   }
   return null;
 }
+// Journée de bourse : la journée se termine à 17 h (heure de New York), comme le forex et les contrats à terme.
+// Les barres de 5 minutes sont regroupées par journée; ouverture = 1re barre de la journée en cours, clôture d'hier = dernière barre de la journée précédente.
+const NYD = new Intl.DateTimeFormat('en-CA', {timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit'});
+function dayStats(rows) {
+  if (!rows || rows.length < 2) return null;
+  const key = t => NYD.format(new Date((t + 7 * 3600) * 1000));
+  const last = key(rows[rows.length - 1][0]);
+  const cur = rows.filter(r => key(r[0]) === last), before = rows.filter(r => key(r[0]) < last);
+  if (!cur.length || !before.length) return null;
+  return {o: cur[0][1], px: cur[cur.length - 1][4], pc: before[before.length - 1][4]};
+}
 // rows: [epochSec, o, h, l, c]
 async function chart(sym, range, interval) {
   for (const host of ['query1', 'query2']) {
@@ -177,18 +188,11 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
 
   // ---------- Tendance automatique de la JOURNÉE (case « Tendance » du scorecard, ±2) ----------
   // Haussière si le prix est au-dessus de l'ouverture du jour ET de la clôture d'hier; baissière s'il est en dessous des deux; sinon neutre.
-  const dayTrend = rows => {
-    if (!rows || rows.length < 2) return null;
-    const t = rows[rows.length - 1], px = t[4], o = t[1], pc = rows[rows.length - 2][4];
-    const tr = px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral';
-    return {t: tr, px: r2(px, dp(px)), o: r2(o, dp(px)), pc: r2(pc, dp(px)), chg: r2((px / pc - 1) * 100, 2), vsO: r2((px / o - 1) * 100, 2)};
-  };
   M.trend = {};
-  ores.forEach(([k, d]) => { const D = dayTrend(d && d.rows); if (D) M.trend[k] = D; });
-  // Taux 10 ans du JOUR : en hausse si au moins +0,01 point depuis la clôture d'hier, en baisse si au moins −0,01, sinon stable.
-  const tnx = await chart('^TNX', '5d', '1d');
-  if (tnx && tnx.rows.length >= 2) { const r = tnx.rows, px = r[r.length - 1][4], pc = r[r.length - 2][4], ch = Math.round((px - pc) * 1000) / 1000;
-    M.y10 = {px: r2(px, 3), pc: r2(pc, 3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; }
+  const b5 = await pool(Object.entries(A).concat([['__y10', '^TNX']]), async ([k, s]) => [k, await chart(s, '5d', '5m')]);
+  b5.forEach(([k, c]) => { const D = dayStats(c && c.rows); if (!D) return; const {o, px, pc} = D;
+    if (k === '__y10') { const ch = Math.round((px - pc) * 1000) / 1000; M.y10 = {px: r2(px, 3), pc: r2(pc, 3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; return; }
+    M.trend[k] = {t: px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral', px: r2(px, dp(px)), o: r2(o, dp(px)), pc: r2(pc, dp(px)), chg: r2((px / pc - 1) * 100, 2), vsO: r2((px / o - 1) * 100, 2)}; });
   console.error('tendances', Object.entries(M.trend).map(([k, v]) => k + ':' + v.t).join(' '), '10 ans', M.y10 && M.y10.dir);
 
   fs.writeFileSync(OUT_M, JSON.stringify(M));
