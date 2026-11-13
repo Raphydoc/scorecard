@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T06:44:31Z",
+  "updatedAt": "2026-11-13T07:11:19Z",
   "econ": {
     "values": {
       "gdp": {
@@ -33409,8 +33409,44 @@
     }
   },
   "ts": {
-    "asOf": "2026-11-12T22:19:34Z",
+    "asOf": "2026-11-13T07:11:19Z",
     "recaps": [
+      {
+        "date": "2026-11-13",
+        "session": "tok",
+        "title": "Le bitcoin casse les 70 000 $ et le yen flirte avec 160 pendant que Tokyo grimpe",
+        "title_en": "Bitcoin breaks below $70,000 and the yen flirts with 160 as Tokyo climbs",
+        "body": "La séance asiatique a été mitigée au lendemain de la démission de Jensen Huang chez Nvidia : le Nikkei a gagné 0,8 % à 61 283 et le Taiex 1,7 %, mais le Hang Seng (−0,9 %), le Kospi (−0,5 %) et l’ASX 200 (−0,7 %) ont reculé. Les paris d’une hausse de taux de la Fed en décembre ont gardé l’indice du dollar près de 103,2, un sommet depuis avril 2025, et le dollar a fini la séance à 160,13 yens (+0,16 %), malgré la ministre des Finances Satsuki Katayama qui promet de « réagir de façon appropriée » à la volatilité. Le bitcoin a chuté de 4,21 % sous 70 000 $, à son plus bas depuis août, déclenchant plus de 1,3 milliard $ de liquidations selon Coinglass. L’or a repris 0,44 % vers 3 900 $ après un creux de plus d’un an, tandis que le pétrole a peu bougé.",
+        "body_en": "The Asian session was mixed the day after Jensen Huang’s resignation at Nvidia: the Nikkei gained 0.8% to 61,283 and the Taiex 1.7%, but the Hang Seng (−0.9%), Kospi (−0.5%) and ASX 200 (−0.7%) fell. Bets on a December Fed rate hike kept the dollar index near 103.2, its highest since April 2025, and the dollar ended the session at 160.13 yen (+0.16%), even as Finance Minister Satsuki Katayama vowed to “respond appropriately” to currency volatility. Bitcoin slid 4.21% below $70,000 to its lowest since August, triggering more than $1.3 billion in liquidations according to Coinglass. Gold recovered 0.44% toward $3,900 after a more-than-one-year low, while oil barely moved.",
+        "sections": {
+          "indices": {
+            "fr": "Nikkei +0,8 % à 61 283 et Taiex +1,7 % (TSMC +0,9 %, Tokyo Electron +1,5 %), mais SoftBank Group −5,2 %, SK Hynix −2 %, Hang Seng −0,9 % à 23 786, Kospi −0,5 % et ASX 200 −0,7 % à 9 085, selon AP; les contrats à terme américains ont légèrement progressé.",
+            "en": "Nikkei +0.8% to 61,283 and Taiex +1.7% (TSMC +0.9%, Tokyo Electron +1.5%), but SoftBank Group −5.2%, SK Hynix −2%, Hang Seng −0.9% to 23,786, Kospi −0.5% and ASX 200 −0.7% to 9,085, per AP; U.S. futures edged higher."
+          },
+          "metals": {
+            "fr": "L’or a gagné 0,44 % durant la séance, à environ 3 902 $, après être tombé jeudi sous 3 900 $ à son plus bas en plus d’un an (FXStreet), en attendant l’indice des prix à la production américain; l’argent a cédé 0,38 % à 49,85 $.",
+            "en": "Gold gained 0.44% during the session to about $3,902 after falling below $3,900 on Thursday to its lowest in more than a year (FXStreet), ahead of U.S. producer price data; silver lost 0.38% to $49.85."
+          },
+          "forex": {
+            "fr": "Indice du dollar −0,04 % à 103,19, en voie d’un gain hebdomadaire de 0,9 % (Reuters); USD/JPY +0,16 % à 160,13 sous la menace d’une intervention de Tokyo, EUR/USD +0,10 % à 1,1062 et USD/CAD −0,02 % à 1,4261; le CME FedWatch donnait 14,5 % de chances d’une hausse de 50 points en décembre.",
+            "en": "Dollar index −0.04% at 103.19, on track for a 0.9% weekly gain (Reuters); USD/JPY +0.16% at 160.13 under the threat of Tokyo intervention, EUR/USD +0.10% at 1.1062 and USD/CAD −0.02% at 1.4261; CME FedWatch showed a 14.5% chance of a 50-basis-point hike in December."
+          },
+          "crypto": {
+            "fr": "Le bitcoin a perdu 4,21 % durant la séance, à 68 361 $, son plus bas depuis le 19 août, et l’ether est passé sous 2 000 $ pour la première fois depuis août; plus de 1,3 milliard $ de positions sur contrats à terme ont été liquidées en 24 heures (Coinglass, via CoinDesk).",
+            "en": "Bitcoin lost 4.21% during the session to $68,361, its lowest since Aug. 19, and ether fell below $2,000 for the first time since August; more than $1.3 billion in futures positions were liquidated over 24 hours (Coinglass, via CoinDesk)."
+          },
+          "energy": {
+            "fr": "Le WTI a reculé de 0,20 % durant la séance, à 88,54 $, et le Brent est resté près de 95,70 $ (−0,1 %), les deux en voie d’une deuxième baisse hebdomadaire malgré les propos de Donald Trump sur l’Iran.",
+            "en": "WTI slipped 0.20% during the session to $88.54 and Brent held near $95.70 (−0.1%), both on track for a second weekly decline despite Donald Trump’s comments on Iran."
+          }
+        },
+        "sources": [
+          "https://www.clickondetroit.com/business/2026/11/13/asian-shares-are-mixed-as-investors-assess-impact-of-nvidias-fallout-on-global-ai-development/",
+          "https://za.investing.com/news/economy-news/dollar-set-for-best-week-in-two-months-on-rate-hike-wagers-yen-tests-160-4572915",
+          "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace",
+          "https://www.fxstreet.com/news/gold-falls-to-over-one-year-low-below-3-900-amid-inflation-concerns-us-ppi-data-looms-202611122321"
+        ]
+      },
       {
         "date": "2026-11-12",
         "session": "ny",
