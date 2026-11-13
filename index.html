@@ -1187,6 +1187,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
             <option value="eurusd">EURUSD · Euro / dollar US</option>
             <option value="usdjpy">USDJPY · Dollar US / yen</option>
             <option value="usdcad">USDCAD · Dollar US / canadien</option>
+            <option value="gbpusd">GBPUSD · Livre / dollar US</option>
+            <option value="audusd">AUDUSD · Dollar australien / US</option>
+            <option value="usdchf">USDCHF · Dollar US / franc suisse</option>
+            <option value="nzdusd">NZDUSD · Dollar néo-zélandais / US</option>
           </optgroup>
           <optgroup label="Énergie">
             <option value="usoil">USOIL · Pétrole WTI</option>
@@ -1291,6 +1295,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
           <button type="button" data-ca="eurusd" aria-pressed="false">EUR/USD</button>
           <button type="button" data-ca="usdjpy" aria-pressed="false">USD/JPY</button>
           <button type="button" data-ca="usdcad" aria-pressed="false">USD/CAD</button>
+          <button type="button" data-ca="gbpusd" aria-pressed="false">GBP/USD</button>
+          <button type="button" data-ca="audusd" aria-pressed="false">AUD/USD</button>
+          <button type="button" data-ca="usdchf" aria-pressed="false">USD/CHF</button>
+          <button type="button" data-ca="nzdusd" aria-pressed="false">NZD/USD</button>
         </div>
       </div>
       <div class="tablewrap" id="calBox"></div>
@@ -1370,7 +1378,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     rut:{name:'Russell 2000', hint:'Croissance forte = haussier, inflation chaude = baissier'},
     eurusd:{name:'EURUSD · Euro / dollar US', hint:'Données américaines fortes = baissier pour EUR/USD'},
     usdjpy:{name:'USDJPY · Dollar US / yen', hint:'Données américaines fortes = haussier pour USD/JPY'},
-    usdcad:{name:'USDCAD · Dollar US / canadien', hint:'Données américaines fortes = haussier pour USD/CAD'}
+    usdcad:{name:'USDCAD · Dollar US / canadien', hint:'Données américaines fortes = haussier pour USD/CAD'},
+    gbpusd:{name:'GBPUSD · Livre / dollar US', hint:'Données américaines fortes = baissier pour GBP/USD'},
+    audusd:{name:'AUDUSD · Dollar australien / US', hint:'Données américaines fortes = baissier pour AUD/USD'},
+    usdchf:{name:'USDCHF · Dollar US / franc suisse', hint:'Données américaines fortes = haussier pour USD/CHF'},
+    nzdusd:{name:'NZDUSD · Dollar néo-zélandais / US', hint:'Données américaines fortes = baissier pour NZD/USD'}
   };
   const MOIS = ['janvier','février','mars','avril','mai','juin','juillet','août','septembre','octobre','novembre','décembre'];
   function curMonthNum(){ try{ return +new Date().toLocaleDateString('en-CA',{timeZone:'America/Toronto', month:'numeric'}); }catch(e){ return new Date().getMonth()+1; } }
@@ -1378,7 +1390,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const state = {
     asset:'xauusd', edit:false, canWrite:null, db:null,
     econ:{values:{}, yield2y:'flat', updatedAt:null},
-    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset(), us30:blankAsset(), usd:blankAsset(), xagusd:blankAsset(), btcusd:blankAsset(), usoil:blankAsset(), rut:blankAsset(), eurusd:blankAsset(), usdjpy:blankAsset(), usdcad:blankAsset()},
+    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset(), us30:blankAsset(), usd:blankAsset(), xagusd:blankAsset(), btcusd:blankAsset(), usoil:blankAsset(), rut:blankAsset(), eurusd:blankAsset(), usdjpy:blankAsset(), usdcad:blankAsset(), gbpusd:blankAsset(), audusd:blankAsset(), usdchf:blankAsset(), nzdusd:blankAsset()},
     history:[], loaded:false
   };
   try{ const a = localStorage.getItem('sc-asset'); if(a && ASSETS[a]) state.asset = a; }catch(e){}
@@ -1400,13 +1412,17 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     rut:{cpi:2,nfp:2,yield10:2,pce:2,retail:2},
     eurusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
     usdjpy:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
-    usdcad:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2}
+    usdcad:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
+    gbpusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
+    audusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
+    usdchf:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
+    nzdusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2}
   };
   const wOf = (asset,id) => { const w = (WEIGHTS[asset]||{})[id]; return w===undefined ? 1 : w; };
   function impact(asset, cat, usd){
     if(cat==='spec') return usd || 0;
-    if(asset==='usd' || asset==='usdjpy' || asset==='usdcad') return usd || 0;
-    if(asset==='xauusd' || asset==='xagusd' || asset==='eurusd') return -usd || 0;
+    if(asset==='usd' || asset==='usdjpy' || asset==='usdcad' || asset==='usdchf') return usd || 0;
+    if(asset==='xauusd' || asset==='xagusd' || asset==='eurusd' || asset==='gbpusd' || asset==='audusd' || asset==='nzdusd') return -usd || 0;
     return (cat==='infl' ? -usd : usd) || 0;
   }
   function econSignal(ind, asset){
@@ -1428,7 +1444,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     r.crowd = cr===null?0:(cr>=60?-1:cr<=40?1:0);
     const y10 = state.econ.yield10y;
     r.yield10 = y10==='falling'?1:y10==='rising'?-1:(y10==='flat'?0:null);
-    if((asset==='usd' || asset==='usdjpy' || asset==='usdcad') && r.yield10) r.yield10 = -r.yield10;
+    if((asset==='usd' || asset==='usdjpy' || asset==='usdcad' || asset==='usdchf') && r.yield10) r.yield10 = -r.yield10;
     const cats = {growth:0, infl:(r.yield10||0)*wOf(asset,'yield10'), jobs:0, spec:0};
     INDICATORS.forEach(ind=>{ if(ind.only && ind.only!==asset){ r[ind.id]=null; return; } const s = econSignal(ind, asset); r[ind.id]=s; if(s) cats[ind.cat]+=s*wOf(asset,ind.id); });
     const tech = r.trend + r.season;
@@ -1604,7 +1620,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function renderAll(){ if(typeof renderTape==='function') renderTape(); renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); if(typeof renderP2==='function') renderP2(); }
 
   // ---------- editing ----------
-  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false, eurusd:false, usdjpy:false, usdcad:false}, saveTimer = null, chain = Promise.resolve();
+  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false, eurusd:false, usdjpy:false, usdcad:false, gbpusd:false, audusd:false, usdchf:false, nzdusd:false}, saveTimer = null, chain = Promise.resolve();
   function note(msg){ const n=$('note'); if(msg){ n.textContent=msg; n.hidden=false; } else n.hidden=true; }
 
   $('tbl').addEventListener('input', onEdit);
@@ -1673,7 +1689,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     {k:'nfp', h:'NFP', g:3}, {k:'unemp', h:'Chômage', g:3}, {k:'claims', h:'Demandes chômage', g:3},
     {k:'adp', h:'ADP', g:3}, {k:'jolts', h:'JOLTS', g:3}
   ];
-  const TOP_NAMES = {xauusd:'XAUUSD', xagusd:'SILVER', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW', rut:'RUSSELL', usd:'US-DOLLAR', usoil:'USOIL', btcusd:'BITCOIN', eurusd:'EURUSD', usdjpy:'USDJPY', usdcad:'USDCAD'};
+  const TOP_NAMES = {xauusd:'XAUUSD', xagusd:'SILVER', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW', rut:'RUSSELL', usd:'US-DOLLAR', usoil:'USOIL', btcusd:'BITCOIN', eurusd:'EURUSD', usdjpy:'USDJPY', usdcad:'USDCAD', gbpusd:'GBPUSD', audusd:'AUDUSD', usdchf:'USDCHF', nzdusd:'NZDUSD'};
   function topCell(asset, C, col){
     if(col.v) return col.v(C);
     const s = C.rows[col.k];
@@ -1724,8 +1740,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
 
   // filtres de la page Top Setups
-  const TOP_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', usoil:'nrg', btcusd:'cry', eurusd:'fx', usdjpy:'fx', usdcad:'fx'};
-  const TOP_LABEL = {xauusd:'xauusd or gold', xagusd:'xagusd silver argent', nasdaq:'nasdaq', spx500:'spx500 s&p 500', us30:'dow jones us30', rut:'russell 2000 rut', usd:'us-dollar dollar dxy usd', usoil:'usoil oil pétrole petrole wti crude', btcusd:'bitcoin btc btcusd crypto', eurusd:'eurusd eur/usd euro fiber', usdjpy:'usdjpy usd/jpy yen japon', usdcad:'usdcad usd/cad loonie huard canadien canada'};
+  const TOP_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', usoil:'nrg', btcusd:'cry', eurusd:'fx', usdjpy:'fx', usdcad:'fx', gbpusd:'fx', audusd:'fx', usdchf:'fx', nzdusd:'fx'};
+  const TOP_LABEL = {xauusd:'xauusd or gold', xagusd:'xagusd silver argent', nasdaq:'nasdaq', spx500:'spx500 s&p 500', us30:'dow jones us30', rut:'russell 2000 rut', usd:'us-dollar dollar dxy usd', usoil:'usoil oil pétrole petrole wti crude', btcusd:'bitcoin btc btcusd crypto', eurusd:'eurusd eur/usd euro fiber', usdjpy:'usdjpy usd/jpy yen japon', usdcad:'usdcad usd/cad loonie huard canadien canada', gbpusd:'gbpusd gbp/usd cable livre sterling pound', audusd:'audusd aud/usd aussie australien australia', usdchf:'usdchf usd/chf swissie franc suisse', nzdusd:'nzdusd nzd/usd kiwi néo-zélandais new zealand'};
   function topPass(a, C){
     const g = id => { const el = $(id); return el ? el.value : ''; };
     const q = (g('fSym')||'').trim().toLowerCase();
@@ -1919,7 +1935,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const LIVE_SRC = {
     bls: {cpi:'CUUR0000SA0', core:'CUUR0000SA0L1E', ppi:'WPUFD4', unemp:'LNS14000000', nfp:'CES0000000001', jolts:'JTS000000000000000JOL', ahe:'CES0500000003'},
     dbn: {gdp:'BEA/NIPA-T10101/A191RL-Q', pce:'BEA/NIPA-T20804/DPCERG-M', corepce:'BEA/NIPA-T20804/DPCCRG-M', y10:'FED/H15/RIFLGFCY10_N.B', y2:'FED/H15/RIFLGFCY02_N.B', ff:'FED/H15/RIFSPFF_N.B'},
-    cot: {eurusd:['l','099741'], usdjpy:['li','097741'], usdcad:['li','090741'], xauusd:['l','088691'], xagusd:['l','084691'], nasdaq:['l','209742'], spx500:['l','13874A'], us30:['l','124603'], rut:['l','239742'], usd:['l','098662'], btcusd:['l','133741'], usoil:['d','067651']}
+    cot: {eurusd:['l','099741'], usdjpy:['li','097741'], usdcad:['li','090741'], gbpusd:['l','096742'], audusd:['l','232741'], usdchf:['li','092741'], nzdusd:['l','112741'], xauusd:['l','088691'], xagusd:['l','084691'], nasdaq:['l','209742'], spx500:['l','13874A'], us30:['l','124603'], rut:['l','239742'], usd:['l','098662'], btcusd:['l','133741'], usoil:['d','067651']}
   };
   async function fetchLive(){
     const out = {asOf: new Date().toISOString(), macro:{}, rates:{}, cot:{}};
@@ -1976,9 +1992,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const sg2 = (v, d=1) => (v===null || isNaN(v)) ? '—' : (v>0?'+':v<0?'−':'') + Math.abs(v).toLocaleString(LOC(), {minimumFractionDigits:d, maximumFractionDigits:d});
   const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888';
   const GH_URL = 'https://raphydoc.github.io/scorecard/';
-  const ASSET_LBL = {xauusd:['Or','Gold'], xagusd:['Argent','Silver'], nasdaq:['Nasdaq 100','Nasdaq 100'], spx500:['S&P 500','S&P 500'], us30:['Dow Jones','Dow Jones'], rut:['Russell 2000','Russell 2000'], usd:['Dollar US (DXY)','US Dollar (DXY)'], usoil:['Pétrole WTI','WTI Crude'], btcusd:['Bitcoin','Bitcoin'], eurusd:['Euro / dollar US','Euro / US dollar'], usdjpy:['Dollar US / yen','US dollar / yen'], usdcad:['Dollar US / canadien','US dollar / Canadian dollar']};
+  const ASSET_LBL = {xauusd:['Or','Gold'], xagusd:['Argent','Silver'], nasdaq:['Nasdaq 100','Nasdaq 100'], spx500:['S&P 500','S&P 500'], us30:['Dow Jones','Dow Jones'], rut:['Russell 2000','Russell 2000'], usd:['Dollar US (DXY)','US Dollar (DXY)'], usoil:['Pétrole WTI','WTI Crude'], btcusd:['Bitcoin','Bitcoin'], eurusd:['Euro / dollar US','Euro / US dollar'], usdjpy:['Dollar US / yen','US dollar / yen'], usdcad:['Dollar US / canadien','US dollar / Canadian dollar'], gbpusd:['Livre / dollar US','Pound / US dollar'], audusd:['Dollar australien / US','Australian / US dollar'], usdchf:['Dollar US / franc suisse','US dollar / Swiss franc'], nzdusd:['Dollar néo-zélandais / US','New Zealand / US dollar']};
   const aName = a => (ASSET_LBL[a]||[a,a])[isEN()?1:0];
-  const TV_SYM = {xauusd:'OANDA:XAUUSD', xagusd:'OANDA:XAGUSD', nasdaq:'OANDA:NAS100USD', spx500:'OANDA:SPX500USD', us30:'OANDA:US30USD', rut:'OANDA:US2000USD', usd:'CAPITALCOM:DXY', usoil:'TVC:USOIL', btcusd:'BITSTAMP:BTCUSD', eurusd:'FX:EURUSD', usdjpy:'FX:USDJPY', usdcad:'FX:USDCAD', us10y:'TVC:US10Y', vix:'TVC:VIX'};
+  const TV_SYM = {xauusd:'OANDA:XAUUSD', xagusd:'OANDA:XAGUSD', nasdaq:'OANDA:NAS100USD', spx500:'OANDA:SPX500USD', us30:'OANDA:US30USD', rut:'OANDA:US2000USD', usd:'CAPITALCOM:DXY', usoil:'TVC:USOIL', btcusd:'BITSTAMP:BTCUSD', eurusd:'FX:EURUSD', usdjpy:'FX:USDJPY', usdcad:'FX:USDCAD', gbpusd:'FX:GBPUSD', audusd:'FX:AUDUSD', usdchf:'FX:USDCHF', nzdusd:'FX:NZDUSD', us10y:'TVC:US10Y', vix:'TVC:VIX'};
   const MON_FR = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
   const MON_EN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   function perLbl(p){ // '2026-09' → 'sept. 2026' ; '2026-Q3' → 'T3 2026' ; '2026-11-05' → '5 nov. 2026'
@@ -2454,7 +2470,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   state.tech = state.tech || null; state.techSel = state.techSel || 'xauusd'; state.techCat = state.techCat || 'all';
   state.seasA = state.seasA || 'xauusd';
   const RM = () => window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const T_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', eurusd:'fx', usdjpy:'fx', usdcad:'fx', usoil:'nrg', btcusd:'cry'};
+  const T_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', eurusd:'fx', usdjpy:'fx', usdcad:'fx', gbpusd:'fx', audusd:'fx', usdchf:'fx', nzdusd:'fx', usoil:'nrg', btcusd:'cry'};
   const T_CATS = [['all',['Tous','All']],['ind',['Indices','Indices']],['met',['Métaux','Metals']],['fx',['Devises','FX']],['nrg',['Énergie','Energy']],['cry',['Crypto','Crypto']]];
   const pxFmt = v => v==null ? '—' : nf(v, v<10 ? 4 : v<1000 ? 2 : 0);
   // chiffres qui défilent
@@ -2737,7 +2753,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   (function(){ const _mk = mkChart; mkChart = function(id, cfg){ if(!RM()){ cfg.options = cfg.options||{}; if(!cfg.options.animation) cfg.options.animation = {duration:1100, easing:'easeOutQuart', delay:c=>c.type==='data' && c.mode==='default' ? Math.min(c.dataIndex,40)*18 : 0}; } return _mk(id, cfg); }; })();
 
   // ================= Panneau de détails (clic sur une case) =================
-  const GRP = a => ['usd','usdjpy','usdcad'].includes(a) ? 'usd' : ['xauusd','xagusd','eurusd'].includes(a) ? 'anti' : 'risk';
+  const GRP = a => ['usd','usdjpy','usdcad','usdchf'].includes(a) ? 'usd' : ['xauusd','xagusd','eurusd','gbpusd','audusd','nzdusd'].includes(a) ? 'anti' : 'risk';
   const AN = a => TOP_NAMES[a] || a;
   const IND_ECON = {cpi:'cpi', ppi:'ppi', pce:'pce', nfp:'nfp', unemp:'unemp', claims:'claims', jolts:'jolts', retail:'retail', gdp:'gdp'};
   const CAT_N = {growth:['Croissance','Growth'], infl:['Inflation','Inflation'], jobs:['Emploi','Labour']};
@@ -2762,7 +2778,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
   // explication en mots de l'effet d'une donnée sur un actif
   function explainEffect(a, kind, up){
-    const n = AN(a), g = GRP(a), metal = a==='xauusd'||a==='xagusd', pair = a==='usdjpy'?L('le yen','the yen'):a==='usdcad'?L('le huard','the loonie'):a==='eurusd'?L('l’euro','the euro'):'';
+    const n = AN(a), g = GRP(a), metal = a==='xauusd'||a==='xagusd', pair = a==='usdjpy'?L('le yen','the yen'):a==='usdcad'?L('le huard','the loonie'):a==='eurusd'?L('l’euro','the euro'):a==='gbpusd'?L('la livre','the pound'):a==='audusd'?L('le dollar australien','the Aussie'):a==='usdchf'?L('le franc suisse','the Swiss franc'):a==='nzdusd'?L('le dollar néo-zélandais','the kiwi'):'';
     if(kind==='eco'){ // économie plus forte (up) ou plus faible
       if(g==='usd') return up ? L(`Une économie américaine plus forte que prévu attire l’argent vers les États-Unis et rend une baisse de taux de la Fed moins probable : le dollar se renforce${pair?` face à ${pair}`:''}, donc ${n} monte.`, `A stronger-than-expected US economy draws money into the US and makes a Fed cut less likely: the dollar strengthens${pair?` against ${pair}`:''}, so ${n} rises.`)
         : L(`Une économie américaine plus faible que prévu rend une baisse de taux de la Fed plus probable : le dollar s’affaiblit${pair?` face à ${pair}`:''}, donc ${n} baisse.`, `A weaker-than-expected US economy makes a Fed cut more likely: the dollar weakens${pair?` against ${pair}`:''}, so ${n} falls.`);
@@ -2788,9 +2804,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
   function ddRow(k, v, cls){ return `<div class="ddr"><span>${k}</span><b class="${cls||''}">${v}</b></div>`; }
   function ddBadge(pts){ const c = pts>0?'b':pts<0?'r':'n'; return `<span class="ddbadge ${c}">${pts>0?L('HAUSSIER','BULLISH'):pts<0?L('BAISSIER','BEARISH'):L('NEUTRE','NEUTRAL')} · ${pts>0?'+':pts<0?'−':'±'}${Math.abs(pts)}</span>`; }
-  function ddAllAssets(fn){ // effet d'un même élément sur les 12 actifs
+  function ddAllAssets(fn){ // effet d'un même élément sur les 16 actifs
     const rows = Object.keys(ASSETS).map(x=>({x, v:fn(x)})).filter(r=>r.v!==null).sort((p,q)=>q.v-p.v);
-    return `<div class="ddsec"><h4>${L('Effet sur tes 12 actifs','Effect on your 12 assets')}</h4><div class="ddall">${rows.map(r=>`<button type="button" class="ddchip ${r.v>0?'b':r.v<0?'r':'n'}" data-dd="${esc(ddAllKey(r.x))}">${esc(AN(r.x))}<em>${r.v>0?'+':r.v<0?'−':'±'}${Math.abs(r.v)}</em></button>`).join('')}</div></div>`;
+    return `<div class="ddsec"><h4>${L('Effet sur tes 16 actifs','Effect on your 16 assets')}</h4><div class="ddall">${rows.map(r=>`<button type="button" class="ddchip ${r.v>0?'b':r.v<0?'r':'n'}" data-dd="${esc(ddAllKey(r.x))}">${esc(AN(r.x))}<em>${r.v>0?'+':r.v<0?'−':'±'}${Math.abs(r.v)}</em></button>`).join('')}</div></div>`;
   }
   let ddAllKey = x => 'asset|'+x;
   function ddHist(id, label){
@@ -2992,7 +3008,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     CAN:['Banque du Canada','Bank of Canada','dollar canadien','Canadian dollar','CAD',['usdcad','usoil']],
     MEX:['Banque du Mexique','Bank of Mexico','peso mexicain','Mexican peso','MXN',[]], BRA:['Banque centrale du Brésil','Central Bank of Brazil','réal brésilien','Brazilian real','BRL',[]],
     ARG:['Banque centrale d’Argentine','Central Bank of Argentina','peso argentin','Argentine peso','ARS',[]],
-    GBR:['Banque d’Angleterre','Bank of England','livre sterling','British pound','GBP',[]], CHE:['Banque nationale suisse','Swiss National Bank','franc suisse','Swiss franc','CHF',['xauusd']],
+    GBR:['Banque d’Angleterre','Bank of England','livre sterling','British pound','GBP',['gbpusd']], CHE:['Banque nationale suisse','Swiss National Bank','franc suisse','Swiss franc','CHF',['usdchf','xauusd']],
     SWE:['Riksbank','Riksbank','couronne suédoise','Swedish krona','SEK',[]], NOR:['Norges Bank','Norges Bank','couronne norvégienne','Norwegian krone','NOK',['usoil']],
     POL:['Banque nationale de Pologne','National Bank of Poland','zloty','zloty','PLN',['xauusd']], TUR:['Banque centrale de Turquie','Central Bank of Turkey','livre turque','Turkish lira','TRY',['xauusd']],
     RUS:['Banque de Russie','Bank of Russia','rouble','ruble','RUB',['usoil','xauusd']], ZAF:['Banque de réserve d’Afrique du Sud','South African Reserve Bank','rand','rand','ZAR',['xauusd']],
@@ -3000,7 +3016,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     JPN:['Banque du Japon','Bank of Japan','yen','yen','JPY',['usdjpy']], CHN:['Banque populaire de Chine','People’s Bank of China','yuan','yuan','CNY',['xauusd','xagusd','usoil']],
     KOR:['Banque de Corée','Bank of Korea','won','won','KRW',['nasdaq']], IND:['Banque de réserve de l’Inde','Reserve Bank of India','roupie indienne','Indian rupee','INR',['xauusd']],
     IDN:['Banque d’Indonésie','Bank Indonesia','roupie indonésienne','rupiah','IDR',[]], TWN:['Banque centrale de Taïwan','Central Bank of Taiwan','dollar taïwanais','Taiwan dollar','TWD',['nasdaq']],
-    AUS:['Banque de réserve d’Australie','Reserve Bank of Australia','dollar australien','Australian dollar','AUD',['xauusd']], NZL:['Banque de réserve de N.-Z.','Reserve Bank of New Zealand','dollar néo-zélandais','NZ dollar','NZD',[]],
+    AUS:['Banque de réserve d’Australie','Reserve Bank of Australia','dollar australien','Australian dollar','AUD',['audusd','xauusd']], NZL:['Banque de réserve de N.-Z.','Reserve Bank of New Zealand','dollar néo-zélandais','NZ dollar','NZD',['nzdusd']],
     SGP:['Autorité monétaire de Singapour','Monetary Authority of Singapore','dollar de Singapour','Singapore dollar','SGD',[]], EGY:['Banque centrale d’Égypte','Central Bank of Egypt','livre égyptienne','Egyptian pound','EGP',[]],
     NGA:['Banque centrale du Nigeria','Central Bank of Nigeria','naira','naira','NGN',['usoil']], UZB:['Banque centrale d’Ouzbékistan','Central Bank of Uzbekistan','sum','som','UZS',['xauusd']],
     KAZ:['Banque nationale du Kazakhstan','National Bank of Kazakhstan','tenge','tenge','KZT',['xauusd','usoil']], CZE:['Banque nationale tchèque','Czech National Bank','couronne tchèque','Czech koruna','CZK',['xauusd']],
@@ -3853,7 +3869,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   // ---------- Session Recap ----------
   const SESW = {tok:{n:['Tokyo','Tokyo'], cc:'JP', f:-5, t:1.5}, lon:{n:['Londres','London'], cc:'GB', f:3, t:11.5}, ny:{n:['New York','New York'], cc:'US', f:9.5, t:16}}; // heures de Toronto (f<0 = la veille)
-  const RGRP = [['INDICES',['nasdaq','spx500','us30','rut'],'indices'],['MÉTAUX',['xauusd','xagusd'],'metals'],['FOREX',['usd','eurusd','usdjpy','usdcad'],'forex'],['CRYPTO',['btcusd'],'crypto'],['ÉNERGIE',['usoil'],'energy']];
+  const RGRP = [['INDICES',['nasdaq','spx500','us30','rut'],'indices'],['MÉTAUX',['xauusd','xagusd'],'metals'],['FOREX',['usd','eurusd','usdjpy','usdcad','gbpusd','audusd','usdchf','nzdusd'],'forex'],['CRYPTO',['btcusd'],'crypto'],['ÉNERGIE',['usoil'],'energy']];
   function recapSessions(O){
     const tz = 'America/Toronto', ref = (O.h1||{}).eurusd || (O.h1||{}).xauusd || []; if(!ref.length) return [];
     const days = [...new Set(ref.map(r=>{ const p = tzParts(tz, new Date(r[0]*1000)); return `${p.y}-${String(p.mo).padStart(2,'0')}-${String(p.d).padStart(2,'0')}`; }))];
@@ -4182,8 +4198,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
     'Ma tendance':'My trend','Terminé':'Done','Modifier les données':'Edit data',
     'US Dollar':'US Dollar','Dow Jones':'Dow Jones','Nasdaq':'Nasdaq','S&P 500':'S&P 500','XAUUSD':'XAUUSD',
-    'XAUUSD · Or':'XAUUSD · Gold','DXY · Dollar US':'DXY · US Dollar','EURUSD · Euro / dollar US':'EURUSD · Euro / US dollar','USDJPY · Dollar US / yen':'USDJPY · US dollar / yen','USDCAD · Dollar US / canadien':'USDCAD · US dollar / Canadian dollar',
-    'Données américaines fortes = baissier pour EUR/USD':'Strong US data = bearish for EUR/USD','Données américaines fortes = haussier pour USD/JPY':'Strong US data = bullish for USD/JPY','Données américaines fortes = haussier pour USD/CAD':'Strong US data = bullish for USD/CAD',
+    'XAUUSD · Or':'XAUUSD · Gold','DXY · Dollar US':'DXY · US Dollar','EURUSD · Euro / dollar US':'EURUSD · Euro / US dollar','USDJPY · Dollar US / yen':'USDJPY · US dollar / yen','GBPUSD · Livre / dollar US':'GBPUSD · Pound / US dollar','AUDUSD · Dollar australien / US':'AUDUSD · Australian / US dollar','USDCHF · Dollar US / franc suisse':'USDCHF · US dollar / Swiss franc','NZDUSD · Dollar néo-zélandais / US':'NZDUSD · New Zealand / US dollar','USDCAD · Dollar US / canadien':'USDCAD · US dollar / Canadian dollar',
+    'Données américaines fortes = baissier pour EUR/USD':'Strong US data = bearish for EUR/USD','Données américaines fortes = baissier pour GBP/USD':'Strong US data = bearish for GBP/USD','Données américaines fortes = baissier pour AUD/USD':'Strong US data = bearish for AUD/USD','Données américaines fortes = haussier pour USD/CHF':'Strong US data = bullish for USD/CHF','Données américaines fortes = baissier pour NZD/USD':'Strong US data = bearish for NZD/USD','Données américaines fortes = haussier pour USD/JPY':'Strong US data = bullish for USD/JPY','Données américaines fortes = haussier pour USD/CAD':'Strong US data = bullish for USD/CAD',
     'Données fortes = baissier pour l’or':'Strong data = bearish for gold',
     'Données fortes = haussier pour le dollar':'Strong data = bullish for the dollar',
     'Croissance forte = haussier, inflation chaude = baissier':'Strong growth = bullish, hot inflation = bearish',

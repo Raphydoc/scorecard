@@ -1,6 +1,6 @@
 // À exécuter (javascript_tool) sur une page de https://publicreporting.cftc.gov — renvoie {cot} au format de data.json → live
-const LI = {usdjpy:'097741', usdcad:'090741'};
-const L = {eurusd:'099741', xauusd:'088691', xagusd:'084691', nasdaq:'209742', spx500:'13874A', us30:'124603', rut:'239742', usd:'098662', btcusd:'133741'};
+const LI = {usdjpy:'097741', usdcad:'090741', usdchf:'092741'};
+const L = {eurusd:'099741', xauusd:'088691', xagusd:'084691', nasdaq:'209742', spx500:'13874A', us30:'124603', rut:'239742', usd:'098662', btcusd:'133741', gbpusd:'096742', audusd:'232741', nzdusd:'112741'};
 const cot = {};
 for(const [k,c] of Object.entries(L)){
   const r = await (await fetch(`/resource/6dca-aqww.json?cftc_contract_market_code=${c}&$order=report_date_as_yyyy_mm_dd DESC&$limit=53&$select=report_date_as_yyyy_mm_dd,open_interest_all,noncomm_positions_long_all,noncomm_positions_short_all,comm_positions_long_all,comm_positions_short_all,nonrept_positions_long_all,nonrept_positions_short_all`)).json();

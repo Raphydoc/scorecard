@@ -16,6 +16,10 @@ const A = {
   eurusd: {y: 'EURUSD=X', s: 'eurusd', n: 'EUR/USD'},
   usdjpy: {y: 'JPY=X', s: 'usdjpy', n: 'USD/JPY'},
   usdcad: {y: 'CAD=X', s: 'usdcad', n: 'USD/CAD'},
+  gbpusd: {y: 'GBPUSD=X', s: 'gbpusd', n: 'GBP/USD'},
+  audusd: {y: 'AUDUSD=X', s: 'audusd', n: 'AUD/USD'},
+  usdchf: {y: 'CHF=X', s: 'usdchf', n: 'USD/CHF'},
+  nzdusd: {y: 'NZDUSD=X', s: 'nzdusd', n: 'NZD/USD'},
 };
 const UA = {'User-Agent': 'Mozilla/5.0 (scorecard-macro; GitHub Actions)', 'Accept': '*/*'};
 const sleep = ms => new Promise(r => setTimeout(r, ms));

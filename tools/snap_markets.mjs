@@ -166,7 +166,7 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
   }
 
   // ---------- Chandeliers des 12 actifs (Indicators, Liquidity) ----------
-  const A = {xauusd: 'GC=F', xagusd: 'SI=F', nasdaq: '^NDX', spx500: '^GSPC', us30: '^DJI', rut: '^RUT', usd: 'DX-Y.NYB', usoil: 'CL=F', btcusd: 'BTC-USD', eurusd: 'EURUSD=X', usdjpy: 'JPY=X', usdcad: 'CAD=X'};
+  const A = {xauusd: 'GC=F', xagusd: 'SI=F', nasdaq: '^NDX', spx500: '^GSPC', us30: '^DJI', rut: '^RUT', usd: 'DX-Y.NYB', usoil: 'CL=F', btcusd: 'BTC-USD', eurusd: 'EURUSD=X', usdjpy: 'JPY=X', usdcad: 'CAD=X', gbpusd: 'GBPUSD=X', audusd: 'AUDUSD=X', usdchf: 'CHF=X', nzdusd: 'NZDUSD=X'};
   const O = {asOf: M.asOf, d1: {}, h1: {}};
   const ores = await pool(Object.entries(A), async ([k, s]) => [k, await chart(s, '2y', '1d'), await chart(s, '1mo', '60m')]);
   ores.forEach(([k, d, h]) => {
