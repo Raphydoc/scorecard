@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T20:44:00Z",
+ "updatedAt": "2026-11-13T21:37:20Z",
  "econ": {
   "values": {
    "adp": {
@@ -527,6 +527,9 @@
    "date": "2026-11-10",
    "epsA": -1.27,
    "epsF": -1.55,
+   "guide": "above",
+   "guideTxt": "Année : 13,0–13,3 G$ vs 12,86 G$ attendu (relevée)",
+   "guideTxt_en": "Full year: $13.0–13.3B vs $12.86B expected (raised)",
    "id": null,
    "kind": "earn",
    "move": 1.8,
@@ -534,10 +537,7 @@
    "note": "Après la clôture",
    "revA": 3.661,
    "revF": 3.54,
-   "time": "16:05",
-   "guide": "above",
-   "guideTxt": "Année : 13,0–13,3 G$ vs 12,86 G$ attendu (relevée)",
-   "guideTxt_en": "Full year: $13.0–13.3B vs $12.86B expected (raised)"
+   "time": "16:05"
   },
   {
    "ai": true,
@@ -547,17 +547,17 @@
    "date": "2026-11-12",
    "epsA": -0.13,
    "epsF": -0.61,
+   "guide": "below",
+   "guideTxt": "2026 : bas de la fourchette 3,0–3,4 G$ vs 3,48 G$ attendu",
+   "guideTxt_en": "2026: low end of $3.0–3.4B vs $3.48B expected",
    "id": null,
    "kind": "earn",
-   "move": null,
+   "move": -16.8,
    "name": "Résultats Nebius (NBIS)",
    "note": "Avant l’ouverture",
    "revA": 0.9808,
    "revF": 0.907,
-   "time": "07:00",
-   "guide": "below",
-   "guideTxt": "2026 : bas de la fourchette 3,0–3,4 G$ vs 3,48 G$ attendu",
-   "guideTxt_en": "2026: low end of $3.0–3.4B vs $3.48B expected"
+   "time": "07:00"
   },
   {
    "a": 200,
@@ -578,6 +578,9 @@
    "date": "2026-11-12",
    "epsA": 1.4,
    "epsF": 1.33,
+   "guide": null,
+   "guideTxt": "T2 : 18,0–18,2 G$ (consensus non trouvé)",
+   "guideTxt_en": "Q2: $18.0–18.2B (consensus not found)",
    "id": null,
    "kind": "earn",
    "move": -2.7,
@@ -585,10 +588,7 @@
    "note": "Après la clôture",
    "revA": 18.5,
    "revF": 18.1,
-   "time": "16:05",
-   "guide": null,
-   "guideTxt": "T2 : 18,0–18,2 G$ (consensus non trouvé)",
-   "guideTxt_en": "Q2: $18.0–18.2B (consensus not found)"
+   "time": "16:05"
   },
   {
    "ai": true,
@@ -599,6 +599,9 @@
    "date": "2026-11-12",
    "epsA": 4.16,
    "epsF": 4.06,
+   "guide": "above",
+   "guideTxt": "T1 : 11,1 G$ ± 0,5 vs 10,8 G$ attendu",
+   "guideTxt_en": "Q1: $11.1B ± 0.5 vs $10.8B expected",
    "id": null,
    "kind": "earn",
    "move": 0.7,
@@ -606,10 +609,7 @@
    "note": "Après la clôture",
    "revA": 10.41,
    "revF": 10.3,
-   "time": "16:05",
-   "guide": "above",
-   "guideTxt": "T1 : 11,1 G$ ± 0,5 vs 10,8 G$ attendu",
-   "guideTxt_en": "Q1: $11.1B ± 0.5 vs $10.8B expected"
+   "time": "16:05"
   },
   {
    "ai": true,
@@ -619,6 +619,9 @@
    "date": "2026-11-12",
    "epsA": -0.67,
    "epsF": -0.13,
+   "guide": "above",
+   "guideTxt": "T4 : 310–330 M$ vs 271 M$ attendu (revenus « core »)",
+   "guideTxt_en": "Q4: $310–330M vs $271M expected (core revenue)",
    "id": null,
    "kind": "earn",
    "move": 13,
@@ -626,10 +629,7 @@
    "note": "Après la clôture",
    "revA": 0.2309,
    "revF": 0.2147,
-   "time": "16:05",
-   "guide": "above",
-   "guideTxt": "T4 : 310–330 M$ vs 271 M$ attendu (revenus « core »)",
-   "guideTxt_en": "Q4: $310–330M vs $271M expected (core revenue)"
+   "time": "16:05"
   },
   {
    "a": 0.3,
@@ -691,7 +691,7 @@
   {
    "a": null,
    "date": "2026-11-17",
-   "f": 0.0,
+   "f": 0,
    "id": "retail",
    "name": "Ventes au détail MoM (octobre)",
    "prev": 0.8,
