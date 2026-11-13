@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T02:42:17Z",
+  "updatedAt": "2026-11-13T04:42:55Z",
   "econ": {
     "values": {
       "gdp": {
@@ -851,6 +851,21 @@
     },
     {
       "date": "2026-11-12",
+      "time": "20:51",
+      "source": "Reuters (Investing.com)",
+      "impact": "med",
+      "assets": [
+        "usdjpy",
+        "usd"
+      ],
+      "title": "Le yen franchit 160 par dollar; la ministre Katayama promet d'agir en lien avec le Trésor américain",
+      "title_en": "Yen breaches 160 per dollar; Finance Minister Katayama vows action alongside U.S. Treasury",
+      "summary": "Le yen a glissé jusqu'à 160,03 par dollar, une première au-delà de 160 depuis début septembre, après la révision à la hausse des attentes de taux de la Fed. La ministre des Finances Satsuki Katayama juge les mouvements « unilatéraux et rapides » et dit travailler étroitement avec le Trésor américain pour réagir de façon appropriée. Le Japon avait dépensé un record de 15 400 milliards de yens en interventions entre le 30 juillet et le 3 août, ce qui ravive le risque d'une nouvelle intervention sur l'USD/JPY.",
+      "summary_en": "The yen weakened to as low as 160.03 per dollar, its first move past 160 since early September, after a hawkish reassessment of the Fed's rate path. Finance Minister Satsuki Katayama called recent moves \"one-sided and rapid\" and said Japan will work closely with the U.S. Treasury and respond appropriately. Japan spent a record 15.4 trillion yen intervening between July 30 and August 3, raising the risk of renewed intervention in USD/JPY.",
+      "url": "https://www.investing.com/news/economy-news/japans-finance-minister-vows-action-as-yen-breaches-160-threshold-5023917"
+    },
+    {
+      "date": "2026-11-12",
       "time": "19:39",
       "source": "Yahoo Finance (Investing.com)",
       "impact": "med",
@@ -1457,20 +1472,6 @@
       "title": "Le rapport sur l’emploi fait grimper les taux; les paris d’une hausse en décembre passent à 78 %",
       "title_en": "Jobs report sends yields higher; December hike bets rise to 78%",
       "url": "https://finance.yahoo.com/economy/policy/articles/strong-october-jobs-report-sends-134858909.html"
-    },
-    {
-      "assets": [
-        "usoil"
-      ],
-      "date": "2026-11-06",
-      "impact": "med",
-      "source": "Yahoo Finance",
-      "summary": "Vendredi matin, le Brent valait 102,05 $ le baril (+2,5 % sur la veille), environ 38 $ de plus qu’il y a un an, et le contrat WTI de décembre 90,83 $. Le marché surveille le risque géopolitique autour de l’Iran après les élections de mi-mandat.",
-      "summary_en": "On Friday morning Brent was $102.05 a barrel (+2.5% from the prior day), about $38 higher than a year ago, and December WTI was $90.83. The market is watching geopolitical risk around Iran after the midterms.",
-      "time": "07:15",
-      "title": "Le Brent au-dessus de 102 $, le WTI près de 91 $",
-      "title_en": "Brent above $102, WTI near $91",
-      "url": "https://finance.yahoo.com/energy/articles/current-price-oil-november-6-124500137.html"
     }
   ],
   "live": {
