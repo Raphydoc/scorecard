@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T21:37:20Z",
+ "updatedAt": "2026-11-13T22:19:11Z",
  "econ": {
   "values": {
    "adp": {
@@ -33527,412 +33527,20 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-13T17:12:04Z",
-  "recaps": [
-   {
-    "date": "2026-11-13",
-    "session": "lon",
-    "title": "Les puces font plonger le Nasdaq de 1,8 % malgré un IPP plus doux, l’argent cède 2,2 %",
-    "title_en": "Chipmakers sink the Nasdaq 1.8% despite a softer PPI, silver drops 2.2%",
-    "body": "La séance de Londres a fini dans le rouge : l’indice des prix à la production américain d’octobre a monté de 0,3 % (0,4 % attendu), mais son rythme annuel de 6,5 % est le plus élevé depuis novembre 2022 et garde une hausse de taux de la Fed en décembre au centre des prévisions. Après une ouverture en hausse, Wall Street a basculé avec la vente massive des semi-conducteurs (Nvidia −4 %, AMD environ −9 %) et un rendement à 10 ans monté à 5,16 %, son plus haut depuis octobre; le Nasdaq 100 a perdu 1,78 % et le S&P 500 1,15 % sur la séance mesurée. En Europe, le STOXX 600 a reculé de ses records, plombé par la techno et le luxe (Richemont −6,5 %). L’indice du dollar a gagné 0,20 % à 103,38 et le franc suisse a été le plus faible du G10, tandis que l’argent a chuté de 2,16 % et que le pétrole et le bitcoin ont peu bougé.",
-    "body_en": "The London session ended in the red: U.S. October producer prices rose 0.3% (0.4% expected), but the 6.5% annual pace is the highest since November 2022 and keeps a December Fed rate hike at the center of forecasts. After a higher open, Wall Street flipped lower on a chip-stock selloff (Nvidia −4%, AMD about −9%) and a 10-year yield that climbed to 5.16%, its highest since October; the Nasdaq 100 lost 1.78% and the S&P 500 1.15% over the measured session. In Europe, the STOXX 600 retreated from record highs, weighed down by tech and luxury (Richemont −6.5%). The dollar index gained 0.20% to 103.38 and the Swiss franc was the G10 laggard, while silver slid 2.16% and oil and bitcoin barely moved.",
-    "sections": {
-     "indices": {
-      "fr": "Sur la séance, Nasdaq 100 −1,78 %, S&P 500 −1,15 %, Russell 2000 −0,93 % et Dow −0,50 % : les puces ont mené la baisse (AMD environ −9 %, Broadcom et Micron environ −5 à −6 %, Nvidia −4 % à 159,53 $ vers 11 h 50), le VIX a dépassé 20 et, en Europe, le STOXX 600 a cédé 0,2 % en matinée après des records (Reuters).",
-      "en": "Over the session, Nasdaq 100 −1.78%, S&P 500 −1.15%, Russell 2000 −0.93% and Dow −0.50%: chipmakers led the drop (AMD about −9%, Broadcom and Micron roughly −5% to −6%, Nvidia −4% to $159.53 around 11:50 a.m.), the VIX topped 20 and, in Europe, the STOXX 600 slipped 0.2% in the morning after record highs (Reuters)."
-     },
-     "metals": {
-      "fr": "L’or a perdu 0,49 % à 3 882 $ après avoir touché 3 910 $, freiné par la hausse des rendements, et l’argent a chuté de 2,16 % à 48,91 $; Goldman Sachs a abaissé sa cible de fin 2026 à 4 150 $ (4 650 $ auparavant), selon Kitco.",
-      "en": "Gold lost 0.49% to $3,882 after touching $3,910, held back by rising yields, and silver slid 2.16% to $48.91; Goldman Sachs cut its end-2026 target to $4,150 (from $4,650), per Kitco."
-     },
-     "forex": {
-      "fr": "L’indice du dollar a gagné 0,20 % à 103,38, en route vers sa meilleure semaine depuis septembre (Reuters); EUR/USD −0,23 % à 1,1036, USD/CHF +0,39 %, USD/JPY quasi stable (+0,06 %) juste sous 160 et USD/CAD stable à 1,4256.",
-      "en": "The dollar index rose 0.20% to 103.38, on track for its best week since September (Reuters); EUR/USD −0.23% to 1.1036, USD/CHF +0.39%, USD/JPY nearly flat (+0.06%) just under 160 and USD/CAD steady at 1.4256."
-     },
-     "crypto": {
-      "fr": "Le bitcoin a peu bougé (+0,16 % à 68 638 $) après sa chute sous 70 000 $ en Asie, son plus bas depuis août, plombé par les paris de hausse de la Fed, les sorties des FNB au comptant et le retrait de Strategy de deux indices MSCI (Yahoo Finance).",
-      "en": "Bitcoin barely moved (+0.16% to $68,638) after its drop below $70,000 in Asia, its lowest since August, weighed by Fed hike bets, spot ETF outflows and MSCI’s removal of Strategy from two indexes (Yahoo Finance)."
-     },
-     "energy": {
-      "fr": "Le WTI a fini la séance inchangé (−0,01 % à 88,53 $) après avoir oscillé entre 87,80 $ et 89,64 $; le Brent tournait autour de 96 $ avec les attaques de pétroliers dans le détroit d’Ormuz, malgré une hausse surprise de 4,7 millions de barils des stocks américains (EIA, selon TheStreet).",
-      "en": "WTI ended the session unchanged (−0.01% at $88.53) after swinging between $87.80 and $89.64; Brent hovered near $96 amid tanker attacks in the Strait of Hormuz, despite a surprise 4.7-million-barrel build in U.S. inventories (EIA, per TheStreet)."
-     }
-    },
-    "sources": [
-     "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html",
-     "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-13-2026",
-     "https://www.investing.com/news/stock-market-news/european-shares-retreat-from-record-highs-ai-uncertainty-weighs-5024437",
-     "https://www.marketscreener.com/news/dollar-set-for-best-week-in-two-months-on-rate-hike-wagers-yen-tests-160-ce785ed9db81f02c",
-     "https://kitco.com/news/article/2026-11-13/goldman-sachs-cuts-year-end-gold-price-target-4150oz-2027-target-4800oz",
-     "https://www.cp24.com/news/money/2026/11/13/us-futures-climb-as-wall-street-keeps-an-eye-on-nvidia-microsoft-and-producer-prices/"
-    ]
-   },
-   {
-    "date": "2026-11-13",
-    "session": "tok",
-    "title": "Le bitcoin casse les 70 000 $ et le yen flirte avec 160 pendant que Tokyo grimpe",
-    "title_en": "Bitcoin breaks below $70,000 and the yen flirts with 160 as Tokyo climbs",
-    "body": "La séance asiatique a été mitigée au lendemain de la démission de Jensen Huang chez Nvidia : le Nikkei a gagné 0,8 % à 61 283 et le Taiex 1,7 %, mais le Hang Seng (−0,9 %), le Kospi (−0,5 %) et l’ASX 200 (−0,7 %) ont reculé. Les paris d’une hausse de taux de la Fed en décembre ont gardé l’indice du dollar près de 103,2, un sommet depuis avril 2025, et le dollar a fini la séance à 160,13 yens (+0,16 %), malgré la ministre des Finances Satsuki Katayama qui promet de « réagir de façon appropriée » à la volatilité. Le bitcoin a chuté de 4,21 % sous 70 000 $, à son plus bas depuis août, déclenchant plus de 1,3 milliard $ de liquidations selon Coinglass. L’or a repris 0,44 % vers 3 900 $ après un creux de plus d’un an, tandis que le pétrole a peu bougé.",
-    "body_en": "The Asian session was mixed the day after Jensen Huang’s resignation at Nvidia: the Nikkei gained 0.8% to 61,283 and the Taiex 1.7%, but the Hang Seng (−0.9%), Kospi (−0.5%) and ASX 200 (−0.7%) fell. Bets on a December Fed rate hike kept the dollar index near 103.2, its highest since April 2025, and the dollar ended the session at 160.13 yen (+0.16%), even as Finance Minister Satsuki Katayama vowed to “respond appropriately” to currency volatility. Bitcoin slid 4.21% below $70,000 to its lowest since August, triggering more than $1.3 billion in liquidations according to Coinglass. Gold recovered 0.44% toward $3,900 after a more-than-one-year low, while oil barely moved.",
-    "sections": {
-     "indices": {
-      "fr": "Nikkei +0,8 % à 61 283 et Taiex +1,7 % (TSMC +0,9 %, Tokyo Electron +1,5 %), mais SoftBank Group −5,2 %, SK Hynix −2 %, Hang Seng −0,9 % à 23 786, Kospi −0,5 % et ASX 200 −0,7 % à 9 085, selon AP; les contrats à terme américains ont légèrement progressé.",
-      "en": "Nikkei +0.8% to 61,283 and Taiex +1.7% (TSMC +0.9%, Tokyo Electron +1.5%), but SoftBank Group −5.2%, SK Hynix −2%, Hang Seng −0.9% to 23,786, Kospi −0.5% and ASX 200 −0.7% to 9,085, per AP; U.S. futures edged higher."
-     },
-     "metals": {
-      "fr": "L’or a gagné 0,44 % durant la séance, à environ 3 902 $, après être tombé jeudi sous 3 900 $ à son plus bas en plus d’un an (FXStreet), en attendant l’indice des prix à la production américain; l’argent a cédé 0,38 % à 49,85 $.",
-      "en": "Gold gained 0.44% during the session to about $3,902 after falling below $3,900 on Thursday to its lowest in more than a year (FXStreet), ahead of U.S. producer price data; silver lost 0.38% to $49.85."
-     },
-     "forex": {
-      "fr": "Indice du dollar −0,04 % à 103,19, en voie d’un gain hebdomadaire de 0,9 % (Reuters); USD/JPY +0,16 % à 160,13 sous la menace d’une intervention de Tokyo, EUR/USD +0,10 % à 1,1062 et USD/CAD −0,02 % à 1,4261; le CME FedWatch donnait 14,5 % de chances d’une hausse de 50 points en décembre.",
-      "en": "Dollar index −0.04% at 103.19, on track for a 0.9% weekly gain (Reuters); USD/JPY +0.16% at 160.13 under the threat of Tokyo intervention, EUR/USD +0.10% at 1.1062 and USD/CAD −0.02% at 1.4261; CME FedWatch showed a 14.5% chance of a 50-basis-point hike in December."
-     },
-     "crypto": {
-      "fr": "Le bitcoin a perdu 4,21 % durant la séance, à 68 361 $, son plus bas depuis le 19 août, et l’ether est passé sous 2 000 $ pour la première fois depuis août; plus de 1,3 milliard $ de positions sur contrats à terme ont été liquidées en 24 heures (Coinglass, via CoinDesk).",
-      "en": "Bitcoin lost 4.21% during the session to $68,361, its lowest since Aug. 19, and ether fell below $2,000 for the first time since August; more than $1.3 billion in futures positions were liquidated over 24 hours (Coinglass, via CoinDesk)."
-     },
-     "energy": {
-      "fr": "Le WTI a reculé de 0,20 % durant la séance, à 88,54 $, et le Brent est resté près de 95,70 $ (−0,1 %), les deux en voie d’une deuxième baisse hebdomadaire malgré les propos de Donald Trump sur l’Iran.",
-      "en": "WTI slipped 0.20% during the session to $88.54 and Brent held near $95.70 (−0.1%), both on track for a second weekly decline despite Donald Trump’s comments on Iran."
-     }
-    },
-    "sources": [
-     "https://www.clickondetroit.com/business/2026/11/13/asian-shares-are-mixed-as-investors-assess-impact-of-nvidias-fallout-on-global-ai-development/",
-     "https://za.investing.com/news/economy-news/dollar-set-for-best-week-in-two-months-on-rate-hike-wagers-yen-tests-160-4572915",
-     "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace",
-     "https://www.fxstreet.com/news/gold-falls-to-over-one-year-low-below-3-900-amid-inflation-concerns-us-ppi-data-looms-202611122321"
-    ]
-   },
-   {
-    "date": "2026-11-12",
-    "session": "ny",
-    "title": "Nvidia limite les dégâts, le pétrole bondit de 3 % et le dollar touche un sommet de 19 mois",
-    "title_en": "Nvidia trims its losses, oil jumps 3% and the dollar hits a 19-month high",
-    "body": "Wall Street a fini en baisse d’environ 0,4 % (S&P 500 à 7 592, Dow à 52 297, Nasdaq composé à 25 366) au lendemain de la démission de Jensen Huang, mais les indices ont repris du terrain après une ouverture en repli : entre 9 h 30 et 16 h, le S&P 500 a gagné 0,54 % et le Nasdaq 100 1,15 %, Nvidia limitant sa perte à 4,3 % après avoir cédé près de 14 %. Le pétrole a bondi après que Donald Trump a écrit que les États-Unis n’ont plus besoin d’entente avec l’Iran, le Brent gagnant 3,3 % à 95,82 $. Les paris d’une hausse de la Fed en décembre (91 % selon CME FedWatch, d’après Reuters) ont porté le 10 ans à 5,07 % et l’indice du dollar à 103,16, un sommet depuis avril 2025, ce qui a pesé sur l’or (−0,39 % durant la séance) et le bitcoin (−1,48 %). Les ventes de maisons existantes ont chuté de 5,5 % en octobre, à leur plus bas depuis août 2010.",
-    "body_en": "Wall Street ended down about 0.4% (S&P 500 at 7,592, Dow at 52,297, Nasdaq Composite at 25,366) after Jensen Huang’s resignation, but indexes clawed back ground after a weak open: between 9:30 a.m. and 4 p.m., the S&P 500 gained 0.54% and the Nasdaq 100 1.15%, with Nvidia trimming its loss to 4.3% after shedding nearly 14%. Oil jumped after Donald Trump wrote that the U.S. no longer needs a deal with Iran, with Brent up 3.3% at $95.82. Bets on a December Fed hike (91% per CME FedWatch, according to Reuters) lifted the 10-year yield to 5.07% and the dollar index to 103.16, its highest since April 2025, weighing on gold (−0.39% during the session) and bitcoin (−1.48%). Existing home sales fell 5.5% in October to their lowest level since August 2010.",
-    "sections": {
-     "indices": {
-      "fr": "Nvidia a clôturé en baisse de 4,3 % après avoir perdu près de 14 % en séance (Colette Kress devient PDG par intérim), tandis qu’AMD (+5,9 %) et Broadcom (+5,5 %) ont progressé; de 9 h 30 à 16 h, S&P 500 +0,54 %, Nasdaq 100 +1,15 %, Dow −0,26 % et Russell 2000 −0,99 %, mais les trois grands indices finissent la journée en recul d’environ 0,4 %.",
-      "en": "Nvidia closed down 4.3% after losing nearly 14% intraday (Colette Kress becomes interim CEO), while AMD (+5.9%) and Broadcom (+5.5%) rose; from 9:30 a.m. to 4 p.m., S&P 500 +0.54%, Nasdaq 100 +1.15%, Dow −0.26% and Russell 2000 −0.99%, but the three major indexes ended the day down about 0.4%."
-     },
-     "metals": {
-      "fr": "L’or a glissé de 0,39 % durant la séance vers 3 880 $ et l’argent de 0,48 % sous 50 $, freinés par un 10 ans à 5,07 % et un 2 ans à 4,84 %, après les demandes de chômage à 200 000 (195 000 attendues).",
-      "en": "Gold slipped 0.39% during the session to about $3,880 and silver 0.48% below $50, held back by a 10-year yield at 5.07% and a 2-year at 4.84%, after jobless claims came in at 200,000 (195,000 expected)."
-     },
-     "forex": {
-      "fr": "L’indice du dollar a gagné 0,25 % durant la séance à environ 103,2, son sommet depuis avril 2025; l’EUR/USD a reculé de 0,30 % vers 1,106 (plus bas depuis avril 2025), l’USD/JPY a frôlé 160 (+0,11 %) et l’USD/CAD a monté de 0,16 % vers 1,4256.",
-      "en": "The dollar index rose 0.25% during the session to about 103.2, its highest since April 2025; EUR/USD fell 0.30% to around 1.106 (lowest since April 2025), USD/JPY brushed 160 (+0.11%) and USD/CAD rose 0.16% to about 1.4256."
-     },
-     "crypto": {
-      "fr": "Le bitcoin a perdu 1,48 % durant la séance vers 71 350 $, sous sa moyenne mobile de 50 semaines (75 153 $), pénalisé par les sorties des FNB au comptant et la vigueur du dollar.",
-      "en": "Bitcoin lost 1.48% during the session to about $71,350, below its 50-week moving average ($75,153), hurt by spot ETF outflows and dollar strength."
-     },
-     "energy": {
-      "fr": "Le Brent a gagné 3,3 % à 95,82 $ et le WTI 2,6 % à 88,74 $ après le message de Trump (« We don’t need a deal with Iran ») et des explosions ayant immobilisé deux superpétroliers dans le détroit d’Ormuz, malgré une hausse de 4,7 millions de barils des stocks américains (EIA).",
-      "en": "Brent rose 3.3% to $95.82 and WTI 2.6% to $88.74 after Trump’s post (“We don’t need a deal with Iran”) and explosions that halted two supertankers in the Strait of Hormuz, despite a 4.7-million-barrel build in U.S. crude stocks (EIA)."
-     }
-    },
-    "sources": [
-     "https://www.kiplinger.com/investing/stocks/stocks-slip-as-wall-street-weighs-nvidias-ceo-crisis-stock-market-today",
-     "https://live.euronext.com/en/financial-news/dollar-reaches-19-month-high-rate-expectations-dominate",
-     "https://www.rigzone.com/news/oil_rises_as_trump_dims_iran_deal_hopes-12-nov-2026-185073-article",
-     "https://www.kitco.com/news/article/2026-11-12/gold-price-tests-3900oz-after-us-weekly-jobless-claims-rise-200k",
-     "https://www.coindesk.com/daybook-us/2026/11/12/bitcoin-weakness-erases-september-s-bullish-signal"
-    ]
-   },
-   {
-    "body": "La séance de Londres a été secouée par la démission de Jensen Huang à la tête de Nvidia, dont l’action a chuté d’environ 14 % à l’ouverture de Wall Street avant que les indices américains n’effacent leurs pertes initiales : depuis 9 h 30, le S&P 500 a remonté de 1,30 % et le Nasdaq 100 de 2,02 %. En Europe, le STOXX 600 a atteint un sommet record, une première depuis août, et le DAX gagnait environ 1 % en début de séance. Les paris d’une hausse de taux de la Fed les 8 et 9 décembre (environ 90 % selon CME FedWatch) ont gardé le rendement américain à 10 ans près de 5 % et porté l’indice du dollar à 103,16 (+0,22 %), ce qui a fait plonger l’or de 2,32 % vers 3 878 $ et l’argent de 2,57 %. Les demandes de chômage hebdomadaires sont sorties à 200 000, un peu au-dessus des 195 000 attendues, le bitcoin a reculé de 2,38 % et le pétrole a oscillé après que Donald Trump a dit ne plus vouloir d’entente avec l’Iran.",
-    "body_en": "The London session was rocked by Jensen Huang’s resignation as head of Nvidia, whose stock fell about 14% at Wall Street’s open before U.S. indexes erased their early losses: since 9:30 a.m., the S&P 500 climbed 1.30% and the Nasdaq 100 2.02%. In Europe, the STOXX 600 hit a record high, its first since August, and the DAX gained about 1% in early trading. Bets on a Fed rate hike on December 8–9 (about 90% per CME FedWatch) kept the U.S. 10-year yield near 5% and lifted the dollar index to 103.16 (+0.22%), sending gold down 2.32% to about $3,878 and silver down 2.57%. Weekly jobless claims came in at 200,000, slightly above the 195,000 expected, bitcoin fell 2.38% and oil swung after Donald Trump said he no longer wants a deal with Iran.",
-    "date": "2026-11-12",
-    "sections": {
-     "crypto": {
-      "en": "Bitcoin fell 2.38% to about $71,800, dragged by the Nvidia turmoil and a fifth straight day of spot ETF outflows.",
-      "fr": "Le bitcoin a reculé de 2,38 % vers 71 800 $, entraîné par la tourmente chez Nvidia et un cinquième jour de sorties de fonds des FNB au comptant."
-     },
-     "energy": {
-      "en": "Oil swung after Donald Trump said he is no longer interested in a deal with Iran: WTI reached $87.26 (+0.8%) shortly after New York’s open and Brent $93.53, but WTI ends the session barely lower (−0.10%, near $86.89).",
-      "fr": "Le pétrole a fait le yo-yo après que Donald Trump a dit ne plus être intéressé par une entente avec l’Iran : le WTI touchait 87,26 $ (+0,8 %) peu après l’ouverture de New York et le Brent 93,53 $, mais le WTI termine la séance à peine en baisse (−0,10 %, vers 86,89 $)."
-     },
-     "forex": {
-      "en": "The dollar index gained 0.22% to 103.16, near a 19-month high; EUR/USD lost 0.23% to 1.1064, USD/JPY rose 0.15% to 159.94 and USD/CAD held flat at 1.4256.",
-      "fr": "L’indice du dollar a gagné 0,22 % à 103,16, près de son plus haut en 19 mois; l’EUR/USD a cédé 0,23 % à 1,1064, l’USD/JPY a pris 0,15 % à 159,94 et l’USD/CAD est resté stable à 1,4256."
-     },
-     "indices": {
-      "en": "Nvidia lost about 14% at the open after Jensen Huang resigned (Colette Kress becomes interim CEO), but Wall Street quickly recovered: from 9:30 a.m. to the end of the session, S&P 500 +1.30% (7,648.6), Nasdaq 100 +2.02%, Dow +0.58% and Russell 2000 −0.12%; in Europe, the STOXX 600 hit a record, with the DAX about +1%, the CAC 40 +0.7% and the FTSE 100 +0.3% in the morning.",
-      "fr": "Nvidia a perdu environ 14 % à l’ouverture après la démission de Jensen Huang (Colette Kress devient PDG par intérim), mais Wall Street s’est vite repris : de 9 h 30 à la fin de la séance, S&P 500 +1,30 % (7 648,6), Nasdaq 100 +2,02 %, Dow +0,58 % et Russell 2000 −0,12 %; en Europe, le STOXX 600 a touché un record, avec le DAX vers +1 %, le CAC 40 +0,7 % et le FTSE 100 +0,3 % en matinée."
-     },
-     "metals": {
-      "en": "Gold fell 2.32% to about $3,878, its lowest in more than a week, and silver 2.57% to about $50.13, weighed by the strong dollar, a 10-year yield near 5% (2-year near 4.76%) and bets on a Fed hike in December.",
-      "fr": "L’or a chuté de 2,32 % vers 3 878 $, son plus bas en plus d’une semaine, et l’argent de 2,57 % vers 50,13 $, pénalisés par la vigueur du dollar, un rendement à 10 ans près de 5 % (2 ans vers 4,76 %) et des paris de hausse de la Fed en décembre."
-     }
-    },
-    "session": "lon",
-    "sources": [
-     "https://www.bnnbloomberg.ca/markets/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/",
-     "https://www.kitco.com/news/off-the-wire/2026-11-12/wall-street-set-dip-nvidia-storm-continues-treasury-yields-bob-5",
-     "https://www.kitco.com/news/article/2026-11-12/gold-silver-extend-losses-fed-hike-bets-lift-dollar-treasury-yields-kitco",
-     "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html",
-     "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-increase-but-labor-market-firming-5021926",
-     "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five"
-    ],
-    "title": "Jensen Huang quitte Nvidia, l’or chute de 2,3 % et le dollar grimpe avec les paris d’une hausse de la Fed",
-    "title_en": "Jensen Huang exits Nvidia, gold drops 2.3% and the dollar climbs on Fed hike bets"
-   },
-   {
-    "body": "La séance asiatique a été dominée par la chute de plus de 8 % de Nvidia après la clôture de Wall Street, son conseil d’administration s’étant réuni au sujet de la situation entourant le PDG Jensen Huang, ce qui a effacé une partie de l’élan donné la veille par CoreWeave. Les contrats à terme sur le S&P 500 ont reculé d’environ 0,4 %, et les places asiatiques ont fini en ordre dispersé : le Nikkei a cédé 0,1 % à 61 224,87, le Hang Seng 0,9 % et le Taiex 1,2 %, tandis que Shanghai gagnait 0,2 %. L’indice du dollar a atteint 102,87, son plus haut depuis avril de l’an dernier, porté par des marchés qui voient une hausse de taux de la Fed le 9 décembre comme quasi acquise. L’or est resté stable près de 3 984 $, le bitcoin a glissé de 0,46 % et le pétrole a peu bougé.",
-    "body_en": "The Asian session was dominated by Nvidia’s drop of more than 8% after Wall Street’s close, as its board met over the situation surrounding CEO Jensen Huang, erasing part of the momentum CoreWeave had provided the day before. S&P 500 futures fell about 0.4%, and Asian markets ended mixed: the Nikkei slipped 0.1% to 61,224.87, the Hang Seng lost 0.9% and the Taiex 1.2%, while Shanghai gained 0.2%. The dollar index reached 102.87, its highest since April last year, as markets see a Fed rate hike on December 9 as all but certain. Gold held steady near $3,984, bitcoin slipped 0.46% and oil barely moved.",
-    "date": "2026-11-12",
-    "sections": {
-     "crypto": {
-      "en": "Bitcoin fell 0.46% during the session to around $73,580, with ether down about 0.9% near $2,050, amid caution toward tech stocks.",
-      "fr": "Le bitcoin a reculé de 0,46 % pendant la séance vers 73 580 $, l’ether perdant environ 0,9 % vers 2 050 $, dans un climat de prudence face aux valeurs technologiques."
-     },
-     "energy": {
-      "en": "WTI held steady during the session (−0.01%, near $86.23), with no major new catalyst for the oil market.",
-      "fr": "Le WTI est resté stable pendant la séance (−0,01 %, vers 86,23 $), sans nouvelle donnée majeure pour le marché pétrolier."
-     },
-     "forex": {
-      "en": "The dollar gained further ground (index +0.13% to 102.99, its highest since April 2025 according to Reuters): EUR/USD slipped 0.12% to about 1.1082, USD/JPY stuck at 159.78, just shy of the 160 threshold, and USD/CAD rose 0.06% to about 1.4258.",
-      "fr": "Le dollar a encore gagné du terrain (indice +0,13 % à 102,99, plus haut depuis avril 2025 selon Reuters) : l’EUR/USD a cédé 0,12 % vers 1,1082, l’USD/JPY est resté collé à 159,78, tout près du seuil de 160, et l’USD/CAD a avancé de 0,06 % vers 1,4258."
-     },
-     "indices": {
-      "en": "Nikkei −0.1% (61,224.87), Kospi nearly unchanged (5,375.63), Hang Seng −0.9%, Taiex −1.2%, ASX 200 −0.4% and Shanghai +0.2%; S&P 500 futures fell about 0.4% in Nvidia’s wake.",
-      "fr": "Nikkei −0,1 % (61 224,87), Kospi quasi inchangé (5 375,63), Hang Seng −0,9 %, Taiex −1,2 %, ASX 200 −0,4 % et Shanghai +0,2 %; les contrats à terme sur le S&P 500 reculaient d’environ 0,4 % dans la foulée de Nvidia."
-     },
-     "metals": {
-      "en": "Gold ended the session virtually unchanged (−0.01%, near $3,984) after the previous day’s drop, while silver rose 0.43% to about $51.46.",
-      "fr": "L’or a terminé la séance pratiquement inchangé (−0,01 %, vers 3 984 $) après sa baisse de la veille, tandis que l’argent a progressé de 0,43 % vers 51,46 $."
-     }
-    },
-    "session": "tok",
-    "sources": [
-     "https://www.wsls.com/business/2026/11/12/asian-shares-mostly-slip-as-nvidias-troubles-weigh-on-ai-stocks-despite-a-rally-on-wall-st/",
-     "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-fragile-nvidia-plummets-015524144.html"
-    ],
-    "title": "Nvidia chute après la cloche, l’Asie hésite et le dollar touche un sommet de 19 mois",
-    "title_en": "Nvidia slides after the bell, Asia wavers and the dollar hits a 19-month high"
-   },
-   {
-    "body": "Wall Street a rebondi après deux séances de recul liées à l’IPC chaud : le Nasdaq a clôturé en hausse de 1,60 % à 25 466,19, le S&P 500 de 1,31 % à 7 619,38 et le Dow de 0,49 % à 52 486,49, CoreWeave bondissant de 24,7 % après ses résultats et l’indice des semi-conducteurs de 5,7 %. Le marché obligataire au comptant était fermé pour le Veterans Day, mais les paris d’une hausse de taux de la Fed en décembre restent solidement ancrés, Goldman Sachs ajoutant même une hausse en mars à sa prévision. Ce contexte a gardé le dollar ferme et pesé sur les métaux : l’or a reculé de 1,32 % pendant la séance pour finir près de 3 992 $. Le bitcoin a progressé d’environ 1,1 % tandis que le WTI a cédé 0,72 % vers 86,33 $.",
-    "body_en": "Wall Street rebounded after two sessions of losses tied to the hot CPI: the Nasdaq closed up 1.60% at 25,466.19, the S&P 500 up 1.31% at 7,619.38 and the Dow up 0.49% at 52,486.49, as CoreWeave jumped 24.7% after earnings and the semiconductor index rose 5.7%. The cash bond market was closed for Veterans Day, but bets on a December Fed rate hike remain firmly in place, with Goldman Sachs even adding a March hike to its forecast. That backdrop kept the dollar firm and weighed on metals: gold fell 1.32% during the session to end near $3,992. Bitcoin gained about 1.1% while WTI slipped 0.72% to around $86.33.",
-    "date": "2026-11-11",
-    "sections": {
-     "crypto": {
-      "en": "Bitcoin gained 1.13% during the session, from $73,734 to $74,568, modestly benefiting from the renewed risk appetite.",
-      "fr": "Le bitcoin a gagné 1,13 % pendant la séance, de 73 734 $ à 74 568 $, profitant modestement du regain d’appétit pour le risque."
-     },
-     "energy": {
-      "en": "WTI fell 0.72% during the session, from $86.96 to $86.33, giving back part of the morning gains tied to ship attacks in the Strait of Hormuz.",
-      "fr": "Le WTI a reculé de 0,72 % pendant la séance, de 86,96 $ à 86,33 $, effaçant une partie des gains du matin liés aux attaques de navires dans le détroit d’Ormuz."
-     },
-     "forex": {
-      "en": "The dollar index rose 0.14%; EUR/USD fell 0.12% to 1.1091, USD/JPY rose 0.19% to 159.85, near the 160 level Tokyo watches, and USD/CAD gained 0.08% to 1.4251.",
-      "fr": "L’indice du dollar a gagné 0,14 %; l’EUR/USD a reculé de 0,12 % à 1,1091, l’USD/JPY a monté de 0,19 % à 159,85, près du seuil de 160 surveillé par Tokyo, et l’USD/CAD de 0,08 % à 1,4251."
-     },
-     "indices": {
-      "en": "Close: Nasdaq +1.60%, S&P 500 +1.31%, Dow +0.49%; measured from the 9:30 a.m. open to the close, the Nasdaq 100 gained 0.45%, the S&P 500 0.41%, the Dow 0.54% and the Russell 2000 0.13%, with most of the gain made at the open.",
-      "fr": "Clôture : Nasdaq +1,60 %, S&P 500 +1,31 %, Dow +0,49 %; mesuré de l’ouverture de 9 h 30 à la clôture, le Nasdaq 100 gagne 0,45 %, le S&P 500 0,41 %, le Dow 0,54 % et le Russell 2000 0,13 %, l’essentiel de la hausse ayant été acquis à l’ouverture."
-     },
-     "metals": {
-      "en": "Gold lost 1.32% during the session ($4,045.60 to $3,992.10) and silver 1.93% ($52.75 to $51.73), held back by a firm dollar and the prospect of Fed rate hikes.",
-      "fr": "L’or a perdu 1,32 % durant la séance (4 045,60 $ à 3 992,10 $) et l’argent 1,93 % (52,75 $ à 51,73 $), freinés par le dollar ferme et la perspective de hausses de taux de la Fed."
-     }
-    },
-    "session": "ny",
-    "sources": [
-     "https://www.marketscreener.com/news/stocks-end-higher-as-coreweave-results-ease-ai-spending-worries-ce785edbd18cf726",
-     "https://www.investing.com/news/economy-news/goldman-expects-additional-fed-rate-hike-in-march-5017688",
-     "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-november-11-2026-gold-prices-fall-back-as-inflation-concerns-broaden-121148323.html",
-     "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347"
-    ],
-    "title": "CoreWeave rallume l’IA : le Nasdaq gagne 1,6 %, l’or glisse sous 4 000 $",
-    "title_en": "CoreWeave revives the AI trade: Nasdaq up 1.6%, gold slips below $4,000"
-   },
-   {
-    "body": "Le STOXX 600 a signé un record de clôture, porté par Siemens Energy (+8,3 % après des perspectives relevées) et par les résultats de CoreWeave, qui ont ravivé l’optimisme pour l’IA et fait grimper les contrats à terme du Nasdaq d’environ 2 % avant l’ouverture à New York. Le dollar a profité des paris d’une hausse de taux de la Fed : l’indice a gagné 0,54 %, l’EUR/USD a perdu 0,54 % et l’USD/JPY a monté de 0,62 % près de 159,86. L’or a reculé de 1,45 % et l’argent de 1,87 %. Le pétrole a bondi de 1,84 % avec la poursuite des attaques de navires dans le détroit d’Ormuz.",
-    "body_en": "The STOXX 600 posted a record close, driven by Siemens Energy (+8.3% after raising its outlook) and CoreWeave's results, which revived AI optimism and lifted Nasdaq futures about 2% before the New York open. The dollar benefited from bets on a Fed rate hike: the index gained 0.54%, EUR/USD lost 0.54% and USD/JPY rose 0.62% to near 159.86. Gold fell 1.45% and silver 1.87%. Oil jumped 1.84% as ship attacks continued in the Strait of Hormuz.",
-    "date": "2026-11-11",
-    "sections": {
-     "crypto": {
-      "en": "Bitcoin gained 0.29% to $74,213, despite a fourth day of outflows from U.S. spot ETFs on Tuesday.",
-      "fr": "Le bitcoin a gagné 0,29 % à 74 213 $, malgré une quatrième journée de sorties des FNB américains au comptant mardi."
-     },
-     "energy": {
-      "en": "WTI jumped 1.84% to $87.83: ship attacks in Hormuz and Tehran's refusal to negotiate with Washington dampen truce hopes.",
-      "fr": "Le WTI a bondi de 1,84 % à 87,83 $ : les attaques de navires à Ormuz et le refus de Téhéran de négocier avec Washington freinent l’espoir d’une trêve."
-     },
-     "forex": {
-      "en": "The dollar index rose 0.54%; EUR/USD fell 0.54% to 1.1096, USD/JPY rose 0.62% to 159.86 and USD/CAD 0.21% to 1.4244.",
-      "fr": "L’indice du dollar a gagné 0,54 %; l’EUR/USD a chuté de 0,54 % à 1,1096, l’USD/JPY a monté de 0,62 % à 159,86 et l’USD/CAD de 0,21 % à 1,4244."
-     },
-     "indices": {
-      "en": "The STOXX 600 closed at a record, with European tech up about 2%; in New York, Nasdaq 100 futures were up about 2% before the open.",
-      "fr": "Le STOXX 600 a clôturé à un record, la tech européenne gagnant environ 2 %; à New York, les contrats à terme du Nasdaq 100 grimpaient d’environ 2 % avant l’ouverture."
-     },
-     "metals": {
-      "en": "Gold lost 1.45% during the session ($4,066.90 to $4,008.10) and silver 1.87% ($53.06 to $52.07), pressured by the dollar.",
-      "fr": "L’or a perdu 1,45 % pendant la séance (4 066,90 $ à 4 008,10 $) et l’argent 1,87 % (53,06 $ à 52,07 $), sous la pression du dollar."
-     }
-    },
-    "session": "lon",
-    "sources": [
-     "https://finance.yahoo.com/markets/stocks/articles/european-stocks-near-record-high-102945417.html",
-     "https://www.marketscreener.com/news/europe-s-stoxx-600-near-record-high-as-siemens-energy-coreweave-outlooks-lift-sentiment-ce785edbda88f720",
-     "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347",
-     "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks",
-     "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
-    ],
-    "title": "L’Europe touche un record grâce à l’IA; le dollar s’envole et l’or recule de 1,5 %",
-    "title_en": "Europe hits a record on AI; the dollar climbs and gold drops 1.5%"
-   },
-   {
-    "body": "Malgré le recul de Wall Street après l’IPC chaud, les places asiatiques ont surtout monté grâce à la demande de puces d’IA : le Nikkei a gagné 0,8 % à 60 942,48 et le Kospi 1,6 % à 5 321,10, tandis que le Hang Seng a cédé 0,7 %. À Taïwan, TSMC a bondi de 3,1 % après des revenus d’octobre près de six fois supérieurs à ceux d’il y a un an. Les métaux ont repris une partie de leurs pertes de mardi, l’argent gagnant 2,79 % et l’or 0,53 %. Le dollar est resté ferme et les marchés continuent de miser sur une hausse de taux de la Fed en décembre.",
-    "body_en": "Despite Wall Street's pullback after the hot CPI, Asian markets mostly rose on AI chip demand: the Nikkei gained 0.8% to 60,942.48 and the Kospi 1.6% to 5,321.10, while the Hang Seng fell 0.7%. In Taiwan, TSMC jumped 3.1% after October revenue nearly six times its year-earlier level. Metals recovered part of Tuesday's losses, with silver up 2.79% and gold up 0.53%. The dollar stayed firm as markets keep betting on a December Fed rate hike.",
-    "date": "2026-11-11",
-    "sections": {
-     "crypto": {
-      "en": "Bitcoin slipped 0.25% to $73,525, missing out on the equity rebound.",
-      "fr": "Le bitcoin a glissé de 0,25 % à 73 525 $, sans profiter du rebond des actions."
-     },
-     "energy": {
-      "en": "WTI gained 0.24% to $86.39 and Brent climbed toward $92.42 (+1%) after Tuesday's drop.",
-      "fr": "Le WTI a gagné 0,24 % à 86,39 $ et le Brent remontait vers 92,42 $ (+1 %) après sa baisse de mardi."
-     },
-     "forex": {
-      "en": "The dollar index rose 0.10%; USD/JPY barely moved (+0.07% to 158.82), EUR/USD fell 0.10% to 1.1160 and USD/CAD gained 0.15% to 1.4207.",
-      "fr": "L’indice du dollar a monté de 0,10 %; l’USD/JPY a peu bougé (+0,07 % à 158,82), l’EUR/USD a reculé de 0,10 % à 1,1160 et l’USD/CAD a gagné 0,15 % à 1,4207."
-     },
-     "indices": {
-      "en": "Nikkei +0.8%, Kospi +1.6% (Samsung +2.3%, SK Hynix +3.4%), Taiex +2.1%; Hang Seng −0.7%, Shanghai −0.3% and ASX 200 +0.1%.",
-      "fr": "Nikkei +0,8 %, Kospi +1,6 % (Samsung +2,3 %, SK Hynix +3,4 %), Taiex +2,1 %; Hang Seng −0,7 %, Shanghai −0,3 % et ASX 200 +0,1 %."
-     },
-     "metals": {
-      "en": "Gold gained 0.53% during the session ($4,046.50 to $4,067.90) and silver 2.79% ($51.58 to $53.02), on bargain buying after Tuesday's drop.",
-      "fr": "L’or a gagné 0,53 % pendant la séance (4 046,50 $ à 4 067,90 $) et l’argent 2,79 % (51,58 $ à 53,02 $), des achats à bon compte après la chute de mardi."
-     }
-    },
-    "session": "tok",
-    "sources": [
-     "https://www.wsls.com/business/2026/11/11/asian-shares-mostly-rise-on-ai-chip-demand-despite-wall-streets-retreat-on-inflation-data/"
-    ],
-    "title": "Les puces d’IA portent Tokyo et Séoul; l’argent rebondit de 2,8 %",
-    "title_en": "AI chips lift Tokyo and Seoul; silver rebounds 2.8%"
-   }
-  ],
-  "research": [
-   {
-    "bank": "Bank of America",
-    "date": "2026-11-11",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "title": "BofA : l’IPC d’octobre ouvre la porte à une hausse de 50 pb en décembre",
-    "title_en": "BofA: October CPI opens the door to a 50 bp December hike",
-    "summary": "Après un IPC de +0,4 % sur un mois (sous-jacent +0,3 %), BofA s’attend toujours à une hausse de 25 pb en décembre, mais juge qu’un pas de 50 pb est désormais possible. La banque voit aussi un risque croissant que la hausse suivante arrive en janvier plutôt qu’en mars.",
-    "summary_en": "After a 0.4% monthly CPI print (core +0.3%), BofA still expects a 25 bp December hike but says a 50 bp move is now possible. The bank also sees a rising risk that the next hike comes in January rather than March.",
-    "url": "https://finance.yahoo.com/economy/policy/articles/bofa-says-october-cpi-report-123105635.html"
-   },
-   {
-    "bank": "TD Securities",
-    "date": "2026-11-10",
-    "topic": "OR",
-    "topic_en": "GOLD",
-    "title": "TD Securities voit l’or retester le soutien des 3 900 $",
-    "title_en": "TD Securities sees gold retesting $3,900 support",
-    "summary": "Bart Melek s’attend à ce que l’or reteste les 3 900 $ l’once, la hausse des taux et la vigueur du dollar freinant la demande d’investissement, et à ce qu’il reste dans le bas de sa fourchette de 3 900 à 4 200 $. Les achats des banques centrales (675 t depuis janvier) pourraient ne pas suffire à compenser.",
-    "summary_en": "Bart Melek expects gold to retest $3,900/oz as higher rates and a stronger dollar weigh on investment demand, keeping prices near the bottom of the $3,900–$4,200 range. Central bank buying (675 t year-to-date) may not be enough to offset it.",
-    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-fall-below-4000-analysts-warn-further-losses-toward-3900"
-   },
-   {
-    "bank": "Standard Chartered",
-    "date": "2026-11-10",
-    "summary": "Suki Cooper réitère une moyenne de 4 650 $ l’once au T4 2026 et de 4 850 $ au T1 2027, jugeant que les entrées dans les FNB et les achats des banques centrales (321 t au T3) forment un plancher solide. La banque prévoit une hausse de 25 pb de la Fed en décembre, puis un statu quo en 2027.",
-    "summary_en": "Suki Cooper reiterates a $4,650/oz Q4 2026 average and $4,850 for Q1 2027, arguing ETF inflows and central bank buying (321 t in Q3) form a solid floor. The bank expects a 25 bp Fed hike in December, then a hold through 2027.",
-    "title": "Standard Chartered maintient 4 650 $ pour l’or au T4 malgré le recul",
-    "title_en": "Standard Chartered keeps $4,650 Q4 gold call despite the pullback",
-    "topic": "OR",
-    "topic_en": "GOLD",
-    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-find-solid-support-4000-standard-chartered-sees-rally-4650-year"
-   },
-   {
-    "bank": "ING",
-    "date": "2026-11-11",
-    "summary": "Après l’IPC chaud, ING juge la hausse de 25 pb en décembre conforme à sa prévision, mais n’en voit pas d’autres en 2027 vu le ralentissement des secteurs sensibles aux taux et de l’énergie. Les taux en euro et en livre ne devraient pas suivre aveuglément l’inflation américaine.",
-    "summary_en": "After the hot CPI, ING says a 25 bp December hike matches its forecast but sees no further hikes into 2027 given cooling rate-sensitive sectors and energy. EUR and GBP rates should not blindly follow US inflation prints.",
-    "title": "ING : le 10 ans américain revient à 5 %, mais pas d’autres hausses de la Fed en 2027",
-    "title_en": "ING: US 10-year back at 5%, but no further Fed hikes into 2027",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "url": "https://seekingalpha.com/article/4966354-rates-spark-back-to-5-percent-10y-ust-inflation-fears"
-   },
-   {
-    "bank": "Citi",
-    "date": "2026-11-10",
-    "summary": "Citi prévoit toujours une hausse de 25 pb de la Fed en décembre, tout en voyant un risque accru d’un geste de 50 pb après l’IPC d’octobre. BofA et Standard Chartered jugent aussi que la porte à 50 pb est ouverte, sans que les données le justifient encore.",
-    "summary_en": "Citi still expects a 25 bp Fed hike in December while seeing an increased risk of a 50 bp move after October's CPI. BofA and Standard Chartered also say the door to 50 bp is open, though the data do not yet firmly support it.",
-    "title": "Citi s’en tient à 25 pb en décembre, mais le risque de 50 pb augmente",
-    "title_en": "Citi sticks with 25 bp in December, but sees a rising risk of 50 bp",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "url": "https://www.thestandard.com.hk/finance/article/348218/Goldman-adds-another-rate-hike-to-Fed-outlook-after-hot-inflation-data"
-   },
-   {
-    "bank": "UBS",
-    "date": "2026-11-10",
-    "summary": "UBS garde sa cible de fin 2027 à 8 900 et fixe 9 600 pour la fin de 2028, jugeant que la baisse des multiples prépare de bons rendements; la banque prévoit un BPA de 430 $ en 2027 et de 490 $ en 2028.",
-    "summary_en": "UBS keeps its end-2027 target at 8,900 and sets 9,600 for end-2028, arguing the derating sets up strong returns; it sees EPS of $430 in 2027 and $490 in 2028.",
-    "title": "UBS maintient sa cible de 8 900 pour le S&P 500 à la fin de 2027",
-    "title_en": "UBS keeps its 8,900 S&P 500 target for end-2027",
-    "topic": "ACTIONS",
-    "topic_en": "EQUITIES",
-    "url": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267"
-   },
-   {
-    "bank": "Goldman Sachs",
-    "date": "2026-11-10",
-    "summary": "Après l’IPC chaud d’octobre, Goldman Sachs prévoit maintenant une hausse de 25 pb en mars, en plus de décembre, plutôt qu’une fin du cycle en décembre. La banque repousse le début des baisses de taux à décembre 2027.",
-    "summary_en": "After October's hot CPI, Goldman Sachs now expects a 25 bp hike in March on top of December, instead of the cycle ending in December. The bank pushes the start of rate cuts back to December 2027.",
-    "title": "Goldman ajoute une hausse de taux de la Fed en mars",
-    "title_en": "Goldman adds a March Fed rate hike",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "url": "https://www.investing.com/news/economy-news/goldman-expects-additional-fed-rate-hike-in-march-5017688"
-   },
-   {
-    "bank": "Deutsche Bank",
-    "date": "2026-11-10",
-    "summary": "Matt Luzzetti, économiste en chef, prévoit des hausses de 25 pb aux réunions de décembre, janvier et mars; une hausse de 50 pb est possible, mais ce n’est pas son scénario de base.",
-    "summary_en": "Chief economist Matt Luzzetti expects 25 bp hikes at the December, January and March meetings; a 50 bp move is possible but not his baseline.",
-    "title": "Deutsche Bank s’attend à trois hausses de la Fed : décembre, janvier et mars",
-    "title_en": "Deutsche Bank expects three Fed hikes: December, January and March",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "url": "https://finance.yahoo.com/economy/policy/article/hot-inflation-report-has-wall-street-eyeing-whether-the-fed-could-make-a-jumbo-rate-hike-next-month-164942156.html"
-   },
-   {
-    "bank": "Natixis",
-    "date": "2026-11-10",
-    "summary": "Chris Hodge, économiste en chef, cite l’inflation tenace et les propos de Waller et estime que la Fed « risque de prendre du retard » si elle n’agit pas de façon décisive.",
-    "summary_en": "Chief economist Chris Hodge cites sticky inflation and Waller's remarks, saying the Fed \"risks getting behind the curve by not acting decisively.\"",
-    "title": "Natixis juge une hausse de 50 pb de la Fed en décembre bien possible",
-    "title_en": "Natixis sees a 50 bp December Fed hike as a live possibility",
-    "topic": "TAUX",
-    "topic_en": "RATES",
-    "url": "https://finance.yahoo.com/economy/policy/article/hot-inflation-report-has-wall-street-eyeing-whether-the-fed-could-make-a-jumbo-rate-hike-next-month-164942156.html"
-   }
-  ],
+  "asOf": "2026-11-13T22:18:57Z",
   "bankcalls": [
    {
     "bank": "TD Securities",
     "cat": "cmd",
-    "market": "XAU/USD",
-    "market_en": "XAU/USD",
+    "date": "2026-11-10",
     "dir": "range",
-    "target": "Bas de la fourchette 3 900 – 4 200 $ (retest des 3 900 $)",
-    "target_en": "Bottom of the $3,900–$4,200 range (retest of $3,900)",
     "horizon": "court terme",
     "horizon_en": "near term",
-    "date": "2026-11-10",
+    "market": "XAU/USD",
+    "market_en": "XAU/USD",
     "src": "Kitco",
+    "target": "Bas de la fourchette 3 900 – 4 200 $ (retest des 3 900 $)",
+    "target_en": "Bottom of the $3,900–$4,200 range (retest of $3,900)",
     "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-fall-below-4000-analysts-warn-further-losses-toward-3900"
    },
    {
@@ -34822,6 +34430,445 @@
     "next": "2026-12-09",
     "rate": "2,75",
     "src": "RBNZ"
+   }
+  ],
+  "recaps": [
+   {
+    "date": "2026-11-13",
+    "session": "ny",
+    "title": "Le Dow sauve la mise, mais AMD plonge de 8 % et le Nasdaq perd 0,9 %; le dollar tient son sommet de 19 mois",
+    "title_en": "The Dow edges higher, but AMD sinks 8% and the Nasdaq loses 0.9%; the dollar holds a 19-month high",
+    "body": "La séance de New York a fini partagée : après une ouverture en hausse, la vente des semi-conducteurs a repris (AMD −8,4 %) et le S&P 500 a clôturé en baisse de 0,40 % à 7 561,67 et le Nasdaq de 0,91 %, tandis que le Dow a gagné 0,09 % (CNBC); les trois indices gardent quand même des gains hebdomadaires de 2 à 2,5 %. L’IPP d’octobre (+0,3 % sur un mois, 6,5 % sur un an) et le 10 ans monté jusqu’à 5,17 % en séance gardent une hausse de taux de la Fed le 9 décembre comme quasi-certitude selon CME FedWatch. L’indice du dollar a gagné 0,17 % sur la séance à 103,41, près de son plus haut depuis avril 2025, et l’argent a cédé 1,87 %. Le bitcoin (−0,97 %), l’or (−0,11 %) et le WTI (−0,19 %) ont peu bougé.",
+    "body_en": "The New York session ended mixed: after a higher open, the chip selloff resumed (AMD −8.4%) and the S&P 500 closed 0.40% lower at 7,561.67 and the Nasdaq 0.91% lower, while the Dow gained 0.09% (CNBC); all three indexes still posted weekly gains of 2% to 2.5%. October PPI (+0.3% m/m, 6.5% y/y) and a 10-year yield that reached 5.17% intraday keep a December 9 Fed rate hike a near-certainty per CME FedWatch. The dollar index rose 0.17% over the session to 103.41, near its highest since April 2025, and silver fell 1.87%. Bitcoin (−0.97%), gold (−0.11%) and WTI (−0.19%) barely moved.",
+    "sections": {
+     "indices": {
+      "fr": "Sur la séance mesurée (depuis 9 h 30), Nasdaq 100 −1,15 %, S&P 500 −0,74 %, Russell 2000 −0,56 % et Dow −0,28 %; à la clôture, le S&P 500 a fini à 7 561,67 (−0,40 %), le Nasdaq à 25 136,27 (−0,91 %) et le Dow en légère hausse (+0,09 %), avec AMD −8,4 % à 535,83 $ et Dell −7,2 % parmi les plus fortes baisses (CNBC, 24/7 Wall St.).",
+      "en": "Over the measured session (from 9:30 a.m.), Nasdaq 100 −1.15%, S&P 500 −0.74%, Russell 2000 −0.56% and Dow −0.28%; at the close, the S&P 500 ended at 7,561.67 (−0.40%), the Nasdaq at 25,136.27 (−0.91%) and the Dow slightly higher (+0.09%), with AMD −8.4% to $535.83 and Dell −7.2% among the biggest decliners (CNBC, 24/7 Wall St.)."
+     },
+     "metals": {
+      "fr": "L’or a presque fait du surplace (−0,11 % à 3 882 $), freiné par un 10 ans au-dessus de 5 %, alors que l’argent a perdu 1,87 % à 48,81 $.",
+      "en": "Gold was nearly flat (−0.11% to $3,882), held back by a 10-year yield above 5%, while silver lost 1.87% to $48.81."
+     },
+     "forex": {
+      "fr": "L’indice du dollar a gagné 0,17 % à 103,41 (Reuters le situait à 103,35 en début d’après-midi, un sommet depuis avril 2025); EUR/USD −0,24 % à 1,1027, USD/CAD +0,13 % à 1,4266 et USD/JPY quasi stable (−0,08 %) à 159,79, toujours juste sous 160.",
+      "en": "The dollar index rose 0.17% to 103.41 (Reuters had it at 103.35 in early afternoon, its highest since April 2025); EUR/USD −0.24% to 1.1027, USD/CAD +0.13% to 1.4266 and USD/JPY nearly flat (−0.08%) at 159.79, still just under 160."
+     },
+     "crypto": {
+      "fr": "Le bitcoin a cédé 0,97 % à 68 835 $, toujours sous les 70 000 $ qu’il a enfoncés vendredi pour la première fois en près de trois mois (Yahoo Finance).",
+      "en": "Bitcoin slipped 0.97% to $68,835, still below the $70,000 level it broke on Friday for the first time in nearly three months (Yahoo Finance)."
+     },
+     "energy": {
+      "fr": "Le WTI a peu bougé (−0,19 % à 88,93 $) et le Brent se tenait près de 95,70 $ en début d’après-midi (Reuters), entre les tensions dans le détroit d’Ormuz et la hausse des stocks américains.",
+      "en": "WTI barely moved (−0.19% to $88.93) and Brent held near $95.70 in early afternoon (Reuters), caught between Strait of Hormuz tensions and rising U.S. inventories."
+     }
+    },
+    "sources": [
+     "https://live.euronext.com/en/financial-news/stocks-fall-tech-nvidia-concerns-us-dollar-climbs",
+     "https://time.news/dow-ends-slightly-higher-as-sp-500-and-nasdaq-fall-on-tech-weakness/",
+     "https://247wallst.com/cards/money-moved-out-of-tech-and-into-everything-else-today-the-gspc-market-bell-01m7bbjh5wpep4vmjk7jwpas8h",
+     "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+    ]
+   },
+   {
+    "body": "La séance de Londres a fini dans le rouge : l’indice des prix à la production américain d’octobre a monté de 0,3 % (0,4 % attendu), mais son rythme annuel de 6,5 % est le plus élevé depuis novembre 2022 et garde une hausse de taux de la Fed en décembre au centre des prévisions. Après une ouverture en hausse, Wall Street a basculé avec la vente massive des semi-conducteurs (Nvidia −4 %, AMD environ −9 %) et un rendement à 10 ans monté à 5,16 %, son plus haut depuis octobre; le Nasdaq 100 a perdu 1,78 % et le S&P 500 1,15 % sur la séance mesurée. En Europe, le STOXX 600 a reculé de ses records, plombé par la techno et le luxe (Richemont −6,5 %). L’indice du dollar a gagné 0,20 % à 103,38 et le franc suisse a été le plus faible du G10, tandis que l’argent a chuté de 2,16 % et que le pétrole et le bitcoin ont peu bougé.",
+    "body_en": "The London session ended in the red: U.S. October producer prices rose 0.3% (0.4% expected), but the 6.5% annual pace is the highest since November 2022 and keeps a December Fed rate hike at the center of forecasts. After a higher open, Wall Street flipped lower on a chip-stock selloff (Nvidia −4%, AMD about −9%) and a 10-year yield that climbed to 5.16%, its highest since October; the Nasdaq 100 lost 1.78% and the S&P 500 1.15% over the measured session. In Europe, the STOXX 600 retreated from record highs, weighed down by tech and luxury (Richemont −6.5%). The dollar index gained 0.20% to 103.38 and the Swiss franc was the G10 laggard, while silver slid 2.16% and oil and bitcoin barely moved.",
+    "date": "2026-11-13",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin barely moved (+0.16% to $68,638) after its drop below $70,000 in Asia, its lowest since August, weighed by Fed hike bets, spot ETF outflows and MSCI’s removal of Strategy from two indexes (Yahoo Finance).",
+      "fr": "Le bitcoin a peu bougé (+0,16 % à 68 638 $) après sa chute sous 70 000 $ en Asie, son plus bas depuis août, plombé par les paris de hausse de la Fed, les sorties des FNB au comptant et le retrait de Strategy de deux indices MSCI (Yahoo Finance)."
+     },
+     "energy": {
+      "en": "WTI ended the session unchanged (−0.01% at $88.53) after swinging between $87.80 and $89.64; Brent hovered near $96 amid tanker attacks in the Strait of Hormuz, despite a surprise 4.7-million-barrel build in U.S. inventories (EIA, per TheStreet).",
+      "fr": "Le WTI a fini la séance inchangé (−0,01 % à 88,53 $) après avoir oscillé entre 87,80 $ et 89,64 $; le Brent tournait autour de 96 $ avec les attaques de pétroliers dans le détroit d’Ormuz, malgré une hausse surprise de 4,7 millions de barils des stocks américains (EIA, selon TheStreet)."
+     },
+     "forex": {
+      "en": "The dollar index rose 0.20% to 103.38, on track for its best week since September (Reuters); EUR/USD −0.23% to 1.1036, USD/CHF +0.39%, USD/JPY nearly flat (+0.06%) just under 160 and USD/CAD steady at 1.4256.",
+      "fr": "L’indice du dollar a gagné 0,20 % à 103,38, en route vers sa meilleure semaine depuis septembre (Reuters); EUR/USD −0,23 % à 1,1036, USD/CHF +0,39 %, USD/JPY quasi stable (+0,06 %) juste sous 160 et USD/CAD stable à 1,4256."
+     },
+     "indices": {
+      "en": "Over the session, Nasdaq 100 −1.78%, S&P 500 −1.15%, Russell 2000 −0.93% and Dow −0.50%: chipmakers led the drop (AMD about −9%, Broadcom and Micron roughly −5% to −6%, Nvidia −4% to $159.53 around 11:50 a.m.), the VIX topped 20 and, in Europe, the STOXX 600 slipped 0.2% in the morning after record highs (Reuters).",
+      "fr": "Sur la séance, Nasdaq 100 −1,78 %, S&P 500 −1,15 %, Russell 2000 −0,93 % et Dow −0,50 % : les puces ont mené la baisse (AMD environ −9 %, Broadcom et Micron environ −5 à −6 %, Nvidia −4 % à 159,53 $ vers 11 h 50), le VIX a dépassé 20 et, en Europe, le STOXX 600 a cédé 0,2 % en matinée après des records (Reuters)."
+     },
+     "metals": {
+      "en": "Gold lost 0.49% to $3,882 after touching $3,910, held back by rising yields, and silver slid 2.16% to $48.91; Goldman Sachs cut its end-2026 target to $4,150 (from $4,650), per Kitco.",
+      "fr": "L’or a perdu 0,49 % à 3 882 $ après avoir touché 3 910 $, freiné par la hausse des rendements, et l’argent a chuté de 2,16 % à 48,91 $; Goldman Sachs a abaissé sa cible de fin 2026 à 4 150 $ (4 650 $ auparavant), selon Kitco."
+     }
+    },
+    "session": "lon",
+    "sources": [
+     "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html",
+     "https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-nov-13-2026",
+     "https://www.investing.com/news/stock-market-news/european-shares-retreat-from-record-highs-ai-uncertainty-weighs-5024437",
+     "https://www.marketscreener.com/news/dollar-set-for-best-week-in-two-months-on-rate-hike-wagers-yen-tests-160-ce785ed9db81f02c",
+     "https://kitco.com/news/article/2026-11-13/goldman-sachs-cuts-year-end-gold-price-target-4150oz-2027-target-4800oz",
+     "https://www.cp24.com/news/money/2026/11/13/us-futures-climb-as-wall-street-keeps-an-eye-on-nvidia-microsoft-and-producer-prices/"
+    ],
+    "title": "Les puces font plonger le Nasdaq de 1,8 % malgré un IPP plus doux, l’argent cède 2,2 %",
+    "title_en": "Chipmakers sink the Nasdaq 1.8% despite a softer PPI, silver drops 2.2%"
+   },
+   {
+    "body": "La séance asiatique a été mitigée au lendemain de la démission de Jensen Huang chez Nvidia : le Nikkei a gagné 0,8 % à 61 283 et le Taiex 1,7 %, mais le Hang Seng (−0,9 %), le Kospi (−0,5 %) et l’ASX 200 (−0,7 %) ont reculé. Les paris d’une hausse de taux de la Fed en décembre ont gardé l’indice du dollar près de 103,2, un sommet depuis avril 2025, et le dollar a fini la séance à 160,13 yens (+0,16 %), malgré la ministre des Finances Satsuki Katayama qui promet de « réagir de façon appropriée » à la volatilité. Le bitcoin a chuté de 4,21 % sous 70 000 $, à son plus bas depuis août, déclenchant plus de 1,3 milliard $ de liquidations selon Coinglass. L’or a repris 0,44 % vers 3 900 $ après un creux de plus d’un an, tandis que le pétrole a peu bougé.",
+    "body_en": "The Asian session was mixed the day after Jensen Huang’s resignation at Nvidia: the Nikkei gained 0.8% to 61,283 and the Taiex 1.7%, but the Hang Seng (−0.9%), Kospi (−0.5%) and ASX 200 (−0.7%) fell. Bets on a December Fed rate hike kept the dollar index near 103.2, its highest since April 2025, and the dollar ended the session at 160.13 yen (+0.16%), even as Finance Minister Satsuki Katayama vowed to “respond appropriately” to currency volatility. Bitcoin slid 4.21% below $70,000 to its lowest since August, triggering more than $1.3 billion in liquidations according to Coinglass. Gold recovered 0.44% toward $3,900 after a more-than-one-year low, while oil barely moved.",
+    "date": "2026-11-13",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin lost 4.21% during the session to $68,361, its lowest since Aug. 19, and ether fell below $2,000 for the first time since August; more than $1.3 billion in futures positions were liquidated over 24 hours (Coinglass, via CoinDesk).",
+      "fr": "Le bitcoin a perdu 4,21 % durant la séance, à 68 361 $, son plus bas depuis le 19 août, et l’ether est passé sous 2 000 $ pour la première fois depuis août; plus de 1,3 milliard $ de positions sur contrats à terme ont été liquidées en 24 heures (Coinglass, via CoinDesk)."
+     },
+     "energy": {
+      "en": "WTI slipped 0.20% during the session to $88.54 and Brent held near $95.70 (−0.1%), both on track for a second weekly decline despite Donald Trump’s comments on Iran.",
+      "fr": "Le WTI a reculé de 0,20 % durant la séance, à 88,54 $, et le Brent est resté près de 95,70 $ (−0,1 %), les deux en voie d’une deuxième baisse hebdomadaire malgré les propos de Donald Trump sur l’Iran."
+     },
+     "forex": {
+      "en": "Dollar index −0.04% at 103.19, on track for a 0.9% weekly gain (Reuters); USD/JPY +0.16% at 160.13 under the threat of Tokyo intervention, EUR/USD +0.10% at 1.1062 and USD/CAD −0.02% at 1.4261; CME FedWatch showed a 14.5% chance of a 50-basis-point hike in December.",
+      "fr": "Indice du dollar −0,04 % à 103,19, en voie d’un gain hebdomadaire de 0,9 % (Reuters); USD/JPY +0,16 % à 160,13 sous la menace d’une intervention de Tokyo, EUR/USD +0,10 % à 1,1062 et USD/CAD −0,02 % à 1,4261; le CME FedWatch donnait 14,5 % de chances d’une hausse de 50 points en décembre."
+     },
+     "indices": {
+      "en": "Nikkei +0.8% to 61,283 and Taiex +1.7% (TSMC +0.9%, Tokyo Electron +1.5%), but SoftBank Group −5.2%, SK Hynix −2%, Hang Seng −0.9% to 23,786, Kospi −0.5% and ASX 200 −0.7% to 9,085, per AP; U.S. futures edged higher.",
+      "fr": "Nikkei +0,8 % à 61 283 et Taiex +1,7 % (TSMC +0,9 %, Tokyo Electron +1,5 %), mais SoftBank Group −5,2 %, SK Hynix −2 %, Hang Seng −0,9 % à 23 786, Kospi −0,5 % et ASX 200 −0,7 % à 9 085, selon AP; les contrats à terme américains ont légèrement progressé."
+     },
+     "metals": {
+      "en": "Gold gained 0.44% during the session to about $3,902 after falling below $3,900 on Thursday to its lowest in more than a year (FXStreet), ahead of U.S. producer price data; silver lost 0.38% to $49.85.",
+      "fr": "L’or a gagné 0,44 % durant la séance, à environ 3 902 $, après être tombé jeudi sous 3 900 $ à son plus bas en plus d’un an (FXStreet), en attendant l’indice des prix à la production américain; l’argent a cédé 0,38 % à 49,85 $."
+     }
+    },
+    "session": "tok",
+    "sources": [
+     "https://www.clickondetroit.com/business/2026/11/13/asian-shares-are-mixed-as-investors-assess-impact-of-nvidias-fallout-on-global-ai-development/",
+     "https://za.investing.com/news/economy-news/dollar-set-for-best-week-in-two-months-on-rate-hike-wagers-yen-tests-160-4572915",
+     "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace",
+     "https://www.fxstreet.com/news/gold-falls-to-over-one-year-low-below-3-900-amid-inflation-concerns-us-ppi-data-looms-202611122321"
+    ],
+    "title": "Le bitcoin casse les 70 000 $ et le yen flirte avec 160 pendant que Tokyo grimpe",
+    "title_en": "Bitcoin breaks below $70,000 and the yen flirts with 160 as Tokyo climbs"
+   },
+   {
+    "body": "Wall Street a fini en baisse d’environ 0,4 % (S&P 500 à 7 592, Dow à 52 297, Nasdaq composé à 25 366) au lendemain de la démission de Jensen Huang, mais les indices ont repris du terrain après une ouverture en repli : entre 9 h 30 et 16 h, le S&P 500 a gagné 0,54 % et le Nasdaq 100 1,15 %, Nvidia limitant sa perte à 4,3 % après avoir cédé près de 14 %. Le pétrole a bondi après que Donald Trump a écrit que les États-Unis n’ont plus besoin d’entente avec l’Iran, le Brent gagnant 3,3 % à 95,82 $. Les paris d’une hausse de la Fed en décembre (91 % selon CME FedWatch, d’après Reuters) ont porté le 10 ans à 5,07 % et l’indice du dollar à 103,16, un sommet depuis avril 2025, ce qui a pesé sur l’or (−0,39 % durant la séance) et le bitcoin (−1,48 %). Les ventes de maisons existantes ont chuté de 5,5 % en octobre, à leur plus bas depuis août 2010.",
+    "body_en": "Wall Street ended down about 0.4% (S&P 500 at 7,592, Dow at 52,297, Nasdaq Composite at 25,366) after Jensen Huang’s resignation, but indexes clawed back ground after a weak open: between 9:30 a.m. and 4 p.m., the S&P 500 gained 0.54% and the Nasdaq 100 1.15%, with Nvidia trimming its loss to 4.3% after shedding nearly 14%. Oil jumped after Donald Trump wrote that the U.S. no longer needs a deal with Iran, with Brent up 3.3% at $95.82. Bets on a December Fed hike (91% per CME FedWatch, according to Reuters) lifted the 10-year yield to 5.07% and the dollar index to 103.16, its highest since April 2025, weighing on gold (−0.39% during the session) and bitcoin (−1.48%). Existing home sales fell 5.5% in October to their lowest level since August 2010.",
+    "date": "2026-11-12",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin lost 1.48% during the session to about $71,350, below its 50-week moving average ($75,153), hurt by spot ETF outflows and dollar strength.",
+      "fr": "Le bitcoin a perdu 1,48 % durant la séance vers 71 350 $, sous sa moyenne mobile de 50 semaines (75 153 $), pénalisé par les sorties des FNB au comptant et la vigueur du dollar."
+     },
+     "energy": {
+      "en": "Brent rose 3.3% to $95.82 and WTI 2.6% to $88.74 after Trump’s post (“We don’t need a deal with Iran”) and explosions that halted two supertankers in the Strait of Hormuz, despite a 4.7-million-barrel build in U.S. crude stocks (EIA).",
+      "fr": "Le Brent a gagné 3,3 % à 95,82 $ et le WTI 2,6 % à 88,74 $ après le message de Trump (« We don’t need a deal with Iran ») et des explosions ayant immobilisé deux superpétroliers dans le détroit d’Ormuz, malgré une hausse de 4,7 millions de barils des stocks américains (EIA)."
+     },
+     "forex": {
+      "en": "The dollar index rose 0.25% during the session to about 103.2, its highest since April 2025; EUR/USD fell 0.30% to around 1.106 (lowest since April 2025), USD/JPY brushed 160 (+0.11%) and USD/CAD rose 0.16% to about 1.4256.",
+      "fr": "L’indice du dollar a gagné 0,25 % durant la séance à environ 103,2, son sommet depuis avril 2025; l’EUR/USD a reculé de 0,30 % vers 1,106 (plus bas depuis avril 2025), l’USD/JPY a frôlé 160 (+0,11 %) et l’USD/CAD a monté de 0,16 % vers 1,4256."
+     },
+     "indices": {
+      "en": "Nvidia closed down 4.3% after losing nearly 14% intraday (Colette Kress becomes interim CEO), while AMD (+5.9%) and Broadcom (+5.5%) rose; from 9:30 a.m. to 4 p.m., S&P 500 +0.54%, Nasdaq 100 +1.15%, Dow −0.26% and Russell 2000 −0.99%, but the three major indexes ended the day down about 0.4%.",
+      "fr": "Nvidia a clôturé en baisse de 4,3 % après avoir perdu près de 14 % en séance (Colette Kress devient PDG par intérim), tandis qu’AMD (+5,9 %) et Broadcom (+5,5 %) ont progressé; de 9 h 30 à 16 h, S&P 500 +0,54 %, Nasdaq 100 +1,15 %, Dow −0,26 % et Russell 2000 −0,99 %, mais les trois grands indices finissent la journée en recul d’environ 0,4 %."
+     },
+     "metals": {
+      "en": "Gold slipped 0.39% during the session to about $3,880 and silver 0.48% below $50, held back by a 10-year yield at 5.07% and a 2-year at 4.84%, after jobless claims came in at 200,000 (195,000 expected).",
+      "fr": "L’or a glissé de 0,39 % durant la séance vers 3 880 $ et l’argent de 0,48 % sous 50 $, freinés par un 10 ans à 5,07 % et un 2 ans à 4,84 %, après les demandes de chômage à 200 000 (195 000 attendues)."
+     }
+    },
+    "session": "ny",
+    "sources": [
+     "https://www.kiplinger.com/investing/stocks/stocks-slip-as-wall-street-weighs-nvidias-ceo-crisis-stock-market-today",
+     "https://live.euronext.com/en/financial-news/dollar-reaches-19-month-high-rate-expectations-dominate",
+     "https://www.rigzone.com/news/oil_rises_as_trump_dims_iran_deal_hopes-12-nov-2026-185073-article",
+     "https://www.kitco.com/news/article/2026-11-12/gold-price-tests-3900oz-after-us-weekly-jobless-claims-rise-200k",
+     "https://www.coindesk.com/daybook-us/2026/11/12/bitcoin-weakness-erases-september-s-bullish-signal"
+    ],
+    "title": "Nvidia limite les dégâts, le pétrole bondit de 3 % et le dollar touche un sommet de 19 mois",
+    "title_en": "Nvidia trims its losses, oil jumps 3% and the dollar hits a 19-month high"
+   },
+   {
+    "body": "La séance de Londres a été secouée par la démission de Jensen Huang à la tête de Nvidia, dont l’action a chuté d’environ 14 % à l’ouverture de Wall Street avant que les indices américains n’effacent leurs pertes initiales : depuis 9 h 30, le S&P 500 a remonté de 1,30 % et le Nasdaq 100 de 2,02 %. En Europe, le STOXX 600 a atteint un sommet record, une première depuis août, et le DAX gagnait environ 1 % en début de séance. Les paris d’une hausse de taux de la Fed les 8 et 9 décembre (environ 90 % selon CME FedWatch) ont gardé le rendement américain à 10 ans près de 5 % et porté l’indice du dollar à 103,16 (+0,22 %), ce qui a fait plonger l’or de 2,32 % vers 3 878 $ et l’argent de 2,57 %. Les demandes de chômage hebdomadaires sont sorties à 200 000, un peu au-dessus des 195 000 attendues, le bitcoin a reculé de 2,38 % et le pétrole a oscillé après que Donald Trump a dit ne plus vouloir d’entente avec l’Iran.",
+    "body_en": "The London session was rocked by Jensen Huang’s resignation as head of Nvidia, whose stock fell about 14% at Wall Street’s open before U.S. indexes erased their early losses: since 9:30 a.m., the S&P 500 climbed 1.30% and the Nasdaq 100 2.02%. In Europe, the STOXX 600 hit a record high, its first since August, and the DAX gained about 1% in early trading. Bets on a Fed rate hike on December 8–9 (about 90% per CME FedWatch) kept the U.S. 10-year yield near 5% and lifted the dollar index to 103.16 (+0.22%), sending gold down 2.32% to about $3,878 and silver down 2.57%. Weekly jobless claims came in at 200,000, slightly above the 195,000 expected, bitcoin fell 2.38% and oil swung after Donald Trump said he no longer wants a deal with Iran.",
+    "date": "2026-11-12",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin fell 2.38% to about $71,800, dragged by the Nvidia turmoil and a fifth straight day of spot ETF outflows.",
+      "fr": "Le bitcoin a reculé de 2,38 % vers 71 800 $, entraîné par la tourmente chez Nvidia et un cinquième jour de sorties de fonds des FNB au comptant."
+     },
+     "energy": {
+      "en": "Oil swung after Donald Trump said he is no longer interested in a deal with Iran: WTI reached $87.26 (+0.8%) shortly after New York’s open and Brent $93.53, but WTI ends the session barely lower (−0.10%, near $86.89).",
+      "fr": "Le pétrole a fait le yo-yo après que Donald Trump a dit ne plus être intéressé par une entente avec l’Iran : le WTI touchait 87,26 $ (+0,8 %) peu après l’ouverture de New York et le Brent 93,53 $, mais le WTI termine la séance à peine en baisse (−0,10 %, vers 86,89 $)."
+     },
+     "forex": {
+      "en": "The dollar index gained 0.22% to 103.16, near a 19-month high; EUR/USD lost 0.23% to 1.1064, USD/JPY rose 0.15% to 159.94 and USD/CAD held flat at 1.4256.",
+      "fr": "L’indice du dollar a gagné 0,22 % à 103,16, près de son plus haut en 19 mois; l’EUR/USD a cédé 0,23 % à 1,1064, l’USD/JPY a pris 0,15 % à 159,94 et l’USD/CAD est resté stable à 1,4256."
+     },
+     "indices": {
+      "en": "Nvidia lost about 14% at the open after Jensen Huang resigned (Colette Kress becomes interim CEO), but Wall Street quickly recovered: from 9:30 a.m. to the end of the session, S&P 500 +1.30% (7,648.6), Nasdaq 100 +2.02%, Dow +0.58% and Russell 2000 −0.12%; in Europe, the STOXX 600 hit a record, with the DAX about +1%, the CAC 40 +0.7% and the FTSE 100 +0.3% in the morning.",
+      "fr": "Nvidia a perdu environ 14 % à l’ouverture après la démission de Jensen Huang (Colette Kress devient PDG par intérim), mais Wall Street s’est vite repris : de 9 h 30 à la fin de la séance, S&P 500 +1,30 % (7 648,6), Nasdaq 100 +2,02 %, Dow +0,58 % et Russell 2000 −0,12 %; en Europe, le STOXX 600 a touché un record, avec le DAX vers +1 %, le CAC 40 +0,7 % et le FTSE 100 +0,3 % en matinée."
+     },
+     "metals": {
+      "en": "Gold fell 2.32% to about $3,878, its lowest in more than a week, and silver 2.57% to about $50.13, weighed by the strong dollar, a 10-year yield near 5% (2-year near 4.76%) and bets on a Fed hike in December.",
+      "fr": "L’or a chuté de 2,32 % vers 3 878 $, son plus bas en plus d’une semaine, et l’argent de 2,57 % vers 50,13 $, pénalisés par la vigueur du dollar, un rendement à 10 ans près de 5 % (2 ans vers 4,76 %) et des paris de hausse de la Fed en décembre."
+     }
+    },
+    "session": "lon",
+    "sources": [
+     "https://www.bnnbloomberg.ca/markets/2026/11/12/nvidia-shares-plunge-13-at-open-after-ceo-jensen-huang-resigns/",
+     "https://www.kitco.com/news/off-the-wire/2026-11-12/wall-street-set-dip-nvidia-storm-continues-treasury-yields-bob-5",
+     "https://www.kitco.com/news/article/2026-11-12/gold-silver-extend-losses-fed-hike-bets-lift-dollar-treasury-yields-kitco",
+     "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html",
+     "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-increase-but-labor-market-firming-5021926",
+     "https://www.coindesk.com/markets/2026/11/12/bitcoin-dips-with-nvidia-as-etf-outflows-reach-day-five"
+    ],
+    "title": "Jensen Huang quitte Nvidia, l’or chute de 2,3 % et le dollar grimpe avec les paris d’une hausse de la Fed",
+    "title_en": "Jensen Huang exits Nvidia, gold drops 2.3% and the dollar climbs on Fed hike bets"
+   },
+   {
+    "body": "La séance asiatique a été dominée par la chute de plus de 8 % de Nvidia après la clôture de Wall Street, son conseil d’administration s’étant réuni au sujet de la situation entourant le PDG Jensen Huang, ce qui a effacé une partie de l’élan donné la veille par CoreWeave. Les contrats à terme sur le S&P 500 ont reculé d’environ 0,4 %, et les places asiatiques ont fini en ordre dispersé : le Nikkei a cédé 0,1 % à 61 224,87, le Hang Seng 0,9 % et le Taiex 1,2 %, tandis que Shanghai gagnait 0,2 %. L’indice du dollar a atteint 102,87, son plus haut depuis avril de l’an dernier, porté par des marchés qui voient une hausse de taux de la Fed le 9 décembre comme quasi acquise. L’or est resté stable près de 3 984 $, le bitcoin a glissé de 0,46 % et le pétrole a peu bougé.",
+    "body_en": "The Asian session was dominated by Nvidia’s drop of more than 8% after Wall Street’s close, as its board met over the situation surrounding CEO Jensen Huang, erasing part of the momentum CoreWeave had provided the day before. S&P 500 futures fell about 0.4%, and Asian markets ended mixed: the Nikkei slipped 0.1% to 61,224.87, the Hang Seng lost 0.9% and the Taiex 1.2%, while Shanghai gained 0.2%. The dollar index reached 102.87, its highest since April last year, as markets see a Fed rate hike on December 9 as all but certain. Gold held steady near $3,984, bitcoin slipped 0.46% and oil barely moved.",
+    "date": "2026-11-12",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin fell 0.46% during the session to around $73,580, with ether down about 0.9% near $2,050, amid caution toward tech stocks.",
+      "fr": "Le bitcoin a reculé de 0,46 % pendant la séance vers 73 580 $, l’ether perdant environ 0,9 % vers 2 050 $, dans un climat de prudence face aux valeurs technologiques."
+     },
+     "energy": {
+      "en": "WTI held steady during the session (−0.01%, near $86.23), with no major new catalyst for the oil market.",
+      "fr": "Le WTI est resté stable pendant la séance (−0,01 %, vers 86,23 $), sans nouvelle donnée majeure pour le marché pétrolier."
+     },
+     "forex": {
+      "en": "The dollar gained further ground (index +0.13% to 102.99, its highest since April 2025 according to Reuters): EUR/USD slipped 0.12% to about 1.1082, USD/JPY stuck at 159.78, just shy of the 160 threshold, and USD/CAD rose 0.06% to about 1.4258.",
+      "fr": "Le dollar a encore gagné du terrain (indice +0,13 % à 102,99, plus haut depuis avril 2025 selon Reuters) : l’EUR/USD a cédé 0,12 % vers 1,1082, l’USD/JPY est resté collé à 159,78, tout près du seuil de 160, et l’USD/CAD a avancé de 0,06 % vers 1,4258."
+     },
+     "indices": {
+      "en": "Nikkei −0.1% (61,224.87), Kospi nearly unchanged (5,375.63), Hang Seng −0.9%, Taiex −1.2%, ASX 200 −0.4% and Shanghai +0.2%; S&P 500 futures fell about 0.4% in Nvidia’s wake.",
+      "fr": "Nikkei −0,1 % (61 224,87), Kospi quasi inchangé (5 375,63), Hang Seng −0,9 %, Taiex −1,2 %, ASX 200 −0,4 % et Shanghai +0,2 %; les contrats à terme sur le S&P 500 reculaient d’environ 0,4 % dans la foulée de Nvidia."
+     },
+     "metals": {
+      "en": "Gold ended the session virtually unchanged (−0.01%, near $3,984) after the previous day’s drop, while silver rose 0.43% to about $51.46.",
+      "fr": "L’or a terminé la séance pratiquement inchangé (−0,01 %, vers 3 984 $) après sa baisse de la veille, tandis que l’argent a progressé de 0,43 % vers 51,46 $."
+     }
+    },
+    "session": "tok",
+    "sources": [
+     "https://www.wsls.com/business/2026/11/12/asian-shares-mostly-slip-as-nvidias-troubles-weigh-on-ai-stocks-despite-a-rally-on-wall-st/",
+     "https://finance.yahoo.com/markets/stocks/articles/asian-stocks-fragile-nvidia-plummets-015524144.html"
+    ],
+    "title": "Nvidia chute après la cloche, l’Asie hésite et le dollar touche un sommet de 19 mois",
+    "title_en": "Nvidia slides after the bell, Asia wavers and the dollar hits a 19-month high"
+   },
+   {
+    "body": "Wall Street a rebondi après deux séances de recul liées à l’IPC chaud : le Nasdaq a clôturé en hausse de 1,60 % à 25 466,19, le S&P 500 de 1,31 % à 7 619,38 et le Dow de 0,49 % à 52 486,49, CoreWeave bondissant de 24,7 % après ses résultats et l’indice des semi-conducteurs de 5,7 %. Le marché obligataire au comptant était fermé pour le Veterans Day, mais les paris d’une hausse de taux de la Fed en décembre restent solidement ancrés, Goldman Sachs ajoutant même une hausse en mars à sa prévision. Ce contexte a gardé le dollar ferme et pesé sur les métaux : l’or a reculé de 1,32 % pendant la séance pour finir près de 3 992 $. Le bitcoin a progressé d’environ 1,1 % tandis que le WTI a cédé 0,72 % vers 86,33 $.",
+    "body_en": "Wall Street rebounded after two sessions of losses tied to the hot CPI: the Nasdaq closed up 1.60% at 25,466.19, the S&P 500 up 1.31% at 7,619.38 and the Dow up 0.49% at 52,486.49, as CoreWeave jumped 24.7% after earnings and the semiconductor index rose 5.7%. The cash bond market was closed for Veterans Day, but bets on a December Fed rate hike remain firmly in place, with Goldman Sachs even adding a March hike to its forecast. That backdrop kept the dollar firm and weighed on metals: gold fell 1.32% during the session to end near $3,992. Bitcoin gained about 1.1% while WTI slipped 0.72% to around $86.33.",
+    "date": "2026-11-11",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin gained 1.13% during the session, from $73,734 to $74,568, modestly benefiting from the renewed risk appetite.",
+      "fr": "Le bitcoin a gagné 1,13 % pendant la séance, de 73 734 $ à 74 568 $, profitant modestement du regain d’appétit pour le risque."
+     },
+     "energy": {
+      "en": "WTI fell 0.72% during the session, from $86.96 to $86.33, giving back part of the morning gains tied to ship attacks in the Strait of Hormuz.",
+      "fr": "Le WTI a reculé de 0,72 % pendant la séance, de 86,96 $ à 86,33 $, effaçant une partie des gains du matin liés aux attaques de navires dans le détroit d’Ormuz."
+     },
+     "forex": {
+      "en": "The dollar index rose 0.14%; EUR/USD fell 0.12% to 1.1091, USD/JPY rose 0.19% to 159.85, near the 160 level Tokyo watches, and USD/CAD gained 0.08% to 1.4251.",
+      "fr": "L’indice du dollar a gagné 0,14 %; l’EUR/USD a reculé de 0,12 % à 1,1091, l’USD/JPY a monté de 0,19 % à 159,85, près du seuil de 160 surveillé par Tokyo, et l’USD/CAD de 0,08 % à 1,4251."
+     },
+     "indices": {
+      "en": "Close: Nasdaq +1.60%, S&P 500 +1.31%, Dow +0.49%; measured from the 9:30 a.m. open to the close, the Nasdaq 100 gained 0.45%, the S&P 500 0.41%, the Dow 0.54% and the Russell 2000 0.13%, with most of the gain made at the open.",
+      "fr": "Clôture : Nasdaq +1,60 %, S&P 500 +1,31 %, Dow +0,49 %; mesuré de l’ouverture de 9 h 30 à la clôture, le Nasdaq 100 gagne 0,45 %, le S&P 500 0,41 %, le Dow 0,54 % et le Russell 2000 0,13 %, l’essentiel de la hausse ayant été acquis à l’ouverture."
+     },
+     "metals": {
+      "en": "Gold lost 1.32% during the session ($4,045.60 to $3,992.10) and silver 1.93% ($52.75 to $51.73), held back by a firm dollar and the prospect of Fed rate hikes.",
+      "fr": "L’or a perdu 1,32 % durant la séance (4 045,60 $ à 3 992,10 $) et l’argent 1,93 % (52,75 $ à 51,73 $), freinés par le dollar ferme et la perspective de hausses de taux de la Fed."
+     }
+    },
+    "session": "ny",
+    "sources": [
+     "https://www.marketscreener.com/news/stocks-end-higher-as-coreweave-results-ease-ai-spending-worries-ce785edbd18cf726",
+     "https://www.investing.com/news/economy-news/goldman-expects-additional-fed-rate-hike-in-march-5017688",
+     "https://finance.yahoo.com/personal-finance/investing/article/gold-price-today-wednesday-november-11-2026-gold-prices-fall-back-as-inflation-concerns-broaden-121148323.html",
+     "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347"
+    ],
+    "title": "CoreWeave rallume l’IA : le Nasdaq gagne 1,6 %, l’or glisse sous 4 000 $",
+    "title_en": "CoreWeave revives the AI trade: Nasdaq up 1.6%, gold slips below $4,000"
+   },
+   {
+    "body": "Le STOXX 600 a signé un record de clôture, porté par Siemens Energy (+8,3 % après des perspectives relevées) et par les résultats de CoreWeave, qui ont ravivé l’optimisme pour l’IA et fait grimper les contrats à terme du Nasdaq d’environ 2 % avant l’ouverture à New York. Le dollar a profité des paris d’une hausse de taux de la Fed : l’indice a gagné 0,54 %, l’EUR/USD a perdu 0,54 % et l’USD/JPY a monté de 0,62 % près de 159,86. L’or a reculé de 1,45 % et l’argent de 1,87 %. Le pétrole a bondi de 1,84 % avec la poursuite des attaques de navires dans le détroit d’Ormuz.",
+    "body_en": "The STOXX 600 posted a record close, driven by Siemens Energy (+8.3% after raising its outlook) and CoreWeave's results, which revived AI optimism and lifted Nasdaq futures about 2% before the New York open. The dollar benefited from bets on a Fed rate hike: the index gained 0.54%, EUR/USD lost 0.54% and USD/JPY rose 0.62% to near 159.86. Gold fell 1.45% and silver 1.87%. Oil jumped 1.84% as ship attacks continued in the Strait of Hormuz.",
+    "date": "2026-11-11",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin gained 0.29% to $74,213, despite a fourth day of outflows from U.S. spot ETFs on Tuesday.",
+      "fr": "Le bitcoin a gagné 0,29 % à 74 213 $, malgré une quatrième journée de sorties des FNB américains au comptant mardi."
+     },
+     "energy": {
+      "en": "WTI jumped 1.84% to $87.83: ship attacks in Hormuz and Tehran's refusal to negotiate with Washington dampen truce hopes.",
+      "fr": "Le WTI a bondi de 1,84 % à 87,83 $ : les attaques de navires à Ormuz et le refus de Téhéran de négocier avec Washington freinent l’espoir d’une trêve."
+     },
+     "forex": {
+      "en": "The dollar index rose 0.54%; EUR/USD fell 0.54% to 1.1096, USD/JPY rose 0.62% to 159.86 and USD/CAD 0.21% to 1.4244.",
+      "fr": "L’indice du dollar a gagné 0,54 %; l’EUR/USD a chuté de 0,54 % à 1,1096, l’USD/JPY a monté de 0,62 % à 159,86 et l’USD/CAD de 0,21 % à 1,4244."
+     },
+     "indices": {
+      "en": "The STOXX 600 closed at a record, with European tech up about 2%; in New York, Nasdaq 100 futures were up about 2% before the open.",
+      "fr": "Le STOXX 600 a clôturé à un record, la tech européenne gagnant environ 2 %; à New York, les contrats à terme du Nasdaq 100 grimpaient d’environ 2 % avant l’ouverture."
+     },
+     "metals": {
+      "en": "Gold lost 1.45% during the session ($4,066.90 to $4,008.10) and silver 1.87% ($53.06 to $52.07), pressured by the dollar.",
+      "fr": "L’or a perdu 1,45 % pendant la séance (4 066,90 $ à 4 008,10 $) et l’argent 1,87 % (53,06 $ à 52,07 $), sous la pression du dollar."
+     }
+    },
+    "session": "lon",
+    "sources": [
+     "https://finance.yahoo.com/markets/stocks/articles/european-stocks-near-record-high-102945417.html",
+     "https://www.marketscreener.com/news/europe-s-stoxx-600-near-record-high-as-siemens-energy-coreweave-outlooks-lift-sentiment-ce785edbda88f720",
+     "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347",
+     "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks",
+     "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
+    ],
+    "title": "L’Europe touche un record grâce à l’IA; le dollar s’envole et l’or recule de 1,5 %",
+    "title_en": "Europe hits a record on AI; the dollar climbs and gold drops 1.5%"
+   },
+   {
+    "body": "Malgré le recul de Wall Street après l’IPC chaud, les places asiatiques ont surtout monté grâce à la demande de puces d’IA : le Nikkei a gagné 0,8 % à 60 942,48 et le Kospi 1,6 % à 5 321,10, tandis que le Hang Seng a cédé 0,7 %. À Taïwan, TSMC a bondi de 3,1 % après des revenus d’octobre près de six fois supérieurs à ceux d’il y a un an. Les métaux ont repris une partie de leurs pertes de mardi, l’argent gagnant 2,79 % et l’or 0,53 %. Le dollar est resté ferme et les marchés continuent de miser sur une hausse de taux de la Fed en décembre.",
+    "body_en": "Despite Wall Street's pullback after the hot CPI, Asian markets mostly rose on AI chip demand: the Nikkei gained 0.8% to 60,942.48 and the Kospi 1.6% to 5,321.10, while the Hang Seng fell 0.7%. In Taiwan, TSMC jumped 3.1% after October revenue nearly six times its year-earlier level. Metals recovered part of Tuesday's losses, with silver up 2.79% and gold up 0.53%. The dollar stayed firm as markets keep betting on a December Fed rate hike.",
+    "date": "2026-11-11",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin slipped 0.25% to $73,525, missing out on the equity rebound.",
+      "fr": "Le bitcoin a glissé de 0,25 % à 73 525 $, sans profiter du rebond des actions."
+     },
+     "energy": {
+      "en": "WTI gained 0.24% to $86.39 and Brent climbed toward $92.42 (+1%) after Tuesday's drop.",
+      "fr": "Le WTI a gagné 0,24 % à 86,39 $ et le Brent remontait vers 92,42 $ (+1 %) après sa baisse de mardi."
+     },
+     "forex": {
+      "en": "The dollar index rose 0.10%; USD/JPY barely moved (+0.07% to 158.82), EUR/USD fell 0.10% to 1.1160 and USD/CAD gained 0.15% to 1.4207.",
+      "fr": "L’indice du dollar a monté de 0,10 %; l’USD/JPY a peu bougé (+0,07 % à 158,82), l’EUR/USD a reculé de 0,10 % à 1,1160 et l’USD/CAD a gagné 0,15 % à 1,4207."
+     },
+     "indices": {
+      "en": "Nikkei +0.8%, Kospi +1.6% (Samsung +2.3%, SK Hynix +3.4%), Taiex +2.1%; Hang Seng −0.7%, Shanghai −0.3% and ASX 200 +0.1%.",
+      "fr": "Nikkei +0,8 %, Kospi +1,6 % (Samsung +2,3 %, SK Hynix +3,4 %), Taiex +2,1 %; Hang Seng −0,7 %, Shanghai −0,3 % et ASX 200 +0,1 %."
+     },
+     "metals": {
+      "en": "Gold gained 0.53% during the session ($4,046.50 to $4,067.90) and silver 2.79% ($51.58 to $53.02), on bargain buying after Tuesday's drop.",
+      "fr": "L’or a gagné 0,53 % pendant la séance (4 046,50 $ à 4 067,90 $) et l’argent 2,79 % (51,58 $ à 53,02 $), des achats à bon compte après la chute de mardi."
+     }
+    },
+    "session": "tok",
+    "sources": [
+     "https://www.wsls.com/business/2026/11/11/asian-shares-mostly-rise-on-ai-chip-demand-despite-wall-streets-retreat-on-inflation-data/"
+    ],
+    "title": "Les puces d’IA portent Tokyo et Séoul; l’argent rebondit de 2,8 %",
+    "title_en": "AI chips lift Tokyo and Seoul; silver rebounds 2.8%"
+   }
+  ],
+  "research": [
+   {
+    "bank": "Goldman Sachs",
+    "date": "2026-11-13",
+    "topic": "ACTIONS",
+    "topic_en": "EQUITIES",
+    "title": "Goldman : l’élan de l’investissement en IA culminera au début de 2027",
+    "title_en": "Goldman: the AI investment impulse will peak in early 2027",
+    "summary": "Le stratège Kamakshya Trivedi s’attend à une croissance toujours solide de l’investissement en IA, mais à un sommet de son apport additionnel (en % du PIB) au début de 2027. Gérable pour l’économie, ce tournant pourrait être un test plus dur pour les marchés, car l’IA a davantage gonflé les bénéfices et les valorisations que le PIB.",
+    "summary_en": "Strategist Kamakshya Trivedi expects AI investment growth to stay solid, but its incremental contribution (as a share of GDP) to peak in early 2027. Manageable for the economy, that turning point could be a tougher test for markets, since AI has lifted earnings and valuations far more than GDP.",
+    "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+   },
+   {
+    "bank": "Bank of America",
+    "date": "2026-11-11",
+    "summary": "Après un IPC de +0,4 % sur un mois (sous-jacent +0,3 %), BofA s’attend toujours à une hausse de 25 pb en décembre, mais juge qu’un pas de 50 pb est désormais possible. La banque voit aussi un risque croissant que la hausse suivante arrive en janvier plutôt qu’en mars.",
+    "summary_en": "After a 0.4% monthly CPI print (core +0.3%), BofA still expects a 25 bp December hike but says a 50 bp move is now possible. The bank also sees a rising risk that the next hike comes in January rather than March.",
+    "title": "BofA : l’IPC d’octobre ouvre la porte à une hausse de 50 pb en décembre",
+    "title_en": "BofA: October CPI opens the door to a 50 bp December hike",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "url": "https://finance.yahoo.com/economy/policy/articles/bofa-says-october-cpi-report-123105635.html"
+   },
+   {
+    "bank": "TD Securities",
+    "date": "2026-11-10",
+    "summary": "Bart Melek s’attend à ce que l’or reteste les 3 900 $ l’once, la hausse des taux et la vigueur du dollar freinant la demande d’investissement, et à ce qu’il reste dans le bas de sa fourchette de 3 900 à 4 200 $. Les achats des banques centrales (675 t depuis janvier) pourraient ne pas suffire à compenser.",
+    "summary_en": "Bart Melek expects gold to retest $3,900/oz as higher rates and a stronger dollar weigh on investment demand, keeping prices near the bottom of the $3,900–$4,200 range. Central bank buying (675 t year-to-date) may not be enough to offset it.",
+    "title": "TD Securities voit l’or retester le soutien des 3 900 $",
+    "title_en": "TD Securities sees gold retesting $3,900 support",
+    "topic": "OR",
+    "topic_en": "GOLD",
+    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-fall-below-4000-analysts-warn-further-losses-toward-3900"
+   },
+   {
+    "bank": "Standard Chartered",
+    "date": "2026-11-10",
+    "summary": "Suki Cooper réitère une moyenne de 4 650 $ l’once au T4 2026 et de 4 850 $ au T1 2027, jugeant que les entrées dans les FNB et les achats des banques centrales (321 t au T3) forment un plancher solide. La banque prévoit une hausse de 25 pb de la Fed en décembre, puis un statu quo en 2027.",
+    "summary_en": "Suki Cooper reiterates a $4,650/oz Q4 2026 average and $4,850 for Q1 2027, arguing ETF inflows and central bank buying (321 t in Q3) form a solid floor. The bank expects a 25 bp Fed hike in December, then a hold through 2027.",
+    "title": "Standard Chartered maintient 4 650 $ pour l’or au T4 malgré le recul",
+    "title_en": "Standard Chartered keeps $4,650 Q4 gold call despite the pullback",
+    "topic": "OR",
+    "topic_en": "GOLD",
+    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-find-solid-support-4000-standard-chartered-sees-rally-4650-year"
+   },
+   {
+    "bank": "ING",
+    "date": "2026-11-11",
+    "summary": "Après l’IPC chaud, ING juge la hausse de 25 pb en décembre conforme à sa prévision, mais n’en voit pas d’autres en 2027 vu le ralentissement des secteurs sensibles aux taux et de l’énergie. Les taux en euro et en livre ne devraient pas suivre aveuglément l’inflation américaine.",
+    "summary_en": "After the hot CPI, ING says a 25 bp December hike matches its forecast but sees no further hikes into 2027 given cooling rate-sensitive sectors and energy. EUR and GBP rates should not blindly follow US inflation prints.",
+    "title": "ING : le 10 ans américain revient à 5 %, mais pas d’autres hausses de la Fed en 2027",
+    "title_en": "ING: US 10-year back at 5%, but no further Fed hikes into 2027",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "url": "https://seekingalpha.com/article/4966354-rates-spark-back-to-5-percent-10y-ust-inflation-fears"
+   },
+   {
+    "bank": "Citi",
+    "date": "2026-11-10",
+    "summary": "Citi prévoit toujours une hausse de 25 pb de la Fed en décembre, tout en voyant un risque accru d’un geste de 50 pb après l’IPC d’octobre. BofA et Standard Chartered jugent aussi que la porte à 50 pb est ouverte, sans que les données le justifient encore.",
+    "summary_en": "Citi still expects a 25 bp Fed hike in December while seeing an increased risk of a 50 bp move after October's CPI. BofA and Standard Chartered also say the door to 50 bp is open, though the data do not yet firmly support it.",
+    "title": "Citi s’en tient à 25 pb en décembre, mais le risque de 50 pb augmente",
+    "title_en": "Citi sticks with 25 bp in December, but sees a rising risk of 50 bp",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "url": "https://www.thestandard.com.hk/finance/article/348218/Goldman-adds-another-rate-hike-to-Fed-outlook-after-hot-inflation-data"
+   },
+   {
+    "bank": "UBS",
+    "date": "2026-11-10",
+    "summary": "UBS garde sa cible de fin 2027 à 8 900 et fixe 9 600 pour la fin de 2028, jugeant que la baisse des multiples prépare de bons rendements; la banque prévoit un BPA de 430 $ en 2027 et de 490 $ en 2028.",
+    "summary_en": "UBS keeps its end-2027 target at 8,900 and sets 9,600 for end-2028, arguing the derating sets up strong returns; it sees EPS of $430 in 2027 and $490 in 2028.",
+    "title": "UBS maintient sa cible de 8 900 pour le S&P 500 à la fin de 2027",
+    "title_en": "UBS keeps its 8,900 S&P 500 target for end-2027",
+    "topic": "ACTIONS",
+    "topic_en": "EQUITIES",
+    "url": "https://www.investing.com/news/stock-market-news/ubs-keeps-sp-500-end2027-target-at-8900-says-derating-sets-up-strong-returns-5015267"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "date": "2026-11-10",
+    "summary": "Après l’IPC chaud d’octobre, Goldman Sachs prévoit maintenant une hausse de 25 pb en mars, en plus de décembre, plutôt qu’une fin du cycle en décembre. La banque repousse le début des baisses de taux à décembre 2027.",
+    "summary_en": "After October's hot CPI, Goldman Sachs now expects a 25 bp hike in March on top of December, instead of the cycle ending in December. The bank pushes the start of rate cuts back to December 2027.",
+    "title": "Goldman ajoute une hausse de taux de la Fed en mars",
+    "title_en": "Goldman adds a March Fed rate hike",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "url": "https://www.investing.com/news/economy-news/goldman-expects-additional-fed-rate-hike-in-march-5017688"
+   },
+   {
+    "bank": "Deutsche Bank",
+    "date": "2026-11-10",
+    "summary": "Matt Luzzetti, économiste en chef, prévoit des hausses de 25 pb aux réunions de décembre, janvier et mars; une hausse de 50 pb est possible, mais ce n’est pas son scénario de base.",
+    "summary_en": "Chief economist Matt Luzzetti expects 25 bp hikes at the December, January and March meetings; a 50 bp move is possible but not his baseline.",
+    "title": "Deutsche Bank s’attend à trois hausses de la Fed : décembre, janvier et mars",
+    "title_en": "Deutsche Bank expects three Fed hikes: December, January and March",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "url": "https://finance.yahoo.com/economy/policy/article/hot-inflation-report-has-wall-street-eyeing-whether-the-fed-could-make-a-jumbo-rate-hike-next-month-164942156.html"
+   },
+   {
+    "bank": "Natixis",
+    "date": "2026-11-10",
+    "summary": "Chris Hodge, économiste en chef, cite l’inflation tenace et les propos de Waller et estime que la Fed « risque de prendre du retard » si elle n’agit pas de façon décisive.",
+    "summary_en": "Chief economist Chris Hodge cites sticky inflation and Waller's remarks, saying the Fed \"risks getting behind the curve by not acting decisively.\"",
+    "title": "Natixis juge une hausse de 50 pb de la Fed en décembre bien possible",
+    "title_en": "Natixis sees a 50 bp December Fed hike as a live possibility",
+    "topic": "TAUX",
+    "topic_en": "RATES",
+    "url": "https://finance.yahoo.com/economy/policy/article/hot-inflation-report-has-wall-street-eyeing-whether-the-fed-could-make-a-jumbo-rate-hike-next-month-164942156.html"
    }
   ]
  }
