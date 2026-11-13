@@ -1318,7 +1318,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       </div>
       <div class="tablewrap" id="earnBox"></div>
     </div>
-    <p class="pgfoot">Le verdict se base sur les revenus : Battu = revenus au-dessus des prévisions; Raté = en dessous; En ligne = égaux (le BPA ne sert que si les revenus ne sont pas encore publiés). Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.</p>
+    <p class="pgfoot">Le verdict se base sur les revenus : Battu = revenus au-dessus des prévisions; Raté = en dessous; En ligne = égaux (le BPA ne sert que si les revenus ne sont pas encore publiés). Surprise = écart des revenus réels avec la prévision des analystes (en %); le % sous le BPA réel = écart du BPA avec sa prévision. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.</p>
   </section>
 
   <section data-pg="home" hidden aria-label="Vue d’ensemble"><div class="p2" id="p2home"></div></section>
@@ -1905,10 +1905,12 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const nd = wk.filter(isDone).length, nb = wk.filter(it=>earnVerdict(it)[1]==='bull').length;
     const sum = `<p class="wsum">${wk.length} résultat${wk.length>1?'s':''}${nd?` · ${nd} publié${nd>1?'s':''}, ${nb} battu${nb>1?'s':''}`:''}</p>`;
     const dayLbl = iso => { const l = new Date(iso+'T12:00:00').toLocaleDateString('fr-CA',{weekday:'long', day:'numeric', month:'long'}); return l.charAt(0).toUpperCase()+l.slice(1); };
+    // surprise = écart des revenus réels avec la prévision des analystes (en %)
+    const spOf = it => { const a = num(it.revA), f = num(it.revF); return a===null || f===null || f===0 ? null : (a-f)/Math.abs(f)*100; };
     const mvTxt = mv => mv!==null?(mv>0?'+':mv<0?'−':'')+Math.abs(mv).toFixed(1)+'%':'—';
     let h = '', c = '', day = '';
     wk.forEach(it=>{
-      const [vt,vc] = earnVerdict(it), nm = String(it.name||'').replace(/^Résultats\s+/,''), mv = num(it.move);
+      const [vt,vc] = earnVerdict(it), nm = String(it.name||'').replace(/^Résultats\s+/,''), mv = spOf(it);
       if(it.date!==day){
         day = it.date; const t = dayLbl(day)+(day===today?' <em>· aujourd’hui</em>':'');
         h += `<tr class="cat"><th colspan="8">${t}</th></tr>`; c += `<div class="ecat">${t}</div>`;
@@ -1916,7 +1918,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       h += `<tr><td class="num t">${esc(it.time||'')}</td>`
         + `<td class="co"><b>${esc(nm)}${it.ai?' <i class="aitag">IA</i>':''}</b>${it.note?`<small>${esc(it.note)}</small>`:''}</td>`
         + `<td class="num">${money(it.revF,true)}</td>`
-        + `<td class="num">${num(it.revA)!==null?`<b>${money(it.revA,true)}</b>${surp(it.revA,it.revF)}`:'—'}</td>`
+        + `<td class="num">${num(it.revA)!==null?`<b>${money(it.revA,true)}</b>`:'—'}</td>`
         + `<td class="num">${money(it.epsF)}</td>`
         + `<td class="num">${num(it.epsA)!==null?`<b>${money(it.epsA)}</b>${surp(it.epsA,it.epsF)}`:'—'}</td>`
         + `<td class="num mv ${mv>0?'up':mv<0?'dn':''}">${mvTxt(mv)}</td>`
@@ -1925,9 +1927,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       c += `<div class="ecard"><div class="eh"><div><b>${esc(nm)}${it.ai?' <i class="aitag">IA</i>':''}</b><small>${esc(it.time||'')}${it.note?` · <span>${esc(it.note)}</span>`:''}</small></div><span class="vtag ${vc}">${esc(vt)}</span></div>
         <div class="eg"><div><span>${num(it.revA)!==null?'Revenus réels':'Revenus prévus'}</span>${pair(it.revF,it.revA,true)}</div>
         <div><span>${num(it.epsA)!==null?'BPA réel':'BPA prévu'}</span>${pair(it.epsF,it.epsA)}</div>
-        <div><span>Réaction</span><b class="${mv>0?'up':mv<0?'dn':''}">${mvTxt(mv)}</b></div></div></div>`;
+        <div><span>Surprise</span><b class="${mv>0?'up':mv<0?'dn':''}">${mvTxt(mv)}</b></div></div></div>`;
     });
-    const head = `<thead><tr><th>Heure</th><th>Entreprise</th><th class="r">Revenus prévus</th><th class="r">Revenus réels</th><th class="r">BPA prévu</th><th class="r">BPA réel</th><th class="r">Réaction</th><th class="c">Verdict</th></tr></thead>`;
+    const head = `<thead><tr><th>Heure</th><th>Entreprise</th><th class="r">Revenus prévus</th><th class="r">Revenus réels</th><th class="r">BPA prévu</th><th class="r">BPA réel</th><th class="r">Surprise</th><th class="c">Verdict</th></tr></thead>`;
     box.innerHTML = nav + sum + (wk.length ? `<table class="cal ern">${head}<tbody>${h}</tbody></table><div class="ecards">${c}</div>` : '<p class="empty-hist" style="padding:14px">Aucun résultat cette semaine.</p>');
     if(!box.dataset.segBound){ box.dataset.segBound='1'; document.querySelectorAll('[data-ef]').forEach(b=>b.addEventListener('click', ()=>{ state.earnCat = b.dataset.ef; document.querySelectorAll('[data-ef]').forEach(x=>x.setAttribute('aria-pressed', String(x===b))); renderEarn(); })); }
     box.querySelectorAll('.wbtn').forEach(b=>b.addEventListener('click', ()=>{ const j = wi + (+b.dataset.w); if(weeks[j]){ state.earnWeek = weeks[j]; renderEarn(); } }));
@@ -4203,7 +4205,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Heatmap fondamentale':'Fundamental heatmap','Heatmap technique':'Technical heatmap','Saisonnalité':'Seasonality','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','En ligne':'In line','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
     'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
-    'Le verdict se base sur les revenus : Battu = revenus au-dessus des prévisions; Raté = en dessous; En ligne = égaux (le BPA ne sert que si les revenus ne sont pas encore publiés). Le % sous le réel = écart avec la prévision. Réaction = variation de l’action après l’annonce. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.':'The verdict is based on revenue: Beat = revenue above forecasts; Miss = below; In line = equal (EPS is used only if revenue is not out yet). The % under the actual = gap vs forecast. Reaction = stock move after the report. Earnings are not part of the score. Updated automatically with the scorecard.',
+    'Le verdict se base sur les revenus : Battu = revenus au-dessus des prévisions; Raté = en dessous; En ligne = égaux (le BPA ne sert que si les revenus ne sont pas encore publiés). Surprise = écart des revenus réels avec la prévision des analystes (en %); le % sous le BPA réel = écart du BPA avec sa prévision. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.':'The verdict is based on revenue: Beat = revenue above forecasts; Miss = below; In line = equal (EPS is used only if revenue is not out yet). Surprise = gap between actual and forecast revenue (in %); the % under actual EPS = EPS gap vs its forecast. Earnings are not part of the score. Updated automatically with the scorecard.',
     'Filtre des résultats':'Earnings filter','Résultats d’entreprises':'Company earnings',
 
     'Ma tendance':'My trend','Terminé':'Done','Modifier les données':'Edit data',
