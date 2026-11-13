@@ -3958,18 +3958,28 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const ago = t => { const m = Math.round((Date.now()-t)/6e4); return m<1?L('à l’instant','just now'):m<60?m+' min':m<1440?Math.round(m/60)+' h':Math.round(m/1440)+L(' j',' d'); };
     const tm = t => new Date(t).toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit'});
     const up = all.filter(x=>x.k==='rel').slice(0,12);
-    box.innerHTML = `<div class="sqgrid">
+    const html = `<div class="sqgrid">
       <div class="panel sqfeed"><div class="sqh"><b>✦ SQUAWK</b><span class="sqlive">LIVE</span><small>${L('manchettes et données · mouvements · publications à venir','headlines & data · movers · upcoming releases')}</small><em>${all.length} ${L('ÉLÉMENTS','ITEMS')}</em></div>
         <div class="sqtape"><div>${movers.concat(movers).map(x=>`<span>${esc(nmT(x.n))} <b class="${pcCls(x.d1)}">${pcTxt(x.d1)}</b> · ${pxAuto(x.last)}</span>`).join('')}</div></div>
         <div class="chips sqtabs">${[['all',L('TOUT','ALL'),all.length-cnt('rel')],['data',L('DONNÉES','DATA'),cnt('data')],['mov',L('MOUVEMENTS','MOVERS'),cnt('mov')],['rel',L('À VENIR','RELEASES'),cnt('rel')],['news',L('NOUVELLES','NEWS'),cnt('news')]].map(([k,t,n])=>`<button type="button" class="chip" data-t="${k}" aria-pressed="${tab===k}">${t} <b>${n}</b></button>`).join('')}</div>
         <div class="sqlist">${list.slice(0,80).map((x,i)=>`<div class="sqi ${x.k} ${x.hi?'hi':''}" style="--d:${Math.min(i,25)*25}ms"><span class="sqt">${x.up?esc(new Date(x.t).toLocaleDateString(LOC(),{weekday:'short'}))+' '+tm(x.t):tm(x.t)}</span><span class="sqa">${x.up?L('dans ','in ')+durTxt(x.t-Date.now()):ago(x.t)}</span><i></i><span class="sqx">${x.nm?`<span>${esc(x.nm)}</span>`:''}${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.txt)}</a>`:esc(x.txt)}${x.src?` <small>${esc(x.src)}</small>`:''}</span></div>`).join('') || `<p class="tsnone">${L('Rien pour ce filtre.','Nothing for this filter.')}</p>`}</div></div>
-      <div class="sqright"><div class="panel sqtv"><div class="sqh"><b>${L('TÉLÉ DU TERMINAL','TERMINAL TV')}</b>${TVCH.map(([k,n])=>`<button type="button" class="chip" data-tv="${k}" aria-pressed="${state.sqTV===k}">${esc(n)}</button>`).join('')}</div>
-          <div class="sqvid">${state.sqTV ? `<iframe src="https://www.youtube-nocookie.com/embed/live_stream?channel=${TVCH.find(x=>x[0]===state.sqTV)[2]}&autoplay=1&mute=1" title="${esc(TVCH.find(x=>x[0]===state.sqTV)[1])}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>` : `<button type="button" class="sqplay" data-tv="bloomberg">▶ ${L('Lancer la télé financière en direct','Start live financial TV')}<small>${L('Bloomberg, Yahoo Finance ou CNBC (YouTube) · le son est coupé au départ','Bloomberg, Yahoo Finance or CNBC (YouTube) · starts muted')}</small></button>`}</div>
+      <div class="sqright"><div class="panel sqtv" data-ch="${state.sqTV||''}"><div class="sqh"><b>${L('TÉLÉ DU TERMINAL','TERMINAL TV')}</b>${TVCH.map(([k,n])=>`<button type="button" class="chip" data-tv="${k}" aria-pressed="${state.sqTV===k}">${esc(n)}</button>`).join('')}</div>
+          <div class="sqvid">${state.sqTV ? `<iframe src="https://www.youtube-nocookie.com/embed/live_stream?channel=${TVCH.find(x=>x[0]===state.sqTV)[2]}&autoplay=1&mute=0" title="${esc(TVCH.find(x=>x[0]===state.sqTV)[1])}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>` : `<button type="button" class="sqplay" data-tv="bloomberg">▶ ${L('Lancer la télé financière en direct','Start live financial TV')}<small>${L('Bloomberg, Yahoo Finance ou CNBC (YouTube) · avec le son','Bloomberg, Yahoo Finance or CNBC (YouTube) · with sound')}</small></button>`}</div>
           ${state.sqTV?`<p class="ddsrc">${L('Si la vidéo ne joue pas, la chaîne n’est peut-être pas en direct en ce moment, ou YouTube est bloqué dans cette vue.','If the video does not play, the channel may not be live right now, or YouTube is blocked in this view.')} <a href="https://www.youtube.com/channel/${TVCH.find(x=>x[0]===state.sqTV)[2]}/live" target="_blank" rel="noopener">${L('Ouvrir sur YouTube','Open on YouTube')} ↗</a></p>`:''}</div>
         <div class="panel"><p class="tscap">${L('PROCHAINES PUBLICATIONS','NEXT RELEASES')}</p>${up.length?up.map(x=>`<div class="rcrel"><span>${esc(new Date(x.t).toLocaleDateString(LOC(),{weekday:'short'}))} ${tm(x.t)}</span><div><b>${x.nm?`<span>${esc(x.nm)}</span>`:''}${esc(x.txt)}</b><small class="cd" data-t="${x.t}"></small></div></div>`).join(''):`<p class="tsnone">${L('Rien de prévu au calendrier','Nothing scheduled')}</p>`}</div></div>
     </div>`;
+    // la télé n'est jamais rechargée pendant les mises à jour : on ne remplace que le fil et les publications à venir (le son et la lecture continuent)
+    const keepTv = state.sqTV && box.querySelector(`.sqtv[data-ch="${state.sqTV}"] iframe`);
+    if(keepTv){
+      const tmp = document.createElement('div'); tmp.innerHTML = html;
+      const nf = tmp.querySelector('.sqfeed'), nr = tmp.querySelector('.sqright > .panel:not(.sqtv)');
+      const of = box.querySelector('.sqfeed'), or = box.querySelector('.sqright > .panel:not(.sqtv)');
+      if(nf && of) of.replaceWith(nf); if(nr && or) or.replaceWith(nr);
+    } else {
+      box.innerHTML = html;
+      box.querySelectorAll('[data-tv]').forEach(b=>b.addEventListener('click', ()=>{ state.sqTV = state.sqTV===b.dataset.tv && b.classList.contains('chip') ? null : b.dataset.tv; renderSquawk(); }));
+    }
     box.querySelectorAll('.sqtabs .chip').forEach(b=>b.addEventListener('click', ()=>{ state.sqTab = b.dataset.t; renderSquawk(); }));
-    box.querySelectorAll('[data-tv]').forEach(b=>b.addEventListener('click', ()=>{ state.sqTV = state.sqTV===b.dataset.tv && b.classList.contains('chip') ? null : b.dataset.tv; renderSquawk(); }));
     if(typeof tickCountdowns==='function') tickCountdowns();
   }
 
