@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T22:26:02Z",
+ "updatedAt": "2026-11-13T22:42:57Z",
  "econ": {
   "values": {
    "adp": {
@@ -915,6 +915,24 @@
  },
  "news": [
   {
+   "date": "2026-11-13",
+   "time": "16:33",
+   "source": "Yahoo Finance",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "rut",
+    "btcusd"
+   ],
+   "title": "Clôture : le Dow gagne 0,10 %, le S&P 500 perd 0,40 % et le Nasdaq 0,91 %; Nvidia sous 4 000 G$ de capitalisation",
+   "title_en": "Close: Dow up 0.10%, S&P 500 down 0.40%, Nasdaq down 0.91%; Nvidia's market cap slips below  trillion",
+   "summary": "Le Dow termine à 52 347,55 (+0,10 %), le S&P 500 à 7 561,67 (-0,40 %), le Nasdaq à 25 136,27 (-0,91 %) et le Russell 2000 à 2 790,49 (-0,31 %); les trois grands indices gagnent tout de même environ 2 % à 2,5 % sur la semaine. Nvidia recule d'environ 12 % sur la semaine et sa capitalisation passe sous 4 000 G$, AMD chute d'environ 10 %. Le 10 ans touche 5,17 % en séance, un sommet depuis octobre, et le bitcoin passe sous 70 000 $ pour la première fois en près de trois mois.",
+   "summary_en": "The Dow ended at 52,347.55 (+0.10%), the S&P 500 at 7,561.67 (-0.40%), the Nasdaq at 25,136.27 (-0.91%) and the Russell 2000 at 2,790.49 (-0.31%); the three major indexes still gained roughly 2% to 2.5% on the week. Nvidia fell about 12% for the week and its market value closed below $4 trillion, while AMD dropped about 10%. The 10-year yield hit 5.17% intraday, its highest since October, and bitcoin fell below $70,000 for the first time in nearly three months.",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
+  },
+  {
    "assets": [
     "nasdaq",
     "spx500",
@@ -1571,20 +1589,6 @@
    "title": "L’or et l’argent montent : la diplomatie avec l’Iran fait reculer le brut et le dollar s’affaiblit",
    "title_en": "Gold, silver rise as Iran diplomacy pressures crude, dollar weakens",
    "url": "https://www.kitco.com/news/article/2026-11-09/gold-silver-rise-iran-diplomacy-pressures-crude-dollar-weakens-kitco-am"
-  },
-  {
-   "assets": [
-    "btcusd"
-   ],
-   "date": "2026-11-09",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Le bitcoin est tombé vers 73 761 $ tard dimanche, puis est remonté au-dessus de 75 000 $; plus de 1 milliard $ de positions à effet de levier ont été liquidées en 24 heures, dont 913 M$ de positions acheteuses. Le scandale chez Nvidia et l’enlisement des pourparlers avec l’Iran pèsent sur les actifs risqués; le BTC oscille entre sa moyenne de 200 jours (~73 150 $) et celle de 100 jours (~77 430 $).",
-   "summary_en": "Bitcoin fell to about $73,761 late Sunday, then recovered above $75,000; more than $1 billion of leveraged positions were liquidated in 24 hours, including $913M of longs. The Nvidia scandal and stalled Iran talks are weighing on risk assets; BTC is stuck between its 200-day average (~$73,150) and 100-day average (~$77,430).",
-   "time": "07:31",
-   "title": "Le bitcoin glisse à 73 761 $, son plus bas depuis août, avant de rebondir au-dessus de 75 000 $",
-   "title_en": "Bitcoin slides to $73,761, lowest since August, before bouncing above $75,000",
-   "url": "https://www.coindesk.com/markets/2026/11/09/bitcoin-drops-then-pops-as-nvidia-cheating-scandal-and-failed-iran-talks-trigger-volatility"
   }
  ],
  "live": {
