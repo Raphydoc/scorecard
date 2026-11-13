@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T17:12:04Z",
+ "updatedAt": "2026-11-13T18:43:04Z",
  "econ": {
   "values": {
    "adp": {
@@ -918,25 +918,20 @@
     "us30",
     "rut",
     "btcusd",
-    "usd",
     "usoil",
     "xauusd"
    ],
    "date": "2026-11-13",
    "impact": "high",
-   "source": "CoinDesk",
-   "summary": "Vers 10 h 24, le Nasdaq recule d'environ 2 % et le S&P 500 de 1,1 %, entraînés par AMD (-9 %) et Broadcom (-5,6 %), alors que le 10 ans se tient autour de 5,14-5,15 %, en hausse de près de 30 points de base sur la semaine. Le DXY reste au-dessus de 103, le WTI est à 89 $ et l'or juste sous 3 900 $; le bitcoin, à environ 68 700 $, perd près de 4 % sur 24 heures et plus de 21 % depuis le début de 2026.",
-   "summary_en": "Around 10:24 a.m., the Nasdaq was down about 2% and the S&P 500 1.1%, dragged by AMD (-9%) and Broadcom (-5.6%), as the 10-year yield held near 5.14-5.15%, up almost 30 basis points on the week. The DXY stayed above 103, WTI was at $89 and gold just below $3,900; bitcoin, near $68,700, was down almost 4% over 24 hours and more than 21% in 2026.",
-   "time": "10:24",
-   "title": "Le Nasdaq chute d'environ 2 % : AMD plonge de 9 % et Broadcom de 5,6 % malgré un IPP plus doux",
-   "title_en": "Nasdaq drops about 2% as AMD sinks 9% and Broadcom 5.6% despite softer PPI",
-   "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets"
+   "source": "Yahoo Finance",
+   "summary": "Vers midi, le Nasdaq recule d'environ 1,4 %, le S&P 500 de 0,8 %, le Dow de 0,2 % et le Russell 2000 de 0,6 %, alors que la vente des semi-conducteurs s'accélère : AMD perd environ 10 %, Broadcom 6 %, Intel et Micron 5 % et Nvidia plus de 3 %, en voie de finir la semaine sous les 4 000 G$ de capitalisation. Le rendement du 10 ans a touché 5,17 %, un sommet depuis octobre, et le VIX a dépassé 20; le bitcoin est sous 70 000 $ (environ 68 500 $), le WTI à 88,45 $ et l'or stable près de 3 889 $.",
+   "summary_en": "Around midday, the Nasdaq was down about 1.4%, the S&P 500 0.8%, the Dow 0.2% and the Russell 2000 0.6% as the chip sell-off accelerated: AMD fell about 10%, Broadcom 6%, Intel and Micron 5% and Nvidia more than 3%, on track to end the week below a $4 trillion market cap. The 10-year yield reached as high as 5.17%, its highest since October, and the VIX topped 20; bitcoin was below $70,000 (about $68,500), WTI at $88.45 and gold steady near $3,889.",
+   "time": "12:35",
+   "title": "Midi : le Nasdaq perd 1,4 % sous le poids des puces; AMD chute de près de 10 % et le 10 ans touche 5,17 %",
+   "title_en": "Midday: Nasdaq falls 1.4% as chip stocks slide; AMD drops nearly 10% and 10-year yield hits 5.17%",
+   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-ppi-141451558.html"
   },
   {
-   "date": "2026-11-13",
-   "time": "09:02",
-   "source": "Reuters (Investing.com)",
-   "impact": "med",
    "assets": [
     "usd",
     "spx500",
@@ -946,10 +941,14 @@
     "eurusd",
     "usdjpy"
    ],
-   "title": "Bessent presse la Fed de ne pas hausser les taux face au choc énergétique; Goolsbee doute d'un retour à 2 %",
-   "title_en": "Bessent urges Fed not to hike over energy shock; Goolsbee doubts path back to 2%",
+   "date": "2026-11-13",
+   "impact": "med",
+   "source": "Reuters (Investing.com)",
    "summary": "Le secrétaire au Trésor Scott Bessent estime que la Fed doit voir la poussée d'inflation comme un « choc d'offre énergétique » lié à la guerre avec l'Iran et « regarder vers l'avenir, pas dans le rétroviseur ». De son côté, Austan Goolsbee (Fed de Chicago) juge que l'inflation des services persiste et que « nous ne sommes pas » sur la voie d'un retour à 2 %. Certains responsables ont évoqué une hausse d'un demi-point à la réunion des 8 et 9 décembre, ce qui soutient le dollar et pèse sur les actions et l'or.",
    "summary_en": "Treasury Secretary Scott Bessent said the Fed should see the inflation jump as an \"energy supply shock\" tied to the Iran war and \"look into the future, not in the rearview mirror.\" Chicago Fed President Austan Goolsbee said services inflation persists and that the economy is not on a path back to 2%. Some officials have discussed a half-point hike at the Dec. 8-9 meeting, supporting the dollar and weighing on stocks and gold.",
+   "time": "09:02",
+   "title": "Bessent presse la Fed de ne pas hausser les taux face au choc énergétique; Goolsbee doute d'un retour à 2 %",
+   "title_en": "Bessent urges Fed not to hike over energy shock; Goolsbee doubts path back to 2%",
    "url": "https://www.investing.com/news/economy-news/us-treasury-chief-says-fed-should-not-hike-rates-over-energy-shock-tied-to-iran-war-5025640"
   },
   {
