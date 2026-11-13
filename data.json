@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T00:36:40Z",
+ "updatedAt": "2026-11-13T00:39:03.561302Z",
  "econ": {
   "values": {
    "gdp": {
@@ -168,6 +168,38 @@
    "crowdLong": 49,
    "season": "neutral",
    "seasonPct": -0.5,
+   "seasonPeriod": "août à octobre"
+  },
+  "gbpusd": {
+   "cotLong": 34.04,
+   "cotChange": 4.64,
+   "crowdLong": 57,
+   "season": "neutral",
+   "seasonPct": -0.6,
+   "seasonPeriod": "août à octobre"
+  },
+  "audusd": {
+   "cotLong": 30.48,
+   "cotChange": -0.1,
+   "crowdLong": 60,
+   "season": "neutral",
+   "seasonPct": 0.0,
+   "seasonPeriod": "août à octobre"
+  },
+  "usdchf": {
+   "cotLong": 60.98,
+   "cotChange": -2.84,
+   "crowdLong": 73,
+   "season": "bull",
+   "seasonPct": 2.2,
+   "seasonPeriod": "août à octobre"
+  },
+  "nzdusd": {
+   "cotLong": 19.05,
+   "cotChange": -0.2,
+   "crowdLong": 71,
+   "season": "bear",
+   "seasonPct": -4.1,
    "seasonPeriod": "août à octobre"
   }
  },
