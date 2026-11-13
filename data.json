@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T07:11:19Z",
+  "updatedAt": "2026-11-13T11:44:14Z",
   "econ": {
     "values": {
       "gdp": {
@@ -814,19 +814,52 @@
   },
   "news": [
     {
-      "date": "2026-11-12",
-      "time": "22:37",
+      "date": "2026-11-13",
+      "time": "06:15",
       "source": "CoinDesk",
       "impact": "med",
       "assets": [
         "btcusd",
         "usd"
       ],
-      "title": "Le bitcoin passe sous 70 000 $, plus de 1,3 G$ de liquidations en 24 h",
-      "title_en": "Bitcoin slips below $70,000, more than $1.3B in liquidations in 24 hours",
-      "summary": "Le bitcoin est tombé sous 70 000 $ tôt vendredi, jusqu'à 69 000 $, son plus bas depuis le 19 août, en baisse de 17 % ce trimestre; l'ether a cassé 2 000 $. Les liquidations de contrats à terme crypto ont dépassé 1,3 G$ en 24 h (677 M$ sur le bitcoin), sur fond de DXY au-dessus de 103, son plus haut depuis avril 2025, et de paris accrus d'une hausse de taux de la Fed d'un demi-point en décembre.",
-      "summary_en": "Bitcoin fell below $70,000 early Friday to as low as $69,000, its lowest since Aug. 19 and down 17% this quarter; ether broke below $2,000. Crypto futures liquidations topped $1.3 billion in 24 hours ($677 million in bitcoin), as the DXY traded above 103, its highest since April 2025, and odds of a half-point Fed hike in December rose.",
-      "url": "https://www.coindesk.com/markets/2026/11/13/bitcoin-dips-below-usd70-000-as-selloff-gathers-pace"
+      "title": "Le bitcoin tombe jusqu'à 67 652 $, sous sa moyenne mobile de 200 semaines; le DXY dépasse 103",
+      "title_en": "Bitcoin drops as low as $67,652, below its 200-week moving average; DXY tops 103",
+      "summary": "Le bitcoin a glissé jusqu'à 67 652 $, en baisse de plus de 3,5 % en 24 h, passant sous sa moyenne mobile de 200 semaines (environ 68 000 $); il recule de 16 % sur un mois. Le taux de financement moyen des contrats perpétuels est devenu négatif pour la première fois en un mois, selon Glassnode. La vigueur du dollar (DXY au-dessus de 103) et le 10 ans américain à 5,125 % pèsent sur les actifs risqués.",
+      "summary_en": "Bitcoin slid as low as $67,652, down more than 3.5% in 24 hours, falling below its 200-week moving average (around $68,000); it is down 16% over the past month. Average perpetual funding rates turned negative for the first time in a month, per Glassnode. Dollar strength (DXY above 103) and the U.S. 10-year yield at 5.125% are weighing on risk assets.",
+      "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets"
+    },
+    {
+      "date": "2026-11-13",
+      "time": "06:01",
+      "source": "Yahoo Finance",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30",
+        "rut",
+        "usd"
+      ],
+      "title": "Contrats à terme stables avant l'IPP d'octobre; le 10 ans reste à 5,10 %",
+      "title_en": "Futures steady ahead of October PPI; 10-year yield holds at 5.10%",
+      "summary": "Vendredi matin, les contrats à terme du Dow gagnaient 0,2 % et ceux du S&P 500 0,1 %, tandis que le Nasdaq 100 était presque inchangé. L'indice des prix à la production d'octobre est attendu à +0,4 % (base +0,3 %), après +1,3 % (base +0,7 %) le mois précédent. Le 10 ans américain se maintient à 5,10 %, son plus haut depuis octobre, alors que les courtiers misent sur une possible hausse de taux de la Fed en décembre.",
+      "summary_en": "On Friday morning, Dow futures rose 0.2% and S&P 500 futures 0.1%, while Nasdaq 100 futures were near flat. October producer prices are expected to rise 0.4% (core +0.3%) after +1.3% (core +0.7%) the prior month. The U.S. 10-year yield holds at 5.10%, its highest since October, as traders price in a possible Fed rate hike in December.",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-110151154.html"
+    },
+    {
+      "date": "2026-11-13",
+      "time": "04:35",
+      "source": "Yahoo Finance (Investing.com)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Applied Materials vise environ 11,10 G$ de revenus au 1er trimestre, au-dessus des attentes",
+      "title_en": "Applied Materials guides fiscal Q1 revenue to about $11.10B, above estimates",
+      "summary": "Applied Materials prévoit des revenus d'environ 11,10 G$ (±500 M$) pour son 1er trimestre fiscal, contre 10,89 G$ attendus; le bénéfice ajusté du 4e trimestre atteint 4,16 $ par action et les revenus des systèmes de semi-conducteurs bondissent de 64 % à 8 G$. L'action reculait légèrement hors séance, mais gagne plus de 41 % cette année. Les contrats à terme du Nasdaq 100 perdaient 0,3 % vers 3 h, toujours pénalisés par l'éviction de Jensen Huang chez Nvidia.",
+      "summary_en": "Applied Materials expects fiscal Q1 revenue of about $11.10 billion (±$500 million) versus $10.89 billion expected; Q4 adjusted profit was $4.16 per share and semiconductor systems revenue rose 64% to $8 billion. Shares were slightly lower after hours but are up more than 41% this year. Nasdaq 100 futures were down 0.3% around 3 a.m. ET, still weighed by Jensen Huang's ouster at Nvidia.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/huang-ouster-fallout-cisco-applied-093548568.html"
     },
     {
       "assets": [
@@ -1441,36 +1474,6 @@
       "title": "Le Nasdaq et le S&P 500 rebondissent, le Dow recule après une semaine difficile pour l’IA",
       "title_en": "Nasdaq and S&P 500 rebound, Dow slips after a bruising week for AI stocks",
       "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-6-dow-sp-500-nasdaq-jobs-report-earnings-135953863.html"
-    },
-    {
-      "assets": [
-        "btcusd"
-      ],
-      "date": "2026-11-06",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Le bitcoin s’échangeait autour de 75 750 $ dans un corridor très étroit; le rebond des actions n’a pas profité à la crypto. Une cassure sous 75 000 $ pourrait le ramener aux niveaux de la mi-août.",
-      "summary_en": "Bitcoin traded around $75,750 in a very tight range; the stock rebound did not lift crypto. A break below $75,000 could send it back to mid-August levels.",
-      "time": "15:00",
-      "title": "Le bitcoin stagne sous 76 000 $, à son plus bas depuis la hausse de taux de septembre",
-      "title_en": "Bitcoin flatlines under $76,000, weakest since the September rate hike",
-      "url": "https://www.coindesk.com/tech/2026/11/06/live-updates-nasdaq-100-futures-rally-points-to-stock-market-respite"
-    },
-    {
-      "assets": [
-        "xauusd",
-        "xagusd",
-        "usd"
-      ],
-      "date": "2026-11-06",
-      "impact": "high",
-      "source": "Kitco",
-      "summary": "L’once d’or a perdu 34 $ (−0,89 %) à environ 4 051 $. Les États-Unis ont créé 165 000 emplois en octobre contre environ 65 000 attendus, et le chômage est descendu à 4,1 %, ce qui renforce le scénario d’une hausse de taux de la Fed en décembre et fait monter le dollar et les taux.",
-      "summary_en": "Gold lost $34 (−0.89%) to about $4,051 an ounce. The US added 165,000 jobs in October versus about 65,000 expected and unemployment fell to 4.1%, strengthening the case for a December Fed hike and lifting the dollar and yields.",
-      "time": "09:30",
-      "title": "L’or recule après un rapport sur l’emploi beaucoup plus fort que prévu",
-      "title_en": "Gold falls after a much stronger-than-expected jobs report",
-      "url": "https://www.kitco.com/news/article/2026-11-06/gold-falls-us-payrolls-surge-165000-strengthening-december-fed-hike-case"
     }
   ],
   "live": {
