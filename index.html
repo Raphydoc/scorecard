@@ -4148,7 +4148,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const t = localTech();
     state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(d.econ||{}).yield10y||null, updatedAt:d.updatedAt||null};
     Object.keys(ASSETS).forEach(k=>{
-      state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), trend:((t[k]||{}).trend)||'neutral'};
+      state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), trend:(state.mk && state.mk.trend && state.mk.trend[k] && state.mk.trend[k].t) || ((t[k]||{}).trend) || 'neutral'};
     });
     state.history = Array.isArray(d.history) ? d.history.slice(-60) : [];
     state.calendar = Array.isArray(d.calendar) ? d.calendar : [];
