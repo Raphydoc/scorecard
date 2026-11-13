@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-13T01:42:11Z",
+  "updatedAt": "2026-11-13T02:42:17Z",
   "econ": {
     "values": {
       "gdp": {
@@ -813,6 +813,42 @@
     "checkedAt": "2026-11-12T13:50:00Z"
   },
   "news": [
+    {
+      "date": "2026-11-12",
+      "time": "20:58",
+      "source": "Reuters (Investing.com)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "xauusd",
+        "usoil",
+        "usdjpy"
+      ],
+      "title": "Asie : les Bourses rebondissent après le choc Nvidia; le Nikkei gagne 1,4 % et le 10 ans touche 5,14 %",
+      "title_en": "Asia: stocks rebound from Nvidia whiplash; Nikkei up 1.4% as 10-year yield hits 5.14%",
+      "summary": "Vendredi en Asie, le Nikkei gagne 1,4 % et le Kospi 2,35 %, tandis que les contrats à terme du Nasdaq et du S&P 500 montent de plus de 0,2 %. Le rendement du 10 ans américain grimpe à un sommet de trois semaines de 5,1433 %, ce qui soutient le dollar. L'or remonte de 0,3 % à 3 888,01 $ l'once et le WTI recule de plus de 0,3 % à 88,39 $.",
+      "summary_en": "In Asia on Friday, the Nikkei rose 1.4% and the Kospi 2.35%, while Nasdaq and S&P 500 futures each gained more than 0.2%. The U.S. 10-year yield rose to a three-week high of 5.1433%, supporting the dollar. Spot gold rose 0.3% to $3,888.01 an ounce and U.S. crude slipped more than 0.3% to $88.39.",
+      "url": "https://www.investing.com/news/economy-news/stocks-recover-from-nvidia-whiplash-dollar-climbs-with-us-yields-5023929"
+    },
+    {
+      "date": "2026-11-12",
+      "time": "20:58",
+      "source": "Reuters (Investing.com)",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "usdjpy",
+        "eurusd",
+        "audusd",
+        "usdchf"
+      ],
+      "title": "Le dollar près d'un sommet de 19 mois sur les paris d'une hausse de la Fed; le yen frôle 160",
+      "title_en": "Dollar near 19-month high on Fed hike bets; yen tests 160",
+      "summary": "Le DXY se tient à 103,17, son plus haut depuis avril 2025, en route vers un gain hebdomadaire de 0,9 %. Le yen stagne à 159,875 par dollar après avoir touché 160 jeudi, l'euro recule de 0,1 % à 1,1049 $ et l'AUD/USD est à 0,68 $. Selon CME FedWatch, les marchés voient 14,5 % de chances d'une forte hausse de taux de la Fed le mois prochain, contre 0 % la semaine dernière.",
+      "summary_en": "The dollar index stood at 103.17, its highest since April 2025, on track for a 0.9% weekly gain. The yen was flat at 159.875 per dollar after touching 160 on Thursday, the euro fell 0.1% to $1.1049 and AUD/USD was at $0.68. CME FedWatch shows a 14.5% chance of a large Fed hike next month, up from 0% last week.",
+      "url": "https://www.investing.com/news/economy-news/dollar-near-19month-high-on-fed-hike-bets-yen-tests-160-5023930"
+    },
     {
       "date": "2026-11-12",
       "time": "19:39",
