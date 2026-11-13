@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T14:45:00Z",
+ "updatedAt": "2026-11-13T15:19:03.232448Z",
  "econ": {
   "values": {
    "adp": {
@@ -531,7 +531,10 @@
    "note": "Après la clôture",
    "revA": 3.661,
    "revF": 3.54,
-   "time": "16:05"
+   "time": "16:05",
+   "guide": "above",
+   "guideTxt": "Année : 13,0–13,3 G$ vs 12,86 G$ attendu (relevée)",
+   "guideTxt_en": "Full year: $13.0–13.3B vs $12.86B expected (raised)"
   },
   {
    "ai": true,
@@ -548,7 +551,10 @@
    "note": "Avant l’ouverture",
    "revA": 0.9808,
    "revF": 0.907,
-   "time": "07:00"
+   "time": "07:00",
+   "guide": "below",
+   "guideTxt": "2026 : bas de la fourchette 3,0–3,4 G$ vs 3,48 G$ attendu",
+   "guideTxt_en": "2026: low end of $3.0–3.4B vs $3.48B expected"
   },
   {
    "a": 200,
@@ -576,7 +582,10 @@
    "note": "Après la clôture",
    "revA": 18.5,
    "revF": 18.1,
-   "time": "16:05"
+   "time": "16:05",
+   "guide": null,
+   "guideTxt": "T2 : 18,0–18,2 G$ (consensus non trouvé)",
+   "guideTxt_en": "Q2: $18.0–18.2B (consensus not found)"
   },
   {
    "ai": true,
@@ -594,7 +603,10 @@
    "note": "Après la clôture",
    "revA": 10.41,
    "revF": 10.3,
-   "time": "16:05"
+   "time": "16:05",
+   "guide": "above",
+   "guideTxt": "T1 : 11,1 G$ ± 0,5 vs 10,8 G$ attendu",
+   "guideTxt_en": "Q1: $11.1B ± 0.5 vs $10.8B expected"
   },
   {
    "ai": true,
@@ -611,7 +623,10 @@
    "note": "Après la clôture",
    "revA": 0.2108,
    "revF": 0.2147,
-   "time": "16:05"
+   "time": "16:05",
+   "guide": null,
+   "guideTxt": "T4 : 310–330 M$ (consensus non trouvé)",
+   "guideTxt_en": "Q4: $310–330M (consensus not found)"
   },
   {
    "a": 0.3,
