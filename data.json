@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T07:17:24Z",
+  "updatedAt": "2026-11-16T07:47:51Z",
   "econ": {
     "values": {
       "adp": {
@@ -916,6 +916,37 @@
   "news": [
     {
       "date": "2026-11-16",
+      "time": "02:00",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usdjpy",
+        "xauusd",
+        "usoil",
+        "nasdaq"
+      ],
+      "title": "Tokyo : le Nikkei 225 recule de 2,25 % à la clôture, les fabricants de puces plongent",
+      "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 2.25%",
+      "summary": "Le Nikkei 225 a clôturé en baisse de 2,25 %, plombé par Lasertec (-12,84 %) et Advantest (-11,12 %), alors que la nervosité sur les semi-conducteurs s'accentue avant les résultats de Nvidia. L'USD/JPY cède 0,11 % à 159,53, l'or de décembre recule de 0,83 % à 3 853,90 $ l'once, tandis que le WTI de janvier gagne 0,64 % à 87,85 $.",
+      "summary_en": "The Nikkei 225 closed down 2.25%, dragged by Lasertec (-12.84%) and Advantest (-11.12%) as chip-sector nerves build ahead of Nvidia's results. USD/JPY slipped 0.11% to 159.53, December gold fell 0.83% to $3,853.90/oz, while January WTI rose 0.64% to $87.85.",
+      "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-225-5028475"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "01:29",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usoil"
+      ],
+      "title": "Mer du Nord : troisième vague de grève chez Apache, la production arrêtée selon Unite",
+      "title_en": "Apache North Sea workers stage third strike round, Unite says production halted",
+      "summary": "Les travailleurs des plateformes d'Apache en mer du Nord ont mené une troisième ronde de grèves tournantes en fin de semaine; le syndicat Unite affirme que la production a été arrêtée sur les sept actifs britanniques de la société, dont les plateformes Forties et Beryl. Unite, qui représente 170 travailleurs, promet de poursuivre tant que l'offre salariale ne sera pas améliorée, ce qui ajoute un risque d'offre pour le pétrole.",
+      "summary_en": "Workers on Apache's North Sea platforms staged a third round of rolling strikes over the weekend; the Unite union says production was halted at all seven of the company's UK assets, including the Forties and Beryl platforms. Unite, representing 170 workers, vowed to continue until the pay offer improves, adding a supply risk for oil.",
+      "url": "https://www.investing.com/news/stock-market-news/apache-north-sea-workers-stage-third-strike-round-unite-says-production-halted-5028427"
+    },
+    {
+      "date": "2026-11-16",
       "time": "01:00",
       "source": "Investing.com",
       "impact": "high",
@@ -1530,40 +1561,6 @@
       "title": "Inscriptions au chômage : 200 000, un peu plus que prévu, mais le marché du travail reste solide",
       "title_en": "Jobless claims rise to 200,000, slightly above forecasts, but labor market firming",
       "url": "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-increase-but-labor-market-firming-5021926"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-12",
-      "impact": "high",
-      "source": "Reuters (via Investing.com)",
-      "summary": "Nvidia reculait de 7,8 % avant l’ouverture et a perdu environ 300 G$ de valeur boursière depuis l’annonce de l’enquête de son conseil dimanche; elle se négocie à environ 12 fois ses bénéfices prévus sur 12 mois, un creux depuis novembre 2012. CoreWeave cédait 6 %, Nebius 10,7 %, Micron 3,4 % et Western Digital 3,2 %, tandis que le Japon et la Corée du Sud ont clôturé en baisse de près de 0,7 %. La pression sur les semi-conducteurs pèse d’abord sur le Nasdaq et le S&P 500.",
-      "summary_en": "Nvidia fell 7.8% premarket and has lost about $300 billion in market value since its board announced an investigation on Sunday; it trades at about 12 times 12-month forward earnings, its lowest since November 2012. CoreWeave fell 6%, Nebius 10.7%, Micron 3.4% and Western Digital 3.2%, while Japan and South Korea closed nearly 0.7% lower. Chip-sector pressure weighs first on the Nasdaq and the S&P 500.",
-      "time": "08:15",
-      "title": "Les titres de l’IA chutent partout alors que la crise chez Nvidia s’aggrave",
-      "title_en": "Global AI stocks sink as Nvidia crisis deepens sector selloff",
-      "url": "https://www.investing.com/news/stock-market-news/global-ai-stocks-sink-as-nvidia-crisis-deepens-sector-selloff-5021776"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "usd",
-        "usoil",
-        "btcusd"
-      ],
-      "date": "2026-11-12",
-      "impact": "med",
-      "source": "Reuters (via Investing.com)",
-      "summary": "L’indice MSCI Asie-Pacifique hors Japon recule de 1,2 %, Taïwan de 2,6 %, le Kospi et le Nikkei de 0,9 %, après la chute de 8,8 % de Nvidia hors séance sur des informations voulant que son conseil pourrait évincer Jensen Huang. Les contrats à terme du S&P 500 perdent 0,5 %, l’indice dollar gagne 0,1 % à 102,98 et le 10 ans américain monte à 4,992 %. Le Brent cède 1,0 % à 91,87 $ et le bitcoin 1 % à 73 579 $.",
-      "summary_en": "MSCI's Asia-Pacific index outside Japan fell 1.2%, Taiwan 2.6%, and the Kospi and Nikkei 0.9%, after Nvidia slid 8.8% in extended trading on reports its board may oust CEO Jensen Huang. S&P 500 e-mini futures fell 0.5%, the dollar index rose 0.1% to 102.98 and the U.S. 10-year yield edged up to 4.992%. Brent fell 1.0% to $91.87 and bitcoin 1% to $73,579.",
-      "time": "01:51",
-      "title": "Asie : les Bourses chutent avec Nvidia (−8,8 % hors séance) pendant que le conseil décide du sort de Huang",
-      "title_en": "Asian stocks tumble as Nvidia (-8.8% after hours) stings while board decides CEO's fate",
-      "url": "https://ca.investing.com/news/economy-news/asian-stocks-tumble-nvidia-stings-as-board-to-decide-ceos-fate-4951581"
     }
   ],
   "live": {
