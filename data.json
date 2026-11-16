@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T01:47:33Z",
+ "updatedAt": "2026-11-16T02:47:14Z",
  "econ": {
   "values": {
    "adp": {
@@ -916,6 +916,54 @@
  "news": [
   {
    "date": "2026-11-15",
+   "time": "21:16",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "audusd",
+    "nzdusd",
+    "usoil"
+   ],
+   "title": "Chine : production industrielle et ventes au détail sous les attentes en octobre",
+   "title_en": "China factory output, retail sales miss forecasts in October",
+   "summary": "La production industrielle chinoise a progressé de 4,8 % sur un an en octobre, sous les 5,3 % attendus et après 5,5 % en septembre. Les ventes au détail n'ont crû que de 0,4 % (0,8 % attendu, 1,1 % le mois précédent). Ce ralentissement pèse sur les devises liées à la Chine comme l'AUD et le NZD, et sur la demande de pétrole.",
+   "summary_en": "China's industrial output rose 4.8% year-on-year in October, below the 5.3% forecast and down from 5.5% in September. Retail sales grew just 0.4% (0.8% expected, 1.1% prior). The slowdown weighs on China-linked currencies such as the AUD and NZD, and on oil demand.",
+   "url": "https://ca.investing.com/news/economic-indicators/china-factory-output-retail-sales-miss-forecasts-in-oct-4959518"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "20:43",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd"
+   ],
+   "title": "L'or passe sous 3 900 $ alors que les paris sur une hausse de la Fed en décembre s'accumulent; Warsh attendu",
+   "title_en": "Gold falls below $3,900 as December Fed hike bets build, Warsh in focus",
+   "summary": "L'or recule de 0,4 % à 3 868,88 $ l'once en début de séance asiatique, après une perte de 4,5 % la semaine dernière; l'argent chute de 2,1 % à 47,74 $. Selon le CME FedWatch, le marché accorde 94 % de chances à une hausse de 25 points de base en décembre et 6 % à 50 points. Le président de la Fed Kevin Warsh parle lundi et les minutes du FOMC d'octobre sortent mercredi.",
+   "summary_en": "Gold fell 0.4% to $3,868.88/oz in early Asian trading after losing 4.5% last week; silver dropped 2.1% to $47.74. CME FedWatch shows a 94% probability of a 25-basis-point hike in December and 6% for 50 bp. Fed Chair Kevin Warsh speaks Monday and the October FOMC minutes are due Wednesday.",
+   "url": "https://uk.investing.com/news/commodities-news/gold-falls-below-3900-as-december-fed-hike-bets-build-warsh-in-focus-4983517"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "20:35",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "nasdaq",
+    "us30"
+   ],
+   "title": "Contrats à terme américains stables avant les résultats de Nvidia et l'IPO d'Anthropic",
+   "title_en": "U.S. stock futures little changed as investors await Nvidia earnings",
+   "summary": "Dimanche soir, les contrats à terme sur le S&P 500 (7 587,25) et le Nasdaq 100 (28 040,75) gagnent environ 0,1 %. La semaine dernière, le S&P 500 a pris 2,5 %, le Nasdaq 2,3 % et le Dow 2,1 %, malgré une chute de près de 13 % de Nvidia. Au menu : résultats de Nvidia mardi après la clôture, IPO d'Anthropic attendue mercredi (cotation jeudi au Nasdaq) et résultats de Home Depot, Target et Walmart.",
+   "summary_en": "Sunday evening, S&P 500 futures (7,587.25) and Nasdaq 100 futures (28,040.75) were up about 0.1%. Last week the S&P 500 gained 2.5%, the Nasdaq 2.3% and the Dow 2.1%, despite Nvidia falling nearly 13%. Ahead: Nvidia results Tuesday after the close, Anthropic's IPO expected to price Wednesday (trading Thursday on Nasdaq), and Home Depot, Target and Walmart earnings.",
+   "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-little-changed-as-investors-await-nvidia-earnings-5028292"
+  },
+  {
+   "date": "2026-11-15",
    "time": "20:12",
    "source": "Reuters (Investing.com)",
    "impact": "med",
@@ -1527,51 +1575,6 @@
    "title": "Les contrats à terme du Nasdaq grimpent de 2 % : CoreWeave bondit de 14 % et Nvidia rebondit",
    "title_en": "Nasdaq futures jump 2% as CoreWeave soars 14% and Nvidia rebounds",
    "url": "https://www.coindesk.com/tech/2026/11/11/live-news-coreweave-jumps-14-as-earnings-fuel-rebound-across-battered-ai-stocks"
-  },
-  {
-   "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-11",
-   "impact": "med",
-   "source": "Reuters (via Investing.com)",
-   "summary": "Vers 11 h 58 GMT, le Brent gagne 1,26 $ (+1,4 %) à 92,75 $ et le WTI 57 cents (+0,7 %) à 86,61 $, après une chute de plus de 3 $ en séance mardi. Les attaques de navires se poursuivent (37 en octobre, un record depuis le début de la guerre) et Téhéran affirme qu’aucune matière nucléaire enrichie ne quittera le pays et qu’aucune négociation n’a lieu avec Washington. Le Brent et le WTI restent en baisse d’environ 21 % et 17 % depuis le début du mois.",
-   "summary_en": "Around 1158 GMT, Brent rose $1.26 (1.4%) to $92.75 and WTI gained 57 cents (0.7%) to $86.61, after falling more than $3 intraday on Tuesday. Ship attacks continue (37 in October, the most since the war began), and Tehran says no enriched nuclear material will leave the country and no talks are under way with Washington. Brent and WTI are still down about 21% and 17% since the start of the month.",
-   "time": "07:19",
-   "title": "Le pétrole remonte de son creux de deux mois : les attaques dans le détroit d’Ormuz freinent l’espoir d’une trêve avec l’Iran",
-   "title_en": "Oil rises from two-month low as Hormuz shipping attacks offset Iran truce hopes",
-   "url": "https://au.investing.com/news/commodities-news/oil-rises-from-twomonth-low-as-hormuz-shipping-attacks-offset-iran-truce-hopes-4760347"
-  },
-  {
-   "assets": [
-    "btcusd"
-   ],
-   "date": "2026-11-11",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Le bitcoin se maintient autour de 74 000 $ (−0,7 % sur 24 h) après un creux de 72 700 $ mardi, tandis que les FNB américains au comptant ont perdu 95 M$ mardi, une 4e séance de sorties (dont 78 M$ pour IBIT). Après l’IPC chaud, la probabilité d’une hausse de la Fed les 8–9 décembre atteint 90 % selon CME FedWatch, et l’indice Peur et Avidité est à 26 (peur).",
-   "summary_en": "Bitcoin is holding around $74,000 (-0.7% over 24 hours) after dipping to $72,700 on Tuesday, while U.S. spot ETFs lost $95 million Tuesday, a fourth straight day of outflows ($78 million from IBIT). After the hot CPI, the odds of a Fed hike at the Dec. 8-9 meeting rose to 90% per CME FedWatch, and the Fear and Greed Index sits at 26 (fear).",
-   "time": "06:37",
-   "title": "Le bitcoin reste près de 74 000 $ et rate le rebond des actions; 4e jour de sorties des FNB",
-   "title_en": "Bitcoin sits near $74,000, missing the stock rebound as ETF outflows hit a fourth day",
-   "url": "https://www.coindesk.com/markets/2026/11/11/bitcoin-sits-out-stock-rebound-as-etf-outflows-extend-to-fourth-day"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30",
-    "rut"
-   ],
-   "date": "2026-11-10",
-   "impact": "med",
-   "source": "Yahoo Finance",
-   "summary": "Le S&P 500 a terminé à 7 520,93 (−0,38 %), le Dow à 52 231,89 (−0,30 %), le Nasdaq à 25 065,88 (−0,74 %) et le Russell 2000 à 2 821,38 (−0,68 %). Nvidia a clôturé à 168,89 $ (−5,47 %). L’IPC plus chaud que prévu et les propos de Waller ont renforcé les paris d’une hausse de taux de la Fed en décembre, ce qui pèse sur les actions.",
-   "summary_en": "The S&P 500 closed at 7,520.93 (−0.38%), the Dow at 52,231.89 (−0.30%), the Nasdaq at 25,065.88 (−0.74%) and the Russell 2000 at 2,821.38 (−0.68%). Nvidia closed at $168.89 (−5.47%). The hotter-than-expected CPI and Waller’s comments reinforced bets on a Fed rate hike in December, weighing on stocks.",
-   "time": "16:00",
-   "title": "Clôture : Wall Street recule après l’IPC chaud — Nasdaq −0,74 %, S&P 500 −0,38 %, Nvidia −5,5 %",
-   "title_en": "Close: Wall Street falls after hot CPI — Nasdaq −0.74%, S&P 500 −0.38%, Nvidia −5.5%",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
   }
  ],
  "live": {
