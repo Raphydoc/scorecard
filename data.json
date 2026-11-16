@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T08:47:28Z",
+  "updatedAt": "2026-11-16T09:48:21Z",
   "econ": {
     "values": {
       "adp": {
@@ -916,6 +916,40 @@
   "news": [
     {
       "date": "2026-11-16",
+      "time": "04:34",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd",
+        "nasdaq",
+        "xauusd",
+        "xagusd",
+        "usd"
+      ],
+      "title": "Le bitcoin remonte au-dessus de 64 000 $ après une 6e perte hebdomadaire; les titres crypto reculent avant l'ouverture",
+      "title_en": "Bitcoin rebounds above $64,000 after sixth weekly loss; crypto stocks slide premarket",
+      "summary": "Le bitcoin, tombé sous 62 000 $ samedi, est revenu juste au-dessus de 64 000 $, mais il recule de 17 % en novembre et vient d'inscrire une sixième perte hebdomadaire de suite. Les contrats à terme du Nasdaq 100 cèdent 0,8 % et Strategy perd environ 8 % avant l'ouverture, tandis que l'or est à 3 862 $ et l'argent à 47,50 $. Le DXY au-dessus de 103 et le taux à 10 ans au-dessus de 5,1 % pèsent sur les actifs à risque.",
+      "summary_en": "Bitcoin, which fell below $62,000 on Saturday, recovered to just above $64,000, but it is down 17% in November after a sixth straight weekly loss. Nasdaq 100 futures are down 0.8% and Strategy is off about 8% premarket, while gold trades at $3,862 and silver at $47.50. A DXY above 103 and a 10-year yield above 5.1% are weighing on risk assets.",
+      "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "03:56",
+      "source": "Reuters (Investing.com)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "usd"
+      ],
+      "title": "Les tensions sur les puces planent sur le sommet Trump-Xi de jeudi à Shenzhen",
+      "title_en": "Chip tensions loom over Trump-Xi summit, as US and China push AI safety steps",
+      "summary": "Selon des analystes, de nouvelles restrictions américaines sur l'accès de la Chine aux puces d'IA avancées risquent d'éclipser le sommet Trump-Xi de jeudi à Shenzhen, malgré de possibles progrès sur la sécurité de l'IA. Le scandale entourant la démission de Jensen Huang chez Nvidia pousse des élus américains à réclamer des contrôles plus serrés. Les baisses de tarifs réciproques convenues en septembre couvrent 30 G$ de biens, et aucun nouveau progrès ne sera annoncé à ce sujet.",
+      "summary_en": "Analysts expect tighter US curbs on China's access to advanced AI chips to overshadow Thursday's Trump-Xi summit in Shenzhen, though some progress on AI safety is possible. The scandal around Jensen Huang's resignation from Nvidia has US lawmakers pushing for stricter controls. Reciprocal tariff cuts agreed in September cover $30 billion of goods, and no further progress will be announced on that front.",
+      "url": "https://www.investing.com/news/stock-market-news/chip-tensions-loom-over-trumpxi-summit-as-us-and-china-push-ai-safety-steps-5028728"
+    },
+    {
+      "date": "2026-11-16",
       "time": "03:21",
       "source": "Investing.com",
       "impact": "med",
@@ -1528,38 +1562,6 @@
       "title": "Le pétrole gagne plus de 1 $ : Trump dit ne plus avoir besoin d’un accord avec l’Iran, Ormuz toujours perturbé",
       "title_en": "Oil gains over $1 as Trump says no Iran deal needed; Hormuz shipping still disrupted",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-drop-more-than-1-as-hopes-for-iran-ukraine-peace-talks-pressure-markets-5020171"
-    },
-    {
-      "assets": [
-        "btcusd",
-        "nasdaq"
-      ],
-      "date": "2026-11-12",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Le bitcoin perd 3,4 % sur 24 heures et se négocie juste au-dessus de 71 000 $. MSCI a confirmé que Strategy (MSTR) sera retirée de ses indices mondiaux après la clôture du 30 novembre, et le rendement du 10 ans américain dépasse 5 %. Les FNB bitcoin au comptant ont perdu environ 300 M$ mercredi (465 M$ pour l'ensemble des FNB crypto).",
-      "summary_en": "Bitcoin is down 3.4% over 24 hours, trading just above $71,000. MSCI confirmed Strategy (MSTR) will be removed from its global equity indexes after the close on Nov. 30, and the U.S. 10-year yield is above 5%. Spot bitcoin ETFs lost about $300 million Wednesday (about $465 million across U.S. spot crypto ETFs).",
-      "time": "11:47",
-      "title": "Le bitcoin glisse sous 72 000 $ : MSCI retire Strategy de ses indices et les taux bondissent",
-      "title_en": "Bitcoin slips below $72,000 as MSCI drops Strategy from its indexes and yields surge",
-      "url": "https://www.coindesk.com/tech/2026/11/12/live-news-strategy-kicked-out-of-msci-indexes-as-nvidia-slump-rattles-markets"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30",
-        "usd"
-      ],
-      "date": "2026-11-12",
-      "impact": "high",
-      "source": "Yahoo Finance",
-      "summary": "Après une ouverture en baisse liée à la démission de Jensen Huang, les indices se sont redressés : vers 11 h 43, le Dow gagnait 0,18 % (52 579), tandis que le S&P 500 et le Nasdaq oscillaient autour de zéro. Nvidia réduisait sa perte à 5,42 % (164,32 $) après avoir chuté de plus de 10 %. Le rendement du 10 ans grimpait de 8 points de base à 5,08 %, la hausse du pétrole ravivant les craintes d'inflation, ce qui soutient le dollar.",
-      "summary_en": "After a lower open on Jensen Huang's resignation, indexes recovered: around 11:43 a.m. the Dow was up 0.18% (52,579), while the S&P 500 and Nasdaq hovered near flat. Nvidia trimmed its loss to 5.42% ($164.32) after falling more than 10%. The 10-year Treasury yield rose 8 basis points to 5.08% as higher oil revived inflation worries, supporting the dollar.",
-      "time": "11:42",
-      "title": "Wall Street efface ses pertes : le Dow monte, Nvidia limite sa chute à environ −5 %; le 10 ans dépasse 5 %",
-      "title_en": "Wall Street erases its losses: Dow rises, Nvidia trims its drop to about −5%; 10-year yield tops 5%",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
     }
   ],
   "live": {
