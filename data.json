@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-13T22:42:57Z",
+ "updatedAt": "2026-11-16T01:02:55Z",
  "econ": {
   "values": {
    "adp": {
@@ -915,6 +915,66 @@
  },
  "news": [
   {
+   "date": "2026-11-15",
+   "time": "18:57",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usdjpy",
+    "audusd",
+    "nzdusd"
+   ],
+   "title": "Le PIB du Japon recule de façon inattendue au 3e trimestre",
+   "title_en": "Japan Q3 GDP unexpectedly shrinks as slowing exports, weak spending weigh",
+   "summary": "Le PIB japonais du 3e trimestre est stable sur un trimestre (0,1 % attendu) et recule de 0,1 % sur un an, contre +0,3 % attendu et +1,4 % au trimestre précédent. La demande extérieure (−0,6 %) et la consommation privée (−0,3 %) ont pesé, malgré des investissements liés à l'IA. Une économie plus faible complique la tâche de la Banque du Japon alors que le yen est déjà sous pression.",
+   "summary_en": "Japan's Q3 GDP was flat quarter on quarter (0.1% expected) and fell 0.1% year on year, versus +0.3% expected and +1.4% in the prior quarter. External demand (-0.6%) and private consumption (-0.3%) weighed, despite AI-related capital spending. A weaker economy complicates the Bank of Japan's task with the yen already under pressure.",
+   "url": "https://au.investing.com/news/economic-indicators/japan-q3-gdp-unexpectedly-shrinks-as-slowing-exports-weak-spending-weigh-4771952"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "18:45",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Le pétrole recule à l'ouverture asiatique : l'AIE prévoit un retour aux surplus malgré les tensions au Moyen-Orient",
+   "title_en": "Oil prices dip as markets look to recovering supplies, M.East tensions",
+   "summary": "Le Brent de janvier perd 0,4 % à 95,45 $ le baril, après deux séances de baisse. L'AIE prévoit maintenant un surplus au 4e trimestre et libérera 71 millions de barils de réserves d'urgence d'ici fin février, tandis que les exportations du Golfe et le trafic dans le détroit d'Ormuz se rétablissent. Les risques restent élevés : tensions entre les États-Unis et l'Iran et pétrolier en feu dans Ormuz durant la fin de semaine.",
+   "summary_en": "January Brent fell 0.4% to $95.45 a barrel after two losing sessions. The IEA now sees a Q4 surplus and will release 71 million barrels of emergency reserves by end-February, while Gulf exports and Strait of Hormuz shipping recover. Risks remain high: U.S.-Iran tensions and a tanker fire in Hormuz over the weekend.",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-dip-as-markets-look-to-recovering-supplies-meast-tensions-5028198"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "17:06",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "xauusd"
+   ],
+   "title": "UBS voit le Brent à 110 $ d'ici la fin de l'année, faute de coussins d'offre",
+   "title_en": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
+   "summary": "Le bureau des placements de UBS prévoit un Brent à 110 $ le baril d'ici la fin de l'année; le Brent a terminé vendredi à 95,84 $, après une semaine entre 89,16 $ et 97,13 $. L'or a fini vendredi à 3 886,30 $ l'once après avoir chuté de 2,88 % jeudi, plombé par l'inflation chaude et les paris de hausse de la Fed; UBS note des achats record des banques centrales (321 tonnes au 3e trimestre).",
+   "summary_en": "UBS's Chief Investment Office expects Brent at $110 a barrel by year-end; Brent settled Friday at $95.84 after a $89.16-$97.13 weekly range. Gold settled Friday at $3,886.30/oz after a 2.88% drop Thursday, hit by hot inflation and Fed hike bets; UBS notes strong central bank buying (321 tons in Q3).",
+   "url": "https://www.investing.com/news/commodities-news/ubs-sees-brent-hitting-110-as-tight-supply-buffers-leave-oil-vulnerable-5028142"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "15:39",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia : Bessent réclame un PDG externe, Jensen Huang songerait à revenir avant les résultats de mardi",
+   "title_en": "Nvidia: Bessent urges outside CEO as Jensen Huang reportedly weighs comeback ahead of Tuesday results",
+   "summary": "Le secrétaire au Trésor Scott Bessent a réclamé dimanche un « remaniement radical » chez Nvidia et un PDG venu de l'extérieur, donnant 10 jours au conseil pour répondre sur le respect des restrictions d'exportation. Selon le Financial Times, Jensen Huang envisage de revenir comme PDG; Colette Kress assure l'intérim et le PDG d'Arm, Rene Haas, a été approché. Les résultats de Nvidia, attendus mardi, pèseront lourd sur le Nasdaq et le S&P 500.",
+   "summary_en": "Treasury Secretary Scott Bessent on Sunday called for a \"dramatic shakeup\" at Nvidia and an outside CEO, giving the board 10 days to answer questions on export-control compliance. According to the Financial Times, Jensen Huang is considering a return as CEO; Colette Kress is interim CEO and Arm CEO Rene Haas has been approached. Nvidia's results, due Tuesday, will weigh heavily on the Nasdaq and S&P 500.",
+   "url": "https://www.investing.com/news/stock-market-news/jensen-huang-may-return-as-nvidia-chief-executive--report-5028097"
+  },
+  {
    "date": "2026-11-13",
    "time": "16:33",
    "source": "Yahoo Finance",
@@ -1520,75 +1580,6 @@
    "title": "IPC d’octobre plus chaud que prévu (+0,4 %, base +0,3 %) : taux et dollar en hausse",
    "title_en": "Hotter-than-expected October CPI (+0.4%, core +0.3%) lifts yields and dollar",
    "url": "https://za.investing.com/news/economic-indicators/hot-october-inflation-report-rattles-markets-4565282"
-  },
-  {
-   "assets": [
-    "usd",
-    "xauusd",
-    "xagusd",
-    "btcusd",
-    "nasdaq",
-    "spx500",
-    "eurusd",
-    "usdjpy"
-   ],
-   "date": "2026-11-10",
-   "impact": "high",
-   "source": "CoinDesk",
-   "summary": "Le gouverneur de la Fed Christopher Waller appuie une hausse en décembre même si l’inflation a ralenti en octobre, et juge qu’un IPC plus chaud que prévu pourrait justifier 50 points de base. Les marchés intègrent une hausse de 25 pb le 9 décembre (fourchette de 4,00 % à 4,25 %), ce qui fait reculer l’or d’un peu plus de 1 % sous 4 100 $ et le bitcoin d’environ 1 % près de 74 000 $, tandis que le DXY reste ferme sous 102. L’IPC d’octobre est attendu ce matin à +0,3 % sur un mois (+0,2 % pour l’indice de base).",
-   "summary_en": "Fed Governor Christopher Waller backs a December hike even if inflation cooled in October, and said a hotter-than-expected CPI could justify 50 basis points. Markets price a 25 bp hike on Dec. 9 (to a 4.00%-4.25% range), pushing gold down just over 1% below $4,100 and bitcoin about 1% lower near $74,000, while the DXY stays firm below 102. October CPI is due this morning, expected at +0.3% month over month (+0.2% core).",
-   "time": "05:41",
-   "title": "Waller ouvre la porte à une hausse de 50 pb; une hausse de taux en décembre est entièrement intégrée",
-   "title_en": "Waller opens door to 50 bp hike; December rate increase fully priced in",
-   "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-10",
-   "impact": "med",
-   "source": "Yahoo Finance",
-   "summary": "Anthropic a fixé une fourchette de 70 $ à 78 $ par action pour 825 millions d’actions, une offre qui pourrait lever jusqu’à 64,4 milliards $. Au haut de la fourchette, l’entreprise serait évaluée à plus de 1 000 milliards $, un test majeur de l’appétit pour l’IA alors que le Nasdaq est l’indice le plus faible de la séance.",
-   "summary_en": "Anthropic set a price range of $70 to $78 per share for 825 million shares, an offering that could raise up to $64.4 billion. At the top of the range the company would be valued at more than $1 trillion, a major test of AI appetite as the Nasdaq is the session's weakest index.",
-   "time": "",
-   "title": "Anthropic fixe la fourchette de son IPO à 70–78 $ : jusqu’à 64,4 G$ et plus de 1 000 G$ de valeur",
-   "title_en": "Anthropic sets IPO range at $70–$78: up to $64.4B raised, valuation above $1 trillion",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30",
-    "rut"
-   ],
-   "date": "2026-11-09",
-   "impact": "high",
-   "source": "Yahoo Finance",
-   "summary": "À la clôture lundi, le Nasdaq a gagné 2,74 % (25 253,14), le S&P 500 2,35 % (7 549,94), le Dow 2,15 % (52 389,75) et le Russell 2000 3,15 % (2 840,81), tous les secteurs finissant en hausse. Les semi-conducteurs, les achats à bon compte et le recul du pétrole ont porté le rebond, malgré Nvidia en baisse de plus de 4 % à cause de l’enquête interne visant son PDG; Constellation Energy a bondi de plus de 10 % après ses résultats. Le S&P 500 se remet ainsi de sa pire semaine depuis avril 2025, à la veille de l’indice des prix (CPI).",
-   "summary_en": "At Monday's close the Nasdaq gained 2.74% (25,253.14), the S&P 500 2.35% (7,549.94), the Dow 2.15% (52,389.75) and the Russell 2000 3.15% (2,840.81), with every sector finishing higher. Chipmakers, dip buying and lower oil drove the rebound, despite Nvidia falling more than 4% on the internal probe of its CEO; Constellation Energy jumped over 10% after its earnings. The S&P 500 is recovering from its worst week since April 2025, on the eve of the CPI report.",
-   "time": "17:23",
-   "title": "Clôture : Wall Street rebondit fortement — Nasdaq +2,74 %, Russell 2000 +3,15 %, malgré Nvidia",
-   "title_en": "Close: Wall Street rebounds sharply — Nasdaq +2.74%, Russell 2000 +3.15%, despite Nvidia",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-nov-9-222339218.html"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "xagusd",
-    "usd"
-   ],
-   "date": "2026-11-09",
-   "impact": "med",
-   "source": "Kitco",
-   "summary": "L’or au comptant gagnait 1,33 % à 4 124,74 $ l’once et l’argent 1,57 % à 52,759 $, aidés par un dollar légèrement plus faible et un Brent vers 94,76 $. Les métaux rebondissent après la vente de vendredi provoquée par le rapport sur l’emploi (165 000 postes en octobre), qui avait renforcé les paris d’une hausse de taux en décembre; le taux à 10 ans est près de 4,87 %. Le CPI d’octobre, mardi, pourrait changer ces attentes.",
-   "summary_en": "Spot gold rose 1.33% to $4,124.74 an ounce and silver 1.57% to $52.759, helped by a modestly weaker dollar and Brent near $94.76. Metals are rebounding from Friday's selloff after the jobs report (165,000 October payrolls) lifted bets on a December rate hike; the 10-year yield is near 4.87%. Tuesday's October CPI could shift those expectations.",
-   "time": "08:35",
-   "title": "L’or et l’argent montent : la diplomatie avec l’Iran fait reculer le brut et le dollar s’affaiblit",
-   "title_en": "Gold, silver rise as Iran diplomacy pressures crude, dollar weakens",
-   "url": "https://www.kitco.com/news/article/2026-11-09/gold-silver-rise-iran-diplomacy-pressures-crude-dollar-weakens-kitco-am"
   }
  ],
  "live": {
