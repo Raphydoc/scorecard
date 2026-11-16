@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T05:47:35Z",
+  "updatedAt": "2026-11-16T06:47:56Z",
   "econ": {
     "values": {
       "adp": {
@@ -916,6 +916,21 @@
   "news": [
     {
       "date": "2026-11-16",
+      "time": "01:00",
+      "source": "Investing.com",
+      "impact": "high",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Taïwan : le Taiwan Weighted chute de 5,74 % à la clôture, TSMC dégringole",
+      "title_en": "Taiwan stocks: Taiwan Weighted down 5.74% at close as TSMC tumbles",
+      "summary": "L'indice Taiwan Weighted a clôturé en baisse de 5,74 % lundi, et le titre de TSMC a fortement reculé (lecture de l'article bloquée; résumé tiré des titres d'Investing.com). Ce recul s'ajoute à la nervosité sur l'IA avant les résultats de Nvidia et pèse sur le sentiment pour les semi-conducteurs, le Nasdaq et le S&P 500.",
+      "summary_en": "The Taiwan Weighted index closed down 5.74% on Monday and TSMC shares tumbled (article could not be read; summary based on Investing.com headlines). The drop adds to AI jitters ahead of Nvidia's results and weighs on sentiment for chipmakers, the Nasdaq and the S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/taiwan-stocks-lower-at-close-of-trade-taiwan-weighted-down-574-5028408"
+    },
+    {
+      "date": "2026-11-16",
       "time": "00:01",
       "source": "CoinDesk",
       "impact": "med",
@@ -1549,21 +1564,6 @@
       "title": "Asie : les Bourses chutent avec Nvidia (−8,8 % hors séance) pendant que le conseil décide du sort de Huang",
       "title_en": "Asian stocks tumble as Nvidia (-8.8% after hours) stings while board decides CEO's fate",
       "url": "https://ca.investing.com/news/economy-news/asian-stocks-tumble-nvidia-stings-as-board-to-decide-ceos-fate-4951581"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-11",
-      "impact": "high",
-      "source": "Reuters (via Investing.com)",
-      "summary": "Le conseil de Nvidia (11 administrateurs, dont 10 indépendants) se réunissait mercredi soir pour décider s’il évince Jensen Huang, selon une source de Reuters, après un article du WSJ disant que l’entreprise se prépare à le congédier; Bloomberg rapporte qu’une firme externe cherche des remplaçants. L’action recule de plus de 8 % après la clôture et les contrats à terme du Nasdaq de 1 %; si la baisse tient, Nvidia aura perdu environ 600 G$ de valeur depuis l’annonce de l’enquête. Poids lourd du Nasdaq et du S&P 500, Nvidia publie ses résultats le 17 novembre.",
-      "summary_en": "Nvidia's board (11 directors, 10 of them independent) was meeting late Wednesday to decide whether to oust Jensen Huang, a source told Reuters, after the WSJ reported the company was preparing to fire him; Bloomberg reported an outside firm is identifying possible replacements. Shares fell more than 8% after hours and Nasdaq futures 1%; if losses hold, Nvidia will have shed about $600 billion in value since the probe was announced. A Nasdaq and S&P 500 heavyweight, Nvidia reports results on Nov. 17.",
-      "time": "22:24",
-      "title": "Le conseil de Nvidia se réunit pour décider du sort de Jensen Huang; l’action perd plus de 8 % après la clôture",
-      "title_en": "Nvidia board meets to decide CEO Jensen Huang's future; shares drop more than 8% after hours",
-      "url": "https://www.investing.com/news/stock-market-news/nvidia-is-preparing-to-oust-ceo-jensen-huang-wsj-reports-5019991"
     }
   ],
   "live": {
