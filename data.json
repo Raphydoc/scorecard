@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T11:48:51Z",
+  "updatedAt": "2026-11-16T12:48:48Z",
   "econ": {
     "values": {
       "adp": {
@@ -916,6 +916,36 @@
   "news": [
     {
       "date": "2026-11-16",
+      "time": "07:30",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Nvidia recule d'environ 3,5 % en préouverture; le départ de Huang assombrit les perspectives avant les résultats de mardi",
+      "title_en": "Nvidia falls premarket as Huang exit clouds outlook ahead of earnings",
+      "summary": "Nvidia perdait environ 3,5 % en préouverture lundi après une clôture à 162,85 $ vendredi, sa capitalisation sous les 4 000 G$. Les résultats du 3e trimestre sont attendus mardi après la clôture; Susquehanna prévoit des résultats supérieurs aux attentes (cible de 275 $) mais juge que le départ de Jensen Huang crée de l'incertitude tant qu'un PDG permanent n'est pas nommé. Le titre pèse lourd sur le Nasdaq et le S&P 500.",
+      "summary_en": "Nvidia was down about 3.5% premarket Monday after closing at $162.85 Friday, with its market value below $4 trillion. Q3 results are due Tuesday after the close; Susquehanna expects a beat (PT $275) but says Jensen Huang's exit creates uncertainty until a permanent CEO is named. The stock weighs heavily on the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/nvidia-falls-premarket-as-huang-exit-clouds-outlook-ahead-of-earnings-5029433"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "07:26",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usdcad",
+        "usoil"
+      ],
+      "title": "Les contrats à terme du TSX reculent avant les résultats de Nvidia et l'IPO d'Anthropic; l'IPC canadien à venir",
+      "title_en": "TSX futures drop as Nvidia results, Anthropic IPO loom large; Canadian CPI ahead",
+      "summary": "Les contrats à terme de la Bourse de Toronto reculent lundi matin, les investisseurs attendant les résultats de Nvidia et l'entrée en Bourse d'Anthropic. L'indice des prix à la consommation du Canada, attendu cette semaine, sera scruté pour la Banque du Canada et le dollar canadien.",
+      "summary_en": "Toronto stock futures fell Monday morning as investors await Nvidia's results and Anthropic's IPO. Canada's consumer price index, due this week, will be watched for the Bank of Canada and the Canadian dollar.",
+      "url": "https://www.investing.com/news/stock-market-news/tsx-futures-drop-as-nvidia-results-anthropic-ipo-loom-large-canadian-cpi-ahead-5029415"
+    },
+    {
+      "date": "2026-11-16",
       "time": "06:34",
       "source": "Investing.com",
       "impact": "med",
@@ -965,6 +995,23 @@
       "summary": "Le bitcoin s'échange autour de 64 300 $, en baisse de 1,6 % depuis minuit UTC, après être tombé dimanche à 62 100 $, son plus bas depuis le 14 juillet; environ 2 G$ de positions, surtout acheteuses, ont été liquidées en fin de semaine. Il aligne six semaines de pertes et les FNB bitcoin américains ont subi sept jours de sorties (environ 1,91 G$ depuis le 5 novembre). Les contrats à terme du Nasdaq 100 cèdent 0,9 % avant les résultats de Nvidia mardi; l'indice Fear and Greed est à 12 (« peur extrême »).",
       "summary_en": "Bitcoin trades around $64,300, down 1.6% since midnight UTC, after falling to $62,100 on Sunday, its lowest since July 14; about $2 billion of mostly long positions were liquidated over the weekend. It has fallen six straight weeks and U.S. spot bitcoin ETFs have seen seven days of outflows (about $1.91 billion since Nov. 5). Nasdaq 100 futures are down 0.9% ahead of Nvidia's earnings Tuesday; the Fear and Greed Index is at 12 ('extreme fear').",
       "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-slips-to-usd64-000-after-usd2-billion-weekend-flush"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "05:43",
+      "source": "Reuters (Investing.com)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "us30",
+        "usd"
+      ],
+      "title": "Les contrats à terme du Nasdaq (-0,97 %) et du S&P 500 (-0,36 %) glissent avant Nvidia et Anthropic; Warsh parle aujourd'hui",
+      "title_en": "S&P 500, Nasdaq futures slide as Nvidia earnings, Anthropic debut loom",
+      "summary": "Vers 5 h 08, les contrats E-mini du Nasdaq 100 perdaient 0,97 % et ceux du S&P 500 0,36 %, alors que ceux du Dow étaient stables (+0,02 %). Le marché anticipe entièrement une hausse de taux de la Fed en décembre (environ 8 % de chances pour 50 pb selon CME FedWatch); le 2 ans recule de plus de 2 pb. Au programme : discours du président de la Fed Kevin Warsh lundi, Nvidia mardi, procès-verbal du FOMC mercredi, puis l'IPO d'Anthropic et la rencontre Trump-Xi.",
+      "summary_en": "At 5:08 a.m. ET, Nasdaq 100 E-minis were down 0.97% and S&P 500 E-minis 0.36%, while Dow futures were flat (+0.02%). Markets fully price a December Fed hike (about 8% odds of 50 bp per CME FedWatch); the 2-year yield fell over 2 bp. Ahead: Fed Chair Kevin Warsh speaks Monday, Nvidia Tuesday, FOMC minutes Wednesday, then Anthropic's IPO and Trump-Xi talks.",
+      "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-slide-as-nvidia-earnings-anthropic-debut-loom-5028900"
     },
     {
       "date": "2026-11-16",
@@ -1512,56 +1559,6 @@
       "title": "Le yen franchit 160 par dollar; la ministre Katayama promet d'agir en lien avec le Trésor américain",
       "title_en": "Yen breaches 160 per dollar; Finance Minister Katayama vows action alongside U.S. Treasury",
       "url": "https://www.investing.com/news/economy-news/japans-finance-minister-vows-action-as-yen-breaches-160-threshold-5023917"
-    },
-    {
-      "assets": [
-        "spx500",
-        "nasdaq",
-        "us30",
-        "rut"
-      ],
-      "date": "2026-11-12",
-      "impact": "med",
-      "source": "Yahoo Finance (Investing.com)",
-      "summary": "Jeudi soir, les contrats à terme du S&P 500 gagnaient 0,2 % (7 630), ceux du Nasdaq 100 0,3 % et ceux du Dow 0,08 %. Nvidia, qui avait perdu plus de 4 % en séance après le départ de Jensen Huang, reprenait 0,8 % hors séance, et Cerebras s'envolait de 17 % grâce à des revenus et des prévisions supérieurs aux attentes et à une entente avec Microsoft. Le S&P 500 et le Nasdaq restent en voie d'un gain hebdomadaire d'environ 3 %, malgré les attentes d'une hausse de taux de la Fed en décembre.",
-      "summary_en": "On Thursday evening, S&P 500 futures rose 0.2% (7,630), Nasdaq 100 futures 0.3% and Dow futures 0.08%. Nvidia, which fell more than 4% in the session after Jensen Huang's exit, gained 0.8% after hours, while Cerebras jumped 17% on better-than-expected revenue and guidance plus a new Microsoft deal. The S&P 500 and Nasdaq remain on track for weekly gains of about 3%, despite expectations of a Fed rate hike in December.",
-      "time": "19:39",
-      "title": "Les contrats à terme américains remontent après la séance plombée par Nvidia; Cerebras bondit de 17 % hors séance",
-      "title_en": "U.S. stock futures rise after Nvidia CEO exit spooks Wall Street; Cerebras jumps 17% after hours",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/u-stock-futures-rise-nvidia-003952316.html"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-12",
-      "impact": "med",
-      "source": "Yahoo Finance",
-      "summary": "Cisco a publié un BPA ajusté de 1,40 $ (attendu : 1,32 $) et des revenus de 18,5 G$ (+24 % sur un an) contre 18,11 G$ prévus au premier trimestre de son exercice 2027. L’entreprise relève sa prévision annuelle (revenus de 74,8 à 75,8 G$) et vise 9 G$ de revenus d’infrastructure IA auprès des hyperscalers. Un signal positif pour la demande en IA, membre du Dow, au lendemain de la crise chez Nvidia.",
-      "summary_en": "Cisco reported adjusted EPS of $1.40 (vs. $1.32 expected) and revenue of $18.5 billion (up 24% year over year) vs. $18.11 billion forecast for fiscal Q1 2027. It raised full-year guidance (revenue of $74.8–75.8 billion) and now expects $9 billion in hyperscaler AI infrastructure revenue. A positive signal for AI demand from a Dow component, the day after the Nvidia turmoil.",
-      "time": "16:43",
-      "title": "Cisco grimpe d’environ 4 % hors séance : résultats supérieurs aux attentes et prévisions relevées",
-      "title_en": "Cisco climbs about 4% after hours on earnings beat and raised outlook",
-      "url": "https://sg.finance.yahoo.com/news/cisco-shares-climb-4-strong-214347073.html"
-    },
-    {
-      "assets": [
-        "spx500",
-        "nasdaq",
-        "us30",
-        "rut"
-      ],
-      "date": "2026-11-12",
-      "impact": "med",
-      "source": "Yahoo Finance",
-      "summary": "Le Dow a terminé à 52 297,09 (−0,36 %), le S&P 500 à 7 592,40 (−0,35 %), le Nasdaq à 25 366,09 (−0,39 %) et le Russell 2000 à 2 799,06 (−1,66 %). Nvidia a clôturé à 166,19 $ (−4,34 %) au lendemain de la démission de son PDG, et le 10 ans a fini vers 5,10 %, ce qui pèse surtout sur les petites capitalisations.",
-      "summary_en": "The Dow closed at 52,297.09 (−0.36%), the S&P 500 at 7,592.40 (−0.35%), the Nasdaq at 25,366.09 (−0.39%) and the Russell 2000 at 2,799.06 (−1.66%). Nvidia ended at $166.19 (−4.34%) after its CEO resigned, and the 10-year yield finished near 5.10%, weighing most on small caps.",
-      "time": "16:00",
-      "title": "Clôture : Wall Street recule, le Russell 2000 perd 1,66 % et Nvidia 4,34 % après le départ de Jensen Huang",
-      "title_en": "Close: Wall Street slips, Russell 2000 drops 1.66% and Nvidia 4.34% after Jensen Huang's exit",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
     }
   ],
   "live": {
