@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T01:04:10Z",
+ "updatedAt": "2026-11-16T01:47:33Z",
  "econ": {
   "values": {
    "adp": {
@@ -916,6 +916,41 @@
  "news": [
   {
    "date": "2026-11-15",
+   "time": "20:12",
+   "source": "Reuters (Investing.com)",
+   "impact": "med",
+   "assets": [
+    "usdjpy",
+    "usd",
+    "eurusd",
+    "gbpusd",
+    "audusd",
+    "nzdusd",
+    "btcusd"
+   ],
+   "title": "Le yen reste près de ses creux de deux mois après un PIB japonais décevant; le dollar au sommet depuis avril 2025",
+   "title_en": "Yen steady against euro and dollar after soft Japanese GDP data",
+   "summary": "À l'ouverture asiatique, l'USD/JPY se tient à 159,69, près des niveaux où les autorités seraient intervenues plus tôt cette année, après un PIB japonais du 3e trimestre en recul de 0,1 % annualisé (+0,3 % attendu). L'indice du dollar est à 103,44, son plus haut depuis avril 2025, l'EUR/USD à 1,1025 et le GBP/USD à 1,3216, alors que les contrats à terme sur les fonds fédéraux intègrent à 93,9 % une hausse de 25 points de base le 9 décembre. Le 10 ans américain est à 5,143 % et le bitcoin remonte à 65 186 $ (+0,2 %) après un creux de quatre mois.",
+   "summary_en": "In early Asian trade USD/JPY held at 159.69, near levels where authorities reportedly intervened earlier this year, after Japan's Q3 GDP shrank an annualized 0.1% (vs +0.3% expected). The dollar index stood at 103.44, its highest since April 2025, EUR/USD at 1.1025 and GBP/USD at 1.3216, while fed funds futures price a 93.9% chance of a 25 bp hike on Dec. 9. The US 10-year yield is at 5.143% and bitcoin edged up to $65,186 (+0.2%) after a four-month low.",
+   "url": "https://www.investing.com/news/forex-news/yen-steady-against-euro-and-dollar-after-soft-japanese-gdp-data-5028268"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "20:10",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "gbpusd",
+    "eurusd"
+   ],
+   "title": "Le PM britannique Burnham appellera à une remise à plat des relations avec l'UE, selon Sky News",
+   "title_en": "UK PM Burnham to call for reset of Britain's EU relationship - Sky News",
+   "summary": "Andy Burnham doit affirmer lundi soir, au Lord Mayor's Banquet, que « le Brexit qu'on nous a donné n'a pas fonctionné » et qu'il a nui au potentiel économique du pays, en amont du sommet Royaume-Uni–UE de vendredi. Il fixera trois critères pour tout nouvel accord, dont des améliorations concrètes à la vie quotidienne. Un rapprochement commercial avec l'UE est un thème à surveiller pour la livre sterling.",
+   "summary_en": "Andy Burnham is set to say Monday evening at the Lord Mayor's Banquet that \"the Brexit we were given has not worked\" and has hurt the UK's economic potential, ahead of Friday's UK-EU summit. He will set three tests for any new deal, including concrete improvements to daily life. Closer trade ties with the EU are a theme to watch for sterling.",
+   "url": "https://uk.investing.com/news/stock-market-news/uk-pm-burnham-to-call-for-reset-of-britains-eu-relationship-sky-news-93CH-4983496"
+  },
+  {
+   "date": "2026-11-15",
    "time": "18:57",
    "source": "Investing.com",
    "impact": "med",
@@ -1537,41 +1572,6 @@
    "title": "Clôture : Wall Street recule après l’IPC chaud — Nasdaq −0,74 %, S&P 500 −0,38 %, Nvidia −5,5 %",
    "title_en": "Close: Wall Street falls after hot CPI — Nasdaq −0.74%, S&P 500 −0.38%, Nvidia −5.5%",
    "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-10-dow-sp-500-nasdaq-inflation-data-cpi-090627830.html"
-  },
-  {
-   "assets": [
-    "usd",
-    "eurusd",
-    "usdjpy",
-    "spx500",
-    "nasdaq",
-    "us30",
-    "xauusd",
-    "usoil"
-   ],
-   "date": "2026-11-10",
-   "impact": "high",
-   "source": "Reuters (via Kitco)",
-   "summary": "Vers 13 h 30, le taux à 2 ans gagnait 19,28 pb à 4,74 % et le 10 ans 12,76 pb à 4,988 %, les chances d’une hausse de 50 pb de la Fed les 8 et 9 décembre ayant bondi après l’IPC. L’indice du dollar montait de 0,6 % à 102,29, l’euro reculait de 0,56 % à 1,1156 $ et le dollar-yen gagnait 0,5 % à 158,68, tandis que le Dow (−0,57 %), le S&P 500 (−0,71 %) et le Nasdaq (−0,90 %) reculaient, l’or perdait 2,3 % à 4 043,73 $ et le brut américain 1,39 % à 85,67 $. Lorie Logan, de la Fed, estime que la banque centrale doit livrer au moins deux autres hausses d’un quart de point.",
-   "summary_en": "Around 1:30 p.m. the 2-year yield was up 19.28 bp at 4.74% and the 10-year 12.76 bp at 4.988%, as odds of a 50 bp Fed hike at the Dec. 8-9 meeting jumped after CPI. The dollar index rose 0.6% to 102.29, the euro fell 0.56% to $1.1156 and dollar/yen rose 0.5% to 158.68, while the Dow (−0.57%), S&P 500 (−0.71%) and Nasdaq (−0.90%) fell, gold lost 2.3% to $4,043.73 and U.S. crude 1.39% to $85.67. The Fed's Lorie Logan said the central bank needs to deliver at least two more quarter-point hikes.",
-   "time": "13:31",
-   "title": "Les taux s’envolent après l’IPC : 2 ans +19 pb, 10 ans près de 5 %; Logan réclame au moins deux autres hausses",
-   "title_en": "Yields jump after CPI: 2-year up 19 bp, 10-year near 5%; Logan calls for at least two more hikes",
-   "url": "https://www.kitco.com/news/off-the-wire/2026-11-10/us-yields-rise-stocks-fall-inflation-data-boosts-odds-larger-december"
-  },
-  {
-   "assets": [
-    "btcusd"
-   ],
-   "date": "2026-11-10",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Le bitcoin est retombé sous 73 000 $ pour la première fois depuis août, en baisse d’environ 3 % sur 24 heures, tandis que l’ether, le XRP et le SOL perdaient près de 6 %. La hausse des taux après l’IPC et la chute de la tech pèsent sur la crypto; selon Yahoo Finance, le bitcoin a glissé sous sa moyenne mobile de 200 jours (73 200 $) et Coinbase et Strategy perdaient 4 %.",
-   "summary_en": "Bitcoin fell back below $73,000 for the first time since August, down about 3% over 24 hours, while ether, XRP and SOL lost nearly 6%. Rising yields after CPI and the tech sell-off are weighing on crypto; per Yahoo Finance, bitcoin slipped below its 200-day moving average ($73,200) and Coinbase and Strategy fell 4%.",
-   "time": "11:46",
-   "title": "Le bitcoin repasse sous 73 000 $, une première depuis août",
-   "title_en": "Bitcoin falls back below $73,000 for the first time since August",
-   "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
   }
  ],
  "live": {
