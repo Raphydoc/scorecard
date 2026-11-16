@@ -36,6 +36,12 @@ function weekStats(rows) {
   if (!cur.length || !before.length) return null;
   return {o: cur[0][1], px: cur[cur.length - 1][4], pc: before[before.length - 1][4], wk: last};
 }
+// Taux 10 ans : tendance sur 5 séances (environ une semaine) — niveau actuel vs clôture d'il y a 5 séances; en hausse/baisse si l'écart atteint 0,03 point
+function y10Trend(rows) {
+  if (!rows || rows.length < 7) return null;
+  const px = rows[rows.length - 1][4], pc = rows[rows.length - 6][4], ch = Math.round((px - pc) * 1000) / 1000;
+  return {px: +px.toFixed(3), pc: +pc.toFixed(3), chg: ch, dir: ch >= 0.03 ? 'rising' : ch <= -0.03 ? 'falling' : 'flat', ref: '5j'};
+}
 // rows: [epochSec, o, h, l, c]
 async function chart(sym, range, interval) {
   for (const host of ['query1', 'query2']) {
@@ -200,7 +206,8 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
   M.trend = {};
   const b5 = await pool(Object.entries(A).concat([['__y10', '^TNX']]), async ([k, s]) => [k, await chart(s, '5d', '5m')]);
   const hMap = Object.fromEntries(ores.map(([k, , h]) => [k, h]));
-  b5.forEach(([k, c]) => { const D = k === '__y10' ? dayStats(c && c.rows) : weekStats((hMap[k] || {}).rows); if (!D) return; const {o, px, pc} = D;
+  { const t1 = await chart('^TNX', '1mo', '1d'); const Y = y10Trend(t1 && t1.rows); if (Y) M.y10 = Y; }
+  b5.forEach(([k, c]) => { if (k === '__y10') return; const D = weekStats((hMap[k] || {}).rows); if (!D) return; const {o, px, pc} = D;
     if (k === '__y10') { const ch = Math.round((px - pc) * 1000) / 1000; M.y10 = {px: r2(px, 3), pc: r2(pc, 3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; return; }
     M.trend[k] = {t: px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral', px: r2(px, dp(px)), o: r2(o, dp(px)), pc: r2(pc, dp(px)), chg: r2((px / pc - 1) * 100, 2), vsO: r2((px / o - 1) * 100, 2)}; });
   console.error('tendances', Object.entries(M.trend).map(([k, v]) => k + ':' + v.t).join(' '), '10 ans', M.y10 && M.y10.dir);

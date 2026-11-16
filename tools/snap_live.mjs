@@ -49,6 +49,13 @@ function weekStats(rows) {
   return {o: cur[0][1], px: cur[cur.length - 1][4], pc: before[before.length - 1][4], wk: last};
 }
 
+// Taux 10 ans : tendance sur 5 séances (environ une semaine) — niveau actuel vs clôture d'il y a 5 séances; en hausse/baisse si l'écart atteint 0,03 point
+function y10Trend(rows) {
+  if (!rows || rows.length < 7) return null;
+  const px = rows[rows.length - 1][4], pc = rows[rows.length - 6][4], ch = Math.round((px - pc) * 1000) / 1000;
+  return {px: +px.toFixed(3), pc: +pc.toFixed(3), chg: ch, dir: ch >= 0.03 ? 'rising' : ch <= -0.03 ? 'falling' : 'flat', ref: '5j'};
+}
+
 // ---------- cours ----------
 const q = Object.assign({}, prev.q || {});
 async function quoteChart(sym) {
@@ -70,7 +77,7 @@ console.error('cours', ok, '/', syms.length);
 // tendance de la SEMAINE (Top Setups, scorecard) : haussière si le prix est au-dessus de l'ouverture de la semaine ET de la clôture de la semaine passée, baissière s'il est en dessous des deux; le taux 10 ans reste sur la journée
 async function bars5(sym) {
   for (const host of ['query1', 'query2']) {
-    const j = await getJSON(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=${sym === '^TNX' ? '5d&interval=5m' : '1mo&interval=60m'}&includePrePost=false`);
+    const j = await getJSON(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(sym)}?range=${sym === '^TNX' ? '1mo&interval=1d' : '1mo&interval=60m'}&includePrePost=false`);
     const r = j && j.chart && j.chart.result && j.chart.result[0]; if (!r || !r.timestamp) continue;
     const qq = r.indicators.quote[0], out = []; r.timestamp.forEach((t, i) => { if (qq.close[i] != null && qq.open[i] != null) out.push([t, qq.open[i], 0, 0, qq.close[i]]); });
     if (out.length) return out;
@@ -80,7 +87,8 @@ async function bars5(sym) {
 const trSyms = Object.entries(AS).concat([['__y10', '^TNX']]);
 const trBars = await pool(trSyms, ([, s]) => bars5(s), 6);
 const tr = Object.assign({}, prev.tr || {}); let y10 = prev.y10 || null;
-trSyms.forEach(([k], i) => { const D = k === '__y10' ? dayStats(trBars[i]) : weekStats(trBars[i]); if (!D) return;
+{ const Y = y10Trend(trBars[trSyms.length - 1]); if (Y) y10 = Y; }
+trSyms.forEach(([k], i) => { if (k === '__y10') return; const D = weekStats(trBars[i]); if (!D) return;
   const {o, px, pc} = D;
   if (k === '__y10') { const ch = Math.round((px - pc) * 1000) / 1000; y10 = {px: +px.toFixed(3), pc: +pc.toFixed(3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; return; }
   tr[k] = {t: px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral', px: +px.toFixed(dp(px)), o: +o.toFixed(dp(px)), pc: +pc.toFixed(dp(px)), chg: +((px / pc - 1) * 100).toFixed(2), vsO: +((px / o - 1) * 100).toFixed(2)}; });

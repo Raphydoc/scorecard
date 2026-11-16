@@ -1260,11 +1260,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
       <li><strong>Dollar US (DXY) :</strong> toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.</li>
       <li><strong>Technique :</strong> tendance de la semaine ±2 (au-dessus de l’ouverture de la semaine et de la clôture de la semaine passée = +2, en dessous des deux = −2), saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
-      <li>Rendement 10 ans (direction de la journée, depuis la clôture d'hier) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
+      <li>Rendement 10 ans (tendance sur 5 séances, ±0,03 point) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.</li>
       <li>Total de −max à +max (le max dépend de l'actif, environ ±24 à ±27) : 4 à 9 = haussier/baissier, 10 et plus = très haussier/très baissier, de −3 à +3 = neutre.</li>
     </ul>
-    <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. La tendance de la semaine et le taux 10 ans du jour se calculent tout seuls (environ chaque minute). Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
+    <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. La tendance de la semaine et le taux 10 ans (5 séances) se calculent tout seuls (environ chaque minute). Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
   </section>
 
 
@@ -1575,7 +1575,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       if(cat==='infl'){
         const y10 = state.econ.yield10y;
         const ytT = state.live2 && state.live2.y10 && autoSrc().y10===state.live2.y10 ? state.live2.asOf : (state.mk && state.mk.y10 ? state.mk.asOf : state.econ.updatedAt);
-        h += `<tr><td class="name">Rendement 10 ans (aujourd’hui)${wOf(asset,'yield10')>1?` <span class="wt">×${wOf(asset,'yield10')}</span>`:''}${updTag(ytT)}</td><td class="sig" data-dd="top|${asset}|yield10">${chip(r.yield10)}</td>
+        h += `<tr><td class="name">Rendement 10 ans (5 séances)${wOf(asset,'yield10')>1?` <span class="wt">×${wOf(asset,'yield10')}</span>`:''}${updTag(ytT)}</td><td class="sig" data-dd="top|${asset}|yield10">${chip(r.yield10)}</td>
           <td class="desc" colspan="4">${E&&EDIT10?`<select id="in-yield10">${opt('falling',y10,'En baisse')}${opt('flat',y10,'Stable')}${opt('rising',y10,'En hausse')}</select>`
           : (y10==='falling'?'Le 10 ans baisse : taux réels et dollar sous pression':y10==='rising'?'Le 10 ans monte : coût d’opportunité plus élevé pour l’or':y10==='flat'?'Le 10 ans est stable':'Pas encore de donnée')}</td></tr>`;
       }
@@ -2892,7 +2892,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="sent">${L('Page Sentiment','Sentiment page')}</button></div>`; }
     if(k==='yield10'){ title = L('Taux américain à 10 ans','US 10-year yield'); const y = state.econ.yield10y, y10 = ((state.live||{}).rates||{}).y10||[];
       const YD = autoSrc().y10;
-      rows = ddRow(L('Aujourd’hui','Today'), y==='rising'?L('En hausse','Rising'):y==='falling'?L('En baisse','Falling'):L('Stable','Flat')) + (YD ? ddRow(L('Niveau','Level'), nf(YD.px,3)+' %') + ddRow(L('Clôture d’hier','Yesterday’s close'), `${nf(YD.pc,3)} % (${YD.chg>0?'+':''}${nf(YD.chg,3)} pt)`) : (y10.length?ddRow(L('Dernier niveau','Latest level'), nf(y10[y10.length-1][1],2)+' %'):'')) + ddRow(L('Poids','Weight'), '×'+wOf(a,'yield10')) + ddRow(L('Règle','Rule'), L('±0,01 point depuis la clôture d’hier','±0.01 pt since yesterday’s close'));
+      rows = ddRow(L('Sur 5 séances','Over 5 sessions'), y==='rising'?L('En hausse','Rising'):y==='falling'?L('En baisse','Falling'):L('Stable','Flat')) + (YD ? ddRow(L('Niveau','Level'), nf(YD.px,3)+' %') + ddRow(L('Il y a 5 séances','5 sessions ago'), `${nf(YD.pc,3)} % (${YD.chg>0?'+':''}${nf(YD.chg,3)} pt)`) : (y10.length?ddRow(L('Dernier niveau','Latest level'), nf(y10[y10.length-1][1],2)+' %'):'')) + ddRow(L('Poids','Weight'), '×'+wOf(a,'yield10')) + ddRow(L('Règle','Rule'), L('±0,03 point par rapport à la clôture d’il y a 5 séances (environ une semaine), vérifié environ chaque minute','±0.03 pt vs the close 5 sessions ago (about a week), checked about every minute'));
       txt = y==='flat'||!y ? L('Le 10 ans est stable : pas d’effet sur le score.','The 10-year is flat: no effect on the score.') : explainEffect(a, 'y10', y==='rising');
       extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="fed">${L('Page Taux','Rates page')}</button></div>`; }
     ddAllKey = x2 => `top|${x2}|${k}`;
@@ -4321,7 +4321,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'ADP emploi':'ADP employment','JOLTS (postes à pourvoir)':'JOLTS (job openings)',
     'Croissance des bénéfices des géants tech':'Big Tech earnings growth','Mag 7, trimestre en cours : réel vs prévu':'Mag 7, current quarter: actual vs expected',
     'plus haut = dollar faible':'higher = weaker dollar',
-    'Rendement 10 ans (tendance)':'10-year yield (trend)','Rendement 10 ans (aujourd’hui)':'10-year yield (today)','En baisse':'Falling','Stable':'Flat','En hausse':'Rising',
+    'Rendement 10 ans (tendance)':'10-year yield (trend)','Rendement 10 ans (aujourd’hui)':'10-year yield (today)','Rendement 10 ans (5 séances)':'10-year yield (5 sessions)','En baisse':'Falling','Stable':'Flat','En hausse':'Rising',
     'Le 10 ans baisse : taux réels et dollar sous pression':'The 10-year is falling: real yields and the dollar under pressure',
     'Le 10 ans monte : coût d’opportunité plus élevé pour l’or':'The 10-year is rising: higher opportunity cost for gold',
     'Le 10 ans est stable':'The 10-year is flat',
@@ -4342,11 +4342,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'tendance de la semaine ±2 (au-dessus de l’ouverture de la semaine et de la clôture de la semaine passée = +2, en dessous des deux = −2), saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1).':'this week’s trend ±2 (above the weekly open and last week’s close = +2, below both = −2), seasonality ±1 (change over the last 3 full months: above +1% = +1, below −1% = −1).',
     'Sentiment :':'Sentiment:',
     'COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.':'COT net long above 50% = +1, rising COT = +1, retail crowd 60% long or more = −1 (contrarian), 40% or less = +1.',
-    'Rendement 10 ans (direction de la journée, depuis la clôture d\'hier) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (today’s direction, since yesterday’s close): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
+    'Rendement 10 ans (tendance sur 5 séances, ±0,03 point) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (5-session trend, ±0.03 pt): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
     'Poids :':'Weights:',
     'les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.':'the most important data for each asset count more (×2, shown next to the name); the rest count ×1, so each item is worth at most ±2. Example: CPI is ×2 for every asset, Big Tech earnings ×2 for the Nasdaq.',
     'Total de −max à +max (le max dépend de l\'actif, environ ±24 à ±27) : 4 à 9 = haussier/baissier, 10 et plus = très haussier/très baissier, de −3 à +3 = neutre.':'Total from −max to +max (depends on the asset, about ±24 to ±27): 4 to 9 = bullish/bearish, 10 or more = very bullish/very bearish, −3 to +3 = neutral.',
-    'Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. La tendance de la semaine et le taux 10 ans du jour se calculent tout seuls (environ chaque minute). Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Economic data, COT and retail sentiment update automatically. Seasonality (last 3 months) updates itself at the start of each month. This week’s trend and today’s 10-year yield are computed automatically (about every minute). Information only: this is not a buy or sell signal.',
+    'Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (3 derniers mois) se met à jour toute seule au début de chaque mois. La tendance de la semaine et le taux 10 ans (5 séances) se calculent tout seuls (environ chaque minute). Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Economic data, COT and retail sentiment update automatically. Seasonality (last 3 months) updates itself at the start of each month. This week’s trend and the 10-year yield (5 sessions) are computed automatically (about every minute). Information only: this is not a buy or sell signal.',
     'Outil d\'information seulement : ce n\'est pas un signal d\'achat ou de vente.':'Information only: this is not a buy or sell signal.',
     // Top Setups
     'Tes actifs classés du score le plus haut au plus bas · chaque case = points ajoutés au score (poids inclus)':'Your assets ranked from highest to lowest score · each cell = points added to the score (weights included)',
