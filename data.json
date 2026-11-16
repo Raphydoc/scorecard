@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T10:47:33Z",
+  "updatedAt": "2026-11-16T11:48:51Z",
   "econ": {
     "values": {
       "adp": {
@@ -916,6 +916,58 @@
   "news": [
     {
       "date": "2026-11-16",
+      "time": "06:34",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "spx500",
+        "nasdaq",
+        "eurusd",
+        "xauusd"
+      ],
+      "title": "La Deutsche Bank prévient que les marchés sous-estiment peut-être les risques de hausses de taux",
+      "title_en": "Deutsche Bank warns markets may be underestimating rate hike risks",
+      "summary": "Selon le titre d'Investing.com, la Deutsche Bank estime que les marchés pourraient sous-estimer le risque de hausses de taux (article non consultable, aucun chiffre repris). L'avertissement survient alors que le dollar est soutenu par les paris d'un resserrement de la Fed en décembre, ce qui pèse sur l'or et les actions.",
+      "summary_en": "Per Investing.com's headline, Deutsche Bank says markets may be underestimating the risk of rate hikes (article not accessible, no figures taken). The warning comes as the dollar is supported by bets on a December Fed tightening, weighing on gold and equities.",
+      "url": "https://www.investing.com/news/stock-market-news/deutsche-bank-warns-markets-may-be-underestimating-rate-hike-risks-5029111"
+    },
+    {
+      "assets": [
+        "xauusd",
+        "xagusd",
+        "usd"
+      ],
+      "date": "2026-11-16",
+      "impact": "med",
+      "source": "Investing.com",
+      "summary": "Selon Investing.com, l'or est tombé à son plus bas niveau en plus d'un an, pénalisé par la force du dollar et les paris d'une hausse de taux de la Fed. Plus tôt en Asie, il reculait à 3 868,88 $ l'once après une perte de 4,5 % la semaine dernière; le CME FedWatch accordait 94 % de chances à une hausse de 25 points de base en décembre. Le président de la Fed Kevin Warsh parle lundi et les minutes du FOMC sortent mercredi.",
+      "summary_en": "According to Investing.com, gold fell to its lowest level in over a year, weighed by dollar strength and bets on a Fed rate hike. Earlier in Asia it was down at $3,868.88/oz after a 4.5% loss last week; CME FedWatch showed a 94% probability of a 25-basis-point hike in December. Fed Chair Kevin Warsh speaks Monday and the FOMC minutes are due Wednesday.",
+      "time": "06:15",
+      "title": "L'or glisse à son plus bas en plus d'un an, plombé par la vigueur du dollar et les paris d'une hausse de la Fed",
+      "title_en": "Gold slides to lowest level in over a year on dollar strength, Fed hike bets",
+      "url": "https://www.investing.com/news/commodities-news/gold-falls-below-3900-as-december-fed-hike-bets-build-warsh-in-focus-5028296"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "06:03",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd",
+        "nasdaq",
+        "xauusd",
+        "xagusd",
+        "usd"
+      ],
+      "title": "Le bitcoin glisse vers 64 300 $ après avoir rebondi de son plus bas depuis le 14 juillet; 2 G$ liquidés en fin de semaine",
+      "title_en": "Bitcoin slips toward $64,300 after rebounding from July 14 low that triggered $2 billion of liquidations",
+      "summary": "Le bitcoin s'échange autour de 64 300 $, en baisse de 1,6 % depuis minuit UTC, après être tombé dimanche à 62 100 $, son plus bas depuis le 14 juillet; environ 2 G$ de positions, surtout acheteuses, ont été liquidées en fin de semaine. Il aligne six semaines de pertes et les FNB bitcoin américains ont subi sept jours de sorties (environ 1,91 G$ depuis le 5 novembre). Les contrats à terme du Nasdaq 100 cèdent 0,9 % avant les résultats de Nvidia mardi; l'indice Fear and Greed est à 12 (« peur extrême »).",
+      "summary_en": "Bitcoin trades around $64,300, down 1.6% since midnight UTC, after falling to $62,100 on Sunday, its lowest since July 14; about $2 billion of mostly long positions were liquidated over the weekend. It has fallen six straight weeks and U.S. spot bitcoin ETFs have seen seven days of outflows (about $1.91 billion since Nov. 5). Nasdaq 100 futures are down 0.9% ahead of Nvidia's earnings Tuesday; the Fear and Greed Index is at 12 ('extreme fear').",
+      "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-slips-to-usd64-000-after-usd2-billion-weekend-flush"
+    },
+    {
+      "date": "2026-11-16",
       "time": "05:12",
       "source": "Investing.com",
       "impact": "med",
@@ -932,21 +984,19 @@
     },
     {
       "date": "2026-11-16",
-      "time": "04:34",
-      "source": "CoinDesk",
+      "time": "04:15",
+      "source": "CNBC",
       "impact": "med",
       "assets": [
-        "btcusd",
         "nasdaq",
-        "xauusd",
-        "xagusd",
+        "spx500",
         "usd"
       ],
-      "title": "Le bitcoin remonte au-dessus de 64 000 $ après une 6e perte hebdomadaire; les titres crypto reculent avant l'ouverture",
-      "title_en": "Bitcoin rebounds above $64,000 after sixth weekly loss; crypto stocks slide premarket",
-      "summary": "Le bitcoin, tombé sous 62 000 $ samedi, est revenu juste au-dessus de 64 000 $, mais il recule de 17 % en novembre et vient d'inscrire une sixième perte hebdomadaire de suite. Les contrats à terme du Nasdaq 100 cèdent 0,8 % et Strategy perd environ 8 % avant l'ouverture, tandis que l'or est à 3 862 $ et l'argent à 47,50 $. Le DXY au-dessus de 103 et le taux à 10 ans au-dessus de 5,1 % pèsent sur les actifs à risque.",
-      "summary_en": "Bitcoin, which fell below $62,000 on Saturday, recovered to just above $64,000, but it is down 17% in November after a sixth straight weekly loss. Nasdaq 100 futures are down 0.8% and Strategy is off about 8% premarket, while gold trades at $3,862 and silver at $47.50. A DXY above 103 and a 10-year yield above 5.1% are weighing on risk assets.",
-      "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
+      "title": "La cheffe du FMI avertit que l'économie mondiale « tient sur une jambe » alors que le financement circulaire de l'IA atteint 1 000 G$",
+      "title_en": "'Standing on one leg': IMF chief warns about global economy as AI circular financing hits $1 trillion",
+      "summary": "Kristalina Georgieva, directrice générale du FMI, affirme que l'économie mondiale « tient sur une jambe », celle de l'IA, et s'inquiète de la hausse rapide du financement circulaire de l'IA, qui atteint 1 000 milliards $ selon CNBC. Le message s'ajoute aux craintes de bulle qui frappent les titres technologiques avant les résultats de Nvidia.",
+      "summary_en": "IMF Managing Director Kristalina Georgieva says the world economy is 'standing on one leg', and that leg is AI, voicing concern over the rapid increase in AI circular financing, which CNBC says has hit $1 trillion. The message adds to bubble fears hitting tech stocks ahead of Nvidia's earnings.",
+      "url": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html"
     },
     {
       "date": "2026-11-16",
@@ -1133,22 +1183,6 @@
       "title": "Chine : production industrielle et ventes au détail sous les attentes en octobre",
       "title_en": "China factory output, retail sales miss forecasts in October",
       "url": "https://ca.investing.com/news/economic-indicators/china-factory-output-retail-sales-miss-forecasts-in-oct-4959518"
-    },
-    {
-      "assets": [
-        "xauusd",
-        "xagusd",
-        "usd"
-      ],
-      "date": "2026-11-15",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "L'or recule de 0,4 % à 3 868,88 $ l'once en début de séance asiatique, après une perte de 4,5 % la semaine dernière; l'argent chute de 2,1 % à 47,74 $. Selon le CME FedWatch, le marché accorde 94 % de chances à une hausse de 25 points de base en décembre et 6 % à 50 points. Le président de la Fed Kevin Warsh parle lundi et les minutes du FOMC d'octobre sortent mercredi.",
-      "summary_en": "Gold fell 0.4% to $3,868.88/oz in early Asian trading after losing 4.5% last week; silver dropped 2.1% to $47.74. CME FedWatch shows a 94% probability of a 25-basis-point hike in December and 6% for 50 bp. Fed Chair Kevin Warsh speaks Monday and the October FOMC minutes are due Wednesday.",
-      "time": "20:43",
-      "title": "L'or passe sous 3 900 $ alors que les paris sur une hausse de la Fed en décembre s'accumulent; Warsh attendu",
-      "title_en": "Gold falls below $3,900 as December Fed hike bets build, Warsh in focus",
-      "url": "https://uk.investing.com/news/commodities-news/gold-falls-below-3900-as-december-fed-hike-bets-build-warsh-in-focus-4983517"
     },
     {
       "assets": [
@@ -1528,41 +1562,6 @@
       "title": "Clôture : Wall Street recule, le Russell 2000 perd 1,66 % et Nvidia 4,34 % après le départ de Jensen Huang",
       "title_en": "Close: Wall Street slips, Russell 2000 drops 1.66% and Nvidia 4.34% after Jensen Huang's exit",
       "url": "https://finance.yahoo.com/markets/live/stock-market-today-sp-500-nasdaq-fall-as-nvidia-ceo-exit-rising-bond-yields-roil-markets-195710154.html"
-    },
-    {
-      "assets": [
-        "spx500",
-        "nasdaq",
-        "us30",
-        "rut",
-        "usd",
-        "usdjpy",
-        "xauusd"
-      ],
-      "date": "2026-11-12",
-      "impact": "high",
-      "source": "Yahoo Finance",
-      "summary": "Les bons du Trésor ont été vendus après que Trump a laissé entendre qu’il n’y aurait pas de fin rapide à la guerre avec l’Iran : le rendement à 10 ans a bondi de 12 points de base à 5,12 % et le 30 ans de 9 points à 5,44 %, et les Bourses ont effacé leurs gains de midi. Mary Daly (Fed de San Francisco) a dit que « d’autres resserrements seront nécessaires » et Austan Goolsbee (Chicago) parle d’un « moment précaire » après l’IPC d’octobre plus chaud que prévu. Nvidia reculait d’environ 5 % en après-midi.",
-      "summary_en": "Treasuries sold off after Trump signaled no immediate end to the Iran war: the 10-year yield rose 12 bps to 5.12% and the 30-year 9 bps to 5.44%, and stocks gave up midday gains. San Francisco Fed's Mary Daly said 'further tightening will be needed' and Chicago's Austan Goolsbee called it 'a precarious moment' after the hotter-than-expected October CPI. Nvidia was down about 5% in afternoon trading.",
-      "time": "14:21",
-      "title": "Les obligations décrochent : le 10 ans grimpe à 5,12 % après Trump sur l’Iran; Daly (Fed) penche vers d’autres hausses",
-      "title_en": "Treasuries sell off: 10-year yield jumps to 5.12% after Trump on Iran; Fed's Daly leans toward more tightening",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-slides-jensen-huang-resigns-invest-165632931.html"
-    },
-    {
-      "assets": [
-        "xauusd",
-        "usd"
-      ],
-      "date": "2026-11-12",
-      "impact": "med",
-      "source": "Yahoo Finance",
-      "summary": "Le contrat de décembre, ouvert à 3 994 $ l’once sous la barre des 4 000 $, reculait de 3,05 % à 3 878,30 $ à la mi-séance. Le rendement du 10 ans américain grimpe vers 5 % et l’outil FedWatch de la CME donnait plus tôt environ 90 % de chances d’une hausse de 25 pb les 8 et 9 décembre, ce qui renforce le dollar et pèse sur les métaux précieux.",
-      "summary_en": "December gold futures, which opened at $3,994 an ounce below the $4,000 mark, were down 3.05% at $3,878.30 at midday. The U.S. 10-year yield climbed toward 5%, and CME FedWatch earlier showed roughly a 90% chance of a 25 bp hike on Dec. 8–9, lifting the dollar and weighing on precious metals.",
-      "time": "13:05",
-      "title": "L’or chute de 3 % à 3 878 $ : la remontée des taux et les paris d’une hausse de la Fed pèsent",
-      "title_en": "Gold slides 3% to $3,878 as rising yields and Fed hike bets weigh",
-      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-midday-nov-12-180502157.html"
     }
   ],
   "live": {
