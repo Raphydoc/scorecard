@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T21:47:36Z",
+  "updatedAt": "2026-11-16T22:12:19Z",
   "econ": {
     "values": {
       "adp": {
@@ -33573,8 +33573,64 @@
     }
   },
   "ts": {
-    "asOf": "2026-11-16T17:10:29Z",
+    "asOf": "2026-11-16T22:12:19Z",
     "bankcalls": [
+      {
+        "bank": "Morgan Stanley",
+        "cat": "idx",
+        "market": "S&P 500",
+        "market_en": "S&P 500",
+        "dir": "long",
+        "target": "8 700 sur 12 mois (relevé)",
+        "target_en": "8,700 over 12 months (raised)",
+        "horizon": "12 mois",
+        "horizon_en": "12 months",
+        "date": "2026-11-16",
+        "src": "Investing.com",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-joins-morgan-stanley-in-seeing-sp-500-at-8700-by-end2027-5029238"
+      },
+      {
+        "bank": "Barclays",
+        "cat": "idx",
+        "market": "S&P 500",
+        "market_en": "S&P 500",
+        "dir": "long",
+        "target": "8 700 d’ici fin 2027 (abaissé de 8 800; 7 950 fin 2026)",
+        "target_en": "8,700 by end-2027 (cut from 8,800; 7,950 end-2026)",
+        "horizon": "fin 2027",
+        "horizon_en": "end-2027",
+        "date": "2026-11-16",
+        "src": "Investing.com",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-joins-morgan-stanley-in-seeing-sp-500-at-8700-by-end2027-5029238"
+      },
+      {
+        "bank": "Goldman Sachs",
+        "cat": "cmd",
+        "market": "Brent",
+        "market_en": "Brent",
+        "dir": "short",
+        "target": "78 $ fin 2027 (moyenne 2027 : 88 $)",
+        "target_en": "$78 end-2027 (2027 average: $88)",
+        "horizon": "fin 2027",
+        "horizon_en": "end-2027",
+        "date": "2026-11-15",
+        "src": "Reuters",
+        "url": "https://boereport.com/2026/11/15/goldman-sees-brent-easing-to-78-a-barrel-by-end-2027-as-markets-adapt/"
+      },
+      {
+        "bank": "Goldman Sachs",
+        "cat": "cmd",
+        "market": "WTI",
+        "market_en": "WTI",
+        "dir": "short",
+        "target": "70 $ fin 2027 (moyenne 2027 : 78 $)",
+        "target_en": "$70 end-2027 (2027 average: $78)",
+        "horizon": "fin 2027",
+        "horizon_en": "end-2027",
+        "date": "2026-11-15",
+        "src": "Reuters",
+        "url": "https://boereport.com/2026/11/15/goldman-sees-brent-easing-to-78-a-barrel-by-end-2027-as-markets-adapt/"
+      },
       {
         "bank": "TD Securities",
         "cat": "cmd",
@@ -33786,34 +33842,6 @@
         "url": "https://mufgresearch.com/fx/monthly-foreign-exchange-outlook-november-2026/"
       },
       {
-        "bank": "Goldman Sachs",
-        "cat": "cmd",
-        "date": "2026-11-01",
-        "dir": "long",
-        "horizon": "déc. 2026",
-        "horizon_en": "Dec. 2026",
-        "market": "Brent",
-        "market_en": "Brent",
-        "src": "Reuters",
-        "target": "105 $ en décembre 2026 (moyenne 2027 : 88 $)",
-        "target_en": "$105 in December 2026 (2027 average: $88)",
-        "url": "https://boereport.com/2026/11/01/goldman-sachs-raises-oil-price-forecasts-sees-brent-upside-at-140-a-barrel/"
-      },
-      {
-        "bank": "Goldman Sachs",
-        "cat": "cmd",
-        "date": "2026-11-01",
-        "dir": "long",
-        "horizon": "déc. 2026",
-        "horizon_en": "Dec. 2026",
-        "market": "WTI",
-        "market_en": "WTI",
-        "src": "Reuters",
-        "target": "94 $ en décembre 2026 (moyenne 2027 : 78 $)",
-        "target_en": "$94 in December 2026 (2027 average: $78)",
-        "url": "https://boereport.com/2026/11/01/goldman-sachs-raises-oil-price-forecasts-sees-brent-upside-at-140-a-barrel/"
-      },
-      {
         "bank": "Nomura",
         "cat": "fx",
         "date": "2026-10-28",
@@ -33910,20 +33938,6 @@
         "target": "5,25 % d’ici la mi-2027 (fourchette de 5,00 à 5,50 %)",
         "target_en": "5.25% by mid-2027 (5.00% to 5.50% range)",
         "url": "https://www.chase.com/personal/investments/learning-and-insights/article/could-10-year-treasury-yield-reach-5-75-in-2027-what-jpmorgan-strategists-think"
-      },
-      {
-        "bank": "Morgan Stanley",
-        "cat": "idx",
-        "date": "2026-10-20",
-        "dir": "long",
-        "horizon": "mi-2027",
-        "horizon_en": "mid-2027",
-        "market": "S&P 500",
-        "market_en": "S&P 500",
-        "src": "Benzinga",
-        "target": "8 300 d’ici la mi-2027",
-        "target_en": "8,300 by mid-2027",
-        "url": "https://www.webull.com/news/15781581357556736"
       },
       {
         "bank": "CIBC",
@@ -34276,20 +34290,6 @@
         "url": "https://www.businesstoday.in/latest/economy/story/rupee-at-rs97-in-dec-rs100-in-june-why-axis-bank-sees-another-leg-of-inr-weakness-554187-2026-09-09"
       },
       {
-        "bank": "Barclays",
-        "cat": "idx",
-        "date": "2026-09-09",
-        "dir": "long",
-        "horizon": "fin 2026",
-        "horizon_en": "end-2026",
-        "market": "S&P 500",
-        "market_en": "S&P 500",
-        "src": "Stocktwits",
-        "target": "7 950 d’ici fin 2026 (relevé de 7 800)",
-        "target_en": "7,950 by end-2026 (raised from 7,800)",
-        "url": "https://stocktwits.com/news-articles/markets/equity/sp-500-targets-rise-barclays-hsbc-tom-lee-ai-earnings-bullish-chorus/cZt7GKzRJzc"
-      },
-      {
         "bank": "HSBC",
         "cat": "cmd",
         "date": "2026-09-09",
@@ -34479,6 +34479,43 @@
       }
     ],
     "recaps": [
+      {
+        "date": "2026-11-16",
+        "session": "ny",
+        "title": "Le Nasdaq entre en correction avant Nvidia : S&P 500 −1,92 % à la clôture, WTI −2,46 % en séance",
+        "title_en": "Nasdaq slides into correction ahead of Nvidia: S&P 500 −1.92% at the close, WTI −2.46% in session",
+        "body": "Wall Street a fini en forte baisse, la techno menant la vente dans la foulée de la démission de Jensen Huang chez Nvidia et d’une nouvelle règle de Washington limitant l’accès de la Chine aux puces d’IA les plus avancées : le S&P 500 a perdu 1,92 % à 7 416,59, le Nasdaq composite 2,49 % (plus de 10 % sous son sommet du 6 octobre, donc en correction) et le Dow 1,41 % (Reuters). Le marché attend les résultats de Nvidia mardi, le compte rendu du FOMC mercredi et l’entrée en Bourse d’Anthropic jeudi; CME FedWatch donne environ 96 % de chances d’une hausse d’un quart de point en décembre. Le dollar est resté ferme (+0,11 % à 103,60), l’or a cédé 0,37 % en séance et le pétrole a reculé nettement (WTI −2,46 %) avec le retour quasi complet des flux par le détroit d’Ormuz. Le bitcoin a fait exception (+1,40 % sur la séance mesurée).",
+        "body_en": "Wall Street closed sharply lower, with tech leading the selling in the wake of Jensen Huang’s resignation at Nvidia and a new Washington rule restricting China’s access to top AI chips: the S&P 500 lost 1.92% to 7,416.59, the Nasdaq Composite 2.49% (more than 10% below its October 6 high, confirming a correction) and the Dow 1.41% (Reuters). Markets await Nvidia’s results Tuesday, FOMC minutes Wednesday and Anthropic’s market debut Thursday; CME FedWatch puts the odds of a quarter-point December hike at about 96%. The dollar stayed firm (+0.11% to 103.60), gold lost 0.37% in session and oil fell sharply (WTI −2.46%) as flows through the Strait of Hormuz nearly returned to normal. Bitcoin was the exception (+1.40% over the measured session).",
+        "sections": {
+          "indices": {
+            "fr": "Sur la séance mesurée, le Nasdaq 100 a perdu 1,19 %, le S&P 500 1,25 %, le Dow 1,22 % et le Russell 2000 1,22 %, après une ouverture déjà en baisse; l’indice des semi-conducteurs SOX a chuté de 5,3 %, Nvidia de 4,1 %, Intel et Micron de plus de 7 % (Reuters), et le VIX a bondi à 23,12 (Yahoo Finance).",
+            "en": "Over the measured session, the Nasdaq 100 lost 1.19%, the S&P 500 1.25%, the Dow 1.22% and the Russell 2000 1.22%, after an already lower open; the SOX semiconductor index sank 5.3%, Nvidia 4.1%, Intel and Micron more than 7% (Reuters), and the VIX jumped to 23.12 (Yahoo Finance)."
+          },
+          "metals": {
+            "fr": "L’or a cédé 0,37 % à 3 854,60 $ et l’argent 0,59 % à 46,91 $, pénalisés par les paris sur une hausse de la Fed en décembre et la vigueur du dollar; l’or évolue à son plus bas en plus d’un an (Kitco, Yahoo Finance).",
+            "en": "Gold lost 0.37% to $3,854.60 and silver 0.59% to $46.91, weighed down by bets on a December Fed hike and dollar strength; gold is trading at its lowest in more than a year (Kitco, Yahoo Finance)."
+          },
+          "forex": {
+            "fr": "L’indice dollar a gagné 0,11 % à 103,60, près de son plus haut depuis avril 2025; l’EUR/USD a reculé de 0,15 % à 1,0999, l’USD/JPY de 0,09 % à 159,48, près de la zone où MUFG voit un risque d’intervention, et l’USD/CAD est resté stable à 1,4300.",
+            "en": "The dollar index gained 0.11% to 103.60, near its highest since April 2025; EUR/USD slipped 0.15% to 1.0999, USD/JPY 0.09% to 159.48, close to the zone where MUFG sees intervention risk, and USD/CAD held steady at 1.4300."
+          },
+          "crypto": {
+            "fr": "Le bitcoin a gagné 1,40 % à 65 012 $ sur la séance, effaçant ses pertes de la journée malgré la vente sur la techno, après une forte correction en novembre.",
+            "en": "Bitcoin gained 1.40% to $65,012 over the session, erasing its daily losses despite the tech sell-off, after a sharp November correction."
+          },
+          "energy": {
+            "fr": "Le WTI a perdu 2,46 % à 85,53 $ sur la séance (contrat de décembre −3,66 % à 85,32 $), le Brent revenant vers 92 $, les expéditions par le détroit d’Ormuz étant presque revenues à leur niveau d’avant-guerre; Goldman Sachs prévoit un surplus d’environ 2 millions de barils par jour en 2027 (Reuters).",
+            "en": "WTI lost 2.46% to $85.53 over the session (December contract −3.66% to $85.32), with Brent back near $92 as shipments through the Strait of Hormuz nearly returned to pre-war levels; Goldman Sachs sees a surplus of about 2 million barrels per day in 2027 (Reuters)."
+          }
+        },
+        "sources": [
+          "https://www.staradvertiser.com/2026/11/16/breaking-news/wall-street-tumbles-as-ai-jitters-hit-tech-stocks/",
+          "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-16-dow-sp-500-nasdaq-nvidia-oil-091631084.html",
+          "https://www.kitco.com/news/article/2026-11-16/gold-price-slides-fed-hike-bets-rise-silver-bar-and-coin-sales-drop-despite",
+          "https://boereport.com/2026/11/15/goldman-sees-brent-easing-to-78-a-barrel-by-end-2027-as-markets-adapt/",
+          "https://www.mufgresearch.com/fx/fx-weekly-13-november-2026/"
+        ]
+      },
       {
         "date": "2026-11-16",
         "session": "lon",
@@ -34878,6 +34915,61 @@
       }
     ],
     "research": [
+      {
+        "bank": "Morgan Stanley",
+        "date": "2026-11-16",
+        "topic": "ACTIONS",
+        "topic_en": "EQUITIES",
+        "title": "Morgan Stanley relève sa cible sur 12 mois du S&P 500 à 8 700",
+        "title_en": "Morgan Stanley raises its 12-month S&P 500 target to 8,700",
+        "summary": "L’équipe de Michael Wilson fonde sa cible sur 19 fois un BPA prévisionnel de 458 $ et juge la récente correction, proche de sa zone de soutien de 7 100 à 7 300, comme un point d’entrée intéressant; les industrielles sont son secteur préféré. Le principal risque cité est une politique monétaire plus restrictive que prévu.",
+        "summary_en": "Michael Wilson’s team bases the target on 19 times forward EPS of $458 and sees the recent correction, near its 7,100–7,300 support zone, as an attractive entry point; industrials are its top sector pick. The main risk cited is tighter-than-expected monetary policy.",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-joins-morgan-stanley-in-seeing-sp-500-at-8700-by-end2027-5029238"
+      },
+      {
+        "bank": "Barclays",
+        "date": "2026-11-16",
+        "topic": "ACTIONS",
+        "topic_en": "EQUITIES",
+        "title": "Barclays vise 8 700 pour le S&P 500 à la fin de 2027",
+        "title_en": "Barclays targets 8,700 for the S&P 500 at end-2027",
+        "summary": "Venu Krishna abaisse légèrement sa cible de fin 2027 (de 8 800 à 8 700) mais relève son BPA 2027 à 434 $ et garde 7 950 pour fin 2026; il estime que les acheteurs de la vente liée à l’IA seront récompensés, tout en voyant la hausse des taux de la Fed limiter les valorisations.",
+        "summary_en": "Venu Krishna trims his end-2027 target slightly (from 8,800 to 8,700) but raises 2027 EPS to $434 and keeps 7,950 for end-2026; he expects buyers of the AI-driven sell-off to be rewarded, while Fed hikes limit valuation gains.",
+        "url": "https://www.investing.com/news/stock-market-news/barclays-joins-morgan-stanley-in-seeing-sp-500-at-8700-by-end2027-5029238"
+      },
+      {
+        "bank": "Goldman Sachs",
+        "date": "2026-11-15",
+        "topic": "PÉTROLE",
+        "topic_en": "OIL",
+        "title": "Goldman voit le Brent à 78 $ à la fin de 2027, avec un surplus important",
+        "title_en": "Goldman sees Brent at $78 by end-2027 amid a sizeable surplus",
+        "summary": "Goldman prévoit un Brent moyen de 88 $ et un WTI moyen de 78 $ en 2027, puis 78 $ et 70 $ à la fin de l’année, avec un surplus d’environ 2 millions de barils par jour. La banque signale toutefois un risque de hausse à court terme si les attaques contre le transport maritime s’intensifient.",
+        "summary_en": "Goldman forecasts Brent averaging $88 and WTI $78 in 2027, then $78 and $70 at year-end, with a surplus of about 2 million barrels per day. The bank flags near-term upside risk if attacks on shipping intensify.",
+        "url": "https://boereport.com/2026/11/15/goldman-sees-brent-easing-to-78-a-barrel-by-end-2027-as-markets-adapt/"
+      },
+      {
+        "bank": "MUFG",
+        "date": "2026-11-13",
+        "topic": "FX",
+        "topic_en": "FX",
+        "title": "MUFG : le dollar peut encore monter, risque d’intervention sur le yen entre 160 et 164",
+        "title_en": "MUFG: the dollar can climb further, yen intervention risk between 160 and 164",
+        "summary": "Après le bond des rendements américains sur l’IPC, MUFG juge que le dollar peut poursuivre sa hausse, le marché intégrant davantage trois hausses de la Fed (décembre, janvier, mars). Pour l’USD/JPY, revenu au-dessus de 160, la banque voit une intervention possible entre 160 et le sommet de 164 de cette année.",
+        "summary_en": "After the jump in U.S. yields on CPI, MUFG says the dollar can extend its rally as markets price more of three Fed hikes (December, January, March). For USD/JPY, back above 160, the bank sees possible intervention between 160 and this year’s 164 high.",
+        "url": "https://www.mufgresearch.com/fx/fx-weekly-13-november-2026/"
+      },
+      {
+        "bank": "JPMorgan",
+        "date": "2026-11-16",
+        "topic": "ACTIONS",
+        "topic_en": "EQUITIES",
+        "title": "JPMorgan : la croissance des bénéfices des « 7 magnifiques » passe sous celle du reste du S&P 500",
+        "title_en": "JPMorgan: Mag-7 earnings growth falls below the rest of the S&P 500",
+        "summary": "JPMorgan note que la croissance des bénéfices des sept géants de la techno est passée sous celle du reste du S&P 500 pour la première fois depuis 2022, ce qui appuie selon la banque son scénario d’un leadership boursier plus large.",
+        "summary_en": "JPMorgan notes that earnings growth for the seven tech giants fell below that of the rest of the S&P 500 for the first time since 2022, which the bank says supports its call for broader market leadership.",
+        "url": "https://www.investing.com/news/stock-market-news/dow-jones-nasdaq-sp-500-weekly-preview-nvidia-earnings-anthropic-ipo-on-deck-5029447"
+      },
       {
         "bank": "Goldman Sachs",
         "date": "2026-11-13",
