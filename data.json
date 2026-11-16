@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T07:47:51Z",
+  "updatedAt": "2026-11-16T08:47:28Z",
   "econ": {
     "values": {
       "adp": {
@@ -916,6 +916,38 @@
   "news": [
     {
       "date": "2026-11-16",
+      "time": "03:21",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq"
+      ],
+      "title": "Morgan Stanley relève sa cible du S&P 500 à 8 700 points sur 12 mois",
+      "title_en": "Morgan Stanley raises S&P 500 target on earnings growth, lower oil and AI adoption",
+      "summary": "Morgan Stanley fixe une cible de 8 700 points pour le S&P 500 d'ici 12 mois, soit environ 15 % au-dessus de la clôture de vendredi, sur la base de 19 fois un BPA prévisionnel de 458 $. La firme prévoit un BPA de 369 $ en 2026, 420 $ en 2027 et 458 $ en 2028, appuyé par la croissance des bénéfices, un pétrole plus bas et l'adoption de l'IA. Un signal optimiste alors que la tech reste secouée par la tourmente chez Nvidia.",
+      "summary_en": "Morgan Stanley set a 12-month S&P 500 target of 8,700, about 15% above Friday's close, based on 19x forward EPS of $458. The firm forecasts EPS of $369 in 2026, $420 in 2027 and $458 in 2028, citing earnings growth, lower oil and AI adoption. A bullish signal while tech remains shaken by the Nvidia turmoil.",
+      "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-raises-sp-500-target-on-earnings-growth-lower-oil-and-ai-adoption-5028643"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "03:09",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "eurusd",
+        "gbpusd",
+        "usoil"
+      ],
+      "title": "Bourses européennes stables : la tourmente Nvidia persiste avant les grands tests de l'IA",
+      "title_en": "European shares flat as Nvidia turmoil lingers and markets brace for AI mega-tests",
+      "summary": "Le STOXX 600 et le DAX sont stables lundi matin, tandis que le CAC 40 et le FTSE 100 gagnent 0,2 %. Le marché digère encore la vente massive des semi-conducteurs et logiciels liée au départ du PDG de Nvidia, Jensen Huang, qui aurait discuté d'un retour selon le Financial Times. La guerre américano-israélienne avec l'Iran figure aussi au menu des rencontres de Trump en marge de l'APEC à Shenzhen.",
+      "summary_en": "The STOXX 600 and DAX were flat on Monday morning, while the CAC 40 and FTSE 100 rose 0.2%. Markets are still digesting last week's chip and software sell-off tied to Nvidia CEO Jensen Huang's departure; the Financial Times reports Huang has discussed returning. The U.S.-Israeli war with Iran is also on the agenda of Trump's meetings on the sidelines of APEC in Shenzhen.",
+      "url": "https://www.investing.com/news/stock-market-news/european-shares-flat-as-nvidia-turmoil-lingers-and-markets-brace-for-ai-megatests-5028357"
+    },
+    {
+      "date": "2026-11-16",
       "time": "02:00",
       "source": "Investing.com",
       "impact": "med",
@@ -1528,39 +1560,6 @@
       "title": "Wall Street efface ses pertes : le Dow monte, Nvidia limite sa chute à environ −5 %; le 10 ans dépasse 5 %",
       "title_en": "Wall Street erases its losses: Dow rises, Nvidia trims its drop to about −5%; 10-year yield tops 5%",
       "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "rut",
-        "us30"
-      ],
-      "date": "2026-11-12",
-      "impact": "high",
-      "source": "Yahoo Finance",
-      "summary": "Nvidia annonce que Jensen Huang a démissionné de ses postes de président, de PDG et de membre du conseil, avec effet immédiat; la chef des finances Colette Kress devient PDG par intérim. L'action a perdu 14 % à l'ouverture avant de réduire sa baisse à environ 6 % (163,27 $), en recul d'environ 30 % sur un mois. Vers 10 h 18, le Nasdaq cédait 0,63 %, le S&P 500 0,41 %, le Russell 2000 1,21 % et le Dow 0,10 %.",
-      "summary_en": "Nvidia said Jensen Huang resigned as President, CEO and board member, effective immediately; CFO Colette Kress becomes interim CEO. The stock fell 14% at the open before trimming losses to about 6% ($163.27), down about 30% over the past month. Around 10:18 a.m., the Nasdaq was down 0.63%, the S&P 500 0.41%, the Russell 2000 1.21% and the Dow 0.10%.",
-      "time": "08:59",
-      "title": "Jensen Huang démissionne de Nvidia; Colette Kress nommée PDG par intérim, l'action chute à l'ouverture",
-      "title_en": "Jensen Huang resigns from Nvidia; Colette Kress named interim CEO, stock slides at the open",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-12-sp-500-nasdaq-dow-nvidia-invest-110027430.html"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "xauusd"
-      ],
-      "date": "2026-11-12",
-      "impact": "med",
-      "source": "Reuters (via Investing.com)",
-      "summary": "Les nouvelles demandes d'assurance-chômage ont augmenté de 9 000 à 200 000 pour la semaine terminée le 7 novembre, contre 195 000 attendues; les demandes continues ont reculé de 20 000 à 1,697 million. Le chômage a baissé à 4,1 % en octobre, ce qui garde la pression sur une Fed dont le taux directeur est de 3,75 %–4,00 %.",
-      "summary_en": "Initial jobless claims rose 9,000 to 200,000 for the week ended Nov. 7, versus 195,000 expected; continuing claims fell 20,000 to 1.697 million. Unemployment fell to 4.1% in October, keeping pressure on a Fed whose policy rate stands at 3.75%-4.00%.",
-      "time": "08:39",
-      "title": "Inscriptions au chômage : 200 000, un peu plus que prévu, mais le marché du travail reste solide",
-      "title_en": "Jobless claims rise to 200,000, slightly above forecasts, but labor market firming",
-      "url": "https://www.investing.com/news/economic-indicators/us-weekly-jobless-claims-increase-but-labor-market-firming-5021926"
     }
   ],
   "live": {
