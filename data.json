@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T01:02:55Z",
+ "updatedAt": "2026-11-16T01:04:10Z",
  "econ": {
   "values": {
    "adp": {
@@ -975,6 +975,49 @@
    "url": "https://www.investing.com/news/stock-market-news/jensen-huang-may-return-as-nvidia-chief-executive--report-5028097"
   },
   {
+   "date": "2026-11-15",
+   "time": "01:29",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "xauusd"
+   ],
+   "title": "L'Iran dit ne pas attendre une attaque américaine et revendique une frappe au Bahreïn; les Houthis visent Riyad et un oléoduc saoudien",
+   "title_en": "Iran says it will not wait for U.S. to attack first, claims strike on U.S. base in Bahrain as Houthis target Saudi Arabia",
+   "summary": "Le vice-ministre iranien des Affaires étrangères affirme que l'Iran « n'attendra pas que les États-Unis attaquent en premier »; les Gardiens de la révolution revendiquent six drones lancés contre un radar américain au Bahreïn. Les Houthis disent avoir frappé deux stations de pompage de l'oléoduc Est-Ouest saoudien, et la coalition dirigée par Riyad a intercepté deux missiles visant la capitale. Ces risques sur l'offre du Golfe soutiennent le pétrole et les valeurs refuges.",
+   "summary_en": "Iran's deputy foreign minister said Iran \"will not wait for the US to attack first\"; the Revolutionary Guards claimed six drones were launched at a U.S. radar in Bahrain. The Houthis said they hit two pumping stations on Saudi Arabia's East-West pipeline, and the Saudi-led coalition intercepted two missiles aimed at Riyadh. These Gulf supply risks support oil and safe havens.",
+   "url": "https://www.investing.com/news/economy-news/iran-claims-fresh-strike-on-us-base-as-hormuz-shipping-crisis-deepens-5027672"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "17:53",
+   "source": "Reuters (Investing.com)",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Ormuz : trois pétroliers en feu après avoir heurté des mines, selon la marine iranienne",
+   "title_en": "Iran's navy says three tankers on fire after hitting mines in Hormuz",
+   "summary": "Selon les médias d'État iraniens, trois pétroliers ont pris feu samedi après avoir heurté des mines navales dans le détroit d'Ormuz; Reuters n'a pas pu vérifier l'information. Les Gardiens de la révolution affirment que deux d'entre eux tentaient d'emprunter une route interdite. Ces incidents ravivent les craintes sur l'approvisionnement en pétrole avant la réouverture des marchés.",
+   "summary_en": "According to Iranian state media, three oil tankers caught fire on Saturday after hitting naval mines in the Strait of Hormuz; Reuters could not verify the reports. The Revolutionary Guards said two of them were trying to use a prohibited route. The incidents revive oil supply fears ahead of the market reopening.",
+   "url": "https://www.investing.com/news/commodities-news/irans-navy-says-three-tankers-on-fire-after-hitting-mines-in-hormuz-5027556"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "11:33",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd"
+   ],
+   "title": "Le bitcoin glisse sous 63 000 $, un creux de trois mois, dans une « zone de valeur profonde »",
+   "title_en": "Bitcoin slides below $63,000 to a 3-month low, entering 'deep value zone'",
+   "summary": "Le bitcoin a touché un nouveau creux de trois mois juste au-dessus de 62 000 $ samedi, en baisse d'environ 8 % depuis la clôture de Wall Street vendredi et d'environ 17 % sur une semaine. L'ether, le XRP et le solana perdent chacun environ 22 % en une semaine. L'analyste James Check y voit une quatrième capitulation depuis le sommet historique, sans garantie que le creux soit atteint.",
+   "summary_en": "Bitcoin hit a fresh 3-month low just above $62,000 on Saturday, down about 8% since Wall Street's Friday close and about 17% over the week. Ether, XRP and Solana are each down about 22% on the week. Analyst James Check calls it the fourth capitulation since the all-time high, with no guarantee the bottom is in.",
+   "url": "https://www.coindesk.com/markets/2026/11/14/bitcoin-drifts-back-to-usd65-000-deep-value-zone-says-analyst"
+  },
+  {
    "date": "2026-11-13",
    "time": "16:33",
    "source": "Yahoo Finance",
@@ -1529,57 +1572,6 @@
    "title": "Le bitcoin repasse sous 73 000 $, une première depuis août",
    "title_en": "Bitcoin falls back below $73,000 for the first time since August",
    "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-10",
-   "impact": "high",
-   "source": "CoinDesk",
-   "summary": "Nvidia reculait d’environ 5 % à 168 $ mardi, après 4 % lundi, portant ses pertes depuis son sommet de début octobre à plus de 30 %, sur fond de rapports voulant que le FBI enquête sur le PDG Jensen Huang (Trump a dit que le FBI « se penche » sur l’affaire). Selon The Information, cité par Yahoo Finance, des sociétés chinoises auraient acquis pour 7,5 G$ de puces Nvidia, dont environ 240 000 après les interdictions d’exportation; ce sont des allégations. Le titre pèse lourd sur le Nasdaq et le S&P 500.",
-   "summary_en": "Nvidia fell about 5% to $168 on Tuesday after a 4% drop Monday, taking its losses from its early-October high past 30%, amid reports that the FBI is investigating CEO Jensen Huang (Trump said the FBI is \"looking into\" it). According to The Information, cited by Yahoo Finance, Chinese companies acquired $7.5 billion of Nvidia chips, including about 240,000 after U.S. export bans; these are allegations. The stock weighs heavily on the Nasdaq and S&P 500.",
-   "time": "11:13",
-   "title": "Nvidia chute encore d’environ 5 % sous 170 $ : le FBI se penche sur Jensen Huang",
-   "title_en": "Nvidia drops about 5% more, below $170, as FBI looks into Jensen Huang",
-   "url": "https://www.coindesk.com/markets/2026/11/10/live-news-traders-price-in-fed-rate-hike-for-december-as-bitcoin-and-gold-retreat"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "xagusd",
-    "usd"
-   ],
-   "date": "2026-11-10",
-   "impact": "med",
-   "source": "Kitco",
-   "summary": "L’or reculait de 84,10 $ (−2,03 %) à environ 4 055,30 $ l’once et l’argent de 3,01 % à environ 51,70 $, alors que le dollar se raffermissait et que le taux à 2 ans montait vers 4,69 %. Une hausse de 25 pb à la réunion de la Fed des 8 et 9 décembre est presque entièrement intégrée, contre environ 84 % avant l’IPC. Prochain test : l’indice des prix à la production (IPP) vendredi à 8 h 30.",
-   "summary_en": "Gold fell $84.10 (−2.03%) to about $4,055.30 an ounce and silver 3.01% to about $51.70 as the dollar firmed and the 2-year yield rose toward 4.69%. A 25 bp hike at the Fed's Dec. 8-9 meeting is now almost fully priced, versus about 84% before CPI. Next catalyst: October PPI on Friday at 8:30 a.m.",
-   "time": "09:20",
-   "title": "L’or chute d’environ 2 % vers 4 055 $ et l’argent de 3 % après l’IPC",
-   "title_en": "Gold drops about 2% to near $4,055, silver 3% after CPI",
-   "url": "https://www.kitco.com/news/article/2026-11-10/gold-silver-retreat-high-core-cpi-lifts-december-fed-hike-odds-kitco-am"
-  },
-  {
-   "assets": [
-    "usd",
-    "eurusd",
-    "usdjpy",
-    "nasdaq",
-    "spx500",
-    "xauusd",
-    "btcusd"
-   ],
-   "date": "2026-11-10",
-   "impact": "high",
-   "source": "Reuters (via Investing.com)",
-   "summary": "L’IPC a augmenté de 0,4 % en octobre (prévision 0,3 %) et l’IPC de base de 0,3 % (prévision 0,2 %); aucun taux annuel n’est publié à cause de la fermeture du gouvernement de 2025 (3,7 % en septembre). Le taux à 2 ans a bondi de 13 pb à 4,68 %, le 10 ans de 7,6 pb à 4,94 %, l’indice du dollar a gagné 0,3 % à 102,05 et l’or a perdu 2 % à 4 057 $; les contrats sur le Nasdaq cédaient 1,4 %. La Fed semble en voie de relever ses taux en décembre, et le débat sur une hausse de 50 pb s’intensifie.",
-   "summary_en": "CPI rose 0.4% in October (forecast 0.3%) and core CPI 0.3% (forecast 0.2%); no annual rate was published because of the 2025 government shutdown (3.7% in September). The 2-year yield jumped 13 bp to 4.68%, the 10-year 7.6 bp to 4.94%, the dollar index rose 0.3% to 102.05 and gold fell 2% to $4,057; Nasdaq futures were down 1.4%. The Fed looks on course to hike in December, with debate growing over a half-point move.",
-   "time": "08:58",
-   "title": "IPC d’octobre plus chaud que prévu (+0,4 %, base +0,3 %) : taux et dollar en hausse",
-   "title_en": "Hotter-than-expected October CPI (+0.4%, core +0.3%) lifts yields and dollar",
-   "url": "https://za.investing.com/news/economic-indicators/hot-october-inflation-report-rattles-markets-4565282"
   }
  ],
  "live": {
