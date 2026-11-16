@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T19:45:00Z",
+ "updatedAt": "2026-11-16T19:47:35Z",
  "econ": {
   "values": {
    "adp": {
@@ -981,6 +981,21 @@
  "news": [
   {
    "date": "2026-11-16",
+   "time": "14:12",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "us30"
+   ],
+   "title": "Downdetector signale des pannes chez de grandes banques américaines : JPMorgan, Bank of America, U.S. Bank et Wells Fargo",
+   "title_en": "Downdetector reports outages at major US banks: JPMorgan, Bank of America, U.S. Bank and Wells Fargo",
+   "summary": "Selon Reuters (repris par Investing.com), des signalements d'utilisateurs sur Downdetector indiquaient lundi des problèmes chez JPMorgan Chase, Bank of America, U.S. Bank et Wells Fargo. La cause n'est pas établie; une source citée par CNBC dit que rien n'indique l'implication d'acteurs malveillants chez JPMorgan ni un bogue touchant plusieurs banques à la fois. L'incident survient alors que les grandes banques reculent avec le reste du marché.",
+   "summary_en": "According to Reuters (via Investing.com), user reports on Downdetector pointed to problems at JPMorgan Chase, Bank of America, U.S. Bank and Wells Fargo on Monday. The cause is not established; a source cited by CNBC said there was no indication bad actors were involved in JPMorgan's issue nor of a bug hitting several banks at once. The incident comes as big banks fall along with the broader market.",
+   "url": "https://www.investing.com/news/stock-market-news/downdetector-reports-outages-at-major-us-banks-5030747"
+  },
+  {
+   "date": "2026-11-16",
    "time": "13:34",
    "source": "CoinDesk",
    "impact": "med",
@@ -1588,20 +1603,6 @@
    "title": "L'Iran dit ne pas attendre une attaque américaine et revendique une frappe au Bahreïn; les Houthis visent Riyad et un oléoduc saoudien",
    "title_en": "Iran says it will not wait for U.S. to attack first, claims strike on U.S. base in Bahrain as Houthis target Saudi Arabia",
    "url": "https://www.investing.com/news/economy-news/iran-claims-fresh-strike-on-us-base-as-hormuz-shipping-crisis-deepens-5027672"
-  },
-  {
-   "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-14",
-   "impact": "med",
-   "source": "Reuters (Investing.com)",
-   "summary": "Selon les médias d'État iraniens, trois pétroliers ont pris feu samedi après avoir heurté des mines navales dans le détroit d'Ormuz; Reuters n'a pas pu vérifier l'information. Les Gardiens de la révolution affirment que deux d'entre eux tentaient d'emprunter une route interdite. Ces incidents ravivent les craintes sur l'approvisionnement en pétrole avant la réouverture des marchés.",
-   "summary_en": "According to Iranian state media, three oil tankers caught fire on Saturday after hitting naval mines in the Strait of Hormuz; Reuters could not verify the reports. The Revolutionary Guards said two of them were trying to use a prohibited route. The incidents revive oil supply fears ahead of the market reopening.",
-   "time": "17:53",
-   "title": "Ormuz : trois pétroliers en feu après avoir heurté des mines, selon la marine iranienne",
-   "title_en": "Iran's navy says three tankers on fire after hitting mines in Hormuz",
-   "url": "https://www.investing.com/news/commodities-news/irans-navy-says-three-tankers-on-fire-after-hitting-mines-in-hormuz-5027556"
   }
  ],
  "live": {
