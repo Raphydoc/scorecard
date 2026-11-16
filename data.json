@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T13:44:00Z",
+ "updatedAt": "2026-11-16T13:48:21Z",
  "econ": {
   "values": {
    "adp": {
@@ -977,40 +977,64 @@
  },
  "news": [
   {
+   "assets": [
+    "usoil"
+   ],
    "date": "2026-11-16",
-   "time": "07:30",
-   "source": "Investing.com",
    "impact": "med",
+   "source": "Investing.com",
+   "summary": "Le Brent cède 1,2 % à 94,72 $ le baril et le WTI 1 % à 86,42 $, alors que l'armée iranienne affirme que le détroit d'Ormuz « est fermé et le restera » aussi longtemps qu'elle le jugera nécessaire, sur fond de pétroliers ayant heurté des mines et d'arrivée d'un porte-avions américain. À Londres, le FTSE 100 gagne 0,30 %, porté par la défense (Babcock environ +3 %, BAE Systems, Melrose). Le risque d'offre au Moyen-Orient reste le principal moteur du brut.",
+   "summary_en": "Brent fell 1.2% to $94.72 a barrel and WTI 1% to $86.42, even as Iran's army said the Strait of Hormuz 'is closed and will remain closed' as long as it deems necessary, amid tanker mine strikes and a US carrier's arrival. In London, the FTSE 100 rose 0.30%, led by defence names (Babcock about +3%, BAE Systems, Melrose). Middle East supply risk remains crude's main driver.",
+   "time": "08:02",
+   "title": "Le pétrole recule : le WTI perd 1 % à 86,42 $ malgré l'Iran qui dit garder Ormuz fermé; la défense mène le FTSE 100",
+   "title_en": "Oil slips: WTI down 1% at $86.42 even as Iran says Hormuz stays closed; defence leads FTSE 100",
+   "url": "https://uk.investing.com/news/stock-market-news/ftse-100-today-stocks-edge-up-as-iran-tensions-simmer-4983831"
+  },
+  {
+   "assets": [
+    "usdcad"
+   ],
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "L'action de TELUS grimpe de 29 % après que l'entreprise a révélé une proposition non sollicitée, non contraignante et conditionnelle de Québecor, reçue le 27 juin puis amendée le 9 novembre. Un comité spécial d'administrateurs indépendants l'examine, mais le conseil juge que la contrepartie ne reflète pas la valeur de TELUS et s'inquiète de l'endettement accru et du contrôle des votes par l'actionnaire de Québecor. Gros dossier pour la Bourse de Toronto, aucun prix d'offre n'a été dévoilé.",
+   "summary_en": "TELUS shares jumped 29% after the company disclosed an unsolicited, non-binding and conditional proposal from Québecor, first received June 27 and amended November 9. A special committee of independent directors is reviewing it, but the board says the consideration does not reflect TELUS's value and flags higher leverage and voting control by Québecor's controlling shareholder. A major story for the Toronto market; no offer price was disclosed.",
+   "time": "07:52",
+   "title": "TELUS bondit de 29 % : le conseil étudie une proposition de rachat non sollicitée de Québecor",
+   "title_en": "TELUS shares jump 29% as board reviews unsolicited Québecor takeover proposal",
+   "url": "https://www.investing.com/news/stock-market-news/telus-shares-jump-29-as-board-reviews-unsolicited-quebecor-takeover-proposal-5029600"
+  },
+  {
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Nvidia recule d'environ 3,5 % en préouverture; le départ de Huang assombrit les perspectives avant les résultats de mardi",
-   "title_en": "Nvidia falls premarket as Huang exit clouds outlook ahead of earnings",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Nvidia perdait environ 3,5 % en préouverture lundi après une clôture à 162,85 $ vendredi, sa capitalisation sous les 4 000 G$. Les résultats du 3e trimestre sont attendus mardi après la clôture; Susquehanna prévoit des résultats supérieurs aux attentes (cible de 275 $) mais juge que le départ de Jensen Huang crée de l'incertitude tant qu'un PDG permanent n'est pas nommé. Le titre pèse lourd sur le Nasdaq et le S&P 500.",
    "summary_en": "Nvidia was down about 3.5% premarket Monday after closing at $162.85 Friday, with its market value below $4 trillion. Q3 results are due Tuesday after the close; Susquehanna expects a beat (PT $275) but says Jensen Huang's exit creates uncertainty until a permanent CEO is named. The stock weighs heavily on the Nasdaq and S&P 500.",
+   "time": "07:30",
+   "title": "Nvidia recule d'environ 3,5 % en préouverture; le départ de Huang assombrit les perspectives avant les résultats de mardi",
+   "title_en": "Nvidia falls premarket as Huang exit clouds outlook ahead of earnings",
    "url": "https://www.investing.com/news/stock-market-news/nvidia-falls-premarket-as-huang-exit-clouds-outlook-ahead-of-earnings-5029433"
   },
   {
-   "date": "2026-11-16",
-   "time": "07:26",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usdcad",
     "usoil"
    ],
-   "title": "Les contrats à terme du TSX reculent avant les résultats de Nvidia et l'IPO d'Anthropic; l'IPC canadien à venir",
-   "title_en": "TSX futures drop as Nvidia results, Anthropic IPO loom large; Canadian CPI ahead",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Les contrats à terme de la Bourse de Toronto reculent lundi matin, les investisseurs attendant les résultats de Nvidia et l'entrée en Bourse d'Anthropic. L'indice des prix à la consommation du Canada, attendu cette semaine, sera scruté pour la Banque du Canada et le dollar canadien.",
    "summary_en": "Toronto stock futures fell Monday morning as investors await Nvidia's results and Anthropic's IPO. Canada's consumer price index, due this week, will be watched for the Bank of Canada and the Canadian dollar.",
+   "time": "07:26",
+   "title": "Les contrats à terme du TSX reculent avant les résultats de Nvidia et l'IPO d'Anthropic; l'IPC canadien à venir",
+   "title_en": "TSX futures drop as Nvidia results, Anthropic IPO loom large; Canadian CPI ahead",
    "url": "https://www.investing.com/news/stock-market-news/tsx-futures-drop-as-nvidia-results-anthropic-ipo-loom-large-canadian-cpi-ahead-5029415"
   },
   {
-   "date": "2026-11-16",
-   "time": "06:34",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usd",
     "spx500",
@@ -1018,10 +1042,14 @@
     "eurusd",
     "xauusd"
    ],
-   "title": "La Deutsche Bank prévient que les marchés sous-estiment peut-être les risques de hausses de taux",
-   "title_en": "Deutsche Bank warns markets may be underestimating rate hike risks",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Selon le titre d'Investing.com, la Deutsche Bank estime que les marchés pourraient sous-estimer le risque de hausses de taux (article non consultable, aucun chiffre repris). L'avertissement survient alors que le dollar est soutenu par les paris d'un resserrement de la Fed en décembre, ce qui pèse sur l'or et les actions.",
    "summary_en": "Per Investing.com's headline, Deutsche Bank says markets may be underestimating the risk of rate hikes (article not accessible, no figures taken). The warning comes as the dollar is supported by bets on a December Fed tightening, weighing on gold and equities.",
+   "time": "06:34",
+   "title": "La Deutsche Bank prévient que les marchés sous-estiment peut-être les risques de hausses de taux",
+   "title_en": "Deutsche Bank warns markets may be underestimating rate hike risks",
    "url": "https://www.investing.com/news/stock-market-news/deutsche-bank-warns-markets-may-be-underestimating-rate-hike-risks-5029111"
   },
   {
@@ -1041,10 +1069,6 @@
    "url": "https://www.investing.com/news/commodities-news/gold-falls-below-3900-as-december-fed-hike-bets-build-warsh-in-focus-5028296"
   },
   {
-   "date": "2026-11-16",
-   "time": "06:03",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd",
     "nasdaq",
@@ -1052,184 +1076,188 @@
     "xagusd",
     "usd"
    ],
-   "title": "Le bitcoin glisse vers 64 300 $ après avoir rebondi de son plus bas depuis le 14 juillet; 2 G$ liquidés en fin de semaine",
-   "title_en": "Bitcoin slips toward $64,300 after rebounding from July 14 low that triggered $2 billion of liquidations",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin s'échange autour de 64 300 $, en baisse de 1,6 % depuis minuit UTC, après être tombé dimanche à 62 100 $, son plus bas depuis le 14 juillet; environ 2 G$ de positions, surtout acheteuses, ont été liquidées en fin de semaine. Il aligne six semaines de pertes et les FNB bitcoin américains ont subi sept jours de sorties (environ 1,91 G$ depuis le 5 novembre). Les contrats à terme du Nasdaq 100 cèdent 0,9 % avant les résultats de Nvidia mardi; l'indice Fear and Greed est à 12 (« peur extrême »).",
    "summary_en": "Bitcoin trades around $64,300, down 1.6% since midnight UTC, after falling to $62,100 on Sunday, its lowest since July 14; about $2 billion of mostly long positions were liquidated over the weekend. It has fallen six straight weeks and U.S. spot bitcoin ETFs have seen seven days of outflows (about $1.91 billion since Nov. 5). Nasdaq 100 futures are down 0.9% ahead of Nvidia's earnings Tuesday; the Fear and Greed Index is at 12 ('extreme fear').",
+   "time": "06:03",
+   "title": "Le bitcoin glisse vers 64 300 $ après avoir rebondi de son plus bas depuis le 14 juillet; 2 G$ liquidés en fin de semaine",
+   "title_en": "Bitcoin slips toward $64,300 after rebounding from July 14 low that triggered $2 billion of liquidations",
    "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-slips-to-usd64-000-after-usd2-billion-weekend-flush"
   },
   {
-   "date": "2026-11-16",
-   "time": "05:43",
-   "source": "Reuters (Investing.com)",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "us30",
     "usd"
    ],
-   "title": "Les contrats à terme du Nasdaq (-0,97 %) et du S&P 500 (-0,36 %) glissent avant Nvidia et Anthropic; Warsh parle aujourd'hui",
-   "title_en": "S&P 500, Nasdaq futures slide as Nvidia earnings, Anthropic debut loom",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Reuters (Investing.com)",
    "summary": "Vers 5 h 08, les contrats E-mini du Nasdaq 100 perdaient 0,97 % et ceux du S&P 500 0,36 %, alors que ceux du Dow étaient stables (+0,02 %). Le marché anticipe entièrement une hausse de taux de la Fed en décembre (environ 8 % de chances pour 50 pb selon CME FedWatch); le 2 ans recule de plus de 2 pb. Au programme : discours du président de la Fed Kevin Warsh lundi, Nvidia mardi, procès-verbal du FOMC mercredi, puis l'IPO d'Anthropic et la rencontre Trump-Xi.",
    "summary_en": "At 5:08 a.m. ET, Nasdaq 100 E-minis were down 0.97% and S&P 500 E-minis 0.36%, while Dow futures were flat (+0.02%). Markets fully price a December Fed hike (about 8% odds of 50 bp per CME FedWatch); the 2-year yield fell over 2 bp. Ahead: Fed Chair Kevin Warsh speaks Monday, Nvidia Tuesday, FOMC minutes Wednesday, then Anthropic's IPO and Trump-Xi talks.",
+   "time": "05:43",
+   "title": "Les contrats à terme du Nasdaq (-0,97 %) et du S&P 500 (-0,36 %) glissent avant Nvidia et Anthropic; Warsh parle aujourd'hui",
+   "title_en": "S&P 500, Nasdaq futures slide as Nvidia earnings, Anthropic debut loom",
    "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-slide-as-nvidia-earnings-anthropic-debut-loom-5028900"
   },
   {
-   "date": "2026-11-16",
-   "time": "05:12",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "gbpusd",
     "usd",
     "eurusd"
    ],
-   "title": "La livre prolonge sa glissade, le dollar soutenu par les paris d'un resserrement de la Fed",
-   "title_en": "Sterling today: Pound extends slide as dollar firms on hawkish Fed bets",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le GBP/USD recule de 0,14 % à 1,3193 et se dirige vers une sixième baisse consécutive, tandis que l'EUR/USD (1,1011) frôle le support de 1,10. Les swaps à deux ans en dollars ont gagné environ 35 points de base depuis le 10 novembre, et les contrats à terme sur les fonds fédéraux misent sur deux hausses de 25 pb (décembre et janvier). Kevin Warsh parle lundi et le procès-verbal du FOMC d'octobre sort mercredi.",
    "summary_en": "GBP/USD fell 0.14% to 1.3193, heading for a sixth straight decline, while EUR/USD (1.1011) hovers near 1.10 support. Two-year dollar swap rates have risen about 35 basis points since Nov. 10, and fed funds futures favor two 25 bp hikes (December and January). Fed Chair Kevin Warsh speaks Monday and the October FOMC minutes are due Wednesday.",
+   "time": "05:12",
+   "title": "La livre prolonge sa glissade, le dollar soutenu par les paris d'un resserrement de la Fed",
+   "title_en": "Sterling today: Pound extends slide as dollar firms on hawkish Fed bets",
    "url": "https://www.investing.com/news/forex-news/sterling-today-pound-extends-slide-as-dollar-firms-on-hawkish-fed-bets-5028808"
   },
   {
-   "date": "2026-11-16",
-   "time": "04:15",
-   "source": "CNBC",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "usd"
    ],
-   "title": "La cheffe du FMI avertit que l'économie mondiale « tient sur une jambe » alors que le financement circulaire de l'IA atteint 1 000 G$",
-   "title_en": "'Standing on one leg': IMF chief warns about global economy as AI circular financing hits $1 trillion",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "CNBC",
    "summary": "Kristalina Georgieva, directrice générale du FMI, affirme que l'économie mondiale « tient sur une jambe », celle de l'IA, et s'inquiète de la hausse rapide du financement circulaire de l'IA, qui atteint 1 000 milliards $ selon CNBC. Le message s'ajoute aux craintes de bulle qui frappent les titres technologiques avant les résultats de Nvidia.",
    "summary_en": "IMF Managing Director Kristalina Georgieva says the world economy is 'standing on one leg', and that leg is AI, voicing concern over the rapid increase in AI circular financing, which CNBC says has hit $1 trillion. The message adds to bubble fears hitting tech stocks ahead of Nvidia's earnings.",
+   "time": "04:15",
+   "title": "La cheffe du FMI avertit que l'économie mondiale « tient sur une jambe » alors que le financement circulaire de l'IA atteint 1 000 G$",
+   "title_en": "'Standing on one leg': IMF chief warns about global economy as AI circular financing hits $1 trillion",
    "url": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html"
   },
   {
-   "date": "2026-11-16",
-   "time": "03:56",
-   "source": "Reuters (Investing.com)",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "usd"
    ],
-   "title": "Les tensions sur les puces planent sur le sommet Trump-Xi de jeudi à Shenzhen",
-   "title_en": "Chip tensions loom over Trump-Xi summit, as US and China push AI safety steps",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Reuters (Investing.com)",
    "summary": "Selon des analystes, de nouvelles restrictions américaines sur l'accès de la Chine aux puces d'IA avancées risquent d'éclipser le sommet Trump-Xi de jeudi à Shenzhen, malgré de possibles progrès sur la sécurité de l'IA. Le scandale entourant la démission de Jensen Huang chez Nvidia pousse des élus américains à réclamer des contrôles plus serrés. Les baisses de tarifs réciproques convenues en septembre couvrent 30 G$ de biens, et aucun nouveau progrès ne sera annoncé à ce sujet.",
    "summary_en": "Analysts expect tighter US curbs on China's access to advanced AI chips to overshadow Thursday's Trump-Xi summit in Shenzhen, though some progress on AI safety is possible. The scandal around Jensen Huang's resignation from Nvidia has US lawmakers pushing for stricter controls. Reciprocal tariff cuts agreed in September cover $30 billion of goods, and no further progress will be announced on that front.",
+   "time": "03:56",
+   "title": "Les tensions sur les puces planent sur le sommet Trump-Xi de jeudi à Shenzhen",
+   "title_en": "Chip tensions loom over Trump-Xi summit, as US and China push AI safety steps",
    "url": "https://www.investing.com/news/stock-market-news/chip-tensions-loom-over-trumpxi-summit-as-us-and-china-push-ai-safety-steps-5028728"
   },
   {
-   "date": "2026-11-16",
-   "time": "03:21",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "spx500",
     "nasdaq"
    ],
-   "title": "Morgan Stanley relève sa cible du S&P 500 à 8 700 points sur 12 mois",
-   "title_en": "Morgan Stanley raises S&P 500 target on earnings growth, lower oil and AI adoption",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Morgan Stanley fixe une cible de 8 700 points pour le S&P 500 d'ici 12 mois, soit environ 15 % au-dessus de la clôture de vendredi, sur la base de 19 fois un BPA prévisionnel de 458 $. La firme prévoit un BPA de 369 $ en 2026, 420 $ en 2027 et 458 $ en 2028, appuyé par la croissance des bénéfices, un pétrole plus bas et l'adoption de l'IA. Un signal optimiste alors que la tech reste secouée par la tourmente chez Nvidia.",
    "summary_en": "Morgan Stanley set a 12-month S&P 500 target of 8,700, about 15% above Friday's close, based on 19x forward EPS of $458. The firm forecasts EPS of $369 in 2026, $420 in 2027 and $458 in 2028, citing earnings growth, lower oil and AI adoption. A bullish signal while tech remains shaken by the Nvidia turmoil.",
+   "time": "03:21",
+   "title": "Morgan Stanley relève sa cible du S&P 500 à 8 700 points sur 12 mois",
+   "title_en": "Morgan Stanley raises S&P 500 target on earnings growth, lower oil and AI adoption",
    "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-raises-sp-500-target-on-earnings-growth-lower-oil-and-ai-adoption-5028643"
   },
   {
-   "date": "2026-11-16",
-   "time": "03:09",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "eurusd",
     "gbpusd",
     "usoil"
    ],
-   "title": "Bourses européennes stables : la tourmente Nvidia persiste avant les grands tests de l'IA",
-   "title_en": "European shares flat as Nvidia turmoil lingers and markets brace for AI mega-tests",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le STOXX 600 et le DAX sont stables lundi matin, tandis que le CAC 40 et le FTSE 100 gagnent 0,2 %. Le marché digère encore la vente massive des semi-conducteurs et logiciels liée au départ du PDG de Nvidia, Jensen Huang, qui aurait discuté d'un retour selon le Financial Times. La guerre américano-israélienne avec l'Iran figure aussi au menu des rencontres de Trump en marge de l'APEC à Shenzhen.",
    "summary_en": "The STOXX 600 and DAX were flat on Monday morning, while the CAC 40 and FTSE 100 rose 0.2%. Markets are still digesting last week's chip and software sell-off tied to Nvidia CEO Jensen Huang's departure; the Financial Times reports Huang has discussed returning. The U.S.-Israeli war with Iran is also on the agenda of Trump's meetings on the sidelines of APEC in Shenzhen.",
+   "time": "03:09",
+   "title": "Bourses européennes stables : la tourmente Nvidia persiste avant les grands tests de l'IA",
+   "title_en": "European shares flat as Nvidia turmoil lingers and markets brace for AI mega-tests",
    "url": "https://www.investing.com/news/stock-market-news/european-shares-flat-as-nvidia-turmoil-lingers-and-markets-brace-for-ai-megatests-5028357"
   },
   {
-   "date": "2026-11-16",
-   "time": "02:00",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usdjpy",
     "xauusd",
     "usoil",
     "nasdaq"
    ],
-   "title": "Tokyo : le Nikkei 225 recule de 2,25 % à la clôture, les fabricants de puces plongent",
-   "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 2.25%",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le Nikkei 225 a clôturé en baisse de 2,25 %, plombé par Lasertec (-12,84 %) et Advantest (-11,12 %), alors que la nervosité sur les semi-conducteurs s'accentue avant les résultats de Nvidia. L'USD/JPY cède 0,11 % à 159,53, l'or de décembre recule de 0,83 % à 3 853,90 $ l'once, tandis que le WTI de janvier gagne 0,64 % à 87,85 $.",
    "summary_en": "The Nikkei 225 closed down 2.25%, dragged by Lasertec (-12.84%) and Advantest (-11.12%) as chip-sector nerves build ahead of Nvidia's results. USD/JPY slipped 0.11% to 159.53, December gold fell 0.83% to $3,853.90/oz, while January WTI rose 0.64% to $87.85.",
+   "time": "02:00",
+   "title": "Tokyo : le Nikkei 225 recule de 2,25 % à la clôture, les fabricants de puces plongent",
+   "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 2.25%",
    "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-225-5028475"
   },
   {
-   "date": "2026-11-16",
-   "time": "01:29",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usoil"
    ],
-   "title": "Mer du Nord : troisième vague de grève chez Apache, la production arrêtée selon Unite",
-   "title_en": "Apache North Sea workers stage third strike round, Unite says production halted",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Les travailleurs des plateformes d'Apache en mer du Nord ont mené une troisième ronde de grèves tournantes en fin de semaine; le syndicat Unite affirme que la production a été arrêtée sur les sept actifs britanniques de la société, dont les plateformes Forties et Beryl. Unite, qui représente 170 travailleurs, promet de poursuivre tant que l'offre salariale ne sera pas améliorée, ce qui ajoute un risque d'offre pour le pétrole.",
    "summary_en": "Workers on Apache's North Sea platforms staged a third round of rolling strikes over the weekend; the Unite union says production was halted at all seven of the company's UK assets, including the Forties and Beryl platforms. Unite, representing 170 workers, vowed to continue until the pay offer improves, adding a supply risk for oil.",
+   "time": "01:29",
+   "title": "Mer du Nord : troisième vague de grève chez Apache, la production arrêtée selon Unite",
+   "title_en": "Apache North Sea workers stage third strike round, Unite says production halted",
    "url": "https://www.investing.com/news/stock-market-news/apache-north-sea-workers-stage-third-strike-round-unite-says-production-halted-5028427"
   },
   {
-   "date": "2026-11-16",
-   "time": "01:00",
-   "source": "Investing.com",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Taïwan : le Taiwan Weighted chute de 5,74 % à la clôture, TSMC dégringole",
-   "title_en": "Taiwan stocks: Taiwan Weighted down 5.74% at close as TSMC tumbles",
+   "date": "2026-11-16",
+   "impact": "high",
+   "source": "Investing.com",
    "summary": "L'indice Taiwan Weighted a clôturé en baisse de 5,74 % lundi, et le titre de TSMC a fortement reculé (lecture de l'article bloquée; résumé tiré des titres d'Investing.com). Ce recul s'ajoute à la nervosité sur l'IA avant les résultats de Nvidia et pèse sur le sentiment pour les semi-conducteurs, le Nasdaq et le S&P 500.",
    "summary_en": "The Taiwan Weighted index closed down 5.74% on Monday and TSMC shares tumbled (article could not be read; summary based on Investing.com headlines). The drop adds to AI jitters ahead of Nvidia's results and weighs on sentiment for chipmakers, the Nasdaq and the S&P 500.",
+   "time": "01:00",
+   "title": "Taïwan : le Taiwan Weighted chute de 5,74 % à la clôture, TSMC dégringole",
+   "title_en": "Taiwan stocks: Taiwan Weighted down 5.74% at close as TSMC tumbles",
    "url": "https://www.investing.com/news/stock-market-news/taiwan-stocks-lower-at-close-of-trade-taiwan-weighted-down-574-5028408"
   },
   {
-   "date": "2026-11-16",
-   "time": "00:01",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Bitcoin : le put à 60 000 $ devient le plus gros pari sur les options, devant le call à 100 000 $",
-   "title_en": "Bitcoin: $60K put is now the biggest options bet, ahead of the $100K call",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Sur Deribit, le put bitcoin à 60 000 $ compte maintenant le plus gros intérêt ouvert, environ 900 M$ en notionnel, devant le call à 100 000 $ (environ 867 M$). Selon Paradigm, les traders ont surtout liquidé leurs paris haussiers, et plus de 1 G$ de blocs de puts ont été échangés en deux jours. L'indice de volatilité implicite à 30 jours de Volmex est monté à 57,13 dimanche, un sommet depuis juin, avant de revenir à 44.",
    "summary_en": "On Deribit, the $60,000 bitcoin put now has the largest open interest, about $900M notional, ahead of the $100,000 call (about $867M). Paradigm says traders mainly unwound bullish bets, with over $1B in put blocks traded over two days. Volmex's 30-day implied volatility index rose to 57.13 on Sunday, its highest since June, before easing to 44.",
+   "time": "00:01",
+   "title": "Bitcoin : le put à 60 000 $ devient le plus gros pari sur les options, devant le call à 100 000 $",
+   "title_en": "Bitcoin: $60K put is now the biggest options bet, ahead of the $100K call",
    "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000"
   },
   {
-   "date": "2026-11-15",
-   "time": "23:43",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usd",
     "usdjpy",
     "eurusd",
     "audusd"
    ],
-   "title": "Le dollar se maintient près d'un sommet de 19 mois; le marché voit une hausse de la Fed en décembre à 92 %",
-   "title_en": "Dollar holds near 19-month high; markets price 92% odds of a December Fed hike",
+   "date": "2026-11-15",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "L'indice du dollar gagne 0,1 % à 103,46, son plus haut depuis avril 2025 après cinq séances de hausse, tandis que l'USD/JPY est stable à 159,63, près du seuil de 160 qui fait craindre une intervention du Japon. L'EUR/USD et l'AUD/USD cèdent 0,1 %. Le CME FedWatch donne 92 % de chances d'une hausse de 25 points de base le 9 décembre, après une inflation américaine d'octobre plus forte que prévu et des propos fermes de responsables de la Fed.",
    "summary_en": "The dollar index rose 0.1% to 103.46, its highest since April 2025 after five straight gains, while USD/JPY was flat at 159.63, near the 160 level that keeps intervention fears alive. EUR/USD and AUD/USD slipped 0.1%. CME FedWatch shows a 92% chance of a 25-basis-point hike on December 9, after hotter-than-expected U.S. October inflation and hawkish Fed comments.",
+   "time": "23:43",
+   "title": "Le dollar se maintient près d'un sommet de 19 mois; le marché voit une hausse de la Fed en décembre à 92 %",
+   "title_en": "Dollar holds near 19-month high; markets price 92% odds of a December Fed hike",
    "url": "https://www.investing.com/news/forex-news/asia-fx-muted-as-dollar-holds-near-19mth-high-yen-steady-after-weak-gdp-5028358"
   },
   {
@@ -1588,39 +1616,6 @@
    "title": "Asie : les Bourses rebondissent après le choc Nvidia; le Nikkei gagne 1,4 % et le 10 ans touche 5,14 %",
    "title_en": "Asia: stocks rebound from Nvidia whiplash; Nikkei up 1.4% as 10-year yield hits 5.14%",
    "url": "https://www.investing.com/news/economy-news/stocks-recover-from-nvidia-whiplash-dollar-climbs-with-us-yields-5023929"
-  },
-  {
-   "assets": [
-    "usd",
-    "usdjpy",
-    "eurusd",
-    "audusd",
-    "usdchf"
-   ],
-   "date": "2026-11-12",
-   "impact": "med",
-   "source": "Reuters (Investing.com)",
-   "summary": "Le DXY se tient à 103,17, son plus haut depuis avril 2025, en route vers un gain hebdomadaire de 0,9 %. Le yen stagne à 159,875 par dollar après avoir touché 160 jeudi, l'euro recule de 0,1 % à 1,1049 $ et l'AUD/USD est à 0,68 $. Selon CME FedWatch, les marchés voient 14,5 % de chances d'une forte hausse de taux de la Fed le mois prochain, contre 0 % la semaine dernière.",
-   "summary_en": "The dollar index stood at 103.17, its highest since April 2025, on track for a 0.9% weekly gain. The yen was flat at 159.875 per dollar after touching 160 on Thursday, the euro fell 0.1% to $1.1049 and AUD/USD was at $0.68. CME FedWatch shows a 14.5% chance of a large Fed hike next month, up from 0% last week.",
-   "time": "20:58",
-   "title": "Le dollar près d'un sommet de 19 mois sur les paris d'une hausse de la Fed; le yen frôle 160",
-   "title_en": "Dollar near 19-month high on Fed hike bets; yen tests 160",
-   "url": "https://www.investing.com/news/economy-news/dollar-near-19month-high-on-fed-hike-bets-yen-tests-160-5023930"
-  },
-  {
-   "assets": [
-    "usdjpy",
-    "usd"
-   ],
-   "date": "2026-11-12",
-   "impact": "med",
-   "source": "Reuters (Investing.com)",
-   "summary": "Le yen a glissé jusqu'à 160,03 par dollar, une première au-delà de 160 depuis début septembre, après la révision à la hausse des attentes de taux de la Fed. La ministre des Finances Satsuki Katayama juge les mouvements « unilatéraux et rapides » et dit travailler étroitement avec le Trésor américain pour réagir de façon appropriée. Le Japon avait dépensé un record de 15 400 milliards de yens en interventions entre le 30 juillet et le 3 août, ce qui ravive le risque d'une nouvelle intervention sur l'USD/JPY.",
-   "summary_en": "The yen weakened to as low as 160.03 per dollar, its first move past 160 since early September, after a hawkish reassessment of the Fed's rate path. Finance Minister Satsuki Katayama called recent moves \"one-sided and rapid\" and said Japan will work closely with the U.S. Treasury and respond appropriately. Japan spent a record 15.4 trillion yen intervening between July 30 and August 3, raising the risk of renewed intervention in USD/JPY.",
-   "time": "20:51",
-   "title": "Le yen franchit 160 par dollar; la ministre Katayama promet d'agir en lien avec le Trésor américain",
-   "title_en": "Yen breaches 160 per dollar; Finance Minister Katayama vows action alongside U.S. Treasury",
-   "url": "https://www.investing.com/news/economy-news/japans-finance-minister-vows-action-as-yen-breaches-160-threshold-5023917"
   }
  ],
  "live": {
