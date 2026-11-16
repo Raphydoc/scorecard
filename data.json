@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T15:47:00Z",
+ "updatedAt": "2026-11-16T15:47:53Z",
  "econ": {
   "values": {
    "adp": {
@@ -981,6 +981,21 @@
  "news": [
   {
    "date": "2026-11-16",
+   "time": "09:58",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Trump se dit ouvert au retour de Jensen Huang à la tête de Nvidia",
+   "title_en": "Trump says he would welcome Jensen Huang's return as Nvidia CEO",
+   "summary": "Avant de partir pour l'Asie, Donald Trump a affirmé qu'un retour de Jensen Huang comme PDG de Nvidia ne serait « pas une mauvaise idée » et que Huang n'avait pas mis la sécurité nationale en danger. Huang a démissionné le 12 novembre; la cheffe des finances Colette Kress assure l'intérim. Le titre recule d'environ 2,3 %, ce qui pèse sur le Nasdaq avant les résultats de Nvidia.",
+   "summary_en": "Before leaving for Asia, Donald Trump said a return by Jensen Huang as Nvidia CEO would be \"not a bad idea\" and that Huang did not put national security at risk. Huang resigned on November 12; CFO Colette Kress is interim CEO. The stock is down about 2.3%, weighing on the Nasdaq ahead of Nvidia's earnings.",
+   "url": "https://ca.investing.com/news/stock-market-news/trump-says-he-would-welcome-jensen-huangs-return-as-nvidia-ceo-4961447"
+  },
+  {
+   "date": "2026-11-16",
    "time": "09:39",
    "source": "CoinDesk",
    "impact": "med",
@@ -993,6 +1008,22 @@
    "summary": "Le bitcoin se négociait près de 65 500 $ peu après l'ouverture de Wall Street, au-dessus de son creux de la fin de semaine autour de 62 000 $, mais il était encore à environ 68 000 $ vendredi après-midi; il enregistre une sixième perte hebdomadaire d'affilée et cède environ 17 % en novembre. CoinDesk cite la faiblesse des titres techno et IA (Nasdaq -1,15 % en début de séance), un DXY au-dessus de 103 et un 10 ans américain au-dessus de 5,1 %. L'éther glisse vers 1 800 $ et Strategy (MSTR) recule d'environ 8 % en préouverture.",
    "summary_en": "Bitcoin traded near $65,500 shortly after the U.S. open, above its weekend low around $62,000 but below roughly $68,000 late Friday; it posted a sixth straight weekly loss and is down about 17% in November. CoinDesk cites weakness in tech and AI stocks (Nasdaq -1.15% early), a DXY above 103 and a U.S. 10-year yield above 5.1%. Ether slipped to about $1,800 and Strategy (MSTR) was down about 8% premarket.",
    "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "09:36",
+   "source": "Reuters (Investing.com)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "Ouverture : le Nasdaq perd 1,13 %, plombé par la tourmente Nvidia avant les résultats",
+   "title_en": "Nasdaq falls 1% at open as Nvidia woes weigh on sentiment ahead of earnings",
+   "summary": "À l'ouverture, le Nasdaq recule de 1,13 % à 24 853,35, le S&P 500 de 0,63 % à 7 513,98 et le Dow Jones de 0,15 % à 52 267,06. Les investisseurs restent prudents avant les résultats de Nvidia cette semaine, la turbulence dans le commerce de l'IA ne montrant aucun signe d'apaisement.",
+   "summary_en": "At the open, the Nasdaq fell 1.13% to 24,853.35, the S&P 500 lost 0.63% to 7,513.98 and the Dow slipped 0.15% to 52,267.06. Investors stayed cautious ahead of Nvidia's results this week, with turbulence in the AI trade showing no sign of easing.",
+   "url": "https://www.investing.com/news/stock-market-news/nasdaq-falls-1-at-open-as-nvidia-woesweigh-on-sentiment-ahead-of-earnings-5030288"
   },
   {
    "date": "2026-11-16",
@@ -1580,39 +1611,6 @@
    "title": "Le bitcoin tombe jusqu'à 67 652 $, sous sa moyenne mobile de 200 semaines; le DXY dépasse 103",
    "title_en": "Bitcoin drops as low as $67,652, below its 200-week moving average; DXY tops 103",
    "url": "https://www.coindesk.com/tech/2026/11/13/live-news-bitcoin-drops-below-200-week-moving-average-as-dollar-strength-pressures-risk-assets"
-  },
-  {
-   "assets": [
-    "spx500",
-    "nasdaq",
-    "us30",
-    "rut",
-    "usd"
-   ],
-   "date": "2026-11-13",
-   "impact": "med",
-   "source": "Yahoo Finance",
-   "summary": "Vendredi matin, les contrats à terme du Dow gagnaient 0,2 % et ceux du S&P 500 0,1 %, tandis que le Nasdaq 100 était presque inchangé. L'indice des prix à la production d'octobre est attendu à +0,4 % (base +0,3 %), après +1,3 % (base +0,7 %) le mois précédent. Le 10 ans américain se maintient à 5,10 %, son plus haut depuis octobre, alors que les courtiers misent sur une possible hausse de taux de la Fed en décembre.",
-   "summary_en": "On Friday morning, Dow futures rose 0.2% and S&P 500 futures 0.1%, while Nasdaq 100 futures were near flat. October producer prices are expected to rise 0.4% (core +0.3%) after +1.3% (core +0.7%) the prior month. The U.S. 10-year yield holds at 5.10%, its highest since October, as traders price in a possible Fed rate hike in December.",
-   "time": "06:01",
-   "title": "Contrats à terme stables avant l'IPP d'octobre; le 10 ans reste à 5,10 %",
-   "title_en": "Futures steady ahead of October PPI; 10-year yield holds at 5.10%",
-   "url": "https://finance.yahoo.com/markets/live/stock-market-today-friday-november-13-dow-sp-500-nasdaq-nvidia-110151154.html"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-13",
-   "impact": "med",
-   "source": "Yahoo Finance (Investing.com)",
-   "summary": "Applied Materials prévoit des revenus d'environ 11,10 G$ (±500 M$) pour son 1er trimestre fiscal, contre 10,89 G$ attendus; le bénéfice ajusté du 4e trimestre atteint 4,16 $ par action et les revenus des systèmes de semi-conducteurs bondissent de 64 % à 8 G$. L'action reculait légèrement hors séance, mais gagne plus de 41 % cette année. Les contrats à terme du Nasdaq 100 perdaient 0,3 % vers 3 h, toujours pénalisés par l'éviction de Jensen Huang chez Nvidia.",
-   "summary_en": "Applied Materials expects fiscal Q1 revenue of about $11.10 billion (±$500 million) versus $10.89 billion expected; Q4 adjusted profit was $4.16 per share and semiconductor systems revenue rose 64% to $8 billion. Shares were slightly lower after hours but are up more than 41% this year. Nasdaq 100 futures were down 0.3% around 3 a.m. ET, still weighed by Jensen Huang's ouster at Nvidia.",
-   "time": "04:35",
-   "title": "Applied Materials vise environ 11,10 G$ de revenus au 1er trimestre, au-dessus des attentes",
-   "title_en": "Applied Materials guides fiscal Q1 revenue to about $11.10B, above estimates",
-   "url": "https://finance.yahoo.com/markets/stocks/articles/huang-ouster-fallout-cisco-applied-093548568.html"
   }
  ],
  "live": {
