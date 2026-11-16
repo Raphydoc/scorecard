@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T19:47:35Z",
+ "updatedAt": "2026-11-16T20:50:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -78,28 +78,31 @@
    "season": "bear",
    "seasonPct": -4.3,
    "seasonPeriod": "août à octobre",
-   "cotLong": 84.33,
-   "cotChange": -1.39,
+   "cotLong": 86.23,
+   "cotChange": 1.9,
    "crowdLong": 87,
-   "uCrowd": "2026-11-16T13:44:00Z"
+   "uCrowd": "2026-11-16T13:44:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "nasdaq": {
    "season": "neutral",
    "seasonPct": 0.4,
    "seasonPeriod": "août à octobre",
-   "cotLong": 65.89,
-   "cotChange": -4.41,
+   "cotLong": 61.29,
+   "cotChange": -4.6,
    "crowdLong": 68,
-   "uCrowd": "2026-11-16T19:45:00Z"
+   "uCrowd": "2026-11-16T19:45:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "spx500": {
    "season": "bull",
    "seasonPct": 1.5,
    "seasonPeriod": "août à octobre",
-   "cotLong": 39,
-   "cotChange": 0.87,
+   "cotLong": 37.65,
+   "cotChange": -1.34,
    "crowdLong": 50,
-   "uCrowd": "2026-11-16T13:44:00Z"
+   "uCrowd": "2026-11-16T13:44:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "us30": {
    "season": "neutral",
@@ -114,107 +117,119 @@
    "season": "bull",
    "seasonPct": 2,
    "seasonPeriod": "août à octobre",
-   "cotLong": 63.67,
-   "cotChange": -0.92,
+   "cotLong": 62.39,
+   "cotChange": -1.27,
    "crowdLong": 29,
-   "uCrowd": "2026-11-16T13:44:00Z"
+   "uCrowd": "2026-11-16T13:44:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "xagusd": {
    "season": "bear",
    "seasonPct": -14.8,
    "seasonPeriod": "août à octobre",
-   "cotLong": 70.14,
-   "cotChange": 1.04,
+   "cotLong": 68.29,
+   "cotChange": -1.85,
    "crowdLong": 90,
-   "uCrowd": "2026-11-13T20:44:00Z"
+   "uCrowd": "2026-11-13T20:44:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "btcusd": {
    "season": "bull",
    "seasonPct": 23.3,
    "seasonPeriod": "août à octobre",
-   "cotLong": 53.84,
-   "cotChange": -0.52,
-   "crowdLong": 83
+   "cotLong": 54.02,
+   "cotChange": 0.19,
+   "crowdLong": 83,
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "usoil": {
    "season": "bull",
    "seasonPct": 30.6,
    "seasonPeriod": "août à octobre",
-   "cotLong": 53.98,
-   "cotChange": -1.51,
+   "cotLong": 54.75,
+   "cotChange": 0.77,
    "crowdLong": 53,
-   "uCrowd": "2026-11-16T13:44:00Z"
+   "uCrowd": "2026-11-16T13:44:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "rut": {
    "season": "bear",
    "seasonPct": -3.8,
    "seasonPeriod": "août à octobre",
-   "cotLong": 45.13,
-   "cotChange": 2.05,
-   "crowdLong": 69
+   "cotLong": 48.7,
+   "cotChange": 3.57,
+   "crowdLong": 69,
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "eurusd": {
    "season": "bear",
    "seasonPct": -3.1,
    "seasonPeriod": "août à octobre",
-   "cotLong": 37.2,
-   "cotChange": -0.91,
+   "cotLong": 38.47,
+   "cotChange": 1.26,
    "crowdLong": 71,
-   "uCrowd": "2026-11-16T13:44:00Z"
+   "uCrowd": "2026-11-16T13:44:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "usdjpy": {
    "season": "bear",
    "seasonPct": -1.1,
    "seasonPeriod": "août à octobre",
-   "cotLong": 35.47,
-   "cotChange": 0.01,
+   "cotLong": 33.65,
+   "cotChange": -1.82,
    "crowdLong": 30,
-   "uCrowd": "2026-11-16T15:47:00Z"
+   "uCrowd": "2026-11-16T15:47:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "usdcad": {
    "season": "neutral",
    "seasonPct": -0.5,
    "seasonPeriod": "août à octobre",
-   "cotLong": 58.69,
-   "cotChange": -4.79,
+   "cotLong": 56.57,
+   "cotChange": -2.12,
    "crowdLong": 35,
-   "uCrowd": "2026-11-16T13:44:00Z"
+   "uCrowd": "2026-11-16T13:44:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "gbpusd": {
    "season": "neutral",
    "seasonPct": -0.6,
    "seasonPeriod": "août à octobre",
-   "cotLong": 34.04,
-   "cotChange": 4.64,
+   "cotLong": 37.08,
+   "cotChange": 3.04,
    "crowdLong": 67,
-   "uCrowd": "2026-11-16T13:44:00Z"
+   "uCrowd": "2026-11-16T13:44:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "audusd": {
    "season": "neutral",
    "seasonPct": 0,
    "seasonPeriod": "août à octobre",
-   "cotLong": 30.48,
-   "cotChange": -0.1,
+   "cotLong": 28.24,
+   "cotChange": -2.25,
    "crowdLong": 66,
-   "uCrowd": "2026-11-16T15:47:00Z"
+   "uCrowd": "2026-11-16T15:47:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "usdchf": {
    "season": "bull",
    "seasonPct": 2.2,
    "seasonPeriod": "août à octobre",
-   "cotLong": 60.98,
-   "cotChange": -2.84,
+   "cotLong": 56.15,
+   "cotChange": -4.83,
    "crowdLong": 70,
-   "uCrowd": "2026-11-16T15:47:00Z"
+   "uCrowd": "2026-11-16T15:47:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   },
   "nzdusd": {
    "season": "bear",
    "seasonPct": -4.1,
    "seasonPeriod": "août à octobre",
-   "cotLong": 19.05,
-   "cotChange": -0.2,
+   "cotLong": 19.62,
+   "cotChange": 0.57,
    "crowdLong": 78,
-   "uCrowd": "2026-11-16T13:44:00Z"
+   "uCrowd": "2026-11-16T13:44:00Z",
+   "uCot": "2026-11-16T20:50:00Z"
   }
  },
  "history": [
@@ -531,11 +546,11 @@
   {
    "date": "2026-11-16",
    "xauusd": {
-    "sent": -1,
+    "sent": 1,
     "macro": -11
    },
    "xagusd": {
-    "sent": 1,
+    "sent": -1,
     "macro": -11
    },
    "nasdaq": {
@@ -543,7 +558,7 @@
     "macro": 4
    },
    "spx500": {
-    "sent": 0,
+    "sent": -2,
     "macro": 5
    },
    "us30": {
@@ -559,19 +574,19 @@
     "macro": 11
    },
    "usoil": {
-    "sent": 0,
+    "sent": 2,
     "macro": 9
    },
    "btcusd": {
-    "sent": -1,
+    "sent": 1,
     "macro": 4
    },
    "eurusd": {
-    "sent": -3,
+    "sent": -1,
     "macro": -11
    },
    "usdjpy": {
-    "sent": 1,
+    "sent": -1,
     "macro": 11
    },
    "usdcad": {
@@ -591,7 +606,7 @@
     "macro": 11
    },
    "nzdusd": {
-    "sent": -3,
+    "sent": -1,
     "macro": -11
    }
   }
