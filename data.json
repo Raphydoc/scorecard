@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T04:48:17Z",
+  "updatedAt": "2026-11-16T05:47:35Z",
   "econ": {
     "values": {
       "adp": {
@@ -915,48 +915,79 @@
   },
   "news": [
     {
-      "date": "2026-11-15",
-      "time": "23:29",
-      "source": "Reuters (Investing.com)",
+      "date": "2026-11-16",
+      "time": "00:01",
+      "source": "CoinDesk",
       "impact": "med",
       "assets": [
-        "usdjpy"
+        "btcusd"
       ],
-      "title": "Takata (BoJ) réclame une hausse rapide des taux vers un niveau « adéquat »",
-      "title_en": "BOJ's Takata calls for swift hike in rates to 'good' position",
-      "summary": "Le membre du conseil de la Banque du Japon Hajime Takata a plaidé lundi pour relever le taux directeur rapidement vers un niveau « adéquat », afin de contrer les risques de hausse des prix, y compris ceux liés au conflit au Moyen-Orient. Il juge que la BoJ doit relever ses taux avec agilité selon les conditions financières au pays et à l'étranger. Un ton plus ferme de la BoJ est un facteur de soutien pour le yen face au dollar.",
-      "summary_en": "Bank of Japan board member Hajime Takata on Monday called for raising the policy rate to a 'good' position at an early stage to prevent upside price risks, including those tied to the Middle East conflict. He said the bank needs to conduct rate hikes nimbly after assessing domestic and overseas conditions. A more hawkish BOJ tone is supportive for the yen against the dollar.",
-      "url": "https://www.investing.com/news/economy-news/bojs-takata-calls-for-swift-hike-in-rates-to-good-position-5028353"
+      "title": "Bitcoin : le put à 60 000 $ devient le plus gros pari sur les options, devant le call à 100 000 $",
+      "title_en": "Bitcoin: $60K put is now the biggest options bet, ahead of the $100K call",
+      "summary": "Sur Deribit, le put bitcoin à 60 000 $ compte maintenant le plus gros intérêt ouvert, environ 900 M$ en notionnel, devant le call à 100 000 $ (environ 867 M$). Selon Paradigm, les traders ont surtout liquidé leurs paris haussiers, et plus de 1 G$ de blocs de puts ont été échangés en deux jours. L'indice de volatilité implicite à 30 jours de Volmex est monté à 57,13 dimanche, un sommet depuis juin, avant de revenir à 44.",
+      "summary_en": "On Deribit, the $60,000 bitcoin put now has the largest open interest, about $900M notional, ahead of the $100,000 call (about $867M). Paradigm says traders mainly unwound bullish bets, with over $1B in put blocks traded over two days. Volmex's 30-day implied volatility index rose to 57.13 on Sunday, its highest since June, before easing to 44.",
+      "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000"
     },
     {
       "date": "2026-11-15",
-      "time": "23:18",
-      "source": "Reuters (Investing.com)",
+      "time": "23:43",
+      "source": "Investing.com",
       "impact": "med",
+      "assets": [
+        "usd",
+        "usdjpy",
+        "eurusd",
+        "audusd"
+      ],
+      "title": "Le dollar se maintient près d'un sommet de 19 mois; le marché voit une hausse de la Fed en décembre à 92 %",
+      "title_en": "Dollar holds near 19-month high; markets price 92% odds of a December Fed hike",
+      "summary": "L'indice du dollar gagne 0,1 % à 103,46, son plus haut depuis avril 2025 après cinq séances de hausse, tandis que l'USD/JPY est stable à 159,63, près du seuil de 160 qui fait craindre une intervention du Japon. L'EUR/USD et l'AUD/USD cèdent 0,1 %. Le CME FedWatch donne 92 % de chances d'une hausse de 25 points de base le 9 décembre, après une inflation américaine d'octobre plus forte que prévu et des propos fermes de responsables de la Fed.",
+      "summary_en": "The dollar index rose 0.1% to 103.46, its highest since April 2025 after five straight gains, while USD/JPY was flat at 159.63, near the 160 level that keeps intervention fears alive. EUR/USD and AUD/USD slipped 0.1%. CME FedWatch shows a 92% chance of a 25-basis-point hike on December 9, after hotter-than-expected U.S. October inflation and hawkish Fed comments.",
+      "url": "https://www.investing.com/news/forex-news/asia-fx-muted-as-dollar-holds-near-19mth-high-yen-steady-after-weak-gdp-5028358"
+    },
+    {
+      "assets": [
+        "usdjpy"
+      ],
+      "date": "2026-11-15",
+      "impact": "med",
+      "source": "Reuters (Investing.com)",
+      "summary": "Le membre du conseil de la Banque du Japon Hajime Takata a plaidé lundi pour relever le taux directeur rapidement vers un niveau « adéquat », afin de contrer les risques de hausse des prix, y compris ceux liés au conflit au Moyen-Orient. Il juge que la BoJ doit relever ses taux avec agilité selon les conditions financières au pays et à l'étranger. Un ton plus ferme de la BoJ est un facteur de soutien pour le yen face au dollar.",
+      "summary_en": "Bank of Japan board member Hajime Takata on Monday called for raising the policy rate to a 'good' position at an early stage to prevent upside price risks, including those tied to the Middle East conflict. He said the bank needs to conduct rate hikes nimbly after assessing domestic and overseas conditions. A more hawkish BOJ tone is supportive for the yen against the dollar.",
+      "time": "23:29",
+      "title": "Takata (BoJ) réclame une hausse rapide des taux vers un niveau « adéquat »",
+      "title_en": "BOJ's Takata calls for swift hike in rates to 'good' position",
+      "url": "https://www.investing.com/news/economy-news/bojs-takata-calls-for-swift-hike-in-rates-to-good-position-5028353"
+    },
+    {
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Washington désignerait Nvidia et d'autres firmes d'IA « champions nationaux », selon le WSJ",
-      "title_en": "Trump administration to name Nvidia, other AI firms as US 'national champions', WSJ reports",
+      "date": "2026-11-15",
+      "impact": "med",
+      "source": "Reuters (Investing.com)",
       "summary": "Selon le Wall Street Journal, l'administration Trump compte désigner plus de deux douzaines de « champions nationaux » de l'IA, dont Nvidia, Amazon, Microsoft, OpenAI et Anthropic, pour les aider à s'étendre à l'étranger et à concurrencer leurs rivaux chinois. Reuters n'a pas pu vérifier l'information. La nouvelle tombe en pleine nervosité sur le secteur de l'IA, à la veille des résultats de Nvidia.",
       "summary_en": "The Wall Street Journal reported the Trump administration plans to designate more than two dozen AI 'national champions', including Nvidia, Amazon, Microsoft, OpenAI and Anthropic, to help them expand overseas and compete with Chinese rivals. Reuters could not immediately verify the report. The news comes amid jitters over the AI trade ahead of Nvidia's results.",
+      "time": "23:18",
+      "title": "Washington désignerait Nvidia et d'autres firmes d'IA « champions nationaux », selon le WSJ",
+      "title_en": "Trump administration to name Nvidia, other AI firms as US 'national champions', WSJ reports",
       "url": "https://www.investing.com/news/stock-market-news/trump-administration-to-name-nvidia-other-ai-firms-as-us-national-champions-wsj-reports-5028349"
     },
     {
-      "date": "2026-11-15",
-      "time": "23:03",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500",
         "usdjpy"
       ],
-      "title": "Les Bourses asiatiques glissent, la nervosité sur l'IA s'accentue avant les résultats de Nvidia",
-      "title_en": "Asia stocks slide as AI jitters deepen ahead of Nvidia results",
+      "date": "2026-11-15",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "L'indice MSCI Asie-Pacifique recule de 1 % et son sous-indice techno de 3,6 %, avec Taïwan (-3,9 %), le KOSPI (-2,8 %) et le Nikkei (-1,7 %) en tête des baisses; SK Hynix perd 5,6 % et TSMC 2,8 %. Les contrats à terme sur le Nasdaq 100 cèdent 0,2 % et ceux du S&P 500 0,1 %, avant les résultats de Nvidia mardi. Le rendement américain à 10 ans a atteint 5,14 % et une hausse de taux de la Fed en décembre est jugée très probable.",
       "summary_en": "The MSCI Asia Pacific index fell 1% and its tech sub-index 3.6%, led by Taiwan (-3.9%), the KOSPI (-2.8%) and the Nikkei (-1.7%); SK Hynix lost 5.6% and TSMC 2.8%. Nasdaq 100 futures were down 0.2% and S&P 500 futures 0.1% ahead of Nvidia's results on Tuesday. The US 10-year yield reached 5.14% and a December Fed hike is seen as highly likely.",
+      "time": "23:03",
+      "title": "Les Bourses asiatiques glissent, la nervosité sur l'IA s'accentue avant les résultats de Nvidia",
+      "title_en": "Asia stocks slide as AI jitters deepen ahead of Nvidia results",
       "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-as-ai-jitters-deepen-ahead-of-nvidia-results-5028343"
     },
     {
@@ -1533,42 +1564,6 @@
       "title": "Le conseil de Nvidia se réunit pour décider du sort de Jensen Huang; l’action perd plus de 8 % après la clôture",
       "title_en": "Nvidia board meets to decide CEO Jensen Huang's future; shares drop more than 8% after hours",
       "url": "https://www.investing.com/news/stock-market-news/nvidia-is-preparing-to-oust-ceo-jensen-huang-wsj-reports-5019991"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-11",
-      "impact": "med",
-      "source": "Yahoo Finance",
-      "summary": "Vers 19 h 25 (HE), les contrats à terme du Nasdaq 100 cèdent 1 % à 28 205,75 points et ceux du S&P 500 0,4 % à 7 608,75, tandis que ceux du Dow sont stables à 52 577. Nvidia chute de plus de 8 % hors séance après un rapport du WSJ voulant que le conseil se prépare à évincer Jensen Huang. Ce recul efface une partie de la remontée de la séance (S&P 500 +1,3 %, Nasdaq +1,6 %).",
-      "summary_en": "Around 7:25 p.m. ET, Nasdaq 100 futures fell 1% to 28,205.75 and S&P 500 futures slipped 0.4% to 7,608.75, while Dow futures were flat at 52,577. Nvidia sank more than 8% after hours on a WSJ report that its board is preparing to oust Jensen Huang. The move erases part of the session's gains (S&P 500 +1.3%, Nasdaq +1.6%).",
-      "time": "19:25",
-      "title": "Les contrats à terme du Nasdaq 100 reculent de 1 % : Nvidia perd plus de 8 % après la clôture",
-      "title_en": "Nasdaq 100 futures drop 1% as Nvidia sinks more than 8% after hours",
-      "url": "https://sg.finance.yahoo.com/news/wall-st-futures-fall-nvidia-011540333.html"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30",
-        "rut",
-        "xauusd",
-        "usoil",
-        "btcusd"
-      ],
-      "date": "2026-11-11",
-      "impact": "med",
-      "source": "Yahoo Finance",
-      "summary": "Le Nasdaq clôture en hausse de 1,60 % à 25 466,19, le S&P 500 de 1,31 % à 7 619,38, le Russell 2000 de 0,88 % à 2 846,26 et le Dow de 0,49 % à 52 486,49. Nvidia termine en hausse de 2,92 % à 173,73 $ malgré une décote de Baird à « neutre », et CoreWeave s’envole d’environ 24 % après avoir relevé ses prévisions de revenus. L’or recule de 0,89 % à 3 994,30 $ et le bitcoin gagne environ 1 % vers 74 300 $; le marché obligataire était fermé pour le Veterans Day.",
-      "summary_en": "The Nasdaq closed up 1.60% at 25,466.19, the S&P 500 up 1.31% at 7,619.38, the Russell 2000 up 0.88% at 2,846.26 and the Dow up 0.49% at 52,486.49. Nvidia ended 2.92% higher at $173.73 despite a Baird downgrade to Neutral, and CoreWeave surged about 24% after raising its revenue outlook. Gold fell 0.89% to $3,994.30 and bitcoin gained about 1% to around $74,300; the bond market was closed for Veterans Day.",
-      "time": "16:00",
-      "title": "Clôture : le Nasdaq gagne 1,60 % et le S&P 500 1,31 % avec Nvidia et CoreWeave; l’or sous 4 000 $",
-      "title_en": "Close: Nasdaq up 1.60%, S&P 500 up 1.31% on Nvidia and CoreWeave; gold below $4,000",
-      "url": "https://finance.yahoo.com/markets/live/stock-market-today-wednesday-november-11-dow-sp-500-nasdaq-nvidia-treasurys-veterans-day-140638547.html"
     }
   ],
   "live": {
