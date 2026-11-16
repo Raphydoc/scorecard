@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-16T20:50:00Z",
+ "updatedAt": "2026-11-16T20:47:57Z",
  "econ": {
   "values": {
    "adp": {
@@ -996,6 +996,36 @@
  "news": [
   {
    "date": "2026-11-16",
+   "time": "15:35",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd",
+    "nasdaq",
+    "usd"
+   ],
+   "title": "Le bitcoin risque de glisser sous 60 000 $ avant les résultats de Nvidia; les marchés voient 92 % de chances d'une hausse de taux de la Fed en décembre",
+   "title_en": "Bitcoin risks falling below $60,000 as Nvidia earnings threaten to deepen crypto sell-off; markets see 92% odds of a December Fed hike",
+   "summary": "Le bitcoin, tombé vers 62 000 $ en fin de semaine, se tient près de 65 000 $; les FNB bitcoin américains ont subi sept séances de sorties nettes (environ 1,9 G$) et la plus grosse position d'options sur Deribit est désormais un put de 900 M$ au prix d'exercice de 60 000 $. Les marchés évaluent à environ 92 % la probabilité d'une hausse de taux de la Fed en décembre, avec un 10 ans à 5,15 %, alors que Nvidia (-4,5 %) publie mardi. Wintermute surveille 62 000 $ puis 60 000 $ et n'exclut pas une pression vers les 50 000 $.",
+   "summary_en": "Bitcoin, which fell to about $62,000 over the weekend, holds near $65,000; U.S. spot bitcoin ETFs saw seven straight sessions of net outflows (about $1.9B), and the largest Deribit options position is now a $900M put at the $60,000 strike. Markets price roughly a 92% chance of a December Fed rate hike, with the 10-year yield at 5.15%, as Nvidia (-4.5%) reports Tuesday. Wintermute watches $62,000 then $60,000 and sees possible pressure into the $50,000s.",
+   "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-risks-falling-below-usd60-000-as-nvidia-earnings-threaten-to-deepen-crypto-sell-off"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "14:13",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Le pétrole brut américain recule vers 85 $ le baril avec la reprise des exportations du Moyen-Orient",
+   "title_en": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
+   "summary": "Le WTI a reculé vers 85 $ le baril lundi, selon CNBC, alors que les exportations du Moyen-Orient se rétablissent. C'est une baisse marquée par rapport aux 86,42 $ observés en matinée, malgré les tensions persistantes autour du détroit d'Ormuz.",
+   "summary_en": "WTI fell toward $85 a barrel on Monday, according to CNBC, as Middle East exports recover. That is a notable drop from the $86.42 seen in the morning, despite lingering tensions around the Strait of Hormuz.",
+   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html"
+  },
+  {
+   "date": "2026-11-16",
    "time": "14:12",
    "source": "Investing.com",
    "impact": "med",
@@ -1588,36 +1618,6 @@
    "title": "UBS voit le Brent à 110 $ d'ici la fin de l'année, faute de coussins d'offre",
    "title_en": "UBS sees Brent hitting $110 as tight supply buffers leave oil vulnerable",
    "url": "https://www.investing.com/news/commodities-news/ubs-sees-brent-hitting-110-as-tight-supply-buffers-leave-oil-vulnerable-5028142"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-15",
-   "impact": "high",
-   "source": "Investing.com",
-   "summary": "Le secrétaire au Trésor Scott Bessent a réclamé dimanche un « remaniement radical » chez Nvidia et un PDG venu de l'extérieur, donnant 10 jours au conseil pour répondre sur le respect des restrictions d'exportation. Selon le Financial Times, Jensen Huang envisage de revenir comme PDG; Colette Kress assure l'intérim et le PDG d'Arm, Rene Haas, a été approché. Les résultats de Nvidia, attendus mardi, pèseront lourd sur le Nasdaq et le S&P 500.",
-   "summary_en": "Treasury Secretary Scott Bessent on Sunday called for a \"dramatic shakeup\" at Nvidia and an outside CEO, giving the board 10 days to answer questions on export-control compliance. According to the Financial Times, Jensen Huang is considering a return as CEO; Colette Kress is interim CEO and Arm CEO Rene Haas has been approached. Nvidia's results, due Tuesday, will weigh heavily on the Nasdaq and S&P 500.",
-   "time": "15:39",
-   "title": "Nvidia : Bessent réclame un PDG externe, Jensen Huang songerait à revenir avant les résultats de mardi",
-   "title_en": "Nvidia: Bessent urges outside CEO as Jensen Huang reportedly weighs comeback ahead of Tuesday results",
-   "url": "https://www.investing.com/news/stock-market-news/jensen-huang-may-return-as-nvidia-chief-executive--report-5028097"
-  },
-  {
-   "assets": [
-    "usoil",
-    "xauusd"
-   ],
-   "date": "2026-11-15",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le vice-ministre iranien des Affaires étrangères affirme que l'Iran « n'attendra pas que les États-Unis attaquent en premier »; les Gardiens de la révolution revendiquent six drones lancés contre un radar américain au Bahreïn. Les Houthis disent avoir frappé deux stations de pompage de l'oléoduc Est-Ouest saoudien, et la coalition dirigée par Riyad a intercepté deux missiles visant la capitale. Ces risques sur l'offre du Golfe soutiennent le pétrole et les valeurs refuges.",
-   "summary_en": "Iran's deputy foreign minister said Iran \"will not wait for the US to attack first\"; the Revolutionary Guards claimed six drones were launched at a U.S. radar in Bahrain. The Houthis said they hit two pumping stations on Saudi Arabia's East-West pipeline, and the Saudi-led coalition intercepted two missiles aimed at Riyadh. These Gulf supply risks support oil and safe havens.",
-   "time": "01:29",
-   "title": "L'Iran dit ne pas attendre une attaque américaine et revendique une frappe au Bahreïn; les Houthis visent Riyad et un oléoduc saoudien",
-   "title_en": "Iran says it will not wait for U.S. to attack first, claims strike on U.S. base in Bahrain as Houthis target Saudi Arabia",
-   "url": "https://www.investing.com/news/economy-news/iran-claims-fresh-strike-on-us-base-as-hormuz-shipping-crisis-deepens-5027672"
   }
  ],
  "live": {
