@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T13:50:00Z",
+  "updatedAt": "2026-11-17T13:48:15Z",
   "econ": {
     "values": {
       "adp": {
@@ -1064,6 +1064,69 @@
   "news": [
     {
       "date": "2026-11-17",
+      "time": "08:34",
+      "source": "CNBC",
+      "impact": "high",
+      "assets": [
+        "usd",
+        "spx500",
+        "nasdaq",
+        "xauusd",
+        "usdjpy",
+        "eurusd"
+      ],
+      "title": "Musalem (Fed de Saint-Louis) : quatre hausses de taux de plus pourraient être nécessaires dans les prochains mois",
+      "title_en": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+      "summary": "Le président de la Fed de Saint-Louis, Alberto Musalem, estime que quatre hausses de taux supplémentaires pourraient être nécessaires au cours des prochains mois (selon le titre de CNBC; article non lisible). Un discours aussi restrictif soutient le dollar et pèse sur l'or et les actions de croissance, déjà fragilisés avant les résultats de Nvidia.",
+      "summary_en": "St. Louis Fed President Alberto Musalem says four more rate hikes may be needed in the coming months (per CNBC's headline; article could not be read). Such hawkish talk supports the dollar and weighs on gold and growth stocks, already under pressure ahead of Nvidia's results.",
+      "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "08:21",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500"
+      ],
+      "title": "Pourquoi Goldman Sachs s'attend à un rebond du S&P 500 en 2027",
+      "title_en": "Why Goldman Sachs expects the S&P 500 to rally in 2027",
+      "summary": "Goldman Sachs s'attend à ce que le S&P 500 progresse en 2027, selon Investing.com (article non lisible; détails de la cible non confirmés). Cette perspective arrive alors que l'indice recule sous le poids de la tech.",
+      "summary_en": "Goldman Sachs expects the S&P 500 to rally in 2027, according to Investing.com (article could not be read; target details unconfirmed). The outlook comes as the index slides under pressure from tech.",
+      "url": "https://www.investing.com/news/stock-market-news/why-goldman-sachs-expects-the-sp-500-to-rally-in-2027-5032933"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "08:05",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "rut"
+      ],
+      "title": "Citadel (Rubner) : la volatilité des actions atteint son plus haut depuis avril 2025",
+      "title_en": "Citadel's Rubner says equity volatility hits highest since April 2025",
+      "summary": "Scott Rubner, de Citadel, affirme que la volatilité sur les actions a atteint son niveau le plus élevé depuis avril 2025 (selon le titre d'Investing.com; article non lisible). Cela témoigne de la nervosité des marchés américains à l'approche des résultats de Nvidia.",
+      "summary_en": "Citadel's Scott Rubner says equity volatility has hit its highest level since April 2025 (per Investing.com's headline; article could not be read). It reflects nervousness in U.S. markets ahead of Nvidia's results.",
+      "url": "https://www.investing.com/news/stock-market-news/citadels-rubner-says-equity-volatility-hits-highest-since-april-2025-93CH-5032831"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "07:32",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "xauusd"
+      ],
+      "title": "Goldman précise quand il s'attend à voir l'or atteindre 5 600 $ l'once",
+      "title_en": "Here's when Goldman expects gold prices to reach $5,600/oz",
+      "summary": "Goldman Sachs maintient une cible de 5 600 $ l'once pour l'or et indique à quel horizon il l'attend (selon le titre d'Investing.com; article non lisible, échéance non confirmée). La prévision contraste avec l'or, récemment tombé près d'un creux de 14 mois.",
+      "summary_en": "Goldman Sachs sees gold reaching $5,600/oz and lays out when it expects that (per Investing.com's headline; article could not be read, timing unconfirmed). The forecast contrasts with gold recently falling near a 14-month low.",
+      "url": "https://www.investing.com/news/commodities-news/heres-when-goldman-expects-gold-prices-to-reach-5600oz-5032707"
+    },
+    {
+      "date": "2026-11-17",
       "time": "07:16",
       "source": "CoinDesk",
       "impact": "med",
@@ -1615,71 +1678,6 @@
       "summary": "Selon Reuters (repris par Investing.com), des signalements d'utilisateurs sur Downdetector indiquaient lundi des problèmes chez JPMorgan Chase, Bank of America, U.S. Bank et Wells Fargo. La cause n'est pas établie; une source citée par CNBC dit que rien n'indique l'implication d'acteurs malveillants chez JPMorgan ni un bogue touchant plusieurs banques à la fois. L'incident survient alors que les grandes banques reculent avec le reste du marché.",
       "summary_en": "According to Reuters (via Investing.com), user reports on Downdetector pointed to problems at JPMorgan Chase, Bank of America, U.S. Bank and Wells Fargo on Monday. The cause is not established; a source cited by CNBC said there was no indication bad actors were involved in JPMorgan's issue nor of a bug hitting several banks at once. The incident comes as big banks fall along with the broader market.",
       "url": "https://www.investing.com/news/stock-market-news/downdetector-reports-outages-at-major-us-banks-5030747"
-    },
-    {
-      "date": "2026-11-16",
-      "time": "13:34",
-      "source": "CoinDesk",
-      "impact": "med",
-      "assets": [
-        "btcusd",
-        "nasdaq",
-        "xauusd",
-        "xagusd"
-      ],
-      "title": "Le bitcoin oscille autour de 64 700 $ après un creux sous 62 000 $; le Nasdaq touche -2,5 % en séance",
-      "title_en": "Bitcoin hovers near $64,700 after a dip below $62,000; Nasdaq hits -2.5% intraday",
-      "summary": "Le bitcoin se négocie autour de 64 600 $ à 64 900 $ après être tombé sous 62 000 $ en fin de semaine, contre environ 68 000 $ vendredi; il recule de 17 % en novembre et aligne une sixième perte hebdomadaire. Le Nasdaq a touché un creux de -2,5 % en séance et Nvidia -4,8 %, alors que le 10 ans américain se tient vers 5,116 %, l'or vers 3 862 $ et l'argent vers 47,50 $.",
-      "summary_en": "Bitcoin trades around $64,600 to $64,900 after falling below $62,000 over the weekend, versus about $68,000 on Friday; it is down 17% in November and on a sixth straight weekly loss. The Nasdaq hit a session low of -2.5% and Nvidia -4.8%, while the U.S. 10-year yield sits near 5.116%, gold near $3,862 and silver near $47.50.",
-      "url": "https://www.coindesk.com/tech/2026/11/16/live-news-bitcoin-posts-sixth-weekly-loss-as-tech-stocks-and-metals-slide"
-    },
-    {
-      "date": "2026-11-16",
-      "time": "13:21",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "title": "Le conseil de Nvidia n'envisage pas le retour de Jensen Huang comme PDG, selon CNBC",
-      "title_en": "Nvidia board not discussing Jensen Huang's return as CEO, CNBC reports",
-      "summary": "Selon une source citée par CNBC, le conseil d'administration de Nvidia ne discute pas d'un retour de Jensen Huang à la tête de l'entreprise, malgré les appels en ce sens de Trump et de dirigeants de la Silicon Valley. Le titre a touché un creux de -4,8 % en séance après la nouvelle (CoinDesk), pesant sur le Nasdaq à la veille des résultats de mardi soir.",
-      "summary_en": "According to a source cited by CNBC, Nvidia's board is not discussing bringing Jensen Huang back as CEO, despite calls from Trump and Silicon Valley leaders. The stock hit a session low of -4.8% after the report (CoinDesk), weighing on the Nasdaq ahead of Tuesday's after-close results.",
-      "url": "https://www.investing.com/news/stock-market-news/nvidia-board-not-discussing-jensen-huangs-return-as-ceo-cnbc-reports-5030688"
-    },
-    {
-      "date": "2026-11-16",
-      "time": "13:16",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "title": "Altimeter investira 5 G$ dans l'IPO d'Anthropic, prévue jeudi au Nasdaq",
-      "title_en": "Altimeter Capital to invest $5 billion in Anthropic IPO, set for Nasdaq on Thursday",
-      "summary": "Brad Gerstner (Altimeter) dit sur CNBC qu'il investira 5 G$ dans l'IPO d'Anthropic, cinq fois son plus gros engagement précédent. Anthropic compte s'inscrire au Nasdaq jeudi en offrant 825 millions d'actions à 70-78 $ chacune, pour une valorisation visée d'environ 1 400 G$; AMD, Broadcom, Google, Micron, Microsoft, Nvidia et TSMC y investissent 26 G$ au total — un test majeur pour l'appétit envers l'IA.",
-      "summary_en": "Altimeter's Brad Gerstner told CNBC he will invest $5 billion in Anthropic's IPO, five times his largest previous commitment. Anthropic plans to list on Nasdaq on Thursday, offering 825 million shares at $70-$78 each for a targeted valuation of about $1.4 trillion; AMD, Broadcom, Google, Micron, Microsoft, Nvidia and TSMC are investing $26 billion combined — a key test of AI appetite.",
-      "url": "https://www.investing.com/news/stock-market-news/altimeter-capital-to-invest-5-billion-in-anthropic-ipo--report-5030684"
-    },
-    {
-      "date": "2026-11-16",
-      "time": "12:11",
-      "source": "Investing.com",
-      "impact": "high",
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30",
-        "usoil",
-        "xagusd"
-      ],
-      "title": "Midi : le Nasdaq perd 1,7 % et le S&P 500 1,2 %, les puces plombées avant les résultats de Nvidia et l'IPO d'Anthropic",
-      "title_en": "Midday: Nasdaq falls 1.7%, S&P 500 1.2% as chips slide ahead of Nvidia earnings and Anthropic IPO",
-      "summary": "À midi (HE), le Nasdaq recule de 435 points (-1,7 %), le S&P 500 de 94 points (-1,2 %) et le Dow de 410 points (-0,8 %); Micron, AMD et Intel perdent de 5 % à 7 % et Nvidia environ 3 % avant ses résultats de mardi soir. Anthropic pourrait lever jusqu'à 90,4 G$ cette semaine selon Bloomberg, tandis que le WTI glisse d'environ 2,7 % sous 85 $ et que le marché anticipe au moins une hausse de 25 pb de la Fed en décembre (CME FedWatch).",
-      "summary_en": "At noon ET, the Nasdaq was down 435 points (-1.7%), the S&P 500 down 94 points (-1.2%) and the Dow down 410 points (-0.8%); Micron, AMD and Intel lost 5% to 7% and Nvidia about 3% ahead of its Tuesday after-close results. Anthropic could raise as much as $90.4 billion this week per Bloomberg, while WTI slipped about 2.7% below $85 and markets price at least a 25 bp Fed hike in December (CME FedWatch).",
-      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-little-changed-as-investors-await-nvidia-earnings-5028292"
     }
   ],
   "live": {
