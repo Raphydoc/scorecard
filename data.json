@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T15:45:00Z",
+ "updatedAt": "2026-11-17T15:48:09Z",
  "econ": {
   "values": {
    "adp": {
@@ -1064,6 +1064,37 @@
  "news": [
   {
    "date": "2026-11-17",
+   "time": "09:59",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "usd"
+   ],
+   "title": "Le pétrole rebondit : le WTI gagne 1,6 % à 87,10 $, entre tensions au Moyen-Orient et reprise des exportations du Golfe",
+   "title_en": "Oil turns higher: WTI adds 1.6% to $87.10 amid Middle East tensions and improving Gulf exports",
+   "summary": "Vers 9 h 48 (HE), le Brent de janvier avançait de 1,5 % à 93,84 $ et le WTI de 1,6 % à 87,10 $, après une chute de plus de 14 % en un mois. L'Iran a présenté un plan de deux jours pour rouvrir le détroit d'Ormuz, mais au moins quatre pétroliers y ont été attaqués depuis vendredi. L'AIE prévoit une offre mondiale d'environ 105 M b/j au quatrième trimestre, soit 1,7 M b/j de plus que la demande, le premier surplus depuis le début de la guerre.",
+   "summary_en": "Around 9:48 ET, January Brent rose 1.5% to $93.84 and WTI 1.6% to $87.10, after falling more than 14% over the past month. Iran presented a two-day plan to reopen the Strait of Hormuz, but at least four tankers have been attacked there since Friday. The IEA sees global supply near 105 million bpd in the December quarter, 1.7 million bpd above demand, the first surplus since the war began.",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "09:37",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "Ouverture hésitante : le Nasdaq +0,07 %, le Dow −0,43 % à 51 387, Nvidia au centre de l'attention",
+   "title_en": "Nasdaq opens higher in choppy trading; Dow down 0.43% as Nvidia earnings loom",
+   "summary": "À l'ouverture, le Dow Jones reculait de 221,2 points (−0,43 %) à 51 386,98, le S&P 500 de 0,08 % à 7 411,02, tandis que le Nasdaq gagnait 0,07 % à 24 528,06. La séance s'annonce volatile, les investisseurs attendant les résultats de Nvidia, test majeur pour le thème de l'IA après la récente débandade de la tech.",
+   "summary_en": "At the open, the Dow fell 221.2 points (0.43%) to 51,386.98 and the S&P 500 slipped 0.08% to 7,411.02, while the Nasdaq rose 0.07% to 24,528.06. Trading was volatile as investors await Nvidia's earnings, a key test for the AI trade after the recent tech rout.",
+   "url": "https://www.investing.com/news/stock-market-news/nasdaq-opens-higher-in-choppy-trading-nvidia-earnings-in-focus-5033341"
+  },
+  {
+   "date": "2026-11-17",
    "time": "09:07",
    "source": "Investing.com",
    "impact": "med",
@@ -1145,6 +1176,21 @@
    "summary": "Scott Rubner, de Citadel, affirme que la volatilité sur les actions a atteint son niveau le plus élevé depuis avril 2025 (selon le titre d'Investing.com; article non lisible). Cela témoigne de la nervosité des marchés américains à l'approche des résultats de Nvidia.",
    "summary_en": "Citadel's Scott Rubner says equity volatility has hit its highest level since April 2025 (per Investing.com's headline; article could not be read). It reflects nervousness in U.S. markets ahead of Nvidia's results.",
    "url": "https://www.investing.com/news/stock-market-news/citadels-rubner-says-equity-volatility-hits-highest-since-april-2025-93CH-5032831"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "07:50",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "xauusd",
+    "usd"
+   ],
+   "title": "L'or se stabilise à 3 855 $ après un creux de 14 mois; la Fed et la tech pèsent toujours",
+   "title_en": "Gold stabilizes near $3,855 after hitting over one-year low",
+   "summary": "Vers 7 h 33 (HE), l'or au comptant était à peu près inchangé à 3 855,12 $ l'once et les contrats à terme gagnaient 0,1 % à 3 858,15 $, le DXY avançant de 0,1 % à 103,60. Beth Hammack (Fed de Cleveland) privilégie des hausses de taux graduelles, mais n'exclut pas des ajustements plus importants si l'inflation accélère, ce qui pèse sur le métal sans rendement. Le marché attend le procès-verbal de la réunion d'octobre de la Fed mercredi; ING s'attend à ce que l'or reste volatil.",
+   "summary_en": "Around 7:33 ET, spot gold was mostly unchanged at $3,855.12/oz and futures rose 0.1% to $3,858.15, with the dollar index up 0.1% at 103.60. Cleveland Fed's Beth Hammack favored gradual rate hikes but said larger moves could be needed if inflation accelerates, weighing on non-yielding bullion. Markets await Fed October minutes on Wednesday; ING expects gold to stay volatile.",
+   "url": "https://www.investing.com/news/commodities-news/gold-hovers-near-14month-low-as-fed-hike-bets-and-tech-selloff-weigh-5031431"
   },
   {
    "date": "2026-11-17",
@@ -1525,22 +1571,6 @@
   },
   {
    "date": "2026-11-16",
-   "time": "20:39",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "xauusd",
-    "xagusd",
-    "usd"
-   ],
-   "title": "L'or près d'un creux de 14 mois à 3 845 $ : paris sur une hausse de taux de la Fed et recul des technos",
-   "title_en": "Gold hovers near 14-month low as Fed hike bets and tech selloff weigh",
-   "summary": "L'or au comptant reculait de 0,3 % à 3 845,02 $ l'once, après sa plus faible clôture depuis septembre 2025; l'argent perdait 0,2 % à 46,92 $ et le DXY gagnait 0,1 % à 103,68. Les investisseurs misent davantage sur un resserrement de la Fed : Beth Hammack (Fed de Cleveland) favorise des hausses graduelles, mais n'exclut pas des hausses plus fortes si l'inflation s'accélère. Le procès-verbal de la réunion d'octobre de la Fed sort mercredi.",
-   "summary_en": "Spot gold fell 0.3% to $3,845.02/oz after its weakest close since September 2025; silver slipped 0.2% to $46.92 and the dollar index rose 0.1% to 103.68. Investors raised bets on further Fed tightening, with Cleveland Fed's Beth Hammack favoring gradual hikes but open to larger moves if inflation accelerates. Minutes of the Fed's October meeting are due Wednesday.",
-   "url": "https://www.investing.com/news/commodities-news/gold-hovers-near-14month-low-as-fed-hike-bets-and-tech-selloff-weigh-5031431"
-  },
-  {
-   "date": "2026-11-16",
    "time": "20:22",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1652,37 +1682,6 @@
    "summary": "Le Dow Jones a perdu 737 points (-1,41 %) à 51 610 et le S&P 500 a cédé 1,91 % à 7 417, tandis que le Nasdaq a reculé de 2,49 %, plombé par Micron (-7,62 %), Intel (-7,07 %) et Nvidia (-4,12 %) avant ses résultats. Le VIX a grimpé à 22,88, le WTI a chuté de 3,86 % à 83,92 $ et l'or (décembre) de 0,77 % à 3 856 $, alors que l'indice du dollar a gagné 0,20 % à 103,53.",
    "summary_en": "The Dow lost 737 points (-1.41%) to 51,610 and the S&P 500 fell 1.91% to 7,417, while the Nasdaq dropped 2.49%, dragged by Micron (-7.62%), Intel (-7.07%) and Nvidia (-4.12%) ahead of its earnings. The VIX rose to 22.88, WTI sank 3.86% to $83.92 and December gold fell 0.77% to $3,856, while the dollar index gained 0.20% to 103.53.",
    "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-141-5030993"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "15:43",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
-   "assets": [
-    "usoil",
-    "us30"
-   ],
-   "title": "Chevron achèterait un producteur pétrolier soutenu par Blackstone pour 5 G$, selon le FT",
-   "title_en": "Chevron to buy Blackstone-backed oil producer for $5 billion, FT reports",
-   "summary": "Selon le Financial Times, repris par Reuters, Chevron s'apprête à acquérir un producteur de pétrole soutenu par Blackstone pour environ 5 milliards $. L'article n'a pas pu être lu en entier; la transaction survient alors que le WTI recule sous 84 $.",
-   "summary_en": "According to the Financial Times, as reported by Reuters, Chevron is set to acquire a Blackstone-backed oil producer for about $5 billion. The full article could not be read; the deal comes as WTI slips below $84.",
-   "url": "https://www.investing.com/news/stock-market-news/chevron-to-buy-blackstonebacked-oil-producer-for-5-billion-ft-reports-5030814"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "15:35",
-   "source": "CoinDesk",
-   "impact": "med",
-   "assets": [
-    "btcusd",
-    "nasdaq",
-    "usd"
-   ],
-   "title": "Le bitcoin risque de glisser sous 60 000 $ avant les résultats de Nvidia; les marchés voient 92 % de chances d'une hausse de taux de la Fed en décembre",
-   "title_en": "Bitcoin risks falling below $60,000 as Nvidia earnings threaten to deepen crypto sell-off; markets see 92% odds of a December Fed hike",
-   "summary": "Le bitcoin, tombé vers 62 000 $ en fin de semaine, se tient près de 65 000 $; les FNB bitcoin américains ont subi sept séances de sorties nettes (environ 1,9 G$) et la plus grosse position d'options sur Deribit est désormais un put de 900 M$ au prix d'exercice de 60 000 $. Les marchés évaluent à environ 92 % la probabilité d'une hausse de taux de la Fed en décembre, avec un 10 ans à 5,15 %, alors que Nvidia (-4,5 %) publie mardi. Wintermute surveille 62 000 $ puis 60 000 $ et n'exclut pas une pression vers les 50 000 $.",
-   "summary_en": "Bitcoin, which fell to about $62,000 over the weekend, holds near $65,000; U.S. spot bitcoin ETFs saw seven straight sessions of net outflows (about $1.9B), and the largest Deribit options position is now a $900M put at the $60,000 strike. Markets price roughly a 92% chance of a December Fed rate hike, with the 10-year yield at 5.15%, as Nvidia (-4.5%) reports Tuesday. Wintermute watches $62,000 then $60,000 and sees possible pressure into the $50,000s.",
-   "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-risks-falling-below-usd60-000-as-nvidia-earnings-threaten-to-deepen-crypto-sell-off"
   }
  ],
  "live": {
