@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T00:47:39Z",
+  "updatedAt": "2026-11-17T01:47:36Z",
   "econ": {
     "values": {
       "adp": {
@@ -996,6 +996,37 @@
   "news": [
     {
       "date": "2026-11-16",
+      "time": "20:04",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usoil",
+        "usd"
+      ],
+      "title": "Le pétrole recule encore : le WTI perd 0,4 % à 85,37 $, la crainte d'une surabondance pèse",
+      "title_en": "Oil prices fall further on supply glut concerns; strong dollar weighs",
+      "summary": "Le WTI recule de 0,4 % à 85,37 $ le baril en début de séance asiatique, après une chute de plus de 4 % la veille. L'AIE prévoit désormais une offre mondiale d'environ 105 millions de barils par jour au 4e trimestre, soit 1,7 million de plus que la demande, ce qui éclipse les tensions à Ormuz. Le dollar, à un sommet de 19 mois avec les paris d'une hausse de la Fed en décembre, pèse aussi sur les matières premières.",
+      "summary_en": "WTI fell 0.4% to $85.37 a barrel in early Asian trade after dropping more than 4% the previous session. The IEA now sees Q4 global supply at about 105 million bpd, 1.7 million bpd above expected demand, overshadowing Hormuz tensions. A dollar at a 19-month high on bets of a December Fed hike also weighs on commodities.",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "19:34",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30"
+      ],
+      "title": "Contrats à terme stables avant les résultats de Nvidia : S&P 500 +0,1 %, Nasdaq 100 +0,2 %",
+      "title_en": "Wall Street futures muted as Nvidia earnings loom amid AI jitters",
+      "summary": "Les contrats à terme du S&P 500 gagnent 0,1 % à 7 448, ceux du Nasdaq 100 0,2 % à 27 330,75 et ceux du Dow sont stables, après une séance où l'indice des semi-conducteurs a chuté de 5,3 %. Nvidia, en baisse de près de 24 % en novembre, publie ses résultats mardi; les analystes attendent des revenus d'environ 109 G$. Le procès-verbal de la Fed mercredi et l'IPO d'Anthropic cette semaine restent aussi au menu.",
+      "summary_en": "S&P 500 futures rose 0.1% to 7,448, Nasdaq 100 futures 0.2% to 27,330.75 and Dow futures were flat, after a session in which the Philadelphia Semiconductor Index fell 5.3%. Nvidia, down nearly 24% in November, reports Tuesday; analysts expect revenue of about $109 billion. Fed minutes on Wednesday and Anthropic's IPO this week are also in focus.",
+      "url": "https://ca.investing.com/news/stock-market-news/wall-street-futures-muted-as-nvidia-earnings-loom-amid-ai-jitters-4962479"
+    },
+    {
+      "date": "2026-11-16",
       "time": "19:06",
       "source": "Investing.com (CNN)",
       "impact": "med",
@@ -1587,37 +1618,6 @@
       "title": "Takata (BoJ) réclame une hausse rapide des taux vers un niveau « adéquat »",
       "title_en": "BOJ's Takata calls for swift hike in rates to 'good' position",
       "url": "https://www.investing.com/news/economy-news/bojs-takata-calls-for-swift-hike-in-rates-to-good-position-5028353"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-15",
-      "impact": "med",
-      "source": "Reuters (Investing.com)",
-      "summary": "Selon le Wall Street Journal, l'administration Trump compte désigner plus de deux douzaines de « champions nationaux » de l'IA, dont Nvidia, Amazon, Microsoft, OpenAI et Anthropic, pour les aider à s'étendre à l'étranger et à concurrencer leurs rivaux chinois. Reuters n'a pas pu vérifier l'information. La nouvelle tombe en pleine nervosité sur le secteur de l'IA, à la veille des résultats de Nvidia.",
-      "summary_en": "The Wall Street Journal reported the Trump administration plans to designate more than two dozen AI 'national champions', including Nvidia, Amazon, Microsoft, OpenAI and Anthropic, to help them expand overseas and compete with Chinese rivals. Reuters could not immediately verify the report. The news comes amid jitters over the AI trade ahead of Nvidia's results.",
-      "time": "23:18",
-      "title": "Washington désignerait Nvidia et d'autres firmes d'IA « champions nationaux », selon le WSJ",
-      "title_en": "Trump administration to name Nvidia, other AI firms as US 'national champions', WSJ reports",
-      "url": "https://www.investing.com/news/stock-market-news/trump-administration-to-name-nvidia-other-ai-firms-as-us-national-champions-wsj-reports-5028349"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "usdjpy"
-      ],
-      "date": "2026-11-15",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "L'indice MSCI Asie-Pacifique recule de 1 % et son sous-indice techno de 3,6 %, avec Taïwan (-3,9 %), le KOSPI (-2,8 %) et le Nikkei (-1,7 %) en tête des baisses; SK Hynix perd 5,6 % et TSMC 2,8 %. Les contrats à terme sur le Nasdaq 100 cèdent 0,2 % et ceux du S&P 500 0,1 %, avant les résultats de Nvidia mardi. Le rendement américain à 10 ans a atteint 5,14 % et une hausse de taux de la Fed en décembre est jugée très probable.",
-      "summary_en": "The MSCI Asia Pacific index fell 1% and its tech sub-index 3.6%, led by Taiwan (-3.9%), the KOSPI (-2.8%) and the Nikkei (-1.7%); SK Hynix lost 5.6% and TSMC 2.8%. Nasdaq 100 futures were down 0.2% and S&P 500 futures 0.1% ahead of Nvidia's results on Tuesday. The US 10-year yield reached 5.14% and a December Fed hike is seen as highly likely.",
-      "time": "23:03",
-      "title": "Les Bourses asiatiques glissent, la nervosité sur l'IA s'accentue avant les résultats de Nvidia",
-      "title_en": "Asia stocks slide as AI jitters deepen ahead of Nvidia results",
-      "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-as-ai-jitters-deepen-ahead-of-nvidia-results-5028343"
     }
   ],
   "live": {
