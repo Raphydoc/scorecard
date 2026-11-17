@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T20:47:50Z",
+ "updatedAt": "2026-11-17T21:36:44Z",
  "econ": {
   "values": {
    "adp": {
@@ -837,15 +837,15 @@
     "us30": 1
    },
    "date": "2026-11-17",
-   "epsA": null,
-   "epsF": 2.49,
+   "epsA": 2.68,
+   "epsF": 2.48,
    "id": null,
    "kind": "earn",
-   "move": null,
+   "move": 2.2,
    "name": "Résultats Nvidia (NVDA)",
    "note": "Après la clôture",
-   "revA": null,
-   "revF": 109,
+   "revA": 115.8,
+   "revF": 109.1,
    "time": "16:20"
   },
   {
