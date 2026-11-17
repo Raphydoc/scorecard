@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T18:47:31Z",
+ "updatedAt": "2026-11-17T19:41:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -130,8 +130,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 68.29,
    "cotChange": -1.85,
-   "crowdLong": 90,
-   "uCrowd": "2026-11-13T20:44:00Z",
+   "crowdLong": 89,
+   "uCrowd": "2026-11-17T19:41:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "btcusd": {
@@ -178,8 +178,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 33.65,
    "cotChange": -1.82,
-   "crowdLong": 30,
-   "uCrowd": "2026-11-16T15:47:00Z",
+   "crowdLong": 31,
+   "uCrowd": "2026-11-17T19:41:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "usdcad": {
@@ -218,8 +218,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 56.15,
    "cotChange": -4.83,
-   "crowdLong": 70,
-   "uCrowd": "2026-11-16T15:47:00Z",
+   "crowdLong": 69,
+   "uCrowd": "2026-11-17T19:41:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "nzdusd": {
