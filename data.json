@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T03:47:23Z",
+  "updatedAt": "2026-11-17T04:47:21Z",
   "econ": {
     "values": {
       "adp": {
@@ -996,6 +996,23 @@
   "news": [
     {
       "date": "2026-11-16",
+      "time": "23:29",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "usdjpy",
+        "audusd",
+        "eurusd"
+      ],
+      "title": "Le dollar à un sommet de 19 mois : le DXY à 103,66, le yen à 159,20 près du seuil d'intervention",
+      "title_en": "Dollar hits 19-month peak: DXY at 103.66, yen at 159.20 near intervention zone",
+      "summary": "L'indice du dollar américain a progressé pour une sixième séance d'affilée à 103,66, son plus haut depuis le 2 avril 2025, porté par une inflation américaine plus chaude que prévu et des signaux restrictifs de la Fed; selon le FedWatch du CME, une hausse de taux en décembre est jugée quasi certaine (probabilité d'une hausse de 50 points de base ramenée à environ 5 %). L'USD/JPY recule de 0,2 % à 159,20, près du seuil de 160 vu comme déclencheur possible d'une intervention japonaise, tandis que l'AUD/USD gagne 0,1 % à 0,6741 $ après cinq baisses. Les ventes au détail américaines et les résultats de Nvidia sont les prochains catalyseurs.",
+      "summary_en": "The US Dollar Index rose for a sixth straight session to 103.66, its highest since April 2, 2025, driven by hotter-than-expected US inflation and hawkish Fed signals; CME FedWatch shows a December hike as virtually certain (odds of a 50 bp move down to about 5%). USD/JPY eased 0.2% to 159.20, near the 160 level seen as a possible trigger for Japanese intervention, while AUD/USD rose 0.1% to $0.6741 after five declines. US retail sales and Nvidia's earnings are the next catalysts.",
+      "url": "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-hits-19mth-peak-on-fed-tightening-bets-5031600"
+    },
+    {
+      "date": "2026-11-16",
       "time": "21:26",
       "source": "Investing.com",
       "impact": "med",
@@ -1607,21 +1624,6 @@
       "title": "Mer du Nord : troisième vague de grève chez Apache, la production arrêtée selon Unite",
       "title_en": "Apache North Sea workers stage third strike round, Unite says production halted",
       "url": "https://www.investing.com/news/stock-market-news/apache-north-sea-workers-stage-third-strike-round-unite-says-production-halted-5028427"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-16",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "L'indice Taiwan Weighted a clôturé en baisse de 5,74 % lundi, et le titre de TSMC a fortement reculé (lecture de l'article bloquée; résumé tiré des titres d'Investing.com). Ce recul s'ajoute à la nervosité sur l'IA avant les résultats de Nvidia et pèse sur le sentiment pour les semi-conducteurs, le Nasdaq et le S&P 500.",
-      "summary_en": "The Taiwan Weighted index closed down 5.74% on Monday and TSMC shares tumbled (article could not be read; summary based on Investing.com headlines). The drop adds to AI jitters ahead of Nvidia's results and weighs on sentiment for chipmakers, the Nasdaq and the S&P 500.",
-      "time": "01:00",
-      "title": "Taïwan : le Taiwan Weighted chute de 5,74 % à la clôture, TSMC dégringole",
-      "title_en": "Taiwan stocks: Taiwan Weighted down 5.74% at close as TSMC tumbles",
-      "url": "https://www.investing.com/news/stock-market-news/taiwan-stocks-lower-at-close-of-trade-taiwan-weighted-down-574-5028408"
     }
   ],
   "live": {
