@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T17:11:03Z",
+ "updatedAt": "2026-11-17T17:52:52Z",
  "econ": {
   "values": {
    "adp": {
@@ -1064,6 +1064,53 @@
  "news": [
   {
    "date": "2026-11-17",
+   "time": "12:23",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "eurusd",
+    "gbpusd",
+    "nasdaq"
+   ],
+   "title": "L'Europe chute : le STOXX 600 perd 1,8 % sous les nouvelles restrictions américaines sur les puces; le DAX cède 2 %",
+   "title_en": "Europe slides: STOXX 600 down 1.8% on fresh U.S. chip curbs; DAX down 2%",
+   "summary": "Le STOXX 600 a reculé de 1,8 % mardi, à un creux d'une semaine; le DAX a perdu 2 %, le CAC 40 1,6 % et le FTSE 100 1,8 %. Washington a restreint les envois de puces d'IA avancées vers des centres de données tiers en Thaïlande et en Malaisie, utilisés selon les régulateurs par des entreprises chinoises; Deutsche Bank a chuté de 5,2 % et Nokia de plus de 4 % après que Nvidia a réduit sa participation de 56 %. L'aversion au risque en Europe pèse sur l'euro et la livre.",
+   "summary_en": "The STOXX 600 fell 1.8% on Tuesday to a one-week low; the DAX lost 2%, the CAC 40 1.6% and the FTSE 100 1.8%. Washington restricted shipments of advanced AI chips to third-party data centers in Thailand and Malaysia, which regulators say Chinese firms use; Deutsche Bank fell 5.2% and Nokia more than 4% after Nvidia cut its stake by 56%. Risk aversion in Europe weighs on the euro and sterling.",
+   "url": "https://www.investing.com/news/stock-market-news/european-shares-slip-on-fresh-us-chip-curbs-5031847"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "12:00",
+   "source": "Federal Reserve",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "btcusd"
+   ],
+   "title": "Waller (Fed) : la monnaie de banque centrale doit rester au cœur de la tokenisation",
+   "title_en": "Waller (Fed): central bank money must stay at the foundation of tokenization",
+   "summary": "Le gouverneur Christopher Waller a affirmé que la monnaie de banque centrale n'a pas à servir à chaque transaction, mais que « sa présence à la base du système est essentielle », alors que stablecoins, dépôts tokenisés et fonds monétaires tokenisés se multiplient. Il prévoit la coexistence de plusieurs modèles et n'a fait aucun commentaire sur la politique monétaire, un point à noter pour le dollar et la crypto.",
+   "summary_en": "Governor Christopher Waller said central bank money need not be used in every transaction, but \"its presence at the foundation of the system is essential,\" as stablecoins, tokenized deposits and tokenized money market funds multiply. He expects several models to coexist and made no monetary policy remarks, a point worth noting for the dollar and crypto.",
+   "url": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "11:26",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "Wall Street recule : le Nasdaq et le S&P 500 perdent 1,1 %, le Dow 1,4 % avant les résultats de Nvidia",
+   "title_en": "Wall Street falls: Nasdaq and S&P 500 down 1.1%, Dow down 1.4% ahead of Nvidia results",
+   "summary": "Vers 11 h 16, le Nasdaq cédait 1,1 % à 24 226,79, le S&P 500 1,1 % à 7 335,02 et le Dow 1,4 % à 50 877,52, la prudence dominant avant les résultats de Nvidia, après une séance de lundi où l'indice des semi-conducteurs de Philadelphie avait chuté de 5,3 %. Les nouvelles restrictions américaines sur l'accès à distance des entreprises chinoises aux puces avancées et l'IPO d'Anthropic, attendue cette semaine, pèsent aussi; les ventes au détail d'octobre (+0,2 %) ont battu la prévision de 0,1 %.",
+   "summary_en": "Around 11:16 a.m., the Nasdaq was down 1.1% at 24,226.79, the S&P 500 down 1.1% at 7,335.02 and the Dow down 1.4% at 50,877.52 as caution prevailed ahead of Nvidia's results, following Monday's session in which the Philadelphia Semiconductor Index fell 5.3%. New U.S. curbs on Chinese firms' remote access to advanced chips and Anthropic's IPO, expected this week, also weigh; October retail sales (+0.2%) beat the 0.1% estimate.",
+   "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-muted-as-nvidia-earnings-loom-amid-ai-jitters-5031353"
+  },
+  {
+   "date": "2026-11-17",
    "time": "11:08",
    "source": "Investing.com",
    "impact": "med",
@@ -1121,22 +1168,6 @@
    "summary": "Vers 9 h 48 (HE), le Brent de janvier avançait de 1,5 % à 93,84 $ et le WTI de 1,6 % à 87,10 $, après une chute de plus de 14 % en un mois. L'Iran a présenté un plan de deux jours pour rouvrir le détroit d'Ormuz, mais au moins quatre pétroliers y ont été attaqués depuis vendredi. L'AIE prévoit une offre mondiale d'environ 105 M b/j au quatrième trimestre, soit 1,7 M b/j de plus que la demande, le premier surplus depuis le début de la guerre.",
    "summary_en": "Around 9:48 ET, January Brent rose 1.5% to $93.84 and WTI 1.6% to $87.10, after falling more than 14% over the past month. Iran presented a two-day plan to reopen the Strait of Hormuz, but at least four tankers have been attacked there since Friday. The IEA sees global supply near 105 million bpd in the December quarter, 1.7 million bpd above demand, the first surplus since the war began.",
    "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393"
-  },
-  {
-   "date": "2026-11-17",
-   "time": "09:37",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "title": "Ouverture hésitante : le Nasdaq +0,07 %, le Dow −0,43 % à 51 387, Nvidia au centre de l'attention",
-   "title_en": "Nasdaq opens higher in choppy trading; Dow down 0.43% as Nvidia earnings loom",
-   "summary": "À l'ouverture, le Dow Jones reculait de 221,2 points (−0,43 %) à 51 386,98, le S&P 500 de 0,08 % à 7 411,02, tandis que le Nasdaq gagnait 0,07 % à 24 528,06. La séance s'annonce volatile, les investisseurs attendant les résultats de Nvidia, test majeur pour le thème de l'IA après la récente débandade de la tech.",
-   "summary_en": "At the open, the Dow fell 221.2 points (0.43%) to 51,386.98 and the S&P 500 slipped 0.08% to 7,411.02, while the Nasdaq rose 0.07% to 24,528.06. Trading was volatile as investors await Nvidia's earnings, a key test for the AI trade after the recent tech rout.",
-   "url": "https://www.investing.com/news/stock-market-news/nasdaq-opens-higher-in-choppy-trading-nvidia-earnings-in-focus-5033341"
   },
   {
    "date": "2026-11-17",
@@ -1451,21 +1482,6 @@
   },
   {
    "date": "2026-11-17",
-   "time": "03:18",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
-   "assets": [
-    "nasdaq",
-    "eurusd"
-   ],
-   "title": "L'Europe recule : le STOXX 600 perd 0,64 % sous les nouvelles restrictions américaines sur les puces; Deutsche Bank chute de 5 %",
-   "title_en": "European shares ease as tech stocks, Deutsche Bank slide; STOXX 600 down 0.64%",
-   "summary": "Le STOXX 600 recule de 0,64 % à 658,07 points en début de séance, après ses records de la semaine dernière; ASML perd 1,32 % et Infineon environ 0,5 % après les nouvelles limites de Washington sur l'accès de la Chine aux puces d'IA. Deutsche Bank chute de 5,04 % après des reportages fondés sur des fuites. Les investisseurs attendent les résultats de Nvidia et l'entrée en Bourse d'Anthropic cette semaine.",
-   "summary_en": "The STOXX 600 fell 0.64% to 658.07 in early trade after last week's record highs; ASML lost 1.32% and Infineon about 0.5% after Washington's new limits on China's access to AI chips. Deutsche Bank slid 5.04% on reports based on leaked documents. Investors await Nvidia's earnings and Anthropic's market debut this week.",
-   "url": "https://www.investing.com/news/stock-market-news/european-shares-ease-as-tech-stocks-deutsche-bank-slide-5031958"
-  },
-  {
-   "date": "2026-11-17",
    "time": "02:47",
    "source": "Investing.com",
    "impact": "med",
@@ -1662,22 +1678,6 @@
    "summary": "Le S&P/TSX a clôturé en baisse de 383,77 points (-1,06 %) à 35 722,13. L'inflation canadienne d'octobre est restée à 3,1 % sur un an (3,2 % attendu), avec +0,2 % sur un mois (+0,3 % prévu), et le gouverneur Tiff Macklem quittera la Banque du Canada à la fin de son mandat en juin 2027. Une inflation un peu plus faible que prévu et la course à sa succession (Jean Boivin, Jean-François Perrault, Carolyn Wilkins évoqués) pèsent sur les attentes de taux et le huard face au dollar US.",
    "summary_en": "The S&P/TSX closed down 383.77 points (-1.06%) at 35,722.13. Canadian October inflation held at 3.1% year over year (3.2% expected), with +0.2% month over month (+0.3% forecast), and Governor Tiff Macklem will leave the Bank of Canada when his term ends in June 2027. Slightly softer-than-expected inflation and the succession race (Jean Boivin, Jean-François Perrault, Carolyn Wilkins mentioned) weigh on rate expectations and the loonie versus the U.S. dollar.",
    "url": "https://ca.investing.com/news/stock-market-news/tsx-futures-drop-as-nvidia-results-anthropic-ipo-loom-large-canadian-cpi-ahead-4960549"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "16:56",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "rut"
-   ],
-   "title": "Avant Nvidia, les options prévoient un mouvement de 7,8 %; le VIX bondit de 18,55 % à 22,88",
-   "title_en": "Ahead of Nvidia, options price a 7.8% move; VIX jumps 18.55% to 22.88",
-   "summary": "Nvidia, qui a clôturé à 156,14 $ (-4,12 %), publie ses résultats après la clôture de mardi; les options anticipent un mouvement d'environ 7,8 %, soit une fourchette de 144 $ à 168 $. Le S&P 500 a fini à 7 417,12 (-1,91 %), le SOX a chuté de 5,28 % et le VIX a grimpé à 22,88. Selon Investing.com, un VIX au-dessus de 25 signalerait un stress qui déborde de la techno.",
-   "summary_en": "Nvidia, which closed at $156.14 (-4.12%), reports after Tuesday's close; options imply a move of about 7.8%, a $144-$168 range. The S&P 500 ended at 7,417.12 (-1.91%), the SOX fell 5.28% and the VIX rose to 22.88. Investing.com says a VIX above 25 would signal stress spreading beyond tech.",
-   "url": "https://www.investing.com/news/stock-market-news/market-positioning-risks-ahead-of-nvidia-earnings-93CH-5031075"
   }
  ],
  "live": {
