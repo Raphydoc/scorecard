@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T07:10:48Z",
+ "updatedAt": "2026-11-17T07:47:50Z",
  "econ": {
   "values": {
    "adp": {
@@ -996,6 +996,37 @@
  "news": [
   {
    "date": "2026-11-17",
+   "time": "02:38",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd",
+    "usd"
+   ],
+   "title": "Bitcoin : Wintermute voit un risque de glissade dans la zone des 50 000 $ avec les paris sur une hausse de la Fed",
+   "title_en": "Bitcoin could slide into the $50,000s as Fed rate hike bets build, Wintermute says",
+   "summary": "Le bitcoin, autour de 64 500 $, a perdu plus de 15 % en novembre et est passé sous sa moyenne de 200 semaines (environ 68 000 $). Wintermute cible d'abord le creux de 62 000 $ de samedi, puis l'amas d'options de vente à 60 000 $ sur Deribit (plus de 900 M$ d'intérêt ouvert), et n'exclut pas la zone des 50 000 $. Les marchés donnent environ 92 % de chances à une hausse de taux de la Fed en décembre et le 10 ans est repassé au-dessus de 5 %.",
+   "summary_en": "Bitcoin, around $64,500, has fallen more than 15% in November and slipped below its 200-week average (about $68,000). Wintermute eyes Saturday's $62,000 low first, then the $60,000 put cluster on Deribit (over $900M in open interest), and sees pressure into the $50,000s. Markets price about 92% odds of a December Fed rate hike, and the 10-year yield is back above 5%.",
+   "url": "https://www.coindesk.com/markets/2026/11/17/bitcoin-could-slide-into-the-usd50-000s-as-fed-rate-hike-bets-build-wintermute-says"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "02:00",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usdjpy",
+    "xauusd",
+    "usoil"
+   ],
+   "title": "Tokyo clôture en baisse : Nikkei −1,23 %, USD/JPY à 159,23; l'or à terme gagne 0,66 %",
+   "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 1.23%",
+   "summary": "Le Nikkei 225 a cédé 1,23 % à Tokyo, avec 2 812 titres en baisse contre 744 en hausse; Resonac (−7,56 %) et Ibiden (−6,44 %) ont mené les reculs, et l'indice de volatilité du Nikkei a grimpé à 35,10. Le dollar recule de 0,16 % à 159,23 yens, l'or de décembre gagne 0,66 % à 3 878,37 $ et le WTI de janvier perd 0,99 % à 83,63 $.",
+   "summary_en": "The Nikkei 225 fell 1.23% in Tokyo, with 2,812 decliners versus 744 advancers; Resonac (−7.56%) and Ibiden (−6.44%) led losses, and the Nikkei volatility index rose to 35.10. USD/JPY slipped 0.16% to 159.23, December gold rose 0.66% to $3,878.37 and January WTI fell 0.99% to $83.63.",
+   "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-123-5031816"
+  },
+  {
+   "date": "2026-11-17",
    "time": "00:56",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1589,37 +1620,6 @@
    "title": "La cheffe du FMI avertit que l'économie mondiale « tient sur une jambe » alors que le financement circulaire de l'IA atteint 1 000 G$",
    "title_en": "'Standing on one leg': IMF chief warns about global economy as AI circular financing hits $1 trillion",
    "url": "https://www.cnbc.com/2026/11/16/imf-georgieva-warning-ai-circular-financing.html"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "usd"
-   ],
-   "date": "2026-11-16",
-   "impact": "med",
-   "source": "Reuters (Investing.com)",
-   "summary": "Selon des analystes, de nouvelles restrictions américaines sur l'accès de la Chine aux puces d'IA avancées risquent d'éclipser le sommet Trump-Xi de jeudi à Shenzhen, malgré de possibles progrès sur la sécurité de l'IA. Le scandale entourant la démission de Jensen Huang chez Nvidia pousse des élus américains à réclamer des contrôles plus serrés. Les baisses de tarifs réciproques convenues en septembre couvrent 30 G$ de biens, et aucun nouveau progrès ne sera annoncé à ce sujet.",
-   "summary_en": "Analysts expect tighter US curbs on China's access to advanced AI chips to overshadow Thursday's Trump-Xi summit in Shenzhen, though some progress on AI safety is possible. The scandal around Jensen Huang's resignation from Nvidia has US lawmakers pushing for stricter controls. Reciprocal tariff cuts agreed in September cover $30 billion of goods, and no further progress will be announced on that front.",
-   "time": "03:56",
-   "title": "Les tensions sur les puces planent sur le sommet Trump-Xi de jeudi à Shenzhen",
-   "title_en": "Chip tensions loom over Trump-Xi summit, as US and China push AI safety steps",
-   "url": "https://www.investing.com/news/stock-market-news/chip-tensions-loom-over-trumpxi-summit-as-us-and-china-push-ai-safety-steps-5028728"
-  },
-  {
-   "assets": [
-    "spx500",
-    "nasdaq"
-   ],
-   "date": "2026-11-16",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Morgan Stanley fixe une cible de 8 700 points pour le S&P 500 d'ici 12 mois, soit environ 15 % au-dessus de la clôture de vendredi, sur la base de 19 fois un BPA prévisionnel de 458 $. La firme prévoit un BPA de 369 $ en 2026, 420 $ en 2027 et 458 $ en 2028, appuyé par la croissance des bénéfices, un pétrole plus bas et l'adoption de l'IA. Un signal optimiste alors que la tech reste secouée par la tourmente chez Nvidia.",
-   "summary_en": "Morgan Stanley set a 12-month S&P 500 target of 8,700, about 15% above Friday's close, based on 19x forward EPS of $458. The firm forecasts EPS of $369 in 2026, $420 in 2027 and $458 in 2028, citing earnings growth, lower oil and AI adoption. A bullish signal while tech remains shaken by the Nvidia turmoil.",
-   "time": "03:21",
-   "title": "Morgan Stanley relève sa cible du S&P 500 à 8 700 points sur 12 mois",
-   "title_en": "Morgan Stanley raises S&P 500 target on earnings growth, lower oil and AI adoption",
-   "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-raises-sp-500-target-on-earnings-growth-lower-oil-and-ai-adoption-5028643"
   }
  ],
  "live": {
