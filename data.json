@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T21:52:42Z",
+ "updatedAt": "2026-11-17T22:12:06Z",
  "econ": {
   "values": {
    "adp": {
@@ -33562,8 +33562,46 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-17T17:10:51Z",
+  "asOf": "2026-11-17T22:11:55Z",
   "recaps": [
+   {
+    "date": "2026-11-17",
+    "session": "ny",
+    "title": "Wall Street recule avant Nvidia : Dow −1,22 %, Russell 2000 −1,34 %; Nvidia dépasse ensuite les attentes (115,8 G$) après la cloche",
+    "title_en": "Wall Street slides ahead of Nvidia: Dow −1.22%, Russell 2000 −1.34%; Nvidia then beats estimates ($115.8B) after the bell",
+    "body": "La vente s’est accélérée à New York en après-midi avant les résultats de Nvidia, les logiciels d’entreprise menant la baisse (Salesforce −9 % en séance, Intuit et ServiceNow aussi lourds) et Home Depot pesant sur le Dow (24/7 Wall St., StockTitan). Sur la séance mesurée, le Dow a perdu 1,22 %, le S&P 500 0,95 % et le Nasdaq 100 0,79 %, le VIX montant vers 26 et le 10 ans américain restant près de 5,09 % (Yahoo Finance). Alberto Musalem (Fed de St. Louis) a répété que d’autres hausses de taux seraient nécessaires d’ici le printemps, pour 100 à 150 pb au total (Yahoo Finance). Après la cloche, Nvidia a publié des revenus de 115,8 G$ au T3 (consensus Bloomberg : 109,15 G$) et prévu environ 130 G$ au T4 (Nvidia, Yahoo Finance).",
+    "body_en": "Selling accelerated in New York in the afternoon ahead of Nvidia’s results, with enterprise software leading the drop (Salesforce −9% intraday, Intuit and ServiceNow also hit hard) and Home Depot weighing on the Dow (24/7 Wall St., StockTitan). Over the measured session, the Dow lost 1.22%, the S&P 500 0.95% and the Nasdaq 100 0.79%, with the VIX rising toward 26 and the U.S. 10-year yield holding near 5.09% (Yahoo Finance). St. Louis Fed President Alberto Musalem repeated that more rate hikes will be needed by spring, 100 to 150 bp in total (Yahoo Finance). After the bell, Nvidia reported Q3 revenue of $115.8B (Bloomberg consensus: $109.15B) and guided to about $130B for Q4 (Nvidia, Yahoo Finance).",
+    "sections": {
+     "indices": {
+      "fr": "De 9 h 30 à 16 h, le Dow a cédé 1,22 %, le Russell 2000 1,34 %, le S&P 500 0,95 % et le Nasdaq 100 0,79 %, les indices finissant près du bas de leur fourchette du jour (24/7 Wall St.).",
+      "en": "From 9:30 a.m. to 4 p.m., the Dow lost 1.22%, the Russell 2000 1.34%, the S&P 500 0.95% and the Nasdaq 100 0.79%, with indexes closing near the low end of their daily range (24/7 Wall St.)."
+     },
+     "metals": {
+      "fr": "L’or a fini quasi stable (−0,09 %) vers 3 850 $, toujours près de son plus bas en plus d’un an avec une hausse de la Fed en décembre jugée certaine par CME FedWatch; l’argent a reculé de 0,23 % (Reuters via MarketScreener).",
+      "en": "Gold ended nearly flat (−0.09%) around $3,850, still near its lowest in more than a year with CME FedWatch pricing a December Fed hike as certain; silver slipped 0.23% (Reuters via MarketScreener)."
+     },
+     "forex": {
+      "fr": "Le dollar s’est un peu replié (indice −0,15 %) : l’EUR/USD a gagné 0,23 % vers 1,101, tandis que l’USD/JPY (159,34) et l’USD/CAD (1,429) sont restés inchangés sur la séance.",
+      "en": "The dollar eased slightly (index −0.15%): EUR/USD gained 0.23% to about 1.101, while USD/JPY (159.34) and USD/CAD (1.429) were unchanged over the session."
+     },
+     "crypto": {
+      "fr": "Le bitcoin a perdu 1,78 % pendant la séance, glissant vers 63 900 $ avec la baisse des actifs à risque (Yahoo Finance).",
+      "en": "Bitcoin lost 1.78% during the session, sliding toward $63,900 as risk assets fell (Yahoo Finance)."
+     },
+     "energy": {
+      "fr": "Le WTI a reculé de 1,48 % sur la séance mesurée après un sommet matinal vers 87,40 $, mais le contrat de décembre a réglé à 86,01 $ (+0,3 %) et le Brent à 93,14 $ (+0,8 %), sur de nouvelles attaques de navires près d’Ormuz (Bloomberg via Rigzone).",
+      "en": "WTI fell 1.48% over the measured session after a morning high near $87.40, but the December contract settled at $86.01 (+0.3%) and Brent at $93.14 (+0.8%) on fresh vessel attacks near Hormuz (Bloomberg via Rigzone)."
+     }
+    },
+    "sources": [
+     "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-november-17-dow-sp-500-nasdaq-nvidia-earnings-retail-sales-143848454.html",
+     "https://247wallst.com/cards/the-dow-s-955-point-drop-led-the-selling-a-sharper-hit-than-gspc-market-bell-01m7nn5ym7r5nqbd4d83yt9zt1",
+     "https://www.stocktitan.net/articles/stock-market-today-live-november-17-2026",
+     "https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000088/q3fy27pr.htm",
+     "https://www.marketscreener.com/news/gold-ticks-up-but-lingers-near-more-than-one-year-low-on-fed-hike-bets-ce785edfde88f520",
+     "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/"
+    ]
+   },
    {
     "date": "2026-11-17",
     "session": "lon",
@@ -34073,6 +34111,39 @@
   ],
   "research": [
    {
+    "bank": "Goldman Sachs",
+    "date": "2026-11-17",
+    "topic": "MACRO",
+    "topic_en": "MACRO",
+    "title": "Goldman : croissance mondiale de 2,8 % en 2027, hausse de la Fed en décembre puis une autre au printemps",
+    "title_en": "Goldman: 2.8% global growth in 2027, a Fed hike in December and one more in early 2027",
+    "summary": "Jan Hatzius prévoit une hausse de 25 pb en décembre et une autre début 2027 (plutôt en mars), une BCE qui monte aussi en décembre et trois hausses de la BoJ jusqu’à 2 %. Le PCE de base reviendrait vers 2,4 % fin 2027 et le pétrole glisserait vers environ 80 $.",
+    "summary_en": "Jan Hatzius expects a 25 bp hike in December and another in early 2027 (more likely March), an ECB hike in December too and three BoJ hikes to 2%. Core PCE would ease to about 2.4% by end-2027 and oil drift toward about $80.",
+    "url": "https://www.goldmansachs.com/insights/goldman-sachs-exchanges/steady-global-economic-growth-in2027-but-risks-tilted-to-downside"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "date": "2026-11-17",
+    "topic": "ACTIONS",
+    "topic_en": "EQUITIES",
+    "title": "Goldman vise 8 700 pour le S&P 500 à la fin de 2027, soit un rendement total de 18 %",
+    "title_en": "Goldman targets 8,700 for the S&P 500 at end-2027, an 18% total return",
+    "summary": "Ben Snider prévoit une croissance des bénéfices d’environ 11 % en 2027 (18 % hors revenus de placements des géants de la techno), après environ 30 % en 2026.",
+    "summary_en": "Ben Snider expects earnings growth of about 11% in 2027 (18% excluding mega-cap tech investment income), after roughly 30% in 2026.",
+    "url": "https://finance.yahoo.com/markets/article/goldman-sachs-is-looking-for-a-big-year-for-stocks-in-2027-142151047.html"
+   },
+   {
+    "bank": "TD Securities",
+    "date": "2026-11-17",
+    "topic": "PÉTROLE",
+    "topic_en": "OIL",
+    "title": "TD Securities : une prime de risque géopolitique devrait revenir dans le prix du pétrole",
+    "title_en": "TD Securities: some geopolitical risk premium should return to oil prices",
+    "summary": "Avec les attaques de navires près d’Ormuz et les frappes contre Bahreïn, TD juge qu’une partie de la prime de risque doit réapparaître, même si l’AIE prévoit un surplus d’environ 2 Mb/j ce trimestre (Bloomberg).",
+    "summary_en": "With vessel attacks near Hormuz and strikes on Bahrain, TD sees part of the risk premium returning, even as the IEA forecasts a surplus of about 2 mb/d this quarter (Bloomberg).",
+    "url": "https://www.rigzone.com/news/wire/oil_prices_swing_as_gulf_attacks_continue-17-nov-2026-185107-article/"
+   },
+   {
     "bank": "Morgan Stanley",
     "date": "2026-11-16",
     "summary": "L’équipe de Michael Wilson fonde sa cible sur 19 fois un BPA prévisionnel de 458 $ et juge la récente correction, proche de sa zone de soutien de 7 100 à 7 300, comme un point d’entrée intéressant; les industrielles sont son secteur préféré. Le principal risque cité est une politique monétaire plus restrictive que prévu.",
@@ -34239,6 +34310,20 @@
    }
   ],
   "bankcalls": [
+   {
+    "bank": "Goldman Sachs",
+    "cat": "idx",
+    "market": "S&P 500",
+    "market_en": "S&P 500",
+    "dir": "long",
+    "target": "8 700 d’ici fin 2027 (rendement total de 18 %)",
+    "target_en": "8,700 by end-2027 (18% total return)",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "date": "2026-11-17",
+    "src": "Yahoo Finance",
+    "url": "https://finance.yahoo.com/markets/article/goldman-sachs-is-looking-for-a-big-year-for-stocks-in-2027-142151047.html"
+   },
    {
     "bank": "Morgan Stanley",
     "cat": "idx",
@@ -34630,20 +34715,6 @@
     "target": "1,16 d’ici fin 2026, 1,20 en juin 2027",
     "target_en": "1.16 by end-2026, 1.20 in June 2027",
     "url": "https://investinglive.com/forex/ubs-sees-euro-recovering-to-1-16-by-year-end-says-slide-to-1-11-overshoots-fundamentals/"
-   },
-   {
-    "bank": "Goldman Sachs",
-    "cat": "idx",
-    "date": "2026-10-19",
-    "dir": "long",
-    "horizon": "fin 2027",
-    "horizon_en": "end-2027",
-    "market": "S&P 500",
-    "market_en": "S&P 500",
-    "src": "Yahoo Finance",
-    "target": "8 700 d’ici fin 2027 (8 000 fin 2026)",
-    "target_en": "8,700 by end-2027 (8,000 end-2026)",
-    "url": "https://finance.yahoo.com/markets/article/goldman-sachs-is-still-betting-on-a-nice-year-end-rally-for-the-sp-500-134755098.html"
    },
    {
     "bank": "CIBC",
