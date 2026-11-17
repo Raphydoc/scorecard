@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T10:53:15Z",
+  "updatedAt": "2026-11-17T11:48:06Z",
   "econ": {
     "values": {
       "adp": {
@@ -996,6 +996,38 @@
   "news": [
     {
       "date": "2026-11-17",
+      "time": "06:02",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "us30"
+      ],
+      "title": "Home Depot nomme Richard McPhail PDG et dépasse les attentes au 3e trimestre",
+      "title_en": "Home Depot names Richard McPhail CEO, beats earnings expectations",
+      "summary": "Home Depot, membre du Dow Jones, a publié des résultats du 3e trimestre supérieurs aux attentes et annoncé que son chef des finances Richard McPhail deviendra PDG le 23 novembre. Selon le communiqué déposé à la SEC, Ted Decker, revenu d'un congé, quitte la direction mais reste président du conseil; Ann-Marie Campbell devient présidente et chef de l'exploitation, et Jordan Broggi chef des finances.",
+      "summary_en": "Home Depot, a Dow component, reported third-quarter results above expectations and said CFO Richard McPhail will become CEO on Nov. 23. Per its SEC filing, Ted Decker, back from leave, steps down as CEO but stays chair; Ann-Marie Campbell becomes president and COO, and Jordan Broggi CFO.",
+      "url": "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "05:53",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30",
+        "usd"
+      ],
+      "title": "Les contrats à terme reculent avant Nvidia : Dow −0,45 %, S&P 500 et Nasdaq 100 −0,34 %; Waller, Hammack et Williams attendus",
+      "title_en": "US stock futures slip ahead of Nvidia results: Dow −0.45%, S&P 500 and Nasdaq 100 −0.34%; Waller, Hammack and Williams in focus",
+      "summary": "À 5 h 23 (HE), les E-minis du Dow perdaient 231 points (−0,45 %), ceux du S&P 500 et du Nasdaq 100 cédaient 0,34 %, avant les résultats de Nvidia après la clôture. Intel recule de 3,3 % en préouverture après la réduction de 25 % de la participation de Nvidia; CoreWeave perd environ 2 %. Les discours de Waller, Hammack et Williams sont attendus, et le marché évalue à 97,4 % la probabilité d'une hausse de taux de 25 points de base en décembre (CME FedWatch), un appui pour le dollar.",
+      "summary_en": "At 5:23 a.m. ET, Dow E-minis were down 231 points (0.45%), while S&P 500 and Nasdaq 100 E-minis fell 0.34% ahead of Nvidia's after-the-bell results. Intel slid 3.3% premarket after Nvidia cut its stake by 25%; CoreWeave fell about 2%. Fed speakers Waller, Hammack and Williams are due, and markets price a 97.4% chance of a 25-basis-point rate hike in December (CME FedWatch), supportive for the dollar.",
+      "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-slip-ahead-of-nvidia-results-fed-speakers-in-focus-5032236"
+    },
+    {
+      "date": "2026-11-17",
       "time": "05:34",
       "source": "CoinDesk",
       "impact": "med",
@@ -1583,35 +1615,6 @@
       "summary": "À l'ouverture, le Nasdaq recule de 1,13 % à 24 853,35, le S&P 500 de 0,63 % à 7 513,98 et le Dow Jones de 0,15 % à 52 267,06. Les investisseurs restent prudents avant les résultats de Nvidia cette semaine, la turbulence dans le commerce de l'IA ne montrant aucun signe d'apaisement.",
       "summary_en": "At the open, the Nasdaq fell 1.13% to 24,853.35, the S&P 500 lost 0.63% to 7,513.98 and the Dow slipped 0.15% to 52,267.06. Investors stayed cautious ahead of Nvidia's results this week, with turbulence in the AI trade showing no sign of easing.",
       "url": "https://www.investing.com/news/stock-market-news/nasdaq-falls-1-at-open-as-nvidia-woesweigh-on-sentiment-ahead-of-earnings-5030288"
-    },
-    {
-      "date": "2026-11-16",
-      "time": "09:07",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "spx500",
-        "us30"
-      ],
-      "title": "Arrêt au sol de la FAA : un coût d'environ 345 M$ pour les quatre grandes compagnies aériennes, selon Bernstein",
-      "title_en": "FAA ground stop: about $345 million hit for the top four U.S. airlines, Bernstein estimates",
-      "summary": "Bernstein estime à environ 345 M$ (fourchette de 270 à 430 M$) l'impact avant impôts pour American, Delta, United et Southwest de l'arrêt au sol national de la FAA de vendredi, l'une des plus longues paralysies aériennes depuis le 11 septembre 2001. Plus de 18 500 vols ont été annulés selon FlightAware; un routeur installé par L3Harris serait en cause. JetBlue et L3Harris reculaient d'environ 4 % en préouverture.",
-      "summary_en": "Bernstein estimates about $345 million (range $270–430 million) in combined pretax impact for American, Delta, United and Southwest from Friday's nationwide FAA ground stop, one of the longest aviation shutdowns since 9/11. More than 18,500 flights were canceled per FlightAware; a single router installed by L3Harris may be to blame. JetBlue and L3Harris were down about 4% premarket.",
-      "url": "https://www.investing.com/news/stock-market-news/top-four-us-airlines-face-345-million-hit-from-faa-ground-stop-bernstein-estimates-5030123"
-    },
-    {
-      "assets": [
-        "usoil"
-      ],
-      "date": "2026-11-16",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le Brent cède 1,2 % à 94,72 $ le baril et le WTI 1 % à 86,42 $, alors que l'armée iranienne affirme que le détroit d'Ormuz « est fermé et le restera » aussi longtemps qu'elle le jugera nécessaire, sur fond de pétroliers ayant heurté des mines et d'arrivée d'un porte-avions américain. À Londres, le FTSE 100 gagne 0,30 %, porté par la défense (Babcock environ +3 %, BAE Systems, Melrose). Le risque d'offre au Moyen-Orient reste le principal moteur du brut.",
-      "summary_en": "Brent fell 1.2% to $94.72 a barrel and WTI 1% to $86.42, even as Iran's army said the Strait of Hormuz 'is closed and will remain closed' as long as it deems necessary, amid tanker mine strikes and a US carrier's arrival. In London, the FTSE 100 rose 0.30%, led by defence names (Babcock about +3%, BAE Systems, Melrose). Middle East supply risk remains crude's main driver.",
-      "time": "08:02",
-      "title": "Le pétrole recule : le WTI perd 1 % à 86,42 $ malgré l'Iran qui dit garder Ormuz fermé; la défense mène le FTSE 100",
-      "title_en": "Oil slips: WTI down 1% at $86.42 even as Iran says Hormuz stays closed; defence leads FTSE 100",
-      "url": "https://uk.investing.com/news/stock-market-news/ftse-100-today-stocks-edge-up-as-iran-tensions-simmer-4983831"
     }
   ],
   "live": {
