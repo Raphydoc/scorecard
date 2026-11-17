@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T22:12:06Z",
+ "updatedAt": "2026-11-17T22:47:48Z",
  "econ": {
   "values": {
    "adp": {
@@ -1063,66 +1063,96 @@
  },
  "news": [
   {
+   "assets": [
+    "usoil",
+    "usdcad"
+   ],
    "date": "2026-11-17",
-   "time": "16:31",
+   "impact": "med",
    "source": "Investing.com",
-   "impact": "high",
+   "summary": "Le Brent a terminé la séance de mardi en hausse après des échanges agités, soutenu par des attaques dans le détroit d'Ormuz et les tensions entre Washington et Téhéran (article non consultable; résumé fondé sur le titre). En après-midi, le Brent gagnait 0,2 % à 92,65 $, selon Investing.com. Le risque sur l'offre au Moyen-Orient continue de soutenir le WTI et, indirectement, le dollar canadien.",
+   "summary_en": "Brent finished Tuesday's session higher after choppy trading, supported by attacks in the Strait of Hormuz and U.S.-Iran tensions (article not readable; summary based on the headline). In the afternoon, Brent was up 0.2% at $92.65, according to Investing.com. Middle East supply risk keeps supporting WTI and, indirectly, the Canadian dollar.",
+   "time": "17:21",
+   "title": "Pétrole : le Brent clôture en hausse dans des échanges agités, sur fond d'attaques à Ormuz et de tensions États-Unis–Iran",
+   "title_en": "Brent settles higher in choppy trade amid Hormuz attacks, U.S.-Iran tensions",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393"
+  },
+  {
    "assets": [
     "nasdaq",
     "spx500",
     "us30"
    ],
-   "title": "Nvidia bat les attentes et prévoit 130 G$ de revenus au prochain trimestre; l'action gagne plus de 2 % après la clôture",
-   "title_en": "Nvidia beats estimates and guides to $130B next-quarter revenue; shares rise over 2% after hours",
+   "date": "2026-11-17",
+   "impact": "high",
+   "source": "Investing.com",
    "summary": "Pour son premier rapport depuis le départ de Jensen Huang, Nvidia affiche un BPA ajusté de 2,68 $ (2,47 $ attendus) et des revenus de 115,84 G$ (108,85 G$ attendus), avec une marge brute ajustée de 74,9 %. La société prévoit 130 G$ (±3 %) au 4e trimestre fiscal, contre un consensus de 124,9 G$, et l'action gagne plus de 2 % après la clôture. Un soulagement pour le Nasdaq et le S&P 500 après une chute de 24,8 % du titre en novembre et l'enquête de la SEC.",
    "summary_en": "In its first report since Jensen Huang's exit, Nvidia posted adjusted EPS of $2.68 (vs. $2.47 expected) and revenue of $115.84B (vs. $108.85B), with a 74.9% adjusted gross margin. It guided fiscal Q4 revenue to $130B (±3%) versus a $124.9B consensus, and shares rose over 2% after hours. A relief for the Nasdaq and S&P 500 after the stock's 24.8% November slide and the SEC probe.",
+   "time": "16:31",
+   "title": "Nvidia bat les attentes et prévoit 130 G$ de revenus au prochain trimestre; l'action gagne plus de 2 % après la clôture",
+   "title_en": "Nvidia beats estimates and guides to $130B next-quarter revenue; shares rise over 2% after hours",
    "url": "https://www.investing.com/news/earnings/nvidia-quarterly-results-beat-estimates-5033943"
   },
   {
-   "date": "2026-11-17",
-   "time": "16:31",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "us30",
     "spx500",
     "nasdaq"
    ],
-   "title": "Clôture : Wall Street termine en baisse, le Dow perd 1,64 % et le S&P 500 signe sa plus faible clôture depuis juillet",
-   "title_en": "Close: Wall Street ends lower, Dow down 1.64% and S&P 500 posts lowest close since July",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Les actions américaines ont fini la séance en recul, le Dow Jones cédant 1,64 %, et le S&P 500 a enregistré sa plus faible clôture depuis juillet avant les résultats de Nvidia. Les Bourses de Toronto (S&P/TSX −1,14 %) et de Mexico (−1,00 %) ont aussi reculé.",
    "summary_en": "U.S. stocks ended the session lower, with the Dow Jones down 1.64%, and the S&P 500 posted its lowest close since July ahead of Nvidia's results. Toronto (S&P/TSX −1.14%) and Mexico (−1.00%) also fell.",
+   "time": "16:31",
+   "title": "Clôture : Wall Street termine en baisse, le Dow perd 1,64 % et le S&P 500 signe sa plus faible clôture depuis juillet",
+   "title_en": "Close: Wall Street ends lower, Dow down 1.64% and S&P 500 posts lowest close since July",
    "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-164-5034091"
   },
   {
-   "date": "2026-11-17",
-   "time": "15:13",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Muddy Waters prend une position vendeuse sur Nvidia et soulève des questions sur un lien entre un ex-dirigeant et Super Micro",
-   "title_en": "Muddy Waters shorts Nvidia, raises questions about possible executive connection",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le vendeur à découvert Muddy Waters annonce une position vendeuse sur Nvidia et s'interroge sur un lien entre Ajay K. Puri, ex-vice-président principal des opérations commerciales de Nvidia, et Cenly Chen, ex-directrice de la croissance de Super Micro, visée par une poursuite liée à la répartition de GPU Nvidia. Muddy Waters reconnaît qu'aucun des deux n'a été accusé au criminel. Nvidia (−1,5 %) et Super Micro (−4,2 %) reculaient, ce qui pèse sur le Nasdaq à la veille des résultats de Nvidia.",
    "summary_en": "Short seller Muddy Waters disclosed a short position in Nvidia and questioned a possible link between Ajay K. Puri, Nvidia's former EVP of worldwide field operations, and Cenly Chen, Super Micro's former chief growth officer named in litigation over Nvidia GPU allocation. Muddy Waters acknowledges neither has been criminally charged. Nvidia (−1.5%) and Super Micro (−4.2%) were lower, weighing on the Nasdaq ahead of Nvidia's earnings.",
+   "time": "15:13",
+   "title": "Muddy Waters prend une position vendeuse sur Nvidia et soulève des questions sur un lien entre un ex-dirigeant et Super Micro",
+   "title_en": "Muddy Waters shorts Nvidia, raises questions about possible executive connection",
    "url": "https://www.investing.com/news/stock-market-news/muddy-waters-shorts-nvidia-raises-questions-about-possible-executive-connection-5033891"
   },
   {
-   "date": "2026-11-17",
-   "time": "15:00",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Exclusif : Trump maintient l'interdiction des équipements chinois pour centres de données malgré le lobbying d'Amazon, Google et Meta",
-   "title_en": "Exclusive-Trump's China data center curb advances despite Amazon, Google, Meta lobbying",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "L'administration Trump compte aller de l'avant avec le blocage des importations d'équipements chinois pour centres de données, dont les nouveaux modèles de transceivers optiques visés par la FCC, malgré le lobbying d'Amazon, Google, Meta, Microsoft, CoreWeave et Cisco, qui disent que la mise en conformité pourrait prendre jusqu'à 10 ans. Les firmes chinoises détiennent environ les deux tiers de ce marché, et Pékin pourrait riposter (phosphure d'indium). Coherent (+2,2 %) et Lumentum (+1,5 %) ont monté sur la nouvelle; la mesure ajoute à la pression sur la tech.",
    "summary_en": "The Trump administration plans to proceed with blocking imports of Chinese data center equipment, including new models of optical transceivers targeted by the FCC, despite lobbying by Amazon, Google, Meta, Microsoft, CoreWeave and Cisco, which said compliance could take up to a decade. Chinese firms hold about two-thirds of that market and Beijing could retaliate (indium phosphide). Coherent (+2.2%) and Lumentum (+1.5%) rose on the news; the move adds to pressure on tech.",
+   "time": "15:00",
+   "title": "Exclusif : Trump maintient l'interdiction des équipements chinois pour centres de données malgré le lobbying d'Amazon, Google et Meta",
+   "title_en": "Exclusive-Trump's China data center curb advances despite Amazon, Google, Meta lobbying",
    "url": "https://www.investing.com/news/stock-market-news/exclusivetrumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-5032280"
+  },
+  {
+   "assets": [
+    "xauusd",
+    "usd"
+   ],
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "L'or au comptant reculait de 0,2 % à 3 849,22 $ l'once vers 14 h 54 (HE) et les contrats à terme se tenaient à 3 851,75 $, près de leurs plus bas depuis fin septembre-début octobre 2025. Le CME FedWatch accorde environ 95 % de probabilités à une hausse de 25 points de base en décembre après un NFP de 165 000 et un IPC d'octobre de 0,4 %; l'indice du dollar cédait 0,1 % à 103,46. Le PPI d'octobre, plus faible que prévu, a offert un certain répit.",
+   "summary_en": "Spot gold fell 0.2% to $3,849.22/oz around 2:54 p.m. ET and futures held at $3,851.75, near their lowest since late September-early October 2025. CME FedWatch puts the odds of a 25 bp December hike at about 95% after 165,000 nonfarm payrolls and a 0.4% October CPI; the dollar index slipped 0.1% to 103.46. A softer-than-expected October PPI offered some relief.",
+   "time": "14:57",
+   "title": "L'or stagne près d'un creux de 13 mois; les paris de hausse de taux de la Fed pèsent",
+   "title_en": "Gold prices hover near 13-month low in subdued trading",
+   "url": "https://www.investing.com/news/commodities-news/gold-hovers-near-14month-low-as-fed-hike-bets-and-tech-selloff-weigh-5031431"
   },
   {
    "assets": [
@@ -1279,21 +1309,6 @@
   },
   {
    "assets": [
-    "usoil",
-    "usd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Vers 9 h 48 (HE), le Brent de janvier avançait de 1,5 % à 93,84 $ et le WTI de 1,6 % à 87,10 $, après une chute de plus de 14 % en un mois. L'Iran a présenté un plan de deux jours pour rouvrir le détroit d'Ormuz, mais au moins quatre pétroliers y ont été attaqués depuis vendredi. L'AIE prévoit une offre mondiale d'environ 105 M b/j au quatrième trimestre, soit 1,7 M b/j de plus que la demande, le premier surplus depuis le début de la guerre.",
-   "summary_en": "Around 9:48 ET, January Brent rose 1.5% to $93.84 and WTI 1.6% to $87.10, after falling more than 14% over the past month. Iran presented a two-day plan to reopen the Strait of Hormuz, but at least four tankers have been attacked there since Friday. The IEA sees global supply near 105 million bpd in the December quarter, 1.7 million bpd above demand, the first surplus since the war began.",
-   "time": "09:59",
-   "title": "Le pétrole rebondit : le WTI gagne 1,6 % à 87,10 $, entre tensions au Moyen-Orient et reprise des exportations du Golfe",
-   "title_en": "Oil turns higher: WTI adds 1.6% to $87.10 amid Middle East tensions and improving Gulf exports",
-   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393"
-  },
-  {
-   "assets": [
     "usd",
     "spx500",
     "nasdaq",
@@ -1360,21 +1375,6 @@
    "title": "Citadel (Rubner) : la volatilité des actions atteint son plus haut depuis avril 2025",
    "title_en": "Citadel's Rubner says equity volatility hits highest since April 2025",
    "url": "https://www.investing.com/news/stock-market-news/citadels-rubner-says-equity-volatility-hits-highest-since-april-2025-93CH-5032831"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "usd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Vers 7 h 33 (HE), l'or au comptant était à peu près inchangé à 3 855,12 $ l'once et les contrats à terme gagnaient 0,1 % à 3 858,15 $, le DXY avançant de 0,1 % à 103,60. Beth Hammack (Fed de Cleveland) privilégie des hausses de taux graduelles, mais n'exclut pas des ajustements plus importants si l'inflation accélère, ce qui pèse sur le métal sans rendement. Le marché attend le procès-verbal de la réunion d'octobre de la Fed mercredi; ING s'attend à ce que l'or reste volatil.",
-   "summary_en": "Around 7:33 ET, spot gold was mostly unchanged at $3,855.12/oz and futures rose 0.1% to $3,858.15, with the dollar index up 0.1% at 103.60. Cleveland Fed's Beth Hammack favored gradual rate hikes but said larger moves could be needed if inflation accelerates, weighing on non-yielding bullion. Markets await Fed October minutes on Wednesday; ING expects gold to stay volatile.",
-   "time": "07:50",
-   "title": "L'or se stabilise à 3 855 $ après un creux de 14 mois; la Fed et la tech pèsent toujours",
-   "title_en": "Gold stabilizes near $3,855 after hitting over one-year low",
-   "url": "https://www.investing.com/news/commodities-news/gold-hovers-near-14month-low-as-fed-hike-bets-and-tech-selloff-weigh-5031431"
   },
   {
    "assets": [
