@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T08:47:46Z",
+  "updatedAt": "2026-11-17T09:47:48Z",
   "econ": {
     "values": {
       "adp": {
@@ -996,6 +996,37 @@
   "news": [
     {
       "date": "2026-11-17",
+      "time": "04:22",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "gbpusd",
+        "eurusd",
+        "usd"
+      ],
+      "title": "La livre se stabilise à 1,3199 $ après cinq séances de baisse; le chômage britannique recule à 4,6 %",
+      "title_en": "Sterling steadies at $1.3199 after five-day slide; UK jobless dips to 4.6%",
+      "summary": "Le GBP/USD gagne 0,10 % à 1,3199 $ et l'EUR/USD 0,05 % à 1,1005 $ pendant que le dollar fait une pause. Le chômage britannique a reculé de façon inattendue à 4,6 % et les salaires hors primes ralentissent à 3,5 %, mais les marchés voient encore environ 80 % de chances d'une hausse de la BoE en décembre; l'IPC britannique de mercredi est attendu à 3,6 %.",
+      "summary_en": "GBP/USD rose 0.10% to $1.3199 and EUR/USD 0.05% to $1.1005 as the dollar paused. UK unemployment unexpectedly fell to 4.6% and regular pay growth slowed to 3.5%, but markets still price about an 80% chance of a December BoE hike; Wednesday's UK CPI is expected at 3.6%.",
+      "url": "https://www.investing.com/news/forex-news/sterling-today-pound-set-to-snap-slide-as-dollar-pauses-uk-jobless-dips-to-46-5032079"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "04:00",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "eurusd",
+        "usd"
+      ],
+      "title": "Les rendements européens restent près d'un sommet d'un mois, tirés par les Treasuries à 5,125 %",
+      "title_en": "Euro yields hold near 1-month peaks on relentless U.S. Treasury pull",
+      "summary": "Le Bund allemand à 10 ans se maintient à 3,381 %, près de son plus haut en près d'un mois, et le 2 ans reste stable à 3,130 %, alors que le 10 ans américain se négocie à 5,125 %. Les marchés voient la BCE relever son taux à 3 % d'ici mars; Morgan Stanley prévoit un Bund à 3,10 % au T4 2027 et une BoJ à 1,75 % d'ici mars.",
+      "summary_en": "Germany's 10-year Bund yield held at 3.381%, near a nearly one-month high, and the 2-year was steady at 3.130%, as the U.S. 10-year traded at 5.125%. The ECB is seen raising rates to 3% by March; Morgan Stanley forecasts the Bund at 3.10% in Q4 2027 and the BoJ at 1.75% by March.",
+      "url": "https://www.investing.com/news/forex-news/euro-yields-hold-near-1month-peaks-on-relentless-us-treasury-pull-5031817"
+    },
+    {
+      "date": "2026-11-17",
       "time": "03:18",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1584,39 +1615,6 @@
       "title": "La Deutsche Bank prévient que les marchés sous-estiment peut-être les risques de hausses de taux",
       "title_en": "Deutsche Bank warns markets may be underestimating rate hike risks",
       "url": "https://www.investing.com/news/stock-market-news/deutsche-bank-warns-markets-may-be-underestimating-rate-hike-risks-5029111"
-    },
-    {
-      "assets": [
-        "xauusd",
-        "xagusd",
-        "usd"
-      ],
-      "date": "2026-11-16",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon Investing.com, l'or est tombé à son plus bas niveau en plus d'un an, pénalisé par la force du dollar et les paris d'une hausse de taux de la Fed. Plus tôt en Asie, il reculait à 3 868,88 $ l'once après une perte de 4,5 % la semaine dernière; le CME FedWatch accordait 94 % de chances à une hausse de 25 points de base en décembre. Le président de la Fed Kevin Warsh parle lundi et les minutes du FOMC sortent mercredi.",
-      "summary_en": "According to Investing.com, gold fell to its lowest level in over a year, weighed by dollar strength and bets on a Fed rate hike. Earlier in Asia it was down at $3,868.88/oz after a 4.5% loss last week; CME FedWatch showed a 94% probability of a 25-basis-point hike in December. Fed Chair Kevin Warsh speaks Monday and the FOMC minutes are due Wednesday.",
-      "time": "06:15",
-      "title": "L'or glisse à son plus bas en plus d'un an, plombé par la vigueur du dollar et les paris d'une hausse de la Fed",
-      "title_en": "Gold slides to lowest level in over a year on dollar strength, Fed hike bets",
-      "url": "https://www.investing.com/news/commodities-news/gold-falls-below-3900-as-december-fed-hike-bets-build-warsh-in-focus-5028296"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30",
-        "usd"
-      ],
-      "date": "2026-11-16",
-      "impact": "med",
-      "source": "Reuters (Investing.com)",
-      "summary": "Vers 5 h 08, les contrats E-mini du Nasdaq 100 perdaient 0,97 % et ceux du S&P 500 0,36 %, alors que ceux du Dow étaient stables (+0,02 %). Le marché anticipe entièrement une hausse de taux de la Fed en décembre (environ 8 % de chances pour 50 pb selon CME FedWatch); le 2 ans recule de plus de 2 pb. Au programme : discours du président de la Fed Kevin Warsh lundi, Nvidia mardi, procès-verbal du FOMC mercredi, puis l'IPO d'Anthropic et la rencontre Trump-Xi.",
-      "summary_en": "At 5:08 a.m. ET, Nasdaq 100 E-minis were down 0.97% and S&P 500 E-minis 0.36%, while Dow futures were flat (+0.02%). Markets fully price a December Fed hike (about 8% odds of 50 bp per CME FedWatch); the 2-year yield fell over 2 bp. Ahead: Fed Chair Kevin Warsh speaks Monday, Nvidia Tuesday, FOMC minutes Wednesday, then Anthropic's IPO and Trump-Xi talks.",
-      "time": "05:43",
-      "title": "Les contrats à terme du Nasdaq (-0,97 %) et du S&P 500 (-0,36 %) glissent avant Nvidia et Anthropic; Warsh parle aujourd'hui",
-      "title_en": "S&P 500, Nasdaq futures slide as Nvidia earnings, Anthropic debut loom",
-      "url": "https://www.investing.com/news/economy-news/sp-500-nasdaq-futures-slide-as-nvidia-earnings-anthropic-debut-loom-5028900"
     }
   ],
   "live": {
