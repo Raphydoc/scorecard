@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T22:47:48Z",
+ "updatedAt": "2026-11-17T23:47:30Z",
  "econ": {
   "values": {
    "adp": {
@@ -1065,6 +1065,21 @@
   {
    "assets": [
     "usoil",
+    "xauusd"
+   ],
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
+   "summary": "Des drones et missiles ukrainiens ont fait s'effondrer la section centrale du pont routier de Kertch (19 km), deuxième frappe en deux jours; Moscou dit avoir abattu un record de 1 441 drones au-dessus de 22 régions et a frappé des ponts à Kiev. L'escalade survient avant la rencontre de Poutine avec Trump et Xi à Shenzhen jeudi, un risque géopolitique à surveiller pour le pétrole et l'or.",
+   "summary_en": "Ukrainian drones and missiles collapsed the central section of the 19-km Kerch road bridge, the second strike in two days; Moscow said it downed a record 1,441 drones over 22 regions and struck bridges in Kyiv. The escalation comes ahead of Putin's meeting with Trump and Xi in Shenzhen on Thursday, a geopolitical risk to watch for oil and gold.",
+   "time": "18:31",
+   "title": "L'Ukraine détruit la section centrale du pont de Crimée, deux jours avant la rencontre Poutine-Xi-Trump",
+   "title_en": "Ukraine cripples Crimean road bridge in blow to Putin before meeting with Xi and Trump",
+   "url": "https://www.investing.com/news/commodities-news/ukraine-strikes-crimean-bridge-for-second-day-as-russia-pounds-kyiv-bridges-5032113"
+  },
+  {
+   "assets": [
+    "usoil",
     "usdcad"
    ],
    "date": "2026-11-17",
@@ -1662,20 +1677,6 @@
    "title": "Samsung (−3,05 %) et TSMC (−2,03 %) reculent après le resserrement américain sur l'accès de la Chine aux puces d'IA; le Taiwan Weighted perd 2,18 %",
    "title_en": "Samsung (−3.05%) and TSMC (−2.03%) fall after US tightens China's access to AI chips; Taiwan Weighted down 2.18%",
    "url": "https://www.investing.com/news/stock-market-news/samsung-elec-tsmc-shares-fall-after-us-announces-curbs-on-chinas-chip-access-5031711"
-  },
-  {
-   "assets": [
-    "btcusd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Wells Fargo déclarait 49,58 millions de parts de l'IBIT de BlackRock (2,35 G$) à la fin septembre, contre 24,4 millions (812 M$) fin juin, soit une exposition indirecte d'environ 28 070 BTC. Ces données datent du 30 septembre; depuis une semaine, le bitcoin est passé d'environ 74 000 $ à 63 000 $ et l'IBIT a subi plus de 1 G$ de sorties.",
-   "summary_en": "Wells Fargo reported 49.58 million IBIT shares ($2.35 billion) at end-September, up from 24.4 million ($812 million) at end-June, implying about 28,070 BTC of indirect exposure. The data is a Sept. 30 snapshot; over the past week bitcoin fell from about $74,000 to $63,000 and IBIT saw more than $1 billion in outflows.",
-   "time": "00:37",
-   "title": "Wells Fargo double sa position dans l'ETF bitcoin de BlackRock, à 2,35 G$",
-   "title_en": "Wells Fargo's reported BlackRock bitcoin ETF holdings double to $2.35 billion",
-   "url": "https://www.coindesk.com/markets/2026/11/17/wells-fargo-s-reported-blackrock-bitcoin-etf-holdings-double-to-usd2-35-billion"
   }
  ],
  "live": {
