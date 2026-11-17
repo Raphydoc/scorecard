@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T13:48:15Z",
+ "updatedAt": "2026-11-17T14:48:08Z",
  "econ": {
   "values": {
    "adp": {
@@ -1064,6 +1064,41 @@
  "news": [
   {
    "date": "2026-11-17",
+   "time": "09:07",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "us30"
+   ],
+   "title": "Nike grimpe de 4 % en dévoilant un plan de redressement sur cinq ans et des cibles pour 2031",
+   "title_en": "Nike shares rise 4% as company outlines five-year turnaround plan and 2031 targets",
+   "summary": "L'action Nike gagne 4 % avant l'ouverture après la présentation d'un plan de redressement sur cinq ans lors de sa journée des investisseurs. L'entreprise vise une croissance additionnelle de ses revenus de 5 milliards $ d'ici 2031. Nike fait partie du Dow Jones, ce qui peut soutenir l'indice en séance.",
+   "summary_en": "Nike shares rose 4% premarket after the company outlined a five-year turnaround plan at its investor day. The company targets $5 billion in incremental revenue growth by 2031. Nike is a Dow component, which may support the index today.",
+   "url": "https://www.investing.com/news/stock-market-news/nike-shares-rise-4-as-company-outlines-fiveyear-turnaround-plan-and-2031-targets-5033166"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "08:41",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500",
+    "nasdaq",
+    "us30",
+    "rut",
+    "eurusd",
+    "usdjpy"
+   ],
+   "title": "Ventes au détail américaines : +0,2 % en octobre, en ligne; le groupe témoin bondit de 0,6 %",
+   "title_en": "US retail sales rise 0.2% in October, in line; control group jumps 0.6%",
+   "summary": "Les ventes au détail aux États-Unis ont augmenté de 0,2 % en octobre, comme prévu, après +0,8 % en septembre (non révisé). Le groupe témoin, qui alimente le calcul du PIB, a grimpé de 0,6 % contre 0,4 % attendu, et septembre a été révisé à +0,5 % (contre +0,1 %). Une consommation de base plus solide que prévu soutient le dollar et les taux, dans un contexte où des membres de la Fed évoquent d'autres hausses.",
+   "summary_en": "US retail sales rose 0.2% in October, as expected, after a 0.8% gain in September (unrevised). The control group, which feeds into GDP, climbed 0.6% versus 0.4% expected, and September was revised to +0.5% from +0.1%. Firmer-than-expected core spending supports the dollar and yields as some Fed officials discuss further hikes.",
+   "url": "https://investing.com/news/economy-news/us-retail-sales-increase-moderately-in-october-5033051"
+  },
+  {
+   "date": "2026-11-17",
    "time": "08:34",
    "source": "CNBC",
    "impact": "high",
@@ -1199,6 +1234,22 @@
    "summary": "Anthropic annonce avoir reçu l'autorisation d'inscrire ses actions ordinaires de catégorie A au Nasdaq Global Select Market sous le symbole « ANT », selon une manchette d'Investing.com. Cette étape ouvre la voie à l'IPO prévue jeudi, un test majeur de l'appétit des investisseurs pour l'IA alors que la tech recule.",
    "summary_en": "Anthropic says it has been approved to list its class A common stock on the Nasdaq Global Select Market under the symbol 'ANT', according to an Investing.com headline. The step clears the way for the IPO planned for Thursday, a key test of investor appetite for AI as tech stocks slide.",
    "url": "https://www.investing.com/news/stock-market-news/anthropic-have-been-approved-to-list-our-class-a-common-stock-on-nasdaq-global-select-market-under-symbol-ant-432SI-5032359"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "06:23",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "eurusd"
+   ],
+   "title": "Les semi-conducteurs européens reculent après de nouvelles restrictions américaines sur l'accès aux puces d'IA",
+   "title_en": "European chip stocks fall after new US curbs on AI chip access",
+   "summary": "Le département du Commerce américain a imposé lundi, avec effet immédiat, des restrictions sur les envois de puces d'IA avancées vers des centres de données tiers en Thaïlande et en Malaisie, pour empêcher la Chine d'y accéder indirectement par location de puissance de calcul. ASML a cédé 2,25 %, BE Semiconductor 2,06 %, Infineon 1,19 % et STMicroelectronics 1,12 % en début de séance. Ces règles pèsent sur le secteur des puces à la veille des résultats de Nvidia.",
+   "summary_en": "The US Commerce Department imposed, with immediate effect on Monday, restrictions on advanced AI chip shipments to third-party data centres in Thailand and Malaysia, to stop China from gaining indirect access by renting computing power. ASML fell 2.25%, BE Semiconductor 2.06%, Infineon 1.19% and STMicroelectronics 1.12% in early trading. The rules weigh on chip stocks ahead of Nvidia's results.",
+   "url": "https://www.investing.com/news/stock-market-news/european-chip-stocks-fall-after-new-us-curbs-on-ai-chip-access-5032343"
   },
   {
    "date": "2026-11-17",
@@ -1632,52 +1683,6 @@
    "summary": "Le bitcoin, tombé vers 62 000 $ en fin de semaine, se tient près de 65 000 $; les FNB bitcoin américains ont subi sept séances de sorties nettes (environ 1,9 G$) et la plus grosse position d'options sur Deribit est désormais un put de 900 M$ au prix d'exercice de 60 000 $. Les marchés évaluent à environ 92 % la probabilité d'une hausse de taux de la Fed en décembre, avec un 10 ans à 5,15 %, alors que Nvidia (-4,5 %) publie mardi. Wintermute surveille 62 000 $ puis 60 000 $ et n'exclut pas une pression vers les 50 000 $.",
    "summary_en": "Bitcoin, which fell to about $62,000 over the weekend, holds near $65,000; U.S. spot bitcoin ETFs saw seven straight sessions of net outflows (about $1.9B), and the largest Deribit options position is now a $900M put at the $60,000 strike. Markets price roughly a 92% chance of a December Fed rate hike, with the 10-year yield at 5.15%, as Nvidia (-4.5%) reports Tuesday. Wintermute watches $62,000 then $60,000 and sees possible pressure into the $50,000s.",
    "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-risks-falling-below-usd60-000-as-nvidia-earnings-threaten-to-deepen-crypto-sell-off"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "15:30",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "usd",
-    "spx500",
-    "nasdaq",
-    "xauusd"
-   ],
-   "title": "Semaine à surveiller : procès-verbal de la Fed, discours de banquiers centraux et données clés",
-   "title_en": "Fed minutes, Fedspeak and key data to watch this week",
-   "summary": "Investing.com présente les rendez-vous de la semaine : le procès-verbal de la dernière réunion de la Fed, plusieurs discours de responsables de la Fed et des données économiques clés, dont les ventes au détail et les stocks de pétrole attendus mardi. Avec les résultats de Nvidia, ces publications pèseront sur les attentes de hausse de taux en décembre, le dollar et les indices.",
-   "summary_en": "Investing.com previews the week: minutes of the Fed's last meeting, several Fed officials' speeches and key economic data, including retail sales and oil inventories due Tuesday. Along with Nvidia's earnings, these releases will shape December rate-hike expectations, the dollar and the indexes.",
-   "url": "https://www.investing.com/news/stock-market-news/fed-minutes-fedspeak-and-key-data-to-watch-this-week-93CH-5030802"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "14:13",
-   "source": "CNBC",
-   "impact": "med",
-   "assets": [
-    "usoil"
-   ],
-   "title": "Le pétrole brut américain recule vers 85 $ le baril avec la reprise des exportations du Moyen-Orient",
-   "title_en": "U.S. crude oil declines to $85 a barrel on recovering Middle East exports",
-   "summary": "Le WTI a reculé vers 85 $ le baril lundi, selon CNBC, alors que les exportations du Moyen-Orient se rétablissent. C'est une baisse marquée par rapport aux 86,42 $ observés en matinée, malgré les tensions persistantes autour du détroit d'Ormuz.",
-   "summary_en": "WTI fell toward $85 a barrel on Monday, according to CNBC, as Middle East exports recover. That is a notable drop from the $86.42 seen in the morning, despite lingering tensions around the Strait of Hormuz.",
-   "url": "https://www.cnbc.com/2026/11/16/us-crude-oil-declines-to-87-a-barrel-on-recovering-middle-east-exports.html"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "14:12",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "spx500",
-    "us30"
-   ],
-   "title": "Downdetector signale des pannes chez de grandes banques américaines : JPMorgan, Bank of America, U.S. Bank et Wells Fargo",
-   "title_en": "Downdetector reports outages at major US banks: JPMorgan, Bank of America, U.S. Bank and Wells Fargo",
-   "summary": "Selon Reuters (repris par Investing.com), des signalements d'utilisateurs sur Downdetector indiquaient lundi des problèmes chez JPMorgan Chase, Bank of America, U.S. Bank et Wells Fargo. La cause n'est pas établie; une source citée par CNBC dit que rien n'indique l'implication d'acteurs malveillants chez JPMorgan ni un bogue touchant plusieurs banques à la fois. L'incident survient alors que les grandes banques reculent avec le reste du marché.",
-   "summary_en": "According to Reuters (via Investing.com), user reports on Downdetector pointed to problems at JPMorgan Chase, Bank of America, U.S. Bank and Wells Fargo on Monday. The cause is not established; a source cited by CNBC said there was no indication bad actors were involved in JPMorgan's issue nor of a bug hitting several banks at once. The incident comes as big banks fall along with the broader market.",
-   "url": "https://www.investing.com/news/stock-market-news/downdetector-reports-outages-at-major-us-banks-5030747"
   }
  ],
  "live": {
