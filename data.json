@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-16T23:47:13Z",
+  "updatedAt": "2026-11-17T00:47:39Z",
   "econ": {
     "values": {
       "adp": {
@@ -996,6 +996,22 @@
   "news": [
     {
       "date": "2026-11-16",
+      "time": "19:06",
+      "source": "Investing.com (CNN)",
+      "impact": "med",
+      "assets": [
+        "usoil",
+        "xauusd",
+        "usd"
+      ],
+      "title": "L'Iran préparerait une attaque à la « bombe sale » contre des responsables de Trump, selon CNN",
+      "title_en": "Iran plans attack on Trump officials with dirty bomb, CNN reports",
+      "summary": "Selon un reportage de CNN relayé par Investing.com, l'Iran planifierait une attaque à la « bombe sale » visant des responsables de l'administration Trump. Aucun détail ni réaction de marché n'est donné dans la manchette; une escalade des tensions avec l'Iran est à surveiller pour le pétrole, l'or et le dollar.",
+      "summary_en": "According to a CNN report carried by Investing.com, Iran is planning a dirty-bomb attack targeting Trump administration officials. The headline gives no further details or market reaction; any escalation of tensions with Iran is worth watching for oil, gold and the dollar.",
+      "url": "https://www.investing.com/news/stock-market-news/iran-plans-attack-on-trump-officials-with-dirty-bomb-cnn-reports-93CH-5031320"
+    },
+    {
+      "date": "2026-11-16",
       "time": "18:24",
       "source": "Investing.com",
       "impact": "med",
@@ -1602,22 +1618,6 @@
       "title": "Les Bourses asiatiques glissent, la nervosité sur l'IA s'accentue avant les résultats de Nvidia",
       "title_en": "Asia stocks slide as AI jitters deepen ahead of Nvidia results",
       "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-as-ai-jitters-deepen-ahead-of-nvidia-results-5028343"
-    },
-    {
-      "assets": [
-        "audusd",
-        "nzdusd",
-        "usoil"
-      ],
-      "date": "2026-11-15",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "La production industrielle chinoise a progressé de 4,8 % sur un an en octobre, sous les 5,3 % attendus et après 5,5 % en septembre. Les ventes au détail n'ont crû que de 0,4 % (0,8 % attendu, 1,1 % le mois précédent). Ce ralentissement pèse sur les devises liées à la Chine comme l'AUD et le NZD, et sur la demande de pétrole.",
-      "summary_en": "China's industrial output rose 4.8% year-on-year in October, below the 5.3% forecast and down from 5.5% in September. Retail sales grew just 0.4% (0.8% expected, 1.1% prior). The slowdown weighs on China-linked currencies such as the AUD and NZD, and on oil demand.",
-      "time": "21:16",
-      "title": "Chine : production industrielle et ventes au détail sous les attentes en octobre",
-      "title_en": "China factory output, retail sales miss forecasts in October",
-      "url": "https://ca.investing.com/news/economic-indicators/china-factory-output-retail-sales-miss-forecasts-in-oct-4959518"
     }
   ],
   "live": {
