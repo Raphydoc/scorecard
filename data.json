@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T15:48:09Z",
+ "updatedAt": "2026-11-17T16:48:18Z",
  "econ": {
   "values": {
    "adp": {
@@ -1064,6 +1064,51 @@
  "news": [
   {
    "date": "2026-11-17",
+   "time": "11:08",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Jensen Huang se dit prêt à revenir comme PDG de Nvidia si on le lui demande; l'action rebondit",
+   "title_en": "Jensen Huang says he would return as Nvidia CEO if asked, shares gain",
+   "summary": "Dans ses premiers commentaires publics depuis sa démission la semaine dernière, Jensen Huang dit qu'il reviendrait comme PDG si le conseil juge que c'est dans l'intérêt des actionnaires, des employés et des États-Unis. L'action de Nvidia a gagné près de 3 % après la nouvelle, tout en restant en baisse de plus de 1,1 % sur la séance; selon le WSJ, le conseil n'envisage pas de le réintégrer. Le conseil a aussi créé un comité sur la sécurité nationale et les contrôles à l'exportation, à quelques heures des résultats de Nvidia après la clôture — un test clé pour le Nasdaq et le S&P 500.",
+   "summary_en": "In his first public comments since resigning last week, Jensen Huang said he would return as CEO if the board decides it is in the interest of shareholders, employees and America. Nvidia shares rose nearly 3% on the reports but were still down more than 1.1% on the day; the WSJ reported the board is not considering reinstating him. The board also formed a committee overseeing national security and export-control compliance, hours before Nvidia's results after the close — a key test for the Nasdaq and S&P 500.",
+   "url": "https://www.investing.com/news/stock-market-news/jensen-huang-says-he-would-return-as-nvidia-ceo-if-asked-shares-gain-5033563"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "11:03",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "xauusd"
+   ],
+   "title": "L'avocat de Lisa Cook signale que la gouverneure de la Fed n'assistera pas à l'audience du comité de Trump",
+   "title_en": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
+   "summary": "Selon CNBC, l'avocat de la gouverneure de la Fed Lisa Cook indique qu'elle ne se présentera pas à l'audience du comité de la Maison-Blanche qui la vise. Ce bras de fer sur l'indépendance de la Fed est suivi de près par les marchés du dollar, des taux et de l'or.",
+   "summary_en": "According to CNBC, Fed Governor Lisa Cook's lawyer signaled she will not attend the hearing of the White House committee targeting her. The standoff over Fed independence is closely watched by dollar, rates and gold markets.",
+   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "11:00",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "xauusd"
+   ],
+   "title": "Trump et Téhéran misent sur le temps alors que l'impasse s'aggrave dans la guerre avec l'Iran",
+   "title_en": "Trump and Tehran gamble on time as Iran war stalemate deepens",
+   "summary": "Les pourparlers indirects entre Washington et Téhéran butent sur l'ordre des concessions : l'Iran exige la levée du blocus naval américain, le dégel de ses avoirs et la reprise de ses ventes de pétrole avant de rouvrir le détroit d'Ormuz, tandis que les États-Unis veulent des gestes simultanés, dont des engagements nucléaires vérifiables. Le conflit dure depuis près de neuf mois; les pays du Golfe disent avoir subi plus de 7 000 missiles et drones iraniens. L'impasse maintient une prime de risque sur le pétrole et soutient l'or.",
+   "summary_en": "Indirect US-Iran talks are stuck on sequencing: Iran wants the US naval blockade lifted, frozen assets released and oil sales restored before reopening the Strait of Hormuz, while Washington wants reciprocal, simultaneous steps including verifiable nuclear commitments. The war has run close to nine months; Gulf states say they were hit by more than 7,000 Iranian missiles and drones. The stalemate keeps a risk premium in oil and supports gold.",
+   "url": "https://www.investing.com/news/commodities-news/trump-and-tehran-gamble-on-time-as-iran-war-stalemate-deepens-5033542"
+  },
+  {
+   "date": "2026-11-17",
    "time": "09:59",
    "source": "Investing.com",
    "impact": "med",
@@ -1633,55 +1678,6 @@
    "summary": "Nvidia, qui a clôturé à 156,14 $ (-4,12 %), publie ses résultats après la clôture de mardi; les options anticipent un mouvement d'environ 7,8 %, soit une fourchette de 144 $ à 168 $. Le S&P 500 a fini à 7 417,12 (-1,91 %), le SOX a chuté de 5,28 % et le VIX a grimpé à 22,88. Selon Investing.com, un VIX au-dessus de 25 signalerait un stress qui déborde de la techno.",
    "summary_en": "Nvidia, which closed at $156.14 (-4.12%), reports after Tuesday's close; options imply a move of about 7.8%, a $144-$168 range. The S&P 500 ended at 7,417.12 (-1.91%), the SOX fell 5.28% and the VIX rose to 22.88. Investing.com says a VIX above 25 would signal stress spreading beyond tech.",
    "url": "https://www.investing.com/news/stock-market-news/market-positioning-risks-ahead-of-nvidia-earnings-93CH-5031075"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "16:54",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
-   "assets": [
-    "spx500",
-    "us30"
-   ],
-   "title": "Berkshire réduit ses participations dans Bank of America et Capital One",
-   "title_en": "Berkshire lowers Bank of America, Capital One stakes",
-   "summary": "Selon son dépôt 13F au 30 septembre, Berkshire Hathaway a réduit de 6 % sa participation dans Bank of America, à 455,9 millions d'actions, et de 62 % celle dans Capital One, à 1,15 million d'actions. Le conglomérat a aussi commencé à bâtir une participation de 4 % dans l'italienne Bending Spoons. Son portefeuille d'actions totalise 335,5 G$.",
-   "summary_en": "Per its 13F filing as of Sept. 30, Berkshire Hathaway cut its Bank of America stake by 6% to 455.9 million shares and its Capital One stake by 62% to 1.15 million shares. It also began building a 4% stake in Italy's Bending Spoons. Its equity portfolio totals $335.5 billion.",
-   "url": "https://www.investing.com/news/stock-market-news/berkshire-lowers-bank-of-america-capital-one-stakes-5031074"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "16:51",
-   "source": "CNBC",
-   "impact": "med",
-   "assets": [
-    "nasdaq"
-   ],
-   "title": "Retombées de l'affaire Nvidia : le Commerce s'attaque à une échappatoire sur l'usage chinois des centres de données",
-   "title_en": "Nvidia fallout: Commerce targets loophole for China's data center use",
-   "summary": "Selon CNBC, le département du Commerce vise une échappatoire qui permet l'utilisation de centres de données par la Chine, dans la foulée de la tourmente chez Nvidia. Ce resserrement potentiel des contrôles à l'exportation pèse sur le secteur des puces, à la veille des résultats de Nvidia.",
-   "summary_en": "According to CNBC, the Commerce Department is targeting a loophole allowing China's use of data centers, in the wake of the Nvidia turmoil. The potential tightening of export controls weighs on chip stocks on the eve of Nvidia's earnings.",
-   "url": "https://www.cnbc.com/2026/11/16/nvidia-commerce-china-lutnick.html"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "16:30",
-   "source": "Investing.com",
-   "impact": "high",
-   "assets": [
-    "us30",
-    "spx500",
-    "nasdaq",
-    "usoil",
-    "xauusd",
-    "usd",
-    "usdjpy"
-   ],
-   "title": "Clôture : le Nasdaq chute de 2,49 %, le S&P 500 de 1,91 % et le Dow de 1,41 %; le VIX bondit de 18,55 %",
-   "title_en": "Close: Nasdaq falls 2.49%, S&P 500 1.91% and Dow 1.41%; VIX jumps 18.55%",
-   "summary": "Le Dow Jones a perdu 737 points (-1,41 %) à 51 610 et le S&P 500 a cédé 1,91 % à 7 417, tandis que le Nasdaq a reculé de 2,49 %, plombé par Micron (-7,62 %), Intel (-7,07 %) et Nvidia (-4,12 %) avant ses résultats. Le VIX a grimpé à 22,88, le WTI a chuté de 3,86 % à 83,92 $ et l'or (décembre) de 0,77 % à 3 856 $, alors que l'indice du dollar a gagné 0,20 % à 103,53.",
-   "summary_en": "The Dow lost 737 points (-1.41%) to 51,610 and the S&P 500 fell 1.91% to 7,417, while the Nasdaq dropped 2.49%, dragged by Micron (-7.62%), Intel (-7.07%) and Nvidia (-4.12%) ahead of its earnings. The VIX rose to 22.88, WTI sank 3.86% to $83.92 and December gold fell 0.77% to $3,856, while the dollar index gained 0.20% to 103.53.",
-   "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-141-5030993"
   }
  ],
  "live": {
