@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T19:41:00Z",
+ "updatedAt": "2026-11-17T19:49:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -1063,162 +1063,190 @@
  },
  "news": [
   {
-   "date": "2026-11-17",
-   "time": "13:17",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Microsoft dévoile des modèles d'IA pour le code et la cybersécurité face à Anthropic et OpenAI",
-   "title_en": "Microsoft unveils AI models for coding, cybersecurity as it takes on Anthropic, OpenAI",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
+   "summary": "Le procureur général de la Californie, Rob Bonta, a dit à Bloomberg TV que son bureau examine certains aspects du scandale impliquant Nvidia et son ex-PDG Jensen Huang, et qu'un examen est « très possiblement » de son ressort. Il n'a donné aucun détail; son bureau évalue si les faits et le droit justifient une action. Un risque juridique de plus pour Nvidia, poids lourd du Nasdaq, à la veille de ses résultats.",
+   "summary_en": "California Attorney General Rob Bonta told Bloomberg TV his office is looking into aspects of the scandal involving Nvidia and former CEO Jensen Huang, saying a review is 'very possibly' in scope. He gave no details; his office is weighing whether the law and facts justify action. It adds legal risk for Nvidia, a Nasdaq heavyweight, on the eve of its earnings.",
+   "time": "14:31",
+   "title": "Scandale Nvidia : la procureure générale de Californie évoque des « signaux d'alarme » et une possible enquête",
+   "title_en": "California AG says Nvidia scandal has raised 'red flags', could lead to probe, Bloomberg News reports",
+   "url": "https://www.investing.com/news/stock-market-news/california-ag-says-nvidia-scandal-has-raised-red-flags-could-lead-to-probe-bloomberg-news-reports-5033824"
+  },
+  {
+   "assets": [
+    "spx500",
+    "us30"
+   ],
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Nike recule d'environ 6 % : l'entreprise prévoit des revenus stables en Grande Chine de l'exercice 2027 à 2031 et qualifie l'exercice 2028 d'année « difficile », avec un BPA ajusté en légère baisse. Elle vise pour 2031 un BPA ajusté de 3,00 à 3,50 $ et une marge d'exploitation de 12 à 14 %, avec environ 5 G$ de revenus supplémentaires. Des revenus implicites d'environ 48 G$ restent sous les 51,2 G$ prévus par Stifel.",
+   "summary_en": "Nike fell about 6% as it guided for flat Greater China revenue from fiscal 2027 to 2031 and called fiscal 2028 a 'challenging year', with adjusted EPS modestly lower. It targets fiscal 2031 adjusted EPS of $3.00-$3.50 and a 12%-14% operating margin, with about $5 billion in incremental revenue. Implied revenue of roughly $48 billion is below Stifel's $51.2 billion forecast.",
+   "time": "14:24",
+   "title": "Nike chute de 6 % : la journée des investisseurs souligne la faiblesse en Chine et un exercice 2028 difficile",
+   "title_en": "Nike shares fall 6% as investor day highlights China weakness and tough FY28",
+   "url": "https://www.investing.com/news/stock-market-news/nike-shares-rise-4-as-company-outlines-fiveyear-turnaround-plan-and-2031-targets-5033166"
+  },
+  {
+   "assets": [
+    "usd",
+    "spx500",
+    "nasdaq",
+    "xauusd"
+   ],
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Le procès-verbal de la dernière réunion du FOMC sera publié mercredi, avec les permis de bâtir et les promesses de vente de maisons aux États-Unis. Avec les paris sur des hausses de taux de la Fed, le ton du procès-verbal pourrait faire bouger le dollar, les taux, l'or et les indices. (Résumé limité au titre et au calendrier.)",
+   "summary_en": "Minutes of the latest FOMC meeting are due Wednesday, along with U.S. building permits and pending home sales. With markets betting on Fed rate hikes, the minutes' tone could move the dollar, yields, gold and stock indexes. (Summary limited to the headline and calendar.)",
+   "time": "14:01",
+   "title": "Au calendrier mercredi : procès-verbal du FOMC, permis de bâtir et promesses de vente de maisons",
+   "title_en": "FOMC minutes, building permits and pending home sales due Wednesday",
+   "url": "https://www.investing.com/news/stock-market-news/fomc-minutes-building-permits-and-pending-home-sales-due-wednesday-93CH-5033806"
+  },
+  {
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "À sa conférence Ignite, Microsoft a présenté MAI Code 2, un modèle de programmation qui égalerait presque ses rivaux à un coût bien moindre, ainsi qu'un modèle de cybersécurité offert à un groupe restreint de clients. L'action Microsoft recule d'environ 2,6 %, dans un marché technologique déjà sous pression avant les résultats de Nvidia.",
    "summary_en": "At its Ignite conference, Microsoft unveiled MAI Code 2, a coding model it says nearly matches rivals at much lower cost, plus a cybersecurity model for a limited group of customers. Microsoft shares are down about 2.6% in a tech market already under pressure ahead of Nvidia's results.",
+   "time": "13:17",
+   "title": "Microsoft dévoile des modèles d'IA pour le code et la cybersécurité face à Anthropic et OpenAI",
+   "title_en": "Microsoft unveils AI models for coding, cybersecurity as it takes on Anthropic, OpenAI",
    "url": "https://www.investing.com/news/stock-market-news/microsoft-unveils-ai-models-for-coding-cybersecurity-as-it-takes-on-anthropic-openai-5033766"
   },
   {
-   "date": "2026-11-17",
-   "time": "13:11",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Nvidia mandate Heidrick & Struggles pour trouver son prochain PDG; le CA écarte un retour de Huang (WSJ)",
-   "title_en": "Nvidia taps Heidrick & Struggles to lead CEO search, WSJ reports",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Selon le Wall Street Journal, Nvidia a lancé un processus formel de succession avec Heidrick & Struggles, qui a approché des candidats externes dont le PDG d'Arm, Rene Haas; le conseil n'envisagerait pas de ramener Jensen Huang. L'action Nvidia cède environ 1,8 % à 153 $, avec un VIX en hausse de 12 % à 25,7, à la veille de ses résultats.",
    "summary_en": "According to the Wall Street Journal, Nvidia began a formal succession process with Heidrick & Struggles, which has approached outside candidates including Arm CEO Rene Haas; the board is reportedly not considering bringing back Jensen Huang. Nvidia shares are down about 1.8% at $153, with the VIX up 12% at 25.7, ahead of its results.",
+   "time": "13:11",
+   "title": "Nvidia mandate Heidrick & Struggles pour trouver son prochain PDG; le CA écarte un retour de Huang (WSJ)",
+   "title_en": "Nvidia taps Heidrick & Struggles to lead CEO search, WSJ reports",
    "url": "https://www.investing.com/news/stock-market-news/nvidia-taps-heidrick--struggles-to-lead-ceo-search-wsj-reports-5033757"
   },
   {
-   "date": "2026-11-17",
-   "time": "12:23",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "eurusd",
     "gbpusd",
     "nasdaq"
    ],
-   "title": "L'Europe chute : le STOXX 600 perd 1,8 % sous les nouvelles restrictions américaines sur les puces; le DAX cède 2 %",
-   "title_en": "Europe slides: STOXX 600 down 1.8% on fresh U.S. chip curbs; DAX down 2%",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le STOXX 600 a reculé de 1,8 % mardi, à un creux d'une semaine; le DAX a perdu 2 %, le CAC 40 1,6 % et le FTSE 100 1,8 %. Washington a restreint les envois de puces d'IA avancées vers des centres de données tiers en Thaïlande et en Malaisie, utilisés selon les régulateurs par des entreprises chinoises; Deutsche Bank a chuté de 5,2 % et Nokia de plus de 4 % après que Nvidia a réduit sa participation de 56 %. L'aversion au risque en Europe pèse sur l'euro et la livre.",
    "summary_en": "The STOXX 600 fell 1.8% on Tuesday to a one-week low; the DAX lost 2%, the CAC 40 1.6% and the FTSE 100 1.8%. Washington restricted shipments of advanced AI chips to third-party data centers in Thailand and Malaysia, which regulators say Chinese firms use; Deutsche Bank fell 5.2% and Nokia more than 4% after Nvidia cut its stake by 56%. Risk aversion in Europe weighs on the euro and sterling.",
+   "time": "12:23",
+   "title": "L'Europe chute : le STOXX 600 perd 1,8 % sous les nouvelles restrictions américaines sur les puces; le DAX cède 2 %",
+   "title_en": "Europe slides: STOXX 600 down 1.8% on fresh U.S. chip curbs; DAX down 2%",
    "url": "https://www.investing.com/news/stock-market-news/european-shares-slip-on-fresh-us-chip-curbs-5031847"
   },
   {
-   "date": "2026-11-17",
-   "time": "12:00",
-   "source": "Federal Reserve",
-   "impact": "med",
    "assets": [
     "usd",
     "btcusd"
    ],
-   "title": "Waller (Fed) : la monnaie de banque centrale doit rester au cœur de la tokenisation",
-   "title_en": "Waller (Fed): central bank money must stay at the foundation of tokenization",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Federal Reserve",
    "summary": "Le gouverneur Christopher Waller a affirmé que la monnaie de banque centrale n'a pas à servir à chaque transaction, mais que « sa présence à la base du système est essentielle », alors que stablecoins, dépôts tokenisés et fonds monétaires tokenisés se multiplient. Il prévoit la coexistence de plusieurs modèles et n'a fait aucun commentaire sur la politique monétaire, un point à noter pour le dollar et la crypto.",
    "summary_en": "Governor Christopher Waller said central bank money need not be used in every transaction, but \"its presence at the foundation of the system is essential,\" as stablecoins, tokenized deposits and tokenized money market funds multiply. He expects several models to coexist and made no monetary policy remarks, a point worth noting for the dollar and crypto.",
+   "time": "12:00",
+   "title": "Waller (Fed) : la monnaie de banque centrale doit rester au cœur de la tokenisation",
+   "title_en": "Waller (Fed): central bank money must stay at the foundation of tokenization",
    "url": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm"
   },
   {
-   "date": "2026-11-17",
-   "time": "11:26",
-   "source": "Investing.com",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
     "us30"
    ],
-   "title": "Wall Street recule : le Nasdaq et le S&P 500 perdent 1,1 %, le Dow 1,4 % avant les résultats de Nvidia",
-   "title_en": "Wall Street falls: Nasdaq and S&P 500 down 1.1%, Dow down 1.4% ahead of Nvidia results",
+   "date": "2026-11-17",
+   "impact": "high",
+   "source": "Investing.com",
    "summary": "Vers 11 h 16, le Nasdaq cédait 1,1 % à 24 226,79, le S&P 500 1,1 % à 7 335,02 et le Dow 1,4 % à 50 877,52, la prudence dominant avant les résultats de Nvidia, après une séance de lundi où l'indice des semi-conducteurs de Philadelphie avait chuté de 5,3 %. Les nouvelles restrictions américaines sur l'accès à distance des entreprises chinoises aux puces avancées et l'IPO d'Anthropic, attendue cette semaine, pèsent aussi; les ventes au détail d'octobre (+0,2 %) ont battu la prévision de 0,1 %.",
    "summary_en": "Around 11:16 a.m., the Nasdaq was down 1.1% at 24,226.79, the S&P 500 down 1.1% at 7,335.02 and the Dow down 1.4% at 50,877.52 as caution prevailed ahead of Nvidia's results, following Monday's session in which the Philadelphia Semiconductor Index fell 5.3%. New U.S. curbs on Chinese firms' remote access to advanced chips and Anthropic's IPO, expected this week, also weigh; October retail sales (+0.2%) beat the 0.1% estimate.",
+   "time": "11:26",
+   "title": "Wall Street recule : le Nasdaq et le S&P 500 perdent 1,1 %, le Dow 1,4 % avant les résultats de Nvidia",
+   "title_en": "Wall Street falls: Nasdaq and S&P 500 down 1.1%, Dow down 1.4% ahead of Nvidia results",
    "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-muted-as-nvidia-earnings-loom-amid-ai-jitters-5031353"
   },
   {
-   "date": "2026-11-17",
-   "time": "11:08",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Jensen Huang se dit prêt à revenir comme PDG de Nvidia si on le lui demande; l'action rebondit",
-   "title_en": "Jensen Huang says he would return as Nvidia CEO if asked, shares gain",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Dans ses premiers commentaires publics depuis sa démission la semaine dernière, Jensen Huang dit qu'il reviendrait comme PDG si le conseil juge que c'est dans l'intérêt des actionnaires, des employés et des États-Unis. L'action de Nvidia a gagné près de 3 % après la nouvelle, tout en restant en baisse de plus de 1,1 % sur la séance; selon le WSJ, le conseil n'envisage pas de le réintégrer. Le conseil a aussi créé un comité sur la sécurité nationale et les contrôles à l'exportation, à quelques heures des résultats de Nvidia après la clôture — un test clé pour le Nasdaq et le S&P 500.",
    "summary_en": "In his first public comments since resigning last week, Jensen Huang said he would return as CEO if the board decides it is in the interest of shareholders, employees and America. Nvidia shares rose nearly 3% on the reports but were still down more than 1.1% on the day; the WSJ reported the board is not considering reinstating him. The board also formed a committee overseeing national security and export-control compliance, hours before Nvidia's results after the close — a key test for the Nasdaq and S&P 500.",
+   "time": "11:08",
+   "title": "Jensen Huang se dit prêt à revenir comme PDG de Nvidia si on le lui demande; l'action rebondit",
+   "title_en": "Jensen Huang says he would return as Nvidia CEO if asked, shares gain",
    "url": "https://www.investing.com/news/stock-market-news/jensen-huang-says-he-would-return-as-nvidia-ceo-if-asked-shares-gain-5033563"
   },
   {
-   "date": "2026-11-17",
-   "time": "11:03",
-   "source": "CNBC",
-   "impact": "med",
    "assets": [
     "usd",
     "xauusd"
    ],
-   "title": "L'avocat de Lisa Cook signale que la gouverneure de la Fed n'assistera pas à l'audience du comité de Trump",
-   "title_en": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "CNBC",
    "summary": "Selon CNBC, l'avocat de la gouverneure de la Fed Lisa Cook indique qu'elle ne se présentera pas à l'audience du comité de la Maison-Blanche qui la vise. Ce bras de fer sur l'indépendance de la Fed est suivi de près par les marchés du dollar, des taux et de l'or.",
    "summary_en": "According to CNBC, Fed Governor Lisa Cook's lawyer signaled she will not attend the hearing of the White House committee targeting her. The standoff over Fed independence is closely watched by dollar, rates and gold markets.",
+   "time": "11:03",
+   "title": "L'avocat de Lisa Cook signale que la gouverneure de la Fed n'assistera pas à l'audience du comité de Trump",
+   "title_en": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
    "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html"
   },
   {
-   "date": "2026-11-17",
-   "time": "11:00",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "usoil",
     "xauusd"
    ],
-   "title": "Trump et Téhéran misent sur le temps alors que l'impasse s'aggrave dans la guerre avec l'Iran",
-   "title_en": "Trump and Tehran gamble on time as Iran war stalemate deepens",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Les pourparlers indirects entre Washington et Téhéran butent sur l'ordre des concessions : l'Iran exige la levée du blocus naval américain, le dégel de ses avoirs et la reprise de ses ventes de pétrole avant de rouvrir le détroit d'Ormuz, tandis que les États-Unis veulent des gestes simultanés, dont des engagements nucléaires vérifiables. Le conflit dure depuis près de neuf mois; les pays du Golfe disent avoir subi plus de 7 000 missiles et drones iraniens. L'impasse maintient une prime de risque sur le pétrole et soutient l'or.",
    "summary_en": "Indirect US-Iran talks are stuck on sequencing: Iran wants the US naval blockade lifted, frozen assets released and oil sales restored before reopening the Strait of Hormuz, while Washington wants reciprocal, simultaneous steps including verifiable nuclear commitments. The war has run close to nine months; Gulf states say they were hit by more than 7,000 Iranian missiles and drones. The stalemate keeps a risk premium in oil and supports gold.",
+   "time": "11:00",
+   "title": "Trump et Téhéran misent sur le temps alors que l'impasse s'aggrave dans la guerre avec l'Iran",
+   "title_en": "Trump and Tehran gamble on time as Iran war stalemate deepens",
    "url": "https://www.investing.com/news/commodities-news/trump-and-tehran-gamble-on-time-as-iran-war-stalemate-deepens-5033542"
   },
   {
-   "date": "2026-11-17",
-   "time": "09:59",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usoil",
     "usd"
    ],
-   "title": "Le pétrole rebondit : le WTI gagne 1,6 % à 87,10 $, entre tensions au Moyen-Orient et reprise des exportations du Golfe",
-   "title_en": "Oil turns higher: WTI adds 1.6% to $87.10 amid Middle East tensions and improving Gulf exports",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Vers 9 h 48 (HE), le Brent de janvier avançait de 1,5 % à 93,84 $ et le WTI de 1,6 % à 87,10 $, après une chute de plus de 14 % en un mois. L'Iran a présenté un plan de deux jours pour rouvrir le détroit d'Ormuz, mais au moins quatre pétroliers y ont été attaqués depuis vendredi. L'AIE prévoit une offre mondiale d'environ 105 M b/j au quatrième trimestre, soit 1,7 M b/j de plus que la demande, le premier surplus depuis le début de la guerre.",
    "summary_en": "Around 9:48 ET, January Brent rose 1.5% to $93.84 and WTI 1.6% to $87.10, after falling more than 14% over the past month. Iran presented a two-day plan to reopen the Strait of Hormuz, but at least four tankers have been attacked there since Friday. The IEA sees global supply near 105 million bpd in the December quarter, 1.7 million bpd above demand, the first surplus since the war began.",
+   "time": "09:59",
+   "title": "Le pétrole rebondit : le WTI gagne 1,6 % à 87,10 $, entre tensions au Moyen-Orient et reprise des exportations du Golfe",
+   "title_en": "Oil turns higher: WTI adds 1.6% to $87.10 amid Middle East tensions and improving Gulf exports",
    "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393"
   },
   {
-   "date": "2026-11-17",
-   "time": "09:07",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "spx500",
-    "us30"
-   ],
-   "title": "Nike grimpe de 4 % en dévoilant un plan de redressement sur cinq ans et des cibles pour 2031",
-   "title_en": "Nike shares rise 4% as company outlines five-year turnaround plan and 2031 targets",
-   "summary": "L'action Nike gagne 4 % avant l'ouverture après la présentation d'un plan de redressement sur cinq ans lors de sa journée des investisseurs. L'entreprise vise une croissance additionnelle de ses revenus de 5 milliards $ d'ici 2031. Nike fait partie du Dow Jones, ce qui peut soutenir l'indice en séance.",
-   "summary_en": "Nike shares rose 4% premarket after the company outlined a five-year turnaround plan at its investor day. The company targets $5 billion in incremental revenue growth by 2031. Nike is a Dow component, which may support the index today.",
-   "url": "https://www.investing.com/news/stock-market-news/nike-shares-rise-4-as-company-outlines-fiveyear-turnaround-plan-and-2031-targets-5033166"
-  },
-  {
-   "date": "2026-11-17",
-   "time": "08:41",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "usd",
     "spx500",
@@ -1228,17 +1256,17 @@
     "eurusd",
     "usdjpy"
    ],
-   "title": "Ventes au détail américaines : +0,2 % en octobre, en ligne; le groupe témoin bondit de 0,6 %",
-   "title_en": "US retail sales rise 0.2% in October, in line; control group jumps 0.6%",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Les ventes au détail aux États-Unis ont augmenté de 0,2 % en octobre, comme prévu, après +0,8 % en septembre (non révisé). Le groupe témoin, qui alimente le calcul du PIB, a grimpé de 0,6 % contre 0,4 % attendu, et septembre a été révisé à +0,5 % (contre +0,1 %). Une consommation de base plus solide que prévu soutient le dollar et les taux, dans un contexte où des membres de la Fed évoquent d'autres hausses.",
    "summary_en": "US retail sales rose 0.2% in October, as expected, after a 0.8% gain in September (unrevised). The control group, which feeds into GDP, climbed 0.6% versus 0.4% expected, and September was revised to +0.5% from +0.1%. Firmer-than-expected core spending supports the dollar and yields as some Fed officials discuss further hikes.",
+   "time": "08:41",
+   "title": "Ventes au détail américaines : +0,2 % en octobre, en ligne; le groupe témoin bondit de 0,6 %",
+   "title_en": "US retail sales rise 0.2% in October, in line; control group jumps 0.6%",
    "url": "https://investing.com/news/economy-news/us-retail-sales-increase-moderately-in-october-5033051"
   },
   {
-   "date": "2026-11-17",
-   "time": "08:34",
-   "source": "CNBC",
-   "impact": "high",
    "assets": [
     "usd",
     "spx500",
@@ -1247,437 +1275,407 @@
     "usdjpy",
     "eurusd"
    ],
-   "title": "Musalem (Fed de Saint-Louis) : quatre hausses de taux de plus pourraient être nécessaires dans les prochains mois",
-   "title_en": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
+   "date": "2026-11-17",
+   "impact": "high",
+   "source": "CNBC",
    "summary": "Le président de la Fed de Saint-Louis, Alberto Musalem, estime que quatre hausses de taux supplémentaires pourraient être nécessaires au cours des prochains mois (selon le titre de CNBC; article non lisible). Un discours aussi restrictif soutient le dollar et pèse sur l'or et les actions de croissance, déjà fragilisés avant les résultats de Nvidia.",
    "summary_en": "St. Louis Fed President Alberto Musalem says four more rate hikes may be needed in the coming months (per CNBC's headline; article could not be read). Such hawkish talk supports the dollar and weighs on gold and growth stocks, already under pressure ahead of Nvidia's results.",
+   "time": "08:34",
+   "title": "Musalem (Fed de Saint-Louis) : quatre hausses de taux de plus pourraient être nécessaires dans les prochains mois",
+   "title_en": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
    "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
   },
   {
-   "date": "2026-11-17",
-   "time": "08:21",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "spx500"
    ],
-   "title": "Pourquoi Goldman Sachs s'attend à un rebond du S&P 500 en 2027",
-   "title_en": "Why Goldman Sachs expects the S&P 500 to rally in 2027",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Goldman Sachs s'attend à ce que le S&P 500 progresse en 2027, selon Investing.com (article non lisible; détails de la cible non confirmés). Cette perspective arrive alors que l'indice recule sous le poids de la tech.",
    "summary_en": "Goldman Sachs expects the S&P 500 to rally in 2027, according to Investing.com (article could not be read; target details unconfirmed). The outlook comes as the index slides under pressure from tech.",
+   "time": "08:21",
+   "title": "Pourquoi Goldman Sachs s'attend à un rebond du S&P 500 en 2027",
+   "title_en": "Why Goldman Sachs expects the S&P 500 to rally in 2027",
    "url": "https://www.investing.com/news/stock-market-news/why-goldman-sachs-expects-the-sp-500-to-rally-in-2027-5032933"
   },
   {
-   "date": "2026-11-17",
-   "time": "08:05",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "spx500",
     "nasdaq",
     "rut"
    ],
-   "title": "Citadel (Rubner) : la volatilité des actions atteint son plus haut depuis avril 2025",
-   "title_en": "Citadel's Rubner says equity volatility hits highest since April 2025",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Scott Rubner, de Citadel, affirme que la volatilité sur les actions a atteint son niveau le plus élevé depuis avril 2025 (selon le titre d'Investing.com; article non lisible). Cela témoigne de la nervosité des marchés américains à l'approche des résultats de Nvidia.",
    "summary_en": "Citadel's Scott Rubner says equity volatility has hit its highest level since April 2025 (per Investing.com's headline; article could not be read). It reflects nervousness in U.S. markets ahead of Nvidia's results.",
+   "time": "08:05",
+   "title": "Citadel (Rubner) : la volatilité des actions atteint son plus haut depuis avril 2025",
+   "title_en": "Citadel's Rubner says equity volatility hits highest since April 2025",
    "url": "https://www.investing.com/news/stock-market-news/citadels-rubner-says-equity-volatility-hits-highest-since-april-2025-93CH-5032831"
   },
   {
-   "date": "2026-11-17",
-   "time": "07:50",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "xauusd",
     "usd"
    ],
-   "title": "L'or se stabilise à 3 855 $ après un creux de 14 mois; la Fed et la tech pèsent toujours",
-   "title_en": "Gold stabilizes near $3,855 after hitting over one-year low",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Vers 7 h 33 (HE), l'or au comptant était à peu près inchangé à 3 855,12 $ l'once et les contrats à terme gagnaient 0,1 % à 3 858,15 $, le DXY avançant de 0,1 % à 103,60. Beth Hammack (Fed de Cleveland) privilégie des hausses de taux graduelles, mais n'exclut pas des ajustements plus importants si l'inflation accélère, ce qui pèse sur le métal sans rendement. Le marché attend le procès-verbal de la réunion d'octobre de la Fed mercredi; ING s'attend à ce que l'or reste volatil.",
    "summary_en": "Around 7:33 ET, spot gold was mostly unchanged at $3,855.12/oz and futures rose 0.1% to $3,858.15, with the dollar index up 0.1% at 103.60. Cleveland Fed's Beth Hammack favored gradual rate hikes but said larger moves could be needed if inflation accelerates, weighing on non-yielding bullion. Markets await Fed October minutes on Wednesday; ING expects gold to stay volatile.",
+   "time": "07:50",
+   "title": "L'or se stabilise à 3 855 $ après un creux de 14 mois; la Fed et la tech pèsent toujours",
+   "title_en": "Gold stabilizes near $3,855 after hitting over one-year low",
    "url": "https://www.investing.com/news/commodities-news/gold-hovers-near-14month-low-as-fed-hike-bets-and-tech-selloff-weigh-5031431"
   },
   {
-   "date": "2026-11-17",
-   "time": "07:32",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "xauusd"
    ],
-   "title": "Goldman précise quand il s'attend à voir l'or atteindre 5 600 $ l'once",
-   "title_en": "Here's when Goldman expects gold prices to reach $5,600/oz",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Goldman Sachs maintient une cible de 5 600 $ l'once pour l'or et indique à quel horizon il l'attend (selon le titre d'Investing.com; article non lisible, échéance non confirmée). La prévision contraste avec l'or, récemment tombé près d'un creux de 14 mois.",
    "summary_en": "Goldman Sachs sees gold reaching $5,600/oz and lays out when it expects that (per Investing.com's headline; article could not be read, timing unconfirmed). The forecast contrasts with gold recently falling near a 14-month low.",
+   "time": "07:32",
+   "title": "Goldman précise quand il s'attend à voir l'or atteindre 5 600 $ l'once",
+   "title_en": "Here's when Goldman expects gold prices to reach $5,600/oz",
    "url": "https://www.investing.com/news/commodities-news/heres-when-goldman-expects-gold-prices-to-reach-5600oz-5032707"
   },
   {
-   "date": "2026-11-17",
-   "time": "07:16",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Crypto : l'offre de stablecoins fond de 5,3 % en 30 jours, du jamais vu depuis Terra en 2022, ce qui pèse sur le bitcoin",
-   "title_en": "Crypto's 'casino chips' are disappearing, adding to pain from spot ETF outflows",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Selon DefiLlama, l'offre totale de stablecoins a reculé de 5,3 % en 30 jours, à 284,24 G$, la plus forte baisse depuis l'effondrement de Terra en 2022; USDT et USDC ont perdu ensemble environ 11,6 G$ (−4,5 %), à 244,5 G$. Ces « jetons de casino » servent de liquidité au marché crypto : leur recul s'ajoute aux sorties des FNB bitcoin au comptant, alors que le bitcoin se maintient près de 64 000 $.",
    "summary_en": "Total stablecoin supply fell 5.3% over 30 days to $284.24 billion, per DefiLlama, the steepest drop since the 2022 Terra collapse; USDT and USDC combined lost about $11.6 billion (-4.5%) to $244.5 billion. These 'casino chips' are the crypto market's liquidity, so their decline adds to pressure from spot bitcoin ETF outflows, with bitcoin holding near $64,000.",
+   "time": "07:16",
+   "title": "Crypto : l'offre de stablecoins fond de 5,3 % en 30 jours, du jamais vu depuis Terra en 2022, ce qui pèse sur le bitcoin",
+   "title_en": "Crypto's 'casino chips' are disappearing, adding to pain from spot ETF outflows",
    "url": "https://www.coindesk.com/daybook-us/2026/11/17/crypto-s-casino-chips-are-disappearing-adding-to-pain-from-spot-etf-outflows"
   },
   {
-   "date": "2026-11-17",
-   "time": "07:13",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "usoil",
     "xauusd",
     "usd"
    ],
-   "title": "Téhéran dément le reportage sur un supposé plan iranien de « bombe sale » à Washington",
-   "title_en": "Tehran denies report of a potential Iranian plan to detonate dirty bomb in Washington",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "L'Iran dément un reportage (CNN, lundi soir) selon lequel il planifierait de faire exploser une « bombe sale » à Washington visant des responsables de l'administration Trump, selon une dépêche Reuters reprise par Investing.com. Aucun détail de marché n'est donné; les tensions avec l'Iran restent à surveiller pour le pétrole, l'or et le dollar.",
    "summary_en": "Iran denied a report (CNN, Monday evening) that it planned to detonate a dirty bomb in Washington targeting Trump administration officials, according to a Reuters report carried by Investing.com. No market details were given; tensions with Iran remain worth watching for oil, gold and the dollar.",
+   "time": "07:13",
+   "title": "Téhéran dément le reportage sur un supposé plan iranien de « bombe sale » à Washington",
+   "title_en": "Tehran denies report of a potential Iranian plan to detonate dirty bomb in Washington",
    "url": "https://www.investing.com/news/commodities-news/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington-5032621"
   },
   {
-   "date": "2026-11-17",
-   "time": "07:00",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "spx500",
     "nasdaq"
    ],
-   "title": "Citi : 95 % des positions acheteuses sur le S&P 500 sont perdantes",
-   "title_en": "95% of S&P 500 longs are offside, Citi warns",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Selon une manchette d'Investing.com, Citi avertit que 95 % des positions acheteuses (longues) sur le S&P 500 sont maintenant en perte. L'article n'a pas pu être lu; cela signale un positionnement fragile qui peut amplifier les ventes forcées si le repli des indices se poursuit avant les résultats de Nvidia.",
    "summary_en": "According to an Investing.com headline, Citi warns that 95% of long positions on the S&P 500 are now underwater. The article could not be read; this points to fragile positioning that can amplify forced selling if the index pullback continues ahead of Nvidia's results.",
+   "time": "07:00",
+   "title": "Citi : 95 % des positions acheteuses sur le S&P 500 sont perdantes",
+   "title_en": "95% of S&P 500 longs are offside, Citi warns",
    "url": "https://www.investing.com/news/stock-market-news/95-of-sp-500-longs-are-offside-citi-warns-5032510"
   },
   {
-   "date": "2026-11-17",
-   "time": "06:43",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "spx500",
     "us30"
    ],
-   "title": "Disney bat les prévisions de bénéfices et prévoit d'augmenter ses dépenses en contenu",
-   "title_en": "Disney beats earnings forecasts, plans to increase content spending",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Disney (membre du Dow et du S&P 500) a publié des résultats supérieurs aux prévisions des analystes et prévoit d'accroître ses dépenses en contenu, selon une dépêche Reuters reprise par Investing.com. Les chiffres détaillés n'ont pas pu être lus; le titre influence l'humeur du Dow en préouverture.",
    "summary_en": "Disney (a Dow and S&P 500 component) reported results above analysts' forecasts and plans to increase content spending, according to a Reuters report carried by Investing.com. Detailed figures could not be read; the stock sways Dow sentiment in premarket trading.",
+   "time": "06:43",
+   "title": "Disney bat les prévisions de bénéfices et prévoit d'augmenter ses dépenses en contenu",
+   "title_en": "Disney beats earnings forecasts, plans to increase content spending",
    "url": "https://www.investing.com/news/stock-market-news/disney-beats-earnings-forecasts-plans-to-increase-content-spending-5032413"
   },
   {
-   "date": "2026-11-17",
-   "time": "06:41",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Anthropic obtient l'autorisation d'inscrire ses actions de catégorie A au Nasdaq Global Select sous le symbole « ANT »",
-   "title_en": "Anthropic: approved to list class A common stock on Nasdaq Global Select Market under symbol 'ANT'",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Anthropic annonce avoir reçu l'autorisation d'inscrire ses actions ordinaires de catégorie A au Nasdaq Global Select Market sous le symbole « ANT », selon une manchette d'Investing.com. Cette étape ouvre la voie à l'IPO prévue jeudi, un test majeur de l'appétit des investisseurs pour l'IA alors que la tech recule.",
    "summary_en": "Anthropic says it has been approved to list its class A common stock on the Nasdaq Global Select Market under the symbol 'ANT', according to an Investing.com headline. The step clears the way for the IPO planned for Thursday, a key test of investor appetite for AI as tech stocks slide.",
+   "time": "06:41",
+   "title": "Anthropic obtient l'autorisation d'inscrire ses actions de catégorie A au Nasdaq Global Select sous le symbole « ANT »",
+   "title_en": "Anthropic: approved to list class A common stock on Nasdaq Global Select Market under symbol 'ANT'",
    "url": "https://www.investing.com/news/stock-market-news/anthropic-have-been-approved-to-list-our-class-a-common-stock-on-nasdaq-global-select-market-under-symbol-ant-432SI-5032359"
   },
   {
-   "date": "2026-11-17",
-   "time": "06:23",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "eurusd"
    ],
-   "title": "Les semi-conducteurs européens reculent après de nouvelles restrictions américaines sur l'accès aux puces d'IA",
-   "title_en": "European chip stocks fall after new US curbs on AI chip access",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le département du Commerce américain a imposé lundi, avec effet immédiat, des restrictions sur les envois de puces d'IA avancées vers des centres de données tiers en Thaïlande et en Malaisie, pour empêcher la Chine d'y accéder indirectement par location de puissance de calcul. ASML a cédé 2,25 %, BE Semiconductor 2,06 %, Infineon 1,19 % et STMicroelectronics 1,12 % en début de séance. Ces règles pèsent sur le secteur des puces à la veille des résultats de Nvidia.",
    "summary_en": "The US Commerce Department imposed, with immediate effect on Monday, restrictions on advanced AI chip shipments to third-party data centres in Thailand and Malaysia, to stop China from gaining indirect access by renting computing power. ASML fell 2.25%, BE Semiconductor 2.06%, Infineon 1.19% and STMicroelectronics 1.12% in early trading. The rules weigh on chip stocks ahead of Nvidia's results.",
+   "time": "06:23",
+   "title": "Les semi-conducteurs européens reculent après de nouvelles restrictions américaines sur l'accès aux puces d'IA",
+   "title_en": "European chip stocks fall after new US curbs on AI chip access",
    "url": "https://www.investing.com/news/stock-market-news/european-chip-stocks-fall-after-new-us-curbs-on-ai-chip-access-5032343"
   },
   {
-   "date": "2026-11-17",
-   "time": "06:02",
-   "source": "CNBC",
-   "impact": "med",
    "assets": [
     "spx500",
     "us30"
    ],
-   "title": "Home Depot nomme Richard McPhail PDG et dépasse les attentes au 3e trimestre",
-   "title_en": "Home Depot names Richard McPhail CEO, beats earnings expectations",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "CNBC",
    "summary": "Home Depot, membre du Dow Jones, a publié des résultats du 3e trimestre supérieurs aux attentes et annoncé que son chef des finances Richard McPhail deviendra PDG le 23 novembre. Selon le communiqué déposé à la SEC, Ted Decker, revenu d'un congé, quitte la direction mais reste président du conseil; Ann-Marie Campbell devient présidente et chef de l'exploitation, et Jordan Broggi chef des finances.",
    "summary_en": "Home Depot, a Dow component, reported third-quarter results above expectations and said CFO Richard McPhail will become CEO on Nov. 23. Per its SEC filing, Ted Decker, back from leave, steps down as CEO but stays chair; Ann-Marie Campbell becomes president and COO, and Jordan Broggi CFO.",
+   "time": "06:02",
+   "title": "Home Depot nomme Richard McPhail PDG et dépasse les attentes au 3e trimestre",
+   "title_en": "Home Depot names Richard McPhail CEO, beats earnings expectations",
    "url": "https://www.cnbc.com/2026/11/17/home-depot-hd-q3-earnings-2026.html"
   },
   {
-   "date": "2026-11-17",
-   "time": "05:53",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "spx500",
     "nasdaq",
     "us30",
     "usd"
    ],
-   "title": "Les contrats à terme reculent avant Nvidia : Dow −0,45 %, S&P 500 et Nasdaq 100 −0,34 %; Waller, Hammack et Williams attendus",
-   "title_en": "US stock futures slip ahead of Nvidia results: Dow −0.45%, S&P 500 and Nasdaq 100 −0.34%; Waller, Hammack and Williams in focus",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "À 5 h 23 (HE), les E-minis du Dow perdaient 231 points (−0,45 %), ceux du S&P 500 et du Nasdaq 100 cédaient 0,34 %, avant les résultats de Nvidia après la clôture. Intel recule de 3,3 % en préouverture après la réduction de 25 % de la participation de Nvidia; CoreWeave perd environ 2 %. Les discours de Waller, Hammack et Williams sont attendus, et le marché évalue à 97,4 % la probabilité d'une hausse de taux de 25 points de base en décembre (CME FedWatch), un appui pour le dollar.",
    "summary_en": "At 5:23 a.m. ET, Dow E-minis were down 231 points (0.45%), while S&P 500 and Nasdaq 100 E-minis fell 0.34% ahead of Nvidia's after-the-bell results. Intel slid 3.3% premarket after Nvidia cut its stake by 25%; CoreWeave fell about 2%. Fed speakers Waller, Hammack and Williams are due, and markets price a 97.4% chance of a 25-basis-point rate hike in December (CME FedWatch), supportive for the dollar.",
+   "time": "05:53",
+   "title": "Les contrats à terme reculent avant Nvidia : Dow −0,45 %, S&P 500 et Nasdaq 100 −0,34 %; Waller, Hammack et Williams attendus",
+   "title_en": "US stock futures slip ahead of Nvidia results: Dow −0.45%, S&P 500 and Nasdaq 100 −0.34%; Waller, Hammack and Williams in focus",
    "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-slip-ahead-of-nvidia-results-fed-speakers-in-focus-5032236"
   },
   {
-   "date": "2026-11-17",
-   "time": "05:34",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd",
     "nasdaq"
    ],
-   "title": "Le bitcoin se maintient près de 64 000 $ alors que la tech recule avant les résultats de Nvidia",
-   "title_en": "Bitcoin holds near $64,000 as tech slides ahead of Nvidia earnings",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin reste près de 64 000 $, peu changé sur 24 heures après une glissade à 62 000 $ en fin de semaine; l'ether est juste sous 1 800 $. Les contrats à terme du Nasdaq 100 cèdent 0,5 % après une déroute de deux jours qui a effacé 6 % de l'indice. Les sorties des FNB au comptant et les fortes probabilités d'une hausse de taux de la Fed freinent les achats avant les résultats de Nvidia, les ventes au détail américaines et le procès-verbal de la Fed mercredi.",
    "summary_en": "Bitcoin holds near $64,000, little changed over 24 hours after a weekend slide to $62,000; ether is just under $1,800. Nasdaq 100 futures are down 0.5% after a two-day rout that wiped out 6% of the index. Spot ETF outflows and high Fed rate-hike odds keep buyers cautious ahead of Nvidia earnings, U.S. retail sales and Wednesday's Fed minutes.",
+   "time": "05:34",
+   "title": "Le bitcoin se maintient près de 64 000 $ alors que la tech recule avant les résultats de Nvidia",
+   "title_en": "Bitcoin holds near $64,000 as tech slides ahead of Nvidia earnings",
    "url": "https://www.coindesk.com/business/2026/11/17/live-updates-bitcoin-holds-near-usd64-000-as-tech-slides-ahead-of-nvidia-earnings"
   },
   {
-   "date": "2026-11-17",
-   "time": "05:18",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "eurusd"
    ],
-   "title": "Allemagne : le moral des investisseurs (ZEW) grimpe à 35,6, bien au-dessus des 28,3 attendus",
-   "title_en": "German investor morale rises more than expected in November, ZEW finds",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "L'indice ZEW du sentiment économique allemand passe à 35,6 points en novembre, contre 28,1 le mois précédent et 28,3 prévu. L'évaluation de la situation actuelle s'améliore à -33,2, contre -35,9. Le président du ZEW cite la hausse des commandes manufacturières et la baisse du pétrole, une donnée encourageante pour l'économie de la zone euro et l'euro.",
    "summary_en": "Germany's ZEW economic sentiment index rose to 35.6 in November from 28.1, beating the 28.3 forecast. The current-situation gauge improved to -33.2 from -35.9. ZEW's president cited rising manufacturing orders and falling oil prices, an encouraging sign for the euro zone economy and the euro.",
+   "time": "05:18",
+   "title": "Allemagne : le moral des investisseurs (ZEW) grimpe à 35,6, bien au-dessus des 28,3 attendus",
+   "title_en": "German investor morale rises more than expected in November, ZEW finds",
    "url": "https://www.investing.com/news/economic-indicators/german-investor-morale-rises-more-than-expected-in-november-zew-finds-5032155"
   },
   {
-   "date": "2026-11-17",
-   "time": "04:56",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Intel recule de plus de 3 % en préouverture : Nvidia réduit sa participation de 25 %, SpaceX devient son premier placement",
-   "title_en": "Intel falls premarket as Nvidia cuts stake, SpaceX becomes top holding",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Selon son formulaire 13F au 30 septembre, Nvidia a réduit de 25 % sa participation dans Intel, à 161,1 millions d'actions (19,4 G$), et porté celle dans SpaceX à 130,5 millions d'actions (environ 19,7 G$). Ces deux titres forment plus de 80 % de son portefeuille déclaré de 48,3 G$; Nvidia a aussi réduit Nokia de 56 % et Synopsys de 10 %. Intel perd plus de 3 % avant l'ouverture, à quelques heures des résultats de Nvidia.",
    "summary_en": "Per its 13F filing as of Sept. 30, Nvidia cut its Intel stake by 25% to 161.1 million shares ($19.4 billion) and raised its SpaceX holding to 130.5 million shares (about $19.7 billion). The two make up more than 80% of its $48.3 billion disclosed portfolio; Nvidia also trimmed Nokia by 56% and Synopsys by 10%. Intel fell more than 3% premarket, hours before Nvidia's earnings.",
+   "time": "04:56",
+   "title": "Intel recule de plus de 3 % en préouverture : Nvidia réduit sa participation de 25 %, SpaceX devient son premier placement",
+   "title_en": "Intel falls premarket as Nvidia cuts stake, SpaceX becomes top holding",
    "url": "https://www.investing.com/news/stock-market-news/intel-falls-premarket-as-nvidia-cuts-stake-spacex-becomes-top-holding-5032115"
   },
   {
-   "date": "2026-11-17",
-   "time": "04:22",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "gbpusd",
     "eurusd",
     "usd"
    ],
-   "title": "La livre se stabilise à 1,3199 $ après cinq séances de baisse; le chômage britannique recule à 4,6 %",
-   "title_en": "Sterling steadies at $1.3199 after five-day slide; UK jobless dips to 4.6%",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le GBP/USD gagne 0,10 % à 1,3199 $ et l'EUR/USD 0,05 % à 1,1005 $ pendant que le dollar fait une pause. Le chômage britannique a reculé de façon inattendue à 4,6 % et les salaires hors primes ralentissent à 3,5 %, mais les marchés voient encore environ 80 % de chances d'une hausse de la BoE en décembre; l'IPC britannique de mercredi est attendu à 3,6 %.",
    "summary_en": "GBP/USD rose 0.10% to $1.3199 and EUR/USD 0.05% to $1.1005 as the dollar paused. UK unemployment unexpectedly fell to 4.6% and regular pay growth slowed to 3.5%, but markets still price about an 80% chance of a December BoE hike; Wednesday's UK CPI is expected at 3.6%.",
+   "time": "04:22",
+   "title": "La livre se stabilise à 1,3199 $ après cinq séances de baisse; le chômage britannique recule à 4,6 %",
+   "title_en": "Sterling steadies at $1.3199 after five-day slide; UK jobless dips to 4.6%",
    "url": "https://www.investing.com/news/forex-news/sterling-today-pound-set-to-snap-slide-as-dollar-pauses-uk-jobless-dips-to-46-5032079"
   },
   {
-   "date": "2026-11-17",
-   "time": "04:00",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "eurusd",
     "usd"
    ],
-   "title": "Les rendements européens restent près d'un sommet d'un mois, tirés par les Treasuries à 5,125 %",
-   "title_en": "Euro yields hold near 1-month peaks on relentless U.S. Treasury pull",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le Bund allemand à 10 ans se maintient à 3,381 %, près de son plus haut en près d'un mois, et le 2 ans reste stable à 3,130 %, alors que le 10 ans américain se négocie à 5,125 %. Les marchés voient la BCE relever son taux à 3 % d'ici mars; Morgan Stanley prévoit un Bund à 3,10 % au T4 2027 et une BoJ à 1,75 % d'ici mars.",
    "summary_en": "Germany's 10-year Bund yield held at 3.381%, near a nearly one-month high, and the 2-year was steady at 3.130%, as the U.S. 10-year traded at 5.125%. The ECB is seen raising rates to 3% by March; Morgan Stanley forecasts the Bund at 3.10% in Q4 2027 and the BoJ at 1.75% by March.",
+   "time": "04:00",
+   "title": "Les rendements européens restent près d'un sommet d'un mois, tirés par les Treasuries à 5,125 %",
+   "title_en": "Euro yields hold near 1-month peaks on relentless U.S. Treasury pull",
    "url": "https://www.investing.com/news/forex-news/euro-yields-hold-near-1month-peaks-on-relentless-us-treasury-pull-5031817"
   },
   {
-   "date": "2026-11-17",
-   "time": "02:47",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Nvidia cessera de vendre des puces aux centres de données qui louent plus de la moitié de leurs GPU à la Chine, selon CNBC",
-   "title_en": "Nvidia to halt chip sales to data centers renting over half to China - report",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Selon CNBC, Nvidia a avisé ses clients qu'elle cessera de vendre aux exploitants de centres de données qui louent plus de la moitié de leurs GPU à des entreprises chinoises; le FT avait rapporté un seuil d'au moins 51 % de services à des clients non chinois. Le Commerce a publié lundi une règle provisoire pour bloquer l'accès à distance des firmes chinoises aux puces d'IA. La pression s'ajoute à la tourmente autour de Nvidia avant ses résultats.",
    "summary_en": "According to CNBC, Nvidia told customers it will stop selling to data center operators that rent more than half of their GPUs to Chinese companies; the FT had reported a threshold of at least 51% of services to non-Chinese clients. The Commerce Department issued an interim rule Monday to block Chinese firms' remote access to AI chips. The pressure adds to the turmoil around Nvidia ahead of its earnings.",
+   "time": "02:47",
+   "title": "Nvidia cessera de vendre des puces aux centres de données qui louent plus de la moitié de leurs GPU à la Chine, selon CNBC",
+   "title_en": "Nvidia to halt chip sales to data centers renting over half to China - report",
    "url": "https://www.investing.com/news/stock-market-news/nvidia-to-halt-chip-sales-to-data-centers-renting-over-half-to-china--report-5031871"
   },
   {
-   "date": "2026-11-17",
-   "time": "02:38",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd",
     "usd"
    ],
-   "title": "Bitcoin : Wintermute voit un risque de glissade dans la zone des 50 000 $ avec les paris sur une hausse de la Fed",
-   "title_en": "Bitcoin could slide into the $50,000s as Fed rate hike bets build, Wintermute says",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin, autour de 64 500 $, a perdu plus de 15 % en novembre et est passé sous sa moyenne de 200 semaines (environ 68 000 $). Wintermute cible d'abord le creux de 62 000 $ de samedi, puis l'amas d'options de vente à 60 000 $ sur Deribit (plus de 900 M$ d'intérêt ouvert), et n'exclut pas la zone des 50 000 $. Les marchés donnent environ 92 % de chances à une hausse de taux de la Fed en décembre et le 10 ans est repassé au-dessus de 5 %.",
    "summary_en": "Bitcoin, around $64,500, has fallen more than 15% in November and slipped below its 200-week average (about $68,000). Wintermute eyes Saturday's $62,000 low first, then the $60,000 put cluster on Deribit (over $900M in open interest), and sees pressure into the $50,000s. Markets price about 92% odds of a December Fed rate hike, and the 10-year yield is back above 5%.",
+   "time": "02:38",
+   "title": "Bitcoin : Wintermute voit un risque de glissade dans la zone des 50 000 $ avec les paris sur une hausse de la Fed",
+   "title_en": "Bitcoin could slide into the $50,000s as Fed rate hike bets build, Wintermute says",
    "url": "https://www.coindesk.com/markets/2026/11/17/bitcoin-could-slide-into-the-usd50-000s-as-fed-rate-hike-bets-build-wintermute-says"
   },
   {
-   "date": "2026-11-17",
-   "time": "02:07",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "gbpusd"
    ],
-   "title": "R.-U. : les salaires ralentissent à 3,5 % hors primes, le chômage recule à 4,6 %; une hausse de la BoE en décembre reste probable",
-   "title_en": "UK wage growth slows to 3.5% in three months to September; unemployment falls to 4.6%",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "La croissance des salaires hors primes ralentit à 3,5 % (contre 3,7 %), plus que prévu, et à 3,6 % avec primes; le chômage baisse à 4,6 % alors qu'on attendait 4,7 %, et les postes vacants tombent à 690 000. Les marchés voient environ 90 % de chances d'une hausse de taux de la Banque d'Angleterre en décembre. La livre a peu réagi.",
    "summary_en": "Regular pay growth slowed to 3.5% from 3.7%, more than expected, and total pay to 3.6%; unemployment fell to 4.6% versus 4.7% expected, and vacancies dropped to 690,000. Markets price roughly a 90% chance of a Bank of England rate hike in December. Sterling was little changed.",
+   "time": "02:07",
+   "title": "R.-U. : les salaires ralentissent à 3,5 % hors primes, le chômage recule à 4,6 %; une hausse de la BoE en décembre reste probable",
+   "title_en": "UK wage growth slows to 3.5% in three months to September; unemployment falls to 4.6%",
    "url": "https://www.investing.com/news/economy-news/uk-wage-growth-slows-to-35-in-three-months-to-september-5031823"
   },
   {
-   "date": "2026-11-17",
-   "time": "02:00",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usdjpy",
     "xauusd",
     "usoil"
    ],
-   "title": "Tokyo clôture en baisse : Nikkei −1,23 %, USD/JPY à 159,23; l'or à terme gagne 0,66 %",
-   "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 1.23%",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le Nikkei 225 a cédé 1,23 % à Tokyo, avec 2 812 titres en baisse contre 744 en hausse; Resonac (−7,56 %) et Ibiden (−6,44 %) ont mené les reculs, et l'indice de volatilité du Nikkei a grimpé à 35,10. Le dollar recule de 0,16 % à 159,23 yens, l'or de décembre gagne 0,66 % à 3 878,37 $ et le WTI de janvier perd 0,99 % à 83,63 $.",
    "summary_en": "The Nikkei 225 fell 1.23% in Tokyo, with 2,812 decliners versus 744 advancers; Resonac (−7.56%) and Ibiden (−6.44%) led losses, and the Nikkei volatility index rose to 35.10. USD/JPY slipped 0.16% to 159.23, December gold rose 0.66% to $3,878.37 and January WTI fell 0.99% to $83.63.",
+   "time": "02:00",
+   "title": "Tokyo clôture en baisse : Nikkei −1,23 %, USD/JPY à 159,23; l'or à terme gagne 0,66 %",
+   "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 1.23%",
    "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-123-5031816"
   },
   {
-   "date": "2026-11-17",
-   "time": "00:56",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Samsung (−3,05 %) et TSMC (−2,03 %) reculent après le resserrement américain sur l'accès de la Chine aux puces d'IA; le Taiwan Weighted perd 2,18 %",
-   "title_en": "Samsung (−3.05%) and TSMC (−2.03%) fall after US tightens China's access to AI chips; Taiwan Weighted down 2.18%",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Les actions de Samsung Electronics (−3,05 %) et de TSMC (−2,03 %) ont reculé mardi en Asie après l'annonce par l'administration Trump de nouvelles restrictions sur l'accès de la Chine aux puces d'IA avancées; l'indice Taiwan Weighted a clôturé en baisse de 2,18 %. Selon CLSA, les règles resserrent les exigences pour les fonderies qui fabriquent des puces avancées pour des clients chinois, ce qui pèse sur les semi-conducteurs à la veille des résultats de Nvidia et sur le Nasdaq et le S&P 500.",
    "summary_en": "Samsung Electronics (−3.05%) and TSMC (−2.03%) shares fell Tuesday in Asia after the Trump administration announced tighter curbs on China's access to advanced AI chips; the Taiwan Weighted index closed down 2.18%. CLSA says the rules tighten requirements on foundries making advanced chips for Chinese fabless firms, weighing on semiconductors ahead of Nvidia's results and on the Nasdaq and S&P 500.",
+   "time": "00:56",
+   "title": "Samsung (−3,05 %) et TSMC (−2,03 %) reculent après le resserrement américain sur l'accès de la Chine aux puces d'IA; le Taiwan Weighted perd 2,18 %",
+   "title_en": "Samsung (−3.05%) and TSMC (−2.03%) fall after US tightens China's access to AI chips; Taiwan Weighted down 2.18%",
    "url": "https://www.investing.com/news/stock-market-news/samsung-elec-tsmc-shares-fall-after-us-announces-curbs-on-chinas-chip-access-5031711"
   },
   {
-   "date": "2026-11-17",
-   "time": "00:37",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Wells Fargo double sa position dans l'ETF bitcoin de BlackRock, à 2,35 G$",
-   "title_en": "Wells Fargo's reported BlackRock bitcoin ETF holdings double to $2.35 billion",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Wells Fargo déclarait 49,58 millions de parts de l'IBIT de BlackRock (2,35 G$) à la fin septembre, contre 24,4 millions (812 M$) fin juin, soit une exposition indirecte d'environ 28 070 BTC. Ces données datent du 30 septembre; depuis une semaine, le bitcoin est passé d'environ 74 000 $ à 63 000 $ et l'IBIT a subi plus de 1 G$ de sorties.",
    "summary_en": "Wells Fargo reported 49.58 million IBIT shares ($2.35 billion) at end-September, up from 24.4 million ($812 million) at end-June, implying about 28,070 BTC of indirect exposure. The data is a Sept. 30 snapshot; over the past week bitcoin fell from about $74,000 to $63,000 and IBIT saw more than $1 billion in outflows.",
+   "time": "00:37",
+   "title": "Wells Fargo double sa position dans l'ETF bitcoin de BlackRock, à 2,35 G$",
+   "title_en": "Wells Fargo's reported BlackRock bitcoin ETF holdings double to $2.35 billion",
    "url": "https://www.coindesk.com/markets/2026/11/17/wells-fargo-s-reported-blackrock-bitcoin-etf-holdings-double-to-usd2-35-billion"
   },
   {
-   "date": "2026-11-17",
-   "time": "00:30",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "audusd",
     "xauusd"
    ],
-   "title": "L'ASX 200 chute de 1,79 % à la clôture, plombé par les minières; l'or à terme gagne 0,88 %",
-   "title_en": "Australia stocks lower at close of trade; S&P/ASX 200 down 1.79%",
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le S&P/ASX 200 a clôturé en baisse de 1,79 %, entraîné par les métaux et mines, les matériaux et les ressources; les baisses l'emportaient 839 contre 244 et l'indice de volatilité australien a bondi de 12,97 %. L'or à terme de décembre progressait de 0,88 % à 3 887,07 $ l'once, et l'AUD/USD se tenait près de 0,67.",
    "summary_en": "The S&P/ASX 200 closed down 1.79%, led by metals & mining, materials and resources; decliners outnumbered advancers 839 to 244 and the S&P/ASX 200 VIX jumped 12.97%. December gold futures rose 0.88% to $3,887.07 an ounce, and AUD/USD stood near 0.67.",
+   "time": "00:30",
+   "title": "L'ASX 200 chute de 1,79 % à la clôture, plombé par les minières; l'or à terme gagne 0,88 %",
+   "title_en": "Australia stocks lower at close of trade; S&P/ASX 200 down 1.79%",
    "url": "https://www.investing.com/news/stock-market-news/australia-stocks-lower-at-close-of-trade-spasx-200-down-179-5031664"
   },
   {
-   "date": "2026-11-16",
-   "time": "23:29",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usd",
     "usdjpy",
     "audusd",
     "eurusd"
    ],
-   "title": "Le dollar à un sommet de 19 mois : le DXY à 103,66, le yen à 159,20 près du seuil d'intervention",
-   "title_en": "Dollar hits 19-month peak: DXY at 103.66, yen at 159.20 near intervention zone",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "L'indice du dollar américain a progressé pour une sixième séance d'affilée à 103,66, son plus haut depuis le 2 avril 2025, porté par une inflation américaine plus chaude que prévu et des signaux restrictifs de la Fed; selon le FedWatch du CME, une hausse de taux en décembre est jugée quasi certaine (probabilité d'une hausse de 50 points de base ramenée à environ 5 %). L'USD/JPY recule de 0,2 % à 159,20, près du seuil de 160 vu comme déclencheur possible d'une intervention japonaise, tandis que l'AUD/USD gagne 0,1 % à 0,6741 $ après cinq baisses. Les ventes au détail américaines et les résultats de Nvidia sont les prochains catalyseurs.",
    "summary_en": "The US Dollar Index rose for a sixth straight session to 103.66, its highest since April 2, 2025, driven by hotter-than-expected US inflation and hawkish Fed signals; CME FedWatch shows a December hike as virtually certain (odds of a 50 bp move down to about 5%). USD/JPY eased 0.2% to 159.20, near the 160 level seen as a possible trigger for Japanese intervention, while AUD/USD rose 0.1% to $0.6741 after five declines. US retail sales and Nvidia's earnings are the next catalysts.",
+   "time": "23:29",
+   "title": "Le dollar à un sommet de 19 mois : le DXY à 103,66, le yen à 159,20 près du seuil d'intervention",
+   "title_en": "Dollar hits 19-month peak: DXY at 103.66, yen at 159.20 near intervention zone",
    "url": "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-hits-19mth-peak-on-fed-tightening-bets-5031600"
   },
   {
-   "date": "2026-11-16",
-   "time": "21:26",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq"
    ],
-   "title": "Baidu chute de 5,45 % à son plus bas en plus de cinq ans; le Hang Seng perd 2,6 %",
-   "title_en": "Baidu shares hit over five-year low as ad slump overshadows AI growth; Hang Seng down 2.6%",
+   "date": "2026-11-16",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "L'action de Baidu à Hong Kong a reculé de 5,45 % à 71,15 HK$ mardi, son niveau le plus faible en plus de cinq ans, tandis que l'indice Hang Seng cédait 2,60 %. Au T3, les revenus publicitaires en ligne ont chuté de 22 % à 11,9 G de yuans, malgré une hausse de 94 % de l'infonuagique IA. Cette faiblesse des titres technos asiatiques s'ajoute au climat de méfiance envers l'IA avant les résultats de Nvidia, ce qui pèse sur le Nasdaq.",
    "summary_en": "Baidu's Hong Kong shares fell 5.45% to HK$71.15 on Tuesday, their weakest in more than five years, while the Hang Seng Index slid 2.60%. Q3 online marketing revenue dropped 22% to 11.9 billion yuan despite a 94% surge in AI cloud infrastructure. Weakness in Asian tech adds to AI jitters ahead of Nvidia's earnings, weighing on Nasdaq sentiment.",
+   "time": "21:26",
+   "title": "Baidu chute de 5,45 % à son plus bas en plus de cinq ans; le Hang Seng perd 2,6 %",
+   "title_en": "Baidu shares hit over five-year low as ad slump overshadows AI growth; Hang Seng down 2.6%",
    "url": "https://www.investing.com/news/stock-market-news/baidu-shares-hit-over-fiveyear-low-as-ad-slump-overshadows-ai-growth-5031486"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "20:42",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
-   "assets": [
-    "usoil",
-    "usdcad"
-   ],
-   "title": "Le pétrole glisse : le WTI recule de 0,5 % à 85,28 $, l'offre excédentaire l'emporte sur les tensions dans le Golfe",
-   "title_en": "Oil slips on supply surplus outlook despite Gulf tensions; WTI down 0.5% at $85.28",
-   "summary": "Le Brent perdait 44 cents (0,5 %) à 92,00 $ et le WTI 44 cents (0,5 %) à 85,28 $, l'AIE prévoyant un retour au surplus au T4 grâce à la reprise plus rapide des exportations du Moyen-Orient. Les réserves stratégiques américaines sont tombées à 276,4 M de barils, un creux depuis août 1982. L'OPEP+ se réunit le 29 novembre sur sa production de 2027.",
-   "summary_en": "Brent fell 44 cents (0.5%) to $92.00 and WTI 44 cents (0.5%) to $85.28 as the IEA expects a return to surplus in Q4 with Middle East exports recovering faster than demand. US Strategic Petroleum Reserve stocks fell to 276.4 million barrels, the lowest since August 1982. OPEC+ meets November 29 on 2027 output policy.",
-   "url": "https://www.investing.com/news/commodities-news/oil-slips-on-supply-surplus-outlook-despite-gulf-tensions-5031433"
-  },
-  {
-   "date": "2026-11-16",
-   "time": "20:22",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
-   "assets": [
-    "usdjpy",
-    "usd",
-    "nasdaq",
-    "xauusd",
-    "usoil",
-    "audusd"
-   ],
-   "title": "L'Asie recule avant Nvidia : Nikkei −1,3 %, KOSPI −2 %; le yen frôle 160 par dollar",
-   "title_en": "Asia shares stumble on tech weakness ahead of Nvidia earnings: Nikkei −1.3%, KOSPI −2%; yen near 160",
-   "summary": "Les bourses asiatiques reculent (Nikkei −1,3 %, KOSPI −2 %, MSCI Asie-Pacifique hors Japon −0,63 %) après le resserrement par Washington des restrictions sur l'accès de la Chine aux puces IA. L'indice du dollar est à 103,61, près de son sommet depuis avril 2025, et le yen frôle 160 par dollar, ce qui ravive le risque d'intervention de Tokyo. L'or est à 3 852,62 $ (−0,1 %) et le WTI à 85,37 $ (−0,41 %), alors que les paris sur des hausses de taux de la Fed se renforcent avant les résultats de Nvidia mardi soir.",
-   "summary_en": "Asian stocks fell (Nikkei −1.3%, KOSPI −2%, MSCI Asia-Pacific ex-Japan −0.63%) after Washington tightened restrictions on China's access to advanced AI chips. The dollar index stood at 103.61, near its highest since April 2025, and the yen hovered near 160 per dollar, raising intervention risk. Gold was at $3,852.62 (−0.1%) and WTI at $85.37 (−0.41%) as bets on Fed rate hikes firmed ahead of Nvidia's results Tuesday after the close.",
-   "url": "https://www.investing.com/news/economy-news/asia-shares-stumble-on-tech-weakness-ahead-of-nvidia-earnings-5031418"
   }
  ],
  "live": {
