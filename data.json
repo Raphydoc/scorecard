@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T20:45:00Z",
+ "updatedAt": "2026-11-17T20:47:50Z",
  "econ": {
   "values": {
    "adp": {
@@ -1063,6 +1063,36 @@
  },
  "news": [
   {
+   "date": "2026-11-17",
+   "time": "15:13",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Muddy Waters prend une position vendeuse sur Nvidia et soulève des questions sur un lien entre un ex-dirigeant et Super Micro",
+   "title_en": "Muddy Waters shorts Nvidia, raises questions about possible executive connection",
+   "summary": "Le vendeur à découvert Muddy Waters annonce une position vendeuse sur Nvidia et s'interroge sur un lien entre Ajay K. Puri, ex-vice-président principal des opérations commerciales de Nvidia, et Cenly Chen, ex-directrice de la croissance de Super Micro, visée par une poursuite liée à la répartition de GPU Nvidia. Muddy Waters reconnaît qu'aucun des deux n'a été accusé au criminel. Nvidia (−1,5 %) et Super Micro (−4,2 %) reculaient, ce qui pèse sur le Nasdaq à la veille des résultats de Nvidia.",
+   "summary_en": "Short seller Muddy Waters disclosed a short position in Nvidia and questioned a possible link between Ajay K. Puri, Nvidia's former EVP of worldwide field operations, and Cenly Chen, Super Micro's former chief growth officer named in litigation over Nvidia GPU allocation. Muddy Waters acknowledges neither has been criminally charged. Nvidia (−1.5%) and Super Micro (−4.2%) were lower, weighing on the Nasdaq ahead of Nvidia's earnings.",
+   "url": "https://www.investing.com/news/stock-market-news/muddy-waters-shorts-nvidia-raises-questions-about-possible-executive-connection-5033891"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "15:00",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Exclusif : Trump maintient l'interdiction des équipements chinois pour centres de données malgré le lobbying d'Amazon, Google et Meta",
+   "title_en": "Exclusive-Trump's China data center curb advances despite Amazon, Google, Meta lobbying",
+   "summary": "L'administration Trump compte aller de l'avant avec le blocage des importations d'équipements chinois pour centres de données, dont les nouveaux modèles de transceivers optiques visés par la FCC, malgré le lobbying d'Amazon, Google, Meta, Microsoft, CoreWeave et Cisco, qui disent que la mise en conformité pourrait prendre jusqu'à 10 ans. Les firmes chinoises détiennent environ les deux tiers de ce marché, et Pékin pourrait riposter (phosphure d'indium). Coherent (+2,2 %) et Lumentum (+1,5 %) ont monté sur la nouvelle; la mesure ajoute à la pression sur la tech.",
+   "summary_en": "The Trump administration plans to proceed with blocking imports of Chinese data center equipment, including new models of optical transceivers targeted by the FCC, despite lobbying by Amazon, Google, Meta, Microsoft, CoreWeave and Cisco, which said compliance could take up to a decade. Chinese firms hold about two-thirds of that market and Beijing could retaliate (indium phosphide). Coherent (+2.2%) and Lumentum (+1.5%) rose on the news; the move adds to pressure on tech.",
+   "url": "https://www.investing.com/news/stock-market-news/exclusivetrumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-5032280"
+  },
+  {
    "assets": [
     "nasdaq",
     "spx500"
@@ -1645,37 +1675,6 @@
    "title": "L'ASX 200 chute de 1,79 % à la clôture, plombé par les minières; l'or à terme gagne 0,88 %",
    "title_en": "Australia stocks lower at close of trade; S&P/ASX 200 down 1.79%",
    "url": "https://www.investing.com/news/stock-market-news/australia-stocks-lower-at-close-of-trade-spasx-200-down-179-5031664"
-  },
-  {
-   "assets": [
-    "usd",
-    "usdjpy",
-    "audusd",
-    "eurusd"
-   ],
-   "date": "2026-11-16",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'indice du dollar américain a progressé pour une sixième séance d'affilée à 103,66, son plus haut depuis le 2 avril 2025, porté par une inflation américaine plus chaude que prévu et des signaux restrictifs de la Fed; selon le FedWatch du CME, une hausse de taux en décembre est jugée quasi certaine (probabilité d'une hausse de 50 points de base ramenée à environ 5 %). L'USD/JPY recule de 0,2 % à 159,20, près du seuil de 160 vu comme déclencheur possible d'une intervention japonaise, tandis que l'AUD/USD gagne 0,1 % à 0,6741 $ après cinq baisses. Les ventes au détail américaines et les résultats de Nvidia sont les prochains catalyseurs.",
-   "summary_en": "The US Dollar Index rose for a sixth straight session to 103.66, its highest since April 2, 2025, driven by hotter-than-expected US inflation and hawkish Fed signals; CME FedWatch shows a December hike as virtually certain (odds of a 50 bp move down to about 5%). USD/JPY eased 0.2% to 159.20, near the 160 level seen as a possible trigger for Japanese intervention, while AUD/USD rose 0.1% to $0.6741 after five declines. US retail sales and Nvidia's earnings are the next catalysts.",
-   "time": "23:29",
-   "title": "Le dollar à un sommet de 19 mois : le DXY à 103,66, le yen à 159,20 près du seuil d'intervention",
-   "title_en": "Dollar hits 19-month peak: DXY at 103.66, yen at 159.20 near intervention zone",
-   "url": "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-hits-19mth-peak-on-fed-tightening-bets-5031600"
-  },
-  {
-   "assets": [
-    "nasdaq"
-   ],
-   "date": "2026-11-16",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'action de Baidu à Hong Kong a reculé de 5,45 % à 71,15 HK$ mardi, son niveau le plus faible en plus de cinq ans, tandis que l'indice Hang Seng cédait 2,60 %. Au T3, les revenus publicitaires en ligne ont chuté de 22 % à 11,9 G de yuans, malgré une hausse de 94 % de l'infonuagique IA. Cette faiblesse des titres technos asiatiques s'ajoute au climat de méfiance envers l'IA avant les résultats de Nvidia, ce qui pèse sur le Nasdaq.",
-   "summary_en": "Baidu's Hong Kong shares fell 5.45% to HK$71.15 on Tuesday, their weakest in more than five years, while the Hang Seng Index slid 2.60%. Q3 online marketing revenue dropped 22% to 11.9 billion yuan despite a 94% surge in AI cloud infrastructure. Weakness in Asian tech adds to AI jitters ahead of Nvidia's earnings, weighing on Nasdaq sentiment.",
-   "time": "21:26",
-   "title": "Baidu chute de 5,45 % à son plus bas en plus de cinq ans; le Hang Seng perd 2,6 %",
-   "title_en": "Baidu shares hit over five-year low as ad slump overshadows AI growth; Hang Seng down 2.6%",
-   "url": "https://www.investing.com/news/stock-market-news/baidu-shares-hit-over-fiveyear-low-as-ad-slump-overshadows-ai-growth-5031486"
   }
  ],
  "live": {
