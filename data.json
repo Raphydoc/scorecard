@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T05:47:33Z",
+  "updatedAt": "2026-11-17T06:47:51Z",
   "econ": {
     "values": {
       "adp": {
@@ -996,6 +996,21 @@
   "news": [
     {
       "date": "2026-11-17",
+      "time": "00:56",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Samsung (−3,05 %) et TSMC (−2,03 %) reculent après le resserrement américain sur l'accès de la Chine aux puces d'IA; le Taiwan Weighted perd 2,18 %",
+      "title_en": "Samsung (−3.05%) and TSMC (−2.03%) fall after US tightens China's access to AI chips; Taiwan Weighted down 2.18%",
+      "summary": "Les actions de Samsung Electronics (−3,05 %) et de TSMC (−2,03 %) ont reculé mardi en Asie après l'annonce par l'administration Trump de nouvelles restrictions sur l'accès de la Chine aux puces d'IA avancées; l'indice Taiwan Weighted a clôturé en baisse de 2,18 %. Selon CLSA, les règles resserrent les exigences pour les fonderies qui fabriquent des puces avancées pour des clients chinois, ce qui pèse sur les semi-conducteurs à la veille des résultats de Nvidia et sur le Nasdaq et le S&P 500.",
+      "summary_en": "Samsung Electronics (−3.05%) and TSMC (−2.03%) shares fell Tuesday in Asia after the Trump administration announced tighter curbs on China's access to advanced AI chips; the Taiwan Weighted index closed down 2.18%. CLSA says the rules tighten requirements on foundries making advanced chips for Chinese fabless firms, weighing on semiconductors ahead of Nvidia's results and on the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/samsung-elec-tsmc-shares-fall-after-us-announces-curbs-on-chinas-chip-access-5031711"
+    },
+    {
+      "date": "2026-11-17",
       "time": "00:37",
       "source": "CoinDesk",
       "impact": "med",
@@ -1605,23 +1620,6 @@
       "title": "Morgan Stanley relève sa cible du S&P 500 à 8 700 points sur 12 mois",
       "title_en": "Morgan Stanley raises S&P 500 target on earnings growth, lower oil and AI adoption",
       "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-raises-sp-500-target-on-earnings-growth-lower-oil-and-ai-adoption-5028643"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "eurusd",
-        "gbpusd",
-        "usoil"
-      ],
-      "date": "2026-11-16",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le STOXX 600 et le DAX sont stables lundi matin, tandis que le CAC 40 et le FTSE 100 gagnent 0,2 %. Le marché digère encore la vente massive des semi-conducteurs et logiciels liée au départ du PDG de Nvidia, Jensen Huang, qui aurait discuté d'un retour selon le Financial Times. La guerre américano-israélienne avec l'Iran figure aussi au menu des rencontres de Trump en marge de l'APEC à Shenzhen.",
-      "summary_en": "The STOXX 600 and DAX were flat on Monday morning, while the CAC 40 and FTSE 100 rose 0.2%. Markets are still digesting last week's chip and software sell-off tied to Nvidia CEO Jensen Huang's departure; the Financial Times reports Huang has discussed returning. The U.S.-Israeli war with Iran is also on the agenda of Trump's meetings on the sidelines of APEC in Shenzhen.",
-      "time": "03:09",
-      "title": "Bourses européennes stables : la tourmente Nvidia persiste avant les grands tests de l'IA",
-      "title_en": "European shares flat as Nvidia turmoil lingers and markets brace for AI mega-tests",
-      "url": "https://www.investing.com/news/stock-market-news/european-shares-flat-as-nvidia-turmoil-lingers-and-markets-brace-for-ai-megatests-5028357"
     }
   ],
   "live": {
