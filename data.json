@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T01:47:36Z",
+  "updatedAt": "2026-11-17T02:47:28Z",
   "econ": {
     "values": {
       "adp": {
@@ -996,18 +996,48 @@
   "news": [
     {
       "date": "2026-11-16",
-      "time": "20:04",
+      "time": "21:26",
       "source": "Investing.com",
       "impact": "med",
       "assets": [
+        "nasdaq"
+      ],
+      "title": "Baidu chute de 5,45 % à son plus bas en plus de cinq ans; le Hang Seng perd 2,6 %",
+      "title_en": "Baidu shares hit over five-year low as ad slump overshadows AI growth; Hang Seng down 2.6%",
+      "summary": "L'action de Baidu à Hong Kong a reculé de 5,45 % à 71,15 HK$ mardi, son niveau le plus faible en plus de cinq ans, tandis que l'indice Hang Seng cédait 2,60 %. Au T3, les revenus publicitaires en ligne ont chuté de 22 % à 11,9 G de yuans, malgré une hausse de 94 % de l'infonuagique IA. Cette faiblesse des titres technos asiatiques s'ajoute au climat de méfiance envers l'IA avant les résultats de Nvidia, ce qui pèse sur le Nasdaq.",
+      "summary_en": "Baidu's Hong Kong shares fell 5.45% to HK$71.15 on Tuesday, their weakest in more than five years, while the Hang Seng Index slid 2.60%. Q3 online marketing revenue dropped 22% to 11.9 billion yuan despite a 94% surge in AI cloud infrastructure. Weakness in Asian tech adds to AI jitters ahead of Nvidia's earnings, weighing on Nasdaq sentiment.",
+      "url": "https://www.investing.com/news/stock-market-news/baidu-shares-hit-over-fiveyear-low-as-ad-slump-overshadows-ai-growth-5031486"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "20:42",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
         "usoil",
+        "usdcad"
+      ],
+      "title": "Le pétrole glisse : le WTI recule de 0,5 % à 85,28 $, l'offre excédentaire l'emporte sur les tensions dans le Golfe",
+      "title_en": "Oil slips on supply surplus outlook despite Gulf tensions; WTI down 0.5% at $85.28",
+      "summary": "Le Brent perdait 44 cents (0,5 %) à 92,00 $ et le WTI 44 cents (0,5 %) à 85,28 $, l'AIE prévoyant un retour au surplus au T4 grâce à la reprise plus rapide des exportations du Moyen-Orient. Les réserves stratégiques américaines sont tombées à 276,4 M de barils, un creux depuis août 1982. L'OPEP+ se réunit le 29 novembre sur sa production de 2027.",
+      "summary_en": "Brent fell 44 cents (0.5%) to $92.00 and WTI 44 cents (0.5%) to $85.28 as the IEA expects a return to surplus in Q4 with Middle East exports recovering faster than demand. US Strategic Petroleum Reserve stocks fell to 276.4 million barrels, the lowest since August 1982. OPEC+ meets November 29 on 2027 output policy.",
+      "url": "https://www.investing.com/news/commodities-news/oil-slips-on-supply-surplus-outlook-despite-gulf-tensions-5031433"
+    },
+    {
+      "date": "2026-11-16",
+      "time": "20:39",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "xauusd",
+        "xagusd",
         "usd"
       ],
-      "title": "Le pétrole recule encore : le WTI perd 0,4 % à 85,37 $, la crainte d'une surabondance pèse",
-      "title_en": "Oil prices fall further on supply glut concerns; strong dollar weighs",
-      "summary": "Le WTI recule de 0,4 % à 85,37 $ le baril en début de séance asiatique, après une chute de plus de 4 % la veille. L'AIE prévoit désormais une offre mondiale d'environ 105 millions de barils par jour au 4e trimestre, soit 1,7 million de plus que la demande, ce qui éclipse les tensions à Ormuz. Le dollar, à un sommet de 19 mois avec les paris d'une hausse de la Fed en décembre, pèse aussi sur les matières premières.",
-      "summary_en": "WTI fell 0.4% to $85.37 a barrel in early Asian trade after dropping more than 4% the previous session. The IEA now sees Q4 global supply at about 105 million bpd, 1.7 million bpd above expected demand, overshadowing Hormuz tensions. A dollar at a 19-month high on bets of a December Fed hike also weighs on commodities.",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393"
+      "title": "L'or près d'un creux de 14 mois à 3 845 $ : paris sur une hausse de taux de la Fed et recul des technos",
+      "title_en": "Gold hovers near 14-month low as Fed hike bets and tech selloff weigh",
+      "summary": "L'or au comptant reculait de 0,3 % à 3 845,02 $ l'once, après sa plus faible clôture depuis septembre 2025; l'argent perdait 0,2 % à 46,92 $ et le DXY gagnait 0,1 % à 103,68. Les investisseurs misent davantage sur un resserrement de la Fed : Beth Hammack (Fed de Cleveland) favorise des hausses graduelles, mais n'exclut pas des hausses plus fortes si l'inflation s'accélère. Le procès-verbal de la réunion d'octobre de la Fed sort mercredi.",
+      "summary_en": "Spot gold fell 0.3% to $3,845.02/oz after its weakest close since September 2025; silver slipped 0.2% to $46.92 and the dollar index rose 0.1% to 103.68. Investors raised bets on further Fed tightening, with Cleveland Fed's Beth Hammack favoring gradual hikes but open to larger moves if inflation accelerates. Minutes of the Fed's October meeting are due Wednesday.",
+      "url": "https://www.investing.com/news/commodities-news/gold-hovers-near-14month-low-as-fed-hike-bets-and-tech-selloff-weigh-5031431"
     },
     {
       "date": "2026-11-16",
@@ -1587,37 +1617,6 @@
       "title": "Bitcoin : le put à 60 000 $ devient le plus gros pari sur les options, devant le call à 100 000 $",
       "title_en": "Bitcoin: $60K put is now the biggest options bet, ahead of the $100K call",
       "url": "https://www.coindesk.com/markets/2026/11/16/bitcoin-s-biggest-bet-is-now-a-drop-below-usd60-000-not-a-rally-above-usd100-000"
-    },
-    {
-      "assets": [
-        "usd",
-        "usdjpy",
-        "eurusd",
-        "audusd"
-      ],
-      "date": "2026-11-15",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "L'indice du dollar gagne 0,1 % à 103,46, son plus haut depuis avril 2025 après cinq séances de hausse, tandis que l'USD/JPY est stable à 159,63, près du seuil de 160 qui fait craindre une intervention du Japon. L'EUR/USD et l'AUD/USD cèdent 0,1 %. Le CME FedWatch donne 92 % de chances d'une hausse de 25 points de base le 9 décembre, après une inflation américaine d'octobre plus forte que prévu et des propos fermes de responsables de la Fed.",
-      "summary_en": "The dollar index rose 0.1% to 103.46, its highest since April 2025 after five straight gains, while USD/JPY was flat at 159.63, near the 160 level that keeps intervention fears alive. EUR/USD and AUD/USD slipped 0.1%. CME FedWatch shows a 92% chance of a 25-basis-point hike on December 9, after hotter-than-expected U.S. October inflation and hawkish Fed comments.",
-      "time": "23:43",
-      "title": "Le dollar se maintient près d'un sommet de 19 mois; le marché voit une hausse de la Fed en décembre à 92 %",
-      "title_en": "Dollar holds near 19-month high; markets price 92% odds of a December Fed hike",
-      "url": "https://www.investing.com/news/forex-news/asia-fx-muted-as-dollar-holds-near-19mth-high-yen-steady-after-weak-gdp-5028358"
-    },
-    {
-      "assets": [
-        "usdjpy"
-      ],
-      "date": "2026-11-15",
-      "impact": "med",
-      "source": "Reuters (Investing.com)",
-      "summary": "Le membre du conseil de la Banque du Japon Hajime Takata a plaidé lundi pour relever le taux directeur rapidement vers un niveau « adéquat », afin de contrer les risques de hausse des prix, y compris ceux liés au conflit au Moyen-Orient. Il juge que la BoJ doit relever ses taux avec agilité selon les conditions financières au pays et à l'étranger. Un ton plus ferme de la BoJ est un facteur de soutien pour le yen face au dollar.",
-      "summary_en": "Bank of Japan board member Hajime Takata on Monday called for raising the policy rate to a 'good' position at an early stage to prevent upside price risks, including those tied to the Middle East conflict. He said the bank needs to conduct rate hikes nimbly after assessing domestic and overseas conditions. A more hawkish BOJ tone is supportive for the yen against the dollar.",
-      "time": "23:29",
-      "title": "Takata (BoJ) réclame une hausse rapide des taux vers un niveau « adéquat »",
-      "title_en": "BOJ's Takata calls for swift hike in rates to 'good' position",
-      "url": "https://www.investing.com/news/economy-news/bojs-takata-calls-for-swift-hike-in-rates-to-good-position-5028353"
     }
   ],
   "live": {
