@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T09:47:48Z",
+  "updatedAt": "2026-11-17T10:53:15Z",
   "econ": {
     "values": {
       "adp": {
@@ -996,6 +996,50 @@
   "news": [
     {
       "date": "2026-11-17",
+      "time": "05:34",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd",
+        "nasdaq"
+      ],
+      "title": "Le bitcoin se maintient près de 64 000 $ alors que la tech recule avant les résultats de Nvidia",
+      "title_en": "Bitcoin holds near $64,000 as tech slides ahead of Nvidia earnings",
+      "summary": "Le bitcoin reste près de 64 000 $, peu changé sur 24 heures après une glissade à 62 000 $ en fin de semaine; l'ether est juste sous 1 800 $. Les contrats à terme du Nasdaq 100 cèdent 0,5 % après une déroute de deux jours qui a effacé 6 % de l'indice. Les sorties des FNB au comptant et les fortes probabilités d'une hausse de taux de la Fed freinent les achats avant les résultats de Nvidia, les ventes au détail américaines et le procès-verbal de la Fed mercredi.",
+      "summary_en": "Bitcoin holds near $64,000, little changed over 24 hours after a weekend slide to $62,000; ether is just under $1,800. Nasdaq 100 futures are down 0.5% after a two-day rout that wiped out 6% of the index. Spot ETF outflows and high Fed rate-hike odds keep buyers cautious ahead of Nvidia earnings, U.S. retail sales and Wednesday's Fed minutes.",
+      "url": "https://www.coindesk.com/business/2026/11/17/live-updates-bitcoin-holds-near-usd64-000-as-tech-slides-ahead-of-nvidia-earnings"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "05:18",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "eurusd"
+      ],
+      "title": "Allemagne : le moral des investisseurs (ZEW) grimpe à 35,6, bien au-dessus des 28,3 attendus",
+      "title_en": "German investor morale rises more than expected in November, ZEW finds",
+      "summary": "L'indice ZEW du sentiment économique allemand passe à 35,6 points en novembre, contre 28,1 le mois précédent et 28,3 prévu. L'évaluation de la situation actuelle s'améliore à -33,2, contre -35,9. Le président du ZEW cite la hausse des commandes manufacturières et la baisse du pétrole, une donnée encourageante pour l'économie de la zone euro et l'euro.",
+      "summary_en": "Germany's ZEW economic sentiment index rose to 35.6 in November from 28.1, beating the 28.3 forecast. The current-situation gauge improved to -33.2 from -35.9. ZEW's president cited rising manufacturing orders and falling oil prices, an encouraging sign for the euro zone economy and the euro.",
+      "url": "https://www.investing.com/news/economic-indicators/german-investor-morale-rises-more-than-expected-in-november-zew-finds-5032155"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "04:56",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Intel recule de plus de 3 % en préouverture : Nvidia réduit sa participation de 25 %, SpaceX devient son premier placement",
+      "title_en": "Intel falls premarket as Nvidia cuts stake, SpaceX becomes top holding",
+      "summary": "Selon son formulaire 13F au 30 septembre, Nvidia a réduit de 25 % sa participation dans Intel, à 161,1 millions d'actions (19,4 G$), et porté celle dans SpaceX à 130,5 millions d'actions (environ 19,7 G$). Ces deux titres forment plus de 80 % de son portefeuille déclaré de 48,3 G$; Nvidia a aussi réduit Nokia de 56 % et Synopsys de 10 %. Intel perd plus de 3 % avant l'ouverture, à quelques heures des résultats de Nvidia.",
+      "summary_en": "Per its 13F filing as of Sept. 30, Nvidia cut its Intel stake by 25% to 161.1 million shares ($19.4 billion) and raised its SpaceX holding to 130.5 million shares (about $19.7 billion). The two make up more than 80% of its $48.3 billion disclosed portfolio; Nvidia also trimmed Nokia by 56% and Synopsys by 10%. Intel fell more than 3% premarket, hours before Nvidia's earnings.",
+      "url": "https://www.investing.com/news/stock-market-news/intel-falls-premarket-as-nvidia-cuts-stake-spacex-becomes-top-holding-5032115"
+    },
+    {
+      "date": "2026-11-17",
       "time": "04:22",
       "source": "Investing.com",
       "impact": "med",
@@ -1568,53 +1612,6 @@
       "title": "Le pétrole recule : le WTI perd 1 % à 86,42 $ malgré l'Iran qui dit garder Ormuz fermé; la défense mène le FTSE 100",
       "title_en": "Oil slips: WTI down 1% at $86.42 even as Iran says Hormuz stays closed; defence leads FTSE 100",
       "url": "https://uk.investing.com/news/stock-market-news/ftse-100-today-stocks-edge-up-as-iran-tensions-simmer-4983831"
-    },
-    {
-      "assets": [
-        "usdcad"
-      ],
-      "date": "2026-11-16",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "L'action de TELUS grimpe de 29 % après que l'entreprise a révélé une proposition non sollicitée, non contraignante et conditionnelle de Québecor, reçue le 27 juin puis amendée le 9 novembre. Un comité spécial d'administrateurs indépendants l'examine, mais le conseil juge que la contrepartie ne reflète pas la valeur de TELUS et s'inquiète de l'endettement accru et du contrôle des votes par l'actionnaire de Québecor. Gros dossier pour la Bourse de Toronto, aucun prix d'offre n'a été dévoilé.",
-      "summary_en": "TELUS shares jumped 29% after the company disclosed an unsolicited, non-binding and conditional proposal from Québecor, first received June 27 and amended November 9. A special committee of independent directors is reviewing it, but the board says the consideration does not reflect TELUS's value and flags higher leverage and voting control by Québecor's controlling shareholder. A major story for the Toronto market; no offer price was disclosed.",
-      "time": "07:52",
-      "title": "TELUS bondit de 29 % : le conseil étudie une proposition de rachat non sollicitée de Québecor",
-      "title_en": "TELUS shares jump 29% as board reviews unsolicited Québecor takeover proposal",
-      "url": "https://www.investing.com/news/stock-market-news/telus-shares-jump-29-as-board-reviews-unsolicited-quebecor-takeover-proposal-5029600"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-16",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Nvidia perdait environ 3,5 % en préouverture lundi après une clôture à 162,85 $ vendredi, sa capitalisation sous les 4 000 G$. Les résultats du 3e trimestre sont attendus mardi après la clôture; Susquehanna prévoit des résultats supérieurs aux attentes (cible de 275 $) mais juge que le départ de Jensen Huang crée de l'incertitude tant qu'un PDG permanent n'est pas nommé. Le titre pèse lourd sur le Nasdaq et le S&P 500.",
-      "summary_en": "Nvidia was down about 3.5% premarket Monday after closing at $162.85 Friday, with its market value below $4 trillion. Q3 results are due Tuesday after the close; Susquehanna expects a beat (PT $275) but says Jensen Huang's exit creates uncertainty until a permanent CEO is named. The stock weighs heavily on the Nasdaq and S&P 500.",
-      "time": "07:30",
-      "title": "Nvidia recule d'environ 3,5 % en préouverture; le départ de Huang assombrit les perspectives avant les résultats de mardi",
-      "title_en": "Nvidia falls premarket as Huang exit clouds outlook ahead of earnings",
-      "url": "https://www.investing.com/news/stock-market-news/nvidia-falls-premarket-as-huang-exit-clouds-outlook-ahead-of-earnings-5029433"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "eurusd",
-        "xauusd"
-      ],
-      "date": "2026-11-16",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon le titre d'Investing.com, la Deutsche Bank estime que les marchés pourraient sous-estimer le risque de hausses de taux (article non consultable, aucun chiffre repris). L'avertissement survient alors que le dollar est soutenu par les paris d'un resserrement de la Fed en décembre, ce qui pèse sur l'or et les actions.",
-      "summary_en": "Per Investing.com's headline, Deutsche Bank says markets may be underestimating the risk of rate hikes (article not accessible, no figures taken). The warning comes as the dollar is supported by bets on a December Fed tightening, weighing on gold and equities.",
-      "time": "06:34",
-      "title": "La Deutsche Bank prévient que les marchés sous-estiment peut-être les risques de hausses de taux",
-      "title_en": "Deutsche Bank warns markets may be underestimating rate hike risks",
-      "url": "https://www.investing.com/news/stock-market-news/deutsche-bank-warns-markets-may-be-underestimating-rate-hike-risks-5029111"
     }
   ],
   "live": {
