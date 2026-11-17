@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T11:48:06Z",
+  "updatedAt": "2026-11-17T12:37:12Z",
   "econ": {
     "values": {
       "adp": {
@@ -722,14 +722,14 @@
         "us30": 2
       },
       "date": "2026-11-17",
-      "epsA": null,
-      "epsF": 3.86,
+      "epsA": 3.86,
+      "epsF": 3.84,
       "id": null,
       "kind": "earn",
-      "move": null,
+      "move": -2.4,
       "name": "Résultats Home Depot (HD)",
       "note": "Avant l’ouverture",
-      "revA": null,
+      "revA": 43.4,
       "revF": 42.8,
       "time": "07:00"
     },
@@ -740,14 +740,14 @@
         "us30": 1
       },
       "date": "2026-11-17",
-      "epsA": null,
+      "epsA": 1.77,
       "epsF": 1.67,
       "id": null,
       "kind": "earn",
-      "move": null,
+      "move": 2.2,
       "name": "Résultats Disney (DIS)",
       "note": "Avant l’ouverture",
-      "revA": null,
+      "revA": 25.9,
       "revF": 25.2,
       "time": "07:00"
     },
