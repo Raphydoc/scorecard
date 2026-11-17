@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T14:53:50Z",
+ "updatedAt": "2026-11-17T15:45:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -101,8 +101,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 37.65,
    "cotChange": -1.34,
-   "crowdLong": 50,
-   "uCrowd": "2026-11-16T13:44:00Z",
+   "crowdLong": 54,
+   "uCrowd": "2026-11-17T15:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "us30": {
@@ -111,8 +111,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 67.43,
    "cotChange": 5.3,
-   "crowdLong": 50,
-   "uCrowd": "2026-11-16T13:44:00Z"
+   "crowdLong": 59,
+   "uCrowd": "2026-11-17T15:45:00Z"
   },
   "usd": {
    "season": "bull",
@@ -188,8 +188,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 56.57,
    "cotChange": -2.12,
-   "crowdLong": 35,
-   "uCrowd": "2026-11-16T13:44:00Z",
+   "crowdLong": 40,
+   "uCrowd": "2026-11-17T15:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "gbpusd": {
@@ -228,8 +228,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 19.62,
    "cotChange": 0.57,
-   "crowdLong": 78,
-   "uCrowd": "2026-11-16T13:44:00Z",
+   "crowdLong": 76,
+   "uCrowd": "2026-11-17T15:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   }
  },
