@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T19:49:00Z",
+ "updatedAt": "2026-11-17T20:45:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -149,8 +149,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 54.75,
    "cotChange": 0.77,
-   "crowdLong": 53,
-   "uCrowd": "2026-11-16T13:44:00Z",
+   "crowdLong": 56,
+   "uCrowd": "2026-11-17T20:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "rut": {
@@ -178,8 +178,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 33.65,
    "cotChange": -1.82,
-   "crowdLong": 31,
-   "uCrowd": "2026-11-17T19:41:00Z",
+   "crowdLong": 30,
+   "uCrowd": "2026-11-17T20:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "usdcad": {
