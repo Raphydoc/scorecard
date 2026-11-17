@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-17T04:47:21Z",
+  "updatedAt": "2026-11-17T05:47:33Z",
   "econ": {
     "values": {
       "adp": {
@@ -995,6 +995,35 @@
   },
   "news": [
     {
+      "date": "2026-11-17",
+      "time": "00:37",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Wells Fargo double sa position dans l'ETF bitcoin de BlackRock, à 2,35 G$",
+      "title_en": "Wells Fargo's reported BlackRock bitcoin ETF holdings double to $2.35 billion",
+      "summary": "Wells Fargo déclarait 49,58 millions de parts de l'IBIT de BlackRock (2,35 G$) à la fin septembre, contre 24,4 millions (812 M$) fin juin, soit une exposition indirecte d'environ 28 070 BTC. Ces données datent du 30 septembre; depuis une semaine, le bitcoin est passé d'environ 74 000 $ à 63 000 $ et l'IBIT a subi plus de 1 G$ de sorties.",
+      "summary_en": "Wells Fargo reported 49.58 million IBIT shares ($2.35 billion) at end-September, up from 24.4 million ($812 million) at end-June, implying about 28,070 BTC of indirect exposure. The data is a Sept. 30 snapshot; over the past week bitcoin fell from about $74,000 to $63,000 and IBIT saw more than $1 billion in outflows.",
+      "url": "https://www.coindesk.com/markets/2026/11/17/wells-fargo-s-reported-blackrock-bitcoin-etf-holdings-double-to-usd2-35-billion"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "00:30",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "audusd",
+        "xauusd"
+      ],
+      "title": "L'ASX 200 chute de 1,79 % à la clôture, plombé par les minières; l'or à terme gagne 0,88 %",
+      "title_en": "Australia stocks lower at close of trade; S&P/ASX 200 down 1.79%",
+      "summary": "Le S&P/ASX 200 a clôturé en baisse de 1,79 %, entraîné par les métaux et mines, les matériaux et les ressources; les baisses l'emportaient 839 contre 244 et l'indice de volatilité australien a bondi de 12,97 %. L'or à terme de décembre progressait de 0,88 % à 3 887,07 $ l'once, et l'AUD/USD se tenait près de 0,67.",
+      "summary_en": "The S&P/ASX 200 closed down 1.79%, led by metals & mining, materials and resources; decliners outnumbered advancers 839 to 244 and the S&P/ASX 200 VIX jumped 12.97%. December gold futures rose 0.88% to $3,887.07 an ounce, and AUD/USD stood near 0.67.",
+      "url": "https://www.investing.com/news/stock-market-news/australia-stocks-lower-at-close-of-trade-spasx-200-down-179-5031664"
+    },
+    {
       "date": "2026-11-16",
       "time": "23:29",
       "source": "Investing.com",
@@ -1593,37 +1622,6 @@
       "title": "Bourses européennes stables : la tourmente Nvidia persiste avant les grands tests de l'IA",
       "title_en": "European shares flat as Nvidia turmoil lingers and markets brace for AI mega-tests",
       "url": "https://www.investing.com/news/stock-market-news/european-shares-flat-as-nvidia-turmoil-lingers-and-markets-brace-for-ai-megatests-5028357"
-    },
-    {
-      "assets": [
-        "usdjpy",
-        "xauusd",
-        "usoil",
-        "nasdaq"
-      ],
-      "date": "2026-11-16",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le Nikkei 225 a clôturé en baisse de 2,25 %, plombé par Lasertec (-12,84 %) et Advantest (-11,12 %), alors que la nervosité sur les semi-conducteurs s'accentue avant les résultats de Nvidia. L'USD/JPY cède 0,11 % à 159,53, l'or de décembre recule de 0,83 % à 3 853,90 $ l'once, tandis que le WTI de janvier gagne 0,64 % à 87,85 $.",
-      "summary_en": "The Nikkei 225 closed down 2.25%, dragged by Lasertec (-12.84%) and Advantest (-11.12%) as chip-sector nerves build ahead of Nvidia's results. USD/JPY slipped 0.11% to 159.53, December gold fell 0.83% to $3,853.90/oz, while January WTI rose 0.64% to $87.85.",
-      "time": "02:00",
-      "title": "Tokyo : le Nikkei 225 recule de 2,25 % à la clôture, les fabricants de puces plongent",
-      "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 2.25%",
-      "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-225-5028475"
-    },
-    {
-      "assets": [
-        "usoil"
-      ],
-      "date": "2026-11-16",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Les travailleurs des plateformes d'Apache en mer du Nord ont mené une troisième ronde de grèves tournantes en fin de semaine; le syndicat Unite affirme que la production a été arrêtée sur les sept actifs britanniques de la société, dont les plateformes Forties et Beryl. Unite, qui représente 170 travailleurs, promet de poursuivre tant que l'offre salariale ne sera pas améliorée, ce qui ajoute un risque d'offre pour le pétrole.",
-      "summary_en": "Workers on Apache's North Sea platforms staged a third round of rolling strikes over the weekend; the Unite union says production was halted at all seven of the company's UK assets, including the Forties and Beryl platforms. Unite, representing 170 workers, vowed to continue until the pay offer improves, adding a supply risk for oil.",
-      "time": "01:29",
-      "title": "Mer du Nord : troisième vague de grève chez Apache, la production arrêtée selon Unite",
-      "title_en": "Apache North Sea workers stage third strike round, Unite says production halted",
-      "url": "https://www.investing.com/news/stock-market-news/apache-north-sea-workers-stage-third-strike-round-unite-says-production-halted-5028427"
     }
   ],
   "live": {
