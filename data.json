@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T20:48:05Z",
+ "updatedAt": "2026-11-18T21:37:05Z",
  "econ": {
   "values": {
    "adp": {
@@ -925,7 +925,7 @@
    "epsF": 2.07,
    "id": null,
    "kind": "earn",
-   "move": 1.0,
+   "move": 1,
    "name": "Résultats Target (TGT)",
    "note": "Avant l’ouverture",
    "revA": 27.07,
@@ -942,7 +942,7 @@
    "epsF": 1.34,
    "id": null,
    "kind": "earn",
-   "move": 5.0,
+   "move": 5,
    "name": "Résultats TJX (TJX)",
    "note": "Avant l’ouverture",
    "revA": 15.95,
@@ -960,7 +960,7 @@
    "epsF": 2.89,
    "id": null,
    "kind": "earn",
-   "move": -5.0,
+   "move": -5,
    "name": "Résultats Lowe's (LOW)",
    "note": "Avant l’ouverture",
    "revA": 22.76,
@@ -982,15 +982,15 @@
     "spx500": 1
    },
    "date": "2026-11-18",
-   "epsA": null,
-   "epsF": 0.52,
+   "epsA": 1.05,
+   "epsF": 0.97,
    "id": null,
    "kind": "earn",
-   "move": null,
+   "move": 8,
    "name": "Résultats Palo Alto Networks (PANW)",
    "note": "Après la clôture",
-   "revA": null,
-   "revF": 3.3,
+   "revA": 3.45,
+   "revF": 3.31,
    "time": "16:05"
   },
   {
