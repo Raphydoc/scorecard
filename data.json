@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T00:47:09Z",
+ "updatedAt": "2026-11-18T01:48:12Z",
  "econ": {
   "values": {
    "adp": {
@@ -1063,19 +1063,49 @@
  },
  "news": [
   {
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd"
+   ],
    "date": "2026-11-17",
-   "time": "19:02",
+   "impact": "med",
    "source": "Investing.com",
-   "impact": "high",
+   "summary": "L'or au comptant recule de 0,7 % à 3 822 $ l'once en début de séance asiatique et l'argent de 0,8 % à 47,01 $, tandis que l'indice du dollar gagne 0,1 % à 103,65; l'or reste près d'un creux de 14 mois et a perdu plus du quart de sa valeur depuis le début du conflit américano-iranien fin février. Musalem (Fed de Saint-Louis) voit « plusieurs autres hausses de taux avant le printemps » et Williams (Fed de New York) juge que le travail sur l'inflation n'est pas terminé; les marchés anticipent des hausses de 25 pb en décembre et en janvier. ANZ voit un soutien vers 3 600 $ et n'exclut pas une hausse de 50 pb le mois prochain.",
+   "summary_en": "Spot gold fell 0.7% to $3,822/oz in early Asian trade and silver lost 0.8% to $47.01, while the dollar index rose 0.1% to 103.65; gold remains near a 14-month low and has lost more than a quarter of its value since the U.S.-Iran conflict began in late February. St. Louis Fed's Musalem sees 'several more rate increases before spring' and New York Fed's Williams says work on inflation remains; markets price 25 bp hikes in December and January. ANZ sees support near $3,600 and says a 50 bp hike next month cannot be ruled out.",
+   "time": "20:11",
+   "title": "L'or glisse vers 3 800 $ : les faucons de la Fed confortent les paris de hausses de taux",
+   "title_en": "Gold falls toward $3,800 as Fed hawks reinforce rate-hike outlook",
+   "url": "https://www.investing.com/news/commodities-news/gold-falls-toward-3800-as-fed-hawks-reinforce-ratehike-outlook-5034463"
+  },
+  {
+   "assets": [
+    "audusd"
+   ],
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Des dirigeants de BHP et de Rio Tinto rencontreront vendredi à Beijing le premier ministre chinois Li Qiang, aux côtés du premier ministre australien Anthony Albanese, lors de la 9e table ronde des PDG Australie-Chine. L'acheteur étatique chinois CMRG a restreint cette année certains achats auprès de BHP, Rio Tinto et Fortescue; BHP et Rio ont depuis conclu des ententes, mais Fortescue négocie toujours. La Chine représente plus du quart du commerce extérieur australien, un enjeu pour le dollar australien.",
+   "summary_en": "BHP and Rio Tinto executives will meet Chinese Premier Li Qiang in Beijing on Friday, alongside Australian PM Anthony Albanese, at the ninth Australia-China CEO Roundtable. China's state buyer CMRG restricted some purchases from BHP, Rio Tinto and Fortescue this year; BHP and Rio have since reached supply deals, while Fortescue is still negotiating. China accounts for more than a quarter of Australia's international trade, a key factor for the Australian dollar.",
+   "time": "20:07",
+   "title": "BHP et Rio Tinto rencontreront les dirigeants chinois à Beijing sur fond de tensions sur le minerai de fer",
+   "title_en": "BHP, Rio Tinto executives to meet Chinese leaders amid iron ore tensions",
+   "url": "https://www.investing.com/news/stock-market-news/bhp-rio-tinto-executives-to-meet-chinese-leaders-amid-iron-ore-tensions-5034462"
+  },
+  {
    "assets": [
     "nasdaq",
     "spx500",
     "us30"
    ],
-   "title": "Les contrats à terme bondissent après Nvidia : Nasdaq 100 +1,6 %, puces en hausse après la clôture",
-   "title_en": "U.S. stock futures jump as Nvidia earnings revive AI optimism; chipmakers rally after hours",
+   "date": "2026-11-17",
+   "impact": "high",
+   "source": "Investing.com",
    "summary": "Vers 18 h 52 (HE), les contrats à terme du Nasdaq 100 gagnaient 1,6 % (27 497,75), ceux du S&P 500 0,8 % (7 418,25) et ceux du Dow 0,3 %, Nvidia prenant environ 5 % après des revenus du T3 de 115,8 G$ et une prévision de 126 à 134 G$. Dans la foulée, Arm (+5,5 %), Super Micro (+5,2 %), AMD (+3,5 %), CoreWeave (+7 %) et Nebius (+9 %) montaient après la clôture. Ce rebond suit quatre séances de baisse du S&P 500 et du Nasdaq, alors que les marchés intègrent 96 % de probabilité d'une hausse de taux de la Fed en décembre (CME FedWatch).",
    "summary_en": "Around 6:52 p.m. ET, Nasdaq 100 futures rose 1.6% (27,497.75), S&P 500 futures 0.8% (7,418.25) and Dow futures 0.3%, with Nvidia up about 5% after Q3 revenue of $115.8B and a $126B–$134B forecast. Arm (+5.5%), Super Micro (+5.2%), AMD (+3.5%), CoreWeave (+7%) and Nebius (+9%) also rallied after hours. The bounce follows four straight losing sessions for the S&P 500 and Nasdaq, while markets price a 96% chance of a December Fed rate hike (CME FedWatch).",
+   "time": "19:02",
+   "title": "Les contrats à terme bondissent après Nvidia : Nasdaq 100 +1,6 %, puces en hausse après la clôture",
+   "title_en": "U.S. stock futures jump as Nvidia earnings revive AI optimism; chipmakers rally after hours",
    "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-jump-as-nvidia-earnings-revive-ai-optimism-5034391"
   },
   {
@@ -1169,21 +1199,6 @@
    "title": "Exclusif : Trump maintient l'interdiction des équipements chinois pour centres de données malgré le lobbying d'Amazon, Google et Meta",
    "title_en": "Exclusive-Trump's China data center curb advances despite Amazon, Google, Meta lobbying",
    "url": "https://www.investing.com/news/stock-market-news/exclusivetrumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-5032280"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "usd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'or au comptant reculait de 0,2 % à 3 849,22 $ l'once vers 14 h 54 (HE) et les contrats à terme se tenaient à 3 851,75 $, près de leurs plus bas depuis fin septembre-début octobre 2025. Le CME FedWatch accorde environ 95 % de probabilités à une hausse de 25 points de base en décembre après un NFP de 165 000 et un IPC d'octobre de 0,4 %; l'indice du dollar cédait 0,1 % à 103,46. Le PPI d'octobre, plus faible que prévu, a offert un certain répit.",
-   "summary_en": "Spot gold fell 0.2% to $3,849.22/oz around 2:54 p.m. ET and futures held at $3,851.75, near their lowest since late September-early October 2025. CME FedWatch puts the odds of a 25 bp December hike at about 95% after 165,000 nonfarm payrolls and a 0.4% October CPI; the dollar index slipped 0.1% to 103.46. A softer-than-expected October PPI offered some relief.",
-   "time": "14:57",
-   "title": "L'or stagne près d'un creux de 13 mois; les paris de hausse de taux de la Fed pèsent",
-   "title_en": "Gold prices hover near 13-month low in subdued trading",
-   "url": "https://www.investing.com/news/commodities-news/gold-hovers-near-14month-low-as-fed-hike-bets-and-tech-selloff-weigh-5031431"
   },
   {
    "assets": [
@@ -1662,22 +1677,6 @@
    "title": "R.-U. : les salaires ralentissent à 3,5 % hors primes, le chômage recule à 4,6 %; une hausse de la BoE en décembre reste probable",
    "title_en": "UK wage growth slows to 3.5% in three months to September; unemployment falls to 4.6%",
    "url": "https://www.investing.com/news/economy-news/uk-wage-growth-slows-to-35-in-three-months-to-september-5031823"
-  },
-  {
-   "assets": [
-    "usdjpy",
-    "xauusd",
-    "usoil"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le Nikkei 225 a cédé 1,23 % à Tokyo, avec 2 812 titres en baisse contre 744 en hausse; Resonac (−7,56 %) et Ibiden (−6,44 %) ont mené les reculs, et l'indice de volatilité du Nikkei a grimpé à 35,10. Le dollar recule de 0,16 % à 159,23 yens, l'or de décembre gagne 0,66 % à 3 878,37 $ et le WTI de janvier perd 0,99 % à 83,63 $.",
-   "summary_en": "The Nikkei 225 fell 1.23% in Tokyo, with 2,812 decliners versus 744 advancers; Resonac (−7.56%) and Ibiden (−6.44%) led losses, and the Nikkei volatility index rose to 35.10. USD/JPY slipped 0.16% to 159.23, December gold rose 0.66% to $3,878.37 and January WTI fell 0.99% to $83.63.",
-   "time": "02:00",
-   "title": "Tokyo clôture en baisse : Nikkei −1,23 %, USD/JPY à 159,23; l'or à terme gagne 0,66 %",
-   "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 1.23%",
-   "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-123-5031816"
   }
  ],
  "live": {
