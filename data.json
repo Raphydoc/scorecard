@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T17:10:19Z",
+ "updatedAt": "2026-11-18T17:47:27Z",
  "econ": {
   "values": {
    "adp": {
@@ -1131,6 +1131,37 @@
  "news": [
   {
    "date": "2026-11-18",
+   "time": "12:01",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "gbpusd",
+    "usd"
+   ],
+   "title": "GBP/USD : la glissade vient de la vigueur du dollar, pas d'une faiblesse de la livre",
+   "title_en": "GBP/USD slide driven by dollar strength, not sterling weakness",
+   "summary": "La livre recule de 0,42 % à 1,3152 $ US, près du bas de sa fourchette de 52 semaines (1,3037–1,3869). Les paris sur une hausse de taux de la Fed l'emportent sur la solide croissance du PIB britannique, alors que l'EUR/GBP à 0,8341 montre que la livre tient bon face à l'euro.",
+   "summary_en": "Sterling fell 0.42% to $1.3152, near the bottom of its 52-week range (1.3037–1.3869). Fed rate-hike bets are overpowering strong UK GDP data, while EUR/GBP at 0.8341 shows the pound holding up against the euro.",
+   "url": "https://www.investing.com/news/forex-news/gbpusd-slide-driven-by-dollar-strength-not-sterling-weakness-93CH-5036710"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "11:47",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd"
+   ],
+   "title": "L'or glisse sous 4 000 $ alors que l'argent rapide sort et que les craintes de hausse de taux montent",
+   "title_en": "Gold slides below $4,000 as fast money exits and rate-hike fears mount",
+   "summary": "Les contrats à terme sur l'or chutent de 3,00 % à 3 748,30 $, un creux de 52 semaines à 3 738,17 $, en baisse de 6,36 % sur une semaine et de 13,53 % depuis janvier. Les spéculateurs liquident leurs positions acheteuses pendant que le marché anticipe d'autres hausses de la Fed, dont un possible 50 points de base en décembre évoqué par Waller; le cuivre perd environ 6 %.",
+   "summary_en": "Gold futures fell 3.00% to $3,748.30, a 52-week low of $3,738.17, down 6.36% on the week and 13.53% year to date. Fast money is exiting crowded longs as markets price more Fed hikes, including a possible 50bp December move floated by Waller; copper is down about 6%.",
+   "url": "https://www.investing.com/news/commodities-news/gold-slides-below-4000-as-fast-money-exits-and-ratehike-fears-mount-93CH-5036683"
+  },
+  {
+   "date": "2026-11-18",
    "time": "11:24",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1726,36 +1757,6 @@
    "title": "Clôture : Wall Street termine en baisse, le Dow perd 1,64 % et le S&P 500 signe sa plus faible clôture depuis juillet",
    "title_en": "Close: Wall Street ends lower, Dow down 1.64% and S&P 500 posts lowest close since July",
    "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-164-5034091"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le vendeur à découvert Muddy Waters annonce une position vendeuse sur Nvidia et s'interroge sur un lien entre Ajay K. Puri, ex-vice-président principal des opérations commerciales de Nvidia, et Cenly Chen, ex-directrice de la croissance de Super Micro, visée par une poursuite liée à la répartition de GPU Nvidia. Muddy Waters reconnaît qu'aucun des deux n'a été accusé au criminel. Nvidia (−1,5 %) et Super Micro (−4,2 %) reculaient, ce qui pèse sur le Nasdaq à la veille des résultats de Nvidia.",
-   "summary_en": "Short seller Muddy Waters disclosed a short position in Nvidia and questioned a possible link between Ajay K. Puri, Nvidia's former EVP of worldwide field operations, and Cenly Chen, Super Micro's former chief growth officer named in litigation over Nvidia GPU allocation. Muddy Waters acknowledges neither has been criminally charged. Nvidia (−1.5%) and Super Micro (−4.2%) were lower, weighing on the Nasdaq ahead of Nvidia's earnings.",
-   "time": "15:13",
-   "title": "Muddy Waters prend une position vendeuse sur Nvidia et soulève des questions sur un lien entre un ex-dirigeant et Super Micro",
-   "title_en": "Muddy Waters shorts Nvidia, raises questions about possible executive connection",
-   "url": "https://www.investing.com/news/stock-market-news/muddy-waters-shorts-nvidia-raises-questions-about-possible-executive-connection-5033891"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "L'administration Trump compte aller de l'avant avec le blocage des importations d'équipements chinois pour centres de données, dont les nouveaux modèles de transceivers optiques visés par la FCC, malgré le lobbying d'Amazon, Google, Meta, Microsoft, CoreWeave et Cisco, qui disent que la mise en conformité pourrait prendre jusqu'à 10 ans. Les firmes chinoises détiennent environ les deux tiers de ce marché, et Pékin pourrait riposter (phosphure d'indium). Coherent (+2,2 %) et Lumentum (+1,5 %) ont monté sur la nouvelle; la mesure ajoute à la pression sur la tech.",
-   "summary_en": "The Trump administration plans to proceed with blocking imports of Chinese data center equipment, including new models of optical transceivers targeted by the FCC, despite lobbying by Amazon, Google, Meta, Microsoft, CoreWeave and Cisco, which said compliance could take up to a decade. Chinese firms hold about two-thirds of that market and Beijing could retaliate (indium phosphide). Coherent (+2.2%) and Lumentum (+1.5%) rose on the news; the move adds to pressure on tech.",
-   "time": "15:00",
-   "title": "Exclusif : Trump maintient l'interdiction des équipements chinois pour centres de données malgré le lobbying d'Amazon, Google et Meta",
-   "title_en": "Exclusive-Trump's China data center curb advances despite Amazon, Google, Meta lobbying",
-   "url": "https://www.investing.com/news/stock-market-news/exclusivetrumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-5032280"
   }
  ],
  "live": {
