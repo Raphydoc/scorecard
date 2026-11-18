@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T07:47:51Z",
+  "updatedAt": "2026-11-18T08:48:06Z",
   "econ": {
     "values": {
       "adp": {
@@ -1064,6 +1064,49 @@
   "news": [
     {
       "date": "2026-11-18",
+      "time": "03:25",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "eurusd"
+      ],
+      "title": "Bourses européennes stables : la techno compense la faiblesse des minières après Nvidia",
+      "title_en": "European shares muted as tech offsets mining weakness",
+      "summary": "Le STOXX 600 est quasi inchangé à 650,73 points vers 8 h 08 GMT, après sa pire séance depuis le 20 mars la veille. La techno gagne 1,2 % (ASML +1,8 %) grâce aux solides résultats de Nvidia, tandis que les minières reculent d'environ 3 %, à un creux de près de neuf mois, sur fond de chute du cuivre et de dollar plus fort.",
+      "summary_en": "The STOXX 600 was little changed at 650.73 points as of 0808 GMT, after its biggest one-day drop since March 20 in the previous session. Tech rose 1.2% (ASML +1.8%) on Nvidia's strong results, while miners fell about 3% to a near nine-month low as copper slid and the dollar strengthened.",
+      "url": "https://www.investing.com/news/stock-market-news/european-shares-muted-as-tech-offsets-mining-weakness-5035128"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "03:24",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "gbpusd"
+      ],
+      "title": "Inflation britannique à 3,6 % en octobre; la livre recule et le FTSE 100 glisse avec les minières",
+      "title_en": "FTSE 100 today: Stocks dip as miners drag on metals slump, CPI up at 3.6%",
+      "summary": "L'IPC du Royaume-Uni monte à 3,6 % sur un an en octobre (3,5 % en septembre), conforme aux prévisions; l'inflation de base est à 2,8 % et celle des services à 3,7 %, avec un diesel record à 199,5 pence le litre. Les marchés évaluent à environ 90 % la probabilité d'une hausse de taux de la Banque d'Angleterre en décembre; la livre perd 0,30 % à 1,3167 $ et le FTSE 100 cède 0,39 %.",
+      "summary_en": "UK CPI rose to 3.6% y/y in October (3.5% in September), in line with forecasts; core was 2.8% and services 3.7%, with diesel at a record 199.5p per litre. Markets price about a 90% chance of a Bank of England hike in December; sterling fell 0.30% to $1.3167 and the FTSE 100 lost 0.39%.",
+      "url": "https://in.investing.com/news/stock-market-news/ftse-100-today-stocks-slip-as-miners-sink-on-metals-rout-cpi-at-36-5711763"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "03:19",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "usdcad"
+      ],
+      "title": "Carney rapproche le Canada de la Chine tout en visant la « bonne entente » avec les États-Unis",
+      "title_en": "Canada adjusts China ties, Carney says, aiming to clinch right deal with US",
+      "summary": "Au sommet de l'APEC à Shenzhen, Mark Carney annonce un accès élargi des firmes financières, le renouvellement de l'accord de swap de devises entre banques centrales et un allègement tarifaire chinois sur environ 400 M$ CA d'exportations canadiennes; le commerce bilatéral atteint 125 G$ CA. Il précise que la relation avec les États-Unis, qui imposent de lourds tarifs, reste bien plus importante, alors que le dollar canadien s'échange autour de 1,43 par dollar US.",
+      "summary_en": "At the APEC summit in Shenzhen, Mark Carney announced wider access for financial firms, a renewed central bank currency swap and Chinese tariff relief on about C$400 million of Canadian exports; two-way trade stands at C$125 billion. He said the relationship with the US, which has imposed hefty tariffs, remains much larger, with the loonie trading around 1.43 per US dollar.",
+      "url": "https://www.investing.com/news/forex-news/canada-adjusts-china-ties-carney-says-aiming-to-clinch-right-deal-with-us-5035098"
+    },
+    {
+      "date": "2026-11-18",
       "time": "02:27",
       "source": "CoinDesk",
       "impact": "med",
@@ -1633,52 +1676,6 @@
       "title": "Citi : 95 % des positions acheteuses sur le S&P 500 sont perdantes",
       "title_en": "95% of S&P 500 longs are offside, Citi warns",
       "url": "https://www.investing.com/news/stock-market-news/95-of-sp-500-longs-are-offside-citi-warns-5032510"
-    },
-    {
-      "assets": [
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Disney (membre du Dow et du S&P 500) a publié des résultats supérieurs aux prévisions des analystes et prévoit d'accroître ses dépenses en contenu, selon une dépêche Reuters reprise par Investing.com. Les chiffres détaillés n'ont pas pu être lus; le titre influence l'humeur du Dow en préouverture.",
-      "summary_en": "Disney (a Dow and S&P 500 component) reported results above analysts' forecasts and plans to increase content spending, according to a Reuters report carried by Investing.com. Detailed figures could not be read; the stock sways Dow sentiment in premarket trading.",
-      "time": "06:43",
-      "title": "Disney bat les prévisions de bénéfices et prévoit d'augmenter ses dépenses en contenu",
-      "title_en": "Disney beats earnings forecasts, plans to increase content spending",
-      "url": "https://www.investing.com/news/stock-market-news/disney-beats-earnings-forecasts-plans-to-increase-content-spending-5032413"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Anthropic annonce avoir reçu l'autorisation d'inscrire ses actions ordinaires de catégorie A au Nasdaq Global Select Market sous le symbole « ANT », selon une manchette d'Investing.com. Cette étape ouvre la voie à l'IPO prévue jeudi, un test majeur de l'appétit des investisseurs pour l'IA alors que la tech recule.",
-      "summary_en": "Anthropic says it has been approved to list its class A common stock on the Nasdaq Global Select Market under the symbol 'ANT', according to an Investing.com headline. The step clears the way for the IPO planned for Thursday, a key test of investor appetite for AI as tech stocks slide.",
-      "time": "06:41",
-      "title": "Anthropic obtient l'autorisation d'inscrire ses actions de catégorie A au Nasdaq Global Select sous le symbole « ANT »",
-      "title_en": "Anthropic: approved to list class A common stock on Nasdaq Global Select Market under symbol 'ANT'",
-      "url": "https://www.investing.com/news/stock-market-news/anthropic-have-been-approved-to-list-our-class-a-common-stock-on-nasdaq-global-select-market-under-symbol-ant-432SI-5032359"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "eurusd"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le département du Commerce américain a imposé lundi, avec effet immédiat, des restrictions sur les envois de puces d'IA avancées vers des centres de données tiers en Thaïlande et en Malaisie, pour empêcher la Chine d'y accéder indirectement par location de puissance de calcul. ASML a cédé 2,25 %, BE Semiconductor 2,06 %, Infineon 1,19 % et STMicroelectronics 1,12 % en début de séance. Ces règles pèsent sur le secteur des puces à la veille des résultats de Nvidia.",
-      "summary_en": "The US Commerce Department imposed, with immediate effect on Monday, restrictions on advanced AI chip shipments to third-party data centres in Thailand and Malaysia, to stop China from gaining indirect access by renting computing power. ASML fell 2.25%, BE Semiconductor 2.06%, Infineon 1.19% and STMicroelectronics 1.12% in early trading. The rules weigh on chip stocks ahead of Nvidia's results.",
-      "time": "06:23",
-      "title": "Les semi-conducteurs européens reculent après de nouvelles restrictions américaines sur l'accès aux puces d'IA",
-      "title_en": "European chip stocks fall after new US curbs on AI chip access",
-      "url": "https://www.investing.com/news/stock-market-news/european-chip-stocks-fall-after-new-us-curbs-on-ai-chip-access-5032343"
     }
   ],
   "live": {
