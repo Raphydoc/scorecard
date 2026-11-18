@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T01:48:12Z",
+ "updatedAt": "2026-11-18T02:47:30Z",
  "econ": {
   "values": {
    "adp": {
@@ -1064,6 +1064,54 @@
  "news": [
   {
    "assets": [
+    "usoil",
+    "xauusd",
+    "usd"
+   ],
+   "date": "2026-11-17",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
+   "summary": "Citant un reportage de CNN fondé sur des évaluations du renseignement américain, Trump a dit à Manille que les États-Unis prennent la menace « très au sérieux » et que l'Iran « paiera un prix comme aucun pays n'en a jamais payé » si elle est réelle, sans confirmer de menace imminente. Le ministère iranien des Affaires étrangères qualifie les allégations de « sans fondement ». Ce nouvel épisode des tensions États-Unis–Iran soutient le pétrole et les valeurs refuges.",
+   "summary_en": "Citing a CNN report based on US intelligence assessments, Trump said in Manila the US takes the threat 'very seriously' and that Iran 'will pay a price the likes of which no country has ever paid' if it is real, without confirming an imminent threat. Iran's Foreign Ministry called the allegations 'baseless'. The latest episode in US–Iran tensions supports oil and safe havens.",
+   "time": "21:18",
+   "title": "Trump prend au sérieux le reportage sur un supposé complot iranien de « bombe sale » à Washington; Téhéran dément",
+   "title_en": "Trump says US taking seriously report of possible Iranian dirty bomb plot in Washington; Tehran denies",
+   "url": "https://www.investing.com/news/commodities-news/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington-5032621"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "21:16",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Pétrole en baisse : la hausse des stocks américains tempère les risques d'approvisionnement",
+   "title_en": "Oil prices fall as higher US crude stocks temper supply risks",
+   "summary": "Le WTI recule de 0,65 % à 85,45 $ et le Brent de 0,17 % à 92,98 $ après que l'API a fait état d'une hausse de 5,28 millions de barils des stocks de brut américains et de 5,12 millions de barils d'essence. Les pertes restent limitées par les hostilités États-Unis–Iran : frappe américaine sur l'île de Qeshm, pétrolier de GPL touché dans le détroit d'Ormuz et drones houthis visant l'oléoduc saoudien Est-Ouest.",
+   "summary_en": "WTI fell 0.65% to $85.45 and Brent 0.17% to $92.98 after the API reported US crude stocks rose 5.28 million barrels and gasoline 5.12 million barrels. Losses were capped by US–Iran hostilities: a US strike on Iran's Qeshm Island, an LPG tanker hit in the Strait of Hormuz and Houthi drones targeting Saudi Arabia's East-West pipeline.",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks-5034544"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "20:43",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "usdjpy",
+    "usd",
+    "btcusd"
+   ],
+   "title": "L'Asie s'apprête à briser sa série de pertes grâce à Nvidia, avant l'entrée en Bourse d'Anthropic",
+   "title_en": "Asia stocks set to snap losing streak on Nvidia beat as Anthropic looms",
+   "summary": "Le Nikkei gagne 0,6 %, le KOSPI jusqu'à 3,3 % et les contrats à terme du S&P 500 0,5 %, après quatre séances de baisse à Wall Street; Nvidia prend 4,7 % hors séance. Le DXY est à 103,66 (sommet depuis avril 2025), le yen à 159,49 par dollar, le taux américain à 10 ans à 5,123 % et le bitcoin à 64 863 $. Anthropic doit fixer le prix de son PAPE mercredi, pour une valorisation pouvant atteindre 1 400 G$.",
+   "summary_en": "The Nikkei rose 0.6%, the KOSPI as much as 3.3% and S&P 500 futures 0.5% after four straight losing sessions on Wall Street; Nvidia gained 4.7% after hours. The DXY stood at 103.66 (highest since April 2025), the yen at 159.49 per dollar, the US 10-year yield at 5.123% and bitcoin at $64,863. Anthropic is set to price its IPO Wednesday at a valuation of up to $1.4 trillion.",
+   "url": "https://www.investing.com/news/economy-news/asia-stocks-set-to-snap-losing-streak-on-nvidia-beat-as-anthropic-looms-5034510"
+  },
+  {
+   "assets": [
     "xauusd",
     "xagusd",
     "usd"
@@ -1452,22 +1500,6 @@
   },
   {
    "assets": [
-    "usoil",
-    "xauusd",
-    "usd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "L'Iran dément un reportage (CNN, lundi soir) selon lequel il planifierait de faire exploser une « bombe sale » à Washington visant des responsables de l'administration Trump, selon une dépêche Reuters reprise par Investing.com. Aucun détail de marché n'est donné; les tensions avec l'Iran restent à surveiller pour le pétrole, l'or et le dollar.",
-   "summary_en": "Iran denied a report (CNN, Monday evening) that it planned to detonate a dirty bomb in Washington targeting Trump administration officials, according to a Reuters report carried by Investing.com. No market details were given; tensions with Iran remain worth watching for oil, gold and the dollar.",
-   "time": "07:13",
-   "title": "Téhéran dément le reportage sur un supposé plan iranien de « bombe sale » à Washington",
-   "title_en": "Tehran denies report of a potential Iranian plan to detonate dirty bomb in Washington",
-   "url": "https://www.investing.com/news/commodities-news/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington-5032621"
-  },
-  {
-   "assets": [
     "spx500",
     "nasdaq"
    ],
@@ -1648,35 +1680,6 @@
    "title": "Nvidia cessera de vendre des puces aux centres de données qui louent plus de la moitié de leurs GPU à la Chine, selon CNBC",
    "title_en": "Nvidia to halt chip sales to data centers renting over half to China - report",
    "url": "https://www.investing.com/news/stock-market-news/nvidia-to-halt-chip-sales-to-data-centers-renting-over-half-to-china--report-5031871"
-  },
-  {
-   "assets": [
-    "btcusd",
-    "usd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Le bitcoin, autour de 64 500 $, a perdu plus de 15 % en novembre et est passé sous sa moyenne de 200 semaines (environ 68 000 $). Wintermute cible d'abord le creux de 62 000 $ de samedi, puis l'amas d'options de vente à 60 000 $ sur Deribit (plus de 900 M$ d'intérêt ouvert), et n'exclut pas la zone des 50 000 $. Les marchés donnent environ 92 % de chances à une hausse de taux de la Fed en décembre et le 10 ans est repassé au-dessus de 5 %.",
-   "summary_en": "Bitcoin, around $64,500, has fallen more than 15% in November and slipped below its 200-week average (about $68,000). Wintermute eyes Saturday's $62,000 low first, then the $60,000 put cluster on Deribit (over $900M in open interest), and sees pressure into the $50,000s. Markets price about 92% odds of a December Fed rate hike, and the 10-year yield is back above 5%.",
-   "time": "02:38",
-   "title": "Bitcoin : Wintermute voit un risque de glissade dans la zone des 50 000 $ avec les paris sur une hausse de la Fed",
-   "title_en": "Bitcoin could slide into the $50,000s as Fed rate hike bets build, Wintermute says",
-   "url": "https://www.coindesk.com/markets/2026/11/17/bitcoin-could-slide-into-the-usd50-000s-as-fed-rate-hike-bets-build-wintermute-says"
-  },
-  {
-   "assets": [
-    "gbpusd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "La croissance des salaires hors primes ralentit à 3,5 % (contre 3,7 %), plus que prévu, et à 3,6 % avec primes; le chômage baisse à 4,6 % alors qu'on attendait 4,7 %, et les postes vacants tombent à 690 000. Les marchés voient environ 90 % de chances d'une hausse de taux de la Banque d'Angleterre en décembre. La livre a peu réagi.",
-   "summary_en": "Regular pay growth slowed to 3.5% from 3.7%, more than expected, and total pay to 3.6%; unemployment fell to 4.6% versus 4.7% expected, and vacancies dropped to 690,000. Markets price roughly a 90% chance of a Bank of England rate hike in December. Sterling was little changed.",
-   "time": "02:07",
-   "title": "R.-U. : les salaires ralentissent à 3,5 % hors primes, le chômage recule à 4,6 %; une hausse de la BoE en décembre reste probable",
-   "title_en": "UK wage growth slows to 3.5% in three months to September; unemployment falls to 4.6%",
-   "url": "https://www.investing.com/news/economy-news/uk-wage-growth-slows-to-35-in-three-months-to-september-5031823"
   }
  ],
  "live": {
