@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-17T23:47:30Z",
+ "updatedAt": "2026-11-18T00:47:09Z",
  "econ": {
   "values": {
    "adp": {
@@ -1063,6 +1063,22 @@
  },
  "news": [
   {
+   "date": "2026-11-17",
+   "time": "19:02",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "Les contrats à terme bondissent après Nvidia : Nasdaq 100 +1,6 %, puces en hausse après la clôture",
+   "title_en": "U.S. stock futures jump as Nvidia earnings revive AI optimism; chipmakers rally after hours",
+   "summary": "Vers 18 h 52 (HE), les contrats à terme du Nasdaq 100 gagnaient 1,6 % (27 497,75), ceux du S&P 500 0,8 % (7 418,25) et ceux du Dow 0,3 %, Nvidia prenant environ 5 % après des revenus du T3 de 115,8 G$ et une prévision de 126 à 134 G$. Dans la foulée, Arm (+5,5 %), Super Micro (+5,2 %), AMD (+3,5 %), CoreWeave (+7 %) et Nebius (+9 %) montaient après la clôture. Ce rebond suit quatre séances de baisse du S&P 500 et du Nasdaq, alors que les marchés intègrent 96 % de probabilité d'une hausse de taux de la Fed en décembre (CME FedWatch).",
+   "summary_en": "Around 6:52 p.m. ET, Nasdaq 100 futures rose 1.6% (27,497.75), S&P 500 futures 0.8% (7,418.25) and Dow futures 0.3%, with Nvidia up about 5% after Q3 revenue of $115.8B and a $126B–$134B forecast. Arm (+5.5%), Super Micro (+5.2%), AMD (+3.5%), CoreWeave (+7%) and Nebius (+9%) also rallied after hours. The bounce follows four straight losing sessions for the S&P 500 and Nasdaq, while markets price a 96% chance of a December Fed rate hike (CME FedWatch).",
+   "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-jump-as-nvidia-earnings-revive-ai-optimism-5034391"
+  },
+  {
    "assets": [
     "usoil",
     "xauusd"
@@ -1662,21 +1678,6 @@
    "title": "Tokyo clôture en baisse : Nikkei −1,23 %, USD/JPY à 159,23; l'or à terme gagne 0,66 %",
    "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 1.23%",
    "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-123-5031816"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Les actions de Samsung Electronics (−3,05 %) et de TSMC (−2,03 %) ont reculé mardi en Asie après l'annonce par l'administration Trump de nouvelles restrictions sur l'accès de la Chine aux puces d'IA avancées; l'indice Taiwan Weighted a clôturé en baisse de 2,18 %. Selon CLSA, les règles resserrent les exigences pour les fonderies qui fabriquent des puces avancées pour des clients chinois, ce qui pèse sur les semi-conducteurs à la veille des résultats de Nvidia et sur le Nasdaq et le S&P 500.",
-   "summary_en": "Samsung Electronics (−3.05%) and TSMC (−2.03%) shares fell Tuesday in Asia after the Trump administration announced tighter curbs on China's access to advanced AI chips; the Taiwan Weighted index closed down 2.18%. CLSA says the rules tighten requirements on foundries making advanced chips for Chinese fabless firms, weighing on semiconductors ahead of Nvidia's results and on the Nasdaq and S&P 500.",
-   "time": "00:56",
-   "title": "Samsung (−3,05 %) et TSMC (−2,03 %) reculent après le resserrement américain sur l'accès de la Chine aux puces d'IA; le Taiwan Weighted perd 2,18 %",
-   "title_en": "Samsung (−3.05%) and TSMC (−2.03%) fall after US tightens China's access to AI chips; Taiwan Weighted down 2.18%",
-   "url": "https://www.investing.com/news/stock-market-news/samsung-elec-tsmc-shares-fall-after-us-announces-curbs-on-chinas-chip-access-5031711"
   }
  ],
  "live": {
