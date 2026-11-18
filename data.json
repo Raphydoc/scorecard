@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T05:47:45Z",
+  "updatedAt": "2026-11-18T06:47:49Z",
   "econ": {
     "values": {
       "adp": {
@@ -1063,6 +1063,36 @@
   },
   "news": [
     {
+      "date": "2026-11-18",
+      "time": "00:36",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Tesla mettra fin au Cybertruck après des années de ventes décevantes",
+      "title_en": "Tesla to pull the plug on Cybertruck after years of poor sales",
+      "summary": "Selon Reuters, Tesla s'apprête à abandonner son Cybertruck après des années de ventes faibles. L'article n'a pas pu être lu en entier; seul le titre est repris ici. Tesla pèse lourd dans le Nasdaq et le S&P 500.",
+      "summary_en": "According to Reuters, Tesla is set to discontinue its Cybertruck after years of weak sales. The full article could not be read; only the headline is reflected here. Tesla is a heavyweight in the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/tesla-to-pull-the-plug-on-cybertruck-after-years-of-poor-sales-5034756"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "00:22",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Nvidia : le conseil refuse de réintégrer Jensen Huang; Colette Kress réussit son premier test",
+      "title_en": "'Business as usual': Nvidia's Kress passes first test as board slams door on Huang",
+      "summary": "Le nouveau président du conseil, Harvey Jones, a affirmé que le conseil avait accepté à l'unanimité la démission de Huang et n'entend pas le réintégrer, malgré l'appui de Trump et d'Elon Musk. La PDG intérimaire Colette Kress a promis de la discipline dans l'engagement du capital; Nvidia prévoit une croissance des ventes d'environ 75 % pour l'exercice 2028 et le titre a gagné plus de 4 % après la clôture. Le scandale avait effacé plus de 700 G$ de capitalisation.",
+      "summary_en": "New board chair Harvey Jones said the board unanimously accepted Huang's resignation and does not intend to reinstate him, despite backing from Trump and Elon Musk. Interim CEO Colette Kress pledged discipline in committing capital; Nvidia forecast fiscal 2028 sales growth of about 75% and shares rose more than 4% after hours. The scandal had wiped more than $700 billion off its market value.",
+      "url": "https://www.investing.com/news/stock-market-news/business-as-usual-nvidias-kress-passes-first-test-as-board-slams-door-on-huang-5034739"
+    },
+    {
       "date": "2026-11-17",
       "time": "23:57",
       "source": "Investing.com",
@@ -1650,35 +1680,6 @@
       "title": "Les contrats à terme reculent avant Nvidia : Dow −0,45 %, S&P 500 et Nasdaq 100 −0,34 %; Waller, Hammack et Williams attendus",
       "title_en": "US stock futures slip ahead of Nvidia results: Dow −0.45%, S&P 500 and Nasdaq 100 −0.34%; Waller, Hammack and Williams in focus",
       "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-slip-ahead-of-nvidia-results-fed-speakers-in-focus-5032236"
-    },
-    {
-      "assets": [
-        "btcusd",
-        "nasdaq"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Le bitcoin reste près de 64 000 $, peu changé sur 24 heures après une glissade à 62 000 $ en fin de semaine; l'ether est juste sous 1 800 $. Les contrats à terme du Nasdaq 100 cèdent 0,5 % après une déroute de deux jours qui a effacé 6 % de l'indice. Les sorties des FNB au comptant et les fortes probabilités d'une hausse de taux de la Fed freinent les achats avant les résultats de Nvidia, les ventes au détail américaines et le procès-verbal de la Fed mercredi.",
-      "summary_en": "Bitcoin holds near $64,000, little changed over 24 hours after a weekend slide to $62,000; ether is just under $1,800. Nasdaq 100 futures are down 0.5% after a two-day rout that wiped out 6% of the index. Spot ETF outflows and high Fed rate-hike odds keep buyers cautious ahead of Nvidia earnings, U.S. retail sales and Wednesday's Fed minutes.",
-      "time": "05:34",
-      "title": "Le bitcoin se maintient près de 64 000 $ alors que la tech recule avant les résultats de Nvidia",
-      "title_en": "Bitcoin holds near $64,000 as tech slides ahead of Nvidia earnings",
-      "url": "https://www.coindesk.com/business/2026/11/17/live-updates-bitcoin-holds-near-usd64-000-as-tech-slides-ahead-of-nvidia-earnings"
-    },
-    {
-      "assets": [
-        "eurusd"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "L'indice ZEW du sentiment économique allemand passe à 35,6 points en novembre, contre 28,1 le mois précédent et 28,3 prévu. L'évaluation de la situation actuelle s'améliore à -33,2, contre -35,9. Le président du ZEW cite la hausse des commandes manufacturières et la baisse du pétrole, une donnée encourageante pour l'économie de la zone euro et l'euro.",
-      "summary_en": "Germany's ZEW economic sentiment index rose to 35.6 in November from 28.1, beating the 28.3 forecast. The current-situation gauge improved to -33.2 from -35.9. ZEW's president cited rising manufacturing orders and falling oil prices, an encouraging sign for the euro zone economy and the euro.",
-      "time": "05:18",
-      "title": "Allemagne : le moral des investisseurs (ZEW) grimpe à 35,6, bien au-dessus des 28,3 attendus",
-      "title_en": "German investor morale rises more than expected in November, ZEW finds",
-      "url": "https://www.investing.com/news/economic-indicators/german-investor-morale-rises-more-than-expected-in-november-zew-finds-5032155"
     }
   ],
   "live": {
