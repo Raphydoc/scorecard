@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T20:45:00Z",
+ "updatedAt": "2026-11-18T20:48:05Z",
  "econ": {
   "values": {
    "adp": {
@@ -1131,6 +1131,37 @@
  "news": [
   {
    "date": "2026-11-18",
+   "time": "14:26",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia aurait approché Rene Haas, PDG d'Arm, pour succéder à Jensen Huang",
+   "title_en": "Nvidia reportedly approaches Arm CEO Rene Haas for top job after Jensen Huang exit",
+   "summary": "Selon Bloomberg, la firme de recrutement Heidrick & Struggles, mandatée par le conseil de Nvidia, a contacté Rene Haas, PDG d'Arm depuis 2022, ainsi que d'autres dirigeants. Rien n'indique que Haas a accepté ni qu'une décision a été prise. La succession de Huang pèse sur Nvidia, poids lourd du Nasdaq et du S&P 500.",
+   "summary_en": "According to Bloomberg, recruiting firm Heidrick & Struggles, hired by Nvidia's board, contacted Rene Haas, Arm's CEO since 2022, along with other executives. There is no sign Haas has agreed or that a decision has been made. The Huang succession weighs on Nvidia, a heavyweight in the Nasdaq and S&P 500.",
+   "url": "https://au.investing.com/news/stock-market-news/nvidia-reportedly-approaches-arm-ceo-rene-haas-for-top-job-after-jensen-huang-exit-4781223"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "14:20",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd"
+   ],
+   "title": "L'or chute de plus de 3 % à 3 727 $ : le procès-verbal de la Fed alimente les paris d'une hausse plus forte en décembre",
+   "title_en": "Gold extends losses as Fed minutes fuel bets on larger December rate hike",
+   "summary": "Vers 14 h 15, l'or au comptant reculait de 3,17 % à 3 727,07 $ l'once et les contrats à terme de 2,7 % à 3 758,90 $; l'argent perdait 5 % à 44,97 $ et l'indice du dollar gagnait 0,3 % à 103,81. Le procès-verbal d'octobre montre que quelques membres jugent possible une hausse de plus de 25 pb en décembre, et le taux à 10 ans reste au-dessus de 5 %. ANZ voit un soutien vers 3 600 $; UBS attribue la vente à des facteurs de positionnement à court terme.",
+   "summary_en": "Around 2:15 p.m., spot gold fell 3.17% to $3,727.07/oz and futures 2.7% to $3,758.90; silver dropped 5% to $44.97 and the dollar index rose 0.3% to 103.81. October minutes showed a couple of policymakers see a hike larger than 25 bp as possibly warranted in December, with the 10-year yield holding above 5%. ANZ sees support near $3,600; UBS says the sell-off reflects near-term positioning.",
+   "url": "https://www.investing.com/news/commodities-news/gold-falls-toward-3800-as-fed-hawks-reinforce-ratehike-outlook-5034463"
+  },
+  {
+   "date": "2026-11-18",
    "time": "14:08",
    "source": "Investing.com",
    "impact": "high",
@@ -1212,22 +1243,6 @@
    "summary": "La livre recule de 0,42 % à 1,3152 $ US, près du bas de sa fourchette de 52 semaines (1,3037–1,3869). Les paris sur une hausse de taux de la Fed l'emportent sur la solide croissance du PIB britannique, alors que l'EUR/GBP à 0,8341 montre que la livre tient bon face à l'euro.",
    "summary_en": "Sterling fell 0.42% to $1.3152, near the bottom of its 52-week range (1.3037–1.3869). Fed rate-hike bets are overpowering strong UK GDP data, while EUR/GBP at 0.8341 shows the pound holding up against the euro.",
    "url": "https://www.investing.com/news/forex-news/gbpusd-slide-driven-by-dollar-strength-not-sterling-weakness-93CH-5036710"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "11:47",
-   "source": "Investing.com",
-   "impact": "high",
-   "assets": [
-    "xauusd",
-    "xagusd",
-    "usd"
-   ],
-   "title": "L'or glisse sous 4 000 $ alors que l'argent rapide sort et que les craintes de hausse de taux montent",
-   "title_en": "Gold slides below $4,000 as fast money exits and rate-hike fears mount",
-   "summary": "Les contrats à terme sur l'or chutent de 3,00 % à 3 748,30 $, un creux de 52 semaines à 3 738,17 $, en baisse de 6,36 % sur une semaine et de 13,53 % depuis janvier. Les spéculateurs liquident leurs positions acheteuses pendant que le marché anticipe d'autres hausses de la Fed, dont un possible 50 points de base en décembre évoqué par Waller; le cuivre perd environ 6 %.",
-   "summary_en": "Gold futures fell 3.00% to $3,748.30, a 52-week low of $3,738.17, down 6.36% on the week and 13.53% year to date. Fast money is exiting crowded longs as markets price more Fed hikes, including a possible 50bp December move floated by Waller; copper is down about 6%.",
-   "url": "https://www.investing.com/news/commodities-news/gold-slides-below-4000-as-fast-money-exits-and-ratehike-fears-mount-93CH-5036683"
   },
   {
    "date": "2026-11-18",
@@ -1470,22 +1485,6 @@
    "summary": "Selon trois sources de Reuters, le Trésor et le bureau scientifique de la Maison-Blanche ont discuté d'exiger que des entreprises comme Airbnb (qui utilise le modèle Qwen d'Alibaba) publient leur recours à des modèles d'IA chinois, une approche de « name and shame » sans nouvelles restrictions. On ignore si l'idée progresse; les modèles chinois étaient les trois plus utilisés sur OpenRouter en octobre. Un nouveau front de tensions technologiques sino-américaines pour le secteur techno.",
    "summary_en": "According to three Reuters sources, Treasury and the White House science office have discussed requiring companies such as Airbnb (which uses Alibaba's Qwen model) to disclose their use of Chinese AI models, a 'name and shame' approach without new restrictions. It is unclear whether the idea is gaining traction; Chinese models were the three most used on OpenRouter in October. A new front in US-China tech tensions for the tech sector.",
    "url": "https://www.investing.com/news/stock-market-news/exclusivetrump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use-5035455"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "05:44",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "xauusd",
-    "xagusd",
-    "usd"
-   ],
-   "title": "L'or passe sous 3 800 $ : les paris de hausse de taux de la Fed accentuent la liquidation",
-   "title_en": "Gold drops below $3,800 as Fed hike bets deepen bullion selloff",
-   "summary": "L'or est tombé sous la barre des 3 800 $ l'once, les paris sur une hausse des taux de la Fed en décembre accentuant la vague de ventes sur le métal jaune. Des taux plus élevés et un dollar ferme pèsent sur l'or et l'argent, qui ne versent pas d'intérêt. (Article non consultable; résumé fondé sur le titre.)",
-   "summary_en": "Gold fell below $3,800 an ounce as bets on a December Fed rate hike deepened the selloff in bullion. Higher rates and a firm dollar weigh on non-yielding gold and silver. (Article could not be read; summary based on the headline.)",
-   "url": "https://www.investing.com/news/commodities-news/gold-falls-toward-3800-as-fed-hawks-reinforce-ratehike-outlook-5034463"
   },
   {
    "date": "2026-11-18",
