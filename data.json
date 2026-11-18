@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T09:47:36Z",
+  "updatedAt": "2026-11-18T10:47:49Z",
   "econ": {
     "values": {
       "adp": {
@@ -1064,6 +1064,51 @@
   "news": [
     {
       "date": "2026-11-18",
+      "time": "05:28",
+      "source": "Investing.com (Reuters)",
+      "impact": "high",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "us30"
+      ],
+      "title": "Les contrats à terme du Nasdaq bondissent de 1,2 % grâce aux prévisions de Nvidia, avant le prix de l'IPO d'Anthropic",
+      "title_en": "Nasdaq futures jump as Nvidia forecast lifts AI trade ahead of Anthropic pricing",
+      "summary": "À 4 h 53 (HE), les contrats E-mini du Nasdaq 100 gagnaient 315,5 points (+1,17 %), ceux du S&P 500 45,75 points (+0,62 %) et ceux du Dow 144 points (+0,28 %). Nvidia prenait 3,7 % avant l'ouverture après avoir prévu des revenus de 130 G$ (±3 %) au 4e trimestre, contre 125,25 G$ attendus selon LSEG. Le prix de l'IPO d'Anthropic (valorisation jusqu'à 1 400 G$) et le procès-verbal de la Fed sont attendus aujourd'hui; le marché anticipe presque entièrement une hausse de 25 points de base le mois prochain.",
+      "summary_en": "At 4:53 a.m. ET, Nasdaq 100 E-minis were up 315.5 points (1.17%), S&P 500 E-minis up 45.75 points (0.62%) and Dow E-minis up 144 points (0.28%). Nvidia rose 3.7% premarket after forecasting Q4 revenue of $130 billion (±3%) versus the $125.25 billion LSEG consensus. Anthropic's IPO pricing (valuation of up to $1.4 trillion) and the Fed minutes are due today; markets almost fully price a 25-basis-point hike next month.",
+      "url": "https://www.investing.com/news/economy-news/nasdaq-futures-jump-as-nvidia-forecast-lifts-ai-trade-ahead-of-anthropic-pricing-5035347"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "05:25",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usoil"
+      ],
+      "title": "Le pétrole glisse : l'amélioration de l'offre l'emporte sur les tensions au Moyen-Orient",
+      "title_en": "Oil prices slip as improving supplies outweigh ongoing Mideast tensions",
+      "summary": "Les prix du pétrole reculent ce matin, l'amélioration de l'offre pesant davantage que les tensions persistantes au Moyen-Orient (article non consultable; résumé fondé sur le titre). La veille, la hausse des stocks de brut américains avait déjà freiné les prix. À surveiller pour le WTI.",
+      "summary_en": "Oil prices are slipping this morning as improving supplies outweigh ongoing Middle East tensions (article could not be read; summary based on the headline). A day earlier, higher U.S. crude stocks had already weighed on prices. Worth watching for WTI.",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-as-markets-parse-meast-tensions-us-inventory-build-5034529"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "05:07",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Wall Street se prépare à la frénésie de l'IPO d'Anthropic malgré le recul des titres de l'IA",
+      "title_en": "Wall Street prepares for Anthropic IPO frenzy, despite broader AI stock slump",
+      "summary": "L'IPO d'Anthropic, attendue jeudi, viserait une valorisation allant jusqu'à 1 400 G$. Vanda Research prévoit environ 250 M$ d'achats nets des particuliers, près du double du record de 118 M$ de SpaceX, et au moins 11 FNB à levier sur ce titre sont en préparation. Le contexte reste fragile : les hyperscalers et autres titres liés à l'IA ont subi de lourdes pertes ces dernières semaines.",
+      "summary_en": "Anthropic's IPO, expected Thursday, reportedly targets a valuation of up to $1.4 trillion. Vanda Research expects about $250 million in net retail buying, roughly double SpaceX's record $118 million, and at least 11 leveraged single-stock ETFs are being prepared. The backdrop is fragile, with hyperscalers and other AI-linked stocks suffering steep losses in recent weeks.",
+      "url": "https://www.investing.com/news/stock-market-news/wall-street-prepares-for-anthropic-ipo-frenzy-despite-broader-ai-stock-slump-5035325"
+    },
+    {
+      "date": "2026-11-18",
       "time": "04:32",
       "source": "CNBC",
       "impact": "med",
@@ -1292,20 +1337,6 @@
       "title": "Trump prend au sérieux le reportage sur un supposé complot iranien de « bombe sale » à Washington; Téhéran dément",
       "title_en": "Trump says US taking seriously report of possible Iranian dirty bomb plot in Washington; Tehran denies",
       "url": "https://www.investing.com/news/commodities-news/tehran-denies-report-of-a-potential-iranian-plan-to-detonate-dirty-bomb-in-washington-5032621"
-    },
-    {
-      "date": "2026-11-17",
-      "time": "21:16",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
-      "assets": [
-        "usoil"
-      ],
-      "title": "Pétrole en baisse : la hausse des stocks américains tempère les risques d'approvisionnement",
-      "title_en": "Oil prices fall as higher US crude stocks temper supply risks",
-      "summary": "Le WTI recule de 0,65 % à 85,45 $ et le Brent de 0,17 % à 92,98 $ après que l'API a fait état d'une hausse de 5,28 millions de barils des stocks de brut américains et de 5,12 millions de barils d'essence. Les pertes restent limitées par les hostilités États-Unis–Iran : frappe américaine sur l'île de Qeshm, pétrolier de GPL touché dans le détroit d'Ormuz et drones houthis visant l'oléoduc saoudien Est-Ouest.",
-      "summary_en": "WTI fell 0.65% to $85.45 and Brent 0.17% to $92.98 after the API reported US crude stocks rose 5.28 million barrels and gasoline 5.12 million barrels. Losses were capped by US–Iran hostilities: a US strike on Iran's Qeshm Island, an LPG tanker hit in the Strait of Hormuz and Houthi drones targeting Saudi Arabia's East-West pipeline.",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks-5034544"
     },
     {
       "assets": [
@@ -1650,36 +1681,6 @@
       "title": "Pourquoi Goldman Sachs s'attend à un rebond du S&P 500 en 2027",
       "title_en": "Why Goldman Sachs expects the S&P 500 to rally in 2027",
       "url": "https://www.investing.com/news/stock-market-news/why-goldman-sachs-expects-the-sp-500-to-rally-in-2027-5032933"
-    },
-    {
-      "assets": [
-        "spx500",
-        "nasdaq",
-        "rut"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Scott Rubner, de Citadel, affirme que la volatilité sur les actions a atteint son niveau le plus élevé depuis avril 2025 (selon le titre d'Investing.com; article non lisible). Cela témoigne de la nervosité des marchés américains à l'approche des résultats de Nvidia.",
-      "summary_en": "Citadel's Scott Rubner says equity volatility has hit its highest level since April 2025 (per Investing.com's headline; article could not be read). It reflects nervousness in U.S. markets ahead of Nvidia's results.",
-      "time": "08:05",
-      "title": "Citadel (Rubner) : la volatilité des actions atteint son plus haut depuis avril 2025",
-      "title_en": "Citadel's Rubner says equity volatility hits highest since April 2025",
-      "url": "https://www.investing.com/news/stock-market-news/citadels-rubner-says-equity-volatility-hits-highest-since-april-2025-93CH-5032831"
-    },
-    {
-      "assets": [
-        "xauusd"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Goldman Sachs maintient une cible de 5 600 $ l'once pour l'or et indique à quel horizon il l'attend (selon le titre d'Investing.com; article non lisible, échéance non confirmée). La prévision contraste avec l'or, récemment tombé près d'un creux de 14 mois.",
-      "summary_en": "Goldman Sachs sees gold reaching $5,600/oz and lays out when it expects that (per Investing.com's headline; article could not be read, timing unconfirmed). The forecast contrasts with gold recently falling near a 14-month low.",
-      "time": "07:32",
-      "title": "Goldman précise quand il s'attend à voir l'or atteindre 5 600 $ l'once",
-      "title_en": "Here's when Goldman expects gold prices to reach $5,600/oz",
-      "url": "https://www.investing.com/news/commodities-news/heres-when-goldman-expects-gold-prices-to-reach-5600oz-5032707"
     }
   ],
   "live": {
