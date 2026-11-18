@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T17:47:27Z",
+ "updatedAt": "2026-11-18T18:47:51Z",
  "econ": {
   "values": {
    "adp": {
@@ -1131,6 +1131,35 @@
  "news": [
   {
    "date": "2026-11-18",
+   "time": "12:30",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Ackman critique durement le conseil de Nvidia après le départ de Jensen Huang et remet en question son devoir fiduciaire",
+   "title_en": "Ackman blasts Nvidia board over Jensen Huang exit, questions fiduciary duties",
+   "summary": "Bill Ackman (Pershing Square) accuse sur X les administrateurs de Nvidia d'avoir précipité le départ de Jensen Huang, démissionnaire le 12 novembre, sans enquête suffisante, y voyant « une série d'échecs majeurs de gouvernance ». Nvidia mène une enquête indépendante et une enquête distincte de la SEC est rapportée. La crise de direction du poids lourd de l'IA pèse sur le Nasdaq et le S&P 500.",
+   "summary_en": "Pershing Square's Bill Ackman said on X that Nvidia's directors rushed Jensen Huang's exit, after he resigned on Nov. 12, without sufficient due diligence, calling it \"a series of major governance failures.\" Nvidia has launched an independent investigation and a separate SEC inquiry has been reported. The leadership crisis at the AI heavyweight weighs on the Nasdaq and S&P 500.",
+   "url": "https://www.investing.com/news/stock-market-news/ackman-blasts-nvidia-board-over-jensen-huang-exit-questions-fiduciary-duties-5036745"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "12:18",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "Les options sur Anthropic pourraient commencer à se négocier lundi et attirer une forte demande",
+   "title_en": "Anthropic options could begin trading on Monday, expected to draw strong demand",
+   "summary": "Cboe prévoit d'inscrire les options sur Anthropic deux jours ouvrables après le début des échanges de l'action, soit dès lundi; l'IPO, évaluée à 64 G$ et souscrite six fois selon Reuters, doit être fixée mercredi pour des débuts au Nasdaq jeudi. Des spécialistes s'attendent à une action très volatile, dans un contexte où le commerce de l'IA est sous pression.",
+   "summary_en": "Cboe expects to list Anthropic options two business days after the stock starts trading, as soon as Monday; the $64 billion IPO, six times oversubscribed per Reuters, is expected to price Wednesday with Nasdaq trading Thursday. Experts expect the stock to be highly volatile as the AI trade comes under pressure.",
+   "url": "https://www.investing.com/news/stock-market-news/anthropic-options-could-begin-trading-on-monday-expected-to-draw-strong-demand-5036728"
+  },
+  {
+   "date": "2026-11-18",
    "time": "12:01",
    "source": "Investing.com",
    "impact": "med",
@@ -1725,38 +1754,6 @@
    "title": "Pétrole : le Brent clôture en hausse dans des échanges agités, sur fond d'attaques à Ormuz et de tensions États-Unis–Iran",
    "title_en": "Brent settles higher in choppy trade amid Hormuz attacks, U.S.-Iran tensions",
    "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "date": "2026-11-17",
-   "impact": "high",
-   "source": "Investing.com",
-   "summary": "Pour son premier rapport depuis le départ de Jensen Huang, Nvidia affiche un BPA ajusté de 2,68 $ (2,47 $ attendus) et des revenus de 115,84 G$ (108,85 G$ attendus), avec une marge brute ajustée de 74,9 %. La société prévoit 130 G$ (±3 %) au 4e trimestre fiscal, contre un consensus de 124,9 G$, et l'action gagne plus de 2 % après la clôture. Un soulagement pour le Nasdaq et le S&P 500 après une chute de 24,8 % du titre en novembre et l'enquête de la SEC.",
-   "summary_en": "In its first report since Jensen Huang's exit, Nvidia posted adjusted EPS of $2.68 (vs. $2.47 expected) and revenue of $115.84B (vs. $108.85B), with a 74.9% adjusted gross margin. It guided fiscal Q4 revenue to $130B (±3%) versus a $124.9B consensus, and shares rose over 2% after hours. A relief for the Nasdaq and S&P 500 after the stock's 24.8% November slide and the SEC probe.",
-   "time": "16:31",
-   "title": "Nvidia bat les attentes et prévoit 130 G$ de revenus au prochain trimestre; l'action gagne plus de 2 % après la clôture",
-   "title_en": "Nvidia beats estimates and guides to $130B next-quarter revenue; shares rise over 2% after hours",
-   "url": "https://www.investing.com/news/earnings/nvidia-quarterly-results-beat-estimates-5033943"
-  },
-  {
-   "assets": [
-    "us30",
-    "spx500",
-    "nasdaq"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Les actions américaines ont fini la séance en recul, le Dow Jones cédant 1,64 %, et le S&P 500 a enregistré sa plus faible clôture depuis juillet avant les résultats de Nvidia. Les Bourses de Toronto (S&P/TSX −1,14 %) et de Mexico (−1,00 %) ont aussi reculé.",
-   "summary_en": "U.S. stocks ended the session lower, with the Dow Jones down 1.64%, and the S&P 500 posted its lowest close since July ahead of Nvidia's results. Toronto (S&P/TSX −1.14%) and Mexico (−1.00%) also fell.",
-   "time": "16:31",
-   "title": "Clôture : Wall Street termine en baisse, le Dow perd 1,64 % et le S&P 500 signe sa plus faible clôture depuis juillet",
-   "title_en": "Close: Wall Street ends lower, Dow down 1.64% and S&P 500 posts lowest close since July",
-   "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-164-5034091"
   }
  ],
  "live": {
