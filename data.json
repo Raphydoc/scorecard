@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T15:47:24Z",
+ "updatedAt": "2026-11-18T16:52:35Z",
  "econ": {
   "values": {
    "adp": {
@@ -1131,6 +1131,52 @@
  "news": [
   {
    "date": "2026-11-18",
+   "time": "11:24",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Le pétrole recule après une hausse plus forte que prévu des stocks américains (EIA); le WTI au plus bas depuis fin août",
+   "title_en": "Oil falls after larger-than-expected rise in US stockpiles, EIA says; WTI at lowest since late August",
+   "summary": "Vers 10 h 46, le Brent perdait 1,12 $ (1,2 %) à 92,02 $ et le WTI 1,63 $ (1,9 %) à 84,38 $, son plus bas depuis fin août. L'EIA rapporte une hausse de 3,4 M de barils des stocks de brut (attendu : +58 000) et de 5,2 M de barils pour l'essence (attendu : +1,6 M). Les deux références se dirigent vers un recul d'environ 20 % sur le mois, malgré le conflit États-Unis–Iran et les risques autour d'Ormuz.",
+   "summary_en": "Around 10:46 a.m., Brent was down $1.12 (1.2%) at $92.02 and WTI down $1.63 (1.9%) at $84.38, its lowest since late August. The EIA reported a 3.4 million-barrel crude build (vs. 58,000 expected) and a 5.2 million-barrel gasoline build (vs. 1.6 million expected). Both benchmarks are on track for roughly a 20% monthly drop despite the US-Iran conflict and Hormuz risks.",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks-5034544"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "11:17",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500",
+    "us30",
+    "nasdaq",
+    "usdjpy"
+   ],
+   "title": "Les obligations du Trésor grimpent pour une troisième séance alors que les actions glissent et que le pétrole recule",
+   "title_en": "Treasuries rally for a third day as stocks slip and oil falls",
+   "summary": "Le rendement à 10 ans recule à environ 5,065 % après avoir brièvement dépassé 5,12 %, et le 2 ans se situe vers 4,78 %. Le S&P 500 cède 0,52 % à 7 302,84 et le VIX est à 25,1. La baisse du pétrole apaise les craintes d'inflation et les marchés monétaires intègrent pleinement une hausse de la Fed en décembre, plus trois autres d'ici la fin de 2027, malgré l'appel de Waller à envisager un demi-point.",
+   "summary_en": "The 10-year yield eased to about 5.065% after briefly topping 5.12%, with the 2-year near 4.78%. The S&P 500 fell 0.52% to 7,302.84 and the VIX stood at 25.1. Falling oil eases inflation worries, and money markets fully price a December Fed hike plus three more by end-2027, despite Waller's call to consider a half-point move.",
+   "url": "https://www.investing.com/news/stock-market-news/treasuries-rally-for-a-third-day-as-stocks-slip-and-oil-falls-93CH-5036642"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "10:47",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "spx500"
+   ],
+   "title": "Target grimpe de 5 % : meilleure croissance des ventes en cinq ans et prévisions relevées",
+   "title_en": "Target shares rise 5% as retailer posts best sales growth in five years, hikes guidance",
+   "summary": "L'action de Target gagne 5 % après que le détaillant a affiché sa meilleure croissance des ventes en cinq ans et relevé ses prévisions (article non consultable; résumé fondé sur le titre). Avec TJX et Lowe's, ce résultat donne une lecture plutôt solide de la consommation américaine avant les Fêtes.",
+   "summary_en": "Target shares rose 5% after the retailer posted its best sales growth in five years and raised its guidance (article could not be read; summary based on the headline). Along with TJX and Lowe's, the result offers a fairly solid read on U.S. consumer spending ahead of the holidays.",
+   "url": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html"
+  },
+  {
+   "date": "2026-11-18",
    "time": "10:13",
    "source": "CNBC",
    "impact": "high",
@@ -1356,20 +1402,6 @@
    "summary": "À 4 h 53 (HE), les contrats E-mini du Nasdaq 100 gagnaient 315,5 points (+1,17 %), ceux du S&P 500 45,75 points (+0,62 %) et ceux du Dow 144 points (+0,28 %). Nvidia prenait 3,7 % avant l'ouverture après avoir prévu des revenus de 130 G$ (±3 %) au 4e trimestre, contre 125,25 G$ attendus selon LSEG. Le prix de l'IPO d'Anthropic (valorisation jusqu'à 1 400 G$) et le procès-verbal de la Fed sont attendus aujourd'hui; le marché anticipe presque entièrement une hausse de 25 points de base le mois prochain.",
    "summary_en": "At 4:53 a.m. ET, Nasdaq 100 E-minis were up 315.5 points (1.17%), S&P 500 E-minis up 45.75 points (0.62%) and Dow E-minis up 144 points (0.28%). Nvidia rose 3.7% premarket after forecasting Q4 revenue of $130 billion (±3%) versus the $125.25 billion LSEG consensus. Anthropic's IPO pricing (valuation of up to $1.4 trillion) and the Fed minutes are due today; markets almost fully price a 25-basis-point hike next month.",
    "url": "https://www.investing.com/news/economy-news/nasdaq-futures-jump-as-nvidia-forecast-lifts-ai-trade-ahead-of-anthropic-pricing-5035347"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "05:25",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "usoil"
-   ],
-   "title": "Le pétrole glisse : l'amélioration de l'offre l'emporte sur les tensions au Moyen-Orient",
-   "title_en": "Oil prices slip as improving supplies outweigh ongoing Mideast tensions",
-   "summary": "Les prix du pétrole reculent ce matin, l'amélioration de l'offre pesant davantage que les tensions persistantes au Moyen-Orient (article non consultable; résumé fondé sur le titre). La veille, la hausse des stocks de brut américains avait déjà freiné les prix. À surveiller pour le WTI.",
-   "summary_en": "Oil prices are slipping this morning as improving supplies outweigh ongoing Middle East tensions (article could not be read; summary based on the headline). A day earlier, higher U.S. crude stocks had already weighed on prices. Worth watching for WTI.",
-   "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-lower-as-markets-parse-meast-tensions-us-inventory-build-5034529"
   },
   {
    "date": "2026-11-18",
@@ -1724,36 +1756,6 @@
    "title": "Exclusif : Trump maintient l'interdiction des équipements chinois pour centres de données malgré le lobbying d'Amazon, Google et Meta",
    "title_en": "Exclusive-Trump's China data center curb advances despite Amazon, Google, Meta lobbying",
    "url": "https://www.investing.com/news/stock-market-news/exclusivetrumps-china-data-center-curb-advances-despite-amazon-google-meta-lobbying-5032280"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Le procureur général de la Californie, Rob Bonta, a dit à Bloomberg TV que son bureau examine certains aspects du scandale impliquant Nvidia et son ex-PDG Jensen Huang, et qu'un examen est « très possiblement » de son ressort. Il n'a donné aucun détail; son bureau évalue si les faits et le droit justifient une action. Un risque juridique de plus pour Nvidia, poids lourd du Nasdaq, à la veille de ses résultats.",
-   "summary_en": "California Attorney General Rob Bonta told Bloomberg TV his office is looking into aspects of the scandal involving Nvidia and former CEO Jensen Huang, saying a review is 'very possibly' in scope. He gave no details; his office is weighing whether the law and facts justify action. It adds legal risk for Nvidia, a Nasdaq heavyweight, on the eve of its earnings.",
-   "time": "14:31",
-   "title": "Scandale Nvidia : la procureure générale de Californie évoque des « signaux d'alarme » et une possible enquête",
-   "title_en": "California AG says Nvidia scandal has raised 'red flags', could lead to probe, Bloomberg News reports",
-   "url": "https://www.investing.com/news/stock-market-news/california-ag-says-nvidia-scandal-has-raised-red-flags-could-lead-to-probe-bloomberg-news-reports-5033824"
-  },
-  {
-   "assets": [
-    "spx500",
-    "us30"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Nike recule d'environ 6 % : l'entreprise prévoit des revenus stables en Grande Chine de l'exercice 2027 à 2031 et qualifie l'exercice 2028 d'année « difficile », avec un BPA ajusté en légère baisse. Elle vise pour 2031 un BPA ajusté de 3,00 à 3,50 $ et une marge d'exploitation de 12 à 14 %, avec environ 5 G$ de revenus supplémentaires. Des revenus implicites d'environ 48 G$ restent sous les 51,2 G$ prévus par Stifel.",
-   "summary_en": "Nike fell about 6% as it guided for flat Greater China revenue from fiscal 2027 to 2031 and called fiscal 2028 a 'challenging year', with adjusted EPS modestly lower. It targets fiscal 2031 adjusted EPS of $3.00-$3.50 and a 12%-14% operating margin, with about $5 billion in incremental revenue. Implied revenue of roughly $48 billion is below Stifel's $51.2 billion forecast.",
-   "time": "14:24",
-   "title": "Nike chute de 6 % : la journée des investisseurs souligne la faiblesse en Chine et un exercice 2028 difficile",
-   "title_en": "Nike shares fall 6% as investor day highlights China weakness and tough FY28",
-   "url": "https://www.investing.com/news/stock-market-news/nike-shares-rise-4-as-company-outlines-fiveyear-turnaround-plan-and-2031-targets-5033166"
   }
  ],
  "live": {
