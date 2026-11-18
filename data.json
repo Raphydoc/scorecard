@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T13:42:00Z",
+ "updatedAt": "2026-11-18T13:47:53Z",
  "econ": {
   "values": {
    "adp": {
@@ -1131,6 +1131,51 @@
  "news": [
   {
    "date": "2026-11-18",
+   "time": "08:25",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "xauusd"
+   ],
+   "title": "Exclusif : l'Arabie saoudite se prépare à une campagne au Yémen qui durerait bien au-delà de 2027",
+   "title_en": "Exclusive: Saudis preparing for Yemen campaign to last well into 2027",
+   "summary": "Selon une exclusivité de Reuters reprise par Investing.com, Riyad se prépare à ce que sa campagne militaire au Yémen se prolonge bien dans l'année 2027. Un conflit prolongé dans la région maintient une prime de risque géopolitique sur le pétrole et soutient la demande de valeurs refuges. (Article non consultable; résumé fondé sur le titre.)",
+   "summary_en": "According to a Reuters exclusive carried by Investing.com, Riyadh is preparing for its military campaign in Yemen to last well into 2027. A prolonged regional conflict keeps a geopolitical risk premium on oil and supports safe-haven demand. (Article could not be read; summary based on the headline.)",
+   "url": "https://www.investing.com/news/commodities-news/exclusivesaudis-preparing-for-yemen-campaign-to-last-well-into-2027-5035986"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "08:18",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Wall Street rassurée par les résultats et les prévisions relevées de Nvidia, malgré la crise à la direction",
+   "title_en": "Wall Street reassured by Nvidia beat and raise despite leadership turmoil",
+   "summary": "Les investisseurs sont rassurés par le trimestre supérieur aux attentes de Nvidia et le relèvement de ses prévisions, malgré la tourmente qui secoue la haute direction. Cela soutient le Nasdaq et le S&P 500 avant l'ouverture. (Article non consultable; résumé fondé sur le titre.)",
+   "summary_en": "Investors are reassured by Nvidia's better-than-expected quarter and raised outlook, despite the turmoil in its top leadership. This supports the Nasdaq and S&P 500 ahead of the open. (Article could not be read; summary based on the headline.)",
+   "url": "https://www.investing.com/news/stock-market-news/wall-street-reassured-by-nvidia-beat-and-raise-despite-leadership-turmoil-5036041"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "07:36",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "us30"
+   ],
+   "title": "TJX dépasse les estimations de ventes trimestrielles",
+   "title_en": "Off-price retailer TJX beats quarterly sales estimates",
+   "summary": "Le détaillant à prix réduits TJX (Winners, Marshalls, TJ Maxx) a publié des ventes trimestrielles supérieures aux attentes. Un signal sur la vigueur du consommateur américain, après Lowe's et Target ce matin. (Article non consultable; résumé fondé sur le titre.)",
+   "summary_en": "Off-price retailer TJX (Winners, Marshalls, TJ Maxx) reported quarterly sales above expectations. A read on U.S. consumer strength, after Lowe's and Target this morning. (Article could not be read; summary based on the headline.)",
+   "url": "https://www.investing.com/news/stock-market-news/offprice-retailer-tjx-beats-quarterly-sales-estimates-5035816"
+  },
+  {
+   "date": "2026-11-18",
    "time": "07:21",
    "source": "Investing.com",
    "impact": "med",
@@ -1207,6 +1252,22 @@
    "summary": "Selon trois sources de Reuters, le Trésor et le bureau scientifique de la Maison-Blanche ont discuté d'exiger que des entreprises comme Airbnb (qui utilise le modèle Qwen d'Alibaba) publient leur recours à des modèles d'IA chinois, une approche de « name and shame » sans nouvelles restrictions. On ignore si l'idée progresse; les modèles chinois étaient les trois plus utilisés sur OpenRouter en octobre. Un nouveau front de tensions technologiques sino-américaines pour le secteur techno.",
    "summary_en": "According to three Reuters sources, Treasury and the White House science office have discussed requiring companies such as Airbnb (which uses Alibaba's Qwen model) to disclose their use of Chinese AI models, a 'name and shame' approach without new restrictions. It is unclear whether the idea is gaining traction; Chinese models were the three most used on OpenRouter in October. A new front in US-China tech tensions for the tech sector.",
    "url": "https://www.investing.com/news/stock-market-news/exclusivetrump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use-5035455"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "05:44",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd"
+   ],
+   "title": "L'or passe sous 3 800 $ : les paris de hausse de taux de la Fed accentuent la liquidation",
+   "title_en": "Gold drops below $3,800 as Fed hike bets deepen bullion selloff",
+   "summary": "L'or est tombé sous la barre des 3 800 $ l'once, les paris sur une hausse des taux de la Fed en décembre accentuant la vague de ventes sur le métal jaune. Des taux plus élevés et un dollar ferme pèsent sur l'or et l'argent, qui ne versent pas d'intérêt. (Article non consultable; résumé fondé sur le titre.)",
+   "summary_en": "Gold fell below $3,800 an ounce as bets on a December Fed rate hike deepened the selloff in bullion. Higher rates and a firm dollar weigh on non-yielding gold and silver. (Article could not be read; summary based on the headline.)",
+   "url": "https://www.investing.com/news/commodities-news/gold-falls-toward-3800-as-fed-hawks-reinforce-ratehike-outlook-5034463"
   },
   {
    "date": "2026-11-18",
@@ -1472,22 +1533,6 @@
   },
   {
    "assets": [
-    "xauusd",
-    "xagusd",
-    "usd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'or au comptant recule de 0,7 % à 3 822 $ l'once en début de séance asiatique et l'argent de 0,8 % à 47,01 $, tandis que l'indice du dollar gagne 0,1 % à 103,65; l'or reste près d'un creux de 14 mois et a perdu plus du quart de sa valeur depuis le début du conflit américano-iranien fin février. Musalem (Fed de Saint-Louis) voit « plusieurs autres hausses de taux avant le printemps » et Williams (Fed de New York) juge que le travail sur l'inflation n'est pas terminé; les marchés anticipent des hausses de 25 pb en décembre et en janvier. ANZ voit un soutien vers 3 600 $ et n'exclut pas une hausse de 50 pb le mois prochain.",
-   "summary_en": "Spot gold fell 0.7% to $3,822/oz in early Asian trade and silver lost 0.8% to $47.01, while the dollar index rose 0.1% to 103.65; gold remains near a 14-month low and has lost more than a quarter of its value since the U.S.-Iran conflict began in late February. St. Louis Fed's Musalem sees 'several more rate increases before spring' and New York Fed's Williams says work on inflation remains; markets price 25 bp hikes in December and January. ANZ sees support near $3,600 and says a 50 bp hike next month cannot be ruled out.",
-   "time": "20:11",
-   "title": "L'or glisse vers 3 800 $ : les faucons de la Fed confortent les paris de hausses de taux",
-   "title_en": "Gold falls toward $3,800 as Fed hawks reinforce rate-hike outlook",
-   "url": "https://www.investing.com/news/commodities-news/gold-falls-toward-3800-as-fed-hawks-reinforce-ratehike-outlook-5034463"
-  },
-  {
-   "assets": [
     "audusd"
    ],
    "date": "2026-11-17",
@@ -1700,51 +1745,6 @@
    "title": "L'Europe chute : le STOXX 600 perd 1,8 % sous les nouvelles restrictions américaines sur les puces; le DAX cède 2 %",
    "title_en": "Europe slides: STOXX 600 down 1.8% on fresh U.S. chip curbs; DAX down 2%",
    "url": "https://www.investing.com/news/stock-market-news/european-shares-slip-on-fresh-us-chip-curbs-5031847"
-  },
-  {
-   "assets": [
-    "usd",
-    "btcusd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Federal Reserve",
-   "summary": "Le gouverneur Christopher Waller a affirmé que la monnaie de banque centrale n'a pas à servir à chaque transaction, mais que « sa présence à la base du système est essentielle », alors que stablecoins, dépôts tokenisés et fonds monétaires tokenisés se multiplient. Il prévoit la coexistence de plusieurs modèles et n'a fait aucun commentaire sur la politique monétaire, un point à noter pour le dollar et la crypto.",
-   "summary_en": "Governor Christopher Waller said central bank money need not be used in every transaction, but \"its presence at the foundation of the system is essential,\" as stablecoins, tokenized deposits and tokenized money market funds multiply. He expects several models to coexist and made no monetary policy remarks, a point worth noting for the dollar and crypto.",
-   "time": "12:00",
-   "title": "Waller (Fed) : la monnaie de banque centrale doit rester au cœur de la tokenisation",
-   "title_en": "Waller (Fed): central bank money must stay at the foundation of tokenization",
-   "url": "https://www.federalreserve.gov/newsevents/speech/waller20261117a.htm"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Dans ses premiers commentaires publics depuis sa démission la semaine dernière, Jensen Huang dit qu'il reviendrait comme PDG si le conseil juge que c'est dans l'intérêt des actionnaires, des employés et des États-Unis. L'action de Nvidia a gagné près de 3 % après la nouvelle, tout en restant en baisse de plus de 1,1 % sur la séance; selon le WSJ, le conseil n'envisage pas de le réintégrer. Le conseil a aussi créé un comité sur la sécurité nationale et les contrôles à l'exportation, à quelques heures des résultats de Nvidia après la clôture — un test clé pour le Nasdaq et le S&P 500.",
-   "summary_en": "In his first public comments since resigning last week, Jensen Huang said he would return as CEO if the board decides it is in the interest of shareholders, employees and America. Nvidia shares rose nearly 3% on the reports but were still down more than 1.1% on the day; the WSJ reported the board is not considering reinstating him. The board also formed a committee overseeing national security and export-control compliance, hours before Nvidia's results after the close — a key test for the Nasdaq and S&P 500.",
-   "time": "11:08",
-   "title": "Jensen Huang se dit prêt à revenir comme PDG de Nvidia si on le lui demande; l'action rebondit",
-   "title_en": "Jensen Huang says he would return as Nvidia CEO if asked, shares gain",
-   "url": "https://www.investing.com/news/stock-market-news/jensen-huang-says-he-would-return-as-nvidia-ceo-if-asked-shares-gain-5033563"
-  },
-  {
-   "assets": [
-    "usd",
-    "xauusd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "Selon CNBC, l'avocat de la gouverneure de la Fed Lisa Cook indique qu'elle ne se présentera pas à l'audience du comité de la Maison-Blanche qui la vise. Ce bras de fer sur l'indépendance de la Fed est suivi de près par les marchés du dollar, des taux et de l'or.",
-   "summary_en": "According to CNBC, Fed Governor Lisa Cook's lawyer signaled she will not attend the hearing of the White House committee targeting her. The standoff over Fed independence is closely watched by dollar, rates and gold markets.",
-   "time": "11:03",
-   "title": "L'avocat de Lisa Cook signale que la gouverneure de la Fed n'assistera pas à l'audience du comité de Trump",
-   "title_en": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
-   "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html"
   }
  ],
  "live": {
