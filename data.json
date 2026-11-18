@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T19:45:00Z",
+ "updatedAt": "2026-11-18T19:47:55Z",
  "econ": {
   "values": {
    "adp": {
@@ -1131,6 +1131,46 @@
  "news": [
   {
    "date": "2026-11-18",
+   "time": "14:08",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "usd",
+    "xauusd",
+    "xagusd",
+    "spx500",
+    "nasdaq",
+    "us30",
+    "eurusd",
+    "usdjpy",
+    "btcusd"
+   ],
+   "title": "Procès-verbal de la Fed : presque tous les membres prévoient d'autres hausses; quelques-uns évoquent plus de 25 pb en décembre",
+   "title_en": "Fed minutes: almost all officials expect further hikes; a couple see more than 25 bp in December",
+   "summary": "Le procès-verbal de la réunion d'octobre (taux maintenu à 3,75 %-4,00 %) montre que presque tous les participants s'attendent à d'autres hausses de taux; quelques-uns jugent qu'une hausse de plus de 25 pb pourrait être envisagée en décembre si l'inflation déçoit, et certains ont qualifié le statu quo d'octobre de « décision serrée ». Le CME FedWatch donne environ 95 % de chances à une hausse de 25 pb en décembre et 5 % à 50 pb. Ce ton ferme soutient le dollar et les rendements et pèse sur l'or et les actifs à risque.",
+   "summary_en": "Minutes of the October meeting (rate held at 3.75%-4.00%) show almost all participants expect further rate increases; a couple said a hike larger than 25 bp could be considered in December if inflation disappoints, and some called the October hold a \"close call.\" CME FedWatch puts the odds of a 25 bp December hike near 95% and 50 bp near 5%. The hawkish tone supports the dollar and yields and weighs on gold and risk assets.",
+   "url": "https://www.investing.com/news/economy-news/couple-of-policymakers-see-more-than-a-25-bp-rate-hike-in-december--fed-minutes-5036867"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "14:00",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "nasdaq",
+    "us30",
+    "rut",
+    "usd"
+   ],
+   "title": "Jeudi : demandes d'assurance-chômage, indice de la Fed de Philadelphie et résultats de Walmart, Intuit et Ross Stores",
+   "title_en": "Thursday: jobless claims, Philadelphia Fed index and earnings from Walmart, Intuit and Ross Stores",
+   "summary": "Investing.com signale que les demandes hebdomadaires d'assurance-chômage et l'indice manufacturier de la Fed de Philadelphie sont attendus jeudi, tout comme les résultats de Walmart, Intuit et Ross Stores. Ces données arrivent au moment où les marchés évaluent l'ampleur de la prochaine hausse de taux de la Fed.",
+   "summary_en": "Investing.com notes that weekly jobless claims and the Philadelphia Fed manufacturing index are due Thursday, along with earnings from Walmart, Intuit and Ross Stores. The data come as markets weigh the size of the Fed's next rate hike.",
+   "url": "https://www.investing.com/news/stock-market-news/jobless-claims-and-philadelphia-fed-index-due-thursday-93CH-5036849"
+  },
+  {
+   "date": "2026-11-18",
    "time": "12:30",
    "source": "Investing.com",
    "impact": "med",
@@ -1724,36 +1764,6 @@
    "title": "Les contrats à terme bondissent après Nvidia : Nasdaq 100 +1,6 %, puces en hausse après la clôture",
    "title_en": "U.S. stock futures jump as Nvidia earnings revive AI optimism; chipmakers rally after hours",
    "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-jump-as-nvidia-earnings-revive-ai-optimism-5034391"
-  },
-  {
-   "assets": [
-    "usoil",
-    "xauusd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Des drones et missiles ukrainiens ont fait s'effondrer la section centrale du pont routier de Kertch (19 km), deuxième frappe en deux jours; Moscou dit avoir abattu un record de 1 441 drones au-dessus de 22 régions et a frappé des ponts à Kiev. L'escalade survient avant la rencontre de Poutine avec Trump et Xi à Shenzhen jeudi, un risque géopolitique à surveiller pour le pétrole et l'or.",
-   "summary_en": "Ukrainian drones and missiles collapsed the central section of the 19-km Kerch road bridge, the second strike in two days; Moscow said it downed a record 1,441 drones over 22 regions and struck bridges in Kyiv. The escalation comes ahead of Putin's meeting with Trump and Xi in Shenzhen on Thursday, a geopolitical risk to watch for oil and gold.",
-   "time": "18:31",
-   "title": "L'Ukraine détruit la section centrale du pont de Crimée, deux jours avant la rencontre Poutine-Xi-Trump",
-   "title_en": "Ukraine cripples Crimean road bridge in blow to Putin before meeting with Xi and Trump",
-   "url": "https://www.investing.com/news/commodities-news/ukraine-strikes-crimean-bridge-for-second-day-as-russia-pounds-kyiv-bridges-5032113"
-  },
-  {
-   "assets": [
-    "usoil",
-    "usdcad"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le Brent a terminé la séance de mardi en hausse après des échanges agités, soutenu par des attaques dans le détroit d'Ormuz et les tensions entre Washington et Téhéran (article non consultable; résumé fondé sur le titre). En après-midi, le Brent gagnait 0,2 % à 92,65 $, selon Investing.com. Le risque sur l'offre au Moyen-Orient continue de soutenir le WTI et, indirectement, le dollar canadien.",
-   "summary_en": "Brent finished Tuesday's session higher after choppy trading, supported by attacks in the Strait of Hormuz and U.S.-Iran tensions (article not readable; summary based on the headline). In the afternoon, Brent was up 0.2% at $92.65, according to Investing.com. Middle East supply risk keeps supporting WTI and, indirectly, the Canadian dollar.",
-   "time": "17:21",
-   "title": "Pétrole : le Brent clôture en hausse dans des échanges agités, sur fond d'attaques à Ormuz et de tensions États-Unis–Iran",
-   "title_en": "Brent settles higher in choppy trade amid Hormuz attacks, U.S.-Iran tensions",
-   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-further-on-supply-glut-concerns-strong-dollar-weighs-5031393"
   }
  ],
  "live": {
