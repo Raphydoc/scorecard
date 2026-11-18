@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T03:47:15Z",
+  "updatedAt": "2026-11-18T04:47:22Z",
   "econ": {
     "values": {
       "adp": {
@@ -1064,6 +1064,20 @@
   "news": [
     {
       "date": "2026-11-17",
+      "time": "23:34",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Bitcoin : la rare chute de 12 % sous la moyenne de 200 semaines a historiquement précédé des rebonds",
+      "title_en": "Bitcoin's rare 12% crash through its 200-week average has a bullish track record",
+      "summary": "Le bitcoin a perdu 12,6 % la semaine dernière et clôturé juste au-dessus de 65 000 $, sous sa moyenne mobile de 200 semaines (près de 68 000 $); il se négociait vers 64 300 $. Depuis 2013, ce scénario n'est survenu que trois fois, avec des gains de 40,3 %, 82,5 % et 6,3 % trois mois plus tard, mais chaque fois après un recul supplémentaire de 10 à 17 %. Les sorties des FNB et la hausse des rendements obligataires restent des vents contraires.",
+      "summary_en": "Bitcoin fell 12.6% last week and closed just above $65,000, below its 200-week moving average (near $68,000); it was trading around $64,300. Since 2013 this setup has occurred only three times, with gains of 40.3%, 82.5% and 6.3% three months later, but each time after a further 10% to 17% drop. ETF outflows and rising bond yields remain headwinds.",
+      "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-s-rare-12-crash-through-its-200-week-average-has-a-bullish-track-record"
+    },
+    {
+      "date": "2026-11-17",
       "time": "22:13",
       "source": "Investing.com",
       "impact": "med",
@@ -1663,21 +1677,6 @@
       "title": "La livre se stabilise à 1,3199 $ après cinq séances de baisse; le chômage britannique recule à 4,6 %",
       "title_en": "Sterling steadies at $1.3199 after five-day slide; UK jobless dips to 4.6%",
       "url": "https://www.investing.com/news/forex-news/sterling-today-pound-set-to-snap-slide-as-dollar-pauses-uk-jobless-dips-to-46-5032079"
-    },
-    {
-      "assets": [
-        "eurusd",
-        "usd"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le Bund allemand à 10 ans se maintient à 3,381 %, près de son plus haut en près d'un mois, et le 2 ans reste stable à 3,130 %, alors que le 10 ans américain se négocie à 5,125 %. Les marchés voient la BCE relever son taux à 3 % d'ici mars; Morgan Stanley prévoit un Bund à 3,10 % au T4 2027 et une BoJ à 1,75 % d'ici mars.",
-      "summary_en": "Germany's 10-year Bund yield held at 3.381%, near a nearly one-month high, and the 2-year was steady at 3.130%, as the U.S. 10-year traded at 5.125%. The ECB is seen raising rates to 3% by March; Morgan Stanley forecasts the Bund at 3.10% in Q4 2027 and the BoJ at 1.75% by March.",
-      "time": "04:00",
-      "title": "Les rendements européens restent près d'un sommet d'un mois, tirés par les Treasuries à 5,125 %",
-      "title_en": "Euro yields hold near 1-month peaks on relentless U.S. Treasury pull",
-      "url": "https://www.investing.com/news/forex-news/euro-yields-hold-near-1month-peaks-on-relentless-us-treasury-pull-5031817"
     }
   ],
   "live": {
