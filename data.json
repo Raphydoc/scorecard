@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T12:37:39Z",
+ "updatedAt": "2026-11-18T12:48:08Z",
  "econ": {
   "values": {
    "adp": {
@@ -1064,6 +1064,55 @@
  "news": [
   {
    "date": "2026-11-18",
+   "time": "07:21",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usoil"
+   ],
+   "title": "UBS voit l'or à 5 000 $ d'ici la fin de 2027 et le Brent revenir à 80 $",
+   "title_en": "UBS sees gold at $5,000 by the end of 2027, Brent easing to $80",
+   "summary": "UBS prévoit l'or à 4 600 $ l'once en juin 2027 et à 5 000 $ en décembre 2027 (contre environ 3 885 $), l'argent à 60 $ puis 65 $ (contre environ 50 $), et le Brent à 90 $ puis 80 $ (WTI 86 $ puis 76 $). La banque prévient que des rendements réels élevés et un dollar ferme pourraient pousser l'or sous 4 000 $ à court terme, mais mise sur les achats des banques centrales, la demande chinoise et les inquiétudes liées à la dette publique.",
+   "summary_en": "UBS forecasts gold at $4,600/oz by June 2027 and $5,000 by December 2027 (from about $3,885), silver at $60 then $65 (from about $50), and Brent at $90 then $80 (WTI $86 then $76). The bank warns high real yields and a firm dollar could keep gold under pressure near term, but cites central bank buying, Chinese demand and government debt concerns.",
+   "url": "https://www.investing.com/news/commodities-news/ubs-sees-gold-at-5000-by-the-end-of-2027-brent-easing-to-80-5035763"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "07:20",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500",
+    "nasdaq",
+    "xauusd",
+    "eurusd",
+    "usdjpy"
+   ],
+   "title": "Les responsables de la Fed s'apprêtent à relever les taux de nouveau en décembre, mais la suite reste floue",
+   "title_en": "Fed officials set to raise rates again in December, but the future still looks murky",
+   "summary": "Selon CNBC, les responsables de la Fed se dirigent vers une nouvelle hausse de taux en décembre, mais le chemin au-delà reste incertain. Le procès-verbal de la réunion d'octobre est attendu aujourd'hui à 14 h (HE); une hausse en décembre soutient le dollar et pèse sur l'or et les actifs risqués.",
+   "summary_en": "According to CNBC, Fed officials are heading toward another rate hike in December, but the path beyond remains uncertain. Minutes of the October meeting are due today at 2 p.m. ET; a December hike supports the dollar and weighs on gold and risk assets.",
+   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "06:42",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd"
+   ],
+   "title": "Bitcoin recule à environ 64 100 $ : le « basis trade » se tarit avant le procès-verbal de la Fed",
+   "title_en": "Bitcoin price drops as basis trade dries up and Fed minutes loom",
+   "summary": "Le bitcoin s'échange vers 64 100 $ (−1,1 % depuis minuit UTC), environ 26 % sous son sommet d'octobre de 87 200 $, et ne profite pas du rebond des contrats du Nasdaq 100 (+1,0 %) après Nvidia. Le « basis trade » ne rapporte plus que 3 à 5 % par an selon Talos, près des taux du Trésor; CME FedWatch place à 96 % la probabilité d'une hausse de taux en décembre, et l'indice de peur et d'avidité est à 13 (« peur extrême »).",
+   "summary_en": "Bitcoin trades near $64,100 (down 1.1% since midnight UTC), about 26% below its October high of $87,200, lagging a 1.0% rise in Nasdaq-100 futures after Nvidia. The basis trade now yields only 3% to 5% a year per Talos, near Treasury yields; CME FedWatch puts December hike odds at 96%, and the Fear and Greed Index sits at 13 ('extreme fear').",
+   "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-drops-as-nvidia-earnings-report-drives-stock-index-futures-higher"
+  },
+  {
+   "date": "2026-11-18",
    "time": "06:09",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1212,20 +1261,6 @@
    "summary": "Au sommet de l'APEC à Shenzhen, Mark Carney annonce un accès élargi des firmes financières, le renouvellement de l'accord de swap de devises entre banques centrales et un allègement tarifaire chinois sur environ 400 M$ CA d'exportations canadiennes; le commerce bilatéral atteint 125 G$ CA. Il précise que la relation avec les États-Unis, qui imposent de lourds tarifs, reste bien plus importante, alors que le dollar canadien s'échange autour de 1,43 par dollar US.",
    "summary_en": "At the APEC summit in Shenzhen, Mark Carney announced wider access for financial firms, a renewed central bank currency swap and Chinese tariff relief on about C$400 million of Canadian exports; two-way trade stands at C$125 billion. He said the relationship with the US, which has imposed hefty tariffs, remains much larger, with the loonie trading around 1.43 per US dollar.",
    "url": "https://www.investing.com/news/forex-news/canada-adjusts-china-ties-carney-says-aiming-to-clinch-right-deal-with-us-5035098"
-  },
-  {
-   "date": "2026-11-18",
-   "time": "02:27",
-   "source": "CoinDesk",
-   "impact": "med",
-   "assets": [
-    "btcusd"
-   ],
-   "title": "Bitcoin coincé près de 65 000 $ alors que les rendements du « basis trade » se tarissent",
-   "title_en": "Bitcoin stuck near $65,000 as basis traders move to stock perps",
-   "summary": "Le bitcoin oscille près de 65 000 $ mercredi matin, légèrement en baisse sur 24 heures, tandis que l'ether recule de 1 % vers 1 814 $. Selon Talos, le rendement annuel du « basis trade » crypto, qui atteignait 20 à 40 % début 2024, s'est replié autour de 3 à 5 % en 2026, près ou sous celui des bons du Trésor, poussant les traders vers les contrats perpétuels sur actions (environ 11 % par an). Ce manque d'attrait du portage pèse sur la demande institutionnelle pour le bitcoin.",
-   "summary_en": "Bitcoin hovered near $65,000 early Wednesday, slightly lower over 24 hours, while ether fell 1% to about $1,814. According to Talos, the crypto basis trade's annual yield, which peaked at 20% to 40% in early 2024, settled around 3% to 5% in 2026, near or below Treasury yields, pushing traders toward equity-linked perpetual futures (about 11% a year). The fading carry appeal weighs on institutional demand for bitcoin.",
-   "url": "https://www.coindesk.com/business/2026/11/18/live-updates-bitcoin-stuck-near-usd65-000-as-popular-basis-trade-returns-dry-up"
   },
   {
    "date": "2026-11-18",
@@ -1643,41 +1678,6 @@
    "title": "L'avocat de Lisa Cook signale que la gouverneure de la Fed n'assistera pas à l'audience du comité de Trump",
    "title_en": "Lisa Cook lawyer signals Fed governor won't attend Trump committee's hearing",
    "url": "https://www.cnbc.com/2026/11/17/lisa-cook-trump-fed-committee-hearing.html"
-  },
-  {
-   "assets": [
-    "usoil",
-    "xauusd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Les pourparlers indirects entre Washington et Téhéran butent sur l'ordre des concessions : l'Iran exige la levée du blocus naval américain, le dégel de ses avoirs et la reprise de ses ventes de pétrole avant de rouvrir le détroit d'Ormuz, tandis que les États-Unis veulent des gestes simultanés, dont des engagements nucléaires vérifiables. Le conflit dure depuis près de neuf mois; les pays du Golfe disent avoir subi plus de 7 000 missiles et drones iraniens. L'impasse maintient une prime de risque sur le pétrole et soutient l'or.",
-   "summary_en": "Indirect US-Iran talks are stuck on sequencing: Iran wants the US naval blockade lifted, frozen assets released and oil sales restored before reopening the Strait of Hormuz, while Washington wants reciprocal, simultaneous steps including verifiable nuclear commitments. The war has run close to nine months; Gulf states say they were hit by more than 7,000 Iranian missiles and drones. The stalemate keeps a risk premium in oil and supports gold.",
-   "time": "11:00",
-   "title": "Trump et Téhéran misent sur le temps alors que l'impasse s'aggrave dans la guerre avec l'Iran",
-   "title_en": "Trump and Tehran gamble on time as Iran war stalemate deepens",
-   "url": "https://www.investing.com/news/commodities-news/trump-and-tehran-gamble-on-time-as-iran-war-stalemate-deepens-5033542"
-  },
-  {
-   "assets": [
-    "usd",
-    "spx500",
-    "nasdaq",
-    "us30",
-    "rut",
-    "eurusd",
-    "usdjpy"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Les ventes au détail aux États-Unis ont augmenté de 0,2 % en octobre, comme prévu, après +0,8 % en septembre (non révisé). Le groupe témoin, qui alimente le calcul du PIB, a grimpé de 0,6 % contre 0,4 % attendu, et septembre a été révisé à +0,5 % (contre +0,1 %). Une consommation de base plus solide que prévu soutient le dollar et les taux, dans un contexte où des membres de la Fed évoquent d'autres hausses.",
-   "summary_en": "US retail sales rose 0.2% in October, as expected, after a 0.8% gain in September (unrevised). The control group, which feeds into GDP, climbed 0.6% versus 0.4% expected, and September was revised to +0.5% from +0.1%. Firmer-than-expected core spending supports the dollar and yields as some Fed officials discuss further hikes.",
-   "time": "08:41",
-   "title": "Ventes au détail américaines : +0,2 % en octobre, en ligne; le groupe témoin bondit de 0,6 %",
-   "title_en": "US retail sales rise 0.2% in October, in line; control group jumps 0.6%",
-   "url": "https://investing.com/news/economy-news/us-retail-sales-increase-moderately-in-october-5033051"
   }
  ],
  "live": {
