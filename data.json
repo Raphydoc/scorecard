@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T19:47:55Z",
+ "updatedAt": "2026-11-18T20:45:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -111,8 +111,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 67.43,
    "cotChange": 5.3,
-   "crowdLong": 61,
-   "uCrowd": "2026-11-18T13:42:00Z"
+   "crowdLong": 59,
+   "uCrowd": "2026-11-18T20:45:00Z"
   },
   "usd": {
    "season": "bull",
@@ -198,8 +198,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 37.08,
    "cotChange": 3.04,
-   "crowdLong": 67,
-   "uCrowd": "2026-11-16T13:44:00Z",
+   "crowdLong": 66,
+   "uCrowd": "2026-11-18T20:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "audusd": {
@@ -228,8 +228,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 19.62,
    "cotChange": 0.57,
-   "crowdLong": 76,
-   "uCrowd": "2026-11-17T15:45:00Z",
+   "crowdLong": 73,
+   "uCrowd": "2026-11-18T20:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   }
  },
@@ -697,7 +697,7 @@
     "macro": 5
    },
    "us30": {
-    "sent": 1,
+    "sent": 2,
     "macro": 8
    },
    "rut": {
