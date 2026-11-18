@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T10:47:49Z",
+  "updatedAt": "2026-11-18T11:47:40Z",
   "econ": {
     "values": {
       "adp": {
@@ -1064,6 +1064,36 @@
   "news": [
     {
       "date": "2026-11-18",
+      "time": "06:09",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "us30"
+      ],
+      "title": "Lowe's relève sa prévision de ventes annuelles grâce à la demande en réparations résidentielles",
+      "title_en": "Lowe's raises annual sales forecast betting on home repair demand",
+      "summary": "Lowe's prévoit maintenant une hausse de 0,5 % de ses ventes comparables pour l'exercice, contre des ventes stables auparavant. Au troisième trimestre, les ventes comparables ont augmenté de 1,8 %, bien au-dessus des 0,4 % attendus selon LSEG, aidées aussi par près de 250 M$ de remboursements de tarifs. Un indicateur suivi de la santé du consommateur et du secteur de l'habitation américain.",
+      "summary_en": "Lowe's now expects 0.5% growth in fiscal-year comparable sales, up from flat previously. Third-quarter comparable sales rose 1.8%, well above the 0.4% expected per LSEG, also helped by nearly $250 million in tariff refunds. A closely watched gauge of the US consumer and housing sector.",
+      "url": "https://www.investing.com/news/stock-market-news/lowes-raises-annual-sales-forecast-5035489"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "06:04",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Exclusif : Washington envisage d'obliger les entreprises américaines à divulguer leur usage d'IA chinoise",
+      "title_en": "Exclusive: Trump administration weighs forcing US firms to disclose Chinese AI use",
+      "summary": "Selon trois sources de Reuters, le Trésor et le bureau scientifique de la Maison-Blanche ont discuté d'exiger que des entreprises comme Airbnb (qui utilise le modèle Qwen d'Alibaba) publient leur recours à des modèles d'IA chinois, une approche de « name and shame » sans nouvelles restrictions. On ignore si l'idée progresse; les modèles chinois étaient les trois plus utilisés sur OpenRouter en octobre. Un nouveau front de tensions technologiques sino-américaines pour le secteur techno.",
+      "summary_en": "According to three Reuters sources, Treasury and the White House science office have discussed requiring companies such as Airbnb (which uses Alibaba's Qwen model) to disclose their use of Chinese AI models, a 'name and shame' approach without new restrictions. It is unclear whether the idea is gaining traction; Chinese models were the three most used on OpenRouter in October. A new front in US-China tech tensions for the tech sector.",
+      "url": "https://www.investing.com/news/stock-market-news/exclusivetrump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use-5035455"
+    },
+    {
+      "date": "2026-11-18",
       "time": "05:28",
       "source": "Investing.com (Reuters)",
       "impact": "high",
@@ -1648,39 +1678,6 @@
       "title": "Ventes au détail américaines : +0,2 % en octobre, en ligne; le groupe témoin bondit de 0,6 %",
       "title_en": "US retail sales rise 0.2% in October, in line; control group jumps 0.6%",
       "url": "https://investing.com/news/economy-news/us-retail-sales-increase-moderately-in-october-5033051"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "xauusd",
-        "usdjpy",
-        "eurusd"
-      ],
-      "date": "2026-11-17",
-      "impact": "high",
-      "source": "CNBC",
-      "summary": "Le président de la Fed de Saint-Louis, Alberto Musalem, estime que quatre hausses de taux supplémentaires pourraient être nécessaires au cours des prochains mois (selon le titre de CNBC; article non lisible). Un discours aussi restrictif soutient le dollar et pèse sur l'or et les actions de croissance, déjà fragilisés avant les résultats de Nvidia.",
-      "summary_en": "St. Louis Fed President Alberto Musalem says four more rate hikes may be needed in the coming months (per CNBC's headline; article could not be read). Such hawkish talk supports the dollar and weighs on gold and growth stocks, already under pressure ahead of Nvidia's results.",
-      "time": "08:34",
-      "title": "Musalem (Fed de Saint-Louis) : quatre hausses de taux de plus pourraient être nécessaires dans les prochains mois",
-      "title_en": "St. Louis Fed's Musalem says four more rate hikes may be needed in coming months",
-      "url": "https://www.cnbc.com/2026/11/17/alberto-musalem-fed-interest-rates.html"
-    },
-    {
-      "assets": [
-        "spx500"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Goldman Sachs s'attend à ce que le S&P 500 progresse en 2027, selon Investing.com (article non lisible; détails de la cible non confirmés). Cette perspective arrive alors que l'indice recule sous le poids de la tech.",
-      "summary_en": "Goldman Sachs expects the S&P 500 to rally in 2027, according to Investing.com (article could not be read; target details unconfirmed). The outlook comes as the index slides under pressure from tech.",
-      "time": "08:21",
-      "title": "Pourquoi Goldman Sachs s'attend à un rebond du S&P 500 en 2027",
-      "title_en": "Why Goldman Sachs expects the S&P 500 to rally in 2027",
-      "url": "https://www.investing.com/news/stock-market-news/why-goldman-sachs-expects-the-sp-500-to-rally-in-2027-5032933"
     }
   ],
   "live": {
