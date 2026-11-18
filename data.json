@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T08:48:06Z",
+  "updatedAt": "2026-11-18T09:47:36Z",
   "econ": {
     "values": {
       "adp": {
@@ -1064,6 +1064,39 @@
   "news": [
     {
       "date": "2026-11-18",
+      "time": "04:32",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "spx500",
+        "nasdaq",
+        "xauusd",
+        "usdjpy"
+      ],
+      "title": "Les rendements du Trésor américain restent stables en attendant le procès-verbal de la Fed",
+      "title_en": "Treasury yields hold steady as investors look ahead to Fed minutes",
+      "summary": "Les rendements des obligations du Trésor américain sont stables mercredi matin, les investisseurs attendant la publication du procès-verbal de la dernière réunion du FOMC, plus tard aujourd'hui. Le document sera scruté pour mesurer l'appétit des responsables de la Fed pour des hausses de taux, un facteur clé pour le dollar, l'or et les actions.",
+      "summary_en": "U.S. Treasury yields are steady Wednesday morning as investors await the release of the minutes from the latest FOMC meeting later today. The document will be scrutinized for Fed officials' appetite for rate hikes, a key driver for the dollar, gold and equities.",
+      "url": "https://www.cnbc.com/2026/11/18/treasury-yields-bonds-fed.html"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "04:04",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "eurusd",
+        "usd"
+      ],
+      "title": "Rendements européens près de leurs sommets d'un mois avant une inflation attendue à 4,0 % en zone euro",
+      "title_en": "Euro yields anchor near 1-month highs as traders brace for sticky inflation print",
+      "summary": "Le rendement du Bund allemand à 10 ans est stable à 3,374 %, tandis que celui à 2 ans recule à 3,110 %, près de leurs plus hauts d'un mois. Les économistes s'attendent à ce que l'inflation de la zone euro grimpe à 4,0 % sur un an (contre 3,8 %), avec un indice de base à 2,5 %, jugé tenace. Un chiffre élevé pourrait renforcer la pression sur la BCE et soutenir l'euro face au dollar.",
+      "summary_en": "Germany's 10-year Bund yield is flat at 3.374% while the two-year eased to 3.110%, near one-month highs. Economists expect euro zone headline inflation to rise to 4.0% year-on-year from 3.8%, with core at a stubbornly sticky 2.5%. A hot print could add pressure on the ECB and support the euro against the dollar.",
+      "url": "https://www.investing.com/news/forex-news/euro-yields-anchor-near-1month-highs-as-traders-brace-for-sticky-inflation-print-5034892"
+    },
+    {
+      "date": "2026-11-18",
       "time": "03:25",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1647,35 +1680,6 @@
       "title": "Goldman précise quand il s'attend à voir l'or atteindre 5 600 $ l'once",
       "title_en": "Here's when Goldman expects gold prices to reach $5,600/oz",
       "url": "https://www.investing.com/news/commodities-news/heres-when-goldman-expects-gold-prices-to-reach-5600oz-5032707"
-    },
-    {
-      "assets": [
-        "btcusd"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Selon DefiLlama, l'offre totale de stablecoins a reculé de 5,3 % en 30 jours, à 284,24 G$, la plus forte baisse depuis l'effondrement de Terra en 2022; USDT et USDC ont perdu ensemble environ 11,6 G$ (−4,5 %), à 244,5 G$. Ces « jetons de casino » servent de liquidité au marché crypto : leur recul s'ajoute aux sorties des FNB bitcoin au comptant, alors que le bitcoin se maintient près de 64 000 $.",
-      "summary_en": "Total stablecoin supply fell 5.3% over 30 days to $284.24 billion, per DefiLlama, the steepest drop since the 2022 Terra collapse; USDT and USDC combined lost about $11.6 billion (-4.5%) to $244.5 billion. These 'casino chips' are the crypto market's liquidity, so their decline adds to pressure from spot bitcoin ETF outflows, with bitcoin holding near $64,000.",
-      "time": "07:16",
-      "title": "Crypto : l'offre de stablecoins fond de 5,3 % en 30 jours, du jamais vu depuis Terra en 2022, ce qui pèse sur le bitcoin",
-      "title_en": "Crypto's 'casino chips' are disappearing, adding to pain from spot ETF outflows",
-      "url": "https://www.coindesk.com/daybook-us/2026/11/17/crypto-s-casino-chips-are-disappearing-adding-to-pain-from-spot-etf-outflows"
-    },
-    {
-      "assets": [
-        "spx500",
-        "nasdaq"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon une manchette d'Investing.com, Citi avertit que 95 % des positions acheteuses (longues) sur le S&P 500 sont maintenant en perte. L'article n'a pas pu être lu; cela signale un positionnement fragile qui peut amplifier les ventes forcées si le repli des indices se poursuit avant les résultats de Nvidia.",
-      "summary_en": "According to an Investing.com headline, Citi warns that 95% of long positions on the S&P 500 are now underwater. The article could not be read; this points to fragile positioning that can amplify forced selling if the index pullback continues ahead of Nvidia's results.",
-      "time": "07:00",
-      "title": "Citi : 95 % des positions acheteuses sur le S&P 500 sont perdantes",
-      "title_en": "95% of S&P 500 longs are offside, Citi warns",
-      "url": "https://www.investing.com/news/stock-market-news/95-of-sp-500-longs-are-offside-citi-warns-5032510"
     }
   ],
   "live": {
