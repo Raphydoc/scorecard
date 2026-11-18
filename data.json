@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T22:47:50Z",
+ "updatedAt": "2026-11-18T23:48:07Z",
  "econ": {
   "values": {
    "adp": {
@@ -1130,6 +1130,36 @@
  },
  "news": [
   {
+   "date": "2026-11-18",
+   "time": "18:34",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "L'IPO d'Anthropic lève plus de 81 G$, la plus grosse de l'histoire, devant SpaceX",
+   "title_en": "Anthropic IPO raises over $81 billion in largest offering on record, topping SpaceX",
+   "summary": "Selon CNBC, l'entrée en Bourse d'Anthropic a permis de lever plus de 81 G$, la plus importante offre jamais réalisée, surpassant celle de SpaceX. Le prix avait été fixé à 83 $ l'action, au-dessus de la fourchette visée de 70 à 78 $, et les actions doivent commencer à se négocier jeudi au Nasdaq sous le symbole ANT. Le premier jour de cotation sera un test pour le commerce de l'IA et le Nasdaq, déjà sous pression.",
+   "summary_en": "According to CNBC, Anthropic's IPO raised more than $81 billion, the largest offering on record, topping SpaceX. The deal priced at $83 a share, above the targeted $70-$78 range, and shares are set to begin trading Thursday on the Nasdaq under the ticker ANT. The debut will be a test for the AI trade and the already pressured Nasdaq.",
+   "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "17:44",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Moody's ramène la perspective de crédit de Nvidia à stable après le départ de Jensen Huang",
+   "title_en": "Moody's cuts Nvidia credit outlook to stable after CEO Jensen Huang exits",
+   "summary": "Moody's a révisé la perspective de Nvidia de positive à stable, tout en confirmant ses notes Aa1 (dette senior non garantie) et Prime-1 (papier commercial). L'agence invoque l'incertitude de gouvernance après le départ abrupt de Jensen Huang, l'absence de plan de relève formel et des enquêtes gouvernementales en cours; elle juge un relèvement peu probable d'ici 12 à 18 mois. Nouveau poids pour le plus gros titre du Nasdaq et du S&P 500.",
+   "summary_en": "Moody's revised Nvidia's outlook from positive to stable while affirming its Aa1 senior unsecured and Prime-1 commercial paper ratings. The agency cited governance uncertainty after Jensen Huang's abrupt departure, the lack of a formal succession plan and pending government investigations, and said an upgrade is unlikely over the next 12 to 18 months. It adds pressure on the largest stock in the Nasdaq and S&P 500.",
+   "url": "https://www.investing.com/news/stock-market-news/moodys-cuts-nvidia-credit-outlook-to-stable-after-ceo-jensen-huang-exits-5037292"
+  },
+  {
    "assets": [
     "us30",
     "spx500",
@@ -1150,21 +1180,6 @@
   },
   {
    "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Anthropic a fixé le prix de son entrée en Bourse à 83 $ par action, au-dessus de la fourchette visée de 70 à 78 $, selon une source; la taille de l'offre a aussi été relevée par rapport aux 825 millions d'actions prévues au départ. Les actions doivent commencer à se négocier jeudi sur le Nasdaq sous le symbole ANT. L'opération, l'une des plus grosses IPO de l'histoire, est surveillée de près par le secteur technologique et le Nasdaq.",
-   "summary_en": "Anthropic priced its IPO at $83 a share, above its targeted $70-$78 range, a source said; the offering size was also increased from an initial 825 million shares. Shares are expected to start trading Thursday on the Nasdaq under the ticker ANT. The deal, one of the largest IPOs on record, is closely watched by tech stocks and the Nasdaq.",
-   "time": "16:27",
-   "title": "Anthropic fixe le prix de son IPO à 83 $ l'action, au-dessus de la fourchette visée",
-   "title_en": "Anthropic prices blockbuster IPO at $83 a share, source says",
-   "url": "https://www.investing.com/news/stock-market-news/anthropic-prices-blockbuster-ipo-at-83-a-share-source-says-5037110"
-  },
-  {
-   "assets": [
     "xauusd",
     "xagusd",
     "usoil",
@@ -1180,6 +1195,20 @@
    "title": "Le TSX plonge de 737 points : l'or et le pétrole s'effondrent",
    "title_en": "TSX plunges 737 points as gold and oil selloff hits Canadian stocks",
    "url": "https://www.investing.com/news/stock-market-news/tsx-futures-slip-amid-lower-gold-oil-prices-nvidia-earnings-in-focus-5035920"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "16:13",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "Palo Alto rachète Applied Compute pour 4,5 G$ et dépasse les attentes; l'action bondit de 7,5 % après la clôture",
+   "title_en": "Palo Alto to buy Applied Compute for $4.5 billion, while Q1 results beat estimates",
+   "summary": "Palo Alto Networks achètera la société d'infrastructure IA Applied Compute pour 4,5 G$, entièrement en actions. Au 1er trimestre, le BPA ajusté atteint 1,05 $ (0,97 $ attendu) et les revenus 3,44 G$, en hausse de 39 % (3,31 G$ attendus); la prévision de revenus 2027 est relevée à 14,52-14,57 G$ contre 14,17 G$ attendus. L'action gagnait 7,5 % après la clôture, un appui pour les titres technos du Nasdaq.",
+   "summary_en": "Palo Alto Networks will acquire AI infrastructure firm Applied Compute for $4.5 billion in an all-stock deal. Fiscal Q1 adjusted EPS was $1.05 (vs. $0.97 expected) and revenue $3.44 billion, up 39% (vs. $3.31 billion); fiscal 2027 revenue guidance is $14.52-$14.57 billion vs. $14.17 billion consensus. Shares rose 7.5% after hours, a support for Nasdaq tech stocks.",
+   "url": "https://www.investing.com/news/earnings/palo-alto-networks-to-buy-applied-compute-for-45-billion-in-ai-push-5037031"
   },
   {
    "assets": [
@@ -1738,37 +1767,6 @@
    "title": "Bitcoin : la rare chute de 12 % sous la moyenne de 200 semaines a historiquement précédé des rebonds",
    "title_en": "Bitcoin's rare 12% crash through its 200-week average has a bullish track record",
    "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-s-rare-12-crash-through-its-200-week-average-has-a-bullish-track-record"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'ex-PDG de Nvidia a accepté de comparaître devant le comité bancaire du Sénat présidé par Tim Scott, qui demandait aussi le témoignage du secrétaire au Commerce Howard Lutnick. L'audience portera sur des ventes présumées de puces vers la Chine et sur sa relation avec une espionne chinoise présumée, à l'origine de son départ; la date reste à fixer. Le dossier maintient l'incertitude autour de Nvidia, poids lourd du Nasdaq et du S&P 500.",
-   "summary_en": "Nvidia's former CEO agreed to appear before the Senate Banking Committee chaired by Tim Scott, which also sought testimony from Commerce Secretary Howard Lutnick. The hearing concerns alleged chip sales to China and his relationship with a suspected Chinese spy that led to his ouster; the date is not yet set. The saga keeps uncertainty around Nvidia, a heavyweight in the Nasdaq and S&P 500.",
-   "time": "22:13",
-   "title": "Jensen Huang accepte de témoigner devant le Sénat américain, selon Politico",
-   "title_en": "Jensen Huang agrees to testify before Senate, Politico reports",
-   "url": "https://www.investing.com/news/stock-market-news/jensen-huang-agrees-to-testify-before-senate-politico-reports-5034604"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "usdjpy",
-    "audusd"
-   ],
-   "date": "2026-11-17",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Après un départ en force (KOSPI jusqu'à +3,3 %), l'Asie s'essouffle : KOSPI +0,45 %, Nikkei −0,23 %, Taïwan −2 %, TOPIX −1,1 %, Hang Seng −0,7 %. Nvidia (revenus T3 de 115,8 G$, +103 %) prévoit aucun revenu de centres de données en Chine au T4, et de nouvelles exigences de licence américaines visent les exportations de puces avancées vers l'Indonésie, la Malaisie, Singapour, la Thaïlande et le Brésil. L'élan de la tech après Nvidia s'atténue, ce qui pèse sur le sentiment pour le Nasdaq.",
-   "summary_en": "After a strong start (KOSPI up as much as 3.3%), Asia faded: KOSPI +0.45%, Nikkei −0.23%, Taiwan −2%, TOPIX −1.1%, Hang Seng −0.7%. Nvidia (Q3 revenue $115.8B, +103%) assumes no China data centre compute revenue in Q4, and new U.S. licensing requirements cover advanced chip exports to Indonesia, Malaysia, Singapore, Thailand and Brazil. The post-Nvidia tech momentum is fading, weighing on sentiment for the Nasdaq.",
-   "time": "21:55",
-   "title": "Les technos asiatiques deviennent mitigées après Nvidia, les restrictions sur les puces vers la Chine refroidissent l'optimisme",
-   "title_en": "Asia tech shares turn mixed after Nvidia beat as China chip curbs cloud optimism",
-   "url": "https://www.investing.com/news/stock-market-news/asia-tech-shares-turn-mixed-after-nvidia-beat-as-china-chip-curbs-cloud-optimism-5034585"
   }
  ],
  "live": {
