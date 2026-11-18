@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-18T18:47:51Z",
+ "updatedAt": "2026-11-18T19:45:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -91,8 +91,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 61.29,
    "cotChange": -4.6,
-   "crowdLong": 69,
-   "uCrowd": "2026-11-17T13:50:00Z",
+   "crowdLong": 68,
+   "uCrowd": "2026-11-18T19:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "spx500": {
