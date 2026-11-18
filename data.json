@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T04:47:22Z",
+  "updatedAt": "2026-11-18T05:47:45Z",
   "econ": {
     "values": {
       "adp": {
@@ -1064,6 +1064,39 @@
   "news": [
     {
       "date": "2026-11-17",
+      "time": "23:57",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "usdjpy",
+        "audusd"
+      ],
+      "title": "Devises asiatiques calmes : le dollar se maintient près d'un sommet de 19 mois sur les paris de hausse de la Fed",
+      "title_en": "Asia FX subdued as dollar holds near 19-month high on Fed hike bets",
+      "summary": "L'indice du dollar gagne 0,2 % à 103,66, après un sommet de 103,78 la veille, son plus haut depuis avril 2025. Le USD/JPY recule à 159,33, près du seuil de 160 qui pourrait provoquer une intervention japonaise, et l'AUD/USD glisse à 0,672, son plus bas depuis janvier. Les marchés anticipent une hausse de 25 points de base en décembre (CME FedWatch), alimentée par des prix à l'importation de +1,1 % et John Williams (Fed de New York) qui juge une hausse probablement nécessaire.",
+      "summary_en": "The dollar index rose 0.2% to 103.66 after hitting 103.78 the day before, its highest since April 2025. USD/JPY eased to 159.33, near the 160 level that could trigger Japanese intervention, while AUD/USD slipped to 0.672, its weakest since January. Markets price a 25 bp Fed hike in December (CME FedWatch), fueled by a 1.1% jump in import prices and New York Fed's John Williams saying another hike is likely needed.",
+      "url": "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-19mth-high-on-fed-hike-bets-5034711"
+    },
+    {
+      "date": "2026-11-17",
+      "time": "23:35",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "us30",
+        "audusd"
+      ],
+      "title": "Bourses asiatiques mitigées : l'optimisme autour de Nvidia compense la déroute de Wall Street; le procès-verbal de la Fed attendu",
+      "title_en": "Asia stocks mixed as Nvidia optimism offsets Wall Street rout, Fed minutes in focus",
+      "summary": "Le KOSPI gagne 1,4 % et le Nikkei 0,4 %, mais le Hang Seng perd 1,2 % et l'ASX 200 0,6 %, tandis que les contrats à terme du Nasdaq 100 avancent de 0,5 % après les prévisions de Nvidia (130 G$ au T4 contre 125,3 G$ attendus). Mardi, le Dow avait chuté de 1,6 % et le S&P 500 de 1 %, une 4e baisse de suite. Le procès-verbal de la réunion d'octobre de la Fed sera publié mercredi à 14 h (HE) et sera scruté pour la trajectoire des taux.",
+      "summary_en": "The KOSPI rose 1.4% and the Nikkei 0.4%, but the Hang Seng fell 1.2% and the ASX 200 0.6%, while Nasdaq 100 futures gained 0.5% after Nvidia's guidance ($130B Q4 vs $125.3B expected). On Tuesday the Dow fell 1.6% and the S&P 500 1%, a fourth straight decline. Minutes of the Fed's October meeting are due Wednesday at 2 p.m. ET and will be scrutinized for the rate path.",
+      "url": "https://www.investing.com/news/stock-market-news/asia-stocks-mixed-as-nvidia-optimism-offsets-wall-street-rout-fed-mins-in-focus-5034691"
+    },
+    {
+      "date": "2026-11-17",
       "time": "23:34",
       "source": "CoinDesk",
       "impact": "med",
@@ -1646,37 +1679,6 @@
       "title": "Allemagne : le moral des investisseurs (ZEW) grimpe à 35,6, bien au-dessus des 28,3 attendus",
       "title_en": "German investor morale rises more than expected in November, ZEW finds",
       "url": "https://www.investing.com/news/economic-indicators/german-investor-morale-rises-more-than-expected-in-november-zew-finds-5032155"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon son formulaire 13F au 30 septembre, Nvidia a réduit de 25 % sa participation dans Intel, à 161,1 millions d'actions (19,4 G$), et porté celle dans SpaceX à 130,5 millions d'actions (environ 19,7 G$). Ces deux titres forment plus de 80 % de son portefeuille déclaré de 48,3 G$; Nvidia a aussi réduit Nokia de 56 % et Synopsys de 10 %. Intel perd plus de 3 % avant l'ouverture, à quelques heures des résultats de Nvidia.",
-      "summary_en": "Per its 13F filing as of Sept. 30, Nvidia cut its Intel stake by 25% to 161.1 million shares ($19.4 billion) and raised its SpaceX holding to 130.5 million shares (about $19.7 billion). The two make up more than 80% of its $48.3 billion disclosed portfolio; Nvidia also trimmed Nokia by 56% and Synopsys by 10%. Intel fell more than 3% premarket, hours before Nvidia's earnings.",
-      "time": "04:56",
-      "title": "Intel recule de plus de 3 % en préouverture : Nvidia réduit sa participation de 25 %, SpaceX devient son premier placement",
-      "title_en": "Intel falls premarket as Nvidia cuts stake, SpaceX becomes top holding",
-      "url": "https://www.investing.com/news/stock-market-news/intel-falls-premarket-as-nvidia-cuts-stake-spacex-becomes-top-holding-5032115"
-    },
-    {
-      "assets": [
-        "gbpusd",
-        "eurusd",
-        "usd"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le GBP/USD gagne 0,10 % à 1,3199 $ et l'EUR/USD 0,05 % à 1,1005 $ pendant que le dollar fait une pause. Le chômage britannique a reculé de façon inattendue à 4,6 % et les salaires hors primes ralentissent à 3,5 %, mais les marchés voient encore environ 80 % de chances d'une hausse de la BoE en décembre; l'IPC britannique de mercredi est attendu à 3,6 %.",
-      "summary_en": "GBP/USD rose 0.10% to $1.3199 and EUR/USD 0.05% to $1.1005 as the dollar paused. UK unemployment unexpectedly fell to 4.6% and regular pay growth slowed to 3.5%, but markets still price about an 80% chance of a December BoE hike; Wednesday's UK CPI is expected at 3.6%.",
-      "time": "04:22",
-      "title": "La livre se stabilise à 1,3199 $ après cinq séances de baisse; le chômage britannique recule à 4,6 %",
-      "title_en": "Sterling steadies at $1.3199 after five-day slide; UK jobless dips to 4.6%",
-      "url": "https://www.investing.com/news/forex-news/sterling-today-pound-set-to-snap-slide-as-dollar-pauses-uk-jobless-dips-to-46-5032079"
     }
   ],
   "live": {
