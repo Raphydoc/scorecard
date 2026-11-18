@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-18T15:50:00Z",
+  "updatedAt": "2026-11-18T15:47:24Z",
   "econ": {
     "values": {
       "adp": {
@@ -1131,6 +1131,42 @@
   "news": [
     {
       "date": "2026-11-18",
+      "time": "10:13",
+      "source": "CNBC",
+      "impact": "high",
+      "assets": [
+        "usd",
+        "spx500",
+        "nasdaq",
+        "us30",
+        "xauusd",
+        "eurusd",
+        "usdjpy",
+        "btcusd"
+      ],
+      "title": "Waller (Fed) : la banque centrale pourrait devoir « choquer les gens » avec une hausse de taux d'un demi-point",
+      "title_en": "Fed's Waller says central bank may need to 'shock people' with half-point rate hike",
+      "summary": "Le gouverneur de la Fed Christopher Waller évoque la possibilité d'une hausse de taux d'un demi-point pour « choquer » les attentes, selon CNBC (article non consultable, résumé fondé sur le titre). Ce ton plus agressif, le jour même du procès-verbal du FOMC, alimente les paris de resserrement : de quoi soutenir le dollar et peser sur les actions, l'or et le bitcoin.",
+      "summary_en": "Fed Governor Christopher Waller raised the possibility of a half-point rate hike to 'shock' expectations, according to CNBC (article not accessible; summary based on the headline). The more hawkish tone, on the day of the FOMC minutes, feeds tightening bets — supportive for the dollar and a headwind for stocks, gold and bitcoin.",
+      "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "10:00",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "usoil",
+        "usdcad"
+      ],
+      "title": "L'OPEP prend la défense des combustibles fossiles aux négociations climatiques de la COP31",
+      "title_en": "OPEC speaks up for fossil fuels at COP31 climate talks",
+      "summary": "L'OPEP a défendu les combustibles fossiles lors des négociations de la COP31, selon Reuters (article non consultable, résumé fondé sur le titre). La position du cartel sur l'avenir du pétrole reste un facteur suivi pour le WTI et les devises liées au brut comme le dollar canadien.",
+      "summary_en": "OPEC defended fossil fuels at the COP31 climate talks, according to Reuters (article not accessible; summary based on the headline). The cartel's stance on oil's future remains a watched factor for WTI and oil-linked currencies such as the Canadian dollar.",
+      "url": "https://www.investing.com/news/commodities-news/opec-speaks-up-for-fossil-fuels-at-cop31-climate-talks-5036493"
+    },
+    {
+      "date": "2026-11-18",
       "time": "09:32",
       "source": "MarketWatch",
       "impact": "high",
@@ -1718,38 +1754,6 @@
       "title": "Nike chute de 6 % : la journée des investisseurs souligne la faiblesse en Chine et un exercice 2028 difficile",
       "title_en": "Nike shares fall 6% as investor day highlights China weakness and tough FY28",
       "url": "https://www.investing.com/news/stock-market-news/nike-shares-rise-4-as-company-outlines-fiveyear-turnaround-plan-and-2031-targets-5033166"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "xauusd"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le procès-verbal de la dernière réunion du FOMC sera publié mercredi, avec les permis de bâtir et les promesses de vente de maisons aux États-Unis. Avec les paris sur des hausses de taux de la Fed, le ton du procès-verbal pourrait faire bouger le dollar, les taux, l'or et les indices. (Résumé limité au titre et au calendrier.)",
-      "summary_en": "Minutes of the latest FOMC meeting are due Wednesday, along with U.S. building permits and pending home sales. With markets betting on Fed rate hikes, the minutes' tone could move the dollar, yields, gold and stock indexes. (Summary limited to the headline and calendar.)",
-      "time": "14:01",
-      "title": "Au calendrier mercredi : procès-verbal du FOMC, permis de bâtir et promesses de vente de maisons",
-      "title_en": "FOMC minutes, building permits and pending home sales due Wednesday",
-      "url": "https://www.investing.com/news/stock-market-news/fomc-minutes-building-permits-and-pending-home-sales-due-wednesday-93CH-5033806"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "À sa conférence Ignite, Microsoft a présenté MAI Code 2, un modèle de programmation qui égalerait presque ses rivaux à un coût bien moindre, ainsi qu'un modèle de cybersécurité offert à un groupe restreint de clients. L'action Microsoft recule d'environ 2,6 %, dans un marché technologique déjà sous pression avant les résultats de Nvidia.",
-      "summary_en": "At its Ignite conference, Microsoft unveiled MAI Code 2, a coding model it says nearly matches rivals at much lower cost, plus a cybersecurity model for a limited group of customers. Microsoft shares are down about 2.6% in a tech market already under pressure ahead of Nvidia's results.",
-      "time": "13:17",
-      "title": "Microsoft dévoile des modèles d'IA pour le code et la cybersécurité face à Anthropic et OpenAI",
-      "title_en": "Microsoft unveils AI models for coding, cybersecurity as it takes on Anthropic, OpenAI",
-      "url": "https://www.investing.com/news/stock-market-news/microsoft-unveils-ai-models-for-coding-cybersecurity-as-it-takes-on-anthropic-openai-5033766"
     }
   ],
   "live": {
