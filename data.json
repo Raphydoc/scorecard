@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T11:48:21Z",
+  "updatedAt": "2026-11-19T12:36:43Z",
   "econ": {
     "values": {
       "adp": {
@@ -1001,14 +1001,14 @@
         "us30": 1
       },
       "date": "2026-11-19",
-      "epsA": null,
+      "epsA": 0.65,
       "epsF": 0.64,
       "id": null,
       "kind": "earn",
       "move": null,
       "name": "Résultats Walmart (WMT)",
       "note": "Avant l’ouverture",
-      "revA": null,
+      "revA": 188.84,
       "revF": 187.2,
       "time": "07:00"
     },
