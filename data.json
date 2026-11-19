@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T05:47:31Z",
+  "updatedAt": "2026-11-19T06:47:55Z",
   "econ": {
     "values": {
       "adp": {
@@ -1130,6 +1130,40 @@
   },
   "news": [
     {
+      "date": "2026-11-19",
+      "time": "01:23",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd",
+        "usd",
+        "usoil",
+        "spx500"
+      ],
+      "title": "La Fed veut encore hausser ses taux, mais l'essence chute : des analystes y voient une erreur",
+      "title_en": "Fed's push for more rate hikes leans on backward-looking data as gas prices slide, analysts argue",
+      "summary": "Le compte rendu d'octobre montre que presque tous les membres de la Fed jugent d'autres hausses probables; Waller appuie une hausse de 50 points de base en décembre et les contrats à terme anticipent des hausses de 25 pb en décembre et en janvier. Des analystes jugent ces données dépassées : la marge de raffinage 3-2-1 a chuté de 36 % en six semaines (de 65,56 $ à 41,90 $ le baril) et l'essence RBOB d'environ 20 % en trois semaines. Des taux plus élevés pèsent habituellement sur le bitcoin et les actifs risqués.",
+      "summary_en": "October minutes show almost all Fed officials see further hikes as likely; Waller backs a 50-basis-point hike in December, and futures price quarter-point hikes in December and January. Analysts call the data backward-looking: the 3-2-1 crack spread fell 36% in six weeks ($65.56 to $41.90 a barrel) and RBOB gasoline about 20% in three weeks. Higher rates tend to weigh on bitcoin and risk assets.",
+      "url": "https://www.coindesk.com/markets/2026/11/19/fed-s-push-for-more-rate-hikes-leans-on-backward-looking-data-as-gas-prices-slide-analysts-argue"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "01:00",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "audusd",
+        "usdjpy"
+      ],
+      "title": "Taïwan clôture en chute de 4,6 % : la débâcle de l'IA s'aggrave, puces et circuits imprimés au plancher",
+      "title_en": "Taiwan stocks plunge 4.6% as AI rout deepens; chip and PCB shares hit limit-down",
+      "summary": "L'indice pondéré de Taïwan termine la séance en baisse de 4,60 %, les titres de puces et de circuits imprimés touchant leur limite de baisse quotidienne. Plus tôt, le Hang Seng cédait 1,9 % (Tencent -6,4 %) et l'ASX 200 environ 1 % après un chômage australien à 4,9 %, tandis que les contrats à terme américains montaient avant les débuts d'Anthropic (83 $ l'action). Les craintes sur les dépenses en IA pèsent sur les technos et les devises liées au risque.",
+      "summary_en": "Taiwan's weighted index closed down 4.60%, with chip and PCB shares hitting limit-down. Earlier, the Hang Seng fell 1.9% (Tencent -6.4%) and the ASX 200 about 1% after Australian unemployment hit 4.9%, while U.S. futures rose ahead of Anthropic's debut ($83 a share). AI-spending worries weigh on tech and risk-sensitive currencies.",
+      "url": "https://www.investing.com/news/stock-market-news/taiwan-stocks-plunge-46-as-ai-rout-deepens-chip-and-pcb-shares-hit-limitdown-5037869"
+    },
+    {
       "date": "2026-11-18",
       "time": "23:46",
       "source": "CoinDesk",
@@ -1142,23 +1176,6 @@
       "summary": "Hyperscale Data (GPUS) a vendu ses 211 derniers BTC pour environ 16 M$ (environ 1 113 BTC vendus depuis fin juillet) et doit trouver encore 74,8 M$ d'ici mars pour son centre de données IA au Michigan. Avec 17 M$ de liquidités contre 231 M$ de passifs courants, la direction évoque un « doute substantiel » sur sa continuité. Illustre la pression vendeuse des mineurs qui se tournent vers l'IA alors que le bitcoin est faible.",
       "summary_en": "Hyperscale Data (GPUS) sold its last 211 BTC for about $16M (roughly 1,113 BTC sold since late July) and still needs $74.8M by March for its Michigan AI data center. With $17M of unrestricted cash against $231M of current liabilities, management flagged 'substantial doubt' about continuing as a going concern. It highlights selling pressure from miners pivoting to AI while bitcoin is weak.",
       "url": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal"
-    },
-    {
-      "date": "2026-11-18",
-      "time": "23:35",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "audusd",
-        "usdjpy"
-      ],
-      "title": "L'Asie recule, Taïwan chute de 3,9 % : les craintes sur l'IA éclipsent l'IPO record d'Anthropic",
-      "title_en": "Asia stocks slide as Taiwan drops 4%, AI jitters blunt Anthropic IPO optimism",
-      "summary": "L'indice de Taïwan perd 3,9 % et le Hang Seng 1,9 % (TSMC -2,76 %, Tencent -6,4 %), tandis que le Nikkei gagne 0,3 % à 59 192 et l'ASX 200 cède 1,08 % après un chômage australien à 4,9 %. Les contrats à terme du Nasdaq 100 (+0,7 %) et du S&P 500 (+0,4 %) montent avant les débuts d'Anthropic (83 $ l'action, 81,31 G$ levés), mais Nvidia a clôturé en baisse de 2,9 % malgré de bons résultats. Les marchés évaluent à 90 % la probabilité d'une hausse de taux de la Fed en décembre.",
-      "summary_en": "Taiwan fell 3.9% and the Hang Seng 1.9% (TSMC -2.76%, Tencent -6.4%), while the Nikkei rose 0.3% to 59,192 and the ASX 200 lost 1.08% after Australian unemployment hit 4.9%. Nasdaq 100 (+0.7%) and S&P 500 (+0.4%) futures rose ahead of Anthropic's debut ($83 a share, $81.31B raised), but Nvidia closed 2.9% lower despite strong results. Traders price a 90% chance of a Fed rate hike in December.",
-      "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-as-taiwan-drops-4-ai-jitters-blunt-anthropic-ipo-optimism-5037723"
     },
     {
       "date": "2026-11-18",
@@ -1747,22 +1764,6 @@
       "title": "Exclusif : Washington envisage d'obliger les entreprises américaines à divulguer leur usage d'IA chinoise",
       "title_en": "Exclusive: Trump administration weighs forcing US firms to disclose Chinese AI use",
       "url": "https://www.investing.com/news/stock-market-news/exclusivetrump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use-5035455"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-18",
-      "impact": "high",
-      "source": "Investing.com (Reuters)",
-      "summary": "À 4 h 53 (HE), les contrats E-mini du Nasdaq 100 gagnaient 315,5 points (+1,17 %), ceux du S&P 500 45,75 points (+0,62 %) et ceux du Dow 144 points (+0,28 %). Nvidia prenait 3,7 % avant l'ouverture après avoir prévu des revenus de 130 G$ (±3 %) au 4e trimestre, contre 125,25 G$ attendus selon LSEG. Le prix de l'IPO d'Anthropic (valorisation jusqu'à 1 400 G$) et le procès-verbal de la Fed sont attendus aujourd'hui; le marché anticipe presque entièrement une hausse de 25 points de base le mois prochain.",
-      "summary_en": "At 4:53 a.m. ET, Nasdaq 100 E-minis were up 315.5 points (1.17%), S&P 500 E-minis up 45.75 points (0.62%) and Dow E-minis up 144 points (0.28%). Nvidia rose 3.7% premarket after forecasting Q4 revenue of $130 billion (±3%) versus the $125.25 billion LSEG consensus. Anthropic's IPO pricing (valuation of up to $1.4 trillion) and the Fed minutes are due today; markets almost fully price a 25-basis-point hike next month.",
-      "time": "05:28",
-      "title": "Les contrats à terme du Nasdaq bondissent de 1,2 % grâce aux prévisions de Nvidia, avant le prix de l'IPO d'Anthropic",
-      "title_en": "Nasdaq futures jump as Nvidia forecast lifts AI trade ahead of Anthropic pricing",
-      "url": "https://www.investing.com/news/economy-news/nasdaq-futures-jump-as-nvidia-forecast-lifts-ai-trade-ahead-of-anthropic-pricing-5035347"
     }
   ],
   "live": {
