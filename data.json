@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T22:47:30Z",
+ "updatedAt": "2026-11-19T23:48:35Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,51 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "17:53",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Le procureur général de la Californie assigne Nvidia à comparaître au sujet des risques de fuite vers la Chine et de ses divulgations aux investisseurs",
+   "title_en": "California AG subpoenas Nvidia over China leak risks and investor disclosures",
+   "summary": "Le procureur général de la Californie a émis une assignation à comparaître visant Nvidia, selon Investing.com, en lien avec des risques de fuite de technologie vers la Chine, des préoccupations liées à l'ancien PDG et les informations communiquées aux investisseurs. Cette nouvelle pression réglementaire s'ajoute au repli prolongé du titre, poids lourd du Nasdaq et du S&P 500. L'article complet n'a pas pu être lu; ce résumé s'en tient aux manchettes.",
+   "summary_en": "California's attorney general has subpoenaed Nvidia, according to Investing.com, over China leak risks, concerns about its former CEO and investor disclosures. The added regulatory pressure comes on top of the stock's extended slide, a heavyweight in the Nasdaq and S&P 500. The full article could not be read; this summary sticks to the headlines.",
+   "url": "https://www.investing.com/news/stock-market-news/california-ag-subpoenas-nvidia-over-china-leak-risks-and-investor-disclosures-5040277"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "17:38",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Le pétrole clôture en hausse sur fond de craintes d'une reprise des violences entre les États-Unis et l'Iran",
+   "title_en": "Oil prices settle higher amid fears of renewed violence between U.S. and Iran",
+   "summary": "Le WTI de janvier a gagné 1 % pour clôturer à 83,16 $ le baril et le Brent de janvier a pris 0,8 % à 92,71 $, après un article du New York Times selon lequel Trump envisage une nouvelle série de frappes d'envergure contre l'Iran. Deux superpétroliers ont pris feu après avoir heurté des mines dans le détroit d'Ormuz; selon les Gardiens de la révolution, ils transportaient plus de 4 millions de barils de brut. Le Brent a tout de même perdu plus du cinquième de sa valeur ce mois-ci.",
+   "summary_en": "January WTI rose 1% to settle at $83.16 a barrel and January Brent gained 0.8% to $92.71, after a New York Times report that Trump is considering another round of extensive strikes on Iran. Two supertankers caught fire after hitting mines in the Strait of Hormuz; Iran's Revolutionary Guard said they carried over 4 million barrels of crude. Brent is still down more than a fifth this month.",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-report-says-trump-considering-more-iran-strikes-5037588"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "17:29",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "usdjpy",
+    "xauusd"
+   ],
+   "title": "Les rendements du Trésor américain reculent sur une demande de valeurs refuges; le 10 ans aligne une 4e baisse d'affilée",
+   "title_en": "U.S. Treasury yields slip on safe-haven bid, 10-year posts four-day losing streak",
+   "summary": "Les rendements des obligations du Trésor américain ont reculé jeudi, portés par une demande de valeurs refuges pendant la chute de Wall Street, et le rendement à 10 ans a enregistré une quatrième baisse consécutive, selon Investing.com. Des rendements plus bas peuvent freiner le dollar face au yen et soutenir l'or. L'article complet n'a pas pu être lu; ce résumé s'en tient à la manchette.",
+   "summary_en": "U.S. Treasury yields slipped Thursday on safe-haven demand as Wall Street fell, with the 10-year yield posting a fourth straight decline, according to Investing.com. Lower yields can weigh on the dollar against the yen and support gold. The full article could not be read; this summary sticks to the headline.",
+   "url": "https://www.investing.com/news/stock-market-news/us-treasury-yields-slip-on-safehaven-bid-10year-posts-fourday-losing-streak-5040235"
+  },
+  {
+   "date": "2026-11-19",
    "time": "17:25",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1627,21 +1672,6 @@
   },
   {
    "assets": [
-    "usoil",
-    "usd"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le TTF néerlandais gagne 2,6 % à 82,93 €/MWh, le Brent 0,5 % à 92,41 $ et le WTI 0,1 % à 83,36 $ après un article du New York Times selon lequel Trump envisage une nouvelle série de frappes contre l'Iran sous la pression d'Israël, sans décision finale. Netanyahu presserait Washington de mener une campagne de 4 à 7 jours; dans le détroit d'Ormuz, les tensions persistent et les analystes craignent des représailles contre les infrastructures énergétiques à l'entrée de l'hiver.",
-   "summary_en": "Dutch TTF rose 2.6% to €82.93/MWh, Brent 0.5% to $92.41 and WTI 0.1% to $83.36 after a New York Times report said Trump is considering another round of extensive strikes on Iran under Israeli pressure, with no final decision. Netanyahu reportedly urged a sustained four- to seven-day campaign; tensions persist in the Strait of Hormuz and analysts fear retaliation against energy infrastructure as winter demand peaks.",
-   "time": "04:50",
-   "title": "Le gaz européen et le pétrole montent : Trump envisagerait de nouvelles frappes massives contre l'Iran",
-   "title_en": "European gas surges on reports of impending U.S. military action against Iran",
-   "url": "https://www.investing.com/news/stock-market-news/european-gas-surges-on-reports-of-impending-us-military-action-against-iran-5037953"
-  },
-  {
-   "assets": [
     "eurusd",
     "usd",
     "usdjpy"
@@ -1800,34 +1830,6 @@
    "title": "La promesse de 500 G$ de Wall Street pour financer les clients de Nvidia n'est pas encore mobilisée (WSJ)",
    "title_en": "Wall St's $500 bln pledge to Nvidia yet to be mobilized, WSJ reports",
    "url": "https://www.investing.com/news/stock-market-news/wall-sts-500-bln-pledge-to-nvidia-yet-to-be-mobilized-wsj-reports-5037693"
-  },
-  {
-   "assets": [
-    "btcusd"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le bitcoin teste la zone de 62 100 $, sous les quelque 64 100 $ observés mercredi matin, et Investing.com fait le point sur les planchers techniques à surveiller. La pression vient dans la foulée du ton restrictif de la Fed, qui pèse sur les actifs à risque.",
-   "summary_en": "Bitcoin is testing the $62,100 area, below the roughly $64,100 seen Wednesday morning, and Investing.com reviews the key technical floors to watch. The pressure follows the Fed's hawkish tone, which is weighing on risk assets.",
-   "time": "22:39",
-   "title": "Bitcoin : les niveaux de soutien à surveiller alors que le prix teste 62 100 $",
-   "title_en": "Bitcoin support levels: key floors to watch as price tests $62,100",
-   "url": "https://www.investing.com/news/stock-market-news/bitcoin-support-levels-key-floors-to-watch-as-price-tests-62100-93CH-5037661"
-  },
-  {
-   "assets": [
-    "nasdaq"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'action de Tencent recule de 6,1 % à 350 HK$ à Hong Kong, son plus bas depuis mai 2024. Les revenus du T3 ont progressé de 8 % à 207,3 G de yuans, sous les 210,8 G attendus, et le bénéfice opérationnel ajusté a baissé de 6 % à 68,1 G de yuans, alors que les investissements ont bondi à 81,4 G de yuans. Le dérapage alimente les doutes sur le coût de la course à l'IA chez les géants technos.",
-   "summary_en": "Tencent shares fell 6.1% to HK$350 in Hong Kong, their lowest since May 2024. Q3 revenue rose 8% to 207.3 billion yuan, short of the 210.8 billion expected, while non-IFRS operating profit fell 6% to 68.1 billion yuan as capex jumped to 81.4 billion yuan. The miss adds to doubts about the cost of the AI race among big tech.",
-   "time": "22:05",
-   "title": "Tencent chute de 6,1 % à son plus bas en 2 ans et demi après des revenus du T3 sous les attentes",
-   "title_en": "Tencent shares hit 2-1/2 year low on Q3 earnings miss",
-   "url": "https://www.investing.com/news/stock-market-news/tencent-shares-hit-212-yr-low-on-q3-earnings-miss-5037629"
   }
  ],
  "live": {
