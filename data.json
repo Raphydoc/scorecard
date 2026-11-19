@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T03:47:08Z",
+  "updatedAt": "2026-11-19T04:48:16Z",
   "econ": {
     "values": {
       "adp": {
@@ -1131,6 +1131,52 @@
   "news": [
     {
       "date": "2026-11-18",
+      "time": "23:15",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "usdjpy",
+        "audusd",
+        "eurusd"
+      ],
+      "title": "Le dollar touche un nouveau sommet de 19 mois sur une Fed restrictive; le dollar australien glisse après l'emploi",
+      "title_en": "Dollar hits fresh 19-month peak on hawkish Fed; Aussie slides after weak jobs data",
+      "summary": "L'indice dollar monte de 0,1 % à 103,965, son plus haut depuis avril 2025, porté par le procès-verbal de la Fed où presque tous les membres jugent d'autres hausses possibles; Waller évoque même 50 points de base en décembre. Le USD/JPY grimpe à 159,59, près du seuil de 160 associé à une intervention japonaise, et l'AUD/USD perd 0,7 % à 0,6673 après la perte de 43 500 emplois et un chômage à 4,9 % en Australie.",
+      "summary_en": "The dollar index rose 0.1% to 103.965, its highest since April 2025, on Fed minutes showing nearly all officials see further hikes as possible; Waller floated a 50 bp December move. USD/JPY rose to 159.59, near the 160 level tied to Japanese intervention, and AUD/USD fell 0.7% to 0.6673 after Australia shed 43,500 jobs and unemployment hit 4.9%.",
+      "url": "https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "23:15",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "La promesse de 500 G$ de Wall Street pour financer les clients de Nvidia n'est pas encore mobilisée (WSJ)",
+      "title_en": "Wall St's $500 bln pledge to Nvidia yet to be mobilized, WSJ reports",
+      "summary": "Selon le WSJ, aucun capital n'a encore été déployé sur les engagements allant jusqu'à 500 G$ obtenus en août par Jensen Huang auprès d'Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs et KKR pour financer les achats de puces des clients de Nvidia. La PDG par intérim Colette Kress a dit que Nvidia sera « plus disciplinée » dans ce financement, ce qui alimente le scepticisme envers la demande en IA qui soutient le Nasdaq.",
+      "summary_en": "According to the WSJ, no capital has yet been deployed from the up to $500 billion pledged in August to Jensen Huang by Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs and KKR to fund Nvidia customers' chip purchases. Interim CEO Colette Kress said Nvidia will be 'more disciplined' in financing customers, adding to skepticism about the AI demand underpinning the Nasdaq.",
+      "url": "https://www.investing.com/news/stock-market-news/wall-sts-500-bln-pledge-to-nvidia-yet-to-be-mobilized-wsj-reports-5037693"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "22:39",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Bitcoin : les niveaux de soutien à surveiller alors que le prix teste 62 100 $",
+      "title_en": "Bitcoin support levels: key floors to watch as price tests $62,100",
+      "summary": "Le bitcoin teste la zone de 62 100 $, sous les quelque 64 100 $ observés mercredi matin, et Investing.com fait le point sur les planchers techniques à surveiller. La pression vient dans la foulée du ton restrictif de la Fed, qui pèse sur les actifs à risque.",
+      "summary_en": "Bitcoin is testing the $62,100 area, below the roughly $64,100 seen Wednesday morning, and Investing.com reviews the key technical floors to watch. The pressure follows the Fed's hawkish tone, which is weighing on risk assets.",
+      "url": "https://www.investing.com/news/stock-market-news/bitcoin-support-levels-key-floors-to-watch-as-price-tests-62100-93CH-5037661"
+    },
+    {
+      "date": "2026-11-18",
       "time": "22:05",
       "source": "Investing.com",
       "impact": "med",
@@ -1719,50 +1765,6 @@
       "title": "Les rendements du Trésor américain restent stables en attendant le procès-verbal de la Fed",
       "title_en": "Treasury yields hold steady as investors look ahead to Fed minutes",
       "url": "https://www.cnbc.com/2026/11/18/treasury-yields-bonds-fed.html"
-    },
-    {
-      "assets": [
-        "eurusd",
-        "usd"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le rendement du Bund allemand à 10 ans est stable à 3,374 %, tandis que celui à 2 ans recule à 3,110 %, près de leurs plus hauts d'un mois. Les économistes s'attendent à ce que l'inflation de la zone euro grimpe à 4,0 % sur un an (contre 3,8 %), avec un indice de base à 2,5 %, jugé tenace. Un chiffre élevé pourrait renforcer la pression sur la BCE et soutenir l'euro face au dollar.",
-      "summary_en": "Germany's 10-year Bund yield is flat at 3.374% while the two-year eased to 3.110%, near one-month highs. Economists expect euro zone headline inflation to rise to 4.0% year-on-year from 3.8%, with core at a stubbornly sticky 2.5%. A hot print could add pressure on the ECB and support the euro against the dollar.",
-      "time": "04:04",
-      "title": "Rendements européens près de leurs sommets d'un mois avant une inflation attendue à 4,0 % en zone euro",
-      "title_en": "Euro yields anchor near 1-month highs as traders brace for sticky inflation print",
-      "url": "https://www.investing.com/news/forex-news/euro-yields-anchor-near-1month-highs-as-traders-brace-for-sticky-inflation-print-5034892"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "eurusd"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Le STOXX 600 est quasi inchangé à 650,73 points vers 8 h 08 GMT, après sa pire séance depuis le 20 mars la veille. La techno gagne 1,2 % (ASML +1,8 %) grâce aux solides résultats de Nvidia, tandis que les minières reculent d'environ 3 %, à un creux de près de neuf mois, sur fond de chute du cuivre et de dollar plus fort.",
-      "summary_en": "The STOXX 600 was little changed at 650.73 points as of 0808 GMT, after its biggest one-day drop since March 20 in the previous session. Tech rose 1.2% (ASML +1.8%) on Nvidia's strong results, while miners fell about 3% to a near nine-month low as copper slid and the dollar strengthened.",
-      "time": "03:25",
-      "title": "Bourses européennes stables : la techno compense la faiblesse des minières après Nvidia",
-      "title_en": "European shares muted as tech offsets mining weakness",
-      "url": "https://www.investing.com/news/stock-market-news/european-shares-muted-as-tech-offsets-mining-weakness-5035128"
-    },
-    {
-      "assets": [
-        "gbpusd"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "L'IPC du Royaume-Uni monte à 3,6 % sur un an en octobre (3,5 % en septembre), conforme aux prévisions; l'inflation de base est à 2,8 % et celle des services à 3,7 %, avec un diesel record à 199,5 pence le litre. Les marchés évaluent à environ 90 % la probabilité d'une hausse de taux de la Banque d'Angleterre en décembre; la livre perd 0,30 % à 1,3167 $ et le FTSE 100 cède 0,39 %.",
-      "summary_en": "UK CPI rose to 3.6% y/y in October (3.5% in September), in line with forecasts; core was 2.8% and services 3.7%, with diesel at a record 199.5p per litre. Markets price about a 90% chance of a Bank of England hike in December; sterling fell 0.30% to $1.3167 and the FTSE 100 lost 0.39%.",
-      "time": "03:24",
-      "title": "Inflation britannique à 3,6 % en octobre; la livre recule et le FTSE 100 glisse avec les minières",
-      "title_en": "FTSE 100 today: Stocks dip as miners drag on metals slump, CPI up at 3.6%",
-      "url": "https://in.investing.com/news/stock-market-news/ftse-100-today-stocks-slip-as-miners-sink-on-metals-rout-cpi-at-36-5711763"
     }
   ],
   "live": {
