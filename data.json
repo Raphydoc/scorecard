@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T17:11:05Z",
+ "updatedAt": "2026-11-19T17:47:44Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,99 +1218,7 @@
  "news": [
   {
    "date": "2026-11-19",
-   "time": "11:19",
-   "source": "CNBC",
-   "impact": "med",
-   "assets": [
-    "usoil",
-    "usd",
-    "btcusd"
-   ],
-   "title": "Trump, Xi et Poutine disent vouloir accroître la production de pétrole et réformer l'ONU après leurs pourparlers à trois",
-   "title_en": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
-   "summary": "Au terme de leur rencontre trilatérale historique en Chine, Donald Trump, Xi Jinping et Vladimir Poutine ont annoncé leur intention d'augmenter la production de pétrole et de réformer l'ONU, selon CNBC. L'article n'a pas pu être consulté au complet; un engagement à hausser l'offre pèserait sur le WTI et retient l'attention des marchés sur le plan géopolitique.",
-   "summary_en": "After their historic trilateral meeting in China, Donald Trump, Xi Jinping and Vladimir Putin said they plan to boost oil production and revamp the UN, according to CNBC. The full article could not be accessed; a pledge to raise supply would weigh on WTI and keeps geopolitics in focus for markets.",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "11:17",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "usd",
-    "eurusd",
-    "usdjpy",
-    "spx500",
-    "xauusd"
-   ],
-   "title": "L'indice du dollar touche un sommet de 52 semaines, porté par la demande de valeur refuge et les attentes de taux",
-   "title_en": "Dollar index hits 52-week high, driven by haven demand and rate expectations",
-   "summary": "Le DXY a atteint 103,91 en séance, le haut de sa fourchette de 52 semaines, avant de revenir vers 103,78; il gagne 1,96 % en un mois et 5,85 % depuis janvier. Le recul des actions (S&P 500 à 7 300,92, −0,31 %) pousse les capitaux vers le dollar, alors qu'une hausse de taux de la Fed en décembre est largement anticipée; l'or recule de 1,66 % à 3 679,87 $.",
-   "summary_en": "The DXY hit 103.91 intraday, the top of its 52-week range, before easing to 103.78; it is up 1.96% over one month and 5.85% year to date. Falling equities (S&P 500 at 7,300.92, -0.31%) are driving money into the dollar, while a December Fed hike is largely priced in; gold fell 1.66% to $3,679.87.",
-   "url": "https://www.investing.com/news/forex-news/dollar-index-hits-52week-high-driven-by-haven-demand-and-rate-expectations-93CH-5039556"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "11:07",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "spx500",
-    "us30"
-   ],
-   "title": "Des données clients de Visa, Mastercard et JPMorgan exposées lors d'une cyberattaque chez des fournisseurs tiers",
-   "title_en": "Visa, Mastercard and JPMorgan customer data leaked in third-party cyberattack",
-   "summary": "Selon le Wall Street Journal, des données de milliers de clients de Visa, Mastercard et JPMorgan Chase ont fuité via des fournisseurs tiers; le groupe de rançongiciel n0n a revendiqué l'attaque. Les trois firmes affirment que leurs réseaux de paiement n'ont pas été touchés (aucun numéro de carte chez Visa), mais l'action de Visa recule de 2,53 %, Mastercard de 1,81 % et JPMorgan de 0,61 %, ce qui pèse sur le Dow.",
-   "summary_en": "According to the Wall Street Journal, data on thousands of Visa, Mastercard and JPMorgan Chase customers leaked via third-party providers; ransomware group n0n claimed responsibility. All three say payment networks were not disrupted (no card numbers at Visa), but Visa shares fell 2.53%, Mastercard 1.81% and JPMorgan 0.61%, weighing on the Dow.",
-   "url": "https://www.investing.com/news/stock-market-news/visa-mastercard-and-jpmorgan-customer-data-leaked-in-thirdparty-cyberattack-5039535"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "10:33",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "title": "Le vendeur à découvert Hunterbrook parie contre AMD, invoquant des inquiétudes sur les exportations vers la Chine",
-   "title_en": "Short seller Hunterbrook shorts AMD citing concerns over China exports",
-   "summary": "Hunterbrook annonce une position vendeuse à découvert sur AMD en citant des préoccupations liées aux exportations de puces vers la Chine. La nouvelle survient alors que les restrictions américaines sur les puces d'IA destinées à la Chine se resserrent, un risque pour les semi-conducteurs et le Nasdaq. (Article non consulté : résumé fondé sur le titre.)",
-   "summary_en": "Hunterbrook disclosed a short position in AMD, citing concerns over chip exports to China. It comes as U.S. restrictions on AI chips bound for China tighten, a risk for semiconductors and the Nasdaq. (Article not accessed: summary based on the headline.)",
-   "url": "https://www.investing.com/news/stock-market-news/short-seller-hunterbrook-shorts-amd-citing-concerns-over-china-exports-5039475"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "10:20",
-   "source": "CoinDesk",
-   "impact": "med",
-   "assets": [
-    "btcusd"
-   ],
-   "title": "Binance obtient une ordonnance de gel de 6,5 G$ contre les pirates à l'origine du plus gros vol de l'histoire de la crypto",
-   "title_en": "Binance wins $6.5 billion freezing order against hackers behind crypto's largest theft",
-   "summary": "Binance a obtenu une ordonnance de gel d'actifs de 6,5 milliards $ visant les pirates responsables du plus important vol de l'histoire des cryptomonnaies. Une avancée juridique suivie de près par le marché du bitcoin, déjà sous pression cette semaine. (Article non consulté : résumé fondé sur le titre.)",
-   "summary_en": "Binance won a $6.5 billion asset-freezing order against the hackers behind the largest theft in crypto history. A legal development closely watched by a bitcoin market already under pressure this week. (Article not accessed: summary based on the headline.)",
-   "url": "https://www.coindesk.com/business/2026/11/19/binance-wins-usd6-5-billion-feezing-order-against-hackers-behind-crypto-s-largest-theft"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "09:49",
-   "source": "Investing.com (Bloomberg)",
-   "impact": "med",
-   "assets": [
-    "nasdaq"
-   ],
-   "title": "L'IPO d'Anthropic n'aurait rien alloué à la plupart des acheteurs institutionnels, selon Bloomberg",
-   "title_en": "Anthropic IPO said to give nothing to most institutional buyers - Bloomberg",
-   "summary": "Selon Bloomberg, la plupart des investisseurs institutionnels n'auraient reçu aucune action dans l'IPO record d'Anthropic, signe d'une demande largement excédentaire. Cette rareté alimente les paris d'un fort bond à l'ouverture du titre et soutient le regain de l'IA sur le Nasdaq. (Article non consulté : résumé fondé sur le titre.)",
-   "summary_en": "According to Bloomberg, most institutional investors reportedly received no shares in Anthropic's record IPO, a sign of heavy oversubscription. The scarcity fuels bets on a big first-day pop and supports the AI rebound on the Nasdaq. (Article not accessed: summary based on the headline.)",
-   "url": "https://www.investing.com/news/stock-market-news/anthropic-ipo-said-to-give-nothing-to-most-institutional-buyers--bloomberg-432SI-5039297"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "09:34",
+   "time": "12:00",
    "source": "Investing.com (Reuters)",
    "impact": "high",
    "assets": [
@@ -1318,335 +1226,427 @@
     "spx500",
     "us30"
    ],
-   "title": "Le Nasdaq gagne plus de 1 % à l'ouverture, porté par le prix de l'IPO d'Anthropic",
-   "title_en": "Nasdaq rises over 1% at open as Anthropic IPO pricing bolsters AI trade",
-   "summary": "À l'ouverture jeudi, le Nasdaq grimpait de 1,55 % à 24 809,05 points, le S&P 500 de 0,90 % à 7 389,26 et le Dow Jones de 0,47 % à 50 432,32. Anthropic a fixé le prix de son IPO au-dessus de la fourchette visée, ce qui alimente les attentes d'un début solide en Bourse et ravive l'appétit pour les titres liés à l'IA.",
-   "summary_en": "At Thursday's open, the Nasdaq rose 1.55% to 24,809.05, the S&P 500 gained 0.90% to 7,389.26 and the Dow added 0.47% to 50,432.32. Anthropic priced its IPO above the marketed range, fueling expectations of a strong debut and reviving appetite for AI-linked stocks.",
-   "url": "https://www.investing.com/news/stock-market-news/nasdaq-rises-over-1-at-open-asanthropic-ipo-pricing-bolsters-ai-trade-5039286"
+   "title": "Le Nasdaq passe dans le rouge après des débuts d'Anthropic à plus de 2 000 G$ de valorisation",
+   "title_en": "Nasdaq turns negative after Anthropic valued at over $2 trillion in Nasdaq debut",
+   "summary": "Introduite à 83 $ (au-dessus de la fourchette de 70 à 78 $), l'action d'Anthropic (ANT) a ouvert 34 % plus haut, portant la valorisation au-delà de 2 000 G$, avant de reculer de près de 9 % depuis l'ouverture. La flambée a refroidi l'appétit pour les titres liés à l'IA : vers midi, le Nasdaq perdait 0,58 % à 24 296, le S&P 500 0,77 % à 7 268 et le Dow 1,29 % à 49 538.",
+   "summary_en": "Priced at $83 (above the $70–$78 range), Anthropic (ANT) shares opened 34% higher, lifting its valuation above $2 trillion, before falling nearly 9% from the open. The surge cast a cloud over appetite for AI-linked stocks: around noon the Nasdaq was down 0.58% at 24,296, the S&P 500 down 0.77% at 7,268 and the Dow down 1.29% at 49,538.",
+   "url": "https://www.investing.com/news/stock-market-news/nasdaq-turns-negative-after-anthropic-valued-at-over-2-trillion-in-nasdaq-debut-5039627"
   },
   {
+   "assets": [
+    "usoil",
+    "usd",
+    "btcusd"
+   ],
    "date": "2026-11-19",
-   "time": "08:37",
-   "source": "CNBC",
    "impact": "med",
+   "source": "CNBC",
+   "summary": "Au terme de leur rencontre trilatérale historique en Chine, Donald Trump, Xi Jinping et Vladimir Poutine ont annoncé leur intention d'augmenter la production de pétrole et de réformer l'ONU, selon CNBC. L'article n'a pas pu être consulté au complet; un engagement à hausser l'offre pèserait sur le WTI et retient l'attention des marchés sur le plan géopolitique.",
+   "summary_en": "After their historic trilateral meeting in China, Donald Trump, Xi Jinping and Vladimir Putin said they plan to boost oil production and revamp the UN, according to CNBC. The full article could not be accessed; a pledge to raise supply would weigh on WTI and keeps geopolitics in focus for markets.",
+   "time": "11:19",
+   "title": "Trump, Xi et Poutine disent vouloir accroître la production de pétrole et réformer l'ONU après leurs pourparlers à trois",
+   "title_en": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html"
+  },
+  {
+   "assets": [
+    "usd",
+    "eurusd",
+    "usdjpy",
+    "spx500",
+    "xauusd"
+   ],
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Le DXY a atteint 103,91 en séance, le haut de sa fourchette de 52 semaines, avant de revenir vers 103,78; il gagne 1,96 % en un mois et 5,85 % depuis janvier. Le recul des actions (S&P 500 à 7 300,92, −0,31 %) pousse les capitaux vers le dollar, alors qu'une hausse de taux de la Fed en décembre est largement anticipée; l'or recule de 1,66 % à 3 679,87 $.",
+   "summary_en": "The DXY hit 103.91 intraday, the top of its 52-week range, before easing to 103.78; it is up 1.96% over one month and 5.85% year to date. Falling equities (S&P 500 at 7,300.92, -0.31%) are driving money into the dollar, while a December Fed hike is largely priced in; gold fell 1.66% to $3,679.87.",
+   "time": "11:17",
+   "title": "L'indice du dollar touche un sommet de 52 semaines, porté par la demande de valeur refuge et les attentes de taux",
+   "title_en": "Dollar index hits 52-week high, driven by haven demand and rate expectations",
+   "url": "https://www.investing.com/news/forex-news/dollar-index-hits-52week-high-driven-by-haven-demand-and-rate-expectations-93CH-5039556"
+  },
+  {
+   "assets": [
+    "spx500",
+    "us30"
+   ],
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Selon le Wall Street Journal, des données de milliers de clients de Visa, Mastercard et JPMorgan Chase ont fuité via des fournisseurs tiers; le groupe de rançongiciel n0n a revendiqué l'attaque. Les trois firmes affirment que leurs réseaux de paiement n'ont pas été touchés (aucun numéro de carte chez Visa), mais l'action de Visa recule de 2,53 %, Mastercard de 1,81 % et JPMorgan de 0,61 %, ce qui pèse sur le Dow.",
+   "summary_en": "According to the Wall Street Journal, data on thousands of Visa, Mastercard and JPMorgan Chase customers leaked via third-party providers; ransomware group n0n claimed responsibility. All three say payment networks were not disrupted (no card numbers at Visa), but Visa shares fell 2.53%, Mastercard 1.81% and JPMorgan 0.61%, weighing on the Dow.",
+   "time": "11:07",
+   "title": "Des données clients de Visa, Mastercard et JPMorgan exposées lors d'une cyberattaque chez des fournisseurs tiers",
+   "title_en": "Visa, Mastercard and JPMorgan customer data leaked in third-party cyberattack",
+   "url": "https://www.investing.com/news/stock-market-news/visa-mastercard-and-jpmorgan-customer-data-leaked-in-thirdparty-cyberattack-5039535"
+  },
+  {
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Hunterbrook annonce une position vendeuse à découvert sur AMD en citant des préoccupations liées aux exportations de puces vers la Chine. La nouvelle survient alors que les restrictions américaines sur les puces d'IA destinées à la Chine se resserrent, un risque pour les semi-conducteurs et le Nasdaq. (Article non consulté : résumé fondé sur le titre.)",
+   "summary_en": "Hunterbrook disclosed a short position in AMD, citing concerns over chip exports to China. It comes as U.S. restrictions on AI chips bound for China tighten, a risk for semiconductors and the Nasdaq. (Article not accessed: summary based on the headline.)",
+   "time": "10:33",
+   "title": "Le vendeur à découvert Hunterbrook parie contre AMD, invoquant des inquiétudes sur les exportations vers la Chine",
+   "title_en": "Short seller Hunterbrook shorts AMD citing concerns over China exports",
+   "url": "https://www.investing.com/news/stock-market-news/short-seller-hunterbrook-shorts-amd-citing-concerns-over-china-exports-5039475"
+  },
+  {
+   "assets": [
+    "btcusd"
+   ],
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "CoinDesk",
+   "summary": "Binance a obtenu une ordonnance de gel d'actifs de 6,5 milliards $ visant les pirates responsables du plus important vol de l'histoire des cryptomonnaies. Une avancée juridique suivie de près par le marché du bitcoin, déjà sous pression cette semaine. (Article non consulté : résumé fondé sur le titre.)",
+   "summary_en": "Binance won a $6.5 billion asset-freezing order against the hackers behind the largest theft in crypto history. A legal development closely watched by a bitcoin market already under pressure this week. (Article not accessed: summary based on the headline.)",
+   "time": "10:20",
+   "title": "Binance obtient une ordonnance de gel de 6,5 G$ contre les pirates à l'origine du plus gros vol de l'histoire de la crypto",
+   "title_en": "Binance wins $6.5 billion freezing order against hackers behind crypto's largest theft",
+   "url": "https://www.coindesk.com/business/2026/11/19/binance-wins-usd6-5-billion-feezing-order-against-hackers-behind-crypto-s-largest-theft"
+  },
+  {
+   "assets": [
+    "nasdaq"
+   ],
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Bloomberg)",
+   "summary": "Selon Bloomberg, la plupart des investisseurs institutionnels n'auraient reçu aucune action dans l'IPO record d'Anthropic, signe d'une demande largement excédentaire. Cette rareté alimente les paris d'un fort bond à l'ouverture du titre et soutient le regain de l'IA sur le Nasdaq. (Article non consulté : résumé fondé sur le titre.)",
+   "summary_en": "According to Bloomberg, most institutional investors reportedly received no shares in Anthropic's record IPO, a sign of heavy oversubscription. The scarcity fuels bets on a big first-day pop and supports the AI rebound on the Nasdaq. (Article not accessed: summary based on the headline.)",
+   "time": "09:49",
+   "title": "L'IPO d'Anthropic n'aurait rien alloué à la plupart des acheteurs institutionnels, selon Bloomberg",
+   "title_en": "Anthropic IPO said to give nothing to most institutional buyers - Bloomberg",
+   "url": "https://www.investing.com/news/stock-market-news/anthropic-ipo-said-to-give-nothing-to-most-institutional-buyers--bloomberg-432SI-5039297"
+  },
+  {
    "assets": [
     "xauusd",
     "xagusd",
     "usd"
    ],
-   "title": "La mauvaise année de l'or s'aggrave : pourquoi son prix continue de baisser",
-   "title_en": "Gold's bad year is getting worse. Why its price keeps falling",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "CNBC",
    "summary": "CNBC se penche sur la poursuite du recul de l'or, qui touchait cette semaine son plus bas en 14 mois. L'article relie la baisse aux perspectives de hausses de taux de la Fed et à la vigueur du dollar, deux facteurs qui pèsent sur le métal jaune et, par ricochet, sur l'argent.",
    "summary_en": "CNBC looks at gold's continued slide, which hit a 14-month low this week. The article ties the drop to the Fed's rate-hike outlook and dollar strength, two forces weighing on bullion and, by extension, silver.",
+   "time": "08:37",
+   "title": "La mauvaise année de l'or s'aggrave : pourquoi son prix continue de baisser",
+   "title_en": "Gold's bad year is getting worse. Why its price keeps falling",
    "url": "https://www.cnbc.com/2026/11/19/gold-prices-fall-fed-rates-dollar.html"
   },
   {
-   "date": "2026-11-19",
-   "time": "08:36",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "usoil"
    ],
-   "title": "Poutine exclut une trêve en mer Noire et sur l'énergie après la frappe contre le pont de Crimée",
-   "title_en": "Putin rules out Black Sea, energy truce after Crimea bridge strike",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Selon Reuters, Vladimir Poutine écarte toute trêve en mer Noire ou sur les infrastructures énergétiques à la suite d'une frappe contre le pont de Crimée. Le recul des espoirs de désescalade entre la Russie et l'Ukraine maintient une prime de risque sur l'approvisionnement en pétrole.",
    "summary_en": "According to Reuters, Vladimir Putin ruled out any Black Sea or energy-infrastructure truce after a strike on the Crimea bridge. Fading hopes of Russia-Ukraine de-escalation keep a supply risk premium in oil.",
+   "time": "08:36",
+   "title": "Poutine exclut une trêve en mer Noire et sur l'énergie après la frappe contre le pont de Crimée",
+   "title_en": "Putin rules out Black Sea, energy truce after Crimea bridge strike",
    "url": "https://www.investing.com/news/commodities-news/putin-rules-out-black-sea-energy-truce-after-crimea-bridge-strike-5039062"
   },
   {
-   "date": "2026-11-19",
-   "time": "07:48",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "TSMC resserre ses restrictions sur les puces d'IA pour la Chine, de nouvelles règles américaines fermant une échappatoire",
-   "title_en": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Selon des sources citées par Reuters, TSMC durcit ses restrictions sur la fabrication de puces d'IA destinées à des clients chinois, alors que de nouvelles règles américaines ferment une échappatoire dans la fabrication. Le dossier touche directement les semi-conducteurs, moteur du Nasdaq en pleine journée d'IPO d'Anthropic.",
    "summary_en": "Sources cited by Reuters say TSMC is tightening curbs on making AI chips for Chinese customers as new US rules close a manufacturing loophole. The issue hits chipmakers directly, a key Nasdaq driver on Anthropic's IPO day.",
+   "time": "07:48",
+   "title": "TSMC resserre ses restrictions sur les puces d'IA pour la Chine, de nouvelles règles américaines fermant une échappatoire",
+   "title_en": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say",
    "url": "https://www.investing.com/news/stock-market-news/tsmc-tightens-china-ai-chip-curbs-as-new-us-rules-close-manufacturing-loophole-sources-say-5038806"
   },
   {
-   "date": "2026-11-19",
-   "time": "07:07",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Le relèvement des prévisions de ventes de Palo Alto propulse les titres de cybersécurité",
-   "title_en": "Palo Alto's raised sales forecast powers cybersecurity stock rally",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Palo Alto Networks a relevé ses prévisions de ventes annuelles, ce qui entraîne une remontée de l'ensemble des titres de cybersécurité avant l'ouverture (CrowdStrike, Zscaler, Okta et Rubrik sont aussi en hausse). Le mouvement s'ajoute à l'optimisme sur l'IA qui soutient le Nasdaq ce matin.",
    "summary_en": "Palo Alto Networks raised its annual sales forecast, lifting cybersecurity stocks broadly in premarket trading (CrowdStrike, Zscaler, Okta and Rubrik also rose). The move adds to the AI optimism supporting the Nasdaq this morning.",
+   "time": "07:07",
+   "title": "Le relèvement des prévisions de ventes de Palo Alto propulse les titres de cybersécurité",
+   "title_en": "Palo Alto's raised sales forecast powers cybersecurity stock rally",
    "url": "https://www.investing.com/news/stock-market-news/palo-altos-raised-sales-forecast-powers-cybersecurity-stock-rally-5038632"
   },
   {
-   "date": "2026-11-19",
-   "time": "07:02",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "spx500",
     "us30"
    ],
-   "title": "Walmart relève légèrement ses prévisions annuelles avant la cruciale saison des Fêtes",
-   "title_en": "Walmart nudges up annual forecasts ahead of crucial holiday season",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Walmart prévoit maintenant une croissance de ses ventes nettes de 4,9 % à 5,2 % pour l'exercice 2027 (contre 4 % à 5 %), sous les 5,5 % attendus par les analystes, et un BPA ajusté de 2,84 $ à 2,89 $ (consensus 2,88 $). Le chiffre d'affaires trimestriel a atteint 188,84 G$, en hausse de 5,2 %, mieux que prévu. Membre du Dow, Walmart est un baromètre de la consommation américaine.",
    "summary_en": "Walmart now sees fiscal 2027 net sales growth of 4.9% to 5.2% (from 4% to 5%), below the 5.5% analysts expect, and adjusted EPS of $2.84 to $2.89 (consensus $2.88). Quarterly revenue reached $188.84 billion, up 5.2% and better than expected. A Dow component, Walmart is a bellwether for U.S. consumer spending.",
+   "time": "07:02",
+   "title": "Walmart relève légèrement ses prévisions annuelles avant la cruciale saison des Fêtes",
+   "title_en": "Walmart nudges up annual forecasts ahead of crucial holiday season",
    "url": "https://www.investing.com/news/stock-market-news/walmart-nudges-up-annual-forecasts-ahead-of-crucial-holiday-season-5038616"
   },
   {
-   "date": "2026-11-19",
-   "time": "05:57",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Les titres de semi-conducteurs s'envolent dans le monde grâce à l'IPO record d'Anthropic",
-   "title_en": "Global chip stocks rally as Anthropic's record IPO boosts confidence in AI trade",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "En préouverture, Micron et SK Hynix gagnaient plus de 5 %, Intel, Applied Materials, Lam Research et Marvell de 4 % à 5 %, AMD 3,4 % et Broadcom 3,2 %; ASML et BE Semiconductor montaient de plus de 4 % en Europe. Anthropic a vendu 980 millions d'actions à 83 $ (environ 81,3 G$, plus 26 G$ en placements privés, dont Nvidia et AMD), ce qui ravive la confiance dans le thème de l'IA après des séances difficiles pour les puces.",
    "summary_en": "Premarket, Micron and SK Hynix rose more than 5%, Intel, Applied Materials, Lam Research and Marvell 4% to 5%, AMD 3.4% and Broadcom 3.2%; ASML and BE Semiconductor gained more than 4% in Europe. Anthropic sold 980 million shares at $83 (about $81.3 billion, plus $26 billion in private placements including Nvidia and AMD), reviving confidence in the AI trade after a rough stretch for chips.",
+   "time": "05:57",
+   "title": "Les titres de semi-conducteurs s'envolent dans le monde grâce à l'IPO record d'Anthropic",
+   "title_en": "Global chip stocks rally as Anthropic's record IPO boosts confidence in AI trade",
    "url": "https://www.investing.com/news/stock-market-news/global-chip-stocks-rally-as-anthropics-record-ipo-boosts-confidence-in-ai-trade-5038371"
   },
   {
-   "date": "2026-11-19",
-   "time": "05:48",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd",
     "nasdaq"
    ],
-   "title": "Le bitcoin s'approche de 64 000 $, mais file vers une 7e perte hebdomadaire d'affilée",
-   "title_en": "Bitcoin nears $64,000 as Anthropic's record IPO lifts tech",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin s'échangeait vers 63 982 $ après avoir glissé près de 62 000 $ pendant la nuit; il reste plus de 7 % sous sa moyenne mobile de 200 semaines et se dirige vers une septième semaine de baisse consécutive. L'élan de la tech lié à l'IPO d'Anthropic aide, mais les procès-verbaux de la Fed évoquant une hausse de plus d'un quart de point pèsent sur les actifs risqués.",
    "summary_en": "Bitcoin traded near $63,982 after sliding close to $62,000 overnight; it remains more than 7% below its 200-week moving average and is on track for a seventh straight weekly loss. Tech momentum from Anthropic's IPO helps, but Fed minutes flagging a possible hike of more than a quarter point weigh on risk assets.",
+   "time": "05:48",
+   "title": "Le bitcoin s'approche de 64 000 $, mais file vers une 7e perte hebdomadaire d'affilée",
+   "title_en": "Bitcoin nears $64,000 as Anthropic's record IPO lifts tech",
    "url": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech"
   },
   {
-   "date": "2026-11-19",
-   "time": "05:00",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "gbpusd",
     "usd",
     "eurusd"
    ],
-   "title": "Livre sterling stable à 1,3144 $ US face à un dollar ferme; la confiance des Gen Z britanniques chute",
-   "title_en": "Sterling today: Pound flat as dollar holds firm; UK Gen Z confidence slumps",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le GBP/USD est quasi inchangé à 1,3144 et l'EUR/USD gagne 0,16 % à 1,0992, alors que le dollar reste soutenu par des taux réels américains à 2 ans au-dessus de 2,40 %, un sommet depuis 2023; les marchés anticipent des hausses de 25 pb de la Fed en décembre, en janvier et l'été prochain. Au Royaume-Uni, la confiance des consommateurs (BRC-Opinium) recule pour un 3e mois, plombée par les Gen Z; HSBC note que l'inflation d'octobre plus faible réduit les paris d'une hausse de la BoE.",
    "summary_en": "GBP/USD was little changed at 1.3144 and EUR/USD rose 0.16% to 1.0992, as the dollar stays supported by U.S. two-year real swap rates above 2.40%, the highest since 2023; markets price 25bp Fed hikes in December, January and next summer. UK consumer confidence (BRC-Opinium) fell for a third month, dragged by Gen Z; HSBC says softer October inflation reduced bets on a near-term BoE hike.",
+   "time": "05:00",
+   "title": "Livre sterling stable à 1,3144 $ US face à un dollar ferme; la confiance des Gen Z britanniques chute",
+   "title_en": "Sterling today: Pound flat as dollar holds firm; UK Gen Z confidence slumps",
    "url": "https://www.investing.com/news/forex-news/sterling-today-pound-flat-as-dollar-holds-firm-uk-gen-z-confidence-slumps-5038221"
   },
   {
-   "date": "2026-11-19",
-   "time": "04:50",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usoil",
     "usd"
    ],
-   "title": "Le gaz européen et le pétrole montent : Trump envisagerait de nouvelles frappes massives contre l'Iran",
-   "title_en": "European gas surges on reports of impending U.S. military action against Iran",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le TTF néerlandais gagne 2,6 % à 82,93 €/MWh, le Brent 0,5 % à 92,41 $ et le WTI 0,1 % à 83,36 $ après un article du New York Times selon lequel Trump envisage une nouvelle série de frappes contre l'Iran sous la pression d'Israël, sans décision finale. Netanyahu presserait Washington de mener une campagne de 4 à 7 jours; dans le détroit d'Ormuz, les tensions persistent et les analystes craignent des représailles contre les infrastructures énergétiques à l'entrée de l'hiver.",
    "summary_en": "Dutch TTF rose 2.6% to €82.93/MWh, Brent 0.5% to $92.41 and WTI 0.1% to $83.36 after a New York Times report said Trump is considering another round of extensive strikes on Iran under Israeli pressure, with no final decision. Netanyahu reportedly urged a sustained four- to seven-day campaign; tensions persist in the Strait of Hormuz and analysts fear retaliation against energy infrastructure as winter demand peaks.",
+   "time": "04:50",
+   "title": "Le gaz européen et le pétrole montent : Trump envisagerait de nouvelles frappes massives contre l'Iran",
+   "title_en": "European gas surges on reports of impending U.S. military action against Iran",
    "url": "https://www.investing.com/news/stock-market-news/european-gas-surges-on-reports-of-impending-us-military-action-against-iran-5037953"
   },
   {
-   "date": "2026-11-19",
-   "time": "04:09",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "eurusd",
     "usd",
     "usdjpy"
    ],
-   "title": "Les rendements de la zone euro stagnent près de leurs sommets d'un mois, coincés entre une Fed et une BCE restrictives",
-   "title_en": "Euro yields idle near 1-month peaks on hawkish Fed and ECB rhetoric trap",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le rendement du Bund allemand à 10 ans est stable à 3,372 % après avoir touché mercredi son plus haut en près d'un mois, l'inflation de base de la zone euro étant ressortie plus forte que prévu à 2,6 %. Les investisseurs attendent les discours de la BCE, tandis que le gouverneur Waller de la Fed réclame une « action agressive » contre l'inflation. Le dollar reste à un sommet de 18 mois et le dollar-yen frôle 160.",
    "summary_en": "Germany's 10-year Bund yield was flat at 3.372% after touching a near one-month high on Wednesday, following hotter-than-expected 2.6% euro-zone core inflation. Investors await ECB speeches, while Fed Governor Waller called for 'aggressive action' on inflation. The dollar sits at an 18-month high and USD/JPY is near 160.",
+   "time": "04:09",
+   "title": "Les rendements de la zone euro stagnent près de leurs sommets d'un mois, coincés entre une Fed et une BCE restrictives",
+   "title_en": "Euro yields idle near 1-month peaks on hawkish Fed and ECB rhetoric trap",
    "url": "https://www.investing.com/news/forex-news/euro-yields-idle-near-1month-peaks-on-hawkish-fed-and-ecb-rhetoric-trap-5037883"
   },
   {
-   "date": "2026-11-19",
-   "time": "03:24",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "gbpusd",
     "usoil"
    ],
-   "title": "Bailey (BoE) surveille l'énergie : un conflit prolongé au Moyen-Orient pourrait forcer des taux plus élevés",
-   "title_en": "FTSE 100 today: Stocks slip as UK consumer gloom deepens; BoE warns on energy",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le gouverneur de la Banque d'Angleterre, Andrew Bailey, dit garder « un œil très attentif » sur les prix de l'énergie et avertit qu'un conflit prolongé au Moyen-Orient pourrait rendre l'inflation plus persistante et exiger des taux plus élevés. Le FTSE 100 recule de 0,06 % et la livre est stable à 1,3152 $US, alors que l'inflation britannique est passée à 3,6 % en octobre. Une hausse de taux de la BoE dès le mois prochain ou au début de 2027 est envisagée par des économistes, ce qui soutient la livre.",
    "summary_en": "Bank of England Governor Andrew Bailey said the Bank is keeping a \"very close eye\" on energy prices and warned a prolonged Middle East conflict could make inflation more persistent and require higher rates. The FTSE 100 slipped 0.06% and sterling was flat at $1.3152, with UK inflation at 3.6% in October. Economists see a BoE hike as soon as next month or early next year, supportive for the pound.",
+   "time": "03:24",
+   "title": "Bailey (BoE) surveille l'énergie : un conflit prolongé au Moyen-Orient pourrait forcer des taux plus élevés",
+   "title_en": "FTSE 100 today: Stocks slip as UK consumer gloom deepens; BoE warns on energy",
    "url": "https://uk.investing.com/news/stock-market-news/ftse-100-today-stocks-slip-as-uk-consumer-gloom-deepens-boe-warns-on-energy-4992556"
   },
   {
-   "date": "2026-11-19",
-   "time": "03:19",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "eurusd",
     "nasdaq",
     "spx500"
    ],
-   "title": "Les Bourses européennes avancent : la méga-IPO d'Anthropic contrebalance une Fed restrictive",
-   "title_en": "European stocks inch up as massive Anthropic IPO counters hawkish Fed",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le STOXX 600 gagne 0,3 %, le DAX 0,6 % et le CAC 40 0,4 %, portés par l'IPO d'Anthropic (83 $ l'action, environ 81 G$ levés, valorisation d'environ 1 500 G$) qui débute à Wall Street jeudi. En face, le ton restrictif de la Fed pèse : le CME FedWatch donne environ 90 % de chances d'une hausse de 25 points de base en décembre. L'inflation de base de la zone euro, montée à 2,6 %, réduit aussi les espoirs de baisse de taux de la BCE, à surveiller pour l'EUR/USD avant les discours de Lagarde.",
    "summary_en": "The STOXX 600 rose 0.3%, the DAX 0.6% and the CAC 40 0.4%, lifted by Anthropic's IPO ($83 a share, about $81 billion raised, roughly $1.5 trillion valuation), which debuts on Wall Street Thursday. A hawkish Fed weighs, with CME FedWatch showing about a 90% chance of a 25-basis-point hike in December. Eurozone core inflation rising to 2.6% also dims ECB rate-cut hopes, relevant for EUR/USD ahead of Lagarde's remarks.",
+   "time": "03:19",
+   "title": "Les Bourses européennes avancent : la méga-IPO d'Anthropic contrebalance une Fed restrictive",
+   "title_en": "European stocks inch up as massive Anthropic IPO counters hawkish Fed",
    "url": "https://www.investing.com/news/stock-market-news/european-stocks-inch-up-as-massive-anthropic-ipo-counters-hawkish-fed-5037955"
   },
   {
-   "date": "2026-11-19",
-   "time": "02:00",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usdjpy",
     "usd",
     "usoil",
     "xauusd"
    ],
-   "title": "Tokyo clôture en hausse : Nikkei 225 +0,88 %, le yen glisse à 159,63 par dollar",
-   "title_en": "Japan stocks close higher: Nikkei 225 up 0.88%, yen slips to 159.63 per dollar",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le Nikkei 225 a gagné 0,88 % jeudi, porté par l'immobilier et les banques, malgré 2 209 titres en baisse contre 1 285 en hausse; l'indice de volatilité du Nikkei a reculé de 15,08 % à 32,77. Le USD/JPY monte de 0,17 % à 159,63, tandis que le WTI de janvier gagne 0,13 % à 82,42 $ et l'or de décembre perd 0,10 % à 3 738,17 $.",
    "summary_en": "The Nikkei 225 rose 0.88% on Thursday, led by real estate and banks, though decliners outnumbered advancers 2,209 to 1,285; the Nikkei Volatility index fell 15.08% to 32.77. USD/JPY rose 0.17% to 159.63, while January WTI gained 0.13% to $82.42 and December gold slipped 0.10% to $3,738.17.",
+   "time": "02:00",
+   "title": "Tokyo clôture en hausse : Nikkei 225 +0,88 %, le yen glisse à 159,63 par dollar",
+   "title_en": "Japan stocks close higher: Nikkei 225 up 0.88%, yen slips to 159.63 per dollar",
    "url": "https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-088-5037902"
   },
   {
-   "date": "2026-11-19",
-   "time": "01:29",
-   "source": "CNBC",
-   "impact": "med",
    "assets": [
     "usd",
     "usoil",
     "xauusd",
     "spx500"
    ],
-   "title": "Trump s'entretient séparément avec Poutine et Xi avant leur sommet trilatéral historique",
-   "title_en": "Trump holds talks separately with Putin and Xi ahead of their historic trilateral meeting",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "CNBC",
    "summary": "Selon CNBC, Donald Trump a tenu des rencontres séparées avec Vladimir Poutine et Xi Jinping en Chine, en marge de l'APEC, avant leur première rencontre à trois. Les marchés suivent ce sommet pour ses retombées possibles sur le commerce, l'Iran et le pétrole, ce qui peut influencer le dollar, l'or et le brut.",
    "summary_en": "According to CNBC, Donald Trump held separate meetings with Vladimir Putin and Xi Jinping in China on the sidelines of APEC ahead of their first three-way meeting. Markets are watching the summit for possible implications for trade, Iran and oil, which can move the dollar, gold and crude.",
+   "time": "01:29",
+   "title": "Trump s'entretient séparément avec Poutine et Xi avant leur sommet trilatéral historique",
+   "title_en": "Trump holds talks separately with Putin and Xi ahead of their historic trilateral meeting",
    "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html"
   },
   {
-   "date": "2026-11-19",
-   "time": "01:23",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd",
     "usd",
     "usoil",
     "spx500"
    ],
-   "title": "La Fed veut encore hausser ses taux, mais l'essence chute : des analystes y voient une erreur",
-   "title_en": "Fed's push for more rate hikes leans on backward-looking data as gas prices slide, analysts argue",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le compte rendu d'octobre montre que presque tous les membres de la Fed jugent d'autres hausses probables; Waller appuie une hausse de 50 points de base en décembre et les contrats à terme anticipent des hausses de 25 pb en décembre et en janvier. Des analystes jugent ces données dépassées : la marge de raffinage 3-2-1 a chuté de 36 % en six semaines (de 65,56 $ à 41,90 $ le baril) et l'essence RBOB d'environ 20 % en trois semaines. Des taux plus élevés pèsent habituellement sur le bitcoin et les actifs risqués.",
    "summary_en": "October minutes show almost all Fed officials see further hikes as likely; Waller backs a 50-basis-point hike in December, and futures price quarter-point hikes in December and January. Analysts call the data backward-looking: the 3-2-1 crack spread fell 36% in six weeks ($65.56 to $41.90 a barrel) and RBOB gasoline about 20% in three weeks. Higher rates tend to weigh on bitcoin and risk assets.",
+   "time": "01:23",
+   "title": "La Fed veut encore hausser ses taux, mais l'essence chute : des analystes y voient une erreur",
+   "title_en": "Fed's push for more rate hikes leans on backward-looking data as gas prices slide, analysts argue",
    "url": "https://www.coindesk.com/markets/2026/11/19/fed-s-push-for-more-rate-hikes-leans-on-backward-looking-data-as-gas-prices-slide-analysts-argue"
   },
   {
-   "date": "2026-11-19",
-   "time": "01:00",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "audusd",
     "usdjpy"
    ],
-   "title": "Taïwan clôture en chute de 4,6 % : la débâcle de l'IA s'aggrave, puces et circuits imprimés au plancher",
-   "title_en": "Taiwan stocks plunge 4.6% as AI rout deepens; chip and PCB shares hit limit-down",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "L'indice pondéré de Taïwan termine la séance en baisse de 4,60 %, les titres de puces et de circuits imprimés touchant leur limite de baisse quotidienne. Plus tôt, le Hang Seng cédait 1,9 % (Tencent -6,4 %) et l'ASX 200 environ 1 % après un chômage australien à 4,9 %, tandis que les contrats à terme américains montaient avant les débuts d'Anthropic (83 $ l'action). Les craintes sur les dépenses en IA pèsent sur les technos et les devises liées au risque.",
    "summary_en": "Taiwan's weighted index closed down 4.60%, with chip and PCB shares hitting limit-down. Earlier, the Hang Seng fell 1.9% (Tencent -6.4%) and the ASX 200 about 1% after Australian unemployment hit 4.9%, while U.S. futures rose ahead of Anthropic's debut ($83 a share). AI-spending worries weigh on tech and risk-sensitive currencies.",
+   "time": "01:00",
+   "title": "Taïwan clôture en chute de 4,6 % : la débâcle de l'IA s'aggrave, puces et circuits imprimés au plancher",
+   "title_en": "Taiwan stocks plunge 4.6% as AI rout deepens; chip and PCB shares hit limit-down",
    "url": "https://www.investing.com/news/stock-market-news/taiwan-stocks-plunge-46-as-ai-rout-deepens-chip-and-pcb-shares-hit-limitdown-5037869"
   },
   {
-   "date": "2026-11-18",
-   "time": "23:46",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Hyperscale Data, ex-mineur qui a vendu ses derniers bitcoins, craint de manquer d'argent pour un contrat IA de 1,2 G$",
-   "title_en": "Bitcoin miner that sold its last BTC warns it may run short of cash for $1.2 billion AI deal",
+   "date": "2026-11-18",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Hyperscale Data (GPUS) a vendu ses 211 derniers BTC pour environ 16 M$ (environ 1 113 BTC vendus depuis fin juillet) et doit trouver encore 74,8 M$ d'ici mars pour son centre de données IA au Michigan. Avec 17 M$ de liquidités contre 231 M$ de passifs courants, la direction évoque un « doute substantiel » sur sa continuité. Illustre la pression vendeuse des mineurs qui se tournent vers l'IA alors que le bitcoin est faible.",
    "summary_en": "Hyperscale Data (GPUS) sold its last 211 BTC for about $16M (roughly 1,113 BTC sold since late July) and still needs $74.8M by March for its Michigan AI data center. With $17M of unrestricted cash against $231M of current liabilities, management flagged 'substantial doubt' about continuing as a going concern. It highlights selling pressure from miners pivoting to AI while bitcoin is weak.",
+   "time": "23:46",
+   "title": "Hyperscale Data, ex-mineur qui a vendu ses derniers bitcoins, craint de manquer d'argent pour un contrat IA de 1,2 G$",
+   "title_en": "Bitcoin miner that sold its last BTC warns it may run short of cash for $1.2 billion AI deal",
    "url": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal"
   },
   {
-   "date": "2026-11-18",
-   "time": "23:15",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usd",
     "usdjpy",
     "audusd",
     "eurusd"
    ],
-   "title": "Le dollar touche un nouveau sommet de 19 mois sur une Fed restrictive; le dollar australien glisse après l'emploi",
-   "title_en": "Dollar hits fresh 19-month peak on hawkish Fed; Aussie slides after weak jobs data",
+   "date": "2026-11-18",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "L'indice dollar monte de 0,1 % à 103,965, son plus haut depuis avril 2025, porté par le procès-verbal de la Fed où presque tous les membres jugent d'autres hausses possibles; Waller évoque même 50 points de base en décembre. Le USD/JPY grimpe à 159,59, près du seuil de 160 associé à une intervention japonaise, et l'AUD/USD perd 0,7 % à 0,6673 après la perte de 43 500 emplois et un chômage à 4,9 % en Australie.",
    "summary_en": "The dollar index rose 0.1% to 103.965, its highest since April 2025, on Fed minutes showing nearly all officials see further hikes as possible; Waller floated a 50 bp December move. USD/JPY rose to 159.59, near the 160 level tied to Japanese intervention, and AUD/USD fell 0.7% to 0.6673 after Australia shed 43,500 jobs and unemployment hit 4.9%.",
+   "time": "23:15",
+   "title": "Le dollar touche un nouveau sommet de 19 mois sur une Fed restrictive; le dollar australien glisse après l'emploi",
+   "title_en": "Dollar hits fresh 19-month peak on hawkish Fed; Aussie slides after weak jobs data",
    "url": "https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703"
   },
   {
-   "date": "2026-11-18",
-   "time": "23:15",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "La promesse de 500 G$ de Wall Street pour financer les clients de Nvidia n'est pas encore mobilisée (WSJ)",
-   "title_en": "Wall St's $500 bln pledge to Nvidia yet to be mobilized, WSJ reports",
+   "date": "2026-11-18",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Selon le WSJ, aucun capital n'a encore été déployé sur les engagements allant jusqu'à 500 G$ obtenus en août par Jensen Huang auprès d'Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs et KKR pour financer les achats de puces des clients de Nvidia. La PDG par intérim Colette Kress a dit que Nvidia sera « plus disciplinée » dans ce financement, ce qui alimente le scepticisme envers la demande en IA qui soutient le Nasdaq.",
    "summary_en": "According to the WSJ, no capital has yet been deployed from the up to $500 billion pledged in August to Jensen Huang by Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs and KKR to fund Nvidia customers' chip purchases. Interim CEO Colette Kress said Nvidia will be 'more disciplined' in financing customers, adding to skepticism about the AI demand underpinning the Nasdaq.",
+   "time": "23:15",
+   "title": "La promesse de 500 G$ de Wall Street pour financer les clients de Nvidia n'est pas encore mobilisée (WSJ)",
+   "title_en": "Wall St's $500 bln pledge to Nvidia yet to be mobilized, WSJ reports",
    "url": "https://www.investing.com/news/stock-market-news/wall-sts-500-bln-pledge-to-nvidia-yet-to-be-mobilized-wsj-reports-5037693"
   },
   {
-   "date": "2026-11-18",
-   "time": "22:39",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "btcusd"
    ],
-   "title": "Bitcoin : les niveaux de soutien à surveiller alors que le prix teste 62 100 $",
-   "title_en": "Bitcoin support levels: key floors to watch as price tests $62,100",
+   "date": "2026-11-18",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le bitcoin teste la zone de 62 100 $, sous les quelque 64 100 $ observés mercredi matin, et Investing.com fait le point sur les planchers techniques à surveiller. La pression vient dans la foulée du ton restrictif de la Fed, qui pèse sur les actifs à risque.",
    "summary_en": "Bitcoin is testing the $62,100 area, below the roughly $64,100 seen Wednesday morning, and Investing.com reviews the key technical floors to watch. The pressure follows the Fed's hawkish tone, which is weighing on risk assets.",
+   "time": "22:39",
+   "title": "Bitcoin : les niveaux de soutien à surveiller alors que le prix teste 62 100 $",
+   "title_en": "Bitcoin support levels: key floors to watch as price tests $62,100",
    "url": "https://www.investing.com/news/stock-market-news/bitcoin-support-levels-key-floors-to-watch-as-price-tests-62100-93CH-5037661"
   },
   {
-   "date": "2026-11-18",
-   "time": "22:05",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq"
    ],
-   "title": "Tencent chute de 6,1 % à son plus bas en 2 ans et demi après des revenus du T3 sous les attentes",
-   "title_en": "Tencent shares hit 2-1/2 year low on Q3 earnings miss",
+   "date": "2026-11-18",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "L'action de Tencent recule de 6,1 % à 350 HK$ à Hong Kong, son plus bas depuis mai 2024. Les revenus du T3 ont progressé de 8 % à 207,3 G de yuans, sous les 210,8 G attendus, et le bénéfice opérationnel ajusté a baissé de 6 % à 68,1 G de yuans, alors que les investissements ont bondi à 81,4 G de yuans. Le dérapage alimente les doutes sur le coût de la course à l'IA chez les géants technos.",
    "summary_en": "Tencent shares fell 6.1% to HK$350 in Hong Kong, their lowest since May 2024. Q3 revenue rose 8% to 207.3 billion yuan, short of the 210.8 billion expected, while non-IFRS operating profit fell 6% to 68.1 billion yuan as capex jumped to 81.4 billion yuan. The miss adds to doubts about the cost of the AI race among big tech.",
+   "time": "22:05",
+   "title": "Tencent chute de 6,1 % à son plus bas en 2 ans et demi après des revenus du T3 sous les attentes",
+   "title_en": "Tencent shares hit 2-1/2 year low on Q3 earnings miss",
    "url": "https://www.investing.com/news/stock-market-news/tencent-shares-hit-212-yr-low-on-q3-earnings-miss-5037629"
   },
   {
