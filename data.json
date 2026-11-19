@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T07:47:22Z",
+ "updatedAt": "2026-11-19T08:47:35Z",
  "econ": {
   "values": {
    "adp": {
@@ -1131,6 +1131,37 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "03:24",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "gbpusd",
+    "usoil"
+   ],
+   "title": "Bailey (BoE) surveille l'énergie : un conflit prolongé au Moyen-Orient pourrait forcer des taux plus élevés",
+   "title_en": "FTSE 100 today: Stocks slip as UK consumer gloom deepens; BoE warns on energy",
+   "summary": "Le gouverneur de la Banque d'Angleterre, Andrew Bailey, dit garder « un œil très attentif » sur les prix de l'énergie et avertit qu'un conflit prolongé au Moyen-Orient pourrait rendre l'inflation plus persistante et exiger des taux plus élevés. Le FTSE 100 recule de 0,06 % et la livre est stable à 1,3152 $US, alors que l'inflation britannique est passée à 3,6 % en octobre. Une hausse de taux de la BoE dès le mois prochain ou au début de 2027 est envisagée par des économistes, ce qui soutient la livre.",
+   "summary_en": "Bank of England Governor Andrew Bailey said the Bank is keeping a \"very close eye\" on energy prices and warned a prolonged Middle East conflict could make inflation more persistent and require higher rates. The FTSE 100 slipped 0.06% and sterling was flat at $1.3152, with UK inflation at 3.6% in October. Economists see a BoE hike as soon as next month or early next year, supportive for the pound.",
+   "url": "https://uk.investing.com/news/stock-market-news/ftse-100-today-stocks-slip-as-uk-consumer-gloom-deepens-boe-warns-on-energy-4992556"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "03:19",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "eurusd",
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Les Bourses européennes avancent : la méga-IPO d'Anthropic contrebalance une Fed restrictive",
+   "title_en": "European stocks inch up as massive Anthropic IPO counters hawkish Fed",
+   "summary": "Le STOXX 600 gagne 0,3 %, le DAX 0,6 % et le CAC 40 0,4 %, portés par l'IPO d'Anthropic (83 $ l'action, environ 81 G$ levés, valorisation d'environ 1 500 G$) qui débute à Wall Street jeudi. En face, le ton restrictif de la Fed pèse : le CME FedWatch donne environ 90 % de chances d'une hausse de 25 points de base en décembre. L'inflation de base de la zone euro, montée à 2,6 %, réduit aussi les espoirs de baisse de taux de la BCE, à surveiller pour l'EUR/USD avant les discours de Lagarde.",
+   "summary_en": "The STOXX 600 rose 0.3%, the DAX 0.6% and the CAC 40 0.4%, lifted by Anthropic's IPO ($83 a share, about $81 billion raised, roughly $1.5 trillion valuation), which debuts on Wall Street Thursday. A hawkish Fed weighs, with CME FedWatch showing about a 90% chance of a 25-basis-point hike in December. Eurozone core inflation rising to 2.6% also dims ECB rate-cut hopes, relevant for EUR/USD ahead of Lagarde's remarks.",
+   "url": "https://www.investing.com/news/stock-market-news/european-stocks-inch-up-as-massive-anthropic-ipo-counters-hawkish-fed-5037955"
+  },
+  {
+   "date": "2026-11-19",
    "time": "02:00",
    "source": "Investing.com",
    "impact": "med",
@@ -1735,39 +1766,6 @@
    "title": "UBS voit l'or à 5 000 $ d'ici la fin de 2027 et le Brent revenir à 80 $",
    "title_en": "UBS sees gold at $5,000 by the end of 2027, Brent easing to $80",
    "url": "https://www.investing.com/news/commodities-news/ubs-sees-gold-at-5000-by-the-end-of-2027-brent-easing-to-80-5035763"
-  },
-  {
-   "assets": [
-    "usd",
-    "spx500",
-    "nasdaq",
-    "xauusd",
-    "eurusd",
-    "usdjpy"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "Selon CNBC, les responsables de la Fed se dirigent vers une nouvelle hausse de taux en décembre, mais le chemin au-delà reste incertain. Le procès-verbal de la réunion d'octobre est attendu aujourd'hui à 14 h (HE); une hausse en décembre soutient le dollar et pèse sur l'or et les actifs risqués.",
-   "summary_en": "According to CNBC, Fed officials are heading toward another rate hike in December, but the path beyond remains uncertain. Minutes of the October meeting are due today at 2 p.m. ET; a December hike supports the dollar and weighs on gold and risk assets.",
-   "time": "07:20",
-   "title": "Les responsables de la Fed s'apprêtent à relever les taux de nouveau en décembre, mais la suite reste floue",
-   "title_en": "Fed officials set to raise rates again in December, but the future still looks murky",
-   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html"
-  },
-  {
-   "assets": [
-    "btcusd"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Le bitcoin s'échange vers 64 100 $ (−1,1 % depuis minuit UTC), environ 26 % sous son sommet d'octobre de 87 200 $, et ne profite pas du rebond des contrats du Nasdaq 100 (+1,0 %) après Nvidia. Le « basis trade » ne rapporte plus que 3 à 5 % par an selon Talos, près des taux du Trésor; CME FedWatch place à 96 % la probabilité d'une hausse de taux en décembre, et l'indice de peur et d'avidité est à 13 (« peur extrême »).",
-   "summary_en": "Bitcoin trades near $64,100 (down 1.1% since midnight UTC), about 26% below its October high of $87,200, lagging a 1.0% rise in Nasdaq-100 futures after Nvidia. The basis trade now yields only 3% to 5% a year per Talos, near Treasury yields; CME FedWatch puts December hike odds at 96%, and the Fear and Greed Index sits at 13 ('extreme fear').",
-   "time": "06:42",
-   "title": "Bitcoin recule à environ 64 100 $ : le « basis trade » se tarit avant le procès-verbal de la Fed",
-   "title_en": "Bitcoin price drops as basis trade dries up and Fed minutes loom",
-   "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-drops-as-nvidia-earnings-report-drives-stock-index-futures-higher"
   }
  ],
  "live": {
