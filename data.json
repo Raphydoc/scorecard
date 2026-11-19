@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T13:58:00Z",
+ "updatedAt": "2026-11-19T13:53:16Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,51 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "08:37",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "xauusd",
+    "xagusd",
+    "usd"
+   ],
+   "title": "La mauvaise année de l'or s'aggrave : pourquoi son prix continue de baisser",
+   "title_en": "Gold's bad year is getting worse. Why its price keeps falling",
+   "summary": "CNBC se penche sur la poursuite du recul de l'or, qui touchait cette semaine son plus bas en 14 mois. L'article relie la baisse aux perspectives de hausses de taux de la Fed et à la vigueur du dollar, deux facteurs qui pèsent sur le métal jaune et, par ricochet, sur l'argent.",
+   "summary_en": "CNBC looks at gold's continued slide, which hit a 14-month low this week. The article ties the drop to the Fed's rate-hike outlook and dollar strength, two forces weighing on bullion and, by extension, silver.",
+   "url": "https://www.cnbc.com/2026/11/19/gold-prices-fall-fed-rates-dollar.html"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "08:36",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Poutine exclut une trêve en mer Noire et sur l'énergie après la frappe contre le pont de Crimée",
+   "title_en": "Putin rules out Black Sea, energy truce after Crimea bridge strike",
+   "summary": "Selon Reuters, Vladimir Poutine écarte toute trêve en mer Noire ou sur les infrastructures énergétiques à la suite d'une frappe contre le pont de Crimée. Le recul des espoirs de désescalade entre la Russie et l'Ukraine maintient une prime de risque sur l'approvisionnement en pétrole.",
+   "summary_en": "According to Reuters, Vladimir Putin ruled out any Black Sea or energy-infrastructure truce after a strike on the Crimea bridge. Fading hopes of Russia-Ukraine de-escalation keep a supply risk premium in oil.",
+   "url": "https://www.investing.com/news/commodities-news/putin-rules-out-black-sea-energy-truce-after-crimea-bridge-strike-5039062"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "07:48",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "TSMC resserre ses restrictions sur les puces d'IA pour la Chine, de nouvelles règles américaines fermant une échappatoire",
+   "title_en": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say",
+   "summary": "Selon des sources citées par Reuters, TSMC durcit ses restrictions sur la fabrication de puces d'IA destinées à des clients chinois, alors que de nouvelles règles américaines ferment une échappatoire dans la fabrication. Le dossier touche directement les semi-conducteurs, moteur du Nasdaq en pleine journée d'IPO d'Anthropic.",
+   "summary_en": "Sources cited by Reuters say TSMC is tightening curbs on making AI chips for Chinese customers as new US rules close a manufacturing loophole. The issue hits chipmakers directly, a key Nasdaq driver on Anthropic's IPO day.",
+   "url": "https://www.investing.com/news/stock-market-news/tsmc-tightens-china-ai-chip-curbs-as-new-us-rules-close-manufacturing-loophole-sources-say-5038806"
+  },
+  {
+   "date": "2026-11-19",
    "time": "07:07",
    "source": "Investing.com",
    "impact": "med",
@@ -1798,56 +1843,6 @@
    "title": "Les obligations du Trésor grimpent pour une troisième séance alors que les actions glissent et que le pétrole recule",
    "title_en": "Treasuries rally for a third day as stocks slip and oil falls",
    "url": "https://www.investing.com/news/stock-market-news/treasuries-rally-for-a-third-day-as-stocks-slip-and-oil-falls-93CH-5036642"
-  },
-  {
-   "assets": [
-    "spx500"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "L'action de Target gagne 5 % après que le détaillant a affiché sa meilleure croissance des ventes en cinq ans et relevé ses prévisions (article non consultable; résumé fondé sur le titre). Avec TJX et Lowe's, ce résultat donne une lecture plutôt solide de la consommation américaine avant les Fêtes.",
-   "summary_en": "Target shares rose 5% after the retailer posted its best sales growth in five years and raised its guidance (article could not be read; summary based on the headline). Along with TJX and Lowe's, the result offers a fairly solid read on U.S. consumer spending ahead of the holidays.",
-   "time": "10:47",
-   "title": "Target grimpe de 5 % : meilleure croissance des ventes en cinq ans et prévisions relevées",
-   "title_en": "Target shares rise 5% as retailer posts best sales growth in five years, hikes guidance",
-   "url": "https://www.cnbc.com/2026/11/18/target-tgt-q3-2026-earnings.html"
-  },
-  {
-   "assets": [
-    "usd",
-    "spx500",
-    "nasdaq",
-    "us30",
-    "xauusd",
-    "eurusd",
-    "usdjpy",
-    "btcusd"
-   ],
-   "date": "2026-11-18",
-   "impact": "high",
-   "source": "CNBC",
-   "summary": "Le gouverneur de la Fed Christopher Waller évoque la possibilité d'une hausse de taux d'un demi-point pour « choquer » les attentes, selon CNBC (article non consultable, résumé fondé sur le titre). Ce ton plus agressif, le jour même du procès-verbal du FOMC, alimente les paris de resserrement : de quoi soutenir le dollar et peser sur les actions, l'or et le bitcoin.",
-   "summary_en": "Fed Governor Christopher Waller raised the possibility of a half-point rate hike to 'shock' expectations, according to CNBC (article not accessible; summary based on the headline). The more hawkish tone, on the day of the FOMC minutes, feeds tightening bets — supportive for the dollar and a headwind for stocks, gold and bitcoin.",
-   "time": "10:13",
-   "title": "Waller (Fed) : la banque centrale pourrait devoir « choquer les gens » avec une hausse de taux d'un demi-point",
-   "title_en": "Fed's Waller says central bank may need to 'shock people' with half-point rate hike",
-   "url": "https://www.cnbc.com/2026/11/18/federal-reserve-governor-christopher-waller.html"
-  },
-  {
-   "assets": [
-    "usoil",
-    "usdcad"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "L'OPEP a défendu les combustibles fossiles lors des négociations de la COP31, selon Reuters (article non consultable, résumé fondé sur le titre). La position du cartel sur l'avenir du pétrole reste un facteur suivi pour le WTI et les devises liées au brut comme le dollar canadien.",
-   "summary_en": "OPEC defended fossil fuels at the COP31 climate talks, according to Reuters (article not accessible; summary based on the headline). The cartel's stance on oil's future remains a watched factor for WTI and oil-linked currencies such as the Canadian dollar.",
-   "time": "10:00",
-   "title": "L'OPEP prend la défense des combustibles fossiles aux négociations climatiques de la COP31",
-   "title_en": "OPEC speaks up for fossil fuels at COP31 climate talks",
-   "url": "https://www.investing.com/news/commodities-news/opec-speaks-up-for-fossil-fuels-at-cop31-climate-talks-5036493"
   }
  ],
  "live": {
