@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T12:36:43Z",
+  "updatedAt": "2026-11-19T12:52:45Z",
   "econ": {
     "values": {
       "adp": {
@@ -1131,6 +1131,36 @@
   "news": [
     {
       "date": "2026-11-19",
+      "time": "07:07",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Le relèvement des prévisions de ventes de Palo Alto propulse les titres de cybersécurité",
+      "title_en": "Palo Alto's raised sales forecast powers cybersecurity stock rally",
+      "summary": "Palo Alto Networks a relevé ses prévisions de ventes annuelles, ce qui entraîne une remontée de l'ensemble des titres de cybersécurité avant l'ouverture (CrowdStrike, Zscaler, Okta et Rubrik sont aussi en hausse). Le mouvement s'ajoute à l'optimisme sur l'IA qui soutient le Nasdaq ce matin.",
+      "summary_en": "Palo Alto Networks raised its annual sales forecast, lifting cybersecurity stocks broadly in premarket trading (CrowdStrike, Zscaler, Okta and Rubrik also rose). The move adds to the AI optimism supporting the Nasdaq this morning.",
+      "url": "https://www.investing.com/news/stock-market-news/palo-altos-raised-sales-forecast-powers-cybersecurity-stock-rally-5038632"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "07:02",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "us30"
+      ],
+      "title": "Walmart relève légèrement ses prévisions annuelles avant la cruciale saison des Fêtes",
+      "title_en": "Walmart nudges up annual forecasts ahead of crucial holiday season",
+      "summary": "Walmart prévoit maintenant une croissance de ses ventes nettes de 4,9 % à 5,2 % pour l'exercice 2027 (contre 4 % à 5 %), sous les 5,5 % attendus par les analystes, et un BPA ajusté de 2,84 $ à 2,89 $ (consensus 2,88 $). Le chiffre d'affaires trimestriel a atteint 188,84 G$, en hausse de 5,2 %, mieux que prévu. Membre du Dow, Walmart est un baromètre de la consommation américaine.",
+      "summary_en": "Walmart now sees fiscal 2027 net sales growth of 4.9% to 5.2% (from 4% to 5%), below the 5.5% analysts expect, and adjusted EPS of $2.84 to $2.89 (consensus $2.88). Quarterly revenue reached $188.84 billion, up 5.2% and better than expected. A Dow component, Walmart is a bellwether for U.S. consumer spending.",
+      "url": "https://www.investing.com/news/stock-market-news/walmart-nudges-up-annual-forecasts-ahead-of-crucial-holiday-season-5038616"
+    },
+    {
+      "date": "2026-11-19",
       "time": "06:24",
       "source": "Investing.com",
       "impact": "high",
@@ -1731,42 +1761,6 @@
       "title": "L'OPEP prend la défense des combustibles fossiles aux négociations climatiques de la COP31",
       "title_en": "OPEC speaks up for fossil fuels at COP31 climate talks",
       "url": "https://www.investing.com/news/commodities-news/opec-speaks-up-for-fossil-fuels-at-cop31-climate-talks-5036493"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "us30",
-        "xauusd",
-        "eurusd",
-        "usdjpy",
-        "btcusd"
-      ],
-      "date": "2026-11-18",
-      "impact": "high",
-      "source": "MarketWatch",
-      "summary": "Selon MarketWatch, le gouverneur de la Fed Christopher Waller estime que les taux pourraient devoir grimper de 100 points de base ou plus pour maîtriser l'inflation (détails de l'article non accessibles; résumé basé sur le titre). Un discours aussi restrictif, quelques heures avant le procès-verbal de la Fed à 14 h, soutient le dollar et pèse sur l'or, les actions et le bitcoin.",
-      "summary_en": "According to MarketWatch, Fed Governor Christopher Waller says rates may need to rise by 100 basis points or more to tame inflation (article details not accessible; summary based on the headline). Such hawkish talk, hours before the Fed minutes at 2 p.m., supports the dollar and weighs on gold, stocks and bitcoin.",
-      "time": "09:32",
-      "title": "Jusqu'où les taux doivent-ils monter pour refroidir l'inflation? Peut-être 100 points de base ou plus, selon Waller (Fed)",
-      "title_en": "How high must interest rates go to cool inflation? Possibly 100 basis points or more, Fed's Waller says",
-      "url": "https://www.marketwatch.com/story/how-high-must-interest-rates-go-to-cool-inflation-possibly-100-basis-points-or-more-feds-waller-says-e7b41cf6"
-    },
-    {
-      "assets": [
-        "eurusd",
-        "xauusd"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "La Commission européenne propose un prêt de 45 milliards € (49,45 G$ US) à l'Ukraine pour 2027, remboursable à même d'éventuelles réparations russes; il couvrirait environ les deux tiers d'un besoin de financement estimé à 70 milliards €, dont jusqu'à 25 milliards € pour l'aide militaire. Le volet budgétaire exige l'unanimité des 27; le dossier reste un facteur pour l'euro et la prime géopolitique en Europe.",
-      "summary_en": "The European Commission proposed a €45 billion ($49.45 billion) loan to Ukraine for 2027, to be repaid from future Russian reparations; it would cover about two-thirds of an estimated €70 billion funding gap, with up to €25 billion for military aid. The budget part requires unanimity among the 27; the file remains a factor for the euro and Europe's geopolitical risk premium.",
-      "time": "09:18",
-      "title": "Explicatif : en quoi consiste le nouveau prêt de 45 milliards € de l'UE à l'Ukraine?",
-      "title_en": "Explainer: What is the EU's new €45 billion Ukraine loan plan?",
-      "url": "https://www.investing.com/news/stock-market-news/explainerwhat-is-the-eus-new-45-billion-ukraine-loan-plan-5036361"
     }
   ],
   "live": {
