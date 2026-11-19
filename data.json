@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T01:47:12Z",
+  "updatedAt": "2026-11-19T02:48:20Z",
   "econ": {
     "values": {
       "adp": {
@@ -1131,6 +1131,52 @@
   "news": [
     {
       "date": "2026-11-18",
+      "time": "20:42",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "audusd",
+        "usd"
+      ],
+      "title": "Australie : le chômage grimpe à 4,9 %, sommet en cinq ans, et 43 500 emplois disparaissent; l'AUD recule",
+      "title_en": "Australia unemployment hits five-year high as jobs plunge 43,500; AUD weakens",
+      "summary": "Le taux de chômage australien est passé à 4,9 % en octobre (4,7 % attendu) et l'emploi a reculé de 43 500 postes, alors qu'on prévoyait un gain de 25 500. L'AUD/USD a perdu 0,4 % à 0,6691 et l'ASX 200 0,9 %. Ces données affaiblies freinent les attentes d'un nouveau resserrement de la RBA, qui a relevé son taux à 4,85 % le 4 novembre.",
+      "summary_en": "Australia's jobless rate rose to 4.9% in October (4.7% expected) and employment fell by 43,500 versus a forecast gain of 25,500. AUD/USD slipped 0.4% to 0.6691 and the ASX 200 fell 0.9%. The weak data dampens expectations of further RBA tightening after its hike to 4.85% on Nov. 4.",
+      "url": "https://ca.investing.com/news/economic-indicators/australia-unemployment-hits-fiveyear-high-as-jobs-plunge-43500-aud-weakens-4968359"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "20:37",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "us30"
+      ],
+      "title": "Les contrats à terme montent avant la méga-IPO d'Anthropic à 1 500 G$ : Nasdaq 100 +1,3 %",
+      "title_en": "Wall Street futures climb ahead of Anthropic's $1.5 trillion mega IPO",
+      "summary": "Mercredi soir, les contrats à terme du Nasdaq 100 gagnaient 1,3 % à 27 528,75, ceux du S&P 500 0,8 % et ceux du Dow 0,4 %. Anthropic a fixé son IPO à 83 $ l'action, au-dessus de la fourchette de 70 à 78 $, pour une valorisation d'environ 1 500 G$ et quelque 80 G$ levés; le titre ANT débute jeudi au Nasdaq. Selon CME FedWatch, une hausse de 25 points de base de la Fed en décembre est quasi certaine; Walmart publie ses résultats jeudi.",
+      "summary_en": "On Wednesday evening, Nasdaq 100 futures rose 1.3% to 27,528.75, S&P 500 futures 0.8% and Dow futures 0.4%. Anthropic priced its IPO at $83 a share, above the $70-$78 range, valuing it near $1.5 trillion and raising about $80 billion; ANT debuts Thursday on the Nasdaq. CME FedWatch shows a 25 bp Fed hike in December as near-certain; Walmart reports Thursday.",
+      "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-climb-ahead-of-anthropics-15-trillion-mega-ipo-5037518"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "20:32",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "xauusd",
+        "xagusd"
+      ],
+      "title": "L'or rebondit de son plus bas en 14 mois à 3 755 $ malgré le risque de hausses de la Fed",
+      "title_en": "Gold rebounds from 14-month low as bargain hunters emerge despite Fed hike risks",
+      "summary": "L'or au comptant gagnait 0,8 % à 3 754,85 $ l'once en soirée, après une chute de 3,2 % mercredi vers sa plus faible clôture depuis septembre 2025; l'argent montait de 1,4 % à 45,72 $. Les acheteurs à bon prix reviennent, mais le procès-verbal de la Fed (presque tous les membres jugent d'autres hausses nécessaires) et l'appel de Waller à envisager 50 points de base en décembre pèsent. L'indice du dollar était stable à 103,81.",
+      "summary_en": "Spot gold rose 0.8% to $3,754.85/oz in the evening after a 3.2% drop on Wednesday to its lowest close since September 2025; silver gained 1.4% to $45.72. Bargain hunters returned, but Fed minutes (nearly all officials see more hikes needed) and Waller's call to consider 50 bp in December weigh. The dollar index was steady at 103.81.",
+      "url": "https://uk.investing.com/news/commodities-news/gold-rebounds-from-14month-low-as-bargain-hunters-emerge-despite-fed-hike-risks-4992017"
+    },
+    {
+      "date": "2026-11-18",
       "time": "20:12",
       "source": "Investing.com",
       "impact": "med",
@@ -1719,52 +1765,6 @@
       "title": "Tokyo clôture en hausse : le Nikkei 225 gagne 0,40 %; l'or recule de 2,35 % et le WTI de 2,14 %",
       "title_en": "Japan stocks higher at close of trade; Nikkei 225 up 0.40%",
       "url": "https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-040-5034905"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon Reuters, Tesla s'apprête à abandonner son Cybertruck après des années de ventes faibles. L'article n'a pas pu être lu en entier; seul le titre est repris ici. Tesla pèse lourd dans le Nasdaq et le S&P 500.",
-      "summary_en": "According to Reuters, Tesla is set to discontinue its Cybertruck after years of weak sales. The full article could not be read; only the headline is reflected here. Tesla is a heavyweight in the Nasdaq and S&P 500.",
-      "time": "00:36",
-      "title": "Tesla mettra fin au Cybertruck après des années de ventes décevantes",
-      "title_en": "Tesla to pull the plug on Cybertruck after years of poor sales",
-      "url": "https://www.investing.com/news/stock-market-news/tesla-to-pull-the-plug-on-cybertruck-after-years-of-poor-sales-5034756"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Le nouveau président du conseil, Harvey Jones, a affirmé que le conseil avait accepté à l'unanimité la démission de Huang et n'entend pas le réintégrer, malgré l'appui de Trump et d'Elon Musk. La PDG intérimaire Colette Kress a promis de la discipline dans l'engagement du capital; Nvidia prévoit une croissance des ventes d'environ 75 % pour l'exercice 2028 et le titre a gagné plus de 4 % après la clôture. Le scandale avait effacé plus de 700 G$ de capitalisation.",
-      "summary_en": "New board chair Harvey Jones said the board unanimously accepted Huang's resignation and does not intend to reinstate him, despite backing from Trump and Elon Musk. Interim CEO Colette Kress pledged discipline in committing capital; Nvidia forecast fiscal 2028 sales growth of about 75% and shares rose more than 4% after hours. The scandal had wiped more than $700 billion off its market value.",
-      "time": "00:22",
-      "title": "Nvidia : le conseil refuse de réintégrer Jensen Huang; Colette Kress réussit son premier test",
-      "title_en": "'Business as usual': Nvidia's Kress passes first test as board slams door on Huang",
-      "url": "https://www.investing.com/news/stock-market-news/business-as-usual-nvidias-kress-passes-first-test-as-board-slams-door-on-huang-5034739"
-    },
-    {
-      "assets": [
-        "usd",
-        "usdjpy",
-        "audusd"
-      ],
-      "date": "2026-11-17",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "L'indice du dollar gagne 0,2 % à 103,66, après un sommet de 103,78 la veille, son plus haut depuis avril 2025. Le USD/JPY recule à 159,33, près du seuil de 160 qui pourrait provoquer une intervention japonaise, et l'AUD/USD glisse à 0,672, son plus bas depuis janvier. Les marchés anticipent une hausse de 25 points de base en décembre (CME FedWatch), alimentée par des prix à l'importation de +1,1 % et John Williams (Fed de New York) qui juge une hausse probablement nécessaire.",
-      "summary_en": "The dollar index rose 0.2% to 103.66 after hitting 103.78 the day before, its highest since April 2025. USD/JPY eased to 159.33, near the 160 level that could trigger Japanese intervention, while AUD/USD slipped to 0.672, its weakest since January. Markets price a 25 bp Fed hike in December (CME FedWatch), fueled by a 1.1% jump in import prices and New York Fed's John Williams saying another hike is likely needed.",
-      "time": "23:57",
-      "title": "Devises asiatiques calmes : le dollar se maintient près d'un sommet de 19 mois sur les paris de hausse de la Fed",
-      "title_en": "Asia FX subdued as dollar holds near 19-month high on Fed hike bets",
-      "url": "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-19mth-high-on-fed-hike-bets-5034711"
     }
   ],
   "live": {
