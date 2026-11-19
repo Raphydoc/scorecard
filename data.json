@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T10:47:48Z",
+  "updatedAt": "2026-11-19T11:48:21Z",
   "econ": {
     "values": {
       "adp": {
@@ -1131,6 +1131,52 @@
   "news": [
     {
       "date": "2026-11-19",
+      "time": "06:24",
+      "source": "Investing.com",
+      "impact": "high",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "us30"
+      ],
+      "title": "Les contrats à terme de Wall Street grimpent, le Nasdaq bondit de 2 % avant les débuts de la méga-IPO d'Anthropic",
+      "title_en": "Wall Street futures climb, Nasdaq jumps 2% on Anthropic's $1.5 trillion mega IPO",
+      "summary": "Les contrats sur le Nasdaq 100 ont gagné jusqu'à 2 % à 27 730, ceux du S&P 500 1,1 % à 7 422,75 et ceux du Dow 0,7 % à 50 628, alors qu'Anthropic, fixée à 83 $ l'action (environ 81 G$, la plus grosse IPO de l'histoire), débute aujourd'hui au Nasdaq sous le symbole ANT. Les procès-verbaux de la Fed, plus restrictifs, et une hausse de 25 points de base presque certaine en décembre selon CME FedWatch tempèrent l'enthousiasme; Walmart publie ses résultats aujourd'hui.",
+      "summary_en": "Nasdaq 100 futures rose as much as 2% to 27,730, S&P 500 futures gained 1.1% to 7,422.75 and Dow futures 0.7% to 50,628, as Anthropic, priced at $83 a share (about $81 billion, the largest IPO on record), debuts today on Nasdaq under the ticker ANT. Hawkish Fed minutes and a near-certain 25-basis-point December hike per CME FedWatch temper the mood; Walmart reports today.",
+      "url": "https://ca.investing.com/news/stock-market-news/wall-street-futures-climb-ahead-of-anthropics-15-trillion-mega-ipo-4968360"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "05:57",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Les titres de semi-conducteurs s'envolent dans le monde grâce à l'IPO record d'Anthropic",
+      "title_en": "Global chip stocks rally as Anthropic's record IPO boosts confidence in AI trade",
+      "summary": "En préouverture, Micron et SK Hynix gagnaient plus de 5 %, Intel, Applied Materials, Lam Research et Marvell de 4 % à 5 %, AMD 3,4 % et Broadcom 3,2 %; ASML et BE Semiconductor montaient de plus de 4 % en Europe. Anthropic a vendu 980 millions d'actions à 83 $ (environ 81,3 G$, plus 26 G$ en placements privés, dont Nvidia et AMD), ce qui ravive la confiance dans le thème de l'IA après des séances difficiles pour les puces.",
+      "summary_en": "Premarket, Micron and SK Hynix rose more than 5%, Intel, Applied Materials, Lam Research and Marvell 4% to 5%, AMD 3.4% and Broadcom 3.2%; ASML and BE Semiconductor gained more than 4% in Europe. Anthropic sold 980 million shares at $83 (about $81.3 billion, plus $26 billion in private placements including Nvidia and AMD), reviving confidence in the AI trade after a rough stretch for chips.",
+      "url": "https://www.investing.com/news/stock-market-news/global-chip-stocks-rally-as-anthropics-record-ipo-boosts-confidence-in-ai-trade-5038371"
+    },
+    {
+      "date": "2026-11-19",
+      "time": "05:48",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd",
+        "nasdaq"
+      ],
+      "title": "Le bitcoin s'approche de 64 000 $, mais file vers une 7e perte hebdomadaire d'affilée",
+      "title_en": "Bitcoin nears $64,000 as Anthropic's record IPO lifts tech",
+      "summary": "Le bitcoin s'échangeait vers 63 982 $ après avoir glissé près de 62 000 $ pendant la nuit; il reste plus de 7 % sous sa moyenne mobile de 200 semaines et se dirige vers une septième semaine de baisse consécutive. L'élan de la tech lié à l'IPO d'Anthropic aide, mais les procès-verbaux de la Fed évoquant une hausse de plus d'un quart de point pèsent sur les actifs risqués.",
+      "summary_en": "Bitcoin traded near $63,982 after sliding close to $62,000 overnight; it remains more than 7% below its 200-week moving average and is on track for a seventh straight weekly loss. Tech momentum from Anthropic's IPO helps, but Fed minutes flagging a possible hike of more than a quarter point weigh on risk assets.",
+      "url": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech"
+    },
+    {
+      "date": "2026-11-19",
       "time": "05:00",
       "source": "Investing.com",
       "impact": "med",
@@ -1175,22 +1221,6 @@
       "summary": "Le rendement du Bund allemand à 10 ans est stable à 3,372 % après avoir touché mercredi son plus haut en près d'un mois, l'inflation de base de la zone euro étant ressortie plus forte que prévu à 2,6 %. Les investisseurs attendent les discours de la BCE, tandis que le gouverneur Waller de la Fed réclame une « action agressive » contre l'inflation. Le dollar reste à un sommet de 18 mois et le dollar-yen frôle 160.",
       "summary_en": "Germany's 10-year Bund yield was flat at 3.372% after touching a near one-month high on Wednesday, following hotter-than-expected 2.6% euro-zone core inflation. Investors await ECB speeches, while Fed Governor Waller called for 'aggressive action' on inflation. The dollar sits at an 18-month high and USD/JPY is near 160.",
       "url": "https://www.investing.com/news/forex-news/euro-yields-idle-near-1month-peaks-on-hawkish-fed-and-ecb-rhetoric-trap-5037883"
-    },
-    {
-      "date": "2026-11-19",
-      "time": "04:02",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30"
-      ],
-      "title": "Les contrats sur le Nasdaq bondissent de 1,9 % : le prix record de l'IPO d'Anthropic nourrit l'espoir d'un fort début",
-      "title_en": "Nasdaq futures jump 1.9% as Anthropic's record IPO pricing fuels hopes for strong debut",
-      "summary": "Anthropic a fixé le prix de son IPO à 83 $ l'action, au-dessus de la fourchette de 70 à 78 $, levant 81 G$ pour une valorisation d'environ 1 500 G$ (symbole ANT au Nasdaq). Vers 3 h 30 HE, les E-mini Nasdaq gagnaient 1,92 %, le S&P 500 1,12 % et le Dow 0,71 %, après une cinquième baisse d'affilée du S&P 500 mercredi. Les marchés anticipent presque à coup sûr une hausse de 25 points de base de la Fed en décembre; Walmart publie ses résultats avant l'ouverture.",
-      "summary_en": "Anthropic priced its IPO at $83 a share, above its $70-$78 range, raising $81 billion at a valuation of about $1.5 trillion (ticker ANT on Nasdaq). As of 3:30 a.m. ET, Nasdaq E-minis were up 1.92%, S&P 500 E-minis 1.12% and Dow E-minis 0.71%, after the S&P 500's fifth straight daily decline on Wednesday. Traders price near-certainty of a 25-basis-point Fed hike in December; Walmart reports before the open.",
-      "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-jump-as-anthropics-record-ipo-pricing-fuels-hopes-for-strong-debut-5038156"
     },
     {
       "date": "2026-11-19",
@@ -1737,36 +1767,6 @@
       "title": "Explicatif : en quoi consiste le nouveau prêt de 45 milliards € de l'UE à l'Ukraine?",
       "title_en": "Explainer: What is the EU's new €45 billion Ukraine loan plan?",
       "url": "https://www.investing.com/news/stock-market-news/explainerwhat-is-the-eus-new-45-billion-ukraine-loan-plan-5036361"
-    },
-    {
-      "assets": [
-        "usoil",
-        "xauusd"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon une exclusivité de Reuters reprise par Investing.com, Riyad se prépare à ce que sa campagne militaire au Yémen se prolonge bien dans l'année 2027. Un conflit prolongé dans la région maintient une prime de risque géopolitique sur le pétrole et soutient la demande de valeurs refuges. (Article non consultable; résumé fondé sur le titre.)",
-      "summary_en": "According to a Reuters exclusive carried by Investing.com, Riyadh is preparing for its military campaign in Yemen to last well into 2027. A prolonged regional conflict keeps a geopolitical risk premium on oil and supports safe-haven demand. (Article could not be read; summary based on the headline.)",
-      "time": "08:25",
-      "title": "Exclusif : l'Arabie saoudite se prépare à une campagne au Yémen qui durerait bien au-delà de 2027",
-      "title_en": "Exclusive: Saudis preparing for Yemen campaign to last well into 2027",
-      "url": "https://www.investing.com/news/commodities-news/exclusivesaudis-preparing-for-yemen-campaign-to-last-well-into-2027-5035986"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Les investisseurs sont rassurés par le trimestre supérieur aux attentes de Nvidia et le relèvement de ses prévisions, malgré la tourmente qui secoue la haute direction. Cela soutient le Nasdaq et le S&P 500 avant l'ouverture. (Article non consultable; résumé fondé sur le titre.)",
-      "summary_en": "Investors are reassured by Nvidia's better-than-expected quarter and raised outlook, despite the turmoil in its top leadership. This supports the Nasdaq and S&P 500 ahead of the open. (Article could not be read; summary based on the headline.)",
-      "time": "08:18",
-      "title": "Wall Street rassurée par les résultats et les prévisions relevées de Nvidia, malgré la crise à la direction",
-      "title_en": "Wall Street reassured by Nvidia beat and raise despite leadership turmoil",
-      "url": "https://www.investing.com/news/stock-market-news/wall-street-reassured-by-nvidia-beat-and-raise-despite-leadership-turmoil-5036041"
     }
   ],
   "live": {
