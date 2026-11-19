@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T22:37:18Z",
+ "updatedAt": "2026-11-19T22:47:30Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,48 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "17:25",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "spx500"
+   ],
+   "title": "Ross Stores prévoit un ralentissement de la croissance des ventes des Fêtes après un solide 3e trimestre",
+   "title_en": "Ross Stores sees holiday sales growth slowing after strong Q3",
+   "summary": "Le détaillant à rabais Ross Stores a publié un solide troisième trimestre, mais prévoit une croissance plus lente de ses ventes pendant la période des Fêtes. Après Gap plus tôt en soirée, c'est un autre signal de prudence sur la consommation américaine, à surveiller pour le S&P 500.",
+   "summary_en": "Off-price retailer Ross Stores posted a strong third quarter but expects slower sales growth over the holiday period. Following Gap earlier in the evening, it is another cautious signal on U.S. consumer spending, worth watching for the S&P 500.",
+   "url": "https://www.investing.com/news/stock-market-news/ross-stores-sees-holiday-sales-growth-slowing-after-strong-q3-5040226"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "17:12",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usdcad"
+   ],
+   "title": "Le Canada constate peu de mouvement de Washington sur un allègement des tarifs, selon des sources",
+   "title_en": "Canada sees little US movement on tariff relief, sources say",
+   "summary": "Selon des sources citées par Reuters, Ottawa ne voit que peu de progrès du côté américain dans les discussions visant à alléger les tarifs douaniers. L'impasse commerciale demeure un facteur de pression pour le dollar canadien (USD/CAD).",
+   "summary_en": "According to sources cited by Reuters, Ottawa sees little progress from the U.S. side in talks aimed at easing tariffs. The trade stalemate remains a source of pressure on the Canadian dollar (USD/CAD).",
+   "url": "https://www.investing.com/news/commodities-news/canada-sees-little-us-movement-on-tariff-relief-sources-say-5040196"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "17:04",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "Apple développerait un agent IA capable d'utiliser des applications et de naviguer sur le web (Bloomberg)",
+   "title_en": "Apple developing AI agent that could operate apps and browse the web - Bloomberg",
+   "summary": "Selon Bloomberg, Apple travaille sur un agent d'intelligence artificielle qui pourrait faire fonctionner des applications et naviguer sur le web à la place de l'utilisateur. La nouvelle survient alors que le secteur de l'IA est sous pression au Nasdaq.",
+   "summary_en": "According to Bloomberg, Apple is working on an artificial intelligence agent that could operate apps and browse the web on the user's behalf. The report comes as the AI sector is under pressure on the Nasdaq.",
+   "url": "https://www.investing.com/news/stock-market-news/apple-developing-ai-agent-that-could-operate-apps-and-browse-the-web--bloomberg-5040175"
+  },
+  {
+   "date": "2026-11-19",
    "time": "16:24",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1786,51 +1828,6 @@
    "title": "Tencent chute de 6,1 % à son plus bas en 2 ans et demi après des revenus du T3 sous les attentes",
    "title_en": "Tencent shares hit 2-1/2 year low on Q3 earnings miss",
    "url": "https://www.investing.com/news/stock-market-news/tencent-shares-hit-212-yr-low-on-q3-earnings-miss-5037629"
-  },
-  {
-   "assets": [
-    "audusd",
-    "usd"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le taux de chômage australien est passé à 4,9 % en octobre (4,7 % attendu) et l'emploi a reculé de 43 500 postes, alors qu'on prévoyait un gain de 25 500. L'AUD/USD a perdu 0,4 % à 0,6691 et l'ASX 200 0,9 %. Ces données affaiblies freinent les attentes d'un nouveau resserrement de la RBA, qui a relevé son taux à 4,85 % le 4 novembre.",
-   "summary_en": "Australia's jobless rate rose to 4.9% in October (4.7% expected) and employment fell by 43,500 versus a forecast gain of 25,500. AUD/USD slipped 0.4% to 0.6691 and the ASX 200 fell 0.9%. The weak data dampens expectations of further RBA tightening after its hike to 4.85% on Nov. 4.",
-   "time": "20:42",
-   "title": "Australie : le chômage grimpe à 4,9 %, sommet en cinq ans, et 43 500 emplois disparaissent; l'AUD recule",
-   "title_en": "Australia unemployment hits five-year high as jobs plunge 43,500; AUD weakens",
-   "url": "https://ca.investing.com/news/economic-indicators/australia-unemployment-hits-fiveyear-high-as-jobs-plunge-43500-aud-weakens-4968359"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "xagusd"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'or au comptant gagnait 0,8 % à 3 754,85 $ l'once en soirée, après une chute de 3,2 % mercredi vers sa plus faible clôture depuis septembre 2025; l'argent montait de 1,4 % à 45,72 $. Les acheteurs à bon prix reviennent, mais le procès-verbal de la Fed (presque tous les membres jugent d'autres hausses nécessaires) et l'appel de Waller à envisager 50 points de base en décembre pèsent. L'indice du dollar était stable à 103,81.",
-   "summary_en": "Spot gold rose 0.8% to $3,754.85/oz in the evening after a 3.2% drop on Wednesday to its lowest close since September 2025; silver gained 1.4% to $45.72. Bargain hunters returned, but Fed minutes (nearly all officials see more hikes needed) and Waller's call to consider 50 bp in December weigh. The dollar index was steady at 103.81.",
-   "time": "20:32",
-   "title": "L'or rebondit de son plus bas en 14 mois à 3 755 $ malgré le risque de hausses de la Fed",
-   "title_en": "Gold rebounds from 14-month low as bargain hunters emerge despite Fed hike risks",
-   "url": "https://uk.investing.com/news/commodities-news/gold-rebounds-from-14month-low-as-bargain-hunters-emerge-despite-fed-hike-risks-4992017"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Samsung estime que les fournisseurs « néocloud » très endettés, comme CoreWeave, ne représentent qu'environ 8 % du marché et ne menacent pas la croissance de l'IA. Le géant coréen juge le boom des investissements structurel, appuyé par une demande réelle et des contrats à long terme, et s'attend à ce que la pénurie de puces se poursuive. Un message rassurant pour les semi-conducteurs et le Nasdaq, alors que le départ de Jensen Huang chez Nvidia ravive les inquiétudes sur le financement des néoclouds.",
-   "summary_en": "Samsung said highly leveraged neocloud providers such as CoreWeave make up only about 8% of the market and are unlikely to threaten AI growth. The Korean giant called the AI investment boom structural, backed by tangible demand and long-term contracts, and expects the chip shortage to persist. A reassuring message for chipmakers and the Nasdaq as Jensen Huang's exit from Nvidia revives worries over neocloud funding.",
-   "time": "20:12",
-   "title": "Samsung minimise les craintes de bulle de l'IA liées aux « néoclouds »",
-   "title_en": "Samsung Electronics downplays concerns about neocloud firms and AI bubble",
-   "url": "https://www.investing.com/news/stock-market-news/samsung-electronics-downplays-concerns-about-neocloud-firms-and-ai-bubble-5035189"
   }
  ],
  "live": {
