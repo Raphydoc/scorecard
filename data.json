@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T07:10:22Z",
+ "updatedAt": "2026-11-19T07:47:22Z",
  "econ": {
   "values": {
    "adp": {
@@ -1131,6 +1131,40 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "02:00",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usdjpy",
+    "usd",
+    "usoil",
+    "xauusd"
+   ],
+   "title": "Tokyo clôture en hausse : Nikkei 225 +0,88 %, le yen glisse à 159,63 par dollar",
+   "title_en": "Japan stocks close higher: Nikkei 225 up 0.88%, yen slips to 159.63 per dollar",
+   "summary": "Le Nikkei 225 a gagné 0,88 % jeudi, porté par l'immobilier et les banques, malgré 2 209 titres en baisse contre 1 285 en hausse; l'indice de volatilité du Nikkei a reculé de 15,08 % à 32,77. Le USD/JPY monte de 0,17 % à 159,63, tandis que le WTI de janvier gagne 0,13 % à 82,42 $ et l'or de décembre perd 0,10 % à 3 738,17 $.",
+   "summary_en": "The Nikkei 225 rose 0.88% on Thursday, led by real estate and banks, though decliners outnumbered advancers 2,209 to 1,285; the Nikkei Volatility index fell 15.08% to 32.77. USD/JPY rose 0.17% to 159.63, while January WTI gained 0.13% to $82.42 and December gold slipped 0.10% to $3,738.17.",
+   "url": "https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-088-5037902"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "01:29",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "usoil",
+    "xauusd",
+    "spx500"
+   ],
+   "title": "Trump s'entretient séparément avec Poutine et Xi avant leur sommet trilatéral historique",
+   "title_en": "Trump holds talks separately with Putin and Xi ahead of their historic trilateral meeting",
+   "summary": "Selon CNBC, Donald Trump a tenu des rencontres séparées avec Vladimir Poutine et Xi Jinping en Chine, en marge de l'APEC, avant leur première rencontre à trois. Les marchés suivent ce sommet pour ses retombées possibles sur le commerce, l'Iran et le pétrole, ce qui peut influencer le dollar, l'or et le brut.",
+   "summary_en": "According to CNBC, Donald Trump held separate meetings with Vladimir Putin and Xi Jinping in China on the sidelines of APEC ahead of their first three-way meeting. Markets are watching the summit for possible implications for trade, Iran and oil, which can move the dollar, gold and crude.",
+   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html"
+  },
+  {
+   "date": "2026-11-19",
    "time": "01:23",
    "source": "CoinDesk",
    "impact": "med",
@@ -1734,36 +1768,6 @@
    "title": "Bitcoin recule à environ 64 100 $ : le « basis trade » se tarit avant le procès-verbal de la Fed",
    "title_en": "Bitcoin price drops as basis trade dries up and Fed minutes loom",
    "url": "https://www.coindesk.com/markets/2026/11/18/bitcoin-drops-as-nvidia-earnings-report-drives-stock-index-futures-higher"
-  },
-  {
-   "assets": [
-    "spx500",
-    "us30"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Lowe's prévoit maintenant une hausse de 0,5 % de ses ventes comparables pour l'exercice, contre des ventes stables auparavant. Au troisième trimestre, les ventes comparables ont augmenté de 1,8 %, bien au-dessus des 0,4 % attendus selon LSEG, aidées aussi par près de 250 M$ de remboursements de tarifs. Un indicateur suivi de la santé du consommateur et du secteur de l'habitation américain.",
-   "summary_en": "Lowe's now expects 0.5% growth in fiscal-year comparable sales, up from flat previously. Third-quarter comparable sales rose 1.8%, well above the 0.4% expected per LSEG, also helped by nearly $250 million in tariff refunds. A closely watched gauge of the US consumer and housing sector.",
-   "time": "06:09",
-   "title": "Lowe's relève sa prévision de ventes annuelles grâce à la demande en réparations résidentielles",
-   "title_en": "Lowe's raises annual sales forecast betting on home repair demand",
-   "url": "https://www.investing.com/news/stock-market-news/lowes-raises-annual-sales-forecast-5035489"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Selon trois sources de Reuters, le Trésor et le bureau scientifique de la Maison-Blanche ont discuté d'exiger que des entreprises comme Airbnb (qui utilise le modèle Qwen d'Alibaba) publient leur recours à des modèles d'IA chinois, une approche de « name and shame » sans nouvelles restrictions. On ignore si l'idée progresse; les modèles chinois étaient les trois plus utilisés sur OpenRouter en octobre. Un nouveau front de tensions technologiques sino-américaines pour le secteur techno.",
-   "summary_en": "According to three Reuters sources, Treasury and the White House science office have discussed requiring companies such as Airbnb (which uses Alibaba's Qwen model) to disclose their use of Chinese AI models, a 'name and shame' approach without new restrictions. It is unclear whether the idea is gaining traction; Chinese models were the three most used on OpenRouter in October. A new front in US-China tech tensions for the tech sector.",
-   "time": "06:04",
-   "title": "Exclusif : Washington envisage d'obliger les entreprises américaines à divulguer leur usage d'IA chinoise",
-   "title_en": "Exclusive: Trump administration weighs forcing US firms to disclose Chinese AI use",
-   "url": "https://www.investing.com/news/stock-market-news/exclusivetrump-administration-weighs-forcing-us-firms-to-disclose-chinese-ai-use-5035455"
   }
  ],
  "live": {
