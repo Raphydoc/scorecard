@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T22:12:33Z",
+ "updatedAt": "2026-11-19T22:37:18Z",
  "econ": {
   "values": {
    "adp": {
@@ -1075,7 +1075,7 @@
    "epsF": 0.64,
    "id": null,
    "kind": "earn",
-   "move": null,
+   "move": -2,
    "name": "Résultats Walmart (WMT)",
    "note": "Avant l’ouverture",
    "revA": 188.84,
@@ -1102,7 +1102,7 @@
    "epsF": 2.7,
    "id": null,
    "kind": "earn",
-   "move": null,
+   "move": -13,
    "name": "Résultats Intuit (INTU)",
    "note": "Après la clôture",
    "revA": 4.354,
