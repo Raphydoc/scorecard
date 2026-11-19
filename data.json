@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T08:47:35Z",
+ "updatedAt": "2026-11-19T09:47:51Z",
  "econ": {
   "values": {
    "adp": {
@@ -1131,6 +1131,38 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "04:09",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "eurusd",
+    "usd",
+    "usdjpy"
+   ],
+   "title": "Les rendements de la zone euro stagnent près de leurs sommets d'un mois, coincés entre une Fed et une BCE restrictives",
+   "title_en": "Euro yields idle near 1-month peaks on hawkish Fed and ECB rhetoric trap",
+   "summary": "Le rendement du Bund allemand à 10 ans est stable à 3,372 % après avoir touché mercredi son plus haut en près d'un mois, l'inflation de base de la zone euro étant ressortie plus forte que prévu à 2,6 %. Les investisseurs attendent les discours de la BCE, tandis que le gouverneur Waller de la Fed réclame une « action agressive » contre l'inflation. Le dollar reste à un sommet de 18 mois et le dollar-yen frôle 160.",
+   "summary_en": "Germany's 10-year Bund yield was flat at 3.372% after touching a near one-month high on Wednesday, following hotter-than-expected 2.6% euro-zone core inflation. Investors await ECB speeches, while Fed Governor Waller called for 'aggressive action' on inflation. The dollar sits at an 18-month high and USD/JPY is near 160.",
+   "url": "https://www.investing.com/news/forex-news/euro-yields-idle-near-1month-peaks-on-hawkish-fed-and-ecb-rhetoric-trap-5037883"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "04:02",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "Les contrats sur le Nasdaq bondissent de 1,9 % : le prix record de l'IPO d'Anthropic nourrit l'espoir d'un fort début",
+   "title_en": "Nasdaq futures jump 1.9% as Anthropic's record IPO pricing fuels hopes for strong debut",
+   "summary": "Anthropic a fixé le prix de son IPO à 83 $ l'action, au-dessus de la fourchette de 70 à 78 $, levant 81 G$ pour une valorisation d'environ 1 500 G$ (symbole ANT au Nasdaq). Vers 3 h 30 HE, les E-mini Nasdaq gagnaient 1,92 %, le S&P 500 1,12 % et le Dow 0,71 %, après une cinquième baisse d'affilée du S&P 500 mercredi. Les marchés anticipent presque à coup sûr une hausse de 25 points de base de la Fed en décembre; Walmart publie ses résultats avant l'ouverture.",
+   "summary_en": "Anthropic priced its IPO at $83 a share, above its $70-$78 range, raising $81 billion at a valuation of about $1.5 trillion (ticker ANT on Nasdaq). As of 3:30 a.m. ET, Nasdaq E-minis were up 1.92%, S&P 500 E-minis 1.12% and Dow E-minis 0.71%, after the S&P 500's fifth straight daily decline on Wednesday. Traders price near-certainty of a 25-basis-point Fed hike in December; Walmart reports before the open.",
+   "url": "https://www.investing.com/news/stock-market-news/nasdaq-futures-jump-as-anthropics-record-ipo-pricing-fuels-hopes-for-strong-debut-5038156"
+  },
+  {
+   "date": "2026-11-19",
    "time": "03:24",
    "source": "Investing.com",
    "impact": "med",
@@ -1331,22 +1363,6 @@
    "title": "Australie : le chômage grimpe à 4,9 %, sommet en cinq ans, et 43 500 emplois disparaissent; l'AUD recule",
    "title_en": "Australia unemployment hits five-year high as jobs plunge 43,500; AUD weakens",
    "url": "https://ca.investing.com/news/economic-indicators/australia-unemployment-hits-fiveyear-high-as-jobs-plunge-43500-aud-weakens-4968359"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Mercredi soir, les contrats à terme du Nasdaq 100 gagnaient 1,3 % à 27 528,75, ceux du S&P 500 0,8 % et ceux du Dow 0,4 %. Anthropic a fixé son IPO à 83 $ l'action, au-dessus de la fourchette de 70 à 78 $, pour une valorisation d'environ 1 500 G$ et quelque 80 G$ levés; le titre ANT débute jeudi au Nasdaq. Selon CME FedWatch, une hausse de 25 points de base de la Fed en décembre est quasi certaine; Walmart publie ses résultats jeudi.",
-   "summary_en": "On Wednesday evening, Nasdaq 100 futures rose 1.3% to 27,528.75, S&P 500 futures 0.8% and Dow futures 0.4%. Anthropic priced its IPO at $83 a share, above the $70-$78 range, valuing it near $1.5 trillion and raising about $80 billion; ANT debuts Thursday on the Nasdaq. CME FedWatch shows a 25 bp Fed hike in December as near-certain; Walmart reports Thursday.",
-   "time": "20:37",
-   "title": "Les contrats à terme montent avant la méga-IPO d'Anthropic à 1 500 G$ : Nasdaq 100 +1,3 %",
-   "title_en": "Wall Street futures climb ahead of Anthropic's $1.5 trillion mega IPO",
-   "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-climb-ahead-of-anthropics-15-trillion-mega-ipo-5037518"
   },
   {
    "assets": [
@@ -1750,22 +1766,6 @@
    "title": "TJX dépasse les estimations de ventes trimestrielles",
    "title_en": "Off-price retailer TJX beats quarterly sales estimates",
    "url": "https://www.investing.com/news/stock-market-news/offprice-retailer-tjx-beats-quarterly-sales-estimates-5035816"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "xagusd",
-    "usoil"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "UBS prévoit l'or à 4 600 $ l'once en juin 2027 et à 5 000 $ en décembre 2027 (contre environ 3 885 $), l'argent à 60 $ puis 65 $ (contre environ 50 $), et le Brent à 90 $ puis 80 $ (WTI 86 $ puis 76 $). La banque prévient que des rendements réels élevés et un dollar ferme pourraient pousser l'or sous 4 000 $ à court terme, mais mise sur les achats des banques centrales, la demande chinoise et les inquiétudes liées à la dette publique.",
-   "summary_en": "UBS forecasts gold at $4,600/oz by June 2027 and $5,000 by December 2027 (from about $3,885), silver at $60 then $65 (from about $50), and Brent at $90 then $80 (WTI $86 then $76). The bank warns high real yields and a firm dollar could keep gold under pressure near term, but cites central bank buying, Chinese demand and government debt concerns.",
-   "time": "07:21",
-   "title": "UBS voit l'or à 5 000 $ d'ici la fin de 2027 et le Brent revenir à 80 $",
-   "title_en": "UBS sees gold at $5,000 by the end of 2027, Brent easing to $80",
-   "url": "https://www.investing.com/news/commodities-news/ubs-sees-gold-at-5000-by-the-end-of-2027-brent-easing-to-80-5035763"
   }
  ],
  "live": {
