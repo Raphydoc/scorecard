@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T21:47:50Z",
+ "updatedAt": "2026-11-19T22:12:33Z",
  "econ": {
   "values": {
    "adp": {
@@ -33835,8 +33835,78 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-19T17:10:53Z",
+  "asOf": "2026-11-19T22:12:22Z",
   "bankcalls": [
+   {
+    "bank": "Deutsche Bank",
+    "cat": "fx",
+    "market": "EUR/USD",
+    "market_en": "EUR/USD",
+    "dir": "long",
+    "target": "1,15 d’ici fin 2027",
+    "target_en": "1.15 by end-2027",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "date": "2026-11-19",
+    "src": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/19/exceptional-dollar-setup-made-deutsche-bank-change-fx-forecasts.html"
+   },
+   {
+    "bank": "Deutsche Bank",
+    "cat": "fx",
+    "market": "USD/JPY",
+    "market_en": "USD/JPY",
+    "dir": "short",
+    "target": "145 d’ici fin 2027",
+    "target_en": "145 by end-2027",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "date": "2026-11-19",
+    "src": "CNBC",
+    "url": "https://www.cnbc.com/2026/11/19/exceptional-dollar-setup-made-deutsche-bank-change-fx-forecasts.html"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "market_en": "XAU/USD",
+    "dir": "long",
+    "target": "4 650 $ d’ici fin 2027 (plus de 5 600 $ fin 2028)",
+    "target_en": "$4,650 by end-2027 (above $5,600 by end-2028)",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "date": "2026-11-17",
+    "src": "Kitco",
+    "url": "https://kitco.com/news/article/2026-11-17/gold-will-reclaim-5600oz-2028-rate-cuts-bring-western-investors-back"
+   },
+   {
+    "bank": "Morgan Stanley",
+    "cat": "fx",
+    "market": "USD/JPY",
+    "market_en": "USD/JPY",
+    "dir": "long",
+    "target": "162 au T4 2027",
+    "target_en": "162 in Q4 2027",
+    "horizon": "T4 2027",
+    "horizon_en": "Q4 2027",
+    "date": "2026-11-16",
+    "src": "Bloomberg",
+    "url": "https://en.bloomingbit.io/feed/news/124503"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "cat": "fx",
+    "market": "USD/JPY",
+    "market_en": "USD/JPY",
+    "dir": "short",
+    "target": "150 dans 12 mois (158 dans 3 mois, 155 dans 6 mois)",
+    "target_en": "150 in 12 months (158 in 3 months, 155 in 6 months)",
+    "horizon": "12 mois",
+    "horizon_en": "12 months",
+    "date": "2026-11-16",
+    "src": "Bloomberg",
+    "url": "https://en.bloomingbit.io/feed/news/124503"
+   },
    {
     "bank": "UBS",
     "cat": "cmd",
@@ -34060,20 +34130,6 @@
     "target": "1,34 d’ici le T4 2027 (1,39 au T4 2026)",
     "target_en": "1.34 by Q4 2027 (1.39 in Q4 2026)",
     "url": "https://www.scotiabank.com/ca/en/about/economics/economics-publications/post.other-publications.foreign-exchange.foreign-exchange-outlook--november-5--2026-.html"
-   },
-   {
-    "bank": "Goldman Sachs",
-    "cat": "cmd",
-    "date": "2026-11-05",
-    "dir": "long",
-    "horizon": "fin 2026",
-    "horizon_en": "end-2026",
-    "market": "XAU/USD",
-    "market_en": "XAU/USD",
-    "src": "Reuters",
-    "target": "4 150 $ d’ici fin 2026 (4 800 $ fin 2027)",
-    "target_en": "$4,150 by end-2026 ($4,800 end-2027)",
-    "url": "https://www.tradingview.com/news/reuters.com,2026:newsml_L2N46M1RO:0-goldman-sachs-trims-gold-forecasts-as-fed-stays-hawkish/"
    },
    {
     "bank": "ING",
@@ -34510,20 +34566,6 @@
     "url": "https://www.kitco.com/news/article/2026-09-28/gold-and-silver-prices-are-struggling-now-much-higher-long-term-base"
    },
    {
-    "bank": "Goldman Sachs",
-    "cat": "fx",
-    "date": "2026-09-25",
-    "dir": "short",
-    "horizon": "12 mois",
-    "horizon_en": "12 months",
-    "market": "USD/JPY",
-    "market_en": "USD/JPY",
-    "src": "investingLive",
-    "target": "150 dans 12 mois (158 dans 3 mois, 155 dans 6 mois)",
-    "target_en": "150 in 12 months (158 in 3 months, 155 in 6 months)",
-    "url": "https://investinglive.com/forex/goldman-cuts-usd-jpy-forecasts-sees-150-in-a-year-as-boj-tightening-boosts-yen-case/"
-   },
-   {
     "bank": "Bank of America",
     "cat": "rates",
     "date": "2026-09-24",
@@ -34785,39 +34827,76 @@
   "recaps": [
    {
     "date": "2026-11-19",
-    "session": "lon",
-    "title": "Anthropic s’envole de 34 % à ses débuts, mais Wall Street efface ses gains; l’or perd 1,55 %",
-    "title_en": "Anthropic soars 34% in its debut, but Wall Street erases gains; gold sheds 1.55%",
-    "body": "Les contrats à terme sur le Nasdaq ont gagné plus de 2 % avant l’ouverture, portés par l’entrée en Bourse record d’Anthropic (81,3 G$ levés à 83 $ l’action), dont le premier échange s’est fait à 111,50 $ (Yahoo Finance). L’élan s’est toutefois inversé après la cloche : le S&P 500 cédait 1,17 % et le Dow 1,43 % en fin de séance mesurée, AMD chutant jusqu’à 9 % après le rapport d’un vendeur à découvert. Les demandes d’allocations de chômage ont grimpé à 203 000, au-dessus des 197 000 attendus, et les demandes continues ont bondi de 70 000 à 1,763 million (Reuters). L’or a reculé de 1,55 % sous 3 700 $ après le procès-verbal de la Fed, qui pointe vers d’autres hausses de taux, tandis que le pétrole a progressé avec les attaques de pétroliers dans le détroit d’Ormuz.",
-    "body_en": "Nasdaq futures rose more than 2% before the open, lifted by Anthropic’s record IPO ($81.3 billion raised at $83 a share), which first traded at $111.50 (Yahoo Finance). The momentum reversed after the bell, though: the S&P 500 was down 1.17% and the Dow 1.43% at the end of the measured session, with AMD falling as much as 9% after a short-seller report. Initial jobless claims rose to 203,000, above the 197,000 expected, and continuing claims jumped 70,000 to 1.763 million (Reuters). Gold fell 1.55% below $3,700 after Fed minutes pointing to further rate hikes, while oil gained on tanker attacks in the Strait of Hormuz.",
+    "session": "ny",
+    "title": "Wall Street chute de plus de 2 % malgré les débuts d’Anthropic; le bitcoin touche son plus bas depuis juillet",
+    "title_en": "Wall Street drops more than 2% despite Anthropic’s debut; bitcoin hits its lowest since July",
+    "body": "L’entrée en Bourse record d’Anthropic n’a pas ranimé le commerce de l’IA : le titre a ouvert à 111,50 $ et touché 115 $, mais n’a fini que 17,1 % au-dessus de son prix d’émission de 83 $ (Reuters). Le Dow a perdu 1 101 points (-2,19 %) à 49 097, le S&P 500 2,02 % à 7 176, pour une sixième baisse d’affilée, et le Nasdaq 2,25 %, Nvidia reculant de 3,3 % et AMD de 7,7 % après une position vendeur de Hunterbrook. Les paris sur une hausse de taux de la Fed en décembre (96,4 % pour 25 pb selon CME FedWatch, d’après Reuters) ont aussi poussé l’or à son plus bas depuis septembre 2025 et le bitcoin sous 62 000 $. Le rendement du 10 ans a toutefois reculé à 5,05 % (AP), les investisseurs cherchant la sécurité.",
+    "body_en": "Anthropic’s record IPO failed to revive the AI trade: the stock opened at $111.50 and hit $115, but ended only 17.1% above its $83 offer price (Reuters). The Dow lost 1,101 points (-2.19%) to 49,097, the S&P 500 fell 2.02% to 7,176 for a sixth straight decline, and the Nasdaq dropped 2.25%, with Nvidia down 3.3% and AMD down 7.7% after a Hunterbrook short position. Bets on a December Fed rate hike (96.4% for 25 bp per CME FedWatch, according to Reuters) also pushed gold to its lowest since September 2025 and bitcoin below $62,000. The 10-year yield eased to 5.05% (AP), however, as investors sought safety.",
     "sections": {
      "indices": {
-      "fr": "Depuis l’ouverture de 9 h 30, le Nasdaq 100 perdait 1,48 %, le Dow 1,43 %, le S&P 500 1,17 % et le Russell 2000 0,88 %, malgré l’action d’Anthropic, qui s’échangeait vers 102 $ (+23 % sur le prix d’émission).",
-      "en": "From the 9:30 a.m. open, the Nasdaq 100 was down 1.48%, the Dow 1.43%, the S&P 500 1.17% and the Russell 2000 0.88%, despite Anthropic shares trading around $102 (+23% above the IPO price)."
+      "fr": "Depuis l’ouverture de 9 h 30, le Nasdaq 100 a perdu 3,77 %, le S&P 500 2,86 %, le Dow 2,62 % et le Russell 2000 2,36 %; plus de 90 % des titres du S&P 500 ont reculé (AP), alors que Palo Alto Networks gagnait 6,4 % (Reuters).",
+      "en": "From the 9:30 a.m. open, the Nasdaq 100 lost 3.77%, the S&P 500 2.86%, the Dow 2.62% and the Russell 2000 2.36%; more than 90% of S&P 500 stocks fell (AP), while Palo Alto Networks gained 6.4% (Reuters)."
      },
      "metals": {
-      "fr": "L’or a perdu 1,55 % à environ 3 680 $ après un creux de 3 671 $, les membres de la Fed jugeant presque tous de nouvelles hausses nécessaires; l’argent a cédé 1,77 % à 44,49 $.",
-      "en": "Gold lost 1.55% to around $3,680 after a low of $3,671, as nearly all Fed officials saw further hikes as needed; silver fell 1.77% to $44.49."
+      "fr": "L’or a cédé 1,45 % vers 3 662 $, son plus bas niveau depuis septembre 2025 (CoinDesk), et l’argent a chuté de 2,84 % à 43,83 $, pénalisés par un dollar ferme et les attentes d’une Fed plus restrictive (Reuters via Kitco).",
+      "en": "Gold fell 1.45% to around $3,662, its lowest since September 2025 (CoinDesk), and silver slumped 2.84% to $43.83, hurt by a firm dollar and expectations of a tighter Fed (Reuters via Kitco)."
      },
      "forex": {
-      "fr": "L’indice dollar a gagné 0,04 %; l’EUR/USD a terminé inchangé après avoir franchi brièvement 1,10, l’USD/JPY a pris 0,07 % près de 160 (sommet de 159,97), l’USD/CAD a reculé de 0,10 % et le GBP/USD de 0,30 %.",
-      "en": "The dollar index gained 0.04%; EUR/USD ended flat after briefly topping 1.10, USD/JPY rose 0.07% near 160 (high of 159.97), USD/CAD fell 0.10% and GBP/USD 0.30%."
+      "fr": "L’indice dollar a gagné 0,22 % à 103,89; l’EUR/USD a reculé de 0,21 % à 1,0979, l’USD/JPY de 0,13 % à 159,67, et l’USD/CAD a monté de 0,35 % à 1,4346.",
+      "en": "The dollar index rose 0.22% to 103.89; EUR/USD fell 0.21% to 1.0979, USD/JPY slipped 0.13% to 159.67, and USD/CAD climbed 0.35% to 1.4346."
      },
      "crypto": {
-      "fr": "Le bitcoin a reculé de 0,97 %, autour de 63 000 $, avec le recul des actifs à risque.",
-      "en": "Bitcoin fell 0.97% to around $63,000 as risk assets retreated."
+      "fr": "Le bitcoin a perdu 3,01 % à environ 62 050 $ après un creux de 61 800 $, son plus bas depuis le début de juillet, en suivant la chute des actions et les craintes de hausses de taux (CoinDesk).",
+      "en": "Bitcoin lost 3.01% to around $62,050 after a low of $61,800, its lowest since early July, tracking the stock sell-off and rate-hike fears (CoinDesk)."
      },
      "energy": {
-      "fr": "Le WTI a gagné 1,42 % à 83,34 $ : l’Iran a signalé trois pétroliers mis hors d’usage par des mines à l’est d’Ormuz, ce qui a compensé la hausse de 3,4 millions de barils des stocks américains.",
-      "en": "WTI gained 1.42% to $83.34: Iran reported three tankers disabled by mines east of Hormuz, offsetting a 3.4-million-barrel rise in U.S. crude inventories."
+      "fr": "Le WTI a terminé la séance quasi stable (-0,19 %, vers 83,08 $), entre 82,29 $ et 83,91 $, les risques pour la navigation dans le détroit d’Ormuz contrebalançant les perspectives de surplus.",
+      "en": "WTI ended the session nearly flat (-0.19%, around $83.08), between $82.29 and $83.91, as shipping risks in the Strait of Hormuz offset the supply-surplus outlook."
      }
     },
+    "sources": [
+     "https://www.investing.com/news/stock-market-news/wall-street-ends-sharply-lower-asanthropics-debut-fails-to-revive-ai-fervor-5040108",
+     "https://www.nbcchicago.com/news/national-international/wall-street-longest-losing-streak-since-2024/4019129/",
+     "https://www.kitco.com/news/off-the-wire/2026-11-19/gold-recoups-14-month-low-tighter-fed-outlook-caps-gains",
+     "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech",
+     "https://www.aa.com.tr/en/energy/oil/oil-prices-rise-on-hormuz-shipping-risks-as-surplus-outlook-caps-gains/61115"
+    ]
+   },
+   {
+    "body": "Les contrats à terme sur le Nasdaq ont gagné plus de 2 % avant l’ouverture, portés par l’entrée en Bourse record d’Anthropic (81,3 G$ levés à 83 $ l’action), dont le premier échange s’est fait à 111,50 $ (Yahoo Finance). L’élan s’est toutefois inversé après la cloche : le S&P 500 cédait 1,17 % et le Dow 1,43 % en fin de séance mesurée, AMD chutant jusqu’à 9 % après le rapport d’un vendeur à découvert. Les demandes d’allocations de chômage ont grimpé à 203 000, au-dessus des 197 000 attendus, et les demandes continues ont bondi de 70 000 à 1,763 million (Reuters). L’or a reculé de 1,55 % sous 3 700 $ après le procès-verbal de la Fed, qui pointe vers d’autres hausses de taux, tandis que le pétrole a progressé avec les attaques de pétroliers dans le détroit d’Ormuz.",
+    "body_en": "Nasdaq futures rose more than 2% before the open, lifted by Anthropic’s record IPO ($81.3 billion raised at $83 a share), which first traded at $111.50 (Yahoo Finance). The momentum reversed after the bell, though: the S&P 500 was down 1.17% and the Dow 1.43% at the end of the measured session, with AMD falling as much as 9% after a short-seller report. Initial jobless claims rose to 203,000, above the 197,000 expected, and continuing claims jumped 70,000 to 1.763 million (Reuters). Gold fell 1.55% below $3,700 after Fed minutes pointing to further rate hikes, while oil gained on tanker attacks in the Strait of Hormuz.",
+    "date": "2026-11-19",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin fell 0.97% to around $63,000 as risk assets retreated.",
+      "fr": "Le bitcoin a reculé de 0,97 %, autour de 63 000 $, avec le recul des actifs à risque."
+     },
+     "energy": {
+      "en": "WTI gained 1.42% to $83.34: Iran reported three tankers disabled by mines east of Hormuz, offsetting a 3.4-million-barrel rise in U.S. crude inventories.",
+      "fr": "Le WTI a gagné 1,42 % à 83,34 $ : l’Iran a signalé trois pétroliers mis hors d’usage par des mines à l’est d’Ormuz, ce qui a compensé la hausse de 3,4 millions de barils des stocks américains."
+     },
+     "forex": {
+      "en": "The dollar index gained 0.04%; EUR/USD ended flat after briefly topping 1.10, USD/JPY rose 0.07% near 160 (high of 159.97), USD/CAD fell 0.10% and GBP/USD 0.30%.",
+      "fr": "L’indice dollar a gagné 0,04 %; l’EUR/USD a terminé inchangé après avoir franchi brièvement 1,10, l’USD/JPY a pris 0,07 % près de 160 (sommet de 159,97), l’USD/CAD a reculé de 0,10 % et le GBP/USD de 0,30 %."
+     },
+     "indices": {
+      "en": "From the 9:30 a.m. open, the Nasdaq 100 was down 1.48%, the Dow 1.43%, the S&P 500 1.17% and the Russell 2000 0.88%, despite Anthropic shares trading around $102 (+23% above the IPO price).",
+      "fr": "Depuis l’ouverture de 9 h 30, le Nasdaq 100 perdait 1,48 %, le Dow 1,43 %, le S&P 500 1,17 % et le Russell 2000 0,88 %, malgré l’action d’Anthropic, qui s’échangeait vers 102 $ (+23 % sur le prix d’émission)."
+     },
+     "metals": {
+      "en": "Gold lost 1.55% to around $3,680 after a low of $3,671, as nearly all Fed officials saw further hikes as needed; silver fell 1.77% to $44.49.",
+      "fr": "L’or a perdu 1,55 % à environ 3 680 $ après un creux de 3 671 $, les membres de la Fed jugeant presque tous de nouvelles hausses nécessaires; l’argent a cédé 1,77 % à 44,49 $."
+     }
+    },
+    "session": "lon",
     "sources": [
      "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html",
      "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-jump-anthropics-record-090243474.html",
      "https://www.investing.com/news/economy-news/us-weekly-jobless-claims-increase-slightly-5039110",
      "https://finance.yahoo.com/news/oil-prices-steady-supply-surplus-024608326.html"
-    ]
+    ],
+    "title": "Anthropic s’envole de 34 % à ses débuts, mais Wall Street efface ses gains; l’or perd 1,55 %",
+    "title_en": "Anthropic soars 34% in its debut, but Wall Street erases gains; gold sheds 1.55%"
    },
    {
     "body": "Les Bourses asiatiques ont surtout reculé pendant la séance de Tokyo : selon AP, le Hang Seng perdait 1,9 %, le Taiex 3,1 % et l’ASX 200 1,1 % en cours de séance, tandis que le Nikkei oscillait autour de l’équilibre avant les débuts en Bourse d’Anthropic, dont l’action a été fixée à 83 $. Les contrats à terme sur le Nasdaq ont gagné jusqu’à 1 % (Reuters). L’or a touché 3 693,13 $ l’once, son plus bas depuis septembre 2025, les marchés accordant 90 % de chances à une hausse d’un quart de point de la Fed en décembre (CME FedWatch, via Reuters). Le dollar australien a reculé de 0,31 % après un deuxième mois de baisse de l’emploi en Australie, le chômage atteignant un sommet de cinq ans.",
@@ -35509,6 +35588,39 @@
    }
   ],
   "research": [
+   {
+    "bank": "Deutsche Bank",
+    "date": "2026-11-19",
+    "topic": "FX",
+    "topic_en": "FX",
+    "title": "Deutsche Bank relève ses prévisions pour le dollar devant un contexte « exceptionnel »",
+    "title_en": "Deutsche Bank raises its dollar forecasts amid an “exceptional” setup",
+    "summary": "Deutsche Bank voit le dollar se raffermir au premier semestre 2027 puis s’affaiblir modestement, avec l’euro à 1,15 $ et le dollar à 145 yens à la fin de 2027. L’essor de l’IA a fait monter les taux réels américains et attiré d’importants flux vers les actions.",
+    "summary_en": "Deutsche Bank sees the dollar strengthening in the first half of 2027 before weakening modestly, with the euro at $1.15 and the dollar at 145 yen at end-2027. The AI boom lifted US real rates and drew large equity inflows.",
+    "url": "https://www.cnbc.com/2026/11/19/exceptional-dollar-setup-made-deutsche-bank-change-fx-forecasts.html"
+   },
+   {
+    "bank": "Goldman Sachs",
+    "date": "2026-11-17",
+    "topic": "OR",
+    "topic_en": "GOLD",
+    "title": "Goldman voit l’or retrouver 5 600 $ à la fin de 2028, 4 650 $ à la fin de 2027",
+    "title_en": "Goldman sees gold back at $5,600 by end-2028, $4,650 at end-2027",
+    "summary": "Pour Goldman, « 2027 ressemble de plus en plus à 2022 » : les hausses de la Fed pèsent sur la demande privée, tandis que les achats des banques centrales offrent un plancher. Le retour au sommet dépend d’un cycle de baisses de taux prévu entre novembre 2027 et septembre 2028.",
+    "summary_en": "Goldman says “2027 increasingly looks like 2022”: Fed hikes weigh on private demand while central-bank buying provides a floor. A return to record highs hinges on a rate-cutting cycle expected between November 2027 and September 2028.",
+    "url": "https://kitco.com/news/article/2026-11-17/gold-will-reclaim-5600oz-2028-rate-cuts-bring-western-investors-back"
+   },
+   {
+    "bank": "Morgan Stanley",
+    "date": "2026-11-16",
+    "topic": "FX",
+    "topic_en": "FX",
+    "title": "Morgan Stanley voit le yen s’affaiblir à 162 par dollar au T4 2027",
+    "title_en": "Morgan Stanley sees the yen weakening to 162 per dollar in Q4 2027",
+    "summary": "Morgan Stanley s’attend à ce que le yen reste sous pression même si l’écart de taux entre les États-Unis et le Japon se resserre, en raison de l’appétit pour le risque et du carry trade; Goldman voit au contraire l’USD/JPY à 150 dans un an (Bloomberg).",
+    "summary_en": "Morgan Stanley expects the yen to stay under pressure even as the US-Japan rate gap narrows, due to risk appetite and carry trades; Goldman instead sees USD/JPY at 150 in a year (Bloomberg).",
+    "url": "https://en.bloomingbit.io/feed/news/124503"
+   },
    {
     "bank": "UBS",
     "date": "2026-11-18",
