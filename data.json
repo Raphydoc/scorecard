@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-19T04:48:16Z",
+  "updatedAt": "2026-11-19T05:47:31Z",
   "econ": {
     "values": {
       "adp": {
@@ -1131,6 +1131,37 @@
   "news": [
     {
       "date": "2026-11-18",
+      "time": "23:46",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Hyperscale Data, ex-mineur qui a vendu ses derniers bitcoins, craint de manquer d'argent pour un contrat IA de 1,2 G$",
+      "title_en": "Bitcoin miner that sold its last BTC warns it may run short of cash for $1.2 billion AI deal",
+      "summary": "Hyperscale Data (GPUS) a vendu ses 211 derniers BTC pour environ 16 M$ (environ 1 113 BTC vendus depuis fin juillet) et doit trouver encore 74,8 M$ d'ici mars pour son centre de données IA au Michigan. Avec 17 M$ de liquidités contre 231 M$ de passifs courants, la direction évoque un « doute substantiel » sur sa continuité. Illustre la pression vendeuse des mineurs qui se tournent vers l'IA alors que le bitcoin est faible.",
+      "summary_en": "Hyperscale Data (GPUS) sold its last 211 BTC for about $16M (roughly 1,113 BTC sold since late July) and still needs $74.8M by March for its Michigan AI data center. With $17M of unrestricted cash against $231M of current liabilities, management flagged 'substantial doubt' about continuing as a going concern. It highlights selling pressure from miners pivoting to AI while bitcoin is weak.",
+      "url": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal"
+    },
+    {
+      "date": "2026-11-18",
+      "time": "23:35",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "audusd",
+        "usdjpy"
+      ],
+      "title": "L'Asie recule, Taïwan chute de 3,9 % : les craintes sur l'IA éclipsent l'IPO record d'Anthropic",
+      "title_en": "Asia stocks slide as Taiwan drops 4%, AI jitters blunt Anthropic IPO optimism",
+      "summary": "L'indice de Taïwan perd 3,9 % et le Hang Seng 1,9 % (TSMC -2,76 %, Tencent -6,4 %), tandis que le Nikkei gagne 0,3 % à 59 192 et l'ASX 200 cède 1,08 % après un chômage australien à 4,9 %. Les contrats à terme du Nasdaq 100 (+0,7 %) et du S&P 500 (+0,4 %) montent avant les débuts d'Anthropic (83 $ l'action, 81,31 G$ levés), mais Nvidia a clôturé en baisse de 2,9 % malgré de bons résultats. Les marchés évaluent à 90 % la probabilité d'une hausse de taux de la Fed en décembre.",
+      "summary_en": "Taiwan fell 3.9% and the Hang Seng 1.9% (TSMC -2.76%, Tencent -6.4%), while the Nikkei rose 0.3% to 59,192 and the ASX 200 lost 1.08% after Australian unemployment hit 4.9%. Nasdaq 100 (+0.7%) and S&P 500 (+0.4%) futures rose ahead of Anthropic's debut ($83 a share, $81.31B raised), but Nvidia closed 2.9% lower despite strong results. Traders price a 90% chance of a Fed rate hike in December.",
+      "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-as-taiwan-drops-4-ai-jitters-blunt-anthropic-ipo-optimism-5037723"
+    },
+    {
+      "date": "2026-11-18",
       "time": "23:15",
       "source": "Investing.com",
       "impact": "med",
@@ -1732,39 +1763,6 @@
       "title": "Les contrats à terme du Nasdaq bondissent de 1,2 % grâce aux prévisions de Nvidia, avant le prix de l'IPO d'Anthropic",
       "title_en": "Nasdaq futures jump as Nvidia forecast lifts AI trade ahead of Anthropic pricing",
       "url": "https://www.investing.com/news/economy-news/nasdaq-futures-jump-as-nvidia-forecast-lifts-ai-trade-ahead-of-anthropic-pricing-5035347"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "L'IPO d'Anthropic, attendue jeudi, viserait une valorisation allant jusqu'à 1 400 G$. Vanda Research prévoit environ 250 M$ d'achats nets des particuliers, près du double du record de 118 M$ de SpaceX, et au moins 11 FNB à levier sur ce titre sont en préparation. Le contexte reste fragile : les hyperscalers et autres titres liés à l'IA ont subi de lourdes pertes ces dernières semaines.",
-      "summary_en": "Anthropic's IPO, expected Thursday, reportedly targets a valuation of up to $1.4 trillion. Vanda Research expects about $250 million in net retail buying, roughly double SpaceX's record $118 million, and at least 11 leveraged single-stock ETFs are being prepared. The backdrop is fragile, with hyperscalers and other AI-linked stocks suffering steep losses in recent weeks.",
-      "time": "05:07",
-      "title": "Wall Street se prépare à la frénésie de l'IPO d'Anthropic malgré le recul des titres de l'IA",
-      "title_en": "Wall Street prepares for Anthropic IPO frenzy, despite broader AI stock slump",
-      "url": "https://www.investing.com/news/stock-market-news/wall-street-prepares-for-anthropic-ipo-frenzy-despite-broader-ai-stock-slump-5035325"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "xauusd",
-        "usdjpy"
-      ],
-      "date": "2026-11-18",
-      "impact": "med",
-      "source": "CNBC",
-      "summary": "Les rendements des obligations du Trésor américain sont stables mercredi matin, les investisseurs attendant la publication du procès-verbal de la dernière réunion du FOMC, plus tard aujourd'hui. Le document sera scruté pour mesurer l'appétit des responsables de la Fed pour des hausses de taux, un facteur clé pour le dollar, l'or et les actions.",
-      "summary_en": "U.S. Treasury yields are steady Wednesday morning as investors await the release of the minutes from the latest FOMC meeting later today. The document will be scrutinized for Fed officials' appetite for rate hikes, a key driver for the dollar, gold and equities.",
-      "time": "04:32",
-      "title": "Les rendements du Trésor américain restent stables en attendant le procès-verbal de la Fed",
-      "title_en": "Treasury yields hold steady as investors look ahead to Fed minutes",
-      "url": "https://www.cnbc.com/2026/11/18/treasury-yields-bonds-fed.html"
     }
   ],
   "live": {
