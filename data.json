@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T20:47:57Z",
+ "updatedAt": "2026-11-19T21:37:42Z",
  "econ": {
   "values": {
    "adp": {
@@ -1098,15 +1098,15 @@
     "spx500": 1
    },
    "date": "2026-11-19",
-   "epsA": null,
-   "epsF": 2.47,
+   "epsA": 2.91,
+   "epsF": 2.7,
    "id": null,
    "kind": "earn",
    "move": null,
    "name": "Résultats Intuit (INTU)",
    "note": "Après la clôture",
-   "revA": null,
-   "revF": 4.3,
+   "revA": 4.354,
+   "revF": 4.31,
    "time": "16:05"
   },
   {
@@ -1119,21 +1119,21 @@
    "time": "10:00"
   },
   {
-   "date": "2026-11-24",
-   "time": "16:05",
-   "id": null,
-   "kind": "earn",
    "ai": true,
    "assets": {
     "spx500": 1
    },
+   "date": "2026-11-24",
+   "epsA": null,
+   "epsF": 6.41,
+   "id": null,
+   "kind": "earn",
+   "move": null,
    "name": "Résultats Dell (DELL)",
    "note": "Après la clôture",
-   "epsF": 6.41,
-   "epsA": null,
-   "revF": 49.2,
    "revA": null,
-   "move": null
+   "revF": 49.2,
+   "time": "16:05"
   },
   {
    "ai": false,
