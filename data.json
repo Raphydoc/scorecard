@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T16:48:00Z",
+ "updatedAt": "2026-11-19T17:11:05Z",
  "econ": {
   "values": {
    "adp": {
@@ -33845,7 +33845,7 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-19T07:10:11Z",
+  "asOf": "2026-11-19T17:10:53Z",
   "bankcalls": [
    {
     "bank": "UBS",
@@ -34795,40 +34795,76 @@
   "recaps": [
    {
     "date": "2026-11-19",
-    "session": "tok",
-    "title": "L’or glisse sous 3 700 $ en séance, l’Asie recule avant les débuts d’Anthropic",
-    "title_en": "Gold dips below $3,700 intraday as Asia slips ahead of Anthropic’s debut",
-    "body": "Les Bourses asiatiques ont surtout reculé pendant la séance de Tokyo : selon AP, le Hang Seng perdait 1,9 %, le Taiex 3,1 % et l’ASX 200 1,1 % en cours de séance, tandis que le Nikkei oscillait autour de l’équilibre avant les débuts en Bourse d’Anthropic, dont l’action a été fixée à 83 $. Les contrats à terme sur le Nasdaq ont gagné jusqu’à 1 % (Reuters). L’or a touché 3 693,13 $ l’once, son plus bas depuis septembre 2025, les marchés accordant 90 % de chances à une hausse d’un quart de point de la Fed en décembre (CME FedWatch, via Reuters). Le dollar australien a reculé de 0,31 % après un deuxième mois de baisse de l’emploi en Australie, le chômage atteignant un sommet de cinq ans.",
-    "body_en": "Asian stock markets mostly fell during the Tokyo session: according to AP, the Hang Seng was down 1.9%, the Taiex 3.1% and the ASX 200 1.1% intraday, while the Nikkei hovered near flat ahead of Anthropic’s market debut, priced at $83 a share. Nasdaq futures rose as much as 1% (Reuters). Gold touched $3,693.13 an ounce, its lowest since September 2025, as markets priced a 90% chance of a quarter-point Fed hike in December (CME FedWatch, via Reuters). The Australian dollar fell 0.31% after a second straight monthly drop in Australian employment pushed the jobless rate to a five-year high.",
+    "session": "lon",
+    "title": "Anthropic s’envole de 34 % à ses débuts, mais Wall Street efface ses gains; l’or perd 1,55 %",
+    "title_en": "Anthropic soars 34% in its debut, but Wall Street erases gains; gold sheds 1.55%",
+    "body": "Les contrats à terme sur le Nasdaq ont gagné plus de 2 % avant l’ouverture, portés par l’entrée en Bourse record d’Anthropic (81,3 G$ levés à 83 $ l’action), dont le premier échange s’est fait à 111,50 $ (Yahoo Finance). L’élan s’est toutefois inversé après la cloche : le S&P 500 cédait 1,17 % et le Dow 1,43 % en fin de séance mesurée, AMD chutant jusqu’à 9 % après le rapport d’un vendeur à découvert. Les demandes d’allocations de chômage ont grimpé à 203 000, au-dessus des 197 000 attendus, et les demandes continues ont bondi de 70 000 à 1,763 million (Reuters). L’or a reculé de 1,55 % sous 3 700 $ après le procès-verbal de la Fed, qui pointe vers d’autres hausses de taux, tandis que le pétrole a progressé avec les attaques de pétroliers dans le détroit d’Ormuz.",
+    "body_en": "Nasdaq futures rose more than 2% before the open, lifted by Anthropic’s record IPO ($81.3 billion raised at $83 a share), which first traded at $111.50 (Yahoo Finance). The momentum reversed after the bell, though: the S&P 500 was down 1.17% and the Dow 1.43% at the end of the measured session, with AMD falling as much as 9% after a short-seller report. Initial jobless claims rose to 203,000, above the 197,000 expected, and continuing claims jumped 70,000 to 1.763 million (Reuters). Gold fell 1.55% below $3,700 after Fed minutes pointing to further rate hikes, while oil gained on tanker attacks in the Strait of Hormuz.",
     "sections": {
      "indices": {
-      "fr": "Asie en baisse (Hang Seng −1,9 %, Taiex −3,1 %, ASX 200 −1,1 % en cours de séance selon AP); le Nikkei a cédé 0,3 % à 58 850,70 en début de séance, plombé par les minières de métaux, alors que les contrats à terme sur le Nasdaq montaient jusqu’à 1 %.",
-      "en": "Asia lower (Hang Seng −1.9%, Taiex −3.1%, ASX 200 −1.1% intraday per AP); the Nikkei slipped 0.3% to 58,850.70 early, weighed by metal miners, while Nasdaq futures rose as much as 1%."
+      "fr": "Depuis l’ouverture de 9 h 30, le Nasdaq 100 perdait 1,48 %, le Dow 1,43 %, le S&P 500 1,17 % et le Russell 2000 0,88 %, malgré l’action d’Anthropic, qui s’échangeait vers 102 $ (+23 % sur le prix d’émission).",
+      "en": "From the 9:30 a.m. open, the Nasdaq 100 was down 1.48%, the Dow 1.43%, the S&P 500 1.17% and the Russell 2000 0.88%, despite Anthropic shares trading around $102 (+23% above the IPO price)."
      },
      "metals": {
-      "fr": "L’or a perdu 0,16 % sur la séance mesurée après un creux de 3 693,13 $, son plus bas en 14 mois, sous l’effet du dollar fort et des paris de hausse de la Fed; l’argent a cédé 0,20 %.",
-      "en": "Gold lost 0.16% over the measured session after a low of $3,693.13, a 14-month trough, on a strong dollar and Fed hike bets; silver eased 0.20%."
+      "fr": "L’or a perdu 1,55 % à environ 3 680 $ après un creux de 3 671 $, les membres de la Fed jugeant presque tous de nouvelles hausses nécessaires; l’argent a cédé 1,77 % à 44,49 $.",
+      "en": "Gold lost 1.55% to around $3,680 after a low of $3,671, as nearly all Fed officials saw further hikes as needed; silver fell 1.77% to $44.49."
      },
      "forex": {
-      "fr": "L’indice dollar a gagné 0,08 % près de son sommet depuis avril 2025; EUR/USD −0,03 %, USD/JPY +0,07 % autour de 159,4, USD/CAD +0,03 %, et l’AUD/USD −0,31 % à un creux de 10 mois après l’emploi australien.",
-      "en": "The dollar index rose 0.08% near its highest since April 2025; EUR/USD −0.03%, USD/JPY +0.07% around 159.4, USD/CAD +0.03%, and AUD/USD −0.31% to a 10-month low after Australian jobs data."
+      "fr": "L’indice dollar a gagné 0,04 %; l’EUR/USD a terminé inchangé après avoir franchi brièvement 1,10, l’USD/JPY a pris 0,07 % près de 160 (sommet de 159,97), l’USD/CAD a reculé de 0,10 % et le GBP/USD de 0,30 %.",
+      "en": "The dollar index gained 0.04%; EUR/USD ended flat after briefly topping 1.10, USD/JPY rose 0.07% near 160 (high of 159.97), USD/CAD fell 0.10% and GBP/USD 0.30%."
      },
      "crypto": {
-      "fr": "Le bitcoin a gagné 0,74 % sur la séance mesurée, autour de 63 400 $.",
-      "en": "Bitcoin rose 0.74% over the measured session, to around $63,400."
+      "fr": "Le bitcoin a reculé de 0,97 %, autour de 63 000 $, avec le recul des actifs à risque.",
+      "en": "Bitcoin fell 0.97% to around $63,000 as risk assets retreated."
      },
      "energy": {
-      "fr": "Le WTI a gagné 0,27 % sur la séance mesurée, autour de 82 $, tandis que le Brent restait sous 92 $ et en voie d’une troisième baisse hebdomadaire (Reuters).",
-      "en": "WTI rose 0.27% over the measured session, around $82, while Brent held below $92 and headed for a third weekly decline (Reuters)."
+      "fr": "Le WTI a gagné 1,42 % à 83,34 $ : l’Iran a signalé trois pétroliers mis hors d’usage par des mines à l’est d’Ormuz, ce qui a compensé la hausse de 3,4 millions de barils des stocks américains.",
+      "en": "WTI gained 1.42% to $83.34: Iran reported three tankers disabled by mines east of Hormuz, offsetting a 3.4-million-barrel rise in U.S. crude inventories."
      }
     },
+    "sources": [
+     "https://finance.yahoo.com/markets/live/stock-market-today-thursday-november-19-dow-sp-500-nasdaq-anthropic-ipo-live-141306032.html",
+     "https://finance.yahoo.com/markets/stocks/articles/nasdaq-futures-jump-anthropics-record-090243474.html",
+     "https://www.investing.com/news/economy-news/us-weekly-jobless-claims-increase-slightly-5039110",
+     "https://finance.yahoo.com/news/oil-prices-steady-supply-surplus-024608326.html"
+    ]
+   },
+   {
+    "body": "Les Bourses asiatiques ont surtout reculé pendant la séance de Tokyo : selon AP, le Hang Seng perdait 1,9 %, le Taiex 3,1 % et l’ASX 200 1,1 % en cours de séance, tandis que le Nikkei oscillait autour de l’équilibre avant les débuts en Bourse d’Anthropic, dont l’action a été fixée à 83 $. Les contrats à terme sur le Nasdaq ont gagné jusqu’à 1 % (Reuters). L’or a touché 3 693,13 $ l’once, son plus bas depuis septembre 2025, les marchés accordant 90 % de chances à une hausse d’un quart de point de la Fed en décembre (CME FedWatch, via Reuters). Le dollar australien a reculé de 0,31 % après un deuxième mois de baisse de l’emploi en Australie, le chômage atteignant un sommet de cinq ans.",
+    "body_en": "Asian stock markets mostly fell during the Tokyo session: according to AP, the Hang Seng was down 1.9%, the Taiex 3.1% and the ASX 200 1.1% intraday, while the Nikkei hovered near flat ahead of Anthropic’s market debut, priced at $83 a share. Nasdaq futures rose as much as 1% (Reuters). Gold touched $3,693.13 an ounce, its lowest since September 2025, as markets priced a 90% chance of a quarter-point Fed hike in December (CME FedWatch, via Reuters). The Australian dollar fell 0.31% after a second straight monthly drop in Australian employment pushed the jobless rate to a five-year high.",
+    "date": "2026-11-19",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin rose 0.74% over the measured session, to around $63,400.",
+      "fr": "Le bitcoin a gagné 0,74 % sur la séance mesurée, autour de 63 400 $."
+     },
+     "energy": {
+      "en": "WTI rose 0.27% over the measured session, around $82, while Brent held below $92 and headed for a third weekly decline (Reuters).",
+      "fr": "Le WTI a gagné 0,27 % sur la séance mesurée, autour de 82 $, tandis que le Brent restait sous 92 $ et en voie d’une troisième baisse hebdomadaire (Reuters)."
+     },
+     "forex": {
+      "en": "The dollar index rose 0.08% near its highest since April 2025; EUR/USD −0.03%, USD/JPY +0.07% around 159.4, USD/CAD +0.03%, and AUD/USD −0.31% to a 10-month low after Australian jobs data.",
+      "fr": "L’indice dollar a gagné 0,08 % près de son sommet depuis avril 2025; EUR/USD −0,03 %, USD/JPY +0,07 % autour de 159,4, USD/CAD +0,03 %, et l’AUD/USD −0,31 % à un creux de 10 mois après l’emploi australien."
+     },
+     "indices": {
+      "en": "Asia lower (Hang Seng −1.9%, Taiex −3.1%, ASX 200 −1.1% intraday per AP); the Nikkei slipped 0.3% to 58,850.70 early, weighed by metal miners, while Nasdaq futures rose as much as 1%.",
+      "fr": "Asie en baisse (Hang Seng −1,9 %, Taiex −3,1 %, ASX 200 −1,1 % en cours de séance selon AP); le Nikkei a cédé 0,3 % à 58 850,70 en début de séance, plombé par les minières de métaux, alors que les contrats à terme sur le Nasdaq montaient jusqu’à 1 %."
+     },
+     "metals": {
+      "en": "Gold lost 0.16% over the measured session after a low of $3,693.13, a 14-month trough, on a strong dollar and Fed hike bets; silver eased 0.20%.",
+      "fr": "L’or a perdu 0,16 % sur la séance mesurée après un creux de 3 693,13 $, son plus bas en 14 mois, sous l’effet du dollar fort et des paris de hausse de la Fed; l’argent a cédé 0,20 %."
+     }
+    },
+    "session": "tok",
     "sources": [
      "https://www.business-standard.com/markets/news/asian-stocks-rise-after-anthropic-ipo-pricing-sets-stage-for-record-debut-126111900095_1.html",
      "https://www.news4jax.com/business/2026/11/19/asian-stocks-are-mixed-and-us-futures-climb-ahead-of-anthropics-blockbuster-ipo/",
      "https://www.brecorder.com/news/40449691/gold-holds-near-14-month-low-as-fed-hike-bets-weigh",
      "https://www.brecorder.com/news/40449680/us-dollar-hovers-near-19-month-high-aussie-falls-after-soft-jobs-data",
      "https://rallies.ai/news/japan-equities-fall-as-investors-await-anthropic-listing-18feec646c5378ed"
-    ]
+    ],
+    "title": "L’or glisse sous 3 700 $ en séance, l’Asie recule avant les débuts d’Anthropic",
+    "title_en": "Gold dips below $3,700 intraday as Asia slips ahead of Anthropic’s debut"
    },
    {
     "body": "Le Dow a fini en baisse de 1,11 % à 50 198,17 et le S&P 500 de 0,23 %, mais le Nasdaq a gagné 0,42 % avant les débuts en Bourse d’Anthropic jeudi, dont l’action a été fixée à 83 $ selon Bloomberg; Nvidia a cédé 2,68 % malgré des résultats supérieurs aux attentes (Yahoo Finance). Le procès-verbal de la réunion des 27 et 28 octobre montre que presque tous les membres de la Fed s’attendent à une hausse d’un quart de point en décembre, et que deux ont évoqué un demi-point (AP). L’or a perdu 1,49 % et le WTI 2,42 % sur la séance mesurée, après une hausse des stocks de brut américains de 3,4 millions de barils (EIA). Les ventes de maisons en attente ont reculé de 4,7 % en octobre.",
