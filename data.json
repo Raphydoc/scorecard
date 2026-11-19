@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T21:37:42Z",
+ "updatedAt": "2026-11-19T21:47:50Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,70 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "16:24",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "rut"
+   ],
+   "title": "Gap abaisse ses prévisions annuelles et signale une demande faible pour les vêtements avant les Fêtes",
+   "title_en": "Gap cuts annual forecasts, flags weak apparel demand ahead of holidays",
+   "summary": "Le détaillant Gap a réduit ses prévisions pour l'année et prévient que la demande de vêtements reste faible à l'approche du magasinage des Fêtes. Un signal de prudence sur la consommation américaine, qui pèse sur les titres du commerce de détail et les petites capitalisations.",
+   "summary_en": "Retailer Gap cut its full-year forecasts and warned that apparel demand remains weak heading into the holiday shopping season. A cautious signal on U.S. consumer spending that weighs on retail stocks and small caps.",
+   "url": "https://www.investing.com/news/stock-market-news/gap-cuts-annual-forecasts-flags-weak-apparel-demand-ahead-of-holidays-5040047"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "16:18",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Anthropic termine sa première séance 17 % au-dessus de son prix d'IPO après un net recul en fin de journée",
+   "title_en": "Anthropic shares end debut 17% above IPO price after sharp late-day retreat",
+   "summary": "L'action d'Anthropic a clôturé sa première journée au Nasdaq 17 % au-dessus de son prix d'introduction, après avoir ouvert 34 % plus haut et brièvement atteint une valorisation de 2 000 milliards $. Le repli de fin de séance reflète la nervosité persistante envers les titres de l'IA, qui a pesé sur le Nasdaq.",
+   "summary_en": "Anthropic shares closed their first Nasdaq session 17% above the IPO price, after opening 34% higher and briefly reaching a $2 trillion valuation. The late-day pullback reflects lingering nervousness about AI stocks, which weighed on the Nasdaq.",
+   "url": "https://www.investing.com/news/stock-market-news/anthropic-opens-34-above-ipo-price-reaches-2-trillion-valuation-in-nasdaq-debut-5039595"
+  },
+  {
+   "assets": [
+    "audusd",
+    "eurusd",
+    "spx500",
+    "usd",
+    "usdjpy",
+    "xauusd"
+   ],
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Le dollar américain se maintient au-delà d'un sommet de 19 mois, soutenu par la montée des paris sur une hausse des taux de la Fed et la demande de valeur refuge. Le dollar australien glisse après des données d'emploi faibles en Australie, et la vigueur du billet vert pèse sur l'EUR/USD, le yen et l'or.",
+   "summary_en": "The U.S. dollar is holding above a 19-month high, supported by rising bets on a Fed rate hike and safe-haven demand. The Australian dollar slid after weak Australian jobs data, and the greenback's strength weighs on EUR/USD, the yen and gold.",
+   "time": "15:49",
+   "title": "Le dollar se maintient à plus d'un sommet de 19 mois, porté par la hausse des attentes de relèvement des taux de la Fed",
+   "title_en": "Dollar sits at over 19-month high on surge in Fed rate hike expectations",
+   "url": "https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "15:33",
+   "source": "MarketWatch",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia recule encore : 611 milliards $ de valeur boursière effacés en six séances",
+   "title_en": "Nvidia's stock falls further. It has lost $611 billion in six trading days.",
+   "summary": "L'action de Nvidia a poursuivi sa baisse jeudi, portant à 611 milliards $ la valeur boursière perdue en six séances. Le poids de Nvidia dans les indices fait de cette glissade un frein majeur pour le Nasdaq et le S&P 500.",
+   "summary_en": "Nvidia's stock kept falling on Thursday, bringing the market value lost over six trading days to $611 billion. Nvidia's heavy index weighting makes the slide a major drag on the Nasdaq and the S&P 500.",
+   "url": "https://www.marketwatch.com/story/nvidias-stock-falls-further-it-has-lost-611-billion-in-six-trading-days-434af231"
+  },
+  {
+   "date": "2026-11-19",
    "time": "15:12",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1339,24 +1403,6 @@
    "title": "Trump, Xi et Poutine disent vouloir accroître la production de pétrole et réformer l'ONU après leurs pourparlers à trois",
    "title_en": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
    "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html"
-  },
-  {
-   "assets": [
-    "usd",
-    "eurusd",
-    "usdjpy",
-    "spx500",
-    "xauusd"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le DXY a atteint 103,91 en séance, le haut de sa fourchette de 52 semaines, avant de revenir vers 103,78; il gagne 1,96 % en un mois et 5,85 % depuis janvier. Le recul des actions (S&P 500 à 7 300,92, −0,31 %) pousse les capitaux vers le dollar, alors qu'une hausse de taux de la Fed en décembre est largement anticipée; l'or recule de 1,66 % à 3 679,87 $.",
-   "summary_en": "The DXY hit 103.91 intraday, the top of its 52-week range, before easing to 103.78; it is up 1.96% over one month and 5.85% year to date. Falling equities (S&P 500 at 7,300.92, -0.31%) are driving money into the dollar, while a December Fed hike is largely priced in; gold fell 1.66% to $3,679.87.",
-   "time": "11:17",
-   "title": "L'indice du dollar touche un sommet de 52 semaines, porté par la demande de valeur refuge et les attentes de taux",
-   "title_en": "Dollar index hits 52-week high, driven by haven demand and rate expectations",
-   "url": "https://www.investing.com/news/forex-news/dollar-index-hits-52week-high-driven-by-haven-demand-and-rate-expectations-93CH-5039556"
   },
   {
    "assets": [
@@ -1785,50 +1831,6 @@
    "title": "Samsung minimise les craintes de bulle de l'IA liées aux « néoclouds »",
    "title_en": "Samsung Electronics downplays concerns about neocloud firms and AI bubble",
    "url": "https://www.investing.com/news/stock-market-news/samsung-electronics-downplays-concerns-about-neocloud-firms-and-ai-bubble-5035189"
-  },
-  {
-   "assets": [
-    "spx500"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Selon Semafor, le PDG de Cintas, Scott Farmer, a rencontré le président Trump ces derniers jours pour faire avancer le rachat d'UniFirst, d'environ 5 G$, conclu en mars. Le président de la FTC, Andrew Ferguson, serait enclin à bloquer la transaction, et Trump avait indiqué qu'il s'en remettrait à son jugement. Le dossier illustre le poids politique dans l'approbation des fusions aux États-Unis.",
-   "summary_en": "Cintas CEO Scott Farmer met with President Trump in recent days to advance the roughly $5 billion acquisition of UniFirst agreed in March, Semafor reported. FTC Chair Andrew Ferguson is reportedly inclined to block the deal, and Trump had indicated he would defer to his judgment. The case highlights the political weight in US merger approvals.",
-   "time": "19:20",
-   "title": "Le PDG de Cintas a rencontré Trump pour faire avancer le rachat d'UniFirst à 5 G$, selon Semafor",
-   "title_en": "Cintas CEO met with Trump to advance $5 bln UniFirst deal, Semafor reports",
-   "url": "https://www.investing.com/news/stock-market-news/cintas-ceo-met-with-trump-to-advance-5-bln-unifirst-deal-semafor-reports-93CH-5037422"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "Selon CNBC, l'entrée en Bourse d'Anthropic a permis de lever plus de 81 G$, la plus importante offre jamais réalisée, surpassant celle de SpaceX. Le prix avait été fixé à 83 $ l'action, au-dessus de la fourchette visée de 70 à 78 $, et les actions doivent commencer à se négocier jeudi au Nasdaq sous le symbole ANT. Le premier jour de cotation sera un test pour le commerce de l'IA et le Nasdaq, déjà sous pression.",
-   "summary_en": "According to CNBC, Anthropic's IPO raised more than $81 billion, the largest offering on record, topping SpaceX. The deal priced at $83 a share, above the targeted $70-$78 range, and shares are set to begin trading Thursday on the Nasdaq under the ticker ANT. The debut will be a test for the AI trade and the already pressured Nasdaq.",
-   "time": "18:34",
-   "title": "L'IPO d'Anthropic lève plus de 81 G$, la plus grosse de l'histoire, devant SpaceX",
-   "title_en": "Anthropic IPO raises over $81 billion in largest offering on record, topping SpaceX",
-   "url": "https://www.cnbc.com/2026/11/18/anthropic-ipo-ai-offering-price.html"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Moody's a révisé la perspective de Nvidia de positive à stable, tout en confirmant ses notes Aa1 (dette senior non garantie) et Prime-1 (papier commercial). L'agence invoque l'incertitude de gouvernance après le départ abrupt de Jensen Huang, l'absence de plan de relève formel et des enquêtes gouvernementales en cours; elle juge un relèvement peu probable d'ici 12 à 18 mois. Nouveau poids pour le plus gros titre du Nasdaq et du S&P 500.",
-   "summary_en": "Moody's revised Nvidia's outlook from positive to stable while affirming its Aa1 senior unsecured and Prime-1 commercial paper ratings. The agency cited governance uncertainty after Jensen Huang's abrupt departure, the lack of a formal succession plan and pending government investigations, and said an upgrade is unlikely over the next 12 to 18 months. It adds pressure on the largest stock in the Nasdaq and S&P 500.",
-   "time": "17:44",
-   "title": "Moody's ramène la perspective de crédit de Nvidia à stable après le départ de Jensen Huang",
-   "title_en": "Moody's cuts Nvidia credit outlook to stable after CEO Jensen Huang exits",
-   "url": "https://www.investing.com/news/stock-market-news/moodys-cuts-nvidia-credit-outlook-to-stable-after-ceo-jensen-huang-exits-5037292"
   }
  ],
  "live": {
