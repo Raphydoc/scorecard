@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T15:40:51Z",
+ "updatedAt": "2026-11-19T15:45:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -112,8 +112,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 67.43,
    "cotChange": 5.3,
-   "crowdLong": 62,
-   "uCrowd": "2026-11-19T13:58:00Z"
+   "crowdLong": 63,
+   "uCrowd": "2026-11-19T15:45:00Z"
   },
   "usd": {
    "season": "bull",
@@ -211,8 +211,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 28.24,
    "cotChange": -2.25,
-   "crowdLong": 66,
-   "uCrowd": "2026-11-16T15:47:00Z",
+   "crowdLong": 63,
+   "uCrowd": "2026-11-19T15:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "usdchf": {
