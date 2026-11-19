@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T17:47:44Z",
+ "updatedAt": "2026-11-19T18:47:53Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,65 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "13:19",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "eurusd"
+   ],
+   "title": "Les exportateurs américains de gaz plus enclins à signer avec l'Europe après le report de la réglementation européenne sur le méthane",
+   "title_en": "US gas exporters more comfortable signing European deals after EU delays methane regulation",
+   "summary": "Selon Investing.com, les exportateurs américains de gaz naturel liquéfié se disent plus à l'aise de conclure des contrats avec des acheteurs européens maintenant que l'UE a reporté sa réglementation sur les émissions de méthane. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. Ça touche l'énergie et les liens commerciaux transatlantiques, à surveiller pour le pétrole et l'euro.",
+   "summary_en": "According to Investing.com, US LNG exporters say they are more comfortable signing deals with European buyers now that the EU has delayed its methane emissions regulation. The full article could not be accessed; this summary is limited to the headline. It matters for energy and transatlantic trade ties, relevant for oil and the euro.",
+   "url": "https://www.investing.com/news/stock-market-news/us-gas-exporters-more-comfortable-signing-european-deals-after-eu-delays-methane-regulation-5039358"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "12:59",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Trump a acheté des titres de Nvidia, Palantir et SpaceX en septembre, pendant que les contrats fédéraux et les liens avec la Maison-Blanche se multipliaient",
+   "title_en": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
+   "summary": "CNBC rapporte que les comptes de Donald Trump ont acheté des titres de Nvidia, Palantir et SpaceX en septembre, alors que ces entreprises obtenaient des contrats fédéraux et resserraient leurs liens avec la Maison-Blanche. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. Le sujet ajoute à l'examen politique et juridique qui pèse déjà sur Nvidia, poids lourd du Nasdaq.",
+   "summary_en": "CNBC reports that Donald Trump's accounts bought Nvidia, Palantir and SpaceX in September as those companies won federal deals and grew closer to the White House. The full article could not be accessed; this summary is limited to the headline. It adds to the political and legal scrutiny already weighing on Nvidia, a Nasdaq heavyweight.",
+   "url": "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "12:54",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Exclusif : un responsable de l'administration Trump aurait évoqué la cession d'un territoire du Guyana au Venezuela, selon des sources",
+   "title_en": "Exclusive-Trump official floated ceding Guyanese territory to Venezuela, sources say",
+   "summary": "Selon des sources citées dans cette exclusivité, un responsable de l'administration Trump aurait évoqué l'idée de céder une partie du territoire du Guyana au Venezuela. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. Le territoire disputé entre les deux pays est au cœur d'une importante production pétrolière, d'où l'intérêt pour le marché du brut.",
+   "summary_en": "According to sources cited in this exclusive, a Trump administration official floated the idea of ceding part of Guyana's territory to Venezuela. The full article could not be accessed; this summary is limited to the headline. The territory disputed between the two countries is central to major oil production, hence the interest for crude markets.",
+   "url": "https://www.investing.com/news/commodities-news/exclusivetrump-official-floated-ceding-guyanese-territory-to-venezuela-sources-say-5038474"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "12:26",
+   "source": "MarketWatch",
+   "impact": "med",
+   "assets": [
+    "us30",
+    "spx500"
+   ],
+   "title": "L'action de UnitedHealth poursuit sa chute après que Washington a signalé une offensive contre la fraude au Medicare Advantage",
+   "title_en": "UnitedHealth's stock keeps plunging after government signals crackdown on Medicare Advantage fraud",
+   "summary": "MarketWatch rapporte que le titre de UnitedHealth continue de plonger après que le gouvernement américain a signalé une répression de la fraude dans le programme Medicare Advantage. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. UnitedHealth étant une composante du Dow Jones, sa chute pèse sur l'indice.",
+   "summary_en": "MarketWatch reports that UnitedHealth shares keep plunging after the US government signaled a crackdown on Medicare Advantage fraud. The full article could not be accessed; this summary is limited to the headline. As a Dow Jones component, UnitedHealth's slide weighs on the index.",
+   "url": "https://www.marketwatch.com/story/unitedhealths-stock-keeps-plunging-after-government-signals-crackdown-on-medicare-advantage-fraud-c4770a45?mod=mw_rss_topstories"
+  },
+  {
+   "date": "2026-11-19",
    "time": "12:00",
    "source": "Investing.com (Reuters)",
    "impact": "high",
@@ -1774,73 +1833,6 @@
    "title": "Le TSX plonge de 737 points : l'or et le pétrole s'effondrent",
    "title_en": "TSX plunges 737 points as gold and oil selloff hits Canadian stocks",
    "url": "https://www.investing.com/news/stock-market-news/tsx-futures-slip-amid-lower-gold-oil-prices-nvidia-earnings-in-focus-5035920"
-  },
-  {
-   "assets": [
-    "nasdaq"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Palo Alto Networks achètera la société d'infrastructure IA Applied Compute pour 4,5 G$, entièrement en actions. Au 1er trimestre, le BPA ajusté atteint 1,05 $ (0,97 $ attendu) et les revenus 3,44 G$, en hausse de 39 % (3,31 G$ attendus); la prévision de revenus 2027 est relevée à 14,52-14,57 G$ contre 14,17 G$ attendus. L'action gagnait 7,5 % après la clôture, un appui pour les titres technos du Nasdaq.",
-   "summary_en": "Palo Alto Networks will acquire AI infrastructure firm Applied Compute for $4.5 billion in an all-stock deal. Fiscal Q1 adjusted EPS was $1.05 (vs. $0.97 expected) and revenue $3.44 billion, up 39% (vs. $3.31 billion); fiscal 2027 revenue guidance is $14.52-$14.57 billion vs. $14.17 billion consensus. Shares rose 7.5% after hours, a support for Nasdaq tech stocks.",
-   "time": "16:13",
-   "title": "Palo Alto rachète Applied Compute pour 4,5 G$ et dépasse les attentes; l'action bondit de 7,5 % après la clôture",
-   "title_en": "Palo Alto to buy Applied Compute for $4.5 billion, while Q1 results beat estimates",
-   "url": "https://www.investing.com/news/earnings/palo-alto-networks-to-buy-applied-compute-for-45-billion-in-ai-push-5037031"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Selon Bloomberg, la firme de recrutement Heidrick & Struggles, mandatée par le conseil de Nvidia, a contacté Rene Haas, PDG d'Arm depuis 2022, ainsi que d'autres dirigeants. Rien n'indique que Haas a accepté ni qu'une décision a été prise. La succession de Huang pèse sur Nvidia, poids lourd du Nasdaq et du S&P 500.",
-   "summary_en": "According to Bloomberg, recruiting firm Heidrick & Struggles, hired by Nvidia's board, contacted Rene Haas, Arm's CEO since 2022, along with other executives. There is no sign Haas has agreed or that a decision has been made. The Huang succession weighs on Nvidia, a heavyweight in the Nasdaq and S&P 500.",
-   "time": "14:26",
-   "title": "Nvidia aurait approché Rene Haas, PDG d'Arm, pour succéder à Jensen Huang",
-   "title_en": "Nvidia reportedly approaches Arm CEO Rene Haas for top job after Jensen Huang exit",
-   "url": "https://au.investing.com/news/stock-market-news/nvidia-reportedly-approaches-arm-ceo-rene-haas-for-top-job-after-jensen-huang-exit-4781223"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "xagusd",
-    "usd"
-   ],
-   "date": "2026-11-18",
-   "impact": "high",
-   "source": "Investing.com",
-   "summary": "Vers 14 h 15, l'or au comptant reculait de 3,17 % à 3 727,07 $ l'once et les contrats à terme de 2,7 % à 3 758,90 $; l'argent perdait 5 % à 44,97 $ et l'indice du dollar gagnait 0,3 % à 103,81. Le procès-verbal d'octobre montre que quelques membres jugent possible une hausse de plus de 25 pb en décembre, et le taux à 10 ans reste au-dessus de 5 %. ANZ voit un soutien vers 3 600 $; UBS attribue la vente à des facteurs de positionnement à court terme.",
-   "summary_en": "Around 2:15 p.m., spot gold fell 3.17% to $3,727.07/oz and futures 2.7% to $3,758.90; silver dropped 5% to $44.97 and the dollar index rose 0.3% to 103.81. October minutes showed a couple of policymakers see a hike larger than 25 bp as possibly warranted in December, with the 10-year yield holding above 5%. ANZ sees support near $3,600; UBS says the sell-off reflects near-term positioning.",
-   "time": "14:20",
-   "title": "L'or chute de plus de 3 % à 3 727 $ : le procès-verbal de la Fed alimente les paris d'une hausse plus forte en décembre",
-   "title_en": "Gold extends losses as Fed minutes fuel bets on larger December rate hike",
-   "url": "https://www.investing.com/news/commodities-news/gold-falls-toward-3800-as-fed-hawks-reinforce-ratehike-outlook-5034463"
-  },
-  {
-   "assets": [
-    "usd",
-    "xauusd",
-    "xagusd",
-    "spx500",
-    "nasdaq",
-    "us30",
-    "eurusd",
-    "usdjpy",
-    "btcusd"
-   ],
-   "date": "2026-11-18",
-   "impact": "high",
-   "source": "Investing.com",
-   "summary": "Le procès-verbal de la réunion d'octobre (taux maintenu à 3,75 %-4,00 %) montre que presque tous les participants s'attendent à d'autres hausses de taux; quelques-uns jugent qu'une hausse de plus de 25 pb pourrait être envisagée en décembre si l'inflation déçoit, et certains ont qualifié le statu quo d'octobre de « décision serrée ». Le CME FedWatch donne environ 95 % de chances à une hausse de 25 pb en décembre et 5 % à 50 pb. Ce ton ferme soutient le dollar et les rendements et pèse sur l'or et les actifs à risque.",
-   "summary_en": "Minutes of the October meeting (rate held at 3.75%-4.00%) show almost all participants expect further rate increases; a couple said a hike larger than 25 bp could be considered in December if inflation disappoints, and some called the October hold a \"close call.\" CME FedWatch puts the odds of a 25 bp December hike near 95% and 50 bp near 5%. The hawkish tone supports the dollar and yields and weighs on gold and risk assets.",
-   "time": "14:08",
-   "title": "Procès-verbal de la Fed : presque tous les membres prévoient d'autres hausses; quelques-uns évoquent plus de 25 pb en décembre",
-   "title_en": "Fed minutes: almost all officials expect further hikes; a couple see more than 25 bp in December",
-   "url": "https://www.investing.com/news/economy-news/couple-of-policymakers-see-more-than-a-25-bp-rate-hike-in-december--fed-minutes-5036867"
   }
  ],
  "live": {
