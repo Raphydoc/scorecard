@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T18:47:53Z",
+ "updatedAt": "2026-11-19T19:45:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -72,7 +72,7 @@
     "f": 4.2
    }
   },
-  "yield10y": "flat",
+  "yield10y": "falling",
   "seasonMonth": "2026-11"
  },
  "assets": {
@@ -92,8 +92,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 61.29,
    "cotChange": -4.6,
-   "crowdLong": 68,
-   "uCrowd": "2026-11-18T19:45:00Z",
+   "crowdLong": 69,
+   "uCrowd": "2026-11-19T19:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "spx500": {
@@ -191,8 +191,8 @@
    "seasonPeriod": "août à octobre",
    "cotLong": 56.57,
    "cotChange": -2.12,
-   "crowdLong": 42,
-   "uCrowd": "2026-11-18T15:50:00Z",
+   "crowdLong": 44,
+   "uCrowd": "2026-11-19T19:45:00Z",
    "uCot": "2026-11-16T20:50:00Z"
   },
   "gbpusd": {
@@ -752,67 +752,67 @@
    "date": "2026-11-19",
    "xauusd": {
     "sent": 1,
-    "macro": -9
+    "macro": -7
    },
    "xagusd": {
     "sent": -1,
-    "macro": -9
+    "macro": -7
    },
    "nasdaq": {
     "sent": -1,
-    "macro": 6
+    "macro": 8
    },
    "spx500": {
     "sent": -2,
-    "macro": 7
+    "macro": 9
    },
    "us30": {
     "sent": 1,
-    "macro": 9
+    "macro": 10
    },
    "rut": {
     "sent": -1,
-    "macro": 7
+    "macro": 9
    },
    "usd": {
     "sent": 1,
-    "macro": 9
+    "macro": 7
    },
    "usoil": {
     "sent": 2,
-    "macro": 10
+    "macro": 11
    },
    "btcusd": {
     "sent": 1,
-    "macro": 6
+    "macro": 8
    },
    "eurusd": {
     "sent": -1,
-    "macro": -9
+    "macro": -7
    },
    "usdjpy": {
     "sent": -1,
-    "macro": 9
+    "macro": 7
    },
    "usdcad": {
     "sent": 0,
-    "macro": 9
+    "macro": 7
    },
    "gbpusd": {
     "sent": -1,
-    "macro": -9
+    "macro": -7
    },
    "audusd": {
     "sent": -3,
-    "macro": -9
+    "macro": -7
    },
    "usdchf": {
     "sent": -1,
-    "macro": 9
+    "macro": 7
    },
    "nzdusd": {
     "sent": -1,
-    "macro": -9
+    "macro": -7
    }
   }
  ],
