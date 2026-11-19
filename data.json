@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T19:48:49Z",
+ "updatedAt": "2026-11-19T20:47:57Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,39 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "15:12",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Un comité de la Chambre dévoile les licences d'exportation de puces d'IA vers la Chine : près de 900 000 puces approuvées",
+   "title_en": "House committee releases license information for AI chips sent to China: nearly 900,000 chips approved",
+   "summary": "Le comité des Affaires étrangères de la Chambre affirme que le département du Commerce a approuvé l'expédition de près de 900 000 puces d'IA avancées à des entreprises chinoises (plus de 879 000 sur 3,4 millions demandées), dont des envois à Alibaba et Tencent. Le président du comité, Brian Mast, a rendu publiques les demandes de licences de Nvidia et d'AMD. Ce dossier ajoute un risque politique sur les semi-conducteurs, déjà en recul, et pèse sur le Nasdaq.",
+   "summary_en": "The House Foreign Affairs Committee says the Commerce Department approved shipments of nearly 900,000 advanced AI chips to Chinese companies (more than 879,000 of 3.4 million requested), including to Alibaba and Tencent. Chairman Brian Mast publicly released Nvidia and AMD license application information. The issue adds political risk to already-sliding chip stocks and weighs on the Nasdaq.",
+   "url": "https://www.investing.com/news/stock-market-news/license-information-for-ai-chips-sent-to-china-released-by-us-house-committee-5039850"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "15:00",
+   "source": "Investing.com (Reuters)",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "rut",
+    "usd"
+   ],
+   "title": "Wall Street recule : les débuts d'Anthropic ne raniment pas l'enthousiasme pour l'IA; le Dow perd 1,79 %",
+   "title_en": "Wall Street slides as Anthropic's debut fails to revive AI enthusiasm; Dow down 1.79%",
+   "summary": "En après-midi, le Dow perdait 900,74 points (-1,79 %) à 49 298,08, le S&P 500 cédait 1,54 % à 7 211,12 et le Nasdaq 1,60 % à 24 038,78. Anthropic, qui a brièvement dépassé 2 000 G$ de valorisation, ne se négociait plus que 14,3 % au-dessus de son prix d'offre de 83 $; AMD chutait de 9,2 % et Nvidia de 1,7 % après cinq séances de baisse. Le CME FedWatch prévoit à 94,1 % une hausse de 25 points de base en décembre.",
+   "summary_en": "In the afternoon the Dow fell 900.74 points (-1.79%) to 49,298.08, the S&P 500 lost 1.54% to 7,211.12 and the Nasdaq 1.60% to 24,038.78. Anthropic, which briefly topped a $2 trillion valuation, traded just 14.3% above its $83 offer price; AMD tumbled 9.2% and Nvidia 1.7% after five straight losing sessions. CME FedWatch prices a 94.1% chance of a 25-basis-point hike in December.",
+   "url": "https://www.investing.com/news/stock-market-news/wall-street-slides-as-anthropics-debut-fails-to-revive-ai-enthusiasm-5039839"
+  },
+  {
+   "date": "2026-11-19",
    "time": "14:00",
    "source": "Investing.com",
    "impact": "med",
@@ -1290,22 +1323,6 @@
    "summary": "MarketWatch rapporte que le titre de UnitedHealth continue de plonger après que le gouvernement américain a signalé une répression de la fraude dans le programme Medicare Advantage. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. UnitedHealth étant une composante du Dow Jones, sa chute pèse sur l'indice.",
    "summary_en": "MarketWatch reports that UnitedHealth shares keep plunging after the US government signaled a crackdown on Medicare Advantage fraud. The full article could not be accessed; this summary is limited to the headline. As a Dow Jones component, UnitedHealth's slide weighs on the index.",
    "url": "https://www.marketwatch.com/story/unitedhealths-stock-keeps-plunging-after-government-signals-crackdown-on-medicare-advantage-fraud-c4770a45?mod=mw_rss_topstories"
-  },
-  {
-   "date": "2026-11-19",
-   "time": "12:00",
-   "source": "Investing.com (Reuters)",
-   "impact": "high",
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "title": "Le Nasdaq passe dans le rouge après des débuts d'Anthropic à plus de 2 000 G$ de valorisation",
-   "title_en": "Nasdaq turns negative after Anthropic valued at over $2 trillion in Nasdaq debut",
-   "summary": "Introduite à 83 $ (au-dessus de la fourchette de 70 à 78 $), l'action d'Anthropic (ANT) a ouvert 34 % plus haut, portant la valorisation au-delà de 2 000 G$, avant de reculer de près de 9 % depuis l'ouverture. La flambée a refroidi l'appétit pour les titres liés à l'IA : vers midi, le Nasdaq perdait 0,58 % à 24 296, le S&P 500 0,77 % à 7 268 et le Dow 1,29 % à 49 538.",
-   "summary_en": "Priced at $83 (above the $70–$78 range), Anthropic (ANT) shares opened 34% higher, lifting its valuation above $2 trillion, before falling nearly 9% from the open. The surge cast a cloud over appetite for AI-linked stocks: around noon the Nasdaq was down 0.58% at 24,296, the S&P 500 down 0.77% at 7,268 and the Dow down 1.29% at 49,538.",
-   "url": "https://www.investing.com/news/stock-market-news/nasdaq-turns-negative-after-anthropic-valued-at-over-2-trillion-in-nasdaq-debut-5039627"
   },
   {
    "assets": [
@@ -1812,25 +1829,6 @@
    "title": "Moody's ramène la perspective de crédit de Nvidia à stable après le départ de Jensen Huang",
    "title_en": "Moody's cuts Nvidia credit outlook to stable after CEO Jensen Huang exits",
    "url": "https://www.investing.com/news/stock-market-news/moodys-cuts-nvidia-credit-outlook-to-stable-after-ceo-jensen-huang-exits-5037292"
-  },
-  {
-   "assets": [
-    "us30",
-    "spx500",
-    "nasdaq",
-    "usd",
-    "xauusd",
-    "usoil"
-   ],
-   "date": "2026-11-18",
-   "impact": "high",
-   "source": "Investing.com (Reuters)",
-   "summary": "Wall Street a terminé en ordre dispersé : le Dow a reculé de 1,11 % à 50 197,78 points et le S&P 500 de 0,23 %, tandis que le Nasdaq a gagné 0,42 %; Nvidia a cédé environ 3 % et l'énergie environ 3,5 %. Le dollar a atteint un sommet de 19 mois, l'or a chuté de 3 % à un creux de 14 mois près de 3 735 $ et le WTI a perdu 3,26 % à 81,89 $. Les propos du gouverneur Waller et le procès-verbal de la Fed, qui laissent entrevoir d'autres hausses de taux, pèsent sur les actifs; Palo Alto Networks a bondi d'environ 10 %.",
-   "summary_en": "Wall Street ended mixed: the Dow fell 1.11% to 50,197.78 and the S&P 500 slipped 0.23%, while the Nasdaq rose 0.42%; Nvidia lost about 3% and energy about 3.5%. The dollar hit a 19-month high, gold slid 3% to a 14-month low near $3,735 and WTI fell 3.26% to $81.89. Governor Waller's comments and the Fed minutes, pointing to further rate hikes, weighed on assets; Palo Alto Networks jumped about 10%.",
-   "time": "17:09",
-   "title": "Clôture : le Dow perd 1,11 %, le Nasdaq gagne 0,42 %; dollar au sommet de 19 mois, or et pétrole en chute",
-   "title_en": "Close: Dow falls 1.11%, Nasdaq gains 0.42%; dollar at 19-month high, gold and oil slide",
-   "url": "https://www.investing.com/news/economy-news/trading-day-markets-mixed-in-a-nvidiaanthropic-minutes-swirl-5037221"
   }
  ],
  "live": {
