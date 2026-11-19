@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T15:45:00Z",
+ "updatedAt": "2026-11-19T15:48:04Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,49 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "10:33",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Le vendeur à découvert Hunterbrook parie contre AMD, invoquant des inquiétudes sur les exportations vers la Chine",
+   "title_en": "Short seller Hunterbrook shorts AMD citing concerns over China exports",
+   "summary": "Hunterbrook annonce une position vendeuse à découvert sur AMD en citant des préoccupations liées aux exportations de puces vers la Chine. La nouvelle survient alors que les restrictions américaines sur les puces d'IA destinées à la Chine se resserrent, un risque pour les semi-conducteurs et le Nasdaq. (Article non consulté : résumé fondé sur le titre.)",
+   "summary_en": "Hunterbrook disclosed a short position in AMD, citing concerns over chip exports to China. It comes as U.S. restrictions on AI chips bound for China tighten, a risk for semiconductors and the Nasdaq. (Article not accessed: summary based on the headline.)",
+   "url": "https://www.investing.com/news/stock-market-news/short-seller-hunterbrook-shorts-amd-citing-concerns-over-china-exports-5039475"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "10:20",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd"
+   ],
+   "title": "Binance obtient une ordonnance de gel de 6,5 G$ contre les pirates à l'origine du plus gros vol de l'histoire de la crypto",
+   "title_en": "Binance wins $6.5 billion freezing order against hackers behind crypto's largest theft",
+   "summary": "Binance a obtenu une ordonnance de gel d'actifs de 6,5 milliards $ visant les pirates responsables du plus important vol de l'histoire des cryptomonnaies. Une avancée juridique suivie de près par le marché du bitcoin, déjà sous pression cette semaine. (Article non consulté : résumé fondé sur le titre.)",
+   "summary_en": "Binance won a $6.5 billion asset-freezing order against the hackers behind the largest theft in crypto history. A legal development closely watched by a bitcoin market already under pressure this week. (Article not accessed: summary based on the headline.)",
+   "url": "https://www.coindesk.com/business/2026/11/19/binance-wins-usd6-5-billion-feezing-order-against-hackers-behind-crypto-s-largest-theft"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "09:49",
+   "source": "Investing.com (Bloomberg)",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "L'IPO d'Anthropic n'aurait rien alloué à la plupart des acheteurs institutionnels, selon Bloomberg",
+   "title_en": "Anthropic IPO said to give nothing to most institutional buyers - Bloomberg",
+   "summary": "Selon Bloomberg, la plupart des investisseurs institutionnels n'auraient reçu aucune action dans l'IPO record d'Anthropic, signe d'une demande largement excédentaire. Cette rareté alimente les paris d'un fort bond à l'ouverture du titre et soutient le regain de l'IA sur le Nasdaq. (Article non consulté : résumé fondé sur le titre.)",
+   "summary_en": "According to Bloomberg, most institutional investors reportedly received no shares in Anthropic's record IPO, a sign of heavy oversubscription. The scarcity fuels bets on a big first-day pop and supports the AI rebound on the Nasdaq. (Article not accessed: summary based on the headline.)",
+   "url": "https://www.investing.com/news/stock-market-news/anthropic-ipo-said-to-give-nothing-to-most-institutional-buyers--bloomberg-432SI-5039297"
+  },
+  {
+   "date": "2026-11-19",
    "time": "09:34",
    "source": "Investing.com (Reuters)",
    "impact": "high",
@@ -1797,49 +1840,6 @@
    "title": "Ackman critique durement le conseil de Nvidia après le départ de Jensen Huang et remet en question son devoir fiduciaire",
    "title_en": "Ackman blasts Nvidia board over Jensen Huang exit, questions fiduciary duties",
    "url": "https://www.investing.com/news/stock-market-news/ackman-blasts-nvidia-board-over-jensen-huang-exit-questions-fiduciary-duties-5036745"
-  },
-  {
-   "assets": [
-    "nasdaq"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Cboe prévoit d'inscrire les options sur Anthropic deux jours ouvrables après le début des échanges de l'action, soit dès lundi; l'IPO, évaluée à 64 G$ et souscrite six fois selon Reuters, doit être fixée mercredi pour des débuts au Nasdaq jeudi. Des spécialistes s'attendent à une action très volatile, dans un contexte où le commerce de l'IA est sous pression.",
-   "summary_en": "Cboe expects to list Anthropic options two business days after the stock starts trading, as soon as Monday; the $64 billion IPO, six times oversubscribed per Reuters, is expected to price Wednesday with Nasdaq trading Thursday. Experts expect the stock to be highly volatile as the AI trade comes under pressure.",
-   "time": "12:18",
-   "title": "Les options sur Anthropic pourraient commencer à se négocier lundi et attirer une forte demande",
-   "title_en": "Anthropic options could begin trading on Monday, expected to draw strong demand",
-   "url": "https://www.investing.com/news/stock-market-news/anthropic-options-could-begin-trading-on-monday-expected-to-draw-strong-demand-5036728"
-  },
-  {
-   "assets": [
-    "gbpusd",
-    "usd"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "La livre recule de 0,42 % à 1,3152 $ US, près du bas de sa fourchette de 52 semaines (1,3037–1,3869). Les paris sur une hausse de taux de la Fed l'emportent sur la solide croissance du PIB britannique, alors que l'EUR/GBP à 0,8341 montre que la livre tient bon face à l'euro.",
-   "summary_en": "Sterling fell 0.42% to $1.3152, near the bottom of its 52-week range (1.3037–1.3869). Fed rate-hike bets are overpowering strong UK GDP data, while EUR/GBP at 0.8341 shows the pound holding up against the euro.",
-   "time": "12:01",
-   "title": "GBP/USD : la glissade vient de la vigueur du dollar, pas d'une faiblesse de la livre",
-   "title_en": "GBP/USD slide driven by dollar strength, not sterling weakness",
-   "url": "https://www.investing.com/news/forex-news/gbpusd-slide-driven-by-dollar-strength-not-sterling-weakness-93CH-5036710"
-  },
-  {
-   "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Vers 10 h 46, le Brent perdait 1,12 $ (1,2 %) à 92,02 $ et le WTI 1,63 $ (1,9 %) à 84,38 $, son plus bas depuis fin août. L'EIA rapporte une hausse de 3,4 M de barils des stocks de brut (attendu : +58 000) et de 5,2 M de barils pour l'essence (attendu : +1,6 M). Les deux références se dirigent vers un recul d'environ 20 % sur le mois, malgré le conflit États-Unis–Iran et les risques autour d'Ormuz.",
-   "summary_en": "Around 10:46 a.m., Brent was down $1.12 (1.2%) at $92.02 and WTI down $1.63 (1.9%) at $84.38, its lowest since late August. The EIA reported a 3.4 million-barrel crude build (vs. 58,000 expected) and a 5.2 million-barrel gasoline build (vs. 1.6 million expected). Both benchmarks are on track for roughly a 20% monthly drop despite the US-Iran conflict and Hormuz risks.",
-   "time": "11:24",
-   "title": "Le pétrole recule après une hausse plus forte que prévu des stocks américains (EIA); le WTI au plus bas depuis fin août",
-   "title_en": "Oil falls after larger-than-expected rise in US stockpiles, EIA says; WTI at lowest since late August",
-   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-higher-us-crude-stocks-temper-supply-risks-5034544"
   }
  ],
  "live": {
