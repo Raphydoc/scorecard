@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T19:42:46Z",
+ "updatedAt": "2026-11-20T20:47:37Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,22 @@
  "news": [
   {
    "date": "2026-11-20",
+   "time": "15:19",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "La faiblesse du Nasdaq pousse les investisseurs de la techno vers les obligations",
+   "title_en": "Nasdaq's weakness prompts investors to shift from tech to bonds",
+   "summary": "Le Nasdaq Composite chute de plus de 4 % vendredi, sa troisième baisse d'au moins 2 % de la semaine et son pire recul hebdomadaire depuis le « Liberation Day »; il est maintenant en baisse de près de 2 % en 2026, alors qu'il affichait un gain de près de 19 % début octobre. Anthropic recule de 10 % et Broadcom de 12 %, tandis que les attentes d'une Fed forcée de relever ses taux par l'inflation alimentent la rotation. L'indice valeur du S&P 500 gagne 8 % depuis janvier contre -2 % pour l'indice croissance, et le titre médian du S&P 500 progresse de près de 7 % contre 2 % pour l'indice, freiné par la baisse de 46 % de Nvidia.",
+   "summary_en": "The Nasdaq Composite fell more than 4% on Friday, its third decline of 2% or more this week and its biggest weekly drop since the 'Liberation Day' sell-off; it is now down almost 2% in 2026 after holding a nearly 19% gain in early October. Anthropic fell 10% and Broadcom 12%, as expectations that high inflation will force the Fed to raise rates drive the rotation. The S&P 500 value index is up 8% this year versus a 2% drop for growth, and the median S&P 500 stock is up almost 7% versus the index's 2%, held back by Nvidia's 46% decline.",
+   "url": "https://www.investing.com/news/stock-market-news/nasdaqs-weakness-prompts-investors-to-shift-from-tech-to-bonds-93CH-5042538"
+  },
+  {
+   "date": "2026-11-20",
    "time": "14:24",
    "source": "Investing.com",
    "impact": "high",
@@ -1884,21 +1900,6 @@
    "title": "Les contrats à terme de Wall Street reculent : les débuts d'Anthropic ne relancent pas le commerce de l'IA",
    "title_en": "Wall Street futures fall as Anthropic debut fails to revive AI trade",
    "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-fall-as-anthropic-debut-fails-to-revive-ai-trade-5040450"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "usdjpy"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "Selon CNBC, l'action de SoftBank chute de plus de 16 % à Tokyo, la vague de ventes dans le secteur de l'IA s'étendant aux titres technologiques asiatiques après l'entrée en Bourse d'Anthropic. Ce recul prolonge la pression sur les valeurs liées à l'IA observée à Wall Street jeudi.",
-   "summary_en": "According to CNBC, SoftBank shares fell more than 16% in Tokyo as the AI sell-off spread to Asian tech stocks following Anthropic's market debut. The drop extends the pressure on AI-linked stocks seen on Wall Street on Thursday.",
-   "time": "20:07",
-   "title": "SoftBank plonge de plus de 16 % alors que la vague de ventes dans l'IA frappe les titres technos asiatiques après les débuts d'Anthropic",
-   "title_en": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
-   "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html"
   }
  ],
  "live": {
