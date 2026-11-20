@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T00:47:17Z",
+ "updatedAt": "2026-11-20T01:48:02Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,37 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "20:11",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "spx500",
+    "nasdaq",
+    "us30"
+   ],
+   "title": "Les contrats à terme de Wall Street reculent : les débuts d'Anthropic ne relancent pas le commerce de l'IA",
+   "title_en": "Wall Street futures fall as Anthropic debut fails to revive AI trade",
+   "summary": "Les contrats à terme du S&P 500 cèdent 0,3 % (7 173,75), ceux du Nasdaq 100 0,7 % (26 421,75) et ceux du Dow 0,2 % (49 080), après une séance où le Dow a perdu 2,2 %, le S&P 500 2 % (6e baisse de suite) et le Nasdaq 2,3 %. Anthropic a clôturé en hausse de 17,1 % à 97,17 $ (prix d'émission 83 $) mais recule de près de 4 % après la clôture, tandis que Nvidia (-3,3 %) et AMD (-7,7 %) ont plongé. Selon le FedWatch du CME, les marchés évaluent à 96 % la probabilité d'une hausse de taux de 25 points de base en décembre.",
+   "summary_en": "S&P 500 futures slipped 0.3% to 7,173.75, Nasdaq 100 futures fell 0.7% to 26,421.75 and Dow futures 0.2% to 49,080, after a session in which the Dow lost 2.2%, the S&P 500 2% (sixth straight decline) and the Nasdaq 2.3%. Anthropic closed 17.1% higher at $97.17 (IPO price $83) but fell nearly 4% after hours, while Nvidia (-3.3%) and AMD (-7.7%) slid. CME FedWatch shows markets pricing a 96% probability of a 25-basis-point rate hike at the Fed's December meeting.",
+   "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-fall-as-anthropic-debut-fails-to-revive-ai-trade-5040450"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "20:07",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "usdjpy"
+   ],
+   "title": "SoftBank plonge de plus de 16 % alors que la vague de ventes dans l'IA frappe les titres technos asiatiques après les débuts d'Anthropic",
+   "title_en": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
+   "summary": "Selon CNBC, l'action de SoftBank chute de plus de 16 % à Tokyo, la vague de ventes dans le secteur de l'IA s'étendant aux titres technologiques asiatiques après l'entrée en Bourse d'Anthropic. Ce recul prolonge la pression sur les valeurs liées à l'IA observée à Wall Street jeudi.",
+   "summary_en": "According to CNBC, SoftBank shares fell more than 16% in Tokyo as the AI sell-off spread to Asian tech stocks following Anthropic's market debut. The drop extends the pressure on AI-linked stocks seen on Wall Street on Thursday.",
+   "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html"
+  },
+  {
+   "date": "2026-11-19",
    "time": "19:21",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1795,40 +1826,6 @@
    "title": "Trump s'entretient séparément avec Poutine et Xi avant leur sommet trilatéral historique",
    "title_en": "Trump holds talks separately with Putin and Xi ahead of their historic trilateral meeting",
    "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html"
-  },
-  {
-   "assets": [
-    "btcusd",
-    "usd",
-    "usoil",
-    "spx500"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Le compte rendu d'octobre montre que presque tous les membres de la Fed jugent d'autres hausses probables; Waller appuie une hausse de 50 points de base en décembre et les contrats à terme anticipent des hausses de 25 pb en décembre et en janvier. Des analystes jugent ces données dépassées : la marge de raffinage 3-2-1 a chuté de 36 % en six semaines (de 65,56 $ à 41,90 $ le baril) et l'essence RBOB d'environ 20 % en trois semaines. Des taux plus élevés pèsent habituellement sur le bitcoin et les actifs risqués.",
-   "summary_en": "October minutes show almost all Fed officials see further hikes as likely; Waller backs a 50-basis-point hike in December, and futures price quarter-point hikes in December and January. Analysts call the data backward-looking: the 3-2-1 crack spread fell 36% in six weeks ($65.56 to $41.90 a barrel) and RBOB gasoline about 20% in three weeks. Higher rates tend to weigh on bitcoin and risk assets.",
-   "time": "01:23",
-   "title": "La Fed veut encore hausser ses taux, mais l'essence chute : des analystes y voient une erreur",
-   "title_en": "Fed's push for more rate hikes leans on backward-looking data as gas prices slide, analysts argue",
-   "url": "https://www.coindesk.com/markets/2026/11/19/fed-s-push-for-more-rate-hikes-leans-on-backward-looking-data-as-gas-prices-slide-analysts-argue"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "audusd",
-    "usdjpy"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'indice pondéré de Taïwan termine la séance en baisse de 4,60 %, les titres de puces et de circuits imprimés touchant leur limite de baisse quotidienne. Plus tôt, le Hang Seng cédait 1,9 % (Tencent -6,4 %) et l'ASX 200 environ 1 % après un chômage australien à 4,9 %, tandis que les contrats à terme américains montaient avant les débuts d'Anthropic (83 $ l'action). Les craintes sur les dépenses en IA pèsent sur les technos et les devises liées au risque.",
-   "summary_en": "Taiwan's weighted index closed down 4.60%, with chip and PCB shares hitting limit-down. Earlier, the Hang Seng fell 1.9% (Tencent -6.4%) and the ASX 200 about 1% after Australian unemployment hit 4.9%, while U.S. futures rose ahead of Anthropic's debut ($83 a share). AI-spending worries weigh on tech and risk-sensitive currencies.",
-   "time": "01:00",
-   "title": "Taïwan clôture en chute de 4,6 % : la débâcle de l'IA s'aggrave, puces et circuits imprimés au plancher",
-   "title_en": "Taiwan stocks plunge 4.6% as AI rout deepens; chip and PCB shares hit limit-down",
-   "url": "https://www.investing.com/news/stock-market-news/taiwan-stocks-plunge-46-as-ai-rout-deepens-chip-and-pcb-shares-hit-limitdown-5037869"
   }
  ],
  "live": {
