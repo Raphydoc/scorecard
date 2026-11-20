@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T09:48:29Z",
+  "updatedAt": "2026-11-20T10:48:13Z",
   "econ": {
     "values": {
       "adp": {
@@ -1218,6 +1218,51 @@
   "news": [
     {
       "date": "2026-11-20",
+      "time": "05:24",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "eurusd"
+      ],
+      "title": "ASML chute de 6 % à 1 211,2 € : la débandade de l'IA frappe les puces européennes",
+      "title_en": "ASML slides 6% to €1,211.2 as AI rout hits European chipmakers",
+      "summary": "ASML recule de 6,0 % à 1 211,2 € vendredi, après un creux de séance de 1 202,2 €, dans la vague de ventes mondiale des titres liés à l'IA qui suit le revirement d'Anthropic après son entrée au Nasdaq. BE Semiconductor, ASM International, Infineon et STMicroelectronics perdent de 4 % à 9,5 %, et l'indice Stoxx Europe 600 Technologie cède plus de 3 %, à son plus bas depuis mai. La pression sur les semi-conducteurs pèse aussi sur les contrats à terme du Nasdaq avant l'ouverture à New York.",
+      "summary_en": "ASML fell 6.0% to €1,211.2 on Friday, after a session low of €1,202.2, amid a global selloff in AI-linked stocks following the reversal of Anthropic's Nasdaq debut. BE Semiconductor, ASM International, Infineon and STMicroelectronics fell between 4% and 9.5%, and the Stoxx Europe 600 Technology index dropped more than 3% to its lowest since May. The chip pressure also weighs on Nasdaq futures ahead of the New York open.",
+      "url": "https://www.investing.com/news/stock-market-news/why-is-asml-stock-sliding-today-93CH-5041123"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "05:06",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usoil"
+      ],
+      "title": "Le pétrole en voie d'une troisième baisse hebdomadaire, l'offre semblant s'améliorer",
+      "title_en": "Oil prices on track for third weekly decline amid signs of improving supplies",
+      "summary": "Selon le titre d'Investing.com, les cours du pétrole se dirigent vers une troisième semaine de baisse consécutive, avec des signes d'amélioration de l'approvisionnement. L'article n'a pas pu être lu en entier (limite d'accès du site); aucun chiffre n'est donc repris ici. Une offre plus abondante tend à peser sur le WTI malgré les tensions persistantes au Moyen-Orient.",
+      "summary_en": "According to Investing.com's headline, oil prices are heading for a third straight weekly decline amid signs of improving supplies. The full article could not be read (site access limit), so no figures are given here. Improving supply tends to weigh on WTI despite persistent Middle East tensions.",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-meast-tensions-persist-set-for-third-week-in-red-5040503"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "04:53",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Des démocrates de la Chambre enquêtent sur l'influence de Nvidia dans l'enquête américaine sur Megaspeed",
+      "title_en": "House Democrats open probe into Nvidia influence on US Megaspeed investigation",
+      "summary": "Les représentants Gregory Meeks et Sydney Kamlager-Dove ont écrit le 19 novembre au secrétaire au Commerce Howard Lutnick pour exiger réponses et documents d'ici le 1er décembre sur le rôle de Nvidia dans l'enquête visant Megaspeed, société infonuagique de Singapour soupçonnée d'avoir détourné des puces vers la Chine. Nvidia avait contacté directement des employés du Commerce en août 2025. Ce nouveau front politique s'ajoute aux pressions sur Nvidia, poids lourd du Nasdaq et du S&P 500, en pleine vague de ventes des titres de l'IA.",
+      "summary_en": "Representatives Gregory Meeks and Sydney Kamlager-Dove wrote on Nov. 19 to Commerce Secretary Howard Lutnick seeking answers and documents by Dec. 1 on Nvidia's role in the probe of Megaspeed, a Singapore cloud firm suspected of diverting chips to China. Nvidia had directly contacted Commerce employees in August 2025. The new political front adds to pressure on Nvidia, a Nasdaq and S&P 500 heavyweight, amid an AI stock selloff.",
+      "url": "https://www.investing.com/news/stock-market-news/democrats-open-probe-into-nvidia-influence-on-usmegaspeed-investigation-5041051"
+    },
+    {
+      "date": "2026-11-20",
       "time": "04:37",
       "source": "CNBC",
       "impact": "med",
@@ -1786,52 +1831,6 @@
       "title": "Exclusif : un responsable de l'administration Trump aurait évoqué la cession d'un territoire du Guyana au Venezuela, selon des sources",
       "title_en": "Exclusive-Trump official floated ceding Guyanese territory to Venezuela, sources say",
       "url": "https://www.investing.com/news/commodities-news/exclusivetrump-official-floated-ceding-guyanese-territory-to-venezuela-sources-say-5038474"
-    },
-    {
-      "assets": [
-        "us30",
-        "spx500"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "MarketWatch",
-      "summary": "MarketWatch rapporte que le titre de UnitedHealth continue de plonger après que le gouvernement américain a signalé une répression de la fraude dans le programme Medicare Advantage. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. UnitedHealth étant une composante du Dow Jones, sa chute pèse sur l'indice.",
-      "summary_en": "MarketWatch reports that UnitedHealth shares keep plunging after the US government signaled a crackdown on Medicare Advantage fraud. The full article could not be accessed; this summary is limited to the headline. As a Dow Jones component, UnitedHealth's slide weighs on the index.",
-      "time": "12:26",
-      "title": "L'action de UnitedHealth poursuit sa chute après que Washington a signalé une offensive contre la fraude au Medicare Advantage",
-      "title_en": "UnitedHealth's stock keeps plunging after government signals crackdown on Medicare Advantage fraud",
-      "url": "https://www.marketwatch.com/story/unitedhealths-stock-keeps-plunging-after-government-signals-crackdown-on-medicare-advantage-fraud-c4770a45?mod=mw_rss_topstories"
-    },
-    {
-      "assets": [
-        "usoil",
-        "usd",
-        "btcusd"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "CNBC",
-      "summary": "Au terme de leur rencontre trilatérale historique en Chine, Donald Trump, Xi Jinping et Vladimir Poutine ont annoncé leur intention d'augmenter la production de pétrole et de réformer l'ONU, selon CNBC. L'article n'a pas pu être consulté au complet; un engagement à hausser l'offre pèserait sur le WTI et retient l'attention des marchés sur le plan géopolitique.",
-      "summary_en": "After their historic trilateral meeting in China, Donald Trump, Xi Jinping and Vladimir Putin said they plan to boost oil production and revamp the UN, according to CNBC. The full article could not be accessed; a pledge to raise supply would weigh on WTI and keeps geopolitics in focus for markets.",
-      "time": "11:19",
-      "title": "Trump, Xi et Poutine disent vouloir accroître la production de pétrole et réformer l'ONU après leurs pourparlers à trois",
-      "title_en": "Trump, Xi, Putin said they plan to boost oil production, revamp UN after trilateral talks",
-      "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-trilateral-meeting-china.html"
-    },
-    {
-      "assets": [
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon le Wall Street Journal, des données de milliers de clients de Visa, Mastercard et JPMorgan Chase ont fuité via des fournisseurs tiers; le groupe de rançongiciel n0n a revendiqué l'attaque. Les trois firmes affirment que leurs réseaux de paiement n'ont pas été touchés (aucun numéro de carte chez Visa), mais l'action de Visa recule de 2,53 %, Mastercard de 1,81 % et JPMorgan de 0,61 %, ce qui pèse sur le Dow.",
-      "summary_en": "According to the Wall Street Journal, data on thousands of Visa, Mastercard and JPMorgan Chase customers leaked via third-party providers; ransomware group n0n claimed responsibility. All three say payment networks were not disrupted (no card numbers at Visa), but Visa shares fell 2.53%, Mastercard 1.81% and JPMorgan 0.61%, weighing on the Dow.",
-      "time": "11:07",
-      "title": "Des données clients de Visa, Mastercard et JPMorgan exposées lors d'une cyberattaque chez des fournisseurs tiers",
-      "title_en": "Visa, Mastercard and JPMorgan customer data leaked in third-party cyberattack",
-      "url": "https://www.investing.com/news/stock-market-news/visa-mastercard-and-jpmorgan-customer-data-leaked-in-thirdparty-cyberattack-5039535"
     }
   ],
   "live": {
