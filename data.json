@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T12:48:12Z",
+  "updatedAt": "2026-11-20T13:52:00Z",
   "econ": {
     "values": {
       "adp": {
@@ -9,8 +9,8 @@
       },
       "claims": {
         "a": 203,
-        "f": 197,
         "d": "2026-11-19",
+        "f": 197,
         "u": "2026-11-19T13:58:00Z"
       },
       "conf": {
@@ -82,9 +82,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 86.23,
       "cotChange": 1.9,
-      "crowdLong": 79,
-      "uCrowd": "2026-11-19T13:58:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCot": "2026-11-16T20:50:00Z",
+      "crowdLong": 77,
+      "uCrowd": "2026-11-20T13:52:00Z"
     },
     "nasdaq": {
       "season": "neutral",
@@ -92,9 +92,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 61.29,
       "cotChange": -4.6,
+      "uCot": "2026-11-16T20:50:00Z",
       "crowdLong": 69,
-      "uCrowd": "2026-11-19T19:45:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCrowd": "2026-11-19T19:45:00Z"
     },
     "spx500": {
       "season": "bull",
@@ -102,9 +102,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 37.65,
       "cotChange": -1.34,
-      "crowdLong": 57,
-      "uCrowd": "2026-11-19T13:58:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCot": "2026-11-16T20:50:00Z",
+      "crowdLong": 59,
+      "uCrowd": "2026-11-20T13:52:00Z"
     },
     "us30": {
       "season": "neutral",
@@ -121,9 +121,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 62.39,
       "cotChange": -1.27,
+      "uCot": "2026-11-16T20:50:00Z",
       "crowdLong": 36,
-      "uCrowd": "2026-11-19T13:58:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCrowd": "2026-11-19T13:58:00Z"
     },
     "xagusd": {
       "season": "bear",
@@ -131,9 +131,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 68.29,
       "cotChange": -1.85,
+      "uCot": "2026-11-16T20:50:00Z",
       "crowdLong": 89,
-      "uCrowd": "2026-11-17T19:41:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCrowd": "2026-11-17T19:41:00Z"
     },
     "btcusd": {
       "season": "bull",
@@ -141,8 +141,8 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 54.02,
       "cotChange": 0.19,
-      "crowdLong": 82,
       "uCot": "2026-11-16T20:50:00Z",
+      "crowdLong": 82,
       "uCrowd": "2026-11-19T13:58:00Z"
     },
     "usoil": {
@@ -151,9 +151,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 54.75,
       "cotChange": 0.77,
-      "crowdLong": 57,
-      "uCrowd": "2026-11-19T13:58:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCot": "2026-11-16T20:50:00Z",
+      "crowdLong": 58,
+      "uCrowd": "2026-11-20T13:52:00Z"
     },
     "rut": {
       "season": "bear",
@@ -161,8 +161,8 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 48.7,
       "cotChange": 3.57,
-      "crowdLong": 68,
       "uCot": "2026-11-16T20:50:00Z",
+      "crowdLong": 68,
       "uCrowd": "2026-11-19T13:58:00Z"
     },
     "eurusd": {
@@ -171,9 +171,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 38.47,
       "cotChange": 1.26,
+      "uCot": "2026-11-16T20:50:00Z",
       "crowdLong": 64,
-      "uCrowd": "2026-11-19T13:58:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCrowd": "2026-11-19T13:58:00Z"
     },
     "usdjpy": {
       "season": "bear",
@@ -181,9 +181,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 33.65,
       "cotChange": -1.82,
+      "uCot": "2026-11-16T20:50:00Z",
       "crowdLong": 34,
-      "uCrowd": "2026-11-19T13:58:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCrowd": "2026-11-19T13:58:00Z"
     },
     "usdcad": {
       "season": "neutral",
@@ -191,9 +191,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 56.57,
       "cotChange": -2.12,
+      "uCot": "2026-11-16T20:50:00Z",
       "crowdLong": 44,
-      "uCrowd": "2026-11-19T19:45:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCrowd": "2026-11-19T19:45:00Z"
     },
     "gbpusd": {
       "season": "neutral",
@@ -201,9 +201,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 37.08,
       "cotChange": 3.04,
-      "crowdLong": 66,
-      "uCrowd": "2026-11-18T20:45:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCot": "2026-11-16T20:50:00Z",
+      "crowdLong": 64,
+      "uCrowd": "2026-11-20T13:52:00Z"
     },
     "audusd": {
       "season": "neutral",
@@ -211,9 +211,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 28.24,
       "cotChange": -2.25,
+      "uCot": "2026-11-16T20:50:00Z",
       "crowdLong": 63,
-      "uCrowd": "2026-11-19T15:45:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCrowd": "2026-11-19T15:45:00Z"
     },
     "usdchf": {
       "season": "bull",
@@ -221,9 +221,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 56.15,
       "cotChange": -4.83,
-      "crowdLong": 69,
-      "uCrowd": "2026-11-17T19:41:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCot": "2026-11-16T20:50:00Z",
+      "crowdLong": 68,
+      "uCrowd": "2026-11-20T13:52:00Z"
     },
     "nzdusd": {
       "season": "bear",
@@ -231,9 +231,9 @@
       "seasonPeriod": "août à octobre",
       "cotLong": 19.62,
       "cotChange": 0.57,
-      "crowdLong": 73,
-      "uCrowd": "2026-11-18T20:45:00Z",
-      "uCot": "2026-11-16T20:50:00Z"
+      "uCot": "2026-11-16T20:50:00Z",
+      "crowdLong": 72,
+      "uCrowd": "2026-11-20T13:52:00Z"
     }
   },
   "history": [
@@ -814,6 +814,73 @@
         "sent": -1,
         "macro": -7
       }
+    },
+    {
+      "date": "2026-11-20",
+      "xauusd": {
+        "sent": 1,
+        "macro": -7
+      },
+      "xagusd": {
+        "sent": -1,
+        "macro": -7
+      },
+      "nasdaq": {
+        "sent": -1,
+        "macro": 8
+      },
+      "spx500": {
+        "sent": -2,
+        "macro": 9
+      },
+      "us30": {
+        "sent": 1,
+        "macro": 10
+      },
+      "rut": {
+        "sent": -1,
+        "macro": 9
+      },
+      "usd": {
+        "sent": 1,
+        "macro": 7
+      },
+      "usoil": {
+        "sent": 2,
+        "macro": 11
+      },
+      "btcusd": {
+        "sent": 1,
+        "macro": 8
+      },
+      "eurusd": {
+        "sent": -1,
+        "macro": -7
+      },
+      "usdjpy": {
+        "sent": -1,
+        "macro": 7
+      },
+      "usdcad": {
+        "sent": 0,
+        "macro": 7
+      },
+      "gbpusd": {
+        "sent": -1,
+        "macro": -7
+      },
+      "audusd": {
+        "sent": -3,
+        "macro": -7
+      },
+      "usdchf": {
+        "sent": -1,
+        "macro": 7
+      },
+      "nzdusd": {
+        "sent": -1,
+        "macro": -7
+      }
     }
   ],
   "calendar": [
@@ -955,15 +1022,6 @@
       "revA": 25.9,
       "revF": 25.2,
       "time": "07:00"
-    },
-    {
-      "a": 0.2,
-      "date": "2026-11-17",
-      "f": 0.1,
-      "id": "retail",
-      "name": "Ventes au détail MoM (octobre)",
-      "prev": 0.8,
-      "time": "08:30"
     },
     {
       "ai": true,
@@ -1182,8 +1240,8 @@
     }
   ],
   "fed": {
-    "asOf": "2026-11-19",
-    "checkedAt": "2026-11-19T13:58:00Z",
+    "asOf": "2026-11-20",
+    "checkedAt": "2026-11-20T13:52:00Z",
     "events": [
       {
         "date": "2026-11-18",
