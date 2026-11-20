@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-19T23:48:35Z",
+ "updatedAt": "2026-11-20T00:47:17Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,51 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "19:21",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "us30"
+   ],
+   "title": "Citigroup aurait mal comptabilisé des transactions dans son unité européenne et sous-estimé son risque de 35 G$",
+   "title_en": "Citigroup misbooked trades at European unit, underestimated risk by $35 bln, Reuters reports",
+   "summary": "Selon des sources citées par Reuters, Citigroup a mal comptabilisé des transactions dans son unité européenne, ce qui l'a amenée à sous-estimer ses actifs à risque de 35 milliards $. La nouvelle, publiée après la clôture, pourrait peser sur le titre de la banque et sur le secteur financier à l'ouverture.",
+   "summary_en": "According to sources cited by Reuters, Citigroup incorrectly booked trades at its European unit, leading it to underestimate risky assets by $35 billion. The after-hours report could weigh on the bank's shares and the financial sector at the open.",
+   "url": "https://www.investing.com/news/stock-market-news/citigroup-misbooked-trades-at-european-unit-underestimated-risk-by-35-bln-reuters-reports-93CH-5040402"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "19:11",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "xauusd",
+    "usd"
+   ],
+   "title": "Les républicains du Sénat rejettent une résolution pour mettre fin à la guerre en Iran",
+   "title_en": "Senate Republicans reject legislation to end Iran war",
+   "summary": "Le Sénat à majorité républicaine a rejeté par 51 voix contre 48 une résolution sur les pouvoirs de guerre qui aurait obligé Donald Trump à mettre fin à la guerre en Iran ou à obtenir l'aval du Congrès, après son adoption à la Chambre. C'est le 21e vote du genre depuis le début du conflit en février; un sondage Reuters/Ipsos ne montre que 31 % d'appui à la guerre. Le maintien du conflit garde une prime de risque sur le pétrole et soutient la demande de valeurs refuges.",
+   "summary_en": "The Republican-led Senate rejected, 51-48, a war powers resolution that would have required President Trump to end the Iran war or seek Congressional approval, after it passed the House. It was the 21st such vote since the war began in February; a Reuters/Ipsos poll shows only 31% of Americans approve of the war. The continuing conflict keeps a risk premium on oil and supports safe-haven demand.",
+   "url": "https://www.investing.com/news/stock-market-news/senate-republicans-reject-legislation-to-end-iran-war-93CH-5040382"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "18:36",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "usdjpy"
+   ],
+   "title": "Japon : l'inflation de base d'octobre à 2,2 %, sous les attentes mais au plus haut de l'année",
+   "title_en": "Japan reports cooler-than-expected core inflation in October of 2.2% — but highest this year so far",
+   "summary": "L'inflation de base au Japon s'est établie à 2,2 % en octobre, un peu moins que prévu, mais il s'agit de son niveau le plus élevé jusqu'ici cette année. Le chiffre alimente le débat sur une prochaine hausse de taux de la Banque du Japon et compte pour le yen (USD/JPY).",
+   "summary_en": "Japan's core inflation came in at 2.2% in October, cooler than expected but the highest so far this year. The figure feeds debate over the Bank of Japan's next rate hike and matters for the yen (USD/JPY).",
+   "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html"
+  },
+  {
+   "date": "2026-11-19",
    "time": "17:53",
    "source": "Investing.com",
    "impact": "med",
@@ -1784,52 +1829,6 @@
    "title": "Taïwan clôture en chute de 4,6 % : la débâcle de l'IA s'aggrave, puces et circuits imprimés au plancher",
    "title_en": "Taiwan stocks plunge 4.6% as AI rout deepens; chip and PCB shares hit limit-down",
    "url": "https://www.investing.com/news/stock-market-news/taiwan-stocks-plunge-46-as-ai-rout-deepens-chip-and-pcb-shares-hit-limitdown-5037869"
-  },
-  {
-   "assets": [
-    "btcusd"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Hyperscale Data (GPUS) a vendu ses 211 derniers BTC pour environ 16 M$ (environ 1 113 BTC vendus depuis fin juillet) et doit trouver encore 74,8 M$ d'ici mars pour son centre de données IA au Michigan. Avec 17 M$ de liquidités contre 231 M$ de passifs courants, la direction évoque un « doute substantiel » sur sa continuité. Illustre la pression vendeuse des mineurs qui se tournent vers l'IA alors que le bitcoin est faible.",
-   "summary_en": "Hyperscale Data (GPUS) sold its last 211 BTC for about $16M (roughly 1,113 BTC sold since late July) and still needs $74.8M by March for its Michigan AI data center. With $17M of unrestricted cash against $231M of current liabilities, management flagged 'substantial doubt' about continuing as a going concern. It highlights selling pressure from miners pivoting to AI while bitcoin is weak.",
-   "time": "23:46",
-   "title": "Hyperscale Data, ex-mineur qui a vendu ses derniers bitcoins, craint de manquer d'argent pour un contrat IA de 1,2 G$",
-   "title_en": "Bitcoin miner that sold its last BTC warns it may run short of cash for $1.2 billion AI deal",
-   "url": "https://www.coindesk.com/markets/2026/11/19/bitcoin-miner-that-sold-its-last-btc-warns-it-may-run-short-of-cash-for-usd1-2-billion-ai-deal"
-  },
-  {
-   "assets": [
-    "usd",
-    "usdjpy",
-    "audusd",
-    "eurusd"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'indice dollar monte de 0,1 % à 103,965, son plus haut depuis avril 2025, porté par le procès-verbal de la Fed où presque tous les membres jugent d'autres hausses possibles; Waller évoque même 50 points de base en décembre. Le USD/JPY grimpe à 159,59, près du seuil de 160 associé à une intervention japonaise, et l'AUD/USD perd 0,7 % à 0,6673 après la perte de 43 500 emplois et un chômage à 4,9 % en Australie.",
-   "summary_en": "The dollar index rose 0.1% to 103.965, its highest since April 2025, on Fed minutes showing nearly all officials see further hikes as possible; Waller floated a 50 bp December move. USD/JPY rose to 159.59, near the 160 level tied to Japanese intervention, and AUD/USD fell 0.7% to 0.6673 after Australia shed 43,500 jobs and unemployment hit 4.9%.",
-   "time": "23:15",
-   "title": "Le dollar touche un nouveau sommet de 19 mois sur une Fed restrictive; le dollar australien glisse après l'emploi",
-   "title_en": "Dollar hits fresh 19-month peak on hawkish Fed; Aussie slides after weak jobs data",
-   "url": "https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-18",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Selon le WSJ, aucun capital n'a encore été déployé sur les engagements allant jusqu'à 500 G$ obtenus en août par Jensen Huang auprès d'Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs et KKR pour financer les achats de puces des clients de Nvidia. La PDG par intérim Colette Kress a dit que Nvidia sera « plus disciplinée » dans ce financement, ce qui alimente le scepticisme envers la demande en IA qui soutient le Nasdaq.",
-   "summary_en": "According to the WSJ, no capital has yet been deployed from the up to $500 billion pledged in August to Jensen Huang by Apollo, Blackstone, BlackRock, Brookfield, Goldman Sachs and KKR to fund Nvidia customers' chip purchases. Interim CEO Colette Kress said Nvidia will be 'more disciplined' in financing customers, adding to skepticism about the AI demand underpinning the Nasdaq.",
-   "time": "23:15",
-   "title": "La promesse de 500 G$ de Wall Street pour financer les clients de Nvidia n'est pas encore mobilisée (WSJ)",
-   "title_en": "Wall St's $500 bln pledge to Nvidia yet to be mobilized, WSJ reports",
-   "url": "https://www.investing.com/news/stock-market-news/wall-sts-500-bln-pledge-to-nvidia-yet-to-be-mobilized-wsj-reports-5037693"
   }
  ],
  "live": {
