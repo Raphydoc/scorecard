@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T17:47:45Z",
+ "updatedAt": "2026-11-20T18:47:47Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,37 @@
  "news": [
   {
    "date": "2026-11-20",
+   "time": "13:13",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd",
+    "nasdaq",
+    "xauusd"
+   ],
+   "title": "Le bitcoin plonge sous les 59 000 $ : la ruée vers l'encaisse ravive la menace de nouveaux creux du marché baissier",
+   "title_en": "Bitcoin plunges below $59,000 as rush to cash puts new bear market lows back in play",
+   "summary": "Le bitcoin est passé sous les 59 000 $ vendredi, effaçant le rebond d'août-septembre jusqu'à 87 000 $ et s'approchant à environ 2 % de son creux de juin-juillet à 57 700 $. Environ 1,5 G$ de positions sur dérivés crypto ont été liquidées en 24 heures selon CoinGlass, tandis que l'or reculait encore de 2 % vers 3 500 $ l'once. Des analystes craignent une erreur de politique de la Fed qui relèverait ses taux malgré le ralentissement, avec le rendement à 2 ans autour de 4,7 %.",
+   "summary_en": "Bitcoin fell below $59,000 on Friday, erasing the August-September rebound to $87,000 and coming within about 2% of its June-July bear market low of $57,700. Roughly $1.5 billion of crypto derivatives positions were liquidated over 24 hours, per CoinGlass, while gold fell another 2% toward $3,500 an ounce. Analysts warn of a possible Fed policy error of hiking into slowing growth, with the two-year Treasury yield around 4.7%.",
+   "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "13:09",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Les petits investisseurs d'Anthropic encaissent des pertes : l'action chute de 13 % au lendemain de ses débuts",
+   "title_en": "Anthropic retail traders face losses as shares dive 13% the day after debut",
+   "summary": "Après avoir vendu 980 millions d'actions à 83 $ jeudi, le plus gros PAPE de l'histoire, Anthropic a ouvert à 112 $, clôturé à 97 $, puis reculé à 85 $ vendredi vers 12 h 20 (HE), une baisse de 13 %. Selon Vanda Research, plus de 750 M$ d'actions Anthropic ont été échangées par des particuliers jeudi, un record pour un premier jour de cotation. Les particuliers qui ont acheté sur le marché secondaire sont maintenant en perte, ce qui pèse sur le sentiment envers la techno et l'IA.",
+   "summary_en": "After selling 980 million shares at $83 on Thursday in the biggest IPO in history, Anthropic opened at $112, closed at $97 and fell to $85 by 12:20 p.m. ET on Friday, a 13% drop. Vanda Research said more than $750 million of Anthropic stock was traded by retail investors on Thursday, a record for a debut. Retail buyers who bought on the secondary market now face losses, weighing on sentiment toward tech and AI.",
+   "url": "https://www.investing.com/news/stock-market-news/anthropic-retail-traders-face-losses-as-shares-dive-13-the-day-after-debut-5042375"
+  },
+  {
+   "date": "2026-11-20",
    "time": "12:12",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1368,22 +1399,6 @@
    "summary": "Broadcom recule de près de 9,8 % à 312,70 $ après que l'analyste Ming-Chi Kuo a rapporté que Google a réduit d'environ un million d'unités (près de 20 %) ses livraisons prévues de TPU 8i pour 2027. Goldman Sachs abaisse sa cible de 540 $ à 460 $ et Redburn dégrade le titre à Neutre, avec une cible de 398 $. Le Nasdaq Composite perdait 2,8 %, la vente dans les semi-conducteurs de l'IA s'intensifiant.",
    "summary_en": "Broadcom fell nearly 9.8% to $312.70 after analyst Ming-Chi Kuo reported Google trimmed planned 2027 TPU 8i shipments by about one million units (roughly 20%). Goldman Sachs cut its target to $460 from $540 and Redburn downgraded the stock to Neutral with a $398 target. The Nasdaq Composite was down 2.8% as the AI chip selloff deepened.",
    "url": "https://www.investing.com/news/stock-market-news/why-is-broadcom-stock-sliding-today-93CH-5042272"
-  },
-  {
-   "date": "2026-11-20",
-   "time": "11:25",
-   "source": "Investing.com (Reuters)",
-   "impact": "high",
-   "assets": [
-    "btcusd",
-    "nasdaq",
-    "spx500"
-   ],
-   "title": "Le bitcoin passe sous les 60 000 $ pour la première fois depuis juillet",
-   "title_en": "Bitcoin falls below $60,000 level",
-   "summary": "Le bitcoin est tombé sous les 60 000 $ vendredi pour la première fois depuis juillet, reculant de 3,45 % à 59 381 $, tandis que l'ether perdait 5,23 % à 1 648,91 $. Les craintes sur les valorisations de l'IA pèsent sur l'ensemble des actifs risqués. Les principaux indices américains se dirigent vers leur pire semaine depuis avril 2025.",
-   "summary_en": "Bitcoin fell below $60,000 on Friday for the first time since July, down 3.45% at $59,381, while ether lost 5.23% to $1,648.91. Valuation worries around AI are weighing on risk assets broadly. Major U.S. stock indexes are on track for their steepest weekly decline since April 2025.",
-   "url": "https://www.investing.com/news/stock-market-news/bitcoin-falls-below-60000-level-5042271"
   },
   {
    "assets": [
@@ -1887,20 +1902,6 @@
    "title": "Les républicains du Sénat rejettent une résolution pour mettre fin à la guerre en Iran",
    "title_en": "Senate Republicans reject legislation to end Iran war",
    "url": "https://www.investing.com/news/stock-market-news/senate-republicans-reject-legislation-to-end-iran-war-93CH-5040382"
-  },
-  {
-   "assets": [
-    "usdjpy"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "L'inflation de base au Japon s'est établie à 2,2 % en octobre, un peu moins que prévu, mais il s'agit de son niveau le plus élevé jusqu'ici cette année. Le chiffre alimente le débat sur une prochaine hausse de taux de la Banque du Japon et compte pour le yen (USD/JPY).",
-   "summary_en": "Japan's core inflation came in at 2.2% in October, cooler than expected but the highest so far this year. The figure feeds debate over the Bank of Japan's next rate hike and matters for the yen (USD/JPY).",
-   "time": "18:36",
-   "title": "Japon : l'inflation de base d'octobre à 2,2 %, sous les attentes mais au plus haut de l'année",
-   "title_en": "Japan reports cooler-than-expected core inflation in October of 2.2% — but highest this year so far",
-   "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html"
   }
  ],
  "live": {
