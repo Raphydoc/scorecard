@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T05:47:51Z",
+  "updatedAt": "2026-11-20T06:49:07Z",
   "econ": {
     "values": {
       "adp": {
@@ -1218,6 +1218,39 @@
   "news": [
     {
       "date": "2026-11-20",
+      "time": "01:15",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "usdjpy",
+        "eurusd",
+        "xauusd"
+      ],
+      "title": "Les rendements obligataires mondiaux plongent : la débâcle de l'IA déclenche une fuite vers la sécurité",
+      "title_en": "Global bond yields plunge as AI rout triggers flight to safety",
+      "summary": "Selon Investing.com, les rendements des obligations souveraines reculent nettement à l'échelle mondiale alors que la vague de ventes dans les titres liés à l'IA pousse les investisseurs vers les valeurs refuges. (Article non accessible; résumé tiré du titre seulement.) Des rendements plus bas pèsent habituellement sur le dollar face au yen et peuvent soutenir l'or.",
+      "summary_en": "According to Investing.com, sovereign bond yields are falling sharply worldwide as the sell-off in AI-linked stocks drives investors toward safe havens. (Article not accessible; summary based on the headline only.) Lower yields typically weigh on the dollar against the yen and can support gold.",
+      "url": "https://www.investing.com/news/forex-news/global-bond-yields-plunge-as-ai-rout-triggers-flight-to-safety-5040733"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "01:12",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "xauusd",
+        "btcusd",
+        "xagusd"
+      ],
+      "title": "L'or plonge et le bitcoin subit des pressions alors que les « taux réels » s'envolent",
+      "title_en": "Gold tanks, BTC under pressure as 'real rates' surge",
+      "summary": "CoinDesk attribue la chute de l'or et la pression sur le bitcoin à la hausse marquée des taux d'intérêt réels. (Article non accessible; résumé tiré du titre seulement.) Des taux réels plus élevés augmentent le coût d'opportunité de détenir des actifs sans rendement comme l'or et le bitcoin.",
+      "summary_en": "CoinDesk attributes gold's slide and the pressure on bitcoin to a sharp rise in real interest rates. (Article not accessible; summary based on the headline only.) Higher real rates raise the opportunity cost of holding non-yielding assets such as gold and bitcoin.",
+      "url": "https://www.coindesk.com/markets/2026/11/20/here-s-what-s-crashing-gold-and-likely-weighing-on-bitcoin-too"
+    },
+    {
+      "date": "2026-11-20",
       "time": "00:20",
       "source": "CoinDesk",
       "impact": "med",
@@ -1316,8 +1349,8 @@
       "date": "2026-11-19",
       "impact": "med",
       "source": "Investing.com",
-      "summary": "Les actions asiatiques ont glissé à leur plus bas niveau en sept mois vendredi, la Corée du Sud et Taïwan encaissant les pires reculs dans la vague de ventes liée à l'IA. Ce repli en Asie prolonge la faiblesse des technos américaines et pèse sur l'appétit pour le risque avant l'ouverture des marchés nord-américains.",
-      "summary_en": "Asian stocks slid to a seven-month low on Friday, with South Korea and Taiwan the worst hit in the AI-driven sell-off. The Asian drop extends weakness in U.S. tech and weighs on risk appetite ahead of North American trading.",
+      "summary": "Les actions asiatiques ont glissé à leur plus bas niveau en sept mois vendredi, la Corée du Sud et Taïwan encaissant les pires reculs dans la vague de ventes liée à l'IA. Ce repli en Asie prolonge la faiblesse des technos américaines et pèse sur l'appétit pour le risque avant l'ouverture des marchés nord-américains. Mise à jour : l'indice pondéré de Taïwan a clôturé en baisse de 6,63 % (Investing.com).",
+      "summary_en": "Asian stocks slid to a seven-month low on Friday, with South Korea and Taiwan the worst hit in the AI-driven sell-off. The Asian drop extends weakness in U.S. tech and weighs on risk appetite ahead of North American trading. Update: Taiwan's Weighted index closed down 6.63% (Investing.com).",
       "time": "22:06",
       "title": "Les Bourses asiatiques chutent à un creux de 7 mois; Corée du Sud et Taïwan les plus touchées par la déroute de l'IA",
       "title_en": "Asia stocks slide to 7-month low with S.Korea, Taiwan worst hit by AI rout",
@@ -1792,36 +1825,6 @@
       "title": "Poutine exclut une trêve en mer Noire et sur l'énergie après la frappe contre le pont de Crimée",
       "title_en": "Putin rules out Black Sea, energy truce after Crimea bridge strike",
       "url": "https://www.investing.com/news/commodities-news/putin-rules-out-black-sea-energy-truce-after-crimea-bridge-strike-5039062"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon des sources citées par Reuters, TSMC durcit ses restrictions sur la fabrication de puces d'IA destinées à des clients chinois, alors que de nouvelles règles américaines ferment une échappatoire dans la fabrication. Le dossier touche directement les semi-conducteurs, moteur du Nasdaq en pleine journée d'IPO d'Anthropic.",
-      "summary_en": "Sources cited by Reuters say TSMC is tightening curbs on making AI chips for Chinese customers as new US rules close a manufacturing loophole. The issue hits chipmakers directly, a key Nasdaq driver on Anthropic's IPO day.",
-      "time": "07:48",
-      "title": "TSMC resserre ses restrictions sur les puces d'IA pour la Chine, de nouvelles règles américaines fermant une échappatoire",
-      "title_en": "TSMC tightens China AI chip curbs as new US rules close manufacturing loophole, sources say",
-      "url": "https://www.investing.com/news/stock-market-news/tsmc-tightens-china-ai-chip-curbs-as-new-us-rules-close-manufacturing-loophole-sources-say-5038806"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Palo Alto Networks a relevé ses prévisions de ventes annuelles, ce qui entraîne une remontée de l'ensemble des titres de cybersécurité avant l'ouverture (CrowdStrike, Zscaler, Okta et Rubrik sont aussi en hausse). Le mouvement s'ajoute à l'optimisme sur l'IA qui soutient le Nasdaq ce matin.",
-      "summary_en": "Palo Alto Networks raised its annual sales forecast, lifting cybersecurity stocks broadly in premarket trading (CrowdStrike, Zscaler, Okta and Rubrik also rose). The move adds to the AI optimism supporting the Nasdaq this morning.",
-      "time": "07:07",
-      "title": "Le relèvement des prévisions de ventes de Palo Alto propulse les titres de cybersécurité",
-      "title_en": "Palo Alto's raised sales forecast powers cybersecurity stock rally",
-      "url": "https://www.investing.com/news/stock-market-news/palo-altos-raised-sales-forecast-powers-cybersecurity-stock-rally-5038632"
     }
   ],
   "live": {
