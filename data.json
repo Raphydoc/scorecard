@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T15:45:00Z",
+ "updatedAt": "2026-11-20T15:47:33Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,37 @@
  "news": [
   {
    "date": "2026-11-20",
+   "time": "10:37",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia passe sous Alphabet et devient la 4e entreprise américaine en valeur boursière",
+   "title_en": "Nvidia falls below Alphabet to become fourth most valuable U.S. company",
+   "summary": "Selon Investing.com, Nvidia a glissé sous Alphabet au classement des capitalisations boursières américaines et n'occupe plus que le quatrième rang. Le recul du titre, poids lourd du Nasdaq et du S&P 500, s'inscrit dans la vague de ventes qui frappe le secteur de l'IA cette semaine.",
+   "summary_en": "According to Investing.com, Nvidia slipped below Alphabet in U.S. market-cap rankings and now ranks fourth. The decline in the stock, a heavyweight in the Nasdaq and S&P 500, comes amid this week's AI-sector selloff.",
+   "url": "https://www.investing.com/news/stock-market-news/nvidia-falls-below-alphabet-to-become-fourth-most-valuable-us-company-5042158"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "09:36",
+   "source": "Investing.com (Reuters)",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "Le Nasdaq recule de 1 % à l'ouverture, Anthropic ne parvient pas à stabiliser le commerce de l'IA",
+   "title_en": "Nasdaq falls 1% at open as Anthropic fails to steady AI trade",
+   "summary": "Le Nasdaq Composite a cédé 286,5 points (-1,20 %) à 23 592,67 à l'ouverture vendredi, tandis que le S&P 500 perdait 25,4 points (-0,35 %) à 7 150,39 et le Dow Jones 25,2 points (-0,05 %) à 49 071,82. La chute de l'action d'Anthropic après son entrée en Bourse remarquée ajoute à la pression sur le commerce de l'IA, déjà miné par les craintes d'évaluation.",
+   "summary_en": "The Nasdaq Composite fell 286.5 points (-1.20%) to 23,592.67 at Friday's open, while the S&P 500 lost 25.4 points (-0.35%) to 7,150.39 and the Dow fell 25.2 points (-0.05%) to 49,071.82. Anthropic shares tumbled after a blockbuster debut, adding pressure to an AI trade already hit by valuation concerns.",
+   "url": "https://www.investing.com/news/stock-market-news/nasdaq-falls-1-at-open-as-anthropic-fails-to-steady-ai-trade-5042084"
+  },
+  {
+   "date": "2026-11-20",
    "time": "08:45",
    "source": "Investing.com",
    "impact": "med",
@@ -1861,40 +1892,6 @@
    "title": "Gap abaisse ses prévisions annuelles et signale une demande faible pour les vêtements avant les Fêtes",
    "title_en": "Gap cuts annual forecasts, flags weak apparel demand ahead of holidays",
    "url": "https://www.investing.com/news/stock-market-news/gap-cuts-annual-forecasts-flags-weak-apparel-demand-ahead-of-holidays-5040047"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'action d'Anthropic a clôturé sa première journée au Nasdaq 17 % au-dessus de son prix d'introduction, après avoir ouvert 34 % plus haut et brièvement atteint une valorisation de 2 000 milliards $. Le repli de fin de séance reflète la nervosité persistante envers les titres de l'IA, qui a pesé sur le Nasdaq.",
-   "summary_en": "Anthropic shares closed their first Nasdaq session 17% above the IPO price, after opening 34% higher and briefly reaching a $2 trillion valuation. The late-day pullback reflects lingering nervousness about AI stocks, which weighed on the Nasdaq.",
-   "time": "16:18",
-   "title": "Anthropic termine sa première séance 17 % au-dessus de son prix d'IPO après un net recul en fin de journée",
-   "title_en": "Anthropic shares end debut 17% above IPO price after sharp late-day retreat",
-   "url": "https://www.investing.com/news/stock-market-news/anthropic-opens-34-above-ipo-price-reaches-2-trillion-valuation-in-nasdaq-debut-5039595"
-  },
-  {
-   "assets": [
-    "audusd",
-    "eurusd",
-    "spx500",
-    "usd",
-    "usdjpy",
-    "xauusd"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le dollar américain se maintient au-delà d'un sommet de 19 mois, soutenu par la montée des paris sur une hausse des taux de la Fed et la demande de valeur refuge. Le dollar australien glisse après des données d'emploi faibles en Australie, et la vigueur du billet vert pèse sur l'EUR/USD, le yen et l'or.",
-   "summary_en": "The U.S. dollar is holding above a 19-month high, supported by rising bets on a Fed rate hike and safe-haven demand. The Australian dollar slid after weak Australian jobs data, and the greenback's strength weighs on EUR/USD, the yen and gold.",
-   "time": "15:49",
-   "title": "Le dollar se maintient à plus d'un sommet de 19 mois, porté par la hausse des attentes de relèvement des taux de la Fed",
-   "title_en": "Dollar sits at over 19-month high on surge in Fed rate hike expectations",
-   "url": "https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703"
   }
  ],
  "live": {
