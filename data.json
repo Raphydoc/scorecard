@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T22:47:29Z",
+ "updatedAt": "2026-11-20T23:48:10Z",
  "econ": {
   "values": {
    "adp": {
@@ -1275,6 +1275,36 @@
  },
  "news": [
   {
+   "assets": [
+    "usoil",
+    "usdcad"
+   ],
+   "date": "2026-11-20",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Les prix du pétrole ont clôturé en baisse vendredi et enregistrent une troisième semaine de recul d'affilée, l'amélioration de l'offre de brut l'emportant sur les tensions au Moyen-Orient. La tendance pèse sur le WTI et les devises liées aux matières premières comme le dollar canadien.",
+   "summary_en": "Oil prices settled lower on Friday and posted a third straight weekly loss as improving crude supplies outweighed Middle East tensions. The trend weighs on WTI and commodity-linked currencies such as the Canadian dollar.",
+   "time": "18:02",
+   "title": "Le pétrole clôture en baisse et signe une troisième semaine de pertes, l'offre s'améliorant",
+   "title_en": "Oil prices settle lower, post 3-week losing streak amid improving crude supplies",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-meast-tensions-persist-set-for-third-week-in-red-5040503"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "17:44",
+   "source": "MarketWatch",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Les titres de semi-conducteurs perdent 2 300 G$ en une semaine, la panique gagne le commerce de l'IA",
+   "title_en": "Chip stocks see $2.3 trillion weekly wipeout as panic grips the AI trade",
+   "summary": "Selon MarketWatch, les actions de puces ont vu environ 2 300 milliards de dollars de valeur boursière s'évaporer cette semaine, la panique s'étant emparée du commerce lié à l'IA. Ce recul des poids lourds technologiques pèse directement sur le Nasdaq et le S&P 500.",
+   "summary_en": "According to MarketWatch, chip stocks saw about $2.3 trillion in market value wiped out this week as panic gripped the AI trade. The slide in tech heavyweights weighs directly on the Nasdaq and S&P 500.",
+   "url": "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03"
+  },
+  {
    "date": "2026-11-20",
    "time": "17:23",
    "source": "Investing.com",
@@ -1306,6 +1336,21 @@
    "summary": "Selon MarketWatch, le Dow Jones et le S&P 500 sont officiellement en territoire de correction après la séance de vendredi, tandis que le Nasdaq encaisse sa pire semaine depuis 2020. La vente massive dans la tech liée à l'IA domine les marchés américains avant la semaine écourtée de l'Action de grâce.",
    "summary_en": "According to MarketWatch, the Dow and the S&P 500 are officially in correction territory after Friday's session, while the Nasdaq suffered its worst week since 2020. The AI-driven tech selloff dominates U.S. markets ahead of the shortened Thanksgiving week.",
    "url": "https://www.marketwatch.com/story/dow-s-p-500-enter-correction-as-nasdaq-suffers-worst-week-since-2020-bd74dadf"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "17:11",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Oracle affirme que son contrat d'infrastructure avec OpenAI est entièrement financé",
+   "title_en": "Oracle says OpenAI infrastructure deal is fully funded after final capital raise",
+   "summary": "Oracle dit que son contrat d'infrastructure avec OpenAI est entièrement financé après une levée de capital finale de 20 G$ ce mois-ci (environ 10 G$ en actions et 10 G$ en dette). Les deux sociétés prévoient 4,5 gigawatts de capacité supplémentaire de centres de données aux États-Unis. Le titre a grimpé jusqu'à 3,3 % après la clôture, une note rassurante sur le financement de l'IA en pleine débâcle technologique.",
+   "summary_en": "Oracle says its infrastructure contract with OpenAI is fully funded after a final $20 billion capital raise this month (about $10 billion in stock and $10 billion in debt). The companies plan 4.5 gigawatts of additional US data-center capacity. Shares rose as much as 3.3% after hours, a reassuring note on AI financing amid the tech rout.",
+   "url": "https://www.investing.com/news/stock-market-news/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-5042771"
   },
   {
    "date": "2026-11-20",
@@ -1766,20 +1811,6 @@
   },
   {
    "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-20",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Selon le titre d'Investing.com, les cours du pétrole se dirigent vers une troisième semaine de baisse consécutive, avec des signes d'amélioration de l'approvisionnement. L'article n'a pas pu être lu en entier (limite d'accès du site); aucun chiffre n'est donc repris ici. Une offre plus abondante tend à peser sur le WTI malgré les tensions persistantes au Moyen-Orient.",
-   "summary_en": "According to Investing.com's headline, oil prices are heading for a third straight weekly decline amid signs of improving supplies. The full article could not be read (site access limit), so no figures are given here. Improving supply tends to weigh on WTI despite persistent Middle East tensions.",
-   "time": "05:06",
-   "title": "Le pétrole en voie d'une troisième baisse hebdomadaire, l'offre semblant s'améliorer",
-   "title_en": "Oil prices on track for third weekly decline amid signs of improving supplies",
-   "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-meast-tensions-persist-set-for-third-week-in-red-5040503"
-  },
-  {
-   "assets": [
     "nasdaq",
     "spx500"
    ],
@@ -1874,39 +1905,6 @@
    "title": "Clôture en Asie : le Nikkei 225 chute de 4,77 %, le Taiwan Weighted de 6,63 %",
    "title_en": "Asia close: Nikkei 225 down 4.77%, Taiwan Weighted down 6.63%",
    "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-477-5040783"
-  },
-  {
-   "assets": [
-    "usd",
-    "usdjpy",
-    "eurusd",
-    "xauusd"
-   ],
-   "date": "2026-11-20",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Selon Investing.com, les rendements des obligations souveraines reculent nettement à l'échelle mondiale alors que la vague de ventes dans les titres liés à l'IA pousse les investisseurs vers les valeurs refuges. (Article non accessible; résumé tiré du titre seulement.) Des rendements plus bas pèsent habituellement sur le dollar face au yen et peuvent soutenir l'or.",
-   "summary_en": "According to Investing.com, sovereign bond yields are falling sharply worldwide as the sell-off in AI-linked stocks drives investors toward safe havens. (Article not accessible; summary based on the headline only.) Lower yields typically weigh on the dollar against the yen and can support gold.",
-   "time": "01:15",
-   "title": "Les rendements obligataires mondiaux plongent : la débâcle de l'IA déclenche une fuite vers la sécurité",
-   "title_en": "Global bond yields plunge as AI rout triggers flight to safety",
-   "url": "https://www.investing.com/news/forex-news/global-bond-yields-plunge-as-ai-rout-triggers-flight-to-safety-5040733"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "btcusd",
-    "xagusd"
-   ],
-   "date": "2026-11-20",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "CoinDesk attribue la chute de l'or et la pression sur le bitcoin à la hausse marquée des taux d'intérêt réels. (Article non accessible; résumé tiré du titre seulement.) Des taux réels plus élevés augmentent le coût d'opportunité de détenir des actifs sans rendement comme l'or et le bitcoin.",
-   "summary_en": "CoinDesk attributes gold's slide and the pressure on bitcoin to a sharp rise in real interest rates. (Article not accessible; summary based on the headline only.) Higher real rates raise the opportunity cost of holding non-yielding assets such as gold and bitcoin.",
-   "time": "01:12",
-   "title": "L'or plonge et le bitcoin subit des pressions alors que les « taux réels » s'envolent",
-   "title_en": "Gold tanks, BTC under pressure as 'real rates' surge",
-   "url": "https://www.coindesk.com/markets/2026/11/20/here-s-what-s-crashing-gold-and-likely-weighing-on-bitcoin-too"
   }
  ],
  "live": {
