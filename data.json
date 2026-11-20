@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T08:42:43Z",
+  "updatedAt": "2026-11-20T09:48:29Z",
   "econ": {
     "values": {
       "adp": {
@@ -1218,6 +1218,53 @@
   "news": [
     {
       "date": "2026-11-20",
+      "time": "04:37",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Anthropic recule de près de 6 % avant l'ouverture dans la vague de ventes de l'IA; Nvidia et AMD reculent aussi",
+      "title_en": "Anthropic shares fall nearly 6% in premarket amid AI selloff as Nvidia, AMD shares drop",
+      "summary": "Selon CNBC, l'action d'Anthropic perd près de 6 % en préouverture au lendemain de ses débuts au Nasdaq, alors que Nvidia et AMD reculent aussi. La pression sur les titres liés à l'IA se poursuit et pèse sur les contrats à terme du Nasdaq et du S&P 500.",
+      "summary_en": "According to CNBC, Anthropic shares fall nearly 6% in premarket trading the day after their Nasdaq debut, while Nvidia and AMD also drop. Pressure on AI-linked stocks continues, weighing on Nasdaq and S&P 500 futures.",
+      "url": "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "04:22",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "gbpusd",
+        "eurusd",
+        "usd"
+      ],
+      "title": "La livre progresse légèrement grâce aux ventes au détail britanniques, le dollar plafonne près de ses sommets",
+      "title_en": "Sterling today: Pound edges up on UK retail beat, dollar caps gains",
+      "summary": "Les ventes au détail britanniques ont bondi de 0,7 % en octobre alors qu'on attendait une stagnation, et les emprunts publics (17,0 G£) ont été inférieurs aux prévisions (18,0 G£). La livre gagne 0,05 % à 1,3103 $ et l'euro est stable à 1,0968 $, mais les deux s'orientent vers une baisse hebdomadaire. Le dollar reste près de ses sommets de 52 semaines sur les paris d'un resserrement plus rapide de la Fed; ING voit 104,60 comme cible à court terme pour le DXY.",
+      "summary_en": "UK retail sales rose 0.7% in October versus expectations of no change, and public borrowing (£17.0bn) undershot forecasts (£18.0bn). Sterling rose 0.05% to $1.3103 and the euro was flat at $1.0968, both on track for weekly losses. The dollar stays near 52-week highs on bets of faster Fed tightening; ING sees 104.60 as a near-term DXY target.",
+      "url": "https://www.investing.com/news/forex-news/sterling-today-pound-edges-up-on-uk-retail-beat-dollar-caps-gains-5041015"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "03:25",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "eurusd"
+      ],
+      "title": "Les Bourses européennes se dirigent vers leur pire semaine depuis mars, plombées par les puces",
+      "title_en": "European shares head for steepest weekly drop since March",
+      "summary": "Le STOXX 600 perd 1 % à 631,89 points et s'oriente vers une baisse hebdomadaire de plus de 4,5 %, sa pire depuis la semaine terminée le 6 mars. Le DAX recule de 1,3 % et ASML, ASM International et Infineon cèdent chacun plus de 4 %, alors que les paris liés à l'IA continuent de se dénouer après les débuts d'Anthropic au Nasdaq. Ce climat d'aversion au risque pèse aussi sur les technos américaines.",
+      "summary_en": "The STOXX 600 fell 1% to 631.89 and is on track for a weekly loss of more than 4.5%, its worst since the week ended March 6. Germany's DAX fell 1.3% and ASML, ASM International and Infineon each shed over 4% as AI-linked bets kept unwinding after Anthropic's Nasdaq debut. The risk-off mood also weighs on U.S. tech.",
+      "url": "https://www.investing.com/news/stock-market-news/european-shares-head-for-steepest-weekly-drop-since-march-5040936"
+    },
+    {
+      "date": "2026-11-20",
       "time": "03:21",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1785,49 +1832,6 @@
       "title": "Des données clients de Visa, Mastercard et JPMorgan exposées lors d'une cyberattaque chez des fournisseurs tiers",
       "title_en": "Visa, Mastercard and JPMorgan customer data leaked in third-party cyberattack",
       "url": "https://www.investing.com/news/stock-market-news/visa-mastercard-and-jpmorgan-customer-data-leaked-in-thirdparty-cyberattack-5039535"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Hunterbrook annonce une position vendeuse à découvert sur AMD en citant des préoccupations liées aux exportations de puces vers la Chine. La nouvelle survient alors que les restrictions américaines sur les puces d'IA destinées à la Chine se resserrent, un risque pour les semi-conducteurs et le Nasdaq. (Article non consulté : résumé fondé sur le titre.)",
-      "summary_en": "Hunterbrook disclosed a short position in AMD, citing concerns over chip exports to China. It comes as U.S. restrictions on AI chips bound for China tighten, a risk for semiconductors and the Nasdaq. (Article not accessed: summary based on the headline.)",
-      "time": "10:33",
-      "title": "Le vendeur à découvert Hunterbrook parie contre AMD, invoquant des inquiétudes sur les exportations vers la Chine",
-      "title_en": "Short seller Hunterbrook shorts AMD citing concerns over China exports",
-      "url": "https://www.investing.com/news/stock-market-news/short-seller-hunterbrook-shorts-amd-citing-concerns-over-china-exports-5039475"
-    },
-    {
-      "assets": [
-        "btcusd"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Binance a obtenu une ordonnance de gel d'actifs de 6,5 milliards $ visant les pirates responsables du plus important vol de l'histoire des cryptomonnaies. Une avancée juridique suivie de près par le marché du bitcoin, déjà sous pression cette semaine. (Article non consulté : résumé fondé sur le titre.)",
-      "summary_en": "Binance won a $6.5 billion asset-freezing order against the hackers behind the largest theft in crypto history. A legal development closely watched by a bitcoin market already under pressure this week. (Article not accessed: summary based on the headline.)",
-      "time": "10:20",
-      "title": "Binance obtient une ordonnance de gel de 6,5 G$ contre les pirates à l'origine du plus gros vol de l'histoire de la crypto",
-      "title_en": "Binance wins $6.5 billion freezing order against hackers behind crypto's largest theft",
-      "url": "https://www.coindesk.com/business/2026/11/19/binance-wins-usd6-5-billion-feezing-order-against-hackers-behind-crypto-s-largest-theft"
-    },
-    {
-      "assets": [
-        "nasdaq"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "Investing.com (Bloomberg)",
-      "summary": "Selon Bloomberg, la plupart des investisseurs institutionnels n'auraient reçu aucune action dans l'IPO record d'Anthropic, signe d'une demande largement excédentaire. Cette rareté alimente les paris d'un fort bond à l'ouverture du titre et soutient le regain de l'IA sur le Nasdaq. (Article non consulté : résumé fondé sur le titre.)",
-      "summary_en": "According to Bloomberg, most institutional investors reportedly received no shares in Anthropic's record IPO, a sign of heavy oversubscription. The scarcity fuels bets on a big first-day pop and supports the AI rebound on the Nasdaq. (Article not accessed: summary based on the headline.)",
-      "time": "09:49",
-      "title": "L'IPO d'Anthropic n'aurait rien alloué à la plupart des acheteurs institutionnels, selon Bloomberg",
-      "title_en": "Anthropic IPO said to give nothing to most institutional buyers - Bloomberg",
-      "url": "https://www.investing.com/news/stock-market-news/anthropic-ipo-said-to-give-nothing-to-most-institutional-buyers--bloomberg-432SI-5039297"
     }
   ],
   "live": {
