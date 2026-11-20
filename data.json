@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T16:47:50Z",
+  "updatedAt": "2026-11-20T17:12:13Z",
   "econ": {
     "values": {
       "adp": {
@@ -29114,7 +29114,7 @@
     }
   },
   "ts": {
-    "asOf": "2026-11-20T07:10:41Z",
+    "asOf": "2026-11-20T17:12:13Z",
     "bankcalls": [
       {
         "bank": "Deutsche Bank",
@@ -30104,6 +30104,43 @@
       }
     ],
     "recaps": [
+      {
+        "date": "2026-11-20",
+        "session": "lon",
+        "title": "La vente de l’IA gagne l’Europe et Wall Street : les puces s’effondrent, le bitcoin passe sous 60 000 $",
+        "title_en": "AI sell-off hits Europe and Wall Street: chipmakers slump, bitcoin breaks below $60,000",
+        "body": "La déroute des titres liés à l’IA s’est propagée à l’Europe : le STOXX 600 cédait 1 % à 631,89 points, en route vers sa pire semaine depuis mars, et le DAX 1,3 %, ASML, ASM International et Infineon perdant plus de 4 % (Reuters, cité par Finimize). À New York, Anthropic glissait d’environ 11 % vers 86 $, à peine au-dessus de son prix d’émission de 83 $, et les puces plongeaient (Micron −11 %, AMD −10 %, Nvidia −6,7 %), alors que le VIX a touché 30,99, un sommet depuis mars (CNBC). L’or a touché son plus bas depuis septembre 2025, en route vers sa pire semaine depuis mars, les paris sur une hausse de la Fed en décembre restant élevés (97,3 % pour 25 pb selon CME FedWatch, d’après Reuters). Le rendement du 10 ans américain reculait toutefois de 6 pb à 4,989 % (CNBC).",
+        "body_en": "The rout in AI-linked stocks spread to Europe: the STOXX 600 fell 1% to 631.89, heading for its worst week since March, and the DAX lost 1.3%, with ASML, ASM International and Infineon down more than 4% (Reuters, via Finimize). In New York, Anthropic slid about 11% to around $86, barely above its $83 IPO price, and chipmakers plunged (Micron −11%, AMD −10%, Nvidia −6.7%), while the VIX hit 30.99, its highest since March (CNBC). Gold touched its lowest since September 2025, heading for its worst week since March, as bets on a December Fed hike stayed high (97.3% for 25 bp per CME FedWatch, according to Reuters). The US 10-year yield, however, fell 6 bp to 4.989% (CNBC).",
+        "sections": {
+          "indices": {
+            "fr": "Depuis l’ouverture de 9 h 30 jusqu’à 11 h 30, le Nasdaq 100 a perdu 1,10 %, le S&P 500 0,70 % et le Russell 2000 0,34 %, alors que le Dow gagnait 0,22 %; les contrats à terme du Nasdaq 100 cédaient déjà 1,9 % avant l’ouverture (CNBC).",
+            "en": "From the 9:30 a.m. open to 11:30 a.m., the Nasdaq 100 lost 1.10%, the S&P 500 0.70% and the Russell 2000 0.34%, while the Dow gained 0.22%; Nasdaq 100 futures were already down 1.9% before the open (CNBC)."
+          },
+          "metals": {
+            "fr": "L’or a cédé 0,89 % à 3 537,90 $ après un creux de 3 527,70 $, et l’argent a chuté de 2,06 % à 41,30 $, sous la pression des attentes de hausse de taux de la Fed et de ventes forcées (Reuters).",
+            "en": "Gold lost 0.89% to $3,537.90 after a low of $3,527.70, and silver slumped 2.06% to $41.30, pressured by Fed hike expectations and forced selling (Reuters)."
+          },
+          "forex": {
+            "fr": "L’indice dollar est resté stable à 103,76; l’EUR/USD a reculé de 0,02 % à 1,0983, l’USD/JPY de 0,21 % à 158,86 et l’USD/CAD a gagné 0,02 % à 1,4322, tandis que l’AUD/USD cédait 0,38 % avec l’aversion au risque.",
+            "en": "The dollar index was flat at 103.76; EUR/USD slipped 0.02% to 1.0983, USD/JPY fell 0.21% to 158.86 and USD/CAD edged up 0.02% to 1.4322, while AUD/USD lost 0.38% on risk aversion."
+          },
+          "crypto": {
+            "fr": "Le bitcoin a perdu 3,41 % à 59 677 $, passant sous 60 000 $ pour la première fois depuis juillet, alors que les mineurs cotés chutaient de 8 % à 15 % (CoinDesk).",
+            "en": "Bitcoin lost 3.41% to $59,677, breaking below $60,000 for the first time since July, as listed miners fell 8% to 15% (CoinDesk)."
+          },
+          "energy": {
+            "fr": "Le WTI a reculé de 1,23 % à 81,70 $ après un creux de 80,78 $, le pétrole se dirigeant vers une troisième baisse hebdomadaire, l’offre abondante l’emportant sur le risque iranien après que Trump a dit ne pas se presser pour décider sur l’Iran.",
+            "en": "WTI fell 1.23% to $81.70 after a low of $80.78, with oil heading for a third weekly loss as ample supply outweighed Iran risk after Trump said he is not rushing a decision on Iran."
+          }
+        },
+        "sources": [
+          "https://finimize.com/content/europes-stocks-slide-as-investors-cool-on-ai-trades",
+          "https://www.marketscreener.com/news/gold-set-for-worst-week-in-eight-months-as-firm-dollar-fed-hike-bets-weigh-ce785ed2de80f42d",
+          "https://www.stocktitan.net/articles/stock-market-today-live-november-20-2026",
+          "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut",
+          "https://www.cornerstonefuturesllc.com/post/morning-highlights-oil-heads-for-a-third-weekly-loss-as-supply-outweighs-iran-risk-houthis-threate"
+        ]
+      },
       {
         "date": "2026-11-20",
         "session": "tok",
