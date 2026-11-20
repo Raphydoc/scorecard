@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T13:48:18Z",
+ "updatedAt": "2026-11-20T14:47:36Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,38 @@
  "news": [
   {
    "date": "2026-11-20",
+   "time": "08:45",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500",
+    "nasdaq",
+    "xauusd"
+   ],
+   "title": "Selon Citi, le marché signale à la Fed que les taux sont « insoutenablement élevés »",
+   "title_en": "Market is telling the Fed that rates are \"unsustainably high\": Citi",
+   "summary": "Citi estime que le comportement des marchés indique à la Réserve fédérale que son niveau actuel de taux est « insoutenablement élevé ». Cette lecture va à contre-courant des paris récents sur une Fed plus ferme, et compte pour le dollar, les rendements obligataires, l'or et les actions.",
+   "summary_en": "Citi says market behavior is signaling to the Federal Reserve that its current rate level is \"unsustainably high.\" That view runs against recent bets on a more hawkish Fed and matters for the dollar, bond yields, gold and equities.",
+   "url": "https://www.investing.com/news/stock-market-news/market-is-telling-the-fed-that-rates-are-unsustainably-high-citi-5041776"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "08:35",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd",
+    "nasdaq"
+   ],
+   "title": "Le bitcoin se maintient tout juste au-dessus de 61 000 $ alors qu'Anthropic glisse de 13 % après ses débuts au Nasdaq",
+   "title_en": "Bitcoin hovers just above $61,000 as Anthropic slides 13% after Nasdaq debut",
+   "summary": "Le bitcoin se tient à peine au-dessus de 61 000 $ pendant que l'action d'Anthropic recule de 13 % après son entrée au Nasdaq. CoinDesk rapporte aussi un glissement à 61 300 $ ayant déclenché 660 M$ de liquidations, signe que la crypto suit la débandade des technos.",
+   "summary_en": "Bitcoin is holding just above $61,000 as Anthropic shares slide 13% after their Nasdaq debut. CoinDesk also reports a slide to $61,300 that triggered $660 million in liquidations, a sign crypto is tracking the tech rout.",
+   "url": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut"
+  },
+  {
+   "date": "2026-11-20",
    "time": "08:01",
    "source": "Investing.com",
    "impact": "med",
@@ -1863,36 +1895,6 @@
    "title": "Le dollar se maintient à plus d'un sommet de 19 mois, porté par la hausse des attentes de relèvement des taux de la Fed",
    "title_en": "Dollar sits at over 19-month high on surge in Fed rate hike expectations",
    "url": "https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "MarketWatch",
-   "summary": "L'action de Nvidia a poursuivi sa baisse jeudi, portant à 611 milliards $ la valeur boursière perdue en six séances. Le poids de Nvidia dans les indices fait de cette glissade un frein majeur pour le Nasdaq et le S&P 500.",
-   "summary_en": "Nvidia's stock kept falling on Thursday, bringing the market value lost over six trading days to $611 billion. Nvidia's heavy index weighting makes the slide a major drag on the Nasdaq and the S&P 500.",
-   "time": "15:33",
-   "title": "Nvidia recule encore : 611 milliards $ de valeur boursière effacés en six séances",
-   "title_en": "Nvidia's stock falls further. It has lost $611 billion in six trading days.",
-   "url": "https://www.marketwatch.com/story/nvidias-stock-falls-further-it-has-lost-611-billion-in-six-trading-days-434af231"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Le comité des Affaires étrangères de la Chambre affirme que le département du Commerce a approuvé l'expédition de près de 900 000 puces d'IA avancées à des entreprises chinoises (plus de 879 000 sur 3,4 millions demandées), dont des envois à Alibaba et Tencent. Le président du comité, Brian Mast, a rendu publiques les demandes de licences de Nvidia et d'AMD. Ce dossier ajoute un risque politique sur les semi-conducteurs, déjà en recul, et pèse sur le Nasdaq.",
-   "summary_en": "The House Foreign Affairs Committee says the Commerce Department approved shipments of nearly 900,000 advanced AI chips to Chinese companies (more than 879,000 of 3.4 million requested), including to Alibaba and Tencent. Chairman Brian Mast publicly released Nvidia and AMD license application information. The issue adds political risk to already-sliding chip stocks and weighs on the Nasdaq.",
-   "time": "15:12",
-   "title": "Un comité de la Chambre dévoile les licences d'exportation de puces d'IA vers la Chine : près de 900 000 puces approuvées",
-   "title_en": "House committee releases license information for AI chips sent to China: nearly 900,000 chips approved",
-   "url": "https://www.investing.com/news/stock-market-news/license-information-for-ai-chips-sent-to-china-released-by-us-house-committee-5039850"
   }
  ],
  "live": {
