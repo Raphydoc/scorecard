@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T01:48:02Z",
+ "updatedAt": "2026-11-20T02:47:35Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,195 +1218,226 @@
  "news": [
   {
    "date": "2026-11-19",
-   "time": "20:11",
-   "source": "Investing.com",
-   "impact": "high",
+   "time": "21:06",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "usdcad"
+   ],
+   "title": "Le pétrole grimpe légèrement : les attaques des Houthis contre Riyad ravivent les craintes sur l'offre",
+   "title_en": "Oil prices edge higher as Houthi attacks on Riyadh raise supply concerns",
+   "summary": "Les prix du pétrole progressent légèrement après des attaques des Houthis visant Riyad, qui ravivent les inquiétudes quant à l'approvisionnement venant d'Arabie saoudite. Selon une autre dépêche, le brut reste malgré tout en voie d'une troisième semaine de baisse. Une prime de risque géopolitique soutient le WTI et, par ricochet, les devises liées au pétrole comme le dollar canadien.",
+   "summary_en": "Oil prices edged higher after Houthi attacks targeting Riyadh revived concerns over Saudi supply. A separate report says crude is nonetheless on track for a third straight weekly decline. A geopolitical risk premium supports WTI and, indirectly, oil-linked currencies such as the Canadian dollar.",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-higher-as-houthi-attacks-on-riyadh-raise-supply-concerns-5040518"
+  },
+  {
    "assets": [
     "spx500",
     "nasdaq",
     "us30"
    ],
-   "title": "Les contrats à terme de Wall Street reculent : les débuts d'Anthropic ne relancent pas le commerce de l'IA",
-   "title_en": "Wall Street futures fall as Anthropic debut fails to revive AI trade",
+   "date": "2026-11-19",
+   "impact": "high",
+   "source": "Investing.com",
    "summary": "Les contrats à terme du S&P 500 cèdent 0,3 % (7 173,75), ceux du Nasdaq 100 0,7 % (26 421,75) et ceux du Dow 0,2 % (49 080), après une séance où le Dow a perdu 2,2 %, le S&P 500 2 % (6e baisse de suite) et le Nasdaq 2,3 %. Anthropic a clôturé en hausse de 17,1 % à 97,17 $ (prix d'émission 83 $) mais recule de près de 4 % après la clôture, tandis que Nvidia (-3,3 %) et AMD (-7,7 %) ont plongé. Selon le FedWatch du CME, les marchés évaluent à 96 % la probabilité d'une hausse de taux de 25 points de base en décembre.",
    "summary_en": "S&P 500 futures slipped 0.3% to 7,173.75, Nasdaq 100 futures fell 0.7% to 26,421.75 and Dow futures 0.2% to 49,080, after a session in which the Dow lost 2.2%, the S&P 500 2% (sixth straight decline) and the Nasdaq 2.3%. Anthropic closed 17.1% higher at $97.17 (IPO price $83) but fell nearly 4% after hours, while Nvidia (-3.3%) and AMD (-7.7%) slid. CME FedWatch shows markets pricing a 96% probability of a 25-basis-point rate hike at the Fed's December meeting.",
+   "time": "20:11",
+   "title": "Les contrats à terme de Wall Street reculent : les débuts d'Anthropic ne relancent pas le commerce de l'IA",
+   "title_en": "Wall Street futures fall as Anthropic debut fails to revive AI trade",
    "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-fall-as-anthropic-debut-fails-to-revive-ai-trade-5040450"
   },
   {
-   "date": "2026-11-19",
-   "time": "20:07",
-   "source": "CNBC",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "usdjpy"
    ],
-   "title": "SoftBank plonge de plus de 16 % alors que la vague de ventes dans l'IA frappe les titres technos asiatiques après les débuts d'Anthropic",
-   "title_en": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "CNBC",
    "summary": "Selon CNBC, l'action de SoftBank chute de plus de 16 % à Tokyo, la vague de ventes dans le secteur de l'IA s'étendant aux titres technologiques asiatiques après l'entrée en Bourse d'Anthropic. Ce recul prolonge la pression sur les valeurs liées à l'IA observée à Wall Street jeudi.",
    "summary_en": "According to CNBC, SoftBank shares fell more than 16% in Tokyo as the AI sell-off spread to Asian tech stocks following Anthropic's market debut. The drop extends the pressure on AI-linked stocks seen on Wall Street on Thursday.",
+   "time": "20:07",
+   "title": "SoftBank plonge de plus de 16 % alors que la vague de ventes dans l'IA frappe les titres technos asiatiques après les débuts d'Anthropic",
+   "title_en": "SoftBank plunges over 16% as AI sell-off hits Asian tech stocks following Anthropic debut",
    "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html"
   },
   {
    "date": "2026-11-19",
-   "time": "19:21",
-   "source": "Investing.com (Reuters)",
+   "time": "19:42",
+   "source": "Investing.com",
    "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "gbpusd"
+   ],
+   "title": "Un tribunal britannique confirme l'ordonnance du gouvernement exigeant l'accès aux données d'Apple",
+   "title_en": "UK tribunal confirms government order demanding access to Apple data",
+   "summary": "Un tribunal britannique a confirmé que le gouvernement du Royaume-Uni a imposé à Apple une ordonnance exigeant l'accès à des données d'utilisateurs. Le dossier s'inscrit dans le bras de fer entre Apple et Londres sur le chiffrement des données iCloud. Apple pèse lourd dans le Nasdaq et le S&P 500, d'où l'intérêt pour les indices technologiques.",
+   "summary_en": "A UK tribunal confirmed that the British government imposed an order on Apple demanding access to user data. The case is part of the standoff between Apple and London over iCloud data encryption. Apple is a heavyweight in the Nasdaq and S&P 500, making it relevant for tech indexes.",
+   "url": "https://www.investing.com/news/stock-market-news/uk-has-imposed-an-order-demanding-access-to-apple-data-uk-tribunal-says-5039030"
+  },
+  {
    "assets": [
     "spx500",
     "us30"
    ],
-   "title": "Citigroup aurait mal comptabilisé des transactions dans son unité européenne et sous-estimé son risque de 35 G$",
-   "title_en": "Citigroup misbooked trades at European unit, underestimated risk by $35 bln, Reuters reports",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Selon des sources citées par Reuters, Citigroup a mal comptabilisé des transactions dans son unité européenne, ce qui l'a amenée à sous-estimer ses actifs à risque de 35 milliards $. La nouvelle, publiée après la clôture, pourrait peser sur le titre de la banque et sur le secteur financier à l'ouverture.",
    "summary_en": "According to sources cited by Reuters, Citigroup incorrectly booked trades at its European unit, leading it to underestimate risky assets by $35 billion. The after-hours report could weigh on the bank's shares and the financial sector at the open.",
+   "time": "19:21",
+   "title": "Citigroup aurait mal comptabilisé des transactions dans son unité européenne et sous-estimé son risque de 35 G$",
+   "title_en": "Citigroup misbooked trades at European unit, underestimated risk by $35 bln, Reuters reports",
    "url": "https://www.investing.com/news/stock-market-news/citigroup-misbooked-trades-at-european-unit-underestimated-risk-by-35-bln-reuters-reports-93CH-5040402"
   },
   {
-   "date": "2026-11-19",
-   "time": "19:11",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usoil",
     "xauusd",
     "usd"
    ],
-   "title": "Les républicains du Sénat rejettent une résolution pour mettre fin à la guerre en Iran",
-   "title_en": "Senate Republicans reject legislation to end Iran war",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le Sénat à majorité républicaine a rejeté par 51 voix contre 48 une résolution sur les pouvoirs de guerre qui aurait obligé Donald Trump à mettre fin à la guerre en Iran ou à obtenir l'aval du Congrès, après son adoption à la Chambre. C'est le 21e vote du genre depuis le début du conflit en février; un sondage Reuters/Ipsos ne montre que 31 % d'appui à la guerre. Le maintien du conflit garde une prime de risque sur le pétrole et soutient la demande de valeurs refuges.",
    "summary_en": "The Republican-led Senate rejected, 51-48, a war powers resolution that would have required President Trump to end the Iran war or seek Congressional approval, after it passed the House. It was the 21st such vote since the war began in February; a Reuters/Ipsos poll shows only 31% of Americans approve of the war. The continuing conflict keeps a risk premium on oil and supports safe-haven demand.",
+   "time": "19:11",
+   "title": "Les républicains du Sénat rejettent une résolution pour mettre fin à la guerre en Iran",
+   "title_en": "Senate Republicans reject legislation to end Iran war",
    "url": "https://www.investing.com/news/stock-market-news/senate-republicans-reject-legislation-to-end-iran-war-93CH-5040382"
   },
   {
-   "date": "2026-11-19",
-   "time": "18:36",
-   "source": "CNBC",
-   "impact": "med",
    "assets": [
     "usdjpy"
    ],
-   "title": "Japon : l'inflation de base d'octobre à 2,2 %, sous les attentes mais au plus haut de l'année",
-   "title_en": "Japan reports cooler-than-expected core inflation in October of 2.2% — but highest this year so far",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "CNBC",
    "summary": "L'inflation de base au Japon s'est établie à 2,2 % en octobre, un peu moins que prévu, mais il s'agit de son niveau le plus élevé jusqu'ici cette année. Le chiffre alimente le débat sur une prochaine hausse de taux de la Banque du Japon et compte pour le yen (USD/JPY).",
    "summary_en": "Japan's core inflation came in at 2.2% in October, cooler than expected but the highest so far this year. The figure feeds debate over the Bank of Japan's next rate hike and matters for the yen (USD/JPY).",
+   "time": "18:36",
+   "title": "Japon : l'inflation de base d'octobre à 2,2 %, sous les attentes mais au plus haut de l'année",
+   "title_en": "Japan reports cooler-than-expected core inflation in October of 2.2% — but highest this year so far",
    "url": "https://www.cnbc.com/2026/11/20/japan-inflation-cpi-october.html"
   },
   {
-   "date": "2026-11-19",
-   "time": "17:53",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Le procureur général de la Californie assigne Nvidia à comparaître au sujet des risques de fuite vers la Chine et de ses divulgations aux investisseurs",
-   "title_en": "California AG subpoenas Nvidia over China leak risks and investor disclosures",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le procureur général de la Californie a émis une assignation à comparaître visant Nvidia, selon Investing.com, en lien avec des risques de fuite de technologie vers la Chine, des préoccupations liées à l'ancien PDG et les informations communiquées aux investisseurs. Cette nouvelle pression réglementaire s'ajoute au repli prolongé du titre, poids lourd du Nasdaq et du S&P 500. L'article complet n'a pas pu être lu; ce résumé s'en tient aux manchettes.",
    "summary_en": "California's attorney general has subpoenaed Nvidia, according to Investing.com, over China leak risks, concerns about its former CEO and investor disclosures. The added regulatory pressure comes on top of the stock's extended slide, a heavyweight in the Nasdaq and S&P 500. The full article could not be read; this summary sticks to the headlines.",
+   "time": "17:53",
+   "title": "Le procureur général de la Californie assigne Nvidia à comparaître au sujet des risques de fuite vers la Chine et de ses divulgations aux investisseurs",
+   "title_en": "California AG subpoenas Nvidia over China leak risks and investor disclosures",
    "url": "https://www.investing.com/news/stock-market-news/california-ag-subpoenas-nvidia-over-china-leak-risks-and-investor-disclosures-5040277"
   },
   {
-   "date": "2026-11-19",
-   "time": "17:38",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usoil"
    ],
-   "title": "Le pétrole clôture en hausse sur fond de craintes d'une reprise des violences entre les États-Unis et l'Iran",
-   "title_en": "Oil prices settle higher amid fears of renewed violence between U.S. and Iran",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le WTI de janvier a gagné 1 % pour clôturer à 83,16 $ le baril et le Brent de janvier a pris 0,8 % à 92,71 $, après un article du New York Times selon lequel Trump envisage une nouvelle série de frappes d'envergure contre l'Iran. Deux superpétroliers ont pris feu après avoir heurté des mines dans le détroit d'Ormuz; selon les Gardiens de la révolution, ils transportaient plus de 4 millions de barils de brut. Le Brent a tout de même perdu plus du cinquième de sa valeur ce mois-ci.",
    "summary_en": "January WTI rose 1% to settle at $83.16 a barrel and January Brent gained 0.8% to $92.71, after a New York Times report that Trump is considering another round of extensive strikes on Iran. Two supertankers caught fire after hitting mines in the Strait of Hormuz; Iran's Revolutionary Guard said they carried over 4 million barrels of crude. Brent is still down more than a fifth this month.",
+   "time": "17:38",
+   "title": "Le pétrole clôture en hausse sur fond de craintes d'une reprise des violences entre les États-Unis et l'Iran",
+   "title_en": "Oil prices settle higher amid fears of renewed violence between U.S. and Iran",
    "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-report-says-trump-considering-more-iran-strikes-5037588"
   },
   {
-   "date": "2026-11-19",
-   "time": "17:29",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usd",
     "usdjpy",
     "xauusd"
    ],
-   "title": "Les rendements du Trésor américain reculent sur une demande de valeurs refuges; le 10 ans aligne une 4e baisse d'affilée",
-   "title_en": "U.S. Treasury yields slip on safe-haven bid, 10-year posts four-day losing streak",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Les rendements des obligations du Trésor américain ont reculé jeudi, portés par une demande de valeurs refuges pendant la chute de Wall Street, et le rendement à 10 ans a enregistré une quatrième baisse consécutive, selon Investing.com. Des rendements plus bas peuvent freiner le dollar face au yen et soutenir l'or. L'article complet n'a pas pu être lu; ce résumé s'en tient à la manchette.",
    "summary_en": "U.S. Treasury yields slipped Thursday on safe-haven demand as Wall Street fell, with the 10-year yield posting a fourth straight decline, according to Investing.com. Lower yields can weigh on the dollar against the yen and support gold. The full article could not be read; this summary sticks to the headline.",
+   "time": "17:29",
+   "title": "Les rendements du Trésor américain reculent sur une demande de valeurs refuges; le 10 ans aligne une 4e baisse d'affilée",
+   "title_en": "U.S. Treasury yields slip on safe-haven bid, 10-year posts four-day losing streak",
    "url": "https://www.investing.com/news/stock-market-news/us-treasury-yields-slip-on-safehaven-bid-10year-posts-fourday-losing-streak-5040235"
   },
   {
-   "date": "2026-11-19",
-   "time": "17:25",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "spx500"
    ],
-   "title": "Ross Stores prévoit un ralentissement de la croissance des ventes des Fêtes après un solide 3e trimestre",
-   "title_en": "Ross Stores sees holiday sales growth slowing after strong Q3",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Le détaillant à rabais Ross Stores a publié un solide troisième trimestre, mais prévoit une croissance plus lente de ses ventes pendant la période des Fêtes. Après Gap plus tôt en soirée, c'est un autre signal de prudence sur la consommation américaine, à surveiller pour le S&P 500.",
    "summary_en": "Off-price retailer Ross Stores posted a strong third quarter but expects slower sales growth over the holiday period. Following Gap earlier in the evening, it is another cautious signal on U.S. consumer spending, worth watching for the S&P 500.",
+   "time": "17:25",
+   "title": "Ross Stores prévoit un ralentissement de la croissance des ventes des Fêtes après un solide 3e trimestre",
+   "title_en": "Ross Stores sees holiday sales growth slowing after strong Q3",
    "url": "https://www.investing.com/news/stock-market-news/ross-stores-sees-holiday-sales-growth-slowing-after-strong-q3-5040226"
   },
   {
-   "date": "2026-11-19",
-   "time": "17:12",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "usdcad"
    ],
-   "title": "Le Canada constate peu de mouvement de Washington sur un allègement des tarifs, selon des sources",
-   "title_en": "Canada sees little US movement on tariff relief, sources say",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Selon des sources citées par Reuters, Ottawa ne voit que peu de progrès du côté américain dans les discussions visant à alléger les tarifs douaniers. L'impasse commerciale demeure un facteur de pression pour le dollar canadien (USD/CAD).",
    "summary_en": "According to sources cited by Reuters, Ottawa sees little progress from the U.S. side in talks aimed at easing tariffs. The trade stalemate remains a source of pressure on the Canadian dollar (USD/CAD).",
+   "time": "17:12",
+   "title": "Le Canada constate peu de mouvement de Washington sur un allègement des tarifs, selon des sources",
+   "title_en": "Canada sees little US movement on tariff relief, sources say",
    "url": "https://www.investing.com/news/commodities-news/canada-sees-little-us-movement-on-tariff-relief-sources-say-5040196"
   },
   {
-   "date": "2026-11-19",
-   "time": "17:04",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq"
    ],
-   "title": "Apple développerait un agent IA capable d'utiliser des applications et de naviguer sur le web (Bloomberg)",
-   "title_en": "Apple developing AI agent that could operate apps and browse the web - Bloomberg",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Selon Bloomberg, Apple travaille sur un agent d'intelligence artificielle qui pourrait faire fonctionner des applications et naviguer sur le web à la place de l'utilisateur. La nouvelle survient alors que le secteur de l'IA est sous pression au Nasdaq.",
    "summary_en": "According to Bloomberg, Apple is working on an artificial intelligence agent that could operate apps and browse the web on the user's behalf. The report comes as the AI sector is under pressure on the Nasdaq.",
+   "time": "17:04",
+   "title": "Apple développerait un agent IA capable d'utiliser des applications et de naviguer sur le web (Bloomberg)",
+   "title_en": "Apple developing AI agent that could operate apps and browse the web - Bloomberg",
    "url": "https://www.investing.com/news/stock-market-news/apple-developing-ai-agent-that-could-operate-apps-and-browse-the-web--bloomberg-5040175"
   },
   {
-   "date": "2026-11-19",
-   "time": "16:24",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "spx500",
     "rut"
    ],
-   "title": "Gap abaisse ses prévisions annuelles et signale une demande faible pour les vêtements avant les Fêtes",
-   "title_en": "Gap cuts annual forecasts, flags weak apparel demand ahead of holidays",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Le détaillant Gap a réduit ses prévisions pour l'année et prévient que la demande de vêtements reste faible à l'approche du magasinage des Fêtes. Un signal de prudence sur la consommation américaine, qui pèse sur les titres du commerce de détail et les petites capitalisations.",
    "summary_en": "Retailer Gap cut its full-year forecasts and warned that apparel demand remains weak heading into the holiday shopping season. A cautious signal on U.S. consumer spending that weighs on retail stocks and small caps.",
+   "time": "16:24",
+   "title": "Gap abaisse ses prévisions annuelles et signale une demande faible pour les vêtements avant les Fêtes",
+   "title_en": "Gap cuts annual forecasts, flags weak apparel demand ahead of holidays",
    "url": "https://www.investing.com/news/stock-market-news/gap-cuts-annual-forecasts-flags-weak-apparel-demand-ahead-of-holidays-5040047"
   },
   {
-   "date": "2026-11-19",
-   "time": "16:18",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Anthropic termine sa première séance 17 % au-dessus de son prix d'IPO après un net recul en fin de journée",
-   "title_en": "Anthropic shares end debut 17% above IPO price after sharp late-day retreat",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "L'action d'Anthropic a clôturé sa première journée au Nasdaq 17 % au-dessus de son prix d'introduction, après avoir ouvert 34 % plus haut et brièvement atteint une valorisation de 2 000 milliards $. Le repli de fin de séance reflète la nervosité persistante envers les titres de l'IA, qui a pesé sur le Nasdaq.",
    "summary_en": "Anthropic shares closed their first Nasdaq session 17% above the IPO price, after opening 34% higher and briefly reaching a $2 trillion valuation. The late-day pullback reflects lingering nervousness about AI stocks, which weighed on the Nasdaq.",
+   "time": "16:18",
+   "title": "Anthropic termine sa première séance 17 % au-dessus de son prix d'IPO après un net recul en fin de journée",
+   "title_en": "Anthropic shares end debut 17% above IPO price after sharp late-day retreat",
    "url": "https://www.investing.com/news/stock-market-news/anthropic-opens-34-above-ipo-price-reaches-2-trillion-valuation-in-nasdaq-debut-5039595"
   },
   {
@@ -1429,40 +1460,36 @@
    "url": "https://www.investing.com/news/forex-news/dollar-hits-fresh-19mth-peak-on-hawkish-fed-aussie-slides-after-weak-jobs-data-5037703"
   },
   {
-   "date": "2026-11-19",
-   "time": "15:33",
-   "source": "MarketWatch",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Nvidia recule encore : 611 milliards $ de valeur boursière effacés en six séances",
-   "title_en": "Nvidia's stock falls further. It has lost $611 billion in six trading days.",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "MarketWatch",
    "summary": "L'action de Nvidia a poursuivi sa baisse jeudi, portant à 611 milliards $ la valeur boursière perdue en six séances. Le poids de Nvidia dans les indices fait de cette glissade un frein majeur pour le Nasdaq et le S&P 500.",
    "summary_en": "Nvidia's stock kept falling on Thursday, bringing the market value lost over six trading days to $611 billion. Nvidia's heavy index weighting makes the slide a major drag on the Nasdaq and the S&P 500.",
+   "time": "15:33",
+   "title": "Nvidia recule encore : 611 milliards $ de valeur boursière effacés en six séances",
+   "title_en": "Nvidia's stock falls further. It has lost $611 billion in six trading days.",
    "url": "https://www.marketwatch.com/story/nvidias-stock-falls-further-it-has-lost-611-billion-in-six-trading-days-434af231"
   },
   {
-   "date": "2026-11-19",
-   "time": "15:12",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Un comité de la Chambre dévoile les licences d'exportation de puces d'IA vers la Chine : près de 900 000 puces approuvées",
-   "title_en": "House committee releases license information for AI chips sent to China: nearly 900,000 chips approved",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Le comité des Affaires étrangères de la Chambre affirme que le département du Commerce a approuvé l'expédition de près de 900 000 puces d'IA avancées à des entreprises chinoises (plus de 879 000 sur 3,4 millions demandées), dont des envois à Alibaba et Tencent. Le président du comité, Brian Mast, a rendu publiques les demandes de licences de Nvidia et d'AMD. Ce dossier ajoute un risque politique sur les semi-conducteurs, déjà en recul, et pèse sur le Nasdaq.",
    "summary_en": "The House Foreign Affairs Committee says the Commerce Department approved shipments of nearly 900,000 advanced AI chips to Chinese companies (more than 879,000 of 3.4 million requested), including to Alibaba and Tencent. Chairman Brian Mast publicly released Nvidia and AMD license application information. The issue adds political risk to already-sliding chip stocks and weighs on the Nasdaq.",
+   "time": "15:12",
+   "title": "Un comité de la Chambre dévoile les licences d'exportation de puces d'IA vers la Chine : près de 900 000 puces approuvées",
+   "title_en": "House committee releases license information for AI chips sent to China: nearly 900,000 chips approved",
    "url": "https://www.investing.com/news/stock-market-news/license-information-for-ai-chips-sent-to-china-released-by-us-house-committee-5039850"
   },
   {
-   "date": "2026-11-19",
-   "time": "15:00",
-   "source": "Investing.com (Reuters)",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
@@ -1470,85 +1497,89 @@
     "rut",
     "usd"
    ],
-   "title": "Wall Street recule : les débuts d'Anthropic ne raniment pas l'enthousiasme pour l'IA; le Dow perd 1,79 %",
-   "title_en": "Wall Street slides as Anthropic's debut fails to revive AI enthusiasm; Dow down 1.79%",
+   "date": "2026-11-19",
+   "impact": "high",
+   "source": "Investing.com (Reuters)",
    "summary": "En après-midi, le Dow perdait 900,74 points (-1,79 %) à 49 298,08, le S&P 500 cédait 1,54 % à 7 211,12 et le Nasdaq 1,60 % à 24 038,78. Anthropic, qui a brièvement dépassé 2 000 G$ de valorisation, ne se négociait plus que 14,3 % au-dessus de son prix d'offre de 83 $; AMD chutait de 9,2 % et Nvidia de 1,7 % après cinq séances de baisse. Le CME FedWatch prévoit à 94,1 % une hausse de 25 points de base en décembre.",
    "summary_en": "In the afternoon the Dow fell 900.74 points (-1.79%) to 49,298.08, the S&P 500 lost 1.54% to 7,211.12 and the Nasdaq 1.60% to 24,038.78. Anthropic, which briefly topped a $2 trillion valuation, traded just 14.3% above its $83 offer price; AMD tumbled 9.2% and Nvidia 1.7% after five straight losing sessions. CME FedWatch prices a 94.1% chance of a 25-basis-point hike in December.",
+   "time": "15:00",
+   "title": "Wall Street recule : les débuts d'Anthropic ne raniment pas l'enthousiasme pour l'IA; le Dow perd 1,79 %",
+   "title_en": "Wall Street slides as Anthropic's debut fails to revive AI enthusiasm; Dow down 1.79%",
    "url": "https://www.investing.com/news/stock-market-news/wall-street-slides-as-anthropics-debut-fails-to-revive-ai-enthusiasm-5039839"
   },
   {
-   "date": "2026-11-19",
-   "time": "14:00",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usd",
     "spx500",
     "usoil"
    ],
-   "title": "Sentiment des consommateurs du Michigan et décompte des plateformes Baker Hughes attendus vendredi",
-   "title_en": "Michigan consumer sentiment and Baker Hughes rig count due Friday",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Investing.com signale qu'au calendrier de vendredi figurent l'indice du sentiment des consommateurs de l'Université du Michigan et le décompte hebdomadaire des plateformes de forage Baker Hughes. Le sentiment des ménages pèse sur les attentes de consommation et de taux (dollar, S&P 500), tandis que le décompte des plateformes est suivi pour l'offre de pétrole (WTI).",
    "summary_en": "Investing.com notes that Friday's calendar includes the University of Michigan consumer sentiment index and the weekly Baker Hughes rig count. Household sentiment feeds expectations for spending and rates (dollar, S&P 500), while the rig count is watched for oil supply (WTI).",
+   "time": "14:00",
+   "title": "Sentiment des consommateurs du Michigan et décompte des plateformes Baker Hughes attendus vendredi",
+   "title_en": "Michigan consumer sentiment and Baker Hughes rig count due Friday",
    "url": "https://www.investing.com/news/stock-market-news/michigan-consumer-sentiment-and-baker-hughes-rig-count-due-friday-93CH-5039764"
   },
   {
-   "date": "2026-11-19",
-   "time": "13:19",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usoil",
     "eurusd"
    ],
-   "title": "Les exportateurs américains de gaz plus enclins à signer avec l'Europe après le report de la réglementation européenne sur le méthane",
-   "title_en": "US gas exporters more comfortable signing European deals after EU delays methane regulation",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Selon Investing.com, les exportateurs américains de gaz naturel liquéfié se disent plus à l'aise de conclure des contrats avec des acheteurs européens maintenant que l'UE a reporté sa réglementation sur les émissions de méthane. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. Ça touche l'énergie et les liens commerciaux transatlantiques, à surveiller pour le pétrole et l'euro.",
    "summary_en": "According to Investing.com, US LNG exporters say they are more comfortable signing deals with European buyers now that the EU has delayed its methane emissions regulation. The full article could not be accessed; this summary is limited to the headline. It matters for energy and transatlantic trade ties, relevant for oil and the euro.",
+   "time": "13:19",
+   "title": "Les exportateurs américains de gaz plus enclins à signer avec l'Europe après le report de la réglementation européenne sur le méthane",
+   "title_en": "US gas exporters more comfortable signing European deals after EU delays methane regulation",
    "url": "https://www.investing.com/news/stock-market-news/us-gas-exporters-more-comfortable-signing-european-deals-after-eu-delays-methane-regulation-5039358"
   },
   {
-   "date": "2026-11-19",
-   "time": "12:59",
-   "source": "CNBC",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Trump a acheté des titres de Nvidia, Palantir et SpaceX en septembre, pendant que les contrats fédéraux et les liens avec la Maison-Blanche se multipliaient",
-   "title_en": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "CNBC",
    "summary": "CNBC rapporte que les comptes de Donald Trump ont acheté des titres de Nvidia, Palantir et SpaceX en septembre, alors que ces entreprises obtenaient des contrats fédéraux et resserraient leurs liens avec la Maison-Blanche. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. Le sujet ajoute à l'examen politique et juridique qui pèse déjà sur Nvidia, poids lourd du Nasdaq.",
    "summary_en": "CNBC reports that Donald Trump's accounts bought Nvidia, Palantir and SpaceX in September as those companies won federal deals and grew closer to the White House. The full article could not be accessed; this summary is limited to the headline. It adds to the political and legal scrutiny already weighing on Nvidia, a Nasdaq heavyweight.",
+   "time": "12:59",
+   "title": "Trump a acheté des titres de Nvidia, Palantir et SpaceX en septembre, pendant que les contrats fédéraux et les liens avec la Maison-Blanche se multipliaient",
+   "title_en": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
    "url": "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html"
   },
   {
-   "date": "2026-11-19",
-   "time": "12:54",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "usoil"
    ],
-   "title": "Exclusif : un responsable de l'administration Trump aurait évoqué la cession d'un territoire du Guyana au Venezuela, selon des sources",
-   "title_en": "Exclusive-Trump official floated ceding Guyanese territory to Venezuela, sources say",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Selon des sources citées dans cette exclusivité, un responsable de l'administration Trump aurait évoqué l'idée de céder une partie du territoire du Guyana au Venezuela. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. Le territoire disputé entre les deux pays est au cœur d'une importante production pétrolière, d'où l'intérêt pour le marché du brut.",
    "summary_en": "According to sources cited in this exclusive, a Trump administration official floated the idea of ceding part of Guyana's territory to Venezuela. The full article could not be accessed; this summary is limited to the headline. The territory disputed between the two countries is central to major oil production, hence the interest for crude markets.",
+   "time": "12:54",
+   "title": "Exclusif : un responsable de l'administration Trump aurait évoqué la cession d'un territoire du Guyana au Venezuela, selon des sources",
+   "title_en": "Exclusive-Trump official floated ceding Guyanese territory to Venezuela, sources say",
    "url": "https://www.investing.com/news/commodities-news/exclusivetrump-official-floated-ceding-guyanese-territory-to-venezuela-sources-say-5038474"
   },
   {
-   "date": "2026-11-19",
-   "time": "12:26",
-   "source": "MarketWatch",
-   "impact": "med",
    "assets": [
     "us30",
     "spx500"
    ],
-   "title": "L'action de UnitedHealth poursuit sa chute après que Washington a signalé une offensive contre la fraude au Medicare Advantage",
-   "title_en": "UnitedHealth's stock keeps plunging after government signals crackdown on Medicare Advantage fraud",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "MarketWatch",
    "summary": "MarketWatch rapporte que le titre de UnitedHealth continue de plonger après que le gouvernement américain a signalé une répression de la fraude dans le programme Medicare Advantage. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. UnitedHealth étant une composante du Dow Jones, sa chute pèse sur l'indice.",
    "summary_en": "MarketWatch reports that UnitedHealth shares keep plunging after the US government signaled a crackdown on Medicare Advantage fraud. The full article could not be accessed; this summary is limited to the headline. As a Dow Jones component, UnitedHealth's slide weighs on the index.",
+   "time": "12:26",
+   "title": "L'action de UnitedHealth poursuit sa chute après que Washington a signalé une offensive contre la fraude au Medicare Advantage",
+   "title_en": "UnitedHealth's stock keeps plunging after government signals crackdown on Medicare Advantage fraud",
    "url": "https://www.marketwatch.com/story/unitedhealths-stock-keeps-plunging-after-government-signals-crackdown-on-medicare-advantage-fraud-c4770a45?mod=mw_rss_topstories"
   },
   {
@@ -1792,40 +1823,6 @@
    "title": "Les Bourses européennes avancent : la méga-IPO d'Anthropic contrebalance une Fed restrictive",
    "title_en": "European stocks inch up as massive Anthropic IPO counters hawkish Fed",
    "url": "https://www.investing.com/news/stock-market-news/european-stocks-inch-up-as-massive-anthropic-ipo-counters-hawkish-fed-5037955"
-  },
-  {
-   "assets": [
-    "usdjpy",
-    "usd",
-    "usoil",
-    "xauusd"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le Nikkei 225 a gagné 0,88 % jeudi, porté par l'immobilier et les banques, malgré 2 209 titres en baisse contre 1 285 en hausse; l'indice de volatilité du Nikkei a reculé de 15,08 % à 32,77. Le USD/JPY monte de 0,17 % à 159,63, tandis que le WTI de janvier gagne 0,13 % à 82,42 $ et l'or de décembre perd 0,10 % à 3 738,17 $.",
-   "summary_en": "The Nikkei 225 rose 0.88% on Thursday, led by real estate and banks, though decliners outnumbered advancers 2,209 to 1,285; the Nikkei Volatility index fell 15.08% to 32.77. USD/JPY rose 0.17% to 159.63, while January WTI gained 0.13% to $82.42 and December gold slipped 0.10% to $3,738.17.",
-   "time": "02:00",
-   "title": "Tokyo clôture en hausse : Nikkei 225 +0,88 %, le yen glisse à 159,63 par dollar",
-   "title_en": "Japan stocks close higher: Nikkei 225 up 0.88%, yen slips to 159.63 per dollar",
-   "url": "https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-088-5037902"
-  },
-  {
-   "assets": [
-    "usd",
-    "usoil",
-    "xauusd",
-    "spx500"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "Selon CNBC, Donald Trump a tenu des rencontres séparées avec Vladimir Poutine et Xi Jinping en Chine, en marge de l'APEC, avant leur première rencontre à trois. Les marchés suivent ce sommet pour ses retombées possibles sur le commerce, l'Iran et le pétrole, ce qui peut influencer le dollar, l'or et le brut.",
-   "summary_en": "According to CNBC, Donald Trump held separate meetings with Vladimir Putin and Xi Jinping in China on the sidelines of APEC ahead of their first three-way meeting. Markets are watching the summit for possible implications for trade, Iran and oil, which can move the dollar, gold and crude.",
-   "time": "01:29",
-   "title": "Trump s'entretient séparément avec Poutine et Xi avant leur sommet trilatéral historique",
-   "title_en": "Trump holds talks separately with Putin and Xi ahead of their historic trilateral meeting",
-   "url": "https://www.cnbc.com/2026/11/19/trump-xi-putin-china-apec-.html"
   }
  ],
  "live": {
