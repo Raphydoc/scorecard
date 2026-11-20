@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T14:53:27Z",
+ "updatedAt": "2026-11-20T15:45:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -192,8 +192,8 @@
    "cotLong": 56.57,
    "cotChange": -2.12,
    "uCot": "2026-11-16T20:50:00Z",
-   "crowdLong": 44,
-   "uCrowd": "2026-11-19T19:45:00Z"
+   "crowdLong": 43,
+   "uCrowd": "2026-11-20T15:45:00Z"
   },
   "gbpusd": {
    "season": "neutral",
