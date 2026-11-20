@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T03:47:32Z",
+ "updatedAt": "2026-11-20T04:47:54Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,49 +1218,78 @@
  "news": [
   {
    "date": "2026-11-19",
-   "time": "22:32",
-   "source": "CoinDesk",
+   "time": "23:06",
+   "source": "Investing.com",
    "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "TSMC glisse de 4,8 % à un creux de sept mois après la suspension de commandes de puces avancées pour des clients chinois",
+   "title_en": "TSMC slides 4.8% to seven-month low after reportedly suspending advanced chip orders for Chinese designers",
+   "summary": "L'action de TSMC a reculé de 4,8 % à 2 000 NT$, un creux de sept mois, après que le fondeur aurait suspendu des commandes de fabrication avancée pour des concepteurs chinois, conséquence des nouvelles règles américaines exigeant une licence d'exportation pour les puces de 16 nanomètres ou plus avancées. La Chine ne représentait qu'environ 5 % des revenus de TSMC au troisième trimestre, contre 8 % un an plus tôt. Le TAIEX taïwanais se dirige vers sa pire semaine depuis 1991, en baisse d'environ 17 %, ce qui pèse sur le sentiment envers les semi-conducteurs du Nasdaq.",
+   "summary_en": "TSMC shares fell 4.8% to a seven-month low of NT$2,000 after the chipmaker reportedly suspended advanced manufacturing orders for Chinese chip designers, a consequence of new U.S. rules requiring export licenses for chips made on 16-nanometer or more advanced technology. China accounted for roughly 5% of TSMC's Q3 revenue, down from 8% a year earlier. Taiwan's TAIEX is heading for its worst week since 1991, down about 17%, weighing on sentiment toward Nasdaq chip stocks.",
+   "url": "https://in.investing.com/news/stock-market-news/why-is-tsmc-stock-sliding-today-93CH-5716748"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "22:37",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "Alibaba rebondit à Hong Kong après des revenus trimestriels supérieurs aux attentes",
+   "title_en": "Alibaba HK shares rise as Q2 topline beat invites some bargain buying",
+   "summary": "L'action d'Alibaba a grimpé jusqu'à 2,7 % à 83,15 HK$ vendredi, alors que le Hang Seng chutait de plus de 2 %, après avoir touché la veille un creux de près de deux ans. Les revenus du trimestre terminé le 30 septembre ont dépassé les attentes grâce à l'infonuagique et aux services de calcul en IA, et le PDG Eddie Wu affirme que l'objectif de 100 G$ de revenus infonuagiques externes d'ici 2030 tient toujours. Le titre reste sous pression en raison des nouvelles restrictions américaines sur l'accès aux puces d'IA avancées.",
+   "summary_en": "Alibaba shares rose as much as 2.7% to HK$83.15 on Friday, outpacing a more than 2% slump in the Hang Seng, after hitting a near two-year low the day before. Revenue for the quarter to Sept. 30 beat expectations, helped by AI cloud and computing services, and CEO Eddie Wu said the 2030 target of $100 billion in external cloud revenue remained on track. The stock remains pressured by new U.S. curbs on access to advanced AI chips.",
+   "url": "https://www.investing.com/news/stock-market-news/alibaba-hk-shares-rise-as-topline-q2-beat-invites-some-bargain-buying-5040609"
+  },
+  {
    "assets": [
     "btcusd",
     "nasdaq"
    ],
-   "title": "Le bitcoin glisse à 61 300 $, un creux de quatre mois après l'IPO d'Anthropic; 660 M$ de liquidations",
-   "title_en": "BTC slides to $61,300 after Anthropic's IPO, triggers $660 million in liquidations",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin a reculé jusqu'à 61 300 $, son plus bas en quatre mois, alors que les titres technos s'essoufflent après l'entrée en Bourse d'Anthropic. La baisse a provoqué environ 660 M$ de liquidations de positions à effet de levier. La corrélation entre la crypto et le Nasdaq reste au cœur des mouvements.",
    "summary_en": "Bitcoin fell to $61,300, a four-month low, as tech stocks wilted after Anthropic's IPO. The drop triggered about $660 million in liquidations of leveraged positions. Crypto's link to the Nasdaq remains central to the moves.",
+   "time": "22:32",
+   "title": "Le bitcoin glisse à 61 300 $, un creux de quatre mois après l'IPO d'Anthropic; 660 M$ de liquidations",
+   "title_en": "BTC slides to $61,300 after Anthropic's IPO, triggers $660 million in liquidations",
    "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
   },
   {
-   "date": "2026-11-19",
-   "time": "22:06",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "usdjpy",
     "audusd"
    ],
-   "title": "Les Bourses asiatiques chutent à un creux de 7 mois; Corée du Sud et Taïwan les plus touchées par la déroute de l'IA",
-   "title_en": "Asia stocks slide to 7-month low with S.Korea, Taiwan worst hit by AI rout",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Les actions asiatiques ont glissé à leur plus bas niveau en sept mois vendredi, la Corée du Sud et Taïwan encaissant les pires reculs dans la vague de ventes liée à l'IA. Ce repli en Asie prolonge la faiblesse des technos américaines et pèse sur l'appétit pour le risque avant l'ouverture des marchés nord-américains.",
    "summary_en": "Asian stocks slid to a seven-month low on Friday, with South Korea and Taiwan the worst hit in the AI-driven sell-off. The Asian drop extends weakness in U.S. tech and weighs on risk appetite ahead of North American trading.",
+   "time": "22:06",
+   "title": "Les Bourses asiatiques chutent à un creux de 7 mois; Corée du Sud et Taïwan les plus touchées par la déroute de l'IA",
+   "title_en": "Asia stocks slide to 7-month low with S.Korea, Taiwan worst hit by AI rout",
    "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-to-7mth-low-with-skorea-taiwan-worst-hit-by-ai-rout-5040572"
   },
   {
-   "date": "2026-11-19",
-   "time": "21:06",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "usoil",
     "usdcad"
    ],
-   "title": "Le pétrole grimpe légèrement : les attaques des Houthis contre Riyad ravivent les craintes sur l'offre",
-   "title_en": "Oil prices edge higher as Houthi attacks on Riyadh raise supply concerns",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Les prix du pétrole progressent légèrement après des attaques des Houthis visant Riyad, qui ravivent les inquiétudes quant à l'approvisionnement venant d'Arabie saoudite. Selon une autre dépêche, le brut reste malgré tout en voie d'une troisième semaine de baisse. Une prime de risque géopolitique soutient le WTI et, par ricochet, les devises liées au pétrole comme le dollar canadien.",
    "summary_en": "Oil prices edged higher after Houthi attacks targeting Riyadh revived concerns over Saudi supply. A separate report says crude is nonetheless on track for a third straight weekly decline. A geopolitical risk premium supports WTI and, indirectly, oil-linked currencies such as the Canadian dollar.",
+   "time": "21:06",
+   "title": "Le pétrole grimpe légèrement : les attaques des Houthis contre Riyad ravivent les craintes sur l'offre",
+   "title_en": "Oil prices edge higher as Houthi attacks on Riyadh raise supply concerns",
    "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-higher-as-houthi-attacks-on-riyadh-raise-supply-concerns-5040518"
   },
   {
@@ -1295,19 +1324,19 @@
    "url": "https://www.cnbc.com/2026/11/20/softbank-ai-tech-stocks-slide-anthropic-debut.html"
   },
   {
-   "date": "2026-11-19",
-   "time": "19:42",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500",
     "gbpusd"
    ],
-   "title": "Un tribunal britannique confirme l'ordonnance du gouvernement exigeant l'accès aux données d'Apple",
-   "title_en": "UK tribunal confirms government order demanding access to Apple data",
+   "date": "2026-11-19",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Un tribunal britannique a confirmé que le gouvernement du Royaume-Uni a imposé à Apple une ordonnance exigeant l'accès à des données d'utilisateurs. Le dossier s'inscrit dans le bras de fer entre Apple et Londres sur le chiffrement des données iCloud. Apple pèse lourd dans le Nasdaq et le S&P 500, d'où l'intérêt pour les indices technologiques.",
    "summary_en": "A UK tribunal confirmed that the British government imposed an order on Apple demanding access to user data. The case is part of the standoff between Apple and London over iCloud data encryption. Apple is a heavyweight in the Nasdaq and S&P 500, making it relevant for tech indexes.",
+   "time": "19:42",
+   "title": "Un tribunal britannique confirme l'ordonnance du gouvernement exigeant l'accès aux données d'Apple",
+   "title_en": "UK tribunal confirms government order demanding access to Apple data",
    "url": "https://www.investing.com/news/stock-market-news/uk-has-imposed-an-order-demanding-access-to-apple-data-uk-tribunal-says-5039030"
   },
   {
@@ -1792,38 +1821,6 @@
    "title": "Le bitcoin s'approche de 64 000 $, mais file vers une 7e perte hebdomadaire d'affilée",
    "title_en": "Bitcoin nears $64,000 as Anthropic's record IPO lifts tech",
    "url": "https://www.coindesk.com/markets/2026/11/19/live-updates-bitcoin-nears-usd64-000-as-anthropic-s-record-ipo-lifts-tech"
-  },
-  {
-   "assets": [
-    "gbpusd",
-    "usd",
-    "eurusd"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le GBP/USD est quasi inchangé à 1,3144 et l'EUR/USD gagne 0,16 % à 1,0992, alors que le dollar reste soutenu par des taux réels américains à 2 ans au-dessus de 2,40 %, un sommet depuis 2023; les marchés anticipent des hausses de 25 pb de la Fed en décembre, en janvier et l'été prochain. Au Royaume-Uni, la confiance des consommateurs (BRC-Opinium) recule pour un 3e mois, plombée par les Gen Z; HSBC note que l'inflation d'octobre plus faible réduit les paris d'une hausse de la BoE.",
-   "summary_en": "GBP/USD was little changed at 1.3144 and EUR/USD rose 0.16% to 1.0992, as the dollar stays supported by U.S. two-year real swap rates above 2.40%, the highest since 2023; markets price 25bp Fed hikes in December, January and next summer. UK consumer confidence (BRC-Opinium) fell for a third month, dragged by Gen Z; HSBC says softer October inflation reduced bets on a near-term BoE hike.",
-   "time": "05:00",
-   "title": "Livre sterling stable à 1,3144 $ US face à un dollar ferme; la confiance des Gen Z britanniques chute",
-   "title_en": "Sterling today: Pound flat as dollar holds firm; UK Gen Z confidence slumps",
-   "url": "https://www.investing.com/news/forex-news/sterling-today-pound-flat-as-dollar-holds-firm-uk-gen-z-confidence-slumps-5038221"
-  },
-  {
-   "assets": [
-    "eurusd",
-    "usd",
-    "usdjpy"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le rendement du Bund allemand à 10 ans est stable à 3,372 % après avoir touché mercredi son plus haut en près d'un mois, l'inflation de base de la zone euro étant ressortie plus forte que prévu à 2,6 %. Les investisseurs attendent les discours de la BCE, tandis que le gouverneur Waller de la Fed réclame une « action agressive » contre l'inflation. Le dollar reste à un sommet de 18 mois et le dollar-yen frôle 160.",
-   "summary_en": "Germany's 10-year Bund yield was flat at 3.372% after touching a near one-month high on Wednesday, following hotter-than-expected 2.6% euro-zone core inflation. Investors await ECB speeches, while Fed Governor Waller called for 'aggressive action' on inflation. The dollar sits at an 18-month high and USD/JPY is near 160.",
-   "time": "04:09",
-   "title": "Les rendements de la zone euro stagnent près de leurs sommets d'un mois, coincés entre une Fed et une BCE restrictives",
-   "title_en": "Euro yields idle near 1-month peaks on hawkish Fed and ECB rhetoric trap",
-   "url": "https://www.investing.com/news/forex-news/euro-yields-idle-near-1month-peaks-on-hawkish-fed-and-ecb-rhetoric-trap-5037883"
   }
  ],
  "live": {
