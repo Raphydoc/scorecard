@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T13:52:00Z",
+  "updatedAt": "2026-11-20T13:48:18Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,52 @@
   "news": [
     {
       "date": "2026-11-20",
+      "time": "08:01",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "us30"
+      ],
+      "title": "JPMorgan, Visa et Mastercard disent que des fournisseurs tiers ont été visés par une cyberattaque",
+      "title_en": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack",
+      "summary": "JPMorgan, Visa et Mastercard indiquent que des fournisseurs tiers ont été la cible d'une cyberattaque, selon le titre d'Investing.com. La nouvelle touche de grands noms de la finance du S&P 500 et du Dow Jones dans un marché déjà nerveux.",
+      "summary_en": "JPMorgan, Visa and Mastercard say third-party vendors were targeted in a cyberattack, according to the Investing.com headline. The news touches major S&P 500 and Dow financial names in an already nervous market.",
+      "url": "https://www.investing.com/news/stock-market-news/jpmorgan-says-thirdparty-vendors-targeted-in-cyberattack-5039129"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "07:41",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Anthropic recule de plus de 10 % avant l'ouverture alors que la vague de ventes dans la techno se poursuit",
+      "title_en": "Anthropic shares now down over 10% in pre-market as tech sell-off continues",
+      "summary": "Le titre d'Anthropic perd maintenant plus de 10 % avant l'ouverture, au lendemain de sa première séance au Nasdaq, alors que la vague de ventes dans les titres technos se poursuit. Le recul s'accentue par rapport au repli d'environ 6 % observé plus tôt ce matin et pèse sur le sentiment envers l'IA, le Nasdaq et le S&P 500.",
+      "summary_en": "Anthropic shares are now down more than 10% in pre-market trading, the day after their Nasdaq debut, as the tech sell-off continues. The drop deepens from the roughly 6% decline seen earlier this morning and weighs on AI sentiment, the Nasdaq and the S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/anthropic-shares-now-down-over-10-in-premarket-432SI-5041532"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "07:24",
+      "source": "Investing.com",
+      "impact": "high",
+      "assets": [
+        "xauusd",
+        "xagusd",
+        "usd"
+      ],
+      "title": "L'or glisse à un creux de 52 semaines près de 3 515 $ alors que la tendance baissière s'accentue",
+      "title_en": "Gold slides to 52-week low near $3,515 as bearish trend deepens",
+      "summary": "Les contrats à terme sur l'or reculaient de 2,98 % à 3 575,57 $ vers 7 h 23 (HNE), après un creux de séance de 3 515,32 $, un nouveau plancher de 52 semaines. La chute est attribuée au rendement à 10 ans à 4,977 %, au Dollar Index à 103,808, près d'un sommet de 18 mois, et à des ventes forcées liées à la débâcle des titres de l'IA. Le RSI quotidien est à 23,2; un stratège situe un soutien entre 3 300 $ et 3 400 $, la résistance étant entre 3 685 $ et 3 760 $.",
+      "summary_en": "Gold futures were down 2.98% at $3,575.57 around 7:23 AM EST after a session low of $3,515.32, a fresh 52-week low. The slide is attributed to a 4.977% 10-year yield, a Dollar Index at 103.808 near an 18-month high, and forced selling tied to the AI-stock rout. Daily RSI is 23.2; one strategist sees support at $3,300–$3,400, with resistance at $3,685–$3,760.",
+      "url": "https://www.investing.com/news/commodities-news/gold-slides-to-52week-low-near-3515-as-bearish-trend-deepens-93CH-5041518"
+    },
+    {
+      "date": "2026-11-20",
       "time": "07:02",
       "source": "Investing.com",
       "impact": "med",
@@ -1384,21 +1430,6 @@
       "summary": "Les représentants Gregory Meeks et Sydney Kamlager-Dove ont écrit le 19 novembre au secrétaire au Commerce Howard Lutnick pour exiger réponses et documents d'ici le 1er décembre sur le rôle de Nvidia dans l'enquête visant Megaspeed, société infonuagique de Singapour soupçonnée d'avoir détourné des puces vers la Chine. Nvidia avait contacté directement des employés du Commerce en août 2025. Ce nouveau front politique s'ajoute aux pressions sur Nvidia, poids lourd du Nasdaq et du S&P 500, en pleine vague de ventes des titres de l'IA.",
       "summary_en": "Representatives Gregory Meeks and Sydney Kamlager-Dove wrote on Nov. 19 to Commerce Secretary Howard Lutnick seeking answers and documents by Dec. 1 on Nvidia's role in the probe of Megaspeed, a Singapore cloud firm suspected of diverting chips to China. Nvidia had directly contacted Commerce employees in August 2025. The new political front adds to pressure on Nvidia, a Nasdaq and S&P 500 heavyweight, amid an AI stock selloff.",
       "url": "https://www.investing.com/news/stock-market-news/democrats-open-probe-into-nvidia-influence-on-usmegaspeed-investigation-5041051"
-    },
-    {
-      "date": "2026-11-20",
-      "time": "04:37",
-      "source": "CNBC",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "title": "Anthropic recule de près de 6 % avant l'ouverture dans la vague de ventes de l'IA; Nvidia et AMD reculent aussi",
-      "title_en": "Anthropic shares fall nearly 6% in premarket amid AI selloff as Nvidia, AMD shares drop",
-      "summary": "Selon CNBC, l'action d'Anthropic perd près de 6 % en préouverture au lendemain de ses débuts au Nasdaq, alors que Nvidia et AMD reculent aussi. La pression sur les titres liés à l'IA se poursuit et pèse sur les contrats à terme du Nasdaq et du S&P 500.",
-      "summary_en": "According to CNBC, Anthropic shares fall nearly 6% in premarket trading the day after their Nasdaq debut, while Nvidia and AMD also drop. Pressure on AI-linked stocks continues, weighing on Nasdaq and S&P 500 futures.",
-      "url": "https://www.cnbc.com/2026/11/20/anthropic-stock-ai-amd-nvidia.html"
     },
     {
       "date": "2026-11-20",
@@ -1862,40 +1893,6 @@
       "title": "Un comité de la Chambre dévoile les licences d'exportation de puces d'IA vers la Chine : près de 900 000 puces approuvées",
       "title_en": "House committee releases license information for AI chips sent to China: nearly 900,000 chips approved",
       "url": "https://www.investing.com/news/stock-market-news/license-information-for-ai-chips-sent-to-china-released-by-us-house-committee-5039850"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30",
-        "rut",
-        "usd"
-      ],
-      "date": "2026-11-19",
-      "impact": "high",
-      "source": "Investing.com (Reuters)",
-      "summary": "En après-midi, le Dow perdait 900,74 points (-1,79 %) à 49 298,08, le S&P 500 cédait 1,54 % à 7 211,12 et le Nasdaq 1,60 % à 24 038,78. Anthropic, qui a brièvement dépassé 2 000 G$ de valorisation, ne se négociait plus que 14,3 % au-dessus de son prix d'offre de 83 $; AMD chutait de 9,2 % et Nvidia de 1,7 % après cinq séances de baisse. Le CME FedWatch prévoit à 94,1 % une hausse de 25 points de base en décembre.",
-      "summary_en": "In the afternoon the Dow fell 900.74 points (-1.79%) to 49,298.08, the S&P 500 lost 1.54% to 7,211.12 and the Nasdaq 1.60% to 24,038.78. Anthropic, which briefly topped a $2 trillion valuation, traded just 14.3% above its $83 offer price; AMD tumbled 9.2% and Nvidia 1.7% after five straight losing sessions. CME FedWatch prices a 94.1% chance of a 25-basis-point hike in December.",
-      "time": "15:00",
-      "title": "Wall Street recule : les débuts d'Anthropic ne raniment pas l'enthousiasme pour l'IA; le Dow perd 1,79 %",
-      "title_en": "Wall Street slides as Anthropic's debut fails to revive AI enthusiasm; Dow down 1.79%",
-      "url": "https://www.investing.com/news/stock-market-news/wall-street-slides-as-anthropics-debut-fails-to-revive-ai-enthusiasm-5039839"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "usoil"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Investing.com signale qu'au calendrier de vendredi figurent l'indice du sentiment des consommateurs de l'Université du Michigan et le décompte hebdomadaire des plateformes de forage Baker Hughes. Le sentiment des ménages pèse sur les attentes de consommation et de taux (dollar, S&P 500), tandis que le décompte des plateformes est suivi pour l'offre de pétrole (WTI).",
-      "summary_en": "Investing.com notes that Friday's calendar includes the University of Michigan consumer sentiment index and the weekly Baker Hughes rig count. Household sentiment feeds expectations for spending and rates (dollar, S&P 500), while the rig count is watched for oil supply (WTI).",
-      "time": "14:00",
-      "title": "Sentiment des consommateurs du Michigan et décompte des plateformes Baker Hughes attendus vendredi",
-      "title_en": "Michigan consumer sentiment and Baker Hughes rig count due Friday",
-      "url": "https://www.investing.com/news/stock-market-news/michigan-consumer-sentiment-and-baker-hughes-rig-count-due-friday-93CH-5039764"
     }
   ],
   "live": {
