@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T10:48:13Z",
+  "updatedAt": "2026-11-20T11:47:54Z",
   "econ": {
     "values": {
       "adp": {
@@ -1218,6 +1218,38 @@
   "news": [
     {
       "date": "2026-11-20",
+      "time": "05:36",
+      "source": "Investing.com (Reuters)",
+      "impact": "high",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30",
+        "rut"
+      ],
+      "title": "L'indice de la peur de Wall Street touche un sommet de sept mois, l'IA inquiète",
+      "title_en": "Wall Street's fear gauge touches seven-month high as AI worries mount",
+      "summary": "Le VIX du Cboe gagnait 1,08 point à 29,50 vendredi, après avoir atteint 30,04 plus tôt, son plus haut depuis le 30 mars. Les craintes sur l'avenir de l'IA font fortement reculer les titres technos avant l'ouverture. Un VIX au-dessus de 20 signale une forte demande de protection par options sur les indices américains.",
+      "summary_en": "The Cboe Volatility Index was up 1.08 points at 29.50 on Friday after hitting 30.04 earlier, its highest since March 30. Worries about the future of AI knocked tech stocks sharply lower in premarket trading. A VIX reading of 20 or higher signals robust demand for options protection on US indexes.",
+      "url": "https://www.investing.com/news/stock-market-news/wall-streets-fear-gauge-touches-sevenmonth-high-as-ai-worries-mount-5041172"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "05:35",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "eurusd",
+        "usd"
+      ],
+      "title": "UBS voit l'euro reculer davantage, la vigueur du dollar pèse sur l'EUR/USD",
+      "title_en": "UBS flags further euro downside as dollar strength keeps EUR/USD under pressure",
+      "summary": "UBS abaisse ses prévisions EUR/USD pour 2027 à 1,12 en mars, 1,14 en juin et 1,16 en septembre (contre 1,18, 1,20 et 1,20), et ajoute 1,16 pour décembre 2027. Le dollar devrait rester recherché jusqu'au 1er trimestre 2027 vu la perspective de nouvelles hausses de taux de la Fed, ce qui expose l'euro à un test du support vers 1,08, puis 1,06. Résistances vers 1,12 et 1,15; UBS garde une vue neutre.",
+      "summary_en": "UBS cut its 2027 EUR/USD forecasts to 1.12 in March, 1.14 in June and 1.16 in September (from 1.18, 1.20 and 1.20), adding 1.16 for December 2027. The dollar should stay well bid into Q1 2027 on prospects of further Fed hikes, leaving the euro open to a test of support near 1.08, then 1.06. Resistance is seen near 1.12 and 1.15; UBS keeps a Neutral view.",
+      "url": "https://www.investing.com/news/forex-news/ubs-flags-further-euro-downside-as-dollar-strength-keeps-eurusd-under-pressure-5041144"
+    },
+    {
+      "date": "2026-11-20",
       "time": "05:24",
       "source": "Investing.com",
       "impact": "med",
@@ -1802,35 +1834,6 @@
       "title": "Les exportateurs américains de gaz plus enclins à signer avec l'Europe après le report de la réglementation européenne sur le méthane",
       "title_en": "US gas exporters more comfortable signing European deals after EU delays methane regulation",
       "url": "https://www.investing.com/news/stock-market-news/us-gas-exporters-more-comfortable-signing-european-deals-after-eu-delays-methane-regulation-5039358"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "CNBC",
-      "summary": "CNBC rapporte que les comptes de Donald Trump ont acheté des titres de Nvidia, Palantir et SpaceX en septembre, alors que ces entreprises obtenaient des contrats fédéraux et resserraient leurs liens avec la Maison-Blanche. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. Le sujet ajoute à l'examen politique et juridique qui pèse déjà sur Nvidia, poids lourd du Nasdaq.",
-      "summary_en": "CNBC reports that Donald Trump's accounts bought Nvidia, Palantir and SpaceX in September as those companies won federal deals and grew closer to the White House. The full article could not be accessed; this summary is limited to the headline. It adds to the political and legal scrutiny already weighing on Nvidia, a Nasdaq heavyweight.",
-      "time": "12:59",
-      "title": "Trump a acheté des titres de Nvidia, Palantir et SpaceX en septembre, pendant que les contrats fédéraux et les liens avec la Maison-Blanche se multipliaient",
-      "title_en": "Trump bought Nvidia, Palantir, SpaceX in September as federal deals, White House ties grew",
-      "url": "https://www.cnbc.com/2026/11/19/trump-nvidia-spacex-palantir-stock-trades-september.html"
-    },
-    {
-      "assets": [
-        "usoil"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon des sources citées dans cette exclusivité, un responsable de l'administration Trump aurait évoqué l'idée de céder une partie du territoire du Guyana au Venezuela. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. Le territoire disputé entre les deux pays est au cœur d'une importante production pétrolière, d'où l'intérêt pour le marché du brut.",
-      "summary_en": "According to sources cited in this exclusive, a Trump administration official floated the idea of ceding part of Guyana's territory to Venezuela. The full article could not be accessed; this summary is limited to the headline. The territory disputed between the two countries is central to major oil production, hence the interest for crude markets.",
-      "time": "12:54",
-      "title": "Exclusif : un responsable de l'administration Trump aurait évoqué la cession d'un territoire du Guyana au Venezuela, selon des sources",
-      "title_en": "Exclusive-Trump official floated ceding Guyanese territory to Venezuela, sources say",
-      "url": "https://www.investing.com/news/commodities-news/exclusivetrump-official-floated-ceding-guyanese-territory-to-venezuela-sources-say-5038474"
     }
   ],
   "live": {
