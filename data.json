@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-20T11:47:54Z",
+  "updatedAt": "2026-11-20T12:48:12Z",
   "econ": {
     "values": {
       "adp": {
@@ -1218,6 +1218,40 @@
   "news": [
     {
       "date": "2026-11-20",
+      "time": "07:02",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usdcad",
+        "xauusd"
+      ],
+      "title": "Les contrats à terme du TSX reculent légèrement sous la pression des craintes liées à l'IA et de la chute de l'or",
+      "title_en": "TSX futures edge down amid AI anxieties, gold selloff",
+      "summary": "Les contrats à terme de la Bourse de Toronto glissaient avant l'ouverture, plombés par les inquiétudes entourant l'IA et par la baisse de l'or, selon le titre d'Investing.com (article non accessible). La faiblesse de l'or pèse sur les minières, un poids lourd du TSX, ce qui touche aussi l'USD/CAD.",
+      "summary_en": "Toronto Stock Exchange futures slipped ahead of the open, weighed by AI worries and a drop in gold, according to the Investing.com headline (article not accessible). Weakness in gold weighs on miners, a heavyweight of the TSX, with spillover to USD/CAD.",
+      "url": "https://www.investing.com/news/stock-market-news/tsx-futures-edge-down-amid-ai-anxieties-gold-selloff-5041478"
+    },
+    {
+      "date": "2026-11-20",
+      "time": "06:42",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd",
+        "nasdaq",
+        "xauusd",
+        "xagusd",
+        "usoil",
+        "usd"
+      ],
+      "title": "Le bitcoin recule une troisième journée de suite; sortie record de 541 M$ du FNB IBIT de BlackRock",
+      "title_en": "Bitcoin drops for third straight day as Asian tech shares slide; record $541M outflow from BlackRock's IBIT",
+      "summary": "Le bitcoin est tombé près de 61 200 $ avant de remonter vers 61 700 $, alors que la vague de ventes technos gagne l'Asie (Kospi -5 %+) et que les contrats à terme technos américains perdent plus de 1 %. Le FNB IBIT de BlackRock a subi jeudi 541,1 M$ de sorties nettes, un record depuis son lancement, et les liquidations crypto atteignent 718,6 M$ sur 24 h. L'or a touché 3 515 $ l'once avant de revenir à 3 580 $, l'argent glisse à 41 $, le WTI perd 2 % vers 81 $ et le DXY se tient juste sous 104.",
+      "summary_en": "Bitcoin fell to nearly $61,200 before recovering to about $61,700 as the tech selloff spread to Asia (Kospi down 5%+) and U.S. tech futures fell more than 1%. BlackRock's IBIT saw $541.1M in net outflows Thursday, its largest since launch, and crypto liquidations reached $718.6M over 24 hours. Gold hit $3,515/oz before retracing to $3,580, silver slid to $41, WTI fell 2% to around $81 and the DXY held just below 104.",
+      "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-drops-for-third-straight-day-as-asian-tech-shares-slide"
+    },
+    {
+      "date": "2026-11-20",
       "time": "05:36",
       "source": "Investing.com (Reuters)",
       "impact": "high",
@@ -1497,21 +1531,6 @@
       "summary": "L'action d'Alibaba a grimpé jusqu'à 2,7 % à 83,15 HK$ vendredi, alors que le Hang Seng chutait de plus de 2 %, après avoir touché la veille un creux de près de deux ans. Les revenus du trimestre terminé le 30 septembre ont dépassé les attentes grâce à l'infonuagique et aux services de calcul en IA, et le PDG Eddie Wu affirme que l'objectif de 100 G$ de revenus infonuagiques externes d'ici 2030 tient toujours. Le titre reste sous pression en raison des nouvelles restrictions américaines sur l'accès aux puces d'IA avancées.",
       "summary_en": "Alibaba shares rose as much as 2.7% to HK$83.15 on Friday, outpacing a more than 2% slump in the Hang Seng, after hitting a near two-year low the day before. Revenue for the quarter to Sept. 30 beat expectations, helped by AI cloud and computing services, and CEO Eddie Wu said the 2030 target of $100 billion in external cloud revenue remained on track. The stock remains pressured by new U.S. curbs on access to advanced AI chips.",
       "url": "https://www.investing.com/news/stock-market-news/alibaba-hk-shares-rise-as-topline-q2-beat-invites-some-bargain-buying-5040609"
-    },
-    {
-      "assets": [
-        "btcusd",
-        "nasdaq"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Le bitcoin a reculé jusqu'à 61 300 $, son plus bas en quatre mois, alors que les titres technos s'essoufflent après l'entrée en Bourse d'Anthropic. La baisse a provoqué environ 660 M$ de liquidations de positions à effet de levier. La corrélation entre la crypto et le Nasdaq reste au cœur des mouvements.",
-      "summary_en": "Bitcoin fell to $61,300, a four-month low, as tech stocks wilted after Anthropic's IPO. The drop triggered about $660 million in liquidations of leveraged positions. Crypto's link to the Nasdaq remains central to the moves.",
-      "time": "22:32",
-      "title": "Le bitcoin glisse à 61 300 $, un creux de quatre mois après l'IPO d'Anthropic; 660 M$ de liquidations",
-      "title_en": "BTC slides to $61,300 after Anthropic's IPO, triggers $660 million in liquidations",
-      "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
     },
     {
       "assets": [
@@ -1819,21 +1838,6 @@
       "title": "Sentiment des consommateurs du Michigan et décompte des plateformes Baker Hughes attendus vendredi",
       "title_en": "Michigan consumer sentiment and Baker Hughes rig count due Friday",
       "url": "https://www.investing.com/news/stock-market-news/michigan-consumer-sentiment-and-baker-hughes-rig-count-due-friday-93CH-5039764"
-    },
-    {
-      "assets": [
-        "usoil",
-        "eurusd"
-      ],
-      "date": "2026-11-19",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon Investing.com, les exportateurs américains de gaz naturel liquéfié se disent plus à l'aise de conclure des contrats avec des acheteurs européens maintenant que l'UE a reporté sa réglementation sur les émissions de méthane. L'article complet n'a pas pu être consulté; ce résumé s'en tient au titre. Ça touche l'énergie et les liens commerciaux transatlantiques, à surveiller pour le pétrole et l'euro.",
-      "summary_en": "According to Investing.com, US LNG exporters say they are more comfortable signing deals with European buyers now that the EU has delayed its methane emissions regulation. The full article could not be accessed; this summary is limited to the headline. It matters for energy and transatlantic trade ties, relevant for oil and the euro.",
-      "time": "13:19",
-      "title": "Les exportateurs américains de gaz plus enclins à signer avec l'Europe après le report de la réglementation européenne sur le méthane",
-      "title_en": "US gas exporters more comfortable signing European deals after EU delays methane regulation",
-      "url": "https://www.investing.com/news/stock-market-news/us-gas-exporters-more-comfortable-signing-european-deals-after-eu-delays-methane-regulation-5039358"
     }
   ],
   "live": {
