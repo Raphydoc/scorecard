@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T07:10:58Z",
+ "updatedAt": "2026-11-20T07:47:28Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,23 @@
  "news": [
   {
    "date": "2026-11-20",
+   "time": "02:00",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "audusd",
+    "nasdaq",
+    "spx500",
+    "usdjpy"
+   ],
+   "title": "Clôture en Asie : le Nikkei 225 chute de 4,77 %, le Taiwan Weighted de 6,63 %",
+   "title_en": "Asia close: Nikkei 225 down 4.77%, Taiwan Weighted down 6.63%",
+   "summary": "Les Bourses asiatiques ont terminé la séance en forte baisse, emportées par la débâcle des titres liés à l'IA : le Nikkei 225 a cédé 4,77 %, l'indice Taiwan Weighted 6,63 % et le S&P/ASX 200 1,58 %, selon Investing.com. La région avait déjà glissé à un creux de sept mois, la Corée du Sud et Taïwan étant les plus touchées. Ce repli pèse sur l'appétit pour le risque avant l'ouverture de Wall Street (Nasdaq, S&P 500).",
+   "summary_en": "Asian markets closed sharply lower amid the AI-led rout: the Nikkei 225 fell 4.77%, the Taiwan Weighted index 6.63% and the S&P/ASX 200 1.58%, according to Investing.com. The region had already slid to a seven-month low, with South Korea and Taiwan the hardest hit. The selloff weighs on risk appetite ahead of Wall Street's open (Nasdaq, S&P 500).",
+   "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-477-5040783"
+  },
+  {
+   "date": "2026-11-20",
    "time": "01:15",
    "source": "Investing.com",
    "impact": "med",
@@ -1338,23 +1355,6 @@
    "title": "Le bitcoin glisse à 61 300 $, un creux de quatre mois après l'IPO d'Anthropic; 660 M$ de liquidations",
    "title_en": "BTC slides to $61,300 after Anthropic's IPO, triggers $660 million in liquidations",
    "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "usdjpy",
-    "audusd"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Les actions asiatiques ont glissé à leur plus bas niveau en sept mois vendredi, la Corée du Sud et Taïwan encaissant les pires reculs dans la vague de ventes liée à l'IA. Ce repli en Asie prolonge la faiblesse des technos américaines et pèse sur l'appétit pour le risque avant l'ouverture des marchés nord-américains. Mise à jour : l'indice pondéré de Taïwan a clôturé en baisse de 6,63 % (Investing.com).",
-   "summary_en": "Asian stocks slid to a seven-month low on Friday, with South Korea and Taiwan the worst hit in the AI-driven sell-off. The Asian drop extends weakness in U.S. tech and weighs on risk appetite ahead of North American trading. Update: Taiwan's Weighted index closed down 6.63% (Investing.com).",
-   "time": "22:06",
-   "title": "Les Bourses asiatiques chutent à un creux de 7 mois; Corée du Sud et Taïwan les plus touchées par la déroute de l'IA",
-   "title_en": "Asia stocks slide to 7-month low with S.Korea, Taiwan worst hit by AI rout",
-   "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-to-7mth-low-with-skorea-taiwan-worst-hit-by-ai-rout-5040572"
   },
   {
    "assets": [
