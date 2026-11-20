@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T02:47:35Z",
+ "updatedAt": "2026-11-20T03:47:32Z",
  "econ": {
   "values": {
    "adp": {
@@ -1218,6 +1218,38 @@
  "news": [
   {
    "date": "2026-11-19",
+   "time": "22:32",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd",
+    "nasdaq"
+   ],
+   "title": "Le bitcoin glisse à 61 300 $, un creux de quatre mois après l'IPO d'Anthropic; 660 M$ de liquidations",
+   "title_en": "BTC slides to $61,300 after Anthropic's IPO, triggers $660 million in liquidations",
+   "summary": "Le bitcoin a reculé jusqu'à 61 300 $, son plus bas en quatre mois, alors que les titres technos s'essoufflent après l'entrée en Bourse d'Anthropic. La baisse a provoqué environ 660 M$ de liquidations de positions à effet de levier. La corrélation entre la crypto et le Nasdaq reste au cœur des mouvements.",
+   "summary_en": "Bitcoin fell to $61,300, a four-month low, as tech stocks wilted after Anthropic's IPO. The drop triggered about $660 million in liquidations of leveraged positions. Crypto's link to the Nasdaq remains central to the moves.",
+   "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-hits-four-month-low-after-anthropic-s-ipo-as-tech-stocks-wilt"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "22:06",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "usdjpy",
+    "audusd"
+   ],
+   "title": "Les Bourses asiatiques chutent à un creux de 7 mois; Corée du Sud et Taïwan les plus touchées par la déroute de l'IA",
+   "title_en": "Asia stocks slide to 7-month low with S.Korea, Taiwan worst hit by AI rout",
+   "summary": "Les actions asiatiques ont glissé à leur plus bas niveau en sept mois vendredi, la Corée du Sud et Taïwan encaissant les pires reculs dans la vague de ventes liée à l'IA. Ce repli en Asie prolonge la faiblesse des technos américaines et pèse sur l'appétit pour le risque avant l'ouverture des marchés nord-américains.",
+   "summary_en": "Asian stocks slid to a seven-month low on Friday, with South Korea and Taiwan the worst hit in the AI-driven sell-off. The Asian drop extends weakness in U.S. tech and weighs on risk appetite ahead of North American trading.",
+   "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-to-7mth-low-with-skorea-taiwan-worst-hit-by-ai-rout-5040572"
+  },
+  {
+   "date": "2026-11-19",
    "time": "21:06",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1792,37 +1824,6 @@
    "title": "Les rendements de la zone euro stagnent près de leurs sommets d'un mois, coincés entre une Fed et une BCE restrictives",
    "title_en": "Euro yields idle near 1-month peaks on hawkish Fed and ECB rhetoric trap",
    "url": "https://www.investing.com/news/forex-news/euro-yields-idle-near-1month-peaks-on-hawkish-fed-and-ecb-rhetoric-trap-5037883"
-  },
-  {
-   "assets": [
-    "gbpusd",
-    "usoil"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le gouverneur de la Banque d'Angleterre, Andrew Bailey, dit garder « un œil très attentif » sur les prix de l'énergie et avertit qu'un conflit prolongé au Moyen-Orient pourrait rendre l'inflation plus persistante et exiger des taux plus élevés. Le FTSE 100 recule de 0,06 % et la livre est stable à 1,3152 $US, alors que l'inflation britannique est passée à 3,6 % en octobre. Une hausse de taux de la BoE dès le mois prochain ou au début de 2027 est envisagée par des économistes, ce qui soutient la livre.",
-   "summary_en": "Bank of England Governor Andrew Bailey said the Bank is keeping a \"very close eye\" on energy prices and warned a prolonged Middle East conflict could make inflation more persistent and require higher rates. The FTSE 100 slipped 0.06% and sterling was flat at $1.3152, with UK inflation at 3.6% in October. Economists see a BoE hike as soon as next month or early next year, supportive for the pound.",
-   "time": "03:24",
-   "title": "Bailey (BoE) surveille l'énergie : un conflit prolongé au Moyen-Orient pourrait forcer des taux plus élevés",
-   "title_en": "FTSE 100 today: Stocks slip as UK consumer gloom deepens; BoE warns on energy",
-   "url": "https://uk.investing.com/news/stock-market-news/ftse-100-today-stocks-slip-as-uk-consumer-gloom-deepens-boe-warns-on-energy-4992556"
-  },
-  {
-   "assets": [
-    "eurusd",
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le STOXX 600 gagne 0,3 %, le DAX 0,6 % et le CAC 40 0,4 %, portés par l'IPO d'Anthropic (83 $ l'action, environ 81 G$ levés, valorisation d'environ 1 500 G$) qui débute à Wall Street jeudi. En face, le ton restrictif de la Fed pèse : le CME FedWatch donne environ 90 % de chances d'une hausse de 25 points de base en décembre. L'inflation de base de la zone euro, montée à 2,6 %, réduit aussi les espoirs de baisse de taux de la BCE, à surveiller pour l'EUR/USD avant les discours de Lagarde.",
-   "summary_en": "The STOXX 600 rose 0.3%, the DAX 0.6% and the CAC 40 0.4%, lifted by Anthropic's IPO ($83 a share, about $81 billion raised, roughly $1.5 trillion valuation), which debuts on Wall Street Thursday. A hawkish Fed weighs, with CME FedWatch showing about a 90% chance of a 25-basis-point hike in December. Eurozone core inflation rising to 2.6% also dims ECB rate-cut hopes, relevant for EUR/USD ahead of Lagarde's remarks.",
-   "time": "03:19",
-   "title": "Les Bourses européennes avancent : la méga-IPO d'Anthropic contrebalance une Fed restrictive",
-   "title_en": "European stocks inch up as massive Anthropic IPO counters hawkish Fed",
-   "url": "https://www.investing.com/news/stock-market-news/european-stocks-inch-up-as-massive-anthropic-ipo-counters-hawkish-fed-5037955"
   }
  ],
  "live": {
