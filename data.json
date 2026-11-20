@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T20:47:37Z",
+ "updatedAt": "2026-11-20T21:47:42Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,54 @@
  "news": [
   {
    "date": "2026-11-20",
+   "time": "16:30",
+   "source": "Investing.com (Reuters)",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "rut"
+   ],
+   "title": "Le Nasdaq plonge de 5 % au lendemain des débuts d'Anthropic, mais les investisseurs croient toujours en l'IA",
+   "title_en": "Nasdaq plunges 5% a day after Anthropic debut, but investors still believe in AI",
+   "summary": "Selon le titre de Reuters repris par Investing.com, le Nasdaq a chuté de 5 % en une séance, au lendemain de l'entrée en Bourse d'Anthropic. Malgré la débâcle des titres technos, les investisseurs resteraient convaincus du potentiel de l'IA. Le texte complet n'a pas pu être lu.",
+   "summary_en": "Per the Reuters headline carried by Investing.com, the Nasdaq fell 5% in one session, a day after Anthropic's market debut. Despite the tech rout, investors reportedly still believe in AI's potential. The full article could not be read.",
+   "url": "https://www.investing.com/news/stock-market-news/nasdaq-plunges-5-a-day-after-anthropic-debut-but-investors-still-believe-in-ai-5042641"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "16:30",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "us30",
+    "spx500",
+    "nasdaq",
+    "usdcad"
+   ],
+   "title": "Clôture : Wall Street termine en baisse, le Dow Jones cède 1,93 %; le S&P/TSX recule de 2,47 %",
+   "title_en": "U.S. stocks lower at close of trade; Dow Jones down 1.93%; S&P/TSX Composite down 2.47%",
+   "summary": "Les actions américaines ont fini la séance de vendredi en baisse, le Dow Jones Industrial Average reculant de 1,93 %, selon Investing.com. À Toronto, l'indice composé S&P/TSX a perdu 2,47 %. La semaine se termine sous le signe de la vague de ventes liée à l'IA.",
+   "summary_en": "U.S. stocks ended Friday's session lower, with the Dow Jones Industrial Average down 1.93%, per Investing.com. In Toronto, the S&P/TSX Composite fell 2.47%. The week closes amid the AI-driven selloff.",
+   "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-193-5042683"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "16:24",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "CrowdStrike envisage de racheter Zscaler dans une méga-transaction potentielle de 265 G$ (Bloomberg)",
+   "title_en": "CrowdStrike weighs Zscaler buyout in potential $265 billion cyber deal - Bloomberg",
+   "summary": "Selon Bloomberg, repris par Investing.com, CrowdStrike étudie un rachat de Zscaler dans une transaction potentielle évaluée à 265 G$. D'après CNBC, l'action de Zscaler a bondi de 20 % à la suite de cette information. Ce serait une méga-fusion dans la cybersécurité, un secteur important du Nasdaq.",
+   "summary_en": "According to Bloomberg, via Investing.com, CrowdStrike is weighing a buyout of Zscaler in a potential $265 billion deal. CNBC reports Zscaler shares jumped 20% on the news. It would be a cybersecurity mega-merger in a key Nasdaq sector.",
+   "url": "https://www.investing.com/news/stock-market-news/crowdstrike-weighs-zscaler-buyout-in-potential-265-billion-cyber-deal--bloomberg-5042662"
+  },
+  {
+   "date": "2026-11-20",
    "time": "15:19",
    "source": "Investing.com",
    "impact": "high",
@@ -1855,51 +1903,6 @@
    "title": "TSMC glisse de 4,8 % à un creux de sept mois après la suspension de commandes de puces avancées pour des clients chinois",
    "title_en": "TSMC slides 4.8% to seven-month low after reportedly suspending advanced chip orders for Chinese designers",
    "url": "https://in.investing.com/news/stock-market-news/why-is-tsmc-stock-sliding-today-93CH-5716748"
-  },
-  {
-   "assets": [
-    "nasdaq"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'action d'Alibaba a grimpé jusqu'à 2,7 % à 83,15 HK$ vendredi, alors que le Hang Seng chutait de plus de 2 %, après avoir touché la veille un creux de près de deux ans. Les revenus du trimestre terminé le 30 septembre ont dépassé les attentes grâce à l'infonuagique et aux services de calcul en IA, et le PDG Eddie Wu affirme que l'objectif de 100 G$ de revenus infonuagiques externes d'ici 2030 tient toujours. Le titre reste sous pression en raison des nouvelles restrictions américaines sur l'accès aux puces d'IA avancées.",
-   "summary_en": "Alibaba shares rose as much as 2.7% to HK$83.15 on Friday, outpacing a more than 2% slump in the Hang Seng, after hitting a near two-year low the day before. Revenue for the quarter to Sept. 30 beat expectations, helped by AI cloud and computing services, and CEO Eddie Wu said the 2030 target of $100 billion in external cloud revenue remained on track. The stock remains pressured by new U.S. curbs on access to advanced AI chips.",
-   "time": "22:37",
-   "title": "Alibaba rebondit à Hong Kong après des revenus trimestriels supérieurs aux attentes",
-   "title_en": "Alibaba HK shares rise as Q2 topline beat invites some bargain buying",
-   "url": "https://www.investing.com/news/stock-market-news/alibaba-hk-shares-rise-as-topline-q2-beat-invites-some-bargain-buying-5040609"
-  },
-  {
-   "assets": [
-    "usoil",
-    "usdcad"
-   ],
-   "date": "2026-11-19",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Les prix du pétrole progressent légèrement après des attaques des Houthis visant Riyad, qui ravivent les inquiétudes quant à l'approvisionnement venant d'Arabie saoudite. Selon une autre dépêche, le brut reste malgré tout en voie d'une troisième semaine de baisse. Une prime de risque géopolitique soutient le WTI et, par ricochet, les devises liées au pétrole comme le dollar canadien.",
-   "summary_en": "Oil prices edged higher after Houthi attacks targeting Riyadh revived concerns over Saudi supply. A separate report says crude is nonetheless on track for a third straight weekly decline. A geopolitical risk premium supports WTI and, indirectly, oil-linked currencies such as the Canadian dollar.",
-   "time": "21:06",
-   "title": "Le pétrole grimpe légèrement : les attaques des Houthis contre Riyad ravivent les craintes sur l'offre",
-   "title_en": "Oil prices edge higher as Houthi attacks on Riyadh raise supply concerns",
-   "url": "https://www.investing.com/news/commodities-news/oil-prices-edge-higher-as-houthi-attacks-on-riyadh-raise-supply-concerns-5040518"
-  },
-  {
-   "assets": [
-    "spx500",
-    "nasdaq",
-    "us30"
-   ],
-   "date": "2026-11-19",
-   "impact": "high",
-   "source": "Investing.com",
-   "summary": "Les contrats à terme du S&P 500 cèdent 0,3 % (7 173,75), ceux du Nasdaq 100 0,7 % (26 421,75) et ceux du Dow 0,2 % (49 080), après une séance où le Dow a perdu 2,2 %, le S&P 500 2 % (6e baisse de suite) et le Nasdaq 2,3 %. Anthropic a clôturé en hausse de 17,1 % à 97,17 $ (prix d'émission 83 $) mais recule de près de 4 % après la clôture, tandis que Nvidia (-3,3 %) et AMD (-7,7 %) ont plongé. Selon le FedWatch du CME, les marchés évaluent à 96 % la probabilité d'une hausse de taux de 25 points de base en décembre.",
-   "summary_en": "S&P 500 futures slipped 0.3% to 7,173.75, Nasdaq 100 futures fell 0.7% to 26,421.75 and Dow futures 0.2% to 49,080, after a session in which the Dow lost 2.2%, the S&P 500 2% (sixth straight decline) and the Nasdaq 2.3%. Anthropic closed 17.1% higher at $97.17 (IPO price $83) but fell nearly 4% after hours, while Nvidia (-3.3%) and AMD (-7.7%) slid. CME FedWatch shows markets pricing a 96% probability of a 25-basis-point rate hike at the Fed's December meeting.",
-   "time": "20:11",
-   "title": "Les contrats à terme de Wall Street reculent : les débuts d'Anthropic ne relancent pas le commerce de l'IA",
-   "title_en": "Wall Street futures fall as Anthropic debut fails to revive AI trade",
-   "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-fall-as-anthropic-debut-fails-to-revive-ai-trade-5040450"
   }
  ],
  "live": {
