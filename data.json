@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T01:47:55Z",
+ "updatedAt": "2026-11-21T02:47:24Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,38 @@
  "news": [
   {
    "date": "2026-11-20",
+   "time": "21:12",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "us30",
+    "nasdaq"
+   ],
+   "title": "Analyse : les banques de Wall Street en route vers une année faste, les PAPE d'Anthropic et de SpaceX générant 1 G$ en frais",
+   "title_en": "Analysis: Wall Street banks set for banner year as Anthropic, SpaceX IPOs generate $1 billion in fees",
+   "summary": "Selon cette analyse de Reuters, les premiers appels publics à l'épargne d'Anthropic et de SpaceX auraient généré environ 1 G$ en frais pour les banques d'affaires de Wall Street, qui se dirigent vers une année exceptionnelle. Un appui pour les titres financiers du S&P 500 et du Dow, malgré la correction récente du marché.",
+   "summary_en": "According to this Reuters analysis, the Anthropic and SpaceX IPOs have generated about $1 billion in fees for Wall Street investment banks, which are headed for a banner year. Supportive for financial stocks in the S&P 500 and the Dow despite the market's recent correction.",
+   "url": "https://www.investing.com/news/stock-market-news/analysiswall-street-banks-set-for-banner-year-as-anthropic-spacex-ipos-generate-1-billion-in-fees-5042444"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "20:28",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "xauusd",
+    "xagusd"
+   ],
+   "title": "UBS juge solide le potentiel d'investissement dans les matières premières malgré le recul de la prime d'offre sur le pétrole",
+   "title_en": "UBS flags resilient commodity investment case despite easing oil supply premium",
+   "summary": "UBS estime que les matières premières demeurent un placement intéressant, même si la prime de risque liée à l'offre de pétrole s'atténue. Un contexte à suivre pour le WTI, en baisse pour une troisième semaine, ainsi que pour l'or et l'argent.",
+   "summary_en": "UBS says the investment case for commodities remains resilient even as the oil supply risk premium eases. Relevant for WTI, down for a third straight week, as well as for gold and silver.",
+   "url": "https://www.investing.com/news/stock-market-news/ubs-flags-resilient-commodity-investment-case-despite-easing-oil-supply-premium-5043001"
+  },
+  {
+   "date": "2026-11-20",
    "time": "18:40",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1873,38 +1905,6 @@
    "title": "Des démocrates de la Chambre enquêtent sur l'influence de Nvidia dans l'enquête américaine sur Megaspeed",
    "title_en": "House Democrats open probe into Nvidia influence on US Megaspeed investigation",
    "url": "https://www.investing.com/news/stock-market-news/democrats-open-probe-into-nvidia-influence-on-usmegaspeed-investigation-5041051"
-  },
-  {
-   "assets": [
-    "gbpusd",
-    "eurusd",
-    "usd"
-   ],
-   "date": "2026-11-20",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Les ventes au détail britanniques ont bondi de 0,7 % en octobre alors qu'on attendait une stagnation, et les emprunts publics (17,0 G£) ont été inférieurs aux prévisions (18,0 G£). La livre gagne 0,05 % à 1,3103 $ et l'euro est stable à 1,0968 $, mais les deux s'orientent vers une baisse hebdomadaire. Le dollar reste près de ses sommets de 52 semaines sur les paris d'un resserrement plus rapide de la Fed; ING voit 104,60 comme cible à court terme pour le DXY.",
-   "summary_en": "UK retail sales rose 0.7% in October versus expectations of no change, and public borrowing (£17.0bn) undershot forecasts (£18.0bn). Sterling rose 0.05% to $1.3103 and the euro was flat at $1.0968, both on track for weekly losses. The dollar stays near 52-week highs on bets of faster Fed tightening; ING sees 104.60 as a near-term DXY target.",
-   "time": "04:22",
-   "title": "La livre progresse légèrement grâce aux ventes au détail britanniques, le dollar plafonne près de ses sommets",
-   "title_en": "Sterling today: Pound edges up on UK retail beat, dollar caps gains",
-   "url": "https://www.investing.com/news/forex-news/sterling-today-pound-edges-up-on-uk-retail-beat-dollar-caps-gains-5041015"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "eurusd"
-   ],
-   "date": "2026-11-20",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Le STOXX 600 perd 1 % à 631,89 points et s'oriente vers une baisse hebdomadaire de plus de 4,5 %, sa pire depuis la semaine terminée le 6 mars. Le DAX recule de 1,3 % et ASML, ASM International et Infineon cèdent chacun plus de 4 %, alors que les paris liés à l'IA continuent de se dénouer après les débuts d'Anthropic au Nasdaq. Ce climat d'aversion au risque pèse aussi sur les technos américaines.",
-   "summary_en": "The STOXX 600 fell 1% to 631.89 and is on track for a weekly loss of more than 4.5%, its worst since the week ended March 6. Germany's DAX fell 1.3% and ASML, ASM International and Infineon each shed over 4% as AI-linked bets kept unwinding after Anthropic's Nasdaq debut. The risk-off mood also weighs on U.S. tech.",
-   "time": "03:25",
-   "title": "Les Bourses européennes se dirigent vers leur pire semaine depuis mars, plombées par les puces",
-   "title_en": "European shares head for steepest weekly drop since March",
-   "url": "https://www.investing.com/news/stock-market-news/european-shares-head-for-steepest-weekly-drop-since-march-5040936"
   }
  ],
  "live": {
