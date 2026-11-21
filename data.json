@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T15:48:03Z",
+  "updatedAt": "2026-11-21T16:42:10Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,20 @@
   "news": [
     {
       "date": "2026-11-21",
+      "time": "10:24",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Le bitcoin rebondit de plus de 2 % et repasse au-dessus de 60 000 $",
+      "title_en": "Bitcoin rises over 2% to more than $60,000",
+      "summary": "Le bitcoin gagnait environ 2,14 % à 60 192,07 $ samedi vers 10 h 16 (HE). La veille, il avait enfoncé le seuil de 57 742 $, son plus bas depuis septembre 2024. Ce rebond de fin de semaine intervient après une semaine de forte aversion au risque; l'article ne cite pas de cause précise.",
+      "summary_en": "Bitcoin was up about 2.14% at $60,192.07 at 10:16 a.m. ET on Saturday. On Friday it had broken below $57,742, its lowest since September 2024. The weekend bounce follows a week of heavy risk aversion; the article cites no specific cause.",
+      "url": "https://www.investing.com/news/forex-news/bitcoin-rises-over-2-to-more-than-60000-5043497"
+    },
+    {
+      "date": "2026-11-21",
       "time": "10:20",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1886,23 +1900,6 @@
       "title": "Le Nasdaq recule de 1 % à l'ouverture, Anthropic ne parvient pas à stabiliser le commerce de l'IA",
       "title_en": "Nasdaq falls 1% at open as Anthropic fails to steady AI trade",
       "url": "https://www.investing.com/news/stock-market-news/nasdaq-falls-1-at-open-as-anthropic-fails-to-steady-ai-trade-5042084"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "xauusd"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Citi estime que le comportement des marchés indique à la Réserve fédérale que son niveau actuel de taux est « insoutenablement élevé ». Cette lecture va à contre-courant des paris récents sur une Fed plus ferme, et compte pour le dollar, les rendements obligataires, l'or et les actions.",
-      "summary_en": "Citi says market behavior is signaling to the Federal Reserve that its current rate level is \"unsustainably high.\" That view runs against recent bets on a more hawkish Fed and matters for the dollar, bond yields, gold and equities.",
-      "time": "08:45",
-      "title": "Selon Citi, le marché signale à la Fed que les taux sont « insoutenablement élevés »",
-      "title_en": "Market is telling the Fed that rates are \"unsustainably high\": Citi",
-      "url": "https://www.investing.com/news/stock-market-news/market-is-telling-the-fed-that-rates-are-unsustainably-high-citi-5041776"
     }
   ],
   "live": {
