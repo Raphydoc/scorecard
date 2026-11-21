@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T00:47:29Z",
+ "updatedAt": "2026-11-21T01:47:55Z",
  "econ": {
   "values": {
    "adp": {
@@ -1306,6 +1306,21 @@
   },
   {
    "date": "2026-11-20",
+   "time": "17:59",
+   "source": "CNBC",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "L'action Nvidia plonge de 14 % et boucle sa plus longue série de pertes hebdomadaires depuis la crise de 2008",
+   "title_en": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
+   "summary": "Selon le titre de CNBC, l'action Nvidia a plongé de 14 % et termine sa plus longue série de semaines en baisse depuis la crise financière de 2008 (sept semaines, selon le lien de l'article). Le recul du poids lourd des puces pèse directement sur le Nasdaq et le S&P 500, en pleine déroute du secteur de l'IA.",
+   "summary_en": "According to CNBC's headline, Nvidia stock plunged 14% and wrapped up its longest weekly losing streak since the 2008 financial crisis (seven weeks, per the article's link). The chip heavyweight's slide weighs directly on the Nasdaq and S&P 500 amid the AI-sector rout.",
+   "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
+  },
+  {
+   "date": "2026-11-20",
    "time": "17:44",
    "source": "MarketWatch",
    "impact": "high",
@@ -1318,6 +1333,26 @@
    "summary": "Selon MarketWatch, les actions de puces ont vu environ 2 300 milliards de dollars de valeur boursière s'évaporer cette semaine, la panique s'étant emparée du commerce lié à l'IA. Ce recul des poids lourds technologiques pèse directement sur le Nasdaq et le S&P 500.",
    "summary_en": "According to MarketWatch, chip stocks saw about $2.3 trillion in market value wiped out this week as panic gripped the AI trade. The slide in tech heavyweights weighs directly on the Nasdaq and S&P 500.",
    "url": "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "17:34",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "usd",
+    "usdjpy",
+    "eurusd",
+    "audusd",
+    "nasdaq",
+    "spx500",
+    "xauusd"
+   ],
+   "title": "Les rendements du Trésor et les rendements mondiaux plongent alors que les investisseurs fuient la déroute de l'IA",
+   "title_en": "U.S. Treasury yields and global bond yields plunge as traders flee AI rout",
+   "summary": "Le 10 ans américain a reculé de 10,9 points de base pour clôturer à 4,941 %, le 2 ans de 12,8 pb à 4,651 % et le 30 ans de 6,5 pb à 5,336 %; le Bund allemand à 10 ans a perdu 10,8 pb à 3,3026 %, le 10 ans japonais est tombé à 2,751 % et l'australien à 4,916 %. La vente massive des titres techno et de l'IA a poussé les investisseurs vers les obligations d'État. Le gouverneur de la Fed Christopher Waller a toutefois prôné une « action agressive » et évoqué une hausse d'un demi-point en décembre, tandis que le CME FedWatch tient une hausse de 25 pb pour acquise.",
+   "summary_en": "The U.S. 10-year yield fell 10.9 basis points to close at 4.941%, the 2-year 12.8 bp to 4.651% and the 30-year 6.5 bp to 5.336%; the German 10-year Bund lost 10.8 bp to 3.3026%, Japan's 10-year fell to 2.751% and Australia's to 4.916%. The tech and AI selloff pushed investors into government debt. Fed Governor Christopher Waller nonetheless urged 'aggressive action' and floated a half-point hike in December, while CME FedWatch sees a 25 bp hike as essentially locked in.",
+   "url": "https://in.investing.com/news/forex-news/global-bond-yields-plunge-as-ai-rout-triggers-flight-to-safety-5716851"
   },
   {
    "date": "2026-11-20",
@@ -1870,39 +1905,6 @@
    "title": "Les Bourses européennes se dirigent vers leur pire semaine depuis mars, plombées par les puces",
    "title_en": "European shares head for steepest weekly drop since March",
    "url": "https://www.investing.com/news/stock-market-news/european-shares-head-for-steepest-weekly-drop-since-march-5040936"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-20",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Une série de mesures américaines limitant l'accès de la Chine aux puces d'IA avancées, dont des restrictions sur l'accès à distance et la suspension par Nvidia de certaines livraisons, a pilonné les titres technos chinois cette semaine. Z.AI a chuté de 22 % et MiniMax de 34 % en deux semaines, et Iluvatar CoreX a perdu 17 %. Alibaba prévoit un ralentissement de la croissance de son infonuagique à 30-45 % l'an prochain (53 % au dernier trimestre), ce qui alimente la pression sur le secteur des semi-conducteurs et le Nasdaq.",
-   "summary_en": "A series of US measures restricting China's access to advanced AI chips, including remote-access curbs and Nvidia's suspension of some China shipments, pummelled Chinese tech stocks this week. Z.AI has tumbled 22% and MiniMax 34% over two weeks, while Iluvatar CoreX fell 17%. Alibaba sees cloud revenue growth slowing to 30-45% next year from 53% last quarter, adding pressure on chip stocks and the Nasdaq.",
-   "time": "03:21",
-   "title": "Les restrictions américaines sur les puces d'IA frappent les titres technos chinois et accélèrent la quête d'autonomie",
-   "title_en": "US AI chip curbs hit China tech stocks, spur self-sufficiency push",
-   "url": "https://www.investing.com/news/stock-market-news/us-ai-chip-curbs-hit-china-tech-stocks-spur-selfsufficiency-push-5040932"
-  },
-  {
-   "assets": [
-    "spx500",
-    "nasdaq",
-    "us30",
-    "rut",
-    "usd"
-   ],
-   "date": "2026-11-20",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Les stratèges de Barclays, menés par Emmanuel Cau, estiment que les actions pourraient encore reculer d'ici la fin de l'année si la Fed durcit le ton ou si l'inflation reste chaude, le « Fed put » semblant avoir disparu. Ils comparent la situation à décembre 2018, quand les actions avaient chuté d'environ 20 % avant un virage accommodant. Les marchés anticipent encore environ trois hausses de taux sur un an, et certains spéculent sur une hausse de 50 points de base en décembre après des propos du gouverneur Christopher Waller, scénario que les économistes de Barclays ne partagent pas.",
-   "summary_en": "Barclays strategists led by Emmanuel Cau say equities could weaken further into year-end if Fed communication turns more hawkish or inflation runs hot, as the 'Fed put' appears to have disappeared. They compare it with December 2018, when stocks fell about 20% before a dovish pivot. Markets still price about three hikes over the coming year, with speculation of a 50 bp December move after Governor Christopher Waller's comments, which Barclays economists disagree with.",
-   "time": "02:49",
-   "title": "Barclays prévient d'une faiblesse accrue des actions alors que les paris sur une Fed plus ferme s'accumulent",
-   "title_en": "Barclays warns of further equity weakness as hawkish Fed bets build",
-   "url": "https://www.investing.com/news/stock-market-news/barclays-warns-of-further-equity-weakness-as-hawkish-fed-bets-build-5040863"
   }
  ],
  "live": {
