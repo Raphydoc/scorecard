@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T09:42:01Z",
+  "updatedAt": "2026-11-21T11:42:26Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,22 @@
   "news": [
     {
       "date": "2026-11-21",
+      "time": "04:50",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "us30",
+        "rut"
+      ],
+      "title": "UBS évalue l'impact de l'arrêt des vols à l'échelle des États-Unis sur le 4e trimestre des transporteurs aériens",
+      "title_en": "UBS assesses impact of nationwide ground stop on US airlines' 4Q outlook",
+      "summary": "Selon UBS, l'arrêt des départs ordonné par la FAA le 13 novembre (plus de quatre heures, le plus long depuis le 11 septembre 2001) pourrait retrancher de 50 à 100 points de base à la capacité (sièges-milles offerts) du 4e trimestre, avec une hausse semblable des coûts unitaires hors carburant. Le taux d'annulation moyen des six plus grands transporteurs a atteint 32 % le 13 novembre et 30 % le 14; JetBlue a été le plus touché (jusqu'à 49 %). Un vent de face pour les bénéfices du secteur aérien, mais les opérations devaient se normaliser dès le 16 novembre.",
+      "summary_en": "UBS says the FAA's Nov. 13 nationwide ground stop (more than four hours, the longest since Sept. 11, 2001) could cut fourth-quarter available seat miles by 50 to 100 basis points, with a similar rise in non-fuel unit costs. The six largest carriers' average cancellation rate hit 32% on Nov. 13 and 30% on Nov. 14, with JetBlue hardest hit (up to 49%). A headwind for airline earnings, though operations were expected to normalize from Nov. 16.",
+      "url": "https://www.investing.com/news/stock-market-news/ubs-assesses-impact-of-nationwide-ground-stop-on-us-airlines-4q-outlook-5043328"
+    },
+    {
+      "date": "2026-11-21",
       "time": "03:56",
       "source": "Investing.com",
       "impact": "med",
@@ -1886,21 +1902,6 @@
       "title": "L'or glisse à un creux de 52 semaines près de 3 515 $ alors que la tendance baissière s'accentue",
       "title_en": "Gold slides to 52-week low near $3,515 as bearish trend deepens",
       "url": "https://www.investing.com/news/commodities-news/gold-slides-to-52week-low-near-3515-as-bearish-trend-deepens-93CH-5041518"
-    },
-    {
-      "assets": [
-        "usdcad",
-        "xauusd"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Les contrats à terme de la Bourse de Toronto glissaient avant l'ouverture, plombés par les inquiétudes entourant l'IA et par la baisse de l'or, selon le titre d'Investing.com (article non accessible). La faiblesse de l'or pèse sur les minières, un poids lourd du TSX, ce qui touche aussi l'USD/CAD.",
-      "summary_en": "Toronto Stock Exchange futures slipped ahead of the open, weighed by AI worries and a drop in gold, according to the Investing.com headline (article not accessible). Weakness in gold weighs on miners, a heavyweight of the TSX, with spillover to USD/CAD.",
-      "time": "07:02",
-      "title": "Les contrats à terme du TSX reculent légèrement sous la pression des craintes liées à l'IA et de la chute de l'or",
-      "title_en": "TSX futures edge down amid AI anxieties, gold selloff",
-      "url": "https://www.investing.com/news/stock-market-news/tsx-futures-edge-down-amid-ai-anxieties-gold-selloff-5041478"
     }
   ],
   "live": {
