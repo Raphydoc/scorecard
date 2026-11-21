@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T12:47:36Z",
+  "updatedAt": "2026-11-21T13:47:58Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,20 @@
   "news": [
     {
       "date": "2026-11-21",
+      "time": "07:30",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "La chute de l'ether met BTCS, trésor crypto coté au Nasdaq, sous la menace d'une liquidation de son prêt de 54 M$ sur Aave",
+      "title_en": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated",
+      "summary": "Dans un dépôt 8-K à la SEC, BTCS indique ne pas pouvoir exclure la liquidation de sa dette d'environ 54 M$ sur Aave, garantie par de l'ether (elle était de 64 M$ il y a deux semaines). Avec l'ETH autour de 1 730 $ samedi, CoinDesk estime le seuil de liquidation vers 1 450 $, soit environ 17 % plus bas; l'action a chuté de 28,1 % sur la semaine. Ça illustre la pression sur les sociétés de trésorerie crypto en plein repli du bitcoin et de l'ether.",
+      "summary_en": "In an 8-K filing, BTCS said it cannot rule out liquidation of its roughly $54 million ether-backed Aave debt (down from $64 million two weeks ago). With ETH near $1,730 on Saturday, CoinDesk estimates the liquidation point near $1,450, about 17% lower; the stock fell 28.1% on the week. It highlights the strain on crypto treasury firms as bitcoin and ether slide.",
+      "url": "https://www.coindesk.com/markets/2026/11/21/ether-treasury-firm-btcs-warns-sec-its-usd54-million-aave-loan-could-be-liquidated"
+    },
+    {
+      "date": "2026-11-21",
       "time": "07:20",
       "source": "Investing.com",
       "impact": "med",
@@ -1886,21 +1900,6 @@
       "title": "JPMorgan, Visa et Mastercard disent que des fournisseurs tiers ont été visés par une cyberattaque",
       "title_en": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack",
       "url": "https://www.investing.com/news/stock-market-news/jpmorgan-says-thirdparty-vendors-targeted-in-cyberattack-5039129"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le titre d'Anthropic perd maintenant plus de 10 % avant l'ouverture, au lendemain de sa première séance au Nasdaq, alors que la vague de ventes dans les titres technos se poursuit. Le recul s'accentue par rapport au repli d'environ 6 % observé plus tôt ce matin et pèse sur le sentiment envers l'IA, le Nasdaq et le S&P 500.",
-      "summary_en": "Anthropic shares are now down more than 10% in pre-market trading, the day after their Nasdaq debut, as the tech sell-off continues. The drop deepens from the roughly 6% decline seen earlier this morning and weighs on AI sentiment, the Nasdaq and the S&P 500.",
-      "time": "07:41",
-      "title": "Anthropic recule de plus de 10 % avant l'ouverture alors que la vague de ventes dans la techno se poursuit",
-      "title_en": "Anthropic shares now down over 10% in pre-market as tech sell-off continues",
-      "url": "https://www.investing.com/news/stock-market-news/anthropic-shares-now-down-over-10-in-premarket-432SI-5041532"
     }
   ],
   "live": {
