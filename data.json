@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T20:47:46Z",
+  "updatedAt": "2026-11-21T22:42:57Z",
   "econ": {
     "values": {
       "adp": {
@@ -1473,6 +1473,20 @@
       "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-nodes-could-be-stalled-by-repeating-one-id-50-000-times-ai-found-the-bug"
     },
     {
+      "date": "2026-11-21",
+      "time": "00:59",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Le XRP chute d'environ 10 % à 87 cents, son plus bas depuis novembre 2024, et les actifs des FNB passent sous 1 G$",
+      "title_en": "XRP falls 10% as long bets unwind and ETF assets slip below $1 billion",
+      "summary": "Le XRP a reculé d'environ 9 % en 24 heures à environ 87 cents, son plus bas depuis novembre 2024, dans la vente généralisée de samedi où le bitcoin a perdu 9,4 % et l'ether plus de 10 %. Environ 18 M$ de positions à terme sur le XRP ont été liquidées, à 94 % des paris haussiers, et les cinq FNB XRP au comptant américains ne détiennent plus qu'environ 990 M$ d'actifs. Le RSI quotidien sous 30 signale un marché survendu, sans confirmer la fin de la baisse.",
+      "summary_en": "XRP fell about 9% in 24 hours to around 87 cents, its lowest since November 2024, in Saturday's broad selloff that saw bitcoin drop 9.4% and ether lose more than 10%. About $18 million in XRP futures were liquidated, roughly 94% from bullish bets, and the five U.S. spot XRP ETFs now hold about $990 million in assets. The daily RSI below 30 signals oversold conditions but does not confirm the decline has ended.",
+      "url": "https://www.coindesk.com/markets/2026/11/21/xrp-falls-10-as-long-bets-unwind-and-etf-assets-slip-below-usd1-billion"
+    },
+    {
       "date": "2026-11-20",
       "time": "23:12",
       "source": "Investing.com",
@@ -1881,25 +1895,6 @@
       "summary": "L'action d'Advanced Micro Devices plonge vendredi, dans le sillage de la débandade des semi-conducteurs qui frappe aussi Broadcom et Nvidia. La faiblesse des fabricants de puces pèse lourdement sur le Nasdaq.",
       "summary_en": "Advanced Micro Devices shares plunge on Friday, caught in the chip rout that is also hitting Broadcom and Nvidia. Weakness in chipmakers weighs heavily on the Nasdaq.",
       "url": "https://www.investing.com/news/stock-market-news/why-is-advanced-micro-devices-stock-plunging-today-93CH-5042282"
-    },
-    {
-      "date": "2026-11-20",
-      "time": "11:37",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "xauusd",
-        "btcusd",
-        "usdjpy"
-      ],
-      "title": "Les rendements du Trésor reculent : le marché obligataire suit les actifs risqués plutôt que la Fed",
-      "title_en": "Treasury yields fall as bond market tracks risk assets, not Fed rhetoric",
-      "summary": "Vers 11 h, le rendement à 2 ans glissait à 4,649 % et le 10 ans à 4,948 %, alors que le S&P 500 cédait 1,32 % à 7 081 et le Nasdaq 100 2,72 %, avec un VIX à 30,2. L'or à terme chutait de 3,64 % à 3 551 $ et le bitcoin de 5,29 %, ce que l'article interprète comme des ventes forcées plutôt qu'une fuite vers les valeurs refuges. Le risque d'une hausse de taux en décembre demeure, selon l'auteur.",
-      "summary_en": "Around 11 a.m., the 2-year yield slipped to 4.649% and the 10-year to 4.948%, while the S&P 500 fell 1.32% to 7,081 and the Nasdaq 100 dropped 2.72%, with the VIX at 30.2. Gold futures fell 3.64% to $3,551 and bitcoin 5.29%, which the article reads as forced selling rather than a safe-haven bid. December rate-hike risk remains, the author says.",
-      "url": "https://www.investing.com/news/stock-market-news/treasury-yields-fall-as-bond-market-tracks-risk-assets-not-fed-rhetoric-93CH-5042241"
     }
   ],
   "live": {
