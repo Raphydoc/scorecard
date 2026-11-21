@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T04:48:07Z",
+ "updatedAt": "2026-11-21T05:42:35Z",
  "econ": {
   "values": {
    "adp": {
@@ -1547,6 +1547,25 @@
   },
   {
    "date": "2026-11-20",
+   "time": "15:12",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "usdjpy",
+    "spx500",
+    "nasdaq",
+    "xauusd",
+    "usoil"
+   ],
+   "title": "Bilan de la semaine à la Fed : le débat porte sur l'ampleur de la prochaine hausse, pas sur sa tenue",
+   "title_en": "Fed signals and data: what happened the week of Nov. 16–20, 2026",
+   "summary": "Le procès-verbal d'octobre montre un appui quasi unanime à un resserrement (taux à 3,75 %–4,00 %, vote 10–2) et Waller réclame une « action agressive »; CME FedWatch voyait environ 10 % de chances d'une hausse de 50 pb les 8 et 9 décembre, une hausse de 25 pb restant le scénario de base. Les données sont mitigées : ventes au détail +0,2 % (contrôle +0,6 %), mais Philly Fed à 6,3 contre 20,6 attendu et production industrielle -0,4 %; les attentes d'inflation à 1 an de Michigan reculent à 3,7 %. Le dollar a touché des sommets de l'année et l'USD/JPY approche 160; l'inflation PCE d'octobre, la semaine prochaine, sera le prochain test.",
+   "summary_en": "October minutes showed near-unanimous support for more tightening (policy at 3.75%–4.00%, 10–2 vote) and Waller called for 'aggressive action'; CME FedWatch put roughly a 10% chance on a 50 bp hike at the Dec 8–9 meeting, with 25 bp the base case. Data were mixed: retail sales +0.2% (core +0.6%), but the Philly Fed at 6.3 vs 20.6 expected and industrial production -0.4%; Michigan 1-year inflation expectations eased to 3.7%. The dollar hit year-to-date highs and USD/JPY neared 160; next week's October PCE report is the main test.",
+   "url": "https://www.investing.com/news/stock-market-news/fed-signals-and-data-what-happened-the-week-of-nov-1620-2026-93CH-5042523"
+  },
+  {
+   "date": "2026-11-20",
    "time": "14:24",
    "source": "Investing.com",
    "impact": "high",
@@ -1889,21 +1908,6 @@
    "title": "ASML chute de 6 % à 1 211,2 € : la débandade de l'IA frappe les puces européennes",
    "title_en": "ASML slides 6% to €1,211.2 as AI rout hits European chipmakers",
    "url": "https://www.investing.com/news/stock-market-news/why-is-asml-stock-sliding-today-93CH-5041123"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-20",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Les représentants Gregory Meeks et Sydney Kamlager-Dove ont écrit le 19 novembre au secrétaire au Commerce Howard Lutnick pour exiger réponses et documents d'ici le 1er décembre sur le rôle de Nvidia dans l'enquête visant Megaspeed, société infonuagique de Singapour soupçonnée d'avoir détourné des puces vers la Chine. Nvidia avait contacté directement des employés du Commerce en août 2025. Ce nouveau front politique s'ajoute aux pressions sur Nvidia, poids lourd du Nasdaq et du S&P 500, en pleine vague de ventes des titres de l'IA.",
-   "summary_en": "Representatives Gregory Meeks and Sydney Kamlager-Dove wrote on Nov. 19 to Commerce Secretary Howard Lutnick seeking answers and documents by Dec. 1 on Nvidia's role in the probe of Megaspeed, a Singapore cloud firm suspected of diverting chips to China. Nvidia had directly contacted Commerce employees in August 2025. The new political front adds to pressure on Nvidia, a Nasdaq and S&P 500 heavyweight, amid an AI stock selloff.",
-   "time": "04:53",
-   "title": "Des démocrates de la Chambre enquêtent sur l'influence de Nvidia dans l'enquête américaine sur Megaspeed",
-   "title_en": "House Democrats open probe into Nvidia influence on US Megaspeed investigation",
-   "url": "https://www.investing.com/news/stock-market-news/democrats-open-probe-into-nvidia-influence-on-usmegaspeed-investigation-5041051"
   }
  ],
  "live": {
