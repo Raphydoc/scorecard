@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-20T23:48:10Z",
+ "updatedAt": "2026-11-21T00:47:29Z",
  "econ": {
   "values": {
    "adp": {
@@ -1275,6 +1275,21 @@
  },
  "news": [
   {
+   "date": "2026-11-20",
+   "time": "18:40",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Databricks en pourparlers préliminaires pour lever des fonds à une valorisation de 225 G$ (WSJ)",
+   "title_en": "Databricks in early talks to raise funds at $225 billion valuation, WSJ reports",
+   "summary": "Databricks discute d'une nouvelle ronde de financement de plusieurs milliards de dollars qui valoriserait l'entreprise à environ 225 G$, selon le Wall Street Journal; les modalités peuvent encore changer. En août, la société avait levé 5 G$ à une valorisation de 190 G$. La nouvelle tranche avec la déroute des titres liés à l'IA cette semaine et sera suivie par les investisseurs du Nasdaq comme baromètre de l'appétit pour l'IA hors Bourse.",
+   "summary_en": "Databricks is in early talks to raise several billion dollars in a new round that would value it at about $225 billion, according to the Wall Street Journal; terms could still change. In August, the company raised $5 billion at a $190 billion valuation. The report contrasts with this week's rout in AI-linked stocks and will be watched by Nasdaq investors as a gauge of private-market appetite for AI.",
+   "url": "https://www.investing.com/news/stock-market-news/databricks-in-early-talks-to-raise-funds-at-225-billion-valuation-wsj-reports-5042898"
+  },
+  {
    "assets": [
     "usoil",
     "usdcad"
@@ -1888,23 +1903,6 @@
    "title": "Barclays prévient d'une faiblesse accrue des actions alors que les paris sur une Fed plus ferme s'accumulent",
    "title_en": "Barclays warns of further equity weakness as hawkish Fed bets build",
    "url": "https://www.investing.com/news/stock-market-news/barclays-warns-of-further-equity-weakness-as-hawkish-fed-bets-build-5040863"
-  },
-  {
-   "assets": [
-    "audusd",
-    "nasdaq",
-    "spx500",
-    "usdjpy"
-   ],
-   "date": "2026-11-20",
-   "impact": "high",
-   "source": "Investing.com",
-   "summary": "Les Bourses asiatiques ont terminé la séance en forte baisse, emportées par la débâcle des titres liés à l'IA : le Nikkei 225 a cédé 4,77 %, l'indice Taiwan Weighted 6,63 % et le S&P/ASX 200 1,58 %, selon Investing.com. La région avait déjà glissé à un creux de sept mois, la Corée du Sud et Taïwan étant les plus touchées. Ce repli pèse sur l'appétit pour le risque avant l'ouverture de Wall Street (Nasdaq, S&P 500).",
-   "summary_en": "Asian markets closed sharply lower amid the AI-led rout: the Nikkei 225 fell 4.77%, the Taiwan Weighted index 6.63% and the S&P/ASX 200 1.58%, according to Investing.com. The region had already slid to a seven-month low, with South Korea and Taiwan the hardest hit. The selloff weighs on risk appetite ahead of Wall Street's open (Nasdaq, S&P 500).",
-   "time": "02:00",
-   "title": "Clôture en Asie : le Nikkei 225 chute de 4,77 %, le Taiwan Weighted de 6,63 %",
-   "title_en": "Asia close: Nikkei 225 down 4.77%, Taiwan Weighted down 6.63%",
-   "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-477-5040783"
   }
  ],
  "live": {
