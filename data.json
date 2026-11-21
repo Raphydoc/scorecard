@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T02:47:24Z",
+ "updatedAt": "2026-11-21T04:48:07Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,21 @@
  "news": [
   {
    "date": "2026-11-20",
+   "time": "23:12",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "btcusd",
+    "nasdaq"
+   ],
+   "title": "Le bitcoin glisse de 3,57 % à 56 814 $, sous les 57 000 $ pour la première fois en deux ans",
+   "title_en": "Bitcoin falls 3.57% to $56,814, below $57,000 for the first time in two years",
+   "summary": "Le bitcoin a reculé de 3,57 % à 56 814 $ vendredi soir, passant sous la barre des 57 000 $ pour la première fois en deux ans selon CoinDesk, qui note qu'il n'est pas le seul actif cryptographique à chuter. La glissade prolonge le repli observé plus tôt dans la journée sous les 59 000 $ et témoigne d'un appétit pour le risque toujours faible en fin de semaine.",
+   "summary_en": "Bitcoin fell 3.57% to $56,814 on Friday evening, dropping below $57,000 for the first time in two years according to CoinDesk, which notes it is not the only crypto asset sliding. The move extends the earlier slide below $59,000 and signals still-weak risk appetite heading into the weekend.",
+   "url": "https://www.investing.com/news/forex-news/bitcoin-falls-357-to-56814-5043137"
+  },
+  {
+   "date": "2026-11-20",
    "time": "21:12",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1573,22 +1588,6 @@
    "summary": "En conférence de presse à la Maison-Blanche, Donald Trump a dit que Jensen Huang devrait « présenter de grandes excuses » et revenir comme PDG de Nvidia, même si le conseil d'administration ne montre aucun signe d'appui. Selon un adjoint d'un sénateur, l'ex-PDG a accepté de témoigner lors d'une audience publique du Sénat américain. L'affaire entretient l'incertitude autour de Nvidia et de la politique américaine d'exportation de puces vers la Chine.",
    "summary_en": "At a White House press conference, Donald Trump said Jensen Huang should \"make a big apology\" and return as Nvidia CEO, though the board has shown no sign of supporting it. A senator's aide says the former CEO agreed to testify at a public US Senate hearing. The saga keeps uncertainty alive around Nvidia and US chip-export policy toward China.",
    "url": "https://www.investing.com/news/stock-market-news/trump-says-huang-should-apologize-and-return-to-nvidia-5042421"
-  },
-  {
-   "date": "2026-11-20",
-   "time": "13:13",
-   "source": "CoinDesk",
-   "impact": "med",
-   "assets": [
-    "btcusd",
-    "nasdaq",
-    "xauusd"
-   ],
-   "title": "Le bitcoin plonge sous les 59 000 $ : la ruée vers l'encaisse ravive la menace de nouveaux creux du marché baissier",
-   "title_en": "Bitcoin plunges below $59,000 as rush to cash puts new bear market lows back in play",
-   "summary": "Le bitcoin est passé sous les 59 000 $ vendredi, effaçant le rebond d'août-septembre jusqu'à 87 000 $ et s'approchant à environ 2 % de son creux de juin-juillet à 57 700 $. Environ 1,5 G$ de positions sur dérivés crypto ont été liquidées en 24 heures selon CoinGlass, tandis que l'or reculait encore de 2 % vers 3 500 $ l'once. Des analystes craignent une erreur de politique de la Fed qui relèverait ses taux malgré le ralentissement, avec le rendement à 2 ans autour de 4,7 %.",
-   "summary_en": "Bitcoin fell below $59,000 on Friday, erasing the August-September rebound to $87,000 and coming within about 2% of its June-July bear market low of $57,700. Roughly $1.5 billion of crypto derivatives positions were liquidated over 24 hours, per CoinGlass, while gold fell another 2% toward $3,500 an ounce. Analysts warn of a possible Fed policy error of hiking into slowing growth, with the two-year Treasury yield around 4.7%.",
-   "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-plunges-below-usd59-000-as-rush-to-cash-puts-new-bear-market-lows-back-in-play"
   },
   {
    "date": "2026-11-20",
