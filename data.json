@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T18:48:15Z",
+  "updatedAt": "2026-11-21T20:47:46Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,21 @@
   "news": [
     {
       "date": "2026-11-21",
+      "time": "13:54",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Qui gagne vraiment avec l'IA? L'Inde profite des craintes qui frappent Wall Street et la Corée",
+      "title_en": "Who really wins from AI?",
+      "summary": "Selon le Deutsche Bank Research Institute, le Nifty 50 indien a gagné environ 12 % du 7 octobre au 18 novembre, pendant que le S&P 500 reculait de 6,1 %, le Nasdaq de 11 % et que le Kospi perdait le quart de sa valeur. Les investisseurs étrangers ont acheté un record de 9,5 G$ d'actions indiennes ce mois-ci, attirés par des valorisations plus basses (Nifty IT à 19 fois les bénéfices contre près de 40 pour le Nasdaq). Le renversement de l'« anti-IA trade » illustre la rotation hors des titres technologiques américains liés à l'IA.",
+      "summary_en": "According to Deutsche Bank Research Institute, India's Nifty 50 rose about 12% from October 7 to November 18 while the S&P 500 fell 6.1%, the Nasdaq slipped 11% and the Kospi lost a quarter of its value. Foreign institutions bought a record $9.5 billion of Indian stocks this month, drawn by lower valuations (Nifty IT at 19 times earnings versus nearly 40 for the Nasdaq). The reversal of the 'anti-AI trade' highlights rotation away from AI-linked U.S. tech stocks.",
+      "url": "https://www.investing.com/news/stock-market-news/who-really-wins-from-ai-5043557"
+    },
+    {
+      "date": "2026-11-21",
       "time": "12:50",
       "source": "Investing.com",
       "impact": "med",
@@ -1885,21 +1900,6 @@
       "summary": "Vers 11 h, le rendement à 2 ans glissait à 4,649 % et le 10 ans à 4,948 %, alors que le S&P 500 cédait 1,32 % à 7 081 et le Nasdaq 100 2,72 %, avec un VIX à 30,2. L'or à terme chutait de 3,64 % à 3 551 $ et le bitcoin de 5,29 %, ce que l'article interprète comme des ventes forcées plutôt qu'une fuite vers les valeurs refuges. Le risque d'une hausse de taux en décembre demeure, selon l'auteur.",
       "summary_en": "Around 11 a.m., the 2-year yield slipped to 4.649% and the 10-year to 4.948%, while the S&P 500 fell 1.32% to 7,081 and the Nasdaq 100 dropped 2.72%, with the VIX at 30.2. Gold futures fell 3.64% to $3,551 and bitcoin 5.29%, which the article reads as forced selling rather than a safe-haven bid. December rate-hike risk remains, the author says.",
       "url": "https://www.investing.com/news/stock-market-news/treasury-yields-fall-as-bond-market-tracks-risk-assets-not-fed-rhetoric-93CH-5042241"
-    },
-    {
-      "date": "2026-11-20",
-      "time": "11:33",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "title": "Broadcom chute de près de 10 % : Google réduirait ses commandes de puces TPU",
-      "title_en": "Why is Broadcom stock sliding today?",
-      "summary": "Broadcom recule de près de 9,8 % à 312,70 $ après que l'analyste Ming-Chi Kuo a rapporté que Google a réduit d'environ un million d'unités (près de 20 %) ses livraisons prévues de TPU 8i pour 2027. Goldman Sachs abaisse sa cible de 540 $ à 460 $ et Redburn dégrade le titre à Neutre, avec une cible de 398 $. Le Nasdaq Composite perdait 2,8 %, la vente dans les semi-conducteurs de l'IA s'intensifiant.",
-      "summary_en": "Broadcom fell nearly 9.8% to $312.70 after analyst Ming-Chi Kuo reported Google trimmed planned 2027 TPU 8i shipments by about one million units (roughly 20%). Goldman Sachs cut its target to $460 from $540 and Redburn downgraded the stock to Neutral with a $398 target. The Nasdaq Composite was down 2.8% as the AI chip selloff deepened.",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-broadcom-stock-sliding-today-93CH-5042272"
     }
   ],
   "live": {
