@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T13:47:58Z",
+  "updatedAt": "2026-11-21T15:48:03Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,39 @@
   "news": [
     {
       "date": "2026-11-21",
+      "time": "10:20",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "usoil",
+        "xauusd",
+        "usd"
+      ],
+      "title": "Le CENTCOM nie la version iranienne d'un F-16 américain endommagé par un missile au-dessus du Golfe",
+      "title_en": "US denies Iranian account that missile damaged F-16 over Gulf",
+      "summary": "Le Commandement central américain affirme que l'Iran n'a « pas du tout » attaqué de F-16 vendredi et que tous ses avions de chasse au Moyen-Orient sont en sécurité, contredisant les médias d'État iraniens qui parlaient d'un atterrissage d'urgence. La guerre, lancée en février par les États-Unis et Israël contre l'Iran, perturbe le transport maritime et pousse les prix de l'énergie à la hausse, un facteur clé pour le pétrole et les valeurs refuges.",
+      "summary_en": "US Central Command said Iran did not attack a US F-16 on Friday 'at all' and that all US fighter jets in the Middle East are safe, contradicting Iranian state media reports of an emergency landing. The war, which began when the US and Israel attacked Iran in February, has disrupted shipping and pushed up energy prices, a key driver for oil and safe havens.",
+      "url": "https://www.investing.com/news/commodities-news/us-denies-iranian-account-that-missile-damaged-f16-over-gulf-5043494"
+    },
+    {
+      "date": "2026-11-21",
+      "time": "08:54",
+      "source": "Investing.com",
+      "impact": "high",
+      "assets": [
+        "usoil",
+        "xauusd",
+        "usd",
+        "spx500"
+      ],
+      "title": "Ormuz : deux pétroliers touchés au large d'Oman; Téhéran pose sept conditions pour rouvrir le détroit",
+      "title_en": "Iran war: two tankers hit near Hormuz as Saudi Arabia intercepts Houthi missiles",
+      "summary": "Selon l'UKMTO, deux pétroliers sortant du détroit d'Ormuz ont été touchés samedi par des projectiles non identifiés à 11 et 17 milles nautiques de Khasab (Oman), sans blessés; six attaques de pétroliers ont été recensées dans la dernière semaine et la menace est jugée « sévère ». Le ministre Araghchi dit que l'Iran pourrait rouvrir le détroit en quelques heures si sept conditions sont remplies, dont la fin du blocus et des sanctions américaines, tandis que Washington a sanctionné quatre Iraniens. Les flux d'énergie par le détroit restent nettement inférieurs à il y a un an, ce qui soutient le risque sur le pétrole.",
+      "summary_en": "UKMTO said two tankers leaving the Strait of Hormuz were hit Saturday by unidentified projectiles 11 and 17 nautical miles from Khasab, Oman, with no injuries; six tanker attacks were recorded in the past week and the threat is rated 'severe'. Foreign Minister Araghchi said Iran could reopen the strait within hours if seven conditions are met, including an end to the US blockade and sanctions, while Washington sanctioned four Iranians. Energy flows through the strait remain significantly below year-ago levels, keeping oil supply risk elevated.",
+      "url": "https://www.investing.com/news/economy-news/iran-war-sees-tanker-hit-near-hormuz-as-saudi-arabia-intercepts-houthi-missiles-5043277"
+    },
+    {
+      "date": "2026-11-21",
       "time": "07:30",
       "source": "CoinDesk",
       "impact": "med",
@@ -1870,36 +1903,6 @@
       "title": "Selon Citi, le marché signale à la Fed que les taux sont « insoutenablement élevés »",
       "title_en": "Market is telling the Fed that rates are \"unsustainably high\": Citi",
       "url": "https://www.investing.com/news/stock-market-news/market-is-telling-the-fed-that-rates-are-unsustainably-high-citi-5041776"
-    },
-    {
-      "assets": [
-        "btcusd",
-        "nasdaq"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Le bitcoin se tient à peine au-dessus de 61 000 $ pendant que l'action d'Anthropic recule de 13 % après son entrée au Nasdaq. CoinDesk rapporte aussi un glissement à 61 300 $ ayant déclenché 660 M$ de liquidations, signe que la crypto suit la débandade des technos.",
-      "summary_en": "Bitcoin is holding just above $61,000 as Anthropic shares slide 13% after their Nasdaq debut. CoinDesk also reports a slide to $61,300 that triggered $660 million in liquidations, a sign crypto is tracking the tech rout.",
-      "time": "08:35",
-      "title": "Le bitcoin se maintient tout juste au-dessus de 61 000 $ alors qu'Anthropic glisse de 13 % après ses débuts au Nasdaq",
-      "title_en": "Bitcoin hovers just above $61,000 as Anthropic slides 13% after Nasdaq debut",
-      "url": "https://www.coindesk.com/tech/2026/11/20/live-news-bitcoin-hovers-just-above-usd61-000-as-anthropic-slides-13-after-nasdaq-debut"
-    },
-    {
-      "assets": [
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "JPMorgan, Visa et Mastercard indiquent que des fournisseurs tiers ont été la cible d'une cyberattaque, selon le titre d'Investing.com. La nouvelle touche de grands noms de la finance du S&P 500 et du Dow Jones dans un marché déjà nerveux.",
-      "summary_en": "JPMorgan, Visa and Mastercard say third-party vendors were targeted in a cyberattack, according to the Investing.com headline. The news touches major S&P 500 and Dow financial names in an already nervous market.",
-      "time": "08:01",
-      "title": "JPMorgan, Visa et Mastercard disent que des fournisseurs tiers ont été visés par une cyberattaque",
-      "title_en": "JPMorgan, Visa, Mastercard say third-party vendors targeted in cyberattack",
-      "url": "https://www.investing.com/news/stock-market-news/jpmorgan-says-thirdparty-vendors-targeted-in-cyberattack-5039129"
     }
   ],
   "live": {
