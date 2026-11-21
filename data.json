@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T16:42:10Z",
+  "updatedAt": "2026-11-21T17:47:09Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,21 @@
   "news": [
     {
       "date": "2026-11-21",
+      "time": "12:01",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "xauusd",
+        "xagusd"
+      ],
+      "title": "Goldman préfère l'or à l'argent, la demande des banques centrales soutenant les prix",
+      "title_en": "Goldman favours gold over silver as central bank demand supports prices",
+      "summary": "Goldman Sachs privilégie l'or plutôt que l'argent, estimant que les achats des banques centrales continuent de soutenir le prix du métal jaune. L'article n'a pas pu être lu en entier; ce résumé s'en tient au titre. Ce biais pourrait favoriser l'or face à l'argent (ratio or/argent).",
+      "summary_en": "Goldman Sachs favours gold over silver, saying central bank purchases continue to support gold prices. The full article could not be read; this summary sticks to the headline. The call could favour gold relative to silver (gold/silver ratio).",
+      "url": "https://www.investing.com/news/commodities-news/goldman-favours-gold-over-silver-as-central-bank-demand-supports-prices-5043527"
+    },
+    {
+      "date": "2026-11-21",
       "time": "10:24",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1884,22 +1899,6 @@
       "title": "Nvidia passe sous Alphabet et devient la 4e entreprise américaine en valeur boursière",
       "title_en": "Nvidia falls below Alphabet to become fourth most valuable U.S. company",
       "url": "https://www.investing.com/news/stock-market-news/nvidia-falls-below-alphabet-to-become-fourth-most-valuable-us-company-5042158"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "Investing.com (Reuters)",
-      "summary": "Le Nasdaq Composite a cédé 286,5 points (-1,20 %) à 23 592,67 à l'ouverture vendredi, tandis que le S&P 500 perdait 25,4 points (-0,35 %) à 7 150,39 et le Dow Jones 25,2 points (-0,05 %) à 49 071,82. La chute de l'action d'Anthropic après son entrée en Bourse remarquée ajoute à la pression sur le commerce de l'IA, déjà miné par les craintes d'évaluation.",
-      "summary_en": "The Nasdaq Composite fell 286.5 points (-1.20%) to 23,592.67 at Friday's open, while the S&P 500 lost 25.4 points (-0.35%) to 7,150.39 and the Dow fell 25.2 points (-0.05%) to 49,071.82. Anthropic shares tumbled after a blockbuster debut, adding pressure to an AI trade already hit by valuation concerns.",
-      "time": "09:36",
-      "title": "Le Nasdaq recule de 1 % à l'ouverture, Anthropic ne parvient pas à stabiliser le commerce de l'IA",
-      "title_en": "Nasdaq falls 1% at open as Anthropic fails to steady AI trade",
-      "url": "https://www.investing.com/news/stock-market-news/nasdaq-falls-1-at-open-as-anthropic-fails-to-steady-ai-trade-5042084"
     }
   ],
   "live": {
