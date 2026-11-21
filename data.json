@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T06:47:45Z",
+ "updatedAt": "2026-11-21T07:43:07Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,24 @@
  "news": [
   {
    "date": "2026-11-21",
+   "time": "01:58",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "nasdaq",
+    "spx500",
+    "eurusd",
+    "usdjpy"
+   ],
+   "title": "Deutsche Bank : les revenus des puces IA redessinent la domination du dollar",
+   "title_en": "How are AI chip flows reshaping dollar dominance? Deutsche Bank explains",
+   "summary": "Selon Deutsche Bank, les revenus d'exportation de puces asiatiques se dirigent de plus en plus vers les actions américaines plutôt que vers les obligations du Trésor : les achats étrangers d'actions américaines ont dépassé 1 000 G$ sur un an, plus du double des allocations aux bons du Trésor. Les exportations de semi-conducteurs de la Corée du Sud ont bondi de plus de 200 % sur un an, et environ 70 % des avoirs boursiers étrangers coréens sont en actions américaines. La banque prévient qu'un ralentissement des investissements en IA pourrait affaiblir à la fois la demande de puces, les revenus d'exportation asiatiques et les achats étrangers d'actions américaines, donc le soutien au dollar.",
+   "summary_en": "Deutsche Bank says Asian chip-export revenues are increasingly flowing into U.S. equities rather than Treasuries, with foreign purchases of U.S. stocks exceeding $1 trillion over the past year, more than double allocations to Treasuries. South Korea's semiconductor exports are up more than 200% year over year, and about 70% of Korean overseas equity holdings are in U.S. stocks. The bank warns that an AI investment slowdown could simultaneously hit chip demand, Asian export earnings and foreign buying of U.S. equities, and thus support for the dollar.",
+   "url": "https://www.investing.com/news/stock-market-news/how-are-ai-chip-flows-reshaping-dollar-dominance-deutsche-bank-explains-5043246"
+  },
+  {
+   "date": "2026-11-21",
    "time": "01:16",
    "source": "CoinDesk",
    "impact": "med",
@@ -1891,21 +1909,6 @@
    "title": "L'indice de la peur de Wall Street touche un sommet de sept mois, l'IA inquiète",
    "title_en": "Wall Street's fear gauge touches seven-month high as AI worries mount",
    "url": "https://www.investing.com/news/stock-market-news/wall-streets-fear-gauge-touches-sevenmonth-high-as-ai-worries-mount-5041172"
-  },
-  {
-   "assets": [
-    "eurusd",
-    "usd"
-   ],
-   "date": "2026-11-20",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "UBS abaisse ses prévisions EUR/USD pour 2027 à 1,12 en mars, 1,14 en juin et 1,16 en septembre (contre 1,18, 1,20 et 1,20), et ajoute 1,16 pour décembre 2027. Le dollar devrait rester recherché jusqu'au 1er trimestre 2027 vu la perspective de nouvelles hausses de taux de la Fed, ce qui expose l'euro à un test du support vers 1,08, puis 1,06. Résistances vers 1,12 et 1,15; UBS garde une vue neutre.",
-   "summary_en": "UBS cut its 2027 EUR/USD forecasts to 1.12 in March, 1.14 in June and 1.16 in September (from 1.18, 1.20 and 1.20), adding 1.16 for December 2027. The dollar should stay well bid into Q1 2027 on prospects of further Fed hikes, leaving the euro open to a test of support near 1.08, then 1.06. Resistance is seen near 1.12 and 1.15; UBS keeps a Neutral view.",
-   "time": "05:35",
-   "title": "UBS voit l'euro reculer davantage, la vigueur du dollar pèse sur l'EUR/USD",
-   "title_en": "UBS flags further euro downside as dollar strength keeps EUR/USD under pressure",
-   "url": "https://www.investing.com/news/forex-news/ubs-flags-further-euro-downside-as-dollar-strength-keeps-eurusd-under-pressure-5041144"
   }
  ],
  "live": {
