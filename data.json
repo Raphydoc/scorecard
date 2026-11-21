@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T07:43:07Z",
+ "updatedAt": "2026-11-21T08:47:23Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,20 @@
  "news": [
   {
    "date": "2026-11-21",
+   "time": "02:38",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "Le président sud-coréen Lee réclame des investissements plus rapides en IA lors de la visite d'un centre de données de 5,2 G$",
+   "title_en": "South Korea's Lee urges faster AI investment during $5.2bn data center visit",
+   "summary": "Selon Investing.com, le président sud-coréen Lee Jae-myung a pressé d'accélérer les investissements en intelligence artificielle lors de la visite d'un projet de centre de données de 5,2 G$. Le message de soutien à l'IA arrive alors que les titres de semi-conducteurs et le Nasdaq sortent d'une semaine de lourdes pertes.",
+   "summary_en": "According to Investing.com, South Korean President Lee Jae-myung urged faster investment in artificial intelligence during a visit to a $5.2 billion data center project. The pro-AI message comes as chip stocks and the Nasdaq come off a week of heavy losses.",
+   "url": "https://www.investing.com/news/stock-market-news/south-koreas-lee-urges-faster-ai-investment-during-52bn-data-center-visit-5043267"
+  },
+  {
+   "date": "2026-11-21",
    "time": "01:58",
    "source": "Investing.com",
    "impact": "med",
@@ -1892,23 +1906,6 @@
    "title": "Le bitcoin recule une troisième journée de suite; sortie record de 541 M$ du FNB IBIT de BlackRock",
    "title_en": "Bitcoin drops for third straight day as Asian tech shares slide; record $541M outflow from BlackRock's IBIT",
    "url": "https://www.coindesk.com/markets/2026/11/20/bitcoin-drops-for-third-straight-day-as-asian-tech-shares-slide"
-  },
-  {
-   "assets": [
-    "spx500",
-    "nasdaq",
-    "us30",
-    "rut"
-   ],
-   "date": "2026-11-20",
-   "impact": "high",
-   "source": "Investing.com (Reuters)",
-   "summary": "Le VIX du Cboe gagnait 1,08 point à 29,50 vendredi, après avoir atteint 30,04 plus tôt, son plus haut depuis le 30 mars. Les craintes sur l'avenir de l'IA font fortement reculer les titres technos avant l'ouverture. Un VIX au-dessus de 20 signale une forte demande de protection par options sur les indices américains.",
-   "summary_en": "The Cboe Volatility Index was up 1.08 points at 29.50 on Friday after hitting 30.04 earlier, its highest since March 30. Worries about the future of AI knocked tech stocks sharply lower in premarket trading. A VIX reading of 20 or higher signals robust demand for options protection on US indexes.",
-   "time": "05:36",
-   "title": "L'indice de la peur de Wall Street touche un sommet de sept mois, l'IA inquiète",
-   "title_en": "Wall Street's fear gauge touches seven-month high as AI worries mount",
-   "url": "https://www.investing.com/news/stock-market-news/wall-streets-fear-gauge-touches-sevenmonth-high-as-ai-worries-mount-5041172"
   }
  ],
  "live": {
