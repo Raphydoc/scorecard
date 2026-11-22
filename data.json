@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T10:47:03Z",
+  "updatedAt": "2026-11-22T11:42:39Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,37 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "06:02",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Exclusif : comme SpaceX, Anthropic a mené un processus d'IPO inhabituel qui a irrité des banquiers",
+      "title_en": "Exclusive: Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers",
+      "summary": "Selon Reuters, des banquiers et avocats ayant travaillé sur l'IPO d'Anthropic se sont plaints d'un calendrier comprimé, de changements de dernière minute et de restrictions inhabituelles, dont une limite de quatre banquiers par banque parmi les 22 preneurs fermes. Les banques ont tout de même touché plus d'un demi-milliard de dollars en frais. L'action Anthropic a clôturé en baisse de 8,5 % vendredi après un bond de 17 % le premier jour, un signal suivi de près pour le sentiment autour de l'IA au Nasdaq.",
+      "summary_en": "According to Reuters, bankers and lawyers on Anthropic's IPO complained about a compressed timeline, last-minute changes and unusual restrictions, including a cap of four bankers per bank among its 22 underwriters. Banks still collected more than half a billion dollars in fees. Anthropic shares closed down 8.5% on Friday after a 17% first-day pop, a closely watched signal for AI sentiment on the Nasdaq.",
+      "url": "https://www.investing.com/news/stock-market-news/exclusivelike-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-5043898"
+    },
+    {
+      "date": "2026-11-22",
+      "time": "05:54",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "usdjpy"
+      ],
+      "title": "La Corée du Sud prépare un fonds de stabilisation boursière après une chute de 5,2 % du Kospi",
+      "title_en": "South Korea prepares stock market stabilization fund after Kospi plunges 5.2%",
+      "summary": "Séoul a annoncé dimanche des mesures d'urgence, dont un fonds de soutien au marché, un assouplissement temporaire des limites de rachats d'actions et trois mois de surveillance accrue de la vente à découvert illégale. Le Kospi a plongé de 5,2 % vendredi à son plus bas en 10 mois, sous 5 000 points, soit environ 46,6 % sous son sommet de plus de 9 100 à la mi-juin. L'ouverture asiatique de lundi et la réunion de la Banque de Corée jeudi (hausse de 25 points de base attendue) seront suivies pour le sentiment sur les puces et l'IA.",
+      "summary_en": "Seoul announced emergency measures on Sunday, including a market support fund, a temporary easing of share buyback limits and three months of intensified monitoring of illegal short-selling. The Kospi plunged 5.2% on Friday to a 10-month closing low, below 5,000, about 46.6% under its mid-June peak above 9,100. Monday's Asian open and Thursday's Bank of Korea meeting (a 25-basis-point hike is expected) will be watched for chip and AI sentiment.",
+      "url": "https://www.investing.com/news/stock-market-news/south-korea-prepares-stock-market-stabilization-fund-after-kospi-plunges-52-5043890"
+    },
+    {
+      "date": "2026-11-22",
       "time": "05:18",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1859,36 +1890,6 @@
       "title": "Clôture : Wall Street termine en baisse, le Dow Jones cède 1,93 %; le S&P/TSX recule de 2,47 %",
       "title_en": "U.S. stocks lower at close of trade; Dow Jones down 1.93%; S&P/TSX Composite down 2.47%",
       "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-193-5042683"
-    },
-    {
-      "assets": [
-        "nasdaq"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon Bloomberg, repris par Investing.com, CrowdStrike étudie un rachat de Zscaler dans une transaction potentielle évaluée à 265 G$. D'après CNBC, l'action de Zscaler a bondi de 20 % à la suite de cette information. Ce serait une méga-fusion dans la cybersécurité, un secteur important du Nasdaq.",
-      "summary_en": "According to Bloomberg, via Investing.com, CrowdStrike is weighing a buyout of Zscaler in a potential $265 billion deal. CNBC reports Zscaler shares jumped 20% on the news. It would be a cybersecurity mega-merger in a key Nasdaq sector.",
-      "time": "16:24",
-      "title": "CrowdStrike envisage de racheter Zscaler dans une méga-transaction potentielle de 265 G$ (Bloomberg)",
-      "title_en": "CrowdStrike weighs Zscaler buyout in potential $265 billion cyber deal - Bloomberg",
-      "url": "https://www.investing.com/news/stock-market-news/crowdstrike-weighs-zscaler-buyout-in-potential-265-billion-cyber-deal--bloomberg-5042662"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "Le Nasdaq Composite chute de plus de 4 % vendredi, sa troisième baisse d'au moins 2 % de la semaine et son pire recul hebdomadaire depuis le « Liberation Day »; il est maintenant en baisse de près de 2 % en 2026, alors qu'il affichait un gain de près de 19 % début octobre. Anthropic recule de 10 % et Broadcom de 12 %, tandis que les attentes d'une Fed forcée de relever ses taux par l'inflation alimentent la rotation. L'indice valeur du S&P 500 gagne 8 % depuis janvier contre -2 % pour l'indice croissance, et le titre médian du S&P 500 progresse de près de 7 % contre 2 % pour l'indice, freiné par la baisse de 46 % de Nvidia.",
-      "summary_en": "The Nasdaq Composite fell more than 4% on Friday, its third decline of 2% or more this week and its biggest weekly drop since the 'Liberation Day' sell-off; it is now down almost 2% in 2026 after holding a nearly 19% gain in early October. Anthropic fell 10% and Broadcom 12%, as expectations that high inflation will force the Fed to raise rates drive the rotation. The S&P 500 value index is up 8% this year versus a 2% drop for growth, and the median S&P 500 stock is up almost 7% versus the index's 2%, held back by Nvidia's 46% decline.",
-      "time": "15:19",
-      "title": "La faiblesse du Nasdaq pousse les investisseurs de la techno vers les obligations",
-      "title_en": "Nasdaq's weakness prompts investors to shift from tech to bonds",
-      "url": "https://www.investing.com/news/stock-market-news/nasdaqs-weakness-prompts-investors-to-shift-from-tech-to-bonds-93CH-5042538"
     }
   ],
   "live": {
