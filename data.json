@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T18:47:01Z",
+  "updatedAt": "2026-11-22T21:47:48Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,35 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "16:18",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "usoil"
+      ],
+      "title": "Analyse : la diplomatie climatique peut-elle rebondir après l'échec de la COP31?",
+      "title_en": "Analysis-Can climate diplomacy build on the collapse of COP31?",
+      "summary": "Selon une analyse de Reuters reprise par Investing.com, le sommet climatique COP31 s'est soldé par un échec, après des négociations houleuses prolongées au-delà de l'échéance. L'article n'a pas pu être lu en entier; ce résumé s'appuie sur le titre. L'absence d'accord sur la sortie des combustibles fossiles touche le pétrole à long terme, mais l'effet immédiat sur le WTI devrait rester limité.",
+      "summary_en": "According to a Reuters analysis via Investing.com, the COP31 climate summit ended in collapse after fractious talks that ran past their deadline. The full article could not be read; this summary is based on the headline. The lack of a deal on moving away from fossil fuels matters for oil over the long term, though the immediate impact on WTI is likely limited.",
+      "url": "https://www.investing.com/news/commodities-news/analysiscan-climate-diplomacy-build-on-the-collapse-of-cop31-5044126"
+    },
+    {
+      "date": "2026-11-22",
+      "time": "15:43",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq"
+      ],
+      "title": "Dans quelle mesure le S&P 500 est-il exposé à un éclatement du « trade » de l'IA?",
+      "title_en": "How exposed is the S&P 500 to an AI trade bust?",
+      "summary": "Investing.com se penche sur l'exposition du S&P 500 à un éventuel éclatement du « trade » de l'intelligence artificielle, après une semaine de forte déroute des titres liés à l'IA. L'article n'a pas pu être lu en entier; ce résumé s'appuie seulement sur le titre. La question est clé pour le S&P 500 et le Nasdaq, très concentrés dans les géants technologiques, à la veille de la reprise des échanges lundi.",
+      "summary_en": "Investing.com examines how exposed the S&P 500 is to a possible bust in the artificial-intelligence trade, after a week of heavy selling in AI-linked stocks. The full article could not be read; this summary is based on the headline only. The question matters for the S&P 500 and Nasdaq, which are heavily concentrated in tech giants, ahead of Monday's resumption of trading.",
+      "url": "https://www.investing.com/news/stock-market-news/how-exposed-is-sp-500-to-an-ai-trade-bust-5044112"
+    },
+    {
+      "date": "2026-11-22",
       "time": "12:54",
       "source": "Investing.com",
       "impact": "med",
@@ -1402,20 +1431,6 @@
       "title": "Exclusif : comme SpaceX, Anthropic a mené un processus d'IPO inhabituel qui a irrité des banquiers",
       "title_en": "Exclusive: Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers",
       "url": "https://www.investing.com/news/stock-market-news/exclusivelike-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-5043898"
-    },
-    {
-      "assets": [
-        "usoil"
-      ],
-      "date": "2026-11-22",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon Reuters, repris par Investing.com, l'issue du sommet climatique COP31 demeure incertaine après des négociations tendues qui se sont prolongées bien au-delà de l'échéance prévue. Un éventuel accord sur la transition hors des combustibles fossiles serait surveillé par le marché pétrolier à plus long terme, mais l'effet immédiat sur le WTI devrait rester limité.",
-      "summary_en": "According to Reuters via Investing.com, the outcome of the COP31 climate summit remains uncertain after fractious talks that ran well past their scheduled deadline. Any deal on transitioning away from fossil fuels would be watched by the oil market over the longer term, though the immediate impact on WTI is likely limited.",
-      "time": "05:18",
-      "title": "COP31 : l'accord sur le climat reste incertain après des négociations houleuses",
-      "title_en": "COP31 climate deal in the balance after fractious talks",
-      "url": "https://www.investing.com/news/commodities-news/cop31-climate-deal-in-the-balance-after-fractious-talks-5043876"
     },
     {
       "assets": [
@@ -1874,22 +1889,6 @@
       "title": "Les rendements du Trésor et les rendements mondiaux plongent alors que les investisseurs fuient la déroute de l'IA",
       "title_en": "U.S. Treasury yields and global bond yields plunge as traders flee AI rout",
       "url": "https://in.investing.com/news/forex-news/global-bond-yields-plunge-as-ai-rout-triggers-flight-to-safety-5716851"
-    },
-    {
-      "assets": [
-        "xauusd",
-        "xagusd",
-        "usd"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "L'or au comptant termine sa pire semaine en huit mois, et les contrats à terme sur l'or enregistrent leur pire semaine depuis mars 2020, selon Investing.com. Les paris sur des hausses de taux de la Fed et la vigueur du dollar continuent de peser sur le métal jaune et l'argent.",
-      "summary_en": "Spot gold ended its worst week in eight months and gold futures logged their worst week since March 2020, according to Investing.com. Bets on Fed rate hikes and a strong dollar keep weighing on gold and silver.",
-      "time": "17:23",
-      "title": "L'or au comptant signe sa pire semaine en 8 mois; les contrats à terme, leur pire depuis mars 2020",
-      "title_en": "Spot gold posts worst week in 8 months, futures notch worst week since March 2020",
-      "url": "https://www.investing.com/news/commodities-news/gold-slides-to-14mth-low-set-for-weekly-drop-amid-fed-hike-bets-5040648"
     }
   ],
   "live": {
