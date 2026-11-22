@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T15:42:39Z",
+  "updatedAt": "2026-11-22T16:42:05Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,22 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "10:56",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "usoil"
+      ],
+      "title": "Que signifient les élections de mi-mandat pour les investisseurs? UBS mise sur les fondamentaux",
+      "title_en": "What do the U.S. midterms mean for investors? UBS points to fundamentals",
+      "summary": "Après la victoire démocrate aux deux chambres le 3 novembre, le S&P 500 a bondi de 1,6 %, puis a chuté de 10,1 % depuis, sur fond de craintes d'une réglementation plus serrée de l'IA et des centres de données; il était en correction vendredi. UBS juge peu probable que la législation fédérale freine l'IA et estime que les résultats, l'inflation, la Fed, le pétrole et la géopolitique compteront davantage. Le Brent a reculé de près de 11 % depuis le 3 novembre sur l'espoir d'une issue diplomatique au conflit avec l'Iran.",
+      "summary_en": "After Democrats won both chambers on November 3, the S&P 500 bounced 1.6% but has since fallen 10.1% on fears of tighter regulation of AI and data centers, entering correction territory on Friday. UBS sees federal legislation as unlikely to materially slow AI and says earnings, inflation, Fed policy, oil and geopolitics will matter more. Brent is down nearly 11% since November 3 on hopes of a diplomatic end to the Iran conflict.",
+      "url": "https://www.investing.com/news/stock-market-news/what-do-the-us-midterms-mean-for-investors-5044046"
+    },
+    {
+      "date": "2026-11-22",
       "time": "10:12",
       "source": "Investing.com",
       "impact": "med",
@@ -1876,21 +1892,6 @@
       "title": "Le Dow et le S&P 500 entrent en correction; le Nasdaq vit sa pire semaine depuis 2020",
       "title_en": "Dow, S&P 500 enter correction as Nasdaq suffers worst week since 2020",
       "url": "https://www.marketwatch.com/story/dow-s-p-500-enter-correction-as-nasdaq-suffers-worst-week-since-2020-bd74dadf"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Oracle dit que son contrat d'infrastructure avec OpenAI est entièrement financé après une levée de capital finale de 20 G$ ce mois-ci (environ 10 G$ en actions et 10 G$ en dette). Les deux sociétés prévoient 4,5 gigawatts de capacité supplémentaire de centres de données aux États-Unis. Le titre a grimpé jusqu'à 3,3 % après la clôture, une note rassurante sur le financement de l'IA en pleine débâcle technologique.",
-      "summary_en": "Oracle says its infrastructure contract with OpenAI is fully funded after a final $20 billion capital raise this month (about $10 billion in stock and $10 billion in debt). The companies plan 4.5 gigawatts of additional US data-center capacity. Shares rose as much as 3.3% after hours, a reassuring note on AI financing amid the tech rout.",
-      "time": "17:11",
-      "title": "Oracle affirme que son contrat d'infrastructure avec OpenAI est entièrement financé",
-      "title_en": "Oracle says OpenAI infrastructure deal is fully funded after final capital raise",
-      "url": "https://www.investing.com/news/stock-market-news/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-5042771"
     }
   ],
   "live": {
