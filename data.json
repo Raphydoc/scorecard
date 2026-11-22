@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T14:47:49Z",
+  "updatedAt": "2026-11-22T15:42:39Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,23 +1276,36 @@
   "news": [
     {
       "date": "2026-11-22",
-      "time": "09:00",
-      "source": "CoinDesk",
+      "time": "10:12",
+      "source": "Investing.com",
       "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "usdjpy",
+        "audusd"
+      ],
+      "title": "Taïwan, la Chine et la Corée du Sud prennent des mesures pour soutenir leurs Bourses après la déroute de l'IA",
+      "title_en": "Asian countries take steps to aid stock markets after AI rout",
+      "summary": "Taïwan interdit la vente à découvert sous la clôture de la veille et relève la marge minimale à 150 % (contre 130 %) après sa pire semaine depuis août 1990; la Corée du Sud prépare un fonds de soutien et assouplit les rachats d'actions, le KOSPI ayant chuté de plus de 5 % vendredi et de près de 47 % depuis son record de juin. En Chine, les Bourses de Shanghai et Shenzhen abaissent le ratio de marge de financement à 80 % (contre 100 %). Ces mesures du week-end précèdent l'ouverture asiatique de lundi, après la pire semaine de Wall Street depuis avril 2025 et l'entrée du S&P 500 en correction.",
+      "summary_en": "Taiwan banned short-selling below the previous close and raised the minimum margin to 150% from 130% after its worst week since August 1990; South Korea is preparing a market support fund and easing buyback limits, with the KOSPI down more than 5% on Friday and nearly 47% from its June record. In China, the Shanghai and Shenzhen exchanges cut the financing margin ratio to 80% from 100%. The weekend measures come ahead of Monday's Asian open, after Wall Street's worst week since April 2025 and the S&P 500's slide into correction.",
+      "url": "https://www.investing.com/news/stock-market-news/asian-countries-take-steps-to-aid-stock-markets-after-ai-rout-5044034"
+    },
+    {
       "assets": [
         "btcusd"
       ],
-      "title": "Bitcoin : la menace quantique dépasse le code et touche les dépositaires, les ponts et 6 millions de BTC",
-      "title_en": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "CoinDesk",
       "summary": "Plus de 6 millions de bitcoins, soit 31,2 % de l'offre en circulation, se trouvaient en octobre derrière des clés publiques déjà visibles sur la chaîne, selon Glassnode; ils restent en sécurité pour l'instant. Les propositions BIP 360 et BIP 361 (cette dernière éliminerait graduellement les signatures vulnérables) demeurent à l'état de brouillon. Le dossier ajoute un risque de long terme au récit du bitcoin, alors que dépositaires et ponts devront aussi se mettre à niveau.",
       "summary_en": "More than 6 million bitcoin, or 31.2% of circulating supply, sat behind public keys already visible onchain in October, according to Glassnode; they remain safe for now. Proposals BIP 360 and BIP 361 (the latter would phase out vulnerable signatures) are still drafts. The issue adds a long-term risk to bitcoin's narrative, as custodians and bridges will also need upgrades.",
+      "time": "09:00",
+      "title": "Bitcoin : la menace quantique dépasse le code et touche les dépositaires, les ponts et 6 millions de BTC",
+      "title_en": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
       "url": "https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins"
     },
     {
-      "date": "2026-11-22",
-      "time": "08:59",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "spx500",
         "nasdaq",
@@ -1300,134 +1313,122 @@
         "rut",
         "usoil"
       ],
-      "title": "Le « Black Friday » met la consommation à l'avant-plan d'un marché ébranlé par l'IA",
-      "title_en": "'Black Friday' brings consumer spending into focus for AI-rocked market",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Le S&P 500 recule de 11,6 % depuis son sommet du 6 octobre et le secteur techno de près de 24,7 %, après sept séances de baisse. Oxford Economics prévoit une hausse de 4,2 % des ventes des Fêtes (2,2 % en volume) et la NRF attend 182,7 millions d'acheteurs pendant la période de l'Action de grâce, contre 186,9 millions l'an dernier; l'essence est à 3,69 $ le gallon (AAA). La consommation, environ les deux tiers de l'économie américaine, devient un test clé pour les indices.",
       "summary_en": "The S&P 500 is down 11.6% from its Oct. 6 high and tech nearly 24.7%, after seven straight losing sessions. Oxford Economics sees holiday sales up 4.2% (2.2% in volume) and the NRF expects 182.7 million Thanksgiving-period shoppers versus 186.9 million last year; gasoline averages $3.69 a gallon (AAA). Consumer spending, about two-thirds of the US economy, becomes a key test for the indexes.",
+      "time": "08:59",
+      "title": "Le « Black Friday » met la consommation à l'avant-plan d'un marché ébranlé par l'IA",
+      "title_en": "'Black Friday' brings consumer spending into focus for AI-rocked market",
       "url": "https://www.investing.com/news/stock-market-news/black-friday-brings-consumer-spending-into-focus-for-airocked-market-5044012"
     },
     {
-      "date": "2026-11-22",
-      "time": "07:30",
-      "source": "MarketWatch",
-      "impact": "med",
       "assets": [
         "spx500",
         "nasdaq",
         "us30",
         "rut"
       ],
-      "title": "Les actions peuvent-elles rebondir après une semaine brutale? Un modèle de synchronisation indique que l'histoire joue en faveur du marché",
-      "title_en": "Can stocks bounce back after a brutal week? This timing model says history is on the market's side",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "MarketWatch",
       "summary": "Après une semaine de lourdes pertes à Wall Street, MarketWatch présente un modèle de synchronisation du marché selon lequel l'historique favorise un rebond des actions. L'article n'a pas pu être lu en entier; ce résumé s'en tient au titre. À suivre pour le S&P 500, le Nasdaq, le Dow et le Russell 2000 à la réouverture des contrats à terme dimanche soir.",
       "summary_en": "After a week of heavy losses on Wall Street, MarketWatch presents a market-timing model suggesting history favors a stock rebound. The full article could not be read; this summary sticks to the headline. Worth watching for the S&P 500, Nasdaq, Dow and Russell 2000 when futures reopen Sunday evening.",
+      "time": "07:30",
+      "title": "Les actions peuvent-elles rebondir après une semaine brutale? Un modèle de synchronisation indique que l'histoire joue en faveur du marché",
+      "title_en": "Can stocks bounce back after a brutal week? This timing model says history is on the market's side",
       "url": "https://www.marketwatch.com/story/can-stocks-bounce-back-after-a-brutal-week-this-timing-model-says-history-is-on-the-markets-side-beff1753"
     },
     {
-      "date": "2026-11-22",
-      "time": "07:03",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "spx500",
         "nasdaq",
         "us30",
         "rut"
       ],
-      "title": "Correction ou reckoning plus profond? Les investisseurs cherchent des signes d'essoufflement des ventes à Wall Street",
-      "title_en": "Correction or deeper reckoning? Investors seek signs US stock selling will abate",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Le S&P 500 a terminé vendredi 11,6 % sous son sommet record du 6 octobre, sa première correction depuis mars 2025, après sept séances de baisse d'affilée, la plus longue série depuis 2020. Le Nasdaq efface ses gains de l'année (−2,7 % en 2026) et le VIX a clôturé à 35,89, un sommet depuis avril 2025, sur fond de doutes sur l'IA et de crainte de hausses de taux de la Fed (réunion les 8 et 9 décembre). Des stratèges y voient un point d'achat proche, d'autres jugent que la correction a encore du chemin à faire, dans une semaine écourtée par l'Action de grâce.",
       "summary_en": "The S&P 500 ended Friday 11.6% below its Oct. 6 record high, its first correction since March 2025, after seven straight losing sessions, the longest streak since 2020. The Nasdaq erased its year-to-date gain (-2.7% in 2026) and the VIX closed at 35.89, its highest since April 2025, amid AI doubts and fears of Fed rate hikes (meeting Dec. 8-9). Some strategists see a dip-buying point nearing while others say the correction has further to go, in a Thanksgiving-shortened week.",
+      "time": "07:03",
+      "title": "Correction ou reckoning plus profond? Les investisseurs cherchent des signes d'essoufflement des ventes à Wall Street",
+      "title_en": "Correction or deeper reckoning? Investors seek signs US stock selling will abate",
       "url": "https://www.investing.com/news/stock-market-news/analysiscorrection-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-5043939"
     },
     {
-      "date": "2026-11-22",
-      "time": "06:02",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Exclusif : comme SpaceX, Anthropic a mené un processus d'IPO inhabituel qui a irrité des banquiers",
-      "title_en": "Exclusive: Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Selon Reuters, des banquiers et avocats ayant travaillé sur l'IPO d'Anthropic se sont plaints d'un calendrier comprimé, de changements de dernière minute et de restrictions inhabituelles, dont une limite de quatre banquiers par banque parmi les 22 preneurs fermes. Les banques ont tout de même touché plus d'un demi-milliard de dollars en frais. L'action Anthropic a clôturé en baisse de 8,5 % vendredi après un bond de 17 % le premier jour, un signal suivi de près pour le sentiment autour de l'IA au Nasdaq.",
       "summary_en": "According to Reuters, bankers and lawyers on Anthropic's IPO complained about a compressed timeline, last-minute changes and unusual restrictions, including a cap of four bankers per bank among its 22 underwriters. Banks still collected more than half a billion dollars in fees. Anthropic shares closed down 8.5% on Friday after a 17% first-day pop, a closely watched signal for AI sentiment on the Nasdaq.",
+      "time": "06:02",
+      "title": "Exclusif : comme SpaceX, Anthropic a mené un processus d'IPO inhabituel qui a irrité des banquiers",
+      "title_en": "Exclusive: Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers",
       "url": "https://www.investing.com/news/stock-market-news/exclusivelike-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-5043898"
     },
     {
-      "date": "2026-11-22",
-      "time": "05:54",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "usdjpy"
-      ],
-      "title": "La Corée du Sud prépare un fonds de stabilisation boursière après une chute de 5,2 % du Kospi",
-      "title_en": "South Korea prepares stock market stabilization fund after Kospi plunges 5.2%",
-      "summary": "Séoul a annoncé dimanche des mesures d'urgence, dont un fonds de soutien au marché, un assouplissement temporaire des limites de rachats d'actions et trois mois de surveillance accrue de la vente à découvert illégale. Le Kospi a plongé de 5,2 % vendredi à son plus bas en 10 mois, sous 5 000 points, soit environ 46,6 % sous son sommet de plus de 9 100 à la mi-juin. L'ouverture asiatique de lundi et la réunion de la Banque de Corée jeudi (hausse de 25 points de base attendue) seront suivies pour le sentiment sur les puces et l'IA.",
-      "summary_en": "Seoul announced emergency measures on Sunday, including a market support fund, a temporary easing of share buyback limits and three months of intensified monitoring of illegal short-selling. The Kospi plunged 5.2% on Friday to a 10-month closing low, below 5,000, about 46.6% under its mid-June peak above 9,100. Monday's Asian open and Thursday's Bank of Korea meeting (a 25-basis-point hike is expected) will be watched for chip and AI sentiment.",
-      "url": "https://www.investing.com/news/stock-market-news/south-korea-prepares-stock-market-stabilization-fund-after-kospi-plunges-52-5043890"
-    },
-    {
-      "date": "2026-11-22",
-      "time": "05:18",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "usoil"
       ],
-      "title": "COP31 : l'accord sur le climat reste incertain après des négociations houleuses",
-      "title_en": "COP31 climate deal in the balance after fractious talks",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Selon Reuters, repris par Investing.com, l'issue du sommet climatique COP31 demeure incertaine après des négociations tendues qui se sont prolongées bien au-delà de l'échéance prévue. Un éventuel accord sur la transition hors des combustibles fossiles serait surveillé par le marché pétrolier à plus long terme, mais l'effet immédiat sur le WTI devrait rester limité.",
       "summary_en": "According to Reuters via Investing.com, the outcome of the COP31 climate summit remains uncertain after fractious talks that ran well past their scheduled deadline. Any deal on transitioning away from fossil fuels would be watched by the oil market over the longer term, though the immediate impact on WTI is likely limited.",
+      "time": "05:18",
+      "title": "COP31 : l'accord sur le climat reste incertain après des négociations houleuses",
+      "title_en": "COP31 climate deal in the balance after fractious talks",
       "url": "https://www.investing.com/news/commodities-news/cop31-climate-deal-in-the-balance-after-fractious-talks-5043876"
     },
     {
-      "date": "2026-11-22",
-      "time": "03:51",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "usdchf"
       ],
-      "title": "BNS : l'inflation suisse s'accélère, la banque surveille les effets de second tour",
-      "title_en": "Swiss inflation accelerates as SNB signals concern over broader price pressures",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le vice-président de la BNS, Antoine Martin, affirme au Matin Dimanche que l'inflation « a continué d'accélérer depuis septembre » et que la banque surveille de près les effets de second tour. L'inflation annuelle est passée de 1 % en septembre à 1,5 % en octobre, plus que prévu, avec un taux directeur à zéro avant la décision de décembre. Martin rappelle que le franc demeure clairement une valeur refuge, ce qui compte pour l'USD/CHF.",
       "summary_en": "SNB Vice Chairman Antoine Martin told Le Matin Dimanche that inflation 'has continued accelerating since September' and that the bank is watching closely for second-round effects. Annual inflation rose to 1.5% in October from 1% in September, above expectations, with the policy rate at zero ahead of the December decision. Martin said the franc remains clearly a safe haven, which matters for USD/CHF.",
+      "time": "03:51",
+      "title": "BNS : l'inflation suisse s'accélère, la banque surveille les effets de second tour",
+      "title_en": "Swiss inflation accelerates as SNB signals concern over broader price pressures",
       "url": "https://www.investing.com/news/stock-market-news/swiss-inflation-accelerates-as-snb-signals-concern-over-broader-price-pressures-5043822"
     },
     {
-      "date": "2026-11-22",
-      "time": "01:57",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "spx500",
         "xauusd",
         "usoil"
       ],
-      "title": "L'économie primera-t-elle encore sur la géopolitique? UBS mise sur les fondamentaux en 2027",
-      "title_en": "Will economics continue to outweigh geopolitics? UBS bets on fundamentals in 2027",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Selon le rapport « Year Ahead 2027 » d'UBS, la croissance, les bénéfices et les taux devraient rester les principaux moteurs des marchés en 2027, la géopolitique n'amenant que de la volatilité ponctuelle; le S&P 500 s'est historiquement remis des chocs géopolitiques en 16 jours en moyenne. L'énergie reste le point le plus vulnérable : des perturbations prolongées pourraient relancer l'inflation et garder les banques centrales restrictives, et UBS voit l'or et certaines matières premières comme protection.",
       "summary_en": "According to UBS's \"Year Ahead 2027\" report, growth, earnings and interest rates should remain the main market drivers in 2027, with geopolitics causing only periodic volatility; the S&P 500 has historically recovered from geopolitical shocks in 16 days on average. Energy is the main vulnerability: prolonged disruptions could lift inflation and keep central banks restrictive, and UBS sees gold and selected commodities as protection.",
+      "time": "01:57",
+      "title": "L'économie primera-t-elle encore sur la géopolitique? UBS mise sur les fondamentaux en 2027",
+      "title_en": "Will economics continue to outweigh geopolitics? UBS bets on fundamentals in 2027",
       "url": "https://www.investing.com/news/stock-market-news/will-economics-continue-to-outweigh-geopolitics-5043785"
     },
     {
-      "date": "2026-11-22",
-      "time": "01:08",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Le boom de l'IA perd-il son emprise sur les marchés émergents? Jefferies sonne l'alarme",
-      "title_en": "Is the AI boom losing its grip on emerging markets? Jefferies flags risks",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Jefferies prévient que le boom de l'IA qui porte les actions émergentes fait face à des coûts de financement plus élevés, à des révisions de bénéfices qui ralentissent et à des dépenses de centres de données plus faibles; l'IA pèse environ 46 % de l'indice MSCI Marchés émergents. La firme abaisse la Corée du Sud à sous-pondérer et Taïwan à neutre, rehausse l'Inde à surpondérer, et prévoit une croissance du BPA émergent de 25,9 % en 2027 (consensus 27,7 %) puis 12 % en 2028 — un signal de plus de fatigue sur le thème IA qui pèse sur le Nasdaq.",
       "summary_en": "Jefferies warns the AI boom powering emerging-market stocks faces higher financing costs, slowing earnings upgrades and weaker data-center spending; AI-related names are about 46% of the MSCI EM index. It cut South Korea to underweight and Taiwan to neutral, raised India to overweight, and forecasts EM EPS growth of 25.9% in 2027 (consensus 27.7%) then 12% in 2028 — another sign of fatigue in the AI trade weighing on the Nasdaq.",
+      "time": "01:08",
+      "title": "Le boom de l'IA perd-il son emprise sur les marchés émergents? Jefferies sonne l'alarme",
+      "title_en": "Is the AI boom losing its grip on emerging markets? Jefferies flags risks",
       "url": "https://in.investing.com/news/stock-market-news/is-the-ai-boom-losing-its-grip-on-emerging-markets-jefferies-flags-risks-5719545"
     },
     {
@@ -1446,18 +1447,18 @@
       "url": "https://www.investing.com/news/stock-market-news/chinas-ai-stocks-lose-17-trillion-as-tech-selloff-deepens-5043672"
     },
     {
-      "date": "2026-11-21",
-      "time": "19:17",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "5 gestes d'analystes sur l'IA : Nvidia abaissée, Anthropic vue comme une « entreprise générationnelle »",
-      "title_en": "5 big analyst AI moves: Nvidia downgrade, Anthropic seen as 'generational company'",
+      "date": "2026-11-21",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Summit Insights abaisse Nvidia à « conserver », invoquant l'incertitude liée au changement de direction et les nouvelles règles du Commerce sur les ventes de puces en Asie du Sud-Est, tandis que William Blair amorce Anthropic à « surperformance » après son PAPE record de 81,3 G$ (titre clôturé à 97,17 $ à ses débuts, vs 83 $). Yardeni voit la correction de l'IA comme une occasion et maintient sa cible de 7 900 pour le S&P 500, après des reculs de 2 % du S&P 500 et de 2,2 % du Nasdaq; HSBC relève Tesla à « conserver » avec une cible de 359 $.",
       "summary_en": "Summit Insights cut Nvidia to Hold, citing leadership-change uncertainty and new Commerce rules on chip sales in Southeast Asia, while William Blair initiated Anthropic at Outperform after its record $81.3B IPO (debut close $97.17 vs $83). Yardeni called the AI selloff a buying opportunity and kept its 7,900 S&P 500 target after the S&P 500 fell 2% and the Nasdaq 2.2%; HSBC upgraded Tesla to Hold with a $359 target.",
+      "time": "19:17",
+      "title": "5 gestes d'analystes sur l'IA : Nvidia abaissée, Anthropic vue comme une « entreprise générationnelle »",
+      "title_en": "5 big analyst AI moves: Nvidia downgrade, Anthropic seen as 'generational company'",
       "url": "https://www.investing.com/news/stock-market-news/5-big-analyst-ai-moves-nvidia-downgrade-anthropic-seen-as-generational-company-5043652"
     },
     {
