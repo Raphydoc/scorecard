@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T12:42:47Z",
+  "updatedAt": "2026-11-22T13:47:25Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,23 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "07:30",
+      "source": "MarketWatch",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30",
+        "rut"
+      ],
+      "title": "Les actions peuvent-elles rebondir après une semaine brutale? Un modèle de synchronisation indique que l'histoire joue en faveur du marché",
+      "title_en": "Can stocks bounce back after a brutal week? This timing model says history is on the market's side",
+      "summary": "Après une semaine de lourdes pertes à Wall Street, MarketWatch présente un modèle de synchronisation du marché selon lequel l'historique favorise un rebond des actions. L'article n'a pas pu être lu en entier; ce résumé s'en tient au titre. À suivre pour le S&P 500, le Nasdaq, le Dow et le Russell 2000 à la réouverture des contrats à terme dimanche soir.",
+      "summary_en": "After a week of heavy losses on Wall Street, MarketWatch presents a market-timing model suggesting history favors a stock rebound. The full article could not be read; this summary sticks to the headline. Worth watching for the S&P 500, Nasdaq, Dow and Russell 2000 when futures reopen Sunday evening.",
+      "url": "https://www.marketwatch.com/story/can-stocks-bounce-back-after-a-brutal-week-this-timing-model-says-history-is-on-the-markets-side-beff1753"
+    },
+    {
+      "date": "2026-11-22",
       "time": "07:03",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1873,23 +1890,6 @@
       "title": "Le dollar en route vers une 4e semaine de gains; le yen bondit sur la demande de valeur refuge et une inflation chaude",
       "title_en": "Dollar set for 4-week win streak; yen jumps on safe-haven bid, hot inflation data",
       "url": "https://www.investing.com/news/forex-news/asia-fx-struggles-as-dollar-holds-near-19mth-high-aussie-hits-11month-low-5040667"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30",
-        "rut"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon le titre de Reuters repris par Investing.com, le Nasdaq a chuté de 5 % en une séance, au lendemain de l'entrée en Bourse d'Anthropic. Malgré la débâcle des titres technos, les investisseurs resteraient convaincus du potentiel de l'IA. Le texte complet n'a pas pu être lu.",
-      "summary_en": "Per the Reuters headline carried by Investing.com, the Nasdaq fell 5% in one session, a day after Anthropic's market debut. Despite the tech rout, investors reportedly still believe in AI's potential. The full article could not be read.",
-      "time": "16:30",
-      "title": "Le Nasdaq plonge de 5 % au lendemain des débuts d'Anthropic, mais les investisseurs croient toujours en l'IA",
-      "title_en": "Nasdaq plunges 5% a day after Anthropic debut, but investors still believe in AI",
-      "url": "https://www.investing.com/news/stock-market-news/nasdaq-plunges-5-a-day-after-anthropic-debut-but-investors-still-believe-in-ai-5042641"
     }
   ],
   "live": {
