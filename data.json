@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-21T23:43:04Z",
+  "updatedAt": "2026-11-22T00:42:20Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,34 @@
   "news": [
     {
       "date": "2026-11-21",
+      "time": "18:57",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "eurusd"
+      ],
+      "title": "Élections anticipées en Espagne le 29 novembre : UBS voit une coalition de droite probable",
+      "title_en": "Here is what to expect from Spain's snap election",
+      "summary": "Selon l'économiste d'UBS Maelle Quillevere, le scrutin du 29 novembre devrait le plus probablement mener à une coalition entre le Parti populaire (PP) et Vox, avec à la clé des baisses d'impôt des sociétés, une immigration plus restreinte et plus de dépenses de défense; un parlement fragmenté reste possible. La dette publique espagnole est passée de 119 % du PIB en 2020 à 101 % en 2025, et le FMI projette 91 % d'ici 2030. Le vote n'est pas vu comme un catalyseur majeur pour les actions espagnoles, mais reste un risque politique à surveiller pour l'euro.",
+      "summary_en": "UBS economist Maelle Quillevere sees a People's Party (PP)–Vox coalition as the most likely outcome of the November 29 vote, potentially bringing corporate tax cuts, tighter immigration policy and higher defense spending; a fragmented parliament remains possible. Spain's government debt fell from 119% of GDP in 2020 to 101% in 2025, with the IMF projecting 91% by 2030. The election is not expected to be a major catalyst for Spanish stocks, but remains a political risk to watch for the euro.",
+      "url": "https://www.investing.com/news/stock-market-news/here-is-what-to-expect-from-spains-snap-election-5043631"
+    },
+    {
+      "date": "2026-11-21",
+      "time": "18:02",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "eurusd"
+      ],
+      "title": "Allemagne : IG Metall étend sa grève à 23 000 travailleurs de l'auto et des chantiers navals lundi",
+      "title_en": "German car and shipyard workers set to strike as IG Metall union extends walkout",
+      "summary": "IG Metall tiendra une nouvelle grève de 24 heures lundi, visant plus de 23 000 employés de 19 entreprises du nord de l'Allemagne, dont Mercedes-Benz, Meyer Werft et Siemens Gamesa, après un débrayage d'environ 12 300 employés vendredi. Le syndicat réclame une hausse salariale de 5 %, alors que le patronat propose aucune hausse permanente pendant 20 mois puis 1,3 % à partir de juillet 2028. Ce conflit pèse sur l'industrie allemande, déjà fragile, et peut influencer le sentiment envers l'euro.",
+      "summary_en": "IG Metall will hold another 24-hour strike on Monday, calling out more than 23,000 workers at 19 companies in northern Germany, including Mercedes-Benz, Meyer Werft and Siemens Gamesa, after about 12,300 employees walked out on Friday. The union demands a 5% pay rise, while employers offer no permanent increase for 20 months, then 1.3% from July 2028. The dispute weighs on already fragile German industry and can affect sentiment toward the euro.",
+      "url": "https://www.investing.com/news/stock-market-news/german-car-and-shipyard-workers-set-to-strike-as-ig-metall-union-extends-walkout-5043609"
+    },
+    {
+      "date": "2026-11-21",
       "time": "15:20",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1865,37 +1893,6 @@
       "title": "La banque responsable du PAPE d'Anthropic a fermé sa position de stabilisation, retirant un appui au titre",
       "title_en": "Anthropic's IPO bank closed position meant to stabilize stock, removing source of support",
       "url": "https://www.investing.com/news/stock-market-news/anthropics-ipo-bank-closed-position-meant-to-stabilize-stock-removing-source-of-support-5042311"
-    },
-    {
-      "assets": [
-        "gbpusd",
-        "xagusd",
-        "xauusd"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Les actions britanniques plongent et le FTSE 100 se dirige vers sa pire semaine depuis mars, entraîné par la déroute de la techno et des métaux. La faiblesse des minières reflète la glissade de l'or et de l'argent, dans un climat d'aversion au risque qui touche aussi la livre.",
-      "summary_en": "UK stocks slide, with the FTSE 100 heading for its worst week since March, dragged down by a rout in tech and metals. Weakness in miners mirrors the slide in gold and silver, amid a risk-off mood that also weighs on sterling.",
-      "time": "12:12",
-      "title": "FTSE 100 : la Bourse de Londres vers sa pire semaine depuis mars, plombée par la techno et les métaux",
-      "title_en": "FTSE 100 today: Stocks plunge to worst week since March on tech, metals rout",
-      "url": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-fall-on-tech-metals-rout-despite-uk-retail-beat-5040931"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "usd"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Le secrétaire au Trésor Scott Bessent affirme que Donald Trump et Xi Jinping se sont entendus pour que les décisions militaires faisant appel à l'IA impliquent des humains. Ce signe de coopération sino-américaine sur l'IA survient en pleine tourmente sur les valeurs technologiques.",
-      "summary_en": "Treasury Secretary Scott Bessent says Donald Trump and Xi Jinping agreed that military decisions involving AI should involve humans. The sign of US-China cooperation on AI comes amid turmoil in technology stocks.",
-      "time": "11:54",
-      "title": "Trump et Xi ont convenu que les décisions militaires liées à l'IA doivent impliquer des humains, selon Bessent",
-      "title_en": "Trump, Xi agreed that military AI decisions should involve humans, Bessent says",
-      "url": "https://www.investing.com/news/stock-market-news/trump-xi-agreed-that-military-ai-decisions-should-involve-humans-bessent-says-5042288"
     }
   ],
   "live": {
