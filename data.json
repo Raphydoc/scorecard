@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T16:42:05Z",
+  "updatedAt": "2026-11-22T18:47:01Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,35 +1276,50 @@
   "news": [
     {
       "date": "2026-11-22",
-      "time": "10:56",
+      "time": "12:54",
       "source": "Investing.com",
       "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Bessent : Washington demande des explications sur les ventes de puces de Nvidia à la Chine",
+      "title_en": "US seeks answers on Nvidia's sale of chips to China, Bessent says",
+      "summary": "Le secrétaire au Trésor Scott Bessent affirme que les États-Unis cherchent à obtenir des réponses sur les ventes de puces de Nvidia à la Chine (résumé basé sur le titre, l'article n'ayant pu être lu). Le dossier des exportations de puces vers la Chine pèse sur le sentiment entourant Nvidia et les valeurs technologiques du Nasdaq et du S&P 500.",
+      "summary_en": "Treasury Secretary Scott Bessent says the United States is seeking answers on Nvidia's chip sales to China (summary based on the headline; the article could not be read). The China chip-export issue weighs on sentiment around Nvidia and the tech-heavy Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/us-seeks-answers-on-nvidias-sale-of-chips-to-china-bessent-says-5044083"
+    },
+    {
       "assets": [
         "spx500",
         "nasdaq",
         "usoil"
       ],
-      "title": "Que signifient les élections de mi-mandat pour les investisseurs? UBS mise sur les fondamentaux",
-      "title_en": "What do the U.S. midterms mean for investors? UBS points to fundamentals",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Après la victoire démocrate aux deux chambres le 3 novembre, le S&P 500 a bondi de 1,6 %, puis a chuté de 10,1 % depuis, sur fond de craintes d'une réglementation plus serrée de l'IA et des centres de données; il était en correction vendredi. UBS juge peu probable que la législation fédérale freine l'IA et estime que les résultats, l'inflation, la Fed, le pétrole et la géopolitique compteront davantage. Le Brent a reculé de près de 11 % depuis le 3 novembre sur l'espoir d'une issue diplomatique au conflit avec l'Iran.",
       "summary_en": "After Democrats won both chambers on November 3, the S&P 500 bounced 1.6% but has since fallen 10.1% on fears of tighter regulation of AI and data centers, entering correction territory on Friday. UBS sees federal legislation as unlikely to materially slow AI and says earnings, inflation, Fed policy, oil and geopolitics will matter more. Brent is down nearly 11% since November 3 on hopes of a diplomatic end to the Iran conflict.",
+      "time": "10:56",
+      "title": "Que signifient les élections de mi-mandat pour les investisseurs? UBS mise sur les fondamentaux",
+      "title_en": "What do the U.S. midterms mean for investors? UBS points to fundamentals",
       "url": "https://www.investing.com/news/stock-market-news/what-do-the-us-midterms-mean-for-investors-5044046"
     },
     {
-      "date": "2026-11-22",
-      "time": "10:12",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500",
         "usdjpy",
         "audusd"
       ],
-      "title": "Taïwan, la Chine et la Corée du Sud prennent des mesures pour soutenir leurs Bourses après la déroute de l'IA",
-      "title_en": "Asian countries take steps to aid stock markets after AI rout",
+      "date": "2026-11-22",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Taïwan interdit la vente à découvert sous la clôture de la veille et relève la marge minimale à 150 % (contre 130 %) après sa pire semaine depuis août 1990; la Corée du Sud prépare un fonds de soutien et assouplit les rachats d'actions, le KOSPI ayant chuté de plus de 5 % vendredi et de près de 47 % depuis son record de juin. En Chine, les Bourses de Shanghai et Shenzhen abaissent le ratio de marge de financement à 80 % (contre 100 %). Ces mesures du week-end précèdent l'ouverture asiatique de lundi, après la pire semaine de Wall Street depuis avril 2025 et l'entrée du S&P 500 en correction.",
       "summary_en": "Taiwan banned short-selling below the previous close and raised the minimum margin to 150% from 130% after its worst week since August 1990; South Korea is preparing a market support fund and easing buyback limits, with the KOSPI down more than 5% on Friday and nearly 47% from its June record. In China, the Shanghai and Shenzhen exchanges cut the financing margin ratio to 80% from 100%. The weekend measures come ahead of Monday's Asian open, after Wall Street's worst week since April 2025 and the S&P 500's slide into correction.",
+      "time": "10:12",
+      "title": "Taïwan, la Chine et la Corée du Sud prennent des mesures pour soutenir leurs Bourses après la déroute de l'IA",
+      "title_en": "Asian countries take steps to aid stock markets after AI rout",
       "url": "https://www.investing.com/news/stock-market-news/asian-countries-take-steps-to-aid-stock-markets-after-ai-rout-5044034"
     },
     {
@@ -1875,23 +1890,6 @@
       "title": "L'or au comptant signe sa pire semaine en 8 mois; les contrats à terme, leur pire depuis mars 2020",
       "title_en": "Spot gold posts worst week in 8 months, futures notch worst week since March 2020",
       "url": "https://www.investing.com/news/commodities-news/gold-slides-to-14mth-low-set-for-weekly-drop-amid-fed-hike-bets-5040648"
-    },
-    {
-      "assets": [
-        "spx500",
-        "us30",
-        "nasdaq",
-        "rut"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "MarketWatch",
-      "summary": "Selon MarketWatch, le Dow Jones et le S&P 500 sont officiellement en territoire de correction après la séance de vendredi, tandis que le Nasdaq encaisse sa pire semaine depuis 2020. La vente massive dans la tech liée à l'IA domine les marchés américains avant la semaine écourtée de l'Action de grâce.",
-      "summary_en": "According to MarketWatch, the Dow and the S&P 500 are officially in correction territory after Friday's session, while the Nasdaq suffered its worst week since 2020. The AI-driven tech selloff dominates U.S. markets ahead of the shortened Thanksgiving week.",
-      "time": "17:12",
-      "title": "Le Dow et le S&P 500 entrent en correction; le Nasdaq vit sa pire semaine depuis 2020",
-      "title_en": "Dow, S&P 500 enter correction as Nasdaq suffers worst week since 2020",
-      "url": "https://www.marketwatch.com/story/dow-s-p-500-enter-correction-as-nasdaq-suffers-worst-week-since-2020-bd74dadf"
     }
   ],
   "live": {
