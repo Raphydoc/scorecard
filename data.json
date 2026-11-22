@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T00:42:20Z",
+  "updatedAt": "2026-11-22T01:42:37Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,21 @@
   "news": [
     {
       "date": "2026-11-21",
+      "time": "20:09",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Les actions chinoises liées à l'IA ont perdu 1 700 milliards $ depuis fin juin",
+      "title_en": "China's AI stocks lose $1.7 trillion as tech selloff deepens",
+      "summary": "Les actions chinoises liées à l'IA ont effacé 1 700 milliards $ de valeur depuis fin juin : le Hang Seng Tech est à un creux de deux ans et le ChiNext recule de 31 % cette année, alors que les indices technos américains restent positifs en 2026. Valorisations jugées excessives, restrictions américaines sur les puces Nvidia et pénuries évoquées par Tencent pèsent; certains gérants voient encore 30 % à 50 % de baisse possible. Ce recul de la tech asiatique ajoute à la pression sur le Nasdaq avant l'ouverture de lundi.",
+      "summary_en": "Chinese AI-related stocks have shed $1.7 trillion in value since late June: the Hang Seng Tech index is at a two-year low and the ChiNext is down 31% this year, while U.S. tech benchmarks remain positive for 2026. Stretched valuations, U.S. curbs on Nvidia chips and chip shortages flagged by Tencent are weighing; some fund managers see another 30% to 50% downside. The Asian tech slide adds pressure on the Nasdaq ahead of Monday's open.",
+      "url": "https://www.investing.com/news/stock-market-news/chinas-ai-stocks-lose-17-trillion-as-tech-selloff-deepens-5043672"
+    },
+    {
+      "date": "2026-11-21",
       "time": "18:57",
       "source": "Investing.com",
       "impact": "med",
@@ -1878,21 +1893,6 @@
       "title": "Les petits investisseurs d'Anthropic encaissent des pertes : l'action chute de 13 % au lendemain de ses débuts",
       "title_en": "Anthropic retail traders face losses as shares dive 13% the day after debut",
       "url": "https://www.investing.com/news/stock-market-news/anthropic-retail-traders-face-losses-as-shares-dive-13-the-day-after-debut-5042375"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon Reuters, la banque chef de file du premier appel public à l'épargne d'Anthropic a fermé la position qui servait à stabiliser le cours de l'action. Le titre perd ainsi une source de soutien, alors que la vague de ventes dans la techno et l'IA se poursuit; cela peut accentuer la pression sur le Nasdaq.",
-      "summary_en": "According to Reuters, the lead bank on Anthropic's IPO closed the position meant to stabilize the stock's price. The shares lose a source of support as the tech and AI selloff continues, which could add pressure on the Nasdaq.",
-      "time": "12:12",
-      "title": "La banque responsable du PAPE d'Anthropic a fermé sa position de stabilisation, retirant un appui au titre",
-      "title_en": "Anthropic's IPO bank closed position meant to stabilize stock, removing source of support",
-      "url": "https://www.investing.com/news/stock-market-news/anthropics-ipo-bank-closed-position-meant-to-stabilize-stock-removing-source-of-support-5042311"
     }
   ],
   "live": {
