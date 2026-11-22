@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T01:42:37Z",
+  "updatedAt": "2026-11-22T07:42:37Z",
   "econ": {
     "values": {
       "adp": {
@@ -1275,62 +1275,62 @@
   },
   "news": [
     {
-      "date": "2026-11-21",
-      "time": "20:09",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Les actions chinoises liées à l'IA ont perdu 1 700 milliards $ depuis fin juin",
-      "title_en": "China's AI stocks lose $1.7 trillion as tech selloff deepens",
+      "date": "2026-11-21",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Les actions chinoises liées à l'IA ont effacé 1 700 milliards $ de valeur depuis fin juin : le Hang Seng Tech est à un creux de deux ans et le ChiNext recule de 31 % cette année, alors que les indices technos américains restent positifs en 2026. Valorisations jugées excessives, restrictions américaines sur les puces Nvidia et pénuries évoquées par Tencent pèsent; certains gérants voient encore 30 % à 50 % de baisse possible. Ce recul de la tech asiatique ajoute à la pression sur le Nasdaq avant l'ouverture de lundi.",
       "summary_en": "Chinese AI-related stocks have shed $1.7 trillion in value since late June: the Hang Seng Tech index is at a two-year low and the ChiNext is down 31% this year, while U.S. tech benchmarks remain positive for 2026. Stretched valuations, U.S. curbs on Nvidia chips and chip shortages flagged by Tencent are weighing; some fund managers see another 30% to 50% downside. The Asian tech slide adds pressure on the Nasdaq ahead of Monday's open.",
+      "time": "20:09",
+      "title": "Les actions chinoises liées à l'IA ont perdu 1 700 milliards $ depuis fin juin",
+      "title_en": "China's AI stocks lose $1.7 trillion as tech selloff deepens",
       "url": "https://www.investing.com/news/stock-market-news/chinas-ai-stocks-lose-17-trillion-as-tech-selloff-deepens-5043672"
     },
     {
-      "date": "2026-11-21",
-      "time": "18:57",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "eurusd"
       ],
-      "title": "Élections anticipées en Espagne le 29 novembre : UBS voit une coalition de droite probable",
-      "title_en": "Here is what to expect from Spain's snap election",
+      "date": "2026-11-21",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Selon l'économiste d'UBS Maelle Quillevere, le scrutin du 29 novembre devrait le plus probablement mener à une coalition entre le Parti populaire (PP) et Vox, avec à la clé des baisses d'impôt des sociétés, une immigration plus restreinte et plus de dépenses de défense; un parlement fragmenté reste possible. La dette publique espagnole est passée de 119 % du PIB en 2020 à 101 % en 2025, et le FMI projette 91 % d'ici 2030. Le vote n'est pas vu comme un catalyseur majeur pour les actions espagnoles, mais reste un risque politique à surveiller pour l'euro.",
       "summary_en": "UBS economist Maelle Quillevere sees a People's Party (PP)–Vox coalition as the most likely outcome of the November 29 vote, potentially bringing corporate tax cuts, tighter immigration policy and higher defense spending; a fragmented parliament remains possible. Spain's government debt fell from 119% of GDP in 2020 to 101% in 2025, with the IMF projecting 91% by 2030. The election is not expected to be a major catalyst for Spanish stocks, but remains a political risk to watch for the euro.",
+      "time": "18:57",
+      "title": "Élections anticipées en Espagne le 29 novembre : UBS voit une coalition de droite probable",
+      "title_en": "Here is what to expect from Spain's snap election",
       "url": "https://www.investing.com/news/stock-market-news/here-is-what-to-expect-from-spains-snap-election-5043631"
     },
     {
-      "date": "2026-11-21",
-      "time": "18:02",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "eurusd"
       ],
-      "title": "Allemagne : IG Metall étend sa grève à 23 000 travailleurs de l'auto et des chantiers navals lundi",
-      "title_en": "German car and shipyard workers set to strike as IG Metall union extends walkout",
+      "date": "2026-11-21",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "IG Metall tiendra une nouvelle grève de 24 heures lundi, visant plus de 23 000 employés de 19 entreprises du nord de l'Allemagne, dont Mercedes-Benz, Meyer Werft et Siemens Gamesa, après un débrayage d'environ 12 300 employés vendredi. Le syndicat réclame une hausse salariale de 5 %, alors que le patronat propose aucune hausse permanente pendant 20 mois puis 1,3 % à partir de juillet 2028. Ce conflit pèse sur l'industrie allemande, déjà fragile, et peut influencer le sentiment envers l'euro.",
       "summary_en": "IG Metall will hold another 24-hour strike on Monday, calling out more than 23,000 workers at 19 companies in northern Germany, including Mercedes-Benz, Meyer Werft and Siemens Gamesa, after about 12,300 employees walked out on Friday. The union demands a 5% pay rise, while employers offer no permanent increase for 20 months, then 1.3% from July 2028. The dispute weighs on already fragile German industry and can affect sentiment toward the euro.",
+      "time": "18:02",
+      "title": "Allemagne : IG Metall étend sa grève à 23 000 travailleurs de l'auto et des chantiers navals lundi",
+      "title_en": "German car and shipyard workers set to strike as IG Metall union extends walkout",
       "url": "https://www.investing.com/news/stock-market-news/german-car-and-shipyard-workers-set-to-strike-as-ig-metall-union-extends-walkout-5043609"
     },
     {
-      "date": "2026-11-21",
-      "time": "15:20",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "usoil",
         "xauusd",
         "usd"
       ],
-      "title": "Bahreïn : une attaque iranienne touche une installation industrielle civile et provoque un incendie",
-      "title_en": "Bahrain says Iranian attack hits civilian industrial facility, causes fire",
+      "date": "2026-11-21",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Le ministère de l'Intérieur de Bahreïn affirme qu'une attaque iranienne a endommagé une installation industrielle civile et déclenché un incendie, sans faire de blessés; il n'a pas précisé l'emplacement ni la nature du site. Bahreïn, qui accueille la 5e Flotte américaine, dit avoir intercepté plusieurs attaques aériennes iraniennes au cours de la dernière semaine. Ce nouvel épisode dans le Golfe, en pleine tension autour d'Ormuz, entretient le risque d'approvisionnement sur le pétrole à l'ouverture de dimanche soir.",
       "summary_en": "Bahrain's Interior Ministry said an Iranian attack damaged a civilian industrial facility and caused a fire, with no injuries; it gave no details on the site's location or nature. Bahrain, home of the US Fifth Fleet, says it intercepted several Iranian air attacks over the past week. The fresh Gulf incident, amid tensions around Hormuz, keeps supply risk in focus for oil ahead of Sunday evening's open.",
+      "time": "15:20",
+      "title": "Bahreïn : une attaque iranienne touche une installation industrielle civile et provoque un incendie",
+      "title_en": "Bahrain says Iranian attack hits civilian industrial facility, causes fire",
       "url": "https://br.investing.com/news/commodities-news/barein-diz-que-ataque-iraniano-atingiu-instalacao-industrial-e-provocouincendio-2134833"
     },
     {
