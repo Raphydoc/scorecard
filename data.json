@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T21:47:48Z",
+  "updatedAt": "2026-11-22T22:48:01Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,23 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "17:24",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "usd",
+        "eurusd"
+      ],
+      "title": "Goldman Sachs prévoit une croissance mondiale de 2,8 % en 2027 et deux hausses de taux de la Fed avant des baisses",
+      "title_en": "Goldman Sachs’ economic outlook for 2027: 2.8% global growth, two more Fed hikes before cuts",
+      "summary": "Goldman Sachs prévoit une croissance mondiale réelle de 2,8 % en 2027, légèrement au-dessus de son estimation de 2,7 % pour 2026, avec des risques à la baisse (regain de tensions en Iran, risques budgétaires sur les taux longs, déception sur les investissements en IA). La banque s'attend à des hausses de 25 points de base de la Fed en décembre et en mars, puis à des baisses graduelles à partir de novembre; son scénario est plus accommodant que les prix du marché, surtout pour la BCE et la Fed, ce qui compte pour le dollar, l'EUR/USD et les indices américains.",
+      "summary_en": "Goldman Sachs expects global real GDP growth of 2.8% in 2027, slightly above its 2.7% estimate for 2026, with risks skewed to the downside (renewed Iran escalation, fiscal risks lifting long-term yields, AI capex disappointment). The bank sees 25 bp Fed hikes in December and March, followed by gradual cuts starting in November; its baseline is more dovish than market pricing, especially for the ECB and the Fed, which matters for the dollar, EUR/USD and U.S. indexes.",
+      "url": "https://www.investing.com/news/stock-market-news/goldman-sachs-economic-outlook-for-2027-5044151"
+    },
+    {
+      "date": "2026-11-22",
       "time": "16:18",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1869,26 +1886,6 @@
       "title": "Les titres de semi-conducteurs perdent 2 300 G$ en une semaine, la panique gagne le commerce de l'IA",
       "title_en": "Chip stocks see $2.3 trillion weekly wipeout as panic grips the AI trade",
       "url": "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03"
-    },
-    {
-      "assets": [
-        "usd",
-        "usdjpy",
-        "eurusd",
-        "audusd",
-        "nasdaq",
-        "spx500",
-        "xauusd"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "Le 10 ans américain a reculé de 10,9 points de base pour clôturer à 4,941 %, le 2 ans de 12,8 pb à 4,651 % et le 30 ans de 6,5 pb à 5,336 %; le Bund allemand à 10 ans a perdu 10,8 pb à 3,3026 %, le 10 ans japonais est tombé à 2,751 % et l'australien à 4,916 %. La vente massive des titres techno et de l'IA a poussé les investisseurs vers les obligations d'État. Le gouverneur de la Fed Christopher Waller a toutefois prôné une « action agressive » et évoqué une hausse d'un demi-point en décembre, tandis que le CME FedWatch tient une hausse de 25 pb pour acquise.",
-      "summary_en": "The U.S. 10-year yield fell 10.9 basis points to close at 4.941%, the 2-year 12.8 bp to 4.651% and the 30-year 6.5 bp to 5.336%; the German 10-year Bund lost 10.8 bp to 3.3026%, Japan's 10-year fell to 2.751% and Australia's to 4.916%. The tech and AI selloff pushed investors into government debt. Fed Governor Christopher Waller nonetheless urged 'aggressive action' and floated a half-point hike in December, while CME FedWatch sees a 25 bp hike as essentially locked in.",
-      "time": "17:34",
-      "title": "Les rendements du Trésor et les rendements mondiaux plongent alors que les investisseurs fuient la déroute de l'IA",
-      "title_en": "U.S. Treasury yields and global bond yields plunge as traders flee AI rout",
-      "url": "https://in.investing.com/news/forex-news/global-bond-yields-plunge-as-ai-rout-triggers-flight-to-safety-5716851"
     }
   ],
   "live": {
