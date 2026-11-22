@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T11:42:39Z",
+  "updatedAt": "2026-11-22T12:42:47Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,23 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "07:03",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30",
+        "rut"
+      ],
+      "title": "Correction ou reckoning plus profond? Les investisseurs cherchent des signes d'essoufflement des ventes à Wall Street",
+      "title_en": "Correction or deeper reckoning? Investors seek signs US stock selling will abate",
+      "summary": "Le S&P 500 a terminé vendredi 11,6 % sous son sommet record du 6 octobre, sa première correction depuis mars 2025, après sept séances de baisse d'affilée, la plus longue série depuis 2020. Le Nasdaq efface ses gains de l'année (−2,7 % en 2026) et le VIX a clôturé à 35,89, un sommet depuis avril 2025, sur fond de doutes sur l'IA et de crainte de hausses de taux de la Fed (réunion les 8 et 9 décembre). Des stratèges y voient un point d'achat proche, d'autres jugent que la correction a encore du chemin à faire, dans une semaine écourtée par l'Action de grâce.",
+      "summary_en": "The S&P 500 ended Friday 11.6% below its Oct. 6 record high, its first correction since March 2025, after seven straight losing sessions, the longest streak since 2020. The Nasdaq erased its year-to-date gain (-2.7% in 2026) and the VIX closed at 35.89, its highest since April 2025, amid AI doubts and fears of Fed rate hikes (meeting Dec. 8-9). Some strategists see a dip-buying point nearing while others say the correction has further to go, in a Thanksgiving-shortened week.",
+      "url": "https://www.investing.com/news/stock-market-news/analysiscorrection-or-deeper-reckoning-investors-seek-signs-us-stock-selling-will-abate-5043939"
+    },
+    {
+      "date": "2026-11-22",
       "time": "06:02",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1873,23 +1890,6 @@
       "title": "Le Nasdaq plonge de 5 % au lendemain des débuts d'Anthropic, mais les investisseurs croient toujours en l'IA",
       "title_en": "Nasdaq plunges 5% a day after Anthropic debut, but investors still believe in AI",
       "url": "https://www.investing.com/news/stock-market-news/nasdaq-plunges-5-a-day-after-anthropic-debut-but-investors-still-believe-in-ai-5042641"
-    },
-    {
-      "assets": [
-        "us30",
-        "spx500",
-        "nasdaq",
-        "usdcad"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "Les actions américaines ont fini la séance de vendredi en baisse, le Dow Jones Industrial Average reculant de 1,93 %, selon Investing.com. À Toronto, l'indice composé S&P/TSX a perdu 2,47 %. La semaine se termine sous le signe de la vague de ventes liée à l'IA.",
-      "summary_en": "U.S. stocks ended Friday's session lower, with the Dow Jones Industrial Average down 1.93%, per Investing.com. In Toronto, the S&P/TSX Composite fell 2.47%. The week closes amid the AI-driven selloff.",
-      "time": "16:30",
-      "title": "Clôture : Wall Street termine en baisse, le Dow Jones cède 1,93 %; le S&P/TSX recule de 2,47 %",
-      "title_en": "U.S. stocks lower at close of trade; Dow Jones down 1.93%; S&P/TSX Composite down 2.47%",
-      "url": "https://www.investing.com/news/stock-market-news/us-stocks-lower-at-close-of-trade-dow-jones-industrial-average-down-193-5042683"
     }
   ],
   "live": {
