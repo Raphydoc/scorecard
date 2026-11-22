@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T08:43:10Z",
+  "updatedAt": "2026-11-22T09:42:46Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,20 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "03:51",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usdchf"
+      ],
+      "title": "BNS : l'inflation suisse s'accélère, la banque surveille les effets de second tour",
+      "title_en": "Swiss inflation accelerates as SNB signals concern over broader price pressures",
+      "summary": "Le vice-président de la BNS, Antoine Martin, affirme au Matin Dimanche que l'inflation « a continué d'accélérer depuis septembre » et que la banque surveille de près les effets de second tour. L'inflation annuelle est passée de 1 % en septembre à 1,5 % en octobre, plus que prévu, avec un taux directeur à zéro avant la décision de décembre. Martin rappelle que le franc demeure clairement une valeur refuge, ce qui compte pour l'USD/CHF.",
+      "summary_en": "SNB Vice Chairman Antoine Martin told Le Matin Dimanche that inflation 'has continued accelerating since September' and that the bank is watching closely for second-round effects. Annual inflation rose to 1.5% in October from 1% in September, above expectations, with the policy rate at zero ahead of the December decision. Martin said the franc remains clearly a safe haven, which matters for USD/CHF.",
+      "url": "https://www.investing.com/news/stock-market-news/swiss-inflation-accelerates-as-snb-signals-concern-over-broader-price-pressures-5043822"
+    },
+    {
+      "date": "2026-11-22",
       "time": "01:57",
       "source": "Investing.com",
       "impact": "med",
@@ -1880,21 +1894,6 @@
       "title": "Bilan de la semaine à la Fed : le débat porte sur l'ampleur de la prochaine hausse, pas sur sa tenue",
       "title_en": "Fed signals and data: what happened the week of Nov. 16–20, 2026",
       "url": "https://www.investing.com/news/stock-market-news/fed-signals-and-data-what-happened-the-week-of-nov-1620-2026-93CH-5042523"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "L'action de Nvidia recule de 10 % après qu'une exclusivité de Reuters a rapporté que la comptabilité de l'entreprise est au cœur d'une enquête de la SEC. Le titre aligne aussi sept semaines de baisse, sa pire séquence depuis la crise de 2008 selon CNBC. Comme Nvidia pèse lourd dans les indices, la nouvelle accentue la pression sur le Nasdaq et le S&P 500 en pleine liquidation des titres liés à l'IA.",
-      "summary_en": "Nvidia shares fall 10% after a Reuters exclusive reported that the company's accounting is a focus of an SEC investigation. The stock is also on a seven-week losing streak, its longest since the 2008 financial crisis according to CNBC. Given Nvidia's heavy index weighting, the news adds pressure on the Nasdaq and S&P 500 amid the AI-stock selloff.",
-      "time": "14:24",
-      "title": "Nvidia chute de 10 % : une enquête comptable de la SEC rapportée ajoute à la pression",
-      "title_en": "Nvidia shares fall 10% as report of SEC accounting probe adds to pressure",
-      "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-fall-10-as-report-of-sec-accounting-probe-adds-to-pressure-5042464"
     }
   ],
   "live": {
