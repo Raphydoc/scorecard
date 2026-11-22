@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T13:47:25Z",
+  "updatedAt": "2026-11-22T14:47:49Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,38 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "09:00",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Bitcoin : la menace quantique dépasse le code et touche les dépositaires, les ponts et 6 millions de BTC",
+      "title_en": "Bitcoin's quantum security challenge extends to bridges, custodians and millions of coins",
+      "summary": "Plus de 6 millions de bitcoins, soit 31,2 % de l'offre en circulation, se trouvaient en octobre derrière des clés publiques déjà visibles sur la chaîne, selon Glassnode; ils restent en sécurité pour l'instant. Les propositions BIP 360 et BIP 361 (cette dernière éliminerait graduellement les signatures vulnérables) demeurent à l'état de brouillon. Le dossier ajoute un risque de long terme au récit du bitcoin, alors que dépositaires et ponts devront aussi se mettre à niveau.",
+      "summary_en": "More than 6 million bitcoin, or 31.2% of circulating supply, sat behind public keys already visible onchain in October, according to Glassnode; they remain safe for now. Proposals BIP 360 and BIP 361 (the latter would phase out vulnerable signatures) are still drafts. The issue adds a long-term risk to bitcoin's narrative, as custodians and bridges will also need upgrades.",
+      "url": "https://www.coindesk.com/tech/2026/11/22/bitcoin-s-quantum-security-challenge-extends-to-bridges-custodians-and-millions-of-coins"
+    },
+    {
+      "date": "2026-11-22",
+      "time": "08:59",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30",
+        "rut",
+        "usoil"
+      ],
+      "title": "Le « Black Friday » met la consommation à l'avant-plan d'un marché ébranlé par l'IA",
+      "title_en": "'Black Friday' brings consumer spending into focus for AI-rocked market",
+      "summary": "Le S&P 500 recule de 11,6 % depuis son sommet du 6 octobre et le secteur techno de près de 24,7 %, après sept séances de baisse. Oxford Economics prévoit une hausse de 4,2 % des ventes des Fêtes (2,2 % en volume) et la NRF attend 182,7 millions d'acheteurs pendant la période de l'Action de grâce, contre 186,9 millions l'an dernier; l'essence est à 3,69 $ le gallon (AAA). La consommation, environ les deux tiers de l'économie américaine, devient un test clé pour les indices.",
+      "summary_en": "The S&P 500 is down 11.6% from its Oct. 6 high and tech nearly 24.7%, after seven straight losing sessions. Oxford Economics sees holiday sales up 4.2% (2.2% in volume) and the NRF expects 182.7 million Thanksgiving-period shoppers versus 186.9 million last year; gasoline averages $3.69 a gallon (AAA). Consumer spending, about two-thirds of the US economy, becomes a key test for the indexes.",
+      "url": "https://www.investing.com/news/stock-market-news/black-friday-brings-consumer-spending-into-focus-for-airocked-market-5044012"
+    },
+    {
+      "date": "2026-11-22",
       "time": "07:30",
       "source": "MarketWatch",
       "impact": "med",
@@ -1858,38 +1890,6 @@
       "title": "Oracle affirme que son contrat d'infrastructure avec OpenAI est entièrement financé",
       "title_en": "Oracle says OpenAI infrastructure deal is fully funded after final capital raise",
       "url": "https://www.investing.com/news/stock-market-news/oracle-says-openai-infrastructure-deal-is-fully-funded-after-final-capital-raise-5042771"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "CNBC",
-      "summary": "Donald Trump affirme avoir parlé de Jensen Huang avec Xi Jinping, alors que le secrétaire au Trésor Scott Bessent assure à CNBC que la politique américaine d'exportation des puces Nvidia ne change pas. Un point à surveiller pour Nvidia et le Nasdaq après une semaine de forte baisse des titres de l'IA.",
-      "summary_en": "Donald Trump says he discussed Jensen Huang with Xi Jinping, while Treasury Secretary Scott Bessent tells CNBC that U.S. export policy on Nvidia chips is unchanged. A key point for Nvidia and the Nasdaq after a week of steep losses in AI stocks.",
-      "time": "17:08",
-      "title": "Trump dit avoir discuté de Jensen Huang avec Xi; Bessent affirme que la politique d'exportation des puces Nvidia est inchangée",
-      "title_en": "Trump says he discussed Jensen Huang with Xi; Bessent tells CNBC Nvidia chip export policy is unchanged",
-      "url": "https://www.cnbc.com/2026/11/20/treasury-secretary-scott-bessent.html"
-    },
-    {
-      "assets": [
-        "usd",
-        "usdjpy",
-        "eurusd",
-        "audusd"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le dollar américain se dirige vers une quatrième hausse hebdomadaire d'affilée, près de son sommet de 19 mois, selon Investing.com. Le yen grimpe grâce à la recherche de valeurs refuges et à des données d'inflation japonaises plus fortes que prévu, ce qui pèse sur l'USD/JPY.",
-      "summary_en": "The U.S. dollar is heading for a fourth straight weekly gain, near its 19-month high, according to Investing.com. The yen rises on safe-haven demand and hotter-than-expected Japanese inflation data, weighing on USD/JPY.",
-      "time": "16:44",
-      "title": "Le dollar en route vers une 4e semaine de gains; le yen bondit sur la demande de valeur refuge et une inflation chaude",
-      "title_en": "Dollar set for 4-week win streak; yen jumps on safe-haven bid, hot inflation data",
-      "url": "https://www.investing.com/news/forex-news/asia-fx-struggles-as-dollar-holds-near-19mth-high-aussie-hits-11month-low-5040667"
     }
   ],
   "live": {
