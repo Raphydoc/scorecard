@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T09:42:46Z",
+  "updatedAt": "2026-11-22T10:47:03Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,20 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "05:18",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "usoil"
+      ],
+      "title": "COP31 : l'accord sur le climat reste incertain après des négociations houleuses",
+      "title_en": "COP31 climate deal in the balance after fractious talks",
+      "summary": "Selon Reuters, repris par Investing.com, l'issue du sommet climatique COP31 demeure incertaine après des négociations tendues qui se sont prolongées bien au-delà de l'échéance prévue. Un éventuel accord sur la transition hors des combustibles fossiles serait surveillé par le marché pétrolier à plus long terme, mais l'effet immédiat sur le WTI devrait rester limité.",
+      "summary_en": "According to Reuters via Investing.com, the outcome of the COP31 climate summit remains uncertain after fractious talks that ran well past their scheduled deadline. Any deal on transitioning away from fossil fuels would be watched by the oil market over the longer term, though the immediate impact on WTI is likely limited.",
+      "url": "https://www.investing.com/news/commodities-news/cop31-climate-deal-in-the-balance-after-fractious-talks-5043876"
+    },
+    {
+      "date": "2026-11-22",
       "time": "03:51",
       "source": "Investing.com",
       "impact": "med",
@@ -1875,25 +1889,6 @@
       "title": "La faiblesse du Nasdaq pousse les investisseurs de la techno vers les obligations",
       "title_en": "Nasdaq's weakness prompts investors to shift from tech to bonds",
       "url": "https://www.investing.com/news/stock-market-news/nasdaqs-weakness-prompts-investors-to-shift-from-tech-to-bonds-93CH-5042538"
-    },
-    {
-      "assets": [
-        "usd",
-        "usdjpy",
-        "spx500",
-        "nasdaq",
-        "xauusd",
-        "usoil"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le procès-verbal d'octobre montre un appui quasi unanime à un resserrement (taux à 3,75 %–4,00 %, vote 10–2) et Waller réclame une « action agressive »; CME FedWatch voyait environ 10 % de chances d'une hausse de 50 pb les 8 et 9 décembre, une hausse de 25 pb restant le scénario de base. Les données sont mitigées : ventes au détail +0,2 % (contrôle +0,6 %), mais Philly Fed à 6,3 contre 20,6 attendu et production industrielle -0,4 %; les attentes d'inflation à 1 an de Michigan reculent à 3,7 %. Le dollar a touché des sommets de l'année et l'USD/JPY approche 160; l'inflation PCE d'octobre, la semaine prochaine, sera le prochain test.",
-      "summary_en": "October minutes showed near-unanimous support for more tightening (policy at 3.75%–4.00%, 10–2 vote) and Waller called for 'aggressive action'; CME FedWatch put roughly a 10% chance on a 50 bp hike at the Dec 8–9 meeting, with 25 bp the base case. Data were mixed: retail sales +0.2% (core +0.6%), but the Philly Fed at 6.3 vs 20.6 expected and industrial production -0.4%; Michigan 1-year inflation expectations eased to 3.7%. The dollar hit year-to-date highs and USD/JPY neared 160; next week's October PCE report is the main test.",
-      "time": "15:12",
-      "title": "Bilan de la semaine à la Fed : le débat porte sur l'ampleur de la prochaine hausse, pas sur sa tenue",
-      "title_en": "Fed signals and data: what happened the week of Nov. 16–20, 2026",
-      "url": "https://www.investing.com/news/stock-market-news/fed-signals-and-data-what-happened-the-week-of-nov-1620-2026-93CH-5042523"
     }
   ],
   "live": {
