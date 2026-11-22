@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T22:48:01Z",
+  "updatedAt": "2026-11-22T23:42:34Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,20 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "18:10",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq"
+      ],
+      "title": "Pékin bloquera l'inscription à l'étranger des jeunes sociétés « red-chip », selon des sources",
+      "title_en": "Beijing to bar young 'red-chip' firms from listing outside mainland China, sources say",
+      "summary": "La CSRC a avisé des cabinets d'avocats que les sociétés « red-chip » créées après les règles de 2023 devront se redomicilier en Chine avant toute inscription à Hong Kong ou à New York. Seulement 6 de ces sociétés ont obtenu le feu vert à Hong Kong cette année, contre 50 l'an dernier, alors que les IPO à Hong Kong ont bondi de 84 % à 404 G$ HK sur 10 mois. Le resserrement pourrait freiner les nouvelles inscriptions de technos chinoises, y compris au Nasdaq.",
+      "summary_en": "The CSRC told law firms that red-chip companies set up after the 2023 rules must re-domicile in China before listing in Hong Kong or New York. Only 6 such firms have won Hong Kong approval this year versus 50 last year, even as Hong Kong IPO proceeds jumped 84% to HK$404 billion in 10 months. The tightening could slow new Chinese tech listings, including on the Nasdaq.",
+      "url": "https://www.investing.com/news/stock-market-news/beijing-to-bar-young-redchip-firms-from-listing-outside-mainland-china-sources-say-5044173"
+    },
+    {
+      "date": "2026-11-22",
       "time": "17:24",
       "source": "Investing.com",
       "impact": "med",
@@ -1871,21 +1885,6 @@
       "title": "L'action Nvidia plonge de 14 % et boucle sa plus longue série de pertes hebdomadaires depuis la crise de 2008",
       "title_en": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
       "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "MarketWatch",
-      "summary": "Selon MarketWatch, les actions de puces ont vu environ 2 300 milliards de dollars de valeur boursière s'évaporer cette semaine, la panique s'étant emparée du commerce lié à l'IA. Ce recul des poids lourds technologiques pèse directement sur le Nasdaq et le S&P 500.",
-      "summary_en": "According to MarketWatch, chip stocks saw about $2.3 trillion in market value wiped out this week as panic gripped the AI trade. The slide in tech heavyweights weighs directly on the Nasdaq and S&P 500.",
-      "time": "17:44",
-      "title": "Les titres de semi-conducteurs perdent 2 300 G$ en une semaine, la panique gagne le commerce de l'IA",
-      "title_en": "Chip stocks see $2.3 trillion weekly wipeout as panic grips the AI trade",
-      "url": "https://www.marketwatch.com/story/chip-stocks-see-2-3-trillion-weekly-wipeout-as-panic-grips-the-ai-trade-371f2f03"
     }
   ],
   "live": {
