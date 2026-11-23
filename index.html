@@ -852,6 +852,7 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 .chgi{display:grid;grid-template-columns:150px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--line)} .chgi span{font:600 11px/1.4 var(--f-mono);color:var(--gold)} .chgi p{margin:0!important;font-size:13px!important}
 @media (max-width:640px){ .supd .supdt{display:none} .chgi{grid-template-columns:1fr;gap:2px} }
 td.name small.updtag,small.updtag{display:block;font:600 9.5px/1.4 var(--f-mono);letter-spacing:.04em;color:var(--gold);opacity:.75;margin-top:2px;white-space:nowrap}
+table.cal tr.hol td{background:color-mix(in srgb,var(--gold) 9%,transparent);color:var(--fg);font-weight:600} table.cal tr.hol td.name small{font-weight:400} table.cal tr.hol.half td{background:color-mix(in srgb,var(--gold) 5%,transparent)} table.cal tr.hol.past td{opacity:.55} .holsum{color:var(--gold);font-weight:600}
 .xbtn.inl{position:static;margin-left:8px;flex:none;align-self:center}
 .chfs .xbtn{opacity:1}
 .chfs .tradingview-widget-container,.chfs .tradingview-widget-container__widget{height:100%!important}
@@ -1813,6 +1814,30 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     return ma===mb ? `Semaine du ${a.getDate()} au ${b.getDate()} ${mb}` : `Semaine du ${a.getDate()} ${ma} au ${b.getDate()} ${mb}`;
   }
   state.calWeek = null;
+  // Jours fériés américains : banques (calendrier de la Réserve fédérale) et bourse (NYSE, Nasdaq)
+  // b = banques fermées, x = bourse fermée, h = bourse ferme à 13 h
+  const US_HOL = [
+    ['2026-11-26','Thanksgiving','Thanksgiving','bx'], ['2026-11-27','Lendemain de Thanksgiving','Day after Thanksgiving','h'],
+    ['2026-12-24','Veille de Noël','Christmas Eve','h'], ['2026-12-25','Noël','Christmas Day','bx'],
+    ['2027-01-01','Jour de l’An','New Year’s Day','bx'], ['2027-01-18','Martin Luther King Jr.','Martin Luther King Jr. Day','bx'],
+    ['2027-02-15','Jour des présidents','Presidents’ Day','bx'], ['2027-03-26','Vendredi saint','Good Friday','x'],
+    ['2027-05-31','Memorial Day','Memorial Day','bx'], ['2027-06-18','Juneteenth (observé)','Juneteenth (observed)','x'],
+    ['2027-07-05','Fête de l’Indépendance (observée)','Independence Day (observed)','bx'], ['2027-09-06','Fête du Travail','Labor Day','bx'],
+    ['2027-10-11','Columbus Day','Columbus Day','b'], ['2027-11-11','Jour des anciens combattants','Veterans Day','b'],
+    ['2027-11-25','Thanksgiving','Thanksgiving','bx'], ['2027-11-26','Lendemain de Thanksgiving','Day after Thanksgiving','h'],
+    ['2027-12-24','Noël (observé)','Christmas (observed)','x']
+  ];
+  function holItems(){
+    return US_HOL.map(([date, fr, en, f])=>{
+      const bank = f.includes('b'), ex = f.includes('x'), half = f.includes('h');
+      const name = bank ? L('Banques US fermées','US banks closed') : ex ? L('Bourse US fermée','US stock market closed') : L('Bourse US : fermeture à 13 h','US stock market: 1 p.m. close');
+      const note = (isEN()?en:fr) + ' · ' + (bank && ex ? L('banques et bourse (NYSE, Nasdaq) fermées','banks and stock market (NYSE, Nasdaq) closed')
+        : bank ? L('banques fermées, bourse ouverte','banks closed, stock market open')
+        : ex ? L('bourse fermée, banques ouvertes','stock market closed, banks open')
+        : L('bourse et marché obligataire ferment plus tôt, banques ouvertes','stocks and bonds close early, banks open'));
+      return {date, time:'', kind:'hol', name, note, half};
+    });
+  }
   function renderCalendar(){
     const box = $('calBox'); if(!box) return;
     const today = torontoToday();
@@ -1820,6 +1845,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const items = all.filter(it=> state.calAsset==='all' || !(it.id || it.assets) || impOf(it, state.calAsset)>0);
     if(!all.length){ box.innerHTML = '<p class="empty-hist" style="padding:14px">Le calendrier se remplit à la prochaine mise à jour.</p>'; return; }
     const weeks = [...new Set(all.map(it=>mondayOf(it.date)))].sort();
+    // jours fériés des semaines affichées
+    holItems().filter(h=>weeks.includes(mondayOf(h.date))).forEach(h=>{ all.push(h); items.push(h); });
+    all.sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||''))); items.sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
     if(!state.calWeek || !weeks.includes(state.calWeek)){
       const cur = curMon(today);
       state.calWeek = weeks.find(w=>w>=cur && all.some(it=>mondayOf(it.date)===w && (it.date>=today || w===cur))) || weeks.find(w=>w>=cur) || weeks[weeks.length-1];
@@ -1838,6 +1866,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         const lbl = d.toLocaleDateString('fr-CA',{weekday:'long', day:'numeric', month:'long'});
         h += `<tr class="cat"><th colspan="6">${esc(lbl.charAt(0).toUpperCase()+lbl.slice(1))}${day===today?' <em>· aujourd’hui</em>':''}</th></tr>`;
       }
+      if(it.kind==='hol'){ h += `<tr class="hol${it.half?' half':''}${it.date<today?' past':''}"><td class="num t">${it.half?'13:00':'🏦'}</td><td class="name" colspan="5">${esc(it.name)}<small>${esc(it.note)}</small></td></tr>`; return; }
       const ind = INDICATORS.find(i=>i.id===it.id);
       const u = it.unit!==undefined ? it.unit : (ind ? ind.unit : '');
       const past = it.date < today || it.a!=null;
@@ -1848,9 +1877,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         + `<td class="num">${it.a!=null?`<b>${fmt(it.a,u)}</b>`:(!past && it.time ? `<span class="cd" data-t="${etEpoch(it.date,it.time)}"></span>` : '—')}</td>`
         + `<td class="c">${stars(imp)}</td></tr>`;
     });
-    const n = wk.length, n3 = wk.filter(it=>impOf(it,state.calAsset)>=2).length;
-    const sum = n ? `<p class="wsum">${n} publication${n>1?'s':''}${n3?` · ${n3} très importante${n3>1?'s':''} (★★)`:''}</p>` : '';
-    box.innerHTML = nav + sum + (n ? `<table class="cal"><thead><tr><th>Heure</th><th>Donnée</th><th class="r">Préc.</th><th class="r">Prévu</th><th class="r">Réel</th><th class="c">Import.</th></tr></thead><tbody>${h}</tbody></table>`
+    const wkH = wk.filter(it=>it.kind==='hol'), wkD = wk.filter(it=>it.kind!=='hol');
+    const n = wkD.length, n3 = wkD.filter(it=>impOf(it,state.calAsset)>=2).length, nb = wkH.filter(x=>x.name===L('Banques US fermées','US banks closed')).length;
+    const sum = (n || wkH.length) ? `<p class="wsum">${n} publication${n>1?'s':''}${n3?` · ${n3} très importante${n3>1?'s':''} (★★)`:''}${wkH.length?` · <b class="holsum">🏦 ${wkH.map(x=>new Date(x.date+'T12:00:00').toLocaleDateString(LOC(),{weekday:'long'})+' : '+x.name).join(' · ')}</b>`:''}</p>` : '';
+    box.innerHTML = nav + sum + ((n || wkH.length) ? `<table class="cal"><thead><tr><th>Heure</th><th>Donnée</th><th class="r">Préc.</th><th class="r">Prévu</th><th class="r">Réel</th><th class="c">Import.</th></tr></thead><tbody>${h}</tbody></table>`
       : '<p class="empty-hist" style="padding:14px">Aucune publication importante pour cet actif cette semaine.</p>');
     box.querySelectorAll('.wbtn').forEach(b=>b.addEventListener('click', ()=>{ const j = wi + (+b.dataset.w); if(weeks[j]){ state.calWeek = weeks[j]; renderCalendar(); } }));
   }
