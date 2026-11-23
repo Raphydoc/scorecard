@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T17:11:15Z",
+ "updatedAt": "2026-11-23T17:48:25Z",
  "econ": {
   "values": {
    "adp": {
@@ -1410,6 +1410,67 @@
  "news": [
   {
    "date": "2026-11-23",
+   "time": "12:31",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd",
+    "nasdaq",
+    "usd"
+   ],
+   "title": "Le rebond du bitcoin s'essouffle déjà pendant que le « trade » de l'IA revient en force",
+   "title_en": "Bitcoin rebound already losing steam as AI trade returns with a bang",
+   "summary": "Le bitcoin a franchi les 64 000 $ avant de retomber sous 62 000 $ à la mi-journée, alors que Nvidia bondit d'environ 32 % avec le retour de Jensen Huang. Depuis le départ de Huang le 12 novembre, le BTC est passé de 74 000 $ à moins de 56 000 $ et n'a regagné qu'environ le quart de ses pertes, contre plus des quatre cinquièmes pour Nvidia. Les marchés jugent quasi certaine une hausse de taux de la Fed en décembre, le taux 2 ans est près de 4,7 % et le dollar est à son plus fort depuis mars 2025; l'indice PCE d'octobre sort mercredi.",
+   "summary_en": "Bitcoin topped $64,000 before slipping back below $62,000 by midday, while Nvidia jumped about 32% on Jensen Huang's return. Since Huang's November 12 departure, BTC fell from $74,000 to below $56,000 and has clawed back only about a quarter of its losses, versus more than four-fifths for Nvidia. Markets see a December Fed hike as near certain, the 2-year yield is near 4.7% and the dollar is at its strongest since March 2025; October PCE is due Wednesday.",
+   "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "12:30",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "usdcad"
+   ],
+   "title": "Le pétrole chute de plus de 3 % avec la hausse des flux du Moyen-Orient et la reprise d'un oléoduc libyen",
+   "title_en": "Oil drops more than 3% on increased Middle East flows, Libyan pipeline restart",
+   "summary": "Selon le titre d'Investing.com, les cours du pétrole reculent de plus de 3 % lundi, plombés par l'augmentation des flux en provenance du Moyen-Orient et la remise en service d'un oléoduc en Libye. Le recul accentue la pression sur le WTI et sur le huard, sensible au brut. (Article complet non accessible; résumé limité au titre.)",
+   "summary_en": "According to Investing.com's headline, oil prices fell more than 3% on Monday, weighed by increased flows from the Middle East and the restart of a Libyan pipeline. The drop adds pressure on WTI and on the oil-sensitive Canadian dollar. (Full article not accessible; summary limited to the headline.)",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-amid-equity-selloff-though-iran-war-attacks-limit-losses-5044242"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "12:16",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Trump dit à CNBC « J'ai conclu l'entente » pour le retour de Jensen Huang chez Nvidia",
+   "title_en": "Trump tells CNBC ‘I made the deal’ to reinstate Nvidia’s Jensen Huang",
+   "summary": "Le président Donald Trump affirme sur CNBC avoir lui-même conclu l'entente ayant mené au retour de Jensen Huang à la tête de Nvidia. Ce retour alimente lundi le fort rebond des titres technologiques. (Article complet non accessible; résumé limité au titre.)",
+   "summary_en": "President Donald Trump told CNBC he personally made the deal that led to Jensen Huang's reinstatement as Nvidia CEO. The return is fueling Monday's strong rebound in tech stocks. (Full article not accessible; summary limited to the headline.)",
+   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "12:12",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Texas Instruments bondit de 10 % sur une hausse de recommandation de Cantor Fitzgerald et le rallye des puces",
+   "title_en": "Texas Instruments surges 10% on Cantor Fitzgerald upgrade and chip rally",
+   "summary": "L'action de Texas Instruments grimpe de 10 % après que Cantor Fitzgerald l'a relevée à « Surpondérer » et a porté sa cible de 340 $ à 385 $, en visant un BPA 2028 supérieur à 15 $ (consensus : 13,88 $). L'indice des semiconducteurs PHLX gagne près de 14 % et le Nasdaq presque 7 %, après la pire semaine du S&P 500 depuis avril 2025.",
+   "summary_en": "Texas Instruments shares surged 10% after Cantor Fitzgerald upgraded them to Overweight and raised its target to $385 from $340, based on 2028 EPS above $15 (consensus $13.88). The PHLX Semiconductor Index rose nearly 14% and the Nasdaq almost 7%, after the S&P 500's steepest weekly drop since April 2025.",
+   "url": "https://www.investing.com/news/stock-market-news/texas-instruments-surges-10-on-cantor-fitzgerald-upgrade-and-chip-rally-5046130"
+  },
+  {
+   "date": "2026-11-23",
    "time": "11:24",
    "source": "Investing.com (Reuters)",
    "impact": "med",
@@ -1621,20 +1682,6 @@
    "title": "Le bitcoin remonte au-dessus de 61 000 $ avec le rebond des actions après la déroute de l'IA",
    "title_en": "Bitcoin climbs back above $61,000 as stocks rebound from AI rout",
    "url": "https://www.coindesk.com/markets/2026/11/23/live-updates-bitcoin-climbs-back-above-usd61-000-as-stocks-rebound-from-ai-rout"
-  },
-  {
-   "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Les cours du pétrole reculent lundi matin, le rétablissement des approvisionnements l'emportant sur la crainte d'une nouvelle escalade avec l'Iran, selon Investing.com. Le brut WTI reste tiraillé entre l'offre abondante et le risque géopolitique dans le Golfe (article non consulté au complet; chiffres non disponibles).",
-   "summary_en": "Oil prices fell Monday morning as recovering supplies outweighed fears of renewed escalation with Iran, according to Investing.com. WTI crude remains caught between ample supply and geopolitical risk in the Gulf (full article not accessed; figures unavailable).",
-   "time": "06:21",
-   "title": "Le pétrole recule avec le rétablissement de l'offre, malgré la crainte d'une nouvelle escalade avec l'Iran",
-   "title_en": "Oil falls amid recovering supplies, Iran re-escalation fears",
-   "url": "https://www.investing.com/news/commodities-news/oil-falls-as-robust-gulf-exports-offset-iran-escalation-supply-glut-risks-5044220"
   },
   {
    "assets": [
@@ -1984,54 +2031,6 @@
    "title": "Dans quelle mesure le S&P 500 est-il exposé à un éclatement du « trade » de l'IA?",
    "title_en": "How exposed is the S&P 500 to an AI trade bust?",
    "url": "https://www.investing.com/news/stock-market-news/how-exposed-is-sp-500-to-an-ai-trade-bust-5044112"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le secrétaire au Trésor Scott Bessent affirme que les États-Unis cherchent à obtenir des réponses sur les ventes de puces de Nvidia à la Chine (résumé basé sur le titre, l'article n'ayant pu être lu). Le dossier des exportations de puces vers la Chine pèse sur le sentiment entourant Nvidia et les valeurs technologiques du Nasdaq et du S&P 500.",
-   "summary_en": "Treasury Secretary Scott Bessent says the United States is seeking answers on Nvidia's chip sales to China (summary based on the headline; the article could not be read). The China chip-export issue weighs on sentiment around Nvidia and the tech-heavy Nasdaq and S&P 500.",
-   "time": "12:54",
-   "title": "Bessent : Washington demande des explications sur les ventes de puces de Nvidia à la Chine",
-   "title_en": "US seeks answers on Nvidia's sale of chips to China, Bessent says",
-   "url": "https://www.investing.com/news/stock-market-news/us-seeks-answers-on-nvidias-sale-of-chips-to-china-bessent-says-5044083"
-  },
-  {
-   "assets": [
-    "spx500",
-    "nasdaq",
-    "usoil"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Après la victoire démocrate aux deux chambres le 3 novembre, le S&P 500 a bondi de 1,6 %, puis a chuté de 10,1 % depuis, sur fond de craintes d'une réglementation plus serrée de l'IA et des centres de données; il était en correction vendredi. UBS juge peu probable que la législation fédérale freine l'IA et estime que les résultats, l'inflation, la Fed, le pétrole et la géopolitique compteront davantage. Le Brent a reculé de près de 11 % depuis le 3 novembre sur l'espoir d'une issue diplomatique au conflit avec l'Iran.",
-   "summary_en": "After Democrats won both chambers on November 3, the S&P 500 bounced 1.6% but has since fallen 10.1% on fears of tighter regulation of AI and data centers, entering correction territory on Friday. UBS sees federal legislation as unlikely to materially slow AI and says earnings, inflation, Fed policy, oil and geopolitics will matter more. Brent is down nearly 11% since November 3 on hopes of a diplomatic end to the Iran conflict.",
-   "time": "10:56",
-   "title": "Que signifient les élections de mi-mandat pour les investisseurs? UBS mise sur les fondamentaux",
-   "title_en": "What do the U.S. midterms mean for investors? UBS points to fundamentals",
-   "url": "https://www.investing.com/news/stock-market-news/what-do-the-us-midterms-mean-for-investors-5044046"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "usdjpy",
-    "audusd"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Taïwan interdit la vente à découvert sous la clôture de la veille et relève la marge minimale à 150 % (contre 130 %) après sa pire semaine depuis août 1990; la Corée du Sud prépare un fonds de soutien et assouplit les rachats d'actions, le KOSPI ayant chuté de plus de 5 % vendredi et de près de 47 % depuis son record de juin. En Chine, les Bourses de Shanghai et Shenzhen abaissent le ratio de marge de financement à 80 % (contre 100 %). Ces mesures du week-end précèdent l'ouverture asiatique de lundi, après la pire semaine de Wall Street depuis avril 2025 et l'entrée du S&P 500 en correction.",
-   "summary_en": "Taiwan banned short-selling below the previous close and raised the minimum margin to 150% from 130% after its worst week since August 1990; South Korea is preparing a market support fund and easing buyback limits, with the KOSPI down more than 5% on Friday and nearly 47% from its June record. In China, the Shanghai and Shenzhen exchanges cut the financing margin ratio to 80% from 100%. The weekend measures come ahead of Monday's Asian open, after Wall Street's worst week since April 2025 and the S&P 500's slide into correction.",
-   "time": "10:12",
-   "title": "Taïwan, la Chine et la Corée du Sud prennent des mesures pour soutenir leurs Bourses après la déroute de l'IA",
-   "title_en": "Asian countries take steps to aid stock markets after AI rout",
-   "url": "https://www.investing.com/news/stock-market-news/asian-countries-take-steps-to-aid-stock-markets-after-ai-rout-5044034"
   }
  ],
  "live": {
