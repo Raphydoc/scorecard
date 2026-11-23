@@ -85,10 +85,13 @@ const BANKS = [
   ['BNP.PA','BNP Paribas','FR',48.87,2.33],['8306.T','MUFG','JP',35.68,139.76],['8316.T','SMBC Group','JP',35.68,139.76],['8411.T','Mizuho','JP',35.68,139.77],['8604.T','Nomura','JP',35.68,139.77]
 ];
 
-function quoteOf(res) {
+// variation 1D = depuis l'ouverture de la séance : barre du jour (actions, indices, contrats à terme, crypto);
+// forex et indice dollar : ouverture à 17 h, heure de New York (openFx, calculée sur des barres d'une heure)
+function quoteOf(res, openFx) {
   if (!res) return null; const c = res.rows.map(r => r[4]), N = c.length; if (N < 2) return null;
   const last = c[N - 1], pc = (n) => N > n ? r2((last / c[N - 1 - n] - 1) * 100, 2) : null;
-  return {last: r2(last, dp(last)), d1: pc(1), w1: pc(5), m1: pc(21), spark: c.slice(-30).map(x => r2(x, dp(x))), ccy: res.meta.currency || null};
+  const o = openFx || res.rows[N - 1][1];
+  return {last: r2(last, dp(last)), d1: o ? r2((last / o - 1) * 100, 2) : pc(1), o: r2(o, dp(o)), w1: pc(5), m1: pc(21), spark: c.slice(-30).map(x => r2(x, dp(x))), ccy: res.meta.currency || null};
 }
 
 // ---------- outils séries ----------
@@ -116,7 +119,10 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
   M.watch = {};
   for (const [g, list] of Object.entries(W)) {
     const res = await pool(list, x => chart(x[0], '3mo', '1d'));
-    M.watch[g] = list.map((x, i) => { const q = quoteOf(res[i]); return q ? Object.assign({s: x[0], n: x[1], cc: x[2] || null}, q) : null; }).filter(Boolean);
+    const NYD17 = t => new Intl.DateTimeFormat('en-CA', {timeZone: 'America/New_York', year: 'numeric', month: '2-digit', day: '2-digit'}).format(new Date((t + 7 * 3600) * 1000));
+    const fxo = await pool(list, async x => { if (!(/=X$/.test(x[0]) || x[0] === 'DX-Y.NYB')) return null;
+      const h = await chart(x[0], '5d', '60m'); if (!h) return null; const k = NYD17(h.rows[h.rows.length - 1][0]); const f = h.rows.find(r => NYD17(r[0]) === k); return f ? f[1] : null; });
+    M.watch[g] = list.map((x, i) => { const q = quoteOf(res[i], fxo[i]); return q ? Object.assign({s: x[0], n: x[1], cc: x[2] || null}, q) : null; }).filter(Boolean);
     console.error('watch', g, M.watch[g].length, '/', list.length);
   }
   // banques

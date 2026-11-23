@@ -88,10 +88,39 @@ const miss = syms.filter(s => !got[s]);
 const fb = await pool(miss, quoteChart, 12); miss.forEach((s, i) => { if (fb[i]) got[s] = fb[i]; });
 console.error('lots', viaSpark, 'repli', miss.length);
 const metas = syms.map(s => got[s]);
+// ---------- ouverture de la séance (la variation 1D se calcule depuis l'ouverture) ----------
+// actions et indices : 1re cotation de la séance régulière (ex. 9 h 30 à New York)
+// forex, contrats à terme et indice dollar : la journée commence à 17 h, heure de New York (1re barre après 17 h)
+// crypto : la journée commence à minuit UTC
+const op = Object.assign({}, prev.op || {});
+const kind = s => /-USD$/.test(s) ? 'cry' : (/=X$|=F$/.test(s) || s === 'DX-Y.NYB') ? 'fx' : 'ex';
+const dateIn = (tz, sec) => new Intl.DateTimeFormat('en-CA', {timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit'}).format(new Date(sec * 1000));
+const sessKey = (s, sec, tz) => kind(s) === 'cry' ? new Date(sec * 1000).toISOString().slice(0, 10) : kind(s) === 'fx' ? dateIn('America/New_York', sec + 7 * 3600) : dateIn(tz || 'America/New_York', sec);
+async function openOf(s, key, tz) {
+  const ex = kind(s) === 'ex';
+  for (const host of ['query1', 'query2']) {
+    const j = await getJSON(`https://${host}.finance.yahoo.com/v8/finance/chart/${encodeURIComponent(s)}?range=${ex ? '1d&interval=5m' : '2d&interval=15m'}&includePrePost=false`);
+    const r = j && j.chart && j.chart.result && j.chart.result[0]; if (!r || !r.timestamp) continue;
+    const o = r.indicators.quote[0].open;
+    for (let i = 0; i < r.timestamp.length; i++) if (o[i] != null && sessKey(s, r.timestamp[i], tz || (r.meta && r.meta.exchangeTimezoneName)) === key) return o[i];
+    return null;
+  }
+  return null;
+}
+const need = [];
+syms.forEach((s, i) => { const m = metas[i]; if (!m || !m.regularMarketTime) return;
+  const key = sessKey(s, m.regularMarketTime, m.exchangeTimezoneName); m._key = key;
+  if (!op[s] || op[s][0] !== key) need.push([s, key, m.exchangeTimezoneName]); });
+const opn = await pool(need, ([s, key, tz]) => openOf(s, key, tz), 8);
+need.forEach(([s, key], i) => { if (opn[i] != null) op[s] = [key, +opn[i].toPrecision(8)]; });
+console.error('ouvertures', need.length, 'à chercher,', opn.filter(x => x != null).length, 'trouvées');
 let ok = 0;
 syms.forEach((s, i) => { const m = metas[i]; if (!m) return; ok++;
   const p = m.regularMarketPrice, pc = m.chartPreviousClose ?? m.previousClose ?? lastClose[s];
-  q[s] = [+p.toFixed(dp(p)), pc ? +((p / pc - 1) * 100).toFixed(2) : null, (m.regularMarketTime || 0) * 1000]; });
+  // pas encore d'ouverture connue (ex. juste après 17 h) : le dernier cours de la séance précédente sert d'ouverture
+  const o = op[s] && op[s][0] === m._key ? op[s][1] : pc;
+  q[s] = [+p.toFixed(dp(p)), o ? +((p / o - 1) * 100).toFixed(2) : null, (m.regularMarketTime || 0) * 1000, o ? +o.toPrecision(8) : null]; });
+for (const k of Object.keys(op)) if (!syms.includes(k)) delete op[k];
 console.error('cours', ok, '/', syms.length);
 // tendance de la SEMAINE (Top Setups, scorecard) : haussière si le prix est au-dessus de l'ouverture de la semaine ET de la clôture de la semaine passée, baissière s'il est en dessous des deux; le taux 10 ans reste sur la journée
 async function bars5(sym) {
@@ -156,5 +185,5 @@ if (NEWS === '1') {
   console.error('manchettes', news.length);
 }
 
-const out = {asOf: new Date().toISOString(), q, news, tr, y10};
+const out = {asOf: new Date().toISOString(), q, op, news, tr, y10};
 if (ok || news.length) fs.writeFileSync(OUT, JSON.stringify(out));
