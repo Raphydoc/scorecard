@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T04:47:17Z",
+  "updatedAt": "2026-11-23T05:47:32Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,40 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "23:45",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd",
+        "usd",
+        "nasdaq",
+        "xauusd"
+      ],
+      "title": "La déroute des marchés efface les paris sur une hausse de 50 points de base de la Fed en décembre",
+      "title_en": "Market rout kills 50 basis points December Fed rate hike bets",
+      "summary": "Les contrats à terme sur les fonds fédéraux n'anticipent plus de hausse de 50 points de base en décembre (environ 10 % de probabilité il y a une dizaine de jours selon CME FedWatch); une hausse de 25 points de base, vers 4 %–4,25 %, reste le scénario attendu, avec près de 60 % de chances d'une autre hausse en janvier. Le Nasdaq a chuté de 10,4 % la semaine dernière, sa pire semaine depuis mars 2020, et le bitcoin est brièvement passé sous 55 500 $, son plus bas en deux ans, avant de remonter au-dessus de 60 000 $. Le PCE de base d'octobre, attendu cette semaine, sera déterminant.",
+      "summary_en": "Fed funds futures no longer price a 50 bp hike in December (about 10% odds roughly ten days ago per CME FedWatch); a 25 bp hike to 4%–4.25% remains the base case, with nearly 60% odds of another hike in January. The Nasdaq fell 10.4% last week, its worst week since March 2020, and bitcoin briefly dipped below $55,500, a two-year low, before recovering above $60,000. October core PCE, due this week, will be key.",
+      "url": "https://www.coindesk.com/markets/2026/11/23/market-rout-kills-50-basis-points-december-fed-rate-hike-bets"
+    },
+    {
+      "date": "2026-11-22",
+      "time": "23:35",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "usdjpy",
+        "audusd",
+        "nzdusd"
+      ],
+      "title": "Devises asiatiques partagées : le dollar recule de son sommet de 19 mois; le yen et le won faiblissent",
+      "title_en": "Asia FX mixed as dollar retreats from 19-month high; yen, won weaken",
+      "summary": "Selon Investing.com, les devises asiatiques évoluent en ordre dispersé en ce début de semaine : le dollar américain se replie de son plus haut en 19 mois, tandis que le yen japonais et le won sud-coréen s'affaiblissent. Le recul du billet vert compte pour l'indice DXY et les paires USD/JPY, AUD/USD et NZD/USD à l'ouverture asiatique.",
+      "summary_en": "According to Investing.com, Asian currencies are mixed at the start of the week: the U.S. dollar is pulling back from a 19-month high, while the Japanese yen and South Korean won weaken. The greenback's retreat matters for the DXY and for USD/JPY, AUD/USD and NZD/USD at the Asian open.",
+      "url": "https://www.investing.com/news/forex-news/asia-fx-mixed-as-dollar-retreats-from-19month-high-yen-won-weaken-5044324"
+    },
+    {
+      "date": "2026-11-22",
       "time": "22:57",
       "source": "Investing.com",
       "impact": "med",
@@ -1860,38 +1894,6 @@
       "title": "Intesa Sanpaolo lance une offre de 34,5 G€ en espèces et en actions sur Monte dei Paschi",
       "title_en": "Intesa Sanpaolo launches €34.5bn cash-and-share offer for Monte dei Paschi",
       "url": "https://www.investing.com/news/stock-market-news/intesa-sanpaolo-launches-345bn-cashandshare-offer-for-monte-dei-paschi-5043303"
-    },
-    {
-      "assets": [
-        "nasdaq"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon Investing.com, le président sud-coréen Lee Jae-myung a pressé d'accélérer les investissements en intelligence artificielle lors de la visite d'un projet de centre de données de 5,2 G$. Le message de soutien à l'IA arrive alors que les titres de semi-conducteurs et le Nasdaq sortent d'une semaine de lourdes pertes.",
-      "summary_en": "According to Investing.com, South Korean President Lee Jae-myung urged faster investment in artificial intelligence during a visit to a $5.2 billion data center project. The pro-AI message comes as chip stocks and the Nasdaq come off a week of heavy losses.",
-      "time": "02:38",
-      "title": "Le président sud-coréen Lee réclame des investissements plus rapides en IA lors de la visite d'un centre de données de 5,2 G$",
-      "title_en": "South Korea's Lee urges faster AI investment during $5.2bn data center visit",
-      "url": "https://www.investing.com/news/stock-market-news/south-koreas-lee-urges-faster-ai-investment-during-52bn-data-center-visit-5043267"
-    },
-    {
-      "assets": [
-        "usd",
-        "nasdaq",
-        "spx500",
-        "eurusd",
-        "usdjpy"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon Deutsche Bank, les revenus d'exportation de puces asiatiques se dirigent de plus en plus vers les actions américaines plutôt que vers les obligations du Trésor : les achats étrangers d'actions américaines ont dépassé 1 000 G$ sur un an, plus du double des allocations aux bons du Trésor. Les exportations de semi-conducteurs de la Corée du Sud ont bondi de plus de 200 % sur un an, et environ 70 % des avoirs boursiers étrangers coréens sont en actions américaines. La banque prévient qu'un ralentissement des investissements en IA pourrait affaiblir à la fois la demande de puces, les revenus d'exportation asiatiques et les achats étrangers d'actions américaines, donc le soutien au dollar.",
-      "summary_en": "Deutsche Bank says Asian chip-export revenues are increasingly flowing into U.S. equities rather than Treasuries, with foreign purchases of U.S. stocks exceeding $1 trillion over the past year, more than double allocations to Treasuries. South Korea's semiconductor exports are up more than 200% year over year, and about 70% of Korean overseas equity holdings are in U.S. stocks. The bank warns that an AI investment slowdown could simultaneously hit chip demand, Asian export earnings and foreign buying of U.S. equities, and thus support for the dollar.",
-      "time": "01:58",
-      "title": "Deutsche Bank : les revenus des puces IA redessinent la domination du dollar",
-      "title_en": "How are AI chip flows reshaping dollar dominance? Deutsche Bank explains",
-      "url": "https://www.investing.com/news/stock-market-news/how-are-ai-chip-flows-reshaping-dollar-dominance-deutsche-bank-explains-5043246"
     }
   ],
   "live": {
