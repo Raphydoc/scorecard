@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T07:13:02Z",
+ "updatedAt": "2026-11-23T07:47:49Z",
  "econ": {
   "values": {
    "adp": {
@@ -1276,6 +1276,20 @@
  "news": [
   {
    "date": "2026-11-23",
+   "time": "01:49",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Vår Energi achète les actifs norvégiens de ConocoPhillips pour 4,43 G$",
+   "title_en": "Vår Energi to buy ConocoPhillips' Norway assets in $4.43 bln deal",
+   "summary": "Vår Energi acquiert les activités amont de ConocoPhillips en Norvège (dont la zone Greater Ekofisk et le terminal de Teesside) pour une valeur d'entreprise de 4,425 G$, avec environ 2,5 G$ payables à la clôture prévue vers la fin du T1 2027. Le portefeuille compte 13 champs en production et 414 millions de bep de réserves 2P; Vår Energi vise désormais plus de 500 000 bep/j jusqu'au milieu des années 2030. Une consolidation majeure en mer du Nord qui touche l'offre européenne de pétrole et de gaz.",
+   "summary_en": "Vår Energi is acquiring ConocoPhillips' Norwegian upstream business (including the Greater Ekofisk Area and Teesside terminal) for an enterprise value of $4.425 billion, with about $2.5 billion payable at completion expected around end-Q1 2027. The portfolio includes 13 producing fields and 414 million boe of 2P reserves; Vår Energi now targets above 500,000 boe/d into the mid-2030s. A major North Sea consolidation affecting European oil and gas supply.",
+   "url": "https://www.investing.com/news/stock-market-news/var-energi-to-buy-conocophillips-norway-assets-in-443-bln-deal-93CH-5044458"
+  },
+  {
+   "date": "2026-11-23",
    "time": "01:23",
    "source": "Investing.com",
    "impact": "med",
@@ -1881,21 +1895,6 @@
    "title": "La chute de l'ether met BTCS, trésor crypto coté au Nasdaq, sous la menace d'une liquidation de son prêt de 54 M$ sur Aave",
    "title_en": "Ether treasury firm BTCS warns SEC its $54 million Aave loan could be liquidated",
    "url": "https://www.coindesk.com/markets/2026/11/21/ether-treasury-firm-btcs-warns-sec-its-usd54-million-aave-loan-could-be-liquidated"
-  },
-  {
-   "assets": [
-    "usoil",
-    "usdcad"
-   ],
-   "date": "2026-11-21",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Goldman Sachs s'attend à ce que le Brent se négocie en moyenne à 88 $ le baril en 2027 et glisse à 78 $ d'ici décembre; la banque situe la juste valeur à 90 $ aujourd'hui, mais la voit reculer avec le retour à un marché excédentaire. L'offre du Moyen-Orient remonterait au-dessus de sa moyenne de 2025 malgré les perturbations au détroit d'Ormuz, alors que le diesel de gros américain resterait cher, à 150 $ le baril en moyenne en 2027. Les risques vont dans les deux sens pour le pétrole WTI et les devises liées, comme le huard : attaques sur le transport maritime à la hausse, offre plus forte ou demande plus faible à la baisse.",
-   "summary_en": "Goldman Sachs expects Brent to average $88 a barrel in 2027, easing to $78 by December; it puts fair value at $90 today but sees it falling as the market returns to surplus. Middle East supply is seen rising above its 2025 average despite Strait of Hormuz disruptions, while U.S. wholesale diesel stays expensive, averaging $150 a barrel in 2027. Risks are two-sided for WTI and oil-linked currencies such as the Canadian dollar: shipping attacks on the upside, stronger supply or weaker demand on the downside.",
-   "time": "07:20",
-   "title": "Goldman Sachs prévoit un Brent à 88 $ en moyenne en 2027, puis 78 $ en décembre",
-   "title_en": "Goldman Sachs sees Brent averaging $88 in 2027, easing to $78 by December",
-   "url": "https://www.investing.com/news/commodities-news/goldman-is-out-with-its-2027-forecast-for-brent-oil-prices-5043425"
   }
  ],
  "live": {
