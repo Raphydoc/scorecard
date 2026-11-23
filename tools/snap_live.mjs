@@ -3,7 +3,8 @@
 // la Surveillance des marchés et le Fil en direct. Appelé en boucle par .github/workflows/direct.yml.
 // Aucune clé : données publiques.
 import fs from 'node:fs';
-const [OUT = 'live.json', NEWS = '1'] = process.argv.slice(2);
+// MODE 'fast' : cours seulement (environ aux 15 secondes); 'full' : cours + tendances + 10 ans (chaque minute)
+const [OUT = 'live.json', NEWS = '1', MODE = 'full'] = process.argv.slice(2);
 const UA = {'User-Agent': 'Mozilla/5.0 (scorecard-macro; GitHub Actions)', 'Accept': '*/*'};
 const sleep = ms => new Promise(r => setTimeout(r, ms));
 let prev = {}; try { prev = JSON.parse(fs.readFileSync(OUT, 'utf8')); } catch (e) {}
@@ -68,7 +69,25 @@ async function quoteChart(sym) {
 }
 // le dernier cours de la séance précédente (même référence que la variation 1D de markets.json)
 const lastClose = {}; Object.values(M.watch || {}).flat().forEach(x => { if (x.last != null && x.d1 != null) lastClose[x.s] = x.last / (1 + x.d1 / 100); });
-const metas = await pool(syms, quoteChart);
+// cours en lots de 20 symboles (endpoint « spark » de Yahoo, une requête par lot); repli symbole par symbole pour ceux qui manquent
+async function sparkBatch(list) {
+  const out = {};
+  for (const host of ['query1', 'query2']) {
+    const j = await getJSON(`https://${host}.finance.yahoo.com/v7/finance/spark?symbols=${list.map(encodeURIComponent).join(',')}&range=1d&interval=5m&includePrePost=false`);
+    const res = (j && j.spark && j.spark.result) || [];
+    res.forEach(r => { const m = r && r.response && r.response[0] && r.response[0].meta; if (m && m.regularMarketPrice != null) out[r.symbol] = m; });
+    if (j && !Array.isArray(j) && !j.spark) Object.entries(j).forEach(([k, v]) => { if (v && v.close && v.close.length && !out[k]) out[k] = {regularMarketPrice: v.close.filter(x => x != null).pop(), chartPreviousClose: v.chartPreviousClose ?? v.previousClose, regularMarketTime: v.timestamp && v.timestamp[v.timestamp.length - 1]}; });
+    if (Object.keys(out).length) break;
+  }
+  return out;
+}
+const chunks = []; for (let i = 0; i < syms.length; i += 20) chunks.push(syms.slice(i, i + 20));
+const got = Object.assign({}, ...(await pool(chunks, sparkBatch, 5)));
+const viaSpark = Object.keys(got).length;
+const miss = syms.filter(s => !got[s]);
+const fb = await pool(miss, quoteChart, 12); miss.forEach((s, i) => { if (fb[i]) got[s] = fb[i]; });
+console.error('lots', viaSpark, 'repli', miss.length);
+const metas = syms.map(s => got[s]);
 let ok = 0;
 syms.forEach((s, i) => { const m = metas[i]; if (!m) return; ok++;
   const p = m.regularMarketPrice, pc = m.chartPreviousClose ?? m.previousClose ?? lastClose[s];
@@ -85,10 +104,10 @@ async function bars5(sym) {
   return null;
 }
 const trSyms = Object.entries(AS).concat([['__y10', '^TNX']]);
-const trBars = await pool(trSyms, ([, s]) => bars5(s), 6);
+const trBars = MODE === 'fast' ? [] : await pool(trSyms, ([, s]) => bars5(s), 6);
 const tr = Object.assign({}, prev.tr || {}); let y10 = prev.y10 || null;
-{ const Y = y10Trend(trBars[trSyms.length - 1]); if (Y) y10 = Y; }
-trSyms.forEach(([k], i) => { if (k === '__y10') return; const D = weekStats(trBars[i]); if (!D) return;
+if (MODE !== 'fast') { const Y = y10Trend(trBars[trSyms.length - 1]); if (Y) y10 = Y; }
+if (MODE !== 'fast') trSyms.forEach(([k], i) => { if (k === '__y10') return; const D = weekStats(trBars[i]); if (!D) return;
   const {o, px, pc} = D;
   if (k === '__y10') { const ch = Math.round((px - pc) * 1000) / 1000; y10 = {px: +px.toFixed(3), pc: +pc.toFixed(3), chg: ch, dir: ch >= 0.01 ? 'rising' : ch <= -0.01 ? 'falling' : 'flat'}; return; }
   tr[k] = {t: px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral', px: +px.toFixed(dp(px)), o: +o.toFixed(dp(px)), pc: +pc.toFixed(dp(px)), chg: +((px / pc - 1) * 100).toFixed(2), vsO: +((px / o - 1) * 100).toFixed(2)}; });

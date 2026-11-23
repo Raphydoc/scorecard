@@ -3541,10 +3541,16 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   async function pullLive(){
     if(document.hidden || !['watch','squawk','home','score','top','fund','sent'].includes(state.page)) return;
     try{
-      let j = null; const base = Math.floor((Date.now()-70e3)/6e4);
-      for(let k=0; k<5 && !j; k++){ const key = new Date((base-k)*6e4).toISOString().slice(0,16).replace(/[-:T]/g,'');
+      // fichiers aux 15 secondes (AAAAMMJJHHMMSS); on vise la tranche d'il y a ~30 s (déjà publiée), puis on recule
+      let j = null; const base = Math.floor((Date.now()-30e3)/15e3);
+      for(let k=0; k<16 && !j; k++){ const key = new Date((base-k)*15e3).toISOString().slice(0,19).replace(/[-:T]/g,'');
         if(state.live2 && state.live2._key >= key) return;
         try{ const r = await fetch(LIVE_BASE+key+'.json'); if(r.ok){ j = await r.json(); j._key = key; } }catch(e){} }
+      // ancien format (un fichier par minute), le temps de la transition
+      if(!j){ const b2 = Math.floor((Date.now()-70e3)/6e4);
+        for(let k=0; k<3 && !j; k++){ const key = new Date((b2-k)*6e4).toISOString().slice(0,16).replace(/[-:T]/g,'');
+          if(state.live2 && state.live2._key >= key+'00') return;
+          try{ const r = await fetch(LIVE_BASE+key+'.json'); if(r.ok){ j = await r.json(); j._key = key+'00'; } }catch(e){} } }
       if(!j || !j.asOf || (state.live2 && state.live2.asOf===j.asOf)) return;
       state.live2 = j;
       if(applyAutoTrend() && ['score','top','fund','home'].includes(state.page) && !state.edit && !document.querySelector('.dd.open, .chfs')){ renderAll(); return; }
@@ -3554,7 +3560,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       if(state.page==='sent' && !document.querySelector('.dd.open, .chfs')){ const C = window.Chart, ca = C && C.defaults.animation; if(C) C.defaults.animation = false; state.noAnim = true; renderSent(); if(C) setTimeout(()=>{ C.defaults.animation = ca; }, 1500); }
     }catch(e){}
   }
-  setInterval(pullLive, 15000); document.addEventListener('visibilitychange', pullLive); setTimeout(pullLive, 1200);
+  setInterval(pullLive, 5000); document.addEventListener('visibilitychange', pullLive); setTimeout(pullLive, 1200);
   const ohlcData = () => getJSON('ohlc.json', 'ohlc');
   setInterval(()=>{ if(document.hidden) return; delete state._pmk; delete state._pohlc; if(location.protocol.startsWith('http') && !state.fromDb){ state.mk = null; state.ohlc = null; } }, 30*60e3);
   const FLAG = cc => cc && cc.length===2 && cc!=='EU' ? String.fromCodePoint(...[...cc.toUpperCase()].map(c=>0x1F1A5+c.charCodeAt(0))) : cc==='EU' ? '🇪🇺' : '';
@@ -3757,7 +3763,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <div class="mwctl"><span>${L('VARIATION SUR','CHANGE OVER')}</span><div class="seg" id="mwCh">${[['d1','1D'],['w1','1W'],['m1','1M']].map(([k,t])=>`<button type="button" data-c="${k}" aria-pressed="${state.mwCh===k}">${t}</button>`).join('')}</div>
         <span>${L('ORDRE','ORDER')}</span><div class="seg" id="mwSort">${[['def',L('DÉFAUT','DEFAULT')],['perf','PERFORMANCE'],['az','A-Z']].map(([k,t])=>`<button type="button" data-o="${k}" aria-pressed="${state.mwSort===k}">${t}</button>`).join('')}</div></div>
       <div class="mwcols n${groups.length}">${groups.map(col).join('')}</div>
-      <p class="src">${M.liveAsOf ? L('Source : Yahoo Finance. Le dernier cours et la variation 1D se mettent à jour environ chaque minute (24 h sur 24); 1W et 1M, toutes les heures. Les actions et certains indices peuvent avoir un court délai selon la bourse.','Source: Yahoo Finance. Last price and 1D change refresh about every minute (around the clock); 1W and 1M hourly. Stocks and some indices may be slightly delayed depending on the exchange.') : L('Source : Yahoo Finance (cours différés, mis à jour toutes les heures en semaine). Pour des prix à la seconde, regarde la bande « EN DIRECT » en haut.','Source: Yahoo Finance (delayed quotes, refreshed hourly on weekdays). For live prices, see the LIVE strip at the top.')}</p>`;
+      <p class="src">${M.liveAsOf ? L('Source : Yahoo Finance. Le dernier cours et la variation 1D se mettent à jour environ aux 15 secondes (24 h sur 24); 1W et 1M, toutes les heures. Les actions et certains indices peuvent avoir un court délai selon la bourse.','Source: Yahoo Finance. Last price and 1D change refresh about every 15 seconds (around the clock); 1W and 1M hourly. Stocks and some indices may be slightly delayed depending on the exchange.') : L('Source : Yahoo Finance (cours différés, mis à jour toutes les heures en semaine). Pour des prix à la seconde, regarde la bande « EN DIRECT » en haut.','Source: Yahoo Finance (delayed quotes, refreshed hourly on weekdays). For live prices, see the LIVE strip at the top.')}</p>`;
     const qi = $('mwQ'); qi.addEventListener('input', ()=>{ state.mwQ = qi.value; const pos = qi.selectionStart; renderWatch().then(()=>{ const n = $('mwQ'); if(n){ n.focus(); n.setSelectionRange(pos,pos); } }); });
     box.querySelectorAll('.mwtabs .chip').forEach(b=>b.addEventListener('click', ()=>{ state.mwTab = b.dataset.t; renderWatch(); }));
     box.querySelectorAll('#mwCh button').forEach(b=>b.addEventListener('click', ()=>{ state.mwCh = b.dataset.c; renderWatch(); }));

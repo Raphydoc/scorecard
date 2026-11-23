@@ -3,6 +3,9 @@ on:
   schedule:
     - cron: '11 */3 * * *'   # relance aux 3 heures; chaque passage tourne près de 6 heures (le nouveau remplace l'ancien)
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/direct.yml', 'tools/snap_live.mjs']   # redémarre tout de suite quand la boucle change
 concurrency:
   group: direct
   cancel-in-progress: true
@@ -19,7 +22,7 @@ jobs:
       - uses: actions/setup-node@v4
         with:
           node-version: 22
-      - name: Boucle (cours chaque minute, manchettes aux 2 minutes) → branche direct
+      - name: Boucle (cours aux 15 secondes, tendances chaque minute, manchettes aux 2 minutes) → branche direct
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -34,18 +37,18 @@ jobs:
           end=$((SECONDS + 20700)); i=0
           while [ $SECONDS -lt $end ]; do
             start=$SECONDS
-            news=$(( i % 2 == 0 ? 1 : 0 ))
-            node tools/snap_live.mjs pub/live.json $news || true
+            news=$(( i % 8 == 0 ? 1 : 0 )); mode=$([ $((i % 4)) -eq 0 ] && echo full || echo fast)
+            node tools/snap_live.mjs pub/live.json $news $mode || true
             if [ -f pub/live.json ]; then
               cd pub
-              # un fichier par minute (m/AAAAMMJJHHMM.json) : le cache de raw.githubusercontent.com garde un même chemin 5 minutes
-              key=$(date -u +%Y%m%d%H%M); cp live.json "m/$key.json"
-              ls m/*.json | sort | head -n -8 | xargs -r rm -f
+              # un fichier par tranche de 15 secondes (m/AAAAMMJJHHMMSS.json, SS = 00/15/30/45) : le cache de raw.githubusercontent.com garde un même chemin 5 minutes
+              sec=$(date -u +%S); key=$(date -u +%Y%m%d%H%M)$(printf %02d $(( 10#$sec / 15 * 15 ))); cp live.json "m/$key.json"
+              ls m/*.json | sort | head -n -30 | xargs -r rm -f
               git add -A live.json m
               if [ $i -eq 0 ]; then git commit -q -m "Cours et manchettes en direct" || true; else git commit -q --amend -m "Cours et manchettes en direct" || true; fi
               git push -q -f origin HEAD:direct || echo "push refusé"
               cd ..
             fi
             i=$((i + 1))
-            wait=$((60 - (SECONDS - start))); [ $wait -gt 0 ] && sleep $wait
+            wait=$((15 - (SECONDS - start))); [ $wait -gt 0 ] && sleep $wait
           done
