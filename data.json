@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T20:45:00Z",
+ "updatedAt": "2026-11-23T20:48:12Z",
  "econ": {
   "values": {
    "adp": {
@@ -1409,6 +1409,35 @@
  },
  "news": [
   {
+   "date": "2026-11-23",
+   "time": "15:23",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "Les États-Unis prévoient de mettre Megaspeed sur liste noire pour des craintes liées aux exportations de puces, selon Semafor",
+   "title_en": "U.S. plans to blacklist Megaspeed over chip export concerns, Semafor reports",
+   "summary": "Selon Semafor, Washington prévoit d'ajouter l'entreprise Megaspeed à une liste noire en raison de préoccupations liées aux exportations de puces. Le resserrement des contrôles à l'exportation reste un facteur de risque pour les semi-conducteurs et le Nasdaq, en pleine remontée aujourd'hui.",
+   "summary_en": "According to Semafor, Washington plans to add Megaspeed to a blacklist over chip export concerns. Tighter export controls remain a risk factor for semiconductors and the Nasdaq, which is rallying sharply today.",
+   "url": "https://www.investing.com/news/stock-market-news/us-plans-to-blacklist-megaspeed-over-chip-export-concerns-semafor-reports-5046316"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "15:07",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usdcad",
+    "xauusd"
+   ],
+   "title": "Le TSX file vers sa meilleure journée depuis novembre 2023, porté par les métaux de base et la techno",
+   "title_en": "TSX set for best day since November 2023 as base metals, tech lift sentiment",
+   "summary": "À 15 h 03 HE, l'indice composé S&P/TSX bondissait de 2,9 % à 34 153,81 points, après une semaine de recul de 8,1 % qui l'avait laissé en zone de correction. L'indice des métaux de base grimpait de 6,9 %, la techno canadienne de 4,7 %, et l'or au comptant gagnait 2,9 % à 3 640,46 $ l'once. Les ventes manufacturières canadiennes d'octobre ont progressé de 2,3 % selon l'estimation préliminaire; le marché attend maintenant l'indice PCE américain.",
+   "summary_en": "At 3:03 p.m. ET, the S&P/TSX Composite jumped 2.9% to 34,153.81 after an 8.1% weekly drop that left it in correction territory. The base metals index soared 6.9%, Canadian tech rose 4.7%, and spot gold gained 2.9% to $3,640.46/oz. Canada's advance estimate showed October manufacturing sales up 2.3%; markets now await the U.S. PCE price index.",
+   "url": "https://www.investing.com/news/stock-market-news/tsx-futures-rise-as-wall-street-bounces-following-ai-selloff-5045504"
+  },
+  {
    "assets": [
     "usd",
     "eurusd"
@@ -1503,6 +1532,22 @@
    "title": "Trump croit que la Chine achètera 250 autres avions de Boeing",
    "title_en": "Trump thinks China will buy another 250 Boeing airplanes",
    "url": "https://www.investing.com/news/stock-market-news/trump-thinks-china-will-buy-another-250-boeing-airplanes-5046050"
+  },
+  {
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "date": "2026-11-23",
+   "impact": "high",
+   "source": "Investing.com (Reuters)",
+   "summary": "À 12 h 02 HE, le Dow gagnait 3,05 % à 49 617,33, le S&P 500 4,85 % à 7 245,46 et le Nasdaq 6,69 % à 24 131,42; Nvidia bondissait de 32,2 %, en voie de sa plus forte hausse en une séance depuis plus de 20 ans. L'indice des semi-conducteurs de Philadelphie montait de 13,4 % et seul le secteur de l'énergie reculait. Les marchés évaluent toujours à près de 98 % la probabilité d'une hausse de taux de 25 points de base par la Fed en décembre.",
+   "summary_en": "At 12:02 p.m. ET, the Dow rose 3.05% to 49,617.33, the S&P 500 4.85% to 7,245.46 and the Nasdaq 6.69% to 24,131.42; Nvidia surged 32.2%, on track for its biggest one-day gain in more than two decades. The Philadelphia Semiconductor Index rose 13.4% and energy was the only sector in the red. Traders still price a nearly 98% chance of a 25-basis-point Fed rate hike in December.",
+   "time": "12:38",
+   "title": "Wall Street rebondit en force : le Nasdaq grimpe de près de 7 % avec le retour de Jensen Huang chez Nvidia",
+   "title_en": "Wall Street roars back as Nvidia reinstates Jensen Huang as CEO",
+   "url": "https://ca.investing.com/news/stock-market-news/wall-street-roars-back-as-nvidia-reinstates-jensen-huang-as-ceo-4976467"
   },
   {
    "assets": [
@@ -1609,22 +1654,6 @@
    "title": "L'or remonte grâce aux achats sur repli et à des attentes de hausse de taux de la Fed revues à la baisse",
    "title_en": "Gold rallies amid dip-buying, pared back Fed rate expectations",
    "url": "https://www.investing.com/news/commodities-news/gold-rebounds-from-14mth-low-as-tech-selloff-lifts-safehaven-demand-5044271"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "date": "2026-11-23",
-   "impact": "high",
-   "source": "Investing.com (Reuters)",
-   "summary": "À l'ouverture, le Nasdaq Composite bondissait de 7,30 % à 24 269,75, le S&P 500 de 4,59 % à 7 227,41 et le Dow Jones de 2,27 % (1 092,6 points) à 49 239,91. Les investisseurs reviennent aux titres liés à l'IA après que Nvidia a réinstallé Jensen Huang comme PDG, avec effet immédiat, ce qui renverse une partie de la déroute technologique de la semaine dernière.",
-   "summary_en": "At the open, the Nasdaq Composite jumped 7.30% to 24,269.75, the S&P 500 rose 4.59% to 7,227.41 and the Dow gained 2.27% (1,092.6 points) to 49,239.91. Investors returned to AI-linked stocks after Nvidia reinstated Jensen Huang as CEO, effective immediately, reversing part of last week's tech rout.",
-   "time": "09:41",
-   "title": "Wall Street ouvre en forte hausse après le retour de Jensen Huang à la tête de Nvidia",
-   "title_en": "Wall St opens sharply higher after Nvidia reinstates Jensen Huang as CEO",
-   "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
   },
   {
    "assets": [
@@ -2001,40 +2030,6 @@
    "title": "Les Houthis revendiquent des attaques contre une raffinerie saoudienne; Trump menace de nouvelles frappes l'an prochain",
    "title_en": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
    "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "usdjpy",
-    "audusd"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Les marchés asiatiques reculent à l'ouverture de la semaine alors que la vente massive des titres liés à l'IA se poursuit, selon Investing.com. Le repli contraste avec le rebond des contrats à terme de Wall Street, signe que le sentiment reste fragile pour le Nasdaq et le S&P 500 avant la semaine écourtée de l'Action de grâce.",
-   "summary_en": "Asian markets fell at the start of the week as the selloff in AI-linked stocks continued, Investing.com reports. The drop contrasts with a rebound in Wall Street futures, a sign sentiment remains fragile for the Nasdaq and S&P 500 ahead of the holiday-shortened Thanksgiving week.",
-   "time": "22:03",
-   "title": "Les Bourses asiatiques glissent, la débâcle de l'IA s'aggrave malgré le rebond des contrats à terme américains",
-   "title_en": "Asia stocks slide as AI rout deepens despite rebound in U.S. futures",
-   "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-as-ai-rout-deepens-despite-rebound-in-us-futures-5044254"
-  },
-  {
-   "assets": [
-    "spx500",
-    "nasdaq",
-    "us30",
-    "rut"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Les contrats à terme sur les indices américains bondissent dimanche soir, après que les principaux indices sont entrés en zone de correction (recul d'au moins 10 % depuis un sommet) la semaine dernière. Ce rebond reste à confirmer pendant une semaine écourtée par l'Action de grâce. Article non lisible en entier : résumé fondé sur la manchette.",
-   "summary_en": "U.S. index futures jump Sunday evening after the major indexes entered correction territory (a drop of at least 10% from a peak) last week. The rebound has yet to be confirmed in a Thanksgiving-shortened week. Full article not readable: summary based on the headline.",
-   "time": "20:31",
-   "title": "Les contrats à terme de Wall Street bondissent après l'entrée des grands indices en zone de correction",
-   "title_en": "Wall Street futures jump after major indexes enter correction territory",
-   "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-jump-after-major-indexes-enter-correction-territory-5044226"
   }
  ],
  "live": {
