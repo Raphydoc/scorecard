@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T08:48:20Z",
+  "updatedAt": "2026-11-23T09:48:48Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,54 @@
   "news": [
     {
       "date": "2026-11-23",
+      "time": "04:24",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Anthropic et Nvidia montent en préouverture après la forte vente massive des technos",
+      "title_en": "Anthropic, Nvidia shares rise in premarket trading after major tech selloff",
+      "summary": "Les actions d'Anthropic et de Nvidia progressent en préouverture lundi, après une semaine de lourde liquidation des titres technologiques liés à l'IA. Ce rebond des poids lourds de l'IA soutient le Nasdaq et le S&P 500 en ce début de semaine écourtée par l'Action de grâce.",
+      "summary_en": "Anthropic and Nvidia shares rose in premarket trading Monday after a week of heavy selling in AI-linked tech stocks. The rebound in AI heavyweights supports the Nasdaq and S&P 500 at the start of the Thanksgiving-shortened week.",
+      "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html"
+    },
+    {
+      "date": "2026-11-23",
+      "time": "04:05",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "eurusd",
+        "audusd",
+        "usdjpy",
+        "xauusd"
+      ],
+      "title": "Les rendements obligataires mondiaux restent près de leurs creux de plusieurs semaines après la débâcle des technos",
+      "title_en": "Global bond yields grip multi-week lows amid pandemic-scale tech rout",
+      "summary": "Le taux américain à 10 ans se tient sous 5 %, à 4,96 %, près de son creux de deux semaines, après son plus fort rallye en une séance en plus d'un mois vendredi. Le Bund allemand à 10 ans est à 3,3167 % et le 10 ans australien à 4,914 %, son plus bas depuis août. La fuite vers les obligations refuges suit la chute de 10 % du Nasdaq la semaine dernière, sa pire depuis mars 2020, ce qui pèse sur le dollar et soutient l'or.",
+      "summary_en": "The U.S. 10-year yield held below 5% at 4.96%, near two-week lows, after its biggest one-session rally in over a month on Friday. Germany's 10-year Bund was at 3.3167% and Australia's 10-year at 4.914%, its lowest since August. The flight to safe-haven bonds follows the Nasdaq's 10% drop last week, its worst since March 2020, weighing on the dollar and supporting gold.",
+      "url": "https://www.investing.com/news/forex-news/global-bond-yields-grip-multiweek-lows-amid-pandemicscale-tech-rout-5044403"
+    },
+    {
+      "date": "2026-11-23",
+      "time": "03:30",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Les fonds spéculatifs connaissent leur pire semaine depuis avril 2025 et se repositionnent défensivement",
+      "title_en": "Hedge funds post worst week since April 2025, sparks defensive shift",
+      "summary": "Les fonds spéculatifs ont subi leur pire semaine depuis avril 2025 lors de la débâcle des titres technologiques, ce qui les pousse vers des positions plus défensives. Cette réduction du risque peut amplifier la volatilité sur le Nasdaq et le S&P 500.",
+      "summary_en": "Hedge funds suffered their worst week since April 2025 during the tech rout, prompting a shift toward more defensive positioning. This de-risking can amplify volatility in the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-5044631"
+    },
+    {
+      "date": "2026-11-23",
       "time": "03:07",
       "source": "Investing.com",
       "impact": "med",
@@ -1851,54 +1899,6 @@
       "title": "Le bitcoin rebondit de 9 % depuis son creux de deux ans et repasse au-dessus de 60 000 $",
       "title_en": "Bitcoin bounces 9% from two-year low to retake $60,000 as traders eye Monday's stock open",
       "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-bounces-9-from-two-year-low-to-retake-usd60-000-as-traders-eye-monday-s-stock-open"
-    },
-    {
-      "assets": [
-        "xauusd",
-        "xagusd"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Goldman Sachs privilégie l'or plutôt que l'argent, estimant que les achats des banques centrales continuent de soutenir le prix du métal jaune. L'article n'a pas pu être lu en entier; ce résumé s'en tient au titre. Ce biais pourrait favoriser l'or face à l'argent (ratio or/argent).",
-      "summary_en": "Goldman Sachs favours gold over silver, saying central bank purchases continue to support gold prices. The full article could not be read; this summary sticks to the headline. The call could favour gold relative to silver (gold/silver ratio).",
-      "time": "12:01",
-      "title": "Goldman préfère l'or à l'argent, la demande des banques centrales soutenant les prix",
-      "title_en": "Goldman favours gold over silver as central bank demand supports prices",
-      "url": "https://www.investing.com/news/commodities-news/goldman-favours-gold-over-silver-as-central-bank-demand-supports-prices-5043527"
-    },
-    {
-      "assets": [
-        "usoil",
-        "xauusd",
-        "usd"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Le Commandement central américain affirme que l'Iran n'a « pas du tout » attaqué de F-16 vendredi et que tous ses avions de chasse au Moyen-Orient sont en sécurité, contredisant les médias d'État iraniens qui parlaient d'un atterrissage d'urgence. La guerre, lancée en février par les États-Unis et Israël contre l'Iran, perturbe le transport maritime et pousse les prix de l'énergie à la hausse, un facteur clé pour le pétrole et les valeurs refuges.",
-      "summary_en": "US Central Command said Iran did not attack a US F-16 on Friday 'at all' and that all US fighter jets in the Middle East are safe, contradicting Iranian state media reports of an emergency landing. The war, which began when the US and Israel attacked Iran in February, has disrupted shipping and pushed up energy prices, a key driver for oil and safe havens.",
-      "time": "10:20",
-      "title": "Le CENTCOM nie la version iranienne d'un F-16 américain endommagé par un missile au-dessus du Golfe",
-      "title_en": "US denies Iranian account that missile damaged F-16 over Gulf",
-      "url": "https://www.investing.com/news/commodities-news/us-denies-iranian-account-that-missile-damaged-f16-over-gulf-5043494"
-    },
-    {
-      "assets": [
-        "usoil",
-        "xauusd",
-        "usd",
-        "spx500"
-      ],
-      "date": "2026-11-21",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "Selon l'UKMTO, deux pétroliers sortant du détroit d'Ormuz ont été touchés samedi par des projectiles non identifiés à 11 et 17 milles nautiques de Khasab (Oman), sans blessés; six attaques de pétroliers ont été recensées dans la dernière semaine et la menace est jugée « sévère ». Le ministre Araghchi dit que l'Iran pourrait rouvrir le détroit en quelques heures si sept conditions sont remplies, dont la fin du blocus et des sanctions américaines, tandis que Washington a sanctionné quatre Iraniens. Les flux d'énergie par le détroit restent nettement inférieurs à il y a un an, ce qui soutient le risque sur le pétrole.",
-      "summary_en": "UKMTO said two tankers leaving the Strait of Hormuz were hit Saturday by unidentified projectiles 11 and 17 nautical miles from Khasab, Oman, with no injuries; six tanker attacks were recorded in the past week and the threat is rated 'severe'. Foreign Minister Araghchi said Iran could reopen the strait within hours if seven conditions are met, including an end to the US blockade and sanctions, while Washington sanctioned four Iranians. Energy flows through the strait remain significantly below year-ago levels, keeping oil supply risk elevated.",
-      "time": "08:54",
-      "title": "Ormuz : deux pétroliers touchés au large d'Oman; Téhéran pose sept conditions pour rouvrir le détroit",
-      "title_en": "Iran war: two tankers hit near Hormuz as Saudi Arabia intercepts Houthi missiles",
-      "url": "https://www.investing.com/news/economy-news/iran-war-sees-tanker-hit-near-hormuz-as-saudi-arabia-intercepts-houthi-missiles-5043277"
     }
   ],
   "live": {
