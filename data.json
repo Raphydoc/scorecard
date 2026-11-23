@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-22T23:42:34Z",
+  "updatedAt": "2026-11-23T00:42:36Z",
   "econ": {
     "values": {
       "adp": {
@@ -1290,6 +1290,23 @@
     },
     {
       "date": "2026-11-22",
+      "time": "18:00",
+      "source": "CNBC",
+      "impact": "high",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "us30",
+        "rut"
+      ],
+      "title": "Les contrats à terme rebondissent en début de semaine écourtée, après la déroute des technos",
+      "title_en": "Stock futures rebound to start shortened week after tech rout",
+      "summary": "À l'ouverture de dimanche soir, les contrats à terme sur les indices américains remontent après une semaine de lourdes pertes menées par les titres technologiques liés à l'IA. La semaine est écourtée : Wall Street sera fermée jeudi pour l'Action de grâce et ne sera ouverte qu'une demi-journée vendredi, ce qui peut amplifier les mouvements dans des volumes minces.",
+      "summary_en": "At Sunday evening's open, U.S. index futures moved higher after a week of heavy losses led by AI-linked tech stocks. It is a shortened week: Wall Street is closed Thursday for Thanksgiving and open only half a day Friday, which can amplify moves in thin volume.",
+      "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
+    },
+    {
+      "date": "2026-11-22",
       "time": "17:24",
       "source": "Investing.com",
       "impact": "med",
@@ -1870,21 +1887,6 @@
       "title": "Le pétrole clôture en baisse et signe une troisième semaine de pertes, l'offre s'améliorant",
       "title_en": "Oil prices settle lower, post 3-week losing streak amid improving crude supplies",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-rise-as-meast-tensions-persist-set-for-third-week-in-red-5040503"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "CNBC",
-      "summary": "Selon le titre de CNBC, l'action Nvidia a plongé de 14 % et termine sa plus longue série de semaines en baisse depuis la crise financière de 2008 (sept semaines, selon le lien de l'article). Le recul du poids lourd des puces pèse directement sur le Nasdaq et le S&P 500, en pleine déroute du secteur de l'IA.",
-      "summary_en": "According to CNBC's headline, Nvidia stock plunged 14% and wrapped up its longest weekly losing streak since the 2008 financial crisis (seven weeks, per the article's link). The chip heavyweight's slide weighs directly on the Nasdaq and S&P 500 amid the AI-sector rout.",
-      "time": "17:59",
-      "title": "L'action Nvidia plonge de 14 % et boucle sa plus longue série de pertes hebdomadaires depuis la crise de 2008",
-      "title_en": "Nvidia stock plunges 14%, wraps up longest weekly losing streak since 2008 financial crisis",
-      "url": "https://www.cnbc.com/2026/11/20/nvidias-7-week-losing-streak-is-longest-since-2008-financial-crisis.html"
     }
   ],
   "live": {
