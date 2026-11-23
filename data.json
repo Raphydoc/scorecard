@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T01:47:38Z",
+  "updatedAt": "2026-11-23T02:47:09Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,17 +1276,36 @@
   "news": [
     {
       "date": "2026-11-22",
-      "time": "20:17",
+      "time": "21:30",
       "source": "Investing.com",
       "impact": "med",
       "assets": [
-        "usoil"
+        "usoil",
+        "spx500",
+        "nasdaq"
       ],
-      "title": "Le pétrole recule : les exportations robustes du Golfe compensent l'escalade avec l'Iran et le risque de surabondance",
-      "title_en": "Oil falls as robust Gulf exports offset Iran escalation, supply glut risks",
-      "summary": "Les cours du pétrole reculent à l'ouverture asiatique de dimanche soir. Selon Investing.com, la vigueur des exportations du golfe Persique fait plus que compenser les craintes liées à l'escalade avec l'Iran, tandis que le risque d'une offre excédentaire pèse sur le WTI. Article non lisible en entier : résumé fondé sur la manchette.",
-      "summary_en": "Oil prices are falling as Asian trading opens Sunday evening. According to Investing.com, strong Persian Gulf exports are outweighing worries over the Iran escalation, while supply-glut risks weigh on WTI. Full article could not be read: summary based on the headline.",
-      "url": "https://www.investing.com/news/commodities-news/oil-falls-as-robust-gulf-exports-offset-iran-escalation-supply-glut-risks-5044220"
+      "title": "Le pétrole recule avec la vente massive des actions, mais les attaques liées à la guerre avec l'Iran limitent les pertes",
+      "title_en": "Oil prices fall amid equity selloff though Iran war attacks limit losses",
+      "summary": "Les cours du pétrole reculent en début de séance asiatique, entraînés par la vague de ventes sur les marchés boursiers. Selon la manchette d'Investing.com, les attaques liées à la guerre avec l'Iran limitent toutefois les pertes du WTI. Article non lisible en entier : résumé fondé sur la manchette.",
+      "summary_en": "Oil prices are falling in early Asian trading, dragged by the equity selloff. According to the Investing.com headline, attacks tied to the Iran war are limiting WTI's losses. Full article not readable: summary based on the headline.",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-amid-equity-selloff-though-iran-war-attacks-limit-losses-5044242"
+    },
+    {
+      "date": "2026-11-22",
+      "time": "20:31",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30",
+        "rut"
+      ],
+      "title": "Les contrats à terme de Wall Street bondissent après l'entrée des grands indices en zone de correction",
+      "title_en": "Wall Street futures jump after major indexes enter correction territory",
+      "summary": "Les contrats à terme sur les indices américains bondissent dimanche soir, après que les principaux indices sont entrés en zone de correction (recul d'au moins 10 % depuis un sommet) la semaine dernière. Ce rebond reste à confirmer pendant une semaine écourtée par l'Action de grâce. Article non lisible en entier : résumé fondé sur la manchette.",
+      "summary_en": "U.S. index futures jump Sunday evening after the major indexes entered correction territory (a drop of at least 10% from a peak) last week. The rebound has yet to be confirmed in a Thanksgiving-shortened week. Full article not readable: summary based on the headline.",
+      "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-jump-after-major-indexes-enter-correction-territory-5044226"
     },
     {
       "date": "2026-11-22",
@@ -1870,22 +1889,6 @@
       "title": "Analyse : les banques de Wall Street en route vers une année faste, les PAPE d'Anthropic et de SpaceX générant 1 G$ en frais",
       "title_en": "Analysis: Wall Street banks set for banner year as Anthropic, SpaceX IPOs generate $1 billion in fees",
       "url": "https://www.investing.com/news/stock-market-news/analysiswall-street-banks-set-for-banner-year-as-anthropic-spacex-ipos-generate-1-billion-in-fees-5042444"
-    },
-    {
-      "assets": [
-        "usoil",
-        "xauusd",
-        "xagusd"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "UBS estime que les matières premières demeurent un placement intéressant, même si la prime de risque liée à l'offre de pétrole s'atténue. Un contexte à suivre pour le WTI, en baisse pour une troisième semaine, ainsi que pour l'or et l'argent.",
-      "summary_en": "UBS says the investment case for commodities remains resilient even as the oil supply risk premium eases. Relevant for WTI, down for a third straight week, as well as for gold and silver.",
-      "time": "20:28",
-      "title": "UBS juge solide le potentiel d'investissement dans les matières premières malgré le recul de la prime d'offre sur le pétrole",
-      "title_en": "UBS flags resilient commodity investment case despite easing oil supply premium",
-      "url": "https://www.investing.com/news/stock-market-news/ubs-flags-resilient-commodity-investment-case-despite-easing-oil-supply-premium-5043001"
     }
   ],
   "live": {
