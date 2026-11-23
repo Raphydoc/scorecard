@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T22:12:27Z",
+ "updatedAt": "2026-11-23T22:48:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -1410,6 +1410,27 @@
  "news": [
   {
    "date": "2026-11-23",
+   "time": "17:32",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "eurusd",
+    "usdjpy",
+    "usdcad",
+    "gbpusd",
+    "audusd",
+    "usdchf",
+    "nzdusd"
+   ],
+   "title": "Le dollar près d'un sommet de presque 20 mois alors que le « trade » de l'IA reprend",
+   "title_en": "Dollar at nearly 20-month high as AI trade reignites, boosting growth prospects",
+   "summary": "Selon Investing.com, le dollar américain se maintient près de son plus haut niveau en presque 20 mois, porté par le regain d'enthousiasme pour l'IA qui améliore les perspectives de croissance américaine. Un dollar fort pèse sur l'euro, le yen et les autres grandes devises à l'ouverture de la séance asiatique. (Article non accessible; résumé basé sur le titre.)",
+   "summary_en": "According to Investing.com, the U.S. dollar is holding near its highest level in nearly 20 months, supported by a renewed AI trade that boosts U.S. growth prospects. A strong dollar weighs on the euro, the yen and other major currencies as Asian trading opens. (Article not accessible; summary based on the headline.)",
+   "url": "https://www.investing.com/news/forex-news/asia-fx-mixed-as-dollar-retreats-from-19month-high-yen-won-weaken-5044324"
+  },
+  {
+   "date": "2026-11-23",
    "time": "16:30",
    "source": "Investing.com",
    "impact": "high",
@@ -2018,23 +2039,6 @@
    "title": "Le bitcoin vendu à 17 000 $ sur le marché en dollars canadiens de Kraken, et les transactions sont maintenues",
    "title_en": "Bitcoin sold for $17,000 on Kraken's Canadian dollar market, and the trades stand",
    "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-sold-for-usd17-000-on-kraken-s-canadian-dollar-market-and-the-trades-stand"
-  },
-  {
-   "assets": [
-    "btcusd",
-    "usd",
-    "nasdaq",
-    "xauusd"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Les contrats à terme sur les fonds fédéraux n'anticipent plus de hausse de 50 points de base en décembre (environ 10 % de probabilité il y a une dizaine de jours selon CME FedWatch); une hausse de 25 points de base, vers 4 %–4,25 %, reste le scénario attendu, avec près de 60 % de chances d'une autre hausse en janvier. Le Nasdaq a chuté de 10,4 % la semaine dernière, sa pire semaine depuis mars 2020, et le bitcoin est brièvement passé sous 55 500 $, son plus bas en deux ans, avant de remonter au-dessus de 60 000 $. Le PCE de base d'octobre, attendu cette semaine, sera déterminant.",
-   "summary_en": "Fed funds futures no longer price a 50 bp hike in December (about 10% odds roughly ten days ago per CME FedWatch); a 25 bp hike to 4%–4.25% remains the base case, with nearly 60% odds of another hike in January. The Nasdaq fell 10.4% last week, its worst week since March 2020, and bitcoin briefly dipped below $55,500, a two-year low, before recovering above $60,000. October core PCE, due this week, will be key.",
-   "time": "23:45",
-   "title": "La déroute des marchés efface les paris sur une hausse de 50 points de base de la Fed en décembre",
-   "title_en": "Market rout kills 50 basis points December Fed rate hike bets",
-   "url": "https://www.coindesk.com/markets/2026/11/23/market-rout-kills-50-basis-points-december-fed-rate-hike-bets"
   }
  ],
  "live": {
