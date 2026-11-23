@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T03:41:58Z",
+  "updatedAt": "2026-11-23T04:47:17Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,35 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "22:57",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Trump presse le conseil de Nvidia de réembaucher Jensen Huang",
+      "title_en": "Trump urges Nvidia board to rehire Jensen Huang",
+      "summary": "Selon le titre d'Investing.com, Donald Trump demande au conseil d'administration de Nvidia de réembaucher Jensen Huang comme dirigeant. La saga de la direction de Nvidia pèse sur le titre et sur le Nasdaq en pleine déroute des technos liées à l'IA; l'article n'a pas pu être lu, aucun autre détail n'est confirmé.",
+      "summary_en": "According to the Investing.com headline, Donald Trump is urging Nvidia's board to rehire Jensen Huang as chief executive. Nvidia's leadership saga weighs on the stock and the Nasdaq amid the AI-tech rout; the article could not be read, so no further details are confirmed.",
+      "url": "https://www.investing.com/news/stock-market-news/trump-urges-nvidia-board-to-rehire-jensen-huang-5044292"
+    },
+    {
+      "date": "2026-11-22",
+      "time": "22:40",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "usoil"
+      ],
+      "title": "Les Houthis revendiquent des attaques contre une raffinerie saoudienne; Trump menace de nouvelles frappes l'an prochain",
+      "title_en": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
+      "summary": "Selon le titre de CNBC, les Houthis du Yémen revendiquent des attaques contre une raffinerie de pétrole saoudienne, tandis que Donald Trump évoque de nouvelles frappes l'an prochain dans le cadre de la guerre avec l'Iran. Ces attaques sur les infrastructures du Golfe soutiennent la prime de risque sur le pétrole WTI; l'article n'a pas pu être lu, aucun chiffre n'est confirmé.",
+      "summary_en": "According to the CNBC headline, Yemen's Houthis claim attacks on a Saudi oil refinery while Donald Trump warns of new strikes next year as part of the Iran war. Attacks on Gulf infrastructure support the risk premium on WTI crude; the article could not be read, so no figures are confirmed.",
+      "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html"
+    },
+    {
+      "date": "2026-11-22",
       "time": "22:15",
       "source": "Investing.com",
       "impact": "med",
@@ -1863,34 +1892,6 @@
       "title": "Deutsche Bank : les revenus des puces IA redessinent la domination du dollar",
       "title_en": "How are AI chip flows reshaping dollar dominance? Deutsche Bank explains",
       "url": "https://www.investing.com/news/stock-market-news/how-are-ai-chip-flows-reshaping-dollar-dominance-deutsche-bank-explains-5043246"
-    },
-    {
-      "assets": [
-        "btcusd"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Une faille (CVE-2026-117348) permettait de bloquer un nœud Bitcoin Core « pendant plus d'une douzaine de secondes » en répétant un même identifiant de transaction jusqu'à 50 000 fois dans une annonce; elle a été trouvée par un outil d'IA du Project Loupe de Spiral (Block). Les correctifs sont sortis vendredi dans les versions 30.5 et 31.3. L'enjeu pour le BTC est surtout de confiance : un nœud bloqué pouvait retarder les dépôts sur les plateformes, alors que le bitcoin se négocie sous les 57 000 $.",
-      "summary_en": "A flaw (CVE-2026-117348) let an attacker stall a Bitcoin Core node \"for over a dozen seconds\" by repeating one transaction ID up to 50,000 times in an announcement; it was found by an AI tool from Spiral's Project Loupe (Block). Fixes shipped Friday in versions 30.5 and 31.3. For BTC the issue is mainly one of confidence: a stalled node could delay exchange deposits, with bitcoin trading below $57,000.",
-      "time": "01:16",
-      "title": "Les développeurs de Bitcoin Core corrigent une faille « moyenne » qui pouvait retarder les transactions",
-      "title_en": "Bitcoin developers fix 'medium' bug that could have delayed transactions",
-      "url": "https://www.coindesk.com/markets/2026/11/21/bitcoin-nodes-could-be-stalled-by-repeating-one-id-50-000-times-ai-found-the-bug"
-    },
-    {
-      "assets": [
-        "btcusd"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Le XRP a reculé d'environ 9 % en 24 heures à environ 87 cents, son plus bas depuis novembre 2024, dans la vente généralisée de samedi où le bitcoin a perdu 9,4 % et l'ether plus de 10 %. Environ 18 M$ de positions à terme sur le XRP ont été liquidées, à 94 % des paris haussiers, et les cinq FNB XRP au comptant américains ne détiennent plus qu'environ 990 M$ d'actifs. Le RSI quotidien sous 30 signale un marché survendu, sans confirmer la fin de la baisse.",
-      "summary_en": "XRP fell about 9% in 24 hours to around 87 cents, its lowest since November 2024, in Saturday's broad selloff that saw bitcoin drop 9.4% and ether lose more than 10%. About $18 million in XRP futures were liquidated, roughly 94% from bullish bets, and the five U.S. spot XRP ETFs now hold about $990 million in assets. The daily RSI below 30 signals oversold conditions but does not confirm the decline has ended.",
-      "time": "00:59",
-      "title": "Le XRP chute d'environ 10 % à 87 cents, son plus bas depuis novembre 2024, et les actifs des FNB passent sous 1 G$",
-      "title_en": "XRP falls 10% as long bets unwind and ETF assets slip below $1 billion",
-      "url": "https://www.coindesk.com/markets/2026/11/21/xrp-falls-10-as-long-bets-unwind-and-etf-assets-slip-below-usd1-billion"
     }
   ],
   "live": {
