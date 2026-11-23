@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T05:47:32Z",
+  "updatedAt": "2026-11-23T06:47:54Z",
   "econ": {
     "values": {
       "adp": {
@@ -1275,6 +1275,38 @@
   },
   "news": [
     {
+      "date": "2026-11-23",
+      "time": "01:23",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "usdjpy",
+        "audusd"
+      ],
+      "title": "JPMorgan entrevoit un possible rebond marqué des actions asiatiques après la liquidation des positions",
+      "title_en": "JPMorgan sees potential sharp rebound in Asian equities after positioning unwind",
+      "summary": "Selon JPMorgan, les actions asiatiques pourraient rebondir fortement maintenant que les investisseurs ont dénoué une bonne partie de leurs positions pendant la débâcle liée à l'IA. Ce signal compte pour l'appétit pour le risque à l'ouverture des marchés de la semaine (indices technos, yen, dollar australien). Article non lu en entier : résumé fondé sur le titre seulement.",
+      "summary_en": "JPMorgan says Asian equities could rebound sharply now that investors have largely unwound positions during the AI-driven sell-off. The call matters for risk appetite as the week opens (tech indices, yen, Australian dollar). Full article not read: summary based on the headline only.",
+      "url": "https://www.investing.com/news/stock-market-news/jpmorgan-sees-potential-sharp-rebound-in-asian-equities-after-positioning-unwind-5044421"
+    },
+    {
+      "date": "2026-11-23",
+      "time": "00:42",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd",
+        "usdcad"
+      ],
+      "title": "Le bitcoin vendu à 17 000 $ sur le marché en dollars canadiens de Kraken, et les transactions sont maintenues",
+      "title_en": "Bitcoin sold for $17,000 on Kraken's Canadian dollar market, and the trades stand",
+      "summary": "Tôt samedi, le bitcoin a brièvement chuté à 24 250 $ CA (environ 17 000 $ US) sur le marché en dollars canadiens de Kraken, près de 70 % sous les prix mondiaux, sur 976 transactions en 15 minutes après 3 h (HE); l'ether est passé d'environ 2 296 $ CA à 796 $ CA et le XRP a touché 0,41 $ CA. Kraken dit n'avoir détecté aucune brèche de sécurité, ne connaît pas encore la cause et n'annulera pas les transactions. Les prix en dollars canadiens étaient revenus en ligne avec les marchés mondiaux lundi, mais l'épisode illustre la fragilité de la liquidité locale en pleine tourmente crypto.",
+      "summary_en": "Early Saturday, bitcoin briefly fell to C$24,250 (about US$17,000) on Kraken's Canadian dollar market, nearly 70% below global prices, across 976 trades in the 15 minutes after 3 a.m. ET; ether dropped from about C$2,296 to C$796 and XRP hit 41 Canadian cents. Kraken says it found no security breach, has not identified the cause and will not reverse the trades. Canadian dollar prices were back in line with global markets by Monday, but the episode highlights thin local liquidity amid crypto turmoil.",
+      "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-sold-for-usd17-000-on-kraken-s-canadian-dollar-market-and-the-trades-stand"
+    },
+    {
       "date": "2026-11-22",
       "time": "23:45",
       "source": "CoinDesk",
@@ -1864,36 +1896,6 @@
       "title": "Goldman Sachs prévoit un Brent à 88 $ en moyenne en 2027, puis 78 $ en décembre",
       "title_en": "Goldman Sachs sees Brent averaging $88 in 2027, easing to $78 by December",
       "url": "https://www.investing.com/news/commodities-news/goldman-is-out-with-its-2027-forecast-for-brent-oil-prices-5043425"
-    },
-    {
-      "assets": [
-        "spx500",
-        "us30",
-        "rut"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon UBS, l'arrêt des départs ordonné par la FAA le 13 novembre (plus de quatre heures, le plus long depuis le 11 septembre 2001) pourrait retrancher de 50 à 100 points de base à la capacité (sièges-milles offerts) du 4e trimestre, avec une hausse semblable des coûts unitaires hors carburant. Le taux d'annulation moyen des six plus grands transporteurs a atteint 32 % le 13 novembre et 30 % le 14; JetBlue a été le plus touché (jusqu'à 49 %). Un vent de face pour les bénéfices du secteur aérien, mais les opérations devaient se normaliser dès le 16 novembre.",
-      "summary_en": "UBS says the FAA's Nov. 13 nationwide ground stop (more than four hours, the longest since Sept. 11, 2001) could cut fourth-quarter available seat miles by 50 to 100 basis points, with a similar rise in non-fuel unit costs. The six largest carriers' average cancellation rate hit 32% on Nov. 13 and 30% on Nov. 14, with JetBlue hardest hit (up to 49%). A headwind for airline earnings, though operations were expected to normalize from Nov. 16.",
-      "time": "04:50",
-      "title": "UBS évalue l'impact de l'arrêt des vols à l'échelle des États-Unis sur le 4e trimestre des transporteurs aériens",
-      "title_en": "UBS assesses impact of nationwide ground stop on US airlines' 4Q outlook",
-      "url": "https://www.investing.com/news/stock-market-news/ubs-assesses-impact-of-nationwide-ground-stop-on-us-airlines-4q-outlook-5043328"
-    },
-    {
-      "assets": [
-        "eurusd"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Intesa Sanpaolo lance une offre d'achat de 34,5 milliards d'euros, payable en espèces et en actions, sur Monte dei Paschi di Siena. Cette méga-opération relance la consolidation bancaire en zone euro, un dossier suivi de près par les marchés européens et l'euro.",
-      "summary_en": "Intesa Sanpaolo has launched a €34.5bn cash-and-share offer for Monte dei Paschi di Siena. The deal revives euro-zone banking consolidation, a theme closely watched by European markets and the euro.",
-      "time": "03:56",
-      "title": "Intesa Sanpaolo lance une offre de 34,5 G€ en espèces et en actions sur Monte dei Paschi",
-      "title_en": "Intesa Sanpaolo launches €34.5bn cash-and-share offer for Monte dei Paschi",
-      "url": "https://www.investing.com/news/stock-market-news/intesa-sanpaolo-launches-345bn-cashandshare-offer-for-monte-dei-paschi-5043303"
     }
   ],
   "live": {
