@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T11:47:43Z",
+  "updatedAt": "2026-11-23T12:43:51Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,35 @@
   "news": [
     {
       "date": "2026-11-23",
+      "time": "07:22",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usdcad",
+        "usoil"
+      ],
+      "title": "Le dollar canadien se stabilise près de son plus bas en 19 mois, plombé par la faiblesse du pétrole et l'écart de taux",
+      "title_en": "Canadian dollar steadies near 19-month low as oil weakness and rate gap weigh",
+      "summary": "Le huard se stabilise près de son plus bas niveau en 19 mois face au dollar américain. Selon le titre, la faiblesse du pétrole et l'écart de taux d'intérêt entre le Canada et les États-Unis continuent de peser sur la devise, ce qui soutient l'USD/CAD.",
+      "summary_en": "The loonie is steadying near a 19-month low against the U.S. dollar. According to the headline, weak oil prices and the Canada-U.S. interest rate gap continue to weigh on the currency, supporting USD/CAD.",
+      "url": "https://www.investing.com/news/forex-news/canadian-dollar-steadies-near-19month-low-as-oil-weakness-and-rate-gap-weigh-5045295"
+    },
+    {
+      "date": "2026-11-23",
+      "time": "07:04",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nzdusd"
+      ],
+      "title": "UBS abaisse sa vue sur le dollar néo-zélandais en raison de perspectives intérieures faibles",
+      "title_en": "UBS downgrades New Zealand dollar on weak domestic outlook",
+      "summary": "UBS revoit à la baisse son opinion sur le dollar néo-zélandais. Selon le titre, la banque invoque la faiblesse des perspectives économiques intérieures de la Nouvelle-Zélande, un facteur négatif pour le NZD/USD.",
+      "summary_en": "UBS has downgraded its view on the New Zealand dollar. According to the headline, the bank cites New Zealand's weak domestic economic outlook, a negative for NZD/USD.",
+      "url": "https://www.investing.com/news/forex-news/ubs-downgrades-new-zealand-dollar-on-weak-domestic-outlook-93CH-5045178"
+    },
+    {
+      "date": "2026-11-23",
       "time": "06:29",
       "source": "CoinDesk",
       "impact": "med",
@@ -1303,6 +1332,21 @@
       "summary": "Les cours du pétrole reculent lundi matin, le rétablissement des approvisionnements l'emportant sur la crainte d'une nouvelle escalade avec l'Iran, selon Investing.com. Le brut WTI reste tiraillé entre l'offre abondante et le risque géopolitique dans le Golfe (article non consulté au complet; chiffres non disponibles).",
       "summary_en": "Oil prices fell Monday morning as recovering supplies outweighed fears of renewed escalation with Iran, according to Investing.com. WTI crude remains caught between ample supply and geopolitical risk in the Gulf (full article not accessed; figures unavailable).",
       "url": "https://www.investing.com/news/commodities-news/oil-falls-as-robust-gulf-exports-offset-iran-escalation-supply-glut-risks-5044220"
+    },
+    {
+      "date": "2026-11-23",
+      "time": "05:39",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "CrowdStrike achètera Zscaler pour environ 43,9 G$ en actions; Zscaler bondit de plus de 13 % en préouverture",
+      "title_en": "CrowdStrike bets on network security with $43.9 billion Zscaler deal",
+      "summary": "CrowdStrike achète Zscaler dans une transaction entièrement en actions qui la valorise à environ 43,9 G$ : 1,135 action CrowdStrike par action Zscaler, soit 260,41 $ par action, une prime de 34 %. Zscaler gagnait plus de 13 % en préouverture et CrowdStrike reculait de plus de 8 %; CrowdStrike prévoit des ventes de 1,638 à 1,644 G$ au 4e trimestre, au-dessus des attentes de 1,62 G$. L'une des plus grosses transactions de l'histoire de la cybersécurité, un secteur lourd du Nasdaq.",
+      "summary_en": "CrowdStrike is buying Zscaler in an all-stock deal valuing it at about $43.9 billion: 1.135 CrowdStrike shares per Zscaler share, implying $260.41, a 34% premium. Zscaler jumped more than 13% premarket while CrowdStrike fell over 8%; CrowdStrike forecast Q4 sales of $1.638-$1.644 billion, above the $1.62 billion consensus. It is one of the largest cybersecurity deals on record, a heavyweight Nasdaq sector.",
+      "url": "https://www.investing.com/news/stock-market-news/crowdstrike-bets-on-network-security-with-439-billion-zscaler-deal-5044856"
     },
     {
       "date": "2026-11-23",
@@ -1335,21 +1379,6 @@
       "summary": "Le porte-parole des Affaires étrangères, Esmaeil Baghaei, a affirmé que l'Iran ne tolérera pas le blocus américain de ses exportations de pétrole, rétabli le 14 juillet après l'effondrement de l'accord. Les exportations visibles de brut iranien sont tombées près de zéro et Téhéran dit qu'il ne rouvrira le détroit d'Ormuz que si Washington accepte ses conditions. Le risque sur l'offre continue de soutenir la prime géopolitique du pétrole.",
       "summary_en": "Foreign Ministry spokesperson Esmaeil Baghaei said Iran will not tolerate the US blockade of its oil exports, restored on July 14 after the deal collapsed. Visible Iranian crude exports have fallen to near zero, and Tehran says it will reopen the Strait of Hormuz only when Washington meets its conditions. The supply risk keeps a geopolitical premium in oil.",
       "url": "https://www.investing.com/news/commodities-news/iran-says-it-will-use-all-its-tools-to-confront-us-naval-blockade-5044777"
-    },
-    {
-      "date": "2026-11-23",
-      "time": "04:31",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "title": "Zscaler bondit de 11,7 % en préouverture sur des pourparlers de rachat par CrowdStrike",
-      "title_en": "Zscaler jumps 11.7% premarket on CrowdStrike takeover talks",
-      "summary": "L'action Zscaler grimpe de 11,7 % avant l'ouverture après des articles de Bloomberg et Reuters selon lesquels CrowdStrike est en pourparlers pour l'acquérir; aucune entente n'est garantie. Jefferies juge un accord à 255 $ ou plus par action « plus probable qu'un pile ou face », tout en prévenant d'un examen réglementaire. Une fusion créerait l'un des plus grands acteurs purs de la cybersécurité, un secteur lourd dans le Nasdaq.",
-      "summary_en": "Zscaler shares rose 11.7% premarket after Bloomberg and Reuters reported CrowdStrike is in talks to acquire it; no deal is guaranteed. Jefferies sees a 'better than a coin flip likelihood' of a deal at $255 or more per share, while warning of regulatory scrutiny. A combination would create one of the largest pure-play cybersecurity providers, a heavyweight Nasdaq sector.",
-      "url": "https://www.investing.com/news/stock-market-news/why-is-zscaler-stock-surging-today-93CH-5044770"
     },
     {
       "date": "2026-11-23",
@@ -1872,35 +1901,6 @@
       "title": "Les actions chinoises liées à l'IA ont perdu 1 700 milliards $ depuis fin juin",
       "title_en": "China's AI stocks lose $1.7 trillion as tech selloff deepens",
       "url": "https://www.investing.com/news/stock-market-news/chinas-ai-stocks-lose-17-trillion-as-tech-selloff-deepens-5043672"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Summit Insights abaisse Nvidia à « conserver », invoquant l'incertitude liée au changement de direction et les nouvelles règles du Commerce sur les ventes de puces en Asie du Sud-Est, tandis que William Blair amorce Anthropic à « surperformance » après son PAPE record de 81,3 G$ (titre clôturé à 97,17 $ à ses débuts, vs 83 $). Yardeni voit la correction de l'IA comme une occasion et maintient sa cible de 7 900 pour le S&P 500, après des reculs de 2 % du S&P 500 et de 2,2 % du Nasdaq; HSBC relève Tesla à « conserver » avec une cible de 359 $.",
-      "summary_en": "Summit Insights cut Nvidia to Hold, citing leadership-change uncertainty and new Commerce rules on chip sales in Southeast Asia, while William Blair initiated Anthropic at Outperform after its record $81.3B IPO (debut close $97.17 vs $83). Yardeni called the AI selloff a buying opportunity and kept its 7,900 S&P 500 target after the S&P 500 fell 2% and the Nasdaq 2.2%; HSBC upgraded Tesla to Hold with a $359 target.",
-      "time": "19:17",
-      "title": "5 gestes d'analystes sur l'IA : Nvidia abaissée, Anthropic vue comme une « entreprise générationnelle »",
-      "title_en": "5 big analyst AI moves: Nvidia downgrade, Anthropic seen as 'generational company'",
-      "url": "https://www.investing.com/news/stock-market-news/5-big-analyst-ai-moves-nvidia-downgrade-anthropic-seen-as-generational-company-5043652"
-    },
-    {
-      "assets": [
-        "eurusd"
-      ],
-      "date": "2026-11-21",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon l'économiste d'UBS Maelle Quillevere, le scrutin du 29 novembre devrait le plus probablement mener à une coalition entre le Parti populaire (PP) et Vox, avec à la clé des baisses d'impôt des sociétés, une immigration plus restreinte et plus de dépenses de défense; un parlement fragmenté reste possible. La dette publique espagnole est passée de 119 % du PIB en 2020 à 101 % en 2025, et le FMI projette 91 % d'ici 2030. Le vote n'est pas vu comme un catalyseur majeur pour les actions espagnoles, mais reste un risque politique à surveiller pour l'euro.",
-      "summary_en": "UBS economist Maelle Quillevere sees a People's Party (PP)–Vox coalition as the most likely outcome of the November 29 vote, potentially bringing corporate tax cuts, tighter immigration policy and higher defense spending; a fragmented parliament remains possible. Spain's government debt fell from 119% of GDP in 2020 to 101% in 2025, with the IMF projecting 91% by 2030. The election is not expected to be a major catalyst for Spanish stocks, but remains a political risk to watch for the euro.",
-      "time": "18:57",
-      "title": "Élections anticipées en Espagne le 29 novembre : UBS voit une coalition de droite probable",
-      "title_en": "Here is what to expect from Spain's snap election",
-      "url": "https://www.investing.com/news/stock-market-news/here-is-what-to-expect-from-spains-snap-election-5043631"
     }
   ],
   "live": {
