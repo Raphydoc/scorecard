@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T13:49:00Z",
+ "updatedAt": "2026-11-23T14:47:28Z",
  "econ": {
   "values": {
    "adp": {
@@ -1410,6 +1410,37 @@
  "news": [
   {
    "date": "2026-11-23",
+   "time": "09:03",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia réintègre Jensen Huang comme PDG; l'action bondit d'environ 30 %",
+   "title_en": "Nvidia reinstates Jensen Huang as CEO; shares surge about 30%",
+   "summary": "Le conseil d'administration de Nvidia annonce la réintégration de Jensen Huang à la tête de l'entreprise, après les pressions de l'administration Trump. L'action s'envole de 27 % à 30 % selon Investing.com et CNBC. Vu le poids de Nvidia, la nouvelle soutient fortement le Nasdaq et le S&P 500 après la déroute de l'IA de la semaine dernière.",
+   "summary_en": "Nvidia's board announced Jensen Huang's reinstatement as CEO, following pressure from the Trump administration. Shares soared 27% to 30%, according to Investing.com and CNBC. Given Nvidia's weight, the news strongly supports the Nasdaq and S&P 500 after last week's AI rout.",
+   "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-surge-30-as-board-announces-jensen-huangs-reinstatement-5045795"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "08:30",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "nasdaq",
+    "us30"
+   ],
+   "title": "Morgan Stanley devient le plus optimiste sur les actions depuis avril après la vente massive",
+   "title_en": "Morgan Stanley turns most bullish on stocks since April after last week's selloff",
+   "summary": "Morgan Stanley adopte sa position la plus favorable aux actions depuis avril, à la suite de la forte vente de la semaine dernière. Son stratège Mike Wilson qualifie la capitulation du marché d'occasion rare. Ce virage de Wall Street appuie le rebond des contrats à terme sur les indices américains.",
+   "summary_en": "Morgan Stanley turned its most bullish on equities since April following last week's heavy selloff. Strategist Mike Wilson called the market capitulation a rare opportunity. The shift supports the rebound in U.S. index futures.",
+   "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-turns-most-bullish-on-stocks-since-april-after-last-weeks-selloff-5045615"
+  },
+  {
+   "date": "2026-11-23",
    "time": "08:20",
    "source": "Investing.com",
    "impact": "med",
@@ -1725,21 +1756,6 @@
   },
   {
    "date": "2026-11-22",
-   "time": "22:57",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "title": "Trump presse le conseil de Nvidia de réembaucher Jensen Huang",
-   "title_en": "Trump urges Nvidia board to rehire Jensen Huang",
-   "summary": "Selon le titre d'Investing.com, Donald Trump demande au conseil d'administration de Nvidia de réembaucher Jensen Huang comme dirigeant. La saga de la direction de Nvidia pèse sur le titre et sur le Nasdaq en pleine déroute des technos liées à l'IA; l'article n'a pas pu être lu, aucun autre détail n'est confirmé.",
-   "summary_en": "According to the Investing.com headline, Donald Trump is urging Nvidia's board to rehire Jensen Huang as chief executive. Nvidia's leadership saga weighs on the stock and the Nasdaq amid the AI-tech rout; the article could not be read, so no further details are confirmed.",
-   "url": "https://www.investing.com/news/stock-market-news/trump-urges-nvidia-board-to-rehire-jensen-huang-5044292"
-  },
-  {
-   "date": "2026-11-22",
    "time": "22:40",
    "source": "CNBC",
    "impact": "med",
@@ -2022,20 +2038,6 @@
    "title": "Exclusif : comme SpaceX, Anthropic a mené un processus d'IPO inhabituel qui a irrité des banquiers",
    "title_en": "Exclusive: Like SpaceX, Anthropic ran an unusual IPO process, chafing some bankers",
    "url": "https://www.investing.com/news/stock-market-news/exclusivelike-spacex-anthropic-ran-an-unusual-ipo-process-chafing-some-bankers-5043898"
-  },
-  {
-   "assets": [
-    "usdchf"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le vice-président de la BNS, Antoine Martin, affirme au Matin Dimanche que l'inflation « a continué d'accélérer depuis septembre » et que la banque surveille de près les effets de second tour. L'inflation annuelle est passée de 1 % en septembre à 1,5 % en octobre, plus que prévu, avec un taux directeur à zéro avant la décision de décembre. Martin rappelle que le franc demeure clairement une valeur refuge, ce qui compte pour l'USD/CHF.",
-   "summary_en": "SNB Vice Chairman Antoine Martin told Le Matin Dimanche that inflation 'has continued accelerating since September' and that the bank is watching closely for second-round effects. Annual inflation rose to 1.5% in October from 1% in September, above expectations, with the policy rate at zero ahead of the December decision. Martin said the franc remains clearly a safe haven, which matters for USD/CHF.",
-   "time": "03:51",
-   "title": "BNS : l'inflation suisse s'accélère, la banque surveille les effets de second tour",
-   "title_en": "Swiss inflation accelerates as SNB signals concern over broader price pressures",
-   "url": "https://www.investing.com/news/stock-market-news/swiss-inflation-accelerates-as-snb-signals-concern-over-broader-price-pressures-5043822"
   }
  ],
  "live": {
