@@ -14,14 +14,17 @@ async function get(url, json = true, tries = 3) {
   return null;
 }
 const out = {asOf: new Date().toISOString(), imf: {}, rates: {}, mkts: {}, src: {}};
+let PREV = {}; try { PREV = JSON.parse(fs.readFileSync('data.json', 'utf8')).world || {}; } catch (e) {}
 const Y = new Date().getUTCFullYear();
 
 // 1) FMI : valeurs de l'année en cours et de l'année précédente (estimations et prévisions du WEO)
 const IMF = {gdp: 'NGDP_RPCH', infl: 'PCPIPCH', unemp: 'LUR', debt: 'GGXWDG_NGDP', ca: 'BCA_NGDPD', size: 'NGDPD'};
 for (const [k, code] of Object.entries(IMF)) {
-  const j = await get(`https://www.imf.org/external/datamapper/api/v1/${code}?periods=${Y - 1},${Y}`);
+  let j = await get(`https://www.imf.org/external/datamapper/api/v1/${code}?periods=${Y - 1},${Y}`, true, 2);
+  if (!(j && j.values && j.values[code])) j = await get(`https://www.imf.org/external/datamapper/api/v1/${code}`, true, 2);  // sans « periods »
   const v = j && j.values && j.values[code];
-  if (!v) { console.error('FMI manquant', code); continue; }
+  // si le FMI ne répond pas, on garde les dernières valeurs connues au lieu d'effacer la carte
+  if (!v) { if (PREV.imf && PREV.imf[k] && Object.keys(PREV.imf[k]).length) { out.imf[k] = PREV.imf[k]; console.error('FMI manquant', code, '→ anciennes valeurs gardées'); } else console.error('FMI manquant', code); continue; }
   out.imf[k] = {};
   for (const [iso, yrs] of Object.entries(v)) {
     if (!/^[A-Z]{3}$/.test(iso)) continue;
