@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T02:47:09Z",
+  "updatedAt": "2026-11-23T03:41:58Z",
   "econ": {
     "values": {
       "adp": {
@@ -1276,6 +1276,39 @@
   "news": [
     {
       "date": "2026-11-22",
+      "time": "22:15",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "xauusd",
+        "xagusd",
+        "nasdaq"
+      ],
+      "title": "L'or rebondit depuis son plus bas en 14 mois, la chute des technos ravive la demande refuge",
+      "title_en": "Gold rebounds from 14-month low as tech selloff lifts safe-haven demand",
+      "summary": "L'or remonte dimanche soir après avoir touché son plus bas en 14 mois, selon Investing.com. La déroute des valeurs technologiques liées à l'IA pousse des investisseurs vers les valeurs refuges, ce qui soutient le métal jaune à l'ouverture de l'Asie.",
+      "summary_en": "Gold climbed Sunday evening after touching a 14-month low, Investing.com reports. The AI-driven tech selloff is pushing investors toward safe havens, supporting bullion as Asian trading opens.",
+      "url": "https://www.investing.com/news/commodities-news/gold-rebounds-from-14mth-low-as-tech-selloff-lifts-safehaven-demand-5044271"
+    },
+    {
+      "date": "2026-11-22",
+      "time": "22:03",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "usdjpy",
+        "audusd"
+      ],
+      "title": "Les Bourses asiatiques glissent, la débâcle de l'IA s'aggrave malgré le rebond des contrats à terme américains",
+      "title_en": "Asia stocks slide as AI rout deepens despite rebound in U.S. futures",
+      "summary": "Les marchés asiatiques reculent à l'ouverture de la semaine alors que la vente massive des titres liés à l'IA se poursuit, selon Investing.com. Le repli contraste avec le rebond des contrats à terme de Wall Street, signe que le sentiment reste fragile pour le Nasdaq et le S&P 500 avant la semaine écourtée de l'Action de grâce.",
+      "summary_en": "Asian markets fell at the start of the week as the selloff in AI-linked stocks continued, Investing.com reports. The drop contrasts with a rebound in Wall Street futures, a sign sentiment remains fragile for the Nasdaq and S&P 500 ahead of the holiday-shortened Thanksgiving week.",
+      "url": "https://www.investing.com/news/stock-market-news/asia-stocks-slide-as-ai-rout-deepens-despite-rebound-in-us-futures-5044254"
+    },
+    {
+      "date": "2026-11-22",
       "time": "21:30",
       "source": "Investing.com",
       "impact": "med",
@@ -1858,37 +1891,6 @@
       "title": "Le XRP chute d'environ 10 % à 87 cents, son plus bas depuis novembre 2024, et les actifs des FNB passent sous 1 G$",
       "title_en": "XRP falls 10% as long bets unwind and ETF assets slip below $1 billion",
       "url": "https://www.coindesk.com/markets/2026/11/21/xrp-falls-10-as-long-bets-unwind-and-etf-assets-slip-below-usd1-billion"
-    },
-    {
-      "assets": [
-        "btcusd",
-        "nasdaq"
-      ],
-      "date": "2026-11-20",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "Le bitcoin a reculé de 3,57 % à 56 814 $ vendredi soir, passant sous la barre des 57 000 $ pour la première fois en deux ans selon CoinDesk, qui note qu'il n'est pas le seul actif cryptographique à chuter. La glissade prolonge le repli observé plus tôt dans la journée sous les 59 000 $ et témoigne d'un appétit pour le risque toujours faible en fin de semaine.",
-      "summary_en": "Bitcoin fell 3.57% to $56,814 on Friday evening, dropping below $57,000 for the first time in two years according to CoinDesk, which notes it is not the only crypto asset sliding. The move extends the earlier slide below $59,000 and signals still-weak risk appetite heading into the weekend.",
-      "time": "23:12",
-      "title": "Le bitcoin glisse de 3,57 % à 56 814 $, sous les 57 000 $ pour la première fois en deux ans",
-      "title_en": "Bitcoin falls 3.57% to $56,814, below $57,000 for the first time in two years",
-      "url": "https://www.investing.com/news/forex-news/bitcoin-falls-357-to-56814-5043137"
-    },
-    {
-      "assets": [
-        "spx500",
-        "us30",
-        "nasdaq"
-      ],
-      "date": "2026-11-20",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon cette analyse de Reuters, les premiers appels publics à l'épargne d'Anthropic et de SpaceX auraient généré environ 1 G$ en frais pour les banques d'affaires de Wall Street, qui se dirigent vers une année exceptionnelle. Un appui pour les titres financiers du S&P 500 et du Dow, malgré la correction récente du marché.",
-      "summary_en": "According to this Reuters analysis, the Anthropic and SpaceX IPOs have generated about $1 billion in fees for Wall Street investment banks, which are headed for a banner year. Supportive for financial stocks in the S&P 500 and the Dow despite the market's recent correction.",
-      "time": "21:12",
-      "title": "Analyse : les banques de Wall Street en route vers une année faste, les PAPE d'Anthropic et de SpaceX générant 1 G$ en frais",
-      "title_en": "Analysis: Wall Street banks set for banner year as Anthropic, SpaceX IPOs generate $1 billion in fees",
-      "url": "https://www.investing.com/news/stock-market-news/analysiswall-street-banks-set-for-banner-year-as-anthropic-spacex-ipos-generate-1-billion-in-fees-5042444"
     }
   ],
   "live": {
