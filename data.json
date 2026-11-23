@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T20:48:12Z",
+ "updatedAt": "2026-11-23T21:47:58Z",
  "econ": {
   "values": {
    "adp": {
@@ -1410,6 +1410,42 @@
  "news": [
   {
    "date": "2026-11-23",
+   "time": "16:30",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "us30",
+    "spx500",
+    "nasdaq",
+    "rut"
+   ],
+   "title": "Clôture de Wall Street : le Dow Jones termine en hausse de 3,01 %",
+   "title_en": "U.S. stocks higher at close of trade; Dow Jones Industrial Average up 3.01%",
+   "summary": "Les actions américaines ont fini la séance de lundi en nette hausse, le Dow Jones gagnant 3,01 % à la clôture. Ce bilan de fin de séance confirme l'ampleur du rebond des grands indices américains lors de cette journée (article non accessible en détail; résumé limité au titre).",
+   "summary_en": "U.S. stocks ended Monday's session sharply higher, with the Dow Jones Industrial Average up 3.01% at the close. The closing report confirms the scale of the day's rebound across major U.S. indexes (full article not accessible; summary limited to the headline).",
+   "url": "https://www.investing.com/news/stock-market-news/us-stocks-higher-at-close-of-trade-dow-jones-industrial-average-up-301-5046476"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "16:02",
+   "source": "CNBC",
+   "impact": "high",
+   "assets": [
+    "usd",
+    "spx500",
+    "nasdaq",
+    "xauusd",
+    "eurusd",
+    "usdjpy"
+   ],
+   "title": "John Williams (Fed) indique que des taux plus élevés seront probablement nécessaires « au fil du temps » contre l'inflation",
+   "title_en": "Fed's John Williams indicates higher interest rates likely 'over time' to address inflation",
+   "summary": "Le président de la Fed de New York, John Williams, a signalé que des taux d'intérêt plus élevés seront probablement nécessaires « au fil du temps » pour combattre l'inflation. Un ton favorable à de nouvelles hausses de taux tend à soutenir le dollar et les rendements, et à peser sur l'or et les actions (article non accessible en détail; résumé limité au titre).",
+   "summary_en": "New York Fed President John Williams signaled that higher interest rates are likely needed 'over time' to address inflation. A tilt toward further hikes tends to support the dollar and yields while weighing on gold and equities (full article not accessible; summary limited to the headline).",
+   "url": "https://www.cnbc.com/2026/11/23/john-williams-fed-inflation-rate-hikes.html"
+  },
+  {
+   "date": "2026-11-23",
    "time": "15:23",
    "source": "Investing.com",
    "impact": "med",
@@ -1999,37 +2035,6 @@
    "title": "La déroute des marchés efface les paris sur une hausse de 50 points de base de la Fed en décembre",
    "title_en": "Market rout kills 50 basis points December Fed rate hike bets",
    "url": "https://www.coindesk.com/markets/2026/11/23/market-rout-kills-50-basis-points-december-fed-rate-hike-bets"
-  },
-  {
-   "assets": [
-    "usd",
-    "usdjpy",
-    "audusd",
-    "nzdusd"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Selon Investing.com, les devises asiatiques évoluent en ordre dispersé en ce début de semaine : le dollar américain se replie de son plus haut en 19 mois, tandis que le yen japonais et le won sud-coréen s'affaiblissent. Le recul du billet vert compte pour l'indice DXY et les paires USD/JPY, AUD/USD et NZD/USD à l'ouverture asiatique.",
-   "summary_en": "According to Investing.com, Asian currencies are mixed at the start of the week: the U.S. dollar is pulling back from a 19-month high, while the Japanese yen and South Korean won weaken. The greenback's retreat matters for the DXY and for USD/JPY, AUD/USD and NZD/USD at the Asian open.",
-   "time": "23:35",
-   "title": "Devises asiatiques partagées : le dollar recule de son sommet de 19 mois; le yen et le won faiblissent",
-   "title_en": "Asia FX mixed as dollar retreats from 19-month high; yen, won weaken",
-   "url": "https://www.investing.com/news/forex-news/asia-fx-mixed-as-dollar-retreats-from-19month-high-yen-won-weaken-5044324"
-  },
-  {
-   "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "Selon le titre de CNBC, les Houthis du Yémen revendiquent des attaques contre une raffinerie de pétrole saoudienne, tandis que Donald Trump évoque de nouvelles frappes l'an prochain dans le cadre de la guerre avec l'Iran. Ces attaques sur les infrastructures du Golfe soutiennent la prime de risque sur le pétrole WTI; l'article n'a pas pu être lu, aucun chiffre n'est confirmé.",
-   "summary_en": "According to the CNBC headline, Yemen's Houthis claim attacks on a Saudi oil refinery while Donald Trump warns of new strikes next year as part of the Iran war. Attacks on Gulf infrastructure support the risk premium on WTI crude; the article could not be read, so no figures are confirmed.",
-   "time": "22:40",
-   "title": "Les Houthis revendiquent des attaques contre une raffinerie saoudienne; Trump menace de nouvelles frappes l'an prochain",
-   "title_en": "Yemen's Houthis claim attacks on Saudi oil refinery as Trump warns of new strikes next year",
-   "url": "https://www.cnbc.com/2026/11/23/trump-iran-war-hormuz-saudi-.html"
   }
  ],
  "live": {
