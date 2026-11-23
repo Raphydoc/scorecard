@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T18:48:17Z",
+ "updatedAt": "2026-11-23T19:45:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -183,8 +183,8 @@
    "cotLong": 35.5,
    "cotChange": 1.85,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 37,
-   "uCrowd": "2026-11-23T13:49:00Z"
+   "crowdLong": 35,
+   "uCrowd": "2026-11-23T19:45:00Z"
   },
   "usdcad": {
    "season": "neutral",
@@ -203,8 +203,8 @@
    "cotLong": 40.73,
    "cotChange": 3.65,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 64,
-   "uCrowd": "2026-11-20T13:52:00Z"
+   "crowdLong": 68,
+   "uCrowd": "2026-11-23T19:45:00Z"
   },
   "audusd": {
    "season": "neutral",
@@ -223,8 +223,8 @@
    "cotLong": 55.51,
    "cotChange": -0.64,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 68,
-   "uCrowd": "2026-11-20T13:52:00Z"
+   "crowdLong": 66,
+   "uCrowd": "2026-11-23T19:45:00Z"
   },
   "nzdusd": {
    "season": "bear",
@@ -233,8 +233,8 @@
    "cotLong": 17.68,
    "cotChange": -1.94,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 72,
-   "uCrowd": "2026-11-20T13:52:00Z"
+   "crowdLong": 76,
+   "uCrowd": "2026-11-23T19:45:00Z"
   }
  },
  "history": [
@@ -1374,8 +1374,8 @@
   }
  ],
  "fed": {
-  "asOf": "2026-11-20",
-  "checkedAt": "2026-11-20T13:52:00Z",
+  "asOf": "2026-11-23",
+  "checkedAt": "2026-11-23T19:45:00Z",
   "events": [
    {
     "date": "2026-11-18",
@@ -1391,16 +1391,16 @@
    "text": "Statu quo, vote 10-2 (2 membres voulaient une hausse)"
   },
   "next": "2026-12-09",
-  "prevDate": "2026-11-08",
+  "prevDate": "2026-11-20",
   "prevProbs": {
-   "cut": 0,
-   "hike": 80.5,
-   "hold": 19.5
+   "hike": 100,
+   "hold": 0,
+   "cut": 0
   },
   "probs": {
-   "cut": 0,
-   "hike": 100,
-   "hold": 0
+   "hike": 91.4,
+   "hold": 8.6,
+   "cut": 0
   },
   "rate": "3,75 % – 4,00 %",
   "source": "CME FedWatch",
