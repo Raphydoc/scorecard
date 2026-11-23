@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T19:45:00Z",
+ "updatedAt": "2026-11-23T19:48:46Z",
  "econ": {
   "values": {
    "adp": {
@@ -1409,10 +1409,37 @@
  },
  "news": [
   {
+   "assets": [
+    "usd",
+    "eurusd"
+   ],
    "date": "2026-11-23",
-   "time": "13:13",
-   "source": "Investing.com",
    "impact": "med",
+   "source": "Investing.com",
+   "summary": "L'indice du dollar (DXY) se situe à 104,295, en hausse de 0,53 %, avec un RSI quotidien de 73,8, en zone de surachat. Il est 1,3 % au-dessus de sa moyenne mobile exponentielle de 20 jours (102,94) et a grimpé d'environ 6,4 % depuis son creux du 9 septembre (98,058). L'EUR/USD recule de 0,61 % à 1,0901; une Fed restrictive soutient le dollar à court terme, mais le risque de pause technique augmente.",
+   "summary_en": "The Dollar Index (DXY) stands at 104.295, up 0.53%, with a daily RSI of 73.8, in overbought territory. It is 1.3% above its 20-day EMA (102.94) and up about 6.4% from its Sept. 9 low of 98.058. EUR/USD is down 0.61% at 1.0901; a hawkish Fed supports the dollar near term, but the risk of a technical pause is rising.",
+   "time": "14:26",
+   "title": "Indice du dollar : le rallye se prolonge, mais des signaux de surachat appellent à la prudence",
+   "title_en": "Dollar index technical outlook: rally extended but overbought signals flash caution",
+   "url": "https://www.investing.com/news/forex-news/dollar-index-technical-outlook-rally-extended-but-overbought-signals-flash-caution-93CH-5046271"
+  },
+  {
+   "assets": [
+    "usd",
+    "spx500",
+    "usoil"
+   ],
+   "date": "2026-11-23",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Mardi 24 novembre à 10 h, l'indice de confiance des consommateurs du Conference Board est attendu à 92,1, contre 91,7 précédemment. Aussi au programme : l'ADP hebdomadaire (8 h 15), l'indice des prix des maisons S&P/Case-Shiller 20 villes (9 h, attendu à 2,7 %), une adjudication d'obligations à 5 ans (13 h, rendement précédent 4,708 %) et les stocks de brut de l'API (16 h 30). Ces données serviront à jauger la vigueur du consommateur avant la semaine écourtée par l'Action de grâce.",
+   "summary_en": "On Tuesday, Nov. 24 at 10:00 a.m. ET, Conference Board consumer confidence is expected at 92.1 versus 91.7 previously. Also scheduled: weekly ADP (8:15 a.m.), the S&P/Case-Shiller 20-city home price index (9:00 a.m., expected 2.7%), a 5-year note auction (1:00 p.m., prior yield 4.708%) and API crude inventories (4:30 p.m.). The data will help gauge consumer strength ahead of the Thanksgiving-shortened week.",
+   "time": "14:00",
+   "title": "La confiance des consommateurs du Conference Board en vedette des données de mardi",
+   "title_en": "CB Consumer Confidence highlights economic data due Tuesday",
+   "url": "https://www.investing.com/news/stock-market-news/cb-consumer-confidence-highlights-economic-data-due-tuesday-93CH-5046246"
+  },
+  {
    "assets": [
     "usd",
     "spx500",
@@ -1422,115 +1449,134 @@
     "usdjpy",
     "xauusd"
    ],
-   "title": "Fed et données clés de la semaine : PCE, PIB et Livre beige concentrés mercredi avant l'Action de grâce",
-   "title_en": "Key Fed events and economic data to watch this week",
+   "date": "2026-11-23",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Avec le congé de l'Action de grâce jeudi, l'essentiel des données tombe mercredi à 8 h 30 : PCE de base d'octobre attendu à 0,3 % sur un mois et 3,2 % sur un an (3,1 % auparavant), PIB du T3 à 3,4 % et inscriptions au chômage à 201 000; le Livre beige de la Fed suit à 14 h. Lundi, l'indice PMI des services de S&P Global est sorti à 54,7, sous les 55,6 attendus, et John Williams (Fed de New York) parle à 16 h. Une inflation PCE plus forte que prévu raviverait les paris de hausse de taux, ce qui soutiendrait le dollar et pèserait sur les actions et l'or.",
    "summary_en": "With Thursday's Thanksgiving holiday, most data lands Wednesday at 8:30 a.m.: October core PCE is forecast at 0.3% m/m and 3.2% y/y (prior 3.1%), Q3 GDP at 3.4% and jobless claims at 201K; the Fed's Beige Book follows at 2 p.m. On Monday, the S&P Global services PMI came in at 54.7 versus 55.6 expected, and New York Fed's John Williams speaks at 4 p.m. A hotter PCE reading would revive rate-hike bets, supporting the dollar and weighing on stocks and gold.",
+   "time": "13:13",
+   "title": "Fed et données clés de la semaine : PCE, PIB et Livre beige concentrés mercredi avant l'Action de grâce",
+   "title_en": "Key Fed events and economic data to watch this week",
    "url": "https://www.investing.com/news/stock-market-news/key-fed-events-and-economic-data-to-watch-this-week-93CH-5046211"
   },
   {
+   "assets": [
+    "usd",
+    "eurusd"
+   ],
    "date": "2026-11-23",
-   "time": "12:56",
-   "source": "Investing.com",
    "impact": "med",
+   "source": "Investing.com",
+   "summary": "Kamakshya Trivedi, de Goldman Sachs, estime que le resserrement de la Fed soutiendra le dollar au cours des prochains mois; l'indice Bloomberg du dollar a gagné environ 2 % en novembre, un troisième gain mensuel d'affilée. Les marchés anticipent environ 70 points de base de hausses de taux d'ici septembre 2027, et Goldman voit l'euro glisser à 1,08 $, voire plus bas, après un creux de 1,0881 lundi, le plus bas depuis avril 2025. La banque prévoit ensuite un léger affaiblissement du dollar l'an prochain.",
+   "summary_en": "Goldman Sachs' Kamakshya Trivedi said Fed tightening will support the dollar over the next few months; the Bloomberg Dollar Spot Index rose about 2% in November, a third straight monthly gain. Traders price about 70 basis points of rate hikes through September 2027, and Goldman sees the euro weakening to $1.08 or below after hitting 1.0881 on Monday, the lowest since April 2025. The bank then expects the dollar to weaken modestly next year.",
+   "time": "13:03",
+   "title": "Goldman Sachs voit le rallye du dollar se poursuivre avant un repli en 2027",
+   "title_en": "Goldman Sachs sees US dollar rally continuing before a pullback in 2027",
+   "url": "https://investing.com/news/economy-news/goldman-sachs-sees-us-dollar-rally-continuing-before-a-pullback-in-2027-5046199"
+  },
+  {
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Jensen Huang (Nvidia) témoignera devant le Sénat américain le 3 décembre",
-   "title_en": "Nvidia's Huang to testify before U.S. Senate on Dec. 3",
+   "date": "2026-11-23",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Le président du comité bancaire du Sénat, Tim Scott, annonce que Jensen Huang, réintégré lundi comme PDG de Nvidia, comparaîtra le 3 décembre sur la surveillance des contrôles à l'exportation; il aura aussi une entrevue à huis clos avec trois comités de la Chambre le 1er décembre. Les sénateurs Elizabeth Warren et Jim Banks font avancer un projet de loi pour interdire à Nvidia de vendre ses puces Blackwell à la Chine pendant au moins 18 mois. Ce risque politique pourrait limiter le rebond de Nvidia et du Nasdaq.",
    "summary_en": "Senate Banking Committee Chairman Tim Scott said Jensen Huang, reinstated Monday as Nvidia CEO, will appear on Dec. 3 on oversight of export controls; he will also sit for a closed-door interview with three House committees on Dec. 1. Senators Elizabeth Warren and Jim Banks are advancing legislation to bar Nvidia from selling Blackwell chips to China for at least 18 months. This political risk could cap the rebound in Nvidia and the Nasdaq.",
+   "time": "12:56",
+   "title": "Jensen Huang (Nvidia) témoignera devant le Sénat américain le 3 décembre",
+   "title_en": "Nvidia's Huang to testify before U.S. Senate on Dec. 3",
    "url": "https://www.investing.com/news/stock-market-news/nvidias-huang-to-testify-before-us-senate-on-dec-3-5046191"
   },
   {
-   "date": "2026-11-23",
-   "time": "12:48",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "us30",
     "spx500"
    ],
-   "title": "Trump croit que la Chine achètera 250 autres avions de Boeing",
-   "title_en": "Trump thinks China will buy another 250 Boeing airplanes",
+   "date": "2026-11-23",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Donald Trump a déclaré à CNBC qu'il pense que la Chine acceptera d'acheter 250 autres avions Boeing, quelques jours après sa rencontre avec Xi Jinping. La Chine s'était engagée en mai à acheter 200 appareils, une « première tranche » selon le PDG Kelly Ortberg; Boeing et GE Aerospace ont aussi finalisé une vente de 12 G$ à Philippine Airlines pour jusqu'à 20 787. Une telle commande soutiendrait Boeing, poids lourd du Dow Jones, et signalerait une détente commerciale sino-américaine.",
    "summary_en": "Donald Trump told CNBC he thinks China will agree to buy another 250 Boeing airplanes, days after meeting Xi Jinping. China agreed in May to buy 200 planes, an 'initial tranche' according to CEO Kelly Ortberg; Boeing and GE Aerospace also finalized a $12 billion sale to Philippine Airlines for up to 20 787s. Such an order would support Boeing, a Dow heavyweight, and signal a U.S.-China trade thaw.",
+   "time": "12:48",
+   "title": "Trump croit que la Chine achètera 250 autres avions de Boeing",
+   "title_en": "Trump thinks China will buy another 250 Boeing airplanes",
    "url": "https://www.investing.com/news/stock-market-news/trump-thinks-china-will-buy-another-250-boeing-airplanes-5046050"
   },
   {
-   "date": "2026-11-23",
-   "time": "12:31",
-   "source": "CoinDesk",
-   "impact": "med",
    "assets": [
     "btcusd",
     "nasdaq",
     "usd"
    ],
-   "title": "Le rebond du bitcoin s'essouffle déjà pendant que le « trade » de l'IA revient en force",
-   "title_en": "Bitcoin rebound already losing steam as AI trade returns with a bang",
+   "date": "2026-11-23",
+   "impact": "med",
+   "source": "CoinDesk",
    "summary": "Le bitcoin a franchi les 64 000 $ avant de retomber sous 62 000 $ à la mi-journée, alors que Nvidia bondit d'environ 32 % avec le retour de Jensen Huang. Depuis le départ de Huang le 12 novembre, le BTC est passé de 74 000 $ à moins de 56 000 $ et n'a regagné qu'environ le quart de ses pertes, contre plus des quatre cinquièmes pour Nvidia. Les marchés jugent quasi certaine une hausse de taux de la Fed en décembre, le taux 2 ans est près de 4,7 % et le dollar est à son plus fort depuis mars 2025; l'indice PCE d'octobre sort mercredi.",
    "summary_en": "Bitcoin topped $64,000 before slipping back below $62,000 by midday, while Nvidia jumped about 32% on Jensen Huang's return. Since Huang's November 12 departure, BTC fell from $74,000 to below $56,000 and has clawed back only about a quarter of its losses, versus more than four-fifths for Nvidia. Markets see a December Fed hike as near certain, the 2-year yield is near 4.7% and the dollar is at its strongest since March 2025; October PCE is due Wednesday.",
+   "time": "12:31",
+   "title": "Le rebond du bitcoin s'essouffle déjà pendant que le « trade » de l'IA revient en force",
+   "title_en": "Bitcoin rebound already losing steam as AI trade returns with a bang",
    "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank"
   },
   {
-   "date": "2026-11-23",
-   "time": "12:30",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "usoil",
     "usdcad"
    ],
-   "title": "Le pétrole chute de plus de 3 % avec la hausse des flux du Moyen-Orient et la reprise d'un oléoduc libyen",
-   "title_en": "Oil drops more than 3% on increased Middle East flows, Libyan pipeline restart",
+   "date": "2026-11-23",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "Selon le titre d'Investing.com, les cours du pétrole reculent de plus de 3 % lundi, plombés par l'augmentation des flux en provenance du Moyen-Orient et la remise en service d'un oléoduc en Libye. Le recul accentue la pression sur le WTI et sur le huard, sensible au brut. (Article complet non accessible; résumé limité au titre.)",
    "summary_en": "According to Investing.com's headline, oil prices fell more than 3% on Monday, weighed by increased flows from the Middle East and the restart of a Libyan pipeline. The drop adds pressure on WTI and on the oil-sensitive Canadian dollar. (Full article not accessible; summary limited to the headline.)",
+   "time": "12:30",
+   "title": "Le pétrole chute de plus de 3 % avec la hausse des flux du Moyen-Orient et la reprise d'un oléoduc libyen",
+   "title_en": "Oil drops more than 3% on increased Middle East flows, Libyan pipeline restart",
    "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-amid-equity-selloff-though-iran-war-attacks-limit-losses-5044242"
   },
   {
-   "date": "2026-11-23",
-   "time": "12:16",
-   "source": "CNBC",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Trump dit à CNBC « J'ai conclu l'entente » pour le retour de Jensen Huang chez Nvidia",
-   "title_en": "Trump tells CNBC ‘I made the deal’ to reinstate Nvidia’s Jensen Huang",
+   "date": "2026-11-23",
+   "impact": "med",
+   "source": "CNBC",
    "summary": "Le président Donald Trump affirme sur CNBC avoir lui-même conclu l'entente ayant mené au retour de Jensen Huang à la tête de Nvidia. Ce retour alimente lundi le fort rebond des titres technologiques. (Article complet non accessible; résumé limité au titre.)",
    "summary_en": "President Donald Trump told CNBC he personally made the deal that led to Jensen Huang's reinstatement as Nvidia CEO. The return is fueling Monday's strong rebound in tech stocks. (Full article not accessible; summary limited to the headline.)",
+   "time": "12:16",
+   "title": "Trump dit à CNBC « J'ai conclu l'entente » pour le retour de Jensen Huang chez Nvidia",
+   "title_en": "Trump tells CNBC ‘I made the deal’ to reinstate Nvidia’s Jensen Huang",
    "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html"
   },
   {
-   "date": "2026-11-23",
-   "time": "12:12",
-   "source": "Investing.com",
-   "impact": "med",
    "assets": [
     "nasdaq",
     "spx500"
    ],
-   "title": "Texas Instruments bondit de 10 % sur une hausse de recommandation de Cantor Fitzgerald et le rallye des puces",
-   "title_en": "Texas Instruments surges 10% on Cantor Fitzgerald upgrade and chip rally",
+   "date": "2026-11-23",
+   "impact": "med",
+   "source": "Investing.com",
    "summary": "L'action de Texas Instruments grimpe de 10 % après que Cantor Fitzgerald l'a relevée à « Surpondérer » et a porté sa cible de 340 $ à 385 $, en visant un BPA 2028 supérieur à 15 $ (consensus : 13,88 $). L'indice des semiconducteurs PHLX gagne près de 14 % et le Nasdaq presque 7 %, après la pire semaine du S&P 500 depuis avril 2025.",
    "summary_en": "Texas Instruments shares surged 10% after Cantor Fitzgerald upgraded them to Overweight and raised its target to $385 from $340, based on 2028 EPS above $15 (consensus $13.88). The PHLX Semiconductor Index rose nearly 14% and the Nasdaq almost 7%, after the S&P 500's steepest weekly drop since April 2025.",
+   "time": "12:12",
+   "title": "Texas Instruments bondit de 10 % sur une hausse de recommandation de Cantor Fitzgerald et le rallye des puces",
+   "title_en": "Texas Instruments surges 10% on Cantor Fitzgerald upgrade and chip rally",
    "url": "https://www.investing.com/news/stock-market-news/texas-instruments-surges-10-on-cantor-fitzgerald-upgrade-and-chip-rally-5046130"
   },
   {
-   "date": "2026-11-23",
-   "time": "11:24",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
    "assets": [
     "nasdaq"
    ],
-   "title": "Les options sur Anthropic font leurs débuts avec un volume soutenu",
-   "title_en": "Anthropic options debut with brisk volume",
+   "date": "2026-11-23",
+   "impact": "med",
+   "source": "Investing.com (Reuters)",
    "summary": "Environ 160 000 contrats d'options sur Anthropic se sont échangés dans la première heure, ce qui place le titre parmi les 25 plus actifs du marché des options selon Mercury Alerts; le rythme pointe vers plus de 600 000 contrats sur la journée, loin du record de 1,8 million de SpaceX en juin. Le volume était partagé à peu près également entre calls et puts, et l'action reculait de 2 % à 87,33 $ malgré le rebond des titres liés à l'IA.",
    "summary_en": "About 160,000 Anthropic options contracts traded in the first hour, making it one of the 25 most heavily traded names in the options market, according to Mercury Alerts; the pace points to more than 600,000 contracts for the day, well short of SpaceX's 1.8 million record in June. Volume was roughly evenly split between calls and puts, and the shares were down 2% at $87.33 even as AI-linked stocks bounced.",
+   "time": "11:24",
+   "title": "Les options sur Anthropic font leurs débuts avec un volume soutenu",
+   "title_en": "Anthropic options debut with brisk volume",
    "url": "https://www.investing.com/news/stock-market-news/anthropic-options-debut-with-brisk-volume-5046078"
   },
   {
@@ -1565,19 +1611,19 @@
    "url": "https://www.investing.com/news/commodities-news/gold-rebounds-from-14mth-low-as-tech-selloff-lifts-safehaven-demand-5044271"
   },
   {
-   "date": "2026-11-23",
-   "time": "09:41",
-   "source": "Investing.com (Reuters)",
-   "impact": "high",
    "assets": [
     "nasdaq",
     "spx500",
     "us30"
    ],
-   "title": "Wall Street ouvre en forte hausse après le retour de Jensen Huang à la tête de Nvidia",
-   "title_en": "Wall St opens sharply higher after Nvidia reinstates Jensen Huang as CEO",
+   "date": "2026-11-23",
+   "impact": "high",
+   "source": "Investing.com (Reuters)",
    "summary": "À l'ouverture, le Nasdaq Composite bondissait de 7,30 % à 24 269,75, le S&P 500 de 4,59 % à 7 227,41 et le Dow Jones de 2,27 % (1 092,6 points) à 49 239,91. Les investisseurs reviennent aux titres liés à l'IA après que Nvidia a réinstallé Jensen Huang comme PDG, avec effet immédiat, ce qui renverse une partie de la déroute technologique de la semaine dernière.",
    "summary_en": "At the open, the Nasdaq Composite jumped 7.30% to 24,269.75, the S&P 500 rose 4.59% to 7,227.41 and the Dow gained 2.27% (1,092.6 points) to 49,239.91. Investors returned to AI-linked stocks after Nvidia reinstated Jensen Huang as CEO, effective immediately, reversing part of last week's tech rout.",
+   "time": "09:41",
+   "title": "Wall Street ouvre en forte hausse après le retour de Jensen Huang à la tête de Nvidia",
+   "title_en": "Wall St opens sharply higher after Nvidia reinstates Jensen Huang as CEO",
    "url": "https://www.investing.com/news/stock-market-news/wall-st-opens-sharply-higher-after-nvidia-reinstates-jensen-huang-as-ceo-5045900"
   },
   {
@@ -1989,52 +2035,6 @@
    "title": "Les contrats à terme de Wall Street bondissent après l'entrée des grands indices en zone de correction",
    "title_en": "Wall Street futures jump after major indexes enter correction territory",
    "url": "https://www.investing.com/news/stock-market-news/wall-street-futures-jump-after-major-indexes-enter-correction-territory-5044226"
-  },
-  {
-   "assets": [
-    "audusd",
-    "nzdusd"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Les actions australiennes devraient ouvrir en baisse lundi et le marché néo-zélandais recule déjà, dans la foulée de la déroute des technos de la semaine dernière. Le sentiment de risque en Océanie touche l'AUD et le NZD. Article non lisible en entier : résumé fondé sur la manchette.",
-   "summary_en": "Australian shares are set to open lower Monday and New Zealand stocks are already falling, following last week's tech rout. Risk sentiment in the region bears on the AUD and NZD. Full article could not be read: summary based on the headline.",
-   "time": "20:12",
-   "title": "La Bourse australienne s'annonce en baisse à l'ouverture; la Nouvelle-Zélande recule",
-   "title_en": "Australia shares set to slide at open, NZ falls",
-   "url": "https://www.investing.com/news/stock-market-news/australia-shares-set-to-slide-at-open-nz-falls-5044213"
-  },
-  {
-   "assets": [
-    "nasdaq"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "La CSRC a avisé des cabinets d'avocats que les sociétés « red-chip » créées après les règles de 2023 devront se redomicilier en Chine avant toute inscription à Hong Kong ou à New York. Seulement 6 de ces sociétés ont obtenu le feu vert à Hong Kong cette année, contre 50 l'an dernier, alors que les IPO à Hong Kong ont bondi de 84 % à 404 G$ HK sur 10 mois. Le resserrement pourrait freiner les nouvelles inscriptions de technos chinoises, y compris au Nasdaq.",
-   "summary_en": "The CSRC told law firms that red-chip companies set up after the 2023 rules must re-domicile in China before listing in Hong Kong or New York. Only 6 such firms have won Hong Kong approval this year versus 50 last year, even as Hong Kong IPO proceeds jumped 84% to HK$404 billion in 10 months. The tightening could slow new Chinese tech listings, including on the Nasdaq.",
-   "time": "18:10",
-   "title": "Pékin bloquera l'inscription à l'étranger des jeunes sociétés « red-chip », selon des sources",
-   "title_en": "Beijing to bar young 'red-chip' firms from listing outside mainland China, sources say",
-   "url": "https://www.investing.com/news/stock-market-news/beijing-to-bar-young-redchip-firms-from-listing-outside-mainland-china-sources-say-5044173"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30",
-    "rut"
-   ],
-   "date": "2026-11-22",
-   "impact": "high",
-   "source": "CNBC",
-   "summary": "À l'ouverture de dimanche soir, les contrats à terme sur les indices américains remontent après une semaine de lourdes pertes menées par les titres technologiques liés à l'IA. La semaine est écourtée : Wall Street sera fermée jeudi pour l'Action de grâce et ne sera ouverte qu'une demi-journée vendredi, ce qui peut amplifier les mouvements dans des volumes minces.",
-   "summary_en": "At Sunday evening's open, U.S. index futures moved higher after a week of heavy losses led by AI-linked tech stocks. It is a shortened week: Wall Street is closed Thursday for Thanksgiving and open only half a day Friday, which can amplify moves in thin volume.",
-   "time": "18:00",
-   "title": "Les contrats à terme rebondissent en début de semaine écourtée, après la déroute des technos",
-   "title_en": "Stock futures rebound to start shortened week after tech rout",
-   "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
   }
  ],
  "live": {
