@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-23T13:48:16Z",
+  "updatedAt": "2026-11-23T13:49:00Z",
   "econ": {
     "values": {
       "adp": {
@@ -80,68 +80,69 @@
       "season": "bear",
       "seasonPct": -4.3,
       "seasonPeriod": "août à octobre",
-      "cotLong": 86.23,
-      "cotChange": 1.9,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 77,
-      "uCrowd": "2026-11-20T13:52:00Z"
+      "cotLong": 82.71,
+      "cotChange": -3.52,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 82,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "nasdaq": {
       "season": "neutral",
       "seasonPct": 0.4,
       "seasonPeriod": "août à octobre",
-      "cotLong": 61.29,
-      "cotChange": -4.6,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 69,
-      "uCrowd": "2026-11-19T19:45:00Z"
+      "cotLong": 51.52,
+      "cotChange": -9.77,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 81,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "spx500": {
       "season": "bull",
       "seasonPct": 1.5,
       "seasonPeriod": "août à octobre",
-      "cotLong": 37.65,
-      "cotChange": -1.34,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 59,
-      "uCrowd": "2026-11-20T13:52:00Z"
+      "cotLong": 41.86,
+      "cotChange": 4.21,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 63,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "us30": {
       "season": "neutral",
       "seasonPct": -1,
       "seasonPeriod": "août à octobre",
-      "cotLong": 67.43,
-      "cotChange": 5.3,
-      "crowdLong": 64,
-      "uCrowd": "2026-11-20T19:45:00Z"
+      "cotLong": 57.96,
+      "cotChange": -8.69,
+      "crowdLong": 72,
+      "uCrowd": "2026-11-23T13:49:00Z",
+      "uCot": "2026-11-23T13:49:00Z"
     },
     "usd": {
       "season": "bull",
       "seasonPct": 2,
       "seasonPeriod": "août à octobre",
-      "cotLong": 62.39,
-      "cotChange": -1.27,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 36,
-      "uCrowd": "2026-11-19T13:58:00Z"
+      "cotLong": 61.15,
+      "cotChange": -1.24,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 28,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "xagusd": {
       "season": "bear",
       "seasonPct": -14.8,
       "seasonPeriod": "août à octobre",
-      "cotLong": 68.29,
-      "cotChange": -1.85,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 87,
-      "uCrowd": "2026-11-20T19:45:00Z"
+      "cotLong": 67.03,
+      "cotChange": -1.26,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 89,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "btcusd": {
       "season": "bull",
       "seasonPct": 23.3,
       "seasonPeriod": "août à octobre",
-      "cotLong": 54.02,
-      "cotChange": 0.19,
-      "uCot": "2026-11-16T20:50:00Z",
+      "cotLong": 52.66,
+      "cotChange": -1.36,
+      "uCot": "2026-11-23T13:49:00Z",
       "crowdLong": 82,
       "uCrowd": "2026-11-19T13:58:00Z"
     },
@@ -149,59 +150,59 @@
       "season": "bull",
       "seasonPct": 30.6,
       "seasonPeriod": "août à octobre",
-      "cotLong": 54.75,
-      "cotChange": 0.77,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 58,
-      "uCrowd": "2026-11-20T13:52:00Z"
+      "cotLong": 52.71,
+      "cotChange": -2.04,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 59,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "rut": {
       "season": "bear",
       "seasonPct": -3.8,
       "seasonPeriod": "août à octobre",
-      "cotLong": 48.7,
-      "cotChange": 3.57,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 68,
-      "uCrowd": "2026-11-19T13:58:00Z"
+      "cotLong": 46.63,
+      "cotChange": -2.07,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 70,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "eurusd": {
       "season": "bear",
       "seasonPct": -3.1,
       "seasonPeriod": "août à octobre",
-      "cotLong": 38.47,
-      "cotChange": 1.26,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 64,
-      "uCrowd": "2026-11-19T13:58:00Z"
+      "cotLong": 38.16,
+      "cotChange": -0.31,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 72,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "usdjpy": {
       "season": "bear",
       "seasonPct": -1.1,
       "seasonPeriod": "août à octobre",
-      "cotLong": 33.65,
-      "cotChange": -1.82,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 34,
-      "uCrowd": "2026-11-19T13:58:00Z"
+      "cotLong": 35.5,
+      "cotChange": 1.85,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 37,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "usdcad": {
       "season": "neutral",
       "seasonPct": -0.5,
       "seasonPeriod": "août à octobre",
-      "cotLong": 56.57,
-      "cotChange": -2.12,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 44,
-      "uCrowd": "2026-11-20T19:45:00Z"
+      "cotLong": 58.4,
+      "cotChange": 1.83,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 34,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "gbpusd": {
       "season": "neutral",
       "seasonPct": -0.6,
       "seasonPeriod": "août à octobre",
-      "cotLong": 37.08,
-      "cotChange": 3.04,
-      "uCot": "2026-11-16T20:50:00Z",
+      "cotLong": 40.73,
+      "cotChange": 3.65,
+      "uCot": "2026-11-23T13:49:00Z",
       "crowdLong": 64,
       "uCrowd": "2026-11-20T13:52:00Z"
     },
@@ -209,19 +210,19 @@
       "season": "neutral",
       "seasonPct": 0,
       "seasonPeriod": "août à octobre",
-      "cotLong": 28.24,
-      "cotChange": -2.25,
-      "uCot": "2026-11-16T20:50:00Z",
-      "crowdLong": 63,
-      "uCrowd": "2026-11-19T15:45:00Z"
+      "cotLong": 23.57,
+      "cotChange": -4.67,
+      "uCot": "2026-11-23T13:49:00Z",
+      "crowdLong": 72,
+      "uCrowd": "2026-11-23T13:49:00Z"
     },
     "usdchf": {
       "season": "bull",
       "seasonPct": 2.2,
       "seasonPeriod": "août à octobre",
-      "cotLong": 56.15,
-      "cotChange": -4.83,
-      "uCot": "2026-11-16T20:50:00Z",
+      "cotLong": 55.51,
+      "cotChange": -0.64,
+      "uCot": "2026-11-23T13:49:00Z",
       "crowdLong": 68,
       "uCrowd": "2026-11-20T13:52:00Z"
     },
@@ -229,9 +230,9 @@
       "season": "bear",
       "seasonPct": -4.1,
       "seasonPeriod": "août à octobre",
-      "cotLong": 19.62,
-      "cotChange": 0.57,
-      "uCot": "2026-11-16T20:50:00Z",
+      "cotLong": 17.68,
+      "cotChange": -1.94,
+      "uCot": "2026-11-23T13:49:00Z",
       "crowdLong": 72,
       "uCrowd": "2026-11-20T13:52:00Z"
     }
@@ -881,6 +882,73 @@
         "sent": -1,
         "macro": -7
       }
+    },
+    {
+      "date": "2026-11-23",
+      "xauusd": {
+        "sent": -1,
+        "macro": -7
+      },
+      "xagusd": {
+        "sent": -1,
+        "macro": -7
+      },
+      "nasdaq": {
+        "sent": -1,
+        "macro": 8
+      },
+      "spx500": {
+        "sent": -1,
+        "macro": 9
+      },
+      "us30": {
+        "sent": -1,
+        "macro": 10
+      },
+      "rut": {
+        "sent": -3,
+        "macro": 9
+      },
+      "usd": {
+        "sent": 1,
+        "macro": 7
+      },
+      "usoil": {
+        "sent": 0,
+        "macro": 11
+      },
+      "btcusd": {
+        "sent": -1,
+        "macro": 8
+      },
+      "eurusd": {
+        "sent": -3,
+        "macro": -7
+      },
+      "usdjpy": {
+        "sent": 1,
+        "macro": 7
+      },
+      "usdcad": {
+        "sent": 3,
+        "macro": 7
+      },
+      "gbpusd": {
+        "sent": -1,
+        "macro": -7
+      },
+      "audusd": {
+        "sent": -3,
+        "macro": -7
+      },
+      "usdchf": {
+        "sent": -1,
+        "macro": 7
+      },
+      "nzdusd": {
+        "sent": -3,
+        "macro": -7
+      }
     }
   ],
   "calendar": [
@@ -1096,14 +1164,6 @@
       "time": "07:00"
     },
     {
-      "date": "2026-11-18",
-      "id": null,
-      "kind": "fed",
-      "name": "Minutes de la Fed",
-      "note": "Compte rendu de la réunion du 28 octobre",
-      "time": "14:00"
-    },
-    {
       "ai": false,
       "assets": {
         "nasdaq": 1,
@@ -1141,15 +1201,6 @@
       "time": "07:00"
     },
     {
-      "a": 203,
-      "date": "2026-11-19",
-      "f": 197,
-      "id": "claims",
-      "name": "Demandes de chômage hebdo",
-      "prev": 200,
-      "time": "08:30"
-    },
-    {
       "ai": false,
       "assets": {
         "nasdaq": 1,
@@ -1170,7 +1221,7 @@
     {
       "a": null,
       "date": "2026-11-24",
-      "f": null,
+      "f": 92.0,
       "id": "conf",
       "name": "Confiance des consommateurs (novembre)",
       "prev": 91.7,
@@ -1213,7 +1264,7 @@
     {
       "a": null,
       "date": "2026-11-25",
-      "f": null,
+      "f": 3.5,
       "id": "gdp",
       "name": "PIB QoQ annualisé (T3, 2e estimation)",
       "prev": 3.4,
@@ -1222,13 +1273,96 @@
     {
       "a": null,
       "date": "2026-11-25",
-      "f": null,
+      "f": 0.3,
       "id": null,
       "name": "PCE de base MoM (octobre)",
       "note": "Sans énergie ni nourriture · la mesure préférée de la Fed",
       "prev": 0.3,
       "time": "08:30",
       "unit": "%"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "08:30",
+      "id": "claims",
+      "name": "Demandes de chômage hebdo",
+      "note": "Devancé au mercredi (Action de grâce)",
+      "prev": 203,
+      "f": 200,
+      "a": null
+    },
+    {
+      "date": "2026-12-01",
+      "time": "10:00",
+      "id": "jolts",
+      "name": "JOLTS, postes à pourvoir (octobre)",
+      "prev": 7.52,
+      "f": null,
+      "a": null
+    },
+    {
+      "date": "2026-12-01",
+      "time": "16:05",
+      "id": null,
+      "kind": "earn",
+      "ai": true,
+      "assets": {
+        "nasdaq": 1,
+        "spx500": 1
+      },
+      "name": "Résultats Marvell (MRVL)",
+      "note": "Après la clôture · Date à confirmer",
+      "epsF": 1.1,
+      "epsA": null,
+      "revF": 3.15,
+      "revA": null,
+      "move": null
+    },
+    {
+      "date": "2026-12-02",
+      "time": "16:05",
+      "id": null,
+      "kind": "earn",
+      "ai": true,
+      "assets": {
+        "nasdaq": 1,
+        "spx500": 1,
+        "us30": 1
+      },
+      "name": "Résultats Salesforce (CRM)",
+      "note": "Après la clôture · Date à confirmer",
+      "epsF": 3.45,
+      "epsA": null,
+      "revF": 11.47,
+      "revA": null,
+      "move": null
+    },
+    {
+      "date": "2026-12-03",
+      "time": "08:30",
+      "id": "claims",
+      "name": "Demandes de chômage hebdo",
+      "prev": null,
+      "f": null,
+      "a": null
+    },
+    {
+      "date": "2026-12-04",
+      "time": "08:30",
+      "id": "nfp",
+      "name": "Emplois non agricoles NFP (novembre)",
+      "prev": 165,
+      "f": null,
+      "a": null
+    },
+    {
+      "date": "2026-12-04",
+      "time": "08:30",
+      "id": "unemp",
+      "name": "Taux de chômage (novembre)",
+      "prev": 4.1,
+      "f": null,
+      "a": null
     },
     {
       "date": "2026-12-09",
