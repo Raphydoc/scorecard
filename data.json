@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T21:47:58Z",
+ "updatedAt": "2026-11-23T22:12:27Z",
  "econ": {
   "values": {
    "adp": {
@@ -34020,8 +34020,36 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-23T17:10:59Z",
+  "asOf": "2026-11-23T22:12:13Z",
   "bankcalls": [
+   {
+    "bank": "Natixis",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "market_en": "XAU/USD",
+    "dir": "short",
+    "target": "3 340 $ d’ici janvier (scénario de stress)",
+    "target_en": "$3,340 by January (stress scenario)",
+    "horizon": "janvier 2027",
+    "horizon_en": "January 2027",
+    "date": "2026-11-23",
+    "src": "Kitco",
+    "url": "https://www.kitco.com/news/article/2026-11-23/golds-recovery-may-be-short-lived-natixis-warns-drop-3340"
+   },
+   {
+    "bank": "UBS",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "market_en": "XAU/USD",
+    "dir": "long",
+    "target": "5 000 $ d’ici fin 2027 (4 200 $ en mars, 4 600 $ en juin)",
+    "target_en": "$5,000 by end-2027 ($4,200 in March, $4,600 in June)",
+    "horizon": "fin 2027",
+    "horizon_en": "end-2027",
+    "date": "2026-11-21",
+    "src": "Investing.com",
+    "url": "https://www.investing.com/news/commodities-news/ubs-flags-further-gold-weakness-before-fed-ratecut-expectations-return-5043537"
+   },
    {
     "bank": "Société Générale",
     "cat": "cmd",
@@ -34119,20 +34147,6 @@
     "target": "150 dans 12 mois (158 dans 3 mois, 155 dans 6 mois)",
     "target_en": "150 in 12 months (158 in 3 months, 155 in 6 months)",
     "url": "https://en.bloomingbit.io/feed/news/124503"
-   },
-   {
-    "bank": "UBS",
-    "cat": "cmd",
-    "date": "2026-11-18",
-    "dir": "long",
-    "horizon": "fin 2027",
-    "horizon_en": "end-2027",
-    "market": "XAU/USD",
-    "market_en": "XAU/USD",
-    "src": "Investing.com",
-    "target": "5 000 $ d’ici fin 2027 (4 600 $ en juin 2027)",
-    "target_en": "$5,000 by end-2027 ($4,600 in June 2027)",
-    "url": "https://www.investing.com/news/commodities-news/ubs-sees-gold-at-5000-by-the-end-of-2027-brent-easing-to-80-5035763"
    },
    {
     "bank": "UBS",
@@ -34953,8 +34967,8 @@
     "cc": "US",
     "ccy": "USD",
     "cut": 0,
-    "hike": 100,
-    "hold": 0,
+    "hike": 91.4,
+    "hold": 8.6,
     "next": "2026-12-09",
     "rate": "3,75 – 4,00",
     "src": "CME FedWatch"
@@ -35038,6 +35052,43 @@
    }
   ],
   "recaps": [
+   {
+    "date": "2026-11-23",
+    "session": "ny",
+    "title": "Meilleure séance depuis avril 2025 : Nvidia s’envole de 31 % avec le retour de Jensen Huang, le Nasdaq bondit de 6,51 %",
+    "title_en": "Best day since April 2025: Nvidia soars 31% on Jensen Huang’s return, Nasdaq jumps 6.51%",
+    "body": "Wall Street a effacé une partie de sa pire semaine depuis 2020 : le Dow a gagné 1 447,98 points (+3,01 %) à 49 595,31, le S&P 500 a pris 4,73 % et le Nasdaq composé 6,51 % (FactSet, via Fox Business), après que le conseil de Nvidia a réintégré Jensen Huang comme PDG, ce qui a fait bondir le titre de plus de 31 %. L’essentiel du gain s’est fait à l’ouverture : pendant la séance elle-même, le S&P 500 n’a ajouté que 0,13 % et le Nasdaq 100 a cédé 0,45 %, alors que le Russell 2000 a progressé de 1,26 %. Le dollar a touché son plus haut depuis le printemps 2025 (indice à 104,40 vers midi, CoinDesk) sur les paris d’une hausse de la Fed le 9 décembre, et le PMI des services de S&P Global est tombé à 54,7, sous les 55,6 attendus (Kitco). Le bitcoin a reculé de 4,07 % pendant la séance et le pétrole de 1,83 %.",
+    "body_en": "Wall Street clawed back part of its worst week since 2020: the Dow gained 1,447.98 points (+3.01%) to 49,595.31, the S&P 500 rose 4.73% and the Nasdaq Composite 6.51% (FactSet, via Fox Business), after Nvidia’s board reinstated Jensen Huang as CEO, sending the stock up more than 31%. Most of the gain came at the open: during the session itself the S&P 500 added only 0.13% and the Nasdaq 100 slipped 0.45%, while the Russell 2000 rose 1.26%. The dollar hit its highest since spring 2025 (index at 104.40 around midday, CoinDesk) on bets for a Fed hike on Dec. 9, and S&P Global’s services PMI fell to 54.7, below the 55.6 expected (Kitco). Bitcoin fell 4.07% during the session and oil 1.83%.",
+    "sections": {
+     "indices": {
+      "fr": "Après une ouverture en forte hausse, la séance a été plus calme : S&P 500 +0,13 %, Dow +0,73 %, Russell 2000 +1,26 %, Nasdaq 100 −0,45 %; Micron a gagné 19 %, AMD plus de 6 % et Broadcom 3 % dans le sillage de Nvidia (Fox Business).",
+      "en": "After a sharply higher open, the session itself was calmer: S&P 500 +0.13%, Dow +0.73%, Russell 2000 +1.26%, Nasdaq 100 −0.45%; Micron gained 19%, AMD more than 6% and Broadcom 3% in Nvidia’s wake (Fox Business)."
+     },
+     "metals": {
+      "fr": "L’or, qui avait bondi de plus de 3 % à environ 3 668 $ en matinée (Kitco), a rendu 0,59 % pendant la séance à environ 3 634 $, et l’argent a glissé de 0,23 % à environ 42,90 $; Natixis prévient que l’or pourrait retomber à 3 340 $ d’ici janvier.",
+      "en": "Gold, which had jumped more than 3% to about $3,668 in the morning (Kitco), gave back 0.59% during the session to about $3,634, and silver slipped 0.23% to about $42.90; Natixis warns gold could fall back to $3,340 by January."
+     },
+     "forex": {
+      "fr": "Le dollar s’est encore raffermi (+0,19 % pendant la séance), le 10 ans américain se tenant près de 4,94 % (Yahoo Finance); l’EUR/USD a cédé 0,29 % à 1,0904, l’USD/JPY 0,22 % à 158,95 et l’USD/CAD a gagné 0,11 % à 1,4371.",
+      "en": "The dollar firmed further (+0.19% during the session), with the US 10-year near 4.94% (Yahoo Finance); EUR/USD fell 0.29% to 1.0904, USD/JPY 0.22% to 158.95, and USD/CAD rose 0.11% to 1.4371."
+     },
+     "crypto": {
+      "fr": "Le bitcoin n’a pas suivi le rebond de la techno : après un sommet près de 64 000 $ en matinée, il a perdu 4,07 % pendant la séance, à environ 61 150 $ (CoinDesk).",
+      "en": "Bitcoin didn’t follow the tech rebound: after peaking near $64,000 in the morning, it lost 4.07% during the session to about $61,150 (CoinDesk)."
+     },
+     "energy": {
+      "fr": "Le WTI a reculé de 1,83 % pendant la séance, à environ 80,13 $, à son plus bas depuis la mi-août et en baisse d’environ 22 % depuis la fin d’octobre sur les craintes d’offre abondante (CoinDesk).",
+      "en": "WTI fell 1.83% during the session to about $80.13, its lowest since mid-August and down about 22% since late October on supply-glut worries (CoinDesk)."
+     }
+    },
+    "sources": [
+     "https://www.foxbusiness.com/markets/stocks-november-23-2026",
+     "https://finance.yahoo.com/markets/live/stock-market-today-monday-november-23-dow-sp-500-nasdaq-surge-after-nvidia-reinstates-jensen-huang-182039397.html",
+     "https://www.coindesk.com/tech/2026/11/23/live-news-wall-street-rebounds-as-dollar-index-hits-highest-since-march-2025",
+     "https://www.kitco.com/news/article/2026-11-23/gold-prices-jump-3-bargain-hunting-overshadows-slowing-us-manufacturing-and",
+     "https://www.kitco.com/news/article/2026-11-23/golds-recovery-may-be-short-lived-natixis-warns-drop-3340"
+    ]
+   },
    {
     "date": "2026-11-23",
     "session": "lon",
@@ -35986,6 +36037,28 @@
    }
   ],
   "research": [
+   {
+    "bank": "Natixis",
+    "date": "2026-11-23",
+    "topic": "OR",
+    "topic_en": "GOLD",
+    "title": "Natixis prévient que l’or pourrait retomber à 3 340 $ d’ici janvier",
+    "title_en": "Natixis warns gold could fall back to $3,340 by January",
+    "summary": "Selon Bernard Dahdah, un scénario de stress (achats des banques centrales en baisse de 25 %, sorties de FNB de 20 tonnes par mois) ferait chuter l’or de plus de 200 $ d’ici janvier, dans un contexte de Fed restrictive et de dollar ferme.",
+    "summary_en": "Per Bernard Dahdah, a stress scenario (central-bank buying down 25%, ETF outflows of 20 tonnes a month) would push gold down more than $200 by January, amid a hawkish Fed and a firm dollar.",
+    "url": "https://www.kitco.com/news/article/2026-11-23/golds-recovery-may-be-short-lived-natixis-warns-drop-3340"
+   },
+   {
+    "bank": "UBS",
+    "date": "2026-11-21",
+    "topic": "OR",
+    "topic_en": "GOLD",
+    "title": "UBS voit encore de la faiblesse pour l’or avant une reprise à 5 000 $ fin 2027",
+    "title_en": "UBS sees further gold weakness before a recovery to $5,000 by end-2027",
+    "summary": "UBS s’attend à des vents contraires jusqu’au T1 2027 (Fed restrictive, dollar fort), puis à une remontée : 4 200 $ en mars, 4 600 $ en juin, 4 800 $ en septembre et 5 000 $ fin 2027.",
+    "summary_en": "UBS expects headwinds into Q1 2027 (hawkish Fed, strong dollar), then a recovery: $4,200 in March, $4,600 in June, $4,800 in September and $5,000 by end-2027.",
+    "url": "https://www.investing.com/news/commodities-news/ubs-flags-further-gold-weakness-before-fed-ratecut-expectations-return-5043537"
+   },
    {
     "bank": "Société Générale",
     "date": "2026-11-20",
