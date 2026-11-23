@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T17:48:25Z",
+ "updatedAt": "2026-11-23T18:48:17Z",
  "econ": {
   "values": {
    "adp": {
@@ -1410,6 +1410,56 @@
  "news": [
   {
    "date": "2026-11-23",
+   "time": "13:13",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500",
+    "nasdaq",
+    "us30",
+    "eurusd",
+    "usdjpy",
+    "xauusd"
+   ],
+   "title": "Fed et données clés de la semaine : PCE, PIB et Livre beige concentrés mercredi avant l'Action de grâce",
+   "title_en": "Key Fed events and economic data to watch this week",
+   "summary": "Avec le congé de l'Action de grâce jeudi, l'essentiel des données tombe mercredi à 8 h 30 : PCE de base d'octobre attendu à 0,3 % sur un mois et 3,2 % sur un an (3,1 % auparavant), PIB du T3 à 3,4 % et inscriptions au chômage à 201 000; le Livre beige de la Fed suit à 14 h. Lundi, l'indice PMI des services de S&P Global est sorti à 54,7, sous les 55,6 attendus, et John Williams (Fed de New York) parle à 16 h. Une inflation PCE plus forte que prévu raviverait les paris de hausse de taux, ce qui soutiendrait le dollar et pèserait sur les actions et l'or.",
+   "summary_en": "With Thursday's Thanksgiving holiday, most data lands Wednesday at 8:30 a.m.: October core PCE is forecast at 0.3% m/m and 3.2% y/y (prior 3.1%), Q3 GDP at 3.4% and jobless claims at 201K; the Fed's Beige Book follows at 2 p.m. On Monday, the S&P Global services PMI came in at 54.7 versus 55.6 expected, and New York Fed's John Williams speaks at 4 p.m. A hotter PCE reading would revive rate-hike bets, supporting the dollar and weighing on stocks and gold.",
+   "url": "https://www.investing.com/news/stock-market-news/key-fed-events-and-economic-data-to-watch-this-week-93CH-5046211"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "12:56",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Jensen Huang (Nvidia) témoignera devant le Sénat américain le 3 décembre",
+   "title_en": "Nvidia's Huang to testify before U.S. Senate on Dec. 3",
+   "summary": "Le président du comité bancaire du Sénat, Tim Scott, annonce que Jensen Huang, réintégré lundi comme PDG de Nvidia, comparaîtra le 3 décembre sur la surveillance des contrôles à l'exportation; il aura aussi une entrevue à huis clos avec trois comités de la Chambre le 1er décembre. Les sénateurs Elizabeth Warren et Jim Banks font avancer un projet de loi pour interdire à Nvidia de vendre ses puces Blackwell à la Chine pendant au moins 18 mois. Ce risque politique pourrait limiter le rebond de Nvidia et du Nasdaq.",
+   "summary_en": "Senate Banking Committee Chairman Tim Scott said Jensen Huang, reinstated Monday as Nvidia CEO, will appear on Dec. 3 on oversight of export controls; he will also sit for a closed-door interview with three House committees on Dec. 1. Senators Elizabeth Warren and Jim Banks are advancing legislation to bar Nvidia from selling Blackwell chips to China for at least 18 months. This political risk could cap the rebound in Nvidia and the Nasdaq.",
+   "url": "https://www.investing.com/news/stock-market-news/nvidias-huang-to-testify-before-us-senate-on-dec-3-5046191"
+  },
+  {
+   "date": "2026-11-23",
+   "time": "12:48",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "us30",
+    "spx500"
+   ],
+   "title": "Trump croit que la Chine achètera 250 autres avions de Boeing",
+   "title_en": "Trump thinks China will buy another 250 Boeing airplanes",
+   "summary": "Donald Trump a déclaré à CNBC qu'il pense que la Chine acceptera d'acheter 250 autres avions Boeing, quelques jours après sa rencontre avec Xi Jinping. La Chine s'était engagée en mai à acheter 200 appareils, une « première tranche » selon le PDG Kelly Ortberg; Boeing et GE Aerospace ont aussi finalisé une vente de 12 G$ à Philippine Airlines pour jusqu'à 20 787. Une telle commande soutiendrait Boeing, poids lourd du Dow Jones, et signalerait une détente commerciale sino-américaine.",
+   "summary_en": "Donald Trump told CNBC he thinks China will agree to buy another 250 Boeing airplanes, days after meeting Xi Jinping. China agreed in May to buy 200 planes, an 'initial tranche' according to CEO Kelly Ortberg; Boeing and GE Aerospace also finalized a $12 billion sale to Philippine Airlines for up to 20 787s. Such an order would support Boeing, a Dow heavyweight, and signal a U.S.-China trade thaw.",
+   "url": "https://www.investing.com/news/stock-market-news/trump-thinks-china-will-buy-another-250-boeing-airplanes-5046050"
+  },
+  {
+   "date": "2026-11-23",
    "time": "12:31",
    "source": "CoinDesk",
    "impact": "med",
@@ -1985,52 +2035,6 @@
    "title": "Les contrats à terme rebondissent en début de semaine écourtée, après la déroute des technos",
    "title_en": "Stock futures rebound to start shortened week after tech rout",
    "url": "https://www.cnbc.com/2026/11/22/stock-market-today-live-updates.html"
-  },
-  {
-   "assets": [
-    "spx500",
-    "nasdaq",
-    "usd",
-    "eurusd"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Goldman Sachs prévoit une croissance mondiale réelle de 2,8 % en 2027, légèrement au-dessus de son estimation de 2,7 % pour 2026, avec des risques à la baisse (regain de tensions en Iran, risques budgétaires sur les taux longs, déception sur les investissements en IA). La banque s'attend à des hausses de 25 points de base de la Fed en décembre et en mars, puis à des baisses graduelles à partir de novembre; son scénario est plus accommodant que les prix du marché, surtout pour la BCE et la Fed, ce qui compte pour le dollar, l'EUR/USD et les indices américains.",
-   "summary_en": "Goldman Sachs expects global real GDP growth of 2.8% in 2027, slightly above its 2.7% estimate for 2026, with risks skewed to the downside (renewed Iran escalation, fiscal risks lifting long-term yields, AI capex disappointment). The bank sees 25 bp Fed hikes in December and March, followed by gradual cuts starting in November; its baseline is more dovish than market pricing, especially for the ECB and the Fed, which matters for the dollar, EUR/USD and U.S. indexes.",
-   "time": "17:24",
-   "title": "Goldman Sachs prévoit une croissance mondiale de 2,8 % en 2027 et deux hausses de taux de la Fed avant des baisses",
-   "title_en": "Goldman Sachs’ economic outlook for 2027: 2.8% global growth, two more Fed hikes before cuts",
-   "url": "https://www.investing.com/news/stock-market-news/goldman-sachs-economic-outlook-for-2027-5044151"
-  },
-  {
-   "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Selon une analyse de Reuters reprise par Investing.com, le sommet climatique COP31 s'est soldé par un échec, après des négociations houleuses prolongées au-delà de l'échéance. L'article n'a pas pu être lu en entier; ce résumé s'appuie sur le titre. L'absence d'accord sur la sortie des combustibles fossiles touche le pétrole à long terme, mais l'effet immédiat sur le WTI devrait rester limité.",
-   "summary_en": "According to a Reuters analysis via Investing.com, the COP31 climate summit ended in collapse after fractious talks that ran past their deadline. The full article could not be read; this summary is based on the headline. The lack of a deal on moving away from fossil fuels matters for oil over the long term, though the immediate impact on WTI is likely limited.",
-   "time": "16:18",
-   "title": "Analyse : la diplomatie climatique peut-elle rebondir après l'échec de la COP31?",
-   "title_en": "Analysis-Can climate diplomacy build on the collapse of COP31?",
-   "url": "https://www.investing.com/news/commodities-news/analysiscan-climate-diplomacy-build-on-the-collapse-of-cop31-5044126"
-  },
-  {
-   "assets": [
-    "spx500",
-    "nasdaq"
-   ],
-   "date": "2026-11-22",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Investing.com se penche sur l'exposition du S&P 500 à un éventuel éclatement du « trade » de l'intelligence artificielle, après une semaine de forte déroute des titres liés à l'IA. L'article n'a pas pu être lu en entier; ce résumé s'appuie seulement sur le titre. La question est clé pour le S&P 500 et le Nasdaq, très concentrés dans les géants technologiques, à la veille de la reprise des échanges lundi.",
-   "summary_en": "Investing.com examines how exposed the S&P 500 is to a possible bust in the artificial-intelligence trade, after a week of heavy selling in AI-linked stocks. The full article could not be read; this summary is based on the headline only. The question matters for the S&P 500 and Nasdaq, which are heavily concentrated in tech giants, ahead of Monday's resumption of trading.",
-   "time": "15:43",
-   "title": "Dans quelle mesure le S&P 500 est-il exposé à un éclatement du « trade » de l'IA?",
-   "title_en": "How exposed is the S&P 500 to an AI trade bust?",
-   "url": "https://www.investing.com/news/stock-market-news/how-exposed-is-sp-500-to-an-ai-trade-bust-5044112"
   }
  ],
  "live": {
