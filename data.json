@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T19:48:46Z",
+ "updatedAt": "2026-11-23T20:45:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -183,8 +183,8 @@
    "cotLong": 35.5,
    "cotChange": 1.85,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 35,
-   "uCrowd": "2026-11-23T19:45:00Z"
+   "crowdLong": 36,
+   "uCrowd": "2026-11-23T20:45:00Z"
   },
   "usdcad": {
    "season": "neutral",
