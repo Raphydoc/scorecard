@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T10:43:07Z",
+  "updatedAt": "2026-11-24T11:48:22Z",
   "econ": {
     "values": {
       "adp": {
@@ -1410,21 +1410,48 @@
   "news": [
     {
       "date": "2026-11-24",
-      "time": "05:08",
+      "time": "06:31",
       "source": "CoinDesk",
       "impact": "med",
       "assets": [
         "btcusd",
         "nasdaq",
-        "usd",
-        "xauusd",
-        "usoil"
+        "usd"
       ],
-      "title": "Le bitcoin retombe sous 60 000 $ alors que l'élan lié au retour de Jensen Huang chez Nvidia s'estompe",
-      "title_en": "Bitcoin falls below $60,000 as rally on Jensen Huang's Nvidia return fades",
-      "summary": "Le bitcoin est repassé sous 60 000 $ (environ 59 904 $), en baisse de plus de 2 % sur 24 heures, effaçant l'essentiel d'un rebond qui l'avait mené près de 64 000 $. Après des gains de 31 % pour Nvidia et de 7 % pour le Nasdaq 100 lundi, les contrats à terme du Nasdaq 100 reculent d'environ 1 % et Nvidia perd 4,9 % avant l'ouverture. L'indice du dollar reste au-dessus de 104, l'or recule à 3 622 $ l'once (contre 3 690 $) et le WTI se négocie près de 80 $ le baril.",
-      "summary_en": "Bitcoin fell back below $60,000 (about $59,904), down more than 2% over 24 hours, giving up most of a rebound that took it near $64,000. After Monday's 31% gain for Nvidia and 7% for the Nasdaq 100, Nasdaq 100 futures are down about 1% and Nvidia is 4.9% lower premarket. The dollar index holds above 104, gold eased to $3,622 an ounce from $3,690 and WTI trades near $80 a barrel.",
-      "url": "https://www.coindesk.com/markets/2026/11/24/bitcoin-falls-below-usd60-000-as-rally-on-jensen-huang-s-nvidia-return-fades"
+      "title": "Le bitcoin efface le rallye de lundi lié à Nvidia et passe sous 60 000 $; les liquidations triplent",
+      "title_en": "Bitcoin hands back Monday's Nvidia-driven gains, liquidations triple",
+      "summary": "Le bitcoin recule de 2,2 % depuis minuit UTC, à environ 59 849 $, et l'ether perd 1,6 % à 1 694 $. Selon CoinGlass, 844 millions $ de positions sur contrats à terme crypto ont été liquidées en 24 heures (+217 %), et les FNB bitcoin au comptant américains ont subi 569,7 millions $ de sorties lundi, une cinquième séance de suite. Le marché anticipe toujours une hausse d'un quart de point de la Fed en décembre, avec le PCE attendu mercredi.",
+      "summary_en": "Bitcoin fell 2.2% since midnight UTC to about $59,849, and ether lost 1.6% to $1,694. According to CoinGlass, $844 million of crypto futures positions were liquidated in 24 hours (+217%), and U.S. spot bitcoin ETFs saw $569.7 million of outflows on Monday, a fifth straight session. Markets still expect a quarter-point Fed hike in December, with PCE data due Wednesday.",
+      "url": "https://www.coindesk.com/markets/2026/11/24/bitcoin-hands-back-monday-s-nvidia-driven-gains-liquidations-triple"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "06:02",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Le retour de Huang remet en doute l'indépendance du conseil de Nvidia, selon des critiques",
+      "title_en": "Nvidia board's Huang reversal raises doubts about independence, critics say",
+      "summary": "Des investisseurs et experts en gouvernance estiment que le conseil de Nvidia a miné son indépendance en réintégrant Jensen Huang avant la fin des enquêtes sur sa conduite. L'action a clôturé en hausse de 31,5 % lundi; Nvidia affirme que ce retour ne pose aucun risque pour la sécurité nationale, et des comités du Congrès interrogeront Huang le 1er décembre. Le dossier reste une source de volatilité pour le Nasdaq et le S&P 500.",
+      "summary_en": "Investors and governance experts say Nvidia's board undermined its independence by reinstating Jensen Huang before investigations into his conduct concluded. The stock closed 31.5% higher on Monday; Nvidia says the reinstatement poses no national security risk, and congressional committees will interview Huang on December 1. The issue remains a source of volatility for the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/nvidia-boards-huang-reversal-raises-doubts-about-independence-critics-say-5047621"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "06:00",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "gbpusd"
+      ],
+      "title": "Les détaillants britanniques connaissent leur meilleur mois de ventes depuis la fin de 2022 (CBI)",
+      "title_en": "UK retailers report best month for sales since late 2022: CBI",
+      "summary": "Selon le sondage de la CBI, les détaillants britanniques affichent leur plus forte croissance des ventes en près de quatre ans, soit leur meilleur mois depuis la fin de 2022. Un signal de consommation plus solide au Royaume-Uni, à surveiller pour la livre sterling et les attentes envers la Banque d'Angleterre.",
+      "summary_en": "According to the CBI survey, British retailers report their strongest sales growth in nearly four years, their best month since late 2022. A firmer UK consumer signal, worth watching for sterling and Bank of England expectations.",
+      "url": "https://www.investing.com/news/economic-indicators/uk-retailers-report-best-month-for-sales-since-late-2022-cbi-5047636"
     },
     {
       "date": "2026-11-24",
@@ -2005,36 +2032,6 @@
       "title": "Nvidia réintègre Jensen Huang comme PDG; l'action bondit d'environ 30 %",
       "title_en": "Nvidia reinstates Jensen Huang as CEO; shares surge about 30%",
       "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-surge-30-as-board-announces-jensen-huangs-reinstatement-5045795"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Les résultats trimestriels de Dell et de Hewlett Packard Enterprise, attendus cette semaine, serviront de test pour la vigueur de la demande en infrastructures d'IA. Après la récente déroute des technos, ces publications pourraient influencer le Nasdaq et le S&P 500.",
-      "summary_en": "Quarterly results from Dell and Hewlett Packard Enterprise, due this week, will test the strength of demand for AI infrastructure. After the recent tech rout, these reports could sway the Nasdaq and the S&P 500.",
-      "time": "08:55",
-      "title": "Les résultats de Dell et HPE vont tester la demande en IA après la déroute des technos",
-      "title_en": "Dell, HPE results to put AI demand to the test after tech rout",
-      "url": "https://www.investing.com/news/stock-market-news/dell-hpe-results-to-put-ai-demand-to-the-test-after-tech-rout-5045762"
-    },
-    {
-      "assets": [
-        "spx500",
-        "nasdaq"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Deutsche Bank prévoit que le S&P 500 atteindra 9 000 points en 2027. Cette cible optimiste s'ajoute à celle de Morgan Stanley, qui est devenue plus positive sur les actions après la vente massive de la semaine dernière.",
-      "summary_en": "Deutsche Bank expects the S&P 500 to reach 9,000 in 2027. The bullish target adds to Morgan Stanley's more positive stance on stocks after last week's selloff.",
-      "time": "08:51",
-      "title": "Deutsche Bank voit le S&P 500 atteindre 9 000 points en 2027",
-      "title_en": "Deutsche Bank sees S&P 500 hitting 9,000 in 2027",
-      "url": "https://www.investing.com/news/stock-market-news/deutsche-bank-sees-sp-500-hitting-9000-in-2027-5045752"
     }
   ],
   "live": {
