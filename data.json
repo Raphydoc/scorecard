@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T18:47:46Z",
+ "updatedAt": "2026-11-24T19:46:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -124,8 +124,8 @@
    "cotLong": 61.15,
    "cotChange": -1.24,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 31,
-   "uCrowd": "2026-11-23T15:46:00Z"
+   "crowdLong": 35,
+   "uCrowd": "2026-11-24T19:46:00Z"
   },
   "xagusd": {
    "season": "bear",
@@ -164,8 +164,8 @@
    "cotLong": 46.63,
    "cotChange": -2.07,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 70,
-   "uCrowd": "2026-11-23T13:49:00Z"
+   "crowdLong": 68,
+   "uCrowd": "2026-11-24T19:46:00Z"
   },
   "eurusd": {
    "season": "bear",
@@ -174,8 +174,8 @@
    "cotLong": 38.16,
    "cotChange": -0.31,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 69,
-   "uCrowd": "2026-11-23T15:46:00Z"
+   "crowdLong": 65,
+   "uCrowd": "2026-11-24T19:46:00Z"
   },
   "usdjpy": {
    "season": "bear",
