@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T16:47:46Z",
+ "updatedAt": "2026-11-24T17:11:13Z",
  "econ": {
   "values": {
    "adp": {
@@ -34099,42 +34099,80 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-24T07:10:09Z",
+  "asOf": "2026-11-24T17:11:00Z",
   "recaps": [
    {
     "date": "2026-11-24",
-    "session": "tok",
-    "title": "Tokyo et Séoul s’envolent dans la foulée de Nvidia : Taiex +9 %, Kospi +6,5 %, Nikkei +3,9 %",
-    "title_en": "Tokyo and Seoul soar in Nvidia’s wake: Taiex +9%, Kospi +6.5%, Nikkei +3.9%",
-    "body": "Les bourses d’Asie ont prolongé le rebond de Wall Street après la réintégration de Jensen Huang à la tête de Nvidia : vers midi à Tokyo, le Taiex grimpait de plus de 9 %, le Kospi de 6,5 % à 5 014,41 et le Nikkei de 3,9 % à 58 654,40, alors que Hang Seng (+0,2 %) et Shanghai (+0,7 %) restaient en retrait (AP). Le Nikkei a même brièvement gagné 5 %, porté par les fabricants de puces comme Advantest et Tokyo Electron (Reuters). Le dollar est resté stable (indice à 104,31) en attendant la Fed du 9 décembre, et l’or a rendu l’essentiel d’une poussée vers 3 677 $ pour finir la séance en hausse de 0,21 %. Le pétrole a cédé 1,17 % et le bitcoin 1,04 %.",
-    "body_en": "Asian bourses extended Wall Street’s rebound after Jensen Huang was reinstated as Nvidia’s CEO: around midday in Tokyo, the Taiex was up more than 9%, the Kospi 6.5% at 5,014.41 and the Nikkei 3.9% at 58,654.40, while the Hang Seng (+0.2%) and Shanghai (+0.7%) lagged (AP). The Nikkei briefly gained 5%, lifted by chipmakers such as Advantest and Tokyo Electron (Reuters). The dollar held steady (index at 104.31) ahead of the Fed’s Dec. 9 meeting, and gold gave back most of a spike toward $3,677 to end the session up 0.21%. Oil lost 1.17% and bitcoin 1.04%.",
+    "session": "lon",
+    "title": "L’euphorie Nvidia s’essouffle : le Nasdaq ouvre en baisse, l’or perd 1,5 % et le dollar recule",
+    "title_en": "Nvidia euphoria fades: Nasdaq opens lower, gold sheds 1.5% and the dollar retreats",
+    "body": "Le rallye de l’IA déclenché par le retour de Jensen Huang chez Nvidia s’est estompé : Wall Street a ouvert en baisse, le S&P 500 cédant 0,90 % et le Nasdaq 1,43 % à l’ouverture, tandis que le Dow ne perdait que 0,20 % (Reuters). Le dollar a rendu une bonne partie de ses gains de lundi (indice −0,51 % sur la séance), l’euro profitant d’un septième mois de hausse du moral des entreprises allemandes (Reuters). Les marchés attendent l’indice PCE de mercredi, dernière grosse donnée d’inflation avant la Fed de décembre, où CME FedWatch donne une hausse de 25 points de base quasi certaine; l’indice de confiance du Conference Board, publié à 10 h, a bondi à 103,3 contre 91,9. L’or a reculé de 1,54 % et l’argent de 3,32 %, le bitcoin est repassé sous 60 000 $ (−1,44 %) et le pétrole a gagné 0,40 %.",
+    "body_en": "The AI rally sparked by Jensen Huang’s return to Nvidia faded: Wall Street opened lower, with the S&P 500 down 0.90% and the Nasdaq 1.43% at the open, while the Dow slipped only 0.20% (Reuters). The dollar gave back much of Monday’s gains (index −0.51% over the session), with the euro helped by a seventh straight monthly rise in German business morale (Reuters). Markets await Wednesday’s PCE index, the last key inflation print before the Fed’s December meeting, where CME FedWatch shows a 25-basis-point hike as near-certain; the Conference Board confidence index, released at 10 a.m., jumped to 103.3 from 91.9. Gold fell 1.54% and silver 3.32%, bitcoin slipped back below $60,000 (−1.44%) and oil gained 0.40%.",
     "sections": {
      "indices": {
-      "fr": "Advantest a bondi de 14,1 % et Tokyo Electron de 10,5 % à Tokyo, Samsung de 7,5 % et SK Hynix de 8,6 % à Séoul, TSMC et MediaTek de près de 10 % à Taïwan; l’ASX 200 a gagné 1,7 % à 8 718,80, alors que les contrats à terme américains montaient légèrement (AP).",
-      "en": "Advantest jumped 14.1% and Tokyo Electron 10.5% in Tokyo, Samsung 7.5% and SK Hynix 8.6% in Seoul, TSMC and MediaTek nearly 10% in Taiwan; the ASX 200 gained 1.7% to 8,718.80, while U.S. futures edged higher (AP)."
+      "fr": "Repli à l’ouverture de New York mené par les valeurs liées à l’IA : Nasdaq −1,00 % et S&P 500 −0,15 % entre 9 h 30 et 11 h 30, alors que le Dow (+0,37 %) et le Russell 2000 (+0,04 %) résistaient.",
+      "en": "A pullback at the New York open led by AI-linked stocks: Nasdaq −1.00% and S&P 500 −0.15% between 9:30 and 11:30 a.m., while the Dow (+0.37%) and Russell 2000 (+0.04%) held up."
      },
      "metals": {
-      "fr": "L’or a grimpé jusqu’à 3 676,70 $ en début de séance avant de redescendre vers 3 638 $ (+0,21 %), après avoir repris 2,7 % lundi depuis un creux de 14 mois (Saxo); l’argent a perdu 1,09 % à environ 42,52 $.",
-      "en": "Gold climbed as high as $3,676.70 early in the session before slipping back to about $3,638 (+0.21%), after recovering 2.7% on Monday from a 14-month low (Saxo); silver lost 1.09% to about $42.52."
+      "fr": "L’or, à 3 624,77 $ (−0,2 %) vers 5 h 46 selon Reuters, a décroché dans l’heure qui a suivi les données de 10 h pour finir la séance à −1,54 % près de 3 564 $; l’argent a chuté de 3,32 % sous 41 $.",
+      "en": "Gold, at $3,624.77 (−0.2%) around 5:46 a.m. per Reuters, slid in the hour after the 10 a.m. data to end the session down 1.54% near $3,564; silver tumbled 3.32% below $41."
      },
      "forex": {
-      "fr": "Les changes ont peu bougé : USD/JPY +0,04 % à 159,08, toujours sous le seuil de 160, EUR/USD inchangé à 1,0911 et USD/CAD −0,06 % à 1,4357.",
-      "en": "Currencies barely moved: USD/JPY +0.04% at 159.08, still below the 160 mark, EUR/USD unchanged at 1.0911 and USD/CAD −0.06% at 1.4357."
+      "fr": "Le dollar a glissé (indice à 103,76, −0,52 % selon Reuters) : EUR/USD +0,59 % vers 1,097, USD/JPY −0,11 % à 159,15 et USD/CAD −0,29 % à 1,4313.",
+      "en": "The dollar slipped (index at 103.76, −0.52% per Reuters): EUR/USD +0.59% near 1.097, USD/JPY −0.11% at 159.15 and USD/CAD −0.29% at 1.4313."
      },
      "crypto": {
-      "fr": "Le bitcoin n’a pas profité de l’appétit pour le risque : il a touché 59 373 $ avant de finir la séance vers 60 542 $ (−1,04 %).",
-      "en": "Bitcoin did not share in the risk appetite: it touched $59,373 before ending the session near $60,542 (−1.04%)."
+      "fr": "Le bitcoin (−1,44 %) a effacé ses gains de lundi et est repassé sous 60 000 $, alors que les FNB bitcoin au comptant américains ont subi un cinquième jour de sorties (569,7 M$) et un record mensuel de 4,71 G$ en novembre (CoinDesk).",
+      "en": "Bitcoin (−1.44%) erased Monday’s gains and slipped back below $60,000 as US spot bitcoin ETFs saw a fifth straight day of outflows ($569.7M) and a record $4.71B monthly drain in November (CoinDesk)."
      },
      "energy": {
-      "fr": "Le pétrole a poursuivi sa baisse de lundi : le WTI a reculé de 1,17 % à environ 79,54 $, et le Brent glissait de 0,5 % à 86,27 $ en matinée asiatique (AP).",
-      "en": "Oil extended Monday’s slide: WTI fell 1.17% to about $79.54, and Brent was down 0.5% at $86.27 in Asian morning trade (AP)."
+      "fr": "Le WTI a gagné 0,40 % sur la séance, autour de 80,4 $, sans vraiment effacer le recul de la veille.",
+      "en": "WTI gained 0.40% over the session, around $80.4, without really erasing the previous day’s decline."
      }
     },
+    "sources": [
+     "https://finance.yahoo.com/markets/stocks/articles/wall-st-opens-lower-nvidia-144149736.html",
+     "https://live.euronext.com/en/financial-news/dollar-slips-nvidia-fueled-ai-rally-fades",
+     "https://www.kitco.com/news/off-the-wire/2026-11-24/gold-slips-spotlight-us-inflation-data",
+     "https://www.fxstreet.com/news/us-cb-consumer-confidence-index-improves-to-1033-in-november-202611241512",
+     "https://www.coindesk.com/markets/2026/11/24/bitcoin-hands-back-monday-s-nvidia-driven-gains-liquidations-triple",
+     "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion"
+    ]
+   },
+   {
+    "body": "Les bourses d’Asie ont prolongé le rebond de Wall Street après la réintégration de Jensen Huang à la tête de Nvidia : vers midi à Tokyo, le Taiex grimpait de plus de 9 %, le Kospi de 6,5 % à 5 014,41 et le Nikkei de 3,9 % à 58 654,40, alors que Hang Seng (+0,2 %) et Shanghai (+0,7 %) restaient en retrait (AP). Le Nikkei a même brièvement gagné 5 %, porté par les fabricants de puces comme Advantest et Tokyo Electron (Reuters). Le dollar est resté stable (indice à 104,31) en attendant la Fed du 9 décembre, et l’or a rendu l’essentiel d’une poussée vers 3 677 $ pour finir la séance en hausse de 0,21 %. Le pétrole a cédé 1,17 % et le bitcoin 1,04 %.",
+    "body_en": "Asian bourses extended Wall Street’s rebound after Jensen Huang was reinstated as Nvidia’s CEO: around midday in Tokyo, the Taiex was up more than 9%, the Kospi 6.5% at 5,014.41 and the Nikkei 3.9% at 58,654.40, while the Hang Seng (+0.2%) and Shanghai (+0.7%) lagged (AP). The Nikkei briefly gained 5%, lifted by chipmakers such as Advantest and Tokyo Electron (Reuters). The dollar held steady (index at 104.31) ahead of the Fed’s Dec. 9 meeting, and gold gave back most of a spike toward $3,677 to end the session up 0.21%. Oil lost 1.17% and bitcoin 1.04%.",
+    "date": "2026-11-24",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin did not share in the risk appetite: it touched $59,373 before ending the session near $60,542 (−1.04%).",
+      "fr": "Le bitcoin n’a pas profité de l’appétit pour le risque : il a touché 59 373 $ avant de finir la séance vers 60 542 $ (−1,04 %)."
+     },
+     "energy": {
+      "en": "Oil extended Monday’s slide: WTI fell 1.17% to about $79.54, and Brent was down 0.5% at $86.27 in Asian morning trade (AP).",
+      "fr": "Le pétrole a poursuivi sa baisse de lundi : le WTI a reculé de 1,17 % à environ 79,54 $, et le Brent glissait de 0,5 % à 86,27 $ en matinée asiatique (AP)."
+     },
+     "forex": {
+      "en": "Currencies barely moved: USD/JPY +0.04% at 159.08, still below the 160 mark, EUR/USD unchanged at 1.0911 and USD/CAD −0.06% at 1.4357.",
+      "fr": "Les changes ont peu bougé : USD/JPY +0,04 % à 159,08, toujours sous le seuil de 160, EUR/USD inchangé à 1,0911 et USD/CAD −0,06 % à 1,4357."
+     },
+     "indices": {
+      "en": "Advantest jumped 14.1% and Tokyo Electron 10.5% in Tokyo, Samsung 7.5% and SK Hynix 8.6% in Seoul, TSMC and MediaTek nearly 10% in Taiwan; the ASX 200 gained 1.7% to 8,718.80, while U.S. futures edged higher (AP).",
+      "fr": "Advantest a bondi de 14,1 % et Tokyo Electron de 10,5 % à Tokyo, Samsung de 7,5 % et SK Hynix de 8,6 % à Séoul, TSMC et MediaTek de près de 10 % à Taïwan; l’ASX 200 a gagné 1,7 % à 8 718,80, alors que les contrats à terme américains montaient légèrement (AP)."
+     },
+     "metals": {
+      "en": "Gold climbed as high as $3,676.70 early in the session before slipping back to about $3,638 (+0.21%), after recovering 2.7% on Monday from a 14-month low (Saxo); silver lost 1.09% to about $42.52.",
+      "fr": "L’or a grimpé jusqu’à 3 676,70 $ en début de séance avant de redescendre vers 3 638 $ (+0,21 %), après avoir repris 2,7 % lundi depuis un creux de 14 mois (Saxo); l’argent a perdu 1,09 % à environ 42,52 $."
+     }
+    },
+    "session": "tok",
     "sources": [
      "https://www.ksat.com/business/2026/11/24/asian-stocks-rally-after-wall-street-rebound-as-jensen-huang-returns-as-nvidias-ceo/",
      "https://www.marketscreener.com/news/japan-s-nikkei-soars-on-huang-s-nvidia-comeback-advantest-rises-nearly-14--ce7851dade8cfe2d",
      "https://www.home.saxo/en-sg/content/articles/macro/asia-market-quick-take--24-november-2026-24112026"
-    ]
+    ],
+    "title": "Tokyo et Séoul s’envolent dans la foulée de Nvidia : Taiex +9 %, Kospi +6,5 %, Nikkei +3,9 %",
+    "title_en": "Tokyo and Seoul soar in Nvidia’s wake: Taiex +9%, Kospi +6.5%, Nikkei +3.9%"
    },
    {
     "body": "Wall Street a effacé une partie de sa pire semaine depuis 2020 : le Dow a gagné 1 447,98 points (+3,01 %) à 49 595,31, le S&P 500 a pris 4,73 % et le Nasdaq composé 6,51 % (FactSet, via Fox Business), après que le conseil de Nvidia a réintégré Jensen Huang comme PDG, ce qui a fait bondir le titre de plus de 31 %. L’essentiel du gain s’est fait à l’ouverture : pendant la séance elle-même, le S&P 500 n’a ajouté que 0,13 % et le Nasdaq 100 a cédé 0,45 %, alors que le Russell 2000 a progressé de 1,26 %. Le dollar a touché son plus haut depuis le printemps 2025 (indice à 104,40 vers midi, CoinDesk) sur les paris d’une hausse de la Fed le 9 décembre, et le PMI des services de S&P Global est tombé à 54,7, sous les 55,6 attendus (Kitco). Le bitcoin a reculé de 4,07 % pendant la séance et le pétrole de 1,83 %.",
