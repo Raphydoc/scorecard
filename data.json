@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T08:47:38Z",
+  "updatedAt": "2026-11-24T09:47:12Z",
   "econ": {
     "values": {
       "adp": {
@@ -1410,6 +1410,53 @@
   "news": [
     {
       "date": "2026-11-24",
+      "time": "04:32",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Nvidia recule de plus de 3 % avant l'ouverture après la forte envolée liée au retour de Huang",
+      "title_en": "Nvidia shares slip over 3% premarket after Huang reinstatement sparks sharp surge",
+      "summary": "L'action de Nvidia perd plus de 3 % en séance de pré-ouverture, après la forte hausse déclenchée par la réintégration de Jensen Huang comme PDG. Ce repli de la plus lourde pondération du Nasdaq et du S&P 500 pourrait peser sur les contrats à terme américains à l'ouverture.",
+      "summary_en": "Nvidia shares are down more than 3% in premarket trading after the sharp surge triggered by Jensen Huang's reinstatement as CEO. A pullback in the heaviest weight of the Nasdaq and S&P 500 could weigh on U.S. futures at the open.",
+      "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-surge-30-as-board-announces-jensen-huangs-reinstatement-5045795"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "04:32",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "gbpusd",
+        "usd"
+      ],
+      "title": "Livre sterling : la livre s'apprécie légèrement après un recul mené par le dollar, le rallye risquant d'aller trop loin",
+      "title_en": "Sterling today: Pound edges higher after dollar-led slide as rally risks overshoot",
+      "summary": "La livre sterling remonte légèrement face au dollar après un recul attribué à la vigueur du billet vert. Investing.com souligne que le rallye du dollar risque d'aller trop loin, ce qui laisse de la place à un rebond du GBP/USD.",
+      "summary_en": "The pound edges higher against the dollar after a slide driven by greenback strength. Investing.com notes the dollar rally risks overshooting, leaving room for a GBP/USD rebound.",
+      "url": "https://www.investing.com/news/forex-news/sterling-today-pound-edges-higher-after-dollarled-slide-as-rally-risks-overshoot-5047426"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "04:02",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "xauusd",
+        "usdjpy",
+        "eurusd"
+      ],
+      "title": "Les rendements obligataires mondiaux reculent : la demande de valeurs refuges précède le test du PCE américain",
+      "title_en": "Global yields fall as safe-haven bid meets looming U.S. PCE test",
+      "summary": "Les rendements des obligations souveraines reculent à l'échelle mondiale sous l'effet d'une demande de valeurs refuges, à l'approche de l'indice des prix PCE américain attendu mercredi. Ce chiffre d'inflation privilégié par la Fed sera déterminant pour les paris de hausse de taux, et donc pour le dollar, l'or et le yen.",
+      "summary_en": "Sovereign bond yields are falling globally on a safe-haven bid ahead of Wednesday's U.S. PCE price index. The Fed's preferred inflation gauge will be key for rate-hike bets, and thus for the dollar, gold and the yen.",
+      "url": "https://www.investing.com/news/forex-news/global-yields-fall-as-safehaven-bid-meets-looming-us-pce-test-5047210"
+    },
+    {
+      "date": "2026-11-24",
       "time": "03:30",
       "source": "Investing.com",
       "impact": "med",
@@ -1987,53 +2034,6 @@
       "title": "Morgan Stanley devient le plus optimiste sur les actions depuis avril après la vente massive",
       "title_en": "Morgan Stanley turns most bullish on stocks since April after last week's selloff",
       "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-turns-most-bullish-on-stocks-since-april-after-last-weeks-selloff-5045615"
-    },
-    {
-      "assets": [
-        "usoil"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon le titre d'Investing.com, Deutsche Bank s'attend à ce que le marché pétrolier renoue avec un surplus d'offre, ce qui ramènerait le Brent à 70 $ le baril ou moins. Une telle prévision pèse sur le WTI, déjà en recul avec le rétablissement des exportations du Golfe. (Article complet non accessible; résumé limité au titre.)",
-      "summary_en": "Per the Investing.com headline, Deutsche Bank expects the oil market to return to a supply surplus, taking Brent to $70 a barrel or below. Such a forecast weighs on WTI, already lower as Gulf exports recover. (Full article not accessible; summary limited to the headline.)",
-      "time": "08:20",
-      "title": "Deutsche Bank prévoit le retour d'un surplus de pétrole, avec le Brent à 70 $ ou moins",
-      "title_en": "Deutsche Bank sees oil surplus returning, Brent at $70 or below",
-      "url": "https://www.investing.com/news/commodities-news/deutsche-bank-sees-oil-surplus-returning-brent-at-70-or-below-93CH-5045588"
-    },
-    {
-      "assets": [
-        "usd",
-        "usdjpy",
-        "eurusd"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "D'après deux manchettes d'Investing.com, Deutsche Bank relève ses prévisions pour le dollar américain en invoquant la vigueur du boom de l'intelligence artificielle. La banque prévoit néanmoins un retour de l'USD/JPY dans la zone des 140 en 2027, signe d'un yen plus fort à terme. (Articles complets non accessibles; résumé limité aux titres.)",
-      "summary_en": "According to two Investing.com headlines, Deutsche Bank is raising its U.S. dollar forecasts, citing the strength of the AI boom. The bank nonetheless sees USD/JPY returning to the 140s in 2027, implying a stronger yen over time. (Full articles not accessible; summary limited to the headlines.)",
-      "time": "08:18",
-      "title": "Deutsche Bank relève ses prévisions pour le dollar grâce au boom de l'IA, mais voit l'USD/JPY revenir dans les 140 en 2027",
-      "title_en": "Deutsche Bank raises dollar forecasts on AI boom strength; sees USD/JPY back in the 140s in 2027",
-      "url": "https://www.investing.com/news/forex-news/deutsche-bank-raises-dollar-forecasts-on-ai-boom-strength-93CH-5045584"
-    },
-    {
-      "assets": [
-        "usd",
-        "nasdaq",
-        "btcusd",
-        "eurusd"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Selon le fil en direct de CoinDesk, les contrats à terme sur les valeurs technologiques rebondissent de plus de 3 % après la déroute de l'IA, tandis que l'indice du dollar (DXY) franchit 104, son plus haut depuis mars 2025. Un dollar aussi fort pèse sur l'EUR/USD et les autres devises majeures, même si l'appétit pour le risque revient. (Article complet non accessible; résumé limité au titre.)",
-      "summary_en": "According to CoinDesk's live feed, tech futures are rebounding more than 3% after the AI rout, while the dollar index (DXY) tops 104, its highest since March 2025. Such a strong dollar weighs on EUR/USD and other majors even as risk appetite returns. (Full article not accessible; summary limited to the headline.)",
-      "time": "08:01",
-      "title": "Les contrats à terme techno rebondissent de plus de 3 % et l'indice du dollar dépasse 104, un sommet de 20 mois",
-      "title_en": "Tech futures rebound more than 3% as dollar index tops 104, a 20-month high",
-      "url": "https://www.coindesk.com/tech/2026/11/23/live-news-wall-street-rebounds-as-dollar-index-hits-highest-since-march-2025"
     }
   ],
   "live": {
