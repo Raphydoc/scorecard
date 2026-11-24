@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T07:10:09Z",
+ "updatedAt": "2026-11-24T07:47:49Z",
  "econ": {
   "values": {
    "adp": {
@@ -1410,6 +1410,51 @@
  "news": [
   {
    "date": "2026-11-24",
+   "time": "02:00",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usdjpy",
+    "nasdaq"
+   ],
+   "title": "Tokyo clôture en forte hausse : le Nikkei 225 gagne 4,11 %",
+   "title_en": "Japan stocks higher at close of trade; Nikkei 225 up 4.11%",
+   "summary": "La Bourse de Tokyo a terminé la séance en forte hausse, le Nikkei 225 avançant de 4,11 % selon Investing.com. Ce bond s'inscrit dans le rebond généralisé des Bourses asiatiques liées à l'IA, un signal favorable pour le Nasdaq et à surveiller pour le yen.",
+   "summary_en": "Tokyo stocks ended the session sharply higher, with the Nikkei 225 up 4.11%, according to Investing.com. The jump is part of a broad AI-linked rebound across Asian markets, a supportive signal for the Nasdaq and one to watch for the yen.",
+   "url": "https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-411-5047180"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "01:55",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "eurusd"
+   ],
+   "title": "Pourquoi la France est menacée de récession, et ce qui pourrait l'en empêcher",
+   "title_en": "Why France is at risk of recession — and what could keep it out of one",
+   "summary": "CNBC analyse le risque de récession en France à la lumière des indices PMI d'activité. Un affaiblissement de la deuxième économie de la zone euro pèserait sur l'euro et sur les attentes envers la BCE.",
+   "summary_en": "CNBC examines France's recession risk in light of the PMI business surveys. A weakening of the euro zone's second-largest economy would weigh on the euro and on expectations for the ECB.",
+   "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "01:49",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "eurusd"
+   ],
+   "title": "Sanofi va acquérir l'américaine Insmed pour 41 milliards $ en espèces",
+   "title_en": "Sanofi to acquire Insmed in $41 billion cash deal",
+   "summary": "Le pharmaceutique français Sanofi a conclu une entente pour acquérir la société américaine Insmed, cotée au Nasdaq, dans une transaction entièrement en espèces de 41 milliards $. Ce méga-rachat transatlantique relance l'activité de fusions dans le secteur de la santé.",
+   "summary_en": "French drugmaker Sanofi has agreed to acquire Nasdaq-listed U.S. company Insmed in an all-cash deal worth $41 billion. The transatlantic mega-deal revives M&A activity in the healthcare sector.",
+   "url": "https://www.investing.com/news/stock-market-news/sanofi-to-acquire-insmed-in-41-billion-cash-deal-5047167"
+  },
+  {
+   "date": "2026-11-24",
    "time": "00:30",
    "source": "Investing.com",
    "impact": "med",
@@ -1987,51 +2032,6 @@
    "title": "Le dollar canadien se stabilise près de son plus bas en 19 mois, plombé par la faiblesse du pétrole et l'écart de taux",
    "title_en": "Canadian dollar steadies near 19-month low as oil weakness and rate gap weigh",
    "url": "https://www.investing.com/news/forex-news/canadian-dollar-steadies-near-19month-low-as-oil-weakness-and-rate-gap-weigh-5045295"
-  },
-  {
-   "assets": [
-    "nzdusd"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "UBS revoit à la baisse son opinion sur le dollar néo-zélandais. Selon le titre, la banque invoque la faiblesse des perspectives économiques intérieures de la Nouvelle-Zélande, un facteur négatif pour le NZD/USD.",
-   "summary_en": "UBS has downgraded its view on the New Zealand dollar. According to the headline, the bank cites New Zealand's weak domestic economic outlook, a negative for NZD/USD.",
-   "time": "07:04",
-   "title": "UBS abaisse sa vue sur le dollar néo-zélandais en raison de perspectives intérieures faibles",
-   "title_en": "UBS downgrades New Zealand dollar on weak domestic outlook",
-   "url": "https://www.investing.com/news/forex-news/ubs-downgrades-new-zealand-dollar-on-weak-domestic-outlook-93CH-5045178"
-  },
-  {
-   "assets": [
-    "btcusd",
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Après être tombé vers 55 500 $ samedi, son plus bas en plus de deux ans, le bitcoin est repassé au-dessus de 61 000 $ lundi, porté par le rebond des contrats à terme américains (S&P 500 près de +3 %, Nasdaq 100 +3 %, Nvidia +8 % en préouverture). L'ether gagne 2 % vers 1 720 $ et le SOL près de 4 % à 72 $, mais les FNB bitcoin au comptant ont perdu 1,24 G$ la semaine dernière, une troisième semaine de sorties. L'inflation américaine attendue cette semaine et les paris sur une hausse de taux de la Fed en décembre restent au cœur du jeu.",
-   "summary_en": "After falling to about $55,500 on Saturday, its lowest in more than two years, bitcoin climbed back above $61,000 on Monday as U.S. futures rebounded (S&P 500 nearly +3%, Nasdaq 100 +3%, Nvidia +8% premarket). Ether rose 2% to about $1,720 and SOL nearly 4% to $72, but U.S. spot bitcoin ETFs lost $1.24 billion last week, a third straight week of outflows. U.S. inflation data this week and bets on a December Fed hike remain in focus.",
-   "time": "06:29",
-   "title": "Le bitcoin remonte au-dessus de 61 000 $ avec le rebond des actions après la déroute de l'IA",
-   "title_en": "Bitcoin climbs back above $61,000 as stocks rebound from AI rout",
-   "url": "https://www.coindesk.com/markets/2026/11/23/live-updates-bitcoin-climbs-back-above-usd61-000-as-stocks-rebound-from-ai-rout"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "CrowdStrike achète Zscaler dans une transaction entièrement en actions qui la valorise à environ 43,9 G$ : 1,135 action CrowdStrike par action Zscaler, soit 260,41 $ par action, une prime de 34 %. Zscaler gagnait plus de 13 % en préouverture et CrowdStrike reculait de plus de 8 %; CrowdStrike prévoit des ventes de 1,638 à 1,644 G$ au 4e trimestre, au-dessus des attentes de 1,62 G$. L'une des plus grosses transactions de l'histoire de la cybersécurité, un secteur lourd du Nasdaq.",
-   "summary_en": "CrowdStrike is buying Zscaler in an all-stock deal valuing it at about $43.9 billion: 1.135 CrowdStrike shares per Zscaler share, implying $260.41, a 34% premium. Zscaler jumped more than 13% premarket while CrowdStrike fell over 8%; CrowdStrike forecast Q4 sales of $1.638-$1.644 billion, above the $1.62 billion consensus. It is one of the largest cybersecurity deals on record, a heavyweight Nasdaq sector.",
-   "time": "05:39",
-   "title": "CrowdStrike achètera Zscaler pour environ 43,9 G$ en actions; Zscaler bondit de plus de 13 % en préouverture",
-   "title_en": "CrowdStrike bets on network security with $43.9 billion Zscaler deal",
-   "url": "https://www.investing.com/news/stock-market-news/crowdstrike-bets-on-network-security-with-439-billion-zscaler-deal-5044856"
   }
  ],
  "live": {
