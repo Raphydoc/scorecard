@@ -855,13 +855,31 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 @media (max-width:640px){ .supd .supdt{display:none} .chgi{grid-template-columns:1fr;gap:2px} }
 td.name small.updtag,small.updtag{display:block;font:600 9.5px/1.4 var(--f-mono);letter-spacing:.04em;color:var(--gold);opacity:.75;margin-top:2px;white-space:nowrap}
 table.cal tr.hol td{background:color-mix(in srgb,var(--gold) 9%,transparent);color:var(--fg);font-weight:600} table.cal tr.hol td.name small{font-weight:400} table.cal tr.hol.half td{background:color-mix(in srgb,var(--gold) 5%,transparent)} table.cal tr.hol.past td{opacity:.55} .holsum{color:var(--gold);font-weight:600}
+/* Banques */
+.bintro{margin:0 0 12px;font-size:14px;line-height:1.5;color:var(--muted);max-width:900px}
+.bfil{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;margin:0 0 14px}
+.bmgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,360px),1fr));gap:12px;align-items:start}
+.bmk{padding:14px 16px}
+.bmh{display:flex;align-items:baseline;justify-content:space-between;gap:10px} .bmh h4{margin:0;font:600 19px/1.2 var(--f-display);letter-spacing:.02em}
+.bverd{font:600 12px/1.2 var(--f-body);color:var(--muted);white-space:nowrap} .bverd.up{color:var(--bull)} .bverd.dn{color:var(--bear)} .bverd.ra{color:var(--gold)}
+.bcount{display:flex;gap:14px;margin:8px 0 6px;font:600 12.5px/1.2 var(--f-mono)} .bcount .up{color:var(--bull)} .bcount .dn{color:var(--bear)} .bcount .ra{color:var(--gold)}
+.bmk .bpbar{margin:0 0 10px}
+ul.bcalls{list-style:none;margin:0;padding:0}
+ul.bcalls li{display:grid;grid-template-columns:22px minmax(0,auto) minmax(0,1fr);gap:4px 8px;padding:7px 0;border-top:1px solid var(--line);font-size:13px;line-height:1.35}
+.bdir{font:700 15px/1 var(--f-mono);text-align:center} .bdir.up{color:var(--bull)} .bdir.dn{color:var(--bear)} .bdir.ra{color:var(--gold)}
+.bbk{font-weight:600;white-space:nowrap} .btg{color:var(--fg)} .bdt{grid-column:2/-1;font:500 11px/1.3 var(--f-mono);color:var(--muted)} .bdt a{color:var(--muted)} .bdt a:hover{color:var(--gold)}
+.bnotes{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,420px),1fr));gap:12px;align-items:start}
+.bnote{padding:14px 16px} .bnote h4{margin:6px 0 6px;font:600 15px/1.35 var(--f-body)} .bnote h4 a{color:var(--fg);text-decoration:none} .bnote h4 a:hover{color:var(--gold);text-decoration:underline}
+.bnote p{margin:0;font-size:13.5px;line-height:1.5;color:var(--muted)}
+.bnm{display:flex;align-items:center;gap:8px;font-size:12.5px} .bnm b{font-weight:700} .bnm em{margin-left:auto;font:500 11px/1 var(--f-mono);color:var(--muted);font-style:normal}
+.btag{padding:2px 7px;border-radius:4px;background:color-mix(in srgb,var(--gold) 14%,transparent);color:var(--gold);font:600 10.5px/1.3 var(--f-body);letter-spacing:.04em;text-transform:uppercase}
 /* Plan du jour, Bulletin du score, voyant de retard */
 .psum.pmac{margin-top:-4px}
 .psum .pk{flex:1 1 150px;min-width:0;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px;color:var(--fg);cursor:pointer;font:inherit;transition:border-color .15s}
 .psum .pk:hover{border-color:var(--gold)} .psum .pk b{font-size:20px} .psum .pk b.up{color:var(--bull)} .psum .pk b.dn{color:var(--bear)}
 #planTS:empty{display:none} #planTS .hts{margin-top:14px}
-.hts.noq{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)} .hts.noq .htrisk{grid-column:1;grid-row:1} .hts.noq .htstr{grid-column:2;grid-row:1} .hts.noq .htcb{grid-column:1/-1;grid-row:2}
-@media (max-width:900px){ .hts.noq{grid-template-columns:minmax(0,1fr)} .hts.noq .htrisk,.hts.noq .htstr,.hts.noq .htcb{grid-column:1;grid-row:auto} }
+.hts.noq{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)} .hts.noq .htrisk{grid-column:1;grid-row:1} .hts.noq .htstr{grid-column:2;grid-row:1}
+@media (max-width:900px){ .hts.noq{grid-template-columns:minmax(0,1fr)} .hts.noq .htrisk,.hts.noq .htstr{grid-column:1;grid-row:auto} }
 .btabs{display:flex;gap:6px;margin:0 0 12px;flex-wrap:wrap}
 .btabs button{min-height:40px;padding:8px 16px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--muted);font:600 13px/1.2 var(--f-body);cursor:pointer}
 .btabs button:hover{border-color:var(--gold);color:var(--fg)}
@@ -1213,7 +1231,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <button type="button" data-page="sent">Sentiment</button>
   <button type="button" data-page="risk">Sentiment de risque</button>
   <button type="button" data-page="cot">COT</button>
-  <button type="button" data-page="research">Banques</button>
+  <button type="button" data-page="bankpos">Banques</button>
   <span class="navgrp">Graphiques et outils</span>
   <button type="button" data-page="charts">Graphiques</button>
   <button type="button" data-page="seas">Saisonnalité</button>
@@ -1387,9 +1405,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="globe" hidden aria-label="Carte du monde"><div class="p2" id="p2globe"></div></section>
   <section data-pg="charts" hidden aria-label="Graphiques"><div class="p2" id="p2charts"></div></section>
   <section data-pg="recap" hidden aria-label="Récap des sessions"><div class="p2" id="p2recap"></div></section>
-  <section data-pg="research" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="research" aria-selected="true">Notes de recherche</button><button type="button" role="tab" data-btab="bankpos" aria-selected="false">Prévisions chiffrées</button></div><div class="p2" id="p2research"></div></section>
+  <section data-pg="research" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="bankpos" aria-selected="false">Prévisions par marché</button><button type="button" role="tab" data-btab="research" aria-selected="true">Notes de recherche</button></div><div class="p2" id="p2research"></div></section>
   <section data-pg="squawk" hidden aria-label="Fil en direct"><div class="p2" id="p2squawk"></div></section>
-  <section data-pg="bankpos" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="research" aria-selected="false">Notes de recherche</button><button type="button" role="tab" data-btab="bankpos" aria-selected="true">Prévisions chiffrées</button></div><div class="p2" id="p2bankpos"></div></section>
+  <section data-pg="bankpos" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="bankpos" aria-selected="true">Prévisions par marché</button><button type="button" role="tab" data-btab="research" aria-selected="false">Notes de recherche</button></div><div class="p2" id="p2bankpos"></div></section>
   <section data-pg="risk" hidden aria-label="Sentiment de risque"><div class="p2" id="p2risk"></div></section>
   <section data-pg="plan" hidden aria-label="Plan du jour"><div class="p2" id="p2plan"></div><div class="p2" id="planTS"></div></section>
   <section data-pg="bull" hidden aria-label="Bulletin du score"><div class="p2" id="p2bull"></div></section>
@@ -3614,7 +3632,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       if(applyAutoTrend() && ['score','top','fund','home'].includes(state.page) && !state.edit && !document.querySelector('.dd.open, .chfs')){ renderAll(); return; }
       const ae = document.activeElement;
       if((state.page==='watch' || state.page==='squawk') && !(ae && ae.id==='mwQ') && !document.querySelector('.dd.open, .chfs')){ state.noAnim = true; renderP2(); }
-      if(state.page==='plan' && !document.querySelector('.dd.open, .chfs')){ state.noAnim = true; renderPlan(); }
+      if(state.page==='plan' && !document.querySelector('.dd.open, .chfs')) planTick();
       staleCheck();
       // Sentiment : le VIX se met à jour sans relancer les animations des graphiques
       if(state.page==='sent' && !document.querySelector('.dd.open, .chfs')){ const C = window.Chart, ca = C && C.defaults.animation; if(C) C.defaults.animation = false; state.noAnim = true; renderSent(); if(C) setTimeout(()=>{ C.defaults.animation = ca; }, 1500); }
@@ -4176,58 +4194,58 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       landDots = d; return d; }catch(e){ return null; }
   }
   const prj = (lon, lat) => [((lon+180)/360*1000).toFixed(1), ((80-lat)/140*420).toFixed(1)];
+  // ---------- Banques · notes de recherche ----------
+  state.brTopic = state.brTopic || 'all'; state.brBank = state.brBank || 'all';
+  const BR_TOP = [['OR',['Or','Gold']],['FX',['Devises','FX']],['TAUX',['Taux','Rates']],['ACTIONS',['Actions','Equities']],['PÉTROLE',['Pétrole','Oil']],['CRYPTO',['Crypto','Crypto']],['MACRO',['Macro','Macro']]];
   async function renderResearch(){
     const box = $('p2research'); if(!box) return;
-    const M = await mkData(); if(state.page!=='research') return;
-    const T = state.ts || {}, R = (T.research||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||'')), B = (M&&M.banks)||[];
+    const R = ((state.ts||{}).research||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));
     const banks = [...new Set(R.map(r=>r.bank))].sort();
-    const list = state.brBank==='all' ? R : R.filter(r=>r.bank===state.brBank);
-    const calls = (T.bankcalls||[]).filter(c=>state.brBank==='all' || c.bank===state.brBank);
-    const hits = new Set(R.slice(0,30).map(r=>r.bank));
-    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('RÉSEAU BANCAIRE MONDIAL · SURVEILLANCE','GLOBAL BANKING NETWORK · LIVE SURVEILLANCE')}</div><div class="badge">${B.length} ${L('INSTITUTIONS','INSTITUTIONS')} · ${R.length} ${L('NOTES DE RECHERCHE','RESEARCH NOTES')}</div></div>
-      <div class="brgrid">
-        <aside class="panel brfeed"><div class="chips brtabs">${[['res',L('RECHERCHE','RESEARCH')],['calls',L('PRÉVISIONS','CALLS')]].map(([k,t])=>`<button type="button" class="chip" data-t="${k}" aria-pressed="${state.brTab===k}">${t}</button>`).join('')}</div>
-          <select id="brBank" class="tssel"><option value="all">${L('Toutes les banques','All banks')}</option>${banks.map(b=>`<option ${b===state.brBank?'selected':''}>${esc(b)}</option>`).join('')}</select>
-          <div class="brlist">${state.brTab==='res' ? (list.length ? list.slice(0,40).map(r=>`<div class="bri"><div class="brh"><b>${esc(r.bank)}</b>${r.topic?`<span>${esc((isEN()&&r.topic_en?r.topic_en:r.topic).toUpperCase())}</span>`:''}<em>${esc(r.date||'')}</em></div>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(isEN()&&r.title_en?r.title_en:r.title)}</a>`:`<p>${esc(isEN()&&r.title_en?r.title_en:r.title)}</p>`}${r.summary?`<small>${esc(isEN()&&r.summary_en?r.summary_en:r.summary)}</small>`:''}</div>`).join('') : `<p class="tsnone">${L('Les notes de recherche des banques arrivent avec la prochaine mise à jour de Claude.','Bank research notes arrive with Claude’s next update.')}</p>`)
-            : (calls.length ? calls.slice(0,40).map(c=>`<div class="bri"><div class="brh"><b>${esc(c.bank)}</b><span class="bpdir ${c.dir}">${c.dir==='long'?'LONG':c.dir==='short'?'SHORT':'RANGE'}</span><em>${esc(c.date||'')}</em></div><p>${esc(c.market||'')}${c.target?` → <b>${esc(isEN()&&c.target_en?c.target_en:c.target)}</b>`:''}${c.horizon?` · ${esc(isEN()&&c.horizon_en?c.horizon_en:c.horizon)}`:''}</p>${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener" class="ddsrc">${esc(c.src||'source')} ↗</a>`:''}</div>`).join('') : `<p class="tsnone">${L('Aucune prévision pour l’instant.','No calls yet.')}</p>`)}</div></aside>
-        <div class="panel brmap"><svg viewBox="0 0 1000 420" id="brSvg" aria-label="${L('Carte des banques','Bank map')}"><g id="brDots"></g><g>${B.map(b=>{ const [x,y] = prj(b.lon,b.lat); return `<g class="brpin ${hits.has(b.n)?'hit':''}" data-b="${esc(b.n)}" transform="translate(${x},${y})"><circle r="9" class="pulse"/><circle r="3.2"/><text x="6" y="-6">${esc(b.n.split(' ')[0].toUpperCase().slice(0,4))}</text></g>`; }).join('')}</g></svg>
-          <p class="brhint">${L('Sélectionne une balise ou une banque pour ouvrir son dossier','Select a beacon or a bank to open its file')}</p></div>
-        <aside class="panel brreg"><p class="tscap">${L('REGISTRE BANCAIRE · INSTITUTIONS SYSTÉMIQUES','BANK REGISTRY · SYSTEMIC INSTITUTIONS')}</p>${B.map((b,i)=>`<button type="button" class="brr" data-b="${esc(b.n)}"><span>${String(i+1).padStart(2,'0')}</span><i>${FLAG(b.cc)}</i><b>${esc(b.n.toUpperCase())}</b><em>${b.last!=null?pxAuto(b.last)+' '+esc(b.ccy||''):'—'}<small class="${pcCls(b.d1)}">${pcTxt(b.d1)}</small></em></button>`).join('')}</aside>
-      </div>
-      <p class="src">${L('Cours des banques : Yahoo Finance (bourse locale de chaque banque). Notes et prévisions : publications publiques des banques et articles de presse qui les citent, choisis et résumés par Claude.','Bank prices: Yahoo Finance (each bank’s home exchange). Notes and calls: public bank publications and press articles quoting them, selected and summarized by Claude.')}</p>`;
+    const list = R.filter(r=>(state.brTopic==='all' || r.topic===state.brTopic) && (state.brBank==='all' || r.bank===state.brBank));
+    const fd = d => d ? new Date(d+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric', month:'short'}) : '';
+    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('BANQUES · NOTES DE RECHERCHE','BANKS · RESEARCH NOTES')}</div><div class="badge">${R.length} ${L('NOTES','NOTES')}</div></div>
+      <p class="bintro">${L('Ce que les grandes banques (Goldman Sachs, JPMorgan, UBS…) publient sur les marchés : un résumé en 1 ou 2 phrases de chaque note ou perspective, avec le lien vers l’article. Les plus récentes en premier (30 derniers jours).','What big banks (Goldman Sachs, JPMorgan, UBS…) publish about markets: a 1–2 sentence summary of each note or outlook, with a link to the article. Newest first (last 30 days).')}</p>
+      <div class="bfil"><div class="chips">${[['all',[L('Tous','All'),L('Tous','All')]]].concat(BR_TOP).map(([k,l])=>{ const n = k==='all' ? R.length : R.filter(r=>r.topic===k).length; return n||k==='all' ? `<button type="button" class="chip" data-tp="${k}" aria-pressed="${state.brTopic===k}">${esc(isEN()?l[1]:l[0])} <span class="cnum">${n}</span></button>` : ''; }).join('')}</div>
+        <select id="brBank" class="tssel" aria-label="${L('Banque','Bank')}"><option value="all">${L('Toutes les banques','All banks')}</option>${banks.map(b=>`<option ${b===state.brBank?'selected':''}>${esc(b)}</option>`).join('')}</select></div>
+      ${list.length ? `<div class="bnotes">${list.slice(0,60).map(r=>{ const tp = BR_TOP.find(t=>t[0]===r.topic);
+        return `<article class="panel bnote"><div class="bnm"><b>${esc(r.bank||'')}</b>${tp?`<span class="btag">${esc(isEN()?tp[1][1]:tp[1][0])}</span>`:''}<em>${esc(fd(r.date))}</em></div>
+          <h4>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</a>`:esc(isEN()&&r.title_en?r.title_en:r.title||'')}</h4>
+          ${r.summary?`<p>${esc(isEN()&&r.summary_en?r.summary_en:r.summary)}</p>`:''}</article>`; }).join('')}</div>`
+        : `<div class="panel tswait">${R.length ? L('Aucune note pour ce filtre.','No note for this filter.') : L('Les notes des banques arrivent avec la prochaine mise à jour (vers 17 h 07).','Bank notes arrive with the next update (around 5:07 p.m.).')}</div>`}
+      <p class="src">${L('Publications publiques des banques et articles de presse qui les citent (Reuters, Bloomberg, CNBC, Kitco, Investing.com…), choisis et résumés par Claude. Ce ne sont pas des conseils.','Public bank publications and press articles citing them (Reuters, Bloomberg, CNBC, Kitco, Investing.com…), selected and summarized by Claude. Not advice.')}</p>`;
+    box.querySelectorAll('[data-tp]').forEach(b=>b.addEventListener('click', ()=>{ state.brTopic = b.dataset.tp; renderResearch(); }));
     $('brBank').addEventListener('change', e=>{ state.brBank = e.target.value; renderResearch(); });
-    box.querySelectorAll('.brtabs .chip').forEach(b=>b.addEventListener('click', ()=>{ state.brTab = b.dataset.t; renderResearch(); }));
-    const open = n => { const b = B.find(x=>x.n===n) || {n}, rs = R.filter(r=>r.bank===n || (r.bank||'').toLowerCase().includes(n.toLowerCase().split(' ')[0])), cs = (T.bankcalls||[]).filter(c=>(c.bank||'').toLowerCase().includes(n.toLowerCase().split(' ')[0]));
-      ddHtml(`<div class="ddh"><span class="vk">${L('DOSSIER BANCAIRE','BANK FILE')} · ${esc(b.s||'')}</span><h3>${FLAG(b.cc)} ${esc(n)}</h3>${b.last!=null?`<span class="ddword ${b.d1>0?'b':b.d1<0?'r':''}">${pxAuto(b.last)} ${esc(b.ccy||'')}</span>`:''}</div>
-        <div class="ddgrid"><div class="ddr"><span>1D</span><b class="${pcCls(b.d1)}">${pcTxt(b.d1)}</b></div><div class="ddr"><span>1M</span><b class="${pcCls(b.m1)}">${pcTxt(b.m1)}</b></div></div>
-        <div class="ddsec"><h4>${L('Prévisions','Calls')}</h4>${cs.length?cs.map(c=>`<p><b>${esc(c.market)}</b> · ${c.dir.toUpperCase()}${c.target?' → '+esc(isEN()&&c.target_en?c.target_en:c.target):''}${c.horizon?' · '+esc(isEN()&&c.horizon_en?c.horizon_en:c.horizon):''} <span class="ddnote">${esc(c.date||'')}</span></p>`).join(''):`<p class="ddnote">${L('Aucune prévision enregistrée.','No call on file.')}</p>`}</div>
-        <div class="ddsec"><h4>${L('Recherche','Research')}</h4>${rs.length?rs.slice(0,8).map(r=>`<p>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(isEN()&&r.title_en?r.title_en:r.title)}</a>`:esc(r.title)} <span class="ddnote">${esc(r.date||'')}</span></p>`).join(''):`<p class="ddnote">${L('Aucune note récente.','No recent note.')}</p>`}</div>`); };
-    box.querySelectorAll('[data-b]').forEach(el=>el.addEventListener('click', ()=>open(el.dataset.b)));
-    const D = await worldDots(); const g = $('brDots'); if(D && g && state.page==='research') g.innerHTML = D.map(([lon,lat])=>{ const [x,y] = prj(lon,lat); return `<circle cx="${x}" cy="${y}" r="2.1"/>`; }).join('');
   }
 
   // ---------- Bank Positioning ----------
-  state.bpView = state.bpView || 'desk'; state.bpCat = state.bpCat || null;
+  state.bpCat = state.bpCat || 'all';
   const BPC = {fx:['FX','FX','G10 majeures, croisées et dollar','G10 majors, crosses & the dollar','💱'], asia:['ASIE & ÉMERGENTS','ASIA & EM FX','Asie, Scandinavie, Europe de l’Est, Amérique latine','Asia, Scandies, CEE, Latam','🌏'], cmd:['MATIÈRES PREMIÈRES','COMMODITIES','Métaux, énergie','Metals, energy','⛏'], idx:['INDICES','INDICES','États-Unis, Europe, Asie','US, Europe, Asia','📈'], rates:['TAUX','RATES','Rendements des obligations d’État','Government bond yields','%'], crypto:['CRYPTO','CRYPTO','Majeures','Majors','₿']};
+  // ---------- Banques · prévisions par marché ----------
+  const BP_CAT = [['cmd',['Matières premières','Commodities']],['fx',['Devises','FX']],['idx',['Indices boursiers','Stock indices']],['rates',['Taux d’intérêt','Interest rates']],['asia',['Devises émergentes','EM currencies']],['crypto',['Crypto','Crypto']]];
   function renderBankPos(){
     const box = $('p2bankpos'); if(!box) return;
     const C = ((state.ts||{}).bankcalls||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));
-    const byCat = k => C.filter(c=>c.cat===k);
-    const card = (k,i) => { const v = BPC[k], cs = byCat(k), lo = cs.filter(c=>c.dir==='long').length, sh = cs.filter(c=>c.dir==='short').length, ra = cs.filter(c=>c.dir==='range').length, t = lo+sh+ra || 1;
-      return `<button type="button" class="panel bpc" data-c="${k}" style="--d:${i*70}ms"><div class="bph"><i>${v[4]}</i><div><b>${isEN()?v[1]:v[0]}</b><small>${esc((isEN()?v[3]:v[2]).toUpperCase())}</small></div><span>↗</span></div>
-        <div class="bpn"><div><b class="bl">${lo}</b><small>LONG</small></div><div><b class="sh">${sh}</b><small>SHORT</small></div><div><b class="ra">${ra}</b><small>RANGE</small></div></div>
-        <div class="bpbar"><i class="bl" style="width:${lo/t*100}%"></i><i class="ra" style="width:${ra/t*100}%"></i><i class="sh" style="width:${sh/t*100}%"></i></div>
-        <p>${cs.length} ${L('positions','positions')} · ${new Set(cs.map(c=>c.bank)).size} ${L('banques','banks')} · ${new Set(cs.map(c=>c.market)).size} ${L('marchés','markets')}</p></button>`; };
-    const rows = state.bpCat ? byCat(state.bpCat) : C;
-    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('POSITIONNEMENT DES BANQUES · PRÉVISIONS DES SALLES DE RECHERCHE','BANK POSITIONING · RESEARCH DESK CALLS & FORECASTS')}</div><div class="badge">${C.length} ${L('NOTES ARCHIVÉES · MIS À JOUR À CHAQUE NOUVELLE NOTE','NOTES ARCHIVED · UPDATED WITH EVERY NEW BANK NOTE')}</div></div>
-      <div class="chips bptabs"><button type="button" class="chip" data-v="desk" aria-pressed="${state.bpView==='desk'}">▦ DESK</button><button type="button" class="chip" data-v="all" aria-pressed="${state.bpView==='all'}">☰ ${L('TOUTES LES PRÉVISIONS','ALL CALLS')}</button>${state.bpCat?`<button type="button" class="chip" data-x="1" aria-pressed="true">${isEN()?BPC[state.bpCat][1]:BPC[state.bpCat][0]} ✕</button>`:''}</div>
-      ${!C.length ? `<div class="panel tswait">${L('Les prévisions des banques (Goldman Sachs, JPMorgan, UBS, etc.) arrivent avec la prochaine mise à jour de Claude.','Bank forecasts (Goldman Sachs, JPMorgan, UBS, etc.) arrive with Claude’s next update.')}</div>` :
-        state.bpView==='desk' ? `<p class="tscap">${L('MARCHÉS','MARKETS')}</p><div class="bpgrid">${Object.keys(BPC).map(card).join('')}</div>` :
-        `<div class="panel"><table class="tbl bptbl"><thead><tr><th>${L('Banque','Bank')}</th><th>${L('Marché','Market')}</th><th>${L('Sens','Call')}</th><th>${L('Cible','Target')}</th><th>${L('Horizon','Horizon')}</th><th>Date</th><th>Source</th></tr></thead><tbody>${rows.map(c=>`<tr><td><b>${esc(c.bank)}</b></td><td>${esc(isEN()&&c.market_en?c.market_en:c.market||'')}</td><td><span class="bpdir ${c.dir}">${c.dir==='long'?'LONG':c.dir==='short'?'SHORT':'RANGE'}</span></td><td class="num">${esc(isEN()&&c.target_en?c.target_en:c.target||'—')}</td><td>${esc(isEN()&&c.horizon_en?c.horizon_en:c.horizon||'')}</td><td>${esc(c.date||'')}</td><td>${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(c.src||'lien')} ↗</a>`:esc(c.src||'')}</td></tr>`).join('')}</tbody></table></div>`}
-      <p class="src">${L('Prévisions publiques des banques (rapports, notes et entrevues reprises par Reuters, Bloomberg, CNBC, etc.), relevées par Claude. LONG = la banque voit le marché monter, SHORT = baisser, RANGE = rester dans une fourchette. Ce ne sont pas leurs positions réelles.','Public bank forecasts (reports, notes and interviews quoted by Reuters, Bloomberg, CNBC, etc.), collected by Claude. LONG = the bank sees the market rising, SHORT = falling, RANGE = staying in a range. These are not their actual positions.')}</p>`;
-    box.querySelectorAll('.bptabs [data-v]').forEach(b=>b.addEventListener('click', ()=>{ state.bpView = b.dataset.v; renderBankPos(); }));
-    const x = box.querySelector('.bptabs [data-x]'); if(x) x.addEventListener('click', ()=>{ state.bpCat = null; renderBankPos(); });
-    box.querySelectorAll('.bpc').forEach(b=>b.addEventListener('click', ()=>{ state.bpCat = b.dataset.c; state.bpView = 'all'; renderBankPos(); }));
+    if(!BP_CAT.some(c=>c[0]===state.bpCat)) state.bpCat = 'all';
+    const list = state.bpCat==='all' ? C : C.filter(c=>c.cat===state.bpCat);
+    const mk = {}; list.forEach(c=>{ const m = (isEN()&&c.market_en) || c.market || '—'; (mk[m] = mk[m] || []).push(c); });
+    const markets = Object.entries(mk).sort((a,b)=>b[1].length-a[1].length || a[0].localeCompare(b[0]));
+    const DIR = {long:['↑',L('Hausse','Up'),'up'], short:['↓',L('Baisse','Down'),'dn'], range:['↔',L('Stable','Range'),'ra']};
+    const fd = d => d ? new Date(d+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric', month:'short'}) : '';
+    const card = ([m, cs]) => {
+      const n = {long:0, short:0, range:0}; cs.forEach(c=>{ if(n[c.dir]!=null) n[c.dir]++; }); const t = cs.length || 1;
+      const top = Object.entries(n).sort((a,b)=>b[1]-a[1])[0];
+      const verdict = cs.length < 2 ? L('Une seule banque','One bank only') : top[1]/t > 0.5 ? (top[0]==='long' ? L('Majorité : hausse','Most see it rising') : top[0]==='short' ? L('Majorité : baisse','Most see it falling') : L('Majorité : stable','Most see a range')) : L('Avis partagés','Split views');
+      return `<div class="panel bmk"><div class="bmh"><h4>${esc(m)}</h4><span class="bverd ${cs.length<2?'':top[1]/t>0.5?DIR[top[0]][2]:''}">${esc(verdict)}</span></div>
+        <div class="bcount"><span class="up">↑ ${n.long} ${L('hausse','up')}</span><span class="dn">↓ ${n.short} ${L('baisse','down')}</span><span class="ra">↔ ${n.range} ${L('stable','range')}</span></div>
+        <div class="bpbar"><i class="bl" style="width:${n.long/t*100}%"></i><i class="ra" style="width:${n.range/t*100}%"></i><i class="sh" style="width:${n.short/t*100}%"></i></div>
+        <ul class="bcalls">${cs.map(c=>{ const d = DIR[c.dir] || ['·','—',''];
+          return `<li><span class="bdir ${d[2]}" title="${esc(d[1])}">${d[0]}</span><span class="bbk">${esc(c.bank||'')}</span><span class="btg">${esc((isEN()&&c.target_en?c.target_en:c.target)||d[1])}</span><span class="bdt">${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(fd(c.date))}${c.src?' · '+esc(c.src):''}</a>`:esc(fd(c.date))}</span></li>`; }).join('')}</ul></div>`; };
+    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('BANQUES · PRÉVISIONS PAR MARCHÉ','BANKS · FORECASTS BY MARKET')}</div><div class="badge">${C.length} ${L('PRÉVISIONS','FORECASTS')}</div></div>
+      <p class="bintro">${L('Les cibles de prix publiées par les grandes banques, regroupées par marché. ↑ = la banque voit le marché monter d’ici l’horizon donné, ↓ = baisser, ↔ = rester dans une fourchette. Ce sont des opinions publiées, pas leurs positions réelles.','Price targets published by big banks, grouped by market. ↑ = the bank sees the market rising by the given horizon, ↓ = falling, ↔ = staying in a range. These are published opinions, not their actual positions.')}</p>
+      <div class="bfil"><div class="chips">${[['all',[L('Tous','All'),L('Tous','All')]]].concat(BP_CAT).map(([k,l])=>{ const n = k==='all' ? C.length : C.filter(c=>c.cat===k).length; return n||k==='all' ? `<button type="button" class="chip" data-bc="${k}" aria-pressed="${state.bpCat===k}">${esc(isEN()?l[1]:l[0])} <span class="cnum">${n}</span></button>` : ''; }).join('')}</div></div>
+      ${markets.length ? `<div class="bmgrid">${markets.map(card).join('')}</div>` : `<div class="panel tswait">${L('Les prévisions des banques arrivent avec la prochaine mise à jour (vers 17 h 07).','Bank forecasts arrive with the next update (around 5:07 p.m.).')}</div>`}
+      <p class="src">${L('Prévisions publiques des banques (rapports, notes et entrevues reprises par Reuters, Bloomberg, CNBC, Kitco, Investing.com…), relevées par Claude. Ce ne sont pas des conseils.','Public bank forecasts (reports, notes and interviews reported by Reuters, Bloomberg, CNBC, Kitco, Investing.com…), collected by Claude. Not advice.')}</p>`;
+    box.querySelectorAll('[data-bc]').forEach(b=>b.addEventListener('click', ()=>{ state.bpCat = b.dataset.bc; renderBankPos(); }));
   }
 
   // ---------- Vue d'ensemble : panneaux ajoutés ----------
@@ -4245,10 +4263,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <button type="button" class="panel htrisk" data-gop="risk"><div class="ph"><div><h3>${L('Sentiment de risque','Risk sentiment')}</h3><p>${L('7 marchés, centile sur 1 an','7 markets, 1-year percentile')}</p></div></div>${R?gaugeSVG(R.score, R.w1, R.m1):`<p class="tsnone">${L('Bientôt','Coming soon')}</p>`}</button>
       <div class="panel htstr"><div class="ph"><div><h3>${L('Force des devises · non pondéré','Currency strength · unweighted')}</h3><p>${L('% depuis la 1re barre (1H, 5 jours)','% since first bar (1H, 5 days)')}</p></div><button type="button" class="btn ghost" data-gop="charts">Charts</button></div>
         <div class="chgrid1 mini"><div class="chcanvas"><canvas id="homeStr"></canvas></div><div class="chleg">${D?D.ser.map(s=>`<div style="--c:${s.col}"><i></i>${esc(s.k)}<b class="${pcCls(s.last)}">${pcTxt(s.last)}</b></div>`).join(''):''}</div></div></div>
-      <div class="panel htcb"><div class="ph"><div><h3>${L('Banques centrales','Central banks')}</h3><p>${L('Taux directeur, prochaine réunion, probabilités du marché','Policy rate, next meeting, market odds')}</p></div><button type="button" class="btn ghost" data-gop="fed">${L('Taux','Rates')}</button></div>
+      ${onPlan ? '' : `<div class="panel htcb"><div class="ph"><div><h3>${L('Banques centrales','Central banks')}</h3><p>${L('Taux directeur, prochaine réunion, probabilités du marché','Policy rate, next meeting, market odds')}</p></div><button type="button" class="btn ghost" data-gop="fed">${L('Taux','Rates')}</button></div>
         <div class="cbwrap"><table class="tbl cbtbl"><thead><tr><th>${L('Banque','Central bank')}</th><th>${L('Taux','Rate')}</th><th>${L('Prochaine réunion','Next meeting')}</th><th>${L('Baisse','Cut')}</th><th>${L('Statu quo','Hold')}</th><th>${L('Hausse','Hike')}</th></tr></thead>
         <tbody>${cb.map(c=>`<tr><td>${FLAG(c.cc||CBF[c.cb]||'')} <b>${esc(c.cb)}</b> <small>(${esc(c.ccy||'')})</small></td><td class="num">${c.rate!=null?esc(String(c.rate).replace(/\./g,isEN()?'.':',')+(String(c.rate).includes('%')?'':' %')):'—'}</td><td>${c.next?new Date(c.next+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric', month:'short', year:'numeric'}):'—'}</td>${['cut','hold','hike'].map(k=>`<td class="num ${k==='cut'?'pos':k==='hike'?'neg':''}">${c[k]!=null?nf(c[k],0)+' %':'—'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
-        <p class="src">${L('Fed : CME FedWatch. Autres banques : marchés (OIS) rapportés par Reuters et les banques centrales, relevés par Claude.','Fed: CME FedWatch. Other banks: market pricing (OIS) reported by Reuters and central banks, collected by Claude.')}</p></div>
+        <p class="src">${L('Fed : CME FedWatch. Autres banques : marchés (OIS) rapportés par Reuters et les banques centrales, relevés par Claude.','Fed: CME FedWatch. Other banks: market pricing (OIS) reported by Reuters and central banks, collected by Claude.')}</p></div>`}
     </div>`;
     if(typeof bindGo==='function') bindGo(box);
     if(D && await needChart() && state.page===pg && $('homeStr')){
@@ -4293,13 +4311,23 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     }
     return N;
   }
+  function planTick(){
+    const box = $('p2plan'); if(!box || !box.querySelector('[data-pp]')) return renderPlan();
+    const keys = Object.keys(TOP_NAMES).filter(k=>state.assets && state.assets[k]);
+    const sig = keys.map(k=>({k, t:compute(k).total})).sort((a,b)=>b.t-a.t).map(r=>r.k+r.t).join('|');
+    if(sig !== state._planSig){ state.noAnim = true; box.classList.add('noanim'); return renderPlan(); }
+    keys.forEach(k=>{ const P = planPx(k), a = box.querySelector(`[data-pp="${k}"]`), b = box.querySelector(`[data-pd="${k}"]`);
+      if(a){ const t = pxFmt(P.px); if(a.textContent!==t) a.textContent = t; }
+      if(b){ const t = P.d1==null ? '—' : sg2(P.d1,2)+' %', c = 'num '+(P.d1>0?'up':P.d1<0?'dn':''); if(b.textContent!==t) b.textContent = t; if(b.className!==c) b.className = c; } });
+  }
   function renderPlan(){
     const box = $('p2plan'); if(!box) return;
+    box.classList.toggle('noanim', !!state.noAnim); state.noAnim = false;
     const today = torontoToday(), nxt = nextWeekday(today);
-    const O = state.ohlc, LV = state.mk && state.mk.lv;
-    if(!LV){ if(!state.mk) mkData(); else if(!O) ohlcData().then(o=>{ if(o && state.page==='plan') renderPlan(); }); }
+    if(!state.mk) mkData();
     const keys = Object.keys(TOP_NAMES).filter(k=>state.assets && state.assets[k]);
     const rows = keys.map(k=>({k, C:compute(k), P:planPx(k)})).sort((a,b)=>b.C.total-a.C.total);
+    state._planSig = rows.map(r=>r.k+r.C.total).join('|');
     const nB = rows.filter(r=>r.C.total>=4).length, nR = rows.filter(r=>r.C.total<=-4).length;
     const lvl = (a, b) => `<span class="lv">${pxFmt(a)}</span><span class="lv dn">${pxFmt(b)}</span>`;
     const tw = {bull:['↑',L('Hausse','Up')], bear:['↓',L('Baisse','Down')], neutral:['→',L('Neutre','Flat')]};
@@ -4307,16 +4335,12 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     rows.forEach(({k,C,P})=>{
       const t = C.total, vt = isEN() ? verdictEN(t) : verdict(t)[0], b = biasOf(t);
       const te = state.tech && state.tech.assets && state.tech.assets[k];
-      const pb = prevBar((LV && LV[k]) || (O && O.d1 && O.d1[k]));
       const wk = (state.assets[k]||{}).trend, W = tw[wk] || ['·','—'];
-      const brk = pb && P.px!=null ? (P.px > pb[2] ? 'brk-up' : P.px < pb[3] ? 'brk-dn' : '') : '';
       tb += `<tr><td class="pa"><button type="button" data-goto="${k}">${esc(TOP_NAMES[k])}</button></td>`
-        + `<td class="num">${pxFmt(P.px)}</td><td class="num ${P.d1>0?'up':P.d1<0?'dn':''}">${P.d1==null?'—':sg2(P.d1,2)+' %'}</td>`
+        + `<td class="num" data-pp="${k}">${pxFmt(P.px)}</td><td class="num ${P.d1>0?'up':P.d1<0?'dn':''}" data-pd="${k}">${P.d1==null?'—':sg2(P.d1,2)+' %'}</td>`
         + `<td><span class="pbias ${b}">${esc(vt)}</span></td><td class="num psc ${b==='bull'?'up':b==='bear'?'dn':''}">${t>0?'+':''}${String(t).replace('-','−')}</td>`
         + `<td class="c pwk ${wk==='bull'?'up':wk==='bear'?'dn':''}" title="${L('Tendance de la semaine','Weekly trend')}">${W[0]} ${esc(W[1])}</td>`
-        + `<td class="num lvc ${brk}" title="${brk==='brk-up'?L('Au-dessus du haut de la séance précédente','Above previous session high'):brk==='brk-dn'?L('Sous le bas de la séance précédente','Below previous session low'):''}">${pb ? lvl(pb[2], pb[3]) : '—'}</td>`
-        + `<td class="num lvc">${te ? lvl(te.hi20, te.lo20) : '—'}</td>`
-        + `<td class="num lvc">${te ? `<span class="lv">${pxFmt(te.sma200)}</span>` : '—'}</td></tr>`;
+        + `</tr>`;
     });
     // agenda : publications et fermetures d’aujourd’hui et du prochain jour de semaine
     const dayItems = d => (state.calendar||[]).filter(it=>it.date===d && it.kind!=='earn').concat(holItems().filter(h=>h.date===d)).sort((a,b)=>(a.time||'').localeCompare(b.time||''));
@@ -4361,8 +4385,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         ${worst?`<div><span>${L('Le plus faible','Weakest')}</span><b class="dn">${esc(TOP_NAMES[worst.k])} ${worst.C.total>0?'+':''}${String(worst.C.total).replace('-','−')}</b></div>`:''}</div>
       <div class="psum pmac">${mk4}</div>
       <div class="pgrid">
-        <div class="panel pbias-p"><div class="ph"><div><h3>${L('Biais et niveaux clés','Bias and key levels')}</h3><p>${L('Biais = score du scorecard (≥ +4 haussier, ≤ −4 baissier). Niveaux : haut / bas de la séance précédente, haut / bas des 20 derniers jours, moyenne mobile 200 jours (graphique journalier).','Bias = scorecard score (≥ +4 bullish, ≤ −4 bearish). Levels: previous session high / low, 20-day high / low, 200-day moving average (daily chart).')}</p></div></div>
-          <div class="tablewrap"><table class="ptab"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Prix','Price')}</th><th class="r">1D</th><th>${L('Biais','Bias')}</th><th class="r">Score</th><th class="c">${L('Semaine','Week')}</th><th class="r">${L('Séance préc. H / B','Prev. session H / L')}</th><th class="r">${L('20 j H / B','20-day H / L')}</th><th class="r">MM200</th></tr></thead><tbody>${tb}</tbody></table></div></div>
+        <div class="panel pbias-p"><div class="ph"><div><h3>${L('Biais de tes actifs','Your assets’ bias')}</h3><p>${L('Biais = score du scorecard (≥ +4 haussier, ≤ −4 baissier). Prix et 1D (depuis l’ouverture) en direct. Clique sur un actif pour voir le détail.','Bias = scorecard score (≥ +4 bullish, ≤ −4 bearish). Live price and 1D (since the open). Click an asset for details.')}</p></div></div>
+          <div class="tablewrap"><table class="ptab"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Prix','Price')}</th><th class="r">1D</th><th>${L('Biais','Bias')}</th><th class="r">Score</th><th class="c">${L('Semaine','Week')}</th></tr></thead><tbody>${tb}</tbody></table></div></div>
         <div class="pside">
           <div class="panel"><div class="ph"><div><h3>${L('Publications et fermetures','Releases and closures')}</h3></div></div><div class="pb pag">${agenda(today)}${agenda(nxt)}</div></div>
           <div class="panel"><div class="ph"><div><h3>${L('Les 5 nouvelles qui comptent','The 5 headlines that matter')}</h3><p>${L('Dernières 24 h, impact élevé en premier.','Last 24 h, high impact first.')}</p></div></div><div class="pb"><ol class="pnews">${nwh}</ol></div></div>
@@ -4504,7 +4528,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     if(pg==='home') pg = 'plan';
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
-    document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===(pg==='bankpos'?'research':pg)) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
+    document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===(pg==='research'?'bankpos':pg)) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
     try{ const hsh = pg==='plan' ? '' : '#'+({score:'scorecard', bull:'bulletin', cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches', charts:'charts', recap:'session-recap', research:'bank-research', squawk:'squawk', bankpos:'bank-positioning', risk:'risk-sentiment', watch:'markets-watch', liq:'liquidity'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
     try{ if(typeof globeObj!=='undefined' && globeObj){ if(pg==='globe') globeObj.resumeAnimation(); else globeObj.pauseAnimation(); } }catch(e){}
@@ -4576,7 +4600,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
-    'Vue d’ensemble':'Overview','Notes de recherche':'Research notes','Prévisions chiffrées':'Price forecasts','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
+    'Vue d’ensemble':'Overview','Notes de recherche':'Research notes','Prévisions par marché':'Forecasts by market','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
     'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Heatmap fondamentale':'Fundamental heatmap','Heatmap technique':'Technical heatmap','Saisonnalité':'Seasonality','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Prévisions':'Guidance','Mitigé':'Mixed','En ligne':'In line','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
     'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
