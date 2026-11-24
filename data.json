@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T11:48:22Z",
+  "updatedAt": "2026-11-24T12:47:37Z",
   "econ": {
     "values": {
       "adp": {
@@ -1410,6 +1410,49 @@
   "news": [
     {
       "date": "2026-11-24",
+      "time": "07:36",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Le bitcoin recule : les sorties des FNB bitcoin au comptant atteignent un record de 4,71 G$ en novembre",
+      "title_en": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion",
+      "summary": "Le bitcoin poursuit son repli mardi alors que les sorties de capitaux des FNB bitcoin au comptant américains pour novembre atteignent un record mensuel de 4,71 milliards $, selon CoinDesk. Ces retraits institutionnels pèsent sur le BTC, qui a déjà effacé son rebond de lundi lié à Nvidia.",
+      "summary_en": "Bitcoin keeps sliding on Tuesday as November outflows from U.S. spot bitcoin ETFs reach a monthly record of $4.71 billion, according to CoinDesk. The institutional withdrawals weigh on BTC, which has already given back Monday's Nvidia-driven rebound.",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "07:11",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq"
+      ],
+      "title": "Analog Devices bat les attentes, mais sa prévision pour le premier trimestre déçoit",
+      "title_en": "Analog Devices beats estimates but issues lower-than-expected first-quarter forecast",
+      "summary": "Analog Devices a publié un bénéfice par action supérieur de 0,17 $ aux attentes et des revenus au-dessus des prévisions, mais sa prévision de bénéfice pour le premier trimestre est inférieure au consensus. Le titre recule avant l'ouverture, ajoutant à la pression sur les semi-conducteurs du Nasdaq.",
+      "summary_en": "Analog Devices posted earnings per share $0.17 above estimates and revenue that topped forecasts, but guided first-quarter earnings below consensus. The stock is falling premarket, adding to pressure on Nasdaq chipmakers.",
+      "url": "https://www.investing.com/news/stock-market-news/analog-devices-unveils-lowerthanexpected-firstquarter-earnings-forecast-5047864"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "06:44",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Les titres de puces américains reculent avant l'ouverture après le rallye mené par Nvidia au retour de Huang",
+      "title_en": "U.S. chip stocks fall premarket after Nvidia-led rally on Huang's return",
+      "summary": "Les fabricants de semi-conducteurs américains reculent en préouverture mardi, après le fort rallye de lundi déclenché par le retour de Jensen Huang à la tête de Nvidia. Les contrats à terme de Wall Street fléchissent aussi; le recul des puces pèse surtout sur le Nasdaq.",
+      "summary_en": "U.S. semiconductor stocks slip in premarket trading Tuesday after Monday's sharp rally sparked by Jensen Huang's return as Nvidia CEO. Wall Street futures also edge lower, with the chip pullback weighing mostly on the Nasdaq.",
+      "url": "https://www.investing.com/news/stock-market-news/us-chip-stocks-fall-premarket-after-nvidialed-rally-on-huangs-return-5047723"
+    },
+    {
+      "date": "2026-11-24",
       "time": "06:31",
       "source": "CoinDesk",
       "impact": "med",
@@ -1452,6 +1495,22 @@
       "summary": "Selon le sondage de la CBI, les détaillants britanniques affichent leur plus forte croissance des ventes en près de quatre ans, soit leur meilleur mois depuis la fin de 2022. Un signal de consommation plus solide au Royaume-Uni, à surveiller pour la livre sterling et les attentes envers la Banque d'Angleterre.",
       "summary_en": "According to the CBI survey, British retailers report their strongest sales growth in nearly four years, their best month since late 2022. A firmer UK consumer signal, worth watching for sterling and Bank of England expectations.",
       "url": "https://www.investing.com/news/economic-indicators/uk-retailers-report-best-month-for-sales-since-late-2022-cbi-5047636"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "05:56",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "xauusd",
+        "xagusd",
+        "usd"
+      ],
+      "title": "L'or glisse après un vif rebond, l'inflation et les attentes envers la Fed en point de mire",
+      "title_en": "Gold slips after sharp rebound with inflation, Fed expectations in focus",
+      "summary": "L'or recule mardi après son vif rebond de lundi, porté par le retour de Jensen Huang chez Nvidia et les achats à bon compte. Les investisseurs se tournent vers les données d'inflation (PCE) et les attentes de taux de la Fed, qui guideront le métal jaune.",
+      "summary_en": "Gold eases on Tuesday after Monday's sharp rebound, driven by Jensen Huang's return to Nvidia and dip-buying. Investors turn to inflation data (PCE) and Fed rate expectations, which will steer the yellow metal.",
+      "url": "https://www.investing.com/news/commodities-news/gold-extends-rebound-as-nvidia-ceo-news-lifts-equities-dipbuying-lifts-bullion-5046835"
     },
     {
       "date": "2026-11-24",
@@ -1689,22 +1748,6 @@
       "summary": "Le WTI recule de 0,29 % à 79,94 $ et le Brent de 0,45 % à 88,97 $, près de leurs plus bas depuis fin août, malgré trois pétroliers en feu après avoir heurté des mines dans le détroit d'Ormuz selon les Gardiens de la révolution iraniens. Deutsche Bank estime que les stocks mondiaux observés ont augmenté de 52 millions de barils en octobre, soit une surabondance de 1,7 million de barils par jour, et l'oléoduc libyen de Sharara a rouvert.",
       "summary_en": "WTI slipped 0.29% to $79.94 and Brent 0.45% to $88.97, near their lowest since late August, despite three tankers catching fire after hitting mines in the Strait of Hormuz, per Iran's Revolutionary Guards. Deutsche Bank said global observed inventories rose 52 million barrels in October, implying a 1.7 million bpd oversupply, and Libya's Sharara pipeline has reopened.",
       "url": "https://www.investing.com/news/commodities-news/oil-holds-near-threemonth-low-as-rising-supply-offsets-hormuz-threat-5046916"
-    },
-    {
-      "date": "2026-11-23",
-      "time": "20:43",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "xauusd",
-        "xagusd",
-        "usd"
-      ],
-      "title": "L'or prolonge son rebond, porté par le retour de Huang chez Nvidia et les achats à bon compte",
-      "title_en": "Gold extends rebound as Nvidia CEO news lifts equities, dip-buying lifts bullion",
-      "summary": "L'or au comptant gagnait 0,9 % à 3 668,93 $ l'once vers 20 h 31 (HE), après un gain de 2,7 % la veille, effaçant en partie la chute de près de 9 % de la semaine dernière; l'argent montait de 1,2 % à 43,66 $. Les achats à bon compte (ANZ cite l'affluence chez les détaillants de Shenzhen et des avoirs solides dans les FNB) et la baisse de l'énergie soutiennent le métal, mais le ton ferme de la Fed, qui pourrait relever ses taux en décembre, reste un frein.",
-      "summary_en": "Spot gold rose 0.9% to $3,668.93 an ounce at 20:31 ET after gaining 2.7% in the previous session, partly reversing last week's nearly 9% slump; silver climbed 1.2% to $43.66. Dip-buying (ANZ cited crowded Shenzhen retailers and robust gold ETF holdings) and lower energy prices supported bullion, while hawkish Fed commentary and expectations of a December hike remain a headwind.",
-      "url": "https://www.investing.com/news/commodities-news/gold-extends-rebound-as-nvidia-ceo-news-lifts-equities-dipbuying-lifts-bullion-5046835"
     },
     {
       "date": "2026-11-23",
@@ -1986,52 +2029,6 @@
       "title": "Les options sur Anthropic font leurs débuts avec un volume soutenu",
       "title_en": "Anthropic options debut with brisk volume",
       "url": "https://www.investing.com/news/stock-market-news/anthropic-options-debut-with-brisk-volume-5046078"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "eurusd"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Les Bourses européennes progressent, portées par le rebond des valeurs technologiques après la vente massive liée à l'IA de la semaine dernière. Ce regain de l'appétit pour le risque en Europe accompagne le rebond attendu à Wall Street, notamment sur le Nasdaq.",
-      "summary_en": "European stocks are rising, led by a rebound in technology shares after last week's AI-driven selloff. The improved risk appetite in Europe accompanies the expected rebound on Wall Street, notably on the Nasdaq.",
-      "time": "10:30",
-      "title": "Le STOXX 600 européen monte avec le rebond des titres technos après la déroute liée à l'IA",
-      "title_en": "Europe's STOXX 600 rises as tech shares rebound after AI-driven rout",
-      "url": "https://www.investing.com/news/stock-market-news/european-stocks-recover-after-steep-technologyled-selloff-5044629"
-    },
-    {
-      "assets": [
-        "xauusd",
-        "xagusd",
-        "usd"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "L'or poursuit son rebond après avoir touché un creux de 14 mois, soutenu par des achats à bon compte. Les investisseurs ont réduit leurs paris sur un resserrement de la Fed, ce qui allège la pression sur le métal jaune, qui ne verse pas d'intérêt.",
-      "summary_en": "Gold extends its rebound from a 14-month low, supported by dip-buying. Investors have pared back bets on Fed tightening, easing pressure on the non-yielding metal.",
-      "time": "10:08",
-      "title": "L'or remonte grâce aux achats sur repli et à des attentes de hausse de taux de la Fed revues à la baisse",
-      "title_en": "Gold rallies amid dip-buying, pared back Fed rate expectations",
-      "url": "https://www.investing.com/news/commodities-news/gold-rebounds-from-14mth-low-as-tech-selloff-lifts-safehaven-demand-5044271"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-23",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "Le conseil d'administration de Nvidia annonce la réintégration de Jensen Huang à la tête de l'entreprise, après les pressions de l'administration Trump. L'action s'envole de 27 % à 30 % selon Investing.com et CNBC. Vu le poids de Nvidia, la nouvelle soutient fortement le Nasdaq et le S&P 500 après la déroute de l'IA de la semaine dernière. Donald Trump a ensuite affirmé que le conseil de Nvidia avait pris la bonne décision en réintégrant Huang.",
-      "summary_en": "Nvidia's board announced Jensen Huang's reinstatement as CEO, following pressure from the Trump administration. Shares soared 27% to 30%, according to Investing.com and CNBC. Given Nvidia's weight, the news strongly supports the Nasdaq and S&P 500 after last week's AI rout. Donald Trump later said Nvidia's board made the right call on Huang's reinstatement.",
-      "time": "09:03",
-      "title": "Nvidia réintègre Jensen Huang comme PDG; l'action bondit d'environ 30 %",
-      "title_en": "Nvidia reinstates Jensen Huang as CEO; shares surge about 30%",
-      "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-surge-30-as-board-announces-jensen-huangs-reinstatement-5045795"
     }
   ],
   "live": {
