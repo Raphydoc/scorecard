@@ -426,7 +426,7 @@ th{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute
 .pages button[aria-current="page"]{color:var(--gold)}
 /* tableaux : lignes fines */
 td{border-bottom-color:var(--line)}
-table:not(.topset)>tbody tr:hover td{background:rgba(255,255,255,.02)}
+table:not(.topset):not(.hm)>tbody tr:hover td{background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar{width:9px;height:9px} ::-webkit-scrollbar-thumb{background:var(--line);border-radius:5px} ::-webkit-scrollbar-track{background:transparent}
 /* Top Setups en heatmap : +1/−1 plus pâle, ±2 plein */
 table.topset td.w.bull{background:color-mix(in srgb,var(--bull) 52%,var(--panel))}
@@ -504,7 +504,7 @@ table.hm th{font:600 9.5px/1.2 var(--f-body);letter-spacing:.14em;text-transform
 table.hm th:first-child{text-align:left;padding-left:8px}
 table.hm td{border:0;padding:0}
 table.hm tbody tr{cursor:pointer}
-table.hm tbody tr:hover td.hn{background:var(--panel-2)}
+table.hm tbody tr:hover td.hn{box-shadow:inset 0 0 0 1px var(--gold)}
 table.hm tr.sel td.hn{box-shadow:inset 3px 0 0 var(--gold);background:var(--tint-g)}
 td.hn{padding:6px 64px 6px 8px!important;min-width:150px;border-radius:4px;vertical-align:middle;position:relative}
 td.hn .nm{display:block;font:800 12.5px/1.2 var(--f-body);letter-spacing:.04em;color:var(--fg);background:none;border:0;padding:0;cursor:pointer;text-align:left}
@@ -512,7 +512,9 @@ td.hn .nm:hover{color:var(--gold)}
 td.hn .px{display:block;font:500 11px/1.3 var(--f-mono);color:var(--muted)} td.hn .px em{font-style:normal}
 td.hn .spk{position:absolute;right:6px;top:50%;transform:translateY(-50%);width:52px;height:22px;opacity:.9}
 td.hc{text-align:center;border-radius:4px;padding:7px 5px!important;min-width:84px;border:1px solid var(--line);background:var(--panel-2);transition:transform .15s,box-shadow .15s}
-td.hc:hover{transform:translateY(-1px);box-shadow:0 4px 14px rgba(0,0,0,.35)}
+td.hc:hover{transform:translateY(-1px);border-color:var(--gold);box-shadow:0 0 0 1px var(--gold)}
+table.topset tbody td:not(.sym):not(.na):not(.chg){transition:box-shadow .15s}
+table.topset tbody td:not(.sym):not(.na):not(.chg):hover{box-shadow:inset 0 0 0 2px var(--gold)}
 td.hc b{display:block;font:800 10.5px/1.15 var(--f-body);letter-spacing:.08em}
 td.hc small{display:block;margin-top:3px;font:500 10px/1.2 var(--f-mono);opacity:.75}
 td.hc.b,td.hc.b1{background:var(--tint-b);border-color:color-mix(in srgb,var(--bull) 55%,transparent);color:var(--bull)}
@@ -614,7 +616,7 @@ td.hs b{font:700 15px/1 var(--f-mono)}
   /* cases de signaux du scorecard */
   .chip.bull,.chip.bear,.chip.neu{animation:popIn .4s cubic-bezier(.2,.7,.2,1) both}
   tbody tr{transition:background-color .15s}
-  table:not(.topset)>tbody tr:hover td{background:rgba(242,180,58,.04)}
+  table:not(.topset):not(.hm)>tbody tr:hover td{background:rgba(242,180,58,.04)}
   tbody tr:hover td:first-child{box-shadow:inset 2px 0 0 var(--gold)}
   /* cartes et panneaux : lueur au survol */
   .panel,.kpi,.ctr,.fcard,.dcell,.scard,.nitem{transition:border-color .25s,box-shadow .25s,transform .25s}
