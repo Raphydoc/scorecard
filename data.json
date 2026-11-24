@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T15:42:53Z",
+ "updatedAt": "2026-11-24T16:47:46Z",
  "econ": {
   "values": {
    "adp": {
@@ -1496,6 +1496,57 @@
  "news": [
   {
    "date": "2026-11-24",
+   "time": "11:24",
+   "source": "Investing.com (Reuters)",
+   "impact": "high",
+   "assets": [
+    "usd",
+    "spx500",
+    "nasdaq",
+    "us30",
+    "eurusd",
+    "usdcad",
+    "xauusd"
+   ],
+   "title": "L'administration Trump s'apprête à dévoiler de nouveaux droits de douane après une enquête sur la surcapacité industrielle, selon des sources",
+   "title_en": "Trump administration set to unveil new tariffs after probe on excess factory capacity, sources say",
+   "summary": "Selon des sources citées par Reuters, l'administration Trump est sur le point d'annoncer de nouveaux droits de douane à la suite d'une enquête sur la capacité excédentaire des usines de partenaires commerciaux; plus tôt, la Maison-Blanche préparait des tarifs étendus visant la Chine, l'UE et des dizaines de pays. Une nouvelle ronde tarifaire peut peser sur les actions américaines et faire bouger le dollar, l'euro, le huard et l'or. (Article complet non accessible; résumé limité au titre.)",
+   "summary_en": "According to sources cited by Reuters, the Trump administration is about to announce new tariffs following a probe into excess factory capacity at trading partners; earlier, the White House was preparing sweeping tariffs on China, the EU and dozens of nations. A new tariff round can weigh on U.S. stocks and move the dollar, euro, Canadian dollar and gold. (Full article not accessible; summary limited to the headline.)",
+   "url": "https://www.investing.com/news/commodities-news/trump-administration-set-to-unveil-new-tariffs-after-probeon-excess-factory-capacity-sources-say-5048724"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "11:12",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Exclusif : Microsoft déclare un « code rouge » après une panne historique, selon des notes internes",
+   "title_en": "Exclusive: Microsoft declares 'Code Red' after historic outage, internal memos show",
+   "summary": "Selon des notes internes obtenues par Reuters, Microsoft a déclaré un « code rouge » à l'interne après une panne qualifiée d'historique. Microsoft étant l'un des plus gros poids du Nasdaq et du S&P 500, la fiabilité de ses services infonuagiques est suivie de près par les investisseurs. (Article complet non accessible; résumé limité au titre.)",
+   "summary_en": "According to internal memos obtained by Reuters, Microsoft declared an internal 'Code Red' after an outage described as historic. As one of the largest weights in the Nasdaq and S&P 500, the reliability of its cloud services is closely watched by investors. (Full article not accessible; summary limited to the headline.)",
+   "url": "https://www.investing.com/news/stock-market-news/exclusivemicrosoft-declares-code-red-after-historic-outage-internal-memos-show-5048702"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "11:07",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "rut",
+    "us30"
+   ],
+   "title": "Les titres du commerce de détail bondissent à l'approche du Black Friday grâce à des résultats supérieurs aux attentes",
+   "title_en": "Retail stocks surge into Black Friday amid earnings beats",
+   "summary": "Les actions de détaillants grimpent à l'approche du Black Friday, portées par des résultats supérieurs aux attentes; Abercrombie a relevé ses prévisions annuelles de ventes et de bénéfices, Best Buy ses cibles annuelles et Dick's Sporting Goods sa prévision de bénéfice annuel, selon d'autres titres d'Investing.com du jour. La vigueur du consommateur américain soutient le S&P 500 et les petites capitalisations du Russell 2000. (Article complet non accessible; résumé limité au titre.)",
+   "summary_en": "Retail stocks are climbing into Black Friday on earnings beats; Abercrombie raised its annual sales and profit forecast, Best Buy lifted its annual targets and Dick's Sporting Goods raised its annual profit forecast, according to other Investing.com headlines today. Strength in the U.S. consumer supports the S&P 500 and the Russell 2000 small caps. (Full article not accessible; summary limited to the headline.)",
+   "url": "https://www.investing.com/news/stock-market-news/retail-stocks-surge-into-black-friday-amid-earnings-beats-5048699"
+  },
+  {
+   "date": "2026-11-24",
    "time": "10:35",
    "source": "Investing.com",
    "impact": "high",
@@ -1510,6 +1561,25 @@
    "summary": "À 10 h 35 (HE), le Nasdaq Composite recule de 1,7 % à 23 681,12 points et le S&P 500 de 0,8 % à 7 180,64, tandis que le Dow Jones gagne 0,3 % à 49 731,80, après la meilleure séance depuis avril 2025. L'indice de confiance des consommateurs du Conference Board grimpe à 103,3 en novembre, contre 91,9 en octobre. Les marchés évaluent à environ 96 % la probabilité d'une hausse de taux de 25 points de base par la Fed en décembre (CME FedWatch), un contexte favorable au dollar.",
    "summary_en": "At 10:35 ET, the Nasdaq Composite fell 1.7% to 23,681.12 and the S&P 500 fell 0.8% to 7,180.64, while the Dow rose 0.3% to 49,731.80, following the best session since April 2025. The Conference Board consumer confidence index rose to 103.3 in November from 91.9 in October. Traders price roughly a 96% probability of a 25-basis-point Fed rate hike in December (CME FedWatch), supportive for the dollar.",
    "url": "https://in.investing.com/news/stock-market-news/us-stock-futures-steady-after-nvidialed-wall-street-rally-5722235"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "10:18",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "eurusd",
+    "usdjpy",
+    "gbpusd",
+    "audusd",
+    "nzdusd"
+   ],
+   "title": "Le dollar glisse alors que le rallye de l'IA alimenté par Nvidia s'essouffle",
+   "title_en": "Dollar slips as Nvidia-fueled AI rally fades",
+   "summary": "Le dollar américain recule alors que s'essouffle le rallye de l'IA mené par Nvidia, qui l'avait porté plus tôt dans la journée sur des paris d'une hausse de taux de la Fed. Ce repli redonne de l'air à l'euro, au yen, à la livre et aux devises du Pacifique. (Article complet non accessible; résumé limité au titre.)",
+   "summary_en": "The U.S. dollar is slipping as the Nvidia-led AI rally fades, after it had climbed earlier in the day on bets of a Fed rate hike. The pullback gives some relief to the euro, yen, pound and Pacific currencies. (Full article not accessible; summary limited to the headline.)",
+   "url": "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813"
   },
   {
    "date": "2026-11-24",
@@ -1568,25 +1638,6 @@
    "summary": "Jensen Huang a été réintégré comme PDG de Nvidia après 11 jours d'absence, mais Washington a ajouté lundi Megaspeed et une filiale singapourienne d'Alibaba à sa liste noire commerciale, après une règle exigeant des licences pour les puces avancées expédiées vers Singapour, la Thaïlande, la Malaisie, l'Indonésie et le Brésil. Nvidia a cessé d'expédier vers la Chine des puces d'IA déjà autorisées, qui lui avaient rapporté 2,4 G$ au dernier trimestre. Huang témoignera devant le comité bancaire du Sénat le 3 décembre, un risque pour les titres de puces et le Nasdaq.",
    "summary_en": "Jensen Huang was reinstated as Nvidia CEO after 11 days away, but Washington on Monday added Megaspeed and a Singapore unit of Alibaba to its trade blacklist, following a rule requiring licences for advanced chip shipments to Singapore, Thailand, Malaysia, Indonesia and Brazil. Nvidia has stopped shipping previously licensed AI chips to China, which generated $2.4 billion in its latest quarter. Huang testifies before the Senate Banking Committee on Dec. 3, a risk for chip stocks and the Nasdaq.",
    "url": "https://www.investing.com/news/stock-market-news/nvidias-huang-returns-to-cheers-in-china-but-political-hurdles-mount-5048427"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "08:25",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "usd",
-    "spx500",
-    "nasdaq",
-    "eurusd",
-    "usdcad",
-    "xauusd"
-   ],
-   "title": "La Maison-Blanche prépare de nouveaux droits de douane étendus visant la Chine, l'UE et des dizaines de pays",
-   "title_en": "White House prepares sweeping new tariffs on China, EU, and dozens of nations",
-   "summary": "Selon le titre d'Investing.com, la Maison-Blanche prépare une vaste nouvelle ronde de droits de douane visant la Chine, l'Union européenne et des dizaines d'autres pays. Un nouveau choc tarifaire pourrait peser sur les actions américaines et faire bouger le dollar, l'euro, le huard et l'or. (Article complet non accessible; résumé limité au titre, détails et taux non confirmés.)",
-   "summary_en": "According to Investing.com's headline, the White House is preparing a sweeping new round of tariffs on China, the European Union and dozens of other countries. A fresh tariff shock could weigh on U.S. stocks and move the dollar, euro, Canadian dollar and gold. (Full article not accessible; summary limited to the headline, details and rates unconfirmed.)",
-   "url": "https://www.investing.com/news/stock-market-news/white-house-prepares-sweeping-new-tariffs-on-china-eu-and-dozens-of-nations-5048285"
   },
   {
    "date": "2026-11-24",
@@ -1750,25 +1801,6 @@
    "summary": "UBS prévoit que la paire USD/JPY restera autour de 158 jusqu'en 2027, en raison des écarts de taux d'intérêt entre les États-Unis et le Japon. Cette prévision suggère un yen qui demeurerait faible face au dollar à moyen terme. (Article non accessible; résumé basé sur le titre seulement.)",
    "summary_en": "UBS expects USD/JPY to stay around 158 through 2027 on U.S.-Japan interest rate differentials. The forecast points to a yen that stays weak against the dollar over the medium term. (Article not accessible; summary based on the headline only.)",
    "url": "https://www.investing.com/news/forex-news/ubs-sees-usdjpy-at-158-through-2027-on-rate-differentials-93CH-5047434"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "04:36",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
-   "assets": [
-    "usd",
-    "eurusd",
-    "usdjpy",
-    "gbpusd",
-    "audusd",
-    "nzdusd"
-   ],
-   "title": "Le dollar grimpe : l'euphorie de l'IA alimente les paris d'une hausse de taux de la Fed",
-   "title_en": "Dollar climbs as renewed AI euphoria fuels Fed hike bets",
-   "summary": "Le dollar se maintient près de son plus haut en presque deux ans : l'indice DXY est à 104,26 après un sommet de 104,53 lundi (plus haut depuis mars 2025) et gagne environ 2,3 % ce mois-ci. L'euro est vers 1,0913 $ (plus bas depuis avril 2025), la livre vers 1,3047 $, le yen à 159,18 par dollar et l'aussie près de 0,6629 $, en baisse de près de 6 % en un mois. Selon le CME FedWatch, une hausse de 25 points de base de la Fed le mois prochain est entièrement intégrée, avec une faible probabilité d'une hausse de 50 points.",
-   "summary_en": "The dollar holds near its highest in nearly two years: the DXY is at 104.26 after Monday's 104.53 peak (highest since March 2025) and is up about 2.3% this month. The euro is around $1.0913 (lowest since April 2025), sterling around $1.3047, the yen at 159.18 per dollar and the Aussie near $0.6629, down nearly 6% in a month. CME FedWatch shows a 25 bp Fed hike next month fully priced, with a slim chance of a 50 bp move.",
-   "url": "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813"
   },
   {
    "date": "2026-11-24",
@@ -2082,42 +2114,6 @@
    "title": "Indice du dollar : le rallye se prolonge, mais des signaux de surachat appellent à la prudence",
    "title_en": "Dollar index technical outlook: rally extended but overbought signals flash caution",
    "url": "https://www.investing.com/news/forex-news/dollar-index-technical-outlook-rally-extended-but-overbought-signals-flash-caution-93CH-5046271"
-  },
-  {
-   "assets": [
-    "usd",
-    "spx500",
-    "usoil"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Mardi 24 novembre à 10 h, l'indice de confiance des consommateurs du Conference Board est attendu à 92,1, contre 91,7 précédemment. Aussi au programme : l'ADP hebdomadaire (8 h 15), l'indice des prix des maisons S&P/Case-Shiller 20 villes (9 h, attendu à 2,7 %), une adjudication d'obligations à 5 ans (13 h, rendement précédent 4,708 %) et les stocks de brut de l'API (16 h 30). Ces données serviront à jauger la vigueur du consommateur avant la semaine écourtée par l'Action de grâce.",
-   "summary_en": "On Tuesday, Nov. 24 at 10:00 a.m. ET, Conference Board consumer confidence is expected at 92.1 versus 91.7 previously. Also scheduled: weekly ADP (8:15 a.m.), the S&P/Case-Shiller 20-city home price index (9:00 a.m., expected 2.7%), a 5-year note auction (1:00 p.m., prior yield 4.708%) and API crude inventories (4:30 p.m.). The data will help gauge consumer strength ahead of the Thanksgiving-shortened week.",
-   "time": "14:00",
-   "title": "La confiance des consommateurs du Conference Board en vedette des données de mardi",
-   "title_en": "CB Consumer Confidence highlights economic data due Tuesday",
-   "url": "https://www.investing.com/news/stock-market-news/cb-consumer-confidence-highlights-economic-data-due-tuesday-93CH-5046246"
-  },
-  {
-   "assets": [
-    "usd",
-    "spx500",
-    "nasdaq",
-    "us30",
-    "eurusd",
-    "usdjpy",
-    "xauusd"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Avec le congé de l'Action de grâce jeudi, l'essentiel des données tombe mercredi à 8 h 30 : PCE de base d'octobre attendu à 0,3 % sur un mois et 3,2 % sur un an (3,1 % auparavant), PIB du T3 à 3,4 % et inscriptions au chômage à 201 000; le Livre beige de la Fed suit à 14 h. Lundi, l'indice PMI des services de S&P Global est sorti à 54,7, sous les 55,6 attendus, et John Williams (Fed de New York) parle à 16 h. Une inflation PCE plus forte que prévu raviverait les paris de hausse de taux, ce qui soutiendrait le dollar et pèserait sur les actions et l'or.",
-   "summary_en": "With Thursday's Thanksgiving holiday, most data lands Wednesday at 8:30 a.m.: October core PCE is forecast at 0.3% m/m and 3.2% y/y (prior 3.1%), Q3 GDP at 3.4% and jobless claims at 201K; the Fed's Beige Book follows at 2 p.m. On Monday, the S&P Global services PMI came in at 54.7 versus 55.6 expected, and New York Fed's John Williams speaks at 4 p.m. A hotter PCE reading would revive rate-hike bets, supporting the dollar and weighing on stocks and gold.",
-   "time": "13:13",
-   "title": "Fed et données clés de la semaine : PCE, PIB et Livre beige concentrés mercredi avant l'Action de grâce",
-   "title_en": "Key Fed events and economic data to watch this week",
-   "url": "https://www.investing.com/news/stock-market-news/key-fed-events-and-economic-data-to-watch-this-week-93CH-5046211"
   }
  ],
  "live": {
