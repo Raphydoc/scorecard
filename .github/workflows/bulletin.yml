@@ -1,0 +1,41 @@
+name: Bulletin du score
+on:
+  schedule:
+    - cron: '12 22 * * 1-5'   # vers 17 h 12 (heure de l'Est) en semaine, après la clôture
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/bulletin.yml', 'tools/snap_bias.mjs']
+permissions:
+  contents: write
+concurrency:
+  group: bulletin
+  cancel-in-progress: false
+jobs:
+  bulletin:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Navigateur sans écran
+        run: |
+          npm i --no-save --no-package-lock playwright@1.49.1
+          npx playwright install --with-deps chromium
+      - name: Lire le biais de chaque actif
+        run: |
+          python3 -m http.server 8000 >/dev/null 2>&1 &
+          sleep 2
+          node tools/snap_bias.mjs
+      - name: Enregistrer
+        run: |
+          git config user.name "scorecard-bulletin"
+          git config user.email "actions@users.noreply.github.com"
+          git add bulletin.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Bulletin du score du $(TZ=America/New_York date +%F)"
+          for i in 1 2 3 4 5; do git pull -q --rebase origin main && git push -q origin HEAD:main && break; sleep 10; done

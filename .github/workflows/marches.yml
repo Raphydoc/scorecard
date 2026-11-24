@@ -24,9 +24,9 @@ jobs:
           git config user.email "scorecard-bot@users.noreply.github.com"
           for i in 1 2 3; do
             git pull --rebase -q origin main
-            cp markets_new.json markets.json; cp ohlc_new.json ohlc.json
+            cp markets_new.json markets.json; cp ohlc_new.json ohlc.json; [ -f strength_new.json ] && cp strength_new.json strength.json
             python3 -m json.tool markets.json > /dev/null && python3 -m json.tool ohlc.json > /dev/null
-            git add markets.json ohlc.json
+            git add markets.json ohlc.json strength.json 2>/dev/null || git add markets.json ohlc.json
             git diff --cached --quiet && { echo "Rien de nouveau"; exit 0; }
             git commit -q -m "Marchés du $(date -u +'%F %H:%M') UTC"
             git push -q origin main && exit 0

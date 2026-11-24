@@ -34,7 +34,7 @@ jobs:
           git fetch -q --depth 1 origin direct && git checkout -q origin/direct -- live.json || true
           mkdir -p m
           cd ..
-          end=$((SECONDS + 20700)); i=0
+          end=$((SECONDS + 20700)); i=0; step=15; fails=0
           while [ $SECONDS -lt $end ]; do
             start=$SECONDS
             news=$(( i % 8 == 0 ? 1 : 0 )); mode=$([ $((i % 4)) -eq 0 ] && echo full || echo fast)
@@ -46,9 +46,11 @@ jobs:
               ls m/*.json | sort | head -n -30 | xargs -r rm -f
               git add -A live.json m
               if [ $i -eq 0 ]; then git commit -q -m "Cours et manchettes en direct" || true; else git commit -q --amend -m "Cours et manchettes en direct" || true; fi
-              git push -q -f origin HEAD:direct || echo "push refusé"
+              if git push -q -f origin HEAD:direct; then fails=0; else fails=$((fails + 1)); echo "push refusé ($fails)"; fi
+              # plan B : après 3 refus de suite (GitHub limite), on ralentit à une fois par minute
+              if [ $fails -ge 3 ] && [ $step -ne 60 ]; then step=60; echo "plan B : une mise à jour par minute"; fi
               cd ..
             fi
             i=$((i + 1))
-            wait=$((15 - (SECONDS - start))); [ $wait -gt 0 ] && sleep $wait
+            wait=$((step - (SECONDS - start))); [ $wait -gt 0 ] && sleep $wait
           done

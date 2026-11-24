@@ -218,6 +218,11 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
     M.trend[k] = {t: px > o && px > pc ? 'bull' : px < o && px < pc ? 'bear' : 'neutral', px: r2(px, dp(px)), o: r2(o, dp(px)), pc: r2(pc, dp(px)), chg: r2((px / pc - 1) * 100, 2), vsO: r2((px / o - 1) * 100, 2)}; });
   console.error('tendances', Object.entries(M.trend).map(([k, v]) => k + ':' + v.t).join(' '), '10 ans', M.y10 && M.y10.dir);
 
+  // 3 dernières barres journalières de chaque actif du scorecard (niveaux de la page Plan du jour, sans charger ohlc.json)
+  M.lv = {}; for (const k in O.d1) M.lv[k] = O.d1[k].slice(-3);
+  // force des devises à part (strength.json, ~220 Ko) : chargée seulement par les pages Graphiques et Vue d’ensemble
+  const OUT_S = OUT_M.replace(/markets(_new)?\.json$/, 'strength$1.json');
+  if (M.strength && OUT_S !== OUT_M) { fs.writeFileSync(OUT_S, JSON.stringify({asOf: M.asOf, strength: M.strength})); delete M.strength; }
   fs.writeFileSync(OUT_M, JSON.stringify(M));
   fs.writeFileSync(OUT_O, JSON.stringify(O));
   const ok = Object.values(M.watch).flat().length > 40;
