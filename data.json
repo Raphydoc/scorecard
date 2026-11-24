@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T04:47:42Z",
+  "updatedAt": "2026-11-24T05:47:38Z",
   "econ": {
     "values": {
       "adp": {
@@ -1409,6 +1409,37 @@
   },
   "news": [
     {
+      "date": "2026-11-24",
+      "time": "00:23",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "SpaceX et Tesla confient à cinq administrateurs les négociations de fusion, selon le FT",
+      "title_en": "SpaceX and Tesla entrust five directors with merger talks, FT reports",
+      "summary": "Selon le Financial Times, les deux sociétés d'Elon Musk ont nommé cinq administrateurs — trois de Tesla (Robyn Denholm, Kathleen Wilson-Thompson, Jack Hartung) et deux de SpaceX (Roelof Botha, Randy Glein) — pour piloter les comités spéciaux chargés des négociations de fusion. Reuters n'a pas pu vérifier l'information et aucune modalité ni valorisation n'est mentionnée. Le dossier reste suivi de près pour Tesla, poids lourd du Nasdaq et du S&P 500.",
+      "summary_en": "According to the Financial Times, Elon Musk's two companies appointed five directors — three from Tesla (Robyn Denholm, Kathleen Wilson-Thompson, Jack Hartung) and two from SpaceX (Roelof Botha, Randy Glein) — to guide the special committees handling merger talks. Reuters could not verify the report and no terms or valuation were disclosed. The deal remains closely watched for Tesla, a heavyweight in the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/spacex-and-tesla-entrusts-five-directors-for-merger-talks-ft-reports-5047055"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "00:05",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "usoil",
+        "xauusd",
+        "usd"
+      ],
+      "title": "L'Iran affirme que trois pétroliers ont heurté des mines à Ormuz malgré l'escorte américaine; le Trésor élargit les sanctions",
+      "title_en": "Iran says three tankers hit mines in Hormuz despite U.S. escort, as Treasury widens sanctions",
+      "summary": "Selon le titre de CNBC, l'Iran affirme que trois pétroliers ont heurté des mines dans le détroit d'Ormuz malgré une escorte américaine, tandis que le Trésor américain élargit ses sanctions. L'article complet n'a pas pu être lu. Un nouveau risque sur Ormuz peut soutenir le pétrole WTI et les valeurs refuges comme l'or, alors que le brut se tenait près d'un creux de trois mois.",
+      "summary_en": "According to CNBC's headline, Iran says three tankers hit mines in the Strait of Hormuz despite a U.S. escort, while the U.S. Treasury widens sanctions. The full article could not be read. Renewed Hormuz risk can support WTI crude and safe havens such as gold, with crude holding near a three-month low.",
+      "url": "https://www.cnbc.com/2026/11/24/iran-trump-hormuz-crude-.html"
+    },
+    {
       "date": "2026-11-23",
       "time": "22:39",
       "source": "Investing.com",
@@ -2004,37 +2035,6 @@
       "title": "Les rendements du Trésor bondissent avec le rebond des contrats à terme; on attend le discours de John Williams (Fed de New York)",
       "title_en": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
       "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html"
-    },
-    {
-      "assets": [
-        "usoil",
-        "usd"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Le porte-parole des Affaires étrangères, Esmaeil Baghaei, a affirmé que l'Iran ne tolérera pas le blocus américain de ses exportations de pétrole, rétabli le 14 juillet après l'effondrement de l'accord. Les exportations visibles de brut iranien sont tombées près de zéro et Téhéran dit qu'il ne rouvrira le détroit d'Ormuz que si Washington accepte ses conditions. Le risque sur l'offre continue de soutenir la prime géopolitique du pétrole.",
-      "summary_en": "Foreign Ministry spokesperson Esmaeil Baghaei said Iran will not tolerate the US blockade of its oil exports, restored on July 14 after the deal collapsed. Visible Iranian crude exports have fallen to near zero, and Tehran says it will reopen the Strait of Hormuz only when Washington meets its conditions. The supply risk keeps a geopolitical premium in oil.",
-      "time": "04:38",
-      "title": "L'Iran promet d'utiliser « tous ses outils » contre le blocus naval américain",
-      "title_en": "Iran says it will use all its tools to confront US naval blockade",
-      "url": "https://www.investing.com/news/commodities-news/iran-says-it-will-use-all-its-tools-to-confront-us-naval-blockade-5044777"
-    },
-    {
-      "assets": [
-        "gbpusd",
-        "eurusd",
-        "usd"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "La livre sterling gagne 0,29 % à 1,3125 $ et l'euro 0,14 % à 1,0983 $, après une semaine où l'indice dollar a fini vendredi à 103,84 (+0,43 %). Le secrétaire au Trésor Scott Bessent a dit que la Fed pourrait commettre une erreur en resserrant trop; ING ne voit pas le DXY corriger beaucoup sous 103,35-103,50. HSBC situe le support du GBP/USD à 1,2933 $ et la résistance à 1,3367 $.",
-      "summary_en": "Sterling rose 0.29% to $1.3125 and the euro 0.14% to $1.0983, after the dollar index closed Friday at 103.84, up 0.43% on the week. Treasury Secretary Scott Bessent said the Fed may be making a mistake if it overtightens; ING doesn't see the DXY correcting much below 103.35/50. HSBC puts GBP/USD support at $1.2933 and resistance at $1.3367.",
-      "time": "04:28",
-      "title": "La livre se raffermit à 1,3125 $ : le rebond des actions tempère la demande pour le dollar",
-      "title_en": "Pound firms to $1.3125 as equity rebound trims dollar bid",
-      "url": "https://www.investing.com/news/forex-news/sterling-today-pound-firms-as-equity-rebound-trims-dollar-bid-5044762"
     }
   ],
   "live": {
