@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T13:55:00Z",
+ "updatedAt": "2026-11-24T13:48:20Z",
  "econ": {
   "values": {
    "adp": {
@@ -1495,6 +1495,54 @@
  "news": [
   {
    "date": "2026-11-24",
+   "time": "08:25",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500",
+    "nasdaq",
+    "eurusd",
+    "usdcad",
+    "xauusd"
+   ],
+   "title": "La Maison-Blanche prépare de nouveaux droits de douane étendus visant la Chine, l'UE et des dizaines de pays",
+   "title_en": "White House prepares sweeping new tariffs on China, EU, and dozens of nations",
+   "summary": "Selon le titre d'Investing.com, la Maison-Blanche prépare une vaste nouvelle ronde de droits de douane visant la Chine, l'Union européenne et des dizaines d'autres pays. Un nouveau choc tarifaire pourrait peser sur les actions américaines et faire bouger le dollar, l'euro, le huard et l'or. (Article complet non accessible; résumé limité au titre, détails et taux non confirmés.)",
+   "summary_en": "According to Investing.com's headline, the White House is preparing a sweeping new round of tariffs on China, the European Union and dozens of other countries. A fresh tariff shock could weigh on U.S. stocks and move the dollar, euro, Canadian dollar and gold. (Full article not accessible; summary limited to the headline, details and rates unconfirmed.)",
+   "url": "https://www.investing.com/news/stock-market-news/white-house-prepares-sweeping-new-tariffs-on-china-eu-and-dozens-of-nations-5048285"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "08:25",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "usdcad"
+   ],
+   "title": "Le pétrole hésite entre une offre en amélioration et les craintes de perturbations au Moyen-Orient",
+   "title_en": "Oil prices choppy amid improving supplies, Mideast disruption fears",
+   "summary": "Selon le titre d'Investing.com, les cours du pétrole évoluent en dents de scie mardi, tiraillés entre une offre qui s'améliore et les craintes de perturbations au Moyen-Orient. Le WTI reste ainsi près de ses creux récents, ce qui touche aussi le huard. (Article complet non accessible; résumé limité au titre.)",
+   "summary_en": "According to Investing.com's headline, oil prices are choppy on Tuesday, torn between improving supplies and fears of Middle East disruptions. WTI thus stays near recent lows, which also affects the Canadian dollar. (Full article not accessible; summary limited to the headline.)",
+   "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-after-logging-deep-losses-on-supply-glut-fears-5046712"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "08:12",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "xagusd"
+   ],
+   "title": "Les minières d'argent reculent alors que le métal baisse sur des craintes de hausse de taux",
+   "title_en": "Silver miners fall as metal price drops on rate hike concerns",
+   "summary": "Selon le titre d'Investing.com, les titres des minières d'argent reculent mardi, le prix du métal baissant sous l'effet des craintes d'une hausse des taux. Des taux plus élevés réduisent l'attrait des métaux précieux, qui ne versent pas de rendement. (Article complet non accessible; résumé limité au titre.)",
+   "summary_en": "According to Investing.com's headline, silver mining stocks fall on Tuesday as the metal's price drops on rate-hike concerns. Higher rates reduce the appeal of non-yielding precious metals. (Full article not accessible; summary limited to the headline.)",
+   "url": "https://www.investing.com/news/stock-market-news/silver-miners-fall-as-metal-price-drops-on-rate-hike-concerns-93CH-5048203"
+  },
+  {
+   "date": "2026-11-24",
    "time": "07:36",
    "source": "CoinDesk",
    "impact": "med",
@@ -2070,50 +2118,6 @@
    "title": "Le pétrole chute de plus de 3 % avec la hausse des flux du Moyen-Orient et la reprise d'un oléoduc libyen",
    "title_en": "Oil drops more than 3% on increased Middle East flows, Libyan pipeline restart",
    "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-amid-equity-selloff-though-iran-war-attacks-limit-losses-5044242"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "Le président Donald Trump affirme sur CNBC avoir lui-même conclu l'entente ayant mené au retour de Jensen Huang à la tête de Nvidia. Ce retour alimente lundi le fort rebond des titres technologiques. (Article complet non accessible; résumé limité au titre.)",
-   "summary_en": "President Donald Trump told CNBC he personally made the deal that led to Jensen Huang's reinstatement as Nvidia CEO. The return is fueling Monday's strong rebound in tech stocks. (Full article not accessible; summary limited to the headline.)",
-   "time": "12:16",
-   "title": "Trump dit à CNBC « J'ai conclu l'entente » pour le retour de Jensen Huang chez Nvidia",
-   "title_en": "Trump tells CNBC ‘I made the deal’ to reinstate Nvidia’s Jensen Huang",
-   "url": "https://www.cnbc.com/2026/11/23/trump-nvidia-jensen-huang.html"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'action de Texas Instruments grimpe de 10 % après que Cantor Fitzgerald l'a relevée à « Surpondérer » et a porté sa cible de 340 $ à 385 $, en visant un BPA 2028 supérieur à 15 $ (consensus : 13,88 $). L'indice des semiconducteurs PHLX gagne près de 14 % et le Nasdaq presque 7 %, après la pire semaine du S&P 500 depuis avril 2025.",
-   "summary_en": "Texas Instruments shares surged 10% after Cantor Fitzgerald upgraded them to Overweight and raised its target to $385 from $340, based on 2028 EPS above $15 (consensus $13.88). The PHLX Semiconductor Index rose nearly 14% and the Nasdaq almost 7%, after the S&P 500's steepest weekly drop since April 2025.",
-   "time": "12:12",
-   "title": "Texas Instruments bondit de 10 % sur une hausse de recommandation de Cantor Fitzgerald et le rallye des puces",
-   "title_en": "Texas Instruments surges 10% on Cantor Fitzgerald upgrade and chip rally",
-   "url": "https://www.investing.com/news/stock-market-news/texas-instruments-surges-10-on-cantor-fitzgerald-upgrade-and-chip-rally-5046130"
-  },
-  {
-   "assets": [
-    "nasdaq"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Environ 160 000 contrats d'options sur Anthropic se sont échangés dans la première heure, ce qui place le titre parmi les 25 plus actifs du marché des options selon Mercury Alerts; le rythme pointe vers plus de 600 000 contrats sur la journée, loin du record de 1,8 million de SpaceX en juin. Le volume était partagé à peu près également entre calls et puts, et l'action reculait de 2 % à 87,33 $ malgré le rebond des titres liés à l'IA.",
-   "summary_en": "About 160,000 Anthropic options contracts traded in the first hour, making it one of the 25 most heavily traded names in the options market, according to Mercury Alerts; the pace points to more than 600,000 contracts for the day, well short of SpaceX's 1.8 million record in June. Volume was roughly evenly split between calls and puts, and the shares were down 2% at $87.33 even as AI-linked stocks bounced.",
-   "time": "11:24",
-   "title": "Les options sur Anthropic font leurs débuts avec un volume soutenu",
-   "title_en": "Anthropic options debut with brisk volume",
-   "url": "https://www.investing.com/news/stock-market-news/anthropic-options-debut-with-brisk-volume-5046078"
   }
  ],
  "live": {
