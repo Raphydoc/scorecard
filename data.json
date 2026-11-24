@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T13:48:20Z",
+ "updatedAt": "2026-11-24T14:48:26Z",
  "econ": {
   "values": {
    "adp": {
@@ -1495,6 +1495,35 @@
  "news": [
   {
    "date": "2026-11-24",
+   "time": "09:23",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "BNP Paribas abaisse sa note sur Micron en raison des risques sur les plans de capacité des hyperscalers pour 2028",
+   "title_en": "BNP Paribas cuts Micron rating on risks to 2028 hyperscaler capacity plans",
+   "summary": "BNP Paribas a abaissé sa recommandation sur Micron, citant des risques liés aux plans de capacité des grands fournisseurs infonuagiques (hyperscalers) pour 2028. Cette décote pèse sur les titres de mémoire et de semi-conducteurs, déjà volatils après le rallye de lundi. (Article non lu en entier; résumé fondé sur le titre.)",
+   "summary_en": "BNP Paribas downgraded Micron, citing risks to hyperscalers' 2028 capacity plans. The cut weighs on memory and chip stocks, already volatile after Monday's rally. (Full article not read; summary based on the headline.)",
+   "url": "https://www.investing.com/news/stock-market-news/bnp-paribas-cuts-micron-rating-on-risks-to-2028-hyperscaler-capacity-plans-5048466"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "09:01",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Le retour de Huang est acclamé en Chine, mais les obstacles politiques s'accumulent pour Nvidia",
+   "title_en": "Nvidia's Huang returns to cheers in China, but political hurdles mount",
+   "summary": "Jensen Huang a été réintégré comme PDG de Nvidia après 11 jours d'absence, mais Washington a ajouté lundi Megaspeed et une filiale singapourienne d'Alibaba à sa liste noire commerciale, après une règle exigeant des licences pour les puces avancées expédiées vers Singapour, la Thaïlande, la Malaisie, l'Indonésie et le Brésil. Nvidia a cessé d'expédier vers la Chine des puces d'IA déjà autorisées, qui lui avaient rapporté 2,4 G$ au dernier trimestre. Huang témoignera devant le comité bancaire du Sénat le 3 décembre, un risque pour les titres de puces et le Nasdaq.",
+   "summary_en": "Jensen Huang was reinstated as Nvidia CEO after 11 days away, but Washington on Monday added Megaspeed and a Singapore unit of Alibaba to its trade blacklist, following a rule requiring licences for advanced chip shipments to Singapore, Thailand, Malaysia, Indonesia and Brazil. Nvidia has stopped shipping previously licensed AI chips to China, which generated $2.4 billion in its latest quarter. Huang testifies before the Senate Banking Committee on Dec. 3, a risk for chip stocks and the Nasdaq.",
+   "url": "https://www.investing.com/news/stock-market-news/nvidias-huang-returns-to-cheers-in-china-but-political-hurdles-mount-5048427"
+  },
+  {
+   "date": "2026-11-24",
    "time": "08:25",
    "source": "Investing.com",
    "impact": "med",
@@ -1540,6 +1569,21 @@
    "summary": "Selon le titre d'Investing.com, les titres des minières d'argent reculent mardi, le prix du métal baissant sous l'effet des craintes d'une hausse des taux. Des taux plus élevés réduisent l'attrait des métaux précieux, qui ne versent pas de rendement. (Article complet non accessible; résumé limité au titre.)",
    "summary_en": "According to Investing.com's headline, silver mining stocks fall on Tuesday as the metal's price drops on rate-hike concerns. Higher rates reduce the appeal of non-yielding precious metals. (Full article not accessible; summary limited to the headline.)",
    "url": "https://www.investing.com/news/stock-market-news/silver-miners-fall-as-metal-price-drops-on-rate-hike-concerns-93CH-5048203"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "08:00",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Anthropic passe sous son prix d'introduction de 83 $ dans un revirement rapide après une inscription record",
+   "title_en": "Anthropic falls below $83 IPO price in swift reversal after record listing",
+   "summary": "L'action d'Anthropic a glissé sous son prix d'introduction de 83 $ avant l'ouverture mardi, avant de reculer de 5 % à 83,39 $, loin de son cours d'ouverture de 111,50 $ du 19 novembre. Le produit brut du PAPE a atteint un record de 93,5 G$, et Dario et Daniela Amodei ont chacun vendu plus de 3,37 millions d'actions (plus de 280 M$). Ce repli alimente les doutes sur l'élan du commerce de l'IA au Nasdaq; MSCI ajoutera le titre à ses indices le 30 novembre.",
+   "summary_en": "Anthropic shares slipped below their $83 IPO price in premarket trading Tuesday and were last down 5% at $83.39, extending a retreat from their $111.50 opening price on Nov. 19. IPO gross proceeds reached a record $93.5 billion, and Dario and Daniela Amodei each sold more than 3.37 million shares worth over $280 million. The slide feeds doubts about the AI trade on the Nasdaq; MSCI adds the stock to its indexes as of the Nov. 30 close.",
+   "url": "https://www.investing.com/news/economy-news/anthropic-breaks-below-83-ipo-price-as-debut-rally-unravels-5047654"
   },
   {
    "date": "2026-11-24",
@@ -2072,52 +2116,6 @@
    "title": "Jensen Huang (Nvidia) témoignera devant le Sénat américain le 3 décembre",
    "title_en": "Nvidia's Huang to testify before U.S. Senate on Dec. 3",
    "url": "https://www.investing.com/news/stock-market-news/nvidias-huang-to-testify-before-us-senate-on-dec-3-5046191"
-  },
-  {
-   "assets": [
-    "us30",
-    "spx500"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Donald Trump a déclaré à CNBC qu'il pense que la Chine acceptera d'acheter 250 autres avions Boeing, quelques jours après sa rencontre avec Xi Jinping. La Chine s'était engagée en mai à acheter 200 appareils, une « première tranche » selon le PDG Kelly Ortberg; Boeing et GE Aerospace ont aussi finalisé une vente de 12 G$ à Philippine Airlines pour jusqu'à 20 787. Une telle commande soutiendrait Boeing, poids lourd du Dow Jones, et signalerait une détente commerciale sino-américaine.",
-   "summary_en": "Donald Trump told CNBC he thinks China will agree to buy another 250 Boeing airplanes, days after meeting Xi Jinping. China agreed in May to buy 200 planes, an 'initial tranche' according to CEO Kelly Ortberg; Boeing and GE Aerospace also finalized a $12 billion sale to Philippine Airlines for up to 20 787s. Such an order would support Boeing, a Dow heavyweight, and signal a U.S.-China trade thaw.",
-   "time": "12:48",
-   "title": "Trump croit que la Chine achètera 250 autres avions de Boeing",
-   "title_en": "Trump thinks China will buy another 250 Boeing airplanes",
-   "url": "https://www.investing.com/news/stock-market-news/trump-thinks-china-will-buy-another-250-boeing-airplanes-5046050"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "date": "2026-11-23",
-   "impact": "high",
-   "source": "Investing.com (Reuters)",
-   "summary": "À 12 h 02 HE, le Dow gagnait 3,05 % à 49 617,33, le S&P 500 4,85 % à 7 245,46 et le Nasdaq 6,69 % à 24 131,42; Nvidia bondissait de 32,2 %, en voie de sa plus forte hausse en une séance depuis plus de 20 ans. L'indice des semi-conducteurs de Philadelphie montait de 13,4 % et seul le secteur de l'énergie reculait. Les marchés évaluent toujours à près de 98 % la probabilité d'une hausse de taux de 25 points de base par la Fed en décembre.",
-   "summary_en": "At 12:02 p.m. ET, the Dow rose 3.05% to 49,617.33, the S&P 500 4.85% to 7,245.46 and the Nasdaq 6.69% to 24,131.42; Nvidia surged 32.2%, on track for its biggest one-day gain in more than two decades. The Philadelphia Semiconductor Index rose 13.4% and energy was the only sector in the red. Traders still price a nearly 98% chance of a 25-basis-point Fed rate hike in December.",
-   "time": "12:38",
-   "title": "Wall Street rebondit en force : le Nasdaq grimpe de près de 7 % avec le retour de Jensen Huang chez Nvidia",
-   "title_en": "Wall Street roars back as Nvidia reinstates Jensen Huang as CEO",
-   "url": "https://ca.investing.com/news/stock-market-news/wall-street-roars-back-as-nvidia-reinstates-jensen-huang-as-ceo-4976467"
-  },
-  {
-   "assets": [
-    "usoil",
-    "usdcad"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Selon le titre d'Investing.com, les cours du pétrole reculent de plus de 3 % lundi, plombés par l'augmentation des flux en provenance du Moyen-Orient et la remise en service d'un oléoduc en Libye. Le recul accentue la pression sur le WTI et sur le huard, sensible au brut. (Article complet non accessible; résumé limité au titre.)",
-   "summary_en": "According to Investing.com's headline, oil prices fell more than 3% on Monday, weighed by increased flows from the Middle East and the restart of a Libyan pipeline. The drop adds pressure on WTI and on the oil-sensitive Canadian dollar. (Full article not accessible; summary limited to the headline.)",
-   "time": "12:30",
-   "title": "Le pétrole chute de plus de 3 % avec la hausse des flux du Moyen-Orient et la reprise d'un oléoduc libyen",
-   "title_en": "Oil drops more than 3% on increased Middle East flows, Libyan pipeline restart",
-   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-amid-equity-selloff-though-iran-war-attacks-limit-losses-5044242"
   }
  ],
  "live": {
