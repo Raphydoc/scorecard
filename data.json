@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T17:11:13Z",
+ "updatedAt": "2026-11-24T17:42:30Z",
  "econ": {
   "values": {
    "adp": {
@@ -1496,6 +1496,51 @@
  "news": [
   {
    "date": "2026-11-24",
+   "time": "12:28",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usdcad",
+    "usd"
+   ],
+   "title": "Le dollar canadien rebondit d'un creux de 19 mois alors que le dollar américain recule",
+   "title_en": "Canadian dollar rebounds from 19-month low as U.S. dollar retreats",
+   "summary": "Le huard remonte mardi après avoir touché son plus bas niveau en 19 mois face au billet vert, profitant du repli du dollar américain. Ce rebond fait reculer la paire USD/CAD.",
+   "summary_en": "The loonie rebounded on Tuesday from a 19-month low against the greenback, helped by a retreating U.S. dollar. The rebound pushes USD/CAD lower.",
+   "url": "https://www.investing.com/news/forex-news/canadian-dollar-rebounds-from-19month-low-as-us-dollar-retreats-5048801"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "12:02",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usoil",
+    "usdcad"
+   ],
+   "title": "Le pétrole remonte sur des attaques de navires à Ormuz, les perspectives d'offre excédentaire limitent les gains",
+   "title_en": "Oil rises on Hormuz ship attacks, surplus supply outlook curbs gains",
+   "summary": "Le pétrole remonte mardi midi en raison d'attaques contre des navires dans le détroit d'Ormuz, mais les perspectives d'une offre excédentaire freinent la hausse. Plus tôt, le WTI s'échangeait près de 79,94 $ et le Brent près de 88,97 $, près de leurs plus bas depuis fin août; Deutsche Bank estimait que les stocks mondiaux observés avaient augmenté de 52 millions de barils en octobre.",
+   "summary_en": "Oil rose midday Tuesday on attacks on ships in the Strait of Hormuz, though the outlook for surplus supply curbed gains. Earlier, WTI traded near $79.94 and Brent near $88.97, close to their lowest since late August; Deutsche Bank estimated global observed inventories rose 52 million barrels in October.",
+   "url": "https://www.investing.com/news/commodities-news/oil-holds-near-threemonth-low-as-rising-supply-offsets-hormuz-threat-5046916"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "11:38",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia chute de 8 % alors que le rallye du retour de Huang se refroidit",
+   "title_en": "Nvidia shares fall 8% as Huang comeback rally cools",
+   "summary": "Le repli de l'action Nvidia s'accentue mardi et atteint 8 %, selon CNBC, après un bond de 31,5 % lundi jusqu'à une clôture de 165,05 $, le plus important gain de capitalisation en une journée jamais enregistré (plus de 1 000 milliards $). Le recul du poids lourd pèse sur le Nasdaq et le S&P 500.",
+   "summary_en": "Nvidia's pullback deepened to 8% on Tuesday, per CNBC, after a 31.5% surge on Monday to a $165.05 close, the largest one-day market-value gain on record (over $1 trillion). The heavyweight's retreat weighs on the Nasdaq and S&P 500.",
+   "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html"
+  },
+  {
+   "date": "2026-11-24",
    "time": "11:24",
    "source": "Investing.com (Reuters)",
    "impact": "high",
@@ -1594,21 +1639,6 @@
    "summary": "Selon un analyste cité par Investing.com, l'acquisition de Zscaler par CrowdStrike, d'une valeur de 44 milliards $, positionne l'entreprise comme le principal acteur de la sécurité « zero trust ». Cette transaction majeure dans la cybersécurité est suivie de près par les investisseurs du secteur technologique du Nasdaq.",
    "summary_en": "According to an analyst cited by Investing.com, CrowdStrike's $44 billion acquisition of Zscaler positions the company as the top zero trust security player. The major cybersecurity deal is closely watched by Nasdaq tech investors.",
    "url": "https://www.investing.com/news/stock-market-news/analyst-says-crowdstrikes-44b-zscaler-deal-makes-it-top-zero-trust-player-5048650"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "09:39",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "title": "Nvidia recule de plus de 6 % après le rallye lié au retour de Huang",
-   "title_en": "Nvidia shares fall by 6% following Huang return rally",
-   "summary": "L'action Nvidia cède plus de 6 % en début de séance mardi, après avoir bondi de 31,5 % lundi pour clôturer à 165,05 $, soit un gain de plus de 1 000 milliards $ de capitalisation, le plus important gain en une journée jamais enregistré. En Asie, TSMC a gagné plus de 9 %, Advantest plus de 12 % et Samsung et SK Hynix plus de 6 %. Le repli du poids lourd pèse sur le Nasdaq et le S&P 500.",
-   "summary_en": "Nvidia shares fell more than 6% in early trading Tuesday after soaring 31.5% on Monday to close at $165.05, adding more than $1 trillion in market value, the largest one-day gain on record. In Asia, TSMC rose over 9%, Advantest more than 12%, and Samsung and SK Hynix over 6%. The heavyweight's pullback weighs on the Nasdaq and S&P 500.",
-   "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-fall-by-6-following-huang-return-rally-5048533"
   },
   {
    "date": "2026-11-24",
@@ -1977,21 +2007,6 @@
   },
   {
    "date": "2026-11-23",
-   "time": "21:56",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
-   "assets": [
-    "usoil",
-    "usdcad"
-   ],
-   "title": "Le pétrole se maintient près d'un creux de trois mois, l'offre croissante éclipsant la menace sur Ormuz",
-   "title_en": "Oil holds near three-month low as rising supply offsets Hormuz threat",
-   "summary": "Le WTI recule de 0,29 % à 79,94 $ et le Brent de 0,45 % à 88,97 $, près de leurs plus bas depuis fin août, malgré trois pétroliers en feu après avoir heurté des mines dans le détroit d'Ormuz selon les Gardiens de la révolution iraniens. Deutsche Bank estime que les stocks mondiaux observés ont augmenté de 52 millions de barils en octobre, soit une surabondance de 1,7 million de barils par jour, et l'oléoduc libyen de Sharara a rouvert.",
-   "summary_en": "WTI slipped 0.29% to $79.94 and Brent 0.45% to $88.97, near their lowest since late August, despite three tankers catching fire after hitting mines in the Strait of Hormuz, per Iran's Revolutionary Guards. Deutsche Bank said global observed inventories rose 52 million barrels in October, implying a 1.7 million bpd oversupply, and Libya's Sharara pipeline has reopened.",
-   "url": "https://www.investing.com/news/commodities-news/oil-holds-near-threemonth-low-as-rising-supply-offsets-hormuz-threat-5046916"
-  },
-  {
-   "date": "2026-11-23",
    "time": "19:33",
    "source": "Investing.com",
    "impact": "med",
@@ -2099,21 +2114,6 @@
    "summary": "À 15 h 03 HE, l'indice composé S&P/TSX bondissait de 2,9 % à 34 153,81 points, après une semaine de recul de 8,1 % qui l'avait laissé en zone de correction. L'indice des métaux de base grimpait de 6,9 %, la techno canadienne de 4,7 %, et l'or au comptant gagnait 2,9 % à 3 640,46 $ l'once. Les ventes manufacturières canadiennes d'octobre ont progressé de 2,3 % selon l'estimation préliminaire; le marché attend maintenant l'indice PCE américain.",
    "summary_en": "At 3:03 p.m. ET, the S&P/TSX Composite jumped 2.9% to 34,153.81 after an 8.1% weekly drop that left it in correction territory. The base metals index soared 6.9%, Canadian tech rose 4.7%, and spot gold gained 2.9% to $3,640.46/oz. Canada's advance estimate showed October manufacturing sales up 2.3%; markets now await the U.S. PCE price index.",
    "url": "https://www.investing.com/news/stock-market-news/tsx-futures-rise-as-wall-street-bounces-following-ai-selloff-5045504"
-  },
-  {
-   "assets": [
-    "usd",
-    "eurusd"
-   ],
-   "date": "2026-11-23",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'indice du dollar (DXY) se situe à 104,295, en hausse de 0,53 %, avec un RSI quotidien de 73,8, en zone de surachat. Il est 1,3 % au-dessus de sa moyenne mobile exponentielle de 20 jours (102,94) et a grimpé d'environ 6,4 % depuis son creux du 9 septembre (98,058). L'EUR/USD recule de 0,61 % à 1,0901; une Fed restrictive soutient le dollar à court terme, mais le risque de pause technique augmente.",
-   "summary_en": "The Dollar Index (DXY) stands at 104.295, up 0.53%, with a daily RSI of 73.8, in overbought territory. It is 1.3% above its 20-day EMA (102.94) and up about 6.4% from its Sept. 9 low of 98.058. EUR/USD is down 0.61% at 1.0901; a hawkish Fed supports the dollar near term, but the risk of a technical pause is rising.",
-   "time": "14:26",
-   "title": "Indice du dollar : le rallye se prolonge, mais des signaux de surachat appellent à la prudence",
-   "title_en": "Dollar index technical outlook: rally extended but overbought signals flash caution",
-   "url": "https://www.investing.com/news/forex-news/dollar-index-technical-outlook-rally-extended-but-overbought-signals-flash-caution-93CH-5046271"
   }
  ],
  "live": {
