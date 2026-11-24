@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T00:48:14Z",
+  "updatedAt": "2026-11-24T01:47:56Z",
   "econ": {
     "values": {
       "adp": {
@@ -1410,6 +1410,43 @@
   "news": [
     {
       "date": "2026-11-23",
+      "time": "20:29",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "xauusd",
+        "usoil",
+        "usd"
+      ],
+      "title": "Les Bourses asiatiques s'envolent avec le retour de Huang chez Nvidia",
+      "title_en": "Asian stocks rally as Huang's Nvidia return revives AI trade",
+      "summary": "L'indice MSCI Asie-Pacifique hors Japon bondit de 4,6 %, le Nikkei de 4,5 %, le KOSPI de 7,5 % et Taïwan de 9,1 %, après un gain de 31,5 % de Nvidia lundi, son plus fort en 23 ans (S&P 500 +4,7 %, Nasdaq +6,5 %). Une hausse de taux de la Fed en décembre est maintenant vue comme certaine, contre 89 % vendredi; le taux 10 ans américain est à 4,94 %. L'or au comptant gagne 0,7 % à 3 657,97 $ l'once, tandis que le pétrole reste près d'un creux de trois mois.",
+      "summary_en": "MSCI's Asia-Pacific ex-Japan index jumped 4.6%, the Nikkei 4.5%, the KOSPI 7.5% and Taiwan 9.1%, after Nvidia's 31.5% surge Monday, its biggest in 23 years (S&P 500 +4.7%, Nasdaq +6.5%). A December Fed hike is now priced as a certainty, versus 89% Friday; the US 10-year yield is 4.94%. Spot gold rose 0.7% to $3,657.97/oz while oil stays near a three-month low.",
+      "url": "https://www.investing.com/news/economy-news/asian-stocks-rally-as-huangs-nvidia-return-revives-ai-trade-5046823"
+    },
+    {
+      "date": "2026-11-23",
+      "time": "20:16",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "eurusd",
+        "usdjpy",
+        "gbpusd",
+        "audusd",
+        "nzdusd"
+      ],
+      "title": "Le dollar grimpe : l'euphorie de l'IA alimente les paris d'une hausse de taux de la Fed",
+      "title_en": "Dollar climbs as renewed AI euphoria fuels Fed hike bets",
+      "summary": "L'indice du dollar se raffermit à 104,32, après un sommet de 104,53 la veille, près de son plus haut en 20 mois depuis le retour de Jensen Huang à la tête de Nvidia. L'euro est à 1,0907 $ (creux de plus de 18 mois), la livre à 1,3037 $, le yen à 159,06 par dollar, l'aussie à 0,6627 $ et le kiwi à 0,5450 $, près de son creux de 17 ans. Selon le CME FedWatch, une hausse de 25 points de base le mois prochain est entièrement intégrée.",
+      "summary_en": "The dollar index firmed at 104.32 after peaking at 104.53 the previous session, near a 20-month high following Jensen Huang's reinstatement as Nvidia CEO. The euro is at $1.0907 (an over 18-month low), sterling at $1.3037, the yen at 159.06 per dollar, the Aussie at $0.6627 and the kiwi at $0.5450, near a 17-year trough. CME FedWatch shows a 25 bp hike next month fully priced.",
+      "url": "https://za.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-4593289"
+    },
+    {
+      "date": "2026-11-23",
       "time": "19:33",
       "source": "Investing.com",
       "impact": "med",
@@ -1466,27 +1503,6 @@
       "summary": "Selon Investing.com, SharkNinja fera son entrée dans le S&P 500 dans le cadre d'une série de changements à l'indice provoqués par des fusions et acquisitions. L'article n'a pas pu être consulté; ce résumé se limite au titre. Une inclusion dans le S&P 500 force habituellement les fonds indiciels à acheter le titre.",
       "summary_en": "According to Investing.com, SharkNinja will join the S&P 500 as part of a series of index changes driven by mergers and acquisitions. The article could not be accessed; this summary is limited to the headline. S&P 500 inclusion typically forces index funds to buy the stock.",
       "url": "https://www.investing.com/news/stock-market-news/sharkninja-set-for-sp-500-entry-in-wave-of-dealdriven-index-changes-5046611"
-    },
-    {
-      "date": "2026-11-23",
-      "time": "17:32",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "usd",
-        "eurusd",
-        "usdjpy",
-        "usdcad",
-        "gbpusd",
-        "audusd",
-        "usdchf",
-        "nzdusd"
-      ],
-      "title": "Le dollar près d'un sommet de presque 20 mois alors que le « trade » de l'IA reprend",
-      "title_en": "Dollar at nearly 20-month high as AI trade reignites, boosting growth prospects",
-      "summary": "Selon Investing.com, le dollar américain se maintient près de son plus haut niveau en presque 20 mois, porté par le regain d'enthousiasme pour l'IA qui améliore les perspectives de croissance américaine. Un dollar fort pèse sur l'euro, le yen et les autres grandes devises à l'ouverture de la séance asiatique. (Article non accessible; résumé basé sur le titre.)",
-      "summary_en": "According to Investing.com, the U.S. dollar is holding near its highest level in nearly 20 months, supported by a renewed AI trade that boosts U.S. growth prospects. A strong dollar weighs on the euro, the yen and other major currencies as Asian trading opens. (Article not accessible; summary based on the headline.)",
-      "url": "https://www.investing.com/news/forex-news/asia-fx-mixed-as-dollar-retreats-from-19month-high-yen-won-weaken-5044324"
     },
     {
       "date": "2026-11-23",
@@ -2019,21 +2035,6 @@
       "title": "Les rendements obligataires mondiaux restent près de leurs creux de plusieurs semaines après la débâcle des technos",
       "title_en": "Global bond yields grip multi-week lows amid pandemic-scale tech rout",
       "url": "https://www.investing.com/news/forex-news/global-bond-yields-grip-multiweek-lows-amid-pandemicscale-tech-rout-5044403"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Les fonds spéculatifs ont subi leur pire semaine depuis avril 2025 lors de la débâcle des titres technologiques, ce qui les pousse vers des positions plus défensives. Cette réduction du risque peut amplifier la volatilité sur le Nasdaq et le S&P 500.",
-      "summary_en": "Hedge funds suffered their worst week since April 2025 during the tech rout, prompting a shift toward more defensive positioning. This de-risking can amplify volatility in the Nasdaq and S&P 500.",
-      "time": "03:30",
-      "title": "Les fonds spéculatifs connaissent leur pire semaine depuis avril 2025 et se repositionnent défensivement",
-      "title_en": "Hedge funds post worst week since April 2025, sparks defensive shift",
-      "url": "https://www.investing.com/news/stock-market-news/hedge-funds-post-worst-week-since-april-2025-sparks-defensive-shift-5044631"
     }
   ],
   "live": {
