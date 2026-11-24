@@ -856,6 +856,16 @@ td.sig[data-dd] .chip{transition:transform .15s} td.sig[data-dd]:hover .chip{tra
 td.name small.updtag,small.updtag{display:block;font:600 9.5px/1.4 var(--f-mono);letter-spacing:.04em;color:var(--gold);opacity:.75;margin-top:2px;white-space:nowrap}
 table.cal tr.hol td{background:color-mix(in srgb,var(--gold) 9%,transparent);color:var(--fg);font-weight:600} table.cal tr.hol td.name small{font-weight:400} table.cal tr.hol.half td{background:color-mix(in srgb,var(--gold) 5%,transparent)} table.cal tr.hol.past td{opacity:.55} .holsum{color:var(--gold);font-weight:600}
 /* Plan du jour, Bulletin du score, voyant de retard */
+.psum.pmac{margin-top:-4px}
+.psum .pk{flex:1 1 150px;min-width:0;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px;color:var(--fg);cursor:pointer;font:inherit;transition:border-color .15s}
+.psum .pk:hover{border-color:var(--gold)} .psum .pk b{font-size:20px} .psum .pk b.up{color:var(--bull)} .psum .pk b.dn{color:var(--bear)}
+#planTS:empty{display:none} #planTS .hts{margin-top:14px}
+.hts.noq{grid-template-columns:minmax(0,1fr) minmax(0,1.6fr)} .hts.noq .htrisk{grid-column:1;grid-row:1} .hts.noq .htstr{grid-column:2;grid-row:1} .hts.noq .htcb{grid-column:1/-1;grid-row:2}
+@media (max-width:900px){ .hts.noq{grid-template-columns:minmax(0,1fr)} .hts.noq .htrisk,.hts.noq .htstr,.hts.noq .htcb{grid-column:1;grid-row:auto} }
+.btabs{display:flex;gap:6px;margin:0 0 12px;flex-wrap:wrap}
+.btabs button{min-height:40px;padding:8px 16px;border:1px solid var(--line);border-radius:6px;background:var(--panel);color:var(--muted);font:600 13px/1.2 var(--f-body);cursor:pointer}
+.btabs button:hover{border-color:var(--gold);color:var(--fg)}
+.btabs button[aria-selected="true"]{border-color:var(--gold);color:var(--gold);background:color-mix(in srgb,var(--gold) 10%,var(--panel))}
 .stale{margin:0 0 12px;padding:9px 14px;border:1px solid color-mix(in srgb,var(--bear) 60%,transparent);background:color-mix(in srgb,var(--bear) 12%,var(--panel));color:var(--fg);border-radius:6px;font:600 12.5px/1.45 var(--f-body)}
 .phol{margin:0 0 12px;padding:9px 14px;border:1px solid color-mix(in srgb,var(--gold) 55%,transparent);background:color-mix(in srgb,var(--gold) 10%,var(--panel));border-radius:6px;font:600 13px/1.4 var(--f-body)}
 .psum{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 14px}
@@ -1181,7 +1191,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 <aside class="side"><span class="sidebrand">Pages</span>  <nav class="pages" aria-label="Pages">
   <span class="navgrp">Aujourd’hui</span>
   <button type="button" data-page="plan" aria-current="page">Plan du jour</button>
-  <button type="button" data-page="home">Vue d’ensemble</button>
   <button type="button" data-page="watch">Surveillance des marchés</button>
   <button type="button" data-page="squawk">Fil en direct</button>
   <span class="navgrp">Analyse</span>
@@ -1200,13 +1209,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <button type="button" data-page="fed">Taux</button>
   <button type="button" data-page="cbg">Or · banques centrales</button>
   <button type="button" data-page="globe">Carte du monde</button>
-  <span class="navgrp">Banques</span>
-  <button type="button" data-page="research">Recherche bancaire</button>
-  <button type="button" data-page="bankpos">Positions des banques</button>
   <span class="navgrp">Sentiment et positionnement</span>
   <button type="button" data-page="sent">Sentiment</button>
   <button type="button" data-page="risk">Sentiment de risque</button>
   <button type="button" data-page="cot">COT</button>
+  <button type="button" data-page="research">Banques</button>
   <span class="navgrp">Graphiques et outils</span>
   <button type="button" data-page="charts">Graphiques</button>
   <button type="button" data-page="seas">Saisonnalité</button>
@@ -1380,11 +1387,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="globe" hidden aria-label="Carte du monde"><div class="p2" id="p2globe"></div></section>
   <section data-pg="charts" hidden aria-label="Graphiques"><div class="p2" id="p2charts"></div></section>
   <section data-pg="recap" hidden aria-label="Récap des sessions"><div class="p2" id="p2recap"></div></section>
-  <section data-pg="research" hidden aria-label="Recherche bancaire"><div class="p2" id="p2research"></div></section>
+  <section data-pg="research" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="research" aria-selected="true">Notes de recherche</button><button type="button" role="tab" data-btab="bankpos" aria-selected="false">Prévisions chiffrées</button></div><div class="p2" id="p2research"></div></section>
   <section data-pg="squawk" hidden aria-label="Fil en direct"><div class="p2" id="p2squawk"></div></section>
-  <section data-pg="bankpos" hidden aria-label="Positions des banques"><div class="p2" id="p2bankpos"></div></section>
+  <section data-pg="bankpos" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="research" aria-selected="false">Notes de recherche</button><button type="button" role="tab" data-btab="bankpos" aria-selected="true">Prévisions chiffrées</button></div><div class="p2" id="p2bankpos"></div></section>
   <section data-pg="risk" hidden aria-label="Sentiment de risque"><div class="p2" id="p2risk"></div></section>
-  <section data-pg="plan" hidden aria-label="Plan du jour"><div class="p2" id="p2plan"></div></section>
+  <section data-pg="plan" hidden aria-label="Plan du jour"><div class="p2" id="p2plan"></div><div class="p2" id="planTS"></div></section>
   <section data-pg="bull" hidden aria-label="Bulletin du score"><div class="p2" id="p2bull"></div></section>
   <section data-pg="watch" hidden aria-label="Surveillance des marchés"><div class="p2" id="p2watch"></div></section>
   <section data-pg="liq" hidden aria-label="Liquidité"><div class="p2" id="p2liq"></div></section>
@@ -4226,15 +4233,15 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   // ---------- Vue d'ensemble : panneaux ajoutés ----------
   const CBF = {Fed:'US', BCE:'EU', ECB:'EU', BoE:'GB', BoJ:'JP', BNS:'CH', SNB:'CH', BoC:'CA', BdC:'CA', RBA:'AU', RBNZ:'NZ'};
   async function renderHomeTS(){
-    const box = $('homeTS'); if(!box) return;
-    const M = await withStr(await mkData()); if(state.page!=='home' || !$('homeTS')) return;
+    const pg = state.page, onPlan = pg==='plan', box = $(onPlan ? 'planTS' : 'homeTS'); if(!box) return;
+    const M = await withStr(await mkData()); if(state.page!==pg || !box.isConnected) return;
     const R = M && M.risk, F = state.fed || {}, cb = ((state.ts||{}).cbanks||[]).slice();
     if(!cb.length && F.rate) cb.push({cb:'Fed', ccy:'USD', rate:F.rate, next:F.next, cut:(F.probs||{}).cut, hold:(F.probs||{}).hold, hike:(F.probs||{}).hike});
     const sq = squawkItems(M).filter(x=>x.k!=='rel').slice(0,12);
     const D = M && M.strength && M.strength.fx_h1 ? (()=>{ const p = state.chP, tf = state.chTF; state.chP = 'fx'; state.chTF = 'h1'; const r = chSeries(M); state.chP = p; state.chTF = tf; return r; })() : null;
-    box.innerHTML = `<div class="hts">
-      <div class="panel htsq"><div class="ph"><div><h3>✦ Squawk</h3><p>${L('Manchettes, données et gros mouvements','Headlines, data and big movers')}</p></div><button type="button" class="btn ghost" data-gop="squawk">${L('Tout voir','See all')}</button></div>
-        <div class="sqlist mini">${sq.map(x=>`<div class="sqi ${x.k} ${x.hi?'hi':''}"><span class="sqt">${new Date(x.t).toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit'})}</span><i></i><span class="sqx">${x.nm?`<span>${esc(x.nm)}</span>`:''}${esc(x.txt)}</span></div>`).join('') || `<p class="tsnone">—</p>`}</div></div>
+    box.innerHTML = `<div class="hts ${onPlan?'noq':''}">
+      ${onPlan ? '' : `<div class="panel htsq"><div class="ph"><div><h3>✦ Squawk</h3><p>${L('Manchettes, données et gros mouvements','Headlines, data and big movers')}</p></div><button type="button" class="btn ghost" data-gop="squawk">${L('Tout voir','See all')}</button></div>
+        <div class="sqlist mini">${sq.map(x=>`<div class="sqi ${x.k} ${x.hi?'hi':''}"><span class="sqt">${new Date(x.t).toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit'})}</span><i></i><span class="sqx">${x.nm?`<span>${esc(x.nm)}</span>`:''}${esc(x.txt)}</span></div>`).join('') || `<p class="tsnone">—</p>`}</div></div>`}
       <button type="button" class="panel htrisk" data-gop="risk"><div class="ph"><div><h3>${L('Sentiment de risque','Risk sentiment')}</h3><p>${L('7 marchés, centile sur 1 an','7 markets, 1-year percentile')}</p></div></div>${R?gaugeSVG(R.score, R.w1, R.m1):`<p class="tsnone">${L('Bientôt','Coming soon')}</p>`}</button>
       <div class="panel htstr"><div class="ph"><div><h3>${L('Force des devises · non pondéré','Currency strength · unweighted')}</h3><p>${L('% depuis la 1re barre (1H, 5 jours)','% since first bar (1H, 5 days)')}</p></div><button type="button" class="btn ghost" data-gop="charts">Charts</button></div>
         <div class="chgrid1 mini"><div class="chcanvas"><canvas id="homeStr"></canvas></div><div class="chleg">${D?D.ser.map(s=>`<div style="--c:${s.col}"><i></i>${esc(s.k)}<b class="${pcCls(s.last)}">${pcTxt(s.last)}</b></div>`).join(''):''}</div></div></div>
@@ -4244,7 +4251,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         <p class="src">${L('Fed : CME FedWatch. Autres banques : marchés (OIS) rapportés par Reuters et les banques centrales, relevés par Claude.','Fed: CME FedWatch. Other banks: market pricing (OIS) reported by Reuters and central banks, collected by Claude.')}</p></div>
     </div>`;
     if(typeof bindGo==='function') bindGo(box);
-    if(D && await needChart() && state.page==='home' && $('homeStr')){
+    if(D && await needChart() && state.page===pg && $('homeStr')){
       const labels = D.t.map(s=>new Date(s*1000).toLocaleString(LOC(),{weekday:'short', hour:'2-digit'}));
       mkChart('homeStr', {type:'line', data:{labels, datasets:D.ser.map(s=>({label:s.k, data:s.pct, borderColor:s.col, backgroundColor:s.col}))}, options:{plugins:{legend:{display:false}}, elements:{point:{radius:0}, line:{borderWidth:1.4, tension:.15}}, scales:{x:{ticks:{maxTicksLimit:6}, grid:{display:false}}, y:{position:'right', ticks:{callback:v=>sg2(v,1)+'%'}}}}});
     }
@@ -4335,12 +4342,24 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       : `<li class="pempty">${L('Les nouvelles arrivent à la prochaine mise à jour.','News arrives at the next update.')}</li>`;
     const hol = holItems().find(h=>h.date===today);
     const best = rows[0], worst = rows[rows.length-1];
+    let mk4 = '';
+    { const lv = state.live||{}, m = lv.macro||{}, r = lv.rates||{};
+      const y10 = r.y10 && r.y10.length ? r.y10[r.y10.length-1] : null, y10m = agoPt(r.y10, 28);
+      const cpiY = yoy(m.cpi), cpiL = cpiY.length ? cpiY[cpiY.length-1] : null;
+      const un = m.unemp && m.unemp.length ? m.unemp[m.unemp.length-1] : null, unp = m.unemp && m.unemp.length>1 ? m.unemp[m.unemp.length-2] : null;
+      const vxS = vixLive(r.vix||[]), vxL = vxS.slice(-1)[0], vxP = agoPt(vxS,7);
+      const card = (gop, k, v, cls, sub) => `<button type="button" class="pk" data-gop="${gop}"><span>${k}</span><b class="${cls}">${v}</b><small>${sub}</small></button>`;
+      mk4 = card('sent', L('Peur des marchés (VIX)','Market fear (VIX)'), vxL ? nf(vxL[1],1) : '—', vxL&&vxL[1]>=25?'dn':vxL&&vxL[1]<16?'up':'', vxL&&vxP ? sg2(vxL[1]-vxP[1],1)+L(' sur 1 semaine',' over 1 week') : 'Cboe')
+        + card('fed', L('Taux 10 ans US','US 10-year yield'), y10 ? nf(y10[1],2)+' %' : '—', '', y10&&y10m ? sg2(y10[1]-y10m[1],2)+L(' pt sur 1 mois',' pt over 1 month') : 'FRED')
+        + card('eco', L('Inflation (CPI 1 an)','Inflation (CPI YoY)'), cpiL ? nf(cpiL[1],1)+' %' : '—', '', cpiL ? perLbl(cpiL[0])+' · BLS' : 'BLS')
+        + card('eco', L('Chômage','Unemployment'), un ? nf(un[1],1)+' %' : '—', '', un ? perLbl(un[0])+(unp ? ' · '+sg2(un[1]-unp[1],1)+' pt' : '') : 'BLS'); }
     box.innerHTML = `
       <div class="hmhead"><div class="ttl"><span class="blink"></span>${L('PLAN DU JOUR','DAILY PLAN')}</div><div class="badge">${esc(new Date(today+'T12:00:00').toLocaleDateString(LOC(),{weekday:'long', day:'numeric', month:'long'}).toUpperCase())}</div></div>
       ${hol?`<div class="phol">🏦 ${esc(hol.name)} · ${esc(hol.note)}</div>`:''}
       <div class="psum"><div><span>${L('Haussiers','Bullish')}</span><b class="up">${nB}</b></div><div><span>${L('Baissiers','Bearish')}</span><b class="dn">${nR}</b></div><div><span>${L('Neutres','Neutral')}</span><b>${rows.length-nB-nR}</b></div>
         ${best?`<div><span>${L('Le plus fort','Strongest')}</span><b class="up">${esc(TOP_NAMES[best.k])} ${best.C.total>0?'+':''}${String(best.C.total).replace('-','−')}</b></div>`:''}
         ${worst?`<div><span>${L('Le plus faible','Weakest')}</span><b class="dn">${esc(TOP_NAMES[worst.k])} ${worst.C.total>0?'+':''}${String(worst.C.total).replace('-','−')}</b></div>`:''}</div>
+      <div class="psum pmac">${mk4}</div>
       <div class="pgrid">
         <div class="panel pbias-p"><div class="ph"><div><h3>${L('Biais et niveaux clés','Bias and key levels')}</h3><p>${L('Biais = score du scorecard (≥ +4 haussier, ≤ −4 baissier). Niveaux : haut / bas de la séance précédente, haut / bas des 20 derniers jours, moyenne mobile 200 jours (graphique journalier).','Bias = scorecard score (≥ +4 bullish, ≤ −4 bearish). Levels: previous session high / low, 20-day high / low, 200-day moving average (daily chart).')}</p></div></div>
           <div class="tablewrap"><table class="ptab"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Prix','Price')}</th><th class="r">1D</th><th>${L('Biais','Bias')}</th><th class="r">Score</th><th class="c">${L('Semaine','Week')}</th><th class="r">${L('Séance préc. H / B','Prev. session H / L')}</th><th class="r">${L('20 j H / B','20-day H / L')}</th><th class="r">MM200</th></tr></thead><tbody>${tb}</tbody></table></div></div>
@@ -4350,6 +4369,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         </div>
       </div>`;
     box.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click', ()=>{ state.asset = b.dataset.goto; try{ localStorage.setItem('sc-asset', state.asset); }catch(e){} showPage('score'); renderAll(); }));
+    bindGo(box);
     if(typeof tickCountdowns==='function') tickCountdowns();
   }
 
@@ -4415,6 +4435,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     }catch(e){}
   }
   setInterval(staleCheck, 30e3);
+  document.querySelectorAll('.btabs [data-btab]').forEach(b=>b.addEventListener('click', ()=>{ if(state.page!==b.dataset.btab){ showPage(b.dataset.btab); window.scrollTo(0,0); } }));
 
   // ---------- branchement ----------
   function renderP2(){
@@ -4435,7 +4456,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     else if(pg==='watch') renderWatch();
     else if(pg==='risk') renderRisk();
     else if(pg==='liq') renderLiq();
-    else if(pg==='plan') renderPlan();
+    else if(pg==='plan'){ renderPlan(); if(!state.noAnim || !$('planTS').innerHTML) renderHomeTS(); }
     else if(pg==='bull') renderBull();
     else if(pg==='recap') renderRecap();
     else if(pg==='squawk') renderSquawk();
@@ -4443,7 +4464,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     else if(pg==='bankpos') renderBankPos();
   }
   function p2Page(pg){
-    if(['home','eco','fed','cot','sent','cbg','fund'].includes(pg)) loadLive().then(()=>{ if(state.page===pg) renderP2(); });
+    if(['home','eco','fed','cot','sent','cbg','fund','plan'].includes(pg)) loadLive().then(()=>{ if(state.page===pg) renderP2(); if(pg==='plan') renderHomeTS(); });
     renderP2();
   }
 
@@ -4480,9 +4501,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   (function(){ const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(()=>{ if(typeof renderMbar==='function') renderMbar(); if(typeof renderTape==='function') renderTape(); const nb = $('p2news'); if(nb) nb.dataset.built=''; renderP2(); if(state.page==='fed') renderFed(); }, 30)); })();
 
   function showPage(pg){
+    if(pg==='home') pg = 'plan';
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
-    document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===pg) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
+    document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===(pg==='bankpos'?'research':pg)) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
     try{ const hsh = pg==='plan' ? '' : '#'+({score:'scorecard', bull:'bulletin', cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches', charts:'charts', recap:'session-recap', research:'bank-research', squawk:'squawk', bankpos:'bank-positioning', risk:'risk-sentiment', watch:'markets-watch', liq:'liquidity'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
     try{ if(typeof globeObj!=='undefined' && globeObj){ if(pg==='globe') globeObj.resumeAnimation(); else globeObj.pauseAnimation(); } }catch(e){}
@@ -4554,7 +4576,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
-    'Vue d’ensemble':'Overview','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
+    'Vue d’ensemble':'Overview','Notes de recherche':'Research notes','Prévisions chiffrées':'Price forecasts','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
     'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Heatmap fondamentale':'Fundamental heatmap','Heatmap technique':'Technical heatmap','Saisonnalité':'Seasonality','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Prévisions':'Guidance','Mitigé':'Mixed','En ligne':'In line','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
     'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
