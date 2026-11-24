@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T22:36:42Z",
+ "updatedAt": "2026-11-24T22:43:11Z",
  "econ": {
   "values": {
    "adp": {
@@ -1496,6 +1496,41 @@
  "news": [
   {
    "date": "2026-11-24",
+   "time": "16:51",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia chute de près de 6 % après que le retour de Huang eut provoqué sa meilleure séance en plus de 23 ans",
+   "title_en": "Nvidia stock falls nearly 6% after Huang's return sparks best day in over 23 years",
+   "summary": "Nvidia a reculé de 5,9 % mardi pour clôturer à 155,38 $, après avoir bondi de 31,5 % lundi à 165,05 $ (plus de 950 G$ de valeur boursière ajoutée) à l'annonce du retour de Jensen Huang comme PDG. Les investisseurs prennent leurs profits alors que l'enthousiasme s'estompe; Raymond James juge que des incertitudes demeurent. Nvidia, poids lourd du Nasdaq et du S&P 500, a pesé sur les indices technologiques.",
+   "summary_en": "Nvidia slipped 5.9% on Tuesday to close at $155.38 after soaring 31.5% on Monday to $165.05 (adding more than $950 billion in market value) on news of Jensen Huang's reinstatement as CEO. Investors pared gains as enthusiasm faded; Raymond James said overhangs remain. As a Nasdaq and S&P 500 heavyweight, Nvidia weighed on tech indexes.",
+   "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-fall-by-6-following-huang-return-rally-5048533"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "16:30",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "us30",
+    "spx500",
+    "nasdaq",
+    "xauusd",
+    "usoil",
+    "eurusd",
+    "usd"
+   ],
+   "title": "Wall Street termine en ordre dispersé : le Dow gagne 0,86 %, le Nasdaq perd 1,48 %",
+   "title_en": "U.S. stocks mixed at close of trade; Dow Jones Industrial Average up 0.86%",
+   "summary": "À la clôture, le Dow Jones a gagné 0,86 %, tandis que le S&P 500 a cédé 0,49 % et le Nasdaq 1,48 %, la technologie menant les baisses (Nvidia -5,86 %, HPE -16,31 %, Dell -11,83 %) et la santé les hausses (Amgen +5,54 %, Merck +4,50 %). L'or (décembre) a reculé de 2,72 % à 3 551,90 $, le WTI a gagné 1,66 % à 81,50 $ et l'indice dollar (contrats à terme) a perdu 0,48 % à 103,76; l'EUR/USD a progressé de 0,57 %.",
+   "summary_en": "At the close, the Dow rose 0.86% while the S&P 500 fell 0.49% and the Nasdaq Composite 1.48%, with technology leading losses (Nvidia -5.86%, HPE -16.31%, Dell -11.83%) and healthcare leading gains (Amgen +5.54%, Merck +4.50%). December gold fell 2.72% to $3,551.90, WTI rose 1.66% to $81.50 and Dollar Index futures fell 0.48% to 103.76; EUR/USD rose 0.57%.",
+   "url": "https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-086-5049102"
+  },
+  {
+   "date": "2026-11-24",
    "time": "16:16",
    "source": "Investing.com",
    "impact": "high",
@@ -1646,21 +1681,6 @@
    "summary": "L'action du fabricant de puces mémoire Micron recule mardi après qu'un analyste a mis en garde contre une future surabondance de l'offre, selon MarketWatch. Cette pression sur un titre des semi-conducteurs s'ajoute au repli de Nvidia et pèse sur le Nasdaq.",
    "summary_en": "Memory-chip maker Micron's stock fell on Tuesday after an analyst warned about a future supply glut, per MarketWatch. The pressure on a semiconductor name adds to Nvidia's pullback and weighs on the Nasdaq.",
    "url": "https://www.marketwatch.com/story/microns-stock-falls-as-an-analyst-warns-about-a-future-supply-glut-f7fbeefb"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "13:18",
-   "source": "Investing.com (Reuters)",
-   "impact": "med",
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "title": "Nvidia recule alors que les investisseurs évaluent les risques liés au retour de Huang comme PDG",
-   "title_en": "Nvidia slips as investors assess risks surrounding Huang's return as CEO",
-   "summary": "L'action Nvidia recule de plus de 7 % mardi (8 % selon CNBC) après avoir bondi de 31,5 % lundi en ajoutant plus de 952 milliards $ de capitalisation; elle demeure près de 31 % sous son record du 6 octobre. Les enquêtes du FBI, du ministère de la Justice et de la SEC ainsi qu'une audience publique au Sénat le 3 décembre, où Huang doit témoigner, pèsent sur le titre, selon Reuters. Le recul du poids lourd pèse sur le Nasdaq et le S&P 500.",
-   "summary_en": "Nvidia shares fell more than 7% on Tuesday (8% per CNBC) after surging 31.5% on Monday and adding more than $952 billion in market value; the stock remains almost 31% below its October 6 record. FBI, Justice Department and SEC probes and a public Senate hearing on December 3, where Huang is due to testify, weigh on the stock, per Reuters. The heavyweight's retreat weighs on the Nasdaq and S&P 500.",
-   "url": "https://www.investing.com/news/stock-market-news/nvidia-slips-as-investors-assess-risks-surrounding-huangs-return-as-ceo-5047757"
   },
   {
    "date": "2026-11-24",
@@ -2092,22 +2112,6 @@
    "summary": "Selon le Financial Times, les deux sociétés d'Elon Musk ont nommé cinq administrateurs — trois de Tesla (Robyn Denholm, Kathleen Wilson-Thompson, Jack Hartung) et deux de SpaceX (Roelof Botha, Randy Glein) — pour piloter les comités spéciaux chargés des négociations de fusion. Reuters n'a pas pu vérifier l'information et aucune modalité ni valorisation n'est mentionnée. Le dossier reste suivi de près pour Tesla, poids lourd du Nasdaq et du S&P 500.",
    "summary_en": "According to the Financial Times, Elon Musk's two companies appointed five directors — three from Tesla (Robyn Denholm, Kathleen Wilson-Thompson, Jack Hartung) and two from SpaceX (Roelof Botha, Randy Glein) — to guide the special committees handling merger talks. Reuters could not verify the report and no terms or valuation were disclosed. The deal remains closely watched for Tesla, a heavyweight in the Nasdaq and S&P 500.",
    "url": "https://www.investing.com/news/stock-market-news/spacex-and-tesla-entrusts-five-directors-for-merger-talks-ft-reports-5047055"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "00:05",
-   "source": "CNBC",
-   "impact": "med",
-   "assets": [
-    "usoil",
-    "xauusd",
-    "usd"
-   ],
-   "title": "L'Iran affirme que trois pétroliers ont heurté des mines à Ormuz malgré l'escorte américaine; le Trésor élargit les sanctions",
-   "title_en": "Iran says three tankers hit mines in Hormuz despite U.S. escort, as Treasury widens sanctions",
-   "summary": "Selon le titre de CNBC, l'Iran affirme que trois pétroliers ont heurté des mines dans le détroit d'Ormuz malgré une escorte américaine, tandis que le Trésor américain élargit ses sanctions. L'article complet n'a pas pu être lu. Un nouveau risque sur Ormuz peut soutenir le pétrole WTI et les valeurs refuges comme l'or, alors que le brut se tenait près d'un creux de trois mois.",
-   "summary_en": "According to CNBC's headline, Iran says three tankers hit mines in the Strait of Hormuz despite a U.S. escort, while the U.S. Treasury widens sanctions. The full article could not be read. Renewed Hormuz risk can support WTI crude and safe havens such as gold, with crude holding near a three-month low.",
-   "url": "https://www.cnbc.com/2026/11/24/iran-trump-hormuz-crude-.html"
   }
  ],
  "live": {
