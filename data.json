@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T19:47:53Z",
+ "updatedAt": "2026-11-24T20:42:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -144,8 +144,8 @@
    "cotLong": 52.66,
    "cotChange": -1.36,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 82,
-   "uCrowd": "2026-11-19T13:58:00Z"
+   "crowdLong": 81,
+   "uCrowd": "2026-11-24T20:42:00Z"
   },
   "usoil": {
    "season": "bull",
@@ -184,8 +184,8 @@
    "cotLong": 35.5,
    "cotChange": 1.85,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 36,
-   "uCrowd": "2026-11-23T20:45:00Z"
+   "crowdLong": 37,
+   "uCrowd": "2026-11-24T20:42:00Z"
   },
   "usdcad": {
    "season": "neutral",
@@ -204,8 +204,8 @@
    "cotLong": 40.73,
    "cotChange": 3.65,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 68,
-   "uCrowd": "2026-11-23T19:45:00Z"
+   "crowdLong": 66,
+   "uCrowd": "2026-11-24T20:42:00Z"
   },
   "audusd": {
    "season": "neutral",
@@ -234,8 +234,8 @@
    "cotLong": 17.68,
    "cotChange": -1.94,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 76,
-   "uCrowd": "2026-11-23T19:45:00Z"
+   "crowdLong": 74,
+   "uCrowd": "2026-11-24T20:42:00Z"
   }
  },
  "history": [
