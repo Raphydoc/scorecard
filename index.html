@@ -426,7 +426,7 @@ th{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--mute
 .pages button[aria-current="page"]{color:var(--gold)}
 /* tableaux : lignes fines */
 td{border-bottom-color:var(--line)}
-tbody tr:hover td{background:rgba(255,255,255,.02)}
+table:not(.topset)>tbody tr:hover td{background:rgba(255,255,255,.02)}
 ::-webkit-scrollbar{width:9px;height:9px} ::-webkit-scrollbar-thumb{background:var(--line);border-radius:5px} ::-webkit-scrollbar-track{background:transparent}
 /* Top Setups en heatmap : +1/−1 plus pâle, ±2 plein */
 table.topset td.w.bull{background:color-mix(in srgb,var(--bull) 52%,var(--panel))}
@@ -614,7 +614,7 @@ td.hs b{font:700 15px/1 var(--f-mono)}
   /* cases de signaux du scorecard */
   .chip.bull,.chip.bear,.chip.neu{animation:popIn .4s cubic-bezier(.2,.7,.2,1) both}
   tbody tr{transition:background-color .15s}
-  tbody tr:hover td{background:rgba(242,180,58,.04)}
+  table:not(.topset)>tbody tr:hover td{background:rgba(242,180,58,.04)}
   tbody tr:hover td:first-child{box-shadow:inset 2px 0 0 var(--gold)}
   /* cartes et panneaux : lueur au survol */
   .panel,.kpi,.ctr,.fcard,.dcell,.scard,.nitem{transition:border-color .25s,box-shadow .25s,transform .25s}
