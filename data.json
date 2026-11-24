@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T03:47:28Z",
+  "updatedAt": "2026-11-24T04:47:42Z",
   "econ": {
     "values": {
       "adp": {
@@ -1410,6 +1410,22 @@
   "news": [
     {
       "date": "2026-11-23",
+      "time": "22:39",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "usdjpy",
+        "audusd"
+      ],
+      "title": "Les devises asiatiques calmes, le dollar reste près d'un sommet de 20 mois grâce au rallye de l'IA",
+      "title_en": "Asia FX subdued as dollar holds near 20-month high on AI rally",
+      "summary": "L'indice du dollar (DXY) reculait de 0,1 % à 104,27 en Asie après avoir touché 104,53 lundi, son plus haut en près de 20 mois, porté par le rebond de Wall Street (Nasdaq +6,5 %, S&P 500 +4,7 %) après le retour de Jensen Huang chez Nvidia. Le USD/JPY était stable à 158,95, près de 160, et l'AUD/USD cédait 0,1 % à 0,6623, près d'un creux de 11 mois. Les marchés évaluent à 95 % une hausse de taux de 25 points de la Fed en décembre (CME FedWatch); l'indice PCE d'octobre est attendu mercredi.",
+      "summary_en": "The dollar index (DXY) edged 0.1% lower to 104.27 in Asia after hitting 104.53 on Monday, its highest in nearly 20 months, supported by Wall Street's rebound (Nasdaq +6.5%, S&P 500 +4.7%) after Jensen Huang's return at Nvidia. USD/JPY was flat at 158.95, near 160, and AUD/USD slipped 0.1% to 0.6623, near an 11-month low. Markets price a 95% chance of a 25bp Fed hike in December (CME FedWatch); October PCE data is due Wednesday.",
+      "url": "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950"
+    },
+    {
+      "date": "2026-11-23",
       "time": "22:31",
       "source": "Investing.com",
       "impact": "high",
@@ -2019,21 +2035,6 @@
       "title": "La livre se raffermit à 1,3125 $ : le rebond des actions tempère la demande pour le dollar",
       "title_en": "Pound firms to $1.3125 as equity rebound trims dollar bid",
       "url": "https://www.investing.com/news/forex-news/sterling-today-pound-firms-as-equity-rebound-trims-dollar-bid-5044762"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "CNBC",
-      "summary": "Les actions d'Anthropic et de Nvidia progressent en préouverture lundi, après une semaine de lourde liquidation des titres technologiques liés à l'IA. Ce rebond des poids lourds de l'IA soutient le Nasdaq et le S&P 500 en ce début de semaine écourtée par l'Action de grâce.",
-      "summary_en": "Anthropic and Nvidia shares rose in premarket trading Monday after a week of heavy selling in AI-linked tech stocks. The rebound in AI heavyweights supports the Nasdaq and S&P 500 at the start of the Thanksgiving-shortened week.",
-      "time": "04:24",
-      "title": "Anthropic et Nvidia montent en préouverture après la forte vente massive des technos",
-      "title_en": "Anthropic, Nvidia shares rise in premarket trading after major tech selloff",
-      "url": "https://www.cnbc.com/2026/11/23/anthropic-nvidia-shares.html"
     }
   ],
   "live": {
