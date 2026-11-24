@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T17:42:30Z",
+ "updatedAt": "2026-11-24T18:47:46Z",
  "econ": {
   "values": {
    "adp": {
@@ -1496,6 +1496,35 @@
  "news": [
   {
    "date": "2026-11-24",
+   "time": "13:33",
+   "source": "MarketWatch",
+   "impact": "med",
+   "assets": [
+    "nasdaq"
+   ],
+   "title": "L'action de Micron recule alors qu'un analyste met en garde contre une future surabondance de l'offre",
+   "title_en": "Micron's stock falls as an analyst warns about a future supply glut",
+   "summary": "L'action du fabricant de puces mémoire Micron recule mardi après qu'un analyste a mis en garde contre une future surabondance de l'offre, selon MarketWatch. Cette pression sur un titre des semi-conducteurs s'ajoute au repli de Nvidia et pèse sur le Nasdaq.",
+   "summary_en": "Memory-chip maker Micron's stock fell on Tuesday after an analyst warned about a future supply glut, per MarketWatch. The pressure on a semiconductor name adds to Nvidia's pullback and weighs on the Nasdaq.",
+   "url": "https://www.marketwatch.com/story/microns-stock-falls-as-an-analyst-warns-about-a-future-supply-glut-f7fbeefb"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "13:18",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia recule alors que les investisseurs évaluent les risques liés au retour de Huang comme PDG",
+   "title_en": "Nvidia slips as investors assess risks surrounding Huang's return as CEO",
+   "summary": "L'action Nvidia recule de plus de 7 % mardi (8 % selon CNBC) après avoir bondi de 31,5 % lundi en ajoutant plus de 952 milliards $ de capitalisation; elle demeure près de 31 % sous son record du 6 octobre. Les enquêtes du FBI, du ministère de la Justice et de la SEC ainsi qu'une audience publique au Sénat le 3 décembre, où Huang doit témoigner, pèsent sur le titre, selon Reuters. Le recul du poids lourd pèse sur le Nasdaq et le S&P 500.",
+   "summary_en": "Nvidia shares fell more than 7% on Tuesday (8% per CNBC) after surging 31.5% on Monday and adding more than $952 billion in market value; the stock remains almost 31% below its October 6 record. FBI, Justice Department and SEC probes and a public Senate hearing on December 3, where Huang is due to testify, weigh on the stock, per Reuters. The heavyweight's retreat weighs on the Nasdaq and S&P 500.",
+   "url": "https://www.investing.com/news/stock-market-news/nvidia-slips-as-investors-assess-risks-surrounding-huangs-return-as-ceo-5047757"
+  },
+  {
+   "date": "2026-11-24",
    "time": "12:28",
    "source": "Investing.com",
    "impact": "med",
@@ -1523,21 +1552,6 @@
    "summary": "Le pétrole remonte mardi midi en raison d'attaques contre des navires dans le détroit d'Ormuz, mais les perspectives d'une offre excédentaire freinent la hausse. Plus tôt, le WTI s'échangeait près de 79,94 $ et le Brent près de 88,97 $, près de leurs plus bas depuis fin août; Deutsche Bank estimait que les stocks mondiaux observés avaient augmenté de 52 millions de barils en octobre.",
    "summary_en": "Oil rose midday Tuesday on attacks on ships in the Strait of Hormuz, though the outlook for surplus supply curbed gains. Earlier, WTI traded near $79.94 and Brent near $88.97, close to their lowest since late August; Deutsche Bank estimated global observed inventories rose 52 million barrels in October.",
    "url": "https://www.investing.com/news/commodities-news/oil-holds-near-threemonth-low-as-rising-supply-offsets-hormuz-threat-5046916"
-  },
-  {
-   "date": "2026-11-24",
-   "time": "11:38",
-   "source": "CNBC",
-   "impact": "med",
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "title": "Nvidia chute de 8 % alors que le rallye du retour de Huang se refroidit",
-   "title_en": "Nvidia shares fall 8% as Huang comeback rally cools",
-   "summary": "Le repli de l'action Nvidia s'accentue mardi et atteint 8 %, selon CNBC, après un bond de 31,5 % lundi jusqu'à une clôture de 165,05 $, le plus important gain de capitalisation en une journée jamais enregistré (plus de 1 000 milliards $). Le recul du poids lourd pèse sur le Nasdaq et le S&P 500.",
-   "summary_en": "Nvidia's pullback deepened to 8% on Tuesday, per CNBC, after a 31.5% surge on Monday to a $165.05 close, the largest one-day market-value gain on record (over $1 trillion). The heavyweight's retreat weighs on the Nasdaq and S&P 500.",
-   "url": "https://www.cnbc.com/2026/11/24/nvidia-stock-jensen-huang-return.html"
   },
   {
    "date": "2026-11-24",
@@ -2099,21 +2113,6 @@
    "summary": "Selon Semafor, Washington prévoit d'ajouter l'entreprise Megaspeed à une liste noire en raison de préoccupations liées aux exportations de puces. Le resserrement des contrôles à l'exportation reste un facteur de risque pour les semi-conducteurs et le Nasdaq, en pleine remontée aujourd'hui.",
    "summary_en": "According to Semafor, Washington plans to add Megaspeed to a blacklist over chip export concerns. Tighter export controls remain a risk factor for semiconductors and the Nasdaq, which is rallying sharply today.",
    "url": "https://www.investing.com/news/stock-market-news/us-plans-to-blacklist-megaspeed-over-chip-export-concerns-semafor-reports-5046316"
-  },
-  {
-   "date": "2026-11-23",
-   "time": "15:07",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "usdcad",
-    "xauusd"
-   ],
-   "title": "Le TSX file vers sa meilleure journée depuis novembre 2023, porté par les métaux de base et la techno",
-   "title_en": "TSX set for best day since November 2023 as base metals, tech lift sentiment",
-   "summary": "À 15 h 03 HE, l'indice composé S&P/TSX bondissait de 2,9 % à 34 153,81 points, après une semaine de recul de 8,1 % qui l'avait laissé en zone de correction. L'indice des métaux de base grimpait de 6,9 %, la techno canadienne de 4,7 %, et l'or au comptant gagnait 2,9 % à 3 640,46 $ l'once. Les ventes manufacturières canadiennes d'octobre ont progressé de 2,3 % selon l'estimation préliminaire; le marché attend maintenant l'indice PCE américain.",
-   "summary_en": "At 3:03 p.m. ET, the S&P/TSX Composite jumped 2.9% to 34,153.81 after an 8.1% weekly drop that left it in correction territory. The base metals index soared 6.9%, Canadian tech rose 4.7%, and spot gold gained 2.9% to $3,640.46/oz. Canada's advance estimate showed October manufacturing sales up 2.3%; markets now await the U.S. PCE price index.",
-   "url": "https://www.investing.com/news/stock-market-news/tsx-futures-rise-as-wall-street-bounces-following-ai-selloff-5045504"
   }
  ],
  "live": {
