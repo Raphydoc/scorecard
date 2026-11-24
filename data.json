@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T09:47:12Z",
+  "updatedAt": "2026-11-24T10:43:07Z",
   "econ": {
     "values": {
       "adp": {
@@ -1410,6 +1410,58 @@
   "news": [
     {
       "date": "2026-11-24",
+      "time": "05:08",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd",
+        "nasdaq",
+        "usd",
+        "xauusd",
+        "usoil"
+      ],
+      "title": "Le bitcoin retombe sous 60 000 $ alors que l'élan lié au retour de Jensen Huang chez Nvidia s'estompe",
+      "title_en": "Bitcoin falls below $60,000 as rally on Jensen Huang's Nvidia return fades",
+      "summary": "Le bitcoin est repassé sous 60 000 $ (environ 59 904 $), en baisse de plus de 2 % sur 24 heures, effaçant l'essentiel d'un rebond qui l'avait mené près de 64 000 $. Après des gains de 31 % pour Nvidia et de 7 % pour le Nasdaq 100 lundi, les contrats à terme du Nasdaq 100 reculent d'environ 1 % et Nvidia perd 4,9 % avant l'ouverture. L'indice du dollar reste au-dessus de 104, l'or recule à 3 622 $ l'once (contre 3 690 $) et le WTI se négocie près de 80 $ le baril.",
+      "summary_en": "Bitcoin fell back below $60,000 (about $59,904), down more than 2% over 24 hours, giving up most of a rebound that took it near $64,000. After Monday's 31% gain for Nvidia and 7% for the Nasdaq 100, Nasdaq 100 futures are down about 1% and Nvidia is 4.9% lower premarket. The dollar index holds above 104, gold eased to $3,622 an ounce from $3,690 and WTI trades near $80 a barrel.",
+      "url": "https://www.coindesk.com/markets/2026/11/24/bitcoin-falls-below-usd60-000-as-rally-on-jensen-huang-s-nvidia-return-fades"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "04:44",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usdjpy",
+        "usd"
+      ],
+      "title": "UBS voit l'USD/JPY à 158 jusqu'en 2027 en raison des écarts de taux",
+      "title_en": "UBS sees USD/JPY at 158 through 2027 on rate differentials",
+      "summary": "UBS prévoit que la paire USD/JPY restera autour de 158 jusqu'en 2027, en raison des écarts de taux d'intérêt entre les États-Unis et le Japon. Cette prévision suggère un yen qui demeurerait faible face au dollar à moyen terme. (Article non accessible; résumé basé sur le titre seulement.)",
+      "summary_en": "UBS expects USD/JPY to stay around 158 through 2027 on U.S.-Japan interest rate differentials. The forecast points to a yen that stays weak against the dollar over the medium term. (Article not accessible; summary based on the headline only.)",
+      "url": "https://www.investing.com/news/forex-news/ubs-sees-usdjpy-at-158-through-2027-on-rate-differentials-93CH-5047434"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "04:36",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "eurusd",
+        "usdjpy",
+        "gbpusd",
+        "audusd",
+        "nzdusd"
+      ],
+      "title": "Le dollar grimpe : l'euphorie de l'IA alimente les paris d'une hausse de taux de la Fed",
+      "title_en": "Dollar climbs as renewed AI euphoria fuels Fed hike bets",
+      "summary": "Le dollar se maintient près de son plus haut en presque deux ans : l'indice DXY est à 104,26 après un sommet de 104,53 lundi (plus haut depuis mars 2025) et gagne environ 2,3 % ce mois-ci. L'euro est vers 1,0913 $ (plus bas depuis avril 2025), la livre vers 1,3047 $, le yen à 159,18 par dollar et l'aussie près de 0,6629 $, en baisse de près de 6 % en un mois. Selon le CME FedWatch, une hausse de 25 points de base de la Fed le mois prochain est entièrement intégrée, avec une faible probabilité d'une hausse de 50 points.",
+      "summary_en": "The dollar holds near its highest in nearly two years: the DXY is at 104.26 after Monday's 104.53 peak (highest since March 2025) and is up about 2.3% this month. The euro is around $1.0913 (lowest since April 2025), sterling around $1.3047, the yen at 159.18 per dollar and the Aussie near $0.6629, down nearly 6% in a month. CME FedWatch shows a 25 bp Fed hike next month fully priced, with a slim chance of a 50 bp move.",
+      "url": "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813"
+    },
+    {
+      "date": "2026-11-24",
       "time": "04:32",
       "source": "Investing.com",
       "impact": "med",
@@ -1626,25 +1678,6 @@
       "summary": "L'or au comptant gagnait 0,9 % à 3 668,93 $ l'once vers 20 h 31 (HE), après un gain de 2,7 % la veille, effaçant en partie la chute de près de 9 % de la semaine dernière; l'argent montait de 1,2 % à 43,66 $. Les achats à bon compte (ANZ cite l'affluence chez les détaillants de Shenzhen et des avoirs solides dans les FNB) et la baisse de l'énergie soutiennent le métal, mais le ton ferme de la Fed, qui pourrait relever ses taux en décembre, reste un frein.",
       "summary_en": "Spot gold rose 0.9% to $3,668.93 an ounce at 20:31 ET after gaining 2.7% in the previous session, partly reversing last week's nearly 9% slump; silver climbed 1.2% to $43.66. Dip-buying (ANZ cited crowded Shenzhen retailers and robust gold ETF holdings) and lower energy prices supported bullion, while hawkish Fed commentary and expectations of a December hike remain a headwind.",
       "url": "https://www.investing.com/news/commodities-news/gold-extends-rebound-as-nvidia-ceo-news-lifts-equities-dipbuying-lifts-bullion-5046835"
-    },
-    {
-      "date": "2026-11-23",
-      "time": "20:16",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
-      "assets": [
-        "usd",
-        "eurusd",
-        "usdjpy",
-        "gbpusd",
-        "audusd",
-        "nzdusd"
-      ],
-      "title": "Le dollar grimpe : l'euphorie de l'IA alimente les paris d'une hausse de taux de la Fed",
-      "title_en": "Dollar climbs as renewed AI euphoria fuels Fed hike bets",
-      "summary": "L'indice du dollar se raffermit à 104,32, après un sommet de 104,53 la veille, près de son plus haut en 20 mois depuis le retour de Jensen Huang à la tête de Nvidia. L'euro est à 1,0907 $ (creux de plus de 18 mois), la livre à 1,3037 $, le yen à 159,06 par dollar, l'aussie à 0,6627 $ et le kiwi à 0,5450 $, près de son creux de 17 ans. Selon le CME FedWatch, une hausse de 25 points de base le mois prochain est entièrement intégrée.",
-      "summary_en": "The dollar index firmed at 104.32 after peaking at 104.53 the previous session, near a 20-month high following Jensen Huang's reinstatement as Nvidia CEO. The euro is at $1.0907 (an over 18-month low), sterling at $1.3037, the yen at 159.06 per dollar, the Aussie at $0.6627 and the kiwi at $0.5450, near a 17-year trough. CME FedWatch shows a 25 bp hike next month fully priced.",
-      "url": "https://za.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-4593289"
     },
     {
       "date": "2026-11-23",
@@ -1870,22 +1903,6 @@
     },
     {
       "assets": [
-        "btcusd",
-        "nasdaq",
-        "usd"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Le bitcoin a franchi les 64 000 $ avant de retomber sous 62 000 $ à la mi-journée, alors que Nvidia bondit d'environ 32 % avec le retour de Jensen Huang. Depuis le départ de Huang le 12 novembre, le BTC est passé de 74 000 $ à moins de 56 000 $ et n'a regagné qu'environ le quart de ses pertes, contre plus des quatre cinquièmes pour Nvidia. Les marchés jugent quasi certaine une hausse de taux de la Fed en décembre, le taux 2 ans est près de 4,7 % et le dollar est à son plus fort depuis mars 2025; l'indice PCE d'octobre sort mercredi.",
-      "summary_en": "Bitcoin topped $64,000 before slipping back below $62,000 by midday, while Nvidia jumped about 32% on Jensen Huang's return. Since Huang's November 12 departure, BTC fell from $74,000 to below $56,000 and has clawed back only about a quarter of its losses, versus more than four-fifths for Nvidia. Markets see a December Fed hike as near certain, the 2-year yield is near 4.7% and the dollar is at its strongest since March 2025; October PCE is due Wednesday.",
-      "time": "12:31",
-      "title": "Le rebond du bitcoin s'essouffle déjà pendant que le « trade » de l'IA revient en force",
-      "title_en": "Bitcoin rebound already losing steam as AI trade returns with a bang",
-      "url": "https://www.coindesk.com/markets/2026/11/23/bitcoin-rebound-already-losing-steam-as-ai-trade-returns-with-a-bank"
-    },
-    {
-      "assets": [
         "usoil",
         "usdcad"
       ],
@@ -2018,22 +2035,6 @@
       "title": "Deutsche Bank voit le S&P 500 atteindre 9 000 points en 2027",
       "title_en": "Deutsche Bank sees S&P 500 hitting 9,000 in 2027",
       "url": "https://www.investing.com/news/stock-market-news/deutsche-bank-sees-sp-500-hitting-9000-in-2027-5045752"
-    },
-    {
-      "assets": [
-        "spx500",
-        "nasdaq",
-        "us30"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Morgan Stanley adopte sa position la plus favorable aux actions depuis avril, à la suite de la forte vente de la semaine dernière. Son stratège Mike Wilson qualifie la capitulation du marché d'occasion rare. Ce virage de Wall Street appuie le rebond des contrats à terme sur les indices américains.",
-      "summary_en": "Morgan Stanley turned its most bullish on equities since April following last week's heavy selloff. Strategist Mike Wilson called the market capitulation a rare opportunity. The shift supports the rebound in U.S. index futures.",
-      "time": "08:30",
-      "title": "Morgan Stanley devient le plus optimiste sur les actions depuis avril après la vente massive",
-      "title_en": "Morgan Stanley turns most bullish on stocks since April after last week's selloff",
-      "url": "https://www.investing.com/news/stock-market-news/morgan-stanley-turns-most-bullish-on-stocks-since-april-after-last-weeks-selloff-5045615"
     }
   ],
   "live": {
