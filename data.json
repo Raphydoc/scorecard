@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T14:53:51Z",
+ "updatedAt": "2026-11-24T15:50:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -14,9 +14,10 @@
     "u": "2026-11-19T13:58:00Z"
    },
    "conf": {
-    "a": 91.7,
-    "d": "2026-10-27",
-    "f": 81.2
+    "a": 103.3,
+    "f": 92.4,
+    "d": "2026-11-24",
+    "u": "2026-11-24T15:50:00Z"
    },
    "cpi": {
     "a": 0.4,
@@ -153,8 +154,8 @@
    "cotLong": 52.71,
    "cotChange": -2.04,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 62,
-   "uCrowd": "2026-11-24T13:55:00Z"
+   "crowdLong": 61,
+   "uCrowd": "2026-11-24T15:50:00Z"
   },
   "rut": {
    "season": "bear",
@@ -213,8 +214,8 @@
    "cotLong": 23.57,
    "cotChange": -4.67,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 72,
-   "uCrowd": "2026-11-23T13:49:00Z"
+   "crowdLong": 70,
+   "uCrowd": "2026-11-24T15:50:00Z"
   },
   "usdchf": {
    "season": "bull",
@@ -1286,12 +1287,12 @@
    "time": "16:05"
   },
   {
-   "a": null,
+   "a": 103.3,
    "date": "2026-11-24",
-   "f": 92,
+   "f": 92.4,
    "id": "conf",
    "name": "Confiance des consommateurs (novembre)",
-   "prev": 91.7,
+   "prev": 91.9,
    "time": "10:00"
   },
   {
@@ -1368,13 +1369,13 @@
    "time": "10:00"
   },
   {
+   "a": null,
    "date": "2026-12-01",
-   "time": "10:00",
+   "f": null,
    "id": "pmi_mfg",
    "name": "ISM manufacturier (novembre)",
    "prev": 55.5,
-   "f": null,
-   "a": null
+   "time": "10:00"
   },
   {
    "ai": true,
@@ -1423,13 +1424,13 @@
    "time": "08:30"
   },
   {
+   "a": null,
    "date": "2026-12-03",
-   "time": "10:00",
+   "f": null,
    "id": "pmi_srv",
    "name": "ISM services (novembre)",
    "prev": 54.5,
-   "f": null,
-   "a": null
+   "time": "10:00"
   },
   {
    "a": null,
