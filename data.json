@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T05:47:38Z",
+  "updatedAt": "2026-11-24T06:42:14Z",
   "econ": {
     "values": {
       "adp": {
@@ -1410,6 +1410,20 @@
   "news": [
     {
       "date": "2026-11-24",
+      "time": "00:30",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "audusd"
+      ],
+      "title": "La Bourse australienne clôture en hausse : le S&P/ASX 200 gagne 1,82 %",
+      "title_en": "Australia stocks higher at close of trade; S&P/ASX 200 up 1.82%",
+      "summary": "Le S&P/ASX 200 a terminé la séance de mardi en hausse de 1,82 %, dans le sillage du vif rebond des marchés asiatiques. Un appétit pour le risque plus fort en Australie tend à soutenir le dollar australien (AUD/USD).",
+      "summary_en": "The S&P/ASX 200 closed Tuesday's session up 1.82%, following the sharp rebound across Asian markets. Stronger risk appetite in Australia tends to support the Australian dollar (AUD/USD).",
+      "url": "https://www.investing.com/news/stock-market-news/australia-stocks-higher-at-close-of-trade-spasx-200-up-182-5047056"
+    },
+    {
+      "date": "2026-11-24",
       "time": "00:23",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -2018,23 +2032,6 @@
       "title": "CrowdStrike achètera Zscaler pour environ 43,9 G$ en actions; Zscaler bondit de plus de 13 % en préouverture",
       "title_en": "CrowdStrike bets on network security with $43.9 billion Zscaler deal",
       "url": "https://www.investing.com/news/stock-market-news/crowdstrike-bets-on-network-security-with-439-billion-zscaler-deal-5044856"
-    },
-    {
-      "assets": [
-        "usd",
-        "usdjpy",
-        "xauusd",
-        "spx500"
-      ],
-      "date": "2026-11-23",
-      "impact": "med",
-      "source": "CNBC",
-      "summary": "Les rendements des obligations du Trésor américain remontent lundi alors que les contrats à terme sur actions rebondissent et que la demande de valeurs refuges s'estompe. Les investisseurs attendent un discours du président de la Fed de New York, John Williams, pour des indices sur une possible hausse de taux en décembre (article non consulté au complet; chiffres non disponibles).",
-      "summary_en": "U.S. Treasury yields rose Monday as stock futures rebounded and safe-haven demand faded. Investors await a speech by New York Fed President John Williams for clues on a possible December rate hike (full article not accessed; figures unavailable).",
-      "time": "05:15",
-      "title": "Les rendements du Trésor bondissent avec le rebond des contrats à terme; on attend le discours de John Williams (Fed de New York)",
-      "title_en": "Treasury yields jump as stock futures rebound, investors await New York Fed President Williams speech",
-      "url": "https://www.cnbc.com/2026/11/23/treasury-yields-bonds-fed.html"
     }
   ],
   "live": {
