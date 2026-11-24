@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-24T22:12:10Z",
+ "updatedAt": "2026-11-24T22:36:42Z",
  "econ": {
   "values": {
    "adp": {
@@ -1305,7 +1305,7 @@
    "epsF": 6.59,
    "id": null,
    "kind": "earn",
-   "move": null,
+   "move": 1.8,
    "name": "Résultats Dell (DELL)",
    "note": "Après la clôture",
    "revA": 54.9,
