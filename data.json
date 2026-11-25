@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T02:42:37Z",
+  "updatedAt": "2026-11-25T03:48:56Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,39 @@
   "news": [
     {
       "date": "2026-11-24",
+      "time": "22:35",
+      "source": "Investing.com",
+      "impact": "high",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "usdjpy",
+        "audusd"
+      ],
+      "title": "Les Bourses asiatiques plongent : Taïwan -7,4 %, KOSPI -6 % alors que la vente sur l'IA s'aggrave et que les menaces tarifaires pèsent",
+      "title_en": "Asian stocks slide as AI selloff deepens, U.S. tariff threats weigh on sentiment",
+      "summary": "L'indice de Taïwan chute de 7,4 %, le KOSPI de 6 % et le Nikkei de 3,3 %; TSMC (-7,6 %), Samsung (-9,3 %) et SK Hynix (-9,1 %) mènent la baisse. Les contrats à terme du Nasdaq 100 cèdent 1,3 % et ceux du S&P 500 0,7 %, sur fond de rapports voulant que Washington publie une enquête sur la surcapacité industrielle de 16 partenaires commerciaux pouvant mener à de nouveaux tarifs. En Australie, l'inflation a accéléré à 4,9 % en octobre.",
+      "summary_en": "Taiwan's index fell 7.4%, the KOSPI 6% and the Nikkei 3.3%; TSMC (-7.6%), Samsung (-9.3%) and SK Hynix (-9.1%) led losses. Nasdaq 100 futures lost 1.3% and S&P 500 futures 0.7%, amid reports Washington will release a probe into excess industrial capacity among 16 trading partners that could lead to more tariffs. Australian inflation accelerated to 4.9% in October.",
+      "url": "https://investing.com/news/stock-market-news/asian-stocks-slide-as-ai-selloff-deepens-us-tariff-threats-weigh-on-sentiment-5049630"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "21:58",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "xauusd",
+        "xagusd",
+        "usd"
+      ],
+      "title": "L'or se maintient près de ses plus bas en 15 mois, les paris sur une hausse de la Fed pèsent avant le PCE",
+      "title_en": "Gold holds near 15-month lows on Fed hike bets; PCE inflation awaited",
+      "summary": "L'or au comptant gagnait 0,1 % à 3 559,55 $ l'once, tout près de son plus bas depuis début septembre 2025, tandis que l'argent reculait de 0,4 % à 40,74 $. Le FedWatch accorde 96,4 % de probabilité à une hausse de 25 points de base en décembre (réunion des 8 et 9), et le dollar se tient près d'un sommet de 19 mois. L'indice PCE attendu dans la journée sera déterminant pour les métaux.",
+      "summary_en": "Spot gold rose 0.1% to $3,559.55/oz, near its lowest since early September 2025, while silver fell 0.4% to $40.74. FedWatch shows a 96.4% probability of a 25 bp hike in December (Dec. 8-9 meeting), and the dollar is near a 19-month high. The PCE inflation reading due later in the day is key for metals.",
+      "url": "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
+    },
+    {
+      "date": "2026-11-24",
       "time": "20:59",
       "source": "Investing.com",
       "impact": "med",
@@ -1538,21 +1571,6 @@
       "summary": "Vers 19 h 58 (HE), les contrats sur le S&P 500 reculaient de 0,3 % à 7 193,50 points, ceux sur le Nasdaq 100 de 0,4 % à 26 168,75 et ceux sur le Dow de 0,3 % à 49 930, après une séance où le Nasdaq a perdu 1,5 % et le S&P 500 0,5 %, Nvidia cédant près de 6 %. Mercredi, l'indice PCE, le PIB préliminaire du T3, les demandes de chômage et les commandes de biens durables sont attendus; selon le CME FedWatch, la probabilité d'une hausse de 25 points de base en décembre est de 96 %.",
       "summary_en": "Around 19:58 ET, S&P 500 futures were down 0.3% at 7,193.50, Nasdaq 100 futures down 0.4% at 26,168.75 and Dow futures down 0.3% at 49,930, after a session in which the Nasdaq lost 1.5% and the S&P 500 0.5%, with Nvidia falling nearly 6%. Wednesday brings the PCE price index, preliminary Q3 GDP, jobless claims and durable goods; CME FedWatch puts the odds of a 25-basis-point hike in December at 96%.",
       "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "19:54",
-      "source": "CNBC",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "usdjpy"
-      ],
-      "title": "SoftBank chute de plus de 11 % alors que la vente des titres liés à l'IA se propage aux technos asiatiques",
-      "title_en": "SoftBank drops over 11% as AI sell-off ripples across Asian tech names",
-      "summary": "L'action de SoftBank Group recule de plus de 11 % à Tokyo, la vague de ventes sur les titres liés à l'intelligence artificielle s'étendant aux technologiques asiatiques (Advantest, SK Hynix, Samsung). Ce repli prolonge la baisse du Nasdaq de mardi et pèse sur le sentiment envers les technos.",
-      "summary_en": "SoftBank Group shares fell more than 11% in Tokyo as the sell-off in AI-linked stocks spread to Asian tech names (Advantest, SK Hynix, Samsung). The drop extends Tuesday's Nasdaq decline and weighs on tech sentiment.",
-      "url": "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html"
     },
     {
       "date": "2026-11-24",
@@ -2062,22 +2080,6 @@
       "summary": "Selon le sondage de la CBI, les détaillants britanniques affichent leur plus forte croissance des ventes en près de quatre ans, soit leur meilleur mois depuis la fin de 2022. Un signal de consommation plus solide au Royaume-Uni, à surveiller pour la livre sterling et les attentes envers la Banque d'Angleterre.",
       "summary_en": "According to the CBI survey, British retailers report their strongest sales growth in nearly four years, their best month since late 2022. A firmer UK consumer signal, worth watching for sterling and Bank of England expectations.",
       "url": "https://www.investing.com/news/economic-indicators/uk-retailers-report-best-month-for-sales-since-late-2022-cbi-5047636"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "05:56",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "xauusd",
-        "xagusd",
-        "usd"
-      ],
-      "title": "L'or glisse après un vif rebond, l'inflation et les attentes envers la Fed en point de mire",
-      "title_en": "Gold slips after sharp rebound with inflation, Fed expectations in focus",
-      "summary": "L'or recule mardi après son vif rebond de lundi, porté par le retour de Jensen Huang chez Nvidia et les achats à bon compte. Les investisseurs se tournent vers les données d'inflation (PCE) et les attentes de taux de la Fed, qui guideront le métal jaune.",
-      "summary_en": "Gold eases on Tuesday after Monday's sharp rebound, driven by Jensen Huang's return to Nvidia and dip-buying. Investors turn to inflation data (PCE) and Fed rate expectations, which will steer the yellow metal.",
-      "url": "https://www.investing.com/news/commodities-news/gold-extends-rebound-as-nvidia-ceo-news-lifts-equities-dipbuying-lifts-bullion-5046835"
     },
     {
       "date": "2026-11-24",
