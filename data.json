@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T00:45:16Z",
+  "updatedAt": "2026-11-25T01:48:32Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,37 @@
   "news": [
     {
       "date": "2026-11-24",
+      "time": "20:12",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30"
+      ],
+      "title": "Les contrats à terme de Wall Street reculent après la baisse du S&P 500 et du Nasdaq; l'inflation en vue",
+      "title_en": "Wall St futures fall after S&P 500, Nasdaq end lower; inflation data eyed",
+      "summary": "Vers 19 h 58 (HE), les contrats sur le S&P 500 reculaient de 0,3 % à 7 193,50 points, ceux sur le Nasdaq 100 de 0,4 % à 26 168,75 et ceux sur le Dow de 0,3 % à 49 930, après une séance où le Nasdaq a perdu 1,5 % et le S&P 500 0,5 %, Nvidia cédant près de 6 %. Mercredi, l'indice PCE, le PIB préliminaire du T3, les demandes de chômage et les commandes de biens durables sont attendus; selon le CME FedWatch, la probabilité d'une hausse de 25 points de base en décembre est de 96 %.",
+      "summary_en": "Around 19:58 ET, S&P 500 futures were down 0.3% at 7,193.50, Nasdaq 100 futures down 0.4% at 26,168.75 and Dow futures down 0.3% at 49,930, after a session in which the Nasdaq lost 1.5% and the S&P 500 0.5%, with Nvidia falling nearly 6%. Wednesday brings the PCE price index, preliminary Q3 GDP, jobless claims and durable goods; CME FedWatch puts the odds of a 25-basis-point hike in December at 96%.",
+      "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "19:54",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "usdjpy"
+      ],
+      "title": "SoftBank chute de plus de 11 % alors que la vente des titres liés à l'IA se propage aux technos asiatiques",
+      "title_en": "SoftBank drops over 11% as AI sell-off ripples across Asian tech names",
+      "summary": "L'action de SoftBank Group recule de plus de 11 % à Tokyo, la vague de ventes sur les titres liés à l'intelligence artificielle s'étendant aux technologiques asiatiques (Advantest, SK Hynix, Samsung). Ce repli prolonge la baisse du Nasdaq de mardi et pèse sur le sentiment envers les technos.",
+      "summary_en": "SoftBank Group shares fell more than 11% in Tokyo as the sell-off in AI-linked stocks spread to Asian tech names (Advantest, SK Hynix, Samsung). The drop extends Tuesday's Nasdaq decline and weighs on tech sentiment.",
+      "url": "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html"
+    },
+    {
+      "date": "2026-11-24",
       "time": "19:09",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -2082,35 +2113,6 @@
       "summary": "Le STOXX 600 européen est en retrait ce matin après un rallye alimenté par l'euphorie autour de Nvidia et de l'IA, son meilleur du mois. À Londres, le FTSE 100 recule légèrement, entraîné par les sociétés minières qui glissent avec les prix des métaux. Un signal à surveiller pour l'or et l'argent ainsi que pour l'euro et la livre avant l'ouverture américaine.",
       "summary_en": "Europe's STOXX 600 is subdued this morning after a rally fueled by Nvidia and AI euphoria, its best of the month. In London, the FTSE 100 edges lower, dragged by miners sliding along with metal prices. A signal to watch for gold and silver, as well as the euro and sterling, ahead of the U.S. open.",
       "url": "https://www.investing.com/news/stock-market-news/europes-stoxx-600-subdued-after-aidriven-rally-5047331"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "02:00",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "usdjpy",
-        "nasdaq"
-      ],
-      "title": "Tokyo clôture en forte hausse : le Nikkei 225 gagne 4,11 %",
-      "title_en": "Japan stocks higher at close of trade; Nikkei 225 up 4.11%",
-      "summary": "La Bourse de Tokyo a terminé la séance en forte hausse, le Nikkei 225 avançant de 4,11 % selon Investing.com. Ce bond s'inscrit dans le rebond généralisé des Bourses asiatiques liées à l'IA, un signal favorable pour le Nasdaq et à surveiller pour le yen.",
-      "summary_en": "Tokyo stocks ended the session sharply higher, with the Nikkei 225 up 4.11%, according to Investing.com. The jump is part of a broad AI-linked rebound across Asian markets, a supportive signal for the Nasdaq and one to watch for the yen.",
-      "url": "https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-411-5047180"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "01:55",
-      "source": "CNBC",
-      "impact": "med",
-      "assets": [
-        "eurusd"
-      ],
-      "title": "Pourquoi la France est menacée de récession, et ce qui pourrait l'en empêcher",
-      "title_en": "Why France is at risk of recession — and what could keep it out of one",
-      "summary": "CNBC analyse le risque de récession en France à la lumière des indices PMI d'activité. Un affaiblissement de la deuxième économie de la zone euro pèserait sur l'euro et sur les attentes envers la BCE.",
-      "summary_en": "CNBC examines France's recession risk in light of the PMI business surveys. A weakening of the euro zone's second-largest economy would weigh on the euro and on expectations for the ECB.",
-      "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html"
     }
   ],
   "live": {
