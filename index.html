@@ -4591,12 +4591,15 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   // date de séance d'une barre journalière : les barres forex de Yahoo sont datées du lendemain (vérifié par corrélation avec l'indice dollar)
   const FXK = ['eurusd','usdjpy','usdcad','gbpusd','audusd','usdchf','nzdusd'];
   const barDate = (k, t) => nyDate((t + (FXK.includes(k) ? -43200 : 43200))*1000);
+  const _bd = new WeakMap();
+  function barDates(asset, rows){ let a = _bd.get(rows); if(!a){ a = rows.map(r=>barDate(asset, r[0])); _bd.set(rows, a); } return a; }
   function techAt(asset, date){
     const rows = state.ohlc && state.ohlc.d1 && state.ohlc.d1[asset]; if(!rows || rows.length<60) return null;
-    const dOf = r => barDate(asset, r[0]);
-    let i = -1; for(let k=rows.length-1;k>=0;k--) if(dOf(rows[k]) <= date){ i = k; break; } if(i<1) return null;
+    const D = barDates(asset, rows);
+    let i = -1; for(let k=rows.length-1;k>=0;k--) if(D[k] <= date){ i = k; break; } if(i<1) return null;
     const px = rows[i][4], mon = mondayOf(date);
-    const wk = rows.slice(0, i+1).filter(r=>dOf(r) >= mon), before = rows.slice(0, i+1).filter(r=>dOf(r) < mon);
+    let w0 = i; while(w0>0 && D[w0-1] >= mon) w0--;
+    const wk = D[w0] >= mon ? rows.slice(w0, i+1) : [], before = D[w0] >= mon ? rows.slice(0, w0) : rows.slice(0, i+1);
     let tr = 0; if(wk.length && before.length){ const o = wk[0][1], pc = before[before.length-1][4]; tr = px>o && px>pc ? 2 : px<o && px<pc ? -2 : 0; }
     const sma = (n, end) => end+1 < n ? null : rows.slice(end-n+1, end+1).reduce((a,r)=>a+r[4],0)/n;
     const s50 = sma(50,i), s200 = sma(200,i), s50p = sma(50,i-10); let c = 0;
@@ -4607,13 +4610,24 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     return tr + dt + se;
   }
   // série du score sur 100 : soir enregistré par le bulletin (plein), sinon estimation à partir de l'ancien historique (pointillé), et aujourd'hui en direct
-  function scoreSeries(asset){
-    const B = (state.bulletin && state.bulletin.days) || [], out = {};
-    (state.history||[]).forEach(h=>{ const e = h && h[asset]; if(!e || !h.date) return; const t = techAt(asset, h.date);
-      out[h.date] = {date:h.date, v:scoreNorm(asset, t==null ? compute(asset).tech : t, e.sent||0, e.macro||0).total, est:true}; });
+  const _ss = {};
+  function scoreSeries(asset, lim){
+    lim = lim || 30;
+    const B = (state.bulletin && state.bulletin.days) || [], H = (state.history||[]).slice(-(lim+10)), td = torontoToday();
+    const key = [lim, H.length, H.length && H[H.length-1].date, B.length, state.ohlc ? 1 : 0, state.tech && state.tech.asOf, state.econ && state.econ.updatedAt, td].join('|');
+    const ck = asset+'|'+lim; let base = _ss[ck] && _ss[ck].key === key ? _ss[ck].out : null;
+    if(!base){ base = scoreBase(asset, H, B); _ss[ck] = {key, out:base}; }
+    const out = Object.assign({}, base);
+    out[td] = {date:td, v:compute(asset).total, est:false, now:true};
+    return Object.values(out).sort((a,b)=>a.date.localeCompare(b.date)).slice(-lim);
+  }
+  function scoreBase(asset, H, B){
+    const out = {}; let cur = null;
+    H.forEach(h=>{ const e = h && h[asset]; if(!e || !h.date) return; const t = techAt(asset, h.date);
+      if(t==null && cur==null) cur = compute(asset).tech;
+      out[h.date] = {date:h.date, v:scoreNorm(asset, t==null ? cur : t, e.sent||0, e.macro||0).total, est:true}; });
     B.forEach(d=>{ const v = d.a && d.a[asset]; if(v && v.r!=null) out[d.date] = {date:d.date, v:v.s, est:false}; });
-    const td = torontoToday(); out[td] = {date:td, v:compute(asset).total, est:false, now:true};
-    return Object.values(out).sort((a,b)=>a.date.localeCompare(b.date)).slice(-30);
+    return out;
   }
   function scoreSvg(pts, W, H, mini){
     if(!pts.length) return '';
@@ -4678,7 +4692,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function closeZoom(){ const ov = $('zoomOv'); if(ov) ov.hidden = true; document.body.classList.remove('zopen'); }
   function drawZoom(){
     const ov = $('zoomOv'); if(!ov || ov.hidden) return;
-    const k = state.zAsset || state.asset, all = scoreSeries(k), cut = state.zRange ? new Date(Date.now()-state.zRange*864e5).toISOString().slice(0,10) : '';
+    const k = state.zAsset || state.asset, all = scoreSeries(k, 400), cut = state.zRange ? new Date(Date.now()-state.zRange*864e5).toISOString().slice(0,10) : '';
     const pts = all.filter(q=>!cut || q.date>=cut), mob = window.innerWidth < 700, W = mob ? 420 : 1000, H = mob ? 340 : 420;
     const keys = Object.keys(TOP_NAMES).filter(a=>state.assets && state.assets[a]);
     const ch = pts.length > 1 ? scoreBig(pts, W, H) : null;
@@ -4817,7 +4831,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   // ---------- Plan du jour : tout ce qui compte aujourd’hui sur un écran ----------
   const PSYM = {xauusd:'GC=F', xagusd:'SI=F', nasdaq:'^NDX', spx500:'^GSPC', us30:'^DJI', rut:'^RUT', usd:'DX-Y.NYB', usoil:'CL=F', btcusd:'BTC-USD', eurusd:'EURUSD=X', usdjpy:'JPY=X', usdcad:'CAD=X', gbpusd:'GBPUSD=X', audusd:'AUDUSD=X', usdchf:'CHF=X', nzdusd:'NZDUSD=X'};
-  const nyDate = ms => new Date(ms).toLocaleDateString('en-CA', {timeZone:'America/New_York'});
+  const NYF = new Intl.DateTimeFormat('en-CA', {timeZone:'America/New_York', year:'numeric', month:'2-digit', day:'2-digit'});
+  const nyDate = ms => NYF.format(new Date(ms));
   function nextWeekday(d){ const x = new Date(d+'T12:00:00Z'); do{ x.setUTCDate(x.getUTCDate()+1); }while(x.getUTCDay()===0 || x.getUTCDay()===6); return x.toISOString().slice(0,10); }
   function planPx(k){
     const L2 = state.live2, s = PSYM[k], v = L2 && L2.q && L2.q[s];
