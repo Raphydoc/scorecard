@@ -947,6 +947,17 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 
 
 #editBtn{display:none!important}
+
+/* sélecteur d'actifs */
+.controls[data-pg="score"]{display:none!important}
+.apick{display:flex;flex-wrap:wrap;align-items:flex-start;gap:10px 22px;margin:0 0 12px;padding:10px 12px;background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.apg{display:flex;flex-direction:column;gap:5px;min-width:0} .apgt{font:700 9.5px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.apgl{display:flex;flex-wrap:wrap;gap:5px}
+.apb{display:inline-flex;align-items:center;gap:6px;border:1px solid var(--line);background:var(--panel-2);color:var(--fg);border-radius:5px;padding:6px 9px;cursor:pointer;font:600 12px var(--f-body);white-space:nowrap}
+.apb:hover{border-color:var(--gold)} .apb.on{border-color:var(--gold);background:color-mix(in srgb,var(--gold) 16%,var(--panel-2));box-shadow:0 0 0 1px var(--gold)}
+.apb b{font-weight:700;letter-spacing:.03em} .apv{font:600 11px var(--f-mono);color:var(--muted)} .apv.up{color:var(--bull)} .apv.dn{color:var(--bear)}
+.apd{width:7px;height:7px;border-radius:50%;background:var(--neutral,#666);flex:none} .apd.abull{background:var(--bull)} .apd.abear{background:var(--bear)}
+@media (max-width:640px){ .apick{display:flex;flex-direction:column;gap:8px;padding:8px} .apgl{flex-wrap:nowrap;overflow-x:auto;padding-bottom:2px;scrollbar-width:none} .apgl::-webkit-scrollbar{display:none} }
 /* test du score sur le passé */
 .panel.bt{margin-top:14px}
 .btwarn{margin:0 14px 12px;padding:9px 12px;border-left:3px solid var(--gold);background:var(--panel-2);font-size:12.5px;line-height:1.5;color:var(--muted)} .btwarn b{color:var(--fg)}
@@ -4912,7 +4923,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         : `<p class="fmut">${L('Rien d’important pour cet actif dans les 8 prochains jours.','Nothing important for this asset in the next 8 days.')}</p>`}</div>`;
     const SEC = [['f-today',L('Aujourd’hui','Today')],['f-score',L('Le score','The score')],['f-tech',L('Technique et positionnement','Technicals and positioning')],['f-bank',L('Banques','Banks')],['f-hist',L('Saisonnalité et corrélations','Seasonality and correlations')]];
     const sec = i => `<h2 class="fsec2" id="${SEC[i][0]}"><span>${i+1}</span>${SEC[i][1]}</h2>`;
-    top.innerHTML = ficheHead(k) + `<nav class="fnav" aria-label="${L('Sections','Sections')}">${SEC.map(([id,t],i)=>`<button type="button" data-fj="${id}"><span>${i+1}</span>${t}</button>`).join('')}</nav>`
+    top.innerHTML = pickHtml() + ficheHead(k) + `<nav class="fnav" aria-label="${L('Sections','Sections')}">${SEC.map(([id,t],i)=>`<button type="button" data-fj="${id}"><span>${i+1}</span>${t}</button>`).join('')}</nav>`
       + sec(0) + `<div class="f2">${why}${upc}</div>` + sec(1) + ficheBt(k);
     top.querySelectorAll('[data-fj]').forEach(b=>b.addEventListener('click', ()=>{ const el = document.getElementById(b.dataset.fj); if(el) window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - 12, behavior:'smooth'}); }));
 
@@ -4974,7 +4985,21 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     bot.innerHTML = sec2(SEC2[0]) + `<div class="f2">${techP}${posP}</div>` + sec2(SEC2[1]) + bankP + sec2(SEC2[2]) + `<div class="f2">${seasP}${corrP}</div>`;
     bot.querySelectorAll('[data-sc]').forEach(b=>b.addEventListener('click', ()=>{ state.asset = b.dataset.sc; renderAll(); window.scrollTo(0,0); }));
   }
+
+  // ---------- sélecteur d'actifs : tous les actifs visibles, un clic pour changer ----------
+  const PICK_GR = [['Actions','Stocks',['nasdaq','spx500','us30','rut']],['Métaux','Metals',['xauusd','xagusd']],['Dollar et devises','Dollar and FX',['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['Pétrole et crypto','Oil and crypto',['usoil','btcusd']]];
+  function pickHtml(){
+    const cur = state.asset;
+    return `<div class="apick" role="tablist" aria-label="${L('Choisir un actif','Choose an asset')}">${PICK_GR.map(([fr,en,ks])=>`<div class="apg"><span class="apgt">${L(fr,en)}</span><div class="apgl">${ks.filter(k=>state.assets && state.assets[k]).map(k=>{ const P = planPx(k), t = compute(k).total, b = biasOf(t);
+      return `<button type="button" role="tab" class="apb ${k===cur?'on':''}" aria-selected="${k===cur}" data-ap="${k}"><i class="apd a${b}"></i><b>${esc(TOP_NAMES[k])}</b><span class="apv ${P.d1>0?'up':P.d1<0?'dn':''}" data-apd="${k}">${P.d1==null?'—':sg2(P.d1,2)+' %'}</span></button>`; }).join('')}</div></div>`).join('')}</div>`;
+  }
+  function pickAsset(k){ if(!k || k===state.asset) return; state.asset = k; try{ localStorage.setItem('sc-asset', k); }catch(e){} const sel = $('assetSel'); if(sel) sel.value = k; renderAll(); }
+  document.addEventListener('click', e=>{ const b = e.target.closest('[data-ap]'); if(b){ pickAsset(b.dataset.ap); } });
+  document.addEventListener('keydown', e=>{ if(state.page!=='score' || /INPUT|SELECT|TEXTAREA/.test((document.activeElement||{}).tagName||'')) return;
+    if(e.key!=='ArrowLeft' && e.key!=='ArrowRight') return; const ks = PICK_GR.flatMap(g=>g[2]).filter(k=>state.assets && state.assets[k]), i = ks.indexOf(state.asset); if(i<0) return;
+    e.preventDefault(); pickAsset(ks[(i + (e.key==='ArrowRight'?1:-1) + ks.length) % ks.length]); });
   function ficheTick(){
+    document.querySelectorAll('[data-apd]').forEach(el=>{ const P = planPx(el.dataset.apd), t = P.d1==null ? '—' : sg2(P.d1,2)+' %', c = 'apv '+(P.d1>0?'up':P.d1<0?'dn':''); if(el.textContent!==t) el.textContent = t; if(el.className!==c) el.className = c; });
     const k = state.asset, P = planPx(k), a = document.querySelector(`[data-fp="${k}"]`), b = document.querySelector(`[data-fd="${k}"]`);
     if(a){ const t = pxFmt(P.px); if(a.textContent!==t) a.textContent = t; }
     if(b){ const t = P.d1==null ? '—' : (P.d1>0?'▲ ':P.d1<0?'▼ ':'')+sg2(P.d1,2)+' %', c = 'fhd1 '+(P.d1>0?'up':P.d1<0?'dn':''); if(b.textContent!==t) b.textContent = t; if(b.className!==c) b.className = c; }
