@@ -939,6 +939,28 @@ details.bnotesd{border-top:1px solid var(--line);margin-top:10px;padding-top:4px
 ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 @media (max-width:600px){ table.postab .pbar{display:none} td.pcr b, td.pcf b{margin-left:0} }
 
+
+/* encadré « Pourquoi ça bouge » de la Scorecard */
+.left{grid-template-columns:minmax(0,1fr)} .left > *{min-width:0}
+.rcol{display:grid;gap:16px;min-width:0;align-content:start} .rcol > *{min-width:0}
+.whyp{padding:14px 16px}
+.wbh{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 14px;margin-bottom:10px}
+.wbh h3{margin:0;font:700 12px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;color:var(--fg);display:flex;align-items:center;gap:8px}
+.wbh h3::before{content:"";width:7px;height:7px;background:var(--gold);border-radius:1px}
+.wbmv{font:700 14px var(--f-mono)} .wbmv.up{color:var(--bull)} .wbmv.dn{color:var(--bear)}
+.wbh small{margin-left:auto;font:600 10.5px var(--f-mono);color:var(--muted)}
+.wbg{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:8px 26px}
+.wbc > .wyk:first-child{margin-top:0}
+.wbt{margin:2px 0 6px;font-size:15px;line-height:1.55}
+ul.wbars{list-style:none;margin:0;padding:0}
+ul.wbars li{display:grid;grid-template-columns:minmax(0,1fr) 70px 34px;align-items:center;gap:10px;padding:5px 0;border-bottom:1px solid var(--line);font-size:13px}
+ul.wbars .wbb{height:6px;background:var(--panel-2);border-radius:3px;overflow:hidden} ul.wbars .wbb i{display:block;height:100%;border-radius:3px}
+ul.wbars .wbb i.up{background:var(--bull)} ul.wbars .wbb i.dn{background:var(--bear)}
+ul.wbars b{font:700 13px var(--f-mono);text-align:right} ul.wbars b.up{color:var(--bull)} ul.wbars b.dn{color:var(--bear)}
+.whyp .hnote{margin:6px 0 0;font-size:11.5px;color:var(--muted)}
+.whyp .wygo{margin-top:12px}
+@media (max-width:1400px){ #tbl th.colh{white-space:normal;letter-spacing:.02em;line-height:1.2} #tbl td.name .info,#tbl td.name small.updtag{white-space:normal} #tbl th,#tbl td{padding-left:8px;padding-right:8px} #tbl td.name{min-width:0} }
+@media (max-width:760px){ .wbg{grid-template-columns:minmax(0,1fr)} .wbh small{margin-left:0;width:100%} .whyp{padding:12px} }
 /* affichage Scorecard, graphique agrandi, page Pourquoi */
 .symbol{flex-wrap:wrap;gap:2px 12px} .symbol b{white-space:nowrap}
 .hist h2 .xpand{margin-left:auto;border:1px solid var(--line);background:none;color:var(--gold);font:600 11px/1 var(--f-body);letter-spacing:.04em;text-transform:none;padding:5px 8px;border-radius:5px;cursor:pointer}
@@ -1449,13 +1471,15 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <div class="hist">
         <h2>Évolution du score <button type="button" class="xpand" id="histZoom">⤢ Agrandir</button></h2>
         <div id="histBox"><p class="empty-hist">L'historique se remplit chaque soir.</p></div>
-        <div id="whyBox"></div>
       </div>
     </section>
 
+    <div class="rcol">
+    <section class="panel whyp" aria-label="Pourquoi ça bouge"><div id="whyBox"></div></section>
     <section class="panel" aria-label="Indicateurs">
       <div class="tablewrap"><table id="tbl"></table></div>
     </section>
+    </div>
   </main>
 
   <section class="panel how" data-pg="score">
@@ -4693,14 +4717,30 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
   const whyOf = a => { const W = state.why && state.why.items && state.why.items[a]; return W && (W.fr || W.en) ? W : null; };
   function whyHtml(asset){
-    const W = whyOf(asset), D = scoreDrivers(asset, 4);
-    const at = state.why && state.why.asOf ? new Date(state.why.asOf).toLocaleString(LOC(),{weekday:'short', hour:'2-digit', minute:'2-digit'}) : '';
-    return `<div class="whyb"><h3>${L('Pourquoi ça bouge','Why it is moving')}</h3>
-      ${W ? `<p>${esc(isEN() && W.en ? W.en : W.fr)}</p>${(W.src||[]).length ? `<p class="whys">${(W.src||[]).slice(0,3).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(' · ')}${at?` · ${esc(at)}`:''}</p>` : ''}`
-        : `<p class="mut">${L('Pas encore de raison confirmée par une source aujourd’hui (mise à jour chaque heure de 7 h à 17 h).','No source-confirmed reason yet today (updated every hour, 7 a.m. to 5 p.m.).')}</p>`}
-      ${D.length ? `<h4>${L('Ce qui pèse sur le score','What drives the score')}</h4><ul>${D.map(d=>`<li class="${d.pts>0?'up':'dn'}"><b>${d.pts>0?'+':'−'}${Math.abs(Math.round(d.pts))}</b> ${esc(d.t)}</li>`).join('')}</ul>` : ''}
-      <button type="button" class="wygo" data-go="why">${L('Toutes les raisons du jour →','All of today’s reasons →')}</button></div>`;
+    const W = whyOf(asset), D = scoreDrivers(asset, 5), P = planPx(asset);
+    const feed = typeof newsFeed==='function' ? newsFeed() : [], N = feed.filter(x=>x.t >= Date.now()-24*3600e3 && (x.assets||[]).includes(asset)).slice(0, 3);
+    const at = state.why && state.why.asOf ? new Date(state.why.asOf).toLocaleString(LOC(),{weekday:'short', hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'}) : '';
+    const mx = Math.max(1, ...D.map(d=>Math.abs(d.pts)));
+    return `<div class="whyb2">
+      <div class="wbh"><h3>${L('Pourquoi ça bouge aujourd’hui','Why it is moving today')}</h3>
+        <span class="wbmv ${P.d1>0?'up':P.d1<0?'dn':''}">${esc(TOP_NAMES[asset]||'')} ${P.d1==null?'—':sg2(P.d1,2)+' %'}</span>
+        ${at ? `<small>${L('MAJ','UPD')} ${esc(at)}</small>` : ''}</div>
+      <div class="wbg">
+        <div class="wbc">
+          <div class="wyk">${L('La raison (nouvelles et données)','The reason (news and data)')}</div>
+          ${W ? `<p class="wbt">${esc(isEN() && W.en ? W.en : W.fr)}</p>${(W.src||[]).length ? `<div class="wysrc">${W.src.slice(0,3).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join('')}</div>` : ''}`
+            : `<p class="wyt mut">${L('Pas encore de raison confirmée par une source aujourd’hui. Mise à jour chaque heure de 7 h à 17 h, en semaine.','No source-confirmed reason yet today. Updated every hour from 7 a.m. to 5 p.m. on weekdays.')}</p>`}
+          ${N.length ? `<div class="wyk">${L('Nouvelles liées (24 h)','Related news (24h)')}</div><ul class="wyl">${N.map(x=>`<li><span>${whenT(x.t)}</span>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||'')}</a>` : `<em class="${x.surp>0?'up':x.surp<0?'dn':''}">${x.k==='data' ? x.title : esc(x.title||'')}</em>`}</li>`).join('')}</ul>` : ''}
+        </div>
+        <div class="wbc">
+          <div class="wyk">${L('Ce qui pèse sur le score','What drives the score')}</div>
+          ${D.length ? `<ul class="wbars">${D.map(d=>`<li><span class="wbl">${esc(d.t)}</span><span class="wbb"><i class="${d.pts>0?'up':'dn'}" style="width:${Math.max(4, Math.abs(d.pts)/mx*100).toFixed(0)}%"></i></span><b class="${d.pts>0?'up':'dn'}">${d.pts>0?'+':'−'}${Math.abs(Math.round(d.pts))}</b></li>`).join('')}</ul>
+          <p class="hnote">${L('Points sur 100. Vert = pousse vers le haut, rouge = pousse vers le bas.','Points out of 100. Green = pushes up, red = pushes down.')}</p>` : `<p class="wyt mut">—</p>`}
+        </div>
+      </div>
+      <button type="button" class="wygo" data-go="why">${L('Toutes les raisons du jour, pour chaque actif →','All of today’s reasons, for every asset →')}</button></div>`;
   }
+
 
   // ---------- Corrélations : quels actifs bougent ensemble (rendements journaliers) ----------
   state.corrN = state.corrN || 60;
