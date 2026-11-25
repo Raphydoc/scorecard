@@ -919,6 +919,25 @@ ul.bnl li{padding:7px 0;border-top:1px solid var(--line);font-size:13px;line-hei
 ul.bnl a{color:var(--fg);font-weight:600;text-decoration:none} ul.bnl a:hover{color:var(--gold);text-decoration:underline}
 ul.bnl p{margin:3px 0 0;color:var(--muted);font-size:12.5px}
 @media (max-width:600px){ table.postab th:nth-child(4), table.postab td:nth-child(4){display:none} .pbar{width:40px} }
+/* pages plus claires */
+.howto{margin:0 0 14px;padding:12px 16px;border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px;background:var(--panel);font-size:14px;line-height:1.55;color:var(--muted);max-width:980px}
+.howto b{color:var(--gold);margin-right:6px} .howto em{font-style:normal;color:var(--fg);font-weight:600}
+table.postab td small{display:block;margin-top:2px;font:500 11px/1.2 var(--f-mono);color:var(--muted)}
+table.postab td small.up{color:var(--bull)} table.postab td small.dn{color:var(--bear)}
+table.postab small.psig{font-family:var(--f-body);font-size:12px}
+td.pcr b, td.pcf b{margin-left:6px}
+.mhint2{margin:8px 2px 14px;font-size:12.5px;color:var(--muted)}
+.psum.pdet > div{flex:1 1 140px}
+#posVix{font:600 11px/1.3 var(--f-mono);letter-spacing:.04em;text-transform:none}
+#posVix .up{color:var(--bull)} #posVix .dn{color:var(--bear)} #posVix small{opacity:.8}
+.bmh .pbias{white-space:nowrap}
+details.bmore{margin-top:6px}
+details.bmore > summary{cursor:pointer;list-style:none;font:600 12px/1.3 var(--f-body);color:var(--gold);padding:6px 0}
+details.bmore > summary::-webkit-details-marker{display:none}
+details.bmore > summary::before{content:'▸ '} details.bmore[open] > summary::before{content:'▾ '}
+details.bnotesd{border-top:1px solid var(--line);margin-top:10px;padding-top:4px}
+ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+@media (max-width:600px){ table.postab .pbar{display:none} td.pcr b, td.pcf b{margin-left:0} }
 /* Plan du jour, Bulletin du score, voyant de retard */
 .psum.pmac{margin-top:-4px}
 .psum .pk{flex:1 1 150px;min-width:0;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px;color:var(--fg);cursor:pointer;font:inherit;transition:border-color .15s}
@@ -2516,7 +2535,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function cotRows(a){ const c = ((state.live||{}).cot||{})[a]; return Array.isArray(c) ? c : null; }
   function cotIndex(rows, n){ const t = rows.slice(-n).map(r=>r[1]-r[2]); const mn = Math.min(...t), mx = Math.max(...t), v = t[t.length-1]; return mx===mn ? 50 : (v-mn)/(mx-mn)*100; }
   function renderCOT(){
-    const box = $('posDetail') || $('p2cot'); if(!box) return;
+    const box = $('p2cot'); if(!box) return;
     const a = state.cotA, rows = cotRows(a);
     const chips = Object.keys(ASSETS).map(x=>`<button class="chip" data-a="${x}" aria-pressed="${x===a}">${esc(TOP_NAMES[x])}</button>`).join('');
     const oil = a==='usoil';
@@ -2599,40 +2618,60 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const lvl = lv[1]>=25 ? ['dn', L('stress : les marchés ont peur','stress: markets are fearful')] : lv[1]<16 ? ['up', L('calme','calm')] : ['', L('normal','normal')];
     return `<b>VIX ${nf(lv[1],1)}</b> <span class="${lvl[0]}">· ${lvl[1]}</span>${pv?` <small>(${sg2(lv[1]-pv[1],1)} ${L('sur 1 semaine','over 1 week')})</small>`:''}`;
   }
-  function posRead(cr, cot, idx){
+  // signal en un mot + une phrase : on suit les fonds, on lit la foule à l’inverse
+  function posRead(cr, cot){
     const c = cr==null ? 0 : cr>=60 ? -1 : cr<=40 ? 1 : 0, f = cot==null ? 0 : cot>50 ? 1 : cot<50 ? -1 : 0;
-    let t, v = 0;
-    if(c<0 && f<0){ t = L('Foule acheteuse, fonds vendeurs : signal baissier','Crowd long, funds short: bearish signal'); v = -1; }
-    else if(c>0 && f>0){ t = L('Foule vendeuse, fonds acheteurs : signal haussier','Crowd short, funds long: bullish signal'); v = 1; }
-    else if(c<0 && f>0){ t = L('Tout le monde est acheteur : risque de repli si ça se vide','Everyone is long: pullback risk if it unwinds'); }
-    else if(c>0 && f<0){ t = L('Tout le monde est vendeur : risque de rebond','Everyone is short: bounce risk'); }
-    else if(c<0){ t = L('Foule trop acheteuse : signal contrarien baissier','Crowd too long: contrarian bearish'); v = -1; }
-    else if(c>0){ t = L('Foule trop vendeuse : signal contrarien haussier','Crowd too short: contrarian bullish'); v = 1; }
-    else t = L('Pas de signal net','No clear signal');
-    if(idx!=null && (idx>=85 || idx<=15)) t += idx>=85 ? L(' · position nette des fonds au plus haut de l’année',' · funds’ net position at its 1-year high') : L(' · position nette des fonds au plus bas de l’année',' · funds’ net position at its 1-year low');
-    return {t, v};
+    if(c<0 && f<0) return {v:-1, w:L('Baissier','Bearish'), t:L('La foule achète, les fonds vendent','Crowd buying, funds selling'), o:1};
+    if(c>0 && f>0) return {v:1, w:L('Haussier','Bullish'), t:L('La foule vend, les fonds achètent','Crowd selling, funds buying'), o:0};
+    if(c<0 && f>0) return {v:0, w:L('Prudence','Caution'), t:L('Tout le monde achète : risque de repli','Everyone is long: pullback risk'), o:2};
+    if(c>0 && f<0) return {v:0, w:L('Prudence','Caution'), t:L('Tout le monde vend : risque de rebond','Everyone is short: bounce risk'), o:2};
+    if(c<0) return {v:-1, w:L('Plutôt baissier','Leaning bearish'), t:L('La foule achète trop','Crowd too long'), o:1};
+    if(c>0) return {v:1, w:L('Plutôt haussier','Leaning bullish'), t:L('La foule vend trop','Crowd too short'), o:0};
+    return {v:0, w:L('Neutre','Neutral'), t:L('Pas de signal','No signal'), o:3};
+  }
+  // détail d’un actif : 4 chiffres et un seul graphique (% acheteurs des fonds sur 1 an)
+  function renderPosDetail(){
+    const box = $('posDetail'); if(!box) return;
+    const a = state.cotA, rows = cotRows(a), A = state.assets[a]||{};
+    const pct = r => r[1]/(r[1]+r[2])*100;
+    if(!rows || rows.length<3){ box.innerHTML = `<div class="panel"><div class="ph"><div><h3>${esc(TOP_NAMES[a])} · ${L('les fonds (COT)','funds (COT)')}</h3><p>${L('Historique en attente de la prochaine copie des données CFTC.','History waiting for the next CFTC data copy.')}</p></div></div></div>`; return; }
+    const rr = rows.slice(-52), last = rows[rows.length-1], prev = rows[rows.length-2], idx = cotIndex(rows, Math.min(52, rows.length));
+    const idxW = idx>=80 ? L('près du plus haut de l’année','near the 1-year high') : idx<=20 ? L('près du plus bas de l’année','near the 1-year low') : L('dans la moyenne de l’année','mid-range for the year');
+    box.innerHTML = `<div class="panel"><div class="ph"><div><h3>${esc(TOP_NAMES[a])} · ${L('ce que font les fonds','what the funds are doing')}</h3><p>${L('Gros spéculateurs, rapport COT de la CFTC (positions du mardi, publié le vendredi)','Large speculators, CFTC COT report (Tuesday positions, released Friday)')} · ${esc(perLbl(last[0]))}</p></div></div>
+      <div class="pb"><div class="psum pdet">
+        <div><span>${L('Fonds acheteurs','Funds long')}</span><b class="${pct(last)>50?'up':'dn'}">${nf(pct(last),1)} %</b><small>${sg2(pct(last)-pct(prev),1)} ${L('pt cette semaine','pt this week')}</small></div>
+        <div><span>${L('Position nette','Net position')}</span><b>${sg2(last[1]-last[2],0)}</b><small>${L('contrats','contracts')} · ${sg2((last[1]-last[2])-(prev[1]-prev[2]),0)} ${L('cette semaine','this week')}</small></div>
+        <div><span>${L('Sur 1 an','Over 1 year')}</span><b class="${idx>=80?'up':idx<=20?'dn':''}">${nf(idx,0)} / 100</b><small>${esc(idxW)}</small></div>
+        <div><span>${L('Foule (IG) acheteuse','Crowd (IG) long')}</span><b class="${A.crowdLong>=60?'dn':A.crowdLong<=40?'up':''}">${A.crowdLong!=null?nf(A.crowdLong,0)+' %':'—'}</b><small>${L('à lire à l’inverse','read in reverse')}</small></div>
+      </div>
+      <div class="cbox" style="height:260px"><canvas id="posChart"></canvas></div>
+      <p class="src">${L('Ligne = % des gros spéculateurs qui sont acheteurs, chaque semaine depuis 1 an. Au-dessus de 50 % = les fonds sont plutôt acheteurs.','Line = % of large speculators who are long, weekly over 1 year. Above 50% = funds lean long.')}</p></div></div>`;
+    needChart().then(ok=>{ if(!ok || !$('posChart')) return;
+      mkChart('posChart', {type:'line', data:{labels:rr.map(r=>perLbl(r[0])), datasets:[
+        {label:L('Fonds acheteurs (%)','Funds long (%)'), data:rr.map(r=>+pct(r).toFixed(1)), borderColor:css('--gold'), backgroundColor:'transparent', pointRadius:0, tension:.25, borderWidth:2},
+        {label:'50 %', data:rr.map(()=>50), borderColor:css('--muted'), borderDash:[4,4], pointRadius:0, borderWidth:1}]},
+        options:{plugins:{legend:{display:false}}, scales:{x:{ticks:{maxTicksLimit:7}}, y:{suggestedMin:20, suggestedMax:80, ticks:{callback:v=>v+' %'}}}}}); });
   }
   function renderSent(){
     const box = $('p2sent'); if(!box) return;
-    // mise à jour en direct : seul le VIX change, le tableau et les graphiques ne bougent pas
     if(state.noAnim && $('posVix') && box.querySelector('.postab')){ state.noAnim = false; $('posVix').innerHTML = posVixHtml(); return; }
     box.classList.toggle('noanim', !!state.noAnim); state.noAnim = false;
     if(!ASSETS[state.cotA]) state.cotA = 'xauusd';
-    const rows = Object.keys(ASSETS).map(a=>{ const A = state.assets[a]||{}, c = cotRows(a); const idx = c && c.length>3 ? cotIndex(c, Math.min(52,c.length)) : null;
-      return {a, cr:num(A.crowdLong), cot:num(A.cotLong), ch:num(A.cotChange), idx, R:posRead(num(A.crowdLong), num(A.cotLong), idx)}; });
-    const bar = (v, inv) => v==null ? '<span class="mut">—</span>' : `<span class="pbar"><i style="width:${v}%"></i></span> <b>${nf(v,0)} %</b>`;
-    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('POSITIONNEMENT · FOULE ET FONDS','POSITIONING · CROWD AND FUNDS')}</div><div class="badge" id="posVixB">${L('MIS À JOUR AVEC LE SCORECARD','UPDATED WITH THE SCORECARD')}</div></div>
-      <p class="bintro" id="posVix">${posVixHtml()}</p>
-      <p class="bintro">${L('Foule = % des clients d’IG qui sont acheteurs (petits traders : on lit à l’inverse, trop acheteurs = baissier). Fonds = % acheteurs chez les gros spéculateurs selon le rapport COT de la CFTC (on suit leur sens). Touche un actif pour voir l’historique de ses positions.','Crowd = % of IG clients who are long (retail: read in reverse, too long = bearish). Funds = % long among large speculators in the CFTC COT report (follow their side). Tap an asset to see its position history.')}</p>
-      <div class="panel"><div class="tablewrap"><table class="ptab postab"><thead><tr><th>${L('Actif','Asset')}</th><th>${L('Foule (IG) · acheteurs','Crowd (IG) · long')}</th><th>${L('Fonds (COT) · acheteurs','Funds (COT) · long')}</th><th class="r">${L('Fonds · 1 sem.','Funds · 1 wk')}</th><th>${L('Lecture','Reading')}</th></tr></thead><tbody>
+    const rows = Object.keys(ASSETS).map(a=>{ const A = state.assets[a]||{}; return {a, cr:num(A.crowdLong), cot:num(A.cotLong), ch:num(A.cotChange), R:posRead(num(A.crowdLong), num(A.cotLong))}; })
+      .sort((x,y)=>x.R.o-y.R.o || TOP_NAMES[x.a].localeCompare(TOP_NAMES[y.a]));
+    const bar = v => v==null ? '<span class="mut">—</span>' : `<span class="pbar"><i style="width:${v}%"></i></span><b>${nf(v,0)} %</b>`;
+    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('POSITIONNEMENT','POSITIONING')}</div><div class="badge" id="posVix">${posVixHtml()}</div></div>
+      <div class="howto"><b>${L('Comment lire','How to read it')}</b> ${L('On compare deux groupes. <em>La foule</em> (clients d’IG, petits traders) se trompe souvent : quand elle achète beaucoup (60 % et plus), c’est plutôt baissier. <em>Les fonds</em> (gros spéculateurs du COT) ont souvent raison : on suit leur sens. Quand les deux sont opposés, le signal est le plus fort.','We compare two groups. <em>The crowd</em> (IG clients, small traders) is often wrong: when it is heavily long (60%+), that is bearish. <em>The funds</em> (COT large speculators) are often right: follow their side. When the two disagree, the signal is strongest.')}</div>
+      <div class="panel"><div class="tablewrap"><table class="ptab postab"><thead><tr><th>${L('Actif','Asset')}</th><th>${L('Foule acheteuse','Crowd long')}</th><th>${L('Fonds acheteurs','Funds long')}</th><th>${L('Signal','Signal')}</th></tr></thead><tbody>
         ${rows.map(r=>`<tr class="${r.a===state.cotA?'sel':''}" data-pa="${r.a}"><td class="pa"><button type="button">${esc(TOP_NAMES[r.a])}</button></td>
-          <td class="pcr ${r.cr>=60?'dn':r.cr<=40?'up':''}">${bar(r.cr)}</td><td class="pcf ${r.cot>50?'up':r.cot<50?'dn':''}">${bar(r.cot)}</td>
-          <td class="num ${r.ch>0?'up':r.ch<0?'dn':''}">${r.ch==null?'—':sg2(r.ch,1)+' pt'}</td>
-          <td class="prd ${r.R.v>0?'up':r.R.v<0?'dn':''}">${esc(r.R.t)}</td></tr>`).join('')}
+          <td class="pcr ${r.cr>=60?'dn':r.cr<=40?'up':''}">${bar(r.cr)}</td>
+          <td class="pcf ${r.cot>50?'up':r.cot<50?'dn':''}">${bar(r.cot)}${r.ch!=null?`<small class="${r.ch>0?'up':r.ch<0?'dn':''}">${sg2(r.ch,1)} ${L('pt sem.','pt wk')}</small>`:''}</td>
+          <td><span class="pbias ${r.R.v>0?'bull':r.R.v<0?'bear':''}">${esc(r.R.w)}</span><small class="psig">${esc(r.R.t)}</small></td></tr>`).join('')}
       </tbody></table></div></div>
-      <div id="posDetail" class="p2gap"></div>`;
-    box.querySelectorAll('tr[data-pa]').forEach(tr=>tr.addEventListener('click', ()=>{ state.cotA = tr.dataset.pa; box.querySelectorAll('tr[data-pa]').forEach(x=>x.classList.toggle('sel', x===tr)); renderCOT(); const d = $('posDetail'); if(d) d.scrollIntoView({behavior:'smooth', block:'start'}); }));
-    renderCOT();
+      <p class="mhint2">${L('Touche un actif pour voir ce que font les fonds depuis 1 an.','Tap an asset to see what the funds have done over the past year.')}</p>
+      <div id="posDetail"></div>`;
+    box.querySelectorAll('tr[data-pa]').forEach(tr=>tr.addEventListener('click', ()=>{ state.cotA = tr.dataset.pa; box.querySelectorAll('tr[data-pa]').forEach(x=>x.classList.toggle('sel', x===tr)); renderPosDetail(); const d = $('posDetail'); if(d) d.scrollIntoView({behavior:'smooth', block:'start'}); }));
+    renderPosDetail();
   }
 
   // ---------- Or : banques centrales ----------
@@ -4335,7 +4374,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- Bank Positioning ----------
-  state.bpCat = state.bpCat || 'all';
+  state.bpCat = state.bpCat || 'mine';
   const BPC = {fx:['FX','FX','G10 majeures, croisées et dollar','G10 majors, crosses & the dollar','💱'], asia:['ASIE & ÉMERGENTS','ASIA & EM FX','Asie, Scandinavie, Europe de l’Est, Amérique latine','Asia, Scandies, CEE, Latam','🌏'], cmd:['MATIÈRES PREMIÈRES','COMMODITIES','Métaux, énergie','Metals, energy','⛏'], idx:['INDICES','INDICES','États-Unis, Europe, Asie','US, Europe, Asia','📈'], rates:['TAUX','RATES','Rendements des obligations d’État','Government bond yields','%'], crypto:['CRYPTO','CRYPTO','Majeures','Majors','₿']};
   // ---------- Banques · prévisions par marché ----------
   const BP_CAT = [['cmd',['Matières premières','Commodities']],['fx',['Devises','FX']],['idx',['Indices boursiers','Stock indices']],['rates',['Taux d’intérêt','Interest rates']],['asia',['Devises émergentes','EM currencies']],['crypto',['Crypto','Crypto']]];
@@ -4353,10 +4392,12 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     return null;
   }
   const BP_TOPCAT = {OR:'cmd', 'PÉTROLE':'cmd', FX:'fx', ACTIONS:'idx', TAUX:'rates', CRYPTO:'crypto'};
+  // marchés liés aux 16 actifs du scorecard (affichés par défaut, dans cet ordre)
+  const BK_MINE = ['XAU/USD','EUR/USD','S&P 500','Nasdaq 100','DXY','USD/JPY','GBP/USD','USD/CAD','AUD/USD','USD/CHF','NZD/USD','WTI','XAG/USD','BTC/USD','Dow Jones','Russell 2000','US 10 ans'];
   function renderBankPos(){
     const box = $('p2bankpos'); if(!box) return;
     const T = state.ts || {}, C = (T.bankcalls||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||'')), R = (T.research||[]).slice().sort((a,b)=>(b.date||'').localeCompare(a.date||''));
-    if(!['all'].concat(BP_CAT.map(c=>c[0])).includes(state.bpCat)) state.bpCat = 'all';
+    if(!['mine','all'].includes(state.bpCat)) state.bpCat = 'mine';
     state.bkBank = state.bkBank || 'all';
     const banks = [...new Set(C.map(c=>c.bank).concat(R.map(r=>r.bank)))].filter(Boolean).sort();
     const okB = x => state.bkBank==='all' || x.bank===state.bkBank;
@@ -4366,24 +4407,26 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     R.filter(okB).forEach(r=>{ const m = noteMarket(r, names); if(!m){ eco.notes.push(r); return; } const k = card(m); k.notes.push(r); k.cat = k.cat || BP_TOPCAT[r.topic] || null; });
     let cards = Object.values(mk).sort((a,b)=>(b.calls.length+b.notes.length)-(a.calls.length+a.notes.length) || a.m.localeCompare(b.m));
     if(eco.notes.length) cards.push(eco);
-    const cnt = k => Object.values(mk).filter(x=>x.cat===k).length;
-    if(state.bpCat!=='all') cards = cards.filter(x=>x.cat===state.bpCat);
+    const isMine = x => BK_MINE.includes(x.m), nMine = cards.filter(isMine).length;
+    if(state.bpCat==='mine'){ cards = cards.filter(isMine).sort((a,b)=>BK_MINE.indexOf(a.m)-BK_MINE.indexOf(b.m)); }
     const DIR = {long:['↑',L('Hausse','Up'),'up'], short:['↓',L('Baisse','Down'),'dn'], range:['↔',L('Stable','Range'),'ra']};
     const fd = d => d ? new Date(d+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric', month:'short'}) : '';
     const one = k => {
       const n = {long:0, short:0, range:0}; k.calls.forEach(c=>{ if(n[c.dir]!=null) n[c.dir]++; }); const t = k.calls.length || 1, top = Object.entries(n).sort((a,b)=>b[1]-a[1])[0];
       const verdict = !k.calls.length ? (k.eco ? '' : L('Pas de cible chiffrée','No price target')) : k.calls.length < 2 ? L('Une seule banque','One bank only') : top[1]/t > 0.5 ? (top[0]==='long' ? L('Majorité : hausse','Most see it rising') : top[0]==='short' ? L('Majorité : baisse','Most see it falling') : L('Majorité : stable','Most see a range')) : L('Avis partagés','Split views');
-      return `<div class="panel bmk"><div class="bmh"><h4>${esc(k.m)}</h4><span class="bverd ${k.calls.length>=2 && top[1]/t>0.5 ? DIR[top[0]][2] : ''}">${esc(verdict)}</span></div>
+      const vc = k.calls.length>=2 && top[1]/t>0.5 ? DIR[top[0]][2] : '';
+      const callLi = c=>{ const d = DIR[c.dir] || ['·','—',''];
+          return `<li><span class="bdir ${d[2]}" title="${esc(d[1])}">${d[0]}</span><span class="bbk">${esc(c.bank||'')}</span><span class="btg">${esc((isEN()&&c.target_en?c.target_en:c.target)||d[1])}</span><span class="bdt">${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(fd(c.date))}${c.src?' · '+esc(c.src):''}</a>`:esc(fd(c.date))}</span></li>`; };
+      const noteLi = r=>`<li><div class="bnm"><b>${esc(r.bank||'')}</b><em>${esc(fd(r.date))}</em></div>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</a>`:`<span>${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</span>`}${r.summary?`<p>${esc(isEN()&&r.summary_en?r.summary_en:r.summary)}</p>`:''}</li>`;
+      return `<div class="panel bmk"><div class="bmh"><h4>${esc(k.m)}</h4>${verdict?`<span class="pbias ${vc==='up'?'bull':vc==='dn'?'bear':''}">${esc(verdict)}</span>`:''}</div>
         ${k.calls.length ? `<div class="bcount"><span class="up">↑ ${n.long} ${L('hausse','up')}</span><span class="dn">↓ ${n.short} ${L('baisse','down')}</span><span class="ra">↔ ${n.range} ${L('stable','range')}</span></div>
         <div class="bpbar"><i class="bl" style="width:${n.long/t*100}%"></i><i class="ra" style="width:${n.range/t*100}%"></i><i class="sh" style="width:${n.short/t*100}%"></i></div>
-        <ul class="bcalls">${k.calls.map(c=>{ const d = DIR[c.dir] || ['·','—',''];
-          return `<li><span class="bdir ${d[2]}" title="${esc(d[1])}">${d[0]}</span><span class="bbk">${esc(c.bank||'')}</span><span class="btg">${esc((isEN()&&c.target_en?c.target_en:c.target)||d[1])}</span><span class="bdt">${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(fd(c.date))}${c.src?' · '+esc(c.src):''}</a>`:esc(fd(c.date))}</span></li>`; }).join('')}</ul>` : ''}
-        ${k.notes.length ? `<div class="bnh">${L('Notes de recherche','Research notes')}</div><ul class="bnl">${k.notes.slice(0,6).map(r=>`<li><div class="bnm"><b>${esc(r.bank||'')}</b><em>${esc(fd(r.date))}</em></div>
-          ${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</a>`:`<span>${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</span>`}
-          ${r.summary?`<p>${esc(isEN()&&r.summary_en?r.summary_en:r.summary)}</p>`:''}</li>`).join('')}</ul>` : ''}</div>`; };
+        <ul class="bcalls">${k.calls.slice(0,4).map(callLi).join('')}</ul>
+        ${k.calls.length>4 ? `<details class="bmore"><summary>${L(`Voir les ${k.calls.length-4} autres prévisions`, `Show ${k.calls.length-4} more forecasts`)}</summary><ul class="bcalls">${k.calls.slice(4).map(callLi).join('')}</ul></details>` : ''}` : ''}
+        ${k.notes.length ? `<details class="bmore bnotesd" ${k.calls.length ? '' : 'open'}><summary>${L(`Notes de recherche (${k.notes.length})`, `Research notes (${k.notes.length})`)}</summary><ul class="bnl">${k.notes.slice(0,6).map(noteLi).join('')}</ul></details>` : ''}</div>`; };
     box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('BANQUES · CE QU’ELLES PRÉVOIENT','BANKS · WHAT THEY FORECAST')}</div><div class="badge">${C.length} ${L('PRÉVISIONS','FORECASTS')} · ${R.length} ${L('NOTES','NOTES')}</div></div>
-      <p class="bintro">${L('Une carte par marché : les cibles de prix des grandes banques (↑ hausse, ↓ baisse, ↔ stable d’ici l’horizon donné), puis leurs notes de recherche récentes sur ce marché. Ce sont des opinions publiées, pas leurs positions réelles.','One card per market: big banks’ price targets (↑ up, ↓ down, ↔ range by the given horizon), then their recent research notes on that market. These are published opinions, not their actual positions.')}</p>
-      <div class="bfil"><div class="chips">${[['all',[L('Tous','All'),L('Tous','All')]]].concat(BP_CAT).map(([k,l])=>{ const n = k==='all' ? Object.keys(mk).length : cnt(k); return n||k==='all' ? `<button type="button" class="chip" data-bc="${k}" aria-pressed="${state.bpCat===k}">${esc(isEN()?l[1]:l[0])} <span class="cnum">${n}</span></button>` : ''; }).join('')}</div>
+      <div class="howto"><b>${L('Comment lire','How to read it')}</b> ${L('Une carte par marché. En haut, ce que la majorité des grandes banques prévoit. Chaque ligne : ↑ la banque voit le marché monter, ↓ baisser, ↔ rester stable, avec sa cible et la date. Ce sont des opinions publiées, pas leurs positions réelles.','One card per market. At the top, what most big banks expect. Each line: ↑ the bank sees the market rising, ↓ falling, ↔ flat, with its target and date. These are published opinions, not their actual positions.')}</div>
+      <div class="bfil"><div class="chips"><button type="button" class="chip" data-bc="mine" aria-pressed="${state.bpCat==='mine'}">${L('Mes actifs','My assets')} <span class="cnum">${nMine}</span></button><button type="button" class="chip" data-bc="all" aria-pressed="${state.bpCat==='all'}">${L('Tous les marchés','All markets')} <span class="cnum">${Object.keys(mk).length + (eco.notes.length?1:0)}</span></button></div>
         <select id="bkBank" class="tssel" aria-label="${L('Banque','Bank')}"><option value="all">${L('Toutes les banques','All banks')}</option>${banks.map(b=>`<option ${b===state.bkBank?'selected':''}>${esc(b)}</option>`).join('')}</select></div>
       ${cards.length ? `<div class="bmgrid">${cards.map(one).join('')}</div>` : `<div class="panel tswait">${(C.length||R.length) ? L('Rien pour ce filtre.','Nothing for this filter.') : L('Les prévisions et notes des banques arrivent avec la prochaine mise à jour (vers 17 h 07).','Bank forecasts and notes arrive with the next update (around 5:07 p.m.).')}</div>`}
       <p class="src">${L('Prévisions et notes publiques des banques (rapports, notes et entrevues reprises par Reuters, Bloomberg, CNBC, Kitco, Investing.com…), relevées et résumées par Claude. Ce ne sont pas des conseils.','Public bank forecasts and notes (reports, notes and interviews reported by Reuters, Bloomberg, CNBC, Kitco, Investing.com…), collected and summarized by Claude. Not advice.')}</p>`;
