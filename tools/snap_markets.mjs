@@ -87,13 +87,13 @@ const BANKS = [
   ['BNP.PA','BNP Paribas','FR',48.87,2.33],['8306.T','MUFG','JP',35.68,139.76],['8316.T','SMBC Group','JP',35.68,139.76],['8411.T','Mizuho','JP',35.68,139.77],['8604.T','Nomura','JP',35.68,139.77]
 ];
 
-// variation 1D = depuis l'ouverture de la séance : barre du jour (actions, indices, contrats à terme, crypto);
+// variation 1D comme TradingView = depuis la clôture de la séance précédente (actions, indices, contrats à terme, crypto);
 // forex et indice dollar : ouverture à 17 h, heure de New York (openFx, calculée sur des barres d'une heure)
 function quoteOf(res, openFx) {
   if (!res) return null; const c = res.rows.map(r => r[4]), N = c.length; if (N < 2) return null;
   const last = c[N - 1], pc = (n) => N > n ? r2((last / c[N - 1 - n] - 1) * 100, 2) : null;
   const o = openFx || res.rows[N - 1][1];
-  return {last: r2(last, dp(last)), d1: o ? r2((last / o - 1) * 100, 2) : pc(1), o: r2(o, dp(o)), w1: pc(5), m1: pc(21), spark: c.slice(-30).map(x => r2(x, dp(x))), ccy: res.meta.currency || null};
+  return {last: r2(last, dp(last)), d1: openFx ? r2((last / openFx - 1) * 100, 2) : pc(1), o: r2(o, dp(o)), w1: pc(5), m1: pc(21), spark: c.slice(-30).map(x => r2(x, dp(x))), ccy: res.meta.currency || null};
 }
 
 // ---------- outils séries ----------

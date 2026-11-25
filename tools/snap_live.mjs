@@ -93,6 +93,9 @@ const metas = syms.map(s => got[s]);
 // forex, contrats à terme et indice dollar : la journée commence à 17 h, heure de New York (1re barre après 17 h)
 // crypto : la journée commence à minuit UTC
 const op = Object.assign({}, prev.op || {});
+// variation 1D comme TradingView : depuis la clôture d'hier. Forex et indice dollar : la clôture est à 17 h (heure de New York),
+// donc l'ouverture de 17 h sert de référence; crypto : minuit UTC. Actions, indices et contrats à terme : clôture de la séance précédente.
+const useOpen = s => /=X$/.test(s) || s === 'DX-Y.NYB' || /-USD$/.test(s);
 const kind = s => /-USD$/.test(s) ? 'cry' : (/=X$|=F$/.test(s) || s === 'DX-Y.NYB') ? 'fx' : 'ex';
 const dateIn = (tz, sec) => new Intl.DateTimeFormat('en-CA', {timeZone: tz, year: 'numeric', month: '2-digit', day: '2-digit'}).format(new Date(sec * 1000));
 const sessKey = (s, sec, tz) => kind(s) === 'cry' ? new Date(sec * 1000).toISOString().slice(0, 10) : kind(s) === 'fx' ? dateIn('America/New_York', sec + 7 * 3600) : dateIn(tz || 'America/New_York', sec);
@@ -110,7 +113,7 @@ async function openOf(s, key, tz) {
 const need = [];
 syms.forEach((s, i) => { const m = metas[i]; if (!m || !m.regularMarketTime) return;
   const key = sessKey(s, m.regularMarketTime, m.exchangeTimezoneName); m._key = key;
-  if (!op[s] || op[s][0] !== key) need.push([s, key, m.exchangeTimezoneName]); });
+  if (useOpen(s) && (!op[s] || op[s][0] !== key)) need.push([s, key, m.exchangeTimezoneName]); });
 const opn = await pool(need, ([s, key, tz]) => openOf(s, key, tz), 8);
 need.forEach(([s, key], i) => { if (opn[i] != null) op[s] = [key, +opn[i].toPrecision(8)]; });
 console.error('ouvertures', need.length, 'à chercher,', opn.filter(x => x != null).length, 'trouvées');
@@ -118,7 +121,7 @@ let ok = 0;
 syms.forEach((s, i) => { const m = metas[i]; if (!m) return; ok++;
   const p = m.regularMarketPrice, pc = m.chartPreviousClose ?? m.previousClose ?? lastClose[s];
   // pas encore d'ouverture connue (ex. juste après 17 h) : le dernier cours de la séance précédente sert d'ouverture
-  const o = op[s] && op[s][0] === m._key ? op[s][1] : pc;
+  const o = useOpen(s) ? (op[s] && op[s][0] === m._key ? op[s][1] : pc) : (m.regularMarketPreviousClose ?? pc);
   q[s] = [+p.toFixed(dp(p)), o ? +((p / o - 1) * 100).toFixed(2) : null, (m.regularMarketTime || 0) * 1000, o ? +o.toPrecision(8) : null]; });
 for (const k of Object.keys(op)) if (!syms.includes(k)) delete op[k];
 console.error('cours', ok, '/', syms.length);
