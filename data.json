@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T10:48:16Z",
+  "updatedAt": "2026-11-25T11:48:22Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,52 @@
   "news": [
     {
       "date": "2026-11-25",
+      "time": "06:24",
+      "source": "Investing.com (Reuters)",
+      "impact": "high",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "us30",
+        "usd"
+      ],
+      "title": "Les contrats à terme du Nasdaq chutent de plus de 2 % alors que les pertes liées à l'IA s'aggravent; l'inflation en vue",
+      "title_en": "Nasdaq futures slide over 2% as AI losses deepen; inflation data in focus",
+      "summary": "À 6 h 01 HE, les contrats E-mini du Nasdaq 100 cédaient 2,38 %, ceux du S&P 500 1,44 % et ceux du Dow 0,76 %, plombés par la vente des titres liés à l'IA et les informations sur de nouveaux tarifs américains. Avant l'ouverture, Nvidia perdait 5,1 %, AMD 6,5 % et Micron 6 %. Le rapport PCE est attendu à 8 h 30 HE; les contrats à terme sur les fonds fédéraux intègrent 97 % de probabilité d'une hausse de taux de la Fed en décembre, selon CME FedWatch.",
+      "summary_en": "At 6:01 a.m. ET, Nasdaq 100 E-minis were down 2.38%, S&P 500 E-minis 1.44% and Dow E-minis 0.76%, weighed by selling in AI-linked stocks and reports of new U.S. tariffs. Premarket, Nvidia fell 5.1%, AMD 6.5% and Micron 6%. The PCE report is due at 8:30 a.m. ET; fed funds futures price a 97% chance of a December Fed rate hike, per CME FedWatch.",
+      "url": "https://www.investing.com/news/economy-news/nasdaq-futures-slide-over-2-on-fresh-us-tariff-concerns-inflation-data-in-focus-5050138"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "06:13",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "us30"
+      ],
+      "title": "Deere prévoit un bénéfice net 2027 inférieur aux attentes en raison d'une demande morose pour la machinerie agricole",
+      "title_en": "Deere forecasts fiscal 2027 net income below estimates amid muted farm equipment demand",
+      "summary": "Deere prévoit un bénéfice net de 4,50 à 5,25 G$ pour l'exercice 2027, sous les 5,91 G$ attendus par les analystes (LSEG). Le bénéfice trimestriel a légèrement reculé à 1,05 G$, soit 3,89 $ par action, contre 1,07 G$ un an plus tôt. L'action, membre du Dow et du S&P 500, perdait environ 4 % avant l'ouverture.",
+      "summary_en": "Deere forecast fiscal 2027 net income of $4.50 billion to $5.25 billion, below the $5.91 billion analysts expected (LSEG). Quarterly net income edged down to $1.05 billion, or $3.89 per share, from $1.07 billion a year earlier. Shares of the Dow and S&P 500 component fell about 4% premarket.",
+      "url": "https://www.investing.com/news/stock-market-news/deere-forecasts-fiscal-2027-net-income-below-estimates-5050370"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "05:45",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usoil"
+      ],
+      "title": "Le pétrole prolonge ses pertes sur fond d'attentes de surabondance de l'offre et de tensions persistantes au Moyen-Orient",
+      "title_en": "Oil extends losses amid supply surplus expectations, ongoing Mideast tensions",
+      "summary": "Les cours du pétrole prolongent leur recul mercredi, les attentes d'un surplus d'offre l'emportant sur les tensions persistantes au Moyen-Orient. (Article non consulté en entier : résumé limité au titre.)",
+      "summary_en": "Oil prices extended losses on Wednesday as expectations of a supply surplus outweighed ongoing Middle East tensions. (Full article not accessed: summary limited to the headline.)",
+      "url": "https://www.investing.com/news/commodities-news/oil-mixed-as-hormuz-attacks-mount-supply-surplus-and-weak-fuel-margins-weigh-5049487"
+    },
+    {
+      "date": "2026-11-25",
       "time": "05:19",
       "source": "Investing.com",
       "impact": "med",
@@ -1777,22 +1823,6 @@
       "title": "Le pétrole recule, les craintes de surabondance l'emportent sur les risques au Moyen-Orient",
       "title_en": "Oil prices fall as supply glut concerns offset Middle East disruption fears",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-supply-glut-concerns-offset-middle-east-disruption-fears-5049537"
-    },
-    {
-      "assets": [
-        "spx500",
-        "nasdaq",
-        "us30"
-      ],
-      "date": "2026-11-24",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Vers 19 h 58 (HE), les contrats sur le S&P 500 reculaient de 0,3 % à 7 193,50 points, ceux sur le Nasdaq 100 de 0,4 % à 26 168,75 et ceux sur le Dow de 0,3 % à 49 930, après une séance où le Nasdaq a perdu 1,5 % et le S&P 500 0,5 %, Nvidia cédant près de 6 %. Mercredi, l'indice PCE, le PIB préliminaire du T3, les demandes de chômage et les commandes de biens durables sont attendus; selon le CME FedWatch, la probabilité d'une hausse de 25 points de base en décembre est de 96 %.",
-      "summary_en": "Around 19:58 ET, S&P 500 futures were down 0.3% at 7,193.50, Nasdaq 100 futures down 0.4% at 26,168.75 and Dow futures down 0.3% at 49,930, after a session in which the Nasdaq lost 1.5% and the S&P 500 0.5%, with Nvidia falling nearly 6%. Wednesday brings the PCE price index, preliminary Q3 GDP, jobless claims and durable goods; CME FedWatch puts the odds of a 25-basis-point hike in December at 96%.",
-      "time": "20:12",
-      "title": "Les contrats à terme de Wall Street reculent après la baisse du S&P 500 et du Nasdaq; l'inflation en vue",
-      "title_en": "Wall St futures fall after S&P 500, Nasdaq end lower; inflation data eyed",
-      "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
     },
     {
       "assets": [
@@ -2088,39 +2118,6 @@
       "title": "Wall Street sous pression au lendemain du rallye explosif mené par Nvidia; la confiance des consommateurs bondit",
       "title_en": "Wall Street largely under pressure a day after explosive rally led by Nvidia; consumer confidence jumps",
       "url": "https://in.investing.com/news/stock-market-news/us-stock-futures-steady-after-nvidialed-wall-street-rally-5722235"
-    },
-    {
-      "assets": [
-        "usd",
-        "eurusd",
-        "usdjpy",
-        "gbpusd",
-        "audusd",
-        "nzdusd"
-      ],
-      "date": "2026-11-24",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le dollar américain recule alors que s'essouffle le rallye de l'IA mené par Nvidia, qui l'avait porté plus tôt dans la journée sur des paris d'une hausse de taux de la Fed. Ce repli redonne de l'air à l'euro, au yen, à la livre et aux devises du Pacifique. (Article complet non accessible; résumé limité au titre.)",
-      "summary_en": "The U.S. dollar is slipping as the Nvidia-led AI rally fades, after it had climbed earlier in the day on bets of a Fed rate hike. The pullback gives some relief to the euro, yen, pound and Pacific currencies. (Full article not accessible; summary limited to the headline.)",
-      "time": "10:18",
-      "title": "Le dollar glisse alors que le rallye de l'IA alimenté par Nvidia s'essouffle",
-      "title_en": "Dollar slips as Nvidia-fueled AI rally fades",
-      "url": "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813"
-    },
-    {
-      "assets": [
-        "nasdaq"
-      ],
-      "date": "2026-11-24",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon un analyste cité par Investing.com, l'acquisition de Zscaler par CrowdStrike, d'une valeur de 44 milliards $, positionne l'entreprise comme le principal acteur de la sécurité « zero trust ». Cette transaction majeure dans la cybersécurité est suivie de près par les investisseurs du secteur technologique du Nasdaq.",
-      "summary_en": "According to an analyst cited by Investing.com, CrowdStrike's $44 billion acquisition of Zscaler positions the company as the top zero trust security player. The major cybersecurity deal is closely watched by Nasdaq tech investors.",
-      "time": "10:00",
-      "title": "Un analyste estime que l'acquisition de Zscaler pour 44 G$ fait de CrowdStrike le leader du « zero trust »",
-      "title_en": "Analyst says CrowdStrike's $44B Zscaler deal makes it top zero trust player",
-      "url": "https://www.investing.com/news/stock-market-news/analyst-says-crowdstrikes-44b-zscaler-deal-makes-it-top-zero-trust-player-5048650"
     }
   ],
   "live": {
