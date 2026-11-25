@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T07:48:14Z",
+  "updatedAt": "2026-11-25T08:42:43Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,41 @@
   "news": [
     {
       "date": "2026-11-25",
+      "time": "02:44",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "spx500",
+        "nasdaq",
+        "xauusd"
+      ],
+      "title": "Les rendements des bons du Trésor reculent dans l'attente d'un indicateur clé d'inflation",
+      "title_en": "Treasury yields fall as investors await key inflation signal",
+      "summary": "Les rendements des bons du Trésor américain reculent mercredi matin alors que les investisseurs attendent une donnée d'inflation importante (l'indice PCE). Une détente des taux tend à peser sur le dollar et à soutenir l'or et les actions sensibles aux taux; l'article n'a pas pu être lu en entier.",
+      "summary_en": "U.S. Treasury yields are falling Wednesday morning as investors await a key inflation reading (the PCE index). Lower yields tend to weigh on the dollar and support gold and rate-sensitive stocks; the full article could not be read.",
+      "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "02:00",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usdjpy",
+        "nasdaq",
+        "usoil",
+        "xauusd",
+        "usd"
+      ],
+      "title": "Tokyo ferme en baisse : le Nikkei 225 perd 2,62 %, SoftBank chute de 14,8 %",
+      "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 2.62%",
+      "summary": "Le Nikkei 225 a clôturé en baisse de 2,62 %, plombé notamment par Ibiden (-16,01 %), SoftBank Group (-14,83 %) et Fujikura (-14,70 %), des titres liés à l'IA. Au même moment, le WTI de janvier cédait 2,04 % à 80,38 $, l'or de décembre 1,19 % à 3 519,40 $ et l'USD/JPY restait stable à 159,27, l'indice dollar gagnant 0,23 % à 103,99. La vente sur l'IA continue de se propager en Asie avant l'ouverture américaine.",
+      "summary_en": "The Nikkei 225 closed down 2.62%, dragged by AI-linked names such as Ibiden (-16.01%), SoftBank Group (-14.83%) and Fujikura (-14.70%). At the same time, January WTI fell 2.04% to $80.38, December gold 1.19% to $3,519.40, and USD/JPY was flat at 159.27, with the dollar index up 0.23% at 103.99. The AI selloff keeps spreading across Asia ahead of the U.S. open.",
+      "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-262-5049846"
+    },
+    {
+      "date": "2026-11-25",
       "time": "01:23",
       "source": "Investing.com",
       "impact": "med",
@@ -2081,35 +2116,6 @@
       "summary": "Le bitcoin poursuit son repli mardi alors que les sorties de capitaux des FNB bitcoin au comptant américains pour novembre atteignent un record mensuel de 4,71 milliards $, selon CoinDesk. Ces retraits institutionnels pèsent sur le BTC, qui a déjà effacé son rebond de lundi lié à Nvidia.",
       "summary_en": "Bitcoin keeps sliding on Tuesday as November outflows from U.S. spot bitcoin ETFs reach a monthly record of $4.71 billion, according to CoinDesk. The institutional withdrawals weigh on BTC, which has already given back Monday's Nvidia-driven rebound.",
       "url": "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "07:11",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq"
-      ],
-      "title": "Analog Devices bat les attentes, mais sa prévision pour le premier trimestre déçoit",
-      "title_en": "Analog Devices beats estimates but issues lower-than-expected first-quarter forecast",
-      "summary": "Analog Devices a publié un bénéfice par action supérieur de 0,17 $ aux attentes et des revenus au-dessus des prévisions, mais sa prévision de bénéfice pour le premier trimestre est inférieure au consensus. Le titre recule avant l'ouverture, ajoutant à la pression sur les semi-conducteurs du Nasdaq.",
-      "summary_en": "Analog Devices posted earnings per share $0.17 above estimates and revenue that topped forecasts, but guided first-quarter earnings below consensus. The stock is falling premarket, adding to pressure on Nasdaq chipmakers.",
-      "url": "https://www.investing.com/news/stock-market-news/analog-devices-unveils-lowerthanexpected-firstquarter-earnings-forecast-5047864"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "06:44",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "title": "Les titres de puces américains reculent avant l'ouverture après le rallye mené par Nvidia au retour de Huang",
-      "title_en": "U.S. chip stocks fall premarket after Nvidia-led rally on Huang's return",
-      "summary": "Les fabricants de semi-conducteurs américains reculent en préouverture mardi, après le fort rallye de lundi déclenché par le retour de Jensen Huang à la tête de Nvidia. Les contrats à terme de Wall Street fléchissent aussi; le recul des puces pèse surtout sur le Nasdaq.",
-      "summary_en": "U.S. semiconductor stocks slip in premarket trading Tuesday after Monday's sharp rally sparked by Jensen Huang's return as Nvidia CEO. Wall Street futures also edge lower, with the chip pullback weighing mostly on the Nasdaq.",
-      "url": "https://www.investing.com/news/stock-market-news/us-chip-stocks-fall-premarket-after-nvidialed-rally-on-huangs-return-5047723"
     }
   ],
   "live": {
