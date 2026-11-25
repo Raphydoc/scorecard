@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T12:37:04Z",
+  "updatedAt": "2026-11-25T12:43:23Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,55 @@
   "news": [
     {
       "date": "2026-11-25",
+      "time": "07:18",
+      "source": "CoinDesk",
+      "impact": "high",
+      "assets": [
+        "usd",
+        "spx500",
+        "nasdaq",
+        "xauusd",
+        "btcusd",
+        "eurusd",
+        "usdjpy"
+      ],
+      "title": "PCE d'octobre attendu à 8 h 30 : une hausse de taux de la Fed en décembre déjà intégrée par le marché",
+      "title_en": "October PCE due at 8:30 a.m.: December Fed rate hike already priced in",
+      "summary": "L'indice PCE de base d'octobre, la mesure d'inflation préférée de la Fed, est publié à 8 h 30 (HE); les prévisions suivies par le WSJ le voient passer à 3,2 % contre 3,1 % en septembre, et l'inflation globale à 3,8 % contre 3,6 %. Le marché intègre déjà une hausse d'un quart de point en décembre (taux directeur à 4 %-4,25 %) et environ 60 % de chances d'une autre hausse en janvier. Un chiffre au-dessus des attentes renforcerait le dollar et pèserait sur l'or, les actions et le bitcoin, qui a perdu environ 24 % ce mois-ci.",
+      "summary_en": "October core PCE, the Fed's preferred inflation gauge, is due at 8:30 a.m. ET; WSJ-tracked forecasts see it rising to 3.2% from 3.1% in September, with headline inflation at 3.8% from 3.6%. Markets already price a quarter-point December hike (to 4%-4.25%) and about a 60% chance of another in January. A hotter print would support the dollar and weigh on gold, stocks and bitcoin, which is down about 24% this month.",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/25/fed-s-preferred-inflation-gauge-lands-with-a-december-rate-increase-already-priced-in"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "07:17",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Les titres liés à l'IA prolongent leur glissade avant l'ouverture, les coûts des infrastructures inquiètent",
+      "title_en": "AI stocks slide on fears over infrastructure buildout costs",
+      "summary": "Les fabricants de puces, de serveurs et les exploitants de centres de données reculent avant l'ouverture : Dell chute de 7,2 % malgré une troisième hausse de ses prévisions annuelles et un rachat d'actions supplémentaire de 25 G$, et Nvidia perd 4,6 % après un repli de 6 % mardi. CoreWeave et Nebius cèdent environ 6 %, et le rendement de l'obligation 2031 de CoreWeave grimpe à près de 18 %. Les grandes plateformes (Oracle, Alphabet, Amazon, Meta, Microsoft) reculent de 1,4 % à 4,3 %, ce qui pèse sur le Nasdaq.",
+      "summary_en": "Chipmakers, server makers and data center operators fell premarket: Dell slumped 7.2% despite a third raise to its annual forecasts and an extra $25 billion buyback, and Nvidia fell 4.6% after Tuesday's 6% slide. CoreWeave and Nebius dropped about 6%, and CoreWeave's 2031 bond yield rose to almost 18%. Oracle, Alphabet, Amazon, Meta and Microsoft were down 1.4% to 4.3%, weighing on the Nasdaq.",
+      "url": "https://www.investing.com/news/stock-market-news/ai-stocks-slide-on-fears-over-infrastructure-buildout-costs-5050519"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "06:57",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "L'ether chute deux fois plus que le bitcoin; sixième journée de sorties pour les FNB bitcoin au comptant",
+      "title_en": "Bitcoin holds up better than ether as stocks slide, ETF outflows hit sixth day",
+      "summary": "Le bitcoin s'échange à 58 586 $ (-1,2 % depuis minuit UTC), tandis que l'ether (1 643 $, -2,2 %) et l'indice DeFi de CoinDesk (-2,6 %) reculent environ deux fois plus, sur fond de reprise de la vente sur les actions. Les FNB bitcoin au comptant américains ont perdu 231,4 M$ mardi, une sixième séance de sorties d'affilée (environ 4,94 G$ en novembre, selon Farside). L'indice de peur et de cupidité de CoinMarketCap est à 8, en « peur extrême ».",
+      "summary_en": "Bitcoin traded at $58,586 (down 1.2% since midnight UTC), while ether ($1,643, down 2.2%) and the CoinDesk DeFi Select Index (down 2.6%) fell about twice as hard as the equities selloff resumed. US spot bitcoin ETFs lost $231.4 million on Tuesday, a sixth straight day of outflows (about $4.94 billion in November, per Farside). CoinMarketCap's Fear and Greed Index sits at 8, 'extreme fear'.",
+      "url": "https://www.coindesk.com/markets/2026/11/25/ether-defi-fall-twice-as-hard-as-bitcoin-as-equities-selloff-resumes"
+    },
+    {
+      "date": "2026-11-25",
       "time": "06:24",
       "source": "Investing.com (Reuters)",
       "impact": "high",
@@ -2070,54 +2119,6 @@
       "title": "Le dollar canadien rebondit d'un creux de 19 mois alors que le dollar américain recule",
       "title_en": "Canadian dollar rebounds from 19-month low as U.S. dollar retreats",
       "url": "https://www.investing.com/news/forex-news/canadian-dollar-rebounds-from-19month-low-as-us-dollar-retreats-5048801"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-24",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon des notes internes obtenues par Reuters, Microsoft a déclaré un « code rouge » à l'interne après une panne qualifiée d'historique. Microsoft étant l'un des plus gros poids du Nasdaq et du S&P 500, la fiabilité de ses services infonuagiques est suivie de près par les investisseurs. (Article complet non accessible; résumé limité au titre.)",
-      "summary_en": "According to internal memos obtained by Reuters, Microsoft declared an internal 'Code Red' after an outage described as historic. As one of the largest weights in the Nasdaq and S&P 500, the reliability of its cloud services is closely watched by investors. (Full article not accessible; summary limited to the headline.)",
-      "time": "11:12",
-      "title": "Exclusif : Microsoft déclare un « code rouge » après une panne historique, selon des notes internes",
-      "title_en": "Exclusive: Microsoft declares 'Code Red' after historic outage, internal memos show",
-      "url": "https://www.investing.com/news/stock-market-news/exclusivemicrosoft-declares-code-red-after-historic-outage-internal-memos-show-5048702"
-    },
-    {
-      "assets": [
-        "spx500",
-        "rut",
-        "us30"
-      ],
-      "date": "2026-11-24",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Les actions de détaillants grimpent à l'approche du Black Friday, portées par des résultats supérieurs aux attentes; Abercrombie a relevé ses prévisions annuelles de ventes et de bénéfices, Best Buy ses cibles annuelles et Dick's Sporting Goods sa prévision de bénéfice annuel, selon d'autres titres d'Investing.com du jour. La vigueur du consommateur américain soutient le S&P 500 et les petites capitalisations du Russell 2000. (Article complet non accessible; résumé limité au titre.)",
-      "summary_en": "Retail stocks are climbing into Black Friday on earnings beats; Abercrombie raised its annual sales and profit forecast, Best Buy lifted its annual targets and Dick's Sporting Goods raised its annual profit forecast, according to other Investing.com headlines today. Strength in the U.S. consumer supports the S&P 500 and the Russell 2000 small caps. (Full article not accessible; summary limited to the headline.)",
-      "time": "11:07",
-      "title": "Les titres du commerce de détail bondissent à l'approche du Black Friday grâce à des résultats supérieurs aux attentes",
-      "title_en": "Retail stocks surge into Black Friday amid earnings beats",
-      "url": "https://www.investing.com/news/stock-market-news/retail-stocks-surge-into-black-friday-amid-earnings-beats-5048699"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30",
-        "usd"
-      ],
-      "date": "2026-11-24",
-      "impact": "high",
-      "source": "Investing.com",
-      "summary": "À 10 h 35 (HE), le Nasdaq Composite recule de 1,7 % à 23 681,12 points et le S&P 500 de 0,8 % à 7 180,64, tandis que le Dow Jones gagne 0,3 % à 49 731,80, après la meilleure séance depuis avril 2025. L'indice de confiance des consommateurs du Conference Board grimpe à 103,3 en novembre, contre 91,9 en octobre. Les marchés évaluent à environ 96 % la probabilité d'une hausse de taux de 25 points de base par la Fed en décembre (CME FedWatch), un contexte favorable au dollar.",
-      "summary_en": "At 10:35 ET, the Nasdaq Composite fell 1.7% to 23,681.12 and the S&P 500 fell 0.8% to 7,180.64, while the Dow rose 0.3% to 49,731.80, following the best session since April 2025. The Conference Board consumer confidence index rose to 103.3 in November from 91.9 in October. Traders price roughly a 96% probability of a 25-basis-point Fed rate hike in December (CME FedWatch), supportive for the dollar.",
-      "time": "10:35",
-      "title": "Wall Street sous pression au lendemain du rallye explosif mené par Nvidia; la confiance des consommateurs bondit",
-      "title_en": "Wall Street largely under pressure a day after explosive rally led by Nvidia; consumer confidence jumps",
-      "url": "https://in.investing.com/news/stock-market-news/us-stock-futures-steady-after-nvidialed-wall-street-rally-5722235"
     }
   ],
   "live": {
