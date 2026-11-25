@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-24T23:48:35Z",
+  "updatedAt": "2026-11-25T00:45:16Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,20 @@
   "news": [
     {
       "date": "2026-11-24",
+      "time": "19:09",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "usdjpy"
+      ],
+      "title": "Le Nikkei devrait monter l'an prochain sans retrouver son record, selon un sondage Reuters",
+      "title_en": "Japan's Nikkei to rise next year but fall short of record as investors reassess AI trade: Reuters poll",
+      "summary": "Selon la médiane de 22 stratèges sondés par Reuters du 16 au 24 novembre, le Nikkei atteindrait 65 000 points d'ici juin 2027, 67 500 en fin d'année et 69 000 à la mi-2028, sous son sommet de 72 831,73 atteint en juin. L'indice a bondi de près de 4 % mardi pour clôturer à 58 644,63, mais reste environ 20 % sous ce pic, les investisseurs réévaluant le thème de l'IA. Le sentiment envers les actions japonaises influence l'appétit pour le risque en Asie et le yen.",
+      "summary_en": "According to the median of 22 strategists polled by Reuters from Nov. 16 to 24, the Nikkei would reach 65,000 by June 2027, 67,500 by year-end and 69,000 by mid-2028, below its June peak of 72,831.73. The index jumped nearly 4% on Tuesday to close at 58,644.63 but remains around 20% below that peak as investors reassess the AI trade. Sentiment toward Japanese equities affects Asian risk appetite and the yen.",
+      "url": "https://www.investing.com/news/stock-market-news/japans-nikkei-to-rise-next-year-but-fall-short-of-record-as-investors-reassess-ai-trade-reuters-poll-5049409"
+    },
+    {
+      "date": "2026-11-24",
       "time": "17:48",
       "source": "Investing.com",
       "impact": "med",
@@ -2097,22 +2111,6 @@
       "summary": "CNBC analyse le risque de récession en France à la lumière des indices PMI d'activité. Un affaiblissement de la deuxième économie de la zone euro pèserait sur l'euro et sur les attentes envers la BCE.",
       "summary_en": "CNBC examines France's recession risk in light of the PMI business surveys. A weakening of the euro zone's second-largest economy would weigh on the euro and on expectations for the ECB.",
       "url": "https://www.cnbc.com/2026/11/24/france-recession-risk-pmi.html"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "01:49",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "eurusd"
-      ],
-      "title": "Sanofi va acquérir l'américaine Insmed pour 41 milliards $ en espèces",
-      "title_en": "Sanofi to acquire Insmed in $41 billion cash deal",
-      "summary": "Le pharmaceutique français Sanofi a conclu une entente pour acquérir la société américaine Insmed, cotée au Nasdaq, dans une transaction entièrement en espèces de 41 milliards $. Ce méga-rachat transatlantique relance l'activité de fusions dans le secteur de la santé.",
-      "summary_en": "French drugmaker Sanofi has agreed to acquire Nasdaq-listed U.S. company Insmed in an all-cash deal worth $41 billion. The transatlantic mega-deal revives M&A activity in the healthcare sector.",
-      "url": "https://www.investing.com/news/stock-market-news/sanofi-to-acquire-insmed-in-41-billion-cash-deal-5047167"
     }
   ],
   "live": {
