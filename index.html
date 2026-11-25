@@ -1331,7 +1331,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
       <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
       <li><strong>Dollar US (DXY) :</strong> toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.</li>
-      <li><strong>Technique :</strong> tendance de la semaine ±2 (au-dessus de l’ouverture de la semaine et de la clôture de la semaine passée = +2, en dessous des deux = −2), saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
+      <li><strong>Technique :</strong> tendance de la semaine ±2 (au-dessus de l’ouverture de la semaine et de la clôture de la semaine passée = +2, en dessous des deux = −2), saisonnalité ±1 (comportement moyen du mois en cours sur 20 ans : au moins +0,5 % en moyenne et en hausse 55 % des années ou plus = +1, l’inverse = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur 5 séances, ±0,03 point) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
       <li><strong>Poids :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom); les autres valent ×1, donc chaque donnée vaut au maximum ±2. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.</li>
       <li>Total de −max à +max (le max dépend de l'actif, environ ±24 à ±27) : 4 à 9 = haussier/baissier, 10 et plus = très haussier/très baissier, de −3 à +3 = neutre.</li>
@@ -1518,7 +1518,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const A = state.assets[asset] || blankAsset();
     const r = {};
     r.trend = A.trend==='bull'?2:A.trend==='bear'?-2:0;
-    r.season = A.season==='bull'?1:A.season==='bear'?-1:0;
+    { const sd = seasDir(asset); r.season = sd==='bull'?1:sd==='bear'?-1:0; }
     const cl = num(A.cotLong), cc = num(A.cotChange), cr = num(A.crowdLong);
     r.cotNet = cl===null?0:sgn(cl-50);
     r.cotChg = cc===null?0:sgn(cc);
@@ -1554,12 +1554,23 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const catChip = (s, strong) => { const [t,c]=label(s,strong); return `<span class="chip txt ${c}">${t}</span>`; };
 
   // ---------- formatting ----------
+  const MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+  // moyenne du mois en cours ≥ +0,5 % et en hausse au moins 55 % des années = +1; ≤ −0,5 % et en hausse au plus 45 % des années = −1
+  function seasNow(asset){
+    const S = state.tech && state.tech.seas && state.tech.seas[asset]; if(!S || !S.month) return null;
+    const m = +new Date().toLocaleString('en-US', {timeZone:'America/New_York', month:'numeric'}) - 1;
+    const avg = S.month[m], win = S.monthWin ? S.monthWin[m] : null; if(avg==null) return null;
+    const v = avg >= 0.5 && (win==null || win >= 55) ? 'bull' : avg <= -0.5 && (win==null || win <= 45) ? 'bear' : 'neutral';
+    return {v, avg, win, m, years:S.years, from:Math.max(S.from, S.to - S.years + 1), to:S.to};
+  }
+  const seasDir = a => { const N = seasNow(a); return N ? N.v : ((state.assets[a]||{}).season || 'neutral'); };
   function fmt(v, unit, signed){
     v = num(v); if(v===null) return '—';
     let s = Math.abs(v)>=100 ? (+v.toFixed(1)).toString() : (+v.toFixed(2)).toString();
     if(signed && v>0) s = '+'+s;
     s = s.replace('-', '−');
-    return s + (unit||'');
+    if(!isEN()) s = s.replace('.', ',');
+    return s + (unit==='%' && !isEN() ? ' %' : (unit||''));
   }
   function fmtDate(iso){
     if(!iso) return '—';
@@ -1611,8 +1622,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const AS0 = autoSrc(), atT = state.live2 && state.live2.tr && AS0.tr===state.live2.tr ? state.live2.asOf : (state.mk||{}).asOf;
     h += `<tr><td class="name">Tendance de la semaine${updTag(atT)}</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
       <td class="desc" colspan="4">${autoTrendTxt(asset)}</td></tr>`;
-    h += `<tr><td class="name">Saisonnalité (3 derniers mois)${A.uSeason?updTag(A.uSeason):state.econ.seasonMonth?updTag(state.econ.seasonMonth+'-01'):''}</td><td class="sig" data-dd="top|${asset}|season">${chip(r.season)}</td>
-      <td class="desc" colspan="4">${A.seasonPct!=null&&A.seasonPct!==undefined ? 'Variation '+(A.seasonPeriod?'de '+esc(A.seasonPeriod):'des 3 derniers mois')+' : '+(A.seasonPct>0?'+':'')+String(A.seasonPct).replace('.',',').replace('-','−')+' % (plus de +1 % = +1, moins de −1 % = −1). Mise à jour chaque mois.' : 'Variation des 3 derniers mois complets, mise à jour chaque mois (±1).'}</td></tr>`;
+    const SN = seasNow(asset);
+    h += `<tr><td class="name">Saisonnalité (mois en cours)${SN && state.tech.asOf ? updTag(state.tech.asOf) : A.uSeason?updTag(A.uSeason):''}</td><td class="sig" data-dd="top|${asset}|season">${chip(r.season)}</td>
+      <td class="desc" colspan="4">${SN ? L(`En ${MOIS[SN.m]}, sur les ${SN.years} dernières années (${SN.from}–${SN.to}) : ${sg2(SN.avg,2)} % en moyenne, en hausse ${SN.win} % des années (≥ +0,5 % et ≥ 55 % = +1; ≤ −0,5 % et ≤ 45 % = −1).`, `In ${MONTHS[SN.m]}, over the last ${SN.years} years (${SN.from}–${SN.to}): ${sg2(SN.avg,2)}% on average, up ${SN.win}% of years (≥ +0.5% and ≥ 55% = +1; ≤ −0.5% and ≤ 45% = −1).`) : L('Comportement moyen de l’actif pendant le mois en cours (20 dernières années).','Average behaviour of the asset in the current month (last 20 years).')}</td></tr>`;
 
     h += head('Activité institutionnelle', catChip(C.cats.inst,2), ['Long %','Short %','Changement %','']);
     const cl = num(A.cotLong);
@@ -2909,7 +2921,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function cellWord(a, C, k){
     const A = state.assets[a] || {}, V = state.econ.values || {};
     if(k==='trend') return A.trend==='bull'?L('TENDANCE ↑','TREND ↑'):A.trend==='bear'?L('TENDANCE ↓','TREND ↓'):L('NEUTRE','NEUTRAL');
-    if(k==='season') return A.season==='bull'?L('SAISON ↑','SEASON ↑'):A.season==='bear'?L('SAISON ↓','SEASON ↓'):L('SAISON PLATE','FLAT SEASON');
+    if(k==='season'){ const sd = seasDir(a); return sd==='bull'?L('SAISON ↑','SEASON ↑'):sd==='bear'?L('SAISON ↓','SEASON ↓'):L('SAISON PLATE','FLAT SEASON'); }
     if(k==='cot'){ const c = num(A.cotLong); return c===null?'—':c>50?L('FONDS ACHETEURS','FUNDS LONG'):L('FONDS VENDEURS','FUNDS SHORT'); }
     if(k==='crowd'){ const c = num(A.crowdLong); return c===null?'—':c>=60?L('FOULE TROP LONGUE','CROWD TOO LONG'):c<=40?L('FOULE TROP COURTE','CROWD TOO SHORT'):L('FOULE PARTAGÉE','CROWD SPLIT'); }
     if(k==='yield10'){ const y = state.econ.yield10y; return y==='rising'?L('TAUX ↑','YIELDS ↑'):y==='falling'?L('TAUX ↓','YIELDS ↓'):L('TAUX STABLES','YIELDS FLAT'); }
@@ -2994,8 +3006,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       const t = ((state.tech||{}).assets||{})[a]; if(t) rows += ddRow(L('Tendance calculée (prix)','Computed trend (price)'), tw('trend',t.trend).t) + ddRow('MM200', `${pxFmt(t.sma200)} (${sg2(t.d200,1)} %)`);
       txt = L('Calculée automatiquement environ chaque minute sur ta page GitHub (chaque heure dans la version Claude), pour la semaine en cours (du dimanche 17 h au vendredi 17 h, heure de New York) : haussière (+2) si le prix est au-dessus de l’ouverture de la semaine ET de la clôture de la semaine passée, baissière (−2) s’il est en dessous des deux, sinon neutre (0).', 'Computed automatically about every minute on your GitHub page (hourly in the Claude version), for the current week (Sunday 5 p.m. to Friday 5 p.m., New York time): bullish (+2) when price is above the weekly open AND last week’s close, bearish (−2) when below both, otherwise neutral (0).');
       extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="tech">${L('Heatmap technique','Technical heatmap')}</button></div>`; }
-    if(k==='season'){ title = L('Saisonnalité (3 derniers mois)','Seasonality (last 3 months)'); rows = ddRow(L('Période','Period'), esc(A.seasonPeriod||'—')) + ddRow(L('Variation','Change'), A.seasonPct!=null?sg2(A.seasonPct,1)+' %':'—', A.seasonPct>0?'pos':A.seasonPct<0?'neg':'');
-      txt = L(`Si ${AN(a)} a monté de plus de 1 % sur les 3 derniers mois, c’est +1 (la tendance récente est ton amie); s’il a baissé de plus de 1 %, c’est −1.`, `If ${AN(a)} rose more than 1% over the last 3 months it is +1 (the recent trend is your friend); if it fell more than 1%, −1.`);
+    if(k==='season'){ const SN = seasNow(a); title = L('Saisonnalité (mois en cours)','Seasonality (current month)');
+      rows = SN ? ddRow(L('Mois','Month'), esc(isEN()?MONTHS[SN.m]:MOIS[SN.m])) + ddRow(L('Moyenne historique','Historical average'), sg2(SN.avg,2)+' %', SN.avg>0?'pos':SN.avg<0?'neg':'') + ddRow(L('Années en hausse','Up years'), SN.win+' %') + ddRow(L('Période étudiée','Period studied'), SN.from+'–'+SN.to) : ddRow(L('Données','Data'), '—');
+      txt = L(`Si ${AN(a)} monte en moyenne d’au moins 0,5 % pendant ce mois-ci et qu’il a monté au moins 55 % des années, c’est +1; s’il baisse d’au moins 0,5 % en moyenne et qu’il a monté au plus 45 % des années, c’est −1. Sinon 0. Le calcul change tout seul le 1er de chaque mois.`, `If ${AN(a)} rises at least 0.5% on average in this month and was up at least 55% of years, it is +1; if it falls at least 0.5% on average and was up at most 45% of years, −1. Otherwise 0. It updates by itself on the 1st of each month.`);
       const s = ((state.tech||{}).seas||{})[a], mo = new Date().getMonth(); if(s) rows += ddRow(L('Ce mois-ci (historique)','This month (history)'), `${sg2(s.month[mo],2)} % · ${s.monthWin[mo]} % ${L('positif','positive')}`, s.month[mo]>=0?'pos':'neg');
       extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="seas">${L('Labo de saisonnalité','Seasonality lab')}</button></div>`; }
     if(k==='cot'){ title = L('Positionnement COT','COT positioning'); const cl = num(A.cotLong), cc = num(A.cotChange);
@@ -4629,7 +4642,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'Croissance économique':'Economic growth','Inflation':'Inflation','Marché de l’emploi':'Labor market',
     'Données propres à l’actif':'Asset-specific data',
     'Tendance 4H / Daily':'4H / Daily trend','Ta lecture de la tendance sur le 4H et le Daily (±2)':'Your read of the 4H and Daily trend (±2)',
-    'Saisonnalité (3 derniers mois)':'Seasonality (last 3 months)',
+    'Saisonnalité (mois en cours)':'Seasonality (current month)',
     'Variation des 3 derniers mois complets, mise à jour chaque mois (±1).':'Change over the last 3 full months, updated monthly (±1).',
     'COT · positionnement net':'COT · net positioning','non-commerciaux':'non-commercial','COT · dernier changement':'COT · latest change',
     'Positionnement retail':'Retail positioning','clients d’IG · contrarien : foule très longue = baissier':'IG clients · contrarian: very long crowd = bearish',
@@ -4660,7 +4673,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.':'any stronger-than-expected data (growth, jobs or inflation) = +1, because it pushes the Fed to keep rates high; rising 10-year = +1. Crowd sentiment: inverse of IG clients on EUR/USD.',
     '(Nasdaq seulement) : mieux que prévu = +1, moins bien = −1.':'(Nasdaq only): better than expected = +1, worse = −1.',
     'Technique :':'Technical:',
-    'tendance de la semaine ±2 (au-dessus de l’ouverture de la semaine et de la clôture de la semaine passée = +2, en dessous des deux = −2), saisonnalité ±1 (variation des 3 derniers mois complets : plus de +1 % = +1, moins de −1 % = −1).':'this week’s trend ±2 (above the weekly open and last week’s close = +2, below both = −2), seasonality ±1 (change over the last 3 full months: above +1% = +1, below −1% = −1).',
+    'tendance de la semaine ±2 (au-dessus de l’ouverture de la semaine et de la clôture de la semaine passée = +2, en dessous des deux = −2), saisonnalité ±1 (comportement moyen du mois en cours sur 20 ans : au moins +0,5 % en moyenne et en hausse 55 % des années ou plus = +1, l’inverse = −1).':'this week’s trend ±2 (above the weekly open and last week’s close = +2, below both = −2), seasonality ±1 (average behaviour of the current month over 20 years: at least +0.5% on average and up 55% of years or more = +1, the reverse = −1).',
     'Sentiment :':'Sentiment:',
     'COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.':'COT net long above 50% = +1, rising COT = +1, retail crowd 60% long or more = −1 (contrarian), 40% or less = +1.',
     'Rendement 10 ans (tendance sur 5 séances, ±0,03 point) : en baisse = +1, en hausse = −1, pour l\'or comme pour le Nasdaq.':'10-year yield (5-session trend, ±0.03 pt): falling = +1, rising = −1 for gold and the indices (the opposite for the dollar).',
