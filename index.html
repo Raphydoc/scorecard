@@ -938,6 +938,58 @@ details.bmore > summary::before{content:'▸ '} details.bmore[open] > summary::b
 details.bnotesd{border-top:1px solid var(--line);margin-top:10px;padding-top:4px}
 ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 @media (max-width:600px){ table.postab .pbar{display:none} td.pcr b, td.pcf b{margin-left:0} }
+
+/* affichage Scorecard, graphique agrandi, page Pourquoi */
+.symbol{flex-wrap:wrap;gap:2px 12px} .symbol b{white-space:nowrap}
+.hist h2 .xpand{margin-left:auto;border:1px solid var(--line);background:none;color:var(--gold);font:600 11px/1 var(--f-body);letter-spacing:.04em;text-transform:none;padding:5px 8px;border-radius:5px;cursor:pointer}
+.hist h2 .xpand:hover{border-color:var(--gold)}
+#histBox svg{cursor:zoom-in}
+.zoomov{position:fixed;inset:0;z-index:9999;background:rgba(0,0,0,.72);display:flex;align-items:center;justify-content:center;padding:18px}
+.zoomov[hidden]{display:none!important}
+body.zopen{overflow:hidden}
+.zoombox{width:min(1100px,100%);max-height:100%;overflow:auto;background:var(--panel);border:1px solid var(--gold);border-radius:8px;padding:14px 16px}
+.zh{display:flex;flex-wrap:wrap;align-items:center;gap:10px;margin-bottom:8px}
+.zh h3{margin:0;font:700 12px/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.zh h3::before{content:"";width:7px;height:7px;background:var(--gold);border-radius:1px}
+.zsel{background:var(--panel-2);color:var(--fg);border:1px solid var(--line);border-radius:5px;padding:6px 8px;font:600 13px var(--f-body)}
+.zclose{margin-left:auto;border:1px solid var(--line);background:none;color:var(--fg);width:34px;height:34px;border-radius:5px;font-size:16px;cursor:pointer}
+.zclose:hover{border-color:var(--gold);color:var(--gold)}
+.zst{display:flex;flex-wrap:wrap;gap:6px 22px;margin:4px 0 8px;font-size:13px;color:var(--muted)} .zst b{color:var(--fg);font:600 14px var(--f-mono);margin-left:4px} .zst small{font-size:11px}
+.zst b.zbull{color:var(--bull)} .zst b.zbear{color:var(--bear)}
+.zchart{position:relative} .zchart svg{display:block;width:100%;height:auto;touch-action:pan-y}
+.ztip{position:absolute;pointer-events:none;background:var(--panel-2);border:1px solid var(--gold);border-radius:5px;padding:6px 9px;font-size:12px;white-space:nowrap;display:flex;flex-direction:column;gap:2px}
+.ztip span{font:600 13px var(--f-mono)} .ztip .zbull{color:var(--bull)} .ztip .zbear{color:var(--bear)} .ztip small{color:var(--muted)}
+.whyb .wygo,.wygo{margin-top:8px;border:0;background:none;padding:0;color:var(--gold);font:600 12.5px var(--f-body);cursor:pointer}
+.wygo:hover{text-decoration:underline}
+.wysum{padding:12px 14px;margin:0 0 14px} .wysum p{margin:4px 0 6px;font-size:14px;line-height:1.55}
+.wygrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,380px),1fr));gap:12px;align-items:start}
+.wyc{background:var(--panel);border:1px solid var(--line);border-radius:7px;padding:12px 14px}
+.wyh{display:flex;align-items:baseline;gap:10px;margin-bottom:6px}
+.wyn0{border:0;background:none;padding:0;color:var(--fg);font:800 14px var(--f-body);letter-spacing:.05em;cursor:pointer;margin-right:auto} .wyn0:hover{color:var(--gold)}
+.wyh .num{font:500 12.5px var(--f-mono);color:var(--muted)} .wyh .wymv{font-weight:700;font-size:14px} .wyh .up{color:var(--bull)} .wyh .dn{color:var(--bear)}
+.wysc{font:700 12px var(--f-mono);padding:3px 7px;border-radius:4px;background:var(--panel-2);color:var(--gold)} .wysc.wbull{background:color-mix(in srgb,var(--bull) 20%,transparent);color:var(--bull)} .wysc.wbear{background:color-mix(in srgb,var(--bear) 20%,transparent);color:var(--bear)}
+.wyt{margin:4px 0 6px;font-size:14px;line-height:1.55} .wyt.mut{color:var(--muted);font-size:13px}
+.wysrc{display:flex;flex-wrap:wrap;gap:4px 12px;font-size:12px} .wysrc a{color:var(--gold);text-decoration:none} .wysrc a:hover{text-decoration:underline}
+.wyk{margin:10px 0 4px;font:700 10px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+ul.wyl,ul.wyd{list-style:none;margin:0;padding:0} ul.wyl li{display:grid;grid-template-columns:62px minmax(0,1fr);gap:8px;padding:4px 0;border-top:1px solid var(--line);font-size:12.5px;line-height:1.4}
+ul.wyl li span{font:500 11px var(--f-mono);color:var(--muted)} ul.wyl a{color:var(--fg);text-decoration:none} ul.wyl a:hover{color:var(--gold)} ul.wyl em{font-style:normal} ul.wyl em.up{color:var(--bull)} ul.wyl em.dn{color:var(--bear)}
+ul.wyd li{font-size:12.5px;padding:2px 0} ul.wyd li b{display:inline-block;min-width:34px;font-family:var(--f-mono)} ul.wyd li.up{color:var(--bull)} ul.wyd li.dn{color:var(--bear)}
+@media (max-width:560px){
+  #tbl,#tbl tbody{display:block}
+  #tbl tr{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));column-gap:6px;row-gap:2px;align-items:center;border-bottom:1px solid var(--line);padding:7px 6px}
+  #tbl tr.cat{padding:9px 6px 5px;background:var(--panel-2)} #tbl tr.cat th{background:none!important}
+  #tbl tr > *{border:0!important;padding:1px 0!important;min-width:0!important;width:auto!important;height:auto!important}
+  #tbl tr > :nth-child(6){display:block}
+  #tbl td.name,#tbl tr.cat th:first-child{grid-column:1 / 4}
+  #tbl td.sig,#tbl th.sig{grid-column:4;justify-self:end;text-align:right}
+  #tbl td.desc{grid-column:1 / -1;font-size:12px;line-height:1.45;color:var(--muted);padding-top:3px!important}
+  #tbl th.colh:empty{display:none}
+  #tbl th.colh,#tbl td.num{text-align:left!important}
+  #tbl td.name small.updtag{white-space:normal}
+  #tbl .chip{min-width:0;padding:4px 8px}
+  .zoomov{padding:6px} .zoombox{padding:10px}
+  .wyh{flex-wrap:wrap}
+}
 /* évolution, pourquoi, corrélations */
 td.pspk{padding:4px 8px} td.pspk svg{display:block}
 td.pwhy{white-space:normal!important;min-width:260px;max-width:420px;font-size:12.5px;line-height:1.4}
@@ -1293,6 +1345,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 <aside class="side"><span class="sidebrand">Pages</span>  <nav class="pages" aria-label="Pages">
   <span class="navgrp">Aujourd’hui</span>
   <button type="button" data-page="plan" aria-current="page">Plan du jour</button>
+  <button type="button" data-page="why">Pourquoi ça bouge</button>
   <span class="navgrp">Analyse</span>
   <button type="button" data-page="score">Scorecard</button>
   <button type="button" data-page="top">Top Setups</button>
@@ -1394,7 +1447,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         <div class="score-row"><span>Macroéconomie <small class="mut">/50</small></span><b id="sMacro" class="neu">0</b></div>
       </div>
       <div class="hist">
-        <h2>Évolution du score</h2>
+        <h2>Évolution du score <button type="button" class="xpand" id="histZoom">⤢ Agrandir</button></h2>
         <div id="histBox"><p class="empty-hist">L'historique se remplit chaque soir.</p></div>
         <div id="whyBox"></div>
       </div>
@@ -1492,6 +1545,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="squawk" hidden aria-label="Nouvelles"><div class="p2" id="p2squawk"></div></section>
   <section data-pg="bankpos" hidden aria-label="Banques"><div class="p2" id="p2bankpos"></div></section>
   <section data-pg="risk" hidden aria-label="Appétit pour le risque"><div class="p2" id="p2risk"></div></section>
+  <section data-pg="why" hidden aria-label="Pourquoi ça bouge"><div class="p2" id="p2why"></div></section>
   <section data-pg="corr" hidden aria-label="Corrélations"><div class="p2" id="p2corr"></div></section>
   <section data-pg="plan" hidden aria-label="Plan du jour"><div class="p2" id="p2plan"></div><div class="p2" id="planTS"></div></section>
   <section data-pg="bull" hidden aria-label="Bulletin du score"><div class="p2" id="p2bull"></div></section>
@@ -3783,6 +3837,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       const ae = document.activeElement;
       if((state.page==='watch' || state.page==='squawk') && !(ae && ae.id==='mwQ') && !document.querySelector('.dd.open, .chfs')){ state.noAnim = true; renderP2(); }
       if(state.page==='plan' && !document.querySelector('.dd.open, .chfs')) planTick();
+      if(state.page==='why') whyTick();
       staleCheck();
       // Sentiment : le VIX se met à jour sans relancer les animations des graphiques
       if(state.page==='sent' && !document.querySelector('.dd.open, .chfs')){ const C = window.Chart, ca = C && C.defaults.animation; if(C) C.defaults.animation = false; state.noAnim = true; renderSent(); if(C) setTimeout(()=>{ C.defaults.animation = ca; }, 1500); }
@@ -4530,14 +4585,121 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     if(r.crowd) out.push({pts:SW.sent*r.crowd/3, t:r.crowd<0?L('foule trop acheteuse','crowd too long'):L('foule trop vendeuse','crowd too short')});
     return out.sort((a,b)=>Math.abs(b.pts)-Math.abs(a.pts)).slice(0, n||3);
   }
+
+  // ================= graphique agrandi + page « Pourquoi ça bouge » =================
+  state.zRange = state.zRange || 0;
+  function scoreBig(pts, W, H){
+    const l = 40, r = 12, t = 12, b = 28, vs = pts.map(p=>p.v);
+    let lo = Math.min(-20, ...vs), hi = Math.max(20, ...vs);
+    lo = Math.max(-100, Math.floor((lo-5)/10)*10); hi = Math.min(100, Math.ceil((hi+5)/10)*10);
+    const y = v => t + (hi-v)/(hi-lo)*(H-t-b), x = i => l + i*((W-l-r)/Math.max(1,pts.length-1)), M = 'font-family="IBM Plex Mono, monospace"';
+    let g = '';
+    const band = (a,c,col) => { const A = Math.min(hi,a), B = Math.max(lo,c); if(A>B) g += `<rect x="${l}" y="${y(A).toFixed(1)}" width="${W-l-r}" height="${(y(B)-y(A)).toFixed(1)}" fill="${col}" opacity=".07"/>`; };
+    band(100, 15, 'var(--bull)'); band(-15, -100, 'var(--bear)');
+    const step = hi-lo > 100 ? 20 : 10;
+    for(let v = Math.ceil(lo/step)*step; v <= hi; v += step){
+      g += `<line x1="${l}" x2="${W-r}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="var(--line)" ${v?'stroke-dasharray="2 5"':''}/><text x="${l-6}" y="${(y(v)+3.5).toFixed(1)}" font-size="11" fill="var(--muted)" text-anchor="end" ${M}>${v>0?'+':''}${String(v).replace('-','−')}</text>`; }
+    [[15,L('haussier','bullish'),'var(--bull)'],[-15,L('baissier','bearish'),'var(--bear)'],[40,L('très haussier','very bullish'),'var(--bull)'],[-40,L('très baissier','very bearish'),'var(--bear)']].forEach(([v,tx,c])=>{
+      if(v<lo || v>hi) return; g += `<line x1="${l}" x2="${W-r}" y1="${y(v).toFixed(1)}" y2="${y(v).toFixed(1)}" stroke="${c}" stroke-opacity=".5" stroke-dasharray="6 4"/><text x="${W-r-4}" y="${(y(v)+(v>0?-4:12)).toFixed(1)}" font-size="10.5" fill="${c}" text-anchor="end" ${M}>${tx}</text>`; });
+    const nl = Math.min(pts.length, W < 700 ? 4 : 7);
+    for(let j=0;j<nl;j++){ const i = Math.round(j*(pts.length-1)/Math.max(1,nl-1));
+      g += `<text x="${x(i).toFixed(1)}" y="${H-8}" font-size="11" fill="var(--muted)" text-anchor="${j===0?'start':j===nl-1?'end':'middle'}" ${M}>${i===pts.length-1 && pts[i].now ? L('aujourd’hui','today') : fmtDate(pts[i].date)}</text>`; }
+    for(let i=1;i<pts.length;i++){ const a = pts[i-1], c = pts[i], col = c.v>=15 ? 'var(--bull)' : c.v<=-15 ? 'var(--bear)' : 'var(--gold)';
+      g += `<line x1="${x(i-1).toFixed(1)}" y1="${y(a.v).toFixed(1)}" x2="${x(i).toFixed(1)}" y2="${y(c.v).toFixed(1)}" stroke="${col}" stroke-width="2.4" stroke-linecap="round" ${a.est||c.est?'stroke-dasharray="4 4"':''}/>`; }
+    pts.forEach((q,i)=>{ g += `<circle cx="${x(i).toFixed(1)}" cy="${y(q.v).toFixed(1)}" r="${q.now?5:pts.length>90?0:3}" fill="${q.v>=15?'var(--bull)':q.v<=-15?'var(--bear)':'var(--gold)'}"/>`; });
+    g += `<line class="zhl" x1="0" x2="0" y1="${t}" y2="${H-b}" stroke="var(--fg)" stroke-opacity=".35" visibility="hidden"/><circle class="zhc" r="6" fill="none" stroke="var(--fg)" stroke-width="2" visibility="hidden"/>`;
+    return {svg:`<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="${L('Évolution du score','Score history')}">${g}</svg>`, x, y, l, r, W};
+  }
+  function openZoom(){
+    let ov = $('zoomOv');
+    if(!ov){ ov = document.createElement('div'); ov.id = 'zoomOv'; ov.className = 'zoomov'; document.body.appendChild(ov);
+      ov.addEventListener('click', e=>{ if(e.target===ov || e.target.closest('.zclose')) closeZoom(); });
+      document.addEventListener('keydown', e=>{ if(e.key==='Escape' && $('zoomOv') && !$('zoomOv').hidden) closeZoom(); }); }
+    state.zAsset = state.asset; ov.hidden = false; document.body.classList.add('zopen'); drawZoom();
+  }
+  function closeZoom(){ const ov = $('zoomOv'); if(ov) ov.hidden = true; document.body.classList.remove('zopen'); }
+  function drawZoom(){
+    const ov = $('zoomOv'); if(!ov || ov.hidden) return;
+    const k = state.zAsset || state.asset, all = scoreSeries(k), cut = state.zRange ? new Date(Date.now()-state.zRange*864e5).toISOString().slice(0,10) : '';
+    const pts = all.filter(q=>!cut || q.date>=cut), mob = window.innerWidth < 700, W = mob ? 420 : 1000, H = mob ? 340 : 420;
+    const keys = Object.keys(TOP_NAMES).filter(a=>state.assets && state.assets[a]);
+    const ch = pts.length > 1 ? scoreBig(pts, W, H) : null;
+    let st = '';
+    if(pts.length > 1){ const mx = pts.reduce((a,q)=>q.v>a.v?q:a), mn = pts.reduce((a,q)=>q.v<a.v?q:a), d = pts[pts.length-1].v - pts[0].v;
+      st = `<div class="zst"><span>${L('Maintenant','Now')} <b class="z${biasOf(pts[pts.length-1].v)}">${sg2(pts[pts.length-1].v,0)}</b></span><span>${L('Plus haut','High')} <b>${sg2(mx.v,0)}</b> <small>${fmtDate(mx.date)}</small></span><span>${L('Plus bas','Low')} <b>${sg2(mn.v,0)}</b> <small>${fmtDate(mn.date)}</small></span><span>${L('Variation sur la période','Change over the period')} <b class="${d>0?'zbull':d<0?'zbear':''}">${sg2(d,0)}</b></span></div>`; }
+    ov.innerHTML = `<div class="zoombox" role="dialog" aria-modal="true" aria-label="${L('Évolution du score','Score history')}">
+      <div class="zh"><h3>${L('Évolution du score','Score history')}</h3>
+        <select class="zsel" aria-label="${L('Actif','Asset')}">${keys.map(a=>`<option value="${a}" ${a===k?'selected':''}>${esc(TOP_NAMES[a])}</option>`).join('')}</select>
+        <div class="chips">${[[0,L('Tout','All')],[90,L('3 mois','3 months')],[30,L('1 mois','1 month')]].map(([n,t])=>`<button type="button" class="chip" data-zr="${n}" aria-pressed="${state.zRange===n}">${t}</button>`).join('')}</div>
+        <button type="button" class="zclose" aria-label="${L('Fermer','Close')}">✕</button></div>
+      ${st}
+      <div class="zchart">${ch ? ch.svg : `<p class="mut">${L('Pas assez de points pour cette période.','Not enough points for this period.')}</p>`}<div class="ztip" hidden></div></div>
+      <p class="hnote">${L('Score sur 100, un point par jour. Pointillé = estimation à partir de l’ancien historique. Zone verte = haussier (+15 et plus), zone rouge = baissier (−15 et moins). Passe le doigt ou la souris sur la courbe pour voir chaque jour.','Score out of 100, one point per day. Dashed = estimate from the older history. Green zone = bullish (+15 and up), red zone = bearish (−15 and below). Hover or drag on the line to see each day.')}</p></div>`;
+    ov.querySelector('.zsel').addEventListener('change', e=>{ state.zAsset = e.target.value; drawZoom(); });
+    ov.querySelectorAll('[data-zr]').forEach(b=>b.addEventListener('click', ()=>{ state.zRange = +b.dataset.zr; drawZoom(); }));
+    if(!ch) return;
+    const svg = ov.querySelector('.zchart svg'), tip = ov.querySelector('.ztip'), hl = svg.querySelector('.zhl'), hc = svg.querySelector('.zhc');
+    const move = e => { const bb = svg.getBoundingClientRect(), px = (e.clientX - bb.left) * ch.W / bb.width;
+      const i = Math.max(0, Math.min(pts.length-1, Math.round((px - ch.l) / ((ch.W - ch.l - ch.r) / Math.max(1, pts.length-1))))), q = pts[i];
+      hl.setAttribute('x1', ch.x(i)); hl.setAttribute('x2', ch.x(i)); hl.setAttribute('visibility','visible');
+      hc.setAttribute('cx', ch.x(i)); hc.setAttribute('cy', ch.y(q.v)); hc.setAttribute('visibility','visible');
+      const vb = verdict(q.v);
+      tip.innerHTML = `<b>${q.now ? L('Aujourd’hui','Today') : fmtDate(q.date)}</b><span class="z${biasOf(q.v)}">${sg2(q.v,0)} · ${esc(vb[0])}</span>${q.est?`<small>${L('estimation','estimate')}</small>`:''}`;
+      tip.hidden = false; const tx = ch.x(i) / ch.W * bb.width; tip.style.left = Math.max(4, Math.min(bb.width - tip.offsetWidth - 4, tx - tip.offsetWidth/2)) + 'px'; tip.style.top = Math.max(0, ch.y(q.v) / (svg.viewBox.baseVal.height) * bb.height - 62) + 'px'; };
+    svg.addEventListener('pointermove', move); svg.addEventListener('pointerdown', move);
+    svg.addEventListener('pointerleave', ()=>{ tip.hidden = true; hl.setAttribute('visibility','hidden'); hc.setAttribute('visibility','hidden'); });
+  }
+  window.addEventListener('resize', ()=>{ clearTimeout(state._zrt); state._zrt = setTimeout(drawZoom, 200); });
+  document.addEventListener('click', e=>{ const z = e.target.closest('#histZoom, #histBox svg'); if(z){ openZoom(); return; }
+    const g = e.target.closest('[data-go]'); if(g){ e.preventDefault(); showPage(g.dataset.go); window.scrollTo(0,0); } });
+
+  // ---------- page « Pourquoi ça bouge » ----------
+  state.wyF = state.wyF || 'all';
+  const whenT = t => { const d = new Date(t), dd = d.toLocaleDateString('en-CA',{timeZone:'America/Toronto'}), hm = d.toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'});
+    return dd===torontoToday() ? hm : d.toLocaleDateString(LOC(),{weekday:'short', timeZone:'America/Toronto'})+' '+hm; };
+  function renderWhy(){
+    const box = $('p2why'); if(!box) return;
+    box.classList.toggle('noanim', !!state.noAnim); state.noAnim = false;
+    const W = state.why || {}, keys = Object.keys(TOP_NAMES).filter(k=>state.assets && state.assets[k]);
+    const feed = typeof newsFeed==='function' ? newsFeed() : [], cut = Date.now() - 24*3600e3;
+    let rows = keys.map(k=>({k, P:planPx(k)})).sort((a,b)=>Math.abs(b.P.d1||0) - Math.abs(a.P.d1||0));
+    if(state.wyF==='exp') rows = rows.filter(r=>whyOf(r.k));
+    const nExp = keys.filter(k=>whyOf(k)).length;
+    const sm = W.summary ? (isEN() && W.summary.en ? W.summary.en : W.summary.fr) : '';
+    const at = W.asOf ? new Date(W.asOf).toLocaleString(LOC(),{weekday:'long', hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'}) : '';
+    const card = ({k, P}) => { const Wy = whyOf(k), C = compute(k), D = scoreDrivers(k, 3), b = biasOf(C.total);
+      const N = feed.filter(x=>x.t>=cut && (x.assets||[]).includes(k)).slice(0, 3);
+      return `<article class="wyc">
+        <div class="wyh"><button type="button" class="wyn0" data-sc="${k}">${esc(TOP_NAMES[k])}</button><span class="num" data-wp="${k}">${pxFmt(P.px)}</span><span class="num wymv ${P.d1>0?'up':P.d1<0?'dn':''}" data-wd="${k}">${P.d1==null?'—':sg2(P.d1,2)+' %'}</span><span class="wysc w${b}" title="${L('Score sur 100','Score out of 100')}">${sg2(C.total,0)}</span></div>
+        ${Wy ? `<p class="wyt">${esc(isEN() && Wy.en ? Wy.en : Wy.fr)}</p>${(Wy.src||[]).length ? `<div class="wysrc">${Wy.src.slice(0,3).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join('')}</div>` : ''}`
+          : `<p class="wyt mut">${L('Pas encore de raison confirmée par une source aujourd’hui. Le mouvement peut simplement suivre le reste du marché.','No source-confirmed reason yet today. The move may simply follow the broader market.')}</p>`}
+        ${N.length ? `<div class="wyk">${L('Nouvelles liées (24 h)','Related news (24h)')}</div><ul class="wyl">${N.map(x=>`<li><span>${whenT(x.t)}</span>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||'')}</a>` : `<em class="${x.surp>0?'up':x.surp<0?'dn':''}">${x.k==='data' ? x.title : esc(x.title||'')}</em>`}</li>`).join('')}</ul>` : ''}
+        ${D.length ? `<div class="wyk">${L('Ce qui pèse sur le score','What drives the score')}</div><ul class="wyd">${D.map(d=>`<li class="${d.pts>0?'up':'dn'}"><b>${d.pts>0?'+':'−'}${Math.abs(Math.round(d.pts))}</b> ${esc(d.t)}</li>`).join('')}</ul>` : ''}
+      </article>`; };
+    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('POURQUOI ÇA BOUGE','WHY IT IS MOVING')}</div><div class="badge">${at ? L('MAJ ','UPD ')+esc(at) : L('EN ATTENTE','PENDING')}</div></div>
+      <p class="bintro">${L('Les vraies raisons des mouvements du jour : nouvelles, discours, géopolitique et données publiées, tirées de sources reconnues (Reuters, CNBC, Bloomberg, Kitco, FXStreet…). Mis à jour chaque heure de 7 h à 17 h (heure de l’Est), en semaine. Les actifs qui bougent le plus sont en haut.','The real reasons behind today’s moves: news, speeches, geopolitics and data releases, from trusted sources (Reuters, CNBC, Bloomberg, Kitco, FXStreet…). Updated every hour from 7 a.m. to 5 p.m. ET on weekdays. Biggest movers first.')}</p>
+      ${sm ? `<div class="panel wysum"><div class="wyk">${L('Le marché aujourd’hui','The market today')}</div><p>${esc(sm)}</p>${(W.summary.src||[]).length ? `<div class="wysrc">${W.summary.src.slice(0,4).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join('')}</div>` : ''}</div>` : ''}
+      <div class="bfil"><div class="chips"><button type="button" class="chip" data-wf="all" aria-pressed="${state.wyF==='all'}">${L('Tous','All')} <span class="cnum">${keys.length}</span></button><button type="button" class="chip" data-wf="exp" aria-pressed="${state.wyF==='exp'}">${L('Expliqués','Explained')} <span class="cnum">${nExp}</span></button></div></div>
+      <div class="wygrid">${rows.map(card).join('') || `<p class="mut">${L('Aucune explication pour l’instant.','No explanation yet.')}</p>`}</div>
+      <p class="src">${L('Les explications sont des résumés écrits à partir des articles cités : ouvre la source pour le détail. Outil d’information seulement : ce n’est pas un signal d’achat ou de vente.','Explanations are summaries of the cited articles: open the source for details. For information only: not a buy or sell signal.')}</p>`;
+    box.querySelectorAll('[data-wf]').forEach(b=>b.addEventListener('click', ()=>{ state.wyF = b.dataset.wf; state.noAnim = true; renderWhy(); }));
+    box.querySelectorAll('[data-sc]').forEach(b=>b.addEventListener('click', ()=>{ state.asset = b.dataset.sc; showPage('score'); renderAll(); window.scrollTo(0,0); }));
+  }
+  function whyTick(){
+    const box = $('p2why'); if(!box || !box.querySelector('[data-wp]')) return;
+    Object.keys(TOP_NAMES).forEach(k=>{ const P = planPx(k), a = box.querySelector(`[data-wp="${k}"]`), b = box.querySelector(`[data-wd="${k}"]`);
+      if(a){ const t = pxFmt(P.px); if(a.textContent!==t) a.textContent = t; }
+      if(b){ const t = P.d1==null ? '—' : sg2(P.d1,2)+' %', c = 'num wymv '+(P.d1>0?'up':P.d1<0?'dn':''); if(b.textContent!==t) b.textContent = t; if(b.className!==c) b.className = c; } });
+  }
   const whyOf = a => { const W = state.why && state.why.items && state.why.items[a]; return W && (W.fr || W.en) ? W : null; };
   function whyHtml(asset){
     const W = whyOf(asset), D = scoreDrivers(asset, 4);
     const at = state.why && state.why.asOf ? new Date(state.why.asOf).toLocaleString(LOC(),{weekday:'short', hour:'2-digit', minute:'2-digit'}) : '';
     return `<div class="whyb"><h3>${L('Pourquoi ça bouge','Why it is moving')}</h3>
       ${W ? `<p>${esc(isEN() && W.en ? W.en : W.fr)}</p>${(W.src||[]).length ? `<p class="whys">${(W.src||[]).slice(0,3).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(' · ')}${at?` · ${esc(at)}`:''}</p>` : ''}`
-        : `<p class="mut">${L('L’explication du jour arrive avec la prochaine mise à jour (vers 10 h 13, 13 h 13 et 16 h 13).','Today’s explanation arrives with the next update (around 10:13, 1:13 and 4:13 p.m.).')}</p>`}
-      ${D.length ? `<h4>${L('Ce qui pèse sur le score','What drives the score')}</h4><ul>${D.map(d=>`<li class="${d.pts>0?'up':'dn'}"><b>${d.pts>0?'+':'−'}${Math.abs(Math.round(d.pts))}</b> ${esc(d.t)}</li>`).join('')}</ul>` : ''}</div>`;
+        : `<p class="mut">${L('Pas encore de raison confirmée par une source aujourd’hui (mise à jour chaque heure de 7 h à 17 h).','No source-confirmed reason yet today (updated every hour, 7 a.m. to 5 p.m.).')}</p>`}
+      ${D.length ? `<h4>${L('Ce qui pèse sur le score','What drives the score')}</h4><ul>${D.map(d=>`<li class="${d.pts>0?'up':'dn'}"><b>${d.pts>0?'+':'−'}${Math.abs(Math.round(d.pts))}</b> ${esc(d.t)}</li>`).join('')}</ul>` : ''}
+      <button type="button" class="wygo" data-go="why">${L('Toutes les raisons du jour →','All of today’s reasons →')}</button></div>`;
   }
 
   // ---------- Corrélations : quels actifs bougent ensemble (rendements journaliers) ----------
@@ -4787,6 +4949,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     else if(pg==='plan'){ renderPlan(); if(!state.noAnim || !$('planTS').innerHTML) renderHomeTS(); }
     else if(pg==='bull') renderBull();
     else if(pg==='corr') renderCorr();
+    else if(pg==='why') renderWhy();
     else if(pg==='recap') renderRecap();
     else if(pg==='squawk') renderSquawk();
     else if(pg==='research') renderResearch();
@@ -4839,7 +5002,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===(({research:'bankpos', cot:'sent', news:'squawk'})[pg]||pg)) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    try{ const hsh = pg==='plan' ? '' : '#'+({score:'scorecard', bull:'bulletin', corr:'correlations', cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches', charts:'charts', recap:'session-recap', research:'bank-research', squawk:'squawk', bankpos:'bank-positioning', risk:'risk-sentiment', watch:'markets-watch', liq:'liquidity'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    try{ const hsh = pg==='plan' ? '' : '#'+({score:'scorecard', bull:'bulletin', corr:'correlations', why:'pourquoi', cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches', charts:'charts', recap:'session-recap', research:'bank-research', squawk:'squawk', bankpos:'bank-positioning', risk:'risk-sentiment', watch:'markets-watch', liq:'liquidity'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='score') renderHistory();
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
     try{ if(typeof globeObj!=='undefined' && globeObj){ if(pg==='globe') globeObj.resumeAnimation(); else globeObj.pauseAnimation(); } }catch(e){}
@@ -4858,7 +5021,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas','#monde':'globe','#carte-du-monde':'globe','#world-map':'globe','#heures-marches':'hours','#market-hours':'hours','#charts':'charts','#session-recap':'recap','#bank-research':'research','#squawk':'squawk','#bank-positioning':'bankpos','#risk-sentiment':'risk','#markets-watch':'watch','#indicators':'tech','#liquidity':'liq'}; if(hh==='#scorecard') showPage('score'); else if(hh==='#correlations') showPage('corr'); else if(hh==='#bulletin') showPage('bull'); else if(mp[hh]) showPage(mp[hh]); else showPage('plan'); } }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas','#monde':'globe','#carte-du-monde':'globe','#world-map':'globe','#heures-marches':'hours','#market-hours':'hours','#charts':'charts','#session-recap':'recap','#bank-research':'research','#squawk':'squawk','#bank-positioning':'bankpos','#risk-sentiment':'risk','#markets-watch':'watch','#indicators':'tech','#liquidity':'liq'}; if(hh==='#scorecard') showPage('score'); else if(hh==='#correlations') showPage('corr'); else if(hh==='#pourquoi') showPage('why'); else if(hh==='#bulletin') showPage('bull'); else if(mp[hh]) showPage(mp[hh]); else showPage('plan'); } }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
@@ -4896,6 +5059,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
   refresh();
   setInterval(refresh, 30*60*1000);
+  setInterval(()=>{ if(state.page==='why' && !document.hidden && !state.edit) refresh(); }, 5*60*1000);
   document.addEventListener('visibilitychange', ()=>{ if(document.visibilityState==='visible') refresh(); });
 })();
 </script>
