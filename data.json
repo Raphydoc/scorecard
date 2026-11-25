@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T05:47:59Z",
+  "updatedAt": "2026-11-25T06:48:33Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,37 @@
   "news": [
     {
       "date": "2026-11-25",
+      "time": "01:18",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Exclusif : des entreprises liées à Alice Huang ont inscrit pour 270 M$ de serveurs d'IA en Chine, selon des registres",
+      "title_en": "Exclusive-Alice Huang-linked firms listed $270 million in AI servers in China, records show",
+      "summary": "Selon des registres consultés par Reuters, des entreprises liées à Alice Huang ont inscrit pour 270 millions de dollars de serveurs d'IA en Chine (article non lisible, résumé tiré du titre). La nouvelle ajoute au scandale des puces Nvidia qui pèse sur les valeurs de l'IA, donc sur le Nasdaq et le S&P 500.",
+      "summary_en": "According to records reviewed by Reuters, firms linked to Alice Huang listed $270 million in AI servers in China (article could not be read; summary based on the headline). It adds to the Nvidia chip scandal weighing on AI stocks, and thus on the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/exclusivealice-huanglinked-firms-listed-270-million-in-ai-servers-in-china-records-show-5049792"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "00:50",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "audusd",
+        "usdjpy"
+      ],
+      "title": "Les devises asiatiques reculent, le dollar se raffermit sur les risques tarifaires; l'aussie touche un creux de 11 mois",
+      "title_en": "Asia FX weakens as dollar firms on tariff risks; Aussie hits 11-month low",
+      "summary": "Le dollar américain se raffermit face aux devises asiatiques en raison des risques liés aux tarifs douaniers, et le dollar australien glisse à son plus bas niveau en 11 mois (article non lisible, résumé tiré du titre). La pression touche directement l'AUD/USD et soutient le DXY.",
+      "summary_en": "The U.S. dollar firmed against Asian currencies on tariff risks, and the Australian dollar slid to an 11-month low (article could not be read; summary based on the headline). The pressure hits AUD/USD directly and supports the DXY.",
+      "url": "https://www.investing.com/news/forex-news/asia-fx-weakens-as-dollar-firms-on-tariff-risks-aussie-hits-11month-low-5049767"
+    },
+    {
+      "date": "2026-11-25",
       "time": "00:06",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1537,8 +1568,8 @@
       ],
       "title": "Les Bourses asiatiques plongent : Taïwan -7,4 %, KOSPI -6 % alors que la vente sur l'IA s'aggrave et que les menaces tarifaires pèsent",
       "title_en": "Asian stocks slide as AI selloff deepens, U.S. tariff threats weigh on sentiment",
-      "summary": "L'indice de Taïwan chute de 7,4 %, le KOSPI de 6 % et le Nikkei de 3,3 %; TSMC (-7,6 %), Samsung (-9,3 %) et SK Hynix (-9,1 %) mènent la baisse. Les contrats à terme du Nasdaq 100 cèdent 1,3 % et ceux du S&P 500 0,7 %, sur fond de rapports voulant que Washington publie une enquête sur la surcapacité industrielle de 16 partenaires commerciaux pouvant mener à de nouveaux tarifs. En Australie, l'inflation a accéléré à 4,9 % en octobre.",
-      "summary_en": "Taiwan's index fell 7.4%, the KOSPI 6% and the Nikkei 3.3%; TSMC (-7.6%), Samsung (-9.3%) and SK Hynix (-9.1%) led losses. Nasdaq 100 futures lost 1.3% and S&P 500 futures 0.7%, amid reports Washington will release a probe into excess industrial capacity among 16 trading partners that could lead to more tariffs. Australian inflation accelerated to 4.9% in October.",
+      "summary": "L'indice de Taïwan chute de 7,4 %, le KOSPI de 6 % et le Nikkei de 3,3 %; TSMC (-7,6 %), Samsung (-9,3 %) et SK Hynix (-9,1 %) mènent la baisse. Les contrats à terme du Nasdaq 100 cèdent 1,3 % et ceux du S&P 500 0,7 %, sur fond de rapports voulant que Washington publie une enquête sur la surcapacité industrielle de 16 partenaires commerciaux pouvant mener à de nouveaux tarifs. En Australie, l'inflation a accéléré à 4,9 % en octobre. À la clôture, l'indice pondéré de Taïwan termine en baisse de 4,94 %.",
+      "summary_en": "Taiwan's index fell 7.4%, the KOSPI 6% and the Nikkei 3.3%; TSMC (-7.6%), Samsung (-9.3%) and SK Hynix (-9.1%) led losses. Nasdaq 100 futures lost 1.3% and S&P 500 futures 0.7%, amid reports Washington will release a probe into excess industrial capacity among 16 trading partners that could lead to more tariffs. Australian inflation accelerated to 4.9% in October. At the close, the Taiwan Weighted index ended down 4.94%.",
       "url": "https://investing.com/news/stock-market-news/asian-stocks-slide-as-ai-selloff-deepens-us-tariff-threats-weigh-on-sentiment-5049630"
     },
     {
@@ -2081,35 +2112,6 @@
       "summary": "Le bitcoin recule de 2,2 % depuis minuit UTC, à environ 59 849 $, et l'ether perd 1,6 % à 1 694 $. Selon CoinGlass, 844 millions $ de positions sur contrats à terme crypto ont été liquidées en 24 heures (+217 %), et les FNB bitcoin au comptant américains ont subi 569,7 millions $ de sorties lundi, une cinquième séance de suite. Le marché anticipe toujours une hausse d'un quart de point de la Fed en décembre, avec le PCE attendu mercredi.",
       "summary_en": "Bitcoin fell 2.2% since midnight UTC to about $59,849, and ether lost 1.6% to $1,694. According to CoinGlass, $844 million of crypto futures positions were liquidated in 24 hours (+217%), and U.S. spot bitcoin ETFs saw $569.7 million of outflows on Monday, a fifth straight session. Markets still expect a quarter-point Fed hike in December, with PCE data due Wednesday.",
       "url": "https://www.coindesk.com/markets/2026/11/24/bitcoin-hands-back-monday-s-nvidia-driven-gains-liquidations-triple"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "06:02",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "title": "Le retour de Huang remet en doute l'indépendance du conseil de Nvidia, selon des critiques",
-      "title_en": "Nvidia board's Huang reversal raises doubts about independence, critics say",
-      "summary": "Des investisseurs et experts en gouvernance estiment que le conseil de Nvidia a miné son indépendance en réintégrant Jensen Huang avant la fin des enquêtes sur sa conduite. L'action a clôturé en hausse de 31,5 % lundi; Nvidia affirme que ce retour ne pose aucun risque pour la sécurité nationale, et des comités du Congrès interrogeront Huang le 1er décembre. Le dossier reste une source de volatilité pour le Nasdaq et le S&P 500.",
-      "summary_en": "Investors and governance experts say Nvidia's board undermined its independence by reinstating Jensen Huang before investigations into his conduct concluded. The stock closed 31.5% higher on Monday; Nvidia says the reinstatement poses no national security risk, and congressional committees will interview Huang on December 1. The issue remains a source of volatility for the Nasdaq and S&P 500.",
-      "url": "https://www.investing.com/news/stock-market-news/nvidia-boards-huang-reversal-raises-doubts-about-independence-critics-say-5047621"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "06:00",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
-      "assets": [
-        "gbpusd"
-      ],
-      "title": "Les détaillants britanniques connaissent leur meilleur mois de ventes depuis la fin de 2022 (CBI)",
-      "title_en": "UK retailers report best month for sales since late 2022: CBI",
-      "summary": "Selon le sondage de la CBI, les détaillants britanniques affichent leur plus forte croissance des ventes en près de quatre ans, soit leur meilleur mois depuis la fin de 2022. Un signal de consommation plus solide au Royaume-Uni, à surveiller pour la livre sterling et les attentes envers la Banque d'Angleterre.",
-      "summary_en": "According to the CBI survey, British retailers report their strongest sales growth in nearly four years, their best month since late 2022. A firmer UK consumer signal, worth watching for sterling and Bank of England expectations.",
-      "url": "https://www.investing.com/news/economic-indicators/uk-retailers-report-best-month-for-sales-since-late-2022-cbi-5047636"
     }
   ],
   "live": {
