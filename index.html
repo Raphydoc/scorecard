@@ -944,6 +944,18 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 
 
 
+
+/* sommaire de page + titres numérotés */
+section[data-pg] > .pgnav{margin:-4px 0 14px}
+.p2 h3.numd::before{content:attr(data-n);width:18px;height:18px;border-radius:50%;display:inline-grid;place-items:center;background:var(--gold);color:#111;font:800 10.5px/1 var(--f-mono);letter-spacing:0}
+.p2 h3.numd{scroll-margin-top:14px}
+/* petit titre caché : seulement le texte; les contrôles (ex. choix de l'actif) restent visibles */
+section[data-pg] > .pghead ~ .p2 > .hmhead:first-child > .ttl{display:flex!important;font-size:0!important;letter-spacing:0;gap:0}
+section[data-pg] > .pghead ~ .p2 > .hmhead:first-child > .ttl > .blink{display:none}
+section[data-pg] > .pghead ~ .p2 > .hmhead:first-child > .ttl > :not(.blink){font-size:13px}
+section[data-pg] > .pghead ~ .p2 > .hmhead:first-child:has(> .ttl select, > .ttl button){justify-content:space-between}
+section[data-pg] > .pghead ~ .p2 > .hmhead:first-child::before,section[data-pg] > .pghead ~ .p2 > .hmhead:first-child::after{display:none!important}
+section[data-pg] > .pghead ~ .p2 > .hmhead:first-child:not(:has(> :not(.ttl))):not(:has(select, button)){display:none}
 /* Fiche actif, version structurée */
 .fnav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
 .fnav button{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:5px;padding:7px 11px;font:600 12.5px var(--f-body);cursor:pointer}
@@ -5273,7 +5285,28 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   })();
   (function(){ const lb = $('langBtn'); if(lb) lb.addEventListener('click', ()=>setTimeout(()=>{ if(typeof renderMbar==='function') renderMbar(); if(typeof renderTape==='function') renderTape(); const nb = $('p2news'); if(nb) nb.dataset.built=''; renderP2(); if(state.page==='fed') renderFed(); }, 30)); })();
 
+
+  // ================= sommaire et sections numérotées sur chaque page (comme la Fiche actif) =================
+  const h3Txt = h => ([...h.childNodes].filter(n=>n.nodeType===3).map(n=>n.textContent).join('').trim() || h.textContent.trim()).replace(/\s+/g,' ');
+  function pgNav(){
+    const pg = state.page; if(pg==='score') return;
+    const sec = document.querySelector(`section[data-pg="${pg}"]`); if(!sec || sec.hidden) return;
+    const head = sec.querySelector(':scope > .pghead.pgx'); if(!head) return;
+    const seen = new Set();
+    const hs = [...sec.querySelectorAll('.p2 h3')].filter(h=>{ if(!h.offsetParent || h.closest('details:not([open]), .zoomov, .dd')) return false; const t = h3Txt(h); if(!t || t.length > 60 || seen.has(t)) return false; seen.add(t); return true; });
+    let nav = sec.querySelector(':scope > .pgnav');
+    sec.querySelectorAll('h3.numd').forEach(h=>{ if(!hs.includes(h)) h.classList.remove('numd'); });
+    if(hs.length < 3){ if(nav) nav.remove(); hs.forEach(h=>h.classList.remove('numd')); return; }
+    hs.forEach((h,i)=>{ h.classList.add('numd'); if(h.dataset.n !== String(i+1)) h.dataset.n = i+1; });
+    const html = hs.map((h,i)=>`<button type="button" data-pgj="${i}"><span>${i+1}</span>${esc(h3Txt(h).toLowerCase().replace(/^./, c=>c.toUpperCase()))}</button>`).join('');
+    if(!nav){ nav = document.createElement('nav'); nav.className = 'fnav pgnav'; nav.setAttribute('aria-label', L('Sommaire','Contents')); head.after(nav);
+      nav.addEventListener('click', e=>{ const b = e.target.closest('[data-pgj]'); if(!b || !nav._hs) return; const t = nav._hs[+b.dataset.pgj]; if(t) window.scrollTo({top: t.getBoundingClientRect().top + window.scrollY - 14, behavior:'smooth'}); }); }
+    nav._hs = hs; if(nav.dataset.sig !== html){ nav.innerHTML = html; nav.dataset.sig = html; }
+  }
+  { let tm = 0; const mo = new MutationObserver(()=>{ clearTimeout(tm); tm = setTimeout(pgNav, 250); });
+    document.querySelectorAll('section[data-pg]').forEach(sct=>mo.observe(sct, {childList:true, subtree:true})); }
   function showPage(pg){
+    setTimeout(pgNav, 300);
     if(pg==='home') pg = 'plan';
     if(pg==='fund') pg = 'top';
     if(pg==='news') pg = 'squawk';
