@@ -940,6 +940,30 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 @media (max-width:600px){ table.postab .pbar{display:none} td.pcr b, td.pcf b{margin-left:0} }
 
 
+
+/* page Pourquoi ça bouge, version claire */
+#p2why .hmhead{margin-bottom:12px}
+.wysum2{padding:14px 16px;margin:0 0 14px;border-left:3px solid var(--gold)!important}
+.wysum2 p{margin:6px 0 8px;font-size:15.5px;line-height:1.55;max-width:980px}
+.wmeta{display:flex;flex-wrap:wrap;gap:4px 22px;margin-top:8px;font-size:12px;color:var(--muted)} .wmeta b{color:var(--gold);font-family:var(--f-mono)}
+.wgrp{padding:4px 16px 12px;margin:0 0 12px}
+.wgrp h3{margin:10px 0 2px;font:700 11.5px/1 var(--f-body);letter-spacing:.16em;text-transform:uppercase;color:var(--fg);display:flex;align-items:center;gap:8px}
+.wgrp h3::before{content:"";width:7px;height:7px;background:var(--gold);border-radius:1px}
+ul.wrl{list-style:none;margin:0;padding:0}
+li.wr{display:grid;grid-template-columns:200px minmax(0,1fr);gap:6px 20px;padding:12px 0;border-bottom:1px solid var(--line)}
+.wra{display:flex;flex-direction:column;gap:3px}
+.wra .wyn0{margin:0;text-align:left;font-size:15px}
+.wmv{font:700 15px var(--f-mono)} .wmv.up{color:var(--bull)} .wmv.dn{color:var(--bear)}
+.wpx{font:500 12px var(--f-mono);color:var(--muted)}
+.wrb p{margin:0 0 6px;font-size:14.5px;line-height:1.55}
+details.wnews{margin-top:6px} details.wnews summary{cursor:pointer;font:600 11.5px var(--f-body);color:var(--muted);list-style:none} details.wnews summary::-webkit-details-marker{display:none}
+details.wnews summary::before{content:'▸ ';color:var(--gold)} details.wnews[open] summary::before{content:'▾ '}
+details.wnews summary:hover{color:var(--fg)} details.wnews ul{margin-top:6px}
+.wno{display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px;padding:10px 0 2px;font-size:12px;color:var(--muted)}
+.wno > span{margin-right:4px;font:600 10px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase}
+.wnoi{border:1px solid var(--line);background:var(--panel-2);color:var(--fg);border-radius:5px;padding:5px 9px;font:600 12px var(--f-body);cursor:pointer;display:inline-flex;gap:8px;align-items:baseline}
+.wnoi:hover{border-color:var(--gold)} .wnoi .wmv{font-size:12px}
+@media (max-width:700px){ li.wr{grid-template-columns:minmax(0,1fr)} .wra{flex-direction:row;align-items:baseline;gap:12px} .wgrp{padding:2px 12px 10px} .wysum2{padding:12px} }
 /* encadré « Pourquoi ça bouge » de la Scorecard */
 .left{grid-template-columns:minmax(0,1fr)} .left > *{min-width:0}
 .rcol{display:grid;gap:16px;min-width:0;align-content:start} .rcol > *{min-width:0}
@@ -1367,7 +1391,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 <aside class="side"><span class="sidebrand">Pages</span>  <nav class="pages" aria-label="Pages">
   <span class="navgrp">Aujourd’hui</span>
   <button type="button" data-page="plan" aria-current="page">Plan du jour</button>
-  <button type="button" data-page="why">Pourquoi ça bouge</button>
   <span class="navgrp">Analyse</span>
   <button type="button" data-page="score">Scorecard</button>
   <button type="button" data-page="top">Top Setups</button>
@@ -1377,6 +1400,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <button type="button" data-page="cal">Calendrier économique</button>
   <button type="button" data-page="earn">Résultats</button>
   <button type="button" data-page="squawk">Nouvelles</button>
+  <button type="button" data-page="why">Pourquoi ça bouge</button>
   <button type="button" data-page="recap">Récap des sessions</button>
   <span class="navgrp">Macro et taux</span>
   <button type="button" data-page="eco">Économie US</button>
@@ -1475,7 +1499,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     </section>
 
     <div class="rcol">
-    <section class="panel whyp" aria-label="Pourquoi ça bouge"><div id="whyBox"></div></section>
     <section class="panel" aria-label="Indicateurs">
       <div class="tablewrap"><table id="tbl"></table></div>
     </section>
@@ -4681,39 +4704,43 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   state.wyF = state.wyF || 'all';
   const whenT = t => { const d = new Date(t), dd = d.toLocaleDateString('en-CA',{timeZone:'America/Toronto'}), hm = d.toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'});
     return dd===torontoToday() ? hm : d.toLocaleDateString(LOC(),{weekday:'short', timeZone:'America/Toronto'})+' '+hm; };
+  const WHY_GR = [['Actions','Stocks',['nasdaq','spx500','us30','rut']],['Métaux','Metals',['xauusd','xagusd']],['Dollar et devises','Dollar and currencies',['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['Pétrole et crypto','Oil and crypto',['usoil','btcusd']]];
   function renderWhy(){
     const box = $('p2why'); if(!box) return;
     box.classList.toggle('noanim', !!state.noAnim); state.noAnim = false;
-    const W = state.why || {}, keys = Object.keys(TOP_NAMES).filter(k=>state.assets && state.assets[k]);
+    const W = state.why || {}, has = k => state.assets && state.assets[k];
     const feed = typeof newsFeed==='function' ? newsFeed() : [], cut = Date.now() - 24*3600e3;
-    let rows = keys.map(k=>({k, P:planPx(k)})).sort((a,b)=>Math.abs(b.P.d1||0) - Math.abs(a.P.d1||0));
-    if(state.wyF==='exp') rows = rows.filter(r=>whyOf(r.k));
-    const nExp = keys.filter(k=>whyOf(k)).length;
     const sm = W.summary ? (isEN() && W.summary.en ? W.summary.en : W.summary.fr) : '';
     const at = W.asOf ? new Date(W.asOf).toLocaleString(LOC(),{weekday:'long', hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'}) : '';
-    const card = ({k, P}) => { const Wy = whyOf(k), C = compute(k), D = scoreDrivers(k, 3), b = biasOf(C.total);
-      const N = feed.filter(x=>x.t>=cut && (x.assets||[]).includes(k)).slice(0, 3);
-      return `<article class="wyc">
-        <div class="wyh"><button type="button" class="wyn0" data-sc="${k}">${esc(TOP_NAMES[k])}</button><span class="num" data-wp="${k}">${pxFmt(P.px)}</span><span class="num wymv ${P.d1>0?'up':P.d1<0?'dn':''}" data-wd="${k}">${P.d1==null?'—':sg2(P.d1,2)+' %'}</span><span class="wysc w${b}" title="${L('Score sur 100','Score out of 100')}">${sg2(C.total,0)}</span></div>
-        ${Wy ? `<p class="wyt">${esc(isEN() && Wy.en ? Wy.en : Wy.fr)}</p>${(Wy.src||[]).length ? `<div class="wysrc">${Wy.src.slice(0,3).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join('')}</div>` : ''}`
-          : `<p class="wyt mut">${L('Pas encore de raison confirmée par une source aujourd’hui. Le mouvement peut simplement suivre le reste du marché.','No source-confirmed reason yet today. The move may simply follow the broader market.')}</p>`}
-        ${N.length ? `<div class="wyk">${L('Nouvelles liées (24 h)','Related news (24h)')}</div><ul class="wyl">${N.map(x=>`<li><span>${whenT(x.t)}</span>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||'')}</a>` : `<em class="${x.surp>0?'up':x.surp<0?'dn':''}">${x.k==='data' ? x.title : esc(x.title||'')}</em>`}</li>`).join('')}</ul>` : ''}
-        ${D.length ? `<div class="wyk">${L('Ce qui pèse sur le score','What drives the score')}</div><ul class="wyd">${D.map(d=>`<li class="${d.pts>0?'up':'dn'}"><b>${d.pts>0?'+':'−'}${Math.abs(Math.round(d.pts))}</b> ${esc(d.t)}</li>`).join('')}</ul>` : ''}
-      </article>`; };
+    const keys = Object.keys(TOP_NAMES).filter(has), nExp = keys.filter(k=>whyOf(k)).length;
+    const mv = (k, P) => `<span class="wmv ${P.d1>0?'up':P.d1<0?'dn':''}" data-wd="${k}">${P.d1==null?'—':(P.d1>0?'▲ ':P.d1<0?'▼ ':'')+sg2(P.d1,2)+' %'}</span>`;
+    const row = k => { const P = planPx(k), Wy = whyOf(k), N = feed.filter(x=>x.t>=cut && (x.assets||[]).includes(k)).slice(0, 4);
+      return `<li class="wr">
+        <div class="wra"><button type="button" class="wyn0" data-sc="${k}" title="${L('Voir la Scorecard','Open the Scorecard')}">${esc(TOP_NAMES[k])}</button>${mv(k,P)}<span class="wpx" data-wp="${k}">${pxFmt(P.px)}</span></div>
+        <div class="wrb"><p>${esc(isEN() && Wy.en ? Wy.en : Wy.fr)}</p>
+          <div class="wysrc">${(Wy.src||[]).slice(0,3).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join('')}</div>
+          ${N.length ? `<details class="wnews"><summary>${L('Nouvelles liées','Related news')} (${N.length})</summary><ul class="wyl">${N.map(x=>`<li><span>${whenT(x.t)}</span>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||'')}</a>` : `<em class="${x.surp>0?'up':x.surp<0?'dn':''}">${x.k==='data' ? x.title : esc(x.title||'')}</em>`}</li>`).join('')}</ul></details>` : ''}</div></li>`; };
+    const groups = WHY_GR.map(([fr,en,ks])=>{ ks = ks.filter(has).map(k=>({k, P:planPx(k)})).sort((a,b)=>Math.abs(b.P.d1||0)-Math.abs(a.P.d1||0));
+      const ex = ks.filter(r=>whyOf(r.k)), no = ks.filter(r=>!whyOf(r.k));
+      if(!ks.length) return '';
+      return `<section class="panel wgrp"><h3>${L(fr,en)}</h3>
+        ${ex.length ? `<ul class="wrl">${ex.map(r=>row(r.k)).join('')}</ul>` : ''}
+        ${no.length ? `<div class="wno"><span>${ex.length ? L('Sans raison précise','No specific reason') : L('Pas encore de raison confirmée','No confirmed reason yet')}</span>${no.map(r=>`<button type="button" class="wnoi" data-sc="${r.k}">${esc(TOP_NAMES[r.k])} ${mv(r.k,r.P)}</button>`).join('')}</div>` : ''}
+      </section>`; }).join('');
     box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('POURQUOI ÇA BOUGE','WHY IT IS MOVING')}</div><div class="badge">${at ? L('MAJ ','UPD ')+esc(at) : L('EN ATTENTE','PENDING')}</div></div>
-      <p class="bintro">${L('Les vraies raisons des mouvements du jour : nouvelles, discours, géopolitique et données publiées, tirées de sources reconnues (Reuters, CNBC, Bloomberg, Kitco, FXStreet…). Mis à jour chaque heure de 7 h à 17 h (heure de l’Est), en semaine. Les actifs qui bougent le plus sont en haut.','The real reasons behind today’s moves: news, speeches, geopolitics and data releases, from trusted sources (Reuters, CNBC, Bloomberg, Kitco, FXStreet…). Updated every hour from 7 a.m. to 5 p.m. ET on weekdays. Biggest movers first.')}</p>
-      ${sm ? `<div class="panel wysum"><div class="wyk">${L('Le marché aujourd’hui','The market today')}</div><p>${esc(sm)}</p>${(W.summary.src||[]).length ? `<div class="wysrc">${W.summary.src.slice(0,4).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join('')}</div>` : ''}</div>` : ''}
-      <div class="bfil"><div class="chips"><button type="button" class="chip" data-wf="all" aria-pressed="${state.wyF==='all'}">${L('Tous','All')} <span class="cnum">${keys.length}</span></button><button type="button" class="chip" data-wf="exp" aria-pressed="${state.wyF==='exp'}">${L('Expliqués','Explained')} <span class="cnum">${nExp}</span></button></div></div>
-      <div class="wygrid">${rows.map(card).join('') || `<p class="mut">${L('Aucune explication pour l’instant.','No explanation yet.')}</p>`}</div>
-      <p class="src">${L('Les explications sont des résumés écrits à partir des articles cités : ouvre la source pour le détail. Outil d’information seulement : ce n’est pas un signal d’achat ou de vente.','Explanations are summaries of the cited articles: open the source for details. For information only: not a buy or sell signal.')}</p>`;
-    box.querySelectorAll('[data-wf]').forEach(b=>b.addEventListener('click', ()=>{ state.wyF = b.dataset.wf; state.noAnim = true; renderWhy(); }));
+      <div class="panel wysum2"><div class="wyk">${L('Le marché aujourd’hui','The market today')}</div>
+        ${sm ? `<p>${esc(sm)}</p>${(W.summary.src||[]).length ? `<div class="wysrc">${W.summary.src.slice(0,4).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join('')}</div>` : ''}`
+          : `<p class="mut">${L('Le résumé arrive avec la prochaine mise à jour.','The summary arrives with the next update.')}</p>`}
+        <div class="wmeta"><span><b>${nExp}</b> / ${keys.length} ${L('actifs expliqués','assets explained')}</span><span>${L('Mise à jour chaque heure, de 7 h à 17 h (heure de l’Est), en semaine','Updated every hour, 7 a.m. to 5 p.m. ET, weekdays')}</span></div></div>
+      ${groups}
+      <p class="src">${L('Raisons tirées des nouvelles et des données du jour, résumées à partir des articles cités (Reuters, CNBC, Bloomberg, Kitco, FXStreet…). Si aucune source n’explique clairement un mouvement, l’actif est mis dans « Sans raison précise » plutôt que d’inventer. Clique sur un actif pour ouvrir sa Scorecard. Outil d’information seulement.','Reasons from today’s news and data, summarized from the cited articles (Reuters, CNBC, Bloomberg, Kitco, FXStreet…). If no source clearly explains a move, the asset is listed under “No specific reason” instead of guessing. Click an asset to open its Scorecard. For information only.')}</p>`;
     box.querySelectorAll('[data-sc]').forEach(b=>b.addEventListener('click', ()=>{ state.asset = b.dataset.sc; showPage('score'); renderAll(); window.scrollTo(0,0); }));
   }
   function whyTick(){
     const box = $('p2why'); if(!box || !box.querySelector('[data-wp]')) return;
     Object.keys(TOP_NAMES).forEach(k=>{ const P = planPx(k), a = box.querySelector(`[data-wp="${k}"]`), b = box.querySelector(`[data-wd="${k}"]`);
       if(a){ const t = pxFmt(P.px); if(a.textContent!==t) a.textContent = t; }
-      if(b){ const t = P.d1==null ? '—' : sg2(P.d1,2)+' %', c = 'num wymv '+(P.d1>0?'up':P.d1<0?'dn':''); if(b.textContent!==t) b.textContent = t; if(b.className!==c) b.className = c; } });
+      if(b){ const t = P.d1==null ? '—' : (P.d1>0?'▲ ':P.d1<0?'▼ ':'')+sg2(P.d1,2)+' %', c = 'wmv '+(P.d1>0?'up':P.d1<0?'dn':''); if(b.textContent!==t) b.textContent = t; if(b.className!==c) b.className = c; } });
   }
   const whyOf = a => { const W = state.why && state.why.items && state.why.items[a]; return W && (W.fr || W.en) ? W : null; };
   function whyHtml(asset){
