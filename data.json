@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T22:47:39Z",
+ "updatedAt": "2026-11-25T23:48:16Z",
  "econ": {
   "values": {
    "adp": {
@@ -1649,6 +1649,20 @@
  },
  "news": [
   {
+   "assets": [
+    "usoil"
+   ],
+   "date": "2026-11-25",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Les cours du pétrole ont terminé mercredi en hausse, le Brent s'établissant au-dessus de 90 $ le baril pour la première fois en plus d'une semaine, après des pertes plus tôt sur fond de crainte de surabondance. (Article non consulté en entier : résumé limité au titre.) Le rebond touche directement le WTI.",
+   "summary_en": "Oil prices finished higher on Wednesday, with Brent settling above $90 a barrel for the first time in over a week, after earlier losses on supply-glut fears. (Full article not accessed: summary limited to the headline.) The rebound directly affects WTI.",
+   "time": "17:41",
+   "title": "Le pétrole monte : le Brent clôture au-dessus de 90 $ le baril pour la première fois en plus d'une semaine",
+   "title_en": "Oil prices rise, Brent settles above $90 a barrel for first time in over a week",
+   "url": "https://www.investing.com/news/commodities-news/oil-mixed-as-hormuz-attacks-mount-supply-surplus-and-weak-fuel-margins-weigh-5049487"
+  },
+  {
    "date": "2026-11-25",
    "time": "17:24",
    "source": "Investing.com (Reuters)",
@@ -1662,6 +1676,38 @@
    "summary": "Selon le titre de Reuters, Moody's estime que le retour de Jensen Huang à la tête de Nvidia atténue l'incertitude et maintient ses notes de crédit sur le géant des puces. Cela contraste avec S&P Global, qui a placé la note de Nvidia sous surveillance négative plus tôt aujourd'hui. Article non lisible : résumé fondé sur le titre seulement.",
    "summary_en": "Per the Reuters headline, Moody's says Jensen Huang's return as Nvidia CEO eases uncertainty and leaves its credit ratings on the chipmaker unchanged. This contrasts with S&P Global, which put Nvidia's rating on negative watch earlier today. Article could not be read: summary based on the headline only.",
    "url": "https://www.investing.com/news/stock-market-news/moodys-says-nvidias-huang-reinstatement-eases-uncertainty-ratings-unchanged-5051652"
+  },
+  {
+   "assets": [
+    "xauusd",
+    "usd"
+   ],
+   "date": "2026-11-25",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "L'or progresse légèrement en fin de séance mercredi, le dollar ayant effacé ses gains du jour, mais la hausse reste limitée par des données américaines plus chaudes que prévu et la déroute des titres liés à l'IA. (Article non consulté en entier : résumé limité au titre.)",
+   "summary_en": "Gold edged higher late Wednesday as the dollar gave back its daily gains, but the advance was capped by hotter-than-expected U.S. data and the AI-stock rout. (Full article not accessed: summary limited to the headline.)",
+   "time": "16:38",
+   "title": "L'or grappille des gains alors que le dollar fait demi-tour, mais les données chaudes et la déroute de l'IA limitent la hausse",
+   "title_en": "Gold inches up as dollar reverses course, but gains capped by hot data, AI rout",
+   "url": "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
+  },
+  {
+   "assets": [
+    "usd",
+    "eurusd",
+    "usdjpy",
+    "audusd"
+   ],
+   "date": "2026-11-25",
+   "impact": "med",
+   "source": "Investing.com",
+   "summary": "Le dollar américain a effacé mercredi après-midi ses gains de la journée, qui avaient été portés par des données économiques américaines plus fortes que prévu et la déroute des actions liées à l'IA. (Article non consulté en entier : résumé limité au titre.) Ce revirement touche le DXY et les principales paires de devises.",
+   "summary_en": "The U.S. dollar reversed its earlier gains on Wednesday afternoon, which had been driven by stronger-than-expected U.S. data and the AI-stock rout. (Full article not accessed: summary limited to the headline.) The reversal affects the DXY and major currency pairs.",
+   "time": "16:18",
+   "title": "Le dollar fait demi-tour après des gains alimentés par des données américaines chaudes et la déroute de l'IA",
+   "title_en": "Dollar reverses course after earlier gains driven by hot U.S. data, AI rout",
+   "url": "https://www.investing.com/news/forex-news/asia-fx-weakens-as-dollar-firms-on-tariff-risks-aussie-hits-11month-low-5049767"
   },
   {
    "date": "2026-11-25",
@@ -1951,20 +1997,6 @@
   },
   {
    "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Les cours du pétrole prolongent leur recul mercredi, les attentes d'un surplus d'offre l'emportant sur les tensions persistantes au Moyen-Orient. (Article non consulté en entier : résumé limité au titre.)",
-   "summary_en": "Oil prices extended losses on Wednesday as expectations of a supply surplus outweighed ongoing Middle East tensions. (Full article not accessed: summary limited to the headline.)",
-   "time": "05:45",
-   "title": "Le pétrole prolonge ses pertes sur fond d'attentes de surabondance de l'offre et de tensions persistantes au Moyen-Orient",
-   "title_en": "Oil extends losses amid supply surplus expectations, ongoing Mideast tensions",
-   "url": "https://www.investing.com/news/commodities-news/oil-mixed-as-hormuz-attacks-mount-supply-surplus-and-weak-fuel-margins-weigh-5049487"
-  },
-  {
-   "assets": [
     "nasdaq",
     "spx500"
    ],
@@ -2121,22 +2153,6 @@
   },
   {
    "assets": [
-    "usd",
-    "audusd",
-    "usdjpy"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le dollar américain se raffermit face aux devises asiatiques en raison des risques liés aux tarifs douaniers, et le dollar australien glisse à son plus bas niveau en 11 mois (article non lisible, résumé tiré du titre). La pression touche directement l'AUD/USD et soutient le DXY.",
-   "summary_en": "The U.S. dollar firmed against Asian currencies on tariff risks, and the Australian dollar slid to an 11-month low (article could not be read; summary based on the headline). The pressure hits AUD/USD directly and supports the DXY.",
-   "time": "00:50",
-   "title": "Les devises asiatiques reculent, le dollar se raffermit sur les risques tarifaires; l'aussie touche un creux de 11 mois",
-   "title_en": "Asia FX weakens as dollar firms on tariff risks; Aussie hits 11-month low",
-   "url": "https://www.investing.com/news/forex-news/asia-fx-weakens-as-dollar-firms-on-tariff-risks-aussie-hits-11month-low-5049767"
-  },
-  {
-   "assets": [
     "nasdaq",
     "spx500"
    ],
@@ -2181,22 +2197,6 @@
    "title": "Les Bourses asiatiques plongent : Taïwan -7,4 %, KOSPI -6 % alors que la vente sur l'IA s'aggrave et que les menaces tarifaires pèsent",
    "title_en": "Asian stocks slide as AI selloff deepens, U.S. tariff threats weigh on sentiment",
    "url": "https://investing.com/news/stock-market-news/asian-stocks-slide-as-ai-selloff-deepens-us-tariff-threats-weigh-on-sentiment-5049630"
-  },
-  {
-   "assets": [
-    "xauusd",
-    "xagusd",
-    "usd"
-   ],
-   "date": "2026-11-24",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "L'or au comptant gagnait 0,1 % à 3 559,55 $ l'once, tout près de son plus bas depuis début septembre 2025, tandis que l'argent reculait de 0,4 % à 40,74 $. Le FedWatch accorde 96,4 % de probabilité à une hausse de 25 points de base en décembre (réunion des 8 et 9), et le dollar se tient près d'un sommet de 19 mois. L'indice PCE attendu dans la journée sera déterminant pour les métaux.",
-   "summary_en": "Spot gold rose 0.1% to $3,559.55/oz, near its lowest since early September 2025, while silver fell 0.4% to $40.74. FedWatch shows a 96.4% probability of a 25 bp hike in December (Dec. 8-9 meeting), and the dollar is near a 19-month high. The PCE inflation reading due later in the day is key for metals.",
-   "time": "21:58",
-   "title": "L'or se maintient près de ses plus bas en 15 mois, les paris sur une hausse de la Fed pèsent avant le PCE",
-   "title_en": "Gold holds near 15-month lows on Fed hike bets; PCE inflation awaited",
-   "url": "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
   },
   {
    "assets": [
