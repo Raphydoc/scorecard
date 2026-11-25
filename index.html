@@ -2463,6 +2463,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
     cfg.options = Object.assign({responsive:true, maintainAspectRatio:false, animation:{duration:350}, interaction:{mode:'index', intersect:false},
       plugins:{legend:{labels:{color:fg, boxWidth:12, boxHeight:12}}, tooltip:{backgroundColor:css('--panel'), titleColor:fg, bodyColor:fg, borderColor:li, borderWidth:1}}}, cfg.options||{});
+    // barres horizontales : l'info au survol doit suivre la barre sous la souris (axe vertical), pas la position horizontale
+    if(cfg.options.indexAxis==='y') cfg.options.interaction = Object.assign({mode:'index', intersect:false}, cfg.options.interaction||{}, {axis:'y'});
     charts[id] = new Chart(el, cfg); return charts[id];
   }
   let chartLibP = null;
