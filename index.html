@@ -873,6 +873,22 @@ ul.bcalls li{display:grid;grid-template-columns:22px minmax(0,auto) minmax(0,1fr
 .bnote p{margin:0;font-size:13.5px;line-height:1.5;color:var(--muted)}
 .bnm{display:flex;align-items:center;gap:8px;font-size:12.5px} .bnm b{font-weight:700} .bnm em{margin-left:auto;font:500 11px/1 var(--f-mono);color:var(--muted);font-style:normal}
 .btag{padding:2px 7px;border-radius:4px;background:color-mix(in srgb,var(--gold) 14%,transparent);color:var(--gold);font:600 10.5px/1.3 var(--f-body);letter-spacing:.04em;text-transform:uppercase}
+/* cellulaire : vues compactes */
+.mwcols:not(.n1){grid-template-columns:repeat(auto-fill,minmax(250px,1fr))}
+.mhint{display:none}
+.cflag{font-size:14px}
+@media (max-width:600px){
+  table.topset tr.grp{display:none}
+  table.topset th:nth-child(n+5), table.topset td:nth-child(n+5){display:none}
+  table.topset th:nth-child(2), table.topset td:nth-child(2){display:none}
+  table.topset{min-width:0} table.topset td.sym{min-width:0} table.topset td.bias{min-width:0}
+  table.topset tbody tr{cursor:pointer}
+  .mhint{display:block;margin:8px 2px 0;font-size:12px;color:var(--muted)}
+  table.pplan th:nth-child(5), table.pplan td:nth-child(5), table.pplan th:nth-child(6), table.pplan td:nth-child(6){display:none}
+  table.pplan td.pa button{font-size:14px}
+  .mwgrid, .mwcols{grid-template-columns:minmax(0,1fr)!important}
+  .btabs button{flex:1 1 0;padding:8px 10px;font-size:12.5px}
+}
 /* Plan du jour, Bulletin du score, voyant de retard */
 .psum.pmac{margin-top:-4px}
 .psum .pk{flex:1 1 150px;min-width:0;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px;color:var(--fg);cursor:pointer;font:inherit;transition:border-color .15s}
@@ -1210,32 +1226,28 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <span class="navgrp">Aujourd’hui</span>
   <button type="button" data-page="plan" aria-current="page">Plan du jour</button>
   <button type="button" data-page="watch">Surveillance des marchés</button>
-  <button type="button" data-page="squawk">Fil en direct</button>
   <span class="navgrp">Analyse</span>
   <button type="button" data-page="score">Scorecard</button>
   <button type="button" data-page="top">Top Setups</button>
-  <button type="button" data-page="fund">Heatmap fondamentale</button>
   <button type="button" data-page="tech">Heatmap technique</button>
   <button type="button" data-page="bull">Bulletin du score</button>
   <span class="navgrp">Calendrier et nouvelles</span>
   <button type="button" data-page="cal">Calendrier économique</button>
   <button type="button" data-page="earn">Résultats</button>
-  <button type="button" data-page="news">Nouvelles</button>
+  <button type="button" data-page="squawk">Nouvelles</button>
   <button type="button" data-page="recap">Récap des sessions</button>
   <span class="navgrp">Macro et taux</span>
   <button type="button" data-page="eco">Économie US</button>
   <button type="button" data-page="fed">Taux</button>
   <button type="button" data-page="cbg">Or · banques centrales</button>
-  <button type="button" data-page="globe">Carte du monde</button>
   <span class="navgrp">Sentiment et positionnement</span>
-  <button type="button" data-page="sent">Sentiment</button>
-  <button type="button" data-page="risk">Sentiment de risque</button>
-  <button type="button" data-page="cot">COT</button>
+  <button type="button" data-page="risk">Appétit pour le risque</button>
+  <button type="button" data-page="sent">Positionnement</button>
   <button type="button" data-page="bankpos">Banques</button>
   <span class="navgrp">Graphiques et outils</span>
   <button type="button" data-page="charts">Graphiques</button>
   <button type="button" data-page="seas">Saisonnalité</button>
-  <button type="button" data-page="liq">Liquidité</button>
+  <button type="button" data-page="liq">Sommets et creux récents</button>
   <button type="button" data-page="hours">Heures des marchés</button>
 </nav>
 </aside>
@@ -1362,7 +1374,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="cal" hidden aria-label="Calendrier économique">
     <div class="panel">
       <div class="pghead">
-        <div><h2>Calendrier économique</h2><p>Publications américaines et Fed · heure de l’Est (Québec)</p></div>
+        <div><h2>Calendrier économique</h2><p>Publications américaines, Fed et banques centrales étrangères · heure de l’Est (Québec)</p></div>
         <div class="calseg" role="group" aria-label="Importance selon l’actif">
           <button type="button" data-ca="all" aria-pressed="true">Tous</button>
           <button type="button" data-ca="xauusd" aria-pressed="false">Or</button>
@@ -1408,22 +1420,22 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="charts" hidden aria-label="Graphiques"><div class="p2" id="p2charts"></div></section>
   <section data-pg="recap" hidden aria-label="Récap des sessions"><div class="p2" id="p2recap"></div></section>
   <section data-pg="research" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="bankpos" aria-selected="false">Prévisions par marché</button><button type="button" role="tab" data-btab="research" aria-selected="true">Notes de recherche</button></div><div class="p2" id="p2research"></div></section>
-  <section data-pg="squawk" hidden aria-label="Fil en direct"><div class="p2" id="p2squawk"></div></section>
+  <section data-pg="squawk" hidden aria-label="Nouvelles"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="squawk" aria-selected="true">En direct</button><button type="button" role="tab" data-btab="news" aria-selected="false">Résumés</button></div><div class="p2" id="p2squawk"></div></section>
   <section data-pg="bankpos" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="bankpos" aria-selected="true">Prévisions par marché</button><button type="button" role="tab" data-btab="research" aria-selected="false">Notes de recherche</button></div><div class="p2" id="p2bankpos"></div></section>
-  <section data-pg="risk" hidden aria-label="Sentiment de risque"><div class="p2" id="p2risk"></div></section>
+  <section data-pg="risk" hidden aria-label="Appétit pour le risque"><div class="p2" id="p2risk"></div></section>
   <section data-pg="plan" hidden aria-label="Plan du jour"><div class="p2" id="p2plan"></div><div class="p2" id="planTS"></div></section>
   <section data-pg="bull" hidden aria-label="Bulletin du score"><div class="p2" id="p2bull"></div></section>
   <section data-pg="watch" hidden aria-label="Surveillance des marchés"><div class="p2" id="p2watch"></div></section>
-  <section data-pg="liq" hidden aria-label="Liquidité"><div class="p2" id="p2liq"></div></section>
+  <section data-pg="liq" hidden aria-label="Sommets et creux récents"><div class="p2" id="p2liq"></div></section>
   <section data-pg="eco" hidden aria-label="Économie US"><div class="p2" id="p2eco"></div></section>
-  <section data-pg="cot" hidden aria-label="COT"><div class="p2" id="p2cot"></div></section>
-  <section data-pg="sent" hidden aria-label="Sentiment"><div class="p2" id="p2sent"></div></section>
+  <section data-pg="cot" hidden aria-label="Positionnement"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="sent" aria-selected="false">Sentiment (VIX et foule)</button><button type="button" role="tab" data-btab="cot" aria-selected="true">COT (fonds)</button></div><div class="p2" id="p2cot"></div></section>
+  <section data-pg="sent" hidden aria-label="Positionnement"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="sent" aria-selected="true">Sentiment (VIX et foule)</button><button type="button" role="tab" data-btab="cot" aria-selected="false">COT (fonds)</button></div><div class="p2" id="p2sent"></div></section>
   <section data-pg="hours" hidden aria-label="Heures des marchés"><div class="p2" id="p2hours"></div></section>
   <section data-pg="fund" hidden aria-label="Heatmap fondamentale"><div class="p2" id="p2fund"></div></section>
   <section data-pg="tech" hidden aria-label="Heatmap technique"><div class="p2" id="p2tech"></div></section>
   <section data-pg="seas" hidden aria-label="Saisonnalité"><div class="p2" id="p2seas"></div></section>
   <section data-pg="cbg" hidden aria-label="Or · banques centrales"><div class="p2" id="p2cbg"></div></section>
-  <section data-pg="news" hidden aria-label="Nouvelles"><div class="p2" id="p2news"></div></section>
+  <section data-pg="news" hidden aria-label="Nouvelles"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="squawk" aria-selected="false">En direct</button><button type="button" role="tab" data-btab="news" aria-selected="true">Résumés</button></div><div class="p2" id="p2news"></div></section>
 
   <section data-pg="fed" hidden aria-label="Taux">
     <div class="p2" id="p2rates"></div>
@@ -1878,7 +1890,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     });
     h += `</tbody></table>`;
     if(!list.length) h = '<p class="topempty">Aucun actif ne correspond à ces filtres.</p>';
-    box.innerHTML = h;
+    box.innerHTML = h + `<p class="mhint">${L('Touche un actif pour voir son détail.','Tap an asset for details.')}</p>`;
+    box.querySelectorAll('table.topset tbody tr').forEach(tr=>tr.addEventListener('click', e=>{ if(e.target.closest('button,[data-dd]')) return; const g = tr.querySelector('[data-goto]'); if(g && matchMedia('(max-width:600px)').matches) g.click(); }));
     box.querySelectorAll('[data-goto]').forEach(b=>b.addEventListener('click', ()=>{
       state.asset = b.dataset.goto; try{ localStorage.setItem('sc-asset', state.asset); }catch(e){}
       showPage('score'); renderAll();
@@ -1911,6 +1924,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const CAL_ASSETS = Object.keys(ASSETS);
   function impOf(item, asset){
     if(item.kind==='fed') return 2;
+    if(item.kind==='cb' && !item.assets) return 1;
     if(item.assets){ const ks = asset==='all' ? Object.keys(item.assets) : [asset]; return Math.max(0, ...ks.map(a=>+item.assets[a]||0)); }
     // versions de l’inflation (CPI de base, PPI MoM…) : même importance que leur famille
     const fam = !item.id && item.unit ? ((item.name||'').match(/^(CPI|PPI|PCE)\b/)||[])[1] : null;
@@ -1955,6 +1969,16 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       return {date, time:'', kind:'hol', name, note, half};
     });
   }
+  // décisions des banques centrales étrangères (date de la prochaine réunion relevée chaque jour vers 17 h 07)
+  const CB_CAL = {BCE:['EU','Banque centrale européenne','European Central Bank','08:15',0,{eurusd:2,usd:1}], BoE:['GB','Banque d’Angleterre','Bank of England','07:00',0,{gbpusd:2}],
+    BoJ:['JP','Banque du Japon','Bank of Japan','22:00',-1,{usdjpy:2}], BoC:['CA','Banque du Canada','Bank of Canada','09:45',0,{usdcad:2}], RBA:['AU','Banque de réserve d’Australie','Reserve Bank of Australia','22:30',-1,{audusd:2}],
+    RBNZ:['NZ','Banque de réserve de Nouvelle-Zélande','Reserve Bank of New Zealand','20:00',-1,{nzdusd:2}], BNS:['CH','Banque nationale suisse','Swiss National Bank','03:30',0,{usdchf:2}]};
+  function cbItems(){
+    return ((state.ts||{}).cbanks||[]).filter(c=>CB_CAL[c.cb] && /^\d{4}-\d{2}-\d{2}$/.test(c.next||'')).map(c=>{ const [cc, fr, en, time, shift, assets] = CB_CAL[c.cb];
+      const date = shift ? addDays(c.next, shift) : c.next;
+      const pr = [c.cut, c.hold, c.hike].every(x=>x!=null) ? ` · ${L('marché','market')} : ${L('baisse','cut')} ${c.cut} %, ${L('statu quo','hold')} ${c.hold} %, ${L('hausse','hike')} ${c.hike} %` : '';
+      return {date, time, kind:'cb', cc, assets, name:L(`Décision de taux · ${fr}`, `Rate decision · ${en}`), note:L(`Taux actuel ${c.rate} %`, `Current rate ${c.rate}%`)+pr+(shift ? L(' · heure de l’Est (le lendemain sur place)',' · Eastern time (next day locally)') : '')}; });
+  }
   function renderCalendar(){
     const box = $('calBox'); if(!box) return;
     const today = torontoToday();
@@ -1964,6 +1988,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const weeks = [...new Set(all.map(it=>mondayOf(it.date)))].sort();
     // jours fériés des semaines affichées
     holItems().filter(h=>weeks.includes(mondayOf(h.date))).forEach(h=>{ all.push(h); items.push(h); });
+    { const lim = addDays(curMon(today), 42); cbItems().forEach(c=>{ const w = mondayOf(c.date); if(c.date>=today && w<=lim && !weeks.includes(w)) weeks.push(w); }); weeks.sort(); }
+    cbItems().filter(c=>weeks.includes(mondayOf(c.date)) && !all.some(x=>x.kind==='cb' && x.cc===c.cc && x.date===c.date)).forEach(c=>{ all.push(c); if(state.calAsset==='all' || impOf(c, state.calAsset)>0) items.push(c); });
     all.sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||''))); items.sort((a,b)=>(a.date+(a.time||'')).localeCompare(b.date+(b.time||'')));
     if(!state.calWeek || !weeks.includes(state.calWeek)){
       const cur = curMon(today);
@@ -1988,7 +2014,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       const u = it.unit!==undefined ? it.unit : (ind ? ind.unit : '');
       const past = it.date < today || it.a!=null;
       h += `<tr class="${past?'past':''}"><td class="num t">${esc(it.time||'')}</td>`
-        + `<td class="name">${esc(it.name||'')}${it.note?`<small>${esc(it.note)}</small>`:''}</td>`
+        + `<td class="name">${it.cc && it.cc!=='US' ? `<span class="cflag" title="${esc(it.cc)}">${FLAG(it.cc)}</span> ` : ''}${esc(it.name||'')}${it.note?`<small>${esc(it.note)}</small>`:''}</td>`
         + `<td class="num">${it.prev!=null?fmt(it.prev,u):'—'}</td>`
         + `<td class="num">${it.f!=null?fmt(it.f,u):'—'}</td>`
         + `<td class="num">${it.a!=null?`<b>${fmt(it.a,u)}</b>`:(!past && it.time ? `<span class="cd" data-t="${etEpoch(it.date,it.time)}"></span>` : '—')}</td>`
@@ -3859,14 +3885,14 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   // ---------- Markets Watch ----------
   state.mwTab = state.mwTab || 'all'; state.mwCh = state.mwCh || 'd1'; state.mwSort = state.mwSort || 'def'; state.mwQ = state.mwQ || '';
-  const MWG = {fx:['Forex','Forex'], idx:['Indices','Indices'], cmd:['Matières premières','Commodities'], stk:['Actions','Stocks'], cry:['Crypto','Crypto']};
+  const MWG = {mine:['Mes marchés','My markets'], fx:['Forex','Forex'], idx:['Indices','Indices'], cmd:['Matières premières','Commodities'], stk:['Actions','Stocks'], cry:['Crypto','Crypto']};
   const CMDI = {gold:'🥇', silver:'🥈', plat:'⚪', pall:'⚪', copper:'🟠', oil:'🛢️', gas:'🔥', grain:'🌾', soft:'☕'};
   async function renderWatch(){
     const box = $('p2watch'); if(!box) return;
     box.classList.toggle('noanim', !!state.noAnim); state.noAnim = false;
     const M = await mkData(); if(state.page!=='watch') return;
     if(!M || !M.watch){ tsWait(box, L('Les cours arrivent à la prochaine mise à jour (toutes les heures).','Quotes arrive with the next hourly update.')); return; }
-    const W = M.watch, all = Object.entries(W).flatMap(([g,l])=>l.map(x=>Object.assign({g}, x)));
+    const W = M.watch, all = Object.entries(W).filter(([g])=>g!=='mine').flatMap(([g,l])=>l.map(x=>Object.assign({g}, x)));
     const ch = x => x[state.mwCh];
     const kpi = all.filter(x=>ch(x)!=null), up = kpi.filter(x=>ch(x)>0).length, dn = kpi.filter(x=>ch(x)<0).length;
     const avg = kpi.reduce((s,x)=>s+ch(x),0)/(kpi.length||1);
@@ -3874,12 +3900,12 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const q = state.mwQ.trim().toLowerCase();
     const match = x => !q || (x.n+' '+nmT(x.n)+' '+x.s).toLowerCase().includes(q);
     const sortL = l => { const a = l.filter(match); if(state.mwSort==='perf') a.sort((p,r)=>(ch(r)??-1e9)-(ch(p)??-1e9)); else if(state.mwSort==='az') a.sort((p,r)=>p.n.localeCompare(r.n)); return a; };
-    const icon = x => x.g==='fx'||x.g==='idx' ? FLAG(x.cc) : x.g==='cmd' ? (CMDI[x.cc]||'•') : x.g==='cry' ? '◎' : '▪';
-    const col = (g) => { const l = sortL(W[g]||[]), a = (W[g]||[]).filter(x=>ch(x)!=null), av = a.reduce((s,x)=>s+ch(x),0)/(a.length||1);
+    const icon = x => x.g==='mine' ? '★' : x.g==='fx'||x.g==='idx' ? FLAG(x.cc) : x.g==='cmd' ? (CMDI[x.cc]||'•') : x.g==='cry' ? '◎' : '▪';
+    const col = (g) => { const l = sortL((W[g]||[]).map(x=>Object.assign({g}, x))), a = (W[g]||[]).filter(x=>ch(x)!=null), av = a.reduce((s,x)=>s+ch(x),0)/(a.length||1);
       return `<div class="mwcol panel"><div class="mwch"><b>● ${esc((isEN()?MWG[g][1]:MWG[g][0]).toUpperCase())}</b><span>${(W[g]||[]).length}</span><em class="${pcCls(av)}">avg ${pcTxt(av)}</em></div>
         <div class="mwrow mwhd"><span>${L('MARCHÉ','MARKET')}</span><span>${L('DERNIER','LAST')}</span><span>${state.mwCh==='d1'?'1D':state.mwCh==='w1'?'1W':'1M'}</span></div>
         ${l.map((x,i)=>`<button type="button" class="mwrow" data-s="${esc(x.s)}" style="--d:${Math.min(i,20)*20}ms"><span><i>${icon(x)}</i>${esc(nmT(x.n))}</span><b class="${x._chg>0?'flu':x._chg<0?'fld':''}">${pxAuto(x.last)}</b><em class="${pcCls(ch(x))}">${pcTxt(ch(x))}</em></button>`).join('') || `<p class="tsnone">${L('Aucun résultat','No result')}</p>`}</div>`; };
-    const groups = state.mwTab==='all' ? Object.keys(MWG) : [state.mwTab];
+    const groups = (state.mwTab==='all' ? Object.keys(MWG) : [state.mwTab]).filter(g=>W[g] && W[g].length);
     box.innerHTML = `
       <div class="mwtop"><span class="tscap">${L('SURVEILLANCE DES MARCHÉS','MARKET WATCH')}</span><h2>${L('MARCHÉS','MARKETS')}</h2><span class="mwsub">${all.length} ${M.liveAsOf ? L('MARCHÉS · COURS EN DIRECT','MARKETS · LIVE QUOTES')+' · '+new Date(M.liveAsOf).toTimeString().slice(0,8) : L('MARCHÉS · COURS MIS À JOUR TOUTES LES HEURES','MARKETS · QUOTES REFRESHED HOURLY')+' · '+tsTime(M.asOf)}</span></div>
       <label class="mwsearch"><span>⌕</span><input type="search" id="mwQ" value="${esc(state.mwQ)}" placeholder="${L('Chercher parmi','Search')} ${all.length} ${L('marchés — EUR/USD, Or, Nvidia, Bitcoin…','markets — EUR/USD, Gold, Nvidia, Bitcoin…')}" autocomplete="off"></label>
@@ -3933,7 +3959,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const R = M && M.risk;
     if(!R){ tsWait(box, L('Le sentiment de risque arrive à la prochaine mise à jour.','Risk sentiment arrives with the next update.')); return; }
     const lb = riskLbl(R.score);
-    box.innerHTML = `${tsHead(L('SENTIMENT DE RISQUE · APPÉTIT POUR LE RISQUE MULTI-ACTIFS','RISK SENTIMENT · CROSS-ASSET RISK APPETITE'), `7 ${L('MARCHÉS · CLÔTURES QUOTIDIENNES · CENTILE SUR 1 AN','MARKETS · DAILY CLOSES · PERCENTILE VS 1 YEAR')}`)}
+    box.innerHTML = `${tsHead(L('APPÉTIT POUR LE RISQUE · 7 MARCHÉS','RISK APPETITE · 7 MARKETS'), `7 ${L('MARCHÉS · CLÔTURES QUOTIDIENNES · CENTILE SUR 1 AN','MARKETS · DAILY CLOSES · PERCENTILE VS 1 YEAR')}`)}
       <div class="rkgrid">
         <div class="panel rkg"><p class="tscap">${L('APPÉTIT POUR LE RISQUE (COMPOSÉ)','COMPOSITE RISK APPETITE')}</p>${gaugeSVG(R.score, R.w1, R.m1, true)}
           <div class="rkmeta"><span>1W <b class="${pcCls(R.score-R.w1)}">${R.w1==null?'—':Math.round(R.w1)} (${sg2(R.score-R.w1,0)})</b></span><span>1M <b class="${pcCls(R.score-R.m1)}">${R.m1==null?'—':Math.round(R.m1)} (${sg2(R.score-R.m1,0)})</b></span></div></div>
@@ -4105,7 +4131,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const dots = n => '●'.repeat(Math.min(n,5)) + (n>5?'+':'');
     const SN = {asia:L('Asie','Asia'), lon:L('Londres','London'), ny:'New York'};
     const tab = state.liqTab;
-    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('CARTE DE LIQUIDITÉ · BASSINS DE STOPS ET BALAYAGES','LIQUIDITY MAPPING · STOP POOLS & SWEEPS')} ${assetSel('liqA', a)}</div><div class="badge">${pxAuto(R.last)}</div></div>
+    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('SOMMETS ET CREUX RÉCENTS · ZONES DE STOPS PROBABLES','RECENT HIGHS AND LOWS · LIKELY STOP ZONES')} ${assetSel('liqA', a)}</div><div class="badge">${pxAuto(R.last)}</div></div>
       <div class="liqk">
         <div class="panel lk ${R.likely[1]}"><span>${L('PROBABILITÉ DE CHASSE AUX STOPS','STOP-RUN LIKELIHOOD')}</span><b>${R.likely[0]}</b><small>${R.near?L('bassin le plus proche à ','nearest pool at ')+nf(Math.abs(R.near.lvl-R.last)/(R.at||1),1)+' ATR':''}</small></div>
         <div class="panel lk"><span>${L('BASSINS NON TESTÉS','UNTESTED POOLS')}</span><b>${R.pools.length}</b><small>${R.pools.filter(p=>p.side==='bsl').length} BSL · ${R.pools.filter(p=>p.side==='ssl').length} SSL</small></div>
@@ -4310,7 +4336,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     box.innerHTML = `<div class="hts ${onPlan?'noq':''}">
       ${onPlan ? '' : `<div class="panel htsq"><div class="ph"><div><h3>✦ Squawk</h3><p>${L('Manchettes, données et gros mouvements','Headlines, data and big movers')}</p></div><button type="button" class="btn ghost" data-gop="squawk">${L('Tout voir','See all')}</button></div>
         <div class="sqlist mini">${sq.map(x=>`<div class="sqi ${x.k} ${x.hi?'hi':''}"><span class="sqt">${new Date(x.t).toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit'})}</span><i></i><span class="sqx">${x.nm?`<span>${esc(x.nm)}</span>`:''}${esc(x.txt)}</span></div>`).join('') || `<p class="tsnone">—</p>`}</div></div>`}
-      <button type="button" class="panel htrisk" data-gop="risk"><div class="ph"><div><h3>${L('Sentiment de risque','Risk sentiment')}</h3><p>${L('7 marchés, centile sur 1 an','7 markets, 1-year percentile')}</p></div></div>${R?gaugeSVG(R.score, R.w1, R.m1):`<p class="tsnone">${L('Bientôt','Coming soon')}</p>`}</button>
+      <button type="button" class="panel htrisk" data-gop="risk"><div class="ph"><div><h3>${L('Appétit pour le risque','Risk appetite')}</h3><p>${L('7 marchés, centile sur 1 an','7 markets, 1-year percentile')}</p></div></div>${R?gaugeSVG(R.score, R.w1, R.m1):`<p class="tsnone">${L('Bientôt','Coming soon')}</p>`}</button>
       <div class="panel htstr"><div class="ph"><div><h3>${L('Force des devises · non pondéré','Currency strength · unweighted')}</h3><p>${L('% depuis la 1re barre (1H, 5 jours)','% since first bar (1H, 5 days)')}</p></div><button type="button" class="btn ghost" data-gop="charts">Charts</button></div>
         <div class="chgrid1 mini"><div class="chcanvas"><canvas id="homeStr"></canvas></div><div class="chleg">${D?D.ser.map(s=>`<div style="--c:${s.col}"><i></i>${esc(s.k)}<b class="${pcCls(s.last)}">${pcTxt(s.last)}</b></div>`).join(''):''}</div></div></div>
       ${onPlan ? '' : `<div class="panel htcb"><div class="ph"><div><h3>${L('Banques centrales','Central banks')}</h3><p>${L('Taux directeur, prochaine réunion, probabilités du marché','Policy rate, next meeting, market odds')}</p></div><button type="button" class="btn ghost" data-gop="fed">${L('Taux','Rates')}</button></div>
@@ -4393,7 +4419,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         + `</tr>`;
     });
     // agenda : publications et fermetures d’aujourd’hui et du prochain jour de semaine
-    const dayItems = d => (state.calendar||[]).filter(it=>it.date===d && it.kind!=='earn').concat(holItems().filter(h=>h.date===d)).sort((a,b)=>(a.time||'').localeCompare(b.time||''));
+    const dayItems = d => (state.calendar||[]).filter(it=>it.date===d && it.kind!=='earn').concat(holItems().filter(h=>h.date===d), cbItems().filter(c=>c.date===d && !(state.calendar||[]).some(x=>x.kind==='cb' && x.cc===c.cc && x.date===d))).sort((a,b)=>(a.time||'').localeCompare(b.time||''));
     const earnOf = d => (state.calendar||[]).filter(it=>it.date===d && it.kind==='earn');
     const agenda = d => {
       const it = dayItems(d), er = earnOf(d);
@@ -4405,7 +4431,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         const ind = INDICATORS.find(i=>i.id===x.id), u = x.unit!==undefined ? x.unit : (ind ? ind.unit : ''), imp = impOf(x, 'all');
         const val = x.a!=null ? `<b>${fmt(x.a,u)}</b> <small>${L('prévu','f’cast')} ${x.f!=null?fmt(x.f,u):'—'}</small>` : `${x.f!=null?`${L('Prévu','F’cast')} ${fmt(x.f,u)}`:''}${x.prev!=null?` <small>${L('préc.','prev.')} ${fmt(x.prev,u)}</small>`:''}`;
         const cd = x.a==null && x.time && d===today ? ` <span class="cd" data-t="${etEpoch(x.date,x.time)}"></span>` : '';
-        h += `<div class="pev ${imp>=2?'hi':''}"><span class="pt">${esc(x.time||'')}</span><span class="pn">${esc(x.name||'')}${cd}<small>${val}</small></span><span class="ps">${stars(imp)}</span></div>`;
+        h += `<div class="pev ${imp>=2?'hi':''}"><span class="pt">${esc(x.time||'')}</span><span class="pn">${x.cc && x.cc!=='US' ? FLAG(x.cc)+' ' : ''}${esc(x.name||'')}${cd}<small>${val}</small></span><span class="ps">${stars(imp)}</span></div>`;
       });
       if(er.length) h += `<div class="pev er"><span class="pt">${L('Rés.','Earn.')}</span><span class="pn">${er.map(e=>esc((e.name||'').replace(/^Résultats\s*/,''))).join(' · ')}</span></div>`;
       return h;
@@ -4436,7 +4462,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <div class="psum pmac">${mk4}</div>
       <div class="pgrid">
         <div class="panel pbias-p"><div class="ph"><div><h3>${L('Biais de tes actifs','Your assets’ bias')}</h3><p>${L('Biais = score du scorecard sur 100 (≥ +15 haussier, ≤ −15 baissier, ±40 = très). Prix et 1D (depuis l’ouverture) en direct. Clique sur un actif pour voir le détail.','Bias = scorecard score out of 100 (≥ +15 bullish, ≤ −15 bearish, ±40 = very). Live price and 1D (since the open). Click an asset for details.')}</p></div></div>
-          <div class="tablewrap"><table class="ptab"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Prix','Price')}</th><th class="r">1D</th><th>${L('Biais','Bias')}</th><th class="r">Score</th><th class="c">${L('Semaine','Week')}</th></tr></thead><tbody>${tb}</tbody></table></div></div>
+          <div class="tablewrap"><table class="ptab pplan"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Prix','Price')}</th><th class="r">1D</th><th>${L('Biais','Bias')}</th><th class="r">Score</th><th class="c">${L('Semaine','Week')}</th></tr></thead><tbody>${tb}</tbody></table></div></div>
         <div class="pside">
           <div class="panel"><div class="ph"><div><h3>${L('Publications et fermetures','Releases and closures')}</h3></div></div><div class="pb pag">${agenda(today)}${agenda(nxt)}</div></div>
           <div class="panel"><div class="ph"><div><h3>${L('Les 5 nouvelles qui comptent','The 5 headlines that matter')}</h3><p>${L('Dernières 24 h, impact élevé en premier.','Last 24 h, high impact first.')}</p></div></div><div class="pb"><ol class="pnews">${nwh}</ol></div></div>
@@ -4578,9 +4604,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   function showPage(pg){
     if(pg==='home') pg = 'plan';
+    if(pg==='fund') pg = 'top';
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
-    document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===(pg==='research'?'bankpos':pg)) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
+    document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===(({research:'bankpos', cot:'sent', news:'squawk'})[pg]||pg)) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
     try{ const hsh = pg==='plan' ? '' : '#'+({score:'scorecard', bull:'bulletin', cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches', charts:'charts', recap:'session-recap', research:'bank-research', squawk:'squawk', bankpos:'bank-positioning', risk:'risk-sentiment', watch:'markets-watch', liq:'liquidity'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
     try{ if(typeof globeObj!=='undefined' && globeObj){ if(pg==='globe') globeObj.resumeAnimation(); else globeObj.pauseAnimation(); } }catch(e){}
@@ -4652,8 +4679,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
-    'Vue d’ensemble':'Overview','Notes de recherche':'Research notes','Prévisions par marché':'Forecasts by market','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
-    'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Heatmap fondamentale':'Fundamental heatmap','Heatmap technique':'Technical heatmap','Saisonnalité':'Seasonality','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines et Fed · heure de l’Est (Québec)':'US releases and Fed · Eastern Time','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
+    'Vue d’ensemble':'Overview','Appétit pour le risque':'Risk appetite','Sommets et creux récents':'Recent highs and lows','En direct':'Live','Résumés':'Summaries','Sentiment (VIX et foule)':'Sentiment (VIX and crowd)','Sentiment de la foule':'Crowd sentiment','COT (fonds)':'COT (funds)','Mes marchés':'My markets','Notes de recherche':'Research notes','Prévisions par marché':'Forecasts by market','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
+    'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Heatmap fondamentale':'Fundamental heatmap','Heatmap technique':'Technical heatmap','Saisonnalité':'Seasonality','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines, Fed et banques centrales étrangères · heure de l’Est (Québec)':'US releases, the Fed and foreign central banks · Eastern time (Québec)','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Prévisions':'Guidance','Mitigé':'Mixed','En ligne':'In line','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
     'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
     'Le verdict se base sur la surprise des revenus : Battu = revenus au-dessus des prévisions des analystes; Raté = en dessous; En ligne = égaux. Surprise = écart des revenus réels avec la prévision des analystes (en %); le % sous le BPA réel = écart du BPA avec sa prévision. Les résultats ne comptent pas dans le score. Mise à jour automatique avec le scorecard.':'The verdict is based on the revenue surprise: Beat = revenue above analysts’ forecasts; Miss = below; In line = equal. Surprise = gap between actual and forecast revenue (in %); the % under actual EPS = EPS gap vs its forecast. Earnings are not part of the score. Updated automatically with the scorecard.',
@@ -4677,7 +4704,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'Historique du score':'Score history','Historique macro + sentiment':'Macro + sentiment history',
     'L’historique se remplit chaque jour où tu modifies les données.':'The history fills in every day the data changes.',
     // tableau
-    'Activité institutionnelle':'Institutional activity','Sentiment de la foule':'Crowd sentiment',
+    'Activité institutionnelle':'Institutional activity','Sentiment (VIX et foule)':'Sentiment (VIX and crowd)',
     'Croissance économique':'Economic growth','Inflation':'Inflation','Marché de l’emploi':'Labor market',
     'Données propres à l’actif':'Asset-specific data',
     'Tendance 4H / Daily':'4H / Daily trend','Ta lecture de la tendance sur le 4H et le Daily (±2)':'Your read of the 4H and Daily trend (±2)',

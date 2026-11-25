@@ -64,6 +64,8 @@ async function pool(items, fn, n = 4) {
 
 // ---------- Market Watch ----------
 const W = {
+  // « Mes marchés » : ce que Raphaël trade (ETF à levier) et leurs sous-jacents
+  mine: [['SOXL','SOXL · semi-conducteurs ×3'],['GDXU','GDXU · minières d’or ×3'],['^SOX','Semi-conducteurs (SOX)'],['GDX','Minières d’or (GDX)'],['GC=F','Or'],['^NDX','Nasdaq 100']],
   fx: [['EURUSD=X','EUR/USD','EU'],['GBPUSD=X','GBP/USD','GB'],['JPY=X','USD/JPY','JP'],['CHF=X','USD/CHF','CH'],['CAD=X','USD/CAD','CA'],['AUDUSD=X','AUD/USD','AU'],['NZDUSD=X','NZD/USD','NZ'],
        ['EURGBP=X','EUR/GBP','EU'],['EURJPY=X','EUR/JPY','EU'],['EURCHF=X','EUR/CHF','EU'],['EURAUD=X','EUR/AUD','EU'],['EURCAD=X','EUR/CAD','EU'],['EURNZD=X','EUR/NZD','EU'],
        ['GBPJPY=X','GBP/JPY','GB'],['GBPCHF=X','GBP/CHF','GB'],['GBPAUD=X','GBP/AUD','GB'],['AUDJPY=X','AUD/JPY','AU'],['CADJPY=X','CAD/JPY','CA'],['CHFJPY=X','CHF/JPY','CH'],['NZDJPY=X','NZD/JPY','NZ'],

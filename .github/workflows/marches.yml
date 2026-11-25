@@ -4,6 +4,9 @@ on:
     - cron: '23 * * * 1-5'      # toutes les heures en semaine
     - cron: '23 */6 * * 0,6'    # aux 6 heures la fin de semaine (crypto)
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['tools/snap_markets.mjs']   # relance tout de suite quand le calcul change
 permissions:
   contents: write
 concurrency: marches
