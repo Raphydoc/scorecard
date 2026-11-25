@@ -966,6 +966,15 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 .apb.abear{border-color:color-mix(in srgb,var(--bear) 55%,transparent);background:color-mix(in srgb,var(--bear) 14%,var(--panel-2))}
 .apb.abull b{color:var(--bull)} .apb.abear b{color:var(--bear)}
 .apb.on{border-color:var(--gold)!important;box-shadow:0 0 0 2px var(--gold)}
+
+/* couleurs par catégorie */
+.apick{flex-direction:row!important;gap:10px 22px!important}
+.apg.cidx{--ac:#4ea1ff} .apg.cmet{--ac:#f2b43a} .apg.cfx{--ac:#b48cff} .apg.cnrg{--ac:#ff8a3d} .apg.ccry{--ac:#2ed3b7}
+.apg .apgt{color:var(--ac)!important}
+.apb.cidx,.apb.cmet,.apb.cfx,.apb.cnrg,.apb.ccry{border-color:color-mix(in srgb,var(--ac) 50%,transparent);background:color-mix(in srgb,var(--ac) 13%,var(--panel-2))}
+.apb.cidx b,.apb.cmet b,.apb.cfx b,.apb.cnrg b,.apb.ccry b{color:var(--ac)}
+.apb.on{background:color-mix(in srgb,var(--ac) 30%,var(--panel-2))!important}
+@media (max-width:640px){ .apick{flex-direction:column!important;gap:8px!important} }
 /* test du score sur le passé */
 .panel.bt{margin-top:14px}
 .btwarn{margin:0 14px 12px;padding:9px 12px;border-left:3px solid var(--gold);background:var(--panel-2);font-size:12.5px;line-height:1.5;color:var(--muted)} .btwarn b{color:var(--fg)}
@@ -4997,10 +5006,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   // ---------- sélecteur d'actifs : tous les actifs visibles, un clic pour changer ----------
   const PICK_GR = [['Actions','Stocks',['nasdaq','spx500','us30','rut']],['Métaux','Metals',['xauusd','xagusd']],['Dollar et devises','Dollar and FX',['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['Pétrole et crypto','Oil and crypto',['usoil','btcusd']]];
   function pickHtml(){
-    const cur = state.asset, ks = Object.keys(TOP_NAMES).filter(k=>state.assets && state.assets[k]).map(k=>({k, t:compute(k).total})).sort((a,b)=>b.t-a.t);
-    const G = [['bull',L('Haussier','Bullish')],['neu',L('Neutre','Neutral')],['bear',L('Baissier','Bearish')]];
-    return `<div class="apick" role="tablist" aria-label="${L('Choisir un actif','Choose an asset')}">${G.map(([b,t])=>{ const g = ks.filter(x=>biasOf(x.t)===b); if(!g.length) return '';
-      return `<div class="apg a${b}"><span class="apgt">${t} <em>${g.length}</em></span><div class="apgl">${g.map(({k})=>`<button type="button" role="tab" class="apb a${b} ${k===cur?'on':''}" aria-selected="${k===cur}" data-ap="${k}"><b>${esc(TOP_NAMES[k])}</b></button>`).join('')}</div></div>`; }).join('')}</div>`;
+    const cur = state.asset, has = k => state.assets && state.assets[k];
+    const G = [['idx',L('Indices','Indices'),['nasdaq','spx500','us30','rut']],['met',L('Métaux','Metals'),['xauusd','xagusd']],['fx',L('Devises','Currencies'),['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['nrg',L('Énergie','Energy'),['usoil']],['cry',L('Crypto','Crypto'),['btcusd']]];
+    return `<div class="apick" role="tablist" aria-label="${L('Choisir un actif','Choose an asset')}">${G.map(([c,t,ks])=>{ ks = ks.filter(has); if(!ks.length) return '';
+      return `<div class="apg c${c}"><span class="apgt">${t}</span><div class="apgl">${ks.map(k=>`<button type="button" role="tab" class="apb c${c} ${k===cur?'on':''}" aria-selected="${k===cur}" data-ap="${k}"><b>${esc(TOP_NAMES[k])}</b></button>`).join('')}</div></div>`; }).join('')}</div>`;
   }
   function pickAsset(k){ if(!k || k===state.asset) return; state.asset = k; try{ localStorage.setItem('sc-asset', k); }catch(e){} const sel = $('assetSel'); if(sel) sel.value = k; renderAll(); }
   document.addEventListener('click', e=>{ const b = e.target.closest('[data-ap]'); if(b){ pickAsset(b.dataset.ap); } });
