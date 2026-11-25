@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T21:42:28Z",
+ "updatedAt": "2026-11-25T22:15:35Z",
  "econ": {
   "values": {
    "adp": {
@@ -36861,14 +36861,14 @@
   ]
  },
  "why": {
-  "asOf": "2026-11-25T21:18:03Z",
+  "asOf": "2026-11-25T22:15:35Z",
   "summary": {
-   "fr": "Journée en V à Wall Street : la débâcle des titres de l'IA (Nvidia, puces) et les nouveaux tarifs proposés contre 14 partenaires ont fait plonger le Nasdaq de plus de 4 % en matinée, puis les achats à bas prix avant l'Action de grâce ont fait remonter les indices. L'inflation PCE à 3,8 % rend une hausse de taux de la Fed en décembre presque certaine, mais les taux obligataires baissent quand même avec la recherche de sécurité.",
-   "en": "A V-shaped day on Wall Street: the AI-stock rout (Nvidia, chips) and newly proposed tariffs on 14 trading partners sank the Nasdaq more than 4% in the morning, then dip buying ahead of Thanksgiving lifted the indexes. PCE inflation at 3.8% makes a December Fed hike near-certain, yet Treasury yields still fell on safe-haven demand.",
+   "fr": "Journée en V à Wall Street : la vente sur l'IA (Nvidia, puces) et les nouveaux tarifs proposés contre 14 partenaires ont fait plonger le Nasdaq de plus de 4 % en matinée, puis les achats à bas prix avant l'Action de grâce ont presque tout effacé. L'inflation PCE à 3,8 % rend une hausse de taux de la Fed en décembre très probable, mais la recherche de sécurité fait baisser les taux et le dollar, ce qui aide l'or; le pétrole grimpe avec les menaces des Houthis.",
+   "en": "A V-shaped day on Wall Street: the AI selloff (Nvidia, chips) and newly proposed tariffs on 14 partners sank the Nasdaq more than 4% in the morning, then dip buying ahead of Thanksgiving erased most of it. PCE inflation at 3.8% makes a December Fed hike very likely, but safe-haven buying pushed yields and the dollar lower, helping gold; oil climbed on Houthi threats.",
    "src": [
     [
-     "Investing.com : Wall Street rebondit après une déroute",
-     "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
+     "AP : Wall Street efface une chute brutale",
+     "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
     ],
     [
      "CNBC : nouveaux tarifs sur 14 partenaires",
@@ -36883,12 +36883,12 @@
   "items": {
    "nasdaq": {
     "move": "+2,9 %",
-    "fr": "Le Nasdaq a effacé une bonne partie d'une chute de plus de 4 % en matinée : des acheteurs ont profité du creux avant l'Action de grâce et les semi-conducteurs ont réduit leurs pertes. Nvidia reste un boulet (−3,9 %) avec S&P qui menace d'abaisser sa note pour des questions de gouvernance.",
-    "en": "The Nasdaq clawed back much of a 4%+ morning plunge as dip buyers stepped in ahead of Thanksgiving and chip stocks pared losses. Nvidia still dragged (−3.9%) after S&P put its rating on negative watch over governance concerns.",
+    "fr": "Depuis son creux de l'ouverture (chute de plus de 4 %), le Nasdaq a repris presque tout le terrain : les acheteurs à rabais sont revenus avant le congé de l'Action de grâce. Il finit quand même en légère baisse, plombé par Nvidia (près de −4 %) et les puces, sur fond d'inquiétudes de gouvernance (S&P menace sa note).",
+    "en": "From its opening low (a 4%+ plunge), the Nasdaq recovered nearly all its losses as dip buyers returned ahead of the Thanksgiving holiday. It still closed slightly lower, weighed by Nvidia (down nearly 4%) and chipmakers amid governance worries (S&P put its rating on watch).",
     "src": [
      [
-      "Investing.com : Wall Street rebondit après une déroute",
-      "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
+      "AP : Wall Street efface une chute brutale",
+      "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
      ],
      [
       "Investing.com : S&P place Nvidia sous surveillance négative",
@@ -36898,24 +36898,32 @@
    },
    "spx500": {
     "move": "+2,1 %",
-    "fr": "Le S&P 500 remonte fort depuis l'ouverture : achats à bas prix et rotation hors de la techno vers d'autres secteurs, malgré l'inflation PCE plus chaude (3,8 %) qui scelle presque une hausse de taux de la Fed en décembre.",
-    "en": "The S&P 500 rallied hard from the open on dip buying and rotation out of tech into other sectors, despite hotter PCE inflation (3.8%) that all but locks in a December Fed hike.",
+    "fr": "Le S&P 500 a remonté fort depuis l'ouverture grâce aux achats à bas prix, après une matinée secouée par la vente sur l'IA, les nouveaux tarifs proposés et l'inflation PCE à 3,8 % qui rend une hausse de taux de la Fed en décembre très probable.",
+    "en": "The S&P 500 rallied hard from the open on dip buying, after a morning rocked by the AI selloff, newly proposed tariffs and PCE inflation at 3.8% that makes a December Fed hike very likely.",
     "src": [
      [
-      "Investing.com : Wall Street rebondit après une déroute",
-      "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
+      "AP : Wall Street efface une chute brutale",
+      "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
      ],
      [
       "CNBC : l'inflation PCE grimpe à 3,8 %",
       "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html"
+     ],
+     [
+      "CNBC : nouveaux tarifs sur 14 partenaires",
+      "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html"
      ]
     ]
    },
    "us30": {
     "move": "+1,9 %",
-    "fr": "Le Dow a effacé un recul de plus de 2 % et finit en hausse : les investisseurs se sont tournés vers les titres hors techno, et HP a bondi d'environ 11 % après ses résultats.",
-    "en": "The Dow erased a 2%+ slide to close higher as investors rotated into non-tech names, and HP jumped about 11% after its results.",
+    "fr": "Le Dow a effacé une chute de plus de 1 000 points en matinée : les investisseurs ont acheté des titres hors techno, et HP a bondi après ses résultats.",
+    "en": "The Dow erased a 1,000-point-plus morning drop as investors bought non-tech names, and HP jumped after its results.",
     "src": [
+     [
+      "AP : Wall Street efface une chute brutale",
+      "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
+     ],
      [
       "Investing.com : Wall Street rebondit après une déroute",
       "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
@@ -36939,42 +36947,42 @@
    },
    "usd": {
     "move": "−0,1 %",
-    "fr": "Le dollar recule un peu : malgré l'inflation chaude, le taux 10 ans américain baisse parce que les investisseurs achètent des obligations pour se protéger de la débâcle techno, ce qui enlève un appui au billet vert.",
-    "en": "The dollar slipped: despite hot inflation, the 10-year Treasury yield fell as investors bought bonds for protection from the tech rout, removing some support for the greenback.",
+    "fr": "Le dollar a fait demi-tour et finit un peu en baisse : malgré l'inflation chaude, les investisseurs achètent des obligations pour se protéger de la débâcle techno, ce qui fait baisser le taux 10 ans et enlève un appui au billet vert.",
+    "en": "The dollar reversed course and ended slightly lower: despite hot inflation, investors bought bonds for protection from the tech rout, pushing down the 10-year yield and removing support for the greenback.",
     "src": [
      [
       "CNBC : le taux 10 ans recule malgré l'inflation",
       "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
      ],
      [
-      "Investing.com : Wall Street rebondit après une déroute",
-      "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
+      "Investing.com : l'or monte, le dollar fait demi-tour",
+      "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
      ]
     ]
    },
    "xauusd": {
-    "move": "+1,3 %",
-    "fr": "L'or avait plongé à son creux de séance après des ventes de maisons neuves très fortes (+14,2 %), puis il a rebondi quand les taux obligataires et le dollar ont reculé avec la recherche de sécurité.",
-    "en": "Gold hit a session low after a strong new home sales print (+14.2%), then rebounded as Treasury yields and the dollar eased on safe-haven bond buying.",
+    "move": "+1,7 %",
+    "fr": "L'or a touché son creux après des ventes de maisons neuves très fortes (+14,2 %), puis il a rebondi quand le dollar et les taux ont reculé. La hausse reste limitée par l'inflation chaude qui pousse la Fed vers une hausse de taux.",
+    "en": "Gold hit its low after a very strong new home sales print (+14.2%), then rebounded as the dollar and yields eased. Gains are capped by hot inflation pushing the Fed toward a rate hike.",
     "src": [
+     [
+      "Investing.com : l'or monte, le dollar fait demi-tour",
+      "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
+     ],
      [
       "Kitco : l'or touche son creux de séance",
       "https://www.kitco.com/news/article/2026-11-25/gold-price-falls-session-lows-us-new-home-sales-rise-142-october"
-     ],
-     [
-      "CNBC : le taux 10 ans recule malgré l'inflation",
-      "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
      ]
     ]
    },
    "xagusd": {
-    "move": "+1,4 %",
-    "fr": "L'argent suit l'or : après un passage sous 40 $ en matinée, il remonte avec le recul des taux et du dollar.",
-    "en": "Silver tracked gold: after dipping below $40 in the morning, it recovered as yields and the dollar eased.",
+    "move": "+2,1 %",
+    "fr": "L'argent suit l'or : après un passage sous 41 $ en matinée, il remonte avec le recul du dollar et des taux obligataires.",
+    "en": "Silver tracked gold: after dipping below $41 in the morning, it climbed as the dollar and Treasury yields eased.",
     "src": [
      [
-      "Kitco : l'or touche son creux de séance",
-      "https://www.kitco.com/news/article/2026-11-25/gold-price-falls-session-lows-us-new-home-sales-rise-142-october"
+      "Investing.com : l'or monte, le dollar fait demi-tour",
+      "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
      ],
      [
       "CNBC : le taux 10 ans recule malgré l'inflation",
@@ -36998,9 +37006,9 @@
     ]
    },
    "btcusd": {
-    "move": "+0,8 %",
-    "fr": "Le bitcoin est tombé vers 57 300 $ à l'ouverture de Wall Street, puis il est remonté vers 60 000 $ avec le rebond des actions. Le moral reste fragile : Galaxy a retiré son appel de creux et les FNB bitcoin enchaînent les sorties.",
-    "en": "Bitcoin fell to about $57,300 at the Wall Street open, then climbed back toward $60,000 with the equity rebound. Sentiment stays fragile: Galaxy withdrew its bottom call and bitcoin ETFs keep seeing outflows.",
+    "move": "+0,5 %",
+    "fr": "Le bitcoin est tombé vers 57 300 $ à l'ouverture de Wall Street, puis il est revenu autour de 60 000 $ avec le rebond des actions. Le moral reste fragile : Galaxy a retiré son appel de creux et les FNB bitcoin enchaînent les sorties.",
+    "en": "Bitcoin fell to about $57,300 at the Wall Street open, then returned to around $60,000 with the equity rebound. Sentiment stays fragile: Galaxy withdrew its bottom call and bitcoin ETFs keep seeing outflows.",
     "src": [
      [
       "CoinDesk : les vétérans crypto s'attendent à plus de douleur",
