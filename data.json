@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T04:48:38Z",
+  "updatedAt": "2026-11-25T05:47:59Z",
   "econ": {
     "values": {
       "adp": {
@@ -1495,6 +1495,21 @@
   },
   "news": [
     {
+      "date": "2026-11-25",
+      "time": "00:06",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Le coût de l'assurance contre le défaut des géants de l'IA s'envole : CDS records pour Oracle, Alphabet et CoreWeave",
+      "title_en": "AI credit default swap spreads widen on unease over cash flow",
+      "summary": "Le CDS 5 ans de SoftBank a bondi à 501 points de base, son plus large depuis octobre 2022 (Markit), tandis que ceux d'Oracle, Alphabet, SpaceX et CoreWeave ont atteint des records (S&P Global Market Intelligence); la probabilité de défaut de CoreWeave sur cinq ans grimpe à 68 %. Le crédit tech n'a profité d'aucun répit après la réembauche de Jensen Huang chez Nvidia, signe que les investisseurs craignent des rendements tardifs sur les infrastructures d'IA, une pression de plus pour le Nasdaq et le S&P 500.",
+      "summary_en": "SoftBank's five-year CDS spread jumped to 501 basis points, its widest since October 2022 (Markit), while five-year spreads for Oracle, Alphabet, SpaceX and CoreWeave hit records (S&P Global Market Intelligence), pushing CoreWeave's five-year default probability to 68%. Tech credit saw no relief after Nvidia re-hired CEO Jensen Huang, a sign investors fear delayed returns on AI infrastructure, adding pressure on the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/ai-credit-default-swap-spreads-widen-on-unease-over-cash-flow-5049729"
+    },
+    {
       "date": "2026-11-24",
       "time": "22:52",
       "source": "Investing.com (Reuters)",
@@ -2095,21 +2110,6 @@
       "summary": "Selon le sondage de la CBI, les détaillants britanniques affichent leur plus forte croissance des ventes en près de quatre ans, soit leur meilleur mois depuis la fin de 2022. Un signal de consommation plus solide au Royaume-Uni, à surveiller pour la livre sterling et les attentes envers la Banque d'Angleterre.",
       "summary_en": "According to the CBI survey, British retailers report their strongest sales growth in nearly four years, their best month since late 2022. A firmer UK consumer signal, worth watching for sterling and Bank of England expectations.",
       "url": "https://www.investing.com/news/economic-indicators/uk-retailers-report-best-month-for-sales-since-late-2022-cbi-5047636"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "04:44",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "usdjpy",
-        "usd"
-      ],
-      "title": "UBS voit l'USD/JPY à 158 jusqu'en 2027 en raison des écarts de taux",
-      "title_en": "UBS sees USD/JPY at 158 through 2027 on rate differentials",
-      "summary": "UBS prévoit que la paire USD/JPY restera autour de 158 jusqu'en 2027, en raison des écarts de taux d'intérêt entre les États-Unis et le Japon. Cette prévision suggère un yen qui demeurerait faible face au dollar à moyen terme. (Article non accessible; résumé basé sur le titre seulement.)",
-      "summary_en": "UBS expects USD/JPY to stay around 158 through 2027 on U.S.-Japan interest rate differentials. The forecast points to a yen that stays weak against the dollar over the medium term. (Article not accessible; summary based on the headline only.)",
-      "url": "https://www.investing.com/news/forex-news/ubs-sees-usdjpy-at-158-through-2027-on-rate-differentials-93CH-5047434"
     }
   ],
   "live": {
