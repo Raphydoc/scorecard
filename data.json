@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T13:58:00Z",
+  "updatedAt": "2026-11-25T13:49:13Z",
   "econ": {
     "values": {
       "adp": {
@@ -1650,23 +1650,46 @@
   "news": [
     {
       "date": "2026-11-25",
-      "time": "07:18",
-      "source": "CoinDesk",
+      "time": "08:31",
+      "source": "CNBC",
       "impact": "high",
       "assets": [
         "usd",
         "spx500",
         "nasdaq",
+        "us30",
         "xauusd",
         "btcusd",
         "eurusd",
         "usdjpy"
       ],
-      "title": "PCE d'octobre attendu à 8 h 30 : une hausse de taux de la Fed en décembre déjà intégrée par le marché",
-      "title_en": "October PCE due at 8:30 a.m.: December Fed rate hike already priced in",
-      "summary": "L'indice PCE de base d'octobre, la mesure d'inflation préférée de la Fed, est publié à 8 h 30 (HE); les prévisions suivies par le WSJ le voient passer à 3,2 % contre 3,1 % en septembre, et l'inflation globale à 3,8 % contre 3,6 %. Le marché intègre déjà une hausse d'un quart de point en décembre (taux directeur à 4 %-4,25 %) et environ 60 % de chances d'une autre hausse en janvier. Un chiffre au-dessus des attentes renforcerait le dollar et pèserait sur l'or, les actions et le bitcoin, qui a perdu environ 24 % ce mois-ci.",
-      "summary_en": "October core PCE, the Fed's preferred inflation gauge, is due at 8:30 a.m. ET; WSJ-tracked forecasts see it rising to 3.2% from 3.1% in September, with headline inflation at 3.8% from 3.6%. Markets already price a quarter-point December hike (to 4%-4.25%) and about a 60% chance of another in January. A hotter print would support the dollar and weigh on gold, stocks and bitcoin, which is down about 24% this month.",
-      "url": "https://www.coindesk.com/daybook-us/2026/11/25/fed-s-preferred-inflation-gauge-lands-with-a-december-rate-increase-already-priced-in"
+      "title": "L'indice PCE, la mesure d'inflation préférée de la Fed, accélère à 3,8 % en octobre, ce qui scelle probablement une hausse de taux",
+      "title_en": "Fed's preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
+      "summary": "Selon CNBC, l'inflation PCE a accéléré à 3,8 % sur un an en octobre, contre 3,6 % en septembre, ce qui rend très probable une hausse de taux de la Fed en décembre; MarketWatch titre que la Fed n'a « plus le choix ». L'article n'a pas pu être consulté en entier; résumé fondé sur les titres. Une Fed plus restrictive soutient le dollar et pèse sur l'or, les actions et le bitcoin.",
+      "summary_en": "According to CNBC, PCE inflation accelerated to 3.8% year over year in October from 3.6% in September, making a December Fed rate hike very likely; MarketWatch says the Fed now has 'no choice'. The full article could not be accessed; summary based on the headlines. A more hawkish Fed supports the dollar and weighs on gold, stocks and bitcoin.",
+      "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "08:11",
+      "source": "CNBC",
+      "impact": "high",
+      "assets": [
+        "usd",
+        "spx500",
+        "nasdaq",
+        "us30",
+        "eurusd",
+        "usdcad",
+        "audusd",
+        "nzdusd",
+        "usdjpy"
+      ],
+      "title": "Les États-Unis proposent de nouveaux tarifs sur 14 partenaires commerciaux, dont la Chine et l'UE",
+      "title_en": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
+      "summary": "Washington a proposé de nouveaux tarifs douaniers visant 14 partenaires commerciaux, dont la Chine et l'Union européenne, en vertu de la section 301; Investing.com (Reuters) rapporte aussi des tarifs plus élevés sur les importations du Brésil, dont un droit de 10 % sur les avions. Les articles n'ont pas pu être consultés en entier; résumé fondé sur les titres. Ce risque tarifaire soutient le dollar et pèse sur les actions et les devises liées au commerce.",
+      "summary_en": "Washington proposed new tariffs on 14 trading partners, including China and the European Union, under Section 301; Investing.com (Reuters) also reports higher proposed tariffs on Brazilian imports, including a 10% duty on aircraft. The full articles could not be accessed; summary based on the headlines. The tariff risk supports the dollar and weighs on stocks and trade-sensitive currencies.",
+      "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html"
     },
     {
       "date": "2026-11-25",
@@ -1834,26 +1857,6 @@
       "summary": "Les actions européennes progressent mercredi, portées par les titres de consommation, pendant que les investisseurs attendent l'annonce de nouveaux tarifs américains et les données d'inflation PCE. L'article n'a pas pu être consulté en entier; résumé fondé sur le titre. Le ton européen contraste avec la baisse en Asie et donne le ton avant l'ouverture à Wall Street.",
       "summary_en": "European stocks are rising on Wednesday, lifted by consumer shares, as investors await new U.S. tariffs and PCE inflation data. The full article could not be accessed; summary based on the headline. The European tone contrasts with the selloff in Asia and sets the mood ahead of the Wall Street open.",
       "url": "https://www.investing.com/news/stock-market-news/european-shares-rise-on-consumer-boost-markets-await-us-tariffs-inflation-5049970"
-    },
-    {
-      "date": "2026-11-25",
-      "time": "02:48",
-      "source": "Investing.com (Reuters)",
-      "impact": "high",
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "eurusd",
-        "usdcad",
-        "audusd",
-        "usdjpy"
-      ],
-      "title": "L'administration Trump s'apprête à dévoiler de nouveaux tarifs après une enquête sur la surcapacité industrielle, selon des sources",
-      "title_en": "Trump administration set to unveil new tariffs after probe on excess factory capacity, sources say",
-      "summary": "Selon des sources de Reuters, l'administration Trump se prépare à annoncer de nouveaux tarifs douaniers à l'issue d'une enquête sur la surcapacité de production industrielle; Investing.com rapporte que la Maison-Blanche vise la Chine, l'UE et des dizaines de pays. L'article n'a pas pu être consulté en entier; résumé fondé sur les titres. Ce risque tarifaire soutient le dollar et pèse sur les devises liées au commerce et sur les actions.",
-      "summary_en": "According to Reuters sources, the Trump administration is preparing to announce new tariffs following a probe into excess factory capacity; Investing.com reports the White House is targeting China, the EU and dozens of nations. The full article could not be accessed; summary based on the headlines. The tariff risk supports the dollar and weighs on trade-sensitive currencies and equities.",
-      "url": "https://www.investing.com/news/commodities-news/trump-administration-set-to-unveil-new-tariffs-after-probeon-excess-factory-capacity-sources-say-5048724"
     },
     {
       "assets": [
