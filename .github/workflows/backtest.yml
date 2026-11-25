@@ -1,0 +1,35 @@
+name: Test du score sur le passé
+on:
+  schedule:
+    - cron: '37 13 * * 6'   # chaque samedi
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths: ['.github/workflows/backtest.yml', 'tools/backtest.mjs']
+permissions:
+  contents: write
+concurrency:
+  group: backtest
+  cancel-in-progress: true
+jobs:
+  backtest:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Recalculer le score sur environ 10 ans
+        run: node tools/backtest.mjs backtest.json
+      - name: Enregistrer
+        run: |
+          git config user.name "scorecard-backtest"
+          git config user.email "actions@users.noreply.github.com"
+          git add backtest.json
+          git diff --cached --quiet && exit 0
+          git commit -q -m "Test du score sur le passé du $(TZ=America/New_York date +%F)"
+          for i in 1 2 3; do git push -q origin HEAD:main && exit 0; git pull -q --rebase origin main; done
+          exit 1
