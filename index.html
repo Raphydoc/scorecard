@@ -938,6 +938,25 @@ details.bmore > summary::before{content:'▸ '} details.bmore[open] > summary::b
 details.bnotesd{border-top:1px solid var(--line);margin-top:10px;padding-top:4px}
 ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
 @media (max-width:600px){ table.postab .pbar{display:none} td.pcr b, td.pcf b{margin-left:0} }
+/* évolution, pourquoi, corrélations */
+td.pspk{padding:4px 8px} td.pspk svg{display:block}
+td.pwhy{white-space:normal!important;min-width:260px;max-width:420px;font-size:12.5px;line-height:1.4}
+td.pwhy span{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.hnote{margin:4px 0 0;font-size:11px;color:var(--muted)}
+.whyb{margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
+.whyb h3{margin:0 0 6px;font:600 13px/1.2 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--gold)}
+.whyb h4{margin:12px 0 4px;font:600 11px/1.2 var(--f-body);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+.whyb p{margin:0 0 6px;font-size:13.5px;line-height:1.5} .whyb p.whys{font-size:11.5px;color:var(--muted)} .whyb p.whys a{color:var(--muted)}
+.whyb ul{list-style:none;margin:0;padding:0} .whyb li{font-size:13px;padding:3px 0} .whyb li b{display:inline-block;min-width:34px;font-family:var(--f-mono)}
+.whyb li.up b{color:var(--bull)} .whyb li.dn b{color:var(--bear)}
+ul.corrl{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,320px),1fr));gap:4px 18px}
+ul.corrl li{padding:6px 0;border-bottom:1px solid var(--line);font-size:13.5px}
+ul.corrl .cv{display:inline-block;min-width:52px;font:600 13px var(--f-mono)} ul.corrl .cv.up{color:var(--bull)} ul.corrl .cv.dn{color:var(--bear)}
+table.corrt{border-collapse:separate;border-spacing:2px;font:500 11px var(--f-mono)}
+table.corrt th{font:600 10px/1.1 var(--f-body);color:var(--muted);padding:4px;white-space:nowrap;text-align:right}
+table.corrt thead th{height:86px;vertical-align:bottom;text-align:left} table.corrt thead th span{display:inline-block;writing-mode:vertical-rl;transform:rotate(180deg)}
+table.corrt td{width:44px;height:28px;text-align:center;color:var(--fg);border-radius:3px}
+@media (max-width:600px){ table.pplan th:nth-child(7), table.pplan td:nth-child(7), table.pplan th:nth-child(8), table.pplan td:nth-child(8){display:none} }
 /* Plan du jour, Bulletin du score, voyant de retard */
 .psum.pmac{margin-top:-4px}
 .psum .pk{flex:1 1 150px;min-width:0;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px;color:var(--fg);cursor:pointer;font:inherit;transition:border-color .15s}
@@ -1296,6 +1315,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <button type="button" data-page="charts">Graphiques</button>
   <button type="button" data-page="seas">Saisonnalité</button>
   <button type="button" data-page="liq">Sommets et creux récents</button>
+  <button type="button" data-page="corr">Corrélations</button>
   <button type="button" data-page="hours">Heures des marchés</button>
 </nav>
 </aside>
@@ -1374,8 +1394,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         <div class="score-row"><span>Macroéconomie <small class="mut">/50</small></span><b id="sMacro" class="neu">0</b></div>
       </div>
       <div class="hist">
-        <h2>Historique macro + sentiment</h2>
-        <div id="histBox"><p class="empty-hist">L'historique se remplit chaque jour où de nouvelles données sortent.</p></div>
+        <h2>Évolution du score</h2>
+        <div id="histBox"><p class="empty-hist">L'historique se remplit chaque soir.</p></div>
+        <div id="whyBox"></div>
       </div>
     </section>
 
@@ -1471,6 +1492,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="squawk" hidden aria-label="Nouvelles"><div class="p2" id="p2squawk"></div></section>
   <section data-pg="bankpos" hidden aria-label="Banques"><div class="p2" id="p2bankpos"></div></section>
   <section data-pg="risk" hidden aria-label="Appétit pour le risque"><div class="p2" id="p2risk"></div></section>
+  <section data-pg="corr" hidden aria-label="Corrélations"><div class="p2" id="p2corr"></div></section>
   <section data-pg="plan" hidden aria-label="Plan du jour"><div class="p2" id="p2plan"></div><div class="p2" id="planTS"></div></section>
   <section data-pg="bull" hidden aria-label="Bulletin du score"><div class="p2" id="p2bull"></div></section>
   <section data-pg="watch" hidden aria-label="Surveillance des marchés"><div class="p2" id="p2watch"></div></section>
@@ -1803,24 +1825,12 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     { const sel = $('assetSel'); if(sel && sel.value!==state.asset) sel.value = state.asset; }
   }
   function renderHistory(){
-    const pts = state.history.filter(h=>h[state.asset]).map(h=>({date:h.date, v:(h[state.asset].sent||0)+(h[state.asset].macro||0)}));
-    const box = $('histBox');
-    if(!pts.length){ box.innerHTML = '<p class="empty-hist">L’historique se remplit chaque jour où tu modifies les données.</p>'; return; }
-    const W=300,H=130,pad=18, mid=(H-pad)/2, scale=(mid-6)/30;
-    const bw = Math.min(18, (W-8)/pts.length - 2);
-    let g = `<line x1="0" x2="${W}" y1="${mid}" y2="${mid}" stroke="var(--line)"/>`;
-    g += `<text x="0" y="10" font-size="9" fill="var(--muted)" font-family="IBM Plex Mono, monospace">+30</text>`;
-    g += `<text x="0" y="${H-pad-2}" font-size="9" fill="var(--muted)" font-family="IBM Plex Mono, monospace">−30</text>`;
-    const step = (W-24)/pts.length;
-    pts.forEach((p,i)=>{
-      const x = 24 + i*step + (step-bw)/2, hgt = Math.max(1.5, Math.abs(p.v)*scale);
-      const y = p.v>=0 ? mid-hgt : mid;
-      g += `<rect x="${x.toFixed(1)}" y="${y.toFixed(1)}" width="${bw.toFixed(1)}" height="${hgt.toFixed(1)}" fill="${p.v>0?'var(--bull)':p.v<0?'var(--bear)':'var(--neutral)'}"><title>${fmtDate(p.date)} : ${p.v}</title></rect>`;
-    });
-    const first = pts[0], last = pts[pts.length-1];
-    g += `<text x="24" y="${H-3}" font-size="10" fill="var(--muted)" font-family="IBM Plex Mono, monospace">${fmtDate(first.date)}</text>`;
-    if(pts.length>1) g += `<text x="${W}" y="${H-3}" font-size="10" fill="var(--muted)" text-anchor="end" font-family="IBM Plex Mono, monospace">${fmtDate(last.date)}</text>`;
-    box.innerHTML = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Historique du score total">${g}</svg>`;
+    const box = $('histBox'); if(!box) return;
+    if(!state.ohlc && state.page==='score' && location.protocol.startsWith('http') && !state._hOhlc){ state._hOhlc = 1; ohlcData().then(()=>renderHistory()); }
+    if(!state.bulletin && state.page==='score' && !state._hBul){ state._hBul = 1; getJSON('bulletin.json','bulletin').then(()=>renderHistory()); }
+    const pts = scoreSeries(state.asset);
+    box.innerHTML = pts.length > 1 ? scoreSvg(pts, 300, 140, false) + `<p class="hnote">${L('Score sur 100, un point par jour. Pointillé = estimation à partir de l’ancien historique (avant le 25 novembre).','Score out of 100, one point per day. Dashed = estimate from the old history (before November 25).')}</p>` : '<p class="empty-hist">'+L('L’historique se remplit chaque soir.','History fills in every evening.')+'</p>';
+    const w = $('whyBox'); if(w) w.innerHTML = whyHtml(state.asset);
   }
   function renderAll(){ if(typeof renderTape==='function') renderTape(); renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); if(typeof renderP2==='function') renderP2(); }
 
@@ -4462,6 +4472,109 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
 
+
+  // ================= Évolution du score, « pourquoi » et corrélations =================
+  // tendance technique d'un actif à une date passée (mêmes règles que le scorecard), à partir des chandelles journalières
+  // date de séance d'une barre journalière : les barres forex de Yahoo sont datées du lendemain (vérifié par corrélation avec l'indice dollar)
+  const FXK = ['eurusd','usdjpy','usdcad','gbpusd','audusd','usdchf','nzdusd'];
+  const barDate = (k, t) => nyDate((t + (FXK.includes(k) ? -43200 : 43200))*1000);
+  function techAt(asset, date){
+    const rows = state.ohlc && state.ohlc.d1 && state.ohlc.d1[asset]; if(!rows || rows.length<60) return null;
+    const dOf = r => barDate(asset, r[0]);
+    let i = -1; for(let k=rows.length-1;k>=0;k--) if(dOf(rows[k]) <= date){ i = k; break; } if(i<1) return null;
+    const px = rows[i][4], mon = mondayOf(date);
+    const wk = rows.slice(0, i+1).filter(r=>dOf(r) >= mon), before = rows.slice(0, i+1).filter(r=>dOf(r) < mon);
+    let tr = 0; if(wk.length && before.length){ const o = wk[0][1], pc = before[before.length-1][4]; tr = px>o && px>pc ? 2 : px<o && px<pc ? -2 : 0; }
+    const sma = (n, end) => end+1 < n ? null : rows.slice(end-n+1, end+1).reduce((a,r)=>a+r[4],0)/n;
+    const s50 = sma(50,i), s200 = sma(200,i), s50p = sma(50,i-10); let c = 0;
+    if(s50) c += px>s50 ? 1 : -1; if(s200) c += px>s200 ? 1 : -1; if(s50 && s50p) c += s50>s50p ? 1 : -1;
+    const dt = c>=2 ? 1 : c<=-2 ? -1 : 0;
+    const S = state.tech && state.tech.seas && state.tech.seas[asset]; let se = 0;
+    if(S && S.month){ const m = +date.slice(5,7)-1, avg = S.month[m], win = S.monthWin ? S.monthWin[m] : null; if(avg!=null) se = avg>=0.5 && (win==null||win>=55) ? 1 : avg<=-0.5 && (win==null||win<=45) ? -1 : 0; }
+    return tr + dt + se;
+  }
+  // série du score sur 100 : soir enregistré par le bulletin (plein), sinon estimation à partir de l'ancien historique (pointillé), et aujourd'hui en direct
+  function scoreSeries(asset){
+    const B = (state.bulletin && state.bulletin.days) || [], out = {};
+    (state.history||[]).forEach(h=>{ const e = h && h[asset]; if(!e || !h.date) return; const t = techAt(asset, h.date);
+      out[h.date] = {date:h.date, v:scoreNorm(asset, t==null ? compute(asset).tech : t, e.sent||0, e.macro||0).total, est:true}; });
+    B.forEach(d=>{ const v = d.a && d.a[asset]; if(v && v.r!=null) out[d.date] = {date:d.date, v:v.s, est:false}; });
+    const td = torontoToday(); out[td] = {date:td, v:compute(asset).total, est:false, now:true};
+    return Object.values(out).sort((a,b)=>a.date.localeCompare(b.date)).slice(-30);
+  }
+  function scoreSvg(pts, W, H, mini){
+    if(!pts.length) return '';
+    const pad = mini ? 2 : 22, y = v => (H-pad)/2 - v/100*((H-pad)/2-4) + (mini?0:2), x = i => (mini?2:30) + i*((W-(mini?4:34))/Math.max(1,pts.length-1));
+    let g = '';
+    if(!mini){ [[100,'+100'],[0,'0'],[-100,'−100']].forEach(([v,t])=>{ g += `<line x1="30" x2="${W}" y1="${y(v)}" y2="${y(v)}" stroke="var(--line)" ${v?'stroke-dasharray="2 4"':''}/><text x="0" y="${y(v)+3}" font-size="9" fill="var(--muted)" font-family="IBM Plex Mono, monospace">${t}</text>`; });
+      g += `<rect x="30" y="${y(15)}" width="${W-30}" height="${y(-15)-y(15)}" fill="var(--neutral)" opacity=".08"/>`; }
+    else g += `<line x1="0" x2="${W}" y1="${y(0)}" y2="${y(0)}" stroke="var(--line)"/>`;
+    for(let i=1;i<pts.length;i++){ const a = pts[i-1], b = pts[i], col = b.v>=15 ? 'var(--bull)' : b.v<=-15 ? 'var(--bear)' : 'var(--gold)';
+      g += `<line x1="${x(i-1).toFixed(1)}" y1="${y(a.v).toFixed(1)}" x2="${x(i).toFixed(1)}" y2="${y(b.v).toFixed(1)}" stroke="${col}" stroke-width="${mini?1.6:2}" ${a.est||b.est?'stroke-dasharray="3 3"':''}/>`; }
+    if(!mini) pts.forEach((p,i)=>{ g += `<circle cx="${x(i).toFixed(1)}" cy="${y(p.v).toFixed(1)}" r="${p.now?3.5:2.2}" fill="${p.v>=15?'var(--bull)':p.v<=-15?'var(--bear)':'var(--gold)'}"><title>${fmtDate(p.date)} : ${p.v>0?'+':''}${p.v}${p.est?' ('+L('estimation','estimate')+')':''}</title></circle>`; });
+    else { const l = pts[pts.length-1]; g += `<circle cx="${x(pts.length-1)}" cy="${y(l.v)}" r="2.2" fill="${l.v>=15?'var(--bull)':l.v<=-15?'var(--bear)':'var(--gold)'}"/>`; }
+    if(!mini){ g += `<text x="30" y="${H-3}" font-size="10" fill="var(--muted)" font-family="IBM Plex Mono, monospace">${fmtDate(pts[0].date)}</text><text x="${W}" y="${H-3}" font-size="10" fill="var(--muted)" text-anchor="end" font-family="IBM Plex Mono, monospace">${L('aujourd’hui','today')}</text>`; }
+    return `<svg viewBox="0 0 ${W} ${H}" ${mini?`width="${W}" height="${H}"`:''} role="img" aria-label="${L('Évolution du score','Score history')}">${g}</svg>`;
+  }
+  // ce qui pèse le plus sur le score (points sur 100), en mots
+  function scoreDrivers(asset, n){
+    const C = compute(asset), r = C.rows, A = state.assets[asset]||{}, mm = macroMax(asset), out = [];
+    INDICATORS.forEach(ind=>{ const sg = r[ind.id]; if(!sg) return; const M = econMeta(ind); if(!M) return;
+      const pts = SW.macro*sg*wOf(asset,ind.id)*(r._dec[ind.id]??1)/mm, nm = (((state.econ.values||{})[ind.id]||{}).label || ind.name).replace(/ \(.*\)$/,'');
+      out.push({pts, t:`${nm} ${M.d>0?L('plus haut','higher'):L('plus bas','lower')} ${L('que prévu','than expected')}${M.mag===2?L(' (grosse surprise)',' (big surprise)'):''}`}); });
+    if(r.yield10) out.push({pts:SW.macro*r.yield10*wOf(asset,'yield10')/mm, t:state.econ.yield10y==='falling'?L('taux 10 ans en baisse','10-year yield falling'):L('taux 10 ans en hausse','10-year yield rising')});
+    if(r.trend) out.push({pts:SW.tech*r.trend/4, t:r.trend>0?L('tendance de la semaine haussière','weekly trend up'):L('tendance de la semaine baissière','weekly trend down')});
+    if(r.dtrend) out.push({pts:SW.tech*r.dtrend/4, t:r.dtrend>0?L('tendance de fond haussière','underlying trend up'):L('tendance de fond baissière','underlying trend down')});
+    if(r.season) out.push({pts:SW.tech*r.season/4, t:r.season>0?L('mois historiquement favorable','historically strong month'):L('mois historiquement faible','historically weak month')});
+    if(r.cotNet) out.push({pts:SW.sent*r.cotNet/3, t:r.cotNet>0?L('fonds acheteurs (COT)','funds long (COT)'):L('fonds vendeurs (COT)','funds short (COT)')});
+    if(r.crowd) out.push({pts:SW.sent*r.crowd/3, t:r.crowd<0?L('foule trop acheteuse','crowd too long'):L('foule trop vendeuse','crowd too short')});
+    return out.sort((a,b)=>Math.abs(b.pts)-Math.abs(a.pts)).slice(0, n||3);
+  }
+  const whyOf = a => { const W = state.why && state.why.items && state.why.items[a]; return W && (W.fr || W.en) ? W : null; };
+  function whyHtml(asset){
+    const W = whyOf(asset), D = scoreDrivers(asset, 4);
+    const at = state.why && state.why.asOf ? new Date(state.why.asOf).toLocaleString(LOC(),{weekday:'short', hour:'2-digit', minute:'2-digit'}) : '';
+    return `<div class="whyb"><h3>${L('Pourquoi ça bouge','Why it is moving')}</h3>
+      ${W ? `<p>${esc(isEN() && W.en ? W.en : W.fr)}</p>${(W.src||[]).length ? `<p class="whys">${(W.src||[]).slice(0,3).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)}</a>`).join(' · ')}${at?` · ${esc(at)}`:''}</p>` : ''}`
+        : `<p class="mut">${L('L’explication du jour arrive avec la prochaine mise à jour (vers 10 h 13, 13 h 13 et 16 h 13).','Today’s explanation arrives with the next update (around 10:13, 1:13 and 4:13 p.m.).')}</p>`}
+      ${D.length ? `<h4>${L('Ce qui pèse sur le score','What drives the score')}</h4><ul>${D.map(d=>`<li class="${d.pts>0?'up':'dn'}"><b>${d.pts>0?'+':'−'}${Math.abs(Math.round(d.pts))}</b> ${esc(d.t)}</li>`).join('')}</ul>` : ''}</div>`;
+  }
+
+  // ---------- Corrélations : quels actifs bougent ensemble (rendements journaliers) ----------
+  state.corrN = state.corrN || 60;
+  function corrMatrix(n){
+    const O = state.ohlc && state.ohlc.d1; if(!O) return null;
+    const ks = Object.keys(TOP_NAMES).filter(k=>O[k] && O[k].length>n), ret = {};
+    ks.forEach(k=>{ const m = {}, rows = O[k]; for(let i=1;i<rows.length;i++){ const d = barDate(k, rows[i][0]); m[d] = Math.log(rows[i][4]/rows[i-1][4]); } ret[k] = m; });
+    const M = {}; ks.forEach(a=>{ M[a] = {}; ks.forEach(b=>{ if(a===b){ M[a][b] = 1; return; } if(M[b] && M[b][a]!=null){ M[a][b] = M[b][a]; return; }
+      const ds = Object.keys(ret[a]).filter(d=>ret[b][d]!=null).sort().slice(-n); if(ds.length < n*0.6){ M[a][b] = null; return; }
+      const x = ds.map(d=>ret[a][d]), y = ds.map(d=>ret[b][d]), mx = x.reduce((s,v)=>s+v,0)/x.length, my = y.reduce((s,v)=>s+v,0)/y.length;
+      let sxy = 0, sxx = 0, syy = 0; for(let i=0;i<x.length;i++){ sxy += (x[i]-mx)*(y[i]-my); sxx += (x[i]-mx)**2; syy += (y[i]-my)**2; }
+      M[a][b] = sxx && syy ? sxy/Math.sqrt(sxx*syy) : null; }); });
+    return {ks, M};
+  }
+  async function renderCorr(){
+    const box = $('p2corr'); if(!box) return;
+    await ohlcData(); if(state.page!=='corr') return;
+    const R = corrMatrix(state.corrN);
+    if(!R){ box.innerHTML = `<div class="panel tswait">${L('Les données des graphiques arrivent à la prochaine mise à jour.','Chart data arrives with the next update.')}</div>`; return; }
+    const {ks, M} = R, f = v => v==null ? '—' : (v<0?'−':'')+Math.abs(v).toFixed(2).replace('.', isEN()?'.':',');
+    const col = v => v==null ? 'transparent' : v>0 ? `color-mix(in srgb,var(--bull) ${Math.round(Math.abs(v)*85)}%,var(--panel))` : `color-mix(in srgb,var(--bear) ${Math.round(Math.abs(v)*85)}%,var(--panel))`;
+    const pairs = []; ks.forEach((a,i)=>ks.slice(i+1).forEach(b=>{ if(M[a][b]!=null) pairs.push([a,b,M[a][b]]); }));
+    const strong = pairs.filter(p=>Math.abs(p[2])>=0.6).sort((p,q)=>Math.abs(q[2])-Math.abs(p[2])).slice(0,10);
+    box.innerHTML = `<div class="hmhead"><div class="ttl"><span class="blink"></span>${L('CORRÉLATIONS · QUI BOUGE AVEC QUI','CORRELATIONS · WHAT MOVES WITH WHAT')}</div><div class="badge">${state.corrN} ${L('DERNIÈRES SÉANCES','LAST SESSIONS')}</div></div>
+      <div class="howto"><b>${L('Comment lire','How to read it')}</b> ${L('Près de <em>+1</em> : les deux actifs montent et baissent ensemble (deux trades dans le même sens = presque le même pari, ton risque double). Près de <em>−1</em> : ils bougent à l’inverse (acheter l’un et vendre l’autre = encore le même pari). Près de <em>0</em> : ils sont indépendants. Calculé sur les variations de chaque jour.','Near <em>+1</em>: the two move together (two trades the same way = almost the same bet, your risk doubles). Near <em>−1</em>: they move opposite (buying one and selling the other = again the same bet). Near <em>0</em>: independent. Computed on daily changes.')}</div>
+      <div class="bfil"><div class="chips">${[[20,L('1 mois','1 month')],[60,L('3 mois','3 months')],[120,L('6 mois','6 months')]].map(([n,t])=>`<button type="button" class="chip" data-cn="${n}" aria-pressed="${state.corrN===n}">${t}</button>`).join('')}</div></div>
+      <div class="panel"><div class="ph"><div><h3>${L('À retenir','Key takeaways')}</h3><p>${L('Les paires qui bougent le plus ensemble (au-dessus de 0,6) ou le plus à l’inverse (sous −0,6)','The pairs that move most together (above 0.6) or most opposite (below −0.6)')}</p></div></div>
+        <div class="pb">${strong.length ? `<ul class="corrl">${strong.map(([a,b,v])=>`<li><span class="cv ${v>0?'up':'dn'}">${f(v)}</span><b>${esc(TOP_NAMES[a])}</b> ${L('et','and')} <b>${esc(TOP_NAMES[b])}</b> ${v>0?L('bougent ensemble','move together'):L('bougent à l’inverse','move opposite')}</li>`).join('')}</ul>` : `<p class="mut">${L('Aucune paire très liée sur cette période.','No strongly linked pair over this period.')}</p>`}</div></div>
+      <div class="panel p2gap"><div class="ph"><div><h3>${L('Tableau complet','Full table')}</h3><p>${L('Bleu = ensemble, rouge = à l’inverse; plus la couleur est forte, plus le lien est fort','Blue = together, red = opposite; the stronger the colour, the stronger the link')}</p></div></div>
+        <div class="tablewrap"><table class="corrt"><thead><tr><th></th>${ks.map(k=>`<th><span>${esc(TOP_NAMES[k])}</span></th>`).join('')}</tr></thead><tbody>
+        ${ks.map(a=>`<tr><th>${esc(TOP_NAMES[a])}</th>${ks.map(b=>`<td style="background:${a===b?'var(--panel-2)':col(M[a][b])}" title="${esc(TOP_NAMES[a])} / ${esc(TOP_NAMES[b])} : ${f(M[a][b])}">${a===b?'':f(M[a][b])}</td>`).join('')}</tr>`).join('')}
+        </tbody></table></div></div>
+      <p class="src">${L('Source : clôtures journalières Yahoo Finance (mises à jour chaque heure). Une corrélation change avec le temps : vérifie-la de nouveau avant de prendre deux positions liées.','Source: Yahoo Finance daily closes (updated hourly). Correlations change over time: check again before taking two linked positions.')}</p>`;
+    box.querySelectorAll('[data-cn]').forEach(b=>b.addEventListener('click', ()=>{ state.corrN = +b.dataset.cn; renderCorr(); }));
+  }
+
   // ---------- Plan du jour : tout ce qui compte aujourd’hui sur un écran ----------
   const PSYM = {xauusd:'GC=F', xagusd:'SI=F', nasdaq:'^NDX', spx500:'^GSPC', us30:'^DJI', rut:'^RUT', usd:'DX-Y.NYB', usoil:'CL=F', btcusd:'BTC-USD', eurusd:'EURUSD=X', usdjpy:'JPY=X', usdcad:'CAD=X', gbpusd:'GBPUSD=X', audusd:'AUDUSD=X', usdchf:'CHF=X', nzdusd:'NZDUSD=X'};
   const nyDate = ms => new Date(ms).toLocaleDateString('en-CA', {timeZone:'America/New_York'});
@@ -4511,6 +4624,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     box.classList.toggle('noanim', !!state.noAnim); state.noAnim = false;
     const today = torontoToday(), nxt = nextWeekday(today);
     if(!state.mk) mkData();
+    if(!state.bulletin) getJSON('bulletin.json','bulletin').then(b=>{ if(b && state.page==='plan') renderPlan(); });
     const keys = Object.keys(TOP_NAMES).filter(k=>state.assets && state.assets[k]);
     const rows = keys.map(k=>({k, C:compute(k), P:planPx(k)})).sort((a,b)=>b.C.total-a.C.total);
     state._planSig = rows.map(r=>r.k+r.C.total).join('|');
@@ -4526,6 +4640,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         + `<td class="num" data-pp="${k}">${pxFmt(P.px)}</td><td class="num ${P.d1>0?'up':P.d1<0?'dn':''}" data-pd="${k}">${P.d1==null?'—':sg2(P.d1,2)+' %'}</td>`
         + `<td><span class="pbias ${b}">${esc(vt)}</span></td><td class="num psc ${b==='bull'?'up':b==='bear'?'dn':''}">${t>0?'+':''}${String(t).replace('-','−')}</td>`
         + `<td class="c pwk ${wk==='bull'?'up':wk==='bear'?'dn':''}" title="${L('Tendance de la semaine','Weekly trend')}">${W[0]} ${esc(W[1])}</td>`
+        + `<td class="pspk">${scoreSvg(scoreSeries(k).slice(-10), 74, 24, true)}</td>`
+        + `<td class="pwhy">${(()=>{ const Wy = whyOf(k), D = scoreDrivers(k, 2); return Wy ? `<span>${esc(isEN() && Wy.en ? Wy.en : Wy.fr)}</span>` : D.length ? `<span class="mut">${L('Score','Score')} : ${esc(D.map(d=>d.t).join(', '))}</span>` : '—'; })()}</td>`
         + `</tr>`;
     });
     // agenda : publications et fermetures d’aujourd’hui et du prochain jour de semaine
@@ -4572,7 +4688,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <div class="psum pmac">${mk4}</div>
       <div class="pgrid">
         <div class="panel pbias-p"><div class="ph"><div><h3>${L('Biais de tes actifs','Your assets’ bias')}</h3><p>${L('Biais = score du scorecard sur 100 (≥ +15 haussier, ≤ −15 baissier, ±40 = très). Prix et 1D (depuis l’ouverture) en direct. Clique sur un actif pour voir le détail.','Bias = scorecard score out of 100 (≥ +15 bullish, ≤ −15 bearish, ±40 = very). Live price and 1D (since the open). Click an asset for details.')}</p></div></div>
-          <div class="tablewrap"><table class="ptab pplan"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Prix','Price')}</th><th class="r">1D</th><th>${L('Biais','Bias')}</th><th class="r">Score</th><th class="c">${L('Semaine','Week')}</th></tr></thead><tbody>${tb}</tbody></table></div></div>
+          <div class="tablewrap"><table class="ptab pplan"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Prix','Price')}</th><th class="r">1D</th><th>${L('Biais','Bias')}</th><th class="r">Score</th><th class="c">${L('Semaine','Week')}</th><th>${L('Évolution','Trend')}</th><th>${L('Pourquoi ça bouge','Why it is moving')}</th></tr></thead><tbody>${tb}</tbody></table></div></div>
         <div class="pside">
           <div class="panel"><div class="ph"><div><h3>${L('Publications et fermetures','Releases and closures')}</h3></div></div><div class="pb pag">${agenda(today)}${agenda(nxt)}</div></div>
           <div class="panel"><div class="ph"><div><h3>${L('Les 5 nouvelles qui comptent','The 5 headlines that matter')}</h3><p>${L('Dernières 24 h, impact élevé en premier.','Last 24 h, high impact first.')}</p></div></div><div class="pb"><ol class="pnews">${nwh}</ol></div></div>
@@ -4592,9 +4708,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const add = (o, n, hit, mv) => { o['n'+n] = (o['n'+n]||0)+1; o['h'+n] = (o['h'+n]||0)+(hit?1:0); if(mv!=null) o['m'+n] = (o['m'+n]||0)+mv; };
     days.forEach(d=>Object.entries(d.a||{}).forEach(([k,v])=>{
       const rows = O && O.d1 && O.d1[k]; if(!rows) return;
-      const i = rows.findIndex(r=>nyDate((r[0]+43200)*1000)===d.date); if(i<0) return;
+      const i = rows.findIndex(r=>barDate(k, r[0])===d.date); if(i<0) return;
       const base = rows[i][4];
-      [1,5].forEach(n=>{ const f = rows[i+n]; if(!f || nyDate((f[0]+43200)*1000) >= today) return; const mv = (f[4]/base-1)*100;
+      [1,5].forEach(n=>{ const f = rows[i+n]; if(!f || barDate(k, f[0]) >= today) return; const mv = (f[4]/base-1)*100;
         if(v.r!=null && v.b!=='neu'){ const hit = v.b==='bull' ? mv>0 : mv<0, g = v.b==='bull' ? mv : -mv; add(R[k] = R[k]||{}, n, hit, g); add(T, n, hit, g); }
         if(n===5 && v.t!=null && v.t!==0){ add(TT, 5, v.t>0 ? mv>0 : mv<0, null); }
         const ob = v.r!=null ? v.ob : v.b; if(n===5 && ob && ob!=='neu') add(TO, 5, ob==='bull' ? mv>0 : mv<0, null); });
@@ -4670,6 +4786,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     else if(pg==='liq') renderLiq();
     else if(pg==='plan'){ renderPlan(); if(!state.noAnim || !$('planTS').innerHTML) renderHomeTS(); }
     else if(pg==='bull') renderBull();
+    else if(pg==='corr') renderCorr();
     else if(pg==='recap') renderRecap();
     else if(pg==='squawk') renderSquawk();
     else if(pg==='research') renderResearch();
@@ -4722,7 +4839,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===(({research:'bankpos', cot:'sent', news:'squawk'})[pg]||pg)) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
-    try{ const hsh = pg==='plan' ? '' : '#'+({score:'scorecard', bull:'bulletin', cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches', charts:'charts', recap:'session-recap', research:'bank-research', squawk:'squawk', bankpos:'bank-positioning', risk:'risk-sentiment', watch:'markets-watch', liq:'liquidity'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    try{ const hsh = pg==='plan' ? '' : '#'+({score:'scorecard', bull:'bulletin', corr:'correlations', cal:'calendrier', fed:'fed', top:'top', earn:'resultats', home:'apercu', eco:'economie', cot:'cot', sent:'sentiment', news:'nouvelles', cbg:'or-banques', fund:'heatmap-fondamentale', tech:'heatmap-technique', seas:'saisonnalite', globe:'monde', hours:'heures-marches', charts:'charts', recap:'session-recap', research:'bank-research', squawk:'squawk', bankpos:'bank-positioning', risk:'risk-sentiment', watch:'markets-watch', liq:'liquidity'}[pg]); if(location.hash!==hsh) history.replaceState(null,'',hsh||location.pathname+location.search); }catch(e){}
+    if(pg==='score') renderHistory();
     if(pg==='cal') renderCalendar(); if(pg==='fed') renderFed(); if(pg==='top') renderTop(); if(pg==='earn') renderEarn();
     try{ if(typeof globeObj!=='undefined' && globeObj){ if(pg==='globe') globeObj.resumeAnimation(); else globeObj.pauseAnimation(); } }catch(e){}
     if(pg!=='ind' && pg!=='liq' && typeof lwFree==='function') lwFree();
@@ -4740,7 +4858,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     document.querySelectorAll('.calseg button').forEach(x=>x.setAttribute('aria-pressed', String(x===b)));
     renderCalendar();
   }));
-  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas','#monde':'globe','#carte-du-monde':'globe','#world-map':'globe','#heures-marches':'hours','#market-hours':'hours','#charts':'charts','#session-recap':'recap','#bank-research':'research','#squawk':'squawk','#bank-positioning':'bankpos','#risk-sentiment':'risk','#markets-watch':'watch','#indicators':'tech','#liquidity':'liq'}; if(hh==='#scorecard') showPage('score'); else if(hh==='#bulletin') showPage('bull'); else if(mp[hh]) showPage(mp[hh]); else showPage('plan'); } }catch(e){}
+  try{ const hh = (location.hash||'').toLowerCase(); if(hh==='#top') showPage('top'); else if(hh==='#calendrier') showPage('cal'); else if(hh==='#fed') showPage('fed'); else if(hh==='#resultats') showPage('earn'); else { const mp = {'#apercu':'home','#graphiques':'charts','#economie':'eco','#cot':'cot','#sentiment':'sent','#nouvelles':'news','#or-banques':'cbg','#heatmap-fondamentale':'fund','#heatmap-technique':'tech','#saisonnalite':'seas','#monde':'globe','#carte-du-monde':'globe','#world-map':'globe','#heures-marches':'hours','#market-hours':'hours','#charts':'charts','#session-recap':'recap','#bank-research':'research','#squawk':'squawk','#bank-positioning':'bankpos','#risk-sentiment':'risk','#markets-watch':'watch','#indicators':'tech','#liquidity':'liq'}; if(hh==='#scorecard') showPage('score'); else if(hh==='#correlations') showPage('corr'); else if(hh==='#bulletin') showPage('bull'); else if(mp[hh]) showPage(mp[hh]); else showPage('plan'); } }catch(e){}
 
   // ---------- data ----------
   drawGaugeStatic();
@@ -4749,7 +4867,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function curMonth(){ const d=new Date(); return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0'); }
   function localTech(){ try{ return JSON.parse(localStorage.getItem(TKEY)||'null')||{}; }catch(e){ return {}; } }
   function apply(d){
-    const t = localTech(); state.dataAt = d.updatedAt || state.dataAt;
+    const t = localTech(); state.dataAt = d.updatedAt || state.dataAt; if(d.why) state.why = d.why;
     state.econ = {values:{...((d.econ||{}).values||{})}, yield2y:(d.econ||{}).yield2y||'flat', yield10y:(state.mk&&state.mk.y10&&state.mk.y10.dir)||(d.econ||{}).yield10y||null, seasonMonth:(d.econ||{}).seasonMonth||null, updatedAt:d.updatedAt||null};
     Object.keys(ASSETS).forEach(k=>{
       state.assets[k] = {...blankAsset(), ...((d.assets||{})[k]||{}), trend:(state.mk && state.mk.trend && state.mk.trend[k] && state.mk.trend[k].t) || ((t[k]||{}).trend) || 'neutral'};
@@ -4793,7 +4911,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
-    'Vue d’ensemble':'Overview','Appétit pour le risque':'Risk appetite','Sommets et creux récents':'Recent highs and lows','En direct':'Live','Résumés':'Summaries','Sentiment (VIX et foule)':'Sentiment (VIX and crowd)','Sentiment de la foule':'Crowd sentiment','COT (fonds)':'COT (funds)','Mes marchés':'My markets','Notes de recherche':'Research notes','Prévisions par marché':'Forecasts by market','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
+    'Vue d’ensemble':'Overview','Corrélations':'Correlations','Évolution du score':'Score history','Appétit pour le risque':'Risk appetite','Sommets et creux récents':'Recent highs and lows','En direct':'Live','Résumés':'Summaries','Sentiment (VIX et foule)':'Sentiment (VIX and crowd)','Sentiment de la foule':'Crowd sentiment','COT (fonds)':'COT (funds)','Mes marchés':'My markets','Notes de recherche':'Research notes','Prévisions par marché':'Forecasts by market','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
     'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Heatmap fondamentale':'Fundamental heatmap','Heatmap technique':'Technical heatmap','Saisonnalité':'Seasonality','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines, Fed et banques centrales étrangères · heure de l’Est (Québec)':'US releases, the Fed and foreign central banks · Eastern time (Québec)','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Prévisions':'Guidance','Mitigé':'Mixed','En ligne':'In line','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
     'Les résultats se remplissent à la prochaine mise à jour.':'Earnings fill in at the next update.','Aucun résultat pour ce filtre.':'No earnings for this filter.',
