@@ -73,7 +73,9 @@ function signals(k, B, C) {
     const cotNet = ci >= 0 ? sgn(cr[ci].L - 50) : 0, cotChg = ci >= 1 ? sgn(cr[ci].L - cr[ci - 1].L) : 0;
     const tech = trend + dtrend + season, sent = cotNet + cotChg;
     const pT = Math.round(tech / 4 * 30), pS = Math.round(sent / 3 * 20), total = pT + pS;
-    const f1 = i + 1 < B.length ? (B[i + 1].c / b.c - 1) * 100 : null, f5 = i + 5 < B.length ? (B[i + 5].c / b.c - 1) * 100 : null;
+    // rendements à venir (on écarte les prix nuls ou négatifs, ex. le pétrole en avril 2020)
+    const fw = n => i + n < B.length && b.c > 0 && B[i + n].c > 0 ? (B[i + n].c / b.c - 1) * 100 : null;
+    const f1 = fw(1), f5 = fw(5);
     out.push({d: b.d, total, pT, pS, f1, f5});
   }
   return out;
