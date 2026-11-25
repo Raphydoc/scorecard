@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T08:42:43Z",
+  "updatedAt": "2026-11-25T09:47:59Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,26 +1496,87 @@
   "news": [
     {
       "date": "2026-11-25",
-      "time": "02:44",
-      "source": "CNBC",
+      "time": "03:54",
+      "source": "Investing.com (Reuters)",
       "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Jensen Huang aurait reconnu avoir enfreint le code de conduite de Nvidia, selon une source",
+      "title_en": "Nvidia's Huang said he violated code of conduct, source says",
+      "summary": "Selon une source citée par Reuters, Jensen Huang aurait admis avoir enfreint le code de conduite de Nvidia, alors que les investisseurs évaluent les risques liés à son retour comme PDG. L'article n'a pas pu être consulté en entier; résumé fondé sur le titre. Ce dossier de gouvernance continue de peser sur Nvidia et, par ricochet, sur le Nasdaq et le S&P 500.",
+      "summary_en": "According to a source cited by Reuters, Jensen Huang said he violated Nvidia's code of conduct, as investors assess the risks surrounding his return as CEO. The full article could not be accessed; summary based on the headline. The governance saga continues to weigh on Nvidia and, by extension, on the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/nvidia-slips-as-investors-assess-risks-surrounding-huangs-return-as-ceo-5047757"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "03:35",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Le bitcoin repasse sous les 60 000 $, le HYPE entraîne les altcoins à la baisse",
+      "title_en": "Bitcoin slips back under $60,000 as HYPE leads altcoins lower",
+      "summary": "Le bitcoin est retombé sous la barre des 60 000 $ mercredi matin, tandis que le jeton HYPE mène le recul des cryptos alternatives. L'article n'a pas pu être consulté en entier; résumé fondé sur le titre. Le seuil de 60 000 $ demeure le niveau clé surveillé après la chute récente vers 55 000 $.",
+      "summary_en": "Bitcoin fell back below the $60,000 mark on Wednesday morning, while the HYPE token led altcoins lower. The full article could not be accessed; summary based on the headline. The $60,000 threshold remains the key level watched after the recent drop toward $55,000.",
+      "url": "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "03:30",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "eurusd",
+        "gbpusd",
+        "spx500"
+      ],
+      "title": "Les Bourses européennes montent grâce aux titres de consommation; les marchés attendent les tarifs américains et l'inflation",
+      "title_en": "European shares rise on consumer boost; markets await US tariffs, inflation",
+      "summary": "Les actions européennes progressent mercredi, portées par les titres de consommation, pendant que les investisseurs attendent l'annonce de nouveaux tarifs américains et les données d'inflation PCE. L'article n'a pas pu être consulté en entier; résumé fondé sur le titre. Le ton européen contraste avec la baisse en Asie et donne le ton avant l'ouverture à Wall Street.",
+      "summary_en": "European stocks are rising on Wednesday, lifted by consumer shares, as investors await new U.S. tariffs and PCE inflation data. The full article could not be accessed; summary based on the headline. The European tone contrasts with the selloff in Asia and sets the mood ahead of the Wall Street open.",
+      "url": "https://www.investing.com/news/stock-market-news/european-shares-rise-on-consumer-boost-markets-await-us-tariffs-inflation-5049970"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "02:48",
+      "source": "Investing.com (Reuters)",
+      "impact": "high",
+      "assets": [
+        "usd",
+        "spx500",
+        "nasdaq",
+        "eurusd",
+        "usdcad",
+        "audusd",
+        "usdjpy"
+      ],
+      "title": "L'administration Trump s'apprête à dévoiler de nouveaux tarifs après une enquête sur la surcapacité industrielle, selon des sources",
+      "title_en": "Trump administration set to unveil new tariffs after probe on excess factory capacity, sources say",
+      "summary": "Selon des sources de Reuters, l'administration Trump se prépare à annoncer de nouveaux tarifs douaniers à l'issue d'une enquête sur la surcapacité de production industrielle; Investing.com rapporte que la Maison-Blanche vise la Chine, l'UE et des dizaines de pays. L'article n'a pas pu être consulté en entier; résumé fondé sur les titres. Ce risque tarifaire soutient le dollar et pèse sur les devises liées au commerce et sur les actions.",
+      "summary_en": "According to Reuters sources, the Trump administration is preparing to announce new tariffs following a probe into excess factory capacity; Investing.com reports the White House is targeting China, the EU and dozens of nations. The full article could not be accessed; summary based on the headlines. The tariff risk supports the dollar and weighs on trade-sensitive currencies and equities.",
+      "url": "https://www.investing.com/news/commodities-news/trump-administration-set-to-unveil-new-tariffs-after-probeon-excess-factory-capacity-sources-say-5048724"
+    },
+    {
       "assets": [
         "usd",
         "spx500",
         "nasdaq",
         "xauusd"
       ],
-      "title": "Les rendements des bons du Trésor reculent dans l'attente d'un indicateur clé d'inflation",
-      "title_en": "Treasury yields fall as investors await key inflation signal",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "CNBC",
       "summary": "Les rendements des bons du Trésor américain reculent mercredi matin alors que les investisseurs attendent une donnée d'inflation importante (l'indice PCE). Une détente des taux tend à peser sur le dollar et à soutenir l'or et les actions sensibles aux taux; l'article n'a pas pu être lu en entier.",
       "summary_en": "U.S. Treasury yields are falling Wednesday morning as investors await a key inflation reading (the PCE index). Lower yields tend to weigh on the dollar and support gold and rate-sensitive stocks; the full article could not be read.",
+      "time": "02:44",
+      "title": "Les rendements des bons du Trésor reculent dans l'attente d'un indicateur clé d'inflation",
+      "title_en": "Treasury yields fall as investors await key inflation signal",
       "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
     },
     {
-      "date": "2026-11-25",
-      "time": "02:00",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "usdjpy",
         "nasdaq",
@@ -1523,229 +1584,229 @@
         "xauusd",
         "usd"
       ],
-      "title": "Tokyo ferme en baisse : le Nikkei 225 perd 2,62 %, SoftBank chute de 14,8 %",
-      "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 2.62%",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le Nikkei 225 a clôturé en baisse de 2,62 %, plombé notamment par Ibiden (-16,01 %), SoftBank Group (-14,83 %) et Fujikura (-14,70 %), des titres liés à l'IA. Au même moment, le WTI de janvier cédait 2,04 % à 80,38 $, l'or de décembre 1,19 % à 3 519,40 $ et l'USD/JPY restait stable à 159,27, l'indice dollar gagnant 0,23 % à 103,99. La vente sur l'IA continue de se propager en Asie avant l'ouverture américaine.",
       "summary_en": "The Nikkei 225 closed down 2.62%, dragged by AI-linked names such as Ibiden (-16.01%), SoftBank Group (-14.83%) and Fujikura (-14.70%). At the same time, January WTI fell 2.04% to $80.38, December gold 1.19% to $3,519.40, and USD/JPY was flat at 159.27, with the dollar index up 0.23% at 103.99. The AI selloff keeps spreading across Asia ahead of the U.S. open.",
+      "time": "02:00",
+      "title": "Tokyo ferme en baisse : le Nikkei 225 perd 2,62 %, SoftBank chute de 14,8 %",
+      "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 2.62%",
       "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-262-5049846"
     },
     {
-      "date": "2026-11-25",
-      "time": "01:23",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "usoil"
       ],
-      "title": "Les Houthis menacent les ports saoudiens sur fond d'escalade du conflit au Yémen",
-      "title_en": "Houthis threaten Saudi ports amid Yemen conflict escalation",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Selon Investing.com, les Houthis du Yémen menacent les ports de l'Arabie saoudite alors que le conflit au Yémen s'intensifie (article non consultable; résumé basé sur le titre). Une menace sur les infrastructures portuaires du premier exportateur de brut ajoute une prime de risque géopolitique au pétrole, qui recule par ailleurs sur des craintes de surabondance.",
       "summary_en": "According to Investing.com, Yemen's Houthis are threatening Saudi Arabia's ports as the Yemen conflict escalates (article not accessible; summary based on the headline). A threat to port infrastructure of the top crude exporter adds geopolitical risk premium to oil, which has otherwise been pressured by oversupply fears.",
+      "time": "01:23",
+      "title": "Les Houthis menacent les ports saoudiens sur fond d'escalade du conflit au Yémen",
+      "title_en": "Houthis threaten Saudi ports amid Yemen conflict escalation",
       "url": "https://www.investing.com/news/stock-market-news/houthis-threaten-saudi-ports-amid-yemen-conflict-escalation-93CH-5049796"
     },
     {
-      "date": "2026-11-25",
-      "time": "01:18",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Exclusif : des entreprises liées à Alice Huang ont inscrit pour 270 M$ de serveurs d'IA en Chine, selon des registres",
-      "title_en": "Exclusive-Alice Huang-linked firms listed $270 million in AI servers in China, records show",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Selon des registres consultés par Reuters, des entreprises liées à Alice Huang ont inscrit pour 270 millions de dollars de serveurs d'IA en Chine (article non lisible, résumé tiré du titre). La nouvelle ajoute au scandale des puces Nvidia qui pèse sur les valeurs de l'IA, donc sur le Nasdaq et le S&P 500.",
       "summary_en": "According to records reviewed by Reuters, firms linked to Alice Huang listed $270 million in AI servers in China (article could not be read; summary based on the headline). It adds to the Nvidia chip scandal weighing on AI stocks, and thus on the Nasdaq and S&P 500.",
+      "time": "01:18",
+      "title": "Exclusif : des entreprises liées à Alice Huang ont inscrit pour 270 M$ de serveurs d'IA en Chine, selon des registres",
+      "title_en": "Exclusive-Alice Huang-linked firms listed $270 million in AI servers in China, records show",
       "url": "https://www.investing.com/news/stock-market-news/exclusivealice-huanglinked-firms-listed-270-million-in-ai-servers-in-china-records-show-5049792"
     },
     {
-      "date": "2026-11-25",
-      "time": "00:50",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "usd",
         "audusd",
         "usdjpy"
       ],
-      "title": "Les devises asiatiques reculent, le dollar se raffermit sur les risques tarifaires; l'aussie touche un creux de 11 mois",
-      "title_en": "Asia FX weakens as dollar firms on tariff risks; Aussie hits 11-month low",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le dollar américain se raffermit face aux devises asiatiques en raison des risques liés aux tarifs douaniers, et le dollar australien glisse à son plus bas niveau en 11 mois (article non lisible, résumé tiré du titre). La pression touche directement l'AUD/USD et soutient le DXY.",
       "summary_en": "The U.S. dollar firmed against Asian currencies on tariff risks, and the Australian dollar slid to an 11-month low (article could not be read; summary based on the headline). The pressure hits AUD/USD directly and supports the DXY.",
+      "time": "00:50",
+      "title": "Les devises asiatiques reculent, le dollar se raffermit sur les risques tarifaires; l'aussie touche un creux de 11 mois",
+      "title_en": "Asia FX weakens as dollar firms on tariff risks; Aussie hits 11-month low",
       "url": "https://www.investing.com/news/forex-news/asia-fx-weakens-as-dollar-firms-on-tariff-risks-aussie-hits-11month-low-5049767"
     },
     {
-      "date": "2026-11-25",
-      "time": "00:06",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Le coût de l'assurance contre le défaut des géants de l'IA s'envole : CDS records pour Oracle, Alphabet et CoreWeave",
-      "title_en": "AI credit default swap spreads widen on unease over cash flow",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Le CDS 5 ans de SoftBank a bondi à 501 points de base, son plus large depuis octobre 2022 (Markit), tandis que ceux d'Oracle, Alphabet, SpaceX et CoreWeave ont atteint des records (S&P Global Market Intelligence); la probabilité de défaut de CoreWeave sur cinq ans grimpe à 68 %. Le crédit tech n'a profité d'aucun répit après la réembauche de Jensen Huang chez Nvidia, signe que les investisseurs craignent des rendements tardifs sur les infrastructures d'IA, une pression de plus pour le Nasdaq et le S&P 500.",
       "summary_en": "SoftBank's five-year CDS spread jumped to 501 basis points, its widest since October 2022 (Markit), while five-year spreads for Oracle, Alphabet, SpaceX and CoreWeave hit records (S&P Global Market Intelligence), pushing CoreWeave's five-year default probability to 68%. Tech credit saw no relief after Nvidia re-hired CEO Jensen Huang, a sign investors fear delayed returns on AI infrastructure, adding pressure on the Nasdaq and S&P 500.",
+      "time": "00:06",
+      "title": "Le coût de l'assurance contre le défaut des géants de l'IA s'envole : CDS records pour Oracle, Alphabet et CoreWeave",
+      "title_en": "AI credit default swap spreads widen on unease over cash flow",
       "url": "https://www.investing.com/news/stock-market-news/ai-credit-default-swap-spreads-widen-on-unease-over-cash-flow-5049729"
     },
     {
-      "date": "2026-11-24",
-      "time": "22:52",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Le Monde détaille un réseau présumé de détournement de puces Nvidia via l'Asie du Sud-Est",
-      "title_en": "Le Monde details suspected Nvidia chip diversion network through Southeast Asia",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Selon une enquête du Monde, des serveurs d'IA Nvidia soumis à restrictions auraient transité par Singapour et la Malaisie, possiblement vers la Chine. Megaspeed, firme singapourienne de location de serveurs, aurait acheté environ 4,6 G$ d'équipement Nvidia en 2024 et 2025, dont au moins 136 000 processeurs d'IA; les départements américains du Commerce et de la Justice ont confirmé en novembre une enquête criminelle en cours. Ces révélations s'ajoutent à la pression réglementaire sur Nvidia, poids lourd du Nasdaq et du S&P 500.",
       "summary_en": "A Le Monde investigation says restricted Nvidia AI servers may have moved through Singapore and Malaysia, possibly into China. Singapore server-rental firm Megaspeed reportedly bought about $4.6 billion of Nvidia equipment in 2024 and 2025, including at least 136,000 AI processors; the U.S. Commerce and Justice departments confirmed in November a criminal investigation is ongoing. The report adds to regulatory pressure on Nvidia, a heavyweight in the Nasdaq and S&P 500.",
+      "time": "22:52",
+      "title": "Le Monde détaille un réseau présumé de détournement de puces Nvidia via l'Asie du Sud-Est",
+      "title_en": "Le Monde details suspected Nvidia chip diversion network through Southeast Asia",
       "url": "https://www.investing.com/news/stock-market-news/le-monde-details-suspected-nvidia-chip-diversion-network-through-southeast-asia-5049654"
     },
     {
-      "date": "2026-11-24",
-      "time": "22:35",
-      "source": "Investing.com",
-      "impact": "high",
       "assets": [
         "nasdaq",
         "spx500",
         "usdjpy",
         "audusd"
       ],
-      "title": "Les Bourses asiatiques plongent : Taïwan -7,4 %, KOSPI -6 % alors que la vente sur l'IA s'aggrave et que les menaces tarifaires pèsent",
-      "title_en": "Asian stocks slide as AI selloff deepens, U.S. tariff threats weigh on sentiment",
+      "date": "2026-11-24",
+      "impact": "high",
+      "source": "Investing.com",
       "summary": "L'indice de Taïwan chute de 7,4 %, le KOSPI de 6 % et le Nikkei de 3,3 %; TSMC (-7,6 %), Samsung (-9,3 %) et SK Hynix (-9,1 %) mènent la baisse. Les contrats à terme du Nasdaq 100 cèdent 1,3 % et ceux du S&P 500 0,7 %, sur fond de rapports voulant que Washington publie une enquête sur la surcapacité industrielle de 16 partenaires commerciaux pouvant mener à de nouveaux tarifs. En Australie, l'inflation a accéléré à 4,9 % en octobre. À la clôture, l'indice pondéré de Taïwan termine en baisse de 4,94 %. Le Nikkei 225 clôture en baisse de 2,62 %.",
       "summary_en": "Taiwan's index fell 7.4%, the KOSPI 6% and the Nikkei 3.3%; TSMC (-7.6%), Samsung (-9.3%) and SK Hynix (-9.1%) led losses. Nasdaq 100 futures lost 1.3% and S&P 500 futures 0.7%, amid reports Washington will release a probe into excess industrial capacity among 16 trading partners that could lead to more tariffs. Australian inflation accelerated to 4.9% in October. At the close, the Taiwan Weighted index ended down 4.94%. The Nikkei 225 closed down 2.62%.",
+      "time": "22:35",
+      "title": "Les Bourses asiatiques plongent : Taïwan -7,4 %, KOSPI -6 % alors que la vente sur l'IA s'aggrave et que les menaces tarifaires pèsent",
+      "title_en": "Asian stocks slide as AI selloff deepens, U.S. tariff threats weigh on sentiment",
       "url": "https://investing.com/news/stock-market-news/asian-stocks-slide-as-ai-selloff-deepens-us-tariff-threats-weigh-on-sentiment-5049630"
     },
     {
-      "date": "2026-11-24",
-      "time": "21:58",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "xauusd",
         "xagusd",
         "usd"
       ],
-      "title": "L'or se maintient près de ses plus bas en 15 mois, les paris sur une hausse de la Fed pèsent avant le PCE",
-      "title_en": "Gold holds near 15-month lows on Fed hike bets; PCE inflation awaited",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "L'or au comptant gagnait 0,1 % à 3 559,55 $ l'once, tout près de son plus bas depuis début septembre 2025, tandis que l'argent reculait de 0,4 % à 40,74 $. Le FedWatch accorde 96,4 % de probabilité à une hausse de 25 points de base en décembre (réunion des 8 et 9), et le dollar se tient près d'un sommet de 19 mois. L'indice PCE attendu dans la journée sera déterminant pour les métaux.",
       "summary_en": "Spot gold rose 0.1% to $3,559.55/oz, near its lowest since early September 2025, while silver fell 0.4% to $40.74. FedWatch shows a 96.4% probability of a 25 bp hike in December (Dec. 8-9 meeting), and the dollar is near a 19-month high. The PCE inflation reading due later in the day is key for metals.",
+      "time": "21:58",
+      "title": "L'or se maintient près de ses plus bas en 15 mois, les paris sur une hausse de la Fed pèsent avant le PCE",
+      "title_en": "Gold holds near 15-month lows on Fed hike bets; PCE inflation awaited",
       "url": "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
     },
     {
-      "date": "2026-11-24",
-      "time": "20:59",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Trump dit qu'il pourrait gracier Jensen Huang et évoque une participation de l'État américain dans Nvidia",
-      "title_en": "Trump says he could pardon Jensen Huang, floats U.S. govt stake in Nvidia",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Selon le New York Post, Donald Trump affirme qu'une grâce pour le PDG de Nvidia, Jensen Huang, reste « une option », tout en jugeant qu'elle ne sera pas nécessaire avant ses témoignages devant des comités du Congrès la semaine prochaine sur les contrôles à l'exportation de puces vers la Chine. Trump dit aussi avoir envisagé une participation du gouvernement dans Nvidia, comme les 10 % pris dans Intel l'an dernier, ajoutant qu'il n'est « probablement pas trop tard ». Ce dossier pèse sur Nvidia, poids lourd du Nasdaq et du S&P 500.",
       "summary_en": "Donald Trump told the New York Post that a pardon for Nvidia CEO Jensen Huang is 'always an option' but likely unnecessary, ahead of Huang's congressional testimony next week over alleged export-control violations on chip shipments to China. Trump also said he had considered a U.S. government stake in Nvidia, citing last year's 10% stake in Intel, saying it's 'probably not too late.' The saga weighs on Nvidia, a heavyweight in the Nasdaq and S&P 500.",
+      "time": "20:59",
+      "title": "Trump dit qu'il pourrait gracier Jensen Huang et évoque une participation de l'État américain dans Nvidia",
+      "title_en": "Trump says he could pardon Jensen Huang, floats U.S. govt stake in Nvidia",
       "url": "https://www.investing.com/news/stock-market-news/trump-says-he-could-pardon-jensen-huang-floats-us-govt-stake-in-nvidia--nyt-5049530"
     },
     {
-      "date": "2026-11-24",
-      "time": "20:58",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "usoil"
       ],
-      "title": "Le pétrole recule, les craintes de surabondance l'emportent sur les risques au Moyen-Orient",
-      "title_en": "Oil prices fall as supply glut concerns offset Middle East disruption fears",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Le WTI cède 47 cents (0,6 %) à 81,58 $ le baril et le Brent 43 cents (0,5 %) à 90,97 $ en Asie, après des gains de plus de 2 % mardi. L'AIE prévoit un retour à l'excédent au 4e trimestre, tandis que les attaques de navires près d'Hormuz entretiennent l'incertitude; l'OPEP+ se réunit le 29 novembre pour sa production 2027. L'API rapporte une hausse de 126 000 barils des stocks américains, sous l'estimation d'environ 1,5 million.",
       "summary_en": "WTI fell 47 cents (0.6%) to $81.58 a barrel and Brent 43 cents (0.5%) to $90.97 in Asian trade, after both gained more than 2% on Tuesday. The IEA expects a return to surplus in Q4, while ship attacks near Hormuz keep uncertainty alive; OPEC+ meets Nov. 29 to set 2027 output. API data showed U.S. crude stocks up 126,000 barrels versus a ~1.5 million estimate.",
+      "time": "20:58",
+      "title": "Le pétrole recule, les craintes de surabondance l'emportent sur les risques au Moyen-Orient",
+      "title_en": "Oil prices fall as supply glut concerns offset Middle East disruption fears",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-supply-glut-concerns-offset-middle-east-disruption-fears-5049537"
     },
     {
-      "date": "2026-11-24",
-      "time": "20:12",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "spx500",
         "nasdaq",
         "us30"
       ],
-      "title": "Les contrats à terme de Wall Street reculent après la baisse du S&P 500 et du Nasdaq; l'inflation en vue",
-      "title_en": "Wall St futures fall after S&P 500, Nasdaq end lower; inflation data eyed",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Vers 19 h 58 (HE), les contrats sur le S&P 500 reculaient de 0,3 % à 7 193,50 points, ceux sur le Nasdaq 100 de 0,4 % à 26 168,75 et ceux sur le Dow de 0,3 % à 49 930, après une séance où le Nasdaq a perdu 1,5 % et le S&P 500 0,5 %, Nvidia cédant près de 6 %. Mercredi, l'indice PCE, le PIB préliminaire du T3, les demandes de chômage et les commandes de biens durables sont attendus; selon le CME FedWatch, la probabilité d'une hausse de 25 points de base en décembre est de 96 %.",
       "summary_en": "Around 19:58 ET, S&P 500 futures were down 0.3% at 7,193.50, Nasdaq 100 futures down 0.4% at 26,168.75 and Dow futures down 0.3% at 49,930, after a session in which the Nasdaq lost 1.5% and the S&P 500 0.5%, with Nvidia falling nearly 6%. Wednesday brings the PCE price index, preliminary Q3 GDP, jobless claims and durable goods; CME FedWatch puts the odds of a 25-basis-point hike in December at 96%.",
+      "time": "20:12",
+      "title": "Les contrats à terme de Wall Street reculent après la baisse du S&P 500 et du Nasdaq; l'inflation en vue",
+      "title_en": "Wall St futures fall after S&P 500, Nasdaq end lower; inflation data eyed",
       "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
     },
     {
-      "date": "2026-11-24",
-      "time": "19:09",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "usdjpy"
       ],
-      "title": "Le Nikkei devrait monter l'an prochain sans retrouver son record, selon un sondage Reuters",
-      "title_en": "Japan's Nikkei to rise next year but fall short of record as investors reassess AI trade: Reuters poll",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Selon la médiane de 22 stratèges sondés par Reuters du 16 au 24 novembre, le Nikkei atteindrait 65 000 points d'ici juin 2027, 67 500 en fin d'année et 69 000 à la mi-2028, sous son sommet de 72 831,73 atteint en juin. L'indice a bondi de près de 4 % mardi pour clôturer à 58 644,63, mais reste environ 20 % sous ce pic, les investisseurs réévaluant le thème de l'IA. Le sentiment envers les actions japonaises influence l'appétit pour le risque en Asie et le yen.",
       "summary_en": "According to the median of 22 strategists polled by Reuters from Nov. 16 to 24, the Nikkei would reach 65,000 by June 2027, 67,500 by year-end and 69,000 by mid-2028, below its June peak of 72,831.73. The index jumped nearly 4% on Tuesday to close at 58,644.63 but remains around 20% below that peak as investors reassess the AI trade. Sentiment toward Japanese equities affects Asian risk appetite and the yen.",
+      "time": "19:09",
+      "title": "Le Nikkei devrait monter l'an prochain sans retrouver son record, selon un sondage Reuters",
+      "title_en": "Japan's Nikkei to rise next year but fall short of record as investors reassess AI trade: Reuters poll",
       "url": "https://www.investing.com/news/stock-market-news/japans-nikkei-to-rise-next-year-but-fall-short-of-record-as-investors-reassess-ai-trade-reuters-poll-5049409"
     },
     {
-      "date": "2026-11-24",
-      "time": "17:48",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Workday recule de plus de 7 % après la séance malgré des résultats supérieurs aux attentes",
-      "title_en": "Workday falls more than 7% after hours despite Q3 beat as outlook disappoints",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Workday a affiché un BPA ajusté de 2,82 $ (attendu : 2,75 $) et des revenus de 2,705 G$ (+11,2 %), et son ARR lié à l'IA dépasse 750 M$ (+130 %). L'action a toutefois glissé de 179,23 $ à 166,01 $ après la clôture, la prévision du T4 (revenus d'environ 2,755 G$, +9 %) laissant voir un léger ralentissement. Un signal de plus de nervosité envers les logiciels, qui pèse sur le Nasdaq.",
       "summary_en": "Workday posted adjusted EPS of $2.82 (vs. $2.75 expected) and revenue of $2.705 billion (+11.2%), with AI ARR above $750 million (+130%). Shares still slid from $179.23 to $166.01 after hours as Q4 guidance (revenue about $2.755 billion, +9%) implies a slight slowdown. Another sign of nervousness toward software names, weighing on the Nasdaq.",
+      "time": "17:48",
+      "title": "Workday recule de plus de 7 % après la séance malgré des résultats supérieurs aux attentes",
+      "title_en": "Workday falls more than 7% after hours despite Q3 beat as outlook disappoints",
       "url": "https://in.investing.com/news/stock-market-news/workday-q3-fy27-slides-ai-arr-surges-130-but-stock-falls-on-outlook-93CH-5724490"
     },
     {
-      "date": "2026-11-24",
-      "time": "16:51",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Nvidia chute de près de 6 % après que le retour de Huang eut provoqué sa meilleure séance en plus de 23 ans",
-      "title_en": "Nvidia stock falls nearly 6% after Huang's return sparks best day in over 23 years",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Nvidia a reculé de 5,9 % mardi pour clôturer à 155,38 $, après avoir bondi de 31,5 % lundi à 165,05 $ (plus de 950 G$ de valeur boursière ajoutée) à l'annonce du retour de Jensen Huang comme PDG. Les investisseurs prennent leurs profits alors que l'enthousiasme s'estompe; Raymond James juge que des incertitudes demeurent. Nvidia, poids lourd du Nasdaq et du S&P 500, a pesé sur les indices technologiques.",
       "summary_en": "Nvidia slipped 5.9% on Tuesday to close at $155.38 after soaring 31.5% on Monday to $165.05 (adding more than $950 billion in market value) on news of Jensen Huang's reinstatement as CEO. Investors pared gains as enthusiasm faded; Raymond James said overhangs remain. As a Nasdaq and S&P 500 heavyweight, Nvidia weighed on tech indexes.",
+      "time": "16:51",
+      "title": "Nvidia chute de près de 6 % après que le retour de Huang eut provoqué sa meilleure séance en plus de 23 ans",
+      "title_en": "Nvidia stock falls nearly 6% after Huang's return sparks best day in over 23 years",
       "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-fall-by-6-following-huang-return-rally-5048533"
     },
     {
-      "date": "2026-11-24",
-      "time": "16:38",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "HP efface un gain de 14 % après la séance malgré des résultats meilleurs que prévu",
-      "title_en": "HP stock reverses course after hours despite quarterly results beat, dividend bump",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "HP a publié un BPA ajusté de 0,83 $ (attendu : 0,75 $) et des revenus de 16 G$ (+9,3 %), et a relevé son dividende. Le titre, d'abord en hausse de plus de 14 % après la clôture, reculait ensuite de 3,4 %, la flambée des coûts de mémoire et de composantes freinant la demande de PC. Prévision 2027 : BPA ajusté de 3,15 $ à 3,45 $.",
       "summary_en": "HP reported adjusted EPS of $0.83 (vs. $0.75 expected) and revenue of $16 billion (+9.3%), and raised its dividend. Shares first jumped more than 14% after hours, then fell 3.4% as soaring memory and component costs weigh on PC demand. FY2027 adjusted EPS guidance: $3.15 to $3.45.",
+      "time": "16:38",
+      "title": "HP efface un gain de 14 % après la séance malgré des résultats meilleurs que prévu",
+      "title_en": "HP stock reverses course after hours despite quarterly results beat, dividend bump",
       "url": "https://www.investing.com/news/earnings/hp-soars-after-hours-on-quarterly-results-beat-5049038"
     },
     {
-      "date": "2026-11-24",
-      "time": "16:30",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "us30",
         "spx500",
@@ -1755,32 +1816,32 @@
         "eurusd",
         "usd"
       ],
-      "title": "Wall Street termine en ordre dispersé : le Dow gagne 0,86 %, le Nasdaq perd 1,48 %",
-      "title_en": "U.S. stocks mixed at close of trade; Dow Jones Industrial Average up 0.86%",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "À la clôture, le Dow Jones a gagné 0,86 %, tandis que le S&P 500 a cédé 0,49 % et le Nasdaq 1,48 %, la technologie menant les baisses (Nvidia -5,86 %, HPE -16,31 %, Dell -11,83 %) et la santé les hausses (Amgen +5,54 %, Merck +4,50 %). L'or (décembre) a reculé de 2,72 % à 3 551,90 $, le WTI a gagné 1,66 % à 81,50 $ et l'indice dollar (contrats à terme) a perdu 0,48 % à 103,76; l'EUR/USD a progressé de 0,57 %.",
       "summary_en": "At the close, the Dow rose 0.86% while the S&P 500 fell 0.49% and the Nasdaq Composite 1.48%, with technology leading losses (Nvidia -5.86%, HPE -16.31%, Dell -11.83%) and healthcare leading gains (Amgen +5.54%, Merck +4.50%). December gold fell 2.72% to $3,551.90, WTI rose 1.66% to $81.50 and Dollar Index futures fell 0.48% to 103.76; EUR/USD rose 0.57%.",
+      "time": "16:30",
+      "title": "Wall Street termine en ordre dispersé : le Dow gagne 0,86 %, le Nasdaq perd 1,48 %",
+      "title_en": "U.S. stocks mixed at close of trade; Dow Jones Industrial Average up 0.86%",
       "url": "https://www.investing.com/news/stock-market-news/us-stocks-mixed-at-close-of-trade-dow-jones-industrial-average-up-086-5049102"
     },
     {
-      "date": "2026-11-24",
-      "time": "16:16",
-      "source": "Investing.com",
-      "impact": "high",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Dell relève sa prévision de revenus annuels à 202 G$ grâce à la demande pour les serveurs IA; l'action grimpe",
-      "title_en": "Dell raises annual revenue forecast as AI server demand surges, shares rally",
+      "date": "2026-11-24",
+      "impact": "high",
+      "source": "Investing.com",
       "summary": "Dell a déclaré des revenus records de 54,94 G$ au 3e trimestre (contre 49,24 G$ attendus) et un BPA ajusté de 9,45 $ (6,56 $ attendus); les revenus des serveurs IA ont bondi de 291 % à 22,03 G$. La prévision annuelle passe à 202 G$ de revenus et 29,68 $ de BPA ajusté, avec un carnet IA de 132,3 G$ et un nouveau rachat d'actions de 25 G$. L'action gagnait 4,2 % après la clôture, un appui pour le commerce de l'IA au Nasdaq après des jours de doute.",
       "summary_en": "Dell reported record Q3 revenue of $54.94B (vs $49.24B expected) and adjusted EPS of $9.45 (vs $6.56); AI server revenue jumped 291% to $22.03B. It raised its annual forecast to $202B in revenue and $29.68 adjusted EPS, with a $132.3B AI backlog and a new $25B buyback. Shares rose 4.2% after hours, a boost for the Nasdaq AI trade after days of doubt.",
+      "time": "16:16",
+      "title": "Dell relève sa prévision de revenus annuels à 202 G$ grâce à la demande pour les serveurs IA; l'action grimpe",
+      "title_en": "Dell raises annual revenue forecast as AI server demand surges, shares rally",
       "url": "https://www.investing.com/news/earnings/dell-raises-annual-revenue-forecast-to-202-billion-as-ai-server-demand-surges-5049040"
     },
     {
-      "date": "2026-11-24",
-      "time": "15:35",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "usd",
         "eurusd",
@@ -1788,76 +1849,76 @@
         "usdcad",
         "gbpusd"
       ],
-      "title": "Le dollar recule de son sommet de près de 20 mois et se dirige vers sa pire séance en plus de deux semaines",
-      "title_en": "Dollar retreats from near 20-month peak, set for worst day in over two weeks",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le dollar américain recule mardi après avoir touché un sommet de près de 20 mois et se dirige vers sa pire séance en plus de deux semaines, à mesure que s'essouffle le rallye de l'IA. Ce repli profite aux principales devises face au billet vert à la veille du PIB, des demandes de chômage et du PCE de mercredi.",
       "summary_en": "The U.S. dollar fell Tuesday from a near 20-month high and was headed for its worst session in over two weeks as the AI rally faded. The pullback lifts major currencies against the greenback ahead of Wednesday's GDP, jobless claims and PCE data.",
+      "time": "15:35",
+      "title": "Le dollar recule de son sommet de près de 20 mois et se dirige vers sa pire séance en plus de deux semaines",
+      "title_en": "Dollar retreats from near 20-month peak, set for worst day in over two weeks",
       "url": "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950"
     },
     {
-      "date": "2026-11-24",
-      "time": "15:00",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "usoil",
         "usdcad"
       ],
-      "title": "Le pétrole clôture en hausse de 2 $ alors que les attaques de navires se poursuivent à Ormuz",
-      "title_en": "Oil settles up $2 as traders weigh continued Hormuz ship attacks",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Le pétrole a clôturé en hausse d'environ 2 $ mardi, les opérateurs soupesant la poursuite des attaques contre des navires dans le détroit d'Ormuz. Plus tôt, le WTI s'échangeait près de 79,94 $, près de ses plus bas depuis fin août, sur fond de perspectives d'offre excédentaire. Le risque d'approvisionnement au Moyen-Orient soutient le brut et le dollar canadien.",
       "summary_en": "Oil settled up about $2 on Tuesday as traders weighed continued attacks on ships in the Strait of Hormuz. Earlier, WTI traded near $79.94, close to its lowest since late August, amid a surplus supply outlook. Middle East supply risk supports crude and the Canadian dollar.",
+      "time": "15:00",
+      "title": "Le pétrole clôture en hausse de 2 $ alors que les attaques de navires se poursuivent à Ormuz",
+      "title_en": "Oil settles up $2 as traders weigh continued Hormuz ship attacks",
       "url": "https://www.investing.com/news/commodities-news/oil-holds-near-threemonth-low-as-rising-supply-offsets-hormuz-threat-5046916"
     },
     {
-      "date": "2026-11-24",
-      "time": "14:42",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "usoil"
       ],
-      "title": "Poutine affirme que l'Ukraine frappe des raffineries russes malgré les demandes de Trump et promet des représailles",
-      "title_en": "Putin says Ukraine hits Russian oil plants despite Trump's requests, promises retaliation",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Vladimir Poutine affirme que l'Ukraine continue de frapper des installations pétrolières russes malgré les demandes de Donald Trump, et promet de riposter. Ce regain de tension sur les infrastructures énergétiques russes ajoute un risque d'offre pour le pétrole, déjà soutenu par les incidents à Ormuz.",
       "summary_en": "Vladimir Putin says Ukraine keeps striking Russian oil facilities despite Donald Trump's requests, and promises retaliation. Renewed pressure on Russian energy infrastructure adds supply risk for oil, already supported by incidents in Hormuz.",
+      "time": "14:42",
+      "title": "Poutine affirme que l'Ukraine frappe des raffineries russes malgré les demandes de Trump et promet des représailles",
+      "title_en": "Putin says Ukraine hits Russian oil plants despite Trump's requests, promises retaliation",
       "url": "https://www.investing.com/news/commodities-news/putin-says-ukraine-hits-russian-oil-plants-despite-trumps-requests-promises-retaliation-5048918"
     },
     {
-      "date": "2026-11-24",
-      "time": "14:33",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Jensen Huang présente ses excuses aux employés de Nvidia",
-      "title_en": "Nvidia's Jensen Huang apologizes to employees",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le PDG de Nvidia, Jensen Huang, a présenté ses excuses aux employés lors d'une rencontre interne, selon Investing.com; CNBC rapporte qu'il leur a aussi dit que Nvidia n'a pas besoin de plan de relève. Les questions de gouvernance entourant son retour pèsent sur le titre, poids lourd du Nasdaq et du S&P 500.",
       "summary_en": "Nvidia CEO Jensen Huang apologized to employees at an internal meeting, per Investing.com; CNBC reports he also told staff Nvidia doesn't need a succession plan. Governance questions around his return weigh on the stock, a heavyweight in the Nasdaq and S&P 500.",
+      "time": "14:33",
+      "title": "Jensen Huang présente ses excuses aux employés de Nvidia",
+      "title_en": "Nvidia's Jensen Huang apologizes to employees",
       "url": "https://www.investing.com/news/stock-market-news/nvidias-jensen-huang-apologizes-to-employees-says-he-is-in-therapy-5048912"
     },
     {
-      "date": "2026-11-24",
-      "time": "14:23",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Les obligations de CoreWeave touchent des creux records alors que les doutes sur l'IA reviennent",
-      "title_en": "CoreWeave bonds hit record lows as AI trade concerns return",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "L'obligation à 9 % échéant en 2031 de CoreWeave a chuté jusqu'à 3,69 points à 76,4 cents par dollar, son plus bas depuis son émission en juillet 2025, et la note à 9,625 % de 2032 a perdu jusqu'à 4,6 points à 74,9 cents. Ces reculs effacent les gains de lundi liés au retour de Jensen Huang chez Nvidia. Le crédit des entreprises liées à l'IA redevient un indicateur de stress pour le Nasdaq.",
       "summary_en": "CoreWeave's 9% bond due 2031 fell as much as 3.69 points to 76.4 cents on the dollar, its lowest since issuance in July 2025, while its 9.625% note due 2032 dropped as much as 4.6 points to 74.9 cents. The declines erased Monday's gains tied to Jensen Huang's return at Nvidia. AI-linked credit is again a stress gauge for the Nasdaq.",
+      "time": "14:23",
+      "title": "Les obligations de CoreWeave touchent des creux records alors que les doutes sur l'IA reviennent",
+      "title_en": "CoreWeave bonds hit record lows as AI trade concerns return",
       "url": "https://www.investing.com/news/stock-market-news/coreweave-bonds-hit-record-lows-as-ai-trade-concerns-return-5048907"
     },
     {
-      "date": "2026-11-24",
-      "time": "14:01",
-      "source": "Investing.com",
-      "impact": "high",
       "assets": [
         "usd",
         "spx500",
@@ -1866,142 +1927,122 @@
         "eurusd",
         "usdjpy"
       ],
-      "title": "PIB, demandes de chômage et PCE parmi les données clés attendues mercredi",
-      "title_en": "GDP, jobless claims, and PCE among key data due Wednesday",
+      "date": "2026-11-24",
+      "impact": "high",
+      "source": "Investing.com",
       "summary": "Selon Investing.com, le PIB américain, les demandes hebdomadaires de chômage et l'indice des prix PCE figurent parmi les données importantes publiées mercredi. Le PCE est la mesure d'inflation privilégiée par la Fed, ce qui en fait un test pour le dollar, les taux, l'or et les indices boursiers avant l'Action de grâce.",
       "summary_en": "According to Investing.com, U.S. GDP, weekly jobless claims and the PCE price index are among the key data due Wednesday. PCE is the Fed's preferred inflation gauge, making it a test for the dollar, yields, gold and stock indexes ahead of Thanksgiving.",
+      "time": "14:01",
+      "title": "PIB, demandes de chômage et PCE parmi les données clés attendues mercredi",
+      "title_en": "GDP, jobless claims, and PCE among key data due Wednesday",
       "url": "https://www.investing.com/news/stock-market-news/gdp-jobless-claims-and-pce-among-key-data-due-wednesday-93CH-5048884"
     },
     {
-      "date": "2026-11-24",
-      "time": "13:55",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq"
       ],
-      "title": "Schumer accuse le PDG de Nvidia d'avoir violé la loi américaine sur le contrôle des exportations",
-      "title_en": "Schumer accuses Nvidia CEO of violating US export control law",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le chef démocrate au Sénat, Chuck Schumer, accuse Jensen Huang, PDG de Nvidia, d'avoir enfreint la loi américaine sur le contrôle des exportations, selon le titre d'Investing.com. Cette pression politique s'ajoute aux incertitudes entourant le retour de Huang et pèse sur Nvidia et le Nasdaq.",
       "summary_en": "Senate Democratic leader Chuck Schumer accuses Nvidia CEO Jensen Huang of violating U.S. export control law, according to Investing.com's headline. The political pressure adds to uncertainty around Huang's return and weighs on Nvidia and the Nasdaq.",
+      "time": "13:55",
+      "title": "Schumer accuse le PDG de Nvidia d'avoir violé la loi américaine sur le contrôle des exportations",
+      "title_en": "Schumer accuses Nvidia CEO of violating US export control law",
       "url": "https://www.investing.com/news/stock-market-news/schumer-accuses-nvidia-ceo-of-violating-us-export-control-law-5048879"
     },
     {
-      "date": "2026-11-24",
-      "time": "13:48",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "spx500"
       ],
-      "title": "Malmené, le S&P 500 devrait gagner plus de 12 % d'ici la fin de 2027, selon un sondage Reuters",
-      "title_en": "Bruised S&P 500 seen gaining more than 12% by end-2027 - Reuters poll",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Un sondage Reuters auprès de stratèges prévoit que le S&P 500 gagnera plus de 12 % d'ici la fin de 2027, malgré les récentes turbulences du marché. Ce consensus reste optimiste même si les inquiétudes autour de l'IA secouent les indices.",
       "summary_en": "A Reuters poll of strategists sees the S&P 500 gaining more than 12% by the end of 2027 despite recent market turbulence. The consensus remains upbeat even as AI concerns rattle the indexes.",
+      "time": "13:48",
+      "title": "Malmené, le S&P 500 devrait gagner plus de 12 % d'ici la fin de 2027, selon un sondage Reuters",
+      "title_en": "Bruised S&P 500 seen gaining more than 12% by end-2027 - Reuters poll",
       "url": "https://www.investing.com/news/stock-market-news/bruised-sp-500-seen-gaining-more-than-12-by-end2027-reuters-poll-5048867"
     },
     {
-      "date": "2026-11-24",
-      "time": "13:33",
-      "source": "MarketWatch",
-      "impact": "med",
       "assets": [
         "nasdaq"
       ],
-      "title": "L'action de Micron recule alors qu'un analyste met en garde contre une future surabondance de l'offre",
-      "title_en": "Micron's stock falls as an analyst warns about a future supply glut",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "MarketWatch",
       "summary": "L'action du fabricant de puces mémoire Micron recule mardi après qu'un analyste a mis en garde contre une future surabondance de l'offre, selon MarketWatch. Cette pression sur un titre des semi-conducteurs s'ajoute au repli de Nvidia et pèse sur le Nasdaq.",
       "summary_en": "Memory-chip maker Micron's stock fell on Tuesday after an analyst warned about a future supply glut, per MarketWatch. The pressure on a semiconductor name adds to Nvidia's pullback and weighs on the Nasdaq.",
+      "time": "13:33",
+      "title": "L'action de Micron recule alors qu'un analyste met en garde contre une future surabondance de l'offre",
+      "title_en": "Micron's stock falls as an analyst warns about a future supply glut",
       "url": "https://www.marketwatch.com/story/microns-stock-falls-as-an-analyst-warns-about-a-future-supply-glut-f7fbeefb"
     },
     {
-      "date": "2026-11-24",
-      "time": "12:28",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "usdcad",
         "usd"
       ],
-      "title": "Le dollar canadien rebondit d'un creux de 19 mois alors que le dollar américain recule",
-      "title_en": "Canadian dollar rebounds from 19-month low as U.S. dollar retreats",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le huard remonte mardi après avoir touché son plus bas niveau en 19 mois face au billet vert, profitant du repli du dollar américain. Ce rebond fait reculer la paire USD/CAD.",
       "summary_en": "The loonie rebounded on Tuesday from a 19-month low against the greenback, helped by a retreating U.S. dollar. The rebound pushes USD/CAD lower.",
+      "time": "12:28",
+      "title": "Le dollar canadien rebondit d'un creux de 19 mois alors que le dollar américain recule",
+      "title_en": "Canadian dollar rebounds from 19-month low as U.S. dollar retreats",
       "url": "https://www.investing.com/news/forex-news/canadian-dollar-rebounds-from-19month-low-as-us-dollar-retreats-5048801"
     },
     {
-      "date": "2026-11-24",
-      "time": "11:24",
-      "source": "Investing.com (Reuters)",
-      "impact": "high",
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "us30",
-        "eurusd",
-        "usdcad",
-        "xauusd"
-      ],
-      "title": "L'administration Trump s'apprête à dévoiler de nouveaux droits de douane après une enquête sur la surcapacité industrielle, selon des sources",
-      "title_en": "Trump administration set to unveil new tariffs after probe on excess factory capacity, sources say",
-      "summary": "Selon des sources citées par Reuters, l'administration Trump est sur le point d'annoncer de nouveaux droits de douane à la suite d'une enquête sur la capacité excédentaire des usines de partenaires commerciaux; plus tôt, la Maison-Blanche préparait des tarifs étendus visant la Chine, l'UE et des dizaines de pays. Une nouvelle ronde tarifaire peut peser sur les actions américaines et faire bouger le dollar, l'euro, le huard et l'or. (Article complet non accessible; résumé limité au titre.)",
-      "summary_en": "According to sources cited by Reuters, the Trump administration is about to announce new tariffs following a probe into excess factory capacity at trading partners; earlier, the White House was preparing sweeping tariffs on China, the EU and dozens of nations. A new tariff round can weigh on U.S. stocks and move the dollar, euro, Canadian dollar and gold. (Full article not accessible; summary limited to the headline.)",
-      "url": "https://www.investing.com/news/commodities-news/trump-administration-set-to-unveil-new-tariffs-after-probeon-excess-factory-capacity-sources-say-5048724"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "11:12",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Exclusif : Microsoft déclare un « code rouge » après une panne historique, selon des notes internes",
-      "title_en": "Exclusive: Microsoft declares 'Code Red' after historic outage, internal memos show",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Selon des notes internes obtenues par Reuters, Microsoft a déclaré un « code rouge » à l'interne après une panne qualifiée d'historique. Microsoft étant l'un des plus gros poids du Nasdaq et du S&P 500, la fiabilité de ses services infonuagiques est suivie de près par les investisseurs. (Article complet non accessible; résumé limité au titre.)",
       "summary_en": "According to internal memos obtained by Reuters, Microsoft declared an internal 'Code Red' after an outage described as historic. As one of the largest weights in the Nasdaq and S&P 500, the reliability of its cloud services is closely watched by investors. (Full article not accessible; summary limited to the headline.)",
+      "time": "11:12",
+      "title": "Exclusif : Microsoft déclare un « code rouge » après une panne historique, selon des notes internes",
+      "title_en": "Exclusive: Microsoft declares 'Code Red' after historic outage, internal memos show",
       "url": "https://www.investing.com/news/stock-market-news/exclusivemicrosoft-declares-code-red-after-historic-outage-internal-memos-show-5048702"
     },
     {
-      "date": "2026-11-24",
-      "time": "11:07",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "spx500",
         "rut",
         "us30"
       ],
-      "title": "Les titres du commerce de détail bondissent à l'approche du Black Friday grâce à des résultats supérieurs aux attentes",
-      "title_en": "Retail stocks surge into Black Friday amid earnings beats",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Les actions de détaillants grimpent à l'approche du Black Friday, portées par des résultats supérieurs aux attentes; Abercrombie a relevé ses prévisions annuelles de ventes et de bénéfices, Best Buy ses cibles annuelles et Dick's Sporting Goods sa prévision de bénéfice annuel, selon d'autres titres d'Investing.com du jour. La vigueur du consommateur américain soutient le S&P 500 et les petites capitalisations du Russell 2000. (Article complet non accessible; résumé limité au titre.)",
       "summary_en": "Retail stocks are climbing into Black Friday on earnings beats; Abercrombie raised its annual sales and profit forecast, Best Buy lifted its annual targets and Dick's Sporting Goods raised its annual profit forecast, according to other Investing.com headlines today. Strength in the U.S. consumer supports the S&P 500 and the Russell 2000 small caps. (Full article not accessible; summary limited to the headline.)",
+      "time": "11:07",
+      "title": "Les titres du commerce de détail bondissent à l'approche du Black Friday grâce à des résultats supérieurs aux attentes",
+      "title_en": "Retail stocks surge into Black Friday amid earnings beats",
       "url": "https://www.investing.com/news/stock-market-news/retail-stocks-surge-into-black-friday-amid-earnings-beats-5048699"
     },
     {
-      "date": "2026-11-24",
-      "time": "10:35",
-      "source": "Investing.com",
-      "impact": "high",
       "assets": [
         "nasdaq",
         "spx500",
         "us30",
         "usd"
       ],
-      "title": "Wall Street sous pression au lendemain du rallye explosif mené par Nvidia; la confiance des consommateurs bondit",
-      "title_en": "Wall Street largely under pressure a day after explosive rally led by Nvidia; consumer confidence jumps",
+      "date": "2026-11-24",
+      "impact": "high",
+      "source": "Investing.com",
       "summary": "À 10 h 35 (HE), le Nasdaq Composite recule de 1,7 % à 23 681,12 points et le S&P 500 de 0,8 % à 7 180,64, tandis que le Dow Jones gagne 0,3 % à 49 731,80, après la meilleure séance depuis avril 2025. L'indice de confiance des consommateurs du Conference Board grimpe à 103,3 en novembre, contre 91,9 en octobre. Les marchés évaluent à environ 96 % la probabilité d'une hausse de taux de 25 points de base par la Fed en décembre (CME FedWatch), un contexte favorable au dollar.",
       "summary_en": "At 10:35 ET, the Nasdaq Composite fell 1.7% to 23,681.12 and the S&P 500 fell 0.8% to 7,180.64, while the Dow rose 0.3% to 49,731.80, following the best session since April 2025. The Conference Board consumer confidence index rose to 103.3 in November from 91.9 in October. Traders price roughly a 96% probability of a 25-basis-point Fed rate hike in December (CME FedWatch), supportive for the dollar.",
+      "time": "10:35",
+      "title": "Wall Street sous pression au lendemain du rallye explosif mené par Nvidia; la confiance des consommateurs bondit",
+      "title_en": "Wall Street largely under pressure a day after explosive rally led by Nvidia; consumer confidence jumps",
       "url": "https://in.investing.com/news/stock-market-news/us-stock-futures-steady-after-nvidialed-wall-street-rally-5722235"
     },
     {
-      "date": "2026-11-24",
-      "time": "10:18",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "usd",
         "eurusd",
@@ -2010,112 +2051,73 @@
         "audusd",
         "nzdusd"
       ],
-      "title": "Le dollar glisse alors que le rallye de l'IA alimenté par Nvidia s'essouffle",
-      "title_en": "Dollar slips as Nvidia-fueled AI rally fades",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le dollar américain recule alors que s'essouffle le rallye de l'IA mené par Nvidia, qui l'avait porté plus tôt dans la journée sur des paris d'une hausse de taux de la Fed. Ce repli redonne de l'air à l'euro, au yen, à la livre et aux devises du Pacifique. (Article complet non accessible; résumé limité au titre.)",
       "summary_en": "The U.S. dollar is slipping as the Nvidia-led AI rally fades, after it had climbed earlier in the day on bets of a Fed rate hike. The pullback gives some relief to the euro, yen, pound and Pacific currencies. (Full article not accessible; summary limited to the headline.)",
+      "time": "10:18",
+      "title": "Le dollar glisse alors que le rallye de l'IA alimenté par Nvidia s'essouffle",
+      "title_en": "Dollar slips as Nvidia-fueled AI rally fades",
       "url": "https://www.investing.com/news/forex-news/dollar-climbs-as-renewed-ai-euphoria-fuels-fed-hike-bets-5046813"
     },
     {
-      "date": "2026-11-24",
-      "time": "10:00",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq"
       ],
-      "title": "Un analyste estime que l'acquisition de Zscaler pour 44 G$ fait de CrowdStrike le leader du « zero trust »",
-      "title_en": "Analyst says CrowdStrike's $44B Zscaler deal makes it top zero trust player",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Selon un analyste cité par Investing.com, l'acquisition de Zscaler par CrowdStrike, d'une valeur de 44 milliards $, positionne l'entreprise comme le principal acteur de la sécurité « zero trust ». Cette transaction majeure dans la cybersécurité est suivie de près par les investisseurs du secteur technologique du Nasdaq.",
       "summary_en": "According to an analyst cited by Investing.com, CrowdStrike's $44 billion acquisition of Zscaler positions the company as the top zero trust security player. The major cybersecurity deal is closely watched by Nasdaq tech investors.",
+      "time": "10:00",
+      "title": "Un analyste estime que l'acquisition de Zscaler pour 44 G$ fait de CrowdStrike le leader du « zero trust »",
+      "title_en": "Analyst says CrowdStrike's $44B Zscaler deal makes it top zero trust player",
       "url": "https://www.investing.com/news/stock-market-news/analyst-says-crowdstrikes-44b-zscaler-deal-makes-it-top-zero-trust-player-5048650"
     },
     {
-      "date": "2026-11-24",
-      "time": "09:23",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq"
       ],
-      "title": "BNP Paribas abaisse sa note sur Micron en raison des risques sur les plans de capacité des hyperscalers pour 2028",
-      "title_en": "BNP Paribas cuts Micron rating on risks to 2028 hyperscaler capacity plans",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "BNP Paribas a abaissé sa recommandation sur Micron, citant des risques liés aux plans de capacité des grands fournisseurs infonuagiques (hyperscalers) pour 2028. Cette décote pèse sur les titres de mémoire et de semi-conducteurs, déjà volatils après le rallye de lundi. (Article non lu en entier; résumé fondé sur le titre.)",
       "summary_en": "BNP Paribas downgraded Micron, citing risks to hyperscalers' 2028 capacity plans. The cut weighs on memory and chip stocks, already volatile after Monday's rally. (Full article not read; summary based on the headline.)",
+      "time": "09:23",
+      "title": "BNP Paribas abaisse sa note sur Micron en raison des risques sur les plans de capacité des hyperscalers pour 2028",
+      "title_en": "BNP Paribas cuts Micron rating on risks to 2028 hyperscaler capacity plans",
       "url": "https://www.investing.com/news/stock-market-news/bnp-paribas-cuts-micron-rating-on-risks-to-2028-hyperscaler-capacity-plans-5048466"
     },
     {
-      "date": "2026-11-24",
-      "time": "09:01",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Le retour de Huang est acclamé en Chine, mais les obstacles politiques s'accumulent pour Nvidia",
-      "title_en": "Nvidia's Huang returns to cheers in China, but political hurdles mount",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Jensen Huang a été réintégré comme PDG de Nvidia après 11 jours d'absence, mais Washington a ajouté lundi Megaspeed et une filiale singapourienne d'Alibaba à sa liste noire commerciale, après une règle exigeant des licences pour les puces avancées expédiées vers Singapour, la Thaïlande, la Malaisie, l'Indonésie et le Brésil. Nvidia a cessé d'expédier vers la Chine des puces d'IA déjà autorisées, qui lui avaient rapporté 2,4 G$ au dernier trimestre. Huang témoignera devant le comité bancaire du Sénat le 3 décembre, un risque pour les titres de puces et le Nasdaq.",
       "summary_en": "Jensen Huang was reinstated as Nvidia CEO after 11 days away, but Washington on Monday added Megaspeed and a Singapore unit of Alibaba to its trade blacklist, following a rule requiring licences for advanced chip shipments to Singapore, Thailand, Malaysia, Indonesia and Brazil. Nvidia has stopped shipping previously licensed AI chips to China, which generated $2.4 billion in its latest quarter. Huang testifies before the Senate Banking Committee on Dec. 3, a risk for chip stocks and the Nasdaq.",
+      "time": "09:01",
+      "title": "Le retour de Huang est acclamé en Chine, mais les obstacles politiques s'accumulent pour Nvidia",
+      "title_en": "Nvidia's Huang returns to cheers in China, but political hurdles mount",
       "url": "https://www.investing.com/news/stock-market-news/nvidias-huang-returns-to-cheers-in-china-but-political-hurdles-mount-5048427"
     },
     {
-      "date": "2026-11-24",
-      "time": "08:25",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "usoil",
         "usdcad"
       ],
-      "title": "Le pétrole hésite entre une offre en amélioration et les craintes de perturbations au Moyen-Orient",
-      "title_en": "Oil prices choppy amid improving supplies, Mideast disruption fears",
+      "date": "2026-11-24",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Selon le titre d'Investing.com, les cours du pétrole évoluent en dents de scie mardi, tiraillés entre une offre qui s'améliore et les craintes de perturbations au Moyen-Orient. Le WTI reste ainsi près de ses creux récents, ce qui touche aussi le huard. (Article complet non accessible; résumé limité au titre.)",
       "summary_en": "According to Investing.com's headline, oil prices are choppy on Tuesday, torn between improving supplies and fears of Middle East disruptions. WTI thus stays near recent lows, which also affects the Canadian dollar. (Full article not accessible; summary limited to the headline.)",
+      "time": "08:25",
+      "title": "Le pétrole hésite entre une offre en amélioration et les craintes de perturbations au Moyen-Orient",
+      "title_en": "Oil prices choppy amid improving supplies, Mideast disruption fears",
       "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-after-logging-deep-losses-on-supply-glut-fears-5046712"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "08:12",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "xagusd"
-      ],
-      "title": "Les minières d'argent reculent alors que le métal baisse sur des craintes de hausse de taux",
-      "title_en": "Silver miners fall as metal price drops on rate hike concerns",
-      "summary": "Selon le titre d'Investing.com, les titres des minières d'argent reculent mardi, le prix du métal baissant sous l'effet des craintes d'une hausse des taux. Des taux plus élevés réduisent l'attrait des métaux précieux, qui ne versent pas de rendement. (Article complet non accessible; résumé limité au titre.)",
-      "summary_en": "According to Investing.com's headline, silver mining stocks fall on Tuesday as the metal's price drops on rate-hike concerns. Higher rates reduce the appeal of non-yielding precious metals. (Full article not accessible; summary limited to the headline.)",
-      "url": "https://www.investing.com/news/stock-market-news/silver-miners-fall-as-metal-price-drops-on-rate-hike-concerns-93CH-5048203"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "08:00",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "title": "Anthropic passe sous son prix d'introduction de 83 $ dans un revirement rapide après une inscription record",
-      "title_en": "Anthropic falls below $83 IPO price in swift reversal after record listing",
-      "summary": "L'action d'Anthropic a glissé sous son prix d'introduction de 83 $ avant l'ouverture mardi, avant de reculer de 5 % à 83,39 $, loin de son cours d'ouverture de 111,50 $ du 19 novembre. Le produit brut du PAPE a atteint un record de 93,5 G$, et Dario et Daniela Amodei ont chacun vendu plus de 3,37 millions d'actions (plus de 280 M$). Ce repli alimente les doutes sur l'élan du commerce de l'IA au Nasdaq; MSCI ajoutera le titre à ses indices le 30 novembre.",
-      "summary_en": "Anthropic shares slipped below their $83 IPO price in premarket trading Tuesday and were last down 5% at $83.39, extending a retreat from their $111.50 opening price on Nov. 19. IPO gross proceeds reached a record $93.5 billion, and Dario and Daniela Amodei each sold more than 3.37 million shares worth over $280 million. The slide feeds doubts about the AI trade on the Nasdaq; MSCI adds the stock to its indexes as of the Nov. 30 close.",
-      "url": "https://www.investing.com/news/economy-news/anthropic-breaks-below-83-ipo-price-as-debut-rally-unravels-5047654"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "07:36",
-      "source": "CoinDesk",
-      "impact": "med",
-      "assets": [
-        "btcusd"
-      ],
-      "title": "Le bitcoin recule : les sorties des FNB bitcoin au comptant atteignent un record de 4,71 G$ en novembre",
-      "title_en": "Bitcoin drops as November spot ETF outflows increase to record $4.71 billion",
-      "summary": "Le bitcoin poursuit son repli mardi alors que les sorties de capitaux des FNB bitcoin au comptant américains pour novembre atteignent un record mensuel de 4,71 milliards $, selon CoinDesk. Ces retraits institutionnels pèsent sur le BTC, qui a déjà effacé son rebond de lundi lié à Nvidia.",
-      "summary_en": "Bitcoin keeps sliding on Tuesday as November outflows from U.S. spot bitcoin ETFs reach a monthly record of $4.71 billion, according to CoinDesk. The institutional withdrawals weigh on BTC, which has already given back Monday's Nvidia-driven rebound.",
-      "url": "https://www.coindesk.com/daybook-us/2026/11/24/bitcoin-drops-as-november-spot-etf-outflows-increase-to-record-usd4-71-billion"
     }
   ],
   "live": {
