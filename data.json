@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T21:18:03Z",
+  "updatedAt": "2026-11-25T21:36:33Z",
   "econ": {
     "values": {
       "adp": {
@@ -1391,7 +1391,7 @@
       "epsF": 4.07,
       "id": null,
       "kind": "earn",
-      "move": null,
+      "move": 4.6,
       "name": "Résultats Deere (DE)",
       "note": "Avant l’ouverture",
       "revA": 10.514,
