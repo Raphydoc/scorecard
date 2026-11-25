@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T06:48:33Z",
+  "updatedAt": "2026-11-25T07:09:20Z",
   "econ": {
     "values": {
       "adp": {
@@ -34133,7 +34133,7 @@
     }
   },
   "ts": {
-    "asOf": "2026-11-24T22:11:56Z",
+    "asOf": "2026-11-25T07:09:20Z",
     "bankcalls": [
       {
         "bank": "Deutsche Bank",
@@ -35193,6 +35193,40 @@
       }
     ],
     "recaps": [
+      {
+        "date": "2026-11-25",
+        "session": "tok",
+        "title": "Le krach des puces revient en Asie : Kospi −5,6 %, Nikkei −3,6 %, SoftBank −16 %",
+        "title_en": "Chip rout returns to Asia: Kospi −5.6%, Nikkei −3.6%, SoftBank −16%",
+        "body": "Le rallye déclenché par le retour de Jensen Huang chez Nvidia s’est retourné : après la chute de 5,9 % de Nvidia mardi à Wall Street, le Nikkei a perdu 3,6 % à 56 502,97, le Kospi 5,6 % à 4 725,84 et le Taiex plus de 6 %, tandis que Shanghai cédait 0,9 % et que le Hang Seng gagnait 1 % (AP). En Australie, l’inflation d’octobre a grimpé à 4,9 % sur un an, plus que prévu, ce qui pourrait pousser la RBA à monter ses taux (AP). Le dollar s’est raffermi (indice +0,17 % sur la séance) et le rendement américain à 10 ans s’est tenu à 4,93 %, avant l’indice PCE de mercredi. L’or a reculé de 0,76 % et l’argent de 1,64 %, le bitcoin a cédé 0,82 % et le pétrole 0,42 %.",
+        "body_en": "The rally sparked by Jensen Huang’s return to Nvidia reversed: after Nvidia’s 5.9% drop on Wall Street Tuesday, the Nikkei fell 3.6% to 56,502.97, the Kospi 5.6% to 4,725.84 and the Taiex more than 6%, while Shanghai lost 0.9% and the Hang Seng gained 1% (AP). In Australia, October inflation rose to 4.9% year on year, above expectations, which could push the RBA to raise rates (AP). The dollar firmed (index +0.17% over the session) and the U.S. 10-year yield held at 4.93% ahead of Wednesday’s PCE index. Gold fell 0.76% and silver 1.64%, bitcoin lost 0.82% and oil 0.42%.",
+        "sections": {
+          "indices": {
+            "fr": "Les valeurs liées à l’IA ont plongé : SoftBank −16,1 %, Kioxia −15,4 %, Samsung −9,1 %, SK Hynix −8,6 %, TSMC −8,1 % et MediaTek −10 %; l’ASX 200 a perdu 0,5 % à 8 683,90 et les contrats à terme américains glissaient (AP).",
+            "en": "AI-linked stocks plunged: SoftBank −16.1%, Kioxia −15.4%, Samsung −9.1%, SK Hynix −8.6%, TSMC −8.1% and MediaTek −10%; the ASX 200 lost 0.5% to 8,683.90 and U.S. futures slipped (AP)."
+          },
+          "metals": {
+            "fr": "L’or a prolongé sa baisse de mardi, reculant de 0,76 % vers 3 521 $, et l’argent a perdu 1,64 % vers 40,06 $.",
+            "en": "Gold extended Tuesday’s decline, slipping 0.76% to about $3,521, and silver lost 1.64% to about $40.06."
+          },
+          "forex": {
+            "fr": "Le dollar a gagné du terrain : USD/JPY +0,11 % à 159,43, EUR/USD −0,26 % à 1,0939 et USD/CAD +0,05 % à 1,4281; l’AUD/USD a cédé 0,63 % malgré l’inflation australienne plus forte que prévu.",
+            "en": "The dollar gained ground: USD/JPY +0.11% at 159.43, EUR/USD −0.26% at 1.0939 and USD/CAD +0.05% at 1.4281; AUD/USD fell 0.63% despite hotter-than-expected Australian inflation."
+          },
+          "crypto": {
+            "fr": "Le bitcoin est resté sous les 60 000 $, reculant de 0,82 % vers 59 247 $.",
+            "en": "Bitcoin stayed below $60,000, down 0.82% at about $59,247."
+          },
+          "energy": {
+            "fr": "Le pétrole a rendu une partie du bond de mardi : le Brent reculait de 1,3 % à 87,67 $ en matinée asiatique (AP), et le WTI a perdu 0,42 % sur la séance.",
+            "en": "Oil gave back part of Tuesday’s jump: Brent fell 1.3% to $87.67 in Asian morning trade (AP), and WTI lost 0.42% over the session."
+          }
+        },
+        "sources": [
+          "https://www.wsls.com/business/2026/11/25/asian-stocks-mostly-decline-as-ai-shares-fall-following-a-retreat-on-wall-street/",
+          "https://www.aljazeera.com/news/2026/11/25/asias-stock-markets-dive-as-doubts-to-swirl-over-ai-boom"
+        ]
+      },
       {
         "date": "2026-11-24",
         "session": "ny",
