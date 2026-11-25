@@ -889,6 +889,19 @@ ul.bcalls li{display:grid;grid-template-columns:22px minmax(0,auto) minmax(0,1fr
   .mwgrid, .mwcols{grid-template-columns:minmax(0,1fr)!important}
   .btabs button{flex:1 1 0;padding:8px 10px;font-size:12.5px}
 }
+/* Nouvelles : un seul fil */
+.nwfil{display:flex;flex-wrap:wrap;gap:10px;align-items:center;justify-content:space-between;padding:10px 14px;border-bottom:1px solid var(--line)}
+ol.nwlist{list-style:none;margin:0;padding:0}
+.nwi{padding:12px 14px;border-bottom:1px solid var(--line)}
+.nwi.hi{box-shadow:inset 3px 0 0 var(--gold)}
+.nwm{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;font:500 11.5px/1.3 var(--f-mono);color:var(--muted);margin-bottom:4px}
+.nwt{color:var(--fg)} .nws{font-family:var(--f-body)}
+.nwhi{color:var(--gold);font-weight:600}
+.nwa{padding:1px 6px;border:1px solid var(--line);border-radius:3px;font-size:10.5px}
+.nwh{display:block;font:600 15px/1.4 var(--f-body);color:var(--fg);text-decoration:none} a.nwh:hover{color:var(--gold);text-decoration:underline}
+.nwi.data .nwh{font-weight:500;font-size:14px} .nwh.up{color:var(--bull)} .nwh.dn{color:var(--bear)}
+.nwi p{margin:5px 0 0;font-size:13.5px;line-height:1.5;color:var(--muted);max-width:820px}
+@media (max-width:1000px){ .nwgrid .sqright{order:2} }
 /* Plan du jour, Bulletin du score, voyant de retard */
 .psum.pmac{margin-top:-4px}
 .psum .pk{flex:1 1 150px;min-width:0;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px;color:var(--fg);cursor:pointer;font:inherit;transition:border-color .15s}
@@ -1419,7 +1432,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="charts" hidden aria-label="Graphiques"><div class="p2" id="p2charts"></div></section>
   <section data-pg="recap" hidden aria-label="Récap des sessions"><div class="p2" id="p2recap"></div></section>
   <section data-pg="research" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="bankpos" aria-selected="false">Prévisions par marché</button><button type="button" role="tab" data-btab="research" aria-selected="true">Notes de recherche</button></div><div class="p2" id="p2research"></div></section>
-  <section data-pg="squawk" hidden aria-label="Nouvelles"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="squawk" aria-selected="true">En direct</button><button type="button" role="tab" data-btab="news" aria-selected="false">Résumés</button></div><div class="p2" id="p2squawk"></div></section>
+  <section data-pg="squawk" hidden aria-label="Nouvelles"><div class="p2" id="p2squawk"></div></section>
   <section data-pg="bankpos" hidden aria-label="Banques"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="bankpos" aria-selected="true">Prévisions par marché</button><button type="button" role="tab" data-btab="research" aria-selected="false">Notes de recherche</button></div><div class="p2" id="p2bankpos"></div></section>
   <section data-pg="risk" hidden aria-label="Appétit pour le risque"><div class="p2" id="p2risk"></div></section>
   <section data-pg="plan" hidden aria-label="Plan du jour"><div class="p2" id="p2plan"></div><div class="p2" id="planTS"></div></section>
@@ -1434,7 +1447,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <section data-pg="tech" hidden aria-label="Heatmap technique"><div class="p2" id="p2tech"></div></section>
   <section data-pg="seas" hidden aria-label="Saisonnalité"><div class="p2" id="p2seas"></div></section>
   <section data-pg="cbg" hidden aria-label="Or · banques centrales"><div class="p2" id="p2cbg"></div></section>
-  <section data-pg="news" hidden aria-label="Nouvelles"><div class="btabs" role="tablist"><button type="button" role="tab" data-btab="squawk" aria-selected="false">En direct</button><button type="button" role="tab" data-btab="news" aria-selected="true">Résumés</button></div><div class="p2" id="p2news"></div></section>
+  <section data-pg="news" hidden aria-label="Nouvelles"><div class="p2" id="p2news"></div></section>
 
   <section data-pg="fed" hidden aria-label="Taux">
     <div class="p2" id="p2rates"></div>
@@ -4219,40 +4232,56 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     ((state.live2 && state.live2.news) || []).forEach(n=>{ if(!n.url || seenU.has(n.url)) return; seenU.add(n.url); it.push({k:'news', t:n.t, txt:isEN() ? n.title : (n.fr||n.title), src:n.src, url:n.url, hi:/\b(fed|powell|fomc|cpi|payrolls?|inflation|tariffs?|rate cut|rate hike)\b/i.test(n.title)}); });
     return it.sort((a,b)=> a.up&&b.up ? a.t-b.t : b.t-a.t);
   }
+  // ---------- Nouvelles : un seul fil, le plus récent en haut (manchettes résumées, manchettes en direct, données publiées) ----------
+  state.nwImp = state.nwImp || 'all'; state.nwAsset = state.nwAsset || 'all';
+  function newsFeed(){
+    const it = [], cut = Date.now() - 48*3600e3, norm = t => (t||'').toLowerCase().replace(/[^a-z0-9à-ÿ]+/g,' ').trim();
+    const seenU = new Set(), seenT = new Set();
+    (state.news||[]).forEach(n=>{ const t = Math.min(Date.now(), etEpoch(n.date, n.time||'00:00')); if(t < cut) return;
+      const title = isEN() && n.title_en ? n.title_en : n.title; seenU.add(n.url); seenT.add(norm(n.title)); seenT.add(norm(n.title_en));
+      it.push({k:'news', t, src:n.source, title, sum:isEN() && n.summary_en ? n.summary_en : n.summary, url:n.url, hi:n.impact==='high', assets:n.assets||[]}); });
+    ((state.live2 && state.live2.news) || []).forEach(n=>{ if(!n.url || n.t < cut || seenU.has(n.url) || seenT.has(norm(n.fr)) || seenT.has(norm(n.title))) return; seenU.add(n.url);
+      it.push({k:'live', t:n.t, src:n.src, title:isEN() ? n.title : (n.fr||n.title), url:n.url, hi:false, assets:[]}); });
+    (state.calendar||[]).forEach(x=>{ if(!x.date || x.a==null || x.kind==='earn') return; const t = etEpoch(x.date, x.time||'12:00'); if(t < cut || t > Date.now()) return;
+      const u = x.unit!==undefined ? x.unit : ((INDICATORS.find(i=>i.id===x.id)||{}).unit||'');
+      it.push({k:'data', t, src:L('Donnée publiée','Data release'), title:`${x.cc && x.cc!=='US' ? FLAG(x.cc)+' ' : ''}${esc(x.name||'')} : ${fmt(x.a,u)}${x.f!=null ? ` (${L('prévu','fcst')} ${fmt(x.f,u)})` : ''}`,
+        hi:impOf(x,'all')>=2, assets:Object.keys(x.assets||{}), surp:x.f!=null ? Math.sign(+x.a - +x.f) : 0}); });
+    return it.sort((a,b)=>b.t-a.t);
+  }
   async function renderSquawk(){
     const box = $('p2squawk'); if(!box) return;
     box.classList.toggle('noanim', !!state.noAnim); state.noAnim = false;
-    const M = await mkData(); if(state.page!=='squawk') return;
-    const all = squawkItems(M), tab = state.sqTab, cnt = k => all.filter(x=>x.k===k).length;
-    const topMov = new Set(all.filter(x=>x.k==='mov').sort((a,b)=>b.mag-a.mag).slice(0,5));
-    const list = tab==='all' ? all.filter(x=>x.k!=='rel' && (x.k!=='mov' || topMov.has(x))) : all.filter(x=>x.k===tab);
-    const movers = M && M.watch ? Object.values(M.watch).flat().filter(x=>x.d1!=null).sort((a,b)=>Math.abs(b.d1)-Math.abs(a.d1)).slice(0,14) : [];
-    const ago = t => { const m = Math.round((Date.now()-t)/6e4); return m<1?L('à l’instant','just now'):m<60?m+' min':m<1440?Math.round(m/60)+' h':Math.round(m/1440)+L(' j',' d'); };
-    const tm = t => new Date(t).toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit'});
-    const up = all.filter(x=>x.k==='rel').slice(0,12);
-    const html = `<div class="sqgrid">
-      <div class="panel sqfeed"><div class="sqh"><b>✦ SQUAWK</b><span class="sqlive">LIVE</span><small>${L('manchettes et données · mouvements · publications à venir','headlines & data · movers · upcoming releases')}</small><em>${all.length} ${L('ÉLÉMENTS','ITEMS')}</em></div>
-        <div class="sqtape"><div>${movers.concat(movers).map(x=>`<span>${esc(nmT(x.n))} <b class="${pcCls(x.d1)}">${pcTxt(x.d1)}</b> · ${pxAuto(x.last)}</span>`).join('')}</div></div>
-        <div class="chips sqtabs">${[['all',L('TOUT','ALL'),all.length-cnt('rel')],['data',L('DONNÉES','DATA'),cnt('data')],['mov',L('MOUVEMENTS','MOVERS'),cnt('mov')],['rel',L('À VENIR','RELEASES'),cnt('rel')],['news',L('NOUVELLES','NEWS'),cnt('news')]].map(([k,t,n])=>`<button type="button" class="chip" data-t="${k}" aria-pressed="${tab===k}">${t} <b>${n}</b></button>`).join('')}</div>
-        <div class="sqlist">${list.slice(0,80).map((x,i)=>`<div class="sqi ${x.k} ${x.hi?'hi':''}" style="--d:${Math.min(i,25)*25}ms"><span class="sqt">${x.up?esc(new Date(x.t).toLocaleDateString(LOC(),{weekday:'short'}))+' '+tm(x.t):tm(x.t)}</span><span class="sqa">${x.up?L('dans ','in ')+durTxt(x.t-Date.now()):ago(x.t)}</span><i></i><span class="sqx">${x.nm?`<span>${esc(x.nm)}</span>`:''}${x.url?`<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.txt)}</a>`:esc(x.txt)}${x.src?` <small>${esc(x.src)}</small>`:''}</span></div>`).join('') || `<p class="tsnone">${L('Rien pour ce filtre.','Nothing for this filter.')}</p>`}</div></div>
+    const all = newsFeed();
+    const list = all.filter(x=>(state.nwImp==='all' || x.hi) && (state.nwAsset==='all' || x.assets.includes(state.nwAsset)));
+    const today = torontoToday();
+    const when = t => { const d = new Date(t), dd = d.toLocaleDateString('en-CA',{timeZone:'America/Toronto'}), hm = d.toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'});
+      return dd===today ? hm : d.toLocaleDateString(LOC(),{weekday:'short', timeZone:'America/Toronto'})+' '+hm; };
+    const nHi = all.filter(x=>x.hi).length;
+    const html = `<div class="sqgrid nwgrid">
+      <div class="panel sqfeed nwfeed"><div class="sqh"><b>${L('NOUVELLES','NEWS')}</b><span class="sqlive">LIVE</span><small>${L('Manchettes de sources reconnues et données publiées, les plus récentes en haut (48 dernières heures)','Headlines from trusted sources and data releases, newest first (last 48 hours)')}</small></div>
+        <div class="nwfil"><div class="chips"><button type="button" class="chip" data-imp="all" aria-pressed="${state.nwImp==='all'}">${L('Toutes','All')} <span class="cnum">${all.length}</span></button><button type="button" class="chip" data-imp="hi" aria-pressed="${state.nwImp==='hi'}">${L('Impact élevé','High impact')} <span class="cnum">${nHi}</span></button></div>
+          <select id="nwAsset" class="tssel" aria-label="${L('Actif','Asset')}"><option value="all">${L('Tous les actifs','All assets')}</option>${Object.keys(TOP_NAMES).map(k=>`<option value="${k}" ${state.nwAsset===k?'selected':''}>${esc(TOP_NAMES[k])}</option>`).join('')}</select></div>
+        <ol class="nwlist">${list.length ? list.slice(0,90).map(x=>`<li class="nwi ${x.k} ${x.hi?'hi':''}">
+          <div class="nwm"><span class="nwt">${esc(when(x.t))}</span><span class="nws">${esc(x.src||'')}</span>${x.hi?`<span class="nwhi">${L('impact élevé','high impact')}</span>`:''}${x.assets.filter(a=>TOP_NAMES[a]).slice(0,4).map(a=>`<span class="nwa">${esc(TOP_NAMES[a])}</span>`).join('')}</div>
+          ${x.url ? `<a class="nwh" href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||'')}</a>` : `<span class="nwh ${x.surp>0?'up':x.surp<0?'dn':''}">${x.k==='data' ? x.title : esc(x.title||'')}</span>`}
+          ${x.sum ? `<p>${esc(x.sum)}</p>` : ''}</li>`).join('') : `<li class="nwi"><span class="nwh">${L('Aucune nouvelle pour ce filtre.','No news for this filter.')}</span></li>`}</ol>
+        <p class="src">${L('Sources : Investing.com, Reuters, CNBC, MarketWatch, Yahoo Finance, FXStreet, CoinDesk, Fed… Les manchettes avec un résumé sont choisies et résumées par Claude chaque heure; les autres arrivent automatiquement aux 2 minutes.','Sources: Investing.com, Reuters, CNBC, MarketWatch, Yahoo Finance, FXStreet, CoinDesk, Fed… Headlines with a summary are picked and summarized by Claude every hour; the others arrive automatically every 2 minutes.')}</p></div>
       <div class="sqright"><div class="panel sqtv" data-ch="${state.sqTV||''}"><div class="sqh"><b>${L('TÉLÉ DU TERMINAL','TERMINAL TV')}</b>${TVCH.map(([k,n])=>`<button type="button" class="chip" data-tv="${k}" aria-pressed="${state.sqTV===k}">${esc(n)}</button>`).join('')}</div>
           <div class="sqvid">${state.sqTV ? `<iframe src="https://www.youtube-nocookie.com/embed/live_stream?channel=${TVCH.find(x=>x[0]===state.sqTV)[2]}&autoplay=1&mute=0" title="${esc(TVCH.find(x=>x[0]===state.sqTV)[1])}" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen loading="lazy"></iframe>` : `<button type="button" class="sqplay" data-tv="bloomberg">▶ ${L('Lancer la télé financière en direct','Start live financial TV')}<small>${L('Bloomberg, Yahoo Finance ou CNBC (YouTube) · avec le son','Bloomberg, Yahoo Finance or CNBC (YouTube) · with sound')}</small></button>`}</div>
-          ${state.sqTV?`<p class="ddsrc">${L('Si la vidéo ne joue pas, la chaîne n’est peut-être pas en direct en ce moment, ou YouTube est bloqué dans cette vue.','If the video does not play, the channel may not be live right now, or YouTube is blocked in this view.')} <a href="https://www.youtube.com/channel/${TVCH.find(x=>x[0]===state.sqTV)[2]}/live" target="_blank" rel="noopener">${L('Ouvrir sur YouTube','Open on YouTube')} ↗</a></p>`:''}</div>
-        <div class="panel"><p class="tscap">${L('PROCHAINES PUBLICATIONS','NEXT RELEASES')}</p>${up.length?up.map(x=>`<div class="rcrel"><span>${esc(new Date(x.t).toLocaleDateString(LOC(),{weekday:'short'}))} ${tm(x.t)}</span><div><b>${x.nm?`<span>${esc(x.nm)}</span>`:''}${esc(x.txt)}</b><small class="cd" data-t="${x.t}"></small></div></div>`).join(''):`<p class="tsnone">${L('Rien de prévu au calendrier','Nothing scheduled')}</p>`}</div></div>
+          ${state.sqTV?`<p class="ddsrc">${L('Si la vidéo ne joue pas, la chaîne n’est peut-être pas en direct en ce moment, ou YouTube est bloqué dans cette vue.','If the video does not play, the channel may not be live right now, or YouTube is blocked in this view.')} <a href="https://www.youtube.com/channel/${TVCH.find(x=>x[0]===state.sqTV)[2]}/live" target="_blank" rel="noopener">${L('Ouvrir sur YouTube','Open on YouTube')} ↗</a></p>`:''}</div></div>
     </div>`;
-    // la télé n'est jamais rechargée pendant les mises à jour : on ne remplace que le fil et les publications à venir (le son et la lecture continuent)
+    // la télé n'est jamais rechargée pendant les mises à jour : on ne remplace que le fil (le son et la lecture continuent)
     const keepTv = state.sqTV && box.querySelector(`.sqtv[data-ch="${state.sqTV}"] iframe`);
     if(keepTv){
       const tmp = document.createElement('div'); tmp.innerHTML = html;
-      const nf = tmp.querySelector('.sqfeed'), nr = tmp.querySelector('.sqright > .panel:not(.sqtv)');
-      const of = box.querySelector('.sqfeed'), or = box.querySelector('.sqright > .panel:not(.sqtv)');
-      if(nf && of) of.replaceWith(nf); if(nr && or) or.replaceWith(nr);
+      const nf = tmp.querySelector('.sqfeed'), of = box.querySelector('.sqfeed');
+      if(nf && of) of.replaceWith(nf);
     } else {
       box.innerHTML = html;
       box.querySelectorAll('[data-tv]').forEach(b=>b.addEventListener('click', ()=>{ state.sqTV = state.sqTV===b.dataset.tv && b.classList.contains('chip') ? null : b.dataset.tv; renderSquawk(); }));
     }
-    box.querySelectorAll('.sqtabs .chip').forEach(b=>b.addEventListener('click', ()=>{ state.sqTab = b.dataset.t; renderSquawk(); }));
-    if(typeof tickCountdowns==='function') tickCountdowns();
+    box.querySelectorAll('[data-imp]').forEach(b=>b.addEventListener('click', ()=>{ state.nwImp = b.dataset.imp; renderSquawk(); }));
+    const sel = $('nwAsset'); if(sel) sel.addEventListener('change', e=>{ state.nwAsset = e.target.value; renderSquawk(); });
   }
 
   // ---------- Bank Research ----------
@@ -4604,6 +4633,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function showPage(pg){
     if(pg==='home') pg = 'plan';
     if(pg==='fund') pg = 'top';
+    if(pg==='news') pg = 'squawk';
     if(pg==='watch') pg = 'plan';
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
