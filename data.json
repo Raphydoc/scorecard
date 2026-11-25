@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T09:47:59Z",
+  "updatedAt": "2026-11-25T10:48:16Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,53 @@
   "news": [
     {
       "date": "2026-11-25",
+      "time": "05:19",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Les titres américains de semi-conducteurs prolongent leurs pertes avant l'ouverture, les craintes sur les dépenses en IA refont surface",
+      "title_en": "U.S. chip stocks extend losses premarket as AI spending concerns resurface",
+      "summary": "Les actions américaines de semi-conducteurs poursuivent leur recul en préouverture, alors que les inquiétudes entourant les dépenses en intelligence artificielle reviennent au premier plan. Cette pression sur le secteur des puces pèse sur le Nasdaq et le S&P 500 avant la séance.",
+      "summary_en": "U.S. semiconductor stocks keep falling in premarket trading as worries about artificial intelligence spending return to the fore. The pressure on chipmakers weighs on the Nasdaq and the S&P 500 ahead of the session.",
+      "url": "https://www.investing.com/news/stock-market-news/us-chip-stocks-extend-losses-premarket-as-ai-spending-concerns-resurface-5050161"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "04:48",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "gbpusd",
+        "eurusd",
+        "usd"
+      ],
+      "title": "La livre sterling recule alors que le dénouement des positions risquées ramène les capitaux vers le dollar",
+      "title_en": "Sterling today: Pound falls as risk unwind sends funds back to dollar",
+      "summary": "La livre perd 0,40 % face au dollar à 1,3062 $ et l'euro cède 0,24 % à 1,0939 $, un repli généralisé des positions risquées, mené par les devises émergentes, ramenant les investisseurs vers le billet vert. Selon HSBC, les marchés anticipent une hausse de taux de la Fed en décembre, et l'indice PCE de base d'octobre est attendu aujourd'hui (ING prévoit +0,3 % sur un mois).",
+      "summary_en": "Sterling fell 0.40% against the dollar to $1.3062 and the euro slipped 0.24% to $1.0939 as a broad unwind of risk trades, led by emerging-market currencies, sent investors back to the greenback. Markets are pricing a December Fed hike, according to HSBC, and October core PCE is due today, with ING expecting a 0.3% monthly rise.",
+      "url": "https://ca.investing.com/news/forex-news/sterling-today-pound-falls-as-risk-unwind-sends-funds-back-to-dollar-4980264"
+    },
+    {
+      "date": "2026-11-25",
+      "time": "04:42",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500",
+        "usdjpy"
+      ],
+      "title": "La débâcle des titres technos s'étend à l'échelle mondiale : SoftBank chute de 15 %, Nvidia recule de 4,5 % avant l'ouverture",
+      "title_en": "Tech rout deepens globally; Softbank falls 15%, Nvidia down 4.5% premarket",
+      "summary": "La vente des valeurs technologiques s'aggrave dans le monde : SoftBank chute de 15 % et Nvidia recule de 4,5 % en préouverture à Wall Street. Ce mouvement prolonge la pression sur le Nasdaq et le S&P 500.",
+      "summary_en": "The tech sell-off is deepening worldwide: SoftBank fell 15% and Nvidia was down 4.5% in U.S. premarket trading. The move extends pressure on the Nasdaq and the S&P 500.",
+      "url": "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html"
+    },
+    {
+      "date": "2026-11-25",
       "time": "03:54",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -2074,50 +2121,6 @@
       "title": "Un analyste estime que l'acquisition de Zscaler pour 44 G$ fait de CrowdStrike le leader du « zero trust »",
       "title_en": "Analyst says CrowdStrike's $44B Zscaler deal makes it top zero trust player",
       "url": "https://www.investing.com/news/stock-market-news/analyst-says-crowdstrikes-44b-zscaler-deal-makes-it-top-zero-trust-player-5048650"
-    },
-    {
-      "assets": [
-        "nasdaq"
-      ],
-      "date": "2026-11-24",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "BNP Paribas a abaissé sa recommandation sur Micron, citant des risques liés aux plans de capacité des grands fournisseurs infonuagiques (hyperscalers) pour 2028. Cette décote pèse sur les titres de mémoire et de semi-conducteurs, déjà volatils après le rallye de lundi. (Article non lu en entier; résumé fondé sur le titre.)",
-      "summary_en": "BNP Paribas downgraded Micron, citing risks to hyperscalers' 2028 capacity plans. The cut weighs on memory and chip stocks, already volatile after Monday's rally. (Full article not read; summary based on the headline.)",
-      "time": "09:23",
-      "title": "BNP Paribas abaisse sa note sur Micron en raison des risques sur les plans de capacité des hyperscalers pour 2028",
-      "title_en": "BNP Paribas cuts Micron rating on risks to 2028 hyperscaler capacity plans",
-      "url": "https://www.investing.com/news/stock-market-news/bnp-paribas-cuts-micron-rating-on-risks-to-2028-hyperscaler-capacity-plans-5048466"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-24",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Jensen Huang a été réintégré comme PDG de Nvidia après 11 jours d'absence, mais Washington a ajouté lundi Megaspeed et une filiale singapourienne d'Alibaba à sa liste noire commerciale, après une règle exigeant des licences pour les puces avancées expédiées vers Singapour, la Thaïlande, la Malaisie, l'Indonésie et le Brésil. Nvidia a cessé d'expédier vers la Chine des puces d'IA déjà autorisées, qui lui avaient rapporté 2,4 G$ au dernier trimestre. Huang témoignera devant le comité bancaire du Sénat le 3 décembre, un risque pour les titres de puces et le Nasdaq.",
-      "summary_en": "Jensen Huang was reinstated as Nvidia CEO after 11 days away, but Washington on Monday added Megaspeed and a Singapore unit of Alibaba to its trade blacklist, following a rule requiring licences for advanced chip shipments to Singapore, Thailand, Malaysia, Indonesia and Brazil. Nvidia has stopped shipping previously licensed AI chips to China, which generated $2.4 billion in its latest quarter. Huang testifies before the Senate Banking Committee on Dec. 3, a risk for chip stocks and the Nasdaq.",
-      "time": "09:01",
-      "title": "Le retour de Huang est acclamé en Chine, mais les obstacles politiques s'accumulent pour Nvidia",
-      "title_en": "Nvidia's Huang returns to cheers in China, but political hurdles mount",
-      "url": "https://www.investing.com/news/stock-market-news/nvidias-huang-returns-to-cheers-in-china-but-political-hurdles-mount-5048427"
-    },
-    {
-      "assets": [
-        "usoil",
-        "usdcad"
-      ],
-      "date": "2026-11-24",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon le titre d'Investing.com, les cours du pétrole évoluent en dents de scie mardi, tiraillés entre une offre qui s'améliore et les craintes de perturbations au Moyen-Orient. Le WTI reste ainsi près de ses creux récents, ce qui touche aussi le huard. (Article complet non accessible; résumé limité au titre.)",
-      "summary_en": "According to Investing.com's headline, oil prices are choppy on Tuesday, torn between improving supplies and fears of Middle East disruptions. WTI thus stays near recent lows, which also affects the Canadian dollar. (Full article not accessible; summary limited to the headline.)",
-      "time": "08:25",
-      "title": "Le pétrole hésite entre une offre en amélioration et les craintes de perturbations au Moyen-Orient",
-      "title_en": "Oil prices choppy amid improving supplies, Mideast disruption fears",
-      "url": "https://www.investing.com/news/commodities-news/oil-prices-steady-after-logging-deep-losses-on-supply-glut-fears-5046712"
     }
   ],
   "live": {
