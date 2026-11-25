@@ -943,6 +943,26 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 
 
 
+
+/* Fiche actif, version structurée */
+.fnav{display:flex;flex-wrap:wrap;gap:6px;margin:0 0 6px}
+.fnav button{display:inline-flex;align-items:center;gap:7px;border:1px solid var(--line);background:var(--panel);color:var(--fg);border-radius:5px;padding:7px 11px;font:600 12.5px var(--f-body);cursor:pointer}
+.fnav button:hover{border-color:var(--gold);color:var(--gold)}
+.fnav button span,.fsec2 span{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--gold);color:#111;font:800 10.5px/1 var(--f-mono)}
+.fsec2{display:flex;align-items:center;gap:10px;margin:22px 0 10px;padding-bottom:8px;border-bottom:1px solid var(--line);font:700 15px/1.2 var(--f-body);letter-spacing:.02em;color:var(--fg);scroll-margin-top:12px}
+.fsec2 span{width:22px;height:22px;font-size:12px}
+.f2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;align-items:stretch}
+.f2 > .fp{height:100%;box-sizing:border-box}
+#ficheBot > .fp{margin:0}
+.fbkg{display:grid;grid-template-columns:minmax(0,1.2fr) minmax(0,1fr);gap:8px 26px} .fbkg .fnk{margin-top:0}
+#ficheTop{margin-bottom:10px} #ficheBot{margin:0 0 16px}
+/* la jauge sans le nom ni le verdict (déjà dans l'en-tête de la fiche) */
+main.grid[data-pg="score"] .panel.left > .symbol, main.grid[data-pg="score"] .panel.left > #verdict{display:none}
+details.how > summary{cursor:pointer;list-style:none} details.how > summary::-webkit-details-marker{display:none}
+details.how > summary h2{display:inline-flex;margin:0} details.how > summary::after{content:' ▸ voir';color:var(--gold);font:600 12px var(--f-body);margin-left:8px}
+details.how[open] > summary::after{content:' ▾ cacher'} details.how[open] > summary{margin-bottom:8px}
+@media (max-width:900px){ .f2,.fbkg{grid-template-columns:minmax(0,1fr)} }
+@media (max-width:640px){ .fnav{flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px} .fnav button{flex:none} .fsec2{font-size:14px;margin-top:18px} }
 /* Fiche actif */
 .fiche{margin:0 0 16px}
 .fhd{display:flex;flex-wrap:wrap;align-items:center;gap:12px 30px;padding:14px 18px;margin:0 0 14px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px}
@@ -1559,8 +1579,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   </main>
 
   <section class="fiche" data-pg="score" id="ficheBot" aria-label="Fiche actif : détails"></section>
-  <section class="panel how" data-pg="score">
-    <h2>Comment le score se calcule</h2>
+  <details class="panel how" data-pg="score">
+    <summary><h2>Comment le score se calcule</h2></summary>
     <ul>
       <li><strong>Surprise = Réel − Prévision.</strong> Une donnée plus forte que prévu renforce le dollar et pousse la Fed à garder les taux hauts.</li>
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
@@ -1574,7 +1594,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <li><strong>Score sur 100 :</strong> chaque bloc a toujours le même poids, peu importe le nombre de données : macroéconomie 50 points, technique 30 points, sentiment 20 points. Chaque bloc est ramené à son poids (ex. technique +2 sur 3 = +20 sur 30). Total de −100 à +100 : +15 à +39 = haussier, +40 et plus = très haussier (même chose en négatif), entre −14 et +14 = neutre. Les scores de tous les actifs se comparent donc directement.</li>
     </ul>
     <p class="foot">Les données économiques, le COT et le sentiment retail se mettent à jour automatiquement. La saisonnalité (mois en cours) change toute seule au début de chaque mois. La tendance de la semaine et le taux 10 ans (5 séances) se calculent tout seuls (environ chaque minute). Outil d'information seulement : ce n'est pas un signal d'achat ou de vente.</p>
-  </section>
+  </details>
 
 
   <section data-pg="top" hidden aria-label="Top Setups">
@@ -4860,7 +4880,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       ${U.length ? `<ul class="fup">${U.map(({x,t,im})=>{ const d = new Date(t), day = d.toLocaleDateString(LOC(),{weekday:'short', day:'numeric', timeZone:'America/Toronto'}), hm = x.time ? d.toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'}) : '';
         return `<li><span class="fut">${esc(day)}<br><b>${esc(hm)}</b></span><div><b>${x.cc && x.cc!=='US' ? FLAG(x.cc)+' ' : ''}${esc(x.name||'')}</b> <span class="fst">${'★'.repeat(Math.min(2, Math.max(1, im||1)))}</span>${x.f!=null ? `<small>${L('prévu','fcst')} ${esc(String(x.f))}${x.unit||''}</small>` : ''}<div class="fdir">${dirTxt(calDir(x,k))}</div></div></li>`; }).join('')}</ul>`
         : `<p class="fmut">${L('Rien d’important pour cet actif dans les 8 prochains jours.','Nothing important for this asset in the next 8 days.')}</p>`}</div>`;
-    top.innerHTML = ficheHead(k) + `<div class="fgrid">${why}${upc}</div>`;
+    const SEC = [['f-today',L('Aujourd’hui','Today')],['f-score',L('Le score','The score')],['f-tech',L('Technique et positionnement','Technicals and positioning')],['f-bank',L('Banques','Banks')],['f-hist',L('Saisonnalité et corrélations','Seasonality and correlations')]];
+    const sec = i => `<h2 class="fsec2" id="${SEC[i][0]}"><span>${i+1}</span>${SEC[i][1]}</h2>`;
+    top.innerHTML = ficheHead(k) + `<nav class="fnav" aria-label="${L('Sections','Sections')}">${SEC.map(([id,t],i)=>`<button type="button" data-fj="${id}"><span>${i+1}</span>${t}</button>`).join('')}</nav>`
+      + sec(0) + `<div class="f2">${why}${upc}</div>` + sec(1);
+    top.querySelectorAll('[data-fj]').forEach(b=>b.addEventListener('click', ()=>{ const el = document.getElementById(b.dataset.fj); if(el) window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - 12, behavior:'smooth'}); }));
 
     // --- technique
     const tile = (lab, val, cls, sub) => `<div class="ftile"><span>${lab}</span><b class="${cls||''}">${val}</b>${sub?`<small>${sub}</small>`:''}</div>`;
@@ -4884,18 +4908,18 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       ${cr==null && cot==null ? `<p class="fmut">${L('Pas de données de positionnement pour cet actif.','No positioning data for this asset.')}</p>` : `
       ${bar(cr, L('La foule (clients d’IG)','The crowd (IG clients)'), L('acheteurs · signal contrarien','long · contrarian signal'))}
       ${bar(cot, L('Les fonds (COT)','The funds (COT)'), `${L('acheteurs','long')}${chg!=null?` · ${sg2(chg,1)} pt ${L('sur 1 sem.','in 1 wk')}`:''}`)}
-      <div class="fread"><span class="fhb f${R.v>0?'bull':R.v<0?'bear':'neu'}">${esc(R.w)}</span> ${esc(R.t)}</div>`}</div>`;
+      <div class="fread"><span class="fhb f${R.v>0?'bull':R.v<0?'bear':'neu'}">${esc(R.w)}</span> ${esc(R.t)}</div><p class="fmut fsm">${L('Comment lire : la foule (petits traders) se trompe souvent, alors on fait l’inverse quand elle achète ou vend beaucoup (60 % et plus). Les fonds (gros spéculateurs) ont souvent raison : on suit leur sens. Les fonds sont mis à jour chaque vendredi.','How to read: the crowd (small traders) is often wrong, so lean the other way when it is heavily long or short (60%+). Funds (large speculators) are often right: follow their direction. Fund data updates every Friday.')}</p>`}</div>`;
 
     // --- banques
     const Tt = state.ts || {}, mkt = BK_OF[k], calls = (Tt.bankcalls||[]).filter(c=>c.market===mkt).sort((a,b)=>(b.date||'').localeCompare(a.date||''));
-    const names = [...new Set((Tt.bankcalls||[]).map(c=>c.market))], notes = (Tt.research||[]).filter(r=>noteMarket(r, names)===mkt).sort((a,b)=>(b.date||'').localeCompare(a.date||'')).slice(0, 3);
+    const names = [...new Set((Tt.bankcalls||[]).map(c=>c.market))], notes = (Tt.research||[]).filter(r=>noteMarket(r, names)===mkt).sort((a,b)=>(b.date||'').localeCompare(a.date||'')).slice(0, 5);
     const nB = {long:0, short:0, range:0}; calls.forEach(c=>{ if(nB[c.dir]!=null) nB[c.dir]++; });
     const DIRB = {long:['↑','up'], short:['↓','dn'], range:['↔','']};
     const fd = d => d ? new Date(d+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric', month:'short'}) : '';
     const bankP = `<div class="panel fp"><div class="fph"><h3>${L('Ce que prévoient les banques','What the banks forecast')}</h3>${calls.length?`<small><span class="up">↑ ${nB.long}</span> · <span class="dn">↓ ${nB.short}</span> · ↔ ${nB.range}</small>`:''}</div>
-      ${calls.length ? `<ul class="fbk">${calls.slice(0,6).map(c=>{ const d = DIRB[c.dir]||['·',''];
-        return `<li><span class="${d[1]}">${d[0]}</span><b>${esc(c.bank||'')}</b><span>${esc((isEN()&&c.target_en?c.target_en:c.target)||'')}</span><small>${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(fd(c.date))}</a>`:esc(fd(c.date))}</small></li>`; }).join('')}</ul>` : `<p class="fmut">${L('Pas de prévision de banque pour cet actif.','No bank forecast for this asset.')}</p>`}
-      ${notes.length ? `<div class="wyk">${L('Notes de recherche','Research notes')}</div><ul class="wyl">${notes.map(r=>`<li><span>${esc(fd(r.date))}</span>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.bank||'')} : ${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</a>`:`<em>${esc(r.bank||'')} : ${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</em>`}</li>`).join('')}</ul>` : ''}</div>`;
+      <div class="fbkg"><div>${calls.length ? `<ul class="fbk">${calls.slice(0,6).map(c=>{ const d = DIRB[c.dir]||['·',''];
+        return `<li><span class="${d[1]}">${d[0]}</span><b>${esc(c.bank||'')}</b><span>${esc((isEN()&&c.target_en?c.target_en:c.target)||'')}</span><small>${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(fd(c.date))}</a>`:esc(fd(c.date))}</small></li>`; }).join('')}</ul>` : `<p class="fmut">${L('Pas de prévision de banque pour cet actif.','No bank forecast for this asset.')}</p>`}</div>
+      <div>${notes.length ? `<div class="wyk fnk">${L('Notes de recherche','Research notes')}</div><ul class="wyl">${notes.map(r=>`<li><span>${esc(fd(r.date))}</span>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.bank||'')} : ${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</a>`:`<em>${esc(r.bank||'')} : ${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</em>`}</li>`).join('')}</ul>` : ''}</div></div></div>`;
 
     // --- saisonnalité
     const S = state.tech && state.tech.seas && state.tech.seas[k], SN = seasNow(k);
@@ -4915,7 +4939,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         <p class="fmut fsm">${L('Sur les 60 dernières séances. Près de ±1 = lien fort. Deux trades sur des actifs qui bougent ensemble = presque le même pari.','Over the last 60 sessions. Near ±1 = strong link. Two trades on assets that move together = almost the same bet.')}</p>`; }
     const corrP = `<div class="panel fp"><div class="fph"><h3>${L('Corrélations','Correlations')}</h3></div>${corr}</div>`;
 
-    bot.innerHTML = `<div class="fsec">${L('Détails','Details')}</div><div class="fgrid">${techP}${posP}${bankP}${seasP}${corrP}</div>`;
+    const SEC2 = [[2,L('Technique et positionnement','Technicals and positioning'),'f-tech'],[3,L('Banques','Banks'),'f-bank'],[4,L('Saisonnalité et corrélations','Seasonality and correlations'),'f-hist']];
+    const sec2 = ([n,t,id]) => `<h2 class="fsec2" id="${id}"><span>${n+1}</span>${t}</h2>`;
+    bot.innerHTML = sec2(SEC2[0]) + `<div class="f2">${techP}${posP}</div>` + sec2(SEC2[1]) + bankP + sec2(SEC2[2]) + `<div class="f2">${seasP}${corrP}</div>`;
     bot.querySelectorAll('[data-sc]').forEach(b=>b.addEventListener('click', ()=>{ state.asset = b.dataset.sc; renderAll(); window.scrollTo(0,0); }));
   }
   function ficheTick(){
