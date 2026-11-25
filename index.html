@@ -942,6 +942,47 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 
 
 
+
+/* Fiche actif */
+.fiche{margin:0 0 16px}
+.fhd{display:flex;flex-wrap:wrap;align-items:center;gap:12px 30px;padding:14px 18px;margin:0 0 14px;background:var(--panel);border:1px solid var(--line);border-left:3px solid var(--gold);border-radius:6px}
+.fhn{display:flex;flex-direction:column;gap:2px;margin-right:auto} .fhn .fhk{font:700 10px/1 var(--f-mono);letter-spacing:.14em;text-transform:uppercase;color:var(--gold)}
+.fhn b{font:800 26px/1.1 var(--f-body);letter-spacing:.03em} .fhn small{font-size:12.5px;color:var(--muted)}
+.fhp{display:flex;flex-direction:column;align-items:flex-end;gap:2px} .fhpx{font:600 22px var(--f-mono)} .fhd1{font:700 16px var(--f-mono)} .fhd1.up{color:var(--bull)} .fhd1.dn{color:var(--bear)} .fhp small{font-size:10.5px;color:var(--muted)}
+.fhs{display:flex;align-items:center;gap:10px} .fhsc{font:700 24px var(--f-mono)} .fhsc small{font-size:12px;color:var(--muted);margin-left:2px}
+.fhb{display:inline-block;padding:5px 10px;border-radius:4px;font:700 12px/1 var(--f-body);letter-spacing:.06em;text-transform:uppercase;background:var(--panel-2);color:var(--fg)}
+.fhb.fbull{background:color-mix(in srgb,var(--bull) 22%,transparent);color:var(--bull)} .fhb.fbear{background:color-mix(in srgb,var(--bear) 22%,transparent);color:var(--bear)}
+.fgrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,420px),1fr));gap:14px;align-items:start}
+.fp{padding:14px 16px;border-radius:6px;min-width:0}
+.fph{display:flex;align-items:baseline;gap:10px;margin-bottom:8px} .fph h3{margin:0;font:700 11.5px/1 var(--f-body);letter-spacing:.14em;text-transform:uppercase;display:flex;align-items:center;gap:8px}
+.fph h3::before{content:"";width:7px;height:7px;background:var(--gold);border-radius:1px} .fph small{margin-left:auto;font:600 10.5px var(--f-mono);color:var(--muted)}
+.fph small .up{color:var(--bull)} .fph small .dn{color:var(--bear)}
+.fbig{margin:2px 0 6px;font-size:15px;line-height:1.55} .fbig2{margin:0 0 10px;font-size:14px;line-height:1.5} .fbig2 .up{color:var(--bull)} .fbig2 .dn{color:var(--bear)}
+.fmut{color:var(--muted);font-size:13px;margin:4px 0} .fsm{font-size:11.5px;margin-top:8px}
+ul.fup{list-style:none;margin:0;padding:0} ul.fup li{display:grid;grid-template-columns:70px minmax(0,1fr);gap:10px;padding:8px 0;border-bottom:1px solid var(--line);font-size:13px}
+.fut{font:500 11px/1.3 var(--f-mono);color:var(--muted)} .fut b{color:var(--fg);font-weight:600}
+ul.fup small{display:block;color:var(--muted);font-size:11.5px} .fst{color:var(--gold);font-size:11px} .fdir{font-size:12px;margin-top:2px} .fdir .up{color:var(--bull)} .fdir .dn{color:var(--bear)}
+.ftiles{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.ftile{background:var(--panel-2);border-radius:5px;padding:8px 10px;display:flex;flex-direction:column;gap:2px;min-width:0}
+.ftile span{font:600 10px/1.2 var(--f-mono);letter-spacing:.06em;text-transform:uppercase;color:var(--muted)} .ftile b{font:700 14px var(--f-body)} .ftile small{font-size:11px;color:var(--muted)}
+.ftile b.up{color:var(--bull)} .ftile b.dn{color:var(--bear)} .ftile b.gold{color:var(--gold)}
+.frow{display:flex;flex-wrap:wrap;gap:4px 20px;margin-top:10px;font-size:12.5px;color:var(--muted)} .frow b{color:var(--fg);font-family:var(--f-mono)} .frow b.up{color:var(--bull)} .frow b.dn{color:var(--bear)}
+.fpos{display:grid;grid-template-columns:150px minmax(0,1fr) 56px;align-items:center;gap:4px 10px;margin:6px 0} .fpos span{font-size:13px} .fpos b{font:700 13px var(--f-mono);text-align:right}
+.fpos small{grid-column:1 / -1;font-size:11px;color:var(--muted);margin-top:-2px}
+.fpb{height:8px;background:var(--panel-2);border-radius:4px;overflow:hidden} .fpb i{display:block;height:100%;background:var(--gold)}
+.fread{margin-top:10px;font-size:13px;display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+ul.fbk{list-style:none;margin:0;padding:0} ul.fbk li{display:grid;grid-template-columns:16px 130px minmax(0,1fr) 56px;gap:8px;padding:6px 0;border-bottom:1px solid var(--line);font-size:12.5px;align-items:baseline}
+ul.fbk .up{color:var(--bull);font-weight:700} ul.fbk .dn{color:var(--bear);font-weight:700} ul.fbk small{text-align:right;color:var(--muted);font-size:11px} ul.fbk small a{color:var(--muted)}
+.fseas{display:grid;grid-template-columns:repeat(12,1fr);gap:4px;align-items:end;height:110px;padding-top:4px}
+.fseas > div{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;position:relative}
+.fseas > div span{width:70%;border-radius:2px;position:absolute;left:15%} .fseas span.pos{bottom:50%;background:var(--bull)} .fseas span.neg{top:50%;background:var(--bear)}
+.fseas > div em{position:absolute;bottom:-2px;font:600 10px var(--f-mono);color:var(--muted);font-style:normal} .fseas > div.cur em{color:var(--gold)} .fseas > div.cur{background:color-mix(in srgb,var(--gold) 10%,transparent);border-radius:3px}
+.fseas > div::after{content:"";position:absolute;left:0;right:0;top:50%;border-top:1px solid var(--line)}
+.fcorr{display:grid;grid-template-columns:1fr 1fr;gap:14px} .fcorr ul{list-style:none;margin:0;padding:0} .fcorr li{display:flex;gap:10px;align-items:baseline;padding:4px 0;font-size:13px}
+.fcorr li b{font:700 12.5px var(--f-mono);min-width:44px} .fcorr li b.up{color:var(--bull)} .fcorr li b.dn{color:var(--bear)}
+.flink{border:0;background:none;padding:0;color:var(--fg);font:600 13px var(--f-body);cursor:pointer;text-decoration:underline;text-underline-offset:3px} .flink:hover{color:var(--gold)}
+.fsec{margin:6px 0 10px;font:700 11px/1 var(--f-mono);letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+@media (max-width:640px){ .fhd{padding:12px;gap:10px 18px} .fhn b{font-size:22px} .fhp{align-items:flex-start} .ftiles{grid-template-columns:repeat(2,minmax(0,1fr))} ul.fbk li{grid-template-columns:16px 100px minmax(0,1fr)} ul.fbk small{display:none} .fpos{grid-template-columns:120px minmax(0,1fr) 50px} }
 /* en-tête uniforme de chaque page */
 section[data-pg] > .pghead.pgx{margin:0 0 14px;border:1px solid var(--line);border-radius:6px}
 .pghead.pgx p{max-width:900px;font-size:12.5px;line-height:1.45}
@@ -1403,7 +1444,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   <span class="navgrp">Aujourd’hui</span>
   <button type="button" data-page="plan" aria-current="page">Plan du jour</button>
   <span class="navgrp">Analyse</span>
-  <button type="button" data-page="score">Scorecard</button>
+  <button type="button" data-page="score">Fiche actif</button>
   <button type="button" data-page="top">Top Setups</button>
   <button type="button" data-page="tech">Heatmap technique</button>
   <button type="button" data-page="bull">Bulletin du score</button>
@@ -1478,6 +1519,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   <div id="note" class="note" hidden></div>
 
+  <section class="fiche" data-pg="score" id="ficheTop" aria-label="Fiche actif"></section>
   <main class="grid" data-pg="score">
     <section class="panel left" aria-label="Résumé">
       <div class="symbol"><b id="symName">XAUUSD · Or</b><span id="symHint">Données fortes = baissier</span></div>
@@ -1516,6 +1558,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     </div>
   </main>
 
+  <section class="fiche" data-pg="score" id="ficheBot" aria-label="Fiche actif : détails"></section>
   <section class="panel how" data-pg="score">
     <h2>Comment le score se calcule</h2>
     <ul>
@@ -1943,6 +1986,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const pts = scoreSeries(state.asset);
     box.innerHTML = pts.length > 1 ? scoreSvg(pts, 300, 140, false) + `<p class="hnote">${L('Score sur 100, un point par jour. Pointillé = estimation à partir de l’ancien historique (avant le 25 novembre).','Score out of 100, one point per day. Dashed = estimate from the old history (before November 25).')}</p>` : '<p class="empty-hist">'+L('L’historique se remplit chaque soir.','History fills in every evening.')+'</p>';
     const w = $('whyBox'); if(w) w.innerHTML = whyHtml(state.asset);
+    if(state.page==='score' && typeof renderFiche==='function') renderFiche();
   }
   function renderAll(){ if(typeof renderTape==='function') renderTape(); renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); if(typeof renderP2==='function') renderP2(); }
 
@@ -3369,7 +3413,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   // ---------- navigation sur cellulaire : barre du bas + menu plein écran ----------
   const MBAR = [
     ['plan', ['Plan du jour','Daily plan'], '<path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/>'],
-    ['score', ['Scorecard','Scorecard'], '<path d="M4 18a8 8 0 1 1 16 0"/><path d="m12 18 4.5-5.5"/><circle cx="12" cy="18" r="1.4"/>'],
+    ['score', ['Fiche','Asset'], '<path d="M4 18a8 8 0 1 1 16 0"/><path d="m12 18 4.5-5.5"/><circle cx="12" cy="18" r="1.4"/>'],
     ['top', ['Top','Top'], '<rect x="3.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="3.5" width="7" height="7" rx="1.2"/><rect x="3.5" y="13.5" width="7" height="7" rx="1.2"/><rect x="13.5" y="13.5" width="7" height="7" rx="1.2"/>'],
     ['cal', ['Calendrier','Calendar'], '<rect x="3.5" y="5" width="17" height="15" rx="2"/><path d="M3.5 9.5h17M8 3v4M16 3v4"/>'],
     ['menu', ['Menu','Menu'], '<path d="M4 7h16M4 12h16M4 17h16"/>']
@@ -3896,6 +3940,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       if((state.page==='watch' || state.page==='squawk') && !(ae && ae.id==='mwQ') && !document.querySelector('.dd.open, .chfs')){ state.noAnim = true; renderP2(); }
       if(state.page==='plan' && !document.querySelector('.dd.open, .chfs')) planTick();
       if(state.page==='why') whyTick();
+      if(state.page==='score') ficheTick();
       staleCheck();
       // Sentiment : le VIX se met à jour sans relancer les animations des graphiques
       if(state.page==='sent' && !document.querySelector('.dd.open, .chfs')){ const C = window.Chart, ca = C && C.defaults.animation; if(C) C.defaults.animation = false; state.noAnim = true; renderSent(); if(C) setTimeout(()=>{ C.defaults.animation = ca; }, 1500); }
@@ -4761,6 +4806,123 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <p class="src">${L('Raisons tirées des nouvelles et des données du jour, résumées à partir des articles cités (Reuters, CNBC, Bloomberg, Kitco, FXStreet…). Si aucune source n’explique clairement un mouvement, l’actif est mis dans « Sans raison précise » plutôt que d’inventer. Clique sur un actif pour ouvrir sa Scorecard. Outil d’information seulement.','Reasons from today’s news and data, summarized from the cited articles (Reuters, CNBC, Bloomberg, Kitco, FXStreet…). If no source clearly explains a move, the asset is listed under “No specific reason” instead of guessing. Click an asset to open its Scorecard. For information only.')}</p>`;
     box.querySelectorAll('[data-sc]').forEach(b=>b.addEventListener('click', ()=>{ state.asset = b.dataset.sc; showPage('score'); renderAll(); window.scrollTo(0,0); }));
   }
+
+  // ================= Fiche actif : tout sur un actif, au même endroit =================
+  const BK_OF = {xauusd:'XAU/USD', xagusd:'XAG/USD', eurusd:'EUR/USD', gbpusd:'GBP/USD', usdjpy:'USD/JPY', usdcad:'USD/CAD', audusd:'AUD/USD', usdchf:'USD/CHF', nzdusd:'NZD/USD', usd:'DXY', spx500:'S&P 500', nasdaq:'Nasdaq 100', us30:'Dow Jones', rut:'Russell 2000', usoil:'WTI', btcusd:'BTC/USD'};
+  const _cr = {};
+  function corrRow(asset, n){
+    const O = state.ohlc && state.ohlc.d1; if(!O || !O[asset]) return null;
+    const key = asset+'|'+n+'|'+(state.ohlc.asOf||'') ; if(_cr.key===key) return _cr.v;
+    const ret = k => { const m = {}, rows = O[k], D = barDates(k, rows); for(let i=1;i<rows.length;i++) m[D[i]] = Math.log(rows[i][4]/rows[i-1][4]); return m; };
+    const A = ret(asset), out = [];
+    Object.keys(TOP_NAMES).forEach(k=>{ if(k===asset || !O[k]) return; const B = ret(k), ds = Object.keys(A).filter(d=>B[d]!=null).sort().slice(-n); if(ds.length < n*0.6) return;
+      const x = ds.map(d=>A[d]), y = ds.map(d=>B[d]), mx = x.reduce((s,v)=>s+v,0)/x.length, my = y.reduce((s,v)=>s+v,0)/y.length;
+      let sxy = 0, sxx = 0, syy = 0; for(let i=0;i<x.length;i++){ sxy += (x[i]-mx)*(y[i]-my); sxx += (x[i]-mx)**2; syy += (y[i]-my)**2; }
+      if(sxx && syy) out.push([k, sxy/Math.sqrt(sxx*syy)]); });
+    _cr.key = key; _cr.v = out; return out;
+  }
+  // ce qu'une donnée plus haute que prévu fait à l'actif (+1 hausse, −1 baisse, 0 pas d'effet connu)
+  function calDir(x, asset){
+    const fam = !x.id && x.unit ? ((x.name||'').match(/^(CPI|PPI|PCE)\b/)||[])[1] : null, iid = x.id || (fam ? fam.toLowerCase() : null);
+    const ind = iid && INDICATORS.find(i=>i.id===iid); if(!ind || (ind.only && ind.only!==asset)) return 0;
+    return impact(asset, ind.cat, ind.dir);
+  }
+  function ficheUpcoming(asset){
+    const now = Date.now(), lim = now + 8*864e5, out = [];
+    (state.calendar||[]).forEach(x=>{ if(!x.date || x.a!=null || x.kind==='earn') return; const t = etEpoch(x.date, x.time||'12:00'); if(t < now - 3600e3 || t > lim) return;
+      const im = impOf(x, asset); if(!(im > 0) && x.kind!=='fed') return; out.push({x, t, im}); });
+    (typeof cbItems==='function' ? cbItems() : []).forEach(x=>{ if(!x || !x.date) return; const t = etEpoch(x.date, x.time||'12:00'); if(t < now - 3600e3 || t > lim) return;
+      const im = impOf(x, asset); if(!(im > 0)) return; if(out.some(o=>o.x.name===x.name && o.x.date===x.date)) return; out.push({x, t, im}); });
+    return out.sort((a,b)=>a.t-b.t).slice(0, 7);
+  }
+  function ficheHead(asset){
+    const P = planPx(asset), C = compute(asset), b = biasOf(C.total), vt = verdict(C.total);
+    return `<div class="fhd">
+      <div class="fhn"><span class="fhk">${L('Fiche actif','Asset page')}</span><b>${esc(TOP_NAMES[asset]||asset)}</b><small>${esc((ASSETS[asset]||{}).name||'')}</small></div>
+      <div class="fhp"><span class="fhpx" data-fp="${asset}">${pxFmt(P.px)}</span><span class="fhd1 ${P.d1>0?'up':P.d1<0?'dn':''}" data-fd="${asset}">${P.d1==null?'—':(P.d1>0?'▲ ':P.d1<0?'▼ ':'')+sg2(P.d1,2)+' %'}</span><small>${L('1D depuis la clôture d’hier','1D since yesterday’s close')}</small></div>
+      <div class="fhs"><span class="fhb f${b}">${esc(vt[0])}</span><span class="fhsc">${sg2(C.total,0)}<small>/100</small></span></div>
+    </div>`;
+  }
+  function renderFiche(){
+    const top = $('ficheTop'), bot = $('ficheBot'); if(!top || !bot) return;
+    const k = state.asset, A = (state.assets||{})[k] || {}, T = state.tech && state.tech.assets && state.tech.assets[k];
+    if(!state.ohlc && state.page==='score' && location.protocol.startsWith('http') && !state._fOhlc){ state._fOhlc = 1; ohlcData().then(()=>{ if(state.page==='score') renderFiche(); }); }
+    // --- pourquoi ça bouge + à venir
+    const Wy = whyOf(k), feed = typeof newsFeed==='function' ? newsFeed() : [], N = feed.filter(x=>x.t >= Date.now()-24*3600e3 && (x.assets||[]).includes(k)).slice(0, 4);
+    const at = state.why && state.why.asOf ? new Date(state.why.asOf).toLocaleString(LOC(),{weekday:'short', hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'}) : '';
+    const why = `<div class="panel fp"><div class="fph"><h3>${L('Pourquoi ça bouge','Why it is moving')}</h3>${at?`<small>${L('MAJ','UPD')} ${esc(at)}</small>`:''}</div>
+      ${Wy ? `<p class="fbig">${esc(isEN() && Wy.en ? Wy.en : Wy.fr)}</p><div class="wysrc">${(Wy.src||[]).slice(0,3).map(([t,u])=>`<a href="${esc(u)}" target="_blank" rel="noopener">${esc(t)} ↗</a>`).join('')}</div>`
+        : `<p class="fmut">${L('Pas encore de raison confirmée par une source aujourd’hui.','No source-confirmed reason yet today.')}</p>`}
+      ${N.length ? `<div class="wyk">${L('Nouvelles liées (24 h)','Related news (24h)')}</div><ul class="wyl">${N.map(x=>`<li><span>${whenT(x.t)}</span>${x.url ? `<a href="${esc(x.url)}" target="_blank" rel="noopener">${esc(x.title||'')}</a>` : `<em class="${x.surp>0?'up':x.surp<0?'dn':''}">${x.k==='data' ? x.title : esc(x.title||'')}</em>`}</li>`).join('')}</ul>` : ''}</div>`;
+    const U = ficheUpcoming(k), nm = TOP_NAMES[k]||k;
+    const dirTxt = d => d>0 ? `<span class="up">${L('plus haut que prévu → '+nm+' ↑','higher than expected → '+nm+' ↑')}</span>` : d<0 ? `<span class="dn">${L('plus haut que prévu → '+nm+' ↓','higher than expected → '+nm+' ↓')}</span>` : `<span class="fmut">${L('peut faire bouger '+nm,'can move '+nm)}</span>`;
+    const upc = `<div class="panel fp"><div class="fph"><h3>${L('À venir (8 jours)','Coming up (8 days)')}</h3><small>${L('heure de l’Est','Eastern time')}</small></div>
+      ${U.length ? `<ul class="fup">${U.map(({x,t,im})=>{ const d = new Date(t), day = d.toLocaleDateString(LOC(),{weekday:'short', day:'numeric', timeZone:'America/Toronto'}), hm = x.time ? d.toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'}) : '';
+        return `<li><span class="fut">${esc(day)}<br><b>${esc(hm)}</b></span><div><b>${x.cc && x.cc!=='US' ? FLAG(x.cc)+' ' : ''}${esc(x.name||'')}</b> <span class="fst">${'★'.repeat(Math.min(2, Math.max(1, im||1)))}</span>${x.f!=null ? `<small>${L('prévu','fcst')} ${esc(String(x.f))}${x.unit||''}</small>` : ''}<div class="fdir">${dirTxt(calDir(x,k))}</div></div></li>`; }).join('')}</ul>`
+        : `<p class="fmut">${L('Rien d’important pour cet actif dans les 8 prochains jours.','Nothing important for this asset in the next 8 days.')}</p>`}</div>`;
+    top.innerHTML = ficheHead(k) + `<div class="fgrid">${why}${upc}</div>`;
+
+    // --- technique
+    const tile = (lab, val, cls, sub) => `<div class="ftile"><span>${lab}</span><b class="${cls||''}">${val}</b>${sub?`<small>${sub}</small>`:''}</div>`;
+    const cc = c => c==='b' ? 'up' : c==='r' ? 'dn' : c==='g' ? 'gold' : '';
+    let tech = `<p class="fmut">${L('Données techniques à la prochaine mise à jour.','Technical data with the next update.')}</p>`;
+    if(T){ const tr = tw('trend',T.trend), wk = tw('weekly',T.weekly), mo = tw('mom',T.mom), md = tw('macd',T.macd), vo = tw('vol',T.vol), st = tw('struct',T.struct);
+      tech = `<div class="ftiles">${tile(L('Tendance de fond','Underlying trend'), tr.t, cc(tr.c), `${L('vs MM50','vs 50d')} ${sg2(T.d50,1)} % · ${L('MM200','200d')} ${sg2(T.d200,1)} %`)}
+        ${tile(L('Tendance hebdo','Weekly trend'), wk.t, cc(wk.c))}
+        ${tile('RSI (14)', String(Math.round(T.rsi)), cc(mo.c), mo.t)}
+        ${tile('MACD', md.t, cc(md.c))}
+        ${tile(L('Volatilité','Volatility'), vo.t, cc(vo.c), `${Math.round(T.volAnn)} % ${L('annualisée','annualized')}`)}
+        ${tile(L('Structure','Structure'), st.t, cc(st.c))}</div>
+        <div class="frow"><span>${L('Sommet 20 jours','20-day high')} <b>${pxFmt(T.hi20)}</b></span><span>${L('Creux 20 jours','20-day low')} <b>${pxFmt(T.lo20)}</b></span>${T.liq ? `<span>${L('Liquidité la plus proche','Nearest liquidity')} <b>${T.liq.side==='above'?L('au-dessus','above'):L('en dessous','below')} · ${pxFmt(T.liq.lvl)}</b> <small>(${sg2(T.liq.d,1)} %)</small></span>` : ''}</div>
+        <div class="frow">${[['1S','5d',T.chg5d],['1M','1M',T.chg1m],[L('Depuis janv.','YTD'),'YTD',T.chgYtd]].map(([f,e,v])=>`<span>${f} <b class="${v>0?'up':v<0?'dn':''}">${sg2(v,1)} %</b></span>`).join('')}</div>`; }
+    const techP = `<div class="panel fp"><div class="fph"><h3>${L('Technique','Technicals')}</h3><small>${L('clôtures journalières','daily closes')}</small></div>${tech}</div>`;
+
+    // --- positionnement
+    const cr = num(A.crowdLong), cot = num(A.cotLong), chg = num(A.cotChange), R = posRead(cr, cot);
+    const bar = (v, lab, sub) => v==null ? '' : `<div class="fpos"><span>${lab}</span><div class="fpb"><i style="width:${Math.max(2,Math.min(100,v))}%"></i></div><b>${fmt(v,'%')}</b><small>${sub}</small></div>`;
+    const posP = `<div class="panel fp"><div class="fph"><h3>${L('Positionnement','Positioning')}</h3></div>
+      ${cr==null && cot==null ? `<p class="fmut">${L('Pas de données de positionnement pour cet actif.','No positioning data for this asset.')}</p>` : `
+      ${bar(cr, L('La foule (clients d’IG)','The crowd (IG clients)'), L('acheteurs · signal contrarien','long · contrarian signal'))}
+      ${bar(cot, L('Les fonds (COT)','The funds (COT)'), `${L('acheteurs','long')}${chg!=null?` · ${sg2(chg,1)} pt ${L('sur 1 sem.','in 1 wk')}`:''}`)}
+      <div class="fread"><span class="fhb f${R.v>0?'bull':R.v<0?'bear':'neu'}">${esc(R.w)}</span> ${esc(R.t)}</div>`}</div>`;
+
+    // --- banques
+    const Tt = state.ts || {}, mkt = BK_OF[k], calls = (Tt.bankcalls||[]).filter(c=>c.market===mkt).sort((a,b)=>(b.date||'').localeCompare(a.date||''));
+    const names = [...new Set((Tt.bankcalls||[]).map(c=>c.market))], notes = (Tt.research||[]).filter(r=>noteMarket(r, names)===mkt).sort((a,b)=>(b.date||'').localeCompare(a.date||'')).slice(0, 3);
+    const nB = {long:0, short:0, range:0}; calls.forEach(c=>{ if(nB[c.dir]!=null) nB[c.dir]++; });
+    const DIRB = {long:['↑','up'], short:['↓','dn'], range:['↔','']};
+    const fd = d => d ? new Date(d+'T12:00:00').toLocaleDateString(LOC(),{day:'numeric', month:'short'}) : '';
+    const bankP = `<div class="panel fp"><div class="fph"><h3>${L('Ce que prévoient les banques','What the banks forecast')}</h3>${calls.length?`<small><span class="up">↑ ${nB.long}</span> · <span class="dn">↓ ${nB.short}</span> · ↔ ${nB.range}</small>`:''}</div>
+      ${calls.length ? `<ul class="fbk">${calls.slice(0,6).map(c=>{ const d = DIRB[c.dir]||['·',''];
+        return `<li><span class="${d[1]}">${d[0]}</span><b>${esc(c.bank||'')}</b><span>${esc((isEN()&&c.target_en?c.target_en:c.target)||'')}</span><small>${c.url?`<a href="${esc(c.url)}" target="_blank" rel="noopener">${esc(fd(c.date))}</a>`:esc(fd(c.date))}</small></li>`; }).join('')}</ul>` : `<p class="fmut">${L('Pas de prévision de banque pour cet actif.','No bank forecast for this asset.')}</p>`}
+      ${notes.length ? `<div class="wyk">${L('Notes de recherche','Research notes')}</div><ul class="wyl">${notes.map(r=>`<li><span>${esc(fd(r.date))}</span>${r.url?`<a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.bank||'')} : ${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</a>`:`<em>${esc(r.bank||'')} : ${esc(isEN()&&r.title_en?r.title_en:r.title||'')}</em>`}</li>`).join('')}</ul>` : ''}</div>`;
+
+    // --- saisonnalité
+    const S = state.tech && state.tech.seas && state.tech.seas[k], SN = seasNow(k);
+    let seas = `<p class="fmut">${L('Pas de données de saisonnalité.','No seasonality data.')}</p>`;
+    if(S && S.month){ const mx = Math.max(0.5, ...S.month.map(v=>Math.abs(v||0))), mm = SN ? SN.m : -1;
+      seas = `${SN ? `<p class="fbig2">${L(`En ${MOIS[SN.m]}, ${esc(nm)} a fait en moyenne <b class="${SN.avg>0?'up':SN.avg<0?'dn':''}">${sg2(SN.avg,2)} %</b> et a monté <b>${SN.win} %</b> des années (${SN.from}–${SN.to}).`, `In this month, ${esc(nm)} averaged <b class="${SN.avg>0?'up':SN.avg<0?'dn':''}">${sg2(SN.avg,2)}%</b> and rose in <b>${SN.win}%</b> of years (${SN.from}–${SN.to}).`)}</p>` : ''}
+        <div class="fseas">${S.month.map((v,i)=>`<div class="${i===mm?'cur':''}" title="${MOIS[i]} : ${sg2(v,2)} %"><span class="${v>=0?'pos':'neg'}" style="height:${Math.round(Math.abs(v||0)/mx*42)+1}px"></span><em>${(MOIS[i]||'').slice(0,1).toUpperCase()}</em></div>`).join('')}</div>`; }
+    const seasP = `<div class="panel fp"><div class="fph"><h3>${L('Saisonnalité','Seasonality')}</h3><small>${L('rendement moyen par mois','average return by month')}</small></div>${seas}</div>`;
+
+    // --- corrélations
+    const CR = corrRow(k, 60);
+    let corr = `<p class="fmut">${state.ohlc ? L('Pas assez de données.','Not enough data.') : L('Chargement…','Loading…')}</p>`;
+    if(CR && CR.length){ const s2 = CR.slice().sort((a,b)=>b[1]-a[1]), pos = s2.filter(r=>r[1]>=0.3).slice(0,3), neg = s2.filter(r=>r[1]<=-0.3).reverse().slice(0,3);
+      const f = v => (v<0?'−':'+')+Math.abs(v).toFixed(2).replace('.', isEN()?'.':',');
+      const li = ([a,v]) => `<li><b class="${v>0?'up':'dn'}">${f(v)}</b><button type="button" class="flink" data-sc="${a}">${esc(TOP_NAMES[a])}</button></li>`;
+      corr = `<div class="fcorr"><div><div class="wyk">${L('Bouge avec','Moves with')}</div>${pos.length?`<ul>${pos.map(li).join('')}</ul>`:`<p class="fmut">—</p>`}</div><div><div class="wyk">${L('Bouge à l’inverse de','Moves opposite to')}</div>${neg.length?`<ul>${neg.map(li).join('')}</ul>`:`<p class="fmut">—</p>`}</div></div>
+        <p class="fmut fsm">${L('Sur les 60 dernières séances. Près de ±1 = lien fort. Deux trades sur des actifs qui bougent ensemble = presque le même pari.','Over the last 60 sessions. Near ±1 = strong link. Two trades on assets that move together = almost the same bet.')}</p>`; }
+    const corrP = `<div class="panel fp"><div class="fph"><h3>${L('Corrélations','Correlations')}</h3></div>${corr}</div>`;
+
+    bot.innerHTML = `<div class="fsec">${L('Détails','Details')}</div><div class="fgrid">${techP}${posP}${bankP}${seasP}${corrP}</div>`;
+    bot.querySelectorAll('[data-sc]').forEach(b=>b.addEventListener('click', ()=>{ state.asset = b.dataset.sc; renderAll(); window.scrollTo(0,0); }));
+  }
+  function ficheTick(){
+    const k = state.asset, P = planPx(k), a = document.querySelector(`[data-fp="${k}"]`), b = document.querySelector(`[data-fd="${k}"]`);
+    if(a){ const t = pxFmt(P.px); if(a.textContent!==t) a.textContent = t; }
+    if(b){ const t = P.d1==null ? '—' : (P.d1>0?'▲ ':P.d1<0?'▼ ':'')+sg2(P.d1,2)+' %', c = 'fhd1 '+(P.d1>0?'up':P.d1<0?'dn':''); if(b.textContent!==t) b.textContent = t; if(b.className!==c) b.className = c; }
+  }
   function whyTick(){
     const box = $('p2why'); if(!box || !box.querySelector('[data-wp]')) return;
     Object.keys(TOP_NAMES).forEach(k=>{ const P = planPx(k), a = box.querySelector(`[data-wp="${k}"]`), b = box.querySelector(`[data-wd="${k}"]`);
@@ -5200,7 +5362,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'Heures des marchés':'Market hours',
     'Quand Sydney, Tokyo, Londres et New York sont ouvertes, dans ton heure.':'When Sydney, Tokyo, London and New York are open, in your time.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
-    'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
+    'Scorecard':'Scorecard','Fiche actif':'Asset page','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
     'Vue d’ensemble':'Overview','Corrélations':'Correlations','Évolution du score':'Score history','Appétit pour le risque':'Risk appetite','Sommets et creux récents':'Recent highs and lows','En direct':'Live','Résumés':'Summaries','Sentiment (VIX et foule)':'Sentiment (VIX and crowd)','Sentiment de la foule':'Crowd sentiment','COT (fonds)':'COT (funds)','Mes marchés':'My markets','Notes de recherche':'Research notes','Prévisions par marché':'Forecasts by market','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
     'Résultats':'Earnings','Or · banques centrales':'Gold · central banks','Heatmap fondamentale':'Fundamental heatmap','Heatmap technique':'Technical heatmap','Saisonnalité':'Seasonality','Résultats d’entreprises IA':'AI company earnings','Toutes':'All','Hors IA':'Non-AI','IA':'AI','Publications américaines, Fed et banques centrales étrangères · heure de l’Est (Québec)':'US releases, the Fed and foreign central banks · Eastern time (Québec)','mportance : ★★ = la donnée compte ×2 dans le scorecard pour l’actif choisi (très importante), ★ = ×1 (« Tous » montre le poids le plus élevé). « info » = ne compte pas dans le score. Les résultats d’entreprises sont dans la page Résultats. Le calendrier se met à jour tout seul avec le scorecard.':'Impact: ★★ = the release counts ×2 in the scorecard for the selected asset (very important), ★ = ×1 ("All" shows the highest weight). "info" = not part of the score. Company earnings are on the Earnings page. The calendar updates itself with the scorecard.','Par semaine · bénéfice par action (BPA) et revenus : prévision des analystes vs réel · heure de l’Est':'By week · earnings per share (EPS) and revenue: analyst forecast vs actual · Eastern Time','Aucun résultat cette semaine.':'No earnings this week.','Heure':'Time',
     'À venir':'Upcoming','Prévisions':'Guidance','Mitigé':'Mixed','En ligne':'In line','Publiés':'Reported','Entreprise':'Company','BPA prévu':'EPS est.','BPA réel':'EPS actual','Revenus prévus':'Revenue est.','Revenus réels':'Revenue actual','Réaction':'Reaction','Verdict':'Verdict','Battu':'Beat','Raté':'Miss','Mitigé':'Mixed','Date':'Date',
