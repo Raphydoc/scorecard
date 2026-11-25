@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T18:48:33Z",
+ "updatedAt": "2026-11-25T19:50:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -186,8 +186,8 @@
    "cotLong": 35.5,
    "cotChange": 1.85,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 38,
-   "uCrowd": "2026-11-25T13:58:00Z"
+   "crowdLong": 28,
+   "uCrowd": "2026-11-25T19:50:00Z"
   },
   "usdcad": {
    "season": "neutral",
@@ -226,8 +226,8 @@
    "cotLong": 55.51,
    "cotChange": -0.64,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 67,
-   "uCrowd": "2026-11-25T15:43:00Z"
+   "crowdLong": 68,
+   "uCrowd": "2026-11-25T19:50:00Z"
   },
   "nzdusd": {
    "season": "bear",
