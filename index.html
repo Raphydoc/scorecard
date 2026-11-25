@@ -945,6 +945,15 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 
 
 
+
+/* test du score sur le passé */
+.panel.bt{margin-top:14px}
+.btwarn{margin:0 14px 12px;padding:9px 12px;border-left:3px solid var(--gold);background:var(--panel-2);font-size:12.5px;line-height:1.5;color:var(--muted)} .btwarn b{color:var(--fg)}
+.btread{margin:12px 14px;font-size:14px;line-height:1.55} .btread b.up{color:var(--bull)} .btread b.dn{color:var(--bear)}
+.btv{display:inline-block;padding:3px 8px;border-radius:4px;font:700 11px/1.2 var(--f-body);background:var(--panel-2);color:var(--muted);white-space:nowrap}
+.btv.up{background:color-mix(in srgb,var(--bull) 18%,transparent);color:var(--bull)} .btv.dn{background:color-mix(in srgb,var(--bear) 18%,transparent);color:var(--bear)}
+table.btt td.up{color:var(--bull)} table.btt td.dn{color:var(--bear)} table.btt td.mut{color:var(--muted)}
+.fbt{margin:-2px 0 12px;font-size:13px;color:var(--muted);display:flex;flex-wrap:wrap;align-items:center;gap:6px 8px} .fbt b{color:var(--fg)}
 /* sommaire de page + titres numérotés */
 section[data-pg] > .pgnav{margin:-4px 0 14px}
 .p2 h3.numd::before{content:attr(data-n);width:18px;height:18px;border-radius:50%;display:inline-grid;place-items:center;background:var(--gold);color:#111;font:800 10.5px/1 var(--f-mono);letter-spacing:0}
@@ -4877,6 +4886,12 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <div class="fhs"><span class="fhb f${b}">${esc(vt[0])}</span><span class="fhsc">${sg2(C.total,0)}<small>/100</small></span></div>
     </div>`;
   }
+  function ficheBt(k){
+    if(!state.backtest){ if(!state._fbt){ state._fbt = 1; btData().then(()=>{ if(state.page==='score') renderFiche(); }); } return ''; }
+    const a = (state.backtest.assets||{})[k]; if(!a || !a.all) return '';
+    const e = btEdge(a.all), v = btVerdict(e);
+    return `<p class="fbt"><span class="btv ${v[1]}">${v[0]}</span> ${L(`Test sur le passé : la partie technique + fonds du biais de ${esc(TOP_NAMES[k])} avait raison <b>${pctf(a.all.h5)}</b> du temps après 5 jours (au hasard : ${pctf(a.all.b5)}).`, `Past test: the technicals + funds part of ${esc(TOP_NAMES[k])}’s bias was right <b>${pctf(a.all.h5)}</b> of the time after 5 days (by chance: ${pctf(a.all.b5)}).`)} <button type="button" class="flink" data-go="bull">${L('Voir le détail','See details')}</button></p>`;
+  }
   function renderFiche(){
     const top = $('ficheTop'), bot = $('ficheBot'); if(!top || !bot) return;
     const k = state.asset, A = (state.assets||{})[k] || {}, T = state.tech && state.tech.assets && state.tech.assets[k];
@@ -4897,7 +4912,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const SEC = [['f-today',L('Aujourd’hui','Today')],['f-score',L('Le score','The score')],['f-tech',L('Technique et positionnement','Technicals and positioning')],['f-bank',L('Banques','Banks')],['f-hist',L('Saisonnalité et corrélations','Seasonality and correlations')]];
     const sec = i => `<h2 class="fsec2" id="${SEC[i][0]}"><span>${i+1}</span>${SEC[i][1]}</h2>`;
     top.innerHTML = ficheHead(k) + `<nav class="fnav" aria-label="${L('Sections','Sections')}">${SEC.map(([id,t],i)=>`<button type="button" data-fj="${id}"><span>${i+1}</span>${t}</button>`).join('')}</nav>`
-      + sec(0) + `<div class="f2">${why}${upc}</div>` + sec(1);
+      + sec(0) + `<div class="f2">${why}${upc}</div>` + sec(1) + ficheBt(k);
     top.querySelectorAll('[data-fj]').forEach(b=>b.addEventListener('click', ()=>{ const el = document.getElementById(b.dataset.fj); if(el) window.scrollTo({top: el.getBoundingClientRect().top + window.scrollY - 12, behavior:'smooth'}); }));
 
     // --- technique
@@ -5157,9 +5172,39 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- Bulletin du score : le biais de chaque soir comparé à ce que le prix a fait ensuite ----------
+
+  // ================= Test du score sur le passé (backtest.json, recalculé chaque samedi) =================
+  function btData(){
+    if(state.backtest) return Promise.resolve(state.backtest);
+    if(!state._pbt) state._pbt = fetch('backtest.json?t='+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null).catch(()=>null)
+      .then(j=>j || fetch('https://raw.githubusercontent.com/Raphydoc/scorecard/main/backtest.json').then(r=>r.ok?r.json():null).catch(()=>null))
+      .then(j=>{ if(j) state.backtest = j; return j; });
+    return state._pbt;
+  }
+  const btEdge = o => o && o.h5!=null && o.b5!=null ? +(o.h5 - o.b5).toFixed(1) : null;
+  const btVerdict = e => e==null ? ['—',''] : e>=2 ? [L('Aide un peu','Helps a little'),'up'] : e<=-2 ? [L('Pire que le hasard','Worse than chance'),'dn'] : [L('Comme le hasard','Like chance'),''];
+  const pctf = v => v==null ? '—' : String(Math.round(v))+' %';
+  function btHtml(){
+    const D = state.backtest; if(!D || !D.pooled) return `<div class="panel"><div class="ph"><div><h3>${L('Test du score sur le passé','Score test on past data')}</h3></div></div><p class="pempty" style="padding:14px">${L('Chargement…','Loading…')}</p></div>`;
+    const P = D.pooled, A = D.assets||{}, y = d => d ? d.slice(0,4) : '';
+    const blk = (o, t, sub) => { const e = btEdge(o), v = btVerdict(e); return `<div><span>${t}</span><b class="${v[1]}">${pctf(o && o.h5)}</b><small>${L('au hasard','by chance')} ${pctf(o && o.b5)} · ${sub}</small></div>`; };
+    const rows = Object.keys(TOP_NAMES).filter(k=>A[k]).map(k=>({k, a:A[k], e:btEdge(A[k].all)})).sort((x,z)=>(z.e??-99)-(x.e??-99));
+    const tb = rows.map(({k,a,e})=>{ const v = btVerdict(e), s = a.strong, es = btEdge(s);
+      return `<tr><td class="pa">${esc(TOP_NAMES[k])}</td><td class="num">${(a.all.bull.n||0)+(a.all.bear.n||0)}</td><td class="num">${pctf(a.all.h5)}</td><td class="num mut">${pctf(a.all.b5)}</td><td class="num ${v[1]}">${e==null?'—':(e>0?'+':'')+String(e).replace('.',isEN()?'.':',')+' pt'}</td>`
+        + `<td class="num ${btVerdict(es)[1]}">${pctf(s && s.h5)}</td><td class="num ${btVerdict(btEdge(a.tech))[1]}">${pctf(a.tech && a.tech.h5)}</td><td class="num ${btVerdict(btEdge(a.cot))[1]}">${pctf(a.cot && a.cot.h5)}</td><td><span class="btv ${v[1]}">${v[0]}</span></td></tr>`; }).join('');
+    const eAll = btEdge(P.all);
+    const helps = rows.filter(r=>r.e!=null && r.e>=2).map(r=>TOP_NAMES[r.k]), worse = rows.filter(r=>r.e!=null && r.e<=-2).map(r=>TOP_NAMES[r.k]);
+    return `<div class="panel bt"><div class="ph"><div><h3>${L('Test du score sur le passé','Score test on past data')}</h3><p>${L(`On a recalculé le score chaque jour de ${y(P.all.from)} à ${y(P.all.to)}, sans jamais regarder l’avenir, puis vérifié si le biais avait raison 5 jours plus tard. « Au hasard » = le % de fois où l’actif bougeait dans ce sens de toute façon : le biais doit faire mieux pour être utile.`, `The score was recalculated every day from ${y(P.all.from)} to ${y(P.all.to)}, never looking ahead, then checked 5 days later. “By chance” = how often the asset moved that way anyway: the bias must beat it to be useful.`)}</p></div></div>
+      <div class="btwarn"><b>${L('Ce qui est testé','What is tested')} :</b> ${L('la technique (30 points) et les fonds COT. Les données économiques (50 points) et la foule (IG) ne peuvent pas être testées : les prévisions des analystes et le positionnement d’il y a 10 ans ne sont pas disponibles gratuitement. Le Bulletin du score (plus haut) mesure le score complet, mais il lui faut quelques semaines.','technicals (30 points) and COT funds. Economic data (50 points) and the crowd (IG) cannot be tested: analyst forecasts and positioning from 10 years ago are not freely available. The score report card above measures the full score, but it needs a few weeks.')}</div>
+      <div class="psum">${blk(P.all, L('Biais juste après 5 jours (tous les actifs)','Bias right after 5 days (all assets)'), `${(P.all.bull.n||0)+(P.all.bear.n||0)} ${L('signaux','signals')}`)}${blk(P.strong, L('Biais fort seulement (30 et plus)','Strong bias only (30+)'), `${(P.strong.bull.n||0)+(P.strong.bear.n||0)} ${L('signaux','signals')}`)}${blk(P.tech, L('Technique seule','Technicals alone'), L('30 points','30 points'))}${blk(P.cot, L('Fonds COT seuls','COT funds alone'), L('net + changement','net + change'))}</div>
+      <div class="btread"><b>${L('Ce qu’il faut retenir','Takeaway')} :</b> ${eAll!=null && Math.abs(eAll)<2 ? L('dans l’ensemble, la partie technique + fonds du score ne fait pas mieux que le hasard après 5 jours. Elle sert à décrire la tendance, pas à la prédire seule.','overall, the technicals + funds part of the score does not beat chance after 5 days. It describes the trend; it does not predict it on its own.') : eAll>=2 ? L('dans l’ensemble, la partie technique + fonds fait un peu mieux que le hasard.','overall, the technicals + funds part does a little better than chance.') : L('dans l’ensemble, la partie technique + fonds fait moins bien que le hasard.','overall, the technicals + funds part does worse than chance.')}
+        ${helps.length ? ` ${L('Elle aide un peu pour','It helps a little for')} <b class="up">${helps.map(esc).join(', ')}</b>.` : ''}${worse.length ? ` ${L('Elle fait pire que le hasard pour','It does worse than chance for')} <b class="dn">${worse.map(esc).join(', ')}</b> ${L('(surtout les devises, qui reviennent souvent en arrière au lieu de suivre la tendance).','(mostly currencies, which often reverse instead of following the trend).')}` : ''}</div>
+      <div class="tablewrap"><table class="ptab btt"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Signaux','Signals')}</th><th class="r">${L('Juste 5 j','Right 5 d')}</th><th class="r">${L('Au hasard','By chance')}</th><th class="r">${L('Écart','Edge')}</th><th class="r">${L('Biais fort','Strong bias')}</th><th class="r">${L('Technique','Technicals')}</th><th class="r">COT</th><th>${L('Verdict','Verdict')}</th></tr></thead><tbody>${tb}</tbody></table></div>
+      <p class="src">${L('Écart = juste 5 j moins au hasard, en points de %. Moins de 2 points d’écart, c’est du bruit. Recalculé chaque samedi (prix Yahoo Finance, positions CFTC). Les résultats passés ne garantissent pas l’avenir.','Edge = right after 5 d minus by chance, in percentage points. Under 2 points is noise. Recalculated every Saturday (Yahoo Finance prices, CFTC positions). Past results do not guarantee the future.')}</p></div>`;
+  }
   async function renderBull(){
     const box = $('p2bull'); if(!box) return;
-    const [B, O] = await Promise.all([getJSON('bulletin.json','bulletin'), ohlcData()]); if(state.page!=='bull') return;
+    const [B, O] = await Promise.all([getJSON('bulletin.json','bulletin'), ohlcData(), btData()]); if(state.page!=='bull') return;
     const days = (B && B.days) || [], today = nyDate(Date.now());
     const R = {}, T = {n1:0,h1:0,n5:0,h5:0,m5:0}, TT = {n5:0,h5:0}, TO = {n5:0,h5:0};
     const add = (o, n, hit, mv) => { o['n'+n] = (o['n'+n]||0)+1; o['h'+n] = (o['h'+n]||0)+(hit?1:0); if(mv!=null) o['m'+n] = (o['m'+n]||0)+mv; };
@@ -5190,7 +5235,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <div class="panel"><div class="ph"><div><h3>${L('Résultats par actif','Results by asset')}</h3><p>${L('Chaque soir de semaine vers 17 h 10, le site enregistre le biais du scorecard de chaque actif. Un biais haussier est « juste » si le prix a monté (clôture à clôture) 1 jour et 5 jours plus tard; baissier, s’il a baissé. Les biais neutres ne comptent pas. 50 % = pas mieux que pile ou face : il faut quelques semaines de données avant de conclure.','Every weekday evening around 5:10 p.m., the site records the scorecard bias of each asset. A bullish bias is “right” if price rose (close to close) 1 and 5 days later; bearish, if it fell. Neutral biases don’t count. 50% = no better than a coin flip: give it a few weeks before drawing conclusions.')}${first?` ${L('Début de l’enregistrement :','Recording since:')} ${esc(fd(first))}.`:''}</p></div></div>
         ${days.length ? `<div class="tablewrap"><table class="ptab"><thead><tr><th>${L('Actif','Asset')}</th><th>${L('Biais de ce soir','Tonight’s bias')}</th><th class="r">${L('Signaux','Signals')}</th><th class="r">${L('Juste 1 j','Right 1 d')}</th><th class="r">${L('Juste 5 j','Right 5 d')}</th><th class="r">${L('Gain moyen 5 j','Avg gain 5 d')}</th></tr></thead><tbody>${tb}</tbody></table></div>`
           : `<p class="pempty" style="padding:14px">${L('Le premier enregistrement se fera ce soir vers 17 h 10 (heure de New York). Les premiers résultats apparaissent le lendemain, et le taux de réussite sur 5 jours une semaine plus tard.','The first record happens tonight around 5:10 p.m. New York time. First results appear the next day, and the 5-day hit rate a week later.')}</p>`}
-      </div>`;
+      </div>${btHtml()}`;
   }
 
   // ---------- voyant « données en retard » ----------
