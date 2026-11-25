@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T17:47:53Z",
+ "updatedAt": "2026-11-25T18:48:33Z",
  "econ": {
   "values": {
    "adp": {
@@ -1650,6 +1650,54 @@
  "news": [
   {
    "date": "2026-11-25",
+   "time": "13:00",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "usd",
+    "spx500"
+   ],
+   "title": "Les États-Unis plafonneront à 17 % les tarifs sur l'Inde si un accord commercial est conclu, selon le USTR",
+   "title_en": "US to cap India tariff at 17% if trade deal is reached, USTR says",
+   "summary": "Le représentant au Commerce Jamieson Greer affirme que les droits sur les importations indiennes seront plafonnés à 17 % en cas d'accord, mais grimperaient à 25 % sans entente. L'annonce s'inscrit dans les nouveaux tarifs proposés contre 14 partenaires commerciaux pour « surcapacité industrielle », un dossier qui pèse sur l'appétit pour le risque et soutient le dollar.",
+   "summary_en": "USTR Jamieson Greer said tariffs on Indian imports will be capped at 17% if a deal is struck, but would rise to 25% without one. The move is part of new levies proposed on 14 trading partners over 'structural excess industrial capacity', a theme weighing on risk appetite and supporting the dollar.",
+   "url": "https://www.investing.com/news/forex-news/us-to-cap-india-tariff-at-17-if-trade-deal-is-reached-ustr-says-5051317"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "12:59",
+   "source": "Investing.com",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30",
+    "usd"
+   ],
+   "title": "Wall Street réduit ses pertes après une déroute brutale; le Dow efface une chute de plus de 2 %",
+   "title_en": "Wall Street cuts losses after brutal rout, Dow erases slide of over 2%",
+   "summary": "À 12 h 59 (HE), le Nasdaq Composite perdait 1,9 % à 23 278,74 après avoir plongé jusqu'à 4,6 % en séance, le S&P 500 cédait 1,1 % à 7 123,57 et le Dow remontait à 50 027,17 après un recul allant jusqu'à 2,2 %. Nvidia chutait de plus de 6 %, Micron de 9,2 % et AMD de 5,8 %, tandis que le PCE (3,8 % sur un an; base 3,3 %) et un PIB du T3 révisé à 4,3 % portent à environ 98 % les chances d'une hausse de 25 pb de la Fed en décembre (CME FedWatch).",
+   "summary_en": "At 12:59 ET, the Nasdaq Composite was down 1.9% at 23,278.74 after sliding as much as 4.6% intraday, the S&P 500 fell 1.1% to 7,123.57 and the Dow was up at 50,027.17 after a drop of as much as 2.2%. Nvidia fell over 6%, Micron 9.2% and AMD 5.8%, while PCE (3.8% y/y; core 3.3%) and Q3 GDP revised to 4.3% lifted odds of a 25 bp December Fed hike to about 98% (CME FedWatch).",
+   "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "12:39",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "usd"
+   ],
+   "title": "Analyse : des investisseurs épuisés par la volatilité, le chaos tarifaire s'ajoute à la douleur des technos",
+   "title_en": "Analysis-Volatility-weary investors hammered as tariff mayhem adds to tech pain",
+   "summary": "Le Nasdaq recule de 2 % mercredi et se trouve près de 20 % sous son record de début octobre, tandis que l'indice des semi-conducteurs de Philadelphie a chuté de 50 % depuis son sommet de juin, dont 21 % en novembre. Le VIX a bondi de plus de 60 % ce mois-ci et le rendement à 10 ans américain cède 6 pb à 4,84 %, alors que Washington propose des tarifs sur 14 grands partenaires et un tarif additionnel de 20 % sur la Chine.",
+   "summary_en": "The Nasdaq fell 2% on Wednesday and is nearly 20% below its early-October record, while the Philadelphia Semiconductor Index is down 50% from its June peak, including 21% in November. The VIX has soared more than 60% this month and the US 10-year yield fell 6 bp to 4.84%, as Washington proposes tariffs on 14 major partners and an extra 20% tariff on China.",
+   "url": "https://www.investing.com/news/economy-news/analysisvolatilityweary-investors-hammered-as-tariff-mayhem-adds-to-tech-pain-5051297"
+  },
+  {
+   "date": "2026-11-25",
    "time": "12:38",
    "source": "CoinDesk",
    "impact": "med",
@@ -1737,23 +1785,6 @@
    "summary": "L'or au comptant a reculé à 3 427,90 $ l'once, en baisse de plus de 3 % sur la journée, près de son plus bas en plus d'un an; l'argent a aussi chuté de 3,71 % sous 40 $ plus tôt ce matin. Les ventes de maisons neuves ont bondi de 14,2 % en octobre à 701 000 unités (rythme annualisé), contre 650 000 attendues, après un PCE de base à 3,3 % et un PIB du T3 révisé à 4,3 %. Ces données robustes renforcent les paris d'une hausse de taux de la Fed en décembre et le dollar, ce qui pèse sur les métaux précieux.",
    "summary_en": "Spot gold fell to $3,427.90 an ounce, down more than 3% on the day and near its lowest in over a year; silver had dropped 3.71% below $40 earlier in the morning. October new home sales jumped 14.2% to a 701,000 annualized rate versus 650,000 expected, following core PCE at 3.3% and Q3 GDP revised up to 4.3%. The strong data reinforce bets on a December Fed rate hike and support the dollar, weighing on precious metals.",
    "url": "https://www.kitco.com/news/article/2026-11-25/gold-price-falls-session-lows-us-new-home-sales-rise-142-october"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "10:01",
-   "source": "Investing.com",
-   "impact": "high",
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30",
-    "usd"
-   ],
-   "title": "Wall Street entre et sort d'une zone de correction; le Nasdaq chute de plus de 3 %",
-   "title_en": "Wall Street flits in and out of correction territory, Nasdaq slides over 3%",
-   "summary": "Vers 9 h 59 (HE), le Nasdaq Composite perdait 3,1 % à 22 998,11 points, désormais en baisse depuis le début de l'année, le S&P 500 cédait 2,1 % à 7 051,93 en entrant et sortant d'une zone de correction, et le Dow reculait de 1,5 % à 49 247,64. Nvidia chutait de plus de 6 %, Micron de 8,2 % et AMD de 6,8 % dans la déroute des titres de l'IA, alors que le PCE de base (3,3 % sur un an contre 3,2 % attendu) et un PIB du T3 révisé à 4,3 % portent à environ 98 % la probabilité d'une hausse de 25 points de base de la Fed en décembre (CME FedWatch). Les rapports sur de nouveaux tarifs visant des dizaines de pays, dont la Chine et l'UE, pèsent aussi.",
-   "summary_en": "Around 9:59 a.m. ET, the Nasdaq Composite was down 3.1% at 22,998.11, now negative for the year, the S&P 500 fell 2.1% to 7,051.93, moving in and out of correction territory, and the Dow lost 1.5% to 49,247.64. Nvidia slid more than 6%, Micron 8.2% and AMD 6.8% in the AI rout, while core PCE (3.3% y/y vs 3.2% expected) and Q3 GDP revised to 4.3% lifted the odds of a 25 bp December Fed hike to about 98% (CME FedWatch). Reports of new tariffs on dozens of countries, including China and the EU, also weighed.",
-   "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
   },
   {
    "assets": [
@@ -2248,35 +2279,6 @@
    "title": "Le dollar recule de son sommet de près de 20 mois et se dirige vers sa pire séance en plus de deux semaines",
    "title_en": "Dollar retreats from near 20-month peak, set for worst day in over two weeks",
    "url": "https://www.investing.com/news/forex-news/asia-fx-subdued-as-dollar-holds-near-20mth-high-on-ai-rally-5046950"
-  },
-  {
-   "assets": [
-    "usoil",
-    "usdcad"
-   ],
-   "date": "2026-11-24",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Le pétrole a clôturé en hausse d'environ 2 $ mardi, les opérateurs soupesant la poursuite des attaques contre des navires dans le détroit d'Ormuz. Plus tôt, le WTI s'échangeait près de 79,94 $, près de ses plus bas depuis fin août, sur fond de perspectives d'offre excédentaire. Le risque d'approvisionnement au Moyen-Orient soutient le brut et le dollar canadien.",
-   "summary_en": "Oil settled up about $2 on Tuesday as traders weighed continued attacks on ships in the Strait of Hormuz. Earlier, WTI traded near $79.94, close to its lowest since late August, amid a surplus supply outlook. Middle East supply risk supports crude and the Canadian dollar.",
-   "time": "15:00",
-   "title": "Le pétrole clôture en hausse de 2 $ alors que les attaques de navires se poursuivent à Ormuz",
-   "title_en": "Oil settles up $2 as traders weigh continued Hormuz ship attacks",
-   "url": "https://www.investing.com/news/commodities-news/oil-holds-near-threemonth-low-as-rising-supply-offsets-hormuz-threat-5046916"
-  },
-  {
-   "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-24",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Vladimir Poutine affirme que l'Ukraine continue de frapper des installations pétrolières russes malgré les demandes de Donald Trump, et promet de riposter. Ce regain de tension sur les infrastructures énergétiques russes ajoute un risque d'offre pour le pétrole, déjà soutenu par les incidents à Ormuz.",
-   "summary_en": "Vladimir Putin says Ukraine keeps striking Russian oil facilities despite Donald Trump's requests, and promises retaliation. Renewed pressure on Russian energy infrastructure adds supply risk for oil, already supported by incidents in Hormuz.",
-   "time": "14:42",
-   "title": "Poutine affirme que l'Ukraine frappe des raffineries russes malgré les demandes de Trump et promet des représailles",
-   "title_en": "Putin says Ukraine hits Russian oil plants despite Trump's requests, promises retaliation",
-   "url": "https://www.investing.com/news/commodities-news/putin-says-ukraine-hits-russian-oil-plants-despite-trumps-requests-promises-retaliation-5048918"
   }
  ],
  "live": {
