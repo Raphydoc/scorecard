@@ -1225,7 +1225,6 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 <aside class="side"><span class="sidebrand">Pages</span>  <nav class="pages" aria-label="Pages">
   <span class="navgrp">Aujourd’hui</span>
   <button type="button" data-page="plan" aria-current="page">Plan du jour</button>
-  <button type="button" data-page="watch">Surveillance des marchés</button>
   <span class="navgrp">Analyse</span>
   <button type="button" data-page="score">Scorecard</button>
   <button type="button" data-page="top">Top Setups</button>
@@ -4605,6 +4604,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function showPage(pg){
     if(pg==='home') pg = 'plan';
     if(pg==='fund') pg = 'top';
+    if(pg==='watch') pg = 'plan';
     state.page = pg;
     document.querySelectorAll('[data-pg]').forEach(el=>{ el.hidden = el.dataset.pg!==pg; });
     document.querySelectorAll('.pages button').forEach(b=>{ if(b.dataset.page===(({research:'bankpos', cot:'sent', news:'squawk'})[pg]||pg)) b.setAttribute('aria-current','page'); else b.removeAttribute('aria-current'); });
