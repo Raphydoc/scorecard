@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T11:48:22Z",
+  "updatedAt": "2026-11-25T12:37:04Z",
   "econ": {
     "values": {
       "adp": {
@@ -1318,14 +1318,14 @@
         "spx500": 1
       },
       "date": "2026-11-25",
-      "epsA": null,
+      "epsA": 3.89,
       "epsF": 4.07,
       "id": null,
       "kind": "earn",
       "move": null,
       "name": "Résultats Deere (DE)",
       "note": "Avant l’ouverture",
-      "revA": null,
+      "revA": 10.514,
       "revF": 10.3,
       "time": "07:00"
     },
