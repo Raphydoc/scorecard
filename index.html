@@ -941,6 +941,17 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 
 
 
+
+/* en-tête uniforme de chaque page */
+section[data-pg] > .pghead.pgx{margin:0 0 14px;border:1px solid var(--line);border-radius:6px}
+.pghead.pgx p{max-width:900px;font-size:12.5px;line-height:1.45}
+/* le petit titre doré en double est caché quand la page a son en-tête */
+section[data-pg] > .pghead ~ .p2 > .hmhead:first-child > .ttl{display:none}
+section[data-pg] > .pghead ~ .p2 > .hmhead:first-child{justify-content:flex-end;border:0;background:none;padding:0;min-height:0;margin-bottom:10px}
+section[data-pg] > .pghead ~ .p2 > .hmhead:first-child:not(:has(> :not(.ttl))){display:none}
+#p2why > .bintro{display:none}
+section[data-pg="hours"] > .pghead ~ .p2 .mhtop > .ttl{display:none} section[data-pg="hours"] > .pghead ~ .p2 .mhtop{justify-content:flex-end}
+@media (max-width:640px){ section[data-pg] > .pghead.pgx{margin-bottom:10px;border-radius:0;border-left:0;border-right:0} }
 /* page Pourquoi ça bouge, version claire */
 #p2why .hmhead{margin-bottom:12px}
 .wysum2{padding:14px 16px;margin:0 0 14px;border-left:3px solid var(--gold)!important}
@@ -1424,7 +1435,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <div class="mark" aria-hidden="true">Au<sup>79</sup></div>
       <div>
         <h1>Scorecard macro</h1>
-        <p class="sub">Données US mises à jour automatiquement chaque matin de semaine.</p>
+        <p class="sub">Macro, technique et sentiment de tes marchés · prix en direct</p>
       </div>
     </div>
     <div class="topbtns"><div class="clocks" id="clocks" aria-label="Heures des marchés / Market hours"></div><button id="themeBtn" class="btn ghost" type="button" aria-label="Mode sombre" title="Mode sombre">☾</button><button id="langBtn" class="btn ghost langbtn" type="button" aria-label="Switch to English">EN</button></div>
@@ -1586,29 +1597,29 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   <section data-pg="home" hidden aria-label="Vue d’ensemble"><div class="p2" id="p2home"></div></section>
   <section data-pg="globe" hidden aria-label="Carte du monde"><div class="p2" id="p2globe"></div></section>
-  <section data-pg="charts" hidden aria-label="Graphiques"><div class="p2" id="p2charts"></div></section>
-  <section data-pg="recap" hidden aria-label="Récap des sessions"><div class="p2" id="p2recap"></div></section>
+  <section data-pg="charts" hidden aria-label="Graphiques"><div class="pghead pgx"><div><h2>Graphiques</h2><p>Compare la force des devises, des taux, des matières premières et des indices sur un même graphique.</p></div></div><div class="p2" id="p2charts"></div></section>
+  <section data-pg="recap" hidden aria-label="Récap des sessions"><div class="pghead pgx"><div><h2>Récap des sessions</h2><p>Ce qui s’est passé pendant chaque séance (Tokyo, Londres, New York) : mouvements des actifs, publications et nouvelles.</p></div></div><div class="p2" id="p2recap"></div></section>
   <section data-pg="research" hidden aria-label="Banques"><div class="p2" id="p2research"></div></section>
-  <section data-pg="squawk" hidden aria-label="Nouvelles"><div class="p2" id="p2squawk"></div></section>
-  <section data-pg="bankpos" hidden aria-label="Banques"><div class="p2" id="p2bankpos"></div></section>
-  <section data-pg="risk" hidden aria-label="Appétit pour le risque"><div class="p2" id="p2risk"></div></section>
-  <section data-pg="why" hidden aria-label="Pourquoi ça bouge"><div class="p2" id="p2why"></div></section>
-  <section data-pg="corr" hidden aria-label="Corrélations"><div class="p2" id="p2corr"></div></section>
-  <section data-pg="plan" hidden aria-label="Plan du jour"><div class="p2" id="p2plan"></div><div class="p2" id="planTS"></div></section>
-  <section data-pg="bull" hidden aria-label="Bulletin du score"><div class="p2" id="p2bull"></div></section>
+  <section data-pg="squawk" hidden aria-label="Nouvelles"><div class="pghead pgx"><div><h2>Nouvelles</h2><p>Les manchettes de sources reconnues et les données publiées des dernières 48 heures, les plus récentes en haut.</p></div></div><div class="p2" id="p2squawk"></div></section>
+  <section data-pg="bankpos" hidden aria-label="Banques"><div class="pghead pgx"><div><h2>Banques</h2><p>Ce que les grandes banques prévoient pour chaque marché, avec leurs cibles et leurs notes de recherche.</p></div></div><div class="p2" id="p2bankpos"></div></section>
+  <section data-pg="risk" hidden aria-label="Appétit pour le risque"><div class="pghead pgx"><div><h2>Appétit pour le risque</h2><p>Les marchés prennent-ils du risque (risk-on) ou se protègent-ils (risk-off)? Score de 0 à 100 calculé sur 7 marchés.</p></div></div><div class="p2" id="p2risk"></div></section>
+  <section data-pg="why" hidden aria-label="Pourquoi ça bouge"><div class="pghead pgx"><div><h2>Pourquoi ça bouge</h2><p>Les vraies raisons des mouvements du jour, tirées des nouvelles et des données publiées, avec les sources.</p></div></div><div class="p2" id="p2why"></div></section>
+  <section data-pg="corr" hidden aria-label="Corrélations"><div class="pghead pgx"><div><h2>Corrélations</h2><p>Quels actifs bougent ensemble ou à l’inverse, pour éviter de prendre deux fois le même pari.</p></div></div><div class="p2" id="p2corr"></div></section>
+  <section data-pg="plan" hidden aria-label="Plan du jour"><div class="pghead pgx"><div><h2>Plan du jour</h2><p>Le résumé de ta journée : le biais de chaque actif, les publications à surveiller et les nouvelles qui comptent. Commence ici chaque matin.</p></div></div><div class="p2" id="p2plan"></div><div class="p2" id="planTS"></div></section>
+  <section data-pg="bull" hidden aria-label="Bulletin du score"><div class="pghead pgx"><div><h2>Bulletin du score</h2><p>Est-ce que le biais du scorecard a raison? Chaque soir, le biais est enregistré, puis comparé au prix 1 jour et 5 jours plus tard.</p></div></div><div class="p2" id="p2bull"></div></section>
   <section data-pg="watch" hidden aria-label="Surveillance des marchés"><div class="p2" id="p2watch"></div></section>
-  <section data-pg="liq" hidden aria-label="Sommets et creux récents"><div class="p2" id="p2liq"></div></section>
-  <section data-pg="eco" hidden aria-label="Économie US"><div class="p2" id="p2eco"></div></section>
+  <section data-pg="liq" hidden aria-label="Sommets et creux récents"><div class="pghead pgx"><div><h2>Sommets et creux récents</h2><p>Les sommets et creux récents où des ordres stop s’accumulent souvent, et ceux qui ont déjà été balayés.</p></div></div><div class="p2" id="p2liq"></div></section>
+  <section data-pg="eco" hidden aria-label="Économie US"><div class="pghead pgx"><div><h2>Économie US</h2><p>Inflation, emploi et croissance aux États-Unis, et ce que chaque chiffre veut dire pour le dollar et la Fed.</p></div></div><div class="p2" id="p2eco"></div></section>
   <section data-pg="cot" hidden aria-label="Positionnement"><div class="p2" id="p2cot"></div></section>
-  <section data-pg="sent" hidden aria-label="Positionnement"><div class="p2" id="p2sent"></div></section>
-  <section data-pg="hours" hidden aria-label="Heures des marchés"><div class="p2" id="p2hours"></div></section>
+  <section data-pg="sent" hidden aria-label="Positionnement"><div class="pghead pgx"><div><h2>Positionnement</h2><p>Qui achète et qui vend : la foule (clients d’IG) contre les fonds (rapport COT).</p></div></div><div class="p2" id="p2sent"></div></section>
+  <section data-pg="hours" hidden aria-label="Heures des marchés"><div class="pghead pgx"><div><h2>Heures des marchés</h2><p>Quand Sydney, Tokyo, Londres et New York sont ouvertes, dans ton heure.</p></div></div><div class="p2" id="p2hours"></div></section>
   <section data-pg="fund" hidden aria-label="Heatmap fondamentale"><div class="p2" id="p2fund"></div></section>
-  <section data-pg="tech" hidden aria-label="Heatmap technique"><div class="p2" id="p2tech"></div></section>
-  <section data-pg="seas" hidden aria-label="Saisonnalité"><div class="p2" id="p2seas"></div></section>
-  <section data-pg="cbg" hidden aria-label="Or · banques centrales"><div class="p2" id="p2cbg"></div></section>
+  <section data-pg="tech" hidden aria-label="Heatmap technique"><div class="pghead pgx"><div><h2>Heatmap technique</h2><p>L’état technique de chaque actif en un coup d’œil : tendance, élan (RSI), MACD, volatilité, structure et liquidité. Basé sur les clôtures journalières.</p></div></div><div class="p2" id="p2tech"></div></section>
+  <section data-pg="seas" hidden aria-label="Saisonnalité"><div class="pghead pgx"><div><h2>Saisonnalité</h2><p>Comment chaque actif se comporte habituellement selon le moment de l’année, sur les 19 dernières années.</p></div></div><div class="p2" id="p2seas"></div></section>
+  <section data-pg="cbg" hidden aria-label="Or · banques centrales"><div class="pghead pgx"><div><h2>Or · banques centrales</h2><p>Les achats d’or des banques centrales, un des grands soutiens du prix de l’or.</p></div></div><div class="p2" id="p2cbg"></div></section>
   <section data-pg="news" hidden aria-label="Nouvelles"><div class="p2" id="p2news"></div></section>
 
-  <section data-pg="fed" hidden aria-label="Taux">
+  <section data-pg="fed" hidden aria-label="Taux"><div class="pghead pgx"><div><h2>Taux</h2><p>Les taux américains et la courbe des taux : ce que le marché attend de la Fed.</p></div></div>
     <div class="p2" id="p2rates"></div>
   </section>
 
@@ -5139,7 +5150,40 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     'Tendance 4H / journalier':'4H / daily trend','Tendance de la journée':'Today’s trend','Tendance de la semaine':'This week’s trend','Ta lecture de la tendance sur le 4H et le journalier (±2)':'Your read of the 4H and daily trend (±2)',
     // en-tête et navigation
     'Scorecard macro':'Macro Scorecard',
-    'Données US mises à jour automatiquement chaque matin de semaine.':'US data, updated automatically every weekday.',
+    'Macro, technique et sentiment de tes marchés · prix en direct':'Macro, technicals and sentiment for your markets · live prices',
+    'Plan du jour':'Today’s plan',
+    'Le résumé de ta journée : le biais de chaque actif, les publications à surveiller et les nouvelles qui comptent. Commence ici chaque matin.':'Your day at a glance: each asset’s bias, the releases to watch and the news that matters. Start here every morning.',
+    'Pourquoi ça bouge':'Why it is moving',
+    'Les vraies raisons des mouvements du jour, tirées des nouvelles et des données publiées, avec les sources.':'The real reasons behind today’s moves, from the news and data releases, with sources.',
+    'Heatmap technique':'Technical heatmap',
+    'L’état technique de chaque actif en un coup d’œil : tendance, élan (RSI), MACD, volatilité, structure et liquidité. Basé sur les clôtures journalières.':'Each asset’s technical picture at a glance: trend, momentum (RSI), MACD, volatility, structure and liquidity. Based on daily closes.',
+    'Bulletin du score':'Score report card',
+    'Est-ce que le biais du scorecard a raison? Chaque soir, le biais est enregistré, puis comparé au prix 1 jour et 5 jours plus tard.':'Is the scorecard bias right? Every evening the bias is recorded, then checked against the price 1 and 5 days later.',
+    'Nouvelles':'News',
+    'Les manchettes de sources reconnues et les données publiées des dernières 48 heures, les plus récentes en haut.':'Headlines from trusted sources and data releases from the last 48 hours, newest first.',
+    'Récap des sessions':'Session recap',
+    'Ce qui s’est passé pendant chaque séance (Tokyo, Londres, New York) : mouvements des actifs, publications et nouvelles.':'What happened in each session (Tokyo, London, New York): asset moves, releases and news.',
+    'Économie US':'US economy',
+    'Inflation, emploi et croissance aux États-Unis, et ce que chaque chiffre veut dire pour le dollar et la Fed.':'US inflation, jobs and growth, and what each number means for the dollar and the Fed.',
+    'Taux':'Rates',
+    'Les taux américains et la courbe des taux : ce que le marché attend de la Fed.':'US yields and the yield curve: what the market expects from the Fed.',
+    'Or · banques centrales':'Gold · central banks',
+    'Les achats d’or des banques centrales, un des grands soutiens du prix de l’or.':'Central bank gold buying, one of the big supports for the gold price.',
+    'Appétit pour le risque':'Risk appetite',
+    'Les marchés prennent-ils du risque (risk-on) ou se protègent-ils (risk-off)? Score de 0 à 100 calculé sur 7 marchés.':'Are markets taking risk (risk-on) or seeking safety (risk-off)? A 0 to 100 score from 7 markets.',
+    'Positionnement':'Positioning',
+    'Qui achète et qui vend : la foule (clients d’IG) contre les fonds (rapport COT).':'Who is buying and who is selling: the crowd (IG clients) versus the funds (COT report).',
+    'Ce que les grandes banques prévoient pour chaque marché, avec leurs cibles et leurs notes de recherche.':'What the big banks forecast for each market, with their targets and research notes.',
+    'Graphiques':'Charts',
+    'Compare la force des devises, des taux, des matières premières et des indices sur un même graphique.':'Compare the strength of currencies, yields, commodities and indices on one chart.',
+    'Saisonnalité':'Seasonality',
+    'Comment chaque actif se comporte habituellement selon le moment de l’année, sur les 19 dernières années.':'How each asset usually behaves through the year, over the last 19 years.',
+    'Sommets et creux récents':'Recent highs and lows',
+    'Les sommets et creux récents où des ordres stop s’accumulent souvent, et ceux qui ont déjà été balayés.':'Recent highs and lows where stop orders often build up, and the ones already swept.',
+    'Corrélations':'Correlations',
+    'Quels actifs bougent ensemble ou à l’inverse, pour éviter de prendre deux fois le même pari.':'Which assets move together or opposite, so you avoid taking the same bet twice.',
+    'Heures des marchés':'Market hours',
+    'Quand Sydney, Tokyo, Londres et New York sont ouvertes, dans ton heure.':'When Sydney, Tokyo, London and New York are open, in your time.',
     'Tu entres les données US, le signal se calcule tout seul.':'US data, updated automatically every weekday.',
     'Scorecard':'Scorecard','Top Setups':'Top Setups','Calendrier':'Calendar','Fed':'Fed','Taux':'Rates','Peur des marchés (VIX)':'Market fear (VIX)',
     'Vue d’ensemble':'Overview','Corrélations':'Correlations','Évolution du score':'Score history','Appétit pour le risque':'Risk appetite','Sommets et creux récents':'Recent highs and lows','En direct':'Live','Résumés':'Summaries','Sentiment (VIX et foule)':'Sentiment (VIX and crowd)','Sentiment de la foule':'Crowd sentiment','COT (fonds)':'COT (funds)','Mes marchés':'My markets','Notes de recherche':'Research notes','Prévisions par marché':'Forecasts by market','Calendrier et nouvelles':'Calendar and news','Macro et taux':'Macro and rates','Banques':'Banks','Sentiment et positionnement':'Sentiment and positioning','Graphiques et outils':'Charts and tools','Plan du jour':'Daily plan','Bulletin du score':'Score report card','Aujourd’hui':'Today','Carte du monde':'World map','Récap des sessions':'Session Recap','Heures des marchés':'Market Hours','Recherche bancaire':'Bank Research','Fil en direct':'Squawk','Positions des banques':'Bank Positioning','Sentiment de risque':'Risk Sentiment','Surveillance des marchés':'Markets Watch','Indicateurs':'Indicators','Liquidité':'Liquidity','Graphiques':'Charts','Économie US':'US Economy','Taux & Fed':'Rates & Fed','COT':'COT','Sentiment':'Sentiment','Nouvelles':'News','Global':'Global','Analyse':'Analysis','Macro':'Macro','Positionnement':'Positioning',
