@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T01:48:32Z",
+  "updatedAt": "2026-11-25T02:42:37Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,35 @@
   "news": [
     {
       "date": "2026-11-24",
+      "time": "20:59",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Trump dit qu'il pourrait gracier Jensen Huang et évoque une participation de l'État américain dans Nvidia",
+      "title_en": "Trump says he could pardon Jensen Huang, floats U.S. govt stake in Nvidia",
+      "summary": "Selon le New York Post, Donald Trump affirme qu'une grâce pour le PDG de Nvidia, Jensen Huang, reste « une option », tout en jugeant qu'elle ne sera pas nécessaire avant ses témoignages devant des comités du Congrès la semaine prochaine sur les contrôles à l'exportation de puces vers la Chine. Trump dit aussi avoir envisagé une participation du gouvernement dans Nvidia, comme les 10 % pris dans Intel l'an dernier, ajoutant qu'il n'est « probablement pas trop tard ». Ce dossier pèse sur Nvidia, poids lourd du Nasdaq et du S&P 500.",
+      "summary_en": "Donald Trump told the New York Post that a pardon for Nvidia CEO Jensen Huang is 'always an option' but likely unnecessary, ahead of Huang's congressional testimony next week over alleged export-control violations on chip shipments to China. Trump also said he had considered a U.S. government stake in Nvidia, citing last year's 10% stake in Intel, saying it's 'probably not too late.' The saga weighs on Nvidia, a heavyweight in the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/trump-says-he-could-pardon-jensen-huang-floats-us-govt-stake-in-nvidia--nyt-5049530"
+    },
+    {
+      "date": "2026-11-24",
+      "time": "20:58",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "usoil"
+      ],
+      "title": "Le pétrole recule, les craintes de surabondance l'emportent sur les risques au Moyen-Orient",
+      "title_en": "Oil prices fall as supply glut concerns offset Middle East disruption fears",
+      "summary": "Le WTI cède 47 cents (0,6 %) à 81,58 $ le baril et le Brent 43 cents (0,5 %) à 90,97 $ en Asie, après des gains de plus de 2 % mardi. L'AIE prévoit un retour à l'excédent au 4e trimestre, tandis que les attaques de navires près d'Hormuz entretiennent l'incertitude; l'OPEP+ se réunit le 29 novembre pour sa production 2027. L'API rapporte une hausse de 126 000 barils des stocks américains, sous l'estimation d'environ 1,5 million.",
+      "summary_en": "WTI fell 47 cents (0.6%) to $81.58 a barrel and Brent 43 cents (0.5%) to $90.97 in Asian trade, after both gained more than 2% on Tuesday. The IEA expects a return to surplus in Q4, while ship attacks near Hormuz keep uncertainty alive; OPEC+ meets Nov. 29 to set 2027 output. API data showed U.S. crude stocks up 126,000 barrels versus a ~1.5 million estimate.",
+      "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-supply-glut-concerns-offset-middle-east-disruption-fears-5049537"
+    },
+    {
+      "date": "2026-11-24",
       "time": "20:12",
       "source": "Investing.com",
       "impact": "med",
@@ -2079,40 +2108,6 @@
       "summary": "La livre sterling remonte légèrement face au dollar après un recul attribué à la vigueur du billet vert. Investing.com souligne que le rallye du dollar risque d'aller trop loin, ce qui laisse de la place à un rebond du GBP/USD.",
       "summary_en": "The pound edges higher against the dollar after a slide driven by greenback strength. Investing.com notes the dollar rally risks overshooting, leaving room for a GBP/USD rebound.",
       "url": "https://www.investing.com/news/forex-news/sterling-today-pound-edges-higher-after-dollarled-slide-as-rally-risks-overshoot-5047426"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "04:02",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "usd",
-        "xauusd",
-        "usdjpy",
-        "eurusd"
-      ],
-      "title": "Les rendements obligataires mondiaux reculent : la demande de valeurs refuges précède le test du PCE américain",
-      "title_en": "Global yields fall as safe-haven bid meets looming U.S. PCE test",
-      "summary": "Les rendements des obligations souveraines reculent à l'échelle mondiale sous l'effet d'une demande de valeurs refuges, à l'approche de l'indice des prix PCE américain attendu mercredi. Ce chiffre d'inflation privilégié par la Fed sera déterminant pour les paris de hausse de taux, et donc pour le dollar, l'or et le yen.",
-      "summary_en": "Sovereign bond yields are falling globally on a safe-haven bid ahead of Wednesday's U.S. PCE price index. The Fed's preferred inflation gauge will be key for rate-hike bets, and thus for the dollar, gold and the yen.",
-      "url": "https://www.investing.com/news/forex-news/global-yields-fall-as-safehaven-bid-meets-looming-us-pce-test-5047210"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "03:30",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "eurusd",
-        "gbpusd",
-        "xauusd",
-        "xagusd"
-      ],
-      "title": "Les Bourses européennes font une pause après leur meilleur rallye du mois; les minières de Londres reculent avec les métaux",
-      "title_en": "European shares pause after month-best AI-driven rally; London miners slide with metals",
-      "summary": "Le STOXX 600 européen est en retrait ce matin après un rallye alimenté par l'euphorie autour de Nvidia et de l'IA, son meilleur du mois. À Londres, le FTSE 100 recule légèrement, entraîné par les sociétés minières qui glissent avec les prix des métaux. Un signal à surveiller pour l'or et l'argent ainsi que pour l'euro et la livre avant l'ouverture américaine.",
-      "summary_en": "Europe's STOXX 600 is subdued this morning after a rally fueled by Nvidia and AI euphoria, its best of the month. In London, the FTSE 100 edges lower, dragged by miners sliding along with metal prices. A signal to watch for gold and silver, as well as the euro and sterling, ahead of the U.S. open.",
-      "url": "https://www.investing.com/news/stock-market-news/europes-stoxx-600-subdued-after-aidriven-rally-5047331"
     }
   ],
   "live": {
