@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T15:42:11Z",
+ "updatedAt": "2026-11-25T15:43:00Z",
  "econ": {
   "values": {
    "adp": {
@@ -86,8 +86,8 @@
    "cotLong": 82.71,
    "cotChange": -3.52,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 78,
-   "uCrowd": "2026-11-25T13:58:00Z"
+   "crowdLong": 77,
+   "uCrowd": "2026-11-25T15:43:00Z"
   },
   "nasdaq": {
    "season": "neutral",
@@ -196,8 +196,8 @@
    "cotLong": 58.4,
    "cotChange": 1.83,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 37,
-   "uCrowd": "2026-11-24T13:55:00Z"
+   "crowdLong": 38,
+   "uCrowd": "2026-11-25T15:43:00Z"
   },
   "gbpusd": {
    "season": "neutral",
@@ -226,8 +226,8 @@
    "cotLong": 55.51,
    "cotChange": -0.64,
    "uCot": "2026-11-23T13:49:00Z",
-   "crowdLong": 66,
-   "uCrowd": "2026-11-23T19:45:00Z"
+   "crowdLong": 67,
+   "uCrowd": "2026-11-25T15:43:00Z"
   },
   "nzdusd": {
    "season": "bear",
