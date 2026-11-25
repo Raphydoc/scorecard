@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T21:36:33Z",
+ "updatedAt": "2026-11-25T21:42:28Z",
  "econ": {
   "values": {
    "adp": {
@@ -1650,6 +1650,22 @@
  "news": [
   {
    "date": "2026-11-25",
+   "time": "16:15",
+   "source": "Associated Press",
+   "impact": "high",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "us30"
+   ],
+   "title": "Wall Street clôture en ordre dispersé après avoir effacé une chute brutale; Nvidia perd près de 4 %",
+   "title_en": "Stocks close mixed after Wall Street erases sharp decline; Nvidia drops nearly 4%",
+   "summary": "Après une chute de plus de 1 000 points du Dow et un plongeon de plus de 4 % du Nasdaq près de l'ouverture, les indices ont largement récupéré : le Dow termine en baisse de 166 points (-0,3 %), le S&P 500 de 0,2 % et le Nasdaq de 0,6 %. La vente sur l'IA s'est étendue aux puces et aux logiciels : Nvidia recule de près de 4 %, Micron de 4 %, Oracle et Sandisk de 5 %. Le marché sera fermé jeudi pour l'Action de grâce.",
+   "summary_en": "After the Dow fell more than 1,000 points and the Nasdaq plunged over 4% near the open, indexes largely recovered: the Dow closed down 166 points (0.3%), the S&P 500 fell 0.2% and the Nasdaq 0.6%. The AI selloff spread to chipmakers and software: Nvidia dropped nearly 4%, Micron 4%, Oracle and Sandisk 5%. Markets are closed Thursday for Thanksgiving.",
+   "url": "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
+  },
+  {
+   "date": "2026-11-25",
    "time": "14:39",
    "source": "Investing.com",
    "impact": "med",
@@ -1692,23 +1708,6 @@
    "summary": "Le représentant au Commerce Jamieson Greer affirme que les droits sur les importations indiennes seront plafonnés à 17 % en cas d'accord, mais grimperaient à 25 % sans entente. L'annonce s'inscrit dans les nouveaux tarifs proposés contre 14 partenaires commerciaux pour « surcapacité industrielle », un dossier qui pèse sur l'appétit pour le risque et soutient le dollar.",
    "summary_en": "USTR Jamieson Greer said tariffs on Indian imports will be capped at 17% if a deal is struck, but would rise to 25% without one. The move is part of new levies proposed on 14 trading partners over 'structural excess industrial capacity', a theme weighing on risk appetite and supporting the dollar.",
    "url": "https://www.investing.com/news/forex-news/us-to-cap-india-tariff-at-17-if-trade-deal-is-reached-ustr-says-5051317"
-  },
-  {
-   "date": "2026-11-25",
-   "time": "12:59",
-   "source": "Investing.com",
-   "impact": "high",
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30",
-    "usd"
-   ],
-   "title": "Wall Street réduit ses pertes après une déroute brutale; le Dow efface une chute de plus de 2 %",
-   "title_en": "Wall Street cuts losses after brutal rout, Dow erases slide of over 2%",
-   "summary": "À 12 h 59 (HE), le Nasdaq Composite perdait 1,9 % à 23 278,74 après avoir plongé jusqu'à 4,6 % en séance, le S&P 500 cédait 1,1 % à 7 123,57 et le Dow remontait à 50 027,17 après un recul allant jusqu'à 2,2 %. Nvidia chutait de plus de 6 %, Micron de 9,2 % et AMD de 5,8 %, tandis que le PCE (3,8 % sur un an; base 3,3 %) et un PIB du T3 révisé à 4,3 % portent à environ 98 % les chances d'une hausse de 25 pb de la Fed en décembre (CME FedWatch).",
-   "summary_en": "At 12:59 ET, the Nasdaq Composite was down 1.9% at 23,278.74 after sliding as much as 4.6% intraday, the S&P 500 fell 1.1% to 7,123.57 and the Dow was up at 50,027.17 after a drop of as much as 2.2%. Nvidia fell over 6%, Micron 9.2% and AMD 5.8%, while PCE (3.8% y/y; core 3.3%) and Q3 GDP revised to 4.3% lifted odds of a 25 bp December Fed hike to about 98% (CME FedWatch).",
-   "url": "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
   },
   {
    "date": "2026-11-25",
