@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T07:09:20Z",
+  "updatedAt": "2026-11-25T07:48:14Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,20 @@
   "news": [
     {
       "date": "2026-11-25",
+      "time": "01:23",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usoil"
+      ],
+      "title": "Les Houthis menacent les ports saoudiens sur fond d'escalade du conflit au Yémen",
+      "title_en": "Houthis threaten Saudi ports amid Yemen conflict escalation",
+      "summary": "Selon Investing.com, les Houthis du Yémen menacent les ports de l'Arabie saoudite alors que le conflit au Yémen s'intensifie (article non consultable; résumé basé sur le titre). Une menace sur les infrastructures portuaires du premier exportateur de brut ajoute une prime de risque géopolitique au pétrole, qui recule par ailleurs sur des craintes de surabondance.",
+      "summary_en": "According to Investing.com, Yemen's Houthis are threatening Saudi Arabia's ports as the Yemen conflict escalates (article not accessible; summary based on the headline). A threat to port infrastructure of the top crude exporter adds geopolitical risk premium to oil, which has otherwise been pressured by oversupply fears.",
+      "url": "https://www.investing.com/news/stock-market-news/houthis-threaten-saudi-ports-amid-yemen-conflict-escalation-93CH-5049796"
+    },
+    {
+      "date": "2026-11-25",
       "time": "01:18",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -1568,8 +1582,8 @@
       ],
       "title": "Les Bourses asiatiques plongent : Taïwan -7,4 %, KOSPI -6 % alors que la vente sur l'IA s'aggrave et que les menaces tarifaires pèsent",
       "title_en": "Asian stocks slide as AI selloff deepens, U.S. tariff threats weigh on sentiment",
-      "summary": "L'indice de Taïwan chute de 7,4 %, le KOSPI de 6 % et le Nikkei de 3,3 %; TSMC (-7,6 %), Samsung (-9,3 %) et SK Hynix (-9,1 %) mènent la baisse. Les contrats à terme du Nasdaq 100 cèdent 1,3 % et ceux du S&P 500 0,7 %, sur fond de rapports voulant que Washington publie une enquête sur la surcapacité industrielle de 16 partenaires commerciaux pouvant mener à de nouveaux tarifs. En Australie, l'inflation a accéléré à 4,9 % en octobre. À la clôture, l'indice pondéré de Taïwan termine en baisse de 4,94 %.",
-      "summary_en": "Taiwan's index fell 7.4%, the KOSPI 6% and the Nikkei 3.3%; TSMC (-7.6%), Samsung (-9.3%) and SK Hynix (-9.1%) led losses. Nasdaq 100 futures lost 1.3% and S&P 500 futures 0.7%, amid reports Washington will release a probe into excess industrial capacity among 16 trading partners that could lead to more tariffs. Australian inflation accelerated to 4.9% in October. At the close, the Taiwan Weighted index ended down 4.94%.",
+      "summary": "L'indice de Taïwan chute de 7,4 %, le KOSPI de 6 % et le Nikkei de 3,3 %; TSMC (-7,6 %), Samsung (-9,3 %) et SK Hynix (-9,1 %) mènent la baisse. Les contrats à terme du Nasdaq 100 cèdent 1,3 % et ceux du S&P 500 0,7 %, sur fond de rapports voulant que Washington publie une enquête sur la surcapacité industrielle de 16 partenaires commerciaux pouvant mener à de nouveaux tarifs. En Australie, l'inflation a accéléré à 4,9 % en octobre. À la clôture, l'indice pondéré de Taïwan termine en baisse de 4,94 %. Le Nikkei 225 clôture en baisse de 2,62 %.",
+      "summary_en": "Taiwan's index fell 7.4%, the KOSPI 6% and the Nikkei 3.3%; TSMC (-7.6%), Samsung (-9.3%) and SK Hynix (-9.1%) led losses. Nasdaq 100 futures lost 1.3% and S&P 500 futures 0.7%, amid reports Washington will release a probe into excess industrial capacity among 16 trading partners that could lead to more tariffs. Australian inflation accelerated to 4.9% in October. At the close, the Taiwan Weighted index ended down 4.94%. The Nikkei 225 closed down 2.62%.",
       "url": "https://investing.com/news/stock-market-news/asian-stocks-slide-as-ai-selloff-deepens-us-tariff-threats-weigh-on-sentiment-5049630"
     },
     {
@@ -2096,22 +2110,6 @@
       "summary": "Les fabricants de semi-conducteurs américains reculent en préouverture mardi, après le fort rallye de lundi déclenché par le retour de Jensen Huang à la tête de Nvidia. Les contrats à terme de Wall Street fléchissent aussi; le recul des puces pèse surtout sur le Nasdaq.",
       "summary_en": "U.S. semiconductor stocks slip in premarket trading Tuesday after Monday's sharp rally sparked by Jensen Huang's return as Nvidia CEO. Wall Street futures also edge lower, with the chip pullback weighing mostly on the Nasdaq.",
       "url": "https://www.investing.com/news/stock-market-news/us-chip-stocks-fall-premarket-after-nvidialed-rally-on-huangs-return-5047723"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "06:31",
-      "source": "CoinDesk",
-      "impact": "med",
-      "assets": [
-        "btcusd",
-        "nasdaq",
-        "usd"
-      ],
-      "title": "Le bitcoin efface le rallye de lundi lié à Nvidia et passe sous 60 000 $; les liquidations triplent",
-      "title_en": "Bitcoin hands back Monday's Nvidia-driven gains, liquidations triple",
-      "summary": "Le bitcoin recule de 2,2 % depuis minuit UTC, à environ 59 849 $, et l'ether perd 1,6 % à 1 694 $. Selon CoinGlass, 844 millions $ de positions sur contrats à terme crypto ont été liquidées en 24 heures (+217 %), et les FNB bitcoin au comptant américains ont subi 569,7 millions $ de sorties lundi, une cinquième séance de suite. Le marché anticipe toujours une hausse d'un quart de point de la Fed en décembre, avec le PCE attendu mercredi.",
-      "summary_en": "Bitcoin fell 2.2% since midnight UTC to about $59,849, and ether lost 1.6% to $1,694. According to CoinGlass, $844 million of crypto futures positions were liquidated in 24 hours (+217%), and U.S. spot bitcoin ETFs saw $569.7 million of outflows on Monday, a fifth straight session. Markets still expect a quarter-point Fed hike in December, with PCE data due Wednesday.",
-      "url": "https://www.coindesk.com/markets/2026/11/24/bitcoin-hands-back-monday-s-nvidia-driven-gains-liquidations-triple"
     }
   ],
   "live": {
