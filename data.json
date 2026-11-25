@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-25T03:48:56Z",
+  "updatedAt": "2026-11-25T04:48:38Z",
   "econ": {
     "values": {
       "adp": {
@@ -1496,6 +1496,21 @@
   "news": [
     {
       "date": "2026-11-24",
+      "time": "22:52",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Le Monde détaille un réseau présumé de détournement de puces Nvidia via l'Asie du Sud-Est",
+      "title_en": "Le Monde details suspected Nvidia chip diversion network through Southeast Asia",
+      "summary": "Selon une enquête du Monde, des serveurs d'IA Nvidia soumis à restrictions auraient transité par Singapour et la Malaisie, possiblement vers la Chine. Megaspeed, firme singapourienne de location de serveurs, aurait acheté environ 4,6 G$ d'équipement Nvidia en 2024 et 2025, dont au moins 136 000 processeurs d'IA; les départements américains du Commerce et de la Justice ont confirmé en novembre une enquête criminelle en cours. Ces révélations s'ajoutent à la pression réglementaire sur Nvidia, poids lourd du Nasdaq et du S&P 500.",
+      "summary_en": "A Le Monde investigation says restricted Nvidia AI servers may have moved through Singapore and Malaysia, possibly into China. Singapore server-rental firm Megaspeed reportedly bought about $4.6 billion of Nvidia equipment in 2024 and 2025, including at least 136,000 AI processors; the U.S. Commerce and Justice departments confirmed in November a criminal investigation is ongoing. The report adds to regulatory pressure on Nvidia, a heavyweight in the Nasdaq and S&P 500.",
+      "url": "https://www.investing.com/news/stock-market-news/le-monde-details-suspected-nvidia-chip-diversion-network-through-southeast-asia-5049654"
+    },
+    {
+      "date": "2026-11-24",
       "time": "22:35",
       "source": "Investing.com",
       "impact": "high",
@@ -2095,21 +2110,6 @@
       "summary": "UBS prévoit que la paire USD/JPY restera autour de 158 jusqu'en 2027, en raison des écarts de taux d'intérêt entre les États-Unis et le Japon. Cette prévision suggère un yen qui demeurerait faible face au dollar à moyen terme. (Article non accessible; résumé basé sur le titre seulement.)",
       "summary_en": "UBS expects USD/JPY to stay around 158 through 2027 on U.S.-Japan interest rate differentials. The forecast points to a yen that stays weak against the dollar over the medium term. (Article not accessible; summary based on the headline only.)",
       "url": "https://www.investing.com/news/forex-news/ubs-sees-usdjpy-at-158-through-2027-on-rate-differentials-93CH-5047434"
-    },
-    {
-      "date": "2026-11-24",
-      "time": "04:32",
-      "source": "Investing.com",
-      "impact": "med",
-      "assets": [
-        "gbpusd",
-        "usd"
-      ],
-      "title": "Livre sterling : la livre s'apprécie légèrement après un recul mené par le dollar, le rallye risquant d'aller trop loin",
-      "title_en": "Sterling today: Pound edges higher after dollar-led slide as rally risks overshoot",
-      "summary": "La livre sterling remonte légèrement face au dollar après un recul attribué à la vigueur du billet vert. Investing.com souligne que le rallye du dollar risque d'aller trop loin, ce qui laisse de la place à un rebond du GBP/USD.",
-      "summary_en": "The pound edges higher against the dollar after a slide driven by greenback strength. Investing.com notes the dollar rally risks overshooting, leaving room for a GBP/USD rebound.",
-      "url": "https://www.investing.com/news/forex-news/sterling-today-pound-edges-higher-after-dollarled-slide-as-rally-risks-overshoot-5047426"
     }
   ],
   "live": {
