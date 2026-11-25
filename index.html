@@ -1331,8 +1331,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <li><strong>Or :</strong> une surprise forte (croissance, inflation ou emploi) compte −1, une surprise faible compte +1. Pour le chômage et les demandes de chômage, c'est l'inverse : plus haut que prévu = +1.</li>
       <li><strong>Nasdaq, S&amp;P 500 et Dow Jones :</strong> croissance et emploi forts = +1; inflation plus chaude que prévu = −1.</li>
       <li><strong>Dollar US (DXY) :</strong> toute donnée plus forte que prévu (croissance, emploi ou inflation) = +1, car elle pousse la Fed à garder les taux hauts; 10 ans en hausse = +1. Sentiment de la foule : inverse des clients d’IG sur EUR/USD.</li>
-      <li><strong>Technique :</strong> tendance de la semaine ±2 (au-dessus de l’ouverture de la semaine et de la clôture de la semaine passée = +2, en dessous des deux = −2), saisonnalité ±1 (comportement moyen du mois en cours sur 20 ans : au moins +0,5 % en moyenne et en hausse 55 % des années ou plus = +1, l’inverse = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
+      <li><strong>Technique :</strong> tendance de fond ±1 (journalier : prix vs moyennes mobiles 50 et 200 jours, pente de la MM50), tendance de la semaine ±2 (au-dessus de l’ouverture de la semaine et de la clôture de la semaine passée = +2, en dessous des deux = −2), saisonnalité ±1 (comportement moyen du mois en cours sur 20 ans : au moins +0,5 % en moyenne et en hausse 55 % des années ou plus = +1, l’inverse = −1). <strong>Sentiment :</strong> COT net long au-dessus de 50 % = +1, hausse du COT = +1, foule (retail) à 60 % long ou plus = −1 (indicateur contrarien), 40 % ou moins = +1.</li>
       <li>Rendement 10 ans (tendance sur 5 séances, ±0,03 point) : en baisse = +1, en hausse = −1, pour l'or comme pour le Nasdaq.</li>
+      <li><strong>Taille de la surprise :</strong> une surprise trop petite (sous le seuil de la donnée, ex. moins de 25k pour le NFP, moins de 0,1 point pour le CPI) ne compte pas; une grosse surprise (ex. 75k et plus pour le NFP) compte double.</li>
+      <li><strong>Âge de la donnée :</strong> une donnée compte au complet pendant 14 jours après sa publication, puis son poids baisse peu à peu jusqu’à 50 % (après 45 jours), jusqu’à la publication suivante.</li>
       <li><strong>Poids dans la macro :</strong> les données les plus importantes pour chaque actif comptent plus (×2, indiqué à côté du nom) à l’intérieur du bloc macroéconomie; les autres valent ×1. Exemple : le CPI vaut ×2 pour tous les actifs. Tous les actifs ont les mêmes données.</li>
       <li><strong>Score sur 100 :</strong> chaque bloc a toujours le même poids, peu importe le nombre de données : macroéconomie 50 points, technique 30 points, sentiment 20 points. Chaque bloc est ramené à son poids (ex. technique +2 sur 3 = +20 sur 30). Total de −100 à +100 : +15 à +39 = haussier, +40 et plus = très haussier (même chose en négatif), entre −14 et +14 = neutre. Les scores de tous les actifs se comparent donc directement.</li>
     </ul>
@@ -1506,13 +1508,21 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     if(asset==='xauusd' || asset==='xagusd' || asset==='eurusd' || asset==='gbpusd' || asset==='audusd' || asset==='nzdusd') return -usd || 0;
     return (cat==='infl' ? -usd : usd) || 0;
   }
+  // seuils de surprise par donnée [petite, grosse] : sous le 1er = ne compte pas (bruit); au-dessus du 2e = compte double
+  const SURP = {gdp:[0.2,0.7], pmi_mfg:[0.5,2], pmi_srv:[0.5,2], retail:[0.2,0.6], conf:[1.5,5], cpi:[0.1,0.2], ppi:[0.1,0.3], pce:[0.1,0.2], nfp:[25,75], unemp:[0.1,0.2], claims:[8,20], adp:[25,75], jolts:[0.2,0.5]};
+  // âge : plein poids pendant 14 jours, puis le poids baisse jusqu’à 50 % (45 jours et plus)
+  function econMeta(ind){
+    const v = state.econ.values[ind.id]; if(!v) return null;
+    const a = num(v.a), f = num(v.f); if(a===null || f===null) return null;
+    const d = Math.round((a-f)*10000)/10000, ad = Math.abs(d) + 1e-9, T = SURP[ind.id] || [0, Infinity];
+    const mag = ad < T[0] ? 0 : ad >= T[1] ? 2 : 1;
+    const age = v.d ? Math.max(0, (Date.now() - Date.parse(v.d+'T12:00:00'))/864e5) : 0;
+    const decay = age <= 14 ? 1 : Math.max(0.5, 1 - (age-14)/62);
+    return {d, mag, age:Math.round(age), decay:Math.round(decay*100)/100, T};
+  }
   function econSignal(ind, asset){
-    const v = state.econ.values[ind.id];
-    if(!v) return null;
-    const a = num(v.a), f = num(v.f);
-    if(a===null || f===null) return null;
-    const usd = sgn(Math.round((a-f)*10000)) * ind.dir;
-    return impact(asset, ind.cat, usd);
+    const M = econMeta(ind); if(!M) return null;
+    return impact(asset, ind.cat, sgn(M.d) * ind.dir * M.mag);
   }
   function compute(asset){
     const A = state.assets[asset] || blankAsset();
@@ -1527,19 +1537,25 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     r.yield10 = y10==='falling'?1:y10==='rising'?-1:(y10==='flat'?0:null);
     if((asset==='usd' || asset==='usdjpy' || asset==='usdcad' || asset==='usdchf') && r.yield10) r.yield10 = -r.yield10;
     const cats = {growth:0, infl:(r.yield10||0)*wOf(asset,'yield10'), jobs:0, spec:0};
-    INDICATORS.forEach(ind=>{ if(ind.only && ind.only!==asset){ r[ind.id]=null; return; } const s = econSignal(ind, asset); r[ind.id]=s; if(s) cats[ind.cat]+=s*wOf(asset,ind.id); });
-    const tech = r.trend + r.season;
+    let legacy = (r.yield10||0)*wOf(asset,'yield10'); r._dec = {};
+    INDICATORS.forEach(ind=>{ if(ind.only && ind.only!==asset){ r[ind.id]=null; return; } const s = econSignal(ind, asset), M = econMeta(ind); r[ind.id]=s; r._dec[ind.id] = M ? M.decay : 1;
+      if(s) cats[ind.cat] += s*wOf(asset,ind.id)*(M ? M.decay : 1);
+      if(M) legacy += impact(asset, ind.cat, sgn(M.d)*ind.dir)*wOf(asset,ind.id); });
+    ['growth','infl','jobs','spec'].forEach(k=>{ cats[k] = Math.round(cats[k]*10)/10; });
+    // 5 : tendance de fond (journalier) : prix vs MM50 et MM200, pente de la MM50 (même calcul que la Heatmap technique)
+    { const TE = state.tech && state.tech.assets && state.tech.assets[asset]; r.dtrend = TE ? (TE.trend==='bull'?1:TE.trend==='bear'?-1:0) : 0; }
+    const tech = r.trend + r.dtrend + r.season;
     const inst = r.cotNet + r.cotChg;
     const sent = inst + r.crowd;
     const macro = cats.growth + cats.infl + cats.jobs + cats.spec;
     const N = scoreNorm(asset, tech, sent, macro);
-    return {rows:r, cats:{tech, inst, crowd:r.crowd, ...cats}, tech, sent, macro, pTech:N.t, pSent:N.s, pMacro:N.m, total:N.total, raw:tech+sent+macro};
+    return {rows:r, cats:{tech, inst, crowd:r.crowd, ...cats}, tech, sent, macro, pTech:N.t, pSent:N.s, pMacro:N.m, total:N.total, raw:r.trend + r.season + sent + legacy};
   }
   // score de −100 à +100 : chaque bloc pèse toujours pareil, peu importe le nombre de données (macro 50, technique 30, sentiment 20)
   const SW = {macro:50, tech:30, sent:20};
   function macroMax(asset){ let m = wOf(asset,'yield10'); INDICATORS.forEach(ind=>{ if(!ind.only || ind.only===asset) m += wOf(asset,ind.id); }); return m || 1; }
   function scoreNorm(asset, tech, sent, macro){
-    const t = SW.tech*tech/3, s = SW.sent*sent/3, m = SW.macro*macro/macroMax(asset);
+    const t = SW.tech*tech/4, s = SW.sent*sent/3, m = Math.max(-SW.macro, Math.min(SW.macro, SW.macro*macro/macroMax(asset)));
     return {t:Math.round(t), s:Math.round(s), m:Math.round(m), total:Math.round(t+s+m)};
   }
   function label(s, strongAt){
@@ -1632,6 +1648,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const AS0 = autoSrc(), atT = state.live2 && state.live2.tr && AS0.tr===state.live2.tr ? state.live2.asOf : (state.mk||{}).asOf;
     h += `<tr><td class="name">Tendance de la semaine${updTag(atT)}</td><td class="sig" data-dd="top|${asset}|trend">${chip(r.trend)}</td>
       <td class="desc" colspan="4">${autoTrendTxt(asset)}</td></tr>`;
+    { const TE = state.tech && state.tech.assets && state.tech.assets[asset];
+      h += `<tr><td class="name">Tendance de fond (journalier)${TE && state.tech.asOf ? updTag(state.tech.asOf) : ''}</td><td class="sig" data-dd="top|${asset}|dtrend">${TE ? chip(r.dtrend) : chip(null)}</td>
+      <td class="desc" colspan="4">${TE ? L(`Prix ${sg2(TE.d50,1)} % vs la moyenne mobile 50 jours et ${sg2(TE.d200,1)} % vs la 200 jours. Haussière si au moins 2 des 3 : prix au-dessus de la MM50, au-dessus de la MM200, MM50 qui monte (±1).`, `Price ${sg2(TE.d50,1)}% vs the 50-day moving average and ${sg2(TE.d200,1)}% vs the 200-day. Bullish if at least 2 of 3: price above the 50-day, above the 200-day, 50-day rising (±1).`) : '—'}</td></tr>`; }
     const SN = seasNow(asset);
     h += `<tr><td class="name">Saisonnalité (mois en cours)${SN && state.tech.asOf ? updTag(state.tech.asOf) : A.uSeason?updTag(A.uSeason):''}</td><td class="sig" data-dd="top|${asset}|season">${chip(r.season)}</td>
       <td class="desc" colspan="4">${SN ? L(`En ${MOIS[SN.m]}, sur les ${SN.years} dernières années (${SN.from}–${SN.to}) : ${sg2(SN.avg,2)} % en moyenne, en hausse ${SN.win} % des années (≥ +0,5 % et ≥ 55 % = +1; ≤ −0,5 % et ≤ 45 % = −1).`, `In ${MONTHS[SN.m]}, over the last ${SN.years} years (${SN.from}–${SN.to}): ${sg2(SN.avg,2)}% on average, up ${SN.win}% of years (≥ +0.5% and ≥ 55% = +1; ≤ −0.5% and ≤ 45% = −1).`) : L('Comportement moyen de l’actif pendant le mois en cours (20 dernières années).','Average behaviour of the asset in the current month (last 20 years).')}</td></tr>`;
@@ -1659,9 +1678,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       INDICATORS.filter(i=>i.cat===cat && (!i.only||i.only===asset)).forEach(ind=>{
         const v = state.econ.values[ind.id] || {};
         const a = num(v.a), f = num(v.f), s = (a!==null && f!==null) ? Math.round((a-f)*10000)/10000 : null;
-        const sig = r[ind.id];
+        const sig = r[ind.id], EM = econMeta(ind);
         const sc = sig>0?'pos':sig<0?'neg':'';
-        h += `<tr${wOf(asset,ind.id)===0?' class="muted"':''}><td class="name">${esc(((state.econ.values||{})[ind.id]||{}).label||ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${wOf(asset,ind.id)===0?` <span class="info">info seulement</span>`:''}${(((state.econ.values||{})[ind.id]||{}).note)?`<small>${esc(state.econ.values[ind.id].note)}</small>`:(ind.hint?`<small>${ind.hint}</small>`:'')}${indUpd(ind.id, v)}</td><td class="sig" data-dd="top|${asset}|${ind.id}">${chip(sig)}</td>
+        const tags = EM ? (EM.mag===0 ? ` <span class="info">${Math.abs(EM.d)<1e-9 ? L('conforme à la prévision','in line with forecast') : L('surprise trop petite : ne compte pas','surprise too small: not counted')}</span>` : EM.mag===2 ? ` <span class="wt">${L('grosse surprise ×2','big surprise ×2')}</span>` : '')
+          + (EM.decay<1 && EM.mag>0 ? ` <span class="info">${L(`poids ${Math.round(EM.decay*100)} % (il y a ${EM.age} j)`, `weight ${Math.round(EM.decay*100)}% (${EM.age} d ago)`)}</span>` : '') : '';
+        h += `<tr${wOf(asset,ind.id)===0?' class="muted"':''}><td class="name">${esc(((state.econ.values||{})[ind.id]||{}).label||ind.name)}${wOf(asset,ind.id)>1?` <span class="wt">×${wOf(asset,ind.id)}</span>`:''}${wOf(asset,ind.id)===0?` <span class="info">info seulement</span>`:''}${(((state.econ.values||{})[ind.id]||{}).note)?`<small>${esc(state.econ.values[ind.id].note)}</small>`:(ind.hint?`<small>${ind.hint}</small>`:'')}${indUpd(ind.id, v)}${tags}</td><td class="sig" data-dd="top|${asset}|${ind.id}">${chip(sig)}</td>
           <td class="num">${false?numInput('a-'+ind.id,v.a):fmt(a,ind.unit)}</td>
           <td class="num">${false?numInput('f-'+ind.id,v.f):fmt(f,ind.unit)}</td>
           <td class="num ${sc}">${false?'':fmt(s,ind.unit,true)}</td>
@@ -1802,7 +1823,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   // ---------- page Top Setups ----------
   const TOP_COLS = [
-    {k:'trend',  h:'Tendance', g:2, v:(C)=>C.rows.trend},
+    {k:'trend',  h:'Tendance sem.', g:2, v:(C)=>C.rows.trend},
+    {k:'dtrend', h:'Tendance de fond', g:2, v:(C)=>C.rows.dtrend},
     {k:'season', h:'Saison­nalité', g:2, v:(C)=>C.rows.season},
     {k:'cot',    h:'COT', g:2, v:(C)=>C.rows.cotNet + C.rows.cotChg},
     {k:'crowd',  h:'Foule', g:2, v:(C)=>C.rows.crowd},
@@ -1822,7 +1844,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       if(ind && ind.only && ind.only!==asset) return null;
       return 0;
     }
-    return s * wOf(asset, col.k);
+    return Math.round(s * wOf(asset, col.k) * ((C.rows._dec||{})[col.k] ?? 1) * 10) / 10;
   }
   function prevTotal(asset, C){
     const today = torontoToday();
@@ -2945,7 +2967,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
   function topWordCell(a, C, col, v){
     if(v===null) return `<td class="na">—</td>`;
-    return `<td class="${v>0?'bull':v<0?'bear':'z'}${Math.abs(v)===1?' w':''} tw" data-dd="top|${a}|${col.k}">${v>0?'+':v<0?'−':'±'}${Math.abs(v)}</td>`;
+    return `<td class="${v>0?'bull':v<0?'bear':'z'}${Math.abs(v)<=1.5?' w':''} tw" data-dd="top|${a}|${col.k}">${v>0?'+':v<0?'−':'±'}${String(Math.abs(v)).replace('.', isEN()?'.':',')}</td>`;
   }
   // explication en mots de l'effet d'une donnée sur un actif
   function explainEffect(a, kind, up){
@@ -3011,7 +3033,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const C = compute(a), A = state.assets[a]||{}, r = C.rows;
     const pts = k==='cot' ? r.cotNet + r.cotChg : k==='yield10' ? (r.yield10||0)*wOf(a,'yield10') : (r[k]||0);
     let title = '', rows = '', txt = '', extra = '';
-    if(k==='trend'){ title = L('Tendance de la semaine (automatique)','This week’s trend (automatic)'); rows = ddRow(L('Tendance','Trend'), A.trend==='bull'?L('Haussière','Bullish'):A.trend==='bear'?L('Baissière','Bearish'):L('Neutre','Neutral'));
+    if(k==='dtrend'){ const t = ((state.tech||{}).assets||{})[a]; title = L('Tendance de fond (journalier)','Underlying trend (daily)');
+      rows = t ? ddRow(L('Tendance','Trend'), tw('trend',t.trend).t) + ddRow('MM50', `${pxFmt(t.sma50)} (${sg2(t.d50,1)} %)`, t.d50>0?'pos':'neg') + ddRow('MM200', `${pxFmt(t.sma200)} (${sg2(t.d200,1)} %)`, t.d200>0?'pos':'neg') : ddRow(L('Données','Data'), '—');
+      txt = L('Haussière si au moins 2 de ces 3 conditions sont vraies : prix au-dessus de la moyenne mobile 50 jours, prix au-dessus de la 200 jours, MM50 en hausse sur 10 jours. Baissière si au moins 2 sont fausses. Compte ±1 dans le bloc technique.', 'Bullish if at least 2 of these 3 are true: price above the 50-day moving average, price above the 200-day, 50-day rising over 10 days. Bearish if at least 2 are false. Counts ±1 in the technical block.');
+      extra = `<div class="ddlinks"><button type="button" class="btn ghost" data-ddgo="tech">${L('Heatmap technique','Technical heatmap')}</button></div>`; }
+    else if(k==='trend'){ title = L('Tendance de la semaine (automatique)','This week’s trend (automatic)'); rows = ddRow(L('Tendance','Trend'), A.trend==='bull'?L('Haussière','Bullish'):A.trend==='bear'?L('Baissière','Bearish'):L('Neutre','Neutral'));
       const AS2 = autoSrc(), AT = AS2.tr && AS2.tr[a];
       if(AT && AT.chg!=null) rows += ddRow(L('Prix','Price'), pxFmt(AT.px)) + ddRow(L('Clôture de la semaine passée','Last week’s close'), `${pxFmt(AT.pc)} (${sg2(AT.chg,2)} %)`, AT.chg>0?'pos':AT.chg<0?'neg':'') + ddRow(L('Ouverture de la semaine','Weekly open'), `${pxFmt(AT.o)} (${sg2(AT.vsO,2)} %)`, AT.vsO>0?'pos':AT.vsO<0?'neg':'');
       const t = ((state.tech||{}).assets||{})[a]; if(t) rows += ddRow(L('Tendance calculée (prix)','Computed trend (price)'), tw('trend',t.trend).t) + ddRow('MM200', `${pxFmt(t.sma200)} (${sg2(t.d200,1)} %)`);
