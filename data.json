@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T05:47:35Z",
+  "updatedAt": "2026-11-26T06:43:03Z",
   "econ": {
     "values": {
       "adp": {
@@ -1649,6 +1649,35 @@
   },
   "news": [
     {
+      "date": "2026-11-26",
+      "time": "01:19",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Plus de 1 000 sites de minage de bitcoin détournés au profit d'un pirate par une fausse route Internet",
+      "title_en": "Over 1,000 Bitcoin miners were tricked into working for a thief by a fake internet route",
+      "summary": "Selon un rapport de Braiins, un attaquant a utilisé de fausses annonces de routage (BGP) pour rediriger le travail de minage et empocher les récompenses; le 20 novembre, plus de 1 000 sites, surtout en Europe, ont perdu leur connexion en une seconde, l'attaque atteignant jusqu'à 1,9 EH/s. CoinDesk estime les revenus touchés à moins de 17 000 $, mais l'incident relance les craintes sur la sécurité du protocole Stratum V1, alors que le bitcoin se négocie près de 59 000 $.",
+      "summary_en": "According to a Braiins report, an attacker used fake routing announcements (BGP) to redirect mining work and collect the rewards; on Nov. 20 more than 1,000 sites, mostly in Europe, lost their connection in one second, with the attack reaching up to 1.9 EH/s. CoinDesk estimates affected revenue at under $17,000, but the incident revives security concerns about the Stratum V1 protocol, with bitcoin trading near $59,000.",
+      "url": "https://www.coindesk.com/markets/2026/11/26/hackers-hijacked-1-000-plus-bitcoin-mines-in-one-second-by-faking-internet-routes"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "01:02",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Nvidia cesse d'expédier des serveurs d'IA vers quatre pays d'Asie du Sud-Est (FT)",
+      "title_en": "Nvidia stops shipping AI servers to 4 Southeast Asian countries - FT",
+      "summary": "Selon le Financial Times, Nvidia a demandé à ses partenaires comme Dell et Supermicro de bloquer les livraisons de serveurs d'IA vers la Malaisie, Singapour, la Thaïlande et l'Indonésie, sur fond de contrôles américains à l'exportation plus stricts. La région servait de porte dérobée aux développeurs chinois via des contrats infonuagiques; le département du Commerce donne maintenant 90 jours aux fournisseurs asiatiques pour prouver que leurs services n'atteignent pas d'entités visées. Une nouvelle pression sur Nvidia et les semi-conducteurs, poids lourds du Nasdaq.",
+      "summary_en": "According to the Financial Times, Nvidia told partners such as Dell and Supermicro to halt AI server shipments to Malaysia, Singapore, Thailand and Indonesia amid tighter U.S. export controls. The region had served as a loophole for Chinese developers via cloud contracts; the Commerce Department now gives Asian cloud providers 90 days to prove their services do not reach restricted entities. Fresh pressure on Nvidia and chipmakers, Nasdaq heavyweights.",
+      "url": "https://ca.investing.com/news/stock-market-news/nvidia-stops-shipping-ai-servers-to-4-southeast-asian-countries-ft-4982115"
+    },
+    {
       "date": "2026-11-25",
       "time": "23:46",
       "source": "CoinDesk",
@@ -2249,38 +2278,6 @@
       "title": "Les rendements des bons du Trésor reculent dans l'attente d'un indicateur clé d'inflation",
       "title_en": "Treasury yields fall as investors await key inflation signal",
       "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
-    },
-    {
-      "assets": [
-        "usdjpy",
-        "nasdaq",
-        "usoil",
-        "xauusd",
-        "usd"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Le Nikkei 225 a clôturé en baisse de 2,62 %, plombé notamment par Ibiden (-16,01 %), SoftBank Group (-14,83 %) et Fujikura (-14,70 %), des titres liés à l'IA. Au même moment, le WTI de janvier cédait 2,04 % à 80,38 $, l'or de décembre 1,19 % à 3 519,40 $ et l'USD/JPY restait stable à 159,27, l'indice dollar gagnant 0,23 % à 103,99. La vente sur l'IA continue de se propager en Asie avant l'ouverture américaine.",
-      "summary_en": "The Nikkei 225 closed down 2.62%, dragged by AI-linked names such as Ibiden (-16.01%), SoftBank Group (-14.83%) and Fujikura (-14.70%). At the same time, January WTI fell 2.04% to $80.38, December gold 1.19% to $3,519.40, and USD/JPY was flat at 159.27, with the dollar index up 0.23% at 103.99. The AI selloff keeps spreading across Asia ahead of the U.S. open.",
-      "time": "02:00",
-      "title": "Tokyo ferme en baisse : le Nikkei 225 perd 2,62 %, SoftBank chute de 14,8 %",
-      "title_en": "Japan stocks lower at close of trade; Nikkei 225 down 2.62%",
-      "url": "https://www.investing.com/news/stock-market-news/japan-stocks-lower-at-close-of-trade-nikkei-225-down-262-5049846"
-    },
-    {
-      "assets": [
-        "usoil"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Selon Investing.com, les Houthis du Yémen menacent les ports de l'Arabie saoudite alors que le conflit au Yémen s'intensifie (article non consultable; résumé basé sur le titre). Une menace sur les infrastructures portuaires du premier exportateur de brut ajoute une prime de risque géopolitique au pétrole, qui recule par ailleurs sur des craintes de surabondance.",
-      "summary_en": "According to Investing.com, Yemen's Houthis are threatening Saudi Arabia's ports as the Yemen conflict escalates (article not accessible; summary based on the headline). A threat to port infrastructure of the top crude exporter adds geopolitical risk premium to oil, which has otherwise been pressured by oversupply fears.",
-      "time": "01:23",
-      "title": "Les Houthis menacent les ports saoudiens sur fond d'escalade du conflit au Yémen",
-      "title_en": "Houthis threaten Saudi ports amid Yemen conflict escalation",
-      "url": "https://www.investing.com/news/stock-market-news/houthis-threaten-saudi-ports-amid-yemen-conflict-escalation-93CH-5049796"
     }
   ],
   "live": {
