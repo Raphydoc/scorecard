@@ -183,7 +183,7 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
     if (Object.keys(Mo).length) M.strength[p + '_mo'] = round(align(Mo));
   }
   // « Mon choix » : les 16 actifs du scorecard en hebdomadaire et en mensuel (1H, 4H et journalier viennent de ohlc.json)
-  { const MY = {xauusd: 'GC=F', xagusd: 'SI=F', nasdaq: '^NDX', spx500: '^GSPC', us30: '^DJI', rut: '^RUT', usd: 'DX-Y.NYB', usoil: 'CL=F', btcusd: 'BTC-USD', eurusd: 'EURUSD=X', usdjpy: 'JPY=X', usdcad: 'CAD=X', gbpusd: 'GBPUSD=X', audusd: 'AUDUSD=X', usdchf: 'CHF=X', nzdusd: 'NZDUSD=X'};
+  { const MY = {xauusd: 'GC=F', xagusd: 'SI=F', nasdaq: '^NDX', spx500: '^GSPC', us30: '^DJI', rut: '^RUT', usd: 'DX-Y.NYB', usoil: 'CL=F', btcusd: 'BTC-USD', eurusd: 'EURUSD=X', usdjpy: 'JPY=X', usdcad: 'CAD=X', gbpusd: 'GBPUSD=X', audusd: 'AUDUSD=X', usdchf: 'CHF=X', nzdusd: 'NZDUSD=X', gdx: 'GDX', sox: '^SOX'};
     const rl = await pool(Object.entries(MY), async ([k, s]) => [k, ...(await LONG(s))]); const W = {}, Mo = {};
     rl.forEach(([k, w, mo]) => { if (w) W[k] = w.rows; if (mo) Mo[k] = mo.rows; });
     const rnd = o => { const r = {t: o.t}; for (const k in o) if (k !== 't') r[k] = o[k].map(x => x == null ? null : +x.toPrecision(6)); return r; };
@@ -233,6 +233,11 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
     const f = rows => rows.map(r => [r[0], ...r.slice(1).map(x => r2(x, dp(r[4])))]);
     if (d) O.d1[k] = f(d.rows.slice(-400)); if (h) O.h1[k] = f(h.rows);
   });
+  // séries en plus pour « Mon choix » (Graphiques) : mines d'or (GDX) et semi-conducteurs (SOX)
+  const XTRA = {gdx: 'GDX', sox: '^SOX'};
+  (await pool(Object.entries(XTRA), async ([k, s]) => [k, await chart(s, '2y', '1d'), await chart(s, '1mo', '60m')])).forEach(([k, d, h]) => {
+    const f = rows => rows.map(r => [r[0], ...r.slice(1).map(x => r2(x, dp(r[4])))]);
+    if (d) O.d1[k] = f(d.rows.slice(-400)); if (h) O.h1[k] = f(h.rows); });
   console.error('ohlc', Object.keys(O.d1).length, Object.keys(O.h1).length);
 
   // ---------- Tendance automatique de la SEMAINE (case « Tendance » du scorecard, ±2) ----------

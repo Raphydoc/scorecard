@@ -4086,10 +4086,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- « Mon choix » : compare toi-même les actifs du scorecard (lignes en % depuis la 1re barre à l'écran) ----------
-  const CMP_GR = [['idx',['Indices','Indices'],['nasdaq','spx500','us30','rut']],['met',['Métaux','Metals'],['xauusd','xagusd']],['fx',['Devises','Currencies'],['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['nrg',['Énergie','Energy'],['usoil']],['cry',['Crypto','Crypto'],['btcusd']]];
+  const CMP_NAMES = Object.assign({}, TOP_NAMES, {sox:'SOX', gdx:'GDX'});
+  const CMP_GR = [['idx',['Indices','Indices'],['nasdaq','spx500','us30','rut']],['sec',['Secteurs','Sectors'],['sox','gdx']],['met',['Métaux','Metals'],['xauusd','xagusd']],['fx',['Devises','Currencies'],['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['nrg',['Énergie','Energy'],['usoil']],['cry',['Crypto','Crypto'],['btcusd']]];
   const CMP_MAX = 8;
   function cmpSel(){
-    if(!state.cmpSel){ let v = null; try{ v = JSON.parse(localStorage.getItem('sc-cmp')||'null'); }catch(e){} state.cmpSel = Array.isArray(v) && v.length ? v.filter(k=>TOP_NAMES[k]) : ['xauusd','nasdaq','usd','btcusd']; }
+    if(!state.cmpSel){ let v = null; try{ v = JSON.parse(localStorage.getItem('sc-cmp')||'null'); }catch(e){} state.cmpSel = Array.isArray(v) && v.length ? v.filter(k=>CMP_NAMES[k]) : ['xauusd','nasdaq','usd','btcusd']; }
     return state.cmpSel;
   }
   const CMP_RANGE = {h1:[[24*5,L('1 semaine','1 week')],[24*31,L('1 mois','1 month')]], d1:[[21,L('1 mois','1 month')],[63,L('3 mois','3 months')],[126,L('6 mois','6 months')],[252,L('1 an','1 year')],[9999,L('Tout','All')]]};
@@ -4111,7 +4112,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         cols[k] = ks.map(x=>{ if(m.has(x)) last = m.get(x); return last; }); });
     }
     if(t.length < 2) return null;
-    const ser = Object.entries(cols).map(([k, raw])=>{ const b = raw.find(x=>x!=null); return {k:TOP_NAMES[k], key:k, col:SCOL[sel.indexOf(k) % SCOL.length], raw, pct:raw.map(x=>x==null||!b ? null : (x/b-1)*100)}; });
+    const ser = Object.entries(cols).map(([k, raw])=>{ const b = raw.find(x=>x!=null); return {k:CMP_NAMES[k], key:k, col:SCOL[sel.indexOf(k) % SCOL.length], raw, pct:raw.map(x=>x==null||!b ? null : (x/b-1)*100)}; });
     ser.forEach(s=>{ s.last = s.pct[s.pct.length-1]; s.lastRaw = s.raw[s.raw.length-1]; });
     ser.sort((a,b)=>(b.last||0)-(a.last||0));
     return {tf, t, ser};
@@ -4120,8 +4121,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const sel = cmpSel();
     return `<div class="cmpk"><div class="cmpk1"><span class="cmpt">${L('Choisis jusqu’à '+CMP_MAX+' actifs à comparer','Pick up to '+CMP_MAX+' assets to compare')}</span>
         <button type="button" class="cmpclr" data-cmpclr="1">${L('Tout décocher','Clear all')}</button></div>
-      <div class="apick cmpg">${CMP_GR.map(([c,t,ks])=>`<div class="apg"><span class="apgt">${L(t[0],t[1])}</span><div class="apgl">${ks.filter(k=>TOP_NAMES[k]).map(k=>{ const i = sel.indexOf(k);
-        return `<button type="button" class="apb cmpb ${i>=0?'on':''}" data-cmp="${k}" aria-pressed="${i>=0}"${i>=0?` style="--lc:${SCOL[i % SCOL.length]}"`:''}>${i>=0?`<i class="cmpdot"></i>`:''}<b>${esc(TOP_NAMES[k])}</b></button>`; }).join('')}</div></div>`).join('')}</div></div>`;
+      <div class="apick cmpg">${CMP_GR.map(([c,t,ks])=>`<div class="apg"><span class="apgt">${L(t[0],t[1])}</span><div class="apgl">${ks.filter(k=>CMP_NAMES[k]).map(k=>{ const i = sel.indexOf(k);
+        return `<button type="button" class="apb cmpb ${i>=0?'on':''}" data-cmp="${k}" aria-pressed="${i>=0}"${i>=0?` style="--lc:${SCOL[i % SCOL.length]}"`:''}>${i>=0?`<i class="cmpdot"></i>`:''}<b>${esc(CMP_NAMES[k])}</b></button>`; }).join('')}</div></div>`).join('')}</div></div>`;
   }
   async function renderChartsTS(){
     const box = $('p2charts'); if(!box) return;
