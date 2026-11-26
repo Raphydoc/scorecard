@@ -4063,6 +4063,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const CCOL = {AUD:'#F59E0B', NZD:'#22C55E', JPY:'#F8FAFC', CAD:'#EF4444', USD:'#84CC16', GBP:'#06B6D4', CHF:'#A855F7', EUR:'#3B82F6'};
 
   // ---------- Charts : force relative (variation depuis la 1re barre à l'écran) ----------
+  try{ state.chScale = state.chScale || localStorage.getItem('sc-chscale') || 'pct'; }catch(e){ state.chScale = 'pct'; }
   state.chP = state.chP || 'fx'; state.chTF = state.chTF || 'h1'; state.chView = state.chView || 'ov';
   const CHP = {
     fx:{n:['Devises (forex)','Forex currency'], tf:['h1','h4','d1','w1','mo'], sub:[L('8 devises · non pondéré','8 currencies · unweighted'),'']},
@@ -4143,9 +4144,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         <div class="chmain panel">
           <div class="chbar"><h3>${esc((isEN()?CHP[p].n[1]:CHP[p].n[0]).toUpperCase())}</h3><span class="chtag">${D?D.ser.length:0} ${p==='fx'?L('DEVISES · NON PONDÉRÉ','CURRENCIES · UNWEIGHTED'):L('SÉRIES','SERIES')} · ${state.chView==='ov'?L('VUE D’ENSEMBLE','OVERVIEW'):L('GRILLE','GRID')}</span>
             <div class="seg chtf">${CHP[p].tf.map(t=>`<button type="button" data-tf="${t}" aria-pressed="${(D?D.tf:(CHP[p].tf.includes(state.chTF)?state.chTF:CHP[p].tf[0]))===t}">${TFN[t]}</button>`).join('')}</div>
-            ${state.chView==='ov'?`<button type="button" class="chx" data-fs="main" title="${L('Agrandir','Expand')}" aria-label="${L('Agrandir le graphique','Expand chart')}">⤢</button>`:''}<div class="seg chv"><button type="button" data-v="ov" aria-pressed="${state.chView==='ov'}">${L('VUE','OVERVIEW')}</button><button type="button" data-v="grid" aria-pressed="${state.chView==='grid'}">${L('GRILLE','GRID')}</button></div></div>
+            ${state.chView==='ov'?`<button type="button" class="chx" data-fs="main" title="${L('Agrandir','Expand')}" aria-label="${L('Agrandir le graphique','Expand chart')}">⤢</button>`:''}${state.chView==='ov'?`<div class="seg chsc" title="${L('Même échelle : chaque ligne va de son plus bas (0) à son plus haut (100) sur la période, pour comparer les formes même si un actif bouge beaucoup plus qu’un autre.','Same scale: each line goes from its period low (0) to its period high (100), to compare shapes even when one asset moves far more than another.')}"><button type="button" data-sc2="pct" aria-pressed="${state.chScale!=='mm'}">%</button><button type="button" data-sc2="mm" aria-pressed="${state.chScale==='mm'}">${L('Même échelle','Same scale')}</button></div>`:''}<div class="seg chv"><button type="button" data-v="ov" aria-pressed="${state.chView==='ov'}">${L('VUE','OVERVIEW')}</button><button type="button" data-v="grid" aria-pressed="${state.chView==='grid'}">${L('GRILLE','GRID')}</button></div></div>
           ${p==='my' ? cmpPicker(CHP.my.tf.includes(state.chTF) ? state.chTF : 'h1') : ''}
-          <p class="tscap2">% ${L('VARIATION DEPUIS','CHANGE SINCE')} <b>${L('LA PREMIÈRE BARRE À L’ÉCRAN','THE FIRST BAR ON SCREEN')}</b></p>
+          <p class="tscap2">${state.chScale==='mm' && state.chView==='ov' ? `${L('MÊME ÉCHELLE','SAME SCALE')} : <b>${L('0 = PLUS BAS · 100 = PLUS HAUT DE LA PÉRIODE, POUR CHAQUE ACTIF','0 = LOW · 100 = HIGH OF THE PERIOD, FOR EACH ASSET')}</b> · ${L('la légende garde la variation en %','the legend keeps the % change')}` : `% ${L('VARIATION DEPUIS','CHANGE SINCE')} <b>${L('LA PREMIÈRE BARRE À L’ÉCRAN','THE FIRST BAR ON SCREEN')}</b>`}</p>
           ${state.chView==='ov' ? `<div class="chgrid1"><div class="chcanvas"><canvas id="chMain"></canvas></div><div class="chleg">${D?D.ser.map((s,i)=>`<div style="--c:${s.col}"><span>${i+1}</span><i></i>${esc(nmT(s.k))}${p==='fx'?' Index':''}<b class="${pcCls(s.last)}">${pcTxt(s.last)}</b></div>`).join(''):''}</div></div>`
             : `<div class="chgrid">${D?D.ser.map((s,i)=>`<div class="chcell"><div class="chch" style="--c:${s.col}"><i></i>${esc(nmT(s.k))}<b class="${pcCls(s.last)}">${pcTxt(s.last)}</b><button type="button" class="chx sm" data-fs="cell" title="${L('Agrandir','Expand')}" aria-label="${L('Agrandir le graphique','Expand chart')}">⤢</button></div><div class="chcv"><canvas id="chG${i}"></canvas></div></div>`).join(''):''}</div>`}
           <p class="src">${p==='fx'?L('Indice de chaque devise = sa valeur face à la moyenne géométrique des 8 devises majeures (non pondéré). ','Each currency index = its value against the geometric mean of the 8 majors (unweighted). '):''}${L('Source : Yahoo Finance · mis à jour ','Source: Yahoo Finance · updated ')}${tsTime(M.asOf)}</p>
@@ -4163,6 +4164,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     }));
     if(!state.chEsc){ state.chEsc = 1; document.addEventListener('keydown', e=>{ if(e.key==='Escape'){ const x = document.querySelector('.chfs [data-fs]'); if(x) x.click(); } }); }
     box.querySelectorAll('.chv button').forEach(b=>b.addEventListener('click', ()=>{ state.chView = b.dataset.v; renderChartsTS(); }));
+    box.querySelectorAll('[data-sc2]').forEach(b=>b.addEventListener('click', ()=>{ state.chScale = b.dataset.sc2; try{ localStorage.setItem('sc-chscale', state.chScale); }catch(e){} renderChartsTS(); }));
     const saveCmp = () => { try{ localStorage.setItem('sc-cmp', JSON.stringify(state.cmpSel)); }catch(e){} };
     box.querySelectorAll('[data-cmp]').forEach(b=>b.addEventListener('click', ()=>{ const k = b.dataset.cmp, sel = cmpSel(), i = sel.indexOf(k);
       if(i>=0) sel.splice(i,1); else { if(sel.length >= CMP_MAX) sel.shift(); sel.push(k); } saveCmp(); renderChartsTS(); }));
@@ -4174,7 +4176,11 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const labels = D.t.map(s=>fmtT(s, D.tf));
     const base = {plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>`${c.dataset.label} ${sg2(c.parsed.y,2)} %`}}}, elements:{point:{radius:0}, line:{borderWidth:1.6, tension:0.15}},
       scales:{x:{ticks:{maxTicksLimit:8, autoSkip:true}, grid:{display:false}}, y:{position:'right', ticks:{callback:v=>sg2(v,2)+'%'}, grid:{color:'rgba(255,255,255,.05)'}}}};
-    if(state.chView==='ov') mkChart('chMain', {type:'line', data:{labels, datasets:D.ser.map(s=>({label:nmT(s.k), data:s.pct, borderColor:s.col, backgroundColor:s.col}))}, options:base});
+    // « Même échelle » : chaque série ramenée de 0 (son plus bas) à 100 (son plus haut) sur la période affichée
+    const MM = state.chScale==='mm', mm = a => { const v = a.filter(x=>x!=null), lo = Math.min(...v), hi = Math.max(...v), r = hi-lo || 1; return a.map(x=>x==null ? null : (x-lo)/r*100); };
+    const optOv = MM ? Object.assign({}, base, {plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>`${c.dataset.label} ${sg2(D.ser[c.datasetIndex].pct[c.dataIndex],2)} %`}}},
+      scales:{x:base.scales.x, y:{position:'right', min:-3, max:103, ticks:{stepSize:50, callback:v=>v===0?L('plus bas','low'):v===100?L('plus haut','high'):v===50?'50':''}, grid:{color:'rgba(255,255,255,.05)'}}}}) : base;
+    if(state.chView==='ov') mkChart('chMain', {type:'line', data:{labels, datasets:D.ser.map(s=>({label:nmT(s.k), data:MM ? mm(s.pct) : s.pct, borderColor:s.col, backgroundColor:s.col}))}, options:optOv});
     else D.ser.forEach((s,i)=>mkChart('chG'+i, {type:'line', data:{labels, datasets:[{label:s.k, data:s.pct, borderColor:s.col, backgroundColor:s.col+'22', fill:true}]}, options:Object.assign({}, base, {scales:{x:{display:false}, y:{position:'right', ticks:{maxTicksLimit:4, callback:v=>sg2(v,1)+'%'}, grid:{color:'rgba(255,255,255,.05)'}}}})}));
   }
 
