@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T16:14:34Z",
+ "updatedAt": "2026-11-26T16:47:14Z",
  "econ": {
   "values": {
    "adp": {
@@ -1650,6 +1650,36 @@
  "news": [
   {
    "date": "2026-11-26",
+   "time": "11:00",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "L'UE pourrait voter le 15 décembre sur l'autorisation du système d'aide à la conduite de Tesla",
+   "title_en": "EU may vote on authorising Tesla assisted-driving system at Dec 15 meeting",
+   "summary": "Selon la manchette, l'Union européenne pourrait se prononcer lors d'une réunion le 15 décembre sur l'autorisation du système d'aide à la conduite de Tesla. Une approbation ouvrirait le marché européen à cette technologie, un enjeu suivi de près pour l'action Tesla, poids lourd du Nasdaq. (Article non lisible; résumé basé sur le titre.)",
+   "summary_en": "According to the headline, the European Union may decide at a Dec. 15 meeting whether to authorise Tesla's assisted-driving system. Approval would open the European market to the technology, a closely watched issue for Tesla shares, a Nasdaq heavyweight. (Article not readable; summary based on the headline.)",
+   "url": "https://www.investing.com/news/stock-market-news/eu-may-vote-on-authorising-tesla-assisteddriving-system-at-dec-15-meeting-5052607"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "10:34",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Nvidia exigerait de ses acheteurs de puces qu'ils excluent les locataires chinois de GPU, selon des sources",
+   "title_en": "Nvidia chip buyers told to rule out Chinese renters to buy GPUs, sources say",
+   "summary": "Selon des sources citées par CNBC, les acheteurs de puces de Nvidia, dont les fournisseurs infonuagiques (« neoclouds »), doivent écarter les clients chinois qui louent de la puissance de calcul GPU pour pouvoir acheter ses puces. Cette restriction s'ajoute aux récentes mesures de Nvidia pour limiter l'accès de la Chine à ses puces d'IA et pèse sur le dossier Nvidia, déjà volatil, et sur le Nasdaq. (Article non lisible; résumé basé sur le titre.)",
+   "summary_en": "According to sources cited by CNBC, Nvidia chip buyers, including neocloud providers, are being told to rule out Chinese customers renting GPU compute in order to buy its chips. The restriction adds to Nvidia's recent steps to limit China's access to its AI chips, weighing on an already volatile Nvidia story and the Nasdaq. (Article not readable; summary based on the headline.)",
+   "url": "https://www.cnbc.com/2026/11/26/neoclouds-nvidia-china-ai.html"
+  },
+  {
+   "date": "2026-11-26",
    "time": "09:54",
    "source": "Investing.com",
    "impact": "med",
@@ -2236,36 +2266,6 @@
    "title": "Le bitcoin reste coincé sous 60 000 $; Galaxy retire son appel de creux et les haussiers perdent confiance",
    "title_en": "Bitcoin price stuck below $60,000 as Galaxy takes back bottom call, crypto bulls lose faith",
    "url": "https://www.coindesk.com/markets/2026/11/25/this-time-actually-seems-different-crypto-veterans-brace-for-more-pain-as-bitcoin-tumbles"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le célèbre investisseur de « The Big Short » a liquidé ses dernières options de vente (puts) sur le Nasdaq 100 et dit que son portefeuille est maintenant positionné à la hausse. Ce changement survient en pleine correction des titres technologiques, ce qui retient l'attention des marchés.",
-   "summary_en": "The 'Big Short' investor has sold his remaining put options on the Nasdaq 100 and says his portfolio is now long. The shift comes in the middle of a tech-stock correction, drawing market attention.",
-   "time": "11:36",
-   "title": "Michael Burry vend ses derniers puts sur le Nasdaq 100 et affirme que son portefeuille est acheteur",
-   "title_en": "Michael Burry sells remaining Nasdaq 100 puts, says portfolio is long",
-   "url": "https://www.investing.com/news/stock-market-news/michael-burry-sells-remaining-nasdaq-100-puts-says-portfolio-is-long-5051231"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "L'action d'Anthropic se négociait autour de 80,50 $, sous son prix d'introduction de 83 $ et près de 30 % sous son cours d'ouverture du 19 novembre. Selon une analyse de Reuters (données LSEG), 37 des 60 sociétés du Nasdaq-100 dont les prévisions de bénéfices ont été relevées en trois mois ont tout de même vu leur titre reculer. Les 25 titres les plus chers du Nasdaq-100 se négocient à un multiple médian de 38 fois les bénéfices prévus, contre 18 pour les autres, ce qui alimente les craintes sur l'IA.",
-   "summary_en": "Anthropic shares were trading around $80.50, below their $83 IPO price and nearly 30% below their Nov. 19 opening price. A Reuters analysis of LSEG data found 37 of the 60 Nasdaq-100 companies with upward earnings revisions over three months still saw their shares fall. The 25 most richly valued Nasdaq-100 names trade at a median 38 times forward earnings versus 18 for the rest, feeding AI valuation worries.",
-   "time": "11:12",
-   "title": "Le recul d'Anthropic met à l'épreuve les paris de Wall Street sur les profits futurs de l'IA",
-   "title_en": "Anthropic's slide tests Wall Street's lofty bets on future AI profits",
-   "url": "https://www.investing.com/news/stock-market-news/anthropics-slide-tests-wall-streets-lofty-bets-on-future-ai-profits-5051214"
   }
  ],
  "live": {
