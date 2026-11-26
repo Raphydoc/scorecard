@@ -153,7 +153,11 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
   }
   if (Object.values(fxD).every(Boolean)) M.strength.fx_d1 = strengthFrom(fxD);
   // unités de temps longues : hebdomadaire (5 ans) et mensuelle (10 ans)
-  const LONG = async s => [await chart(s, '5y', '1wk'), await chart(s, '10y', '1mo')];
+  // les dates des barres hebdo/mensuelles varient selon le marché (crypto, forex, bourse) : on les ramène au lundi / au 1er du mois
+  const wkT = t => { const d = new Date((t + 43200) * 1000); d.setUTCHours(0, 0, 0, 0); d.setUTCDate(d.getUTCDate() - ((d.getUTCDay() + 6) % 7)); return d.getTime() / 1000; };
+  const moT = t => { const d = new Date((t + 43200) * 1000); return Date.UTC(d.getUTCFullYear(), d.getUTCMonth(), 1) / 1000; };
+  const norm = (r, f) => { if (!r) return r; const m = new Map(); r.rows.forEach(x => m.set(f(x[0]), [f(x[0]), x[1], x[2], x[3], x[4]])); return Object.assign({}, r, {rows: [...m.values()].sort((a, b) => a[0] - b[0])}); };
+  const LONG = async s => [norm(await chart(s, '5y', '1wk'), wkT), norm(await chart(s, '10y', '1mo'), moT)];
   const bucket4 = rows => { const m = new Map(); (rows || []).forEach(r => { const b = Math.floor(r[0] / 14400) * 14400, g = m.get(b);
     if (!g) m.set(b, [b, r[1], r[2], r[3], r[4]]); else { g[2] = Math.max(g[2], r[2]); g[3] = Math.min(g[3], r[3]); g[4] = r[4]; } }); return [...m.values()]; };
   { const fl = await pool(Object.entries(FX), async ([c, [s]]) => [c, ...(await LONG(s))]); const W = {}, Mo = {};
