@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T19:15:20Z",
+  "updatedAt": "2026-11-26T19:45:00Z",
   "econ": {
     "values": {
       "adp": {
@@ -156,8 +156,8 @@
       "cotLong": 52.71,
       "cotChange": -2.04,
       "uCot": "2026-11-23T13:49:00Z",
-      "crowdLong": 61,
-      "uCrowd": "2026-11-24T15:50:00Z"
+      "crowdLong": 59,
+      "uCrowd": "2026-11-26T19:45:00Z"
     },
     "rut": {
       "season": "bear",
@@ -166,8 +166,8 @@
       "cotLong": 46.63,
       "cotChange": -2.07,
       "uCot": "2026-11-23T13:49:00Z",
-      "crowdLong": 68,
-      "uCrowd": "2026-11-24T19:46:00Z"
+      "crowdLong": 66,
+      "uCrowd": "2026-11-26T19:45:00Z"
     },
     "eurusd": {
       "season": "bear",
@@ -196,8 +196,8 @@
       "cotLong": 58.4,
       "cotChange": 1.83,
       "uCot": "2026-11-23T13:49:00Z",
-      "crowdLong": 38,
-      "uCrowd": "2026-11-25T15:43:00Z"
+      "crowdLong": 40,
+      "uCrowd": "2026-11-26T19:45:00Z"
     },
     "gbpusd": {
       "season": "neutral",
@@ -226,8 +226,8 @@
       "cotLong": 55.51,
       "cotChange": -0.64,
       "uCot": "2026-11-23T13:49:00Z",
-      "crowdLong": 67,
-      "uCrowd": "2026-11-26T15:45:00Z"
+      "crowdLong": 70,
+      "uCrowd": "2026-11-26T19:45:00Z"
     },
     "nzdusd": {
       "season": "bear",
@@ -1052,6 +1052,73 @@
       },
       "usoil": {
         "sent": -1,
+        "macro": 13
+      },
+      "btcusd": {
+        "sent": -1,
+        "macro": 9
+      },
+      "eurusd": {
+        "sent": -3,
+        "macro": -9
+      },
+      "usdjpy": {
+        "sent": 1,
+        "macro": 9
+      },
+      "usdcad": {
+        "sent": 3,
+        "macro": 9
+      },
+      "gbpusd": {
+        "sent": -1,
+        "macro": -9
+      },
+      "audusd": {
+        "sent": -3,
+        "macro": -9
+      },
+      "usdchf": {
+        "sent": -1,
+        "macro": 9
+      },
+      "nzdusd": {
+        "sent": -3,
+        "macro": -9
+      }
+    },
+    {
+      "date": "2026-11-26",
+      "xauusd": {
+        "sent": -1,
+        "macro": -9
+      },
+      "xagusd": {
+        "sent": -1,
+        "macro": -9
+      },
+      "nasdaq": {
+        "sent": -1,
+        "macro": 10
+      },
+      "spx500": {
+        "sent": -1,
+        "macro": 11
+      },
+      "us30": {
+        "sent": -1,
+        "macro": 12
+      },
+      "rut": {
+        "sent": -3,
+        "macro": 11
+      },
+      "usd": {
+        "sent": 1,
+        "macro": 9
+      },
+      "usoil": {
+        "sent": 0,
         "macro": 13
       },
       "btcusd": {
