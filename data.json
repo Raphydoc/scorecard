@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T13:50:00Z",
+  "updatedAt": "2026-11-26T14:14:30Z",
   "econ": {
     "values": {
       "adp": {
@@ -37497,7 +37497,7 @@
     ]
   },
   "why": {
-    "asOf": "2026-11-26T13:15:39Z",
+    "asOf": "2026-11-26T14:14:30Z",
     "summary": {
       "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort (DAX +1,7 %), soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux montent, le pétrole aussi avec les mines iraniennes près d'Ormuz, alors qu'une hausse de taux de la Fed en décembre est presque certaine.",
       "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly (DAX +1.7%), relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals climb, and so does oil on Iranian mine strikes near Hormuz, while a December Fed hike looks almost certain.",
@@ -37635,7 +37635,7 @@
         ]
       },
       "xagusd": {
-        "move": "+3,3 %",
+        "move": "+2,5 %",
         "fr": "L'argent suit l'or et grimpe plus fort que lui, avec le platine et le palladium aussi en hausse, dans un marché aux volumes réduits par le congé américain.",
         "en": "Silver tracks gold and climbs more sharply, with platinum and palladium also higher, in holiday-thinned trading.",
         "src": [
@@ -37646,7 +37646,7 @@
         ]
       },
       "usoil": {
-        "move": "+1,5 %",
+        "move": "+1,0 %",
         "fr": "Le pétrole monte encore : l'Iran affirme avoir frappé des navires avec des mines, ce qui ravive les craintes pour l'approvisionnement autour du détroit d'Ormuz. Le Brent s'est maintenu au-dessus de 90 $.",
         "en": "Oil keeps rising: Iran claims mine strikes on ships, reviving supply fears around the Strait of Hormuz. Brent held above $90.",
         "src": [
@@ -37661,7 +37661,7 @@
         ]
       },
       "btcusd": {
-        "move": "+0,7 %",
+        "move": "+0,9 %",
         "fr": "Le bitcoin bouge peu pendant l'Action de grâce, autour de 60 000 $. Les traders restent prudents avant l'échéance de 7 G$ d'options vendredi (protection concentrée sous 60 000 $), et la fermeture de la firme Auros n'aide pas le sentiment.",
         "en": "Bitcoin is little changed over Thanksgiving, near $60,000. Traders stay defensive ahead of Friday's $7B options expiry (protection clustered below $60,000), and the wind-down of trading firm Auros doesn't help sentiment.",
         "src": [
@@ -37680,7 +37680,7 @@
         ]
       },
       "usd": {
-        "move": "0,0 %",
+        "move": "−0,1 %",
         "fr": "Le dollar reste dans une fourchette étroite avec le congé américain. La pause de la remontée des obligations lui donne un petit appui, et la Fed devrait hausser ses taux de 0,25 point le 9 décembre.",
         "en": "The dollar holds a tight range on the U.S. holiday. A pause in the bond rally gives it slight support, with the Fed expected to hike 25 bp on Dec. 9.",
         "src": [
@@ -37695,7 +37695,7 @@
         ]
       },
       "eurusd": {
-        "move": "0,0 %",
+        "move": "+0,1 %",
         "fr": "L'euro est presque inchangé : les marchés voient une hausse de taux en décembre autant à la BCE (90 %) qu'à la Fed (98 %), donc aucun des deux côtés ne prend l'avantage.",
         "en": "The euro is nearly flat: markets price a December hike at both the ECB (90%) and the Fed (98%), so neither side gains an edge.",
         "src": [
@@ -37710,7 +37710,7 @@
         ]
       },
       "gbpusd": {
-        "move": "−0,1 %",
+        "move": "0,0 %",
         "fr": "La livre est stable face au dollar : sans Wall Street, les volumes sont faibles et le dollar reste dans sa fourchette.",
         "en": "Sterling is steady against the dollar: with Wall Street shut, volumes are thin and the dollar stays in its range.",
         "src": [
@@ -37725,7 +37725,7 @@
         ]
       },
       "usdchf": {
-        "move": "+0,4 %",
+        "move": "+0,3 %",
         "fr": "Le franc suisse recule contre toutes les devises (aussi face à l'euro) : le fort rebond des Bourses européennes, soulagées par des tarifs américains moins durs que prévu, réduit la demande pour les valeurs refuges.",
         "en": "The Swiss franc slips across the board (also against the euro): the strong rebound in European stocks, relieved by less damaging U.S. tariffs, cuts demand for safe havens.",
         "src": [
@@ -37736,7 +37736,7 @@
         ]
       },
       "usdjpy": {
-        "move": "+0,1 %",
+        "move": "0,0 %",
         "fr": "Le dollar-yen bouge peu, près de 159,2, dans un marché mince : la pause de la remontée mondiale des obligations donne un léger appui au dollar.",
         "en": "USD/JPY is little changed near 159.2 in thin trading: a pause in the global bond rally gives the dollar slight support.",
         "src": [
