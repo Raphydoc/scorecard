@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T03:48:02Z",
+ "updatedAt": "2026-11-26T04:42:17Z",
  "econ": {
   "values": {
    "adp": {
@@ -1650,6 +1650,21 @@
  "news": [
   {
    "date": "2026-11-25",
+   "time": "22:24",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500"
+   ],
+   "title": "Exclusif : des entreprises liées à Alice Huang ont inscrit pour 270 M$ de serveurs d'IA en Chine, selon des registres",
+   "title_en": "Exclusive: Alice Huang-linked firms listed $270 million in AI servers in China, records show",
+   "summary": "Selon des registres consultés par Reuters, des entreprises liées à Alice Huang ont inscrit pour environ 270 millions de dollars de serveurs d'intelligence artificielle en Chine. Cette révélation s'ajoute à la controverse sur la gouvernance de Nvidia et le respect des restrictions d'exportation de puces, un risque qui pèse sur le titre et sur le Nasdaq.",
+   "summary_en": "According to records reviewed by Reuters, firms linked to Alice Huang listed about $270 million worth of AI servers in China. The report adds to the controversy over Nvidia's governance and compliance with chip export curbs, a risk weighing on the stock and the Nasdaq.",
+   "url": "https://www.investing.com/news/stock-market-news/exclusivealice-huanglinked-firms-listed-270-million-in-ai-servers-in-china-records-show-5049792"
+  },
+  {
+   "date": "2026-11-25",
    "time": "22:20",
    "source": "Investing.com",
    "impact": "med",
@@ -2252,21 +2267,6 @@
    "title": "Les Houthis menacent les ports saoudiens sur fond d'escalade du conflit au Yémen",
    "title_en": "Houthis threaten Saudi ports amid Yemen conflict escalation",
    "url": "https://www.investing.com/news/stock-market-news/houthis-threaten-saudi-ports-amid-yemen-conflict-escalation-93CH-5049796"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Selon des registres consultés par Reuters, des entreprises liées à Alice Huang ont inscrit pour 270 millions de dollars de serveurs d'IA en Chine (article non lisible, résumé tiré du titre). La nouvelle ajoute au scandale des puces Nvidia qui pèse sur les valeurs de l'IA, donc sur le Nasdaq et le S&P 500.",
-   "summary_en": "According to records reviewed by Reuters, firms linked to Alice Huang listed $270 million in AI servers in China (article could not be read; summary based on the headline). It adds to the Nvidia chip scandal weighing on AI stocks, and thus on the Nasdaq and S&P 500.",
-   "time": "01:18",
-   "title": "Exclusif : des entreprises liées à Alice Huang ont inscrit pour 270 M$ de serveurs d'IA en Chine, selon des registres",
-   "title_en": "Exclusive-Alice Huang-linked firms listed $270 million in AI servers in China, records show",
-   "url": "https://www.investing.com/news/stock-market-news/exclusivealice-huanglinked-firms-listed-270-million-in-ai-servers-in-china-records-show-5049792"
   },
   {
    "assets": [
