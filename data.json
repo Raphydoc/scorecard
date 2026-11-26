@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T08:47:57Z",
+  "updatedAt": "2026-11-26T09:48:55Z",
   "econ": {
     "values": {
       "adp": {
@@ -1650,184 +1650,220 @@
   "news": [
     {
       "date": "2026-11-26",
-      "time": "03:05",
+      "time": "04:01",
+      "source": "Investing.com",
+      "impact": "high",
+      "assets": [
+        "usd",
+        "eurusd",
+        "usdjpy",
+        "audusd",
+        "xauusd",
+        "spx500"
+      ],
+      "title": "Le rallye obligataire mondial s'essouffle : le PCE tenace confirme une hausse de la Fed en décembre",
+      "title_en": "Global bond rally eases as sticky PCE locks in December Fed hike",
+      "summary": "Les obligations souveraines marquent une pause après un rallye qui a amené le rendement du 10 ans américain à 4,864 % (plus bas depuis septembre) et celui du Bund allemand à 3,212 % (plus bas depuis août), ce qui réduit l'avantage de rendement du dollar. Le PCE de base d'octobre élevé et le PIB du 3e trimestre révisé à 4,3 % ont cimenté les attentes d'une hausse de 25 points de base de la Fed en décembre, l'hypothèse de 50 points s'étant évaporée. Les contrats à terme donnent aussi 90 % de chances à une hausse de 25 points de la BCE en décembre.",
+      "summary_en": "Sovereign bonds paused after a rally took the U.S. 10-year yield to 4.864% (lowest since September) and the German Bund to 3.212% (lowest since August), eroding the dollar's yield advantage. Hot October core PCE and a Q3 GDP revision to 4.3% cemented expectations of a 25 bp Fed hike in December, with talk of a 50 bp move effectively gone. Futures also price a 90% chance of a 25 bp ECB hike in December.",
+      "url": "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "03:20",
       "source": "Investing.com",
       "impact": "med",
+      "assets": [
+        "xauusd",
+        "xagusd",
+        "usoil",
+        "gbpusd"
+      ],
+      "title": "FTSE 100 : la Bourse de Londres monte de 1,3 % grâce au rebond techno; l'argent bondit de 2,6 %",
+      "title_en": "FTSE 100 today: Stocks rise as tech rebound offsets tariff worries",
+      "summary": "Le FTSE 100 gagne 1,3 %, le DAX et le CAC 40 1,6 %, tandis que la livre recule de 0,07 % à 1,3108 $. Côté matières premières, l'or monte de 0,82 % à 3 564,80 $, l'argent de 2,56 % à 41,08 $ et le WTI de 0,67 % à 84,25 $. Le PCE de base américain (+3,3 % sur un an contre 3,2 % attendu) « scelle presque » une hausse de 25 points de base de la Fed le 9 décembre, selon ING.",
+      "summary_en": "The FTSE 100 rose 1.3% and the DAX and CAC 40 gained 1.6%, while sterling slipped 0.07% to $1.3108. Gold rose 0.82% to $3,564.80, silver 2.56% to $41.08 and WTI 0.67% to $84.25. U.S. core PCE at 3.3% y/y vs 3.2% expected 'all but seals' a 25 bp Fed hike on Dec. 9, according to ING.",
+      "url": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-rise-as-tech-rebound-offsets-tariff-worries-5052207"
+    },
+    {
       "assets": [
         "spx500",
         "eurusd",
         "gbpusd",
         "usd"
       ],
-      "title": "Les Bourses européennes rebondissent : des tarifs américains moins sévères que prévu et l'accalmie de l'Action de grâce soulagent",
-      "title_en": "European shares rise as benign U.S. tariffs and Thanksgiving lull offer relief",
+      "date": "2026-11-26",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le STOXX 600 bondit de 1,3 % en matinée après avoir frôlé mercredi son plus bas en près de deux mois; le DAX gagne 1,7 %, le CAC 40 1,5 %, le FTSE 100 1,3 % et le FTSE MIB 2,3 %. Les nouvelles propositions tarifaires américaines sont moins dommageables que redouté et le congé de l'Action de grâce offre une pause dans la vente massive liée à l'IA. Les contrats à terme sur les fed funds impliquent 98 % de chances d'une hausse de 25 points de base en décembre, et le marché prévoit à 90 % une hausse de 25 pb de la BCE.",
       "summary_en": "The STOXX 600 jumped 1.3% in morning trade after nearing an almost two-month low on Wednesday; the DAX rose 1.7%, the CAC 40 1.5%, the FTSE 100 1.3% and the FTSE MIB 2.3%. New U.S. tariff proposals were less damaging than feared, and the Thanksgiving holiday gave markets a break from the AI-led sell-off. Fed funds futures imply a 98% chance of a 25-basis-point hike in December, while markets price a 90% probability of a 25 bp ECB hike.",
+      "time": "03:05",
+      "title": "Les Bourses européennes rebondissent : des tarifs américains moins sévères que prévu et l'accalmie de l'Action de grâce soulagent",
+      "title_en": "European shares rise as benign U.S. tariffs and Thanksgiving lull offer relief",
       "url": "https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089"
     },
     {
-      "date": "2026-11-26",
-      "time": "03:01",
-      "source": "CoinDesk",
-      "impact": "med",
       "assets": [
         "btcusd"
       ],
-      "title": "Bitcoin : 7 G$ d'options arrivent à échéance vendredi, et les gros paris sont nettement plus défensifs qu'en octobre",
-      "title_en": "$7 billion of bitcoin options expire Friday, and the biggest bets look starkly different from October",
+      "date": "2026-11-26",
+      "impact": "med",
+      "source": "CoinDesk",
       "summary": "Environ 7 G$ d'options sur le BTC expirent sur Deribit le 27 novembre (plus 0,6 G$ sur l'ether), avec des protections concentrées à 60 000 $ et moins. Le ratio put-call atteint 0,89 pour cette échéance, contre 0,55 en octobre, et l'indice de volatilité DVOL est à 55,45, contre 38 en octobre. Le bitcoin se négociait près de 59 000 $, ce qui signale des opérateurs nettement plus prudents.",
       "summary_en": "About $7 billion of BTC options expire on Deribit on Nov. 27 (plus $0.6 billion in ether), with protection clustered at $60,000 and below. The put-call ratio for this expiry is 0.89, up from 0.55 in October, and the DVOL volatility index is 55.45 versus 38 in October. Bitcoin was trading near $59,000, signaling much more defensive traders.",
+      "time": "03:01",
+      "title": "Bitcoin : 7 G$ d'options arrivent à échéance vendredi, et les gros paris sont nettement plus défensifs qu'en octobre",
+      "title_en": "$7 billion of bitcoin options expire Friday, and the biggest bets look starkly different from October",
       "url": "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october"
     },
     {
-      "date": "2026-11-26",
-      "time": "02:58",
-      "source": "CNBC",
-      "impact": "med",
       "assets": [
         "usd",
         "spx500",
         "usdjpy",
         "audusd"
       ],
-      "title": "Les menaces de hausses de tarifs américains accentuent la pression sur les partenaires pour signer des accords commerciaux",
-      "title_en": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+      "date": "2026-11-26",
+      "impact": "med",
+      "source": "CNBC",
       "summary": "Selon CNBC, les menaces de Washington de relever ses tarifs douaniers poussent ses partenaires commerciaux à conclure des accords. Le sujet reste en toile de fond pour le dollar, les devises liées au commerce et les indices boursiers (article non consulté; résumé fondé sur le titre seulement).",
       "summary_en": "According to CNBC, Washington's threats to raise tariffs are pushing trade partners to sign deals. The issue remains a backdrop for the dollar, trade-sensitive currencies and equity indexes (article not accessed; summary based on the headline only).",
+      "time": "02:58",
+      "title": "Les menaces de hausses de tarifs américains accentuent la pression sur les partenaires pour signer des accords commerciaux",
+      "title_en": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
       "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html"
     },
     {
-      "date": "2026-11-26",
-      "time": "02:24",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Exclusif : les restrictions américaines sur les puces et la lutte contre la « distillation » menacent le développement de l'IA chinoise, selon des sources",
-      "title_en": "Exclusive: US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
+      "date": "2026-11-26",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Selon des sources citées par Reuters, les restrictions américaines sur les puces et la répression de la « distillation » (entraîner des modèles à partir de modèles américains) menacent le développement des modèles d'IA chinois. Le sujet s'ajoute aux tensions technologiques sino-américaines qui pèsent sur les semi-conducteurs et le Nasdaq.",
       "summary_en": "According to sources cited by Reuters, US chip curbs and a crackdown on 'distillation' (training models off US models) threaten the development of Chinese AI models. The story adds to the US-China tech tensions weighing on semiconductors and the Nasdaq.",
+      "time": "02:24",
+      "title": "Exclusif : les restrictions américaines sur les puces et la lutte contre la « distillation » menacent le développement de l'IA chinoise, selon des sources",
+      "title_en": "Exclusive: US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
       "url": "https://www.investing.com/news/stock-market-news/exclusiveus-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say-5052154"
     },
     {
-      "date": "2026-11-26",
-      "time": "02:00",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "usdjpy",
         "xauusd",
         "usoil",
         "usd"
       ],
-      "title": "Tokyo clôture en hausse : le Nikkei 225 gagne 0,84 %, Kioxia bondit de 12,6 %",
-      "title_en": "Japan stocks close higher; Nikkei 225 up 0.84%, Kioxia jumps 12.6%",
+      "date": "2026-11-26",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Le Nikkei 225 a gagné 0,84 % jeudi, porté par l'immobilier et les banques; Kioxia a bondi de 12,57 % et SoftBank Group de 7,32 %, tandis que l'indice de volatilité Nikkei a grimpé de 5,97 % à 33,39. À la clôture, l'USD/JPY était à 159,21, l'or de décembre gagnait 0,85 % à 3 566 $ l'once, le WTI de janvier 0,45 % à 84,06 $ et l'indice dollar 0,14 % à 103,74.",
       "summary_en": "The Nikkei 225 rose 0.84% on Thursday, led by real estate and banks; Kioxia jumped 12.57% and SoftBank Group 7.32%, while the Nikkei Volatility index climbed 5.97% to 33.39. At the close, USD/JPY stood at 159.21, December gold gained 0.85% to $3,566 an ounce, January WTI rose 0.45% to $84.06 and the dollar index 0.14% to 103.74.",
+      "time": "02:00",
+      "title": "Tokyo clôture en hausse : le Nikkei 225 gagne 0,84 %, Kioxia bondit de 12,6 %",
+      "title_en": "Japan stocks close higher; Nikkei 225 up 0.84%, Kioxia jumps 12.6%",
       "url": "https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-084-5052126"
     },
     {
-      "date": "2026-11-26",
-      "time": "01:19",
-      "source": "CoinDesk",
-      "impact": "med",
       "assets": [
         "btcusd"
       ],
-      "title": "Plus de 1 000 sites de minage de bitcoin détournés au profit d'un pirate par une fausse route Internet",
-      "title_en": "Over 1,000 Bitcoin miners were tricked into working for a thief by a fake internet route",
+      "date": "2026-11-26",
+      "impact": "med",
+      "source": "CoinDesk",
       "summary": "Selon un rapport de Braiins, un attaquant a utilisé de fausses annonces de routage (BGP) pour rediriger le travail de minage et empocher les récompenses; le 20 novembre, plus de 1 000 sites, surtout en Europe, ont perdu leur connexion en une seconde, l'attaque atteignant jusqu'à 1,9 EH/s. CoinDesk estime les revenus touchés à moins de 17 000 $, mais l'incident relance les craintes sur la sécurité du protocole Stratum V1, alors que le bitcoin se négocie près de 59 000 $.",
       "summary_en": "According to a Braiins report, an attacker used fake routing announcements (BGP) to redirect mining work and collect the rewards; on Nov. 20 more than 1,000 sites, mostly in Europe, lost their connection in one second, with the attack reaching up to 1.9 EH/s. CoinDesk estimates affected revenue at under $17,000, but the incident revives security concerns about the Stratum V1 protocol, with bitcoin trading near $59,000.",
+      "time": "01:19",
+      "title": "Plus de 1 000 sites de minage de bitcoin détournés au profit d'un pirate par une fausse route Internet",
+      "title_en": "Over 1,000 Bitcoin miners were tricked into working for a thief by a fake internet route",
       "url": "https://www.coindesk.com/markets/2026/11/26/hackers-hijacked-1-000-plus-bitcoin-mines-in-one-second-by-faking-internet-routes"
     },
     {
-      "date": "2026-11-26",
-      "time": "01:02",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Nvidia cesse d'expédier des serveurs d'IA vers quatre pays d'Asie du Sud-Est (FT)",
-      "title_en": "Nvidia stops shipping AI servers to 4 Southeast Asian countries - FT",
+      "date": "2026-11-26",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Selon le Financial Times, Nvidia a demandé à ses partenaires comme Dell et Supermicro de bloquer les livraisons de serveurs d'IA vers la Malaisie, Singapour, la Thaïlande et l'Indonésie, sur fond de contrôles américains à l'exportation plus stricts. La région servait de porte dérobée aux développeurs chinois via des contrats infonuagiques; le département du Commerce donne maintenant 90 jours aux fournisseurs asiatiques pour prouver que leurs services n'atteignent pas d'entités visées. Une nouvelle pression sur Nvidia et les semi-conducteurs, poids lourds du Nasdaq.",
       "summary_en": "According to the Financial Times, Nvidia told partners such as Dell and Supermicro to halt AI server shipments to Malaysia, Singapore, Thailand and Indonesia amid tighter U.S. export controls. The region had served as a loophole for Chinese developers via cloud contracts; the Commerce Department now gives Asian cloud providers 90 days to prove their services do not reach restricted entities. Fresh pressure on Nvidia and chipmakers, Nasdaq heavyweights.",
+      "time": "01:02",
+      "title": "Nvidia cesse d'expédier des serveurs d'IA vers quatre pays d'Asie du Sud-Est (FT)",
+      "title_en": "Nvidia stops shipping AI servers to 4 Southeast Asian countries - FT",
       "url": "https://ca.investing.com/news/stock-market-news/nvidia-stops-shipping-ai-servers-to-4-southeast-asian-countries-ft-4982115"
     },
     {
-      "date": "2026-11-25",
-      "time": "23:46",
-      "source": "CoinDesk",
-      "impact": "med",
       "assets": [
         "btcusd"
       ],
-      "title": "Le projet de loi visant à bloquer pendant 20 ans les bitcoins détenus par le gouvernement américain passe à la Chambre plénière",
-      "title_en": "Bill to lock up U.S. government bitcoin for 20 years advances to full House",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "CoinDesk",
       "summary": "Le projet de loi sur une réserve stratégique de bitcoins, qui interdirait au gouvernement américain de vendre ses bitcoins pendant 20 ans, a franchi l'étape du comité et sera soumis à l'ensemble de la Chambre des représentants. Une telle mesure retirerait durablement une offre potentielle du marché, un thème suivi de près par le marché crypto.",
       "summary_en": "The strategic bitcoin reserve bill, which would bar the U.S. government from selling its bitcoin for 20 years, has cleared committee and now goes to the full House of Representatives. Such a measure would durably remove potential supply from the market, a theme closely watched by the crypto market.",
+      "time": "23:46",
+      "title": "Le projet de loi visant à bloquer pendant 20 ans les bitcoins détenus par le gouvernement américain passe à la Chambre plénière",
+      "title_en": "Bill to lock up U.S. government bitcoin for 20 years advances to full House",
       "url": "https://www.coindesk.com/policy/2026/11/26/strategic-bitcoin-reserve-bill-to-lock-up-u-s-government-held-bitcoin-for-20-years-goes-to-full-house"
     },
     {
-      "date": "2026-11-25",
-      "time": "22:24",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "Exclusif : des entreprises liées à Alice Huang ont inscrit pour 270 M$ de serveurs d'IA en Chine, selon des registres",
-      "title_en": "Exclusive: Alice Huang-linked firms listed $270 million in AI servers in China, records show",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Selon des registres consultés par Reuters, des entreprises liées à Alice Huang ont inscrit pour environ 270 millions de dollars de serveurs d'intelligence artificielle en Chine. Cette révélation s'ajoute à la controverse sur la gouvernance de Nvidia et le respect des restrictions d'exportation de puces, un risque qui pèse sur le titre et sur le Nasdaq.",
       "summary_en": "According to records reviewed by Reuters, firms linked to Alice Huang listed about $270 million worth of AI servers in China. The report adds to the controversy over Nvidia's governance and compliance with chip export curbs, a risk weighing on the stock and the Nasdaq.",
+      "time": "22:24",
+      "title": "Exclusif : des entreprises liées à Alice Huang ont inscrit pour 270 M$ de serveurs d'IA en Chine, selon des registres",
+      "title_en": "Exclusive: Alice Huang-linked firms listed $270 million in AI servers in China, records show",
       "url": "https://www.investing.com/news/stock-market-news/exclusivealice-huanglinked-firms-listed-270-million-in-ai-servers-in-china-records-show-5049792"
     },
     {
-      "date": "2026-11-25",
-      "time": "22:20",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "xauusd",
         "usd"
       ],
-      "title": "L'or recule alors que les données d'inflation américaines renforcent les paris d'une hausse de taux de la Fed",
-      "title_en": "Gold eases as U.S. inflation data reinforces Fed rate-hike bets",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "L'or cède du terrain en séance asiatique, les dernières données d'inflation aux États-Unis confortant les attentes d'une hausse de taux de la Réserve fédérale. Une Fed plus restrictive pèse sur le métal jaune, qui ne verse pas d'intérêt, et tend à soutenir le dollar.",
       "summary_en": "Gold slips in Asian trading as the latest U.S. inflation data reinforces expectations of a Federal Reserve rate hike. A more hawkish Fed weighs on the non-yielding metal and tends to support the dollar.",
+      "time": "22:20",
+      "title": "L'or recule alors que les données d'inflation américaines renforcent les paris d'une hausse de taux de la Fed",
+      "title_en": "Gold eases as U.S. inflation data reinforces Fed rate-hike bets",
       "url": "https://www.investing.com/news/commodities-news/gold-eases-as-us-inflation-data-reinforces-fed-ratehike-bets-5051964"
     },
     {
-      "date": "2026-11-25",
-      "time": "22:12",
-      "source": "Investing.com (Reuters)",
-      "impact": "med",
       "assets": [
         "usoil"
       ],
-      "title": "Le pétrole monte sur des craintes d'approvisionnement, l'Iran affirmant avoir frappé des navires avec des mines",
-      "title_en": "Oil rises on supply concerns as Iran claims mine strikes on ships",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "Investing.com (Reuters)",
       "summary": "Les cours du pétrole progressent après que l'Iran a revendiqué des frappes de mines contre des navires, ravivant les craintes pour l'approvisionnement. Ces attaques maritimes s'ajoutent aux tensions autour du détroit d'Ormuz qui soutiennent le brut depuis plusieurs séances.",
       "summary_en": "Oil prices rise after Iran claimed mine strikes on ships, reviving supply concerns. The maritime attacks add to tensions around the Strait of Hormuz that have supported crude in recent sessions.",
+      "time": "22:12",
+      "title": "Le pétrole monte sur des craintes d'approvisionnement, l'Iran affirmant avoir frappé des navires avec des mines",
+      "title_en": "Oil rises on supply concerns as Iran claims mine strikes on ships",
       "url": "https://www.investing.com/news/commodities-news/oil-rises-on-supply-concerns-as-iran-claims-mine-strikes-on-ships-5051949"
     },
     {
-      "date": "2026-11-25",
-      "time": "21:52",
-      "source": "Investing.com",
-      "impact": "med",
       "assets": [
         "nasdaq",
         "spx500"
       ],
-      "title": "L'administration Trump a envisagé une loi de la guerre froide pour réintégrer Jensen Huang chez Nvidia, selon le Washington Post",
-      "title_en": "Trump admin weighed using Cold War law to reinstate Nvidia CEO Huang, WaPo reports",
+      "date": "2026-11-25",
+      "impact": "med",
+      "source": "Investing.com",
       "summary": "Selon le Washington Post, l'administration Trump a envisagé de recourir à une loi datant de la guerre froide pour réintégrer Jensen Huang à la tête de Nvidia. Cette révélation s'ajoute aux inquiétudes sur la gouvernance de Nvidia, poids lourd du Nasdaq et du S&P 500.",
       "summary_en": "According to the Washington Post, the Trump administration weighed using a Cold War-era law to reinstate Jensen Huang as Nvidia's CEO. The report adds to governance concerns at Nvidia, a heavyweight in the Nasdaq and S&P 500.",
+      "time": "21:52",
+      "title": "L'administration Trump a envisagé une loi de la guerre froide pour réintégrer Jensen Huang chez Nvidia, selon le Washington Post",
+      "title_en": "Trump admin weighed using Cold War law to reinstate Nvidia CEO Huang, WaPo reports",
       "url": "https://www.investing.com/news/stock-market-news/trump-admin-weighed-using-cold-war-law-to-reinstate-nvidia-ceo-huang-wapo-reports-5051938"
     },
     {
@@ -2249,37 +2285,6 @@
       "title": "Deere prévoit un bénéfice net 2027 inférieur aux attentes en raison d'une demande morose pour la machinerie agricole",
       "title_en": "Deere forecasts fiscal 2027 net income below estimates amid muted farm equipment demand",
       "url": "https://www.investing.com/news/stock-market-news/deere-forecasts-fiscal-2027-net-income-below-estimates-5050370"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "Les actions américaines de semi-conducteurs poursuivent leur recul en préouverture, alors que les inquiétudes entourant les dépenses en intelligence artificielle reviennent au premier plan. Cette pression sur le secteur des puces pèse sur le Nasdaq et le S&P 500 avant la séance.",
-      "summary_en": "U.S. semiconductor stocks keep falling in premarket trading as worries about artificial intelligence spending return to the fore. The pressure on chipmakers weighs on the Nasdaq and the S&P 500 ahead of the session.",
-      "time": "05:19",
-      "title": "Les titres américains de semi-conducteurs prolongent leurs pertes avant l'ouverture, les craintes sur les dépenses en IA refont surface",
-      "title_en": "U.S. chip stocks extend losses premarket as AI spending concerns resurface",
-      "url": "https://www.investing.com/news/stock-market-news/us-chip-stocks-extend-losses-premarket-as-ai-spending-concerns-resurface-5050161"
-    },
-    {
-      "assets": [
-        "gbpusd",
-        "eurusd",
-        "usd"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "La livre perd 0,40 % face au dollar à 1,3062 $ et l'euro cède 0,24 % à 1,0939 $, un repli généralisé des positions risquées, mené par les devises émergentes, ramenant les investisseurs vers le billet vert. Selon HSBC, les marchés anticipent une hausse de taux de la Fed en décembre, et l'indice PCE de base d'octobre est attendu aujourd'hui (ING prévoit +0,3 % sur un mois).",
-      "summary_en": "Sterling fell 0.40% against the dollar to $1.3062 and the euro slipped 0.24% to $1.0939 as a broad unwind of risk trades, led by emerging-market currencies, sent investors back to the greenback. Markets are pricing a December Fed hike, according to HSBC, and October core PCE is due today, with ING expecting a 0.3% monthly rise.",
-      "time": "04:48",
-      "title": "La livre sterling recule alors que le dénouement des positions risquées ramène les capitaux vers le dollar",
-      "title_en": "Sterling today: Pound falls as risk unwind sends funds back to dollar",
-      "url": "https://ca.investing.com/news/forex-news/sterling-today-pound-falls-as-risk-unwind-sends-funds-back-to-dollar-4980264"
     }
   ],
   "live": {
