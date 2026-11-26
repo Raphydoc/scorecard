@@ -985,6 +985,13 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 .cmpdot{width:9px;height:9px;border-radius:50%;flex:none}
 .cmpempty{padding:40px 10px;text-align:center;color:var(--muted)}
 @media (max-width:640px){ .apick.cmpg{flex-direction:column!important} .cmpr{margin-left:0} }
+
+/* « Mon choix » : chaque actif choisi prend la couleur de sa ligne; les autres restent gris */
+.apick.cmpg .apgt{color:var(--muted)!important}
+.apick.cmpg .apb.cmpb{opacity:1;background:var(--panel-2);border-color:var(--line);color:var(--muted)} .apick.cmpg .apb.cmpb b{color:var(--muted)}
+.apick.cmpg .apb.cmpb:hover{border-color:var(--fg)} .apick.cmpg .apb.cmpb:hover b{color:var(--fg)}
+.apick.cmpg .apb.cmpb.on{border-color:var(--lc)!important;background:color-mix(in srgb,var(--lc) 18%,var(--panel-2))!important;box-shadow:none!important}
+.apick.cmpg .apb.cmpb.on b{color:var(--lc)} .apick.cmpg .apb.cmpb.on .cmpdot{background:var(--lc)}
 /* test du score sur le passé */
 .panel.bt{margin-top:14px}
 .btwarn{margin:0 14px 12px;padding:9px 12px;border-left:3px solid var(--gold);background:var(--panel-2);font-size:12.5px;line-height:1.5;color:var(--muted)} .btwarn b{color:var(--fg)}
@@ -4108,8 +4115,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     return `<div class="cmpk"><div class="cmpk1"><span class="cmpt">${L('Choisis jusqu’à '+CMP_MAX+' actifs à comparer','Pick up to '+CMP_MAX+' assets to compare')}</span>
         <div class="seg cmpr">${R.map(([n,t])=>`<button type="button" data-cr="${n}" aria-pressed="${n===cur}">${t}</button>`).join('')}</div>
         <button type="button" class="cmpclr" data-cmpclr="1">${L('Tout décocher','Clear all')}</button></div>
-      <div class="apick cmpg">${CMP_GR.map(([c,t,ks])=>`<div class="apg c${c}"><span class="apgt">${L(t[0],t[1])}</span><div class="apgl">${ks.filter(k=>TOP_NAMES[k]).map(k=>{ const i = sel.indexOf(k);
-        return `<button type="button" class="apb c${c} ${i>=0?'on':''}" data-cmp="${k}" aria-pressed="${i>=0}">${i>=0?`<i class="cmpdot" style="background:${SCOL[i % SCOL.length]}"></i>`:''}<b>${esc(TOP_NAMES[k])}</b></button>`; }).join('')}</div></div>`).join('')}</div></div>`;
+      <div class="apick cmpg">${CMP_GR.map(([c,t,ks])=>`<div class="apg"><span class="apgt">${L(t[0],t[1])}</span><div class="apgl">${ks.filter(k=>TOP_NAMES[k]).map(k=>{ const i = sel.indexOf(k);
+        return `<button type="button" class="apb cmpb ${i>=0?'on':''}" data-cmp="${k}" aria-pressed="${i>=0}"${i>=0?` style="--lc:${SCOL[i % SCOL.length]}"`:''}>${i>=0?`<i class="cmpdot"></i>`:''}<b>${esc(TOP_NAMES[k])}</b></button>`; }).join('')}</div></div>`).join('')}</div></div>`;
   }
   async function renderChartsTS(){
     const box = $('p2charts'); if(!box) return;
