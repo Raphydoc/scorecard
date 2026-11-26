@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T12:48:11Z",
+  "updatedAt": "2026-11-26T13:15:39Z",
   "econ": {
     "values": {
       "adp": {
@@ -37499,7 +37499,7 @@
     ]
   },
   "why": {
-    "asOf": "2026-11-26T12:15:33Z",
+    "asOf": "2026-11-26T13:15:39Z",
     "summary": {
       "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort (DAX +1,7 %), soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux montent, le pétrole aussi avec les mines iraniennes près d'Ormuz, alors qu'une hausse de taux de la Fed en décembre est presque certaine.",
       "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly (DAX +1.7%), relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals climb, and so does oil on Iranian mine strikes near Hormuz, while a December Fed hike looks almost certain.",
@@ -37539,7 +37539,7 @@
         ]
       },
       "spx500": {
-        "move": "−0,3 %",
+        "move": "−0,2 %",
         "fr": "Wall Street est fermée aujourd'hui (Action de grâce); le chiffre est celui de la séance de mercredi. Le S&P 500 a fini légèrement en baisse après avoir effacé une forte chute causée par l'IA et les tarifs. Ce matin, les contrats à terme montent : les marchés mondiaux saluent la résilience de l'économie américaine et les tarifs proposés semblent moins durs que prévu.",
         "en": "Wall Street is closed today (Thanksgiving); the figure is Wednesday's session. The S&P 500 closed slightly lower after erasing a steep AI- and tariff-driven drop. This morning futures are higher as global markets welcome U.S. economic resilience and the proposed tariffs look less damaging than feared.",
         "src": [
@@ -37618,7 +37618,7 @@
         ]
       },
       "xauusd": {
-        "move": "+0,8 %",
+        "move": "+0,9 %",
         "fr": "L'or monte dans un marché mince (congé américain) : la chute des taux obligataires dans le monde réduit l'avantage du dollar. La hausse reste limitée, car l'inflation tenace rend une hausse de taux de la Fed en décembre presque certaine.",
         "en": "Gold rises in thin holiday trading: the global drop in bond yields erodes the dollar's yield advantage. Gains stay limited as sticky inflation makes a December Fed hike almost certain.",
         "src": [
@@ -37637,7 +37637,7 @@
         ]
       },
       "xagusd": {
-        "move": "+2,9 %",
+        "move": "+3,3 %",
         "fr": "L'argent suit l'or et grimpe plus fort que lui, avec le platine et le palladium aussi en hausse, dans un marché aux volumes réduits par le congé américain.",
         "en": "Silver tracks gold and climbs more sharply, with platinum and palladium also higher, in holiday-thinned trading.",
         "src": [
@@ -37648,7 +37648,7 @@
         ]
       },
       "usoil": {
-        "move": "+0,8 %",
+        "move": "+1,5 %",
         "fr": "Le pétrole monte encore : l'Iran affirme avoir frappé des navires avec des mines, ce qui ravive les craintes pour l'approvisionnement autour du détroit d'Ormuz. Le Brent s'est maintenu au-dessus de 90 $.",
         "en": "Oil keeps rising: Iran claims mine strikes on ships, reviving supply fears around the Strait of Hormuz. Brent held above $90.",
         "src": [
@@ -37663,7 +37663,7 @@
         ]
       },
       "btcusd": {
-        "move": "+0,6 %",
+        "move": "+0,7 %",
         "fr": "Le bitcoin bouge peu pendant l'Action de grâce, autour de 60 000 $. Les traders restent prudents avant l'échéance de 7 G$ d'options vendredi (protection concentrée sous 60 000 $), et la fermeture de la firme Auros n'aide pas le sentiment.",
         "en": "Bitcoin is little changed over Thanksgiving, near $60,000. Traders stay defensive ahead of Friday's $7B options expiry (protection clustered below $60,000), and the wind-down of trading firm Auros doesn't help sentiment.",
         "src": [
@@ -37682,7 +37682,7 @@
         ]
       },
       "usd": {
-        "move": "+0,1 %",
+        "move": "0,0 %",
         "fr": "Le dollar reste dans une fourchette étroite avec le congé américain. La pause de la remontée des obligations lui donne un petit appui, et la Fed devrait hausser ses taux de 0,25 point le 9 décembre.",
         "en": "The dollar holds a tight range on the U.S. holiday. A pause in the bond rally gives it slight support, with the Fed expected to hike 25 bp on Dec. 9.",
         "src": [
