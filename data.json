@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T16:47:14Z",
+ "updatedAt": "2026-11-26T17:10:43Z",
  "econ": {
   "values": {
    "adp": {
@@ -34736,7 +34736,7 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-26T07:10:10Z",
+  "asOf": "2026-11-26T17:10:43Z",
   "bankcalls": [
    {
     "bank": "Bank of America",
@@ -35854,37 +35854,74 @@
   "recaps": [
    {
     "date": "2026-11-26",
-    "session": "tok",
-    "title": "L’Asie rebondit avec les puces : le Taiex gagne 2,6 %, la Banque de Corée relève son taux à 3,25 %",
-    "title_en": "Asia rebounds on chips: Taiex gains 2.6%, Bank of Korea lifts its rate to 3.25%",
-    "body": "Après huit séances de baisse, l’indice MSCI Asie-Pacifique a gagné 1,3 % dans une séance mince, Wall Street étant fermée pour l’Action de grâce : le Taiex a pris 2,6 %, le Hang Seng 1,9 %, le Nikkei 1,7 % et le Kospi 1,6 %, portés par Kioxia (+12,4 %) et SK Hynix (+3,1 %), malgré la mise sous surveillance négative de la note de Nvidia par S&P (Investing.com, d’après Reuters). La Banque de Corée a relevé son taux directeur de 25 points de base à 3,25 %, son plus haut depuis octobre 2024. Les nouveaux tarifs américains visant 14 partenaires ne s’ajouteraient pas à ceux de juillet et n’entreraient pas en vigueur avant février ou mars, ce qui a rassuré. Le dollar est resté stable (indice +0,08 % sur la séance), le yen près de 159,14 par dollar, alors que l’or a gagné 0,47 % et le pétrole 0,49 %.",
-    "body_en": "After eight straight losing sessions, the MSCI Asia-Pacific index gained 1.3% in thin trade with Wall Street closed for Thanksgiving: the Taiex rose 2.6%, the Hang Seng 1.9%, the Nikkei 1.7% and the Kospi 1.6%, lifted by Kioxia (+12.4%) and SK Hynix (+3.1%), despite S&P placing Nvidia’s rating on negative watch (Investing.com, citing Reuters). The Bank of Korea raised its policy rate by 25 basis points to 3.25%, its highest since October 2024. The new U.S. tariffs on 14 partners would not stack on July’s duties and are not expected before February or March, which reassured investors. The dollar held steady (index +0.08% over the session), with the yen near 159.14 per dollar, while gold gained 0.47% and oil 0.49%.",
+    "session": "lon",
+    "title": "L’Europe s’envole de près de 2 % sur des tarifs américains jugés bénins; l’or recule sous 3 570 $",
+    "title_en": "Europe surges nearly 2% as U.S. tariffs look benign; gold slips below $3,570",
+    "body": "Dans une séance amincie par l’Action de grâce, les Bourses européennes ont bondi : le STOXX 600 gagnait 1,66 % en après-midi, le DAX 1,91 % et le FTSE MIB 2,2 %, les nouveaux tarifs visant 14 partenaires des États-Unis ne devant pas s’ajouter à ceux de juillet ni entrer en vigueur avant février ou mars (Investing.com, d’après Reuters). Les comptes rendus de la réunion d’octobre de la BCE, jugés restrictifs, ont été publiés, et les contrats à terme donnaient environ 90 % de chances d’une hausse de 25 points de base en décembre. L’or a reculé d’environ 0,5 % vers 3 570 $, pesé par l’attente d’une nouvelle hausse de la Fed le 9 décembre (Kitco, Reuters), tandis que le Brent a reflué vers 93,8 $ après son bond de 3,5 % de la veille. Le dollar a peu bougé : l’USD/CAD a pris 0,17 % et l’USD/JPY 0,07 % vers 159,28.",
+    "body_en": "In a session thinned by Thanksgiving, European stocks surged: the STOXX 600 was up 1.66% in the afternoon, the DAX 1.91% and the FTSE MIB 2.2%, as the new U.S. tariffs on 14 partners are not set to stack on July’s duties or take effect before February or March (Investing.com, citing Reuters). Hawkish accounts of the ECB’s October meeting were released, with futures pricing about a 90% chance of a 25-basis-point hike in December. Gold fell about 0.5% to around $3,570, weighed by expectations of another Fed hike on December 9 (Kitco, Reuters), while Brent eased to about $93.8 after jumping 3.5% the day before. The dollar barely moved: USD/CAD rose 0.17% and USD/JPY 0.07% to 159.28.",
     "sections": {
      "indices": {
-      "fr": "Le Taiex (+2,6 %), le Hang Seng (+1,9 %), le Nikkei (+1,7 %) et le Kospi (+1,6 %) ont mené le rebond, l’ASX 200 a gagné 0,9 % et Shanghai est resté stable; les contrats sur le Nasdaq 100 ont pris 1,1 % (Investing.com, d’après Reuters).",
-      "en": "The Taiex (+2.6%), Hang Seng (+1.9%), Nikkei (+1.7%) and Kospi (+1.6%) led the rebound, the ASX 200 gained 0.9% and Shanghai was flat; Nasdaq 100 futures rose 1.1% (Investing.com, citing Reuters)."
+      "fr": "Le STOXX 600 (+1,66 %), le DAX (+1,91 %), le CAC 40 (+1,63 %), le FTSE 100 (+1,6 %) et le FTSE MIB (+2,2 %) ont rebondi en après-midi, Babcock gagnant 6 % grâce à un contrat de 8 G£ du gouvernement britannique et Siemens Energy 5 %; Wall Street est fermée (Investing.com, d’après Reuters).",
+      "en": "The STOXX 600 (+1.66%), DAX (+1.91%), CAC 40 (+1.63%), FTSE 100 (+1.6%) and FTSE MIB (+2.2%) rebounded in the afternoon, with Babcock up 6% on an £8bn UK government contract and Siemens Energy up 5%; Wall Street is closed (Investing.com, citing Reuters)."
      },
      "metals": {
-      "fr": "L’or a gagné 0,47 % sur la séance vers 3 620 $ et l’argent 0,96 % vers 42,08 $, mais l’or reste en baisse de près de 8 % depuis le début du mois (Reuters).",
-      "en": "Gold gained 0.47% over the session to about $3,620 and silver 0.96% to about $42.08, but gold is still down almost 8% month to date (Reuters)."
+      "fr": "L’or au comptant a cédé environ 0,5 % vers 3 570 $ (creux de séance 3 551 $) sur les craintes d’une hausse de la Fed, l’argent est resté stable vers 41,30 $ et le platine a gagné 1,3 %; TD Securities juge trop tôt pour parler de creux (Kitco, Reuters).",
+      "en": "Spot gold fell about 0.5% to around $3,570 (session low $3,551) on Fed hike fears, silver held steady near $41.30 and platinum gained 1.3%; TD Securities said it is too early to call a bottom (Kitco, Reuters)."
      },
      "forex": {
-      "fr": "Le dollar est resté stable (indice +0,08 %) : l’EUR/USD a cédé 0,05 % vers 1,0967, l’USD/JPY 0,04 % vers 159,14, le seuil de 160 étant vu comme une zone d’intervention, et l’USD/CAD a gagné 0,07 % vers 1,4225.",
-      "en": "The dollar held steady (index +0.08%): EUR/USD slipped 0.05% to about 1.0967, USD/JPY 0.04% to 159.14, with 160 seen as an intervention zone, and USD/CAD gained 0.07% to about 1.4225."
+      "fr": "Le dollar est resté stable : l’EUR/USD a fini quasi inchangé (−0,01 %) vers 1,0976, l’USD/JPY a gagné 0,07 % vers 159,28 et l’USD/CAD 0,17 % vers 1,4246, alors que le NZD/USD a cédé 0,19 %.",
+      "en": "The dollar held steady: EUR/USD finished nearly unchanged (−0.01%) at about 1.0976, USD/JPY rose 0.07% to 159.28 and USD/CAD 0.17% to 1.4246, while NZD/USD slipped 0.19%."
      },
      "crypto": {
-      "fr": "Le bitcoin a peu bougé, en hausse de 0,17 % vers 60 454 $.",
-      "en": "Bitcoin barely moved, up 0.17% to about $60,454."
+      "fr": "Le bitcoin a peu bougé, en baisse de 0,07 % vers 60 407 $.",
+      "en": "Bitcoin barely moved, down 0.07% to about $60,407."
      },
      "energy": {
-      "fr": "Le pétrole a gagné 0,49 % vers 84,42 $ (WTI), soutenu par l’attaque revendiquée par les Houthis contre la plus grande raffinerie saoudienne; le Brent se tenait près de 94,8 $ (Reuters).",
-      "en": "Oil gained 0.49% to about $84.42 (WTI), supported by the Houthis’ claimed attack on Saudi Arabia’s largest refinery; Brent held near $94.8 (Reuters)."
+      "fr": "Le Brent a reculé de 0,87 % vers 93,79 $ et le WTI de 0,42 % vers 83,33 $ (Reuters, 11 h GMT) après le rallye de près de 6 % en deux séances lié à l’attaque des Houthis contre Ras Tanura; l’OPEP+ se réunit le 29 novembre.",
+      "en": "Brent fell 0.87% to $93.79 and WTI 0.42% to $83.33 (Reuters, 11:00 GMT) after a nearly 6% two-session rally tied to the Houthi attack on Ras Tanura; OPEC+ meets on November 29."
      }
     },
     "sources": [
+     "https://ca.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-4982222",
+     "https://www.kitco.com/news/article/2026-11-26/gold-slips-silver-steadies-fed-rate-hike-expectations-persist-holiday",
+     "https://www.kitco.com/news/off-the-wire/2026-11-26/gold-drifts-lower-fed-rate-hike-fears-loom",
+     "https://www.rte.ie/news/business/2026/1126/1600746-world-oil-prices/",
+     "https://www.thenationalnews.com/business/energy/2026/11/26/oil-rebounds-to-95-per-barrel-after-saudi-refinery-attack/"
+    ]
+   },
+   {
+    "body": "Après huit séances de baisse, l’indice MSCI Asie-Pacifique a gagné 1,3 % dans une séance mince, Wall Street étant fermée pour l’Action de grâce : le Taiex a pris 2,6 %, le Hang Seng 1,9 %, le Nikkei 1,7 % et le Kospi 1,6 %, portés par Kioxia (+12,4 %) et SK Hynix (+3,1 %), malgré la mise sous surveillance négative de la note de Nvidia par S&P (Investing.com, d’après Reuters). La Banque de Corée a relevé son taux directeur de 25 points de base à 3,25 %, son plus haut depuis octobre 2024. Les nouveaux tarifs américains visant 14 partenaires ne s’ajouteraient pas à ceux de juillet et n’entreraient pas en vigueur avant février ou mars, ce qui a rassuré. Le dollar est resté stable (indice +0,08 % sur la séance), le yen près de 159,14 par dollar, alors que l’or a gagné 0,47 % et le pétrole 0,49 %.",
+    "body_en": "After eight straight losing sessions, the MSCI Asia-Pacific index gained 1.3% in thin trade with Wall Street closed for Thanksgiving: the Taiex rose 2.6%, the Hang Seng 1.9%, the Nikkei 1.7% and the Kospi 1.6%, lifted by Kioxia (+12.4%) and SK Hynix (+3.1%), despite S&P placing Nvidia’s rating on negative watch (Investing.com, citing Reuters). The Bank of Korea raised its policy rate by 25 basis points to 3.25%, its highest since October 2024. The new U.S. tariffs on 14 partners would not stack on July’s duties and are not expected before February or March, which reassured investors. The dollar held steady (index +0.08% over the session), with the yen near 159.14 per dollar, while gold gained 0.47% and oil 0.49%.",
+    "date": "2026-11-26",
+    "sections": {
+     "crypto": {
+      "en": "Bitcoin barely moved, up 0.17% to about $60,454.",
+      "fr": "Le bitcoin a peu bougé, en hausse de 0,17 % vers 60 454 $."
+     },
+     "energy": {
+      "en": "Oil gained 0.49% to about $84.42 (WTI), supported by the Houthis’ claimed attack on Saudi Arabia’s largest refinery; Brent held near $94.8 (Reuters).",
+      "fr": "Le pétrole a gagné 0,49 % vers 84,42 $ (WTI), soutenu par l’attaque revendiquée par les Houthis contre la plus grande raffinerie saoudienne; le Brent se tenait près de 94,8 $ (Reuters)."
+     },
+     "forex": {
+      "en": "The dollar held steady (index +0.08%): EUR/USD slipped 0.05% to about 1.0967, USD/JPY 0.04% to 159.14, with 160 seen as an intervention zone, and USD/CAD gained 0.07% to about 1.4225.",
+      "fr": "Le dollar est resté stable (indice +0,08 %) : l’EUR/USD a cédé 0,05 % vers 1,0967, l’USD/JPY 0,04 % vers 159,14, le seuil de 160 étant vu comme une zone d’intervention, et l’USD/CAD a gagné 0,07 % vers 1,4225."
+     },
+     "indices": {
+      "en": "The Taiex (+2.6%), Hang Seng (+1.9%), Nikkei (+1.7%) and Kospi (+1.6%) led the rebound, the ASX 200 gained 0.9% and Shanghai was flat; Nasdaq 100 futures rose 1.1% (Investing.com, citing Reuters).",
+      "fr": "Le Taiex (+2,6 %), le Hang Seng (+1,9 %), le Nikkei (+1,7 %) et le Kospi (+1,6 %) ont mené le rebond, l’ASX 200 a gagné 0,9 % et Shanghai est resté stable; les contrats sur le Nasdaq 100 ont pris 1,1 % (Investing.com, d’après Reuters)."
+     },
+     "metals": {
+      "en": "Gold gained 0.47% over the session to about $3,620 and silver 0.96% to about $42.08, but gold is still down almost 8% month to date (Reuters).",
+      "fr": "L’or a gagné 0,47 % sur la séance vers 3 620 $ et l’argent 0,96 % vers 42,08 $, mais l’or reste en baisse de près de 8 % depuis le début du mois (Reuters)."
+     }
+    },
+    "session": "tok",
+    "sources": [
      "https://in.investing.com/news/stock-market-news/asian-stocks-rally-as-taiwan-south-korea-rebound-nvidia-risks-linger-5726940",
      "https://www.business-standard.com/markets/news/asian-shares-bounce-as-ai-concerns-fresh-us-tariffs-lurk-in-background-126112600046_1.html"
-    ]
+    ],
+    "title": "L’Asie rebondit avec les puces : le Taiex gagne 2,6 %, la Banque de Corée relève son taux à 3,25 %",
+    "title_en": "Asia rebounds on chips: Taiex gains 2.6%, Bank of Korea lifts its rate to 3.25%"
    },
    {
     "body": "Après une ouverture en chute libre, plombée par la vente massive des puces, le PCE de base à 3,3 % (3,2 % attendu) et un nouveau tarif de 20 % visant la Chine, l’UE et 12 autres partenaires, Wall Street a remonté la pente : le Dow a fini en hausse de 0,33 % à 50 182,95, alors que le S&P 500 a cédé 0,25 % à 7 182,78 et le Nasdaq 0,62 % à 23 585,80 (Yahoo Finance). Les marchés prêtent 98 % de chances à une hausse de 25 points de base de la Fed en décembre, mais le taux 10 ans a reculé à 4,85 % et le dollar s’est replié. L’or a rebondi de 2,82 % sur la séance, l’argent de 4,65 %, le bitcoin de 3,75 % et le pétrole de 2,09 % après la revendication houthie d’une frappe sur Ras Tanura. Les marchés américains sont fermés jeudi pour l’Action de grâce et rouvrent vendredi pour une demi-séance.",
