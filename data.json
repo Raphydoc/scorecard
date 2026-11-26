@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T14:53:50Z",
+ "updatedAt": "2026-11-26T15:15:05Z",
  "econ": {
   "values": {
    "adp": {
@@ -37496,10 +37496,10 @@
   ]
  },
  "why": {
-  "asOf": "2026-11-26T14:14:30Z",
+  "asOf": "2026-11-26T15:15:05Z",
   "summary": {
-   "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort (DAX +1,7 %), soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux montent, le pétrole aussi avec les mines iraniennes près d'Ormuz, alors qu'une hausse de taux de la Fed en décembre est presque certaine.",
-   "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly (DAX +1.7%), relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals climb, and so does oil on Iranian mine strikes near Hormuz, while a December Fed hike looks almost certain.",
+   "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort, soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux et le pétrole montent (nouvelles attaques à Ormuz), tandis que le bitcoin souffre de sorties record des FNB.",
+   "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly, relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals and oil climb (new Hormuz attacks), while bitcoin suffers record ETF outflows.",
    "src": [
     [
      "Investing.com : les Bourses européennes montent",
@@ -37510,8 +37510,8 @@
      "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories"
     ],
     [
-     "Reuters : l'Iran affirme avoir miné des navires",
-     "https://www.investing.com/news/commodities-news/oil-rises-on-supply-concerns-as-iran-claims-mine-strikes-on-ships-5051949"
+     "Investing.com : nouvelles attaques à Ormuz",
+     "https://www.investing.com/news/commodities-news/oil-steadies-as-hormuz-attacks-threaten-supply-recovery-inventory-build-weighs-5051937"
     ]
    ]
   },
@@ -37615,7 +37615,7 @@
     ]
    },
    "xauusd": {
-    "move": "+0,9 %",
+    "move": "+1,1 %",
     "fr": "L'or monte dans un marché mince (congé américain) : la chute des taux obligataires dans le monde réduit l'avantage du dollar. La hausse reste limitée, car l'inflation tenace rend une hausse de taux de la Fed en décembre presque certaine.",
     "en": "Gold rises in thin holiday trading: the global drop in bond yields erodes the dollar's yield advantage. Gains stay limited as sticky inflation makes a December Fed hike almost certain.",
     "src": [
@@ -37634,8 +37634,8 @@
     ]
    },
    "xagusd": {
-    "move": "+2,5 %",
-    "fr": "L'argent suit l'or et grimpe plus fort que lui, avec le platine et le palladium aussi en hausse, dans un marché aux volumes réduits par le congé américain.",
+    "move": "+3,4 %",
+    "fr": "L'argent suit l'or et grimpe beaucoup plus fort que lui, avec le platine et le palladium aussi en hausse, dans un marché aux volumes réduits par le congé américain.",
     "en": "Silver tracks gold and climbs more sharply, with platinum and palladium also higher, in holiday-thinned trading.",
     "src": [
      [
@@ -37645,41 +37645,41 @@
     ]
    },
    "usoil": {
-    "move": "+1,0 %",
-    "fr": "Le pétrole monte encore : l'Iran affirme avoir frappé des navires avec des mines, ce qui ravive les craintes pour l'approvisionnement autour du détroit d'Ormuz. Le Brent s'est maintenu au-dessus de 90 $.",
-    "en": "Oil keeps rising: Iran claims mine strikes on ships, reviving supply fears around the Strait of Hormuz. Brent held above $90.",
+    "move": "+1,1 %",
+    "fr": "Le pétrole monte encore : trois autres navires ont été touchés par des projectiles dans le détroit d'Ormuz, où le passage tourne à environ la moitié de la normale. La hausse est freinée par une 3e hausse d'affilée des stocks américains de brut, avant la réunion de l'OPEP+ dimanche.",
+    "en": "Oil keeps rising: three more ships were hit by projectiles in the Strait of Hormuz, where traffic runs at about half of normal. Gains are capped by a third straight weekly build in U.S. crude stocks, ahead of Sunday's OPEC+ meeting.",
     "src": [
+     [
+      "Investing.com : les attaques à Ormuz menacent l'offre",
+      "https://www.investing.com/news/commodities-news/oil-steadies-as-hormuz-attacks-threaten-supply-recovery-inventory-build-weighs-5051937"
+     ],
      [
       "Reuters : l'Iran affirme avoir miné des navires",
       "https://www.investing.com/news/commodities-news/oil-rises-on-supply-concerns-as-iran-claims-mine-strikes-on-ships-5051949"
-     ],
-     [
-      "Investing.com : le Brent au-dessus de 90 $",
-      "https://www.investing.com/news/commodities-news/oil-mixed-as-hormuz-attacks-mount-supply-surplus-and-weak-fuel-margins-weigh-5049487"
      ]
     ]
    },
    "btcusd": {
-    "move": "+0,9 %",
-    "fr": "Le bitcoin bouge peu pendant l'Action de grâce, autour de 60 000 $. Les traders restent prudents avant l'échéance de 7 G$ d'options vendredi (protection concentrée sous 60 000 $), et la fermeture de la firme Auros n'aide pas le sentiment.",
-    "en": "Bitcoin is little changed over Thanksgiving, near $60,000. Traders stay defensive ahead of Friday's $7B options expiry (protection clustered below $60,000), and the wind-down of trading firm Auros doesn't help sentiment.",
+    "move": "−0,2 %",
+    "fr": "Le bitcoin glisse légèrement autour de 60 000 $ : les FNB bitcoin américains vivent leurs pires sorties mensuelles de l'histoire (5,4 G$ en novembre), et la brèche de sécurité chez Zodia Custody (Standard Chartered) plus la fermeture d'Auros minent la confiance avant l'échéance de 7 G$ d'options vendredi.",
+    "en": "Bitcoin slips slightly near $60,000: U.S. bitcoin ETFs are on track for their worst monthly outflows ever ($5.4B in November), and a security breach at Zodia Custody (Standard Chartered) plus Auros winding down hurt sentiment ahead of Friday's $7B options expiry.",
     "src": [
      [
-      "CoinDesk : bitcoin peu changé pendant l'Action de grâce",
-      "https://www.coindesk.com/markets/2026/11/26/bitcoin-little-changed-defi-tokens-lead-the-bounce-as-u-s-marks-thanksgiving"
+      "CoinDesk : sorties record des FNB bitcoin",
+      "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help"
      ],
      [
-      "CoinDesk : 7 G$ d'options bitcoin échoient vendredi",
+      "Investing.com : brèche chez Zodia Custody",
+      "https://www.investing.com/news/stock-market-news/exclusivestancharts-crypto-unit-zodia-custody-hit-by-security-breach-some-client-data-exposed-5052481"
+     ],
+     [
+      "CoinDesk : 7 G$ d'options échoient vendredi",
       "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october"
-     ],
-     [
-      "CoinDesk : la firme crypto Auros ferme",
-      "https://www.coindesk.com/markets/2026/11/26/major-crypto-trading-firm-auros-is-winding-down-operations-sources"
      ]
     ]
    },
    "usd": {
-    "move": "−0,1 %",
+    "move": "0,0 %",
     "fr": "Le dollar reste dans une fourchette étroite avec le congé américain. La pause de la remontée des obligations lui donne un petit appui, et la Fed devrait hausser ses taux de 0,25 point le 9 décembre.",
     "en": "The dollar holds a tight range on the U.S. holiday. A pause in the bond rally gives it slight support, with the Fed expected to hike 25 bp on Dec. 9.",
     "src": [
@@ -37694,16 +37694,16 @@
     ]
    },
    "eurusd": {
-    "move": "+0,1 %",
-    "fr": "L'euro est presque inchangé : les marchés voient une hausse de taux en décembre autant à la BCE (90 %) qu'à la Fed (98 %), donc aucun des deux côtés ne prend l'avantage.",
-    "en": "The euro is nearly flat: markets price a December hike at both the ECB (90%) and the Fed (98%), so neither side gains an edge.",
+    "move": "0,0 %",
+    "fr": "L'euro bouge à peine : l'Espagnol Pablo Hernández de Cos s'en va à la tête de la BCE, une nomination attendue. Comme les marchés voient une hausse de taux en décembre autant à la BCE qu'à la Fed, aucun côté ne prend l'avantage.",
+    "en": "The euro barely moves: Spain's Pablo Hernández de Cos is set to lead the ECB, a widely expected pick. With markets pricing a December hike at both the ECB and the Fed, neither side gains the edge.",
     "src": [
      [
-      "Investing.com : les Bourses européennes montent",
-      "https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089"
+      "Investing.com : De Cos en voie de diriger la BCE",
+      "https://www.investing.com/news/economy-news/instant-view-spains-de-cos-set-to-be-nominated-by-eu-leaders-as-next-ecb-chief-5052548"
      ],
      [
-      "Investing.com : la Fed devrait hausser en décembre",
+      "Investing.com : la Fed haussera en décembre",
       "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104"
      ]
     ]
