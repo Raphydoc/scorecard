@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T19:47:31Z",
+  "updatedAt": "2026-11-26T20:15:13Z",
   "econ": {
     "values": {
       "adp": {
@@ -37603,7 +37603,7 @@
     ]
   },
   "why": {
-    "asOf": "2026-11-26T19:15:20Z",
+    "asOf": "2026-11-26T20:15:13Z",
     "summary": {
       "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort, soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux et le pétrole montent (nouvelles attaques à Ormuz), et le bitcoin remonte un peu malgré des sorties record des FNB.",
       "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly, relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals and oil climb (new Hormuz attacks), and bitcoin edges up despite record ETF outflows.",
@@ -37722,7 +37722,7 @@
         ]
       },
       "xauusd": {
-        "move": "+0,9 %",
+        "move": "+0,8 %",
         "fr": "L'or monte dans un marché mince (congé américain) : la chute des taux obligataires dans le monde réduit l'avantage du dollar. La hausse reste limitée, car l'inflation tenace rend une hausse de taux de la Fed en décembre presque certaine.",
         "en": "Gold rises in thin holiday trading: the global drop in bond yields erodes the dollar's yield advantage. Gains stay limited as sticky inflation makes a December Fed hike almost certain.",
         "src": [
@@ -37741,7 +37741,7 @@
         ]
       },
       "xagusd": {
-        "move": "+3,1 %",
+        "move": "+3,0 %",
         "fr": "L'argent suit l'or et grimpe beaucoup plus fort que lui, avec le platine et le palladium aussi en hausse, dans un marché aux volumes réduits par le congé américain.",
         "en": "Silver tracks gold and climbs more sharply, with platinum and palladium also higher, in holiday-thinned trading.",
         "src": [
@@ -37752,7 +37752,7 @@
         ]
       },
       "usoil": {
-        "move": "+1,6 %",
+        "move": "+1,5 %",
         "fr": "Le pétrole monte encore : trois autres navires ont été touchés par des projectiles dans le détroit d'Ormuz, où le passage tourne à environ la moitié de la normale. La hausse est freinée par une 3e hausse d'affilée des stocks américains de brut, avant la réunion de l'OPEP+ dimanche.",
         "en": "Oil is still climbing: three more ships were hit by projectiles in the Strait of Hormuz, where traffic runs at about half of normal. Gains are capped by a third straight weekly build in U.S. crude stocks, ahead of Sunday's OPEC+ meeting.",
         "src": [
@@ -37767,9 +37767,9 @@
         ]
       },
       "btcusd": {
-        "move": "+0,2 %",
-        "fr": "Le bitcoin remonte un peu, autour de 60 500 $, dans un marché tranquille (congé américain), porté par un rebond des jetons DeFi. Mais la hausse reste mince : les FNB bitcoin américains vivent leurs pires sorties mensuelles de l'histoire (5,4 G$ en novembre), et la brèche chez Zodia Custody (Standard Chartered) plus la fermeture d'Auros pèsent sur la confiance avant l'échéance de 7 G$ d'options vendredi.",
-        "en": "Bitcoin edges up to around $60,500 in quiet holiday trading, helped by a bounce in DeFi tokens. Gains stay thin: U.S. bitcoin ETFs are on track for their worst monthly outflows ever ($5.4B in November), and a breach at Zodia Custody (Standard Chartered) plus Auros winding down weigh on sentiment ahead of Friday's $7B options expiry.",
+        "move": "+0,5 %",
+        "fr": "Le bitcoin remonte un peu, autour de 60 600 $, dans un marché tranquille (congé américain), porté par un rebond des jetons DeFi. Mais la hausse reste mince : les FNB bitcoin américains vivent leurs pires sorties mensuelles de l'histoire (5,4 G$ en novembre), et la brèche chez Zodia Custody (Standard Chartered) plus la fermeture d'Auros pèsent sur la confiance avant l'échéance de 7 G$ d'options vendredi.",
+        "en": "Bitcoin edges up to around $60,600 in quiet holiday trading, helped by a bounce in DeFi tokens. Gains stay thin: U.S. bitcoin ETFs are on track for their worst monthly outflows ever ($5.4B in November), and a breach at Zodia Custody (Standard Chartered) plus Auros winding down weigh on sentiment ahead of Friday's $7B options expiry.",
         "src": [
           [
             "CoinDesk : bitcoin stable, la DeFi rebondit",
@@ -37786,7 +37786,7 @@
         ]
       },
       "usd": {
-        "move": "+0,1 %",
+        "move": "+0,05 %",
         "fr": "Le dollar reste dans une fourchette étroite avec le congé américain. La pause de la remontée des obligations lui donne un petit appui, et la Fed devrait hausser ses taux de 0,25 point le 9 décembre.",
         "en": "The dollar holds a tight range on the U.S. holiday. A pause in the bond rally gives it slight support, with the Fed expected to hike 25 bp on Dec. 9.",
         "src": [
@@ -37801,13 +37801,17 @@
         ]
       },
       "eurusd": {
-        "move": "−0,1 %",
-        "fr": "L'euro bouge à peine : l'Espagnol Pablo Hernández de Cos s'en va à la tête de la BCE, une nomination attendue. Comme les marchés voient une hausse de taux en décembre autant à la BCE qu'à la Fed, aucun côté ne prend l'avantage.",
-        "en": "The euro barely moves: Spain's Pablo Hernández de Cos is set to lead the ECB, a widely expected pick. With markets pricing a December hike at both the ECB and the Fed, neither side gains the edge.",
+        "move": "−0,04 %",
+        "fr": "L'euro bouge à peine sous 1,10 $ : les procès-verbaux de la BCE montrent un appétit pour d'autres hausses de taux et l'Espagnol Pablo Hernández de Cos s'en va à la tête de la BCE, mais comme une hausse en décembre est aussi attendue à la Fed, aucune devise ne prend l'avantage.",
+        "en": "The euro barely moves below $1.10: ECB minutes show appetite for further hikes and Spain's Pablo Hernández de Cos is set to lead the ECB, but with a December hike also expected from the Fed, neither currency gains the upper hand.",
         "src": [
           [
             "Investing.com : De Cos en voie de diriger la BCE",
             "https://www.investing.com/news/economy-news/instant-view-spains-de-cos-set-to-be-nominated-by-eu-leaders-as-next-ecb-chief-5052548"
+          ],
+          [
+            "FXStreet : les procès-verbaux de la BCE penchent vers d'autres hausses",
+            "https://www.fxstreet.com/news/euro-ticks-higher-as-ecb-minutes-reveal-appetite-for-further-tightening-202611261440"
           ],
           [
             "Investing.com : la Fed haussera en décembre",
@@ -37816,7 +37820,7 @@
         ]
       },
       "gbpusd": {
-        "move": "−0,1 %",
+        "move": "−0,04 %",
         "fr": "La livre est stable face au dollar : sans Wall Street, les volumes sont faibles et le dollar reste dans sa fourchette.",
         "en": "Sterling is steady against the dollar: with Wall Street shut, volumes are thin and the dollar stays in its range.",
         "src": [
@@ -37842,7 +37846,7 @@
         ]
       },
       "usdjpy": {
-        "move": "+0,1 %",
+        "move": "+0,07 %",
         "fr": "Le dollar-yen bouge peu, près de 159,2, dans un marché mince : la pause de la remontée mondiale des obligations donne un léger appui au dollar.",
         "en": "USD/JPY is little changed near 159.2 in thin trading: a pause in the global bond rally gives the dollar slight support.",
         "src": [
@@ -37853,7 +37857,7 @@
         ]
       },
       "usdcad": {
-        "move": "+0,3 %",
+        "move": "+0,2 %",
         "fr": "Le huard recule un peu malgré la hausse du pétrole : les marchés pèsent une hausse de taux de la Fed en décembre contre celle de la Banque du Canada. Le gouverneur Tiff Macklem a dit que l'inflation pourrait finir l'année sous la prévision de la BdC, tout en avertissant que l'effet retardé des hausses d'énergie reste une menace.",
         "en": "The loonie slips despite firmer oil as markets weigh a December Fed hike against the Bank of Canada's path. Governor Tiff Macklem said inflation could end the year below the BoC's forecast, while warning the delayed pass-through of past energy spikes remains a threat.",
         "src": [
@@ -37875,6 +37879,17 @@
           [
             "FXStreet : le dollar néo-zélandais peine à prolonger sa reprise",
             "https://fxstreet.de.com/news/neuseelandischer-dollar-hat-muhe-die-erholung-gegenuber-dem-us-dollar-uber-0-5490-hinaus-auszuweiten-202611260315"
+          ]
+        ]
+      },
+      "audusd": {
+        "move": "+0,1 %",
+        "fr": "L'aussie bouge à peine dans un marché mince (congé américain) : les investisseurs mettent dans la balance une Fed qui devrait hausser ses taux en décembre et les attentes envers la Banque de réserve d'Australie, ce qui l'empêche de prendre une direction.",
+        "en": "The Aussie barely moves in thin holiday trade: investors weigh a Fed expected to hike in December against expectations for the Reserve Bank of Australia, leaving it without direction.",
+        "src": [
+          [
+            "FXStreet : l'aussie coincé entre Fed et RBA",
+            "https://www.fxstreet.com/news/australian-dollar-treads-water-as-thanksgiving-keeps-markets-quiet-202611261641"
           ]
         ]
       }
