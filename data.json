@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T18:47:40Z",
+  "updatedAt": "2026-11-26T19:15:20Z",
   "econ": {
     "values": {
       "adp": {
@@ -37533,7 +37533,7 @@
     ]
   },
   "why": {
-    "asOf": "2026-11-26T18:14:45Z",
+    "asOf": "2026-11-26T19:15:20Z",
     "summary": {
       "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort, soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux et le pétrole montent (nouvelles attaques à Ormuz), et le bitcoin remonte un peu malgré des sorties record des FNB.",
       "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly, relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals and oil climb (new Hormuz attacks), and bitcoin edges up despite record ETF outflows.",
@@ -37682,7 +37682,7 @@
         ]
       },
       "usoil": {
-        "move": "+1,3 %",
+        "move": "+1,6 %",
         "fr": "Le pétrole monte encore : trois autres navires ont été touchés par des projectiles dans le détroit d'Ormuz, où le passage tourne à environ la moitié de la normale. La hausse est freinée par une 3e hausse d'affilée des stocks américains de brut, avant la réunion de l'OPEP+ dimanche.",
         "en": "Oil is still climbing: three more ships were hit by projectiles in the Strait of Hormuz, where traffic runs at about half of normal. Gains are capped by a third straight weekly build in U.S. crude stocks, ahead of Sunday's OPEC+ meeting.",
         "src": [
@@ -37779,6 +37779,32 @@
           [
             "Investing.com : la Fed devrait hausser en décembre",
             "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104"
+          ]
+        ]
+      },
+      "usdcad": {
+        "move": "+0,3 %",
+        "fr": "Le huard recule un peu malgré la hausse du pétrole : les marchés pèsent une hausse de taux de la Fed en décembre contre celle de la Banque du Canada. Le gouverneur Tiff Macklem a dit que l'inflation pourrait finir l'année sous la prévision de la BdC, tout en avertissant que l'effet retardé des hausses d'énergie reste une menace.",
+        "en": "The loonie slips despite firmer oil as markets weigh a December Fed hike against the Bank of Canada's path. Governor Tiff Macklem said inflation could end the year below the BoC's forecast, while warning the delayed pass-through of past energy spikes remains a threat.",
+        "src": [
+          [
+            "FXStreet : le dollar canadien recule, Fed et BdC en vue",
+            "https://www.fxstreet.com/news/canadian-dollar-weakens-as-markets-weigh-fed-and-boc-rate-hike-prospects-202611261732"
+          ],
+          [
+            "Investing.com : le TSX et l'avertissement de Macklem",
+            "https://www.investing.com/news/stock-market-news/canadas-tsx-futures-flat-in-holidaythinned-trade--and-macklems-warning-5052325"
+          ]
+        ]
+      },
+      "nzdusd": {
+        "move": "−0,3 %",
+        "fr": "Le kiwi perd son élan sous 0,5490 : l'inflation PCE de base américaine, plus forte que prévu (3,3 %), renforce les paris d'une hausse de la Fed en décembre, ce qui favorise le dollar. L'attente d'une hausse de la RBNZ en décembre n'offre qu'un faible appui.",
+        "en": "The kiwi loses steam below 0.5490: hotter-than-expected U.S. core PCE (3.3%) strengthens bets on a December Fed hike, favoring the dollar. Expectations of a December RBNZ hike offer only limited support.",
+        "src": [
+          [
+            "FXStreet : le dollar néo-zélandais peine à prolonger sa reprise",
+            "https://fxstreet.de.com/news/neuseelandischer-dollar-hat-muhe-die-erholung-gegenuber-dem-us-dollar-uber-0-5490-hinaus-auszuweiten-202611260315"
           ]
         ]
       }
