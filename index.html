@@ -4113,6 +4113,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
   async function renderChartsTS(){
     const box = $('p2charts'); if(!box) return;
+    // plein écran : on remet le graphique à sa place avant de redessiner la page, puis on le rouvre en plein écran après
+    { const fm = document.querySelector('.chmain.chfs'); if(fm){ fm.classList.remove('chfs'); const ph = document.getElementById('chfsPh'); if(ph) ph.replaceWith(fm); else fm.remove(); document.body.classList.remove('chfs-open'); state._reFs = 1; }
+      document.querySelectorAll('.chcell.chfs').forEach(x=>{ x.classList.remove('chfs'); const ph = document.getElementById('chfsPh'); if(ph) ph.replaceWith(x); else x.remove(); document.body.classList.remove('chfs-open'); }); }
     const M = await withStr(await mkData()); if(state.page!=='charts') return;
     if(!M || !M.strength){ tsWait(box, L('Les données des graphiques arrivent à la prochaine mise à jour (toutes les heures).','Chart data arrives with the next hourly update.')); return; }
     const p = state.chP; if(p==='my'){ await ohlcData(); if(state.page!=='charts') return; }
@@ -4154,6 +4157,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       if(i>=0) sel.splice(i,1); else { if(sel.length >= CMP_MAX) sel.shift(); sel.push(k); } saveCmp(); renderChartsTS(); }));
     box.querySelectorAll('[data-cmpclr]').forEach(b=>b.addEventListener('click', ()=>{ state.cmpSel = []; saveCmp(); state.cmpSel = null; try{ localStorage.setItem('sc-cmp','[]'); }catch(e){} state.cmpSel = []; renderChartsTS(); }));
     box.querySelectorAll('[data-cr]').forEach(b=>b.addEventListener('click', ()=>{ const tf = CHP.my.tf.includes(state.chTF) ? state.chTF : 'h1'; state.cmpR = Object.assign({}, state.cmpR, {[tf]:+b.dataset.cr}); renderChartsTS(); }));
+    if(state._reFs){ state._reFs = 0; const fb = box.querySelector('[data-fs="main"]'); if(fb) fb.click(); }
     if(!D){ if(p==='my'){ const cv = box.querySelector('.chcanvas'); if(cv) cv.innerHTML = `<p class="cmpempty">${L('Choisis au moins un actif ci-dessus.','Pick at least one asset above.')}</p>`; } return; }
     if(!(await needChart()) || state.page!=='charts') return;
     const labels = D.t.map(s=>fmtT(s, D.tf));
