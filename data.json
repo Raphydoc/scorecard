@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T15:43:04Z",
+  "updatedAt": "2026-11-26T16:14:34Z",
   "econ": {
     "values": {
       "adp": {
@@ -37496,10 +37496,10 @@
     ]
   },
   "why": {
-    "asOf": "2026-11-26T15:15:05Z",
+    "asOf": "2026-11-26T16:14:34Z",
     "summary": {
-      "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort, soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux et le pétrole montent (nouvelles attaques à Ormuz), tandis que le bitcoin souffre de sorties record des FNB.",
-      "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly, relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals and oil climb (new Hormuz attacks), while bitcoin suffers record ETF outflows.",
+      "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort, soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux et le pétrole montent (nouvelles attaques à Ormuz), et le bitcoin remonte un peu malgré des sorties record des FNB.",
+      "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly, relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals and oil climb (new Hormuz attacks), and bitcoin edges up despite record ETF outflows.",
       "src": [
         [
           "Investing.com : les Bourses européennes montent",
@@ -37615,7 +37615,7 @@
         ]
       },
       "xauusd": {
-        "move": "+1,1 %",
+        "move": "+1,0 %",
         "fr": "L'or monte dans un marché mince (congé américain) : la chute des taux obligataires dans le monde réduit l'avantage du dollar. La hausse reste limitée, car l'inflation tenace rend une hausse de taux de la Fed en décembre presque certaine.",
         "en": "Gold rises in thin holiday trading: the global drop in bond yields erodes the dollar's yield advantage. Gains stay limited as sticky inflation makes a December Fed hike almost certain.",
         "src": [
@@ -37634,7 +37634,7 @@
         ]
       },
       "xagusd": {
-        "move": "+3,4 %",
+        "move": "+3,1 %",
         "fr": "L'argent suit l'or et grimpe beaucoup plus fort que lui, avec le platine et le palladium aussi en hausse, dans un marché aux volumes réduits par le congé américain.",
         "en": "Silver tracks gold and climbs more sharply, with platinum and palladium also higher, in holiday-thinned trading.",
         "src": [
@@ -37645,7 +37645,7 @@
         ]
       },
       "usoil": {
-        "move": "+1,1 %",
+        "move": "+1,7 %",
         "fr": "Le pétrole monte encore : trois autres navires ont été touchés par des projectiles dans le détroit d'Ormuz, où le passage tourne à environ la moitié de la normale. La hausse est freinée par une 3e hausse d'affilée des stocks américains de brut, avant la réunion de l'OPEP+ dimanche.",
         "en": "Oil keeps rising: three more ships were hit by projectiles in the Strait of Hormuz, where traffic runs at about half of normal. Gains are capped by a third straight weekly build in U.S. crude stocks, ahead of Sunday's OPEC+ meeting.",
         "src": [
@@ -37660,26 +37660,26 @@
         ]
       },
       "btcusd": {
-        "move": "−0,2 %",
-        "fr": "Le bitcoin glisse légèrement autour de 60 000 $ : les FNB bitcoin américains vivent leurs pires sorties mensuelles de l'histoire (5,4 G$ en novembre), et la brèche de sécurité chez Zodia Custody (Standard Chartered) plus la fermeture d'Auros minent la confiance avant l'échéance de 7 G$ d'options vendredi.",
-        "en": "Bitcoin slips slightly near $60,000: U.S. bitcoin ETFs are on track for their worst monthly outflows ever ($5.4B in November), and a security breach at Zodia Custody (Standard Chartered) plus Auros winding down hurt sentiment ahead of Friday's $7B options expiry.",
+        "move": "+0,5 %",
+        "fr": "Le bitcoin remonte un peu, autour de 60 600 $, dans un marché tranquille (congé américain), porté par un rebond des jetons DeFi. Mais la hausse reste mince : les FNB bitcoin américains vivent leurs pires sorties mensuelles de l'histoire (5,4 G$ en novembre), et la brèche chez Zodia Custody (Standard Chartered) plus la fermeture d'Auros pèsent sur la confiance avant l'échéance de 7 G$ d'options vendredi.",
+        "en": "Bitcoin edges up to around $60,600 in quiet holiday trading, helped by a bounce in DeFi tokens. Gains stay thin: U.S. bitcoin ETFs are on track for their worst monthly outflows ever ($5.4B in November), and a breach at Zodia Custody (Standard Chartered) plus Auros winding down weigh on sentiment ahead of Friday's $7B options expiry.",
         "src": [
           [
-            "CoinDesk : sorties record des FNB bitcoin",
+            "CoinDesk : bitcoin stable, la DeFi rebondit",
+            "https://www.coindesk.com/markets/2026/11/26/bitcoin-little-changed-defi-tokens-lead-the-bounce-as-u-s-marks-thanksgiving"
+          ],
+          [
+            "CoinDesk : les FNB bitcoin saignent",
             "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help"
           ],
           [
             "Investing.com : brèche chez Zodia Custody",
             "https://www.investing.com/news/stock-market-news/exclusivestancharts-crypto-unit-zodia-custody-hit-by-security-breach-some-client-data-exposed-5052481"
-          ],
-          [
-            "CoinDesk : 7 G$ d'options échoient vendredi",
-            "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october"
           ]
         ]
       },
       "usd": {
-        "move": "0,0 %",
+        "move": "+0,1 %",
         "fr": "Le dollar reste dans une fourchette étroite avec le congé américain. La pause de la remontée des obligations lui donne un petit appui, et la Fed devrait hausser ses taux de 0,25 point le 9 décembre.",
         "en": "The dollar holds a tight range on the U.S. holiday. A pause in the bond rally gives it slight support, with the Fed expected to hike 25 bp on Dec. 9.",
         "src": [
@@ -37724,7 +37724,7 @@
         ]
       },
       "usdchf": {
-        "move": "+0,3 %",
+        "move": "+0,4 %",
         "fr": "Le franc suisse recule contre toutes les devises (aussi face à l'euro) : le fort rebond des Bourses européennes, soulagées par des tarifs américains moins durs que prévu, réduit la demande pour les valeurs refuges.",
         "en": "The Swiss franc slips across the board (also against the euro): the strong rebound in European stocks, relieved by less damaging U.S. tariffs, cuts demand for safe havens.",
         "src": [
@@ -37735,7 +37735,7 @@
         ]
       },
       "usdjpy": {
-        "move": "0,0 %",
+        "move": "+0,1 %",
         "fr": "Le dollar-yen bouge peu, près de 159,2, dans un marché mince : la pause de la remontée mondiale des obligations donne un léger appui au dollar.",
         "en": "USD/JPY is little changed near 159.2 in thin trading: a pause in the global bond rally gives the dollar slight support.",
         "src": [
