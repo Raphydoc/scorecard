@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T11:48:15Z",
+  "updatedAt": "2026-11-26T12:15:33Z",
   "econ": {
     "values": {
       "adp": {
@@ -37509,83 +37509,87 @@
     ]
   },
   "why": {
-    "asOf": "2026-11-25T22:15:35Z",
+    "asOf": "2026-11-26T12:15:33Z",
     "summary": {
-      "fr": "Journée en V à Wall Street : la vente sur l'IA (Nvidia, puces) et les nouveaux tarifs proposés contre 14 partenaires ont fait plonger le Nasdaq de plus de 4 % en matinée, puis les achats à bas prix avant l'Action de grâce ont presque tout effacé. L'inflation PCE à 3,8 % rend une hausse de taux de la Fed en décembre très probable, mais la recherche de sécurité fait baisser les taux et le dollar, ce qui aide l'or; le pétrole grimpe avec les menaces des Houthis.",
-      "en": "A V-shaped day on Wall Street: the AI selloff (Nvidia, chips) and newly proposed tariffs on 14 partners sank the Nasdaq more than 4% in the morning, then dip buying ahead of Thanksgiving erased most of it. PCE inflation at 3.8% makes a December Fed hike very likely, but safe-haven buying pushed yields and the dollar lower, helping gold; oil climbed on Houthi threats.",
+      "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort (DAX +1,7 %), soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux montent, le pétrole aussi avec les mines iraniennes près d'Ormuz, alors qu'une hausse de taux de la Fed en décembre est presque certaine.",
+      "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly (DAX +1.7%), relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals climb, and so does oil on Iranian mine strikes near Hormuz, while a December Fed hike looks almost certain.",
       "src": [
         [
-          "AP : Wall Street efface une chute brutale",
-          "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
+          "Investing.com : les Bourses européennes montent",
+          "https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089"
         ],
         [
-          "CNBC : nouveaux tarifs sur 14 partenaires",
-          "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html"
+          "MarketWatch : les contrats à terme visent des gains vendredi",
+          "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories"
         ],
         [
-          "CNBC : l'inflation PCE grimpe à 3,8 %",
-          "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html"
+          "Reuters : l'Iran affirme avoir miné des navires",
+          "https://www.investing.com/news/commodities-news/oil-rises-on-supply-concerns-as-iran-claims-mine-strikes-on-ships-5051949"
         ]
       ]
     },
     "items": {
       "nasdaq": {
-        "move": "+2,9 %",
-        "fr": "Depuis son creux de l'ouverture (chute de plus de 4 %), le Nasdaq a repris presque tout le terrain : les acheteurs à rabais sont revenus avant le congé de l'Action de grâce. Il finit quand même en légère baisse, plombé par Nvidia (près de −4 %) et les puces, sur fond d'inquiétudes de gouvernance (S&P menace sa note).",
-        "en": "From its opening low (a 4%+ plunge), the Nasdaq recovered nearly all its losses as dip buyers returned ahead of the Thanksgiving holiday. It still closed slightly lower, weighed by Nvidia (down nearly 4%) and chipmakers amid governance worries (S&P put its rating on watch).",
+        "move": "−0,6 %",
+        "fr": "Wall Street est fermée aujourd'hui (Action de grâce); le chiffre est celui de la séance de mercredi. Le Nasdaq a fini en baisse, plombé par Nvidia et les puces, et ce matin une nouvelle du FT (Nvidia cesse d'envoyer des serveurs IA dans 4 pays d'Asie du Sud-Est) garde la pression sur la techno, même si les contrats à terme pointent vers des gains vendredi.",
+        "en": "Wall Street is closed today (Thanksgiving); the figure is Wednesday's session. The Nasdaq closed lower, weighed by Nvidia and chipmakers; this morning an FT report that Nvidia halted AI server shipments to 4 Southeast Asian countries keeps pressure on tech, even as futures point to gains on Friday.",
         "src": [
           [
             "AP : Wall Street efface une chute brutale",
             "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
           ],
           [
-            "Investing.com : S&P place Nvidia sous surveillance négative",
-            "https://www.investing.com/news/stock-market-news/sp-global-places-nvidia-rating-on-creditwatch-negative-on-rising-management-and-governance-risks-5051352"
+            "Investing.com (FT) : Nvidia cesse ses livraisons en Asie du Sud-Est",
+            "https://ca.investing.com/news/stock-market-news/nvidia-stops-shipping-ai-servers-to-4-southeast-asian-countries-ft-4982115"
+          ],
+          [
+            "MarketWatch : les contrats à terme visent des gains vendredi",
+            "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories"
           ]
         ]
       },
       "spx500": {
-        "move": "+2,1 %",
-        "fr": "Le S&P 500 a remonté fort depuis l'ouverture grâce aux achats à bas prix, après une matinée secouée par la vente sur l'IA, les nouveaux tarifs proposés et l'inflation PCE à 3,8 % qui rend une hausse de taux de la Fed en décembre très probable.",
-        "en": "The S&P 500 rallied hard from the open on dip buying, after a morning rocked by the AI selloff, newly proposed tariffs and PCE inflation at 3.8% that makes a December Fed hike very likely.",
+        "move": "−0,3 %",
+        "fr": "Wall Street est fermée aujourd'hui (Action de grâce); le chiffre est celui de la séance de mercredi. Le S&P 500 a fini légèrement en baisse après avoir effacé une forte chute causée par l'IA et les tarifs. Ce matin, les contrats à terme montent : les marchés mondiaux saluent la résilience de l'économie américaine et les tarifs proposés semblent moins durs que prévu.",
+        "en": "Wall Street is closed today (Thanksgiving); the figure is Wednesday's session. The S&P 500 closed slightly lower after erasing a steep AI- and tariff-driven drop. This morning futures are higher as global markets welcome U.S. economic resilience and the proposed tariffs look less damaging than feared.",
         "src": [
           [
             "AP : Wall Street efface une chute brutale",
             "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
           ],
           [
-            "CNBC : l'inflation PCE grimpe à 3,8 %",
-            "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html"
+            "MarketWatch : les contrats à terme visent des gains vendredi",
+            "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories"
           ],
           [
-            "CNBC : nouveaux tarifs sur 14 partenaires",
-            "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html"
+            "Investing.com : les Bourses européennes montent",
+            "https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089"
           ]
         ]
       },
       "us30": {
-        "move": "+1,9 %",
-        "fr": "Le Dow a effacé une chute de plus de 1 000 points en matinée : les investisseurs ont acheté des titres hors techno, et HP a bondi après ses résultats.",
-        "en": "The Dow erased a 1,000-point-plus morning drop as investors bought non-tech names, and HP jumped after its results.",
+        "move": "+0,3 %",
+        "fr": "Wall Street est fermée aujourd'hui (Action de grâce); le chiffre est celui de la séance de mercredi. Le Dow a fini en hausse grâce aux achats sur les titres hors techno. Les contrats à terme pointent vers une hausse pour la séance écourtée de vendredi.",
+        "en": "Wall Street is closed today (Thanksgiving); the figure is Wednesday's session. The Dow closed higher on buying in non-tech names. Futures point higher for Friday's shortened session.",
         "src": [
           [
             "AP : Wall Street efface une chute brutale",
             "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
           ],
           [
-            "Investing.com : Wall Street rebondit après une déroute",
-            "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
+            "MarketWatch : les contrats à terme visent des gains vendredi",
+            "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories"
           ]
         ]
       },
       "rut": {
-        "move": "+1,6 %",
-        "fr": "Les petites capitalisations profitent de la rotation hors des géants de la techno et de la baisse des taux obligataires, qui allège le coût d'emprunt des petites entreprises.",
-        "en": "Small caps benefited from the rotation out of mega-cap tech and from falling Treasury yields, which ease borrowing costs for smaller companies.",
+        "move": "+0,7 %",
+        "fr": "Wall Street est fermée aujourd'hui (Action de grâce); le chiffre est celui de la séance de mercredi. Les petites capitalisations ont profité de la rotation hors des géants de la techno et de la baisse des taux obligataires, qui allège le coût d'emprunt des petites entreprises.",
+        "en": "Wall Street is closed today (Thanksgiving); the figure is Wednesday's session. Small caps benefited from the rotation out of mega-cap tech and from falling Treasury yields, which ease borrowing costs for smaller companies.",
         "src": [
           [
-            "Investing.com : Wall Street rebondit après une déroute",
-            "https://www.investing.com/news/stock-market-news/wall-st-futures-fall-after-sp-500-nasdaq-end-lower-inflation-data-eyed-5049469"
+            "AP : Wall Street efface une chute brutale",
+            "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
           ],
           [
             "CNBC : le taux 10 ans recule malgré l'inflation",
@@ -37593,78 +37597,164 @@
           ]
         ]
       },
-      "usd": {
-        "move": "−0,1 %",
-        "fr": "Le dollar a fait demi-tour et finit un peu en baisse : malgré l'inflation chaude, les investisseurs achètent des obligations pour se protéger de la débâcle techno, ce qui fait baisser le taux 10 ans et enlève un appui au billet vert.",
-        "en": "The dollar reversed course and ended slightly lower: despite hot inflation, investors bought bonds for protection from the tech rout, pushing down the 10-year yield and removing support for the greenback.",
+      "sox": {
+        "move": "−0,7 %",
+        "fr": "Wall Street est fermée aujourd'hui (Action de grâce); le chiffre est celui de la séance de mercredi. Les puces ont reculé avec Nvidia. Nouvelles pressions ce matin : Nvidia arrête ses livraisons de serveurs IA vers la Malaisie, Singapour, la Thaïlande et l'Indonésie, et Reuters rapporte un resserrement américain contre l'accès de la Chine aux puces.",
+        "en": "Wall Street is closed today (Thanksgiving); the figure is Wednesday's session. Chip stocks fell with Nvidia. Fresh pressure this morning: Nvidia halted AI server shipments to Malaysia, Singapore, Thailand and Indonesia, and Reuters reports tighter U.S. curbs on China's access to chips.",
         "src": [
           [
-            "CNBC : le taux 10 ans recule malgré l'inflation",
-            "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
+            "Investing.com (FT) : Nvidia cesse ses livraisons en Asie du Sud-Est",
+            "https://ca.investing.com/news/stock-market-news/nvidia-stops-shipping-ai-servers-to-4-southeast-asian-countries-ft-4982115"
           ],
           [
-            "Investing.com : l'or monte, le dollar fait demi-tour",
+            "Reuters : restrictions américaines sur les puces",
+            "https://www.investing.com/news/stock-market-news/exclusiveus-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say-5052154"
+          ]
+        ]
+      },
+      "gdx": {
+        "move": "+3,5 %",
+        "fr": "Wall Street est fermée aujourd'hui (Action de grâce); le chiffre est celui de la séance de mercredi. Les minières d'or ont bondi avec la remontée de l'or, aidée par le recul du dollar et des taux obligataires. L'or continue de monter ce matin, ce qui reste favorable pour les minières.",
+        "en": "Wall Street is closed today (Thanksgiving); the figure is Wednesday's session. Gold miners jumped as gold rebounded, helped by a softer dollar and lower Treasury yields. Gold keeps rising this morning, still supportive for miners.",
+        "src": [
+          [
+            "Investing.com : l'or remonte, le dollar fait demi-tour",
             "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
+          ],
+          [
+            "Investing.com : le FTSE 100 monte, métaux en hausse",
+            "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-rise-as-tech-rebound-offsets-tariff-worries-5052207"
           ]
         ]
       },
       "xauusd": {
-        "move": "+1,7 %",
-        "fr": "L'or a touché son creux après des ventes de maisons neuves très fortes (+14,2 %), puis il a rebondi quand le dollar et les taux ont reculé. La hausse reste limitée par l'inflation chaude qui pousse la Fed vers une hausse de taux.",
-        "en": "Gold hit its low after a very strong new home sales print (+14.2%), then rebounded as the dollar and yields eased. Gains are capped by hot inflation pushing the Fed toward a rate hike.",
+        "move": "+0,8 %",
+        "fr": "L'or monte dans un marché mince (congé américain) : la chute des taux obligataires dans le monde réduit l'avantage du dollar. La hausse reste limitée, car l'inflation tenace rend une hausse de taux de la Fed en décembre presque certaine.",
+        "en": "Gold rises in thin holiday trading: the global drop in bond yields erodes the dollar's yield advantage. Gains stay limited as sticky inflation makes a December Fed hike almost certain.",
         "src": [
           [
-            "Investing.com : l'or monte, le dollar fait demi-tour",
-            "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
+            "Investing.com : le FTSE 100 monte, métaux en hausse",
+            "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-rise-as-tech-rebound-offsets-tariff-worries-5052207"
           ],
           [
-            "Kitco : l'or touche son creux de séance",
-            "https://www.kitco.com/news/article/2026-11-25/gold-price-falls-session-lows-us-new-home-sales-rise-142-october"
+            "Investing.com : la Fed devrait hausser en décembre",
+            "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104"
+          ],
+          [
+            "Investing.com : l'or au comptant glisse, le dollar se raffermit",
+            "https://www.investing.com/news/commodities-news/gold-eases-as-us-inflation-data-reinforces-fed-ratehike-bets-5051964"
           ]
         ]
       },
       "xagusd": {
-        "move": "+2,1 %",
-        "fr": "L'argent suit l'or : après un passage sous 41 $ en matinée, il remonte avec le recul du dollar et des taux obligataires.",
-        "en": "Silver tracked gold: after dipping below $41 in the morning, it climbed as the dollar and Treasury yields eased.",
+        "move": "+2,9 %",
+        "fr": "L'argent suit l'or et grimpe plus fort que lui, avec le platine et le palladium aussi en hausse, dans un marché aux volumes réduits par le congé américain.",
+        "en": "Silver tracks gold and climbs more sharply, with platinum and palladium also higher, in holiday-thinned trading.",
         "src": [
           [
-            "Investing.com : l'or monte, le dollar fait demi-tour",
-            "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
-          ],
-          [
-            "CNBC : le taux 10 ans recule malgré l'inflation",
-            "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
+            "Investing.com : le FTSE 100 monte, métaux en hausse",
+            "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-rise-as-tech-rebound-offsets-tariff-worries-5052207"
           ]
         ]
       },
       "usoil": {
-        "move": "+3,0 %",
-        "fr": "Le pétrole grimpe : la hausse des stocks américains (EIA, +1,1 M de barils) est plus faible que prévu et Cushing baisse, alors que les menaces des Houthis contre les ports saoudiens ajoutent une prime de risque.",
-        "en": "Oil jumped: the EIA's US crude build (+1.1M barrels) was smaller than expected and Cushing stocks fell, while Houthi threats against Saudi ports added a risk premium.",
+        "move": "+0,8 %",
+        "fr": "Le pétrole monte encore : l'Iran affirme avoir frappé des navires avec des mines, ce qui ravive les craintes pour l'approvisionnement autour du détroit d'Ormuz. Le Brent s'est maintenu au-dessus de 90 $.",
+        "en": "Oil keeps rising: Iran claims mine strikes on ships, reviving supply fears around the Strait of Hormuz. Brent held above $90.",
         "src": [
           [
-            "Investing.com : stocks de brut EIA +1,1 M de barils",
-            "https://www.investing.com/news/commodities-news/eia-says-us-crude-stocks-rise-11m-barrels-to-4189m-barrels-93CH-5051205"
+            "Reuters : l'Iran affirme avoir miné des navires",
+            "https://www.investing.com/news/commodities-news/oil-rises-on-supply-concerns-as-iran-claims-mine-strikes-on-ships-5051949"
           ],
           [
-            "Investing.com : les Houthis menacent les ports saoudiens",
-            "https://www.investing.com/news/stock-market-news/houthis-threaten-saudi-ports-amid-yemen-conflict-escalation-93CH-5049796"
+            "Investing.com : le Brent au-dessus de 90 $",
+            "https://www.investing.com/news/commodities-news/oil-mixed-as-hormuz-attacks-mount-supply-surplus-and-weak-fuel-margins-weigh-5049487"
           ]
         ]
       },
       "btcusd": {
-        "move": "+0,5 %",
-        "fr": "Le bitcoin est tombé vers 57 300 $ à l'ouverture de Wall Street, puis il est revenu autour de 60 000 $ avec le rebond des actions. Le moral reste fragile : Galaxy a retiré son appel de creux et les FNB bitcoin enchaînent les sorties.",
-        "en": "Bitcoin fell to about $57,300 at the Wall Street open, then returned to around $60,000 with the equity rebound. Sentiment stays fragile: Galaxy withdrew its bottom call and bitcoin ETFs keep seeing outflows.",
+        "move": "+0,6 %",
+        "fr": "Le bitcoin bouge peu pendant l'Action de grâce, autour de 60 000 $. Les traders restent prudents avant l'échéance de 7 G$ d'options vendredi (protection concentrée sous 60 000 $), et la fermeture de la firme Auros n'aide pas le sentiment.",
+        "en": "Bitcoin is little changed over Thanksgiving, near $60,000. Traders stay defensive ahead of Friday's $7B options expiry (protection clustered below $60,000), and the wind-down of trading firm Auros doesn't help sentiment.",
         "src": [
           [
-            "CoinDesk : les vétérans crypto s'attendent à plus de douleur",
-            "https://www.coindesk.com/markets/2026/11/25/this-time-actually-seems-different-crypto-veterans-brace-for-more-pain-as-bitcoin-tumbles"
+            "CoinDesk : bitcoin peu changé pendant l'Action de grâce",
+            "https://www.coindesk.com/markets/2026/11/26/bitcoin-little-changed-defi-tokens-lead-the-bounce-as-u-s-marks-thanksgiving"
           ],
           [
-            "CoinDesk : sorties des FNB bitcoin, 6e jour",
-            "https://www.coindesk.com/markets/2026/11/25/ether-defi-fall-twice-as-hard-as-bitcoin-as-equities-selloff-resumes"
+            "CoinDesk : 7 G$ d'options bitcoin échoient vendredi",
+            "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october"
+          ],
+          [
+            "CoinDesk : la firme crypto Auros ferme",
+            "https://www.coindesk.com/markets/2026/11/26/major-crypto-trading-firm-auros-is-winding-down-operations-sources"
+          ]
+        ]
+      },
+      "usd": {
+        "move": "+0,1 %",
+        "fr": "Le dollar reste dans une fourchette étroite avec le congé américain. La pause de la remontée des obligations lui donne un petit appui, et la Fed devrait hausser ses taux de 0,25 point le 9 décembre.",
+        "en": "The dollar holds a tight range on the U.S. holiday. A pause in the bond rally gives it slight support, with the Fed expected to hike 25 bp on Dec. 9.",
+        "src": [
+          [
+            "Investing.com : la livre stable, congé américain",
+            "https://www.investing.com/news/forex-news/sterling-today-pound-steady-as-dollar-holds-range-on-us-holiday-5052307"
+          ],
+          [
+            "Investing.com : la Fed devrait hausser en décembre",
+            "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104"
+          ]
+        ]
+      },
+      "eurusd": {
+        "move": "0,0 %",
+        "fr": "L'euro est presque inchangé : les marchés voient une hausse de taux en décembre autant à la BCE (90 %) qu'à la Fed (98 %), donc aucun des deux côtés ne prend l'avantage.",
+        "en": "The euro is nearly flat: markets price a December hike at both the ECB (90%) and the Fed (98%), so neither side gains an edge.",
+        "src": [
+          [
+            "Investing.com : les Bourses européennes montent",
+            "https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089"
+          ],
+          [
+            "Investing.com : la Fed devrait hausser en décembre",
+            "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104"
+          ]
+        ]
+      },
+      "gbpusd": {
+        "move": "−0,1 %",
+        "fr": "La livre est stable face au dollar : sans Wall Street, les volumes sont faibles et le dollar reste dans sa fourchette.",
+        "en": "Sterling is steady against the dollar: with Wall Street shut, volumes are thin and the dollar stays in its range.",
+        "src": [
+          [
+            "Investing.com : la livre stable, congé américain",
+            "https://www.investing.com/news/forex-news/sterling-today-pound-steady-as-dollar-holds-range-on-us-holiday-5052307"
+          ],
+          [
+            "Investing.com : le FTSE 100 monte, métaux en hausse",
+            "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-rise-as-tech-rebound-offsets-tariff-worries-5052207"
+          ]
+        ]
+      },
+      "usdchf": {
+        "move": "+0,4 %",
+        "fr": "Le franc suisse recule contre toutes les devises (aussi face à l'euro) : le fort rebond des Bourses européennes, soulagées par des tarifs américains moins durs que prévu, réduit la demande pour les valeurs refuges.",
+        "en": "The Swiss franc slips across the board (also against the euro): the strong rebound in European stocks, relieved by less damaging U.S. tariffs, cuts demand for safe havens.",
+        "src": [
+          [
+            "Investing.com : les Bourses européennes montent",
+            "https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089"
+          ]
+        ]
+      },
+      "usdjpy": {
+        "move": "+0,1 %",
+        "fr": "Le dollar-yen bouge peu, près de 159,2, dans un marché mince : la pause de la remontée mondiale des obligations donne un léger appui au dollar.",
+        "en": "USD/JPY is little changed near 159.2 in thin trading: a pause in the global bond rally gives the dollar slight support.",
+        "src": [
+          [
+            "Investing.com : la Fed devrait hausser en décembre",
+            "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104"
           ]
         ]
       }
