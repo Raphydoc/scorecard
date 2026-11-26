@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T17:14:46Z",
+ "updatedAt": "2026-11-26T17:48:34Z",
  "econ": {
   "values": {
    "adp": {
@@ -1650,6 +1650,36 @@
  "news": [
   {
    "date": "2026-11-26",
+   "time": "12:05",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "gbpusd",
+    "xauusd",
+    "usoil"
+   ],
+   "title": "Londres clôture en hausse de 1,88 %, sa meilleure séance en plus de six mois; Imperial Brands bondit de 13 %",
+   "title_en": "London closes up 1.88%, best day in over six months; Imperial Brands jumps 13%",
+   "summary": "L'indice Investing.com United Kingdom 100 a terminé en hausse de 1,88 %, porté par les minières, l'aérospatiale et la défense; Imperial Brands a gagné 13,27 % à 3 432 pence, un sommet de cinq ans, après l'intérêt d'Altria pour un rachat. Les titres en hausse ont devancé ceux en baisse par 1 247 contre 330. À la clôture de Londres, l'or de décembre gagnait 0,97 %, le WTI de janvier 1,05 % à 84,56 $ et la GBP/USD restait stable vers 1,31.",
+   "summary_en": "The Investing.com United Kingdom 100 closed up 1.88%, led by miners, aerospace and defense; Imperial Brands rose 13.27% to 3,432 pence, a five-year high, after Altria's takeover interest. Advancers outnumbered decliners 1,247 to 330. At the London close, December gold was up 0.97%, January WTI up 1.05% at $84.56 and GBP/USD steady near 1.31.",
+   "url": "https://www.investing.com/news/stock-market-news/uk-stocks-higher-at-close-of-trade-investingcom-united-kingdom-100-up-188-5052644"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "11:50",
+   "source": "CoinDesk",
+   "impact": "med",
+   "assets": [
+    "btcusd"
+   ],
+   "title": "Bitcoin : la part de l'offre dormante grimpe à 68,5 %, un comportement observé lors des creux de marchés baissiers passés",
+   "title_en": "Bitcoin's dormant supply rises to 68.5%, a behavior seen during previous bear-market bottoming phases",
+   "summary": "Selon Glassnode, la part des bitcoins en circulation qui n'ont pas bougé depuis au moins un an est passée à 68,5 %, contre 62 % en juillet. Le bitcoin tourne autour de 60 000 $, plus de 50 % sous son record d'environ 126 000 $ d'octobre 2025. Cette hausse rappelle les phases de creux des marchés baissiers précédents, mais ne donne guère d'indication sur le moment d'un rebond.",
+   "summary_en": "According to Glassnode, the share of circulating bitcoin unmoved for at least a year rose to 68.5% from 62% in July. Bitcoin trades around $60,000, more than 50% below its October 2025 record of about $126,000. The rise echoes previous bear-market bottoming phases but offers little guidance on timing.",
+   "url": "https://www.coindesk.com/markets/2026/11/26/bitcoin-s-dormant-supply-rises-a-behavior-seen-during-previous-bear-market-bottoming-phases"
+  },
+  {
+   "date": "2026-11-26",
    "time": "11:00",
    "source": "Investing.com",
    "impact": "med",
@@ -1871,23 +1901,6 @@
    "summary": "Les obligations souveraines marquent une pause après un rallye qui a amené le rendement du 10 ans américain à 4,864 % (plus bas depuis septembre) et celui du Bund allemand à 3,212 % (plus bas depuis août), ce qui réduit l'avantage de rendement du dollar. Le PCE de base d'octobre élevé et le PIB du 3e trimestre révisé à 4,3 % ont cimenté les attentes d'une hausse de 25 points de base de la Fed en décembre, l'hypothèse de 50 points s'étant évaporée. Les contrats à terme donnent aussi 90 % de chances à une hausse de 25 points de la BCE en décembre.",
    "summary_en": "Sovereign bonds paused after a rally took the U.S. 10-year yield to 4.864% (lowest since September) and the German Bund to 3.212% (lowest since August), eroding the dollar's yield advantage. Hot October core PCE and a Q3 GDP revision to 4.3% cemented expectations of a 25 bp Fed hike in December, with talk of a 50 bp move effectively gone. Futures also price a 90% chance of a 25 bp ECB hike in December.",
    "url": "https://www.investing.com/news/forex-news/global-bond-rally-eases-as-sticky-pce-locks-in-december-fed-hike-5052104"
-  },
-  {
-   "date": "2026-11-26",
-   "time": "03:20",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "xauusd",
-    "xagusd",
-    "usoil",
-    "gbpusd"
-   ],
-   "title": "FTSE 100 : la Bourse de Londres monte de 1,3 % grâce au rebond techno; l'argent bondit de 2,6 %",
-   "title_en": "FTSE 100 today: Stocks rise as tech rebound offsets tariff worries",
-   "summary": "Le FTSE 100 gagne 1,3 %, le DAX et le CAC 40 1,6 %, tandis que la livre recule de 0,07 % à 1,3108 $. Côté matières premières, l'or monte de 0,82 % à 3 564,80 $, l'argent de 2,56 % à 41,08 $ et le WTI de 0,67 % à 84,25 $. Le PCE de base américain (+3,3 % sur un an contre 3,2 % attendu) « scelle presque » une hausse de 25 points de base de la Fed le 9 décembre, selon ING.",
-   "summary_en": "The FTSE 100 rose 1.3% and the DAX and CAC 40 gained 1.6%, while sterling slipped 0.07% to $1.3108. Gold rose 0.82% to $3,564.80, silver 2.56% to $41.08 and WTI 0.67% to $84.25. U.S. core PCE at 3.3% y/y vs 3.2% expected 'all but seals' a 25 bp Fed hike on Dec. 9, according to ING.",
-   "url": "https://www.investing.com/news/stock-market-news/ftse-100-today-stocks-rise-as-tech-rebound-offsets-tariff-worries-5052207"
   },
   {
    "assets": [
@@ -2252,20 +2265,6 @@
    "title": "Analyse : des investisseurs épuisés par la volatilité, le chaos tarifaire s'ajoute à la douleur des technos",
    "title_en": "Analysis-Volatility-weary investors hammered as tariff mayhem adds to tech pain",
    "url": "https://www.investing.com/news/economy-news/analysisvolatilityweary-investors-hammered-as-tariff-mayhem-adds-to-tech-pain-5051297"
-  },
-  {
-   "assets": [
-    "btcusd"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "CoinDesk",
-   "summary": "Selon CoinDesk, le bitcoin demeure sous la barre des 60 000 $ et Galaxy revient sur son appel selon lequel le creux était atteint. Des vétérans de la crypto disent que « cette fois semble différente » et se préparent à d'autres pertes, dans un contexte de recul généralisé des actifs à risque.",
-   "summary_en": "According to CoinDesk, bitcoin remains below $60,000 and Galaxy has walked back its call that a bottom was in. Crypto veterans say 'this time actually seems different' and are bracing for more losses amid a broad risk-asset selloff.",
-   "time": "12:38",
-   "title": "Le bitcoin reste coincé sous 60 000 $; Galaxy retire son appel de creux et les haussiers perdent confiance",
-   "title_en": "Bitcoin price stuck below $60,000 as Galaxy takes back bottom call, crypto bulls lose faith",
-   "url": "https://www.coindesk.com/markets/2026/11/25/this-time-actually-seems-different-crypto-veterans-brace-for-more-pain-as-bitcoin-tumbles"
   }
  ],
  "live": {
