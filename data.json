@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T21:42:27Z",
+ "updatedAt": "2026-11-26T22:12:06Z",
  "econ": {
   "values": {
    "adp": {
@@ -34806,8 +34806,36 @@
   }
  },
  "ts": {
-  "asOf": "2026-11-26T17:10:43Z",
+  "asOf": "2026-11-26T22:12:06Z",
   "bankcalls": [
+   {
+    "bank": "TD Securities",
+    "cat": "cmd",
+    "market": "XAU/USD",
+    "market_en": "XAU/USD",
+    "dir": "long",
+    "target": "Vers 5 000 $ au S2 2027 (trop tôt pour un creux à court terme)",
+    "target_en": "Towards $5,000 in H2 2027 (too early to call a bottom near term)",
+    "horizon": "S2 2027",
+    "horizon_en": "H2 2027",
+    "date": "2026-11-26",
+    "src": "Reuters, via Kitco",
+    "url": "https://www.kitco.com/news/off-the-wire/2026-11-26/gold-drifts-lower-fed-rate-hike-fears-loom"
+   },
+   {
+    "bank": "Scotiabank",
+    "cat": "fx",
+    "market": "EUR/USD",
+    "market_en": "EUR/USD",
+    "dir": "long",
+    "target": "Rebond au-dessus de 1,11 (saisonnalité de décembre)",
+    "target_en": "Squeeze back above 1.11 (December seasonality)",
+    "horizon": "court terme (décembre)",
+    "horizon_en": "near term (December)",
+    "date": "2026-11-26",
+    "src": "FXStreet",
+    "url": "https://www.fxstreet.com/news/euro-seasonal-rebound-possible-against-us-dollar-scotiabank-202611261740"
+   },
    {
     "bank": "Bank of America",
     "cat": "idx",
@@ -35171,20 +35199,6 @@
     "target": "70 $ fin 2027 (moyenne 2027 : 78 $)",
     "target_en": "$70 end-2027 (2027 average: $78)",
     "url": "https://boereport.com/2026/11/15/goldman-sees-brent-easing-to-78-a-barrel-by-end-2027-as-markets-adapt/"
-   },
-   {
-    "bank": "TD Securities",
-    "cat": "cmd",
-    "date": "2026-11-10",
-    "dir": "range",
-    "horizon": "court terme",
-    "horizon_en": "near term",
-    "market": "XAU/USD",
-    "market_en": "XAU/USD",
-    "src": "Kitco",
-    "target": "Bas de la fourchette 3 900 – 4 200 $ (retest des 3 900 $)",
-    "target_en": "Bottom of the $3,900–$4,200 range (retest of $3,900)",
-    "url": "https://www.kitco.com/news/article/2026-11-11/gold-prices-fall-below-4000-analysts-warn-further-losses-toward-3900"
    },
    {
     "bank": "Standard Chartered",
@@ -35836,7 +35850,7 @@
     "cb": "Fed",
     "cc": "US",
     "ccy": "USD",
-    "cut": 0,
+    "cut": 0.0,
     "hike": 99.8,
     "hold": 0.2,
     "next": "2026-12-09",
@@ -35847,12 +35861,12 @@
     "cb": "BCE",
     "cc": "EU",
     "ccy": "EUR",
-    "cut": null,
-    "hike": null,
-    "hold": null,
+    "cut": 0,
+    "hike": 90,
+    "hold": 10,
     "next": "2026-12-17",
     "rate": "2,50",
-    "src": "BCE"
+    "src": "Reuters (via Investing.com)"
    },
    {
     "cb": "BoE",
@@ -35922,6 +35936,44 @@
    }
   ],
   "recaps": [
+   {
+    "date": "2026-11-26",
+    "session": "ny",
+    "title": "Wall Street fermée pour l’Action de grâce : séance figée, l’or reste près de ses creux de 15 mois",
+    "title_en": "Wall Street shut for Thanksgiving: a frozen session as gold hovers near 15-month lows",
+    "body": "Les Bourses américaines étaient fermées jeudi pour l’Action de grâce et rouvriront vendredi pour une séance écourtée; les contrats à terme sur le S&P 500 et le Dow gagnaient 0,3 % et 0,2 % en matinée (AP). Sans données américaines au programme, le dollar a à peine bougé : l’EUR/USD a cédé 0,15 %, l’USD/JPY a pris 0,05 % et l’USD/CAD 0,11 % pendant la séance. L’or au comptant restait sous pression vers 3 564 $ (−0,5 % à 11 h 11 GMT), l’inflation sous-jacente d’octobre confortant l’attente d’une hausse de la Fed le 9 décembre (Reuters, via Kitco). Le bitcoin s’est stabilisé autour de 60 800 $ malgré des sorties record de 5,39 G$ des FNB au comptant en novembre (CoinDesk).",
+    "body_en": "U.S. stock markets were closed Thursday for Thanksgiving and reopen Friday for a shortened session; S&P 500 and Dow futures were up 0.3% and 0.2% in the morning (AP). With no U.S. data on the calendar, the dollar barely moved: EUR/USD slipped 0.15%, USD/JPY gained 0.05% and USD/CAD 0.11% over the session. Spot gold stayed under pressure near $3,564 (−0.5% at 1111 GMT), as October’s underlying inflation reinforced bets on a Fed hike on December 9 (Reuters, via Kitco). Bitcoin steadied around $60,800 despite record November outflows of $5.39 billion from spot ETFs (CoinDesk).",
+    "sections": {
+     "indices": {
+      "fr": "Wall Street était fermée; les contrats à terme sur le S&P 500 (+0,3 %) et le Dow (+0,2 %) progressaient en matinée, après une clôture mercredi en baisse de 0,3 % pour le S&P 500 et de 0,6 % pour le Nasdaq, qui avait chuté jusqu’à 4,6 % en séance (AP).",
+      "en": "Wall Street was closed; S&P 500 (+0.3%) and Dow (+0.2%) futures were higher in the morning, after Wednesday’s close down 0.3% for the S&P 500 and 0.6% for the Nasdaq, which had fallen as much as 4.6% intraday (AP)."
+     },
+     "metals": {
+      "fr": "L’or au comptant reculait de 0,5 % à 3 564,06 $ l’once à 11 h 11 GMT, après être passé brièvement sous 3 500 $ mercredi pour la première fois depuis septembre 2025, tandis que l’argent gagnait 0,6 % à 41,47 $ (Reuters, via Kitco).",
+      "en": "Spot gold was down 0.5% at $3,564.06 an ounce at 1111 GMT, after briefly dipping below $3,500 on Wednesday for the first time since September 2025, while silver rose 0.6% to $41.47 (Reuters, via Kitco)."
+     },
+     "forex": {
+      "fr": "Liquidité mince : l’EUR/USD a cédé 0,15 % vers 1,0972, l’USD/JPY a pris 0,05 % vers 159,27 et l’USD/CAD 0,11 % vers 1,4248 pendant la séance new-yorkaise; Scotiabank juge la glissade de l’euro en novembre « très étirée ».",
+      "en": "Thin liquidity: EUR/USD slipped 0.15% to about 1.0972, USD/JPY rose 0.05% to about 159.27 and USD/CAD 0.11% to about 1.4248 during the New York session; Scotiabank called the euro’s November slide “very stretched”."
+     },
+     "crypto": {
+      "fr": "Le bitcoin a reculé de 0,16 % pendant la séance, autour de 60 700 $, après un creux de 57 500 $ mercredi; les FNB bitcoin au comptant ont subi une septième journée de sorties (453 M$), pour un record mensuel de 5,39 G$ (CoinDesk).",
+      "en": "Bitcoin dipped 0.16% over the session to around $60,700, after a $57,500 low on Wednesday; spot bitcoin ETFs saw a seventh straight day of outflows ($453 million), for a record monthly total of $5.39 billion (CoinDesk)."
+     },
+     "energy": {
+      "fr": "Le pétrole montait sur des craintes pour l’offre après que l’Iran a revendiqué des frappes de mines contre des navires (CNBC); en matinée, le Brent gagnait 0,2 % à 90,79 $ et le WTI 0,4 % à 84,10 $ (AP).",
+      "en": "Oil rose on supply concerns after Iran claimed mine strikes on ships (CNBC); in the morning, Brent was up 0.2% at $90.79 and WTI up 0.4% at $84.10 (AP)."
+     }
+    },
+    "sources": [
+     "https://www.bnnbloomberg.ca/markets/2026/11/26/world-shares-push-higher-while-markets-in-us-will-be-closed-for-thanksgiving/",
+     "https://www.kitco.com/news/off-the-wire/2026-11-26/gold-drifts-lower-fed-rate-hike-fears-loom",
+     "https://www.coindesk.com/markets/2026/11/26/bitcoin-little-changed-defi-tokens-lead-the-bounce-as-u-s-marks-thanksgiving",
+     "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help",
+     "https://www.cnbc.com/2026/11/26/oil-wti-brent-hormuz-iran-saudi-arabia.html",
+     "https://www.fxstreet.com/news/euro-seasonal-rebound-possible-against-us-dollar-scotiabank-202611261740"
+    ]
+   },
    {
     "date": "2026-11-26",
     "session": "lon",
@@ -37193,6 +37245,28 @@
    }
   ],
   "research": [
+   {
+    "bank": "TD Securities",
+    "date": "2026-11-26",
+    "topic": "OR",
+    "topic_en": "GOLD",
+    "title": "TD Securities : trop tôt pour parler d’un creux de l’or, mais 5 000 $ en vue au S2 2027",
+    "title_en": "TD Securities: too early to call a gold bottom, but $5,000 in sight in H2 2027",
+    "summary": "Dans une note citée par Reuters, TD Securities juge « probablement trop tôt » pour annoncer un creux de l’or et des métaux précieux; à long terme, l’or devrait commencer à tendre vers 5 000 $ l’once dans la seconde moitié de 2027, quand les investisseurs anticiperont un assouplissement des taux.",
+    "summary_en": "In a note cited by Reuters, TD Securities says it is “likely too early” to call a bottom in gold and precious metals; longer term, gold should start trending towards $5,000/oz in the latter part of 2027 as investors anticipate easier policy rates.",
+    "url": "https://www.kitco.com/news/off-the-wire/2026-11-26/gold-drifts-lower-fed-rate-hike-fears-loom"
+   },
+   {
+    "bank": "Scotiabank",
+    "date": "2026-11-26",
+    "topic": "FX",
+    "topic_en": "FX",
+    "title": "Scotiabank voit un rebond saisonnier possible de l’euro au-dessus de 1,11",
+    "title_en": "Scotiabank sees a possible seasonal euro rebound above 1.11",
+    "summary": "Shaun Osborne et Eric Theoret jugent la glissade de l’EUR/USD en novembre « très étirée » après un test du support de Fibonacci de 61,8 % à 1,0882; la saisonnalité de décembre, habituellement favorable à l’euro, ouvre la porte à un rebond au-dessus de 1,11, la résistance se situant à 1,0965.",
+    "summary_en": "Shaun Osborne and Eric Theoret see EUR/USD’s November slide as “very stretched” after a test of 61.8% Fibonacci support at 1.0882; typically euro-positive December seasonality opens the way to a squeeze back above 1.11, with resistance at 1.0965.",
+    "url": "https://www.fxstreet.com/news/euro-seasonal-rebound-possible-against-us-dollar-scotiabank-202611261740"
+   },
    {
     "bank": "Bank of America",
     "date": "2026-11-25",
