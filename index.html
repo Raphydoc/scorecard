@@ -1575,6 +1575,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
             <option value="spx500">SPX500 · S&amp;P 500</option>
             <option value="us30">DOW · Dow Jones</option>
             <option value="rut">RUSSELL · Russell 2000</option>
+            <option value="sox">SOX · Semi-conducteurs</option>
+            <option value="gdx">GDX · Mines d’or</option>
           </optgroup>
           <optgroup label="Métaux">
             <option value="xauusd">XAUUSD · Or</option>
@@ -1694,6 +1696,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
           <button type="button" data-ca="usd" aria-pressed="false">USD</button>
           <button type="button" data-ca="xagusd" aria-pressed="false">Argent</button>
           <button type="button" data-ca="rut" aria-pressed="false">Russell</button>
+          <button type="button" data-ca="sox" aria-pressed="false">SOX</button>
+          <button type="button" data-ca="gdx" aria-pressed="false">GDX</button>
           <button type="button" data-ca="usoil" aria-pressed="false">Pétrole</button>
           <button type="button" data-ca="btcusd" aria-pressed="false">Bitcoin</button>
           <button type="button" data-ca="eurusd" aria-pressed="false">EUR/USD</button>
@@ -1783,6 +1787,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     btcusd:{name:'BTCUSD · Bitcoin', hint:'Actif risqué : croissance forte = haussier, inflation chaude = baissier'},
     usoil:{name:'USOIL · Pétrole WTI', hint:'Croissance forte = haussier, inflation chaude = baissier'},
     rut:{name:'Russell 2000', hint:'Croissance forte = haussier, inflation chaude = baissier'},
+    sox:{name:'SOX · Semi-conducteurs', hint:'Croissance forte = haussier, inflation chaude = baissier'},
+    gdx:{name:'GDX · Mines d’or', hint:'Données fortes = baissier pour l’or et les mines'},
     eurusd:{name:'EURUSD · Euro / dollar US', hint:'Données américaines fortes = baissier pour EUR/USD'},
     usdjpy:{name:'USDJPY · Dollar US / yen', hint:'Données américaines fortes = haussier pour USD/JPY'},
     usdcad:{name:'USDCAD · Dollar US / canadien', hint:'Données américaines fortes = haussier pour USD/CAD'},
@@ -1797,7 +1803,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const state = {
     asset:'xauusd', edit:false, canWrite:null, db:null,
     econ:{values:{}, yield2y:'flat', updatedAt:null},
-    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset(), us30:blankAsset(), usd:blankAsset(), xagusd:blankAsset(), btcusd:blankAsset(), usoil:blankAsset(), rut:blankAsset(), eurusd:blankAsset(), usdjpy:blankAsset(), usdcad:blankAsset(), gbpusd:blankAsset(), audusd:blankAsset(), usdchf:blankAsset(), nzdusd:blankAsset()},
+    assets:{xauusd:blankAsset(), nasdaq:blankAsset(), spx500:blankAsset(), us30:blankAsset(), usd:blankAsset(), xagusd:blankAsset(), btcusd:blankAsset(), usoil:blankAsset(), rut:blankAsset(), sox:blankAsset(), gdx:blankAsset(), eurusd:blankAsset(), usdjpy:blankAsset(), usdcad:blankAsset(), gbpusd:blankAsset(), audusd:blankAsset(), usdchf:blankAsset(), nzdusd:blankAsset()},
     history:[], loaded:false
   };
   try{ const a = localStorage.getItem('sc-asset'); if(a && ASSETS[a]) state.asset = a; }catch(e){}
@@ -1817,6 +1823,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     btcusd:{cpi:1,yield10:1,nfp:1,pce:1}, // bitcoin : lien plus faible avec les données US, toutes les données comptent ×1
     usoil:{pmi_mfg:2,gdp:2,retail:2,nfp:2},
     rut:{cpi:2,nfp:2,yield10:2,pce:2,retail:2},
+    sox:{cpi:2,yield10:2,nfp:2,pce:2},
+    gdx:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
     eurusd:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
     usdjpy:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
     usdcad:{cpi:2,nfp:2,yield10:2,pce:2,unemp:2},
@@ -1829,7 +1837,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function impact(asset, cat, usd){
     if(cat==='spec') return usd || 0;
     if(asset==='usd' || asset==='usdjpy' || asset==='usdcad' || asset==='usdchf') return usd || 0;
-    if(asset==='xauusd' || asset==='xagusd' || asset==='eurusd' || asset==='gbpusd' || asset==='audusd' || asset==='nzdusd') return -usd || 0;
+    if(asset==='xauusd' || asset==='xagusd' || asset==='gdx' || asset==='eurusd' || asset==='gbpusd' || asset==='audusd' || asset==='nzdusd') return -usd || 0;
     return (cat==='infl' ? -usd : usd) || 0;
   }
   // seuils de surprise par donnée [petite, grosse] : sous le 1er = ne compte pas (bruit); au-dessus du 2e = compte double
@@ -2078,7 +2086,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   function renderAll(){ if(typeof renderTape==='function') renderTape(); renderSummary(); renderTable(); renderHistory(); renderCalendar(); renderFed(); renderTop(); if(typeof renderEarn==='function') renderEarn(); if(typeof renderP2==='function') renderP2(); }
 
   // ---------- editing ----------
-  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false, eurusd:false, usdjpy:false, usdcad:false, gbpusd:false, audusd:false, usdchf:false, nzdusd:false}, saveTimer = null, chain = Promise.resolve();
+  let dirty = {econ:false, xauusd:false, nasdaq:false, spx500:false, us30:false, usd:false, xagusd:false, btcusd:false, usoil:false, rut:false, sox:false, gdx:false, eurusd:false, usdjpy:false, usdcad:false, gbpusd:false, audusd:false, usdchf:false, nzdusd:false}, saveTimer = null, chain = Promise.resolve();
   function note(msg){ const n=$('note'); if(msg){ n.textContent=msg; n.hidden=false; } else n.hidden=true; }
 
   $('tbl').addEventListener('input', onEdit);
@@ -2148,7 +2156,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     {k:'nfp', h:'NFP', g:3}, {k:'unemp', h:'Chômage', g:3}, {k:'claims', h:'Demandes chômage', g:3},
     {k:'adp', h:'ADP', g:3}, {k:'jolts', h:'JOLTS', g:3}
   ];
-  const TOP_NAMES = {xauusd:'XAUUSD', xagusd:'SILVER', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW', rut:'RUSSELL', usd:'US-DOLLAR', usoil:'USOIL', btcusd:'BITCOIN', eurusd:'EURUSD', usdjpy:'USDJPY', usdcad:'USDCAD', gbpusd:'GBPUSD', audusd:'AUDUSD', usdchf:'USDCHF', nzdusd:'NZDUSD'};
+  const TOP_NAMES = {xauusd:'XAUUSD', xagusd:'SILVER', nasdaq:'NASDAQ', spx500:'SPX500', us30:'DOW', rut:'RUSSELL', sox:'SOX', gdx:'GDX', usd:'US-DOLLAR', usoil:'USOIL', btcusd:'BITCOIN', eurusd:'EURUSD', usdjpy:'USDJPY', usdcad:'USDCAD', gbpusd:'GBPUSD', audusd:'AUDUSD', usdchf:'USDCHF', nzdusd:'NZDUSD'};
   function topCell(asset, C, col){
     if(col.v) return col.v(C);
     const s = C.rows[col.k];
@@ -2201,8 +2209,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
 
   // filtres de la page Top Setups
-  const TOP_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', usoil:'nrg', btcusd:'cry', eurusd:'fx', usdjpy:'fx', usdcad:'fx', gbpusd:'fx', audusd:'fx', usdchf:'fx', nzdusd:'fx'};
-  const TOP_LABEL = {xauusd:'xauusd or gold', xagusd:'xagusd silver argent', nasdaq:'nasdaq', spx500:'spx500 s&p 500', us30:'dow jones us30', rut:'russell 2000 rut', usd:'us-dollar dollar dxy usd', usoil:'usoil oil pétrole petrole wti crude', btcusd:'bitcoin btc btcusd crypto', eurusd:'eurusd eur/usd euro fiber', usdjpy:'usdjpy usd/jpy yen japon', usdcad:'usdcad usd/cad loonie huard canadien canada', gbpusd:'gbpusd gbp/usd cable livre sterling pound', audusd:'audusd aud/usd aussie australien australia', usdchf:'usdchf usd/chf swissie franc suisse', nzdusd:'nzdusd nzd/usd kiwi néo-zélandais new zealand'};
+  const TOP_CAT = {sox:'ind', gdx:'met', xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', usoil:'nrg', btcusd:'cry', eurusd:'fx', usdjpy:'fx', usdcad:'fx', gbpusd:'fx', audusd:'fx', usdchf:'fx', nzdusd:'fx'};
+  const TOP_LABEL = {sox:'sox semi-conducteurs semiconductors puces chips', gdx:'gdx mines d’or gold miners mines', xauusd:'xauusd or gold', xagusd:'xagusd silver argent', nasdaq:'nasdaq', spx500:'spx500 s&p 500', us30:'dow jones us30', rut:'russell 2000 rut', usd:'us-dollar dollar dxy usd', usoil:'usoil oil pétrole petrole wti crude', btcusd:'bitcoin btc btcusd crypto', eurusd:'eurusd eur/usd euro fiber', usdjpy:'usdjpy usd/jpy yen japon', usdcad:'usdcad usd/cad loonie huard canadien canada', gbpusd:'gbpusd gbp/usd cable livre sterling pound', audusd:'audusd aud/usd aussie australien australia', usdchf:'usdchf usd/chf swissie franc suisse', nzdusd:'nzdusd nzd/usd kiwi néo-zélandais new zealand'};
   function topPass(a, C){
     const g = id => { const el = $(id); return el ? el.value : ''; };
     const q = (g('fSym')||'').trim().toLowerCase();
@@ -2498,9 +2506,9 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const sg2 = (v, d=1) => (v===null || isNaN(v)) ? '—' : (v>0?'+':v<0?'−':'') + Math.abs(v).toLocaleString(LOC(), {minimumFractionDigits:d, maximumFractionDigits:d});
   const css = n => getComputedStyle(document.documentElement).getPropertyValue(n).trim() || '#888';
   const GH_URL = 'https://raphydoc.github.io/scorecard/';
-  const ASSET_LBL = {xauusd:['Or','Gold'], xagusd:['Argent','Silver'], nasdaq:['Nasdaq 100','Nasdaq 100'], spx500:['S&P 500','S&P 500'], us30:['Dow Jones','Dow Jones'], rut:['Russell 2000','Russell 2000'], usd:['Dollar US (DXY)','US Dollar (DXY)'], usoil:['Pétrole WTI','WTI Crude'], btcusd:['Bitcoin','Bitcoin'], eurusd:['Euro / dollar US','Euro / US dollar'], usdjpy:['Dollar US / yen','US dollar / yen'], usdcad:['Dollar US / canadien','US dollar / Canadian dollar'], gbpusd:['Livre / dollar US','Pound / US dollar'], audusd:['Dollar australien / US','Australian / US dollar'], usdchf:['Dollar US / franc suisse','US dollar / Swiss franc'], nzdusd:['Dollar néo-zélandais / US','New Zealand / US dollar']};
+  const ASSET_LBL = {xauusd:['Or','Gold'], xagusd:['Argent','Silver'], nasdaq:['Nasdaq 100','Nasdaq 100'], spx500:['S&P 500','S&P 500'], us30:['Dow Jones','Dow Jones'], rut:['Russell 2000','Russell 2000'], sox:['Semi-conducteurs (SOX)','Semiconductors (SOX)'], gdx:['Mines d’or (GDX)','Gold miners (GDX)'], usd:['Dollar US (DXY)','US Dollar (DXY)'], usoil:['Pétrole WTI','WTI Crude'], btcusd:['Bitcoin','Bitcoin'], eurusd:['Euro / dollar US','Euro / US dollar'], usdjpy:['Dollar US / yen','US dollar / yen'], usdcad:['Dollar US / canadien','US dollar / Canadian dollar'], gbpusd:['Livre / dollar US','Pound / US dollar'], audusd:['Dollar australien / US','Australian / US dollar'], usdchf:['Dollar US / franc suisse','US dollar / Swiss franc'], nzdusd:['Dollar néo-zélandais / US','New Zealand / US dollar']};
   const aName = a => (ASSET_LBL[a]||[a,a])[isEN()?1:0];
-  const TV_SYM = {xauusd:'OANDA:XAUUSD', xagusd:'OANDA:XAGUSD', nasdaq:'OANDA:NAS100USD', spx500:'OANDA:SPX500USD', us30:'OANDA:US30USD', rut:'OANDA:US2000USD', usd:'CAPITALCOM:DXY', usoil:'TVC:USOIL', btcusd:'BITSTAMP:BTCUSD', eurusd:'FX:EURUSD', usdjpy:'FX:USDJPY', usdcad:'FX:USDCAD', gbpusd:'FX:GBPUSD', audusd:'FX:AUDUSD', usdchf:'FX:USDCHF', nzdusd:'FX:NZDUSD', us10y:'TVC:US10Y', vix:'TVC:VIX'};
+  const TV_SYM = {xauusd:'OANDA:XAUUSD', xagusd:'OANDA:XAGUSD', nasdaq:'OANDA:NAS100USD', spx500:'OANDA:SPX500USD', us30:'OANDA:US30USD', rut:'OANDA:US2000USD', sox:'NASDAQ:SOX', gdx:'AMEX:GDX', usd:'CAPITALCOM:DXY', usoil:'TVC:USOIL', btcusd:'BITSTAMP:BTCUSD', eurusd:'FX:EURUSD', usdjpy:'FX:USDJPY', usdcad:'FX:USDCAD', gbpusd:'FX:GBPUSD', audusd:'FX:AUDUSD', usdchf:'FX:USDCHF', nzdusd:'FX:NZDUSD', us10y:'TVC:US10Y', vix:'TVC:VIX'};
   const MON_FR = ['janv.','févr.','mars','avr.','mai','juin','juil.','août','sept.','oct.','nov.','déc.'];
   const MON_EN = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
   function perLbl(p){ // '2026-09' → 'sept. 2026' ; '2026-Q3' → 'T3 2026' ; '2026-11-05' → '5 nov. 2026'
@@ -3008,7 +3016,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   state.tech = state.tech || null; state.techSel = state.techSel || 'xauusd'; state.techCat = state.techCat || 'all';
   state.seasA = state.seasA || 'xauusd';
   const RM = () => window.matchMedia && matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const T_CAT = {xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', eurusd:'fx', usdjpy:'fx', usdcad:'fx', gbpusd:'fx', audusd:'fx', usdchf:'fx', nzdusd:'fx', usoil:'nrg', btcusd:'cry'};
+  const T_CAT = {sox:'ind', gdx:'met', xauusd:'met', xagusd:'met', nasdaq:'ind', spx500:'ind', us30:'ind', rut:'ind', usd:'fx', eurusd:'fx', usdjpy:'fx', usdcad:'fx', gbpusd:'fx', audusd:'fx', usdchf:'fx', nzdusd:'fx', usoil:'nrg', btcusd:'cry'};
   const T_CATS = [['all',['Tous','All']],['ind',['Indices','Indices']],['met',['Métaux','Metals']],['fx',['Devises','FX']],['nrg',['Énergie','Energy']],['cry',['Crypto','Crypto']]];
   const pxFmt = v => v==null ? '—' : nf(v, v<10 ? 4 : v<1000 ? 2 : 0);
   // chiffres qui défilent
@@ -3548,7 +3556,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   const EA = ['DEU','FRA','ITA','ESP','NLD','BEL','AUT','IRL','PRT','FIN','GRC','SVK','SVN','LTU','LVA','EST','LUX','CYP','MLT','HRV'];
   // banque centrale, monnaie et liens avec tes actifs (pays principaux)
   const CMETA = {
-    USA:['Réserve fédérale (Fed)','Federal Reserve (Fed)','dollar américain','US dollar','USD',['usd','spx500','nasdaq','us30','rut']],
+    USA:['Réserve fédérale (Fed)','Federal Reserve (Fed)','dollar américain','US dollar','USD',['usd','spx500','nasdaq','us30','rut','sox']],
     CAN:['Banque du Canada','Bank of Canada','dollar canadien','Canadian dollar','CAD',['usdcad','usoil']],
     MEX:['Banque du Mexique','Bank of Mexico','peso mexicain','Mexican peso','MXN',[]], BRA:['Banque centrale du Brésil','Central Bank of Brazil','réal brésilien','Brazilian real','BRL',[]],
     ARG:['Banque centrale d’Argentine','Central Bank of Argentina','peso argentin','Argentine peso','ARS',[]],
@@ -4087,7 +4095,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   // ---------- « Mon choix » : compare toi-même les actifs du scorecard (lignes en % depuis la 1re barre à l'écran) ----------
   const CMP_NAMES = Object.assign({}, TOP_NAMES, {sox:'SOX', gdx:'GDX'});
-  const CMP_GR = [['idx',['Indices','Indices'],['nasdaq','spx500','us30','rut']],['sec',['Secteurs','Sectors'],['sox','gdx']],['met',['Métaux','Metals'],['xauusd','xagusd']],['fx',['Devises','Currencies'],['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['nrg',['Énergie','Energy'],['usoil']],['cry',['Crypto','Crypto'],['btcusd']]];
+  const CMP_GR = [['idx',['Indices','Indices'],['nasdaq','spx500','us30','rut','sox']],['met',['Métaux','Metals'],['xauusd','xagusd','gdx']],['fx',['Devises','Currencies'],['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['nrg',['Énergie','Energy'],['usoil']],['cry',['Crypto','Crypto'],['btcusd']]];
   const CMP_MAX = 8;
   function cmpSel(){
     if(!state.cmpSel){ let v = null; try{ v = JSON.parse(localStorage.getItem('sc-cmp')||'null'); }catch(e){} state.cmpSel = Array.isArray(v) && v.length ? v.filter(k=>CMP_NAMES[k]) : ['xauusd','nasdaq','usd','btcusd']; }
@@ -4536,7 +4544,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
 
   // ---------- Session Recap ----------
   const SESW = {tok:{n:['Tokyo','Tokyo'], cc:'JP', f:-5, t:1.5}, lon:{n:['Londres','London'], cc:'GB', f:3, t:11.5}, ny:{n:['New York','New York'], cc:'US', f:9.5, t:16}}; // heures de Toronto (f<0 = la veille)
-  const RGRP = [['INDICES',['nasdaq','spx500','us30','rut'],'indices'],['MÉTAUX',['xauusd','xagusd'],'metals'],['FOREX',['usd','eurusd','usdjpy','usdcad','gbpusd','audusd','usdchf','nzdusd'],'forex'],['CRYPTO',['btcusd'],'crypto'],['ÉNERGIE',['usoil'],'energy']];
+  const RGRP = [['INDICES',['nasdaq','spx500','us30','rut','sox'],'indices'],['MÉTAUX',['xauusd','xagusd','gdx'],'metals'],['FOREX',['usd','eurusd','usdjpy','usdcad','gbpusd','audusd','usdchf','nzdusd'],'forex'],['CRYPTO',['btcusd'],'crypto'],['ÉNERGIE',['usoil'],'energy']];
   function recapSessions(O){
     const tz = 'America/Toronto', ref = (O.h1||{}).eurusd || (O.h1||{}).xauusd || []; if(!ref.length) return [];
     const days = [...new Set(ref.map(r=>{ const p = tzParts(tz, new Date(r[0]*1000)); return `${p.y}-${String(p.mo).padStart(2,'0')}-${String(p.d).padStart(2,'0')}`; }))];
@@ -4921,7 +4929,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   state.wyF = state.wyF || 'all';
   const whenT = t => { const d = new Date(t), dd = d.toLocaleDateString('en-CA',{timeZone:'America/Toronto'}), hm = d.toLocaleTimeString(LOC(),{hour:'2-digit', minute:'2-digit', timeZone:'America/Toronto'});
     return dd===torontoToday() ? hm : d.toLocaleDateString(LOC(),{weekday:'short', timeZone:'America/Toronto'})+' '+hm; };
-  const WHY_GR = [['Actions','Stocks',['nasdaq','spx500','us30','rut']],['Métaux','Metals',['xauusd','xagusd']],['Dollar et devises','Dollar and currencies',['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['Pétrole et crypto','Oil and crypto',['usoil','btcusd']]];
+  const WHY_GR = [['Actions','Stocks',['nasdaq','spx500','us30','rut','sox']],['Métaux','Metals',['xauusd','xagusd','gdx']],['Dollar et devises','Dollar and currencies',['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['Pétrole et crypto','Oil and crypto',['usoil','btcusd']]];
   function renderWhy(){
     const box = $('p2why'); if(!box) return;
     box.classList.toggle('noanim', !!state.noAnim); state.noAnim = false;
@@ -5079,10 +5087,10 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- sélecteur d'actifs : tous les actifs visibles, un clic pour changer ----------
-  const PICK_GR = [['Actions','Stocks',['nasdaq','spx500','us30','rut']],['Métaux','Metals',['xauusd','xagusd']],['Dollar et devises','Dollar and FX',['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['Pétrole et crypto','Oil and crypto',['usoil','btcusd']]];
+  const PICK_GR = [['Actions','Stocks',['nasdaq','spx500','us30','rut','sox']],['Métaux','Metals',['xauusd','xagusd','gdx']],['Dollar et devises','Dollar and FX',['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['Pétrole et crypto','Oil and crypto',['usoil','btcusd']]];
   function pickHtml(){
     const cur = state.asset, has = k => state.assets && state.assets[k];
-    const G = [['idx',L('Indices','Indices'),['nasdaq','spx500','us30','rut']],['met',L('Métaux','Metals'),['xauusd','xagusd']],['fx',L('Devises','Currencies'),['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['nrg',L('Énergie','Energy'),['usoil']],['cry',L('Crypto','Crypto'),['btcusd']]];
+    const G = [['idx',L('Indices','Indices'),['nasdaq','spx500','us30','rut','sox']],['met',L('Métaux','Metals'),['xauusd','xagusd','gdx']],['fx',L('Devises','Currencies'),['usd','eurusd','gbpusd','usdjpy','usdcad','audusd','nzdusd','usdchf']],['nrg',L('Énergie','Energy'),['usoil']],['cry',L('Crypto','Crypto'),['btcusd']]];
     return `<div class="apick" role="tablist" aria-label="${L('Choisir un actif','Choose an asset')}">${G.map(([c,t,ks])=>{ ks = ks.filter(has); if(!ks.length) return '';
       return `<div class="apg c${c}"><span class="apgt">${t}</span><div class="apgl">${ks.map(k=>`<button type="button" role="tab" class="apb c${c} ${k===cur?'on':''}" aria-selected="${k===cur}" data-ap="${k}"><b>${esc(TOP_NAMES[k])}</b></button>`).join('')}</div></div>`; }).join('')}</div>`;
   }
@@ -5165,7 +5173,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   }
 
   // ---------- Plan du jour : tout ce qui compte aujourd’hui sur un écran ----------
-  const PSYM = {xauusd:'GC=F', xagusd:'SI=F', nasdaq:'^NDX', spx500:'^GSPC', us30:'^DJI', rut:'^RUT', usd:'DX-Y.NYB', usoil:'CL=F', btcusd:'BTC-USD', eurusd:'EURUSD=X', usdjpy:'JPY=X', usdcad:'CAD=X', gbpusd:'GBPUSD=X', audusd:'AUDUSD=X', usdchf:'CHF=X', nzdusd:'NZDUSD=X'};
+  const PSYM = {xauusd:'GC=F', xagusd:'SI=F', nasdaq:'^NDX', spx500:'^GSPC', us30:'^DJI', rut:'^RUT', sox:'^SOX', gdx:'GDX', usd:'DX-Y.NYB', usoil:'CL=F', btcusd:'BTC-USD', eurusd:'EURUSD=X', usdjpy:'JPY=X', usdcad:'CAD=X', gbpusd:'GBPUSD=X', audusd:'AUDUSD=X', usdchf:'CHF=X', nzdusd:'NZDUSD=X'};
   const NYF = new Intl.DateTimeFormat('en-CA', {timeZone:'America/New_York', year:'numeric', month:'2-digit', day:'2-digit'});
   const nyDate = ms => NYF.format(new Date(ms));
   function nextWeekday(d){ const x = new Date(d+'T12:00:00Z'); do{ x.setUTCDate(x.getUTCDate()+1); }while(x.getUTCDay()===0 || x.getUTCDay()===6); return x.toISOString().slice(0,10); }

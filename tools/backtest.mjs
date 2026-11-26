@@ -15,7 +15,7 @@ async function get(url) {
   }
   return null;
 }
-const SYM = {xauusd:'GC=F', xagusd:'SI=F', nasdaq:'^NDX', spx500:'^GSPC', us30:'^DJI', rut:'^RUT', usd:'DX-Y.NYB', usoil:'CL=F', btcusd:'BTC-USD', eurusd:'EURUSD=X', usdjpy:'JPY=X', usdcad:'CAD=X', gbpusd:'GBPUSD=X', audusd:'AUDUSD=X', usdchf:'CHF=X', nzdusd:'NZDUSD=X'};
+const SYM = {xauusd:'GC=F', xagusd:'SI=F', nasdaq:'^NDX', spx500:'^GSPC', us30:'^DJI', rut:'^RUT', usd:'DX-Y.NYB', usoil:'CL=F', btcusd:'BTC-USD', eurusd:'EURUSD=X', usdjpy:'JPY=X', usdcad:'CAD=X', gbpusd:'GBPUSD=X', audusd:'AUDUSD=X', usdchf:'CHF=X', nzdusd:'NZDUSD=X', sox:'^SOX', gdx:'GDX'};
 // COT : contrats « legacy » (non-commerciaux); pour USD/JPY, USD/CAD, USD/CHF le contrat est sur la devise étrangère, donc on inverse
 const COT = {eurusd:'099741', xauusd:'088691', xagusd:'084691', nasdaq:'209742', spx500:'13874A', us30:'124603', rut:'239742', usd:'098662', btcusd:'133741', gbpusd:'096742', audusd:'232741', nzdusd:'112741', usdjpy:'097741', usdcad:'090741', usdchf:'092741'};
 const INV = new Set(['usdjpy', 'usdcad', 'usdchf']);

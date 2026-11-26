@@ -226,18 +226,13 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
   }
 
   // ---------- Chandeliers des 12 actifs (Indicators, Liquidity) ----------
-  const A = {xauusd: 'GC=F', xagusd: 'SI=F', nasdaq: '^NDX', spx500: '^GSPC', us30: '^DJI', rut: '^RUT', usd: 'DX-Y.NYB', usoil: 'CL=F', btcusd: 'BTC-USD', eurusd: 'EURUSD=X', usdjpy: 'JPY=X', usdcad: 'CAD=X', gbpusd: 'GBPUSD=X', audusd: 'AUDUSD=X', usdchf: 'CHF=X', nzdusd: 'NZDUSD=X'};
+  const A = {xauusd: 'GC=F', xagusd: 'SI=F', nasdaq: '^NDX', spx500: '^GSPC', us30: '^DJI', rut: '^RUT', usd: 'DX-Y.NYB', usoil: 'CL=F', btcusd: 'BTC-USD', eurusd: 'EURUSD=X', usdjpy: 'JPY=X', usdcad: 'CAD=X', gbpusd: 'GBPUSD=X', audusd: 'AUDUSD=X', usdchf: 'CHF=X', nzdusd: 'NZDUSD=X', sox: '^SOX', gdx: 'GDX'};
   const O = {asOf: M.asOf, d1: {}, h1: {}};
   const ores = await pool(Object.entries(A), async ([k, s]) => [k, await chart(s, '2y', '1d'), await chart(s, '1mo', '60m')]);
   ores.forEach(([k, d, h]) => {
     const f = rows => rows.map(r => [r[0], ...r.slice(1).map(x => r2(x, dp(r[4])))]);
     if (d) O.d1[k] = f(d.rows.slice(-400)); if (h) O.h1[k] = f(h.rows);
   });
-  // séries en plus pour « Mon choix » (Graphiques) : mines d'or (GDX) et semi-conducteurs (SOX)
-  const XTRA = {gdx: 'GDX', sox: '^SOX'};
-  (await pool(Object.entries(XTRA), async ([k, s]) => [k, await chart(s, '2y', '1d'), await chart(s, '1mo', '60m')])).forEach(([k, d, h]) => {
-    const f = rows => rows.map(r => [r[0], ...r.slice(1).map(x => r2(x, dp(r[4])))]);
-    if (d) O.d1[k] = f(d.rows.slice(-400)); if (h) O.h1[k] = f(h.rows); });
   console.error('ohlc', Object.keys(O.d1).length, Object.keys(O.h1).length);
 
   // ---------- Tendance automatique de la SEMAINE (case « Tendance » du scorecard, ±2) ----------

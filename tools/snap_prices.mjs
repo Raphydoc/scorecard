@@ -20,6 +20,8 @@ const A = {
   audusd: {y: 'AUDUSD=X', s: 'audusd', n: 'AUD/USD'},
   usdchf: {y: 'CHF=X', s: 'usdchf', n: 'USD/CHF'},
   nzdusd: {y: 'NZDUSD=X', s: 'nzdusd', n: 'NZD/USD'},
+  sox:    {y: '^SOX', s: '^sox', n: 'Semi-conducteurs (SOX)'},
+  gdx:    {y: 'GDX', s: 'gdx.us', n: 'Mines d’or (GDX)'},
 };
 const UA = {'User-Agent': 'Mozilla/5.0 (scorecard-macro; GitHub Actions)', 'Accept': '*/*'};
 const sleep = ms => new Promise(r => setTimeout(r, ms));
