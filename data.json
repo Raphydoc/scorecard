@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T14:14:30Z",
+ "updatedAt": "2026-11-26T14:48:41Z",
  "econ": {
   "values": {
    "adp": {
@@ -1650,6 +1650,35 @@
  "news": [
   {
    "date": "2026-11-26",
+   "time": "09:27",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "eurusd",
+    "usd"
+   ],
+   "title": "L'Espagnol Pablo Hernández de Cos en voie d'être nommé à la tête de la BCE",
+   "title_en": "Spain's De Cos set to be nominated by EU leaders as next ECB chief",
+   "summary": "Les dirigeants de l'UE s'apprêtent à nommer Pablo Hernández de Cos, ancien gouverneur de la Banque d'Espagne, pour succéder à Christine Lagarde à la présidence de la BCE, après que les Pays-Bas ont appuyé sa candidature. La nomination étant largement attendue, la réaction est modeste : l'euro gagne 0,12 % à 1,0988 $ et le rendement allemand à 10 ans monte de 5 points de base à 3,268 %. Un économiste cité estime que les marchés devraient se préparer à des hausses de taux en 2027.",
+   "summary_en": "EU leaders are set to nominate Pablo Hernández de Cos, former Bank of Spain governor, to succeed Christine Lagarde as ECB president after the Netherlands backed his candidacy. With the move widely expected, market reaction was muted: the euro rose 0.12% to $1.0988 and Germany's 10-year yield climbed 5 basis points to 3.268%. One economist quoted said markets should gear up for rate hikes in 2027.",
+   "url": "https://www.investing.com/news/economy-news/instant-view-spains-de-cos-set-to-be-nominated-by-eu-leaders-as-next-ecb-chief-5052548"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "07:57",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usoil"
+   ],
+   "title": "Le pétrole grimpe encore : les attaques dans le détroit d'Ormuz menacent la reprise des livraisons du golfe Persique",
+   "title_en": "Oil edges higher as Hormuz attacks threaten Persian Gulf supply recovery",
+   "summary": "Le Brent gagne 0,8 % à 91,86 $ le baril, après un bond de près de 6 % sur les deux séances précédentes, et le WTI prolonge sa remontée dans des volumes réduits par l'Action de grâce. Trois autres navires ont été touchés par des projectiles dans le détroit d'Ormuz, dont le débit est estimé par ANZ à 49 % de la normale. Les stocks américains de brut ont toutefois augmenté de 1,1 million de barils (3e hausse d'affilée), et l'OPEP+ se réunit le dimanche 29 novembre sur sa production de 2027.",
+   "summary_en": "Brent rose 0.8% to $91.86 a barrel after a nearly 6% surge over the prior two sessions, and WTI extended its recovery in Thanksgiving-thinned volumes. Three more vessels were struck by projectiles in the Strait of Hormuz, where ANZ estimates throughput at 49% of normal. U.S. crude inventories rose 1.1 million barrels, a third straight weekly build, and OPEC+ ministers meet Sunday, November 29, on 2027 output policy.",
+   "url": "https://www.investing.com/news/commodities-news/oil-steadies-as-hormuz-attacks-threaten-supply-recovery-inventory-build-weighs-5051937"
+  },
+  {
+   "date": "2026-11-26",
    "time": "07:30",
    "source": "Investing.com",
    "impact": "med",
@@ -1956,20 +1985,6 @@
   },
   {
    "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Les cours du pétrole progressent après que l'Iran a revendiqué des frappes de mines contre des navires, ravivant les craintes pour l'approvisionnement. Ces attaques maritimes s'ajoutent aux tensions autour du détroit d'Ormuz qui soutiennent le brut depuis plusieurs séances.",
-   "summary_en": "Oil prices rise after Iran claimed mine strikes on ships, reviving supply concerns. The maritime attacks add to tensions around the Strait of Hormuz that have supported crude in recent sessions.",
-   "time": "22:12",
-   "title": "Le pétrole monte sur des craintes d'approvisionnement, l'Iran affirmant avoir frappé des navires avec des mines",
-   "title_en": "Oil rises on supply concerns as Iran claims mine strikes on ships",
-   "url": "https://www.investing.com/news/commodities-news/oil-rises-on-supply-concerns-as-iran-claims-mine-strikes-on-ships-5051949"
-  },
-  {
-   "assets": [
     "nasdaq",
     "spx500"
    ],
@@ -2251,22 +2266,6 @@
    "title": "EIA : les stocks de brut américains augmentent de 1,1 M de barils, à 418,9 M",
    "title_en": "EIA says US crude stocks rise 1.1M barrels to 418.9M barrels",
    "url": "https://www.investing.com/news/commodities-news/eia-says-us-crude-stocks-rise-11m-barrels-to-4189m-barrels-93CH-5051205"
-  },
-  {
-   "assets": [
-    "usd",
-    "xauusd",
-    "usdjpy"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "CNBC",
-   "summary": "Le rendement des bons du Trésor américain à 10 ans baisse malgré la hausse de l'indice PCE publiée ce matin, car les investisseurs se réfugient dans les obligations pendant la déroute des actions technologiques. Une baisse des rendements tend à peser sur le dollar et à soutenir l'or et le yen.",
-   "summary_en": "The 10-year Treasury yield is falling despite this morning's hotter PCE reading, as investors seek safety in bonds during the tech-stock rout. Lower yields tend to weigh on the dollar and support gold and the yen.",
-   "time": "10:27",
-   "title": "Le rendement à 10 ans recule malgré une inflation tenace, les investisseurs achetant des obligations pour se protéger",
-   "title_en": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
-   "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
   }
  ],
  "live": {
