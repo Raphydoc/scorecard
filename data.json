@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T10:42:55Z",
+  "updatedAt": "2026-11-26T11:48:15Z",
   "econ": {
     "values": {
       "adp": {
@@ -1650,6 +1650,34 @@
   "news": [
     {
       "date": "2026-11-26",
+      "time": "06:27",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "La grande firme de négociation crypto Auros met fin à ses activités, selon des sources",
+      "title_en": "Major crypto trading firm Auros is winding down operations: Sources",
+      "summary": "Selon des sources citées par CoinDesk, la grande firme de négociation crypto Auros est en train de mettre fin à ses activités. Le départ d'un acteur important du marché crypto est à surveiller pour le bitcoin.",
+      "summary_en": "According to sources cited by CoinDesk, major crypto trading firm Auros is winding down its operations. The exit of a significant crypto market player is worth watching for bitcoin.",
+      "url": "https://www.coindesk.com/markets/2026/11/26/major-crypto-trading-firm-auros-is-winding-down-operations-sources"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "06:17",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Le bitcoin peu changé, les jetons DeFi mènent le rebond pendant l'Action de grâce américaine",
+      "title_en": "Bitcoin little changed, DeFi tokens lead the bounce as U.S. marks Thanksgiving",
+      "summary": "Le bitcoin bouge peu jeudi pendant que les marchés américains sont fermés pour l'Action de grâce, alors que les jetons de la finance décentralisée (DeFi) mènent le rebond du marché crypto.",
+      "summary_en": "Bitcoin was little changed Thursday as the U.S. marked Thanksgiving, while decentralized finance (DeFi) tokens led the bounce in crypto.",
+      "url": "https://www.coindesk.com/markets/2026/11/26/bitcoin-little-changed-defi-tokens-lead-the-bounce-as-u-s-marks-thanksgiving"
+    },
+    {
+      "date": "2026-11-26",
       "time": "05:40",
       "source": "MarketWatch",
       "impact": "med",
@@ -1679,6 +1707,36 @@
       "summary": "La livre sterling est stable face au dollar américain, qui se maintient dans une fourchette étroite pendant le congé de l'Action de grâce aux États-Unis. Avec Wall Street fermée, les volumes sont faibles sur le marché des changes, ce qui limite les mouvements du GBP/USD et du dollar.",
       "summary_en": "The pound is steady against the U.S. dollar, which is holding in a tight range during the U.S. Thanksgiving holiday. With Wall Street closed, FX volumes are thin, limiting moves in GBP/USD and the dollar.",
       "url": "https://www.investing.com/news/forex-news/sterling-today-pound-steady-as-dollar-holds-range-on-us-holiday-5052307"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "05:11",
+      "source": "MarketWatch",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "La déroute des technos devrait bientôt toucher le fond, suivie d'un rallye de 25 % du S&P 500, selon la Deutsche Bank",
+      "title_en": "The tech rout should bottom soon, with a 25% rally for the S&P 500 to follow, says Deutsche Bank",
+      "summary": "La Deutsche Bank estime que la vague de ventes sur les titres technologiques devrait bientôt atteindre un creux, et prévoit ensuite un rallye de 25 % pour le S&P 500. Cette prévision vise directement le Nasdaq et le S&P 500, malmenés par les craintes liées à l'IA et aux tarifs.",
+      "summary_en": "Deutsche Bank says the selloff in tech stocks should bottom soon and sees a 25% rally for the S&P 500 to follow. The call bears directly on the Nasdaq and S&P 500, which have been hit by AI and tariff worries.",
+      "url": "https://www.marketwatch.com/story/the-tech-rout-should-bottom-soon-with-a-25-rally-for-the-s-p-500-to-follow-says-deutsche-bank-c9070bf6?mod=mw_rss_topstories"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "05:02",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "xauusd",
+        "usd"
+      ],
+      "title": "Le prix de l'or au comptant recule avec un dollar plus ferme, tandis que les contrats à terme américains progressent",
+      "title_en": "Gold spot prices slip as dollar firms, while U.S. futures gain",
+      "summary": "L'or au comptant glisse jeudi alors que le dollar américain se raffermit, tandis que les contrats à terme américains progressent. Le congé de l'Action de grâce aux États-Unis réduit l'activité.",
+      "summary_en": "Spot gold slipped Thursday as the U.S. dollar firmed, while U.S. futures gained. The U.S. Thanksgiving holiday is thinning activity.",
+      "url": "https://www.investing.com/news/commodities-news/gold-eases-as-us-inflation-data-reinforces-fed-ratehike-bets-5051964"
     },
     {
       "date": "2026-11-26",
@@ -1853,21 +1911,6 @@
       "title": "Exclusif : des entreprises liées à Alice Huang ont inscrit pour 270 M$ de serveurs d'IA en Chine, selon des registres",
       "title_en": "Exclusive: Alice Huang-linked firms listed $270 million in AI servers in China, records show",
       "url": "https://www.investing.com/news/stock-market-news/exclusivealice-huanglinked-firms-listed-270-million-in-ai-servers-in-china-records-show-5049792"
-    },
-    {
-      "assets": [
-        "xauusd",
-        "usd"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com",
-      "summary": "L'or cède du terrain en séance asiatique, les dernières données d'inflation aux États-Unis confortant les attentes d'une hausse de taux de la Réserve fédérale. Une Fed plus restrictive pèse sur le métal jaune, qui ne verse pas d'intérêt, et tend à soutenir le dollar.",
-      "summary_en": "Gold slips in Asian trading as the latest U.S. inflation data reinforces expectations of a Federal Reserve rate hike. A more hawkish Fed weighs on the non-yielding metal and tends to support the dollar.",
-      "time": "22:20",
-      "title": "L'or recule alors que les données d'inflation américaines renforcent les paris d'une hausse de taux de la Fed",
-      "title_en": "Gold eases as U.S. inflation data reinforces Fed rate-hike bets",
-      "url": "https://www.investing.com/news/commodities-news/gold-eases-as-us-inflation-data-reinforces-fed-ratehike-bets-5051964"
     },
     {
       "assets": [
@@ -2236,58 +2279,6 @@
       "title": "L'indice PCE, la mesure d'inflation préférée de la Fed, accélère à 3,8 % en octobre, ce qui scelle probablement une hausse de taux",
       "title_en": "Fed's preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
       "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Les États-Unis ont proposé de nouveaux tarifs sur les produits brésiliens, dont un droit de 10 % sur les avions finis (4e exportation du Brésil vers les États-Unis) et un tarif spécifique sur le sucre hors quota; le représentant au Commerce Jamieson Greer reproche au Brésil « aucun progrès significatif ». L'action d'Embraer a reculé d'environ 5 %. Une audience est prévue le 14 janvier avant l'entrée en vigueur, ce qui ajoute au climat d'escalade tarifaire qui pèse sur les marchés.",
-      "summary_en": "The US proposed new tariffs on Brazilian goods, including a 10% duty on finished aircraft (Brazil's fourth-largest export to the US) and a specific tariff on out-of-quota sugar; USTR Jamieson Greer said Brazil made 'no meaningful progress'. Embraer shares fell about 5%. A hearing is set for January 14 before the duties can take effect, adding to the tariff escalation weighing on markets.",
-      "time": "08:15",
-      "title": "Les États-Unis proposent de nouveaux tarifs surprises sur les importations brésiliennes, dont 10 % sur les avions",
-      "title_en": "US proposes surprise new tariffs on Brazil imports, including 10% duty on aircraft",
-      "url": "https://www.investing.com/news/commodities-news/us-proposes-higher-tariffs-on-brazil-imports-including-10-duty-on-aircraft-5050713"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "us30",
-        "eurusd",
-        "usdcad",
-        "audusd",
-        "nzdusd",
-        "usdjpy"
-      ],
-      "date": "2026-11-25",
-      "impact": "high",
-      "source": "CNBC",
-      "summary": "Washington a proposé de nouveaux tarifs douaniers visant 14 partenaires commerciaux, dont la Chine et l'Union européenne, en vertu de la section 301; Investing.com (Reuters) rapporte aussi des tarifs plus élevés sur les importations du Brésil, dont un droit de 10 % sur les avions. Les articles n'ont pas pu être consultés en entier; résumé fondé sur les titres. Ce risque tarifaire soutient le dollar et pèse sur les actions et les devises liées au commerce.",
-      "summary_en": "Washington proposed new tariffs on 14 trading partners, including China and the European Union, under Section 301; Investing.com (Reuters) also reports higher proposed tariffs on Brazilian imports, including a 10% duty on aircraft. The full articles could not be accessed; summary based on the headlines. The tariff risk supports the dollar and weighs on stocks and trade-sensitive currencies.",
-      "time": "08:11",
-      "title": "Les États-Unis proposent de nouveaux tarifs sur 14 partenaires commerciaux, dont la Chine et l'UE",
-      "title_en": "U.S. proposes new tariffs on 14 trading partners, including China and the EU",
-      "url": "https://www.cnbc.com/2026/11/25/us-tariffs-trump-section-301.html"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Les fabricants de puces, de serveurs et les exploitants de centres de données reculent avant l'ouverture : Dell chute de 7,2 % malgré une troisième hausse de ses prévisions annuelles et un rachat d'actions supplémentaire de 25 G$, et Nvidia perd 4,6 % après un repli de 6 % mardi. CoreWeave et Nebius cèdent environ 6 %, et le rendement de l'obligation 2031 de CoreWeave grimpe à près de 18 %. Les grandes plateformes (Oracle, Alphabet, Amazon, Meta, Microsoft) reculent de 1,4 % à 4,3 %, ce qui pèse sur le Nasdaq.",
-      "summary_en": "Chipmakers, server makers and data center operators fell premarket: Dell slumped 7.2% despite a third raise to its annual forecasts and an extra $25 billion buyback, and Nvidia fell 4.6% after Tuesday's 6% slide. CoreWeave and Nebius dropped about 6%, and CoreWeave's 2031 bond yield rose to almost 18%. Oracle, Alphabet, Amazon, Meta and Microsoft were down 1.4% to 4.3%, weighing on the Nasdaq.",
-      "time": "07:17",
-      "title": "Les titres liés à l'IA prolongent leur glissade avant l'ouverture, les coûts des infrastructures inquiètent",
-      "title_en": "AI stocks slide on fears over infrastructure buildout costs",
-      "url": "https://www.investing.com/news/stock-market-news/ai-stocks-slide-on-fears-over-infrastructure-buildout-costs-5050519"
     }
   ],
   "live": {
