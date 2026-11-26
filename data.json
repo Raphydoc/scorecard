@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-25T23:48:16Z",
+ "updatedAt": "2026-11-26T00:47:49Z",
  "econ": {
   "values": {
    "adp": {
@@ -1649,6 +1649,41 @@
  },
  "news": [
   {
+   "date": "2026-11-25",
+   "time": "18:49",
+   "source": "CNBC",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "usdjpy",
+    "audusd",
+    "nzdusd"
+   ],
+   "title": "Les marchés d'Asie-Pacifique s'apprêtent à ouvrir sans grand élan alors que les investisseurs soupèsent les nouveaux tarifs américains",
+   "title_en": "Asia-Pacific markets set for subdued open as investors weigh fresh U.S. tariffs",
+   "summary": "Selon CNBC, les Bourses d'Asie-Pacifique se préparent à une ouverture terne jeudi, les investisseurs évaluant les nouveaux tarifs proposés par Washington. Le ton en Asie influencera le yen, le dollar australien et le dollar néo-zélandais à l'ouverture.",
+   "summary_en": "According to CNBC, Asia-Pacific markets are set for a subdued open Thursday as investors weigh the new tariffs proposed by Washington. The tone in Asia will shape the yen and the Australian and New Zealand dollars at the open.",
+   "url": "https://www.cnbc.com/2026/11/26/stock-markets-today-.html"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "18:43",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "nasdaq",
+    "us30",
+    "usd"
+   ],
+   "title": "Les contrats à terme américains se stabilisent après une séance en montagnes russes à Wall Street",
+   "title_en": "U.S. stock futures steady after whipsaw session on Wall St",
+   "summary": "Vers 18 h 14 (HE), les contrats sur le S&P 500 étaient stables à 7 196,25 points, ceux du Nasdaq 100 cédaient 0,14 % à 26 059,75 et ceux du Dow gagnaient 0,13 % à 50 292. Mercredi, le Nasdaq a fini en baisse de 0,6 % après avoir chuté jusqu'à 4,6 % en séance, et le S&P 500 de 0,3 % après un recul allant jusqu'à 3,2 %; Nvidia a perdu 3,9 %. Après un PCE plus chaud que prévu, l'outil FedWatch du CME accorde près de 95 % de chances à une hausse de taux d'au moins 25 points de base en décembre; les volumes devraient fondre avec l'Action de grâce jeudi et la séance écourtée de vendredi.",
+   "summary_en": "Around 18:14 ET, S&P 500 futures were flat at 7,196.25, Nasdaq 100 futures fell 0.14% to 26,059.75 and Dow futures rose 0.13% to 50,292. On Wednesday the Nasdaq closed down 0.6% after falling as much as 4.6% intraday, and the S&P 500 fell 0.3% after a drop of as much as 3.2%; Nvidia lost 3.9%. After a hotter-than-expected PCE, CME FedWatch shows a nearly 95% chance of at least a 25 bp Fed hike in December; volumes are expected to thin with Thanksgiving on Thursday and Friday's shortened session.",
+   "url": "https://www.investing.com/news/stock-market-news/us-stock-futures-steady-after-whipsaw-session-on-wall-st-5051753"
+  },
+  {
    "assets": [
     "usoil"
    ],
@@ -2240,36 +2275,6 @@
    "title": "Le Nikkei devrait monter l'an prochain sans retrouver son record, selon un sondage Reuters",
    "title_en": "Japan's Nikkei to rise next year but fall short of record as investors reassess AI trade: Reuters poll",
    "url": "https://www.investing.com/news/stock-market-news/japans-nikkei-to-rise-next-year-but-fall-short-of-record-as-investors-reassess-ai-trade-reuters-poll-5049409"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-24",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Workday a affiché un BPA ajusté de 2,82 $ (attendu : 2,75 $) et des revenus de 2,705 G$ (+11,2 %), et son ARR lié à l'IA dépasse 750 M$ (+130 %). L'action a toutefois glissé de 179,23 $ à 166,01 $ après la clôture, la prévision du T4 (revenus d'environ 2,755 G$, +9 %) laissant voir un léger ralentissement. Un signal de plus de nervosité envers les logiciels, qui pèse sur le Nasdaq.",
-   "summary_en": "Workday posted adjusted EPS of $2.82 (vs. $2.75 expected) and revenue of $2.705 billion (+11.2%), with AI ARR above $750 million (+130%). Shares still slid from $179.23 to $166.01 after hours as Q4 guidance (revenue about $2.755 billion, +9%) implies a slight slowdown. Another sign of nervousness toward software names, weighing on the Nasdaq.",
-   "time": "17:48",
-   "title": "Workday recule de plus de 7 % après la séance malgré des résultats supérieurs aux attentes",
-   "title_en": "Workday falls more than 7% after hours despite Q3 beat as outlook disappoints",
-   "url": "https://in.investing.com/news/stock-market-news/workday-q3-fy27-slides-ai-arr-surges-130-but-stock-falls-on-outlook-93CH-5724490"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-24",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Nvidia a reculé de 5,9 % mardi pour clôturer à 155,38 $, après avoir bondi de 31,5 % lundi à 165,05 $ (plus de 950 G$ de valeur boursière ajoutée) à l'annonce du retour de Jensen Huang comme PDG. Les investisseurs prennent leurs profits alors que l'enthousiasme s'estompe; Raymond James juge que des incertitudes demeurent. Nvidia, poids lourd du Nasdaq et du S&P 500, a pesé sur les indices technologiques.",
-   "summary_en": "Nvidia slipped 5.9% on Tuesday to close at $155.38 after soaring 31.5% on Monday to $165.05 (adding more than $950 billion in market value) on news of Jensen Huang's reinstatement as CEO. Investors pared gains as enthusiasm faded; Raymond James said overhangs remain. As a Nasdaq and S&P 500 heavyweight, Nvidia weighed on tech indexes.",
-   "time": "16:51",
-   "title": "Nvidia chute de près de 6 % après que le retour de Huang eut provoqué sa meilleure séance en plus de 23 ans",
-   "title_en": "Nvidia stock falls nearly 6% after Huang's return sparks best day in over 23 years",
-   "url": "https://www.investing.com/news/stock-market-news/nvidia-shares-fall-by-6-following-huang-return-rally-5048533"
   }
  ],
  "live": {
