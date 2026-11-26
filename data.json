@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T17:48:34Z",
+ "updatedAt": "2026-11-26T18:14:45Z",
  "econ": {
   "values": {
    "adp": {
@@ -37532,7 +37532,7 @@
   ]
  },
  "why": {
-  "asOf": "2026-11-26T17:14:46Z",
+  "asOf": "2026-11-26T18:14:45Z",
   "summary": {
    "fr": "Journée calme : Wall Street est fermée pour l'Action de grâce. L'Europe rebondit fort, soulagée par des tarifs américains moins durs que prévu, et les contrats à terme américains visent des gains vendredi. Les métaux précieux et le pétrole montent (nouvelles attaques à Ormuz), et le bitcoin remonte un peu malgré des sorties record des FNB.",
    "en": "A quiet day: Wall Street is closed for Thanksgiving. Europe rebounds strongly, relieved by less damaging U.S. tariffs, and U.S. futures point to gains on Friday. Precious metals and oil climb (new Hormuz attacks), and bitcoin edges up despite record ETF outflows.",
@@ -37651,7 +37651,7 @@
     ]
    },
    "xauusd": {
-    "move": "+1,0 %",
+    "move": "+0,9 %",
     "fr": "L'or monte dans un marché mince (congé américain) : la chute des taux obligataires dans le monde réduit l'avantage du dollar. La hausse reste limitée, car l'inflation tenace rend une hausse de taux de la Fed en décembre presque certaine.",
     "en": "Gold rises in thin holiday trading: the global drop in bond yields erodes the dollar's yield advantage. Gains stay limited as sticky inflation makes a December Fed hike almost certain.",
     "src": [
@@ -37681,9 +37681,9 @@
     ]
    },
    "usoil": {
-    "move": "+0,9 %",
-    "fr": "Le pétrole monte encore, mais a perdu une partie de ses gains du matin : trois autres navires ont été touchés par des projectiles dans le détroit d'Ormuz, où le passage tourne à environ la moitié de la normale. La hausse est freinée par une 3e hausse d'affilée des stocks américains de brut, avant la réunion de l'OPEP+ dimanche.",
-    "en": "Oil is still up, though off its morning highs: three more ships were hit by projectiles in the Strait of Hormuz, where traffic runs at about half of normal. Gains are capped by a third straight weekly build in U.S. crude stocks, ahead of Sunday's OPEC+ meeting.",
+    "move": "+1,3 %",
+    "fr": "Le pétrole monte encore : trois autres navires ont été touchés par des projectiles dans le détroit d'Ormuz, où le passage tourne à environ la moitié de la normale. La hausse est freinée par une 3e hausse d'affilée des stocks américains de brut, avant la réunion de l'OPEP+ dimanche.",
+    "en": "Oil is still climbing: three more ships were hit by projectiles in the Strait of Hormuz, where traffic runs at about half of normal. Gains are capped by a third straight weekly build in U.S. crude stocks, ahead of Sunday's OPEC+ meeting.",
     "src": [
      [
       "Investing.com : les attaques à Ormuz menacent l'offre",
@@ -37696,7 +37696,7 @@
     ]
    },
    "btcusd": {
-    "move": "+0,3 %",
+    "move": "+0,2 %",
     "fr": "Le bitcoin remonte un peu, autour de 60 500 $, dans un marché tranquille (congé américain), porté par un rebond des jetons DeFi. Mais la hausse reste mince : les FNB bitcoin américains vivent leurs pires sorties mensuelles de l'histoire (5,4 G$ en novembre), et la brèche chez Zodia Custody (Standard Chartered) plus la fermeture d'Auros pèsent sur la confiance avant l'échéance de 7 G$ d'options vendredi.",
     "en": "Bitcoin edges up to around $60,500 in quiet holiday trading, helped by a bounce in DeFi tokens. Gains stay thin: U.S. bitcoin ETFs are on track for their worst monthly outflows ever ($5.4B in November), and a breach at Zodia Custody (Standard Chartered) plus Auros winding down weigh on sentiment ahead of Friday's $7B options expiry.",
     "src": [
