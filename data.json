@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T09:48:55Z",
+  "updatedAt": "2026-11-26T10:42:55Z",
   "econ": {
     "values": {
       "adp": {
@@ -1650,6 +1650,38 @@
   "news": [
     {
       "date": "2026-11-26",
+      "time": "05:40",
+      "source": "MarketWatch",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "nasdaq",
+        "us30",
+        "rut"
+      ],
+      "title": "Les contrats à terme laissent entrevoir des gains à Wall Street pour le Black Friday; les marchés mondiaux saluent la résilience américaine",
+      "title_en": "Futures point to Black Friday gains for Wall Street as global markets welcome U.S. resilience",
+      "summary": "Selon MarketWatch, les contrats à terme américains pointent vers une séance positive vendredi, après la fermeture de Wall Street pour l'Action de grâce. Les marchés mondiaux accueillent favorablement les signes de résilience de l'économie américaine. À surveiller pour le S&P 500, le Nasdaq, le Dow et le Russell 2000 lors de la séance écourtée de vendredi.",
+      "summary_en": "According to MarketWatch, U.S. stock futures point to gains on Friday after Wall Street's Thanksgiving closure. Global markets are welcoming signs of U.S. economic resilience. Worth watching for the S&P 500, Nasdaq, Dow and Russell 2000 in Friday's shortened session.",
+      "url": "https://www.marketwatch.com/story/futures-point-to-black-friday-gains-for-wall-street-as-global-markets-welcome-u-s-resilience-ad6bcef2?mod=mw_rss_topstories"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "05:35",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "gbpusd",
+        "usd"
+      ],
+      "title": "Livre sterling : la livre reste stable, le dollar se maintient dans sa fourchette pendant le congé américain",
+      "title_en": "Sterling today: Pound steady as dollar holds range on U.S. holiday",
+      "summary": "La livre sterling est stable face au dollar américain, qui se maintient dans une fourchette étroite pendant le congé de l'Action de grâce aux États-Unis. Avec Wall Street fermée, les volumes sont faibles sur le marché des changes, ce qui limite les mouvements du GBP/USD et du dollar.",
+      "summary_en": "The pound is steady against the U.S. dollar, which is holding in a tight range during the U.S. Thanksgiving holiday. With Wall Street closed, FX volumes are thin, limiting moves in GBP/USD and the dollar.",
+      "url": "https://www.investing.com/news/forex-news/sterling-today-pound-steady-as-dollar-holds-range-on-us-holiday-5052307"
+    },
+    {
+      "date": "2026-11-26",
       "time": "04:01",
       "source": "Investing.com",
       "impact": "high",
@@ -2256,35 +2288,6 @@
       "title": "Les titres liés à l'IA prolongent leur glissade avant l'ouverture, les coûts des infrastructures inquiètent",
       "title_en": "AI stocks slide on fears over infrastructure buildout costs",
       "url": "https://www.investing.com/news/stock-market-news/ai-stocks-slide-on-fears-over-infrastructure-buildout-costs-5050519"
-    },
-    {
-      "assets": [
-        "btcusd"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Le bitcoin s'échange à 58 586 $ (-1,2 % depuis minuit UTC), tandis que l'ether (1 643 $, -2,2 %) et l'indice DeFi de CoinDesk (-2,6 %) reculent environ deux fois plus, sur fond de reprise de la vente sur les actions. Les FNB bitcoin au comptant américains ont perdu 231,4 M$ mardi, une sixième séance de sorties d'affilée (environ 4,94 G$ en novembre, selon Farside). L'indice de peur et de cupidité de CoinMarketCap est à 8, en « peur extrême ».",
-      "summary_en": "Bitcoin traded at $58,586 (down 1.2% since midnight UTC), while ether ($1,643, down 2.2%) and the CoinDesk DeFi Select Index (down 2.6%) fell about twice as hard as the equities selloff resumed. US spot bitcoin ETFs lost $231.4 million on Tuesday, a sixth straight day of outflows (about $4.94 billion in November, per Farside). CoinMarketCap's Fear and Greed Index sits at 8, 'extreme fear'.",
-      "time": "06:57",
-      "title": "L'ether chute deux fois plus que le bitcoin; sixième journée de sorties pour les FNB bitcoin au comptant",
-      "title_en": "Bitcoin holds up better than ether as stocks slide, ETF outflows hit sixth day",
-      "url": "https://www.coindesk.com/markets/2026/11/25/ether-defi-fall-twice-as-hard-as-bitcoin-as-equities-selloff-resumes"
-    },
-    {
-      "assets": [
-        "spx500",
-        "us30"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Deere prévoit un bénéfice net de 4,50 à 5,25 G$ pour l'exercice 2027, sous les 5,91 G$ attendus par les analystes (LSEG). Le bénéfice trimestriel a légèrement reculé à 1,05 G$, soit 3,89 $ par action, contre 1,07 G$ un an plus tôt. L'action, membre du Dow et du S&P 500, perdait environ 4 % avant l'ouverture.",
-      "summary_en": "Deere forecast fiscal 2027 net income of $4.50 billion to $5.25 billion, below the $5.91 billion analysts expected (LSEG). Quarterly net income edged down to $1.05 billion, or $3.89 per share, from $1.07 billion a year earlier. Shares of the Dow and S&P 500 component fell about 4% premarket.",
-      "time": "06:13",
-      "title": "Deere prévoit un bénéfice net 2027 inférieur aux attentes en raison d'une demande morose pour la machinerie agricole",
-      "title_en": "Deere forecasts fiscal 2027 net income below estimates amid muted farm equipment demand",
-      "url": "https://www.investing.com/news/stock-market-news/deere-forecasts-fiscal-2027-net-income-below-estimates-5050370"
     }
   ],
   "live": {
