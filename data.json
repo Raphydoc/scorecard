@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T01:48:08Z",
+ "updatedAt": "2026-11-26T02:42:48Z",
  "econ": {
   "values": {
    "adp": {
@@ -1650,6 +1650,27 @@
  "news": [
   {
    "date": "2026-11-25",
+   "time": "20:34",
+   "source": "Investing.com (Reuters)",
+   "impact": "med",
+   "assets": [
+    "nasdaq",
+    "spx500",
+    "usdjpy",
+    "usd",
+    "eurusd",
+    "usdchf",
+    "usoil",
+    "xauusd"
+   ],
+   "title": "Les Bourses d'Asie rebondissent, mais l'IA et les tarifs restent en toile de fond",
+   "title_en": "Asia shares bounce, AI and tariffs lurk in background",
+   "summary": "Le Nikkei gagne 1,6 % et le Kospi 1,9 % jeudi, tandis que les contrats à terme du S&P 500 et du Nasdaq montent de 0,5 % et 0,4 %. Le DXY recule à 103,71, l'euro remonte à 1,0973 $ et l'USD/JPY tient à 159,14, près de la résistance de 160. Le pétrole reste ferme (WTI +0,6 % à 84,24 $) après une attaque revendiquée par les Houthis contre la plus grande raffinerie d'Arabie saoudite; l'or cède 0,4 % à 3 566 $, et les marchés voient à 98 % une hausse de 25 points de base de la Fed en décembre.",
+   "summary_en": "The Nikkei rose 1.6% and the Kospi 1.9% on Thursday, while S&P 500 and Nasdaq futures gained 0.5% and 0.4%. The dollar index eased to 103.71, the euro edged up to $1.0973 and USD/JPY held at 159.14, near 160 resistance. Oil held firm (WTI +0.6% at $84.24) after Yemen's Houthis said they attacked Saudi Arabia's largest refinery; gold eased 0.4% to $3,566, and futures imply a 98% chance of a 25 bp Fed hike in December.",
+   "url": "https://www.investing.com/news/stock-market-news/asia-shares-bounce-ai-and-tariffs-lurk-in-background-5051871"
+  },
+  {
+   "date": "2026-11-25",
    "time": "19:54",
    "source": "CNBC",
    "impact": "med",
@@ -2264,20 +2285,6 @@
    "title": "Trump dit qu'il pourrait gracier Jensen Huang et évoque une participation de l'État américain dans Nvidia",
    "title_en": "Trump says he could pardon Jensen Huang, floats U.S. govt stake in Nvidia",
    "url": "https://www.investing.com/news/stock-market-news/trump-says-he-could-pardon-jensen-huang-floats-us-govt-stake-in-nvidia--nyt-5049530"
-  },
-  {
-   "assets": [
-    "usoil"
-   ],
-   "date": "2026-11-24",
-   "impact": "med",
-   "source": "Investing.com (Reuters)",
-   "summary": "Le WTI cède 47 cents (0,6 %) à 81,58 $ le baril et le Brent 43 cents (0,5 %) à 90,97 $ en Asie, après des gains de plus de 2 % mardi. L'AIE prévoit un retour à l'excédent au 4e trimestre, tandis que les attaques de navires près d'Hormuz entretiennent l'incertitude; l'OPEP+ se réunit le 29 novembre pour sa production 2027. L'API rapporte une hausse de 126 000 barils des stocks américains, sous l'estimation d'environ 1,5 million.",
-   "summary_en": "WTI fell 47 cents (0.6%) to $81.58 a barrel and Brent 43 cents (0.5%) to $90.97 in Asian trade, after both gained more than 2% on Tuesday. The IEA expects a return to surplus in Q4, while ship attacks near Hormuz keep uncertainty alive; OPEC+ meets Nov. 29 to set 2027 output. API data showed U.S. crude stocks up 126,000 barrels versus a ~1.5 million estimate.",
-   "time": "20:58",
-   "title": "Le pétrole recule, les craintes de surabondance l'emportent sur les risques au Moyen-Orient",
-   "title_en": "Oil prices fall as supply glut concerns offset Middle East disruption fears",
-   "url": "https://www.investing.com/news/commodities-news/oil-prices-fall-as-supply-glut-concerns-offset-middle-east-disruption-fears-5049537"
   }
  ],
  "live": {
