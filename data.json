@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T07:10:10Z",
+  "updatedAt": "2026-11-26T07:42:36Z",
   "econ": {
     "values": {
       "adp": {
@@ -1650,6 +1650,38 @@
   "news": [
     {
       "date": "2026-11-26",
+      "time": "02:24",
+      "source": "Investing.com (Reuters)",
+      "impact": "med",
+      "assets": [
+        "nasdaq",
+        "spx500"
+      ],
+      "title": "Exclusif : les restrictions américaines sur les puces et la lutte contre la « distillation » menacent le développement de l'IA chinoise, selon des sources",
+      "title_en": "Exclusive: US chip curbs, distillation crackdown threaten Chinese AI model development, sources say",
+      "summary": "Selon des sources citées par Reuters, les restrictions américaines sur les puces et la répression de la « distillation » (entraîner des modèles à partir de modèles américains) menacent le développement des modèles d'IA chinois. Le sujet s'ajoute aux tensions technologiques sino-américaines qui pèsent sur les semi-conducteurs et le Nasdaq.",
+      "summary_en": "According to sources cited by Reuters, US chip curbs and a crackdown on 'distillation' (training models off US models) threaten the development of Chinese AI models. The story adds to the US-China tech tensions weighing on semiconductors and the Nasdaq.",
+      "url": "https://www.investing.com/news/stock-market-news/exclusiveus-chip-curbs-distillation-crackdown-threaten-chinese-ai-model-development-sources-say-5052154"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "02:00",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usdjpy",
+        "xauusd",
+        "usoil",
+        "usd"
+      ],
+      "title": "Tokyo clôture en hausse : le Nikkei 225 gagne 0,84 %, Kioxia bondit de 12,6 %",
+      "title_en": "Japan stocks close higher; Nikkei 225 up 0.84%, Kioxia jumps 12.6%",
+      "summary": "Le Nikkei 225 a gagné 0,84 % jeudi, porté par l'immobilier et les banques; Kioxia a bondi de 12,57 % et SoftBank Group de 7,32 %, tandis que l'indice de volatilité Nikkei a grimpé de 5,97 % à 33,39. À la clôture, l'USD/JPY était à 159,21, l'or de décembre gagnait 0,85 % à 3 566 $ l'once, le WTI de janvier 0,45 % à 84,06 $ et l'indice dollar 0,14 % à 103,74.",
+      "summary_en": "The Nikkei 225 rose 0.84% on Thursday, led by real estate and banks; Kioxia jumped 12.57% and SoftBank Group 7.32%, while the Nikkei Volatility index climbed 5.97% to 33.39. At the close, USD/JPY stood at 159.21, December gold gained 0.85% to $3,566 an ounce, January WTI rose 0.45% to $84.06 and the dollar index 0.14% to 103.74.",
+      "url": "https://www.investing.com/news/stock-market-news/japan-stocks-higher-at-close-of-trade-nikkei-225-up-084-5052126"
+    },
+    {
+      "date": "2026-11-26",
       "time": "01:19",
       "source": "CoinDesk",
       "impact": "med",
@@ -2245,39 +2277,6 @@
       "title": "Le bitcoin repasse sous les 60 000 $, le HYPE entraîne les altcoins à la baisse",
       "title_en": "Bitcoin slips back under $60,000 as HYPE leads altcoins lower",
       "url": "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower"
-    },
-    {
-      "assets": [
-        "eurusd",
-        "gbpusd",
-        "spx500"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Les actions européennes progressent mercredi, portées par les titres de consommation, pendant que les investisseurs attendent l'annonce de nouveaux tarifs américains et les données d'inflation PCE. L'article n'a pas pu être consulté en entier; résumé fondé sur le titre. Le ton européen contraste avec la baisse en Asie et donne le ton avant l'ouverture à Wall Street.",
-      "summary_en": "European stocks are rising on Wednesday, lifted by consumer shares, as investors await new U.S. tariffs and PCE inflation data. The full article could not be accessed; summary based on the headline. The European tone contrasts with the selloff in Asia and sets the mood ahead of the Wall Street open.",
-      "time": "03:30",
-      "title": "Les Bourses européennes montent grâce aux titres de consommation; les marchés attendent les tarifs américains et l'inflation",
-      "title_en": "European shares rise on consumer boost; markets await US tariffs, inflation",
-      "url": "https://www.investing.com/news/stock-market-news/european-shares-rise-on-consumer-boost-markets-await-us-tariffs-inflation-5049970"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "xauusd"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "CNBC",
-      "summary": "Les rendements des bons du Trésor américain reculent mercredi matin alors que les investisseurs attendent une donnée d'inflation importante (l'indice PCE). Une détente des taux tend à peser sur le dollar et à soutenir l'or et les actions sensibles aux taux; l'article n'a pas pu être lu en entier.",
-      "summary_en": "U.S. Treasury yields are falling Wednesday morning as investors await a key inflation reading (the PCE index). Lower yields tend to weigh on the dollar and support gold and rate-sensitive stocks; the full article could not be read.",
-      "time": "02:44",
-      "title": "Les rendements des bons du Trésor reculent dans l'attente d'un indicateur clé d'inflation",
-      "title_en": "Treasury yields fall as investors await key inflation signal",
-      "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
     }
   ],
   "live": {
