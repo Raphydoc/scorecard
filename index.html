@@ -4065,17 +4065,17 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
   // ---------- Charts : force relative (variation depuis la 1re barre à l'écran) ----------
   state.chP = state.chP || 'fx'; state.chTF = state.chTF || 'h1'; state.chView = state.chView || 'ov';
   const CHP = {
-    fx:{n:['Devises (forex)','Forex currency'], tf:['h1','h4','d1'], sub:[L('8 devises · non pondéré','8 currencies · unweighted'),'']},
-    yld:{n:['Taux US','US yields'], tf:['h1','d1']},
-    cmd:{n:['Matières premières','Commodities'], tf:['h1','d1']},
-    idx:{n:['Indices US','US indices'], tf:['h1','d1']},
-    my:{n:['Mon choix','My picks'], tf:['h1','d1']}
+    fx:{n:['Devises (forex)','Forex currency'], tf:['h1','h4','d1','w1','mo'], sub:[L('8 devises · non pondéré','8 currencies · unweighted'),'']},
+    yld:{n:['Taux US','US yields'], tf:['h1','h4','d1','w1','mo']},
+    cmd:{n:['Matières premières','Commodities'], tf:['h1','h4','d1','w1','mo']},
+    idx:{n:['Indices US','US indices'], tf:['h1','h4','d1','w1','mo']},
+    my:{n:['Mon choix','My picks'], tf:['h1','h4','d1','w1','mo']}
   };
-  const TFN = {h1:'1H', h4:'4H', d1:'1D'};
+  const TFN = {h1:'1H', h4:'4H', d1:'1D', w1:'1W', mo:'1M'};
   function chSeries(M){
     const p = state.chP, tf = CHP[p].tf.includes(state.chTF) ? state.chTF : CHP[p].tf[0];
     const S = (M.strength||{})[p+'_'+tf]; if(!S) return null;
-    const win = tf==='h1' ? 120 : tf==='h4' ? 180 : 252;
+    const win = tf==='h1' ? 120 : tf==='h4' ? 180 : tf==='w1' ? 156 : tf==='mo' ? 120 : 252;
     const n = S.t.length, from = Math.max(0, n-win), t = S.t.slice(from);
     const keys = Object.keys(S).filter(k=>k!=='t');
     const ser = keys.map((k,i)=>{ const a = S[k].slice(from), b = a.find(x=>x!=null); return {k, col: p==='fx' ? CCOL[k] : SCOL[i%SCOL.length], raw:a, pct:a.map(x=>x==null||!b ? null : (x/b-1)*100)}; });
@@ -4092,28 +4092,32 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     return state.cmpSel;
   }
   const CMP_RANGE = {h1:[[24*5,L('1 semaine','1 week')],[24*31,L('1 mois','1 month')]], d1:[[21,L('1 mois','1 month')],[63,L('3 mois','3 months')],[126,L('6 mois','6 months')],[252,L('1 an','1 year')],[9999,L('Tout','All')]]};
-  function cmpSeries(tf){
-    const O = state.ohlc && state.ohlc[tf]; if(!O) return null;
-    const sel = cmpSel().filter(k=>O[k] && O[k].length);
-    const R = CMP_RANGE[tf], want = (state.cmpR && state.cmpR[tf]) || R[tf==='h1'?0:1][0];
-    const key = (k, t) => tf==='d1' ? barDate(k, t) : String(Math.floor(t/3600)*3600);
-    const maps = {}, all = new Set();
-    sel.forEach(k=>{ const m = new Map(); O[k].forEach(r=>{ const kk = key(k, r[0]); m.set(kk, r[4]); all.add(kk); }); maps[k] = m; });
-    let ks = [...all].sort();
-    if(tf==='h1'){ const lim = Date.now()/1000 - want*3600; ks = ks.filter(x=>+x >= lim); } else ks = ks.slice(-want);
-    if(ks.length < 2) return null;
-    const t = ks.map(x=>tf==='d1' ? Date.parse(x+'T12:00:00Z')/1000 : +x);
-    const ser = sel.map(k=>{ const m = maps[k]; let last = null; const before = [...m.keys()].filter(x=>x < ks[0]).sort().pop(); if(before) last = m.get(before);
-      const raw = ks.map(x=>{ if(m.has(x)) last = m.get(x); return last; }), b = raw.find(x=>x!=null);
-      return {k:TOP_NAMES[k], key:k, col:SCOL[cmpSel().indexOf(k) % SCOL.length], raw, pct:raw.map(x=>x==null||!b ? null : (x/b-1)*100)}; });
+  function cmpSeries(tf, M){
+    const sel = cmpSel(); if(!sel.length) return null;
+    const WIN = {h1:120, h4:186, d1:252, w1:156, mo:120};
+    let t = [], cols = {};
+    if(tf==='w1' || tf==='mo'){
+      const S = M && M.strength && M.strength['my_'+tf]; if(!S || !S.t) return null;
+      const n = S.t.length, from = Math.max(0, n - WIN[tf]); t = S.t.slice(from); sel.forEach(k=>{ if(S[k]) cols[k] = S[k].slice(from); });
+    } else {
+      const O = state.ohlc && state.ohlc[tf==='d1' ? 'd1' : 'h1']; if(!O) return null;
+      const key = (k, ts) => tf==='d1' ? barDate(k, ts) : String(Math.floor(ts/(tf==='h4' ? 14400 : 3600))*(tf==='h4' ? 14400 : 3600));
+      const maps = {}, all = new Set();
+      sel.forEach(k=>{ if(!O[k] || !O[k].length) return; const m = new Map(); O[k].forEach(r=>{ const kk = key(k, r[0]); m.set(kk, r[4]); all.add(kk); }); maps[k] = m; });
+      const ks = [...all].sort().slice(-WIN[tf]); if(ks.length < 2) return null;
+      t = ks.map(x=>tf==='d1' ? Date.parse(x+'T12:00:00Z')/1000 : +x);
+      Object.entries(maps).forEach(([k,m])=>{ let last = null; const before = [...m.keys()].filter(x=>x < ks[0]).sort().pop(); if(before) last = m.get(before);
+        cols[k] = ks.map(x=>{ if(m.has(x)) last = m.get(x); return last; }); });
+    }
+    if(t.length < 2) return null;
+    const ser = Object.entries(cols).map(([k, raw])=>{ const b = raw.find(x=>x!=null); return {k:TOP_NAMES[k], key:k, col:SCOL[sel.indexOf(k) % SCOL.length], raw, pct:raw.map(x=>x==null||!b ? null : (x/b-1)*100)}; });
     ser.forEach(s=>{ s.last = s.pct[s.pct.length-1]; s.lastRaw = s.raw[s.raw.length-1]; });
     ser.sort((a,b)=>(b.last||0)-(a.last||0));
     return {tf, t, ser};
   }
   function cmpPicker(tf){
-    const sel = cmpSel(), R = CMP_RANGE[tf], cur = (state.cmpR && state.cmpR[tf]) || R[tf==='h1'?0:1][0];
+    const sel = cmpSel();
     return `<div class="cmpk"><div class="cmpk1"><span class="cmpt">${L('Choisis jusqu’à '+CMP_MAX+' actifs à comparer','Pick up to '+CMP_MAX+' assets to compare')}</span>
-        <div class="seg cmpr">${R.map(([n,t])=>`<button type="button" data-cr="${n}" aria-pressed="${n===cur}">${t}</button>`).join('')}</div>
         <button type="button" class="cmpclr" data-cmpclr="1">${L('Tout décocher','Clear all')}</button></div>
       <div class="apick cmpg">${CMP_GR.map(([c,t,ks])=>`<div class="apg"><span class="apgt">${L(t[0],t[1])}</span><div class="apgl">${ks.filter(k=>TOP_NAMES[k]).map(k=>{ const i = sel.indexOf(k);
         return `<button type="button" class="apb cmpb ${i>=0?'on':''}" data-cmp="${k}" aria-pressed="${i>=0}"${i>=0?` style="--lc:${SCOL[i % SCOL.length]}"`:''}>${i>=0?`<i class="cmpdot"></i>`:''}<b>${esc(TOP_NAMES[k])}</b></button>`; }).join('')}</div></div>`).join('')}</div></div>`;
@@ -4126,8 +4130,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const M = await withStr(await mkData()); if(state.page!=='charts') return;
     if(!M || !M.strength){ tsWait(box, L('Les données des graphiques arrivent à la prochaine mise à jour (toutes les heures).','Chart data arrives with the next hourly update.')); return; }
     const p = state.chP; if(p==='my'){ await ohlcData(); if(state.page!=='charts') return; }
-    const D = p==='my' ? cmpSeries(CHP.my.tf.includes(state.chTF) ? state.chTF : 'h1') : chSeries(M);
-    const fmtT = (s, tf) => { const d = new Date(s*1000); return tf==='d1' ? d.toLocaleDateString(LOC(),{day:'numeric', month:'short'}) : d.toLocaleString(LOC(),{day:'numeric', hour:'2-digit', minute:'2-digit'}); };
+    const D = p==='my' ? cmpSeries(CHP.my.tf.includes(state.chTF) ? state.chTF : 'h1', M) : chSeries(M);
+    const fmtT = (s, tf) => { const d = new Date(s*1000); return tf==='w1' || tf==='mo' ? d.toLocaleDateString(LOC(),{month:'short', year:'2-digit'}) : tf==='d1' ? d.toLocaleDateString(LOC(),{day:'numeric', month:'short'}) : d.toLocaleString(LOC(),{day:'numeric', hour:'2-digit', minute:'2-digit'}); };
     box.innerHTML = `
       <div class="chwrap">
         <aside class="chside panel">
@@ -4138,7 +4142,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         </aside>
         <div class="chmain panel">
           <div class="chbar"><h3>${esc((isEN()?CHP[p].n[1]:CHP[p].n[0]).toUpperCase())}</h3><span class="chtag">${D?D.ser.length:0} ${p==='fx'?L('DEVISES · NON PONDÉRÉ','CURRENCIES · UNWEIGHTED'):L('SÉRIES','SERIES')} · ${state.chView==='ov'?L('VUE D’ENSEMBLE','OVERVIEW'):L('GRILLE','GRID')}</span>
-            <div class="seg chtf">${CHP[p].tf.map(t=>`<button type="button" data-tf="${t}" aria-pressed="${D&&D.tf===t}">${TFN[t]}</button>`).join('')}</div>
+            <div class="seg chtf">${CHP[p].tf.map(t=>`<button type="button" data-tf="${t}" aria-pressed="${(D?D.tf:(CHP[p].tf.includes(state.chTF)?state.chTF:CHP[p].tf[0]))===t}">${TFN[t]}</button>`).join('')}</div>
             ${state.chView==='ov'?`<button type="button" class="chx" data-fs="main" title="${L('Agrandir','Expand')}" aria-label="${L('Agrandir le graphique','Expand chart')}">⤢</button>`:''}<div class="seg chv"><button type="button" data-v="ov" aria-pressed="${state.chView==='ov'}">${L('VUE','OVERVIEW')}</button><button type="button" data-v="grid" aria-pressed="${state.chView==='grid'}">${L('GRILLE','GRID')}</button></div></div>
           ${p==='my' ? cmpPicker(CHP.my.tf.includes(state.chTF) ? state.chTF : 'h1') : ''}
           <p class="tscap2">% ${L('VARIATION DEPUIS','CHANGE SINCE')} <b>${L('LA PREMIÈRE BARRE À L’ÉCRAN','THE FIRST BAR ON SCREEN')}</b></p>
@@ -4165,7 +4169,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     box.querySelectorAll('[data-cmpclr]').forEach(b=>b.addEventListener('click', ()=>{ state.cmpSel = []; saveCmp(); state.cmpSel = null; try{ localStorage.setItem('sc-cmp','[]'); }catch(e){} state.cmpSel = []; renderChartsTS(); }));
     box.querySelectorAll('[data-cr]').forEach(b=>b.addEventListener('click', ()=>{ const tf = CHP.my.tf.includes(state.chTF) ? state.chTF : 'h1'; state.cmpR = Object.assign({}, state.cmpR, {[tf]:+b.dataset.cr}); renderChartsTS(); }));
     if(state._reFs){ state._reFs = 0; const fb = box.querySelector('[data-fs="main"]'); if(fb) fb.click(); }
-    if(!D){ if(p==='my'){ const cv = box.querySelector('.chcanvas'); if(cv) cv.innerHTML = `<p class="cmpempty">${L('Choisis au moins un actif ci-dessus.','Pick at least one asset above.')}</p>`; } return; }
+    if(!D){ const cv = box.querySelector('.chcanvas'); if(cv) cv.innerHTML = `<p class="cmpempty">${p==='my' && !cmpSel().length ? L('Choisis au moins un actif ci-dessus.','Pick at least one asset above.') : L('Cette unité de temps arrive avec la prochaine mise à jour des données (moins d’une heure).','This timeframe arrives with the next data update (under an hour).')}</p>`; return; }
     if(!(await needChart()) || state.page!=='charts') return;
     const labels = D.t.map(s=>fmtT(s, D.tf));
     const base = {plugins:{legend:{display:false}, tooltip:{callbacks:{label:c=>`${c.dataset.label} ${sg2(c.parsed.y,2)} %`}}}, elements:{point:{radius:0}, line:{borderWidth:1.6, tension:0.15}},

@@ -152,6 +152,14 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
     const h4src = {}; for (const c in fxH) h4src[c] = agg(fxH[c], 4); M.strength.fx_h4 = strengthFrom(h4src);
   }
   if (Object.values(fxD).every(Boolean)) M.strength.fx_d1 = strengthFrom(fxD);
+  // unités de temps longues : hebdomadaire (5 ans) et mensuelle (10 ans)
+  const LONG = async s => [await chart(s, '5y', '1wk'), await chart(s, '10y', '1mo')];
+  const bucket4 = rows => { const m = new Map(); (rows || []).forEach(r => { const b = Math.floor(r[0] / 14400) * 14400, g = m.get(b);
+    if (!g) m.set(b, [b, r[1], r[2], r[3], r[4]]); else { g[2] = Math.max(g[2], r[2]); g[3] = Math.min(g[3], r[3]); g[4] = r[4]; } }); return [...m.values()]; };
+  { const fl = await pool(Object.entries(FX), async ([c, [s]]) => [c, ...(await LONG(s))]); const W = {}, Mo = {};
+    fl.forEach(([c, w, mo]) => { W[c] = w && w.rows; Mo[c] = mo && mo.rows; });
+    if (Object.values(W).every(Boolean)) M.strength.fx_w1 = strengthFrom(W);
+    if (Object.values(Mo).every(Boolean)) M.strength.fx_mo = strengthFrom(Mo); }
   const presets = {
     cmd: {Or: 'GC=F', Argent: 'SI=F', Cuivre: 'HG=F', WTI: 'CL=F', Brent: 'BZ=F', 'Gaz nat.': 'NG=F'},
     idx: {'S&P 500': '^GSPC', 'Nasdaq 100': '^NDX', 'Dow Jones': '^DJI', 'Russell 2000': '^RUT'},
@@ -164,7 +172,21 @@ const sma = (a, n, i) => i + 1 < n ? null : a.slice(i - n + 1, i + 1).reduce((s,
     const round = o => { const r = {t: o.t}; for (const k in o) if (k !== 't') r[k] = o[k].map(x => r2(x, dp(x))); return r; };
     if (Object.keys(H).length) M.strength[p + '_h1'] = round(align(H));
     if (Object.keys(D).length) M.strength[p + '_d1'] = round(align(D));
+    const H4 = {}; for (const n in H) H4[n] = bucket4(H[n]); if (Object.keys(H4).length) M.strength[p + '_h4'] = round(align(H4));
+    const rl = await pool(ent, async ([n, s]) => [n, ...(await LONG(s))]); const W = {}, Mo = {};
+    rl.forEach(([n, w, mo]) => { if (w) W[n] = w.rows; if (mo) Mo[n] = mo.rows; });
+    if (Object.keys(W).length) M.strength[p + '_w1'] = round(align(W));
+    if (Object.keys(Mo).length) M.strength[p + '_mo'] = round(align(Mo));
   }
+  // « Mon choix » : les 16 actifs du scorecard en hebdomadaire et en mensuel (1H, 4H et journalier viennent de ohlc.json)
+  { const MY = {xauusd: 'GC=F', xagusd: 'SI=F', nasdaq: '^NDX', spx500: '^GSPC', us30: '^DJI', rut: '^RUT', usd: 'DX-Y.NYB', usoil: 'CL=F', btcusd: 'BTC-USD', eurusd: 'EURUSD=X', usdjpy: 'JPY=X', usdcad: 'CAD=X', gbpusd: 'GBPUSD=X', audusd: 'AUDUSD=X', usdchf: 'CHF=X', nzdusd: 'NZDUSD=X'};
+    const rl = await pool(Object.entries(MY), async ([k, s]) => [k, ...(await LONG(s))]); const W = {}, Mo = {};
+    rl.forEach(([k, w, mo]) => { if (w) W[k] = w.rows; if (mo) Mo[k] = mo.rows; });
+    const rnd = o => { const r = {t: o.t}; for (const k in o) if (k !== 't') r[k] = o[k].map(x => x == null ? null : +x.toPrecision(6)); return r; };
+    const alignAny = series => { const ts = [...new Set(Object.values(series).flatMap(r => r.map(x => x[0])))].sort((a, b) => a - b); const out = {t: ts};
+      for (const [k, rows] of Object.entries(series)) { const m = new Map(rows.map(x => [x[0], x[4]])); let last = null; out[k] = ts.map(t => { if (m.has(t)) last = m.get(t); return last; }); } return out; };
+    if (Object.keys(W).length) M.strength.my_w1 = rnd(alignAny(W));
+    if (Object.keys(Mo).length) M.strength.my_mo = rnd(alignAny(Mo)); }
 
   // ---------- Sentiment de risque (0 à 100) ----------
   const RS = {vix: '^VIX', spx: '^GSPC', hyg: 'HYG', lqd: 'LQD', aj: 'AUDJPY=X', hg: 'HG=F', gc: 'GC=F', spy: 'SPY', tlt: 'TLT', btc: 'BTC-USD'};
