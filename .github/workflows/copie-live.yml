@@ -27,7 +27,7 @@ jobs:
           for i in 1 2 3; do
             git pull --rebase -q origin main
             python3 tools/apply_live.py fred_out.json cot_out.json
-            git add data.json
+            git add data.json macro_long.json 2>/dev/null || git add data.json
             git diff --cached --quiet && { echo "Rien de nouveau"; exit 0; }
             git commit -q -m "Copie des données des graphiques du $(date -u +%F)"
             git push -q origin main && exit 0

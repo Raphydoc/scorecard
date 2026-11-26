@@ -12,4 +12,7 @@ d['live'] = live
 if not same: d['updatedAt'] = datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ')
 json.dump(d, open('data.json', 'w'), ensure_ascii=False, indent=1)
 json.dump(live, open('live.json', 'w'), separators=(',', ':'))
+# historique complet à part (chargé seulement par la page Économie US pour 5 ans, 10 ans et max)
+if f.get('long') and f['long'].get('cpi'):
+    json.dump({'asOf': live['asOf'], 'macro': f['long']}, open('macro_long.json', 'w'), separators=(',', ':'))
 print('ok', live['macro']['cpi'][-1], live['rates']['y10'][-1], {k: v[-1][0] for k, v in live['cot'].items()})

@@ -12,4 +12,11 @@ for(const [k,id] of Object.entries(W)){
   const pts = Object.keys(wk).sort().map(f=>wk[f]);
   (k==='claims' ? out.macro : out.rates)[k] = k==='claims' ? pts.map(([d,v])=>[d, Math.round(v/1000)]) : pts;
 }
+// historique complet (page Économie US : 5 ans, 10 ans, max) → macro_long.json
+out.long = {};
+for(const [k,id] of Object.entries(M)) out.long[k] = (await get(id, '1940-01-01')).map(([d,v])=>[d.slice(0,7), v]);
+out.long.gdp = (await get('A191RL1Q225SBEA', '1940-01-01')).map(([d,v])=>[d.slice(0,4)+'-Q'+(Math.floor((+d.slice(5,7)-1)/3)+1), v]);
+{ const rows = await get('ICSA', '1967-01-01'), wk = {};
+  rows.forEach(([d,v])=>{ const t = new Date(d+'T12:00:00Z'); const f = new Date(t.getTime() + ((5 - t.getUTCDay() + 7) % 7)*864e5).toISOString().slice(0,10); wk[f] = [d, Math.round(v/1000)]; });
+  out.long.claims = Object.keys(wk).sort().map(f=>wk[f]); }
 JSON.stringify(out)

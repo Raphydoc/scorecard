@@ -2714,7 +2714,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         ${has ? `<div class="pb"><div class="icards">${cards}</div></div>` : liveMissing(L('données économiques','economic data'))}
       </div>
       ${has && ECON.some(x=>x.k===state.ecoSel && x.g===state.ecoG) ? `<div class="panel"><div class="ph"><div class="dethead" style="width:100%"><div><h3>${esc(e.n[isEN()?1:0])}</h3><p>${L('Source : ','Source: ')}${SRC_FULL[e.src]||e.src}${(state.live||{}).liveAt?'':' (via FRED)'}${last?' · '+L('dernière donnée : ','latest: ')+perLbl(last[0]):''}</p></div>
-        <div class="chips" id="ecoR">${[[12,'1A','1Y'],[24,'2A','2Y'],[36,'3A','3Y']].map(([n,f,en])=>`<button class="chip" data-r="${n}" aria-pressed="${n===state.ecoRange}">${L(f,en)}</button>`).join('')}</div></div></div>
+        <div class="chips" id="ecoR">${[[12,'1A','1Y'],[24,'2A','2Y'],[36,'3A','3Y'],[60,'5A','5Y'],[120,'10A','10Y'],[0,'Max','Max']].map(([n,f,en])=>`<button class="chip" data-r="${n}" aria-pressed="${n===state.ecoRange}">${L(f,en)}</button>`).join('')}</div></div></div>
         <div class="pb"><div class="cbox lg"><canvas id="ecoChart"></canvas></div>
         <div class="statg">
           <div><span>${L('Dernière','Latest')}</span><b>${last? nf(last[1],e.d)+e.u:'—'}</b></div>
@@ -2728,11 +2728,17 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     box.querySelectorAll('.icard[data-k]').forEach(b=>b.addEventListener('click', ()=>{ state.ecoSel = b.dataset.k; renderEco(); }));
     box.querySelectorAll('#ecoR .chip').forEach(b=>b.addEventListener('click', ()=>{ state.ecoRange = +b.dataset.r; renderEco(); }));
     if(has && $('ecoChart')) needChart().then(ok=>{ if(!ok) return;
-      const n = e.k==='gdp' ? Math.round(state.ecoRange/3) : e.k==='claims' ? Math.round(state.ecoRange*4.33) : state.ecoRange;
-      const ss = s.slice(-n), gold = css('--gold');
-      const ds = [{label:e.n[isEN()?1:0], data:ss.map(x=>+x[1].toFixed(e.d+1)), type:e.ty, borderColor:gold, backgroundColor:e.ty==='bar'? ss.map(x=>x[1]>=0?css('--bull'):css('--bear')) : gold+'33', fill:e.ty!=='bar', tension:.25, pointRadius:2}];
+      // 5 ans, 10 ans, max : historique complet (macro_long.json, chargé seulement au besoin)
+      const R = state.ecoRange, need = R===0 || R > 60;
+      if(need && !state.macroLong){ if(!state._mlP){ state._mlP = fetch('macro_long.json?t='+Math.floor(Date.now()/36e5)).then(r=>r.ok?r.json():null).catch(()=>null)
+          .then(j=>j || fetch('https://raw.githubusercontent.com/Raphydoc/scorecard/main/macro_long.json').then(r=>r.ok?r.json():null).catch(()=>null))
+          .then(j=>{ state._mlP = null; if(j && j.macro){ state.macroLong = j.macro; if(state.page==='eco') renderEco(); } }); } }
+      const sl = need && state.macroLong ? e.f(state.macroLong) : s, src = sl && sl.length ? sl : s;
+      const n = R===0 ? src.length : e.k==='gdp' ? Math.round(R/3) : e.k==='claims' ? Math.round(R*4.33) : R;
+      const ss = src.slice(-n), gold = css('--gold');
+      const ds = [{label:e.n[isEN()?1:0], data:ss.map(x=>+x[1].toFixed(e.d+1)), type:e.ty, borderColor:gold, backgroundColor:e.ty==='bar'? ss.map(x=>x[1]>=0?css('--bull'):css('--bear')) : gold+'33', fill:e.ty!=='bar', tension:.25, pointRadius:ss.length>80?0:2}];
       if(e.tgt) ds.push({label:L('Cible de la Fed (2 %)','Fed target (2%)'), data:ss.map(()=>e.tgt), type:'line', borderColor:css('--muted'), borderDash:[5,5], pointRadius:0, fill:false});
-      mkChart('ecoChart', {type:e.ty, data:{labels:ss.map(x=>perLbl(x[0])), datasets:ds}, options:{scales:{y:{ticks:{callback:v=>nf(v,e.d)+e.u}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,e.d)+e.u}}}}});
+      mkChart('ecoChart', {type:e.ty, data:{labels:ss.map(x=>perLbl(x[0])), datasets:ds}, options:{scales:{x:{ticks:{maxTicksLimit:10, autoSkip:true}}, y:{ticks:{callback:v=>nf(v,e.d)+e.u}}}, plugins:{tooltip:{callbacks:{label:c=>c.dataset.label+' : '+nf(c.parsed.y,e.d)+e.u}}}}});
     });
   }
   function surpriseTable(){
