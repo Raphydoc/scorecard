@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T12:15:33Z",
+  "updatedAt": "2026-11-26T12:48:11Z",
   "econ": {
     "values": {
       "adp": {
@@ -1650,6 +1650,34 @@
   "news": [
     {
       "date": "2026-11-26",
+      "time": "07:14",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Les FNB bitcoin au comptant en route vers leur pire mois de sorties de fonds jamais enregistré",
+      "title_en": "Spot bitcoin ETFs on track for their biggest monthly outflow on record",
+      "summary": "Les FNB bitcoin au comptant américains ont perdu 5,39 G$ nets en novembre (données SoSoValue jusqu'au 25 novembre), du jamais-vu depuis leur lancement en janvier 2024; l'ancien record était de 4,51 G$ en juin 2026. Le bitcoin a chuté de 22 % ce mois-ci, à environ 60 000 $, et les FNB d'ether ont perdu 1,30 G$. Les hausses de taux attendues de la Fed en décembre et l'an prochain rendent les actifs risqués moins attrayants.",
+      "summary_en": "U.S. spot bitcoin ETFs have lost a net $5.39 billion in November (SoSoValue data through Nov. 25), the most since their January 2024 debut; the prior record was $4.51 billion in June 2026. Bitcoin has fallen 22% this month to about $60,000, and ether ETFs lost $1.30 billion. Expected Fed rate hikes in December and next year make risk assets less attractive.",
+      "url": "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "07:11",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "usdcad"
+      ],
+      "title": "Les contrats à terme du TSX stables dans des échanges allégés par l'Action de grâce américaine, l'avertissement de Macklem en vue",
+      "title_en": "Canada's TSX futures flat in holiday-thinned trade and Macklem's warning",
+      "summary": "Les contrats à terme sur l'indice S&P/TSX sont stables dans un marché clairsemé en raison de l'Action de grâce aux États-Unis. Les investisseurs prennent note d'un avertissement du gouverneur de la Banque du Canada, Tiff Macklem (détails non disponibles : l'article n'a pas pu être lu). À surveiller pour le dollar canadien et l'USD/CAD.",
+      "summary_en": "S&P/TSX index futures are flat in thin trade due to the U.S. Thanksgiving holiday. Investors are weighing a warning from Bank of Canada Governor Tiff Macklem (details unavailable: the article could not be read). Worth watching for the Canadian dollar and USD/CAD.",
+      "url": "https://www.investing.com/news/stock-market-news/canadas-tsx-futures-flat-in-holidaythinned-trade--and-macklems-warning-5052325"
+    },
+    {
+      "date": "2026-11-26",
       "time": "06:27",
       "source": "CoinDesk",
       "impact": "med",
@@ -2241,44 +2269,6 @@
       "title": "L'or glisse à son plus bas de séance, sous 3 430 $, après des ventes de maisons neuves en hausse de 14,2 %",
       "title_en": "Gold falls to session lows as U.S. new home sales rise 14.2% in October",
       "url": "https://www.kitco.com/news/article/2026-11-25/gold-price-falls-session-lows-us-new-home-sales-rise-142-october"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "us30",
-        "usd"
-      ],
-      "date": "2026-11-25",
-      "impact": "high",
-      "source": "Investing.com (Reuters)",
-      "summary": "À 8 h 34 HE, les contrats E-mini du Nasdaq 100 chutaient de 3,11 % (-817,5 points), ceux du S&P 500 de 2,08 % et ceux du Dow de 1,32 % (-661 points). L'indice PCE a progressé de 0,3 % en octobre et de 3,8 % sur un an, conforme aux attentes, tandis que la 2e estimation du PIB du 3e trimestre affiche 4,3 % (3,5 % attendu) et que les inscriptions au chômage ont reculé à 189 000 (200 000 attendues). Ces chiffres confortent les paris d'une hausse de taux de la Fed en décembre.",
-      "summary_en": "At 8:34 a.m. ET, Nasdaq 100 E-minis were down 3.11% (817.5 points), S&P 500 E-minis down 2.08% and Dow E-minis down 1.32% (661 points). October PCE prices rose 0.3% on the month and 3.8% on the year, in line with forecasts, while the second estimate of Q3 GDP showed 4.3% growth (3.5% expected) and jobless claims fell to 189,000 (200,000 expected). The data reaffirmed odds of a Fed rate hike in December.",
-      "time": "08:43",
-      "title": "Les contrats à terme américains creusent leurs pertes après les données : le Nasdaq 100 cède plus de 3 %",
-      "title_en": "US stock futures extend losses after economic data; Nasdaq 100 down more than 3%",
-      "url": "https://www.investing.com/news/economy-news/us-stock-futures-extend-losses-after-economic-data-5050842"
-    },
-    {
-      "assets": [
-        "usd",
-        "spx500",
-        "nasdaq",
-        "us30",
-        "xauusd",
-        "btcusd",
-        "eurusd",
-        "usdjpy"
-      ],
-      "date": "2026-11-25",
-      "impact": "high",
-      "source": "CNBC",
-      "summary": "Selon CNBC, l'inflation PCE a accéléré à 3,8 % sur un an en octobre, contre 3,6 % en septembre, ce qui rend très probable une hausse de taux de la Fed en décembre; MarketWatch titre que la Fed n'a « plus le choix ». L'article n'a pas pu être consulté en entier; résumé fondé sur les titres. Une Fed plus restrictive soutient le dollar et pèse sur l'or, les actions et le bitcoin.",
-      "summary_en": "According to CNBC, PCE inflation accelerated to 3.8% year over year in October from 3.6% in September, making a December Fed rate hike very likely; MarketWatch says the Fed now has 'no choice'. The full article could not be accessed; summary based on the headlines. A more hawkish Fed supports the dollar and weighs on gold, stocks and bitcoin.",
-      "time": "08:31",
-      "title": "L'indice PCE, la mesure d'inflation préférée de la Fed, accélère à 3,8 % en octobre, ce qui scelle probablement une hausse de taux",
-      "title_en": "Fed's preferred inflation gauge accelerated to 3.8% in October, likely sealing rate hike",
-      "url": "https://www.cnbc.com/2026/11/25/pce-inflation-report-october-2026.html"
     }
   ],
   "live": {
