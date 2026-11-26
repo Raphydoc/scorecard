@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T22:15:06Z",
+ "updatedAt": "2026-11-26T22:47:37Z",
  "econ": {
   "values": {
    "adp": {
@@ -1717,6 +1717,48 @@
  "news": [
   {
    "date": "2026-11-26",
+   "time": "16:58",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usdcad"
+   ],
+   "title": "Le huard s'affaiblit dans l'accalmie de l'Action de grâce américaine, malgré les données sur l'emploi au Canada",
+   "title_en": "Loonie weakens amid Thanksgiving holiday lull, Canadian labor market data",
+   "summary": "Le dollar canadien recule face au billet vert dans des échanges allégés par l'Action de grâce aux États-Unis, alors que le marché digère des données sur le marché du travail canadien. L'article n'a pas pu être lu; ce résumé s'en tient au titre. Un huard plus faible signifie une hausse de l'USD/CAD.",
+   "summary_en": "The Canadian dollar slips against the greenback in trade thinned by the U.S. Thanksgiving holiday, as markets digest Canadian labor market data. The article could not be read; this summary sticks to the headline. A weaker loonie means a higher USD/CAD.",
+   "url": "https://www.investing.com/news/forex-news/loonie-weakens-amid-thanksgiving-holiday-lull-canadian-labor-market-data-5052729"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "16:41",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usdcad"
+   ],
+   "title": "Les obligations canadiennes prolongent leur rallye sur fond de nervosité liée à l'IA et de commentaires de Macklem",
+   "title_en": "Canadian bonds extend rally amid AI jitters, Macklem comments",
+   "summary": "Les obligations du gouvernement canadien poursuivent leur hausse (les rendements reculent), portées par la nervosité entourant l'intelligence artificielle et par des commentaires du gouverneur de la Banque du Canada, Tiff Macklem. L'article n'a pas pu être lu; ce résumé s'en tient au titre. Des rendements canadiens plus bas tendent à peser sur le huard, donc à soutenir l'USD/CAD.",
+   "summary_en": "Canadian government bonds extend their rally (yields fall), driven by jitters around artificial intelligence and comments from Bank of Canada Governor Tiff Macklem. The article could not be read; this summary sticks to the headline. Lower Canadian yields tend to weigh on the loonie, supporting USD/CAD.",
+   "url": "https://www.investing.com/news/stock-market-news/canadian-bonds-extend-rally-amid-ai-jitters-macklem-comments-5052727"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "16:30",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "usdcad"
+   ],
+   "title": "Le TSX clôture en hausse de 0,72 % après une séance en dents de scie, aidé par les métaux pour batteries et les données sur l'emploi",
+   "title_en": "TSX ends higher after whipsaw session, helped by battery metal stocks & labor data",
+   "summary": "L'indice composé S&P/TSX a terminé en hausse de 0,72 % après une séance agitée, dans un marché clairsemé par l'Action de grâce américaine. Les titres de métaux pour batteries et les données sur le marché du travail canadien ont soutenu l'indice, alors que le marché retenait aussi un avertissement du gouverneur Tiff Macklem. L'article n'a pas pu être lu; détails limités aux titres.",
+   "summary_en": "The S&P/TSX Composite index closed up 0.72% after a choppy session in trade thinned by the U.S. Thanksgiving holiday. Battery metal stocks and Canadian labor market data supported the index, while markets also weighed a warning from Governor Tiff Macklem. The article could not be read; details are limited to the headlines.",
+   "url": "https://www.investing.com/news/stock-market-news/canadas-tsx-futures-flat-in-holidaythinned-trade--and-macklems-warning-5052325"
+  },
+  {
+   "date": "2026-11-26",
    "time": "16:06",
    "source": "Investing.com",
    "impact": "med",
@@ -1910,20 +1952,6 @@
    "summary": "Les FNB bitcoin au comptant américains ont perdu 5,39 G$ nets en novembre (données SoSoValue jusqu'au 25 novembre), du jamais-vu depuis leur lancement en janvier 2024; l'ancien record était de 4,51 G$ en juin 2026. Le bitcoin a chuté de 22 % ce mois-ci, à environ 60 000 $, et les FNB d'ether ont perdu 1,30 G$. Les hausses de taux attendues de la Fed en décembre et l'an prochain rendent les actifs risqués moins attrayants.",
    "summary_en": "U.S. spot bitcoin ETFs have lost a net $5.39 billion in November (SoSoValue data through Nov. 25), the most since their January 2024 debut; the prior record was $4.51 billion in June 2026. Bitcoin has fallen 22% this month to about $60,000, and ether ETFs lost $1.30 billion. Expected Fed rate hikes in December and next year make risk assets less attractive.",
    "url": "https://www.coindesk.com/daybook-us/2026/11/26/bitcoin-etfs-are-bleeding-cash-and-the-fed-is-unlikely-to-help"
-  },
-  {
-   "date": "2026-11-26",
-   "time": "07:11",
-   "source": "Investing.com",
-   "impact": "med",
-   "assets": [
-    "usdcad"
-   ],
-   "title": "Les contrats à terme du TSX stables dans des échanges allégés par l'Action de grâce américaine, l'avertissement de Macklem en vue",
-   "title_en": "Canada's TSX futures flat in holiday-thinned trade and Macklem's warning",
-   "summary": "Les contrats à terme sur l'indice S&P/TSX sont stables dans un marché clairsemé en raison de l'Action de grâce aux États-Unis. Les investisseurs prennent note d'un avertissement du gouverneur de la Banque du Canada, Tiff Macklem (détails non disponibles : l'article n'a pas pu être lu). À surveiller pour le dollar canadien et l'USD/CAD.",
-   "summary_en": "S&P/TSX index futures are flat in thin trade due to the U.S. Thanksgiving holiday. Investors are weighing a warning from Bank of Canada Governor Tiff Macklem (details unavailable: the article could not be read). Worth watching for the Canadian dollar and USD/CAD.",
-   "url": "https://www.investing.com/news/stock-market-news/canadas-tsx-futures-flat-in-holidaythinned-trade--and-macklems-warning-5052325"
   },
   {
    "date": "2026-11-26",
@@ -2303,39 +2331,6 @@
    "title": "L'or grappille des gains alors que le dollar fait demi-tour, mais les données chaudes et la déroute de l'IA limitent la hausse",
    "title_en": "Gold inches up as dollar reverses course, but gains capped by hot data, AI rout",
    "url": "https://www.investing.com/news/commodities-news/gold-holds-near-15mth-lows-on-fed-hike-bets-pce-inflation-awaited-5049591"
-  },
-  {
-   "assets": [
-    "usd",
-    "eurusd",
-    "usdjpy",
-    "audusd"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "Le dollar américain a effacé mercredi après-midi ses gains de la journée, qui avaient été portés par des données économiques américaines plus fortes que prévu et la déroute des actions liées à l'IA. (Article non consulté en entier : résumé limité au titre.) Ce revirement touche le DXY et les principales paires de devises.",
-   "summary_en": "The U.S. dollar reversed its earlier gains on Wednesday afternoon, which had been driven by stronger-than-expected U.S. data and the AI-stock rout. (Full article not accessed: summary limited to the headline.) The reversal affects the DXY and major currency pairs.",
-   "time": "16:18",
-   "title": "Le dollar fait demi-tour après des gains alimentés par des données américaines chaudes et la déroute de l'IA",
-   "title_en": "Dollar reverses course after earlier gains driven by hot U.S. data, AI rout",
-   "url": "https://www.investing.com/news/forex-news/asia-fx-weakens-as-dollar-firms-on-tariff-risks-aussie-hits-11month-low-5049767"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500",
-    "us30"
-   ],
-   "date": "2026-11-25",
-   "impact": "high",
-   "source": "Associated Press",
-   "summary": "Après une chute de plus de 1 000 points du Dow et un plongeon de plus de 4 % du Nasdaq près de l'ouverture, les indices ont largement récupéré : le Dow termine en baisse de 166 points (-0,3 %), le S&P 500 de 0,2 % et le Nasdaq de 0,6 %. La vente sur l'IA s'est étendue aux puces et aux logiciels : Nvidia recule de près de 4 %, Micron de 4 %, Oracle et Sandisk de 5 %. Le marché sera fermé jeudi pour l'Action de grâce.",
-   "summary_en": "After the Dow fell more than 1,000 points and the Nasdaq plunged over 4% near the open, indexes largely recovered: the Dow closed down 166 points (0.3%), the S&P 500 fell 0.2% and the Nasdaq 0.6%. The AI selloff spread to chipmakers and software: Nvidia dropped nearly 4%, Micron 4%, Oracle and Sandisk 5%. Markets are closed Thursday for Thanksgiving.",
-   "time": "16:15",
-   "title": "Wall Street clôture en ordre dispersé après avoir effacé une chute brutale; Nvidia perd près de 4 %",
-   "title_en": "Stocks close mixed after Wall Street erases sharp decline; Nvidia drops nearly 4%",
-   "url": "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
   }
  ],
  "live": {
