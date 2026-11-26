@@ -992,6 +992,11 @@ ul.bnl p{display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;ov
 .apick.cmpg .apb.cmpb:hover{border-color:var(--fg)} .apick.cmpg .apb.cmpb:hover b{color:var(--fg)}
 .apick.cmpg .apb.cmpb.on{border-color:var(--lc)!important;background:color-mix(in srgb,var(--lc) 18%,var(--panel-2))!important;box-shadow:none!important}
 .apick.cmpg .apb.cmpb.on b{color:var(--lc)} .apick.cmpg .apb.cmpb.on .cmpdot{background:var(--lc)}
+
+/* bouton « Même échelle » des graphiques */
+.mmbtn{border:1px solid var(--line);background:var(--panel-2);color:var(--muted);border-radius:5px;padding:4px 9px;font:600 11px var(--f-body);cursor:pointer;white-space:nowrap;margin-left:8px}
+.mmbtn:hover{border-color:var(--gold);color:var(--fg)} .mmbtn[aria-pressed="true"]{border-color:var(--gold);color:var(--gold);background:color-mix(in srgb,var(--gold) 12%,var(--panel-2))}
+.panel > .mmbtn,.hist > .mmbtn{float:right;margin:8px 10px 0 0;position:relative;z-index:2}
 /* test du score sur le passé */
 .panel.bt{margin-top:14px}
 .btwarn{margin:0 14px 12px;padding:9px 12px;border-left:3px solid var(--gold);background:var(--panel-2);font-size:12.5px;line-height:1.5;color:var(--muted)} .btwarn b{color:var(--fg)}
@@ -1193,7 +1198,7 @@ table.corrt{border-collapse:separate;border-spacing:2px;font:500 11px var(--f-mo
 table.corrt th{font:600 10px/1.1 var(--f-body);color:var(--muted);padding:4px;white-space:nowrap;text-align:right}
 table.corrt thead th{height:86px;vertical-align:bottom;text-align:left} table.corrt thead th span{display:inline-block;writing-mode:vertical-rl;transform:rotate(180deg)}
 table.corrt td{width:44px;height:28px;text-align:center;color:var(--fg);border-radius:3px}
-@media (max-width:600px){ table.pplan th:nth-child(7), table.pplan td:nth-child(7), table.pplan th:nth-child(8), table.pplan td:nth-child(8){display:none} }
+@media (max-width:600px){ table.pplan th:nth-child(7), table.pplan td:nth-child(7){display:none} }
 /* Plan du jour, Bulletin du score, voyant de retard */
 .psum.pmac{margin-top:-4px}
 .psum .pk{flex:1 1 150px;min-width:0;text-align:left;background:var(--panel);border:1px solid var(--line);border-radius:6px;padding:10px 14px;color:var(--fg);cursor:pointer;font:inherit;transition:border-color .15s}
@@ -2528,7 +2533,43 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       plugins:{legend:{labels:{color:fg, boxWidth:12, boxHeight:12}}, tooltip:{backgroundColor:css('--panel'), titleColor:fg, bodyColor:fg, borderColor:li, borderWidth:1}}}, cfg.options||{});
     // barres horizontales : l'info au survol doit suivre la barre sous la souris (axe vertical), pas la position horizontale
     if(cfg.options.indexAxis==='y') cfg.options.interaction = Object.assign({mode:'index', intersect:false}, cfg.options.interaction||{}, {axis:'y'});
-    charts[id] = new Chart(el, cfg); return charts[id];
+    rawCfg[id] = cfg;
+    const use = mmEligible(id, cfg) && state.mmOn && state.mmOn[id] ? mmCfg(cfg) : cfg;
+    el.toggleAttribute('data-mmok', mmEligible(id, cfg));
+    charts[id] = new Chart(el, use); setTimeout(()=>{ if(typeof mmScan==='function') mmScan(); }, 0); return charts[id];
+  }
+  // ---------- « Même échelle » : chaque ligne ramenée de 0 (son plus bas) à 100 (son plus haut) ----------
+  const rawCfg = {};
+  const mmNum = v => v==null ? null : typeof v==='number' ? v : (v && typeof v.y==='number') ? v.y : null;
+  const mmVary = d => { const v = (d.data||[]).map(mmNum).filter(x=>x!=null && isFinite(x)); return v.length > 2 && Math.max(...v) - Math.min(...v) > 1e-9; };
+  function mmEligible(id, cfg){
+    if(!cfg || /^chMain$|^chG\d+$/.test(id)) return false;
+    const ds = (cfg.data && cfg.data.datasets) || [], line = d => (d.type || cfg.type) === 'line';
+    return ds.filter(d=>line(d) && mmVary(d)).length >= 2;
+  }
+  function mmCfg(cfg){
+    const ds = cfg.data.datasets.map(d=>{ if(((d.type || cfg.type) !== 'line') || !mmVary(d)) return Object.assign({}, d, {hidden: !((d.type||cfg.type)==='line') ? d.hidden : true});
+      const v = d.data.map(mmNum).filter(x=>x!=null && isFinite(x)), lo = Math.min(...v), r = (Math.max(...v) - lo) || 1;
+      const data = d.data.map(x=>{ const y = mmNum(x); if(y==null) return null; const m = (y - lo) / r * 100; return typeof x==='number' ? m : Object.assign({}, x, {y:m}); });
+      return Object.assign({}, d, {data, _orig:d.data, yAxisID:'y'}); });
+    const o = cfg.options || {}, sc = Object.assign({}, o.scales||{});
+    Object.keys(sc).forEach(k=>{ if(k!=='x' && k!=='y') sc[k] = Object.assign({}, sc[k], {display:false}); });
+    sc.y = {position:(o.scales && o.scales.y && o.scales.y.position) || 'left', min:-3, max:103, afterBuildTicks:ax=>{ ax.ticks = [{value:0},{value:50},{value:100}]; }, ticks:{ callback:v=>v===0?L('plus bas','low'):v===100?L('plus haut','high'):v===50?'50':''}, grid:{color:'rgba(255,255,255,.05)'}};
+    const pl = Object.assign({}, o.plugins||{}), tt = Object.assign({}, pl.tooltip||{}), cb = Object.assign({}, tt.callbacks||{});
+    cb.label = c => { const ov = c.dataset._orig ? mmNum(c.dataset._orig[c.dataIndex]) : c.parsed.y; return `${c.dataset.label} : ${ov==null ? '—' : nf(ov, Math.abs(ov) < 10 ? 2 : Math.abs(ov) < 1000 ? 1 : 0)}`; };
+    tt.callbacks = cb; pl.tooltip = tt;
+    return Object.assign({}, cfg, {data:Object.assign({}, cfg.data, {datasets:ds}), options:Object.assign({}, o, {scales:sc, plugins:pl})});
+  }
+  function mmScan(){
+    document.querySelectorAll('canvas[data-mmok]').forEach(cv=>{ if(!cv.offsetParent && !cv.closest('.chfs')) return;
+      const id = cv.id, host = cv.closest('.panel, .hist, .indp, .scard') || cv.parentElement; if(!id || !host) return;
+      let b = host.querySelector(`.mmbtn[data-mm="${id}"]`);
+      if(!b){ b = document.createElement('button'); b.type = 'button'; b.className = 'mmbtn'; b.dataset.mm = id;
+        b.title = L('Même échelle : chaque ligne va de son plus bas (0) à son plus haut (100) sur la période, pour comparer les formes. L’info au survol garde les vraies valeurs.','Same scale: each line goes from its period low (0) to its high (100), to compare shapes. Hover keeps the real values.');
+        b.addEventListener('click', e=>{ e.stopPropagation(); state.mmOn = state.mmOn || {}; state.mmOn[id] = !state.mmOn[id]; if(rawCfg[id]) mkChart(id, rawCfg[id]); });
+        const ph = host.querySelector(':scope > .ph'); if(ph){ const xb = ph.querySelector('.xbtn'); xb ? ph.insertBefore(b, xb) : ph.appendChild(b); } else host.insertBefore(b, host.firstChild); }
+      const on = !!(state.mmOn && state.mmOn[id]); b.setAttribute('aria-pressed', on); b.textContent = on ? L('✓ Même échelle','✓ Same scale') : L('Même échelle','Same scale'); });
+    document.querySelectorAll('.mmbtn').forEach(b=>{ const cv = document.getElementById(b.dataset.mm); if(!cv || !cv.hasAttribute('data-mmok')) b.remove(); });
   }
   let chartLibP = null;
   function needChart(){
@@ -4215,6 +4256,8 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
     const hosts = [...panel.querySelectorAll(XHOST.replace(':not(.chmain .chcanvas)','')+',.indo')].filter(h=>!h.closest('.chcell'));
     const H = window.innerHeight - 120, osc = hosts.filter(h=>h.classList.contains('indo')).length, main = hosts.length - osc;
     hosts.forEach(h=>{ h.setAttribute('data-xh','1'); h.style.height = (h.classList.contains('indo') ? Math.round(H*0.25) : Math.round((H - (osc?H*0.25:0)) / Math.max(1,main))) + 'px'; });
+    { const sec = panel.closest('section[data-pg], main[data-pg]'), cv = panel.querySelector('canvas[id], [id].lwc, [id].liqc, svg[id]');
+      state._xpSig = {pg: state.page, id: cv ? cv.id : null, idx: sec ? [...sec.querySelectorAll('[data-xp]')].indexOf(panel) : -1}; }
     const ph = document.createElement('div'); ph.id = 'xpPh'; ph.style.height = panel.offsetHeight + 'px'; panel.replaceWith(ph); document.body.appendChild(panel);
     panel.classList.add('chfs'); document.body.classList.add('chfs-open');
     const b = panel.querySelector('.xbtn'); if(b){ b.textContent = '✕'; b.title = L('Réduire','Close'); }
@@ -4272,7 +4315,16 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       if(el.textContent!==txt) el.textContent = txt;
     });
   }
-  (function(){ let t = null; const mo = new MutationObserver(recs=>{ if(!recs.some(r=>[...r.addedNodes].some(n=>n.nodeType===1))) return; clearTimeout(t); t = setTimeout(()=>{ xpScan(); updScan(); }, 250); });
+  function xpReopen(){
+    const fs = document.querySelector('body > .chfs'); if(!fs || fs.querySelector('[data-fs]') || document.getElementById('xpPh')) return;
+    const sig = state._xpSig; fs.remove(); document.body.classList.remove('chfs-open');
+    if(!sig || sig.pg !== state.page) return;
+    let np = null; const sec = document.querySelector('section[data-pg]:not([hidden]), main[data-pg]:not([hidden])');
+    if(sig.id){ const c = document.getElementById(sig.id); if(c) np = c.closest('[data-xp]') || c.closest('.panel, .indp, .scard'); }
+    if(!np && sec && sig.idx >= 0) np = [...sec.querySelectorAll('[data-xp]')][sig.idx] || null;
+    if(np) xpOpen(np);
+  }
+  (function(){ let t = null; const mo = new MutationObserver(recs=>{ if(!recs.some(r=>[...r.addedNodes].some(n=>n.nodeType===1))) return; clearTimeout(t); t = setTimeout(()=>{ xpScan(); updScan(); xpReopen(); mmScan(); }, 120); });
     const w = document.querySelector('.wrap'); if(w) mo.observe(w, {childList:true, subtree:true}); setTimeout(()=>{ xpScan(); updScan(); }, 800); })();
   document.addEventListener('keydown', e=>{ if(e.key==='Escape' && document.querySelector('.chfs')) xpClose(); });
 
@@ -5244,7 +5296,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
         + `<td class="num" data-pp="${k}">${pxFmt(P.px)}</td><td class="num ${P.d1>0?'up':P.d1<0?'dn':''}" data-pd="${k}">${P.d1==null?'—':sg2(P.d1,2)+' %'}</td>`
         + `<td><span class="pbias ${b}">${esc(vt)}</span></td><td class="num psc ${b==='bull'?'up':b==='bear'?'dn':''}">${t>0?'+':''}${String(t).replace('-','−')}</td>`
         + `<td class="c pwk ${wk==='bull'?'up':wk==='bear'?'dn':''}" title="${L('Tendance de la semaine','Weekly trend')}">${W[0]} ${esc(W[1])}</td>`
-        + `<td class="pspk">${scoreSvg(scoreSeries(k).slice(-10), 74, 24, true)}</td>`
+
         + `<td class="pwhy">${(()=>{ const Wy = whyOf(k), D = scoreDrivers(k, 2); return Wy ? `<span>${esc(isEN() && Wy.en ? Wy.en : Wy.fr)}</span>` : D.length ? `<span class="mut">${L('Score','Score')} : ${esc(D.map(d=>d.t).join(', '))}</span>` : '—'; })()}</td>`
         + `</tr>`;
     });
@@ -5292,7 +5344,7 @@ html.tabhid *,html.tabhid *::before,html.tabhid *::after{animation-play-state:pa
       <div class="psum pmac">${mk4}</div>
       <div class="pgrid">
         <div class="panel pbias-p"><div class="ph"><div><h3>${L('Biais de tes actifs','Your assets’ bias')}</h3><p>${L('Biais = score du scorecard sur 100 (≥ +15 haussier, ≤ −15 baissier, ±40 = très). Prix et 1D (depuis la clôture d’hier, comme TradingView) en direct. Clique sur un actif pour voir le détail.','Bias = scorecard score out of 100 (≥ +15 bullish, ≤ −15 bearish, ±40 = very). Live price and 1D (since yesterday’s close, like TradingView). Click an asset for details.')}</p></div></div>
-          <div class="tablewrap"><table class="ptab pplan"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Prix','Price')}</th><th class="r">1D</th><th>${L('Biais','Bias')}</th><th class="r">Score</th><th class="c">${L('Semaine','Week')}</th><th>${L('Évolution','Trend')}</th><th>${L('Pourquoi ça bouge','Why it is moving')}</th></tr></thead><tbody>${tb}</tbody></table></div></div>
+          <div class="tablewrap"><table class="ptab pplan"><thead><tr><th>${L('Actif','Asset')}</th><th class="r">${L('Prix','Price')}</th><th class="r">1D</th><th>${L('Biais','Bias')}</th><th class="r">Score</th><th class="c">${L('Semaine','Week')}</th><th>${L('Pourquoi ça bouge','Why it is moving')}</th></tr></thead><tbody>${tb}</tbody></table></div></div>
         <div class="pside">
           <div class="panel"><div class="ph"><div><h3>${L('Publications et fermetures','Releases and closures')}</h3></div></div><div class="pb pag">${agenda(today)}${agenda(nxt)}</div></div>
           <div class="panel"><div class="ph"><div><h3>${L('Les 5 nouvelles qui comptent','The 5 headlines that matter')}</h3><p>${L('Dernières 24 h, impact élevé en premier.','Last 24 h, high impact first.')}</p></div></div><div class="pb"><ol class="pnews">${nwh}</ol></div></div>
