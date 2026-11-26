@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T21:14:29Z",
+ "updatedAt": "2026-11-26T21:42:27Z",
  "econ": {
   "values": {
    "adp": {
@@ -1717,6 +1717,21 @@
  "news": [
   {
    "date": "2026-11-26",
+   "time": "16:06",
+   "source": "Investing.com",
+   "impact": "med",
+   "assets": [
+    "spx500",
+    "rut"
+   ],
+   "title": "Les centres commerciaux américains font un retour pendant les Fêtes, les consommateurs cherchant plus que des aubaines",
+   "title_en": "US malls make a holiday comeback as shoppers seek more than deals",
+   "summary": "Selon une dépêche Reuters reprise par Investing.com, les centres commerciaux américains regagnent la faveur des consommateurs en ce début de saison des Fêtes, ceux-ci recherchant une expérience au-delà des simples rabais. La vigueur des dépenses du Black Friday est suivie de près pour les titres de détaillants et la confiance envers la consommation américaine.",
+   "summary_en": "According to a Reuters report carried by Investing.com, US malls are winning back shoppers at the start of the holiday season, as consumers look for more than just discounts. Black Friday spending strength is closely watched for retail stocks and confidence in US consumption.",
+   "url": "https://www.investing.com/news/stock-market-news/us-malls-make-a-holiday-comeback-as-shoppers-seek-more-than-deals-5052721"
+  },
+  {
+   "date": "2026-11-26",
    "time": "14:00",
    "source": "Investing.com",
    "impact": "med",
@@ -2321,21 +2336,6 @@
    "title": "Wall Street clôture en ordre dispersé après avoir effacé une chute brutale; Nvidia perd près de 4 %",
    "title_en": "Stocks close mixed after Wall Street erases sharp decline; Nvidia drops nearly 4%",
    "url": "https://abcnews.com/Business/stocks-tumble-tech-sell-off-resumes-nvidia-falls/story?id=138442070"
-  },
-  {
-   "assets": [
-    "nasdaq",
-    "spx500"
-   ],
-   "date": "2026-11-25",
-   "impact": "med",
-   "source": "Investing.com",
-   "summary": "JD Vance a défendu la démarche de l'administration Trump pour réintégrer Jensen Huang comme chef de la direction de Nvidia, affirmant qu'il n'est visé par aucune enquête fédérale. Huang a repris son poste lundi; des élus républicains et démocrates promettent d'examiner les enjeux de sécurité nationale et de conflits d'intérêts. Le dossier de gouvernance continue de peser sur Nvidia, poids lourd du Nasdaq et du S&P 500.",
-   "summary_en": "JD Vance defended the Trump administration's push to reinstate Jensen Huang as Nvidia CEO, saying Huang is not under federal investigation. Huang returned to his post on Monday; Republican and Democratic lawmakers have pledged to examine national security and conflict-of-interest concerns. The governance saga keeps weighing on Nvidia, a heavyweight in the Nasdaq and S&P 500.",
-   "time": "14:39",
-   "title": "Le vice-président Vance défend la réintégration de Jensen Huang chez Nvidia, affirmant qu'il ne fait l'objet d'aucune enquête",
-   "title_en": "VP Vance defends Huang's reinstatement, cites no probe",
-   "url": "https://www.investing.com/news/stock-market-news/vp-vance-defends-huangs-reinstatement-cites-no-probe-5051380"
   }
  ],
  "live": {
