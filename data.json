@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T13:15:39Z",
+  "updatedAt": "2026-11-26T13:42:30Z",
   "econ": {
     "values": {
       "adp": {
@@ -1650,6 +1650,20 @@
   "news": [
     {
       "date": "2026-11-26",
+      "time": "07:30",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Exclusif : Zodia Custody, l'unité crypto de Standard Chartered, touchée par une brèche de sécurité; des données de clients exposées",
+      "title_en": "Exclusive: StanChart's crypto unit Zodia Custody hit by security breach, some client data exposed",
+      "summary": "Zodia Custody, la filiale de garde d'actifs numériques de Standard Chartered, a subi une brèche de sécurité qui a exposé certaines données de clients, selon une exclusivité reprise par Investing.com. L'article complet n'a pas pu être consulté; aucun détail chiffré n'est retenu ici. L'incident s'ajoute aux tensions sur le secteur crypto, déjà secoué par les sorties de fonds des FNB bitcoin.",
+      "summary_en": "Zodia Custody, Standard Chartered's digital-asset custody unit, suffered a security breach that exposed some client data, according to an exclusive carried by Investing.com. The full article could not be accessed, so no figures are included here. The incident adds to pressure on the crypto sector, already hit by bitcoin ETF outflows.",
+      "url": "https://www.investing.com/news/stock-market-news/exclusivestancharts-crypto-unit-zodia-custody-hit-by-security-breach-some-client-data-exposed-5052481"
+    },
+    {
+      "date": "2026-11-26",
       "time": "07:14",
       "source": "CoinDesk",
       "impact": "med",
@@ -2253,22 +2267,6 @@
       "title": "Le rendement à 10 ans recule malgré une inflation tenace, les investisseurs achetant des obligations pour se protéger",
       "title_en": "10-year Treasury yield slides despite sticky inflation data as investors buy bonds for protection",
       "url": "https://www.cnbc.com/2026/11/25/treasury-yields-bonds-inflation.html"
-    },
-    {
-      "assets": [
-        "xauusd",
-        "xagusd",
-        "usd"
-      ],
-      "date": "2026-11-25",
-      "impact": "high",
-      "source": "Kitco",
-      "summary": "L'or au comptant a reculé à 3 427,90 $ l'once, en baisse de plus de 3 % sur la journée, près de son plus bas en plus d'un an; l'argent a aussi chuté de 3,71 % sous 40 $ plus tôt ce matin. Les ventes de maisons neuves ont bondi de 14,2 % en octobre à 701 000 unités (rythme annualisé), contre 650 000 attendues, après un PCE de base à 3,3 % et un PIB du T3 révisé à 4,3 %. Ces données robustes renforcent les paris d'une hausse de taux de la Fed en décembre et le dollar, ce qui pèse sur les métaux précieux.",
-      "summary_en": "Spot gold fell to $3,427.90 an ounce, down more than 3% on the day and near its lowest in over a year; silver had dropped 3.71% below $40 earlier in the morning. October new home sales jumped 14.2% to a 701,000 annualized rate versus 650,000 expected, following core PCE at 3.3% and Q3 GDP revised up to 4.3%. The strong data reinforce bets on a December Fed rate hike and support the dollar, weighing on precious metals.",
-      "time": "10:21",
-      "title": "L'or glisse à son plus bas de séance, sous 3 430 $, après des ventes de maisons neuves en hausse de 14,2 %",
-      "title_en": "Gold falls to session lows as U.S. new home sales rise 14.2% in October",
-      "url": "https://www.kitco.com/news/article/2026-11-25/gold-price-falls-session-lows-us-new-home-sales-rise-142-october"
     }
   ],
   "live": {
