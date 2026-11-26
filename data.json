@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-11-26T07:42:36Z",
+  "updatedAt": "2026-11-26T08:47:57Z",
   "econ": {
     "values": {
       "adp": {
@@ -1650,6 +1650,54 @@
   "news": [
     {
       "date": "2026-11-26",
+      "time": "03:05",
+      "source": "Investing.com",
+      "impact": "med",
+      "assets": [
+        "spx500",
+        "eurusd",
+        "gbpusd",
+        "usd"
+      ],
+      "title": "Les Bourses européennes rebondissent : des tarifs américains moins sévères que prévu et l'accalmie de l'Action de grâce soulagent",
+      "title_en": "European shares rise as benign U.S. tariffs and Thanksgiving lull offer relief",
+      "summary": "Le STOXX 600 bondit de 1,3 % en matinée après avoir frôlé mercredi son plus bas en près de deux mois; le DAX gagne 1,7 %, le CAC 40 1,5 %, le FTSE 100 1,3 % et le FTSE MIB 2,3 %. Les nouvelles propositions tarifaires américaines sont moins dommageables que redouté et le congé de l'Action de grâce offre une pause dans la vente massive liée à l'IA. Les contrats à terme sur les fed funds impliquent 98 % de chances d'une hausse de 25 points de base en décembre, et le marché prévoit à 90 % une hausse de 25 pb de la BCE.",
+      "summary_en": "The STOXX 600 jumped 1.3% in morning trade after nearing an almost two-month low on Wednesday; the DAX rose 1.7%, the CAC 40 1.5%, the FTSE 100 1.3% and the FTSE MIB 2.3%. New U.S. tariff proposals were less damaging than feared, and the Thanksgiving holiday gave markets a break from the AI-led sell-off. Fed funds futures imply a 98% chance of a 25-basis-point hike in December, while markets price a 90% probability of a 25 bp ECB hike.",
+      "url": "https://www.investing.com/news/stock-market-news/european-shares-as-benign-us-tariffs-and-thanksgiving-lull-offer-relief-5052089"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "03:01",
+      "source": "CoinDesk",
+      "impact": "med",
+      "assets": [
+        "btcusd"
+      ],
+      "title": "Bitcoin : 7 G$ d'options arrivent à échéance vendredi, et les gros paris sont nettement plus défensifs qu'en octobre",
+      "title_en": "$7 billion of bitcoin options expire Friday, and the biggest bets look starkly different from October",
+      "summary": "Environ 7 G$ d'options sur le BTC expirent sur Deribit le 27 novembre (plus 0,6 G$ sur l'ether), avec des protections concentrées à 60 000 $ et moins. Le ratio put-call atteint 0,89 pour cette échéance, contre 0,55 en octobre, et l'indice de volatilité DVOL est à 55,45, contre 38 en octobre. Le bitcoin se négociait près de 59 000 $, ce qui signale des opérateurs nettement plus prudents.",
+      "summary_en": "About $7 billion of BTC options expire on Deribit on Nov. 27 (plus $0.6 billion in ether), with protection clustered at $60,000 and below. The put-call ratio for this expiry is 0.89, up from 0.55 in October, and the DVOL volatility index is 55.45 versus 38 in October. Bitcoin was trading near $59,000, signaling much more defensive traders.",
+      "url": "https://www.coindesk.com/markets/2026/11/26/usd7-billion-of-bitcoin-options-expire-friday-and-the-biggest-bets-look-starkly-different-from-october"
+    },
+    {
+      "date": "2026-11-26",
+      "time": "02:58",
+      "source": "CNBC",
+      "impact": "med",
+      "assets": [
+        "usd",
+        "spx500",
+        "usdjpy",
+        "audusd"
+      ],
+      "title": "Les menaces de hausses de tarifs américains accentuent la pression sur les partenaires pour signer des accords commerciaux",
+      "title_en": "U.S. tariff-hike threats pile pressure on partners to sign trade deals",
+      "summary": "Selon CNBC, les menaces de Washington de relever ses tarifs douaniers poussent ses partenaires commerciaux à conclure des accords. Le sujet reste en toile de fond pour le dollar, les devises liées au commerce et les indices boursiers (article non consulté; résumé fondé sur le titre seulement).",
+      "summary_en": "According to CNBC, Washington's threats to raise tariffs are pushing trade partners to sign deals. The issue remains a backdrop for the dollar, trade-sensitive currencies and equity indexes (article not accessed; summary based on the headline only).",
+      "url": "https://www.cnbc.com/2026/11/26/us-tariffs-hike-trade-agreement.html"
+    },
+    {
+      "date": "2026-11-26",
       "time": "02:24",
       "source": "Investing.com (Reuters)",
       "impact": "med",
@@ -2232,51 +2280,6 @@
       "title": "La livre sterling recule alors que le dénouement des positions risquées ramène les capitaux vers le dollar",
       "title_en": "Sterling today: Pound falls as risk unwind sends funds back to dollar",
       "url": "https://ca.investing.com/news/forex-news/sterling-today-pound-falls-as-risk-unwind-sends-funds-back-to-dollar-4980264"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500",
-        "usdjpy"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "CNBC",
-      "summary": "La vente des valeurs technologiques s'aggrave dans le monde : SoftBank chute de 15 % et Nvidia recule de 4,5 % en préouverture à Wall Street. Ce mouvement prolonge la pression sur le Nasdaq et le S&P 500.",
-      "summary_en": "The tech sell-off is deepening worldwide: SoftBank fell 15% and Nvidia was down 4.5% in U.S. premarket trading. The move extends pressure on the Nasdaq and the S&P 500.",
-      "time": "04:42",
-      "title": "La débâcle des titres technos s'étend à l'échelle mondiale : SoftBank chute de 15 %, Nvidia recule de 4,5 % avant l'ouverture",
-      "title_en": "Tech rout deepens globally; Softbank falls 15%, Nvidia down 4.5% premarket",
-      "url": "https://www.cnbc.com/2026/11/25/tech-stocks-softbank-group-advantest-sk-hynix-samsung.html"
-    },
-    {
-      "assets": [
-        "nasdaq",
-        "spx500"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "Investing.com (Reuters)",
-      "summary": "Selon une source citée par Reuters, Jensen Huang aurait admis avoir enfreint le code de conduite de Nvidia, alors que les investisseurs évaluent les risques liés à son retour comme PDG. L'article n'a pas pu être consulté en entier; résumé fondé sur le titre. Ce dossier de gouvernance continue de peser sur Nvidia et, par ricochet, sur le Nasdaq et le S&P 500.",
-      "summary_en": "According to a source cited by Reuters, Jensen Huang said he violated Nvidia's code of conduct, as investors assess the risks surrounding his return as CEO. The full article could not be accessed; summary based on the headline. The governance saga continues to weigh on Nvidia and, by extension, on the Nasdaq and S&P 500.",
-      "time": "03:54",
-      "title": "Jensen Huang aurait reconnu avoir enfreint le code de conduite de Nvidia, selon une source",
-      "title_en": "Nvidia's Huang said he violated code of conduct, source says",
-      "url": "https://www.investing.com/news/stock-market-news/nvidia-slips-as-investors-assess-risks-surrounding-huangs-return-as-ceo-5047757"
-    },
-    {
-      "assets": [
-        "btcusd"
-      ],
-      "date": "2026-11-25",
-      "impact": "med",
-      "source": "CoinDesk",
-      "summary": "Le bitcoin est retombé sous la barre des 60 000 $ mercredi matin, tandis que le jeton HYPE mène le recul des cryptos alternatives. L'article n'a pas pu être consulté en entier; résumé fondé sur le titre. Le seuil de 60 000 $ demeure le niveau clé surveillé après la chute récente vers 55 000 $.",
-      "summary_en": "Bitcoin fell back below the $60,000 mark on Wednesday morning, while the HYPE token led altcoins lower. The full article could not be accessed; summary based on the headline. The $60,000 threshold remains the key level watched after the recent drop toward $55,000.",
-      "time": "03:35",
-      "title": "Le bitcoin repasse sous les 60 000 $, le HYPE entraîne les altcoins à la baisse",
-      "title_en": "Bitcoin slips back under $60,000 as HYPE leads altcoins lower",
-      "url": "https://www.coindesk.com/business/2026/11/25/live-updates-bitcoin-slips-back-under-usd60-000-as-hype-leads-altcoins-lower"
     }
   ],
   "live": {
